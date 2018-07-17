@@ -1,10 +1,12 @@
+from .lua.serialize import dumps
+
 class Condition:
     def __init__(self, predicate):
         self.predicate = predicate
         self.params = []
 
     def __repr__(self):
-        return self.predicate + "(" + ",".join(map(str, self.params)) + ")"
+        return self.predicate + "(" + ",".join(map(dumps, self.params)) + ")"
 
     def dict(self):
         d = {

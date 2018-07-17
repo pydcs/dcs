@@ -1,3 +1,4 @@
+from .lua.serialize import dumps
 from .translation import String
 from enum import Enum
 
@@ -11,7 +12,7 @@ class Action:
         s = []
         for x in self.params:
             if isinstance(x, String):
-                s.append('getValueDictByKey("' + x.id + '")')
+                s.append("getValueDictByKey({})".format(dumps(x.id)))
             else:
                 s.append(str(x))
         return self.predicate + "(" + ", ".join(s) + ")"
