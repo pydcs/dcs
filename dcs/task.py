@@ -859,19 +859,37 @@ class ActivateBeaconCommand(WrappedAction):
 
         return freq * 1000000
 
-    def __init__(self, channel=10, modechannel="X", callsign="TKR", bearing=True):
+    def __init__(self, channel=10, modechannel="X", callsign="TKR", bearing=True, unit_id=0, aa=True):
         super(ActivateBeaconCommand, self).__init__()
         self.params = {
             "action": {
                 "id": ActivateBeaconCommand.Key,
                 "params": {
                     "type": 4,
-                    "frequency": self.calc_tacan_frequency(modechannel, channel),
+                    "frequency": self.calc_tacan_frequency(modechannel, channel, aa),
                     "callsign": callsign,
                     "channel": channel,
+                    "unitId": unit_id,
                     "modeChannel": modechannel,
                     "bearing": bearing,
-                    "system": 4
+                    "system": aa and 4 or 3,
+                }
+            }
+        }
+
+
+class ActivateICLSCommand(WrappedAction):
+    Key = "ActivateICLS"
+
+    def __init__(self, channel=1, unit_id=0):
+        super(ActivateICLSCommand, self).__init__()
+        self.params = {
+            "action": {
+                "id": ActivateICLSCommand.Key,
+                "params": {
+                    "type": 131584,
+                    "channel": channel,
+                    "unitId": unit_id
                 }
             }
         }
@@ -1036,6 +1054,7 @@ class StartCommand(WrappedAction):
 wrappedactions = {
     EPLRS.Key: EPLRS,
     ActivateBeaconCommand.Key: ActivateBeaconCommand,
+    ActivateICLSCommand.Key: ActivateICLSCommand,
     SetFrequencyCommand.Key: SetFrequencyCommand,
     SetInvisibleCommand.Key: SetInvisibleCommand,
     SetImmortalCommand.Key: SetImmortalCommand,
