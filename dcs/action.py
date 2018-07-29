@@ -14,7 +14,7 @@ class Action:
             if isinstance(x, String):
                 s.append("getValueDictByKey({})".format(dumps(x.id)))
             else:
-                s.append(str(x))
+                s.append(dumps(x))
         return self.predicate + "(" + ", ".join(s) + ")"
 
     def dict(self):

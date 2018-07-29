@@ -413,6 +413,8 @@ class FlyingGroup(MovingGroup):
         payload = self.units[0].unit_type.loadout_by_name(name)
         if payload:
             for p in self.units:
+                p.pylons.clear()
+
                 for x in payload:
                     p.load_pylon(x)
 
