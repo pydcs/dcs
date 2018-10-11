@@ -872,6 +872,47 @@ class UnitAltitudeLower(Condition):
         return d
 
 
+class UnitAltitudeHigherAGL(Condition):
+    predicate = "c_unit_altitude_higher_AGL"
+
+    def __init__(self, unit, altitude=1):
+        super(UnitAltitudeHigherAGL, self).__init__(UnitAltitudeHigherAGL.predicate)
+        self.unit = unit
+        self.params.append(self.unit)
+        self.altitude = altitude
+        self.params.append(self.altitude)
+
+    @classmethod
+    def create_from_dict(cls, d):
+        return cls(d["unit"], d["altitude"])
+
+    def dict(self):
+        d = super(UnitAltitudeHigherAGL, self).dict()
+        d["unit"] = self.unit
+        d["altitude"] = self.altitude
+        return d
+
+
+class UnitAltitudeLowerAGL(Condition):
+    predicate = "c_unit_altitude_lower_AGL"
+
+    def __init__(self, unit, altitude=1):
+        super(UnitAltitudeLowerAGL, self).__init__(UnitAltitudeLowerAGL.predicate)
+        self.unit = unit
+        self.params.append(self.unit)
+        self.altitude = altitude
+        self.params.append(self.altitude)
+
+    @classmethod
+    def create_from_dict(cls, d):
+        return cls(d["unit"], d["altitude"])
+
+    def dict(self):
+        d = super(UnitAltitudeLowerAGL, self).dict()
+        d["unit"] = self.unit
+        d["altitude"] = self.altitude
+        return d
+
 class UnitBankWithin(Condition):
     predicate = "c_unit_bank"
 
@@ -1200,6 +1241,8 @@ condition_map = {
     "c_unit_alive": UnitAlive,
     "c_unit_altitude_higher": UnitAltitudeHigher,
     "c_unit_altitude_lower": UnitAltitudeLower,
+    "c_unit_altitude_higher_AGL": UnitAltitudeHigherAGL,
+    "c_units_altitude_lower_AGL": UnitAltitudeLowerAGL,
     "c_unit_bank": UnitBankWithin,
     "c_unit_damaged": UnitDamaged,
     "c_unit_dead": UnitDead,
