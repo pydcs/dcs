@@ -42,6 +42,35 @@ def is_using_dcs_standalone_edition():
         return False
 
 
+def get_dcs_install_directory():
+    """
+    Get the DCS World install directory for this computer
+    :return DCS World install directory
+    """
+    if is_using_dcs_standalone_edition():
+        try:
+            dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World")
+            path = winreg.QueryValueEx(dcs_path_key, "Path")
+            dcs_dir = path[0] + os.path.sep
+            winreg.CloseKey(dcs_path_key)
+            return dcs_dir
+        except Exception as e:
+            print("Couldn't detect DCS World installation folder")
+            return ""
+    elif is_using_dcs_steam_edition():
+        return _find_steam_dcs_directory()
+    else:
+        print("Couldn't detect any installed DCS World version")
+
+
+def get_dcs_saved_games_directory():
+    """
+    Get the save game directory for DCS World
+    :return: Save game directory as string
+    """
+    return os.path.join(os.path.expanduser("~"), "Saved Games", "DCS")
+
+
 def _find_steam_directory():
     """
     Get the Steam install directory for this computer from registry
@@ -94,35 +123,6 @@ def _find_steam_dcs_directory():
         if os.path.isdir(folder):
             return folder + os.path.sep
     return ""
-
-
-def get_dcs_install_directory():
-    """
-    Get the DCS World install directory for this computer
-    :return Steam installation path
-    """
-    if is_using_dcs_standalone_edition():
-        try:
-            dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World")
-            path = winreg.QueryValueEx(dcs_path_key, "Path")
-            dcs_dir = path[0] + os.path.sep
-            winreg.CloseKey(dcs_path_key)
-            return dcs_dir
-        except Exception as e:
-            print("Couldn't detect DCS World installation folder")
-            return ""
-    elif is_using_dcs_steam_edition():
-        return _find_steam_dcs_directory()
-    else:
-        print("Couldn't detect any installed DCS World version")
-
-
-def get_dcs_saved_games_directory():
-    """
-    Get the save game directory for DCS World
-    :return: Save game directory as string
-    """
-    return os.path.join(os.path.expanduser("~"), "Saved Games", "DCS")
 
 
 if __name__ == "__main__":
