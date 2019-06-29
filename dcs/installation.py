@@ -5,8 +5,14 @@ TODO : add method 'is_using_open_beta', 'is_using_stable'
 TODO : [NICE to have] add method to check list of installed DCS modules (could be done either through windows registry, or through filesystem analysis ?)
 """
 
-import winreg
 import os
+
+is_windows_os = True
+try:
+    import winreg
+except ImportError:
+    is_windows_os = False
+    print("WARNING : Trying to run pydcs on non Windows machine")
 
 
 def is_using_dcs_steam_edition():
@@ -16,6 +22,8 @@ def is_using_dcs_steam_edition():
             -1 if DCS Steam Edition is registered in Steam apps but not installed,
             False if never installed in Steam
     """
+    if not is_windows_os:
+        return False
     try:
         # Note : Steam App ID for DCS World is 223750
         dcs_steam_app_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Valve\\Steam\\Apps\\223750")
@@ -34,6 +42,8 @@ def is_using_dcs_standalone_edition():
     Check if DCS World standalone edition is installed on this computer
     :return True if Standalone is installed, False if it is not
     """
+    if not is_windows_os:
+        return False
     try:
         dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World")
         winreg.CloseKey(dcs_path_key)
@@ -126,6 +136,7 @@ def _find_steam_dcs_directory():
 
 
 if __name__ == "__main__":
+    print("Using Windows : " + str(is_windows_os))
     print("Using STEAM Edition : " + str(is_using_dcs_steam_edition()))
     print("Using Standalone Edition : " + str(is_using_dcs_standalone_edition()))
     print("DCS Installation directory : " + get_dcs_install_directory())
