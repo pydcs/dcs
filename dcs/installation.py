@@ -71,6 +71,7 @@ def get_dcs_install_directory():
         return _find_steam_dcs_directory()
     else:
         print("Couldn't detect any installed DCS World version")
+        return ""
 
 
 def get_dcs_saved_games_directory():
