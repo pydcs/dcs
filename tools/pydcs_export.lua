@@ -132,6 +132,9 @@ for j in pairs({CAT_BOMBS,CAT_MISSILES,CAT_ROCKETS,CAT_AIR_TO_AIR,CAT_FUEL_TANKS
         elseif v.displayName == "SS-N-12 SANDBOX" then
             pyName = "_4M80"
             myclsid = pyName
+        elseif v.displayName == "BRD-4-250(4*MK.76+2*ARF-8M3TP)" then
+            pyName = "BRD_4_250_4_MK_76_2_ARF_8M3TP_"
+            myclsid = pyName
         else
 		    pyName = string.gsub(pyName, "[-()/., *']", "_")
 		    pyName = string.gsub(pyName,"^([0-9])", "_%1")
@@ -548,7 +551,7 @@ for i in pairs(unit_categories) do
         writeln(file, '    class '..safename..'(unittype.VehicleType):')
         writeln(file, '        id = "'..unit.type..'"')
         writeln(file, '        name = "'..unit.DisplayName..'"')
-        writeln(file, '        detection_range = '..unit.DetectionRange)
+        writeln(file, '        detection_range = '..(unit.DetectionRange or '0'))
         writeln(file, '        threat_range = '..threat_range)
         writeln(file, '        air_weapon_dist = '..air_weapon_dist)
         if unit.EPLRS then

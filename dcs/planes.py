@@ -12635,8 +12635,275 @@ class Christen_Eagle_II(PlaneType):
 
     pylons = {1}
 
-    tasks = [task.Nothing, task.Transport, task.Reconnaissance]
+    tasks = [task.Transport, task.Reconnaissance]
     task_default = task.Nothing
+
+
+class F_16C_50(PlaneType):
+    id = "F-16C_50"
+    flyable = True
+    height = 5.02
+    width = 9.45
+    length = 14.52
+    fuel_max = 3249
+    max_speed = 2120.04
+    chaff = 60
+    flare = 60
+    charge_total = 120
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    eplrs = True
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 305
+
+    class Liveries:
+        class USA(Enum):
+            default = ""
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 305,
+                2: 264,
+                4: 256,
+                8: 257,
+                16: 261,
+                17: 267,
+                9: 255,
+                18: 251,
+                5: 254,
+                10: 262,
+                20: 266,
+                11: 259,
+                3: 265,
+                6: 250,
+                12: 268,
+                13: 269,
+                7: 270,
+                14: 260,
+                19: 253,
+                15: 263
+            },
+        },
+        2: {
+            "channels": {
+                1: 127,
+                2: 135,
+                4: 127,
+                8: 128,
+                16: 132,
+                17: 138,
+                9: 126,
+                18: 122,
+                5: 125,
+                10: 133,
+                20: 137,
+                11: 130,
+                3: 136,
+                6: 121,
+                12: 139,
+                13: 140,
+                7: 141,
+                14: 131,
+                19: 124,
+                15: 134
+            },
+        },
+    }
+
+    property_defaults = {
+        "LAU3ROF": 0,
+        "LaserCode100": 6,
+        "LaserCode10": 8,
+        "LaserCode1": 8,
+    }
+
+    class Properties:
+
+        class LAU3ROF:
+            id = "LAU3ROF"
+
+            class Values:
+                Single = 0
+                Ripple = 1
+
+        class LaserCode100:
+            id = "LaserCode100"
+
+        class LaserCode10:
+            id = "LaserCode10"
+
+        class LaserCode1:
+            id = "LaserCode1"
+
+    class Pylon1:
+        AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
+        AIM_9X_Sidewinder_IR_AAM = (1, Weapons.AIM_9X_Sidewinder_IR_AAM)
+        AIM_120B = (1, Weapons.AIM_120B)
+        AIM_120C = (1, Weapons.AIM_120C)
+        CATM_9M = (1, Weapons.CATM_9M)
+        AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
+
+    class Pylon2:
+        AIM_9M_Sidewinder_IR_AAM = (2, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (2, Weapons.AIM_9L_Sidewinder_IR_AAM)
+        AIM_9X_Sidewinder_IR_AAM = (2, Weapons.AIM_9X_Sidewinder_IR_AAM)
+        AIM_120B = (2, Weapons.AIM_120B)
+        AIM_120C = (2, Weapons.AIM_120C)
+        CATM_9M = (2, Weapons.CATM_9M)
+        AN_ASQ_T50_TCTS_Pod = (2, Weapons.AN_ASQ_T50_TCTS_Pod)
+#ERRR <CLEAN>
+
+    class Pylon3:
+        AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
+        AIM_9X_Sidewinder_IR_AAM = (3, Weapons.AIM_9X_Sidewinder_IR_AAM)
+        AIM_120B = (3, Weapons.AIM_120B)
+        AIM_120C = (3, Weapons.AIM_120C)
+        CATM_9M = (3, Weapons.CATM_9M)
+        AN_ASQ_T50_TCTS_Pod = (3, Weapons.AN_ASQ_T50_TCTS_Pod)
+        LAU3_WP156 = (3, Weapons.LAU3_WP156)
+        LAU3_WP1B = (3, Weapons.LAU3_WP1B)
+        LAU3_WP61 = (3, Weapons.LAU3_WP61)
+        LAU3_HE5 = (3, Weapons.LAU3_HE5)
+        LAU3_HE151 = (3, Weapons.LAU3_HE151)
+        Mk_82 = (3, Weapons.Mk_82)
+        Mk_82_SnakeEye = (3, Weapons.Mk_82_SnakeEye)
+        Mk_82AIR = (3, Weapons.Mk_82AIR)
+        TER_9A___3_x_Mk_82 = (3, Weapons.TER_9A___3_x_Mk_82)
+        TER_9A___3_x_Mk_82_SnakeEye = (3, Weapons.TER_9A___3_x_Mk_82_SnakeEye)
+        TER_9A___3_x_Mk_82AIR = (3, Weapons.TER_9A___3_x_Mk_82AIR)
+        Mk_84 = (3, Weapons.Mk_84)
+        GBU_10 = (3, Weapons.GBU_10)
+        GBU_12 = (3, Weapons.GBU_12)
+        CBU_87 = (3, Weapons.CBU_87)
+        CBU_97 = (3, Weapons.CBU_97)
+        TER_9A___3_x_BDU_33 = (3, Weapons.TER_9A___3_x_BDU_33)
+#ERRR <CLEAN>
+        TER_9A___2_x_Mk_82 = (3, Weapons.TER_9A___2_x_Mk_82)
+        TER_9A___2_x_Mk_82_SnakeEye = (3, Weapons.TER_9A___2_x_Mk_82_SnakeEye)
+        TER_9A___2_x_Mk_82AIR = (3, Weapons.TER_9A___2_x_Mk_82AIR)
+        TER_9A___2_x_GBU_12 = (3, Weapons.TER_9A___2_x_GBU_12)
+        TER_9A___2_x_CBU_87 = (3, Weapons.TER_9A___2_x_CBU_87)
+        TER_9A___2_x_CBU_97 = (3, Weapons.TER_9A___2_x_CBU_97)
+
+    class Pylon4:
+        LAU3_WP156 = (4, Weapons.LAU3_WP156)
+        LAU3_WP1B = (4, Weapons.LAU3_WP1B)
+        LAU3_WP61 = (4, Weapons.LAU3_WP61)
+        LAU3_HE5 = (4, Weapons.LAU3_HE5)
+        LAU3_HE151 = (4, Weapons.LAU3_HE151)
+        Mk_82 = (4, Weapons.Mk_82)
+        Mk_82_SnakeEye = (4, Weapons.Mk_82_SnakeEye)
+        Mk_82AIR = (4, Weapons.Mk_82AIR)
+        TER_9A___3_x_Mk_82 = (4, Weapons.TER_9A___3_x_Mk_82)
+        TER_9A___3_x_Mk_82_SnakeEye = (4, Weapons.TER_9A___3_x_Mk_82_SnakeEye)
+        TER_9A___3_x_Mk_82AIR = (4, Weapons.TER_9A___3_x_Mk_82AIR)
+        Mk_84 = (4, Weapons.Mk_84)
+        GBU_10 = (4, Weapons.GBU_10)
+        GBU_12 = (4, Weapons.GBU_12)
+        CBU_87 = (4, Weapons.CBU_87)
+        CBU_97 = (4, Weapons.CBU_97)
+        TER_9A___3_x_CBU_87 = (4, Weapons.TER_9A___3_x_CBU_87)
+        TER_9A___3_x_CBU_97 = (4, Weapons.TER_9A___3_x_CBU_97)
+        TER_9A___3_x_BDU_33 = (4, Weapons.TER_9A___3_x_BDU_33)
+        Fuel_tank_370_gal = (4, Weapons.Fuel_tank_370_gal)
+#ERRR <CLEAN>
+        TER_9A___2_x_Mk_82 = (4, Weapons.TER_9A___2_x_Mk_82)
+        TER_9A___2_x_Mk_82_SnakeEye = (4, Weapons.TER_9A___2_x_Mk_82_SnakeEye)
+        TER_9A___2_x_Mk_82AIR = (4, Weapons.TER_9A___2_x_Mk_82AIR)
+        TER_9A___2_x_CBU_87 = (4, Weapons.TER_9A___2_x_CBU_87)
+        TER_9A___2_x_CBU_97 = (4, Weapons.TER_9A___2_x_CBU_97)
+#ERRR <CLEAN>
+
+    class Pylon6:
+        LAU3_WP156 = (6, Weapons.LAU3_WP156)
+        LAU3_WP1B = (6, Weapons.LAU3_WP1B)
+        LAU3_WP61 = (6, Weapons.LAU3_WP61)
+        LAU3_HE5 = (6, Weapons.LAU3_HE5)
+        LAU3_HE151 = (6, Weapons.LAU3_HE151)
+        Mk_82 = (6, Weapons.Mk_82)
+        Mk_82_SnakeEye = (6, Weapons.Mk_82_SnakeEye)
+        Mk_82AIR = (6, Weapons.Mk_82AIR)
+        TER_9A___3_x_Mk_82 = (6, Weapons.TER_9A___3_x_Mk_82)
+        TER_9A___3_x_Mk_82_SnakeEye = (6, Weapons.TER_9A___3_x_Mk_82_SnakeEye)
+        TER_9A___3_x_Mk_82AIR = (6, Weapons.TER_9A___3_x_Mk_82AIR)
+        Mk_84 = (6, Weapons.Mk_84)
+        GBU_10 = (6, Weapons.GBU_10)
+        GBU_12 = (6, Weapons.GBU_12)
+        CBU_87 = (6, Weapons.CBU_87)
+        CBU_97 = (6, Weapons.CBU_97)
+        TER_9A___3_x_CBU_87 = (6, Weapons.TER_9A___3_x_CBU_87)
+        TER_9A___3_x_CBU_97 = (6, Weapons.TER_9A___3_x_CBU_97)
+        TER_9A___3_x_BDU_33 = (6, Weapons.TER_9A___3_x_BDU_33)
+        Fuel_tank_370_gal = (6, Weapons.Fuel_tank_370_gal)
+#ERRR <CLEAN>
+        TER_9A___2_x_Mk_82_ = (6, Weapons.TER_9A___2_x_Mk_82_)
+        TER_9A___2_x_Mk_82_SnakeEye_ = (6, Weapons.TER_9A___2_x_Mk_82_SnakeEye_)
+        TER_9A___2_x_Mk_82AIR_ = (6, Weapons.TER_9A___2_x_Mk_82AIR_)
+        TER_9A___2_x_CBU_87_ = (6, Weapons.TER_9A___2_x_CBU_87_)
+        TER_9A___2_x_CBU_97_ = (6, Weapons.TER_9A___2_x_CBU_97_)
+
+    class Pylon7:
+        AIM_9M_Sidewinder_IR_AAM = (7, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (7, Weapons.AIM_9L_Sidewinder_IR_AAM)
+        AIM_9X_Sidewinder_IR_AAM = (7, Weapons.AIM_9X_Sidewinder_IR_AAM)
+        AIM_120B = (7, Weapons.AIM_120B)
+        AIM_120C = (7, Weapons.AIM_120C)
+        CATM_9M = (7, Weapons.CATM_9M)
+        AN_ASQ_T50_TCTS_Pod = (7, Weapons.AN_ASQ_T50_TCTS_Pod)
+        LAU3_WP156 = (7, Weapons.LAU3_WP156)
+        LAU3_WP1B = (7, Weapons.LAU3_WP1B)
+        LAU3_WP61 = (7, Weapons.LAU3_WP61)
+        LAU3_HE5 = (7, Weapons.LAU3_HE5)
+        LAU3_HE151 = (7, Weapons.LAU3_HE151)
+        Mk_82 = (7, Weapons.Mk_82)
+        Mk_82_SnakeEye = (7, Weapons.Mk_82_SnakeEye)
+        Mk_82AIR = (7, Weapons.Mk_82AIR)
+        TER_9A___3_x_Mk_82 = (7, Weapons.TER_9A___3_x_Mk_82)
+        TER_9A___3_x_Mk_82_SnakeEye = (7, Weapons.TER_9A___3_x_Mk_82_SnakeEye)
+        TER_9A___3_x_Mk_82AIR = (7, Weapons.TER_9A___3_x_Mk_82AIR)
+        Mk_84 = (7, Weapons.Mk_84)
+        GBU_10 = (7, Weapons.GBU_10)
+        GBU_12 = (7, Weapons.GBU_12)
+        CBU_87 = (7, Weapons.CBU_87)
+        CBU_97 = (7, Weapons.CBU_97)
+        TER_9A___3_x_BDU_33 = (7, Weapons.TER_9A___3_x_BDU_33)
+#ERRR <CLEAN>
+        TER_9A___2_x_Mk_82_ = (7, Weapons.TER_9A___2_x_Mk_82_)
+        TER_9A___2_x_Mk_82_SnakeEye_ = (7, Weapons.TER_9A___2_x_Mk_82_SnakeEye_)
+        TER_9A___2_x_Mk_82AIR_ = (7, Weapons.TER_9A___2_x_Mk_82AIR_)
+        TER_9A___2_x_GBU_12_ = (7, Weapons.TER_9A___2_x_GBU_12_)
+        TER_9A___2_x_CBU_87_ = (7, Weapons.TER_9A___2_x_CBU_87_)
+        TER_9A___2_x_CBU_97_ = (7, Weapons.TER_9A___2_x_CBU_97_)
+
+    class Pylon8:
+        AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (8, Weapons.AIM_9L_Sidewinder_IR_AAM)
+        AIM_9X_Sidewinder_IR_AAM = (8, Weapons.AIM_9X_Sidewinder_IR_AAM)
+        AIM_120B = (8, Weapons.AIM_120B)
+        AIM_120C = (8, Weapons.AIM_120C)
+        CATM_9M = (8, Weapons.CATM_9M)
+        AN_ASQ_T50_TCTS_Pod = (8, Weapons.AN_ASQ_T50_TCTS_Pod)
+#ERRR <CLEAN>
+
+    class Pylon9:
+        AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
+        AIM_9X_Sidewinder_IR_AAM = (9, Weapons.AIM_9X_Sidewinder_IR_AAM)
+        AIM_120B = (9, Weapons.AIM_120B)
+        AIM_120C = (9, Weapons.AIM_120C)
+        CATM_9M = (9, Weapons.CATM_9M)
+        AN_ASQ_T50_TCTS_Pod = (9, Weapons.AN_ASQ_T50_TCTS_Pod)
+
+    class Pylon11:
+        AN_AAQ_28_LITENING = (11, Weapons.AN_AAQ_28_LITENING)
+
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 11}
+
+    tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.PinpointStrike, task.CAS, task.GroundAttack, task.RunwayAttack, task.SEAD, task.AFAC, task.AntishipStrike, task.Reconnaissance]
+    task_default = task.CAP
 
 
 class F_5E(PlaneType):
@@ -15096,6 +15363,7 @@ class F_14B(PlaneType):
         LAU_138_AIM_9M = (1, Weapons.LAU_138_AIM_9M)
         LAU_138_AIM_9L = (1, Weapons.LAU_138_AIM_9L)
         AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
+        CATM_9M = (1, Weapons.CATM_9M)
         Smokewinder___red = (1, Weapons.Smokewinder___red)
         Smokewinder___green = (1, Weapons.Smokewinder___green)
         Smokewinder___blue = (1, Weapons.Smokewinder___blue)
@@ -15248,6 +15516,7 @@ class F_14B(PlaneType):
         LAU_138_AIM_9M = (10, Weapons.LAU_138_AIM_9M)
         LAU_138_AIM_9L = (10, Weapons.LAU_138_AIM_9L)
         AN_ASQ_T50_TCTS_Pod = (10, Weapons.AN_ASQ_T50_TCTS_Pod)
+        CATM_9M = (10, Weapons.CATM_9M)
         Smokewinder___red = (10, Weapons.Smokewinder___red)
         Smokewinder___green = (10, Weapons.Smokewinder___green)
         Smokewinder___blue = (10, Weapons.Smokewinder___blue)
@@ -15353,44 +15622,56 @@ class FA_18C_hornet(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Syria(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Finland(Enum):
-            Finland_31 = "Finland 31"
+            F_18_IRIAF = "F-18 IRIAF"
             Finland_21 = "Finland 21"
+            Finland_31 = "Finland 31"
             default_livery = "default livery"
 
         class Australia(Enum):
             Australian_75th_Squadron = "Australian 75th Squadron"
             Australian_77th_Squadron = "Australian 77th Squadron"
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Germany(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class SaudiArabia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Israel(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_Israel_Air_Force = "Fictional Israel Air Force"
             default_livery = "default livery"
 
         class Croatia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class CzechRepublic(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Norway(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Romania(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Spain(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Spain_111th_Escuadron_C_15_73 = "Spain 111th Escuadron C.15-73"
             Spain_111th_Escuadron_C_15_88 = "Spain 111th Escuadron C.15-88"
             Spain_121th_Escuadron_C_15_45 = "Spain 121th Escuadron C.15-45"
@@ -15409,88 +15690,115 @@ class FA_18C_hornet(PlaneType):
             default_livery = "default livery"
 
         class Ukraine(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_Ukraine_Air_Force = "Fictional Ukraine Air Force"
             default_livery = "default livery"
 
         class Belgium(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Slovakia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Greece(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class UK(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_UK_Air_Force = "Fictional UK Air Force"
             default_livery = "default livery"
 
         class Insurgents(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Hungary(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class France(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Abkhazia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Russia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_Russia_Air_Force = "Fictional Russia Air Force"
             default_livery = "default livery"
 
         class Sweden(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Austria(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Switzerland(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Switzerland = "Switzerland"
             default_livery = "default livery"
 
         class Italy(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class SouthOssetia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class SouthKorea(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Iran(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class China(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Pakistan(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Belarus(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class NorthKorea(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Iraq(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Kazakhstan(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Bulgaria(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Serbia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class India(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class USAFAggressors(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_Russia_Air_Force = "Fictional Russia Air Force"
             VFC_12 = "VFC-12"
             NAWDC_blue = "NAWDC blue"
@@ -15502,6 +15810,7 @@ class FA_18C_hornet(PlaneType):
 
         class USA(Enum):
             VFA_37 = "VFA-37"
+            F_18_IRIAF = "F-18 IRIAF"
             VFA_106 = "VFA-106"
             VFA_106_high_visibility = "VFA-106 high visibility"
             VFA_113 = "VFA-113"
@@ -15541,9 +15850,11 @@ class FA_18C_hornet(PlaneType):
             Blue_Angels_Jet_Team = "Blue Angels Jet Team"
 
         class Denmark(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Egypt(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Canada(Enum):
@@ -15551,19 +15862,24 @@ class FA_18C_hornet(PlaneType):
             Canada_409th_Squadron = "Canada 409th Squadron"
             Canada_425th_Squadron = "Canada 425th Squadron"
             Canada_NORAD_60_Demo_Jet = "Canada NORAD 60 Demo Jet"
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class TheNetherlands(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Turkey(Enum):
             Fictional_Turkey_162nd_Sq = "Fictional Turkey 162nd Sq"
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Japan(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Poland(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
     class Pylon1:
@@ -15627,6 +15943,7 @@ class FA_18C_hornet(PlaneType):
         GBU_31_V_3_B = (2, Weapons.GBU_31_V_3_B)
         GBU_38 = (2, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (2, Weapons.BRU_55___2_x_GBU_38)
+        AGM_84D = (2, Weapons.AGM_84D)
 
     class Pylon3:
         LAU_115___AIM_7M = (3, Weapons.LAU_115___AIM_7M)
@@ -15673,6 +15990,7 @@ class FA_18C_hornet(PlaneType):
         GBU_31_V_3_B = (3, Weapons.GBU_31_V_3_B)
         GBU_38 = (3, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (3, Weapons.BRU_55___2_x_GBU_38)
+        AGM_84D = (3, Weapons.AGM_84D)
 
     class Pylon4:
         AIM_7M = (4, Weapons.AIM_7M)
@@ -15695,6 +16013,7 @@ class FA_18C_hornet(PlaneType):
         CBU_99 = (5, Weapons.CBU_99)
         BRU_33___2_x_CBU_99 = (5, Weapons.BRU_33___2_x_CBU_99)
         Mk_20 = (5, Weapons.Mk_20)
+        AN_AAQ_28_LITENING = (5, Weapons.AN_AAQ_28_LITENING)
 #ERRR <CLEAN>
 
     class Pylon6:
@@ -15749,6 +16068,7 @@ class FA_18C_hornet(PlaneType):
         GBU_31_V_3_B = (7, Weapons.GBU_31_V_3_B)
         GBU_38 = (7, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (7, Weapons.BRU_55___2_x_GBU_38)
+        AGM_84D = (7, Weapons.AGM_84D)
 
     class Pylon8:
         LAU_115_2_LAU_127_AIM_9M = (8, Weapons.LAU_115_2_LAU_127_AIM_9M)
@@ -15804,6 +16124,7 @@ class FA_18C_hornet(PlaneType):
         GBU_31_V_3_B = (8, Weapons.GBU_31_V_3_B)
         GBU_38 = (8, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (8, Weapons.BRU_55___2_x_GBU_38)
+        AGM_84D = (8, Weapons.AGM_84D)
 
     class Pylon9:
         AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
@@ -19610,6 +19931,7 @@ class Su_34(PlaneType):
             Russian_Air_Force_Old = "Russian Air Force Old"
 
     class Pylon1:
+        R_73 = (1, Weapons.R_73)
         L005_Sorbtsiya_ECM_pod__left_ = (1, Weapons.L005_Sorbtsiya_ECM_pod__left_)
         L175V_Khibiny_ECM_pod = (1, Weapons.L175V_Khibiny_ECM_pod)
 
@@ -19687,6 +20009,7 @@ class Su_34(PlaneType):
         KAB_1500L = (4, Weapons.KAB_1500L)
         KAB_1500LG_Pr = (4, Weapons.KAB_1500LG_Pr)
         KAB_1500Kr = (4, Weapons.KAB_1500Kr)
+        Kh_59M = (4, Weapons.Kh_59M)
 
     class Pylon5:
         R_77 = (5, Weapons.R_77)
@@ -19813,6 +20136,7 @@ class Su_34(PlaneType):
         KAB_1500L = (9, Weapons.KAB_1500L)
         KAB_1500LG_Pr = (9, Weapons.KAB_1500LG_Pr)
         KAB_1500Kr = (9, Weapons.KAB_1500Kr)
+        Kh_59M = (9, Weapons.Kh_59M)
 
     class Pylon10:
         Kh_29T__ = (10, Weapons.Kh_29T__)
@@ -19853,6 +20177,7 @@ class Su_34(PlaneType):
         R_77 = (11, Weapons.R_77)
 
     class Pylon12:
+        R_73 = (12, Weapons.R_73)
         L005_Sorbtsiya_ECM_pod__right_ = (12, Weapons.L005_Sorbtsiya_ECM_pod__right_)
         L175V_Khibiny_ECM_pod = (12, Weapons.L175V_Khibiny_ECM_pod)
 
@@ -20273,6 +20598,988 @@ class TF_51D(PlaneType):
     task_default = task.Reconnaissance
 
 
+class A_4E_C(PlaneType):
+    id = "A-4E-C"
+    flyable = True
+    height = 4.57
+    width = 8.38
+    length = 12.22
+    fuel_max = 2467.5454273299
+    max_speed = 1082.88
+    chaff = 30
+    flare = 30
+    charge_total = 60
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 254
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 264,
+                2: 265,
+                4: 254,
+                8: 258,
+                16: 267,
+                17: 251,
+                9: 262,
+                18: 253,
+                5: 250,
+                10: 259,
+                20: 252,
+                11: 268,
+                3: 256,
+                6: 270,
+                12: 269,
+                13: 260,
+                7: 257,
+                14: 263,
+                19: 266,
+                15: 261
+            },
+        },
+    }
+
+    property_defaults = {
+        "CBU2ATPP": 0,
+        "CBU2BATPP": 0,
+        "CMS_BURSTS": 1,
+        "CMS_BURST_INTERVAL": 1,
+        "CMS_SALVOS": 1,
+        "CMS_SALVO_INTERVAL": 1,
+    }
+
+    class Properties:
+
+        class CBU2ATPP:
+            id = "CBU2ATPP"
+
+            class Values:
+                _1_tube = 0
+                _2_tubes = 1
+                _3_tubes = 2
+                _4_tubes = 3
+                _6_tubes = 4
+                _17_tubes__salvo = 5
+
+        class CBU2BATPP:
+            id = "CBU2BATPP"
+
+            class Values:
+                _2_tubes = 0
+                _4_tubes = 1
+                _6_tubes = 2
+
+        class CMS_BURSTS:
+            id = "CMS_BURSTS"
+
+            class Values:
+                _1 = 1
+                _2 = 2
+                _3 = 3
+                _4 = 4
+
+        class CMS_BURST_INTERVAL:
+            id = "CMS_BURST_INTERVAL"
+
+            class Values:
+                _0_2_seconds = 1
+                _0_3_seconds = 2
+                _0_4_seconds = 3
+                _0_5_seconds = 4
+
+        class CMS_SALVOS:
+            id = "CMS_SALVOS"
+
+            class Values:
+                _8 = 1
+                _12 = 2
+                _16 = 3
+                _20 = 4
+                _24 = 5
+                _28 = 6
+                _32 = 7
+
+        class CMS_SALVO_INTERVAL:
+            id = "CMS_SALVO_INTERVAL"
+
+            class Values:
+                _2_seconds = 1
+                _4_seconds = 2
+                _6_seconds = 3
+                _8_seconds = 4
+                _10_seconds = 5
+                _12_seconds = 6
+                _14_seconds = 7
+
+    class Liveries:
+
+        class Georgia(Enum):
+            Unmarked = "Unmarked"
+
+        class Syria(Enum):
+            Unmarked = "Unmarked"
+
+        class Finland(Enum):
+            Unmarked = "Unmarked"
+
+        class Australia(Enum):
+            International_Australia = "International Australia"
+            International_New_Zealand = "International New Zealand"
+            International_New_Zealand_Kiwi_Red = "International New Zealand Kiwi Red"
+            International_New_Zealand_Sqn_75 = "International New Zealand Sqn 75"
+            Unmarked = "Unmarked"
+
+        class Germany(Enum):
+            Unmarked = "Unmarked"
+
+        class SaudiArabia(Enum):
+            Unmarked = "Unmarked"
+
+        class Israel(Enum):
+            International_Israel = "International Israel"
+            Unmarked = "Unmarked"
+
+        class Croatia(Enum):
+            Unmarked = "Unmarked"
+
+        class CzechRepublic(Enum):
+            Unmarked = "Unmarked"
+
+        class Norway(Enum):
+            Unmarked = "Unmarked"
+
+        class Romania(Enum):
+            Unmarked = "Unmarked"
+
+        class Spain(Enum):
+            Unmarked = "Unmarked"
+
+        class Ukraine(Enum):
+            Unmarked = "Unmarked"
+
+        class Belgium(Enum):
+            Unmarked = "Unmarked"
+
+        class Slovakia(Enum):
+            Unmarked = "Unmarked"
+
+        class Greece(Enum):
+            Unmarked = "Unmarked"
+
+        class UK(Enum):
+            Trainer_BAE_Systems = "Trainer BAE Systems"
+            Unmarked = "Unmarked"
+
+        class Insurgents(Enum):
+            Unmarked = "Unmarked"
+
+        class Hungary(Enum):
+            Unmarked = "Unmarked"
+
+        class France(Enum):
+            Unmarked = "Unmarked"
+
+        class Abkhazia(Enum):
+            Unmarked = "Unmarked"
+
+        class Russia(Enum):
+            Unmarked = "Unmarked"
+
+        class Sweden(Enum):
+            Unmarked = "Unmarked"
+
+        class Austria(Enum):
+            Unmarked = "Unmarked"
+
+        class Switzerland(Enum):
+            Unmarked = "Unmarked"
+
+        class Italy(Enum):
+            Unmarked = "Unmarked"
+
+        class SouthOssetia(Enum):
+            Unmarked = "Unmarked"
+
+        class SouthKorea(Enum):
+            Unmarked = "Unmarked"
+
+        class Iran(Enum):
+            Unmarked = "Unmarked"
+
+        class China(Enum):
+            Unmarked = "Unmarked"
+
+        class Pakistan(Enum):
+            Unmarked = "Unmarked"
+
+        class Belarus(Enum):
+            Unmarked = "Unmarked"
+
+        class NorthKorea(Enum):
+            Unmarked = "Unmarked"
+
+        class Iraq(Enum):
+            Unmarked = "Unmarked"
+
+        class Kazakhstan(Enum):
+            Unmarked = "Unmarked"
+
+        class Bulgaria(Enum):
+            Unmarked = "Unmarked"
+
+        class Serbia(Enum):
+            Unmarked = "Unmarked"
+
+        class India(Enum):
+            Unmarked = "Unmarked"
+
+        class USAFAggressors(Enum):
+            Unmarked = "Unmarked"
+            Aggressor_USMC_TopGun_MiG_17 = "Aggressor USMC TopGun MiG-17"
+            Aggressor_USN_TopGun = "Aggressor USN TopGun"
+            Aggressor_USN_VF_126_Bandits = "Aggressor USN VF-126 Bandits"
+            Aggressor_USN_VF_127_Royal_Blues = "Aggressor USN VF-127 Royal Blues"
+            Aggressor_USN_VFA_127_Cyclons__Forest = "Aggressor USN VFA-127 Cyclons (Forest)"
+            Aggressor_USN_VFA_127_Cyclons__Sea = "Aggressor USN VFA-127 Cyclons (Sea)"
+
+        class USA(Enum):
+            International_Argentina = "International Argentina"
+            International_Australia = "International Australia"
+            Blue_Angels_no_1 = "Blue Angels no 1"
+            Blue_Angels_no_2 = "Blue Angels no 2"
+            Blue_Angels_no_3 = "Blue Angels no 3"
+            Blue_Angels_no_4 = "Blue Angels no 4"
+            Blue_Angels_no_5 = "Blue Angels no 5"
+            Blue_Angels_no_6 = "Blue Angels no 6"
+            International_Brazil = "International Brazil"
+            Community_A_4E = "Community A-4E"
+            International_Israel = "International Israel"
+            International_Kuwait = "International Kuwait"
+            International_New_Zealand = "International New Zealand"
+            International_New_Zealand_Kiwi_Red = "International New Zealand Kiwi Red"
+            International_New_Zealand_Sqn_75 = "International New Zealand Sqn 75"
+            Trainer_USMC_PTMC = "Trainer USMC PTMC"
+            Trainer_BAE_Systems = "Trainer BAE Systems"
+            Unmarked = "Unmarked"
+            Aggressor_USMC_TopGun_MiG_17 = "Aggressor USMC TopGun MiG-17"
+            USMC_VMA_121_Green_Knights = "USMC VMA-121 Green Knights"
+            USMC_VMA_131_Diamondbacks = "USMC VMA-131 Diamondbacks"
+            USMC_VMA_211_Avengers = "USMC VMA-211 Avengers"
+            USMC_VMA_311_Tomcats = "USMC VMA-311 Tomcats"
+            Trainer_USN_NFWS_Gray = "Trainer USN NFWS Gray"
+            Trainer_USN_NFWS_Green = "Trainer USN NFWS Green"
+            Aggressor_USN_TopGun = "Aggressor USN TopGun"
+            USN_VA_163_Saints = "USN VA-163 Saints"
+            USN_VA_195_Dambusters = "USN VA-195 Dambusters"
+            USN_VA_55_Warhorses = "USN VA-55 Warhorses"
+            Trainer_USN_VC_1_FLECOMPRON_One = "Trainer USN VC-1 FLECOMPRON One"
+            USN_VC_7_Tallyhoers = "USN VC-7 Tallyhoers"
+            Trainer_USN_VC_8_Redtails = "Trainer USN VC-8 Redtails"
+            Aggressor_USN_VF_126_Bandits = "Aggressor USN VF-126 Bandits"
+            Aggressor_USN_VF_127_Royal_Blues = "Aggressor USN VF-127 Royal Blues"
+            Aggressor_USN_VFA_127_Cyclons__Forest = "Aggressor USN VFA-127 Cyclons (Forest)"
+            Aggressor_USN_VFA_127_Cyclons__Sea = "Aggressor USN VFA-127 Cyclons (Sea)"
+            Trainer_USN_VT_7_Eagles = "Trainer USN VT-7 Eagles"
+
+        class Denmark(Enum):
+            Unmarked = "Unmarked"
+
+        class Egypt(Enum):
+            Unmarked = "Unmarked"
+
+        class Canada(Enum):
+            Unmarked = "Unmarked"
+
+        class TheNetherlands(Enum):
+            Unmarked = "Unmarked"
+
+        class Turkey(Enum):
+            Unmarked = "Unmarked"
+
+        class Japan(Enum):
+            Unmarked = "Unmarked"
+
+        class Poland(Enum):
+            Unmarked = "Unmarked"
+
+    class Pylon1:
+        LAU_10___4_ZUNI_MK_71 = (1, Weapons.LAU_10___4_ZUNI_MK_71)
+        LAU_3___19_FFAR_M156_WP = (1, Weapons.LAU_3___19_FFAR_M156_WP)
+        LAU_3___19_FFAR_Mk1_HE = (1, Weapons.LAU_3___19_FFAR_Mk1_HE)
+        LAU_3___19_FFAR_Mk5_HEAT = (1, Weapons.LAU_3___19_FFAR_Mk5_HEAT)
+        LAU_68___7_FFAR_M156_WP = (1, Weapons.LAU_68___7_FFAR_M156_WP)
+        LAU_68___7_FFAR_Mk1_HE = (1, Weapons.LAU_68___7_FFAR_Mk1_HE)
+        LAU_68___7_FFAR_Mk5_HEAT = (1, Weapons.LAU_68___7_FFAR_Mk5_HEAT)
+        AGM_45A = (1, Weapons.AGM_45A)
+#ERRR {AGM12_B}
+        Mk_20 = (1, Weapons.Mk_20)
+        Mk_81 = (1, Weapons.Mk_81)
+        Mk_81SE = (1, Weapons.Mk_81SE)
+        Mk_82 = (1, Weapons.Mk_82)
+        Mk_82_SnakeEye = (1, Weapons.Mk_82_SnakeEye)
+        Mk_77_mod_1 = (1, Weapons.Mk_77_mod_1)
+        AN_M30A1 = (1, Weapons.AN_M30A1)
+        AN_M57A1 = (1, Weapons.AN_M57A1)
+        AN_M64 = (1, Weapons.AN_M64)
+        AN_M81 = (1, Weapons.AN_M81)
+        AN_M88 = (1, Weapons.AN_M88)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (1, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        Smokewinder___red = (1, Weapons.Smokewinder___red)
+        Smokewinder___green = (1, Weapons.Smokewinder___green)
+        Smokewinder___blue = (1, Weapons.Smokewinder___blue)
+        Smokewinder___white = (1, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (1, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (1, Weapons.Smokewinder___orange)
+#ERRR <CLEAN>
+
+    class Pylon2:
+        Fuel_Tank_300_gallons_ = (2, Weapons.Fuel_Tank_300_gallons_)
+        Fuel_Tank_150_gallons = (2, Weapons.Fuel_Tank_150_gallons)
+        LAU_7_GAR_8_Sidewinder_IR_AAM = (2, Weapons.LAU_7_GAR_8_Sidewinder_IR_AAM)
+        LAU_7_AIM_9P_Sidewinder_IR_AAM = (2, Weapons.LAU_7_AIM_9P_Sidewinder_IR_AAM)
+        LAU_7_AIM_9P5_Sidewinder_IR_AAM = (2, Weapons.LAU_7_AIM_9P5_Sidewinder_IR_AAM)
+        LAU_10___4_ZUNI_MK_71 = (2, Weapons.LAU_10___4_ZUNI_MK_71)
+        LAU_10_2___4_ZUNI_MK_71_ = (2, Weapons.LAU_10_2___4_ZUNI_MK_71_)
+        LAU_3___19_FFAR_M156_WP = (2, Weapons.LAU_3___19_FFAR_M156_WP)
+        LAU_3___19_FFAR_Mk1_HE = (2, Weapons.LAU_3___19_FFAR_Mk1_HE)
+        LAU_3___19_FFAR_Mk5_HEAT = (2, Weapons.LAU_3___19_FFAR_Mk5_HEAT)
+        LAU_3_2___19_FFAR_M156_WP_ = (2, Weapons.LAU_3_2___19_FFAR_M156_WP_)
+        LAU_3_2___19_FFAR_Mk1_HE_ = (2, Weapons.LAU_3_2___19_FFAR_Mk1_HE_)
+        LAU_3_2___19_FFAR_Mk5_HEAT_ = (2, Weapons.LAU_3_2___19_FFAR_Mk5_HEAT_)
+        LAU_68___7_FFAR_M156_WP = (2, Weapons.LAU_68___7_FFAR_M156_WP)
+        LAU_68___7_FFAR_Mk1_HE = (2, Weapons.LAU_68___7_FFAR_Mk1_HE)
+        LAU_68___7_FFAR_Mk5_HEAT = (2, Weapons.LAU_68___7_FFAR_Mk5_HEAT)
+        LAU_68_2___7_FFAR_M156_WP_ = (2, Weapons.LAU_68_2___7_FFAR_M156_WP_)
+        LAU_68_2___7_FFAR_Mk1_HE_ = (2, Weapons.LAU_68_2___7_FFAR_Mk1_HE_)
+        LAU_68_2___7_FFAR_Mk5_HEAT_ = (2, Weapons.LAU_68_2___7_FFAR_Mk5_HEAT_)
+        AGM_45A = (2, Weapons.AGM_45A)
+#ERRR {AGM12_C}
+#ERRR {AGM12_B}
+        AGM_62 = (2, Weapons.AGM_62)
+        Mk_20 = (2, Weapons.Mk_20)
+        Mk_81 = (2, Weapons.Mk_81)
+        Mk_81SE = (2, Weapons.Mk_81SE)
+        Mk_82 = (2, Weapons.Mk_82)
+        Mk_82_SnakeEye = (2, Weapons.Mk_82_SnakeEye)
+        Mk_83 = (2, Weapons.Mk_83)
+        Mk_84 = (2, Weapons.Mk_84)
+        M117 = (2, Weapons.M117)
+        Mk_77_mod_0 = (2, Weapons.Mk_77_mod_0)
+        Mk_77_mod_1 = (2, Weapons.Mk_77_mod_1)
+        AN_M30A1 = (2, Weapons.AN_M30A1)
+        AN_M57A1 = (2, Weapons.AN_M57A1)
+        AN_M64 = (2, Weapons.AN_M64)
+        AN_M65A1 = (2, Weapons.AN_M65A1)
+        AN_M81 = (2, Weapons.AN_M81)
+        AN_M88 = (2, Weapons.AN_M88)
+        CBU_1_A = (2, Weapons.CBU_1_A)
+        CBU_2_A = (2, Weapons.CBU_2_A)
+        CBU_2B_A = (2, Weapons.CBU_2B_A)
+        CBU_1_A__2 = (2, Weapons.CBU_1_A__2)
+        CBU_2_A__2 = (2, Weapons.CBU_2_A__2)
+        CBU_2B_A__2 = (2, Weapons.CBU_2B_A__2)
+        Mk_20__2__TER_ = (2, Weapons.Mk_20__2__TER_)
+        Mk_81__5__MER_ = (2, Weapons.Mk_81__5__MER_)
+        Mk_81SE__5__MER_ = (2, Weapons.Mk_81SE__5__MER_)
+        Mk_82__2__TER_ = (2, Weapons.Mk_82__2__TER_)
+        Mk_82_Snakeye__2__TER_ = (2, Weapons.Mk_82_Snakeye__2__TER_)
+        AN_M57A1__5__MER_ = (2, Weapons.AN_M57A1__5__MER_)
+        AN_M81__5__MER_ = (2, Weapons.AN_M81__5__MER_)
+        AN_M88__5__MER_ = (2, Weapons.AN_M88__5__MER_)
+        Mk4_HIPEG = (2, Weapons.Mk4_HIPEG)
+        Smokewinder___red = (2, Weapons.Smokewinder___red)
+        Smokewinder___green = (2, Weapons.Smokewinder___green)
+        Smokewinder___blue = (2, Weapons.Smokewinder___blue)
+        Smokewinder___white = (2, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (2, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (2, Weapons.Smokewinder___orange)
+#ERRR <CLEAN>
+
+    class Pylon3:
+        Fuel_Tank_400_gallons = (3, Weapons.Fuel_Tank_400_gallons)
+        Fuel_Tank_300_gallons = (3, Weapons.Fuel_Tank_300_gallons)
+        Fuel_Tank_150_gallons = (3, Weapons.Fuel_Tank_150_gallons)
+        D_704_Refueling_Pod = (3, Weapons.D_704_Refueling_Pod)
+#ERRR {3*LAU-61}
+        LAU_68_3___7_2_75__rockets_MK5__HE_ = (3, Weapons.LAU_68_3___7_2_75__rockets_MK5__HE_)
+        LAU_10___4_ZUNI_MK_71 = (3, Weapons.LAU_10___4_ZUNI_MK_71)
+        LAU_10_2___4_ZUNI_MK_71 = (3, Weapons.LAU_10_2___4_ZUNI_MK_71)
+        LAU_10_3___4_ZUNI_MK_71 = (3, Weapons.LAU_10_3___4_ZUNI_MK_71)
+        LAU_3___19_FFAR_M156_WP = (3, Weapons.LAU_3___19_FFAR_M156_WP)
+        LAU_3___19_FFAR_Mk1_HE = (3, Weapons.LAU_3___19_FFAR_Mk1_HE)
+        LAU_3___19_FFAR_Mk5_HEAT = (3, Weapons.LAU_3___19_FFAR_Mk5_HEAT)
+        LAU_3_2___19_FFAR_M156_WP = (3, Weapons.LAU_3_2___19_FFAR_M156_WP)
+        LAU_3_2___19_FFAR_Mk1_HE = (3, Weapons.LAU_3_2___19_FFAR_Mk1_HE)
+        LAU_3_2___19_FFAR_Mk5_HEAT = (3, Weapons.LAU_3_2___19_FFAR_Mk5_HEAT)
+        LAU_3_3___19_FFAR_M156_WP = (3, Weapons.LAU_3_3___19_FFAR_M156_WP)
+        LAU_3_3___19_FFAR_Mk1_HE = (3, Weapons.LAU_3_3___19_FFAR_Mk1_HE)
+        LAU_3_3___19_FFAR_Mk5_HEAT = (3, Weapons.LAU_3_3___19_FFAR_Mk5_HEAT)
+        LAU_68___7_FFAR_M156_WP = (3, Weapons.LAU_68___7_FFAR_M156_WP)
+        LAU_68___7_FFAR_Mk1_HE = (3, Weapons.LAU_68___7_FFAR_Mk1_HE)
+        LAU_68___7_FFAR_Mk5_HEAT = (3, Weapons.LAU_68___7_FFAR_Mk5_HEAT)
+        LAU_68_2___7_FFAR_M156_WP = (3, Weapons.LAU_68_2___7_FFAR_M156_WP)
+        LAU_68_2___7_FFAR_Mk1_HE = (3, Weapons.LAU_68_2___7_FFAR_Mk1_HE)
+        LAU_68_2___7_FFAR_Mk5_HEAT = (3, Weapons.LAU_68_2___7_FFAR_Mk5_HEAT)
+        LAU_68_3___7_FFAR_M156_WP = (3, Weapons.LAU_68_3___7_FFAR_M156_WP)
+        LAU_68_3___7_FFAR_Mk1_HE = (3, Weapons.LAU_68_3___7_FFAR_Mk1_HE)
+        LAU_68_3___7_FFAR_Mk5_HEAT = (3, Weapons.LAU_68_3___7_FFAR_Mk5_HEAT)
+#ERRR {AGM12_B}
+        AGM_62 = (3, Weapons.AGM_62)
+        Mk_20 = (3, Weapons.Mk_20)
+        Mk_81 = (3, Weapons.Mk_81)
+        Mk_81SE = (3, Weapons.Mk_81SE)
+        Mk_82 = (3, Weapons.Mk_82)
+        Mk_82_SnakeEye = (3, Weapons.Mk_82_SnakeEye)
+        Mk_83 = (3, Weapons.Mk_83)
+        Mk_84 = (3, Weapons.Mk_84)
+        M117 = (3, Weapons.M117)
+        Mk_77_mod_0 = (3, Weapons.Mk_77_mod_0)
+        Mk_77_mod_1 = (3, Weapons.Mk_77_mod_1)
+        AN_M30A1 = (3, Weapons.AN_M30A1)
+        AN_M57A1 = (3, Weapons.AN_M57A1)
+        AN_M64 = (3, Weapons.AN_M64)
+        AN_M65A1 = (3, Weapons.AN_M65A1)
+        AN_M66A2 = (3, Weapons.AN_M66A2)
+        AN_M81 = (3, Weapons.AN_M81)
+        AN_M88 = (3, Weapons.AN_M88)
+        Mk_20__3__TER_ = (3, Weapons.Mk_20__3__TER_)
+        Mk_20__2__TER___ = (3, Weapons.Mk_20__2__TER___)
+        Mk_81__6__MER_ = (3, Weapons.Mk_81__6__MER_)
+        Mk_81SE__6__MER_ = (3, Weapons.Mk_81SE__6__MER_)
+        Mk_82__6__MER_ = (3, Weapons.Mk_82__6__MER_)
+        Mk_82__4__MER_ = (3, Weapons.Mk_82__4__MER_)
+        Mk_82__3__TER_ = (3, Weapons.Mk_82__3__TER_)
+        Mk_82_Snakeye__6__MER_ = (3, Weapons.Mk_82_Snakeye__6__MER_)
+        Mk_82_Snakeye__4__MER_ = (3, Weapons.Mk_82_Snakeye__4__MER_)
+        Mk_82_Snakeye__3__TER_ = (3, Weapons.Mk_82_Snakeye__3__TER_)
+        Mk_83__3__TER_ = (3, Weapons.Mk_83__3__TER_)
+        Mk_83__2__TER_ = (3, Weapons.Mk_83__2__TER_)
+        Mk_77_mod_1__2__TER___ = (3, Weapons.Mk_77_mod_1__2__TER___)
+        AN_M57A1__6__MER_ = (3, Weapons.AN_M57A1__6__MER_)
+#ERRR {AN-M57A1_MER_4_C}
+        AN_M81__6__MER_ = (3, Weapons.AN_M81__6__MER_)
+        AN_M88__6__MER_ = (3, Weapons.AN_M88__6__MER_)
+        Mk4_HIPEG = (3, Weapons.Mk4_HIPEG)
+        Smokewinder___red = (3, Weapons.Smokewinder___red)
+        Smokewinder___green = (3, Weapons.Smokewinder___green)
+        Smokewinder___blue = (3, Weapons.Smokewinder___blue)
+        Smokewinder___white = (3, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (3, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (3, Weapons.Smokewinder___orange)
+#ERRR <CLEAN>
+
+    class Pylon4:
+        Fuel_Tank_300_gallons_ = (4, Weapons.Fuel_Tank_300_gallons_)
+        Fuel_Tank_150_gallons = (4, Weapons.Fuel_Tank_150_gallons)
+        LAU_7_GAR_8_Sidewinder_IR_AAM = (4, Weapons.LAU_7_GAR_8_Sidewinder_IR_AAM)
+        LAU_7_AIM_9P_Sidewinder_IR_AAM = (4, Weapons.LAU_7_AIM_9P_Sidewinder_IR_AAM)
+        LAU_7_AIM_9P5_Sidewinder_IR_AAM = (4, Weapons.LAU_7_AIM_9P5_Sidewinder_IR_AAM)
+        LAU_10___4_ZUNI_MK_71 = (4, Weapons.LAU_10___4_ZUNI_MK_71)
+        LAU_10_2___4_ZUNI_MK_71__ = (4, Weapons.LAU_10_2___4_ZUNI_MK_71__)
+        LAU_3___19_FFAR_M156_WP = (4, Weapons.LAU_3___19_FFAR_M156_WP)
+        LAU_3___19_FFAR_Mk1_HE = (4, Weapons.LAU_3___19_FFAR_Mk1_HE)
+        LAU_3___19_FFAR_Mk5_HEAT = (4, Weapons.LAU_3___19_FFAR_Mk5_HEAT)
+        LAU_3_2___19_FFAR_M156_WP__ = (4, Weapons.LAU_3_2___19_FFAR_M156_WP__)
+        LAU_3_2___19_FFAR_Mk1_HE__ = (4, Weapons.LAU_3_2___19_FFAR_Mk1_HE__)
+        LAU_3_2___19_FFAR_Mk5_HEAT__ = (4, Weapons.LAU_3_2___19_FFAR_Mk5_HEAT__)
+        LAU_68___7_FFAR_M156_WP = (4, Weapons.LAU_68___7_FFAR_M156_WP)
+        LAU_68___7_FFAR_Mk1_HE = (4, Weapons.LAU_68___7_FFAR_Mk1_HE)
+        LAU_68___7_FFAR_Mk5_HEAT = (4, Weapons.LAU_68___7_FFAR_Mk5_HEAT)
+        LAU_68_2___7_FFAR_M156_WP__ = (4, Weapons.LAU_68_2___7_FFAR_M156_WP__)
+        LAU_68_2___7_FFAR_Mk1_HE__ = (4, Weapons.LAU_68_2___7_FFAR_Mk1_HE__)
+        LAU_68_2___7_FFAR_Mk5_HEAT__ = (4, Weapons.LAU_68_2___7_FFAR_Mk5_HEAT__)
+        AGM_45A = (4, Weapons.AGM_45A)
+#ERRR {AGM12_C}
+#ERRR {AGM12_B}
+        AGM_62 = (4, Weapons.AGM_62)
+        Mk_20 = (4, Weapons.Mk_20)
+        Mk_81 = (4, Weapons.Mk_81)
+        Mk_81SE = (4, Weapons.Mk_81SE)
+        Mk_82 = (4, Weapons.Mk_82)
+        Mk_82_SnakeEye = (4, Weapons.Mk_82_SnakeEye)
+        Mk_83 = (4, Weapons.Mk_83)
+        Mk_84 = (4, Weapons.Mk_84)
+        M117 = (4, Weapons.M117)
+        Mk_77_mod_0 = (4, Weapons.Mk_77_mod_0)
+        Mk_77_mod_1 = (4, Weapons.Mk_77_mod_1)
+        AN_M30A1 = (4, Weapons.AN_M30A1)
+        AN_M57A1 = (4, Weapons.AN_M57A1)
+        AN_M64 = (4, Weapons.AN_M64)
+        AN_M65A1 = (4, Weapons.AN_M65A1)
+        AN_M81 = (4, Weapons.AN_M81)
+        AN_M88 = (4, Weapons.AN_M88)
+        CBU_1_A = (4, Weapons.CBU_1_A)
+        CBU_2_A = (4, Weapons.CBU_2_A)
+        CBU_2B_A = (4, Weapons.CBU_2B_A)
+        CBU_1_A__2_ = (4, Weapons.CBU_1_A__2_)
+        CBU_2_A__2_ = (4, Weapons.CBU_2_A__2_)
+        CBU_2B_A__2_ = (4, Weapons.CBU_2B_A__2_)
+        Mk_20__2__TER__ = (4, Weapons.Mk_20__2__TER__)
+        Mk_81__5__MER__ = (4, Weapons.Mk_81__5__MER__)
+        Mk_81SE__5__MER__ = (4, Weapons.Mk_81SE__5__MER__)
+        Mk_82__2__TER__ = (4, Weapons.Mk_82__2__TER__)
+        Mk_82_Snakeye__2__TER__ = (4, Weapons.Mk_82_Snakeye__2__TER__)
+        AN_M57A1__5__MER__ = (4, Weapons.AN_M57A1__5__MER__)
+        AN_M81__5__MER__ = (4, Weapons.AN_M81__5__MER__)
+        AN_M88__5__MER__ = (4, Weapons.AN_M88__5__MER__)
+        Mk4_HIPEG = (4, Weapons.Mk4_HIPEG)
+        Smokewinder___red = (4, Weapons.Smokewinder___red)
+        Smokewinder___green = (4, Weapons.Smokewinder___green)
+        Smokewinder___blue = (4, Weapons.Smokewinder___blue)
+        Smokewinder___white = (4, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (4, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (4, Weapons.Smokewinder___orange)
+#ERRR <CLEAN>
+
+    class Pylon5:
+        LAU_10___4_ZUNI_MK_71 = (5, Weapons.LAU_10___4_ZUNI_MK_71)
+        LAU_3___19_FFAR_M156_WP = (5, Weapons.LAU_3___19_FFAR_M156_WP)
+        LAU_3___19_FFAR_Mk1_HE = (5, Weapons.LAU_3___19_FFAR_Mk1_HE)
+        LAU_3___19_FFAR_Mk5_HEAT = (5, Weapons.LAU_3___19_FFAR_Mk5_HEAT)
+        LAU_68___7_FFAR_M156_WP = (5, Weapons.LAU_68___7_FFAR_M156_WP)
+        LAU_68___7_FFAR_Mk1_HE = (5, Weapons.LAU_68___7_FFAR_Mk1_HE)
+        LAU_68___7_FFAR_Mk5_HEAT = (5, Weapons.LAU_68___7_FFAR_Mk5_HEAT)
+        AGM_45A = (5, Weapons.AGM_45A)
+#ERRR {AGM12_B}
+        Mk_20 = (5, Weapons.Mk_20)
+        Mk_81 = (5, Weapons.Mk_81)
+        Mk_81SE = (5, Weapons.Mk_81SE)
+        Mk_82 = (5, Weapons.Mk_82)
+        Mk_82_SnakeEye = (5, Weapons.Mk_82_SnakeEye)
+        Mk_77_mod_1 = (5, Weapons.Mk_77_mod_1)
+        AN_M30A1 = (5, Weapons.AN_M30A1)
+        AN_M57A1 = (5, Weapons.AN_M57A1)
+        AN_M64 = (5, Weapons.AN_M64)
+        AN_M81 = (5, Weapons.AN_M81)
+        AN_M88 = (5, Weapons.AN_M88)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (5, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        Smokewinder___red = (5, Weapons.Smokewinder___red)
+        Smokewinder___green = (5, Weapons.Smokewinder___green)
+        Smokewinder___blue = (5, Weapons.Smokewinder___blue)
+        Smokewinder___white = (5, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (5, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (5, Weapons.Smokewinder___orange)
+#ERRR <CLEAN>
+
+    pylons = {1, 2, 3, 4, 5}
+
+    tasks = [task.CAP, task.CAS, task.SEAD, task.GroundAttack, task.AFAC, task.Refueling]
+    task_default = task.CAS
+
+
+class MB_339PAN(PlaneType):
+    id = "MB-339PAN"
+    flyable = True
+    height = 4.77
+    width = 10.5
+    length = 12.13
+    fuel_max = 626
+    max_speed = 763.2
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 124
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 225,
+                2: 258,
+                4: 270,
+                8: 257,
+                16: 252,
+                17: 268,
+                9: 253,
+                18: 269,
+                5: 255,
+                10: 263,
+                20: 269,
+                11: 267,
+                3: 260,
+                6: 259,
+                12: 254,
+                13: 264,
+                7: 262,
+                14: 266,
+                19: 268,
+                15: 265
+            },
+        },
+        2: {
+            "channels": {
+                1: 225,
+                2: 258,
+                4: 270,
+                8: 257,
+                16: 252,
+                17: 268,
+                9: 253,
+                18: 269,
+                5: 255,
+                10: 263,
+                20: 269,
+                30: 263,
+                21: 225,
+                11: 267,
+                22: 258,
+                3: 260,
+                6: 259,
+                12: 254,
+                24: 270,
+                19: 268,
+                25: 255,
+                13: 264,
+                26: 259,
+                27: 262,
+                7: 262,
+                14: 266,
+                28: 257,
+                23: 260,
+                29: 253,
+                15: 265
+            },
+        },
+    }
+
+    property_defaults = {
+        "SoloFlight": False,
+        "NetCrewControlPriority": 1,
+    }
+
+    class Properties:
+
+        class SoloFlight:
+            id = "SoloFlight"
+
+        class NetCrewControlPriority:
+            id = "NetCrewControlPriority"
+
+            class Values:
+                Pilot = 0
+                Instructor = 1
+                Ask_Always = -1
+                Equally_Responsible = -2
+
+    class Liveries:
+
+        class Georgia(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Syria(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Finland(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Australia(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Germany(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class SaudiArabia(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Israel(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Croatia(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class CzechRepublic(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Norway(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Romania(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Spain(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Ukraine(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Belgium(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Slovakia(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Greece(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class UK(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Insurgents(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Hungary(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class France(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Abkhazia(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Russia(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Sweden(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Austria(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Switzerland(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Italy(Enum):
+            MB339PAN__Frecce_Tricolori = "MB339PAN 'Frecce Tricolori'"
+            MB339A__SVBIA____FACTORY = "MB339A 'SVBIA' - FACTORY"
+            MB339A__61BRIGATA____CAMO = "MB339A '61BRIGATA' - CAMO"
+            MB339A__61STORMO____CAMO = "MB339A '61STORMO' - CAMO"
+            MB339A__61STORMO____GREY = "MB339A '61STORMO' - GREY"
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class SouthOssetia(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class SouthKorea(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Iran(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class China(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Pakistan(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Belarus(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class NorthKorea(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Iraq(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Kazakhstan(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Bulgaria(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Serbia(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class India(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class USAFAggressors(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class USA(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Denmark(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Egypt(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Canada(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class TheNetherlands(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Turkey(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Japan(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+        class Poland(Enum):
+            MB339__Factory = "MB339 'Factory'"
+            MB339AA__ARMADA____Crippa = "MB339AA 'ARMADA' - Crippa"
+            MB339AA__ARMADA____Yellow_Band = "MB339AA 'ARMADA' - Yellow Band"
+
+    class Pylon1:
+        Tip_Fuel_Tank_500lt = (1, Weapons.Tip_Fuel_Tank_500lt)
+        Tip_Fuel_Tank_Ellittici_320lt = (1, Weapons.Tip_Fuel_Tank_Ellittici_320lt)
+
+    class Pylon2:
+        Empty_Pylon = (2, Weapons.Empty_Pylon)
+        LR_25___25_ARF_8M3_HEI_ = (2, Weapons.LR_25___25_ARF_8M3_HEI_)
+        LR_25___25_ARF_8M3_API_ = (2, Weapons.LR_25___25_ARF_8M3_API_)
+        Mk_82 = (2, Weapons.Mk_82)
+        Matra_Type_155_Rocket_Pod = (2, Weapons.Matra_Type_155_Rocket_Pod)
+
+    class Pylon3:
+        Fuel_Tank_330lt = (3, Weapons.Fuel_Tank_330lt)
+        Empty_Pylon = (3, Weapons.Empty_Pylon)
+        LR_25___25_ARF_8M3_HEI_ = (3, Weapons.LR_25___25_ARF_8M3_HEI_)
+        LR_25___25_ARF_8M3_API_ = (3, Weapons.LR_25___25_ARF_8M3_API_)
+        Mk_82 = (3, Weapons.Mk_82)
+        LAU_10___4_ZUNI_MK_71___ = (3, Weapons.LAU_10___4_ZUNI_MK_71___)
+#ERRR {BRD-4-250}
+        Matra_Type_155_Rocket_Pod = (3, Weapons.Matra_Type_155_Rocket_Pod)
+
+    class Pylon4:
+        Color_Oil_Tank = (4, Weapons.Color_Oil_Tank)
+        Empty_Pylon = (4, Weapons.Empty_Pylon)
+        GunPod_AN_M3 = (4, Weapons.GunPod_AN_M3)
+        GunPod_DEFA553 = (4, Weapons.GunPod_DEFA553)
+        LR_25___25_ARF_8M3_HEI_ = (4, Weapons.LR_25___25_ARF_8M3_HEI_)
+        LR_25___25_ARF_8M3_API_ = (4, Weapons.LR_25___25_ARF_8M3_API_)
+        Mk_82 = (4, Weapons.Mk_82)
+        Matra_Type_155_Rocket_Pod = (4, Weapons.Matra_Type_155_Rocket_Pod)
+
+    class Pylon5:
+        MB339_Red_Smoke = (5, Weapons.MB339_Red_Smoke)
+        MB339_Green_Smoke = (5, Weapons.MB339_Green_Smoke)
+        MB339_YELLOW_Smoke = (5, Weapons.MB339_YELLOW_Smoke)
+        MB339_ORANGE_Smoke = (5, Weapons.MB339_ORANGE_Smoke)
+        MB339_Black_Smoke = (5, Weapons.MB339_Black_Smoke)
+
+    class Pylon6:
+        MB339_White_Smoke = (6, Weapons.MB339_White_Smoke)
+
+    class Pylon7:
+        Color_Oil_Tank = (7, Weapons.Color_Oil_Tank)
+        Empty_Pylon = (7, Weapons.Empty_Pylon)
+        GunPod_AN_M3_ = (7, Weapons.GunPod_AN_M3_)
+        GunPod_DEFA553_ = (7, Weapons.GunPod_DEFA553_)
+        LR_25___25_ARF_8M3_HEI_ = (7, Weapons.LR_25___25_ARF_8M3_HEI_)
+        LR_25___25_ARF_8M3_API_ = (7, Weapons.LR_25___25_ARF_8M3_API_)
+        Mk_82 = (7, Weapons.Mk_82)
+        Matra_Type_155_Rocket_Pod = (7, Weapons.Matra_Type_155_Rocket_Pod)
+
+    class Pylon8:
+        Fuel_Tank_330lt = (8, Weapons.Fuel_Tank_330lt)
+        Empty_Pylon = (8, Weapons.Empty_Pylon)
+        LR_25___25_ARF_8M3_HEI_ = (8, Weapons.LR_25___25_ARF_8M3_HEI_)
+        LR_25___25_ARF_8M3_API_ = (8, Weapons.LR_25___25_ARF_8M3_API_)
+        Mk_82 = (8, Weapons.Mk_82)
+        LAU_10___4_ZUNI_MK_71___ = (8, Weapons.LAU_10___4_ZUNI_MK_71___)
+        Matra_Type_155_Rocket_Pod = (8, Weapons.Matra_Type_155_Rocket_Pod)
+#ERRR {BRD-4-250}
+
+    class Pylon9:
+        Empty_Pylon = (9, Weapons.Empty_Pylon)
+        LR_25___25_ARF_8M3_HEI_ = (9, Weapons.LR_25___25_ARF_8M3_HEI_)
+        LR_25___25_ARF_8M3_API_ = (9, Weapons.LR_25___25_ARF_8M3_API_)
+        Mk_82 = (9, Weapons.Mk_82)
+        Matra_Type_155_Rocket_Pod = (9, Weapons.Matra_Type_155_Rocket_Pod)
+
+    class Pylon10:
+        Tip_Fuel_Tank_500lt_ = (10, Weapons.Tip_Fuel_Tank_500lt_)
+        Tip_Fuel_Tank_Ellittici_320lt_ = (10, Weapons.Tip_Fuel_Tank_Ellittici_320lt_)
+
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+    tasks = [task.GroundAttack, task.RunwayAttack, task.CAS, task.AntishipStrike, task.Reconnaissance]
+    task_default = task.Nothing
+
+
 plane_map = {
     "Tornado GR4": Tornado_GR4,
     "Tornado IDS": Tornado_IDS,
@@ -20345,6 +21652,7 @@ plane_map = {
     "J-11A": J_11A,
     "KJ-2000": KJ_2000,
     "Christen Eagle II": Christen_Eagle_II,
+    "F-16C_50": F_16C_50,
     "F-5E": F_5E,
     "F-5E-3": F_5E_3,
     "F-86F Sabre": F_86F_Sabre,
@@ -20363,4 +21671,6 @@ plane_map = {
     "Yak-52": Yak_52,
     "B-17G": B_17G,
     "TF-51D": TF_51D,
+    "A-4E-C": A_4E_C,
+    "MB-339PAN": MB_339PAN,
 }

@@ -106,6 +106,21 @@ class Artillery:
         threat_range = 18300
         air_weapon_dist = 0
 
+    class MO_120_RT(unittype.VehicleType):
+        id = "M120"
+        name = "MO 120 RT"
+        detection_range = 0
+        threat_range = 15000
+        air_weapon_dist = 15000
+
+    class VAB_MORTIER(unittype.VehicleType):
+        id = "VAB_MORTIER"
+        name = "VAB MORTIER"
+        detection_range = 0
+        threat_range = 15000
+        air_weapon_dist = 15000
+        eprls = True
+
 
 class Infantry:
 
@@ -630,6 +645,20 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
 
+    class HQ_7_Self_Propelled_LN(unittype.VehicleType):
+        id = "HQ-7_LN_SP"
+        name = "HQ-7 Self-Propelled LN"
+        detection_range = 20000
+        threat_range = 12000
+        air_weapon_dist = 12000
+
+    class HQ_7_Self_Propelled_STR(unittype.VehicleType):
+        id = "HQ-7_STR_SP"
+        name = "HQ-7 Self-Propelled STR"
+        detection_range = 30000
+        threat_range = 0
+        air_weapon_dist = 0
+
     class AAA_Flak_18(unittype.VehicleType):
         id = "flak18"
         name = "AAA Flak 18"
@@ -637,9 +666,9 @@ class AirDefence:
         threat_range = 15000
         air_weapon_dist = 15000
 
-    class AAA_Flak_30(unittype.VehicleType):
+    class AAA_Flak_38(unittype.VehicleType):
         id = "flak30"
-        name = "AAA Flak 30"
+        name = "AAA Flak 38"
         detection_range = 0
         threat_range = 2500
         air_weapon_dist = 2500
@@ -678,6 +707,21 @@ class AirDefence:
         detection_range = 0
         threat_range = 7160
         air_weapon_dist = 7160
+
+    class _53T2(unittype.VehicleType):
+        id = "AA20"
+        name = "53T2"
+        detection_range = 5000
+        threat_range = 2000
+        air_weapon_dist = 2000
+
+    class TRM_2000_53T2(unittype.VehicleType):
+        id = "TRM2000_AA20"
+        name = "TRM-2000 53T2"
+        detection_range = 6000
+        threat_range = 2000
+        air_weapon_dist = 2000
+        eprls = True
 
 
 class Fortification:
@@ -1050,6 +1094,45 @@ class Unarmed:
         threat_range = 0
         air_weapon_dist = 0
 
+    class VBL(unittype.VehicleType):
+        id = "VBL-Radio"
+        name = "VBL"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+        eprls = True
+
+    class VAB(unittype.VehicleType):
+        id = "VAB_RADIO"
+        name = "VAB"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+        eprls = True
+
+    class TRM_2000(unittype.VehicleType):
+        id = "TRM2000"
+        name = "TRM-2000"
+        detection_range = 3500
+        threat_range = 0
+        air_weapon_dist = 0
+        eprls = True
+
+    class TRM_2000_Fuel(unittype.VehicleType):
+        id = "TRM2000_Citerne"
+        name = "TRM-2000 Fuel"
+        detection_range = 3500
+        threat_range = 0
+        air_weapon_dist = 0
+        eprls = True
+
+    class Tracma_TD_1500(unittype.VehicleType):
+        id = "Tracma"
+        name = "Tracma TD 1500"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
 
 class Armor:
 
@@ -1296,8 +1379,8 @@ class Armor:
         id = "ZBD04A"
         name = "ZBD-04A"
         detection_range = 0
-        threat_range = None
-        air_weapon_dist = 1000
+        threat_range = 4800
+        air_weapon_dist = 0
         eprls = True
 
     class HT_Pz_Kpfw_VI_Tiger_I(unittype.VehicleType):
@@ -1397,6 +1480,75 @@ class Armor:
         detection_range = 0
         threat_range = 1200
         air_weapon_dist = 0
+
+    class VBL__50(unittype.VehicleType):
+        id = "VBL50"
+        name = "VBL .50"
+        detection_range = 0
+        threat_range = 1200
+        air_weapon_dist = 1200
+        eprls = True
+
+    class VBL_ANF1(unittype.VehicleType):
+        id = "VBLANF1"
+        name = "VBL ANF1"
+        detection_range = 0
+        threat_range = 1000
+        air_weapon_dist = 1000
+        eprls = True
+
+    class VAB__50(unittype.VehicleType):
+        id = "VAB_50"
+        name = "VAB .50"
+        detection_range = 0
+        threat_range = 1200
+        air_weapon_dist = 1200
+        eprls = True
+
+    class VAB_T20_13(unittype.VehicleType):
+        id = "VIB_VBR"
+        name = "VAB T20/13"
+        detection_range = 0
+        threat_range = 2000
+        air_weapon_dist = 2000
+        eprls = True
+
+    class VAB_MEPHISTO(unittype.VehicleType):
+        id = "VAB_HOT"
+        name = "VAB MEPHISTO"
+        detection_range = 0
+        threat_range = 4000
+        air_weapon_dist = 4000
+        eprls = True
+
+    class ERC_90(unittype.VehicleType):
+        id = "ERC"
+        name = "ERC-90"
+        detection_range = 0
+        threat_range = 4000
+        air_weapon_dist = 4000
+        eprls = True
+
+    class AMX_10RCR(unittype.VehicleType):
+        id = "AMX10RCR"
+        name = "AMX-10RCR"
+        detection_range = 0
+        threat_range = 4000
+        air_weapon_dist = 4000
+
+    class AMX_10RCR_SEPAR(unittype.VehicleType):
+        id = "SEPAR"
+        name = "AMX-10RCR SEPAR"
+        detection_range = 0
+        threat_range = 4000
+        air_weapon_dist = 4000
+
+    class AMX_30B2(unittype.VehicleType):
+        id = "AMX-30B2"
+        name = "AMX-30B2"
+        detection_range = 0
+        threat_range = 3500
+        air_weapon_dist = 2500
 
 
 class MissilesSS:
@@ -1705,6 +1857,8 @@ vehicle_map = {
     "Tankcartrinity": Carriage.Tankcartrinity,
     "Wellcarnsc": Carriage.Wellcarnsc,
     "ZBD04A": Armor.ZBD_04A,
+    "HQ-7_LN_SP": AirDefence.HQ_7_Self_Propelled_LN,
+    "HQ-7_STR_SP": AirDefence.HQ_7_Self_Propelled_STR,
     "warning_board_a": Unarmed.Warning_Board_A,
     "Kubelwagen_82": Unarmed.Kübelwagen_82,
     "Blitz_36-6700A": Unarmed.Blitz_3_6_6700A,
@@ -1722,7 +1876,7 @@ vehicle_map = {
     "Sd_Kfz_234_2_Puma": Armor.IFV_Sd_Kfz_234_2_Puma,
     "Sd_Kfz_251": Armor.APC_Sd_Kfz_251,
     "flak18": AirDefence.AAA_Flak_18,
-    "flak30": AirDefence.AAA_Flak_30,
+    "flak30": AirDefence.AAA_Flak_38,
     "flak36": AirDefence.AAA_Flak_36,
     "flak37": AirDefence.AAA_Flak_37,
     "flak38": AirDefence.AAA_Flak_Vierling_38,
@@ -1746,4 +1900,22 @@ vehicle_map = {
     "DRG_Class_86": Locomotive.DRG_Class_86,
     "German_covered_wagon_G10": Carriage.German_covered_wagon_G10,
     "German_tank_wagon": Carriage.German_tank_wagon,
+    "VBL50": Armor.VBL__50,
+    "VBLANF1": Armor.VBL_ANF1,
+    "VBL-Radio": Unarmed.VBL,
+    "VAB_RADIO": Unarmed.VAB,
+    "VAB_50": Armor.VAB__50,
+    "VIB_VBR": Armor.VAB_T20_13,
+    "VAB_HOT": Armor.VAB_MEPHISTO,
+    "ERC": Armor.ERC_90,
+    "AMX10RCR": Armor.AMX_10RCR,
+    "SEPAR": Armor.AMX_10RCR_SEPAR,
+    "M120": Artillery.MO_120_RT,
+    "AA20": AirDefence._53T2,
+    "TRM2000": Unarmed.TRM_2000,
+    "TRM2000_Citerne": Unarmed.TRM_2000_Fuel,
+    "TRM2000_AA20": AirDefence.TRM_2000_53T2,
+    "VAB_MORTIER": Artillery.VAB_MORTIER,
+    "AMX-30B2": Armor.AMX_30B2,
+    "Tracma": Unarmed.Tracma_TD_1500,
 }
