@@ -6,7 +6,7 @@ from dcs import unittype
 import random
 import pickle
 import sys
-from datetime import datetime, timezone
+from datetime import datetime
 
 
 class ParkingSlot:
@@ -30,7 +30,7 @@ class ParkingSlot:
         self.airplanes = airplanes
         self.large = large
         self.shelter = shelter
-        self.unit_id = None  # type: int
+        self.unit_id = None  # type: Optional[int]
         self.slot_name = slot_name
 
     def __repr__(self):
@@ -147,7 +147,7 @@ class Airport:
         self.runway_used = group
         return self.runway_used
 
-    def parking_slot(self, index: int) -> ParkingSlot:
+    def parking_slot(self, index: int) -> Optional[ParkingSlot]:
         """Searches the parking slot with the given crossroad index.
 
         Args:
@@ -320,7 +320,7 @@ class Graph:
     def add_node(self, node: Node):
         self.nodes.add(node)
 
-    def add_edge(self, from_node: Node, to_node: Node, distance: int, on_road: bool=True):
+    def add_edge(self, from_node: Node, to_node: Node, distance: int, on_road: bool = True):
         if to_node.name not in self.edges[from_node.name]:
             self.edges[from_node.name].append(to_node.name)
         if from_node.name not in self.edges[to_node.name]:
@@ -435,9 +435,9 @@ class Terrain:
         self.bullseye_red = {"x": 0, "y": 0}
         self.airports = {}  # type: Dict[str,Airport]
 
-    def airport_by_id(self, id: int) -> Airport:
+    def airport_by_id(self, _id: int) -> Optional[Airport]:
         for x in self.airports:
-            if self.airports[x].id == id:
+            if self.airports[x].id == _id:
                 return self.airports[x]
         return None
 
@@ -445,8 +445,9 @@ class Terrain:
         for x in self.airports:
             yield self.airports[x]
 
-    def nearest_airport(self, position: mapping.Point, coalition: str=None) -> Airport:
-        airports = [x for x in self.airports.values() if x.coalition.lower() == coalition.lower()] if coalition else self.airports
+    def nearest_airport(self, position: mapping.Point, coalition: str = None) -> Optional[Airport]:
+        airports = [x for x in self.airports.values()
+                    if x.coalition.lower() == coalition.lower()] if coalition else self.airports
 
         dist = sys.float_info.max
         airport = None
@@ -458,7 +459,7 @@ class Terrain:
 
         return airport
 
-    def airport_within(self, position: mapping.Point, distance):
+    def airport_within(self, position: mapping.Point, distance) -> List[Airport]:
         """Return all airports within the radius of a given point.
 
         Args:
@@ -468,9 +469,10 @@ class Terrain:
         Returns:
             Sequence of airports within range.
         """
-        return [x for x in self.airports if x.position.distance_to_point(position) < distance]
+        return [self.airports[x] for x in self.airports
+                if self.airports[x].position.distance_to_point(position) < distance]
 
-    def random_season_temperature(self, dt: datetime):
+    def random_season_temperature(self, dt: datetime) -> int:
         return random.randint(self.temperature[dt.month - 1][0], self.temperature[dt.month - 1][1])
 
 

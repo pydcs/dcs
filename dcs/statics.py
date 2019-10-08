@@ -414,54 +414,6 @@ class Fortification:
         shape_name = "Crowd1"
         rate = 100
 
-    class Coach_a_tank_yellow(unittype.StaticType):
-        id = "Coach a tank yellow"
-        name = "Coach a tank yellow"
-        shape_name = "wagon-cisterna_yellow"
-        rate = 100
-
-    class Coach_a_tank_blue(unittype.StaticType):
-        id = "Coach a tank blue"
-        name = "Coach a tank blue"
-        shape_name = "wagon-cisterna_blue"
-        rate = 100
-
-    class Coach_for_cargo(unittype.StaticType):
-        id = "Coach cargo"
-        name = "Coach for cargo"
-        shape_name = "wagon-gruz"
-        rate = 100
-
-    class Coach_for_open_cargo(unittype.StaticType):
-        id = "Coach cargo open"
-        name = "Coach for open cargo"
-        shape_name = "wagon-gruz-otkr"
-        rate = 100
-
-    class Coach_flatbed(unittype.StaticType):
-        id = "Coach a platform"
-        name = "Coach flatbed"
-        shape_name = "wagon-platforma"
-        rate = 100
-
-    class Coach_for_passengers(unittype.StaticType):
-        id = "Coach a passenger"
-        name = "Coach for passengers"
-        shape_name = "wagon-pass"
-        rate = 100
-
-    class Electric_locomotive(unittype.StaticType):
-        id = "Electric locomotive"
-        name = "Electric locomotive"
-        shape_name = "elektrowoz"
-        rate = 100
-
-    class Locomotive(unittype.StaticType):
-        id = "Locomotive"
-        name = "Locomotive"
-        shape_name = "teplowoz"
-        rate = 100
-
     class Mark_Flag_Red(unittype.StaticType):
         id = "Red_Flag"
         name = "Mark Flag Red"
@@ -711,14 +663,6 @@ fortification_map = {
     "GeneratorF": Fortification.GeneratorF,
     "Airshow_Cone": Fortification.Airshow_cone,
     "Airshow_Crowd": Fortification.Airshow_Crowd,
-    "Coach a tank yellow": Fortification.Coach_a_tank_yellow,
-    "Coach a tank blue": Fortification.Coach_a_tank_blue,
-    "Coach cargo": Fortification.Coach_for_cargo,
-    "Coach cargo open": Fortification.Coach_for_open_cargo,
-    "Coach a platform": Fortification.Coach_flatbed,
-    "Coach a passenger": Fortification.Coach_for_passengers,
-    "Electric locomotive": Fortification.Electric_locomotive,
-    "Locomotive": Fortification.Locomotive,
     "Red_Flag": Fortification.Mark_Flag_Red,
     "White_Flag": Fortification.Mark_Flag_White,
     "Black_Tyre": Fortification.Mark_Tyre_Black,

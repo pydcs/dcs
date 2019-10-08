@@ -29,6 +29,16 @@ local function safe_name(name)
     return safeName
 end
 
+local function has_value (tab, val)
+    for index, value in ipairs(tab) do
+        if value == val then
+            return true
+        end
+    end
+
+    return false
+end
+
 -------------------------------------------------------------------------------
 -- country to shortname mapping
 -------------------------------------------------------------------------------
@@ -739,6 +749,9 @@ writeln(file, 'from . import vehicles')
 writeln(file, 'from . import planes')
 writeln(file, 'from . import helicopters')
 writeln(file, 'from . import ships')
+local countryPlaneIgnore = { "Su_30MK", "F_86F", "F_16C_50", "F_5E_MAC", "F_86F_MAC", "TF_51", "MiG_15bis_MAC",
+                             "L_39_MAC" }
+local countryHeliIgnore = { "Mi_24P" }
 local i = 0
 while i <= country.maxIndex do
     local c = country.by_idx[i]
@@ -801,7 +814,7 @@ while i <= country.maxIndex do
             writeln(file, '    class Plane:')
             for u in pairs(planes) do
                 local safeName = safe_name(planes[u].Name)
-                if safeName ~= "Su_30MK" and safeName ~= "F_86F" then
+                if not has_value(countryPlaneIgnore, safeName) then
                     writeln(file, '        '..safeName..' = planes.'..safeName)
                 end
             end
@@ -810,7 +823,7 @@ while i <= country.maxIndex do
             writeln(file, '    planes = [')
             for u in pairs(planes) do
                 local safeName = safe_name(planes[u].Name)
-                if safeName ~= "Su_30MK" and safeName ~= "F_86F" then
+                if not has_value(countryPlaneIgnore, safeName) then
                     writeln(file, '        Plane.'..safeName..',')
                 end
             end
@@ -823,14 +836,18 @@ while i <= country.maxIndex do
             writeln(file, '    class Helicopter:')
             for u in pairs(helis) do
                 local safeName = safe_name(helis[u].Name)
-                writeln(file, '        '..safeName..' = helicopters.'..safeName)
+                if not has_value(countryHeliIgnore, safeName) then
+                    writeln(file, '        '..safeName..' = helicopters.'..safeName)
+                end
             end
 
             writeln(file, '')
             writeln(file, '    helicopters = [')
             for u in pairs(helis) do
                 local safeName = safe_name(helis[u].Name)
-                writeln(file, '        Helicopter.'..safeName..',')
+                if not has_value(countryHeliIgnore, safeName) then
+                    writeln(file, '        Helicopter.'..safeName..',')
+                end
             end
             writeln(file, '    ]')
         end
@@ -841,8 +858,10 @@ while i <= country.maxIndex do
             writeln(file, '    class Ship:')
             for u in pairs(ships) do
                 local funit = getUnit(db.Units.Ships.Ship, ships[u].Name)
-                local safeName = safe_name(funit.DisplayName)
-                writeln(file, '        '..safeName..' = ships.'..safeName)
+                if funit ~= nil then
+                    local safeName = safe_name(funit.DisplayName)
+                    writeln(file, '        '..safeName..' = ships.'..safeName)
+                end
             end
         end
 

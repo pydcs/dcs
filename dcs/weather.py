@@ -176,7 +176,7 @@ class Weather:
         self.fog_visibility = 1000
         self.fog_thickness = 300
 
-    def dynamic_weather(self, system: BaricSystem, cyclones: int=1):
+    def dynamic_weather(self, system: BaricSystem, cyclones: int = 1):
         self.cyclones.clear()
 
         center = self.terrain.bounds.center()  # type: mapping.Point

@@ -44,10 +44,10 @@ class Tornado_GR4(PlaneType):
     class Pylon3:
         ALARM = (3, Weapons.ALARM)
         AN_ASQ_T50_TCTS_Pod = (3, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (3, Weapons.AIM_9M)
-        AIM_9P = (3, Weapons.AIM_9P)
-        AIM_9P5 = (3, Weapons.AIM_9P5)
-        AIM_9L = (3, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon4:
         GBU_16 = (4, Weapons.GBU_16)
@@ -77,10 +77,10 @@ class Tornado_GR4(PlaneType):
     class Pylon10:
         ALARM = (10, Weapons.ALARM)
         AN_ASQ_T50_TCTS_Pod = (10, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (10, Weapons.AIM_9M)
-        AIM_9P = (10, Weapons.AIM_9P)
-        AIM_9P5 = (10, Weapons.AIM_9P5)
-        AIM_9L = (10, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (10, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (10, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon11:
         TORNADO_Fuel_tank = (11, Weapons.TORNADO_Fuel_tank)
@@ -135,10 +135,10 @@ class Tornado_IDS(PlaneType):
 
     class Pylon3:
         AN_ASQ_T50_TCTS_Pod = (3, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (3, Weapons.AIM_9M)
-        AIM_9P = (3, Weapons.AIM_9P)
-        AIM_9P5 = (3, Weapons.AIM_9P5)
-        AIM_9L = (3, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon4:
         GBU_16 = (4, Weapons.GBU_16)
@@ -164,10 +164,10 @@ class Tornado_IDS(PlaneType):
 
     class Pylon10:
         AN_ASQ_T50_TCTS_Pod = (10, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (10, Weapons.AIM_9M)
-        AIM_9P = (10, Weapons.AIM_9P)
-        AIM_9P5 = (10, Weapons.AIM_9P5)
-        AIM_9L = (10, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (10, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (10, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon11:
         AGM_88C_ = (11, Weapons.AGM_88C_)
@@ -222,10 +222,10 @@ class F_A_18A(PlaneType):
 
     class Pylon1:
         AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (1, Weapons.AIM_9M)
-        AIM_9P = (1, Weapons.AIM_9P)
-        AIM_9P5 = (1, Weapons.AIM_9P5)
-        AIM_9L = (1, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon2:
         AIM_7M = (2, Weapons.AIM_7M)
@@ -241,10 +241,10 @@ class F_A_18A(PlaneType):
         MER_2_MK_82 = (2, Weapons.MER_2_MK_82)
         Mk_84 = (2, Weapons.Mk_84)
         _2_Mk_20_Rockeye = (2, Weapons._2_Mk_20_Rockeye)
-        AIM_9M = (2, Weapons.AIM_9M)
-        AIM_9P = (2, Weapons.AIM_9P)
-        AIM_9P5 = (2, Weapons.AIM_9P5)
-        AIM_9L = (2, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (2, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (2, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (2, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (2, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon3:
         AIM_7M = (3, Weapons.AIM_7M)
@@ -285,17 +285,17 @@ class F_A_18A(PlaneType):
         MER_2_MK_82 = (8, Weapons.MER_2_MK_82)
         Mk_84 = (8, Weapons.Mk_84)
         _2_Mk_20_Rockeye = (8, Weapons._2_Mk_20_Rockeye)
-        AIM_9M = (8, Weapons.AIM_9M)
-        AIM_9P = (8, Weapons.AIM_9P)
-        AIM_9P5 = (8, Weapons.AIM_9P5)
-        AIM_9L = (8, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (8, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (8, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (8, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon9:
         AN_ASQ_T50_TCTS_Pod = (9, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (9, Weapons.AIM_9M)
-        AIM_9P = (9, Weapons.AIM_9P)
-        AIM_9P5 = (9, Weapons.AIM_9P5)
-        AIM_9L = (9, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9}
 
@@ -383,9 +383,9 @@ class F_A_18C(PlaneType):
             VFC_12 = "VFC-12"
 
     class Pylon1:
-        AIM_9L = (1, Weapons.AIM_9L)
-        AIM_9M = (1, Weapons.AIM_9M)
-        AIM_9P5 = (1, Weapons.AIM_9P5)
+        AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
+        AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_120B = (1, Weapons.AIM_120B)
         AIM_120C = (1, Weapons.AIM_120C)
         AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
@@ -555,9 +555,9 @@ class F_A_18C(PlaneType):
         LAU_115_2_LAU_127_AIM_9M = (8, Weapons.LAU_115_2_LAU_127_AIM_9M)
 
     class Pylon9:
-        AIM_9L = (9, Weapons.AIM_9L)
-        AIM_9M = (9, Weapons.AIM_9M)
-        AIM_9P5 = (9, Weapons.AIM_9P5)
+        AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
+        AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_120B = (9, Weapons.AIM_120B)
         AIM_120C = (9, Weapons.AIM_120C)
         AN_ASQ_T50_TCTS_Pod = (9, Weapons.AN_ASQ_T50_TCTS_Pod)
@@ -599,10 +599,10 @@ class F_14A(PlaneType):
 
     class Pylon1:
         AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (1, Weapons.AIM_9M)
-        AIM_9P = (1, Weapons.AIM_9P)
-        AIM_9P5 = (1, Weapons.AIM_9P5)
-        AIM_9L = (1, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon2:
         AIM_54C = (2, Weapons.AIM_54C)
@@ -638,10 +638,10 @@ class F_14A(PlaneType):
 
     class Pylon12:
         AN_ASQ_T50_TCTS_Pod = (12, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (12, Weapons.AIM_9M)
-        AIM_9P = (12, Weapons.AIM_9P)
-        AIM_9P5 = (12, Weapons.AIM_9P5)
-        AIM_9L = (12, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (12, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (12, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (12, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (12, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
 
@@ -737,9 +737,9 @@ class F_4E(PlaneType):
         AGM_45A = (1, Weapons.AGM_45A)
 
     class Pylon2:
-        LAU_7___2_AIM_9L = (2, Weapons.LAU_7___2_AIM_9L)
-        LAU_7___2_AIM_9M = (2, Weapons.LAU_7___2_AIM_9M)
-        LAU_7___2_AIM_9P = (2, Weapons.LAU_7___2_AIM_9P)
+        LAU_7___2_AIM_9L_Sidewinder_IR_AAM = (2, Weapons.LAU_7___2_AIM_9L_Sidewinder_IR_AAM)
+        LAU_7___2_AIM_9M_Sidewinder_IR_AAM = (2, Weapons.LAU_7___2_AIM_9M_Sidewinder_IR_AAM)
+        LAU_7___2_AIM_9P_Sidewinder_IR_AAM = (2, Weapons.LAU_7___2_AIM_9P_Sidewinder_IR_AAM)
         GBU_10 = (2, Weapons.GBU_10)
         GBU_12 = (2, Weapons.GBU_12)
         _3_Mk_20_Rockeye = (2, Weapons._3_Mk_20_Rockeye)
@@ -774,9 +774,9 @@ class F_4E(PlaneType):
         AIM_7E = (7, Weapons.AIM_7E)
 
     class Pylon8:
-        LAU_7___2_AIM_9L = (8, Weapons.LAU_7___2_AIM_9L)
-        LAU_7___2_AIM_9M = (8, Weapons.LAU_7___2_AIM_9M)
-        LAU_7___2_AIM_9P = (8, Weapons.LAU_7___2_AIM_9P)
+        LAU_7___2_AIM_9L_Sidewinder_IR_AAM = (8, Weapons.LAU_7___2_AIM_9L_Sidewinder_IR_AAM)
+        LAU_7___2_AIM_9M_Sidewinder_IR_AAM = (8, Weapons.LAU_7___2_AIM_9M_Sidewinder_IR_AAM)
+        LAU_7___2_AIM_9P_Sidewinder_IR_AAM = (8, Weapons.LAU_7___2_AIM_9P_Sidewinder_IR_AAM)
         GBU_10 = (8, Weapons.GBU_10)
         GBU_12 = (8, Weapons.GBU_12)
         _3_Mk_20_Rockeye = (8, Weapons._3_Mk_20_Rockeye)
@@ -1117,10 +1117,10 @@ class F_111F(PlaneType):
         GBU_10 = (1, Weapons.GBU_10)
         GBU_12 = (1, Weapons.GBU_12)
         GBU_24 = (1, Weapons.GBU_24)
-        AIM_9M = (1, Weapons.AIM_9M)
-        AIM_9P = (1, Weapons.AIM_9P)
-        AIM_9P5 = (1, Weapons.AIM_9P5)
-        AIM_9L = (1, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon2:
         MER_6_Mk_82 = (2, Weapons.MER_6_Mk_82)
@@ -1130,10 +1130,10 @@ class F_111F(PlaneType):
         GBU_10 = (2, Weapons.GBU_10)
         GBU_12 = (2, Weapons.GBU_12)
         GBU_24 = (2, Weapons.GBU_24)
-        AIM_9M = (2, Weapons.AIM_9M)
-        AIM_9P = (2, Weapons.AIM_9P)
-        AIM_9P5 = (2, Weapons.AIM_9P5)
-        AIM_9L = (2, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (2, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (2, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (2, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (2, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon3:
         Pavetack_F_111 = (3, Weapons.Pavetack_F_111)
@@ -1156,10 +1156,10 @@ class F_111F(PlaneType):
         GBU_10 = (5, Weapons.GBU_10)
         GBU_12 = (5, Weapons.GBU_12)
         GBU_24 = (5, Weapons.GBU_24)
-        AIM_9M = (5, Weapons.AIM_9M)
-        AIM_9P = (5, Weapons.AIM_9P)
-        AIM_9P5 = (5, Weapons.AIM_9P5)
-        AIM_9L = (5, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (5, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (5, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (5, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (5, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon6:
         MER_6_Mk_82 = (6, Weapons.MER_6_Mk_82)
@@ -1171,10 +1171,10 @@ class F_111F(PlaneType):
         GBU_10 = (6, Weapons.GBU_10)
         GBU_12 = (6, Weapons.GBU_12)
         GBU_24 = (6, Weapons.GBU_24)
-        AIM_9M = (6, Weapons.AIM_9M)
-        AIM_9P = (6, Weapons.AIM_9P)
-        AIM_9P5 = (6, Weapons.AIM_9P5)
-        AIM_9L = (6, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (6, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (6, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (6, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (6, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     pylons = {1, 2, 3, 4, 5, 6}
 
@@ -1290,10 +1290,10 @@ class A_10A(PlaneType):
         LAU_105_2_AIM_9L = (1, Weapons.LAU_105_2_AIM_9L)
         LAU_105_1_AIM_9L_L = (1, Weapons.LAU_105_1_AIM_9L_L)
         LAU_105_2_AIM_9P5 = (1, Weapons.LAU_105_2_AIM_9P5)
-        LAU_105___2_AIM_9M = (1, Weapons.LAU_105___2_AIM_9M)
+        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
         LAU_105_1_AIM_9M_L = (1, Weapons.LAU_105_1_AIM_9M_L)
         LAU_105_1_CATM_9M_L = (1, Weapons.LAU_105_1_CATM_9M_L)
-        LAU_105___2_AIM_9P = (1, Weapons.LAU_105___2_AIM_9P)
+        LAU_105___2_AIM_9P_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9P_Sidewinder_IR_AAM)
         ALQ_131 = (1, Weapons.ALQ_131)
         ALQ_184 = (1, Weapons.ALQ_184)
         Smokewinder___red = (1, Weapons.Smokewinder___red)
@@ -1533,10 +1533,10 @@ class A_10A(PlaneType):
         LAU_105_2_AIM_9L = (11, Weapons.LAU_105_2_AIM_9L)
         LAU_105_1_AIM_9L_R = (11, Weapons.LAU_105_1_AIM_9L_R)
         LAU_105_2_AIM_9P5 = (11, Weapons.LAU_105_2_AIM_9P5)
-        LAU_105___2_AIM_9M = (11, Weapons.LAU_105___2_AIM_9M)
+        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (11, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
         LAU_105_1_AIM_9M_R = (11, Weapons.LAU_105_1_AIM_9M_R)
         LAU_105_1_CATM_9M_R = (11, Weapons.LAU_105_1_CATM_9M_R)
-        LAU_105___2_AIM_9P = (11, Weapons.LAU_105___2_AIM_9P)
+        LAU_105___2_AIM_9P_Sidewinder_IR_AAM = (11, Weapons.LAU_105___2_AIM_9P_Sidewinder_IR_AAM)
         ALQ_131 = (11, Weapons.ALQ_131)
         ALQ_184 = (11, Weapons.ALQ_184)
         Smokewinder___red = (11, Weapons.Smokewinder___red)
@@ -1658,7 +1658,7 @@ class Su_27(PlaneType):
         S_25_OFM = (3, Weapons.S_25_OFM)
         B_8M1___20_S_8TsM = (3, Weapons.B_8M1___20_S_8TsM)
         MER_6_FAB_100 = (3, Weapons.MER_6_FAB_100)
-        MER_6_3_FAB_250 = (3, Weapons.MER_6_3_FAB_250)
+        MER_6_FAB_250 = (3, Weapons.MER_6_FAB_250)
         Smoke_Generator___red = (3, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (3, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (3, Weapons.Smoke_Generator___blue)
@@ -1687,7 +1687,7 @@ class Su_27(PlaneType):
         KMGU_2___96_PTAB_2_5KO = (4, Weapons.KMGU_2___96_PTAB_2_5KO)
         SAB_100 = (4, Weapons.SAB_100)
         MER_6_FAB_100 = (4, Weapons.MER_6_FAB_100)
-        MER_6_2_FAB_250 = (4, Weapons.MER_6_2_FAB_250)
+        MER_6_5_FAB_250 = (4, Weapons.MER_6_5_FAB_250)
         Smoke_Generator___red = (4, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (4, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (4, Weapons.Smoke_Generator___blue)
@@ -1709,6 +1709,7 @@ class Su_27(PlaneType):
         RBK_500U_OAB_2_5RT = (5, Weapons.RBK_500U_OAB_2_5RT)
         SAB_100 = (5, Weapons.SAB_100)
         MER_6_FAB_100 = (5, Weapons.MER_6_FAB_100)
+        MER_6_3_FAB_250 = (5, Weapons.MER_6_3_FAB_250)
         Smoke_Generator___red = (5, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (5, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (5, Weapons.Smoke_Generator___blue)
@@ -1750,7 +1751,7 @@ class Su_27(PlaneType):
         KMGU_2___96_PTAB_2_5KO = (7, Weapons.KMGU_2___96_PTAB_2_5KO)
         SAB_100 = (7, Weapons.SAB_100)
         MER_6_FAB_100 = (7, Weapons.MER_6_FAB_100)
-        MER_6_2_FAB_250 = (7, Weapons.MER_6_2_FAB_250)
+        MER_6_5_FAB_250 = (7, Weapons.MER_6_5_FAB_250)
         Smoke_Generator___red = (7, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (7, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (7, Weapons.Smoke_Generator___blue)
@@ -1782,7 +1783,7 @@ class Su_27(PlaneType):
         S_25_OFM = (8, Weapons.S_25_OFM)
         B_8M1___20_S_8TsM = (8, Weapons.B_8M1___20_S_8TsM)
         MER_6_FAB_100 = (8, Weapons.MER_6_FAB_100)
-        MER_6_3_FAB_250 = (8, Weapons.MER_6_3_FAB_250)
+        MER_6_FAB_250 = (8, Weapons.MER_6_FAB_250)
         Smoke_Generator___red = (8, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (8, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (8, Weapons.Smoke_Generator___blue)
@@ -4222,10 +4223,10 @@ class F_15C(PlaneType):
         Smokewinder___yellow = (1, Weapons.Smokewinder___yellow)
         Smokewinder___orange = (1, Weapons.Smokewinder___orange)
         AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (1, Weapons.AIM_9M)
-        AIM_9P = (1, Weapons.AIM_9P)
-        AIM_9P5 = (1, Weapons.AIM_9P5)
-        AIM_9L = (1, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon2:
         Fuel_tank_610_gal = (2, Weapons.Fuel_tank_610_gal)
@@ -4233,10 +4234,10 @@ class F_15C(PlaneType):
     class Pylon3:
         AIM_120B = (3, Weapons.AIM_120B)
         AIM_120C = (3, Weapons.AIM_120C)
-        AIM_9M = (3, Weapons.AIM_9M)
-        AIM_9P = (3, Weapons.AIM_9P)
-        AIM_9P5 = (3, Weapons.AIM_9P5)
-        AIM_9L = (3, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon4:
         AIM_120B = (4, Weapons.AIM_120B)
@@ -4276,10 +4277,10 @@ class F_15C(PlaneType):
     class Pylon9:
         AIM_120B = (9, Weapons.AIM_120B)
         AIM_120C = (9, Weapons.AIM_120C)
-        AIM_9M = (9, Weapons.AIM_9M)
-        AIM_9P = (9, Weapons.AIM_9P)
-        AIM_9P5 = (9, Weapons.AIM_9P5)
-        AIM_9L = (9, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon10:
         Fuel_tank_610_gal = (10, Weapons.Fuel_tank_610_gal)
@@ -4294,10 +4295,10 @@ class F_15C(PlaneType):
         Smokewinder___yellow = (11, Weapons.Smokewinder___yellow)
         Smokewinder___orange = (11, Weapons.Smokewinder___orange)
         AN_ASQ_T50_TCTS_Pod = (11, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (11, Weapons.AIM_9M)
-        AIM_9P = (11, Weapons.AIM_9P)
-        AIM_9P5 = (11, Weapons.AIM_9P5)
-        AIM_9L = (11, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (11, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (11, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (11, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (11, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
 
@@ -4333,10 +4334,10 @@ class F_15E(PlaneType):
         AIM_120B = (1, Weapons.AIM_120B)
         AIM_120C = (1, Weapons.AIM_120C)
         AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (1, Weapons.AIM_9M)
-        AIM_9P = (1, Weapons.AIM_9P)
-        AIM_9P5 = (1, Weapons.AIM_9P5)
-        AIM_9L = (1, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon2:
         Fuel_tank_610_gal = (2, Weapons.Fuel_tank_610_gal)
@@ -4364,10 +4365,10 @@ class F_15E(PlaneType):
     class Pylon3:
         AIM_120B = (3, Weapons.AIM_120B)
         AIM_120C = (3, Weapons.AIM_120C)
-        AIM_9M = (3, Weapons.AIM_9M)
-        AIM_9P = (3, Weapons.AIM_9P)
-        AIM_9P5 = (3, Weapons.AIM_9P5)
-        AIM_9L = (3, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon4:
         Mk_82 = (4, Weapons.Mk_82)
@@ -4540,10 +4541,10 @@ class F_15E(PlaneType):
     class Pylon17:
         AIM_120B = (17, Weapons.AIM_120B)
         AIM_120C = (17, Weapons.AIM_120C)
-        AIM_9M = (17, Weapons.AIM_9M)
-        AIM_9P = (17, Weapons.AIM_9P)
-        AIM_9P5 = (17, Weapons.AIM_9P5)
-        AIM_9L = (17, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (17, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (17, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (17, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (17, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon18:
         Fuel_tank_610_gal = (18, Weapons.Fuel_tank_610_gal)
@@ -4572,10 +4573,10 @@ class F_15E(PlaneType):
         AIM_120B = (19, Weapons.AIM_120B)
         AIM_120C = (19, Weapons.AIM_120C)
         AN_ASQ_T50_TCTS_Pod = (19, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (19, Weapons.AIM_9M)
-        AIM_9P = (19, Weapons.AIM_9P)
-        AIM_9P5 = (19, Weapons.AIM_9P5)
-        AIM_9L = (19, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (19, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (19, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (19, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (19, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
 
@@ -6101,18 +6102,18 @@ class F_16C_bl_50(PlaneType):
         AIM_120B = (1, Weapons.AIM_120B)
         AIM_120C = (1, Weapons.AIM_120C)
         AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (1, Weapons.AIM_9M)
-        AIM_9P = (1, Weapons.AIM_9P)
-        AIM_9P5 = (1, Weapons.AIM_9P5)
-        AIM_9L = (1, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon2:
         AIM_120B = (2, Weapons.AIM_120B)
         AIM_120C = (2, Weapons.AIM_120C)
-        AIM_9M = (2, Weapons.AIM_9M)
-        AIM_9P = (2, Weapons.AIM_9P)
-        AIM_9P5 = (2, Weapons.AIM_9P5)
-        AIM_9L = (2, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (2, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (2, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (2, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (2, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon3:
         AIM_120B = (3, Weapons.AIM_120B)
@@ -6146,10 +6147,10 @@ class F_16C_bl_50(PlaneType):
         GBU_27 = (3, Weapons.GBU_27)
         AGM_154C = (3, Weapons.AGM_154C)
         AGM_88C_ = (3, Weapons.AGM_88C_)
-        AIM_9M = (3, Weapons.AIM_9M)
-        AIM_9P = (3, Weapons.AIM_9P)
-        AIM_9P5 = (3, Weapons.AIM_9P5)
-        AIM_9L = (3, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon4:
         GBU_10 = (4, Weapons.GBU_10)
@@ -6234,27 +6235,27 @@ class F_16C_bl_50(PlaneType):
         GBU_27 = (8, Weapons.GBU_27)
         AGM_154C = (8, Weapons.AGM_154C)
         AGM_88C_ = (8, Weapons.AGM_88C_)
-        AIM_9M = (8, Weapons.AIM_9M)
-        AIM_9P = (8, Weapons.AIM_9P)
-        AIM_9P5 = (8, Weapons.AIM_9P5)
-        AIM_9L = (8, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (8, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (8, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (8, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon9:
         AIM_120B = (9, Weapons.AIM_120B)
         AIM_120C = (9, Weapons.AIM_120C)
-        AIM_9M = (9, Weapons.AIM_9M)
-        AIM_9P = (9, Weapons.AIM_9P)
-        AIM_9P5 = (9, Weapons.AIM_9P5)
-        AIM_9L = (9, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon10:
         AIM_120B = (10, Weapons.AIM_120B)
         AIM_120C = (10, Weapons.AIM_120C)
         AN_ASQ_T50_TCTS_Pod = (10, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (10, Weapons.AIM_9M)
-        AIM_9P = (10, Weapons.AIM_9P)
-        AIM_9P5 = (10, Weapons.AIM_9P5)
-        AIM_9L = (10, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (10, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (10, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
@@ -6304,18 +6305,18 @@ class F_16C_bl_52d(PlaneType):
         AIM_120B = (1, Weapons.AIM_120B)
         AIM_120C = (1, Weapons.AIM_120C)
         AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (1, Weapons.AIM_9M)
-        AIM_9P = (1, Weapons.AIM_9P)
-        AIM_9P5 = (1, Weapons.AIM_9P5)
-        AIM_9L = (1, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon2:
         AIM_120B = (2, Weapons.AIM_120B)
         AIM_120C = (2, Weapons.AIM_120C)
-        AIM_9M = (2, Weapons.AIM_9M)
-        AIM_9P = (2, Weapons.AIM_9P)
-        AIM_9P5 = (2, Weapons.AIM_9P5)
-        AIM_9L = (2, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (2, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (2, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (2, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (2, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon3:
         AIM_120B = (3, Weapons.AIM_120B)
@@ -6348,10 +6349,10 @@ class F_16C_bl_52d(PlaneType):
         AGM_88C_ = (3, Weapons.AGM_88C_)
         AGM_154A = (3, Weapons.AGM_154A)
         AGM_154B = (3, Weapons.AGM_154B)
-        AIM_9M = (3, Weapons.AIM_9M)
-        AIM_9P = (3, Weapons.AIM_9P)
-        AIM_9P5 = (3, Weapons.AIM_9P5)
-        AIM_9L = (3, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon4:
         Fuel_tank_370_gal = (4, Weapons.Fuel_tank_370_gal)
@@ -6443,27 +6444,27 @@ class F_16C_bl_52d(PlaneType):
         AGM_88C_ = (8, Weapons.AGM_88C_)
         AGM_154A = (8, Weapons.AGM_154A)
         AGM_154B = (8, Weapons.AGM_154B)
-        AIM_9M = (8, Weapons.AIM_9M)
-        AIM_9P = (8, Weapons.AIM_9P)
-        AIM_9P5 = (8, Weapons.AIM_9P5)
-        AIM_9L = (8, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (8, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (8, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (8, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon9:
         AIM_120B = (9, Weapons.AIM_120B)
         AIM_120C = (9, Weapons.AIM_120C)
-        AIM_9M = (9, Weapons.AIM_9M)
-        AIM_9P = (9, Weapons.AIM_9P)
-        AIM_9P5 = (9, Weapons.AIM_9P5)
-        AIM_9L = (9, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon10:
         AIM_120B = (10, Weapons.AIM_120B)
         AIM_120C = (10, Weapons.AIM_120C)
         AN_ASQ_T50_TCTS_Pod = (10, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (10, Weapons.AIM_9M)
-        AIM_9P = (10, Weapons.AIM_9P)
-        AIM_9P5 = (10, Weapons.AIM_9P5)
-        AIM_9L = (10, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (10, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (10, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
@@ -6496,17 +6497,17 @@ class F_16A(PlaneType):
     class Pylon1:
         AIM_120B = (1, Weapons.AIM_120B)
         AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (1, Weapons.AIM_9M)
-        AIM_9P = (1, Weapons.AIM_9P)
-        AIM_9P5 = (1, Weapons.AIM_9P5)
-        AIM_9L = (1, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon2:
         AIM_120B = (2, Weapons.AIM_120B)
-        AIM_9M = (2, Weapons.AIM_9M)
-        AIM_9P = (2, Weapons.AIM_9P)
-        AIM_9P5 = (2, Weapons.AIM_9P5)
-        AIM_9L = (2, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (2, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (2, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (2, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (2, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon3:
         AIM_120B = (3, Weapons.AIM_120B)
@@ -6523,10 +6524,10 @@ class F_16A(PlaneType):
         Mk_82AIR = (3, Weapons.Mk_82AIR)
         _3_Mk_82AIR = (3, Weapons._3_Mk_82AIR)
         AGM_119B_Penguin = (3, Weapons.AGM_119B_Penguin)
-        AIM_9M = (3, Weapons.AIM_9M)
-        AIM_9P = (3, Weapons.AIM_9P)
-        AIM_9P5 = (3, Weapons.AIM_9P5)
-        AIM_9L = (3, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon4:
         Fuel_tank_370_gal = (4, Weapons.Fuel_tank_370_gal)
@@ -6568,25 +6569,25 @@ class F_16A(PlaneType):
         Mk_82AIR = (8, Weapons.Mk_82AIR)
         _3_Mk_82AIR = (8, Weapons._3_Mk_82AIR)
         AGM_119B_Penguin = (8, Weapons.AGM_119B_Penguin)
-        AIM_9M = (8, Weapons.AIM_9M)
-        AIM_9P = (8, Weapons.AIM_9P)
-        AIM_9P5 = (8, Weapons.AIM_9P5)
-        AIM_9L = (8, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (8, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (8, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (8, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon9:
         AIM_120B = (9, Weapons.AIM_120B)
-        AIM_9M = (9, Weapons.AIM_9M)
-        AIM_9P = (9, Weapons.AIM_9P)
-        AIM_9P5 = (9, Weapons.AIM_9P5)
-        AIM_9L = (9, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon10:
         AIM_120B = (10, Weapons.AIM_120B)
         AN_ASQ_T50_TCTS_Pod = (10, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (10, Weapons.AIM_9M)
-        AIM_9P = (10, Weapons.AIM_9P)
-        AIM_9P5 = (10, Weapons.AIM_9P5)
-        AIM_9L = (10, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (10, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (10, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     pylons = {1, 2, 3, 4, 6, 7, 8, 9, 10}
 
@@ -6763,18 +6764,18 @@ class F_16A_MLU(PlaneType):
         AIM_120B = (1, Weapons.AIM_120B)
         AIM_120C = (1, Weapons.AIM_120C)
         AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (1, Weapons.AIM_9M)
-        AIM_9P = (1, Weapons.AIM_9P)
-        AIM_9P5 = (1, Weapons.AIM_9P5)
-        AIM_9L = (1, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon2:
         AIM_120B = (2, Weapons.AIM_120B)
         AIM_120C = (2, Weapons.AIM_120C)
-        AIM_9M = (2, Weapons.AIM_9M)
-        AIM_9P = (2, Weapons.AIM_9P)
-        AIM_9P5 = (2, Weapons.AIM_9P5)
-        AIM_9L = (2, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (2, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (2, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (2, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (2, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon3:
         AIM_120B = (3, Weapons.AIM_120B)
@@ -6799,10 +6800,10 @@ class F_16A_MLU(PlaneType):
         GBU_31 = (3, Weapons.GBU_31)
         _2xGBU_12 = (3, Weapons._2xGBU_12)
         AGM_154C = (3, Weapons.AGM_154C)
-        AIM_9M = (3, Weapons.AIM_9M)
-        AIM_9P = (3, Weapons.AIM_9P)
-        AIM_9P5 = (3, Weapons.AIM_9P5)
-        AIM_9L = (3, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon4:
         GBU_10 = (4, Weapons.GBU_10)
@@ -6869,27 +6870,27 @@ class F_16A_MLU(PlaneType):
         GBU_31 = (8, Weapons.GBU_31)
         _2xGBU_12_ = (8, Weapons._2xGBU_12_)
         AGM_154C = (8, Weapons.AGM_154C)
-        AIM_9M = (8, Weapons.AIM_9M)
-        AIM_9P = (8, Weapons.AIM_9P)
-        AIM_9P5 = (8, Weapons.AIM_9P5)
-        AIM_9L = (8, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (8, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (8, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (8, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon9:
         AIM_120B = (9, Weapons.AIM_120B)
         AIM_120C = (9, Weapons.AIM_120C)
-        AIM_9M = (9, Weapons.AIM_9M)
-        AIM_9P = (9, Weapons.AIM_9P)
-        AIM_9P5 = (9, Weapons.AIM_9P5)
-        AIM_9L = (9, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     class Pylon10:
         AIM_120B = (10, Weapons.AIM_120B)
         AIM_120C = (10, Weapons.AIM_120C)
         AN_ASQ_T50_TCTS_Pod = (10, Weapons.AN_ASQ_T50_TCTS_Pod)
-        AIM_9M = (10, Weapons.AIM_9M)
-        AIM_9P = (10, Weapons.AIM_9P)
-        AIM_9P5 = (10, Weapons.AIM_9P5)
-        AIM_9L = (10, Weapons.AIM_9L)
+        AIM_9M_Sidewinder_IR_AAM = (10, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (10, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
     pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
@@ -7060,7 +7061,7 @@ class A_10C(PlaneType):
             A_10_Grey = "A-10 Grey"
 
     class Pylon1:
-        LAU_105___2_AIM_9M = (1, Weapons.LAU_105___2_AIM_9M)
+        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
         Mk_82 = (1, Weapons.Mk_82)
         LAU_105_1_AIM_9M_L = (1, Weapons.LAU_105_1_AIM_9M_L)
         LAU_105 = (1, Weapons.LAU_105)
@@ -7476,7 +7477,7 @@ class A_10C(PlaneType):
         BDU_50LGB = (10, Weapons.BDU_50LGB)
 
     class Pylon11:
-        LAU_105___2_AIM_9M = (11, Weapons.LAU_105___2_AIM_9M)
+        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (11, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
         Smokewinder___red = (11, Weapons.Smokewinder___red)
         Smokewinder___green = (11, Weapons.Smokewinder___green)
         Smokewinder___blue = (11, Weapons.Smokewinder___blue)
@@ -7547,10 +7548,11 @@ class FW_190D9(PlaneType):
     panel_radio = {
         1: {
             "channels": {
-                1: 39,
                 2: 40,
+                3: 41,
+                1: 39,
                 4: 42,
-                3: 41
+                5: 38
             },
         },
     }
@@ -7602,6 +7604,196 @@ class FW_190D9(PlaneType):
         Werfer_Granate_21 = (3, Weapons.Werfer_Granate_21)
 
     pylons = {1, 2, 3}
+
+    tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
+    task_default = task.CAP
+
+
+class FW_190A8(PlaneType):
+    id = "FW-190A8"
+    height = 4.77
+    width = 10.5
+    length = 12.13
+    fuel_max = 409
+    max_speed = 828
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 38.4
+
+    panel_radio = {
+        1: {
+            "channels": {
+                2: 40,
+                3: 41,
+                1: 39,
+                4: 42,
+                5: 38
+            },
+        },
+    }
+
+    property_defaults = {
+        "FW_MW50TankContents": 0,
+    }
+
+    class Properties:
+
+        class FW_MW50TankContents:
+            id = "FW_MW50TankContents"
+
+            class Values:
+                Empty = 0
+                Additional_fuel = 2
+
+    class Liveries:
+
+        class Georgia(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Syria(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Finland(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Australia(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Germany(Enum):
+            FW_190A8_2_JG_54 = "FW-190A8_2.JG 54"
+            FW_190A8_2_JG_54_Hans_Dortenmann = "FW-190A8_2.JG 54_Hans Dortenmann"
+            FW_190A8 = "FW-190A8"
+
+        class SaudiArabia(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Israel(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Croatia(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class CzechRepublic(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Norway(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Romania(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Spain(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Ukraine(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Belgium(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Slovakia(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Greece(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class UK(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Insurgents(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Hungary(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class France(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Abkhazia(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Russia(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Sweden(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Austria(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Switzerland(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Italy(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class SouthOssetia(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class SouthKorea(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Iran(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class China(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Pakistan(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Belarus(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class NorthKorea(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Iraq(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Kazakhstan(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Bulgaria(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Serbia(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class India(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class USAFAggressors(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class USA(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Denmark(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Egypt(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Canada(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class TheNetherlands(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Turkey(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Japan(Enum):
+            FW_190A8 = "FW-190A8"
+
+        class Poland(Enum):
+            FW_190A8 = "FW-190A8"
+#ERRR <CLEAN>
+
+    class Pylon1:
+        SC_250 = (1, Weapons.SC_250)
+
+    pylons = {1}
 
     tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
@@ -9941,7 +10133,7 @@ class AV8BNA(PlaneType):
             VMA_542 = "VMA-542"
 
     class Pylon1:
-        AIM_9M = (1, Weapons.AIM_9M)
+        AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AGM_122_Sidearm = (1, Weapons.AGM_122_Sidearm)
         Mk_81 = (1, Weapons.Mk_81)
         Mk_82 = (1, Weapons.Mk_82)
@@ -9960,7 +10152,7 @@ class AV8BNA(PlaneType):
         Smokewinder___orange = (1, Weapons.Smokewinder___orange)
 
     class Pylon2:
-        LAU_7_AIM_9M = (2, Weapons.LAU_7_AIM_9M)
+        LAU_7_AIM_9M_Sidewinder_IR_AAM = (2, Weapons.LAU_7_AIM_9M_Sidewinder_IR_AAM)
         AGM_122_Sidearm_ = (2, Weapons.AGM_122_Sidearm_)
         Mk_81 = (2, Weapons.Mk_81)
         Mk_82 = (2, Weapons.Mk_82)
@@ -9970,16 +10162,16 @@ class AV8BNA(PlaneType):
         Mk_20 = (2, Weapons.Mk_20)
         GBU_12 = (2, Weapons.GBU_12)
         GBU_16 = (2, Weapons.GBU_16)
-        MER_3_3_Mk_81 = (2, Weapons.MER_3_3_Mk_81)
-        _3_Mk_82 = (2, Weapons._3_Mk_82)
+        _3_MK_81_LD = (2, Weapons._3_MK_81_LD)
+        _2_MK_82 = (2, Weapons._2_MK_82)
+        _3_MK_82_LD = (2, Weapons._3_MK_82_LD)
         _2_Mk_20_Rockeye_ = (2, Weapons._2_Mk_20_Rockeye_)
         _2_GBU_12 = (2, Weapons._2_GBU_12)
         _3_GBU_12 = (2, Weapons._3_GBU_12)
-        _2_MK_82 = (2, Weapons._2_MK_82)
+        _2_MK_82_AIR = (2, Weapons._2_MK_82_AIR)
         _3_Mk_82AIR = (2, Weapons._3_Mk_82AIR)
-        _2_MK_82AIR = (2, Weapons._2_MK_82AIR)
-        _3_MK_82_SNAKEYE = (2, Weapons._3_MK_82_SNAKEYE)
         _2_MK_82_SNAKEYE = (2, Weapons._2_MK_82_SNAKEYE)
+        _3_MK_82_SNAKEYE = (2, Weapons._3_MK_82_SNAKEYE)
         BDU_33 = (2, Weapons.BDU_33)
         BRU_42_3_BDU_33 = (2, Weapons.BRU_42_3_BDU_33)
         LAU_117_AGM_65E = (2, Weapons.LAU_117_AGM_65E)
@@ -10015,21 +10207,20 @@ class AV8BNA(PlaneType):
         Mk_20 = (3, Weapons.Mk_20)
         GBU_12 = (3, Weapons.GBU_12)
         GBU_16 = (3, Weapons.GBU_16)
-        MER_3_3_Mk_81 = (3, Weapons.MER_3_3_Mk_81)
+        _3_MK_81_LD = (3, Weapons._3_MK_81_LD)
         _2_MK_82 = (3, Weapons._2_MK_82)
-        _3_Mk_82 = (3, Weapons._3_Mk_82)
+        _3_MK_82_LD = (3, Weapons._3_MK_82_LD)
         _2_MK_83 = (3, Weapons._2_MK_83)
         _3_MK_83 = (3, Weapons._3_MK_83)
         _2_Mk_20_Rockeye_ = (3, Weapons._2_Mk_20_Rockeye_)
-        _3_Mk_20_Rockeye = (3, Weapons._3_Mk_20_Rockeye)
+        _3_MK_20_Rockeye = (3, Weapons._3_MK_20_Rockeye)
         _2_GBU_12 = (3, Weapons._2_GBU_12)
         _3_GBU_12 = (3, Weapons._3_GBU_12)
         _2_GBU_16 = (3, Weapons._2_GBU_16)
-        _3_GBU_16_ = (3, Weapons._3_GBU_16_)
+        _2_MK_82_AIR = (3, Weapons._2_MK_82_AIR)
         _3_Mk_82AIR = (3, Weapons._3_Mk_82AIR)
-        _2_MK_82AIR = (3, Weapons._2_MK_82AIR)
-        _3_MK_82_SNAKEYE = (3, Weapons._3_MK_82_SNAKEYE)
         _2_MK_82_SNAKEYE = (3, Weapons._2_MK_82_SNAKEYE)
+        _3_MK_82_SNAKEYE = (3, Weapons._3_MK_82_SNAKEYE)
         BDU_33 = (3, Weapons.BDU_33)
         BRU_42_3_BDU_33 = (3, Weapons.BRU_42_3_BDU_33)
         LAU_117_AGM_65E = (3, Weapons.LAU_117_AGM_65E)
@@ -10071,21 +10262,20 @@ class AV8BNA(PlaneType):
         Mk_20 = (6, Weapons.Mk_20)
         GBU_12 = (6, Weapons.GBU_12)
         GBU_16 = (6, Weapons.GBU_16)
-        MER_3_3_Mk_81 = (6, Weapons.MER_3_3_Mk_81)
+        _3_MK_81_LD = (6, Weapons._3_MK_81_LD)
         _2_MK_82_ = (6, Weapons._2_MK_82_)
-        _3_Mk_82 = (6, Weapons._3_Mk_82)
+        _3_MK_82_LD = (6, Weapons._3_MK_82_LD)
         _2_MK_83_ = (6, Weapons._2_MK_83_)
         _3_MK_83 = (6, Weapons._3_MK_83)
         _2_Mk_20_Rockeye__ = (6, Weapons._2_Mk_20_Rockeye__)
-        _3_Mk_20_Rockeye = (6, Weapons._3_Mk_20_Rockeye)
+        _3_MK_20_Rockeye = (6, Weapons._3_MK_20_Rockeye)
         _2_GBU_12_ = (6, Weapons._2_GBU_12_)
         _3_GBU_12 = (6, Weapons._3_GBU_12)
         _2_GBU_16_ = (6, Weapons._2_GBU_16_)
-        _3_GBU_16_ = (6, Weapons._3_GBU_16_)
+        _2_MK_82_AIR_ = (6, Weapons._2_MK_82_AIR_)
         _3_Mk_82AIR = (6, Weapons._3_Mk_82AIR)
-        _2_MK_82AIR_ = (6, Weapons._2_MK_82AIR_)
-        _3_MK_82_SNAKEYE = (6, Weapons._3_MK_82_SNAKEYE)
         _2_MK_82_SNAKEYE_ = (6, Weapons._2_MK_82_SNAKEYE_)
+        _3_MK_82_SNAKEYE = (6, Weapons._3_MK_82_SNAKEYE)
         BDU_33 = (6, Weapons.BDU_33)
         BRU_42_3_BDU_33 = (6, Weapons.BRU_42_3_BDU_33)
         LAU_117_AGM_65E = (6, Weapons.LAU_117_AGM_65E)
@@ -10112,7 +10302,7 @@ class AV8BNA(PlaneType):
         AERO_1D_300_Gallons_Fuel_Tank__Empty_ = (6, Weapons.AERO_1D_300_Gallons_Fuel_Tank__Empty_)
 
     class Pylon7:
-        LAU_7_AIM_9M = (7, Weapons.LAU_7_AIM_9M)
+        LAU_7_AIM_9M_Sidewinder_IR_AAM = (7, Weapons.LAU_7_AIM_9M_Sidewinder_IR_AAM)
         AGM_122_Sidearm_ = (7, Weapons.AGM_122_Sidearm_)
         Mk_81 = (7, Weapons.Mk_81)
         Mk_82 = (7, Weapons.Mk_82)
@@ -10122,16 +10312,16 @@ class AV8BNA(PlaneType):
         Mk_20 = (7, Weapons.Mk_20)
         GBU_12 = (7, Weapons.GBU_12)
         GBU_16 = (7, Weapons.GBU_16)
-        MER_3_3_Mk_81 = (7, Weapons.MER_3_3_Mk_81)
+        _3_MK_81_LD = (7, Weapons._3_MK_81_LD)
         _2_MK_82_ = (7, Weapons._2_MK_82_)
-        _3_Mk_82 = (7, Weapons._3_Mk_82)
+        _3_MK_82_LD = (7, Weapons._3_MK_82_LD)
         _2_Mk_20_Rockeye__ = (7, Weapons._2_Mk_20_Rockeye__)
         _2_GBU_12_ = (7, Weapons._2_GBU_12_)
         _3_GBU_12 = (7, Weapons._3_GBU_12)
+        _2_MK_82_AIR_ = (7, Weapons._2_MK_82_AIR_)
         _3_Mk_82AIR = (7, Weapons._3_Mk_82AIR)
-        _2_MK_82AIR_ = (7, Weapons._2_MK_82AIR_)
-        _3_MK_82_SNAKEYE = (7, Weapons._3_MK_82_SNAKEYE)
         _2_MK_82_SNAKEYE_ = (7, Weapons._2_MK_82_SNAKEYE_)
+        _3_MK_82_SNAKEYE = (7, Weapons._3_MK_82_SNAKEYE)
         BDU_33 = (7, Weapons.BDU_33)
         BRU_42_3_BDU_33 = (7, Weapons.BRU_42_3_BDU_33)
         LAU_117_AGM_65E = (7, Weapons.LAU_117_AGM_65E)
@@ -10159,7 +10349,7 @@ class AV8BNA(PlaneType):
         AERO_1D_300_Gallons_Fuel_Tank__Empty_ = (7, Weapons.AERO_1D_300_Gallons_Fuel_Tank__Empty_)
 
     class Pylon8:
-        AIM_9M = (8, Weapons.AIM_9M)
+        AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AGM_122_Sidearm = (8, Weapons.AGM_122_Sidearm)
         Mk_81 = (8, Weapons.Mk_81)
         Mk_82 = (8, Weapons.Mk_82)
@@ -10685,8 +10875,8 @@ class C_101CC(PlaneType):
             AVIODEV_Skin = "AVIODEV Skin"
 
     class Pylon1:
-        AIM_9M = (1, Weapons.AIM_9M)
-        AIM_9P = (1, Weapons.AIM_9P)
+        AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
         R_550_Magic_2 = (1, Weapons.R_550_Magic_2)
 
     class Pylon2:
@@ -10760,8 +10950,8 @@ class C_101CC(PlaneType):
         BIN_200 = (6, Weapons.BIN_200)
 
     class Pylon7:
-        AIM_9M = (7, Weapons.AIM_9M)
-        AIM_9P = (7, Weapons.AIM_9P)
+        AIM_9M_Sidewinder_IR_AAM = (7, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (7, Weapons.AIM_9P_Sidewinder_IR_AAM)
         R_550_Magic_2 = (7, Weapons.R_550_Magic_2)
 
     pylons = {1, 2, 3, 4, 5, 6, 7}
@@ -10792,6 +10982,7 @@ class J_11A(PlaneType):
             PLAAF_14th_AD = "PLAAF 14th AD"
             PLAAF_14th_AD__Reworked = "PLAAF 14th AD (Reworked)"
             PLAAF_17th_AB = "PLAAF 17th AB"
+            PLAAF_18th_AD__Thunderclap_Wing___Fictional = "PLAAF 18th AD 'Thunderclap Wing' (Fictional)"
             PLAAF_19th_AD = "PLAAF 19th AD"
             PLAAF_19th_AD__Reworked = "PLAAF 19th AD (Reworked)"
             PLAAF_2nd_AD = "PLAAF 2nd AD"
@@ -12613,9 +12804,9 @@ class F_5E(PlaneType):
             USA_standard = "USA standard"
 
     class Pylon1:
-        GAR_8 = (1, Weapons.GAR_8)
-        AIM_9P5 = (1, Weapons.AIM_9P5)
-        AIM_9P = (1, Weapons.AIM_9P)
+        GAR_8_Sidewinder_IR_AAM = (1, Weapons.GAR_8_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
         Smokewinder___red = (1, Weapons.Smokewinder___red)
         Smokewinder___green = (1, Weapons.Smokewinder___green)
         Smokewinder___blue = (1, Weapons.Smokewinder___blue)
@@ -12772,9 +12963,9 @@ class F_5E(PlaneType):
         BDU_50HD = (6, Weapons.BDU_50HD)
 
     class Pylon7:
-        GAR_8 = (7, Weapons.GAR_8)
-        AIM_9P5 = (7, Weapons.AIM_9P5)
-        AIM_9P = (7, Weapons.AIM_9P)
+        GAR_8_Sidewinder_IR_AAM = (7, Weapons.GAR_8_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (7, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (7, Weapons.AIM_9P_Sidewinder_IR_AAM)
         Smokewinder___red = (7, Weapons.Smokewinder___red)
         Smokewinder___green = (7, Weapons.Smokewinder___green)
         Smokewinder___blue = (7, Weapons.Smokewinder___blue)
@@ -13154,9 +13345,9 @@ class F_5E_3(PlaneType):
             USA_standard = "USA standard"
 
     class Pylon1:
-        GAR_8 = (1, Weapons.GAR_8)
-        AIM_9P5 = (1, Weapons.AIM_9P5)
-        AIM_9P = (1, Weapons.AIM_9P)
+        GAR_8_Sidewinder_IR_AAM = (1, Weapons.GAR_8_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
         Smokewinder___red = (1, Weapons.Smokewinder___red)
         Smokewinder___green = (1, Weapons.Smokewinder___green)
         Smokewinder___blue = (1, Weapons.Smokewinder___blue)
@@ -13313,9 +13504,9 @@ class F_5E_3(PlaneType):
         BDU_50HD = (6, Weapons.BDU_50HD)
 
     class Pylon7:
-        GAR_8 = (7, Weapons.GAR_8)
-        AIM_9P5 = (7, Weapons.AIM_9P5)
-        AIM_9P = (7, Weapons.AIM_9P)
+        GAR_8_Sidewinder_IR_AAM = (7, Weapons.GAR_8_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (7, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (7, Weapons.AIM_9P_Sidewinder_IR_AAM)
         Smokewinder___red = (7, Weapons.Smokewinder___red)
         Smokewinder___green = (7, Weapons.Smokewinder___green)
         Smokewinder___blue = (7, Weapons.Smokewinder___blue)
@@ -13369,16 +13560,126 @@ class F_86F_Sabre(PlaneType):
 
     class Liveries:
 
+        class Georgia(Enum):
+            default_livery = "default livery"
+
+        class Syria(Enum):
+            default_livery = "default livery"
+
+        class Finland(Enum):
+            default_livery = "default livery"
+
+        class Australia(Enum):
+            default_livery = "default livery"
+
+        class Germany(Enum):
+            default_livery = "default livery"
+
         class SaudiArabia(Enum):
             Royal_Saudi_Air_Force = "Royal Saudi Air Force"
+            default_livery = "default livery"
+
+        class Israel(Enum):
+            default_livery = "default livery"
+
+        class Croatia(Enum):
+            default_livery = "default livery"
+
+        class CzechRepublic(Enum):
+            default_livery = "default livery"
+
+        class Norway(Enum):
+            default_livery = "default livery"
+
+        class Romania(Enum):
+            default_livery = "default livery"
+
+        class Spain(Enum):
+            default_livery = "default livery"
+
+        class Ukraine(Enum):
+            default_livery = "default livery"
+
+        class Belgium(Enum):
+            default_livery = "default livery"
+
+        class Slovakia(Enum):
+            default_livery = "default livery"
 
         class Greece(Enum):
             HAF_341sqn = "HAF 341sqn"
             HAF_342sqn = "HAF 342sqn"
-            HAF_Hellenic_Flame = "HAF Hellenic Flame"
+            default_livery = "default livery"
+
+        class UK(Enum):
+            default_livery = "default livery"
+
+        class Insurgents(Enum):
+            default_livery = "default livery"
+
+        class Hungary(Enum):
+            default_livery = "default livery"
+
+        class France(Enum):
+            default_livery = "default livery"
+
+        class Abkhazia(Enum):
+            default_livery = "default livery"
+
+        class Russia(Enum):
+            default_livery = "default livery"
+
+        class Sweden(Enum):
+            default_livery = "default livery"
+
+        class Austria(Enum):
+            default_livery = "default livery"
+
+        class Switzerland(Enum):
+            default_livery = "default livery"
+
+        class Italy(Enum):
+            default_livery = "default livery"
+
+        class SouthOssetia(Enum):
+            default_livery = "default livery"
+
+        class SouthKorea(Enum):
+            default_livery = "default livery"
 
         class Iran(Enum):
             IIAF_Bare_Metall = "IIAF Bare Metall"
+            default_livery = "default livery"
+
+        class China(Enum):
+            default_livery = "default livery"
+
+        class Pakistan(Enum):
+            default_livery = "default livery"
+
+        class Belarus(Enum):
+            default_livery = "default livery"
+
+        class NorthKorea(Enum):
+            default_livery = "default livery"
+
+        class Iraq(Enum):
+            default_livery = "default livery"
+
+        class Kazakhstan(Enum):
+            default_livery = "default livery"
+
+        class Bulgaria(Enum):
+            default_livery = "default livery"
+
+        class Serbia(Enum):
+            default_livery = "default livery"
+
+        class India(Enum):
+            default_livery = "default livery"
+
+        class USAFAggressors(Enum):
+            default_livery = "default livery"
 
         class USA(Enum):
             US_Air_Force = "US Air Force"
@@ -13387,12 +13688,30 @@ class F_86F_Sabre(PlaneType):
             US_Air_Force__ex_USAF_F_86A_Sabre = "US Air Force (ex-USAF F-86A Sabre)"
             US_Air_Force__code_FU_178 = "US Air Force (code FU-178)"
             US_Air_Force__Skyblazers = "US Air Force (Skyblazers)"
+            default_livery = "default livery"
+
+        class Denmark(Enum):
+            default_livery = "default livery"
+
+        class Egypt(Enum):
+            default_livery = "default livery"
 
         class Canada(Enum):
             Canada_Air_Force = "Canada Air Force"
+            default_livery = "default livery"
+
+        class TheNetherlands(Enum):
+            default_livery = "default livery"
+
+        class Turkey(Enum):
+            default_livery = "default livery"
 
         class Japan(Enum):
             Japan_Air_Force = "Japan Air Force"
+            default_livery = "default livery"
+
+        class Poland(Enum):
+            default_livery = "default livery"
 
     class Pylon1:
         Fuel_Tank_200_gallons = (1, Weapons.Fuel_Tank_200_gallons)
@@ -13416,10 +13735,10 @@ class F_86F_Sabre(PlaneType):
         M117 = (4, Weapons.M117)
 
     class Pylon5:
-        LAU_7_GAR_8 = (5, Weapons.LAU_7_GAR_8)
+        LAU_7_GAR_8_Sidewinder_IR_AAM = (5, Weapons.LAU_7_GAR_8_Sidewinder_IR_AAM)
 
     class Pylon6:
-        LAU_7_GAR_8 = (6, Weapons.LAU_7_GAR_8)
+        LAU_7_GAR_8_Sidewinder_IR_AAM = (6, Weapons.LAU_7_GAR_8_Sidewinder_IR_AAM)
 
     class Pylon7:
         Fuel_Tank_120_gallons = (7, Weapons.Fuel_Tank_120_gallons)
@@ -13601,6 +13920,7 @@ class F_14B(PlaneType):
         class Georgia(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13625,6 +13945,7 @@ class F_14B(PlaneType):
         class Syria(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13649,6 +13970,7 @@ class F_14B(PlaneType):
         class Finland(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13673,6 +13995,7 @@ class F_14B(PlaneType):
         class Australia(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13697,6 +14020,7 @@ class F_14B(PlaneType):
         class Germany(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13721,6 +14045,7 @@ class F_14B(PlaneType):
         class SaudiArabia(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13745,6 +14070,7 @@ class F_14B(PlaneType):
         class Israel(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13769,6 +14095,7 @@ class F_14B(PlaneType):
         class Croatia(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13793,6 +14120,7 @@ class F_14B(PlaneType):
         class CzechRepublic(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13817,6 +14145,7 @@ class F_14B(PlaneType):
         class Norway(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13841,6 +14170,7 @@ class F_14B(PlaneType):
         class Romania(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13865,6 +14195,7 @@ class F_14B(PlaneType):
         class Spain(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13889,6 +14220,7 @@ class F_14B(PlaneType):
         class Ukraine(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13913,6 +14245,7 @@ class F_14B(PlaneType):
         class Belgium(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13937,6 +14270,7 @@ class F_14B(PlaneType):
         class Slovakia(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13961,6 +14295,7 @@ class F_14B(PlaneType):
         class Greece(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -13985,6 +14320,7 @@ class F_14B(PlaneType):
         class UK(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14009,6 +14345,7 @@ class F_14B(PlaneType):
         class Insurgents(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14033,6 +14370,7 @@ class F_14B(PlaneType):
         class Hungary(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14057,6 +14395,7 @@ class F_14B(PlaneType):
         class France(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14081,6 +14420,7 @@ class F_14B(PlaneType):
         class Abkhazia(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14105,6 +14445,7 @@ class F_14B(PlaneType):
         class Russia(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14129,6 +14470,7 @@ class F_14B(PlaneType):
         class Sweden(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14153,6 +14495,7 @@ class F_14B(PlaneType):
         class Austria(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14177,6 +14520,7 @@ class F_14B(PlaneType):
         class Switzerland(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14201,6 +14545,7 @@ class F_14B(PlaneType):
         class Italy(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14225,6 +14570,7 @@ class F_14B(PlaneType):
         class SouthOssetia(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14249,6 +14595,7 @@ class F_14B(PlaneType):
         class SouthKorea(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14273,6 +14620,7 @@ class F_14B(PlaneType):
         class Iran(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14297,6 +14645,7 @@ class F_14B(PlaneType):
         class China(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14321,6 +14670,7 @@ class F_14B(PlaneType):
         class Pakistan(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14345,6 +14695,7 @@ class F_14B(PlaneType):
         class Belarus(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14369,6 +14720,7 @@ class F_14B(PlaneType):
         class NorthKorea(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14393,6 +14745,7 @@ class F_14B(PlaneType):
         class Iraq(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14417,6 +14770,7 @@ class F_14B(PlaneType):
         class Kazakhstan(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14441,6 +14795,7 @@ class F_14B(PlaneType):
         class Bulgaria(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14465,6 +14820,7 @@ class F_14B(PlaneType):
         class Serbia(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14489,6 +14845,7 @@ class F_14B(PlaneType):
         class India(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14513,6 +14870,7 @@ class F_14B(PlaneType):
         class USAFAggressors(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14537,6 +14895,7 @@ class F_14B(PlaneType):
         class USA(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14561,6 +14920,7 @@ class F_14B(PlaneType):
         class Denmark(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14585,6 +14945,7 @@ class F_14B(PlaneType):
         class Egypt(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14609,6 +14970,7 @@ class F_14B(PlaneType):
         class Canada(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14633,6 +14995,7 @@ class F_14B(PlaneType):
         class TheNetherlands(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14657,6 +15020,7 @@ class F_14B(PlaneType):
         class Turkey(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14681,6 +15045,7 @@ class F_14B(PlaneType):
         class Japan(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14705,6 +15070,7 @@ class F_14B(PlaneType):
         class Poland(Enum):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
+            ChromeCat = "ChromeCat"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -14742,7 +15108,7 @@ class F_14B(PlaneType):
         AIM_54A_Mk47_ = (2, Weapons.AIM_54A_Mk47_)
         AIM_54A_Mk60_ = (2, Weapons.AIM_54A_Mk60_)
         AIM_7M_ = (2, Weapons.AIM_7M_)
-        LAU_7_AIM_9M_ = (2, Weapons.LAU_7_AIM_9M_)
+        LAU_7_AIM_9M = (2, Weapons.LAU_7_AIM_9M)
         LAU_7_AIM_9L = (2, Weapons.LAU_7_AIM_9L)
         _2_LAU_10___4_ZUNI_MK_71_________ = (2, Weapons._2_LAU_10___4_ZUNI_MK_71_________)
         _2_Mk_81_____ = (2, Weapons._2_Mk_81_____)
@@ -14822,7 +15188,7 @@ class F_14B(PlaneType):
         _3_BDU_33_ = (6, Weapons._3_BDU_33_)
         MAK79_3_Mk_82AIR_ = (6, Weapons.MAK79_3_Mk_82AIR_)
         MAK79_3_Mk_82_SnakeEye_ = (6, Weapons.MAK79_3_Mk_82_SnakeEye_)
-        MAK79_Mk_83_ = (6, Weapons.MAK79_Mk_83_)
+        MAK79_Mk_83 = (6, Weapons.MAK79_Mk_83)
         Mk_83_ = (6, Weapons.Mk_83_)
         GBU_12_ = (6, Weapons.GBU_12_)
         GBU_16_ = (6, Weapons.GBU_16_)
@@ -14866,7 +15232,7 @@ class F_14B(PlaneType):
         AIM_54A_Mk47__ = (9, Weapons.AIM_54A_Mk47__)
         AIM_54A_Mk60__ = (9, Weapons.AIM_54A_Mk60__)
         AIM_7M_ = (9, Weapons.AIM_7M_)
-        LAU_7_AIM_9M_ = (9, Weapons.LAU_7_AIM_9M_)
+        LAU_7_AIM_9M = (9, Weapons.LAU_7_AIM_9M)
         LAU_7_AIM_9L = (9, Weapons.LAU_7_AIM_9L)
         LANTIRN_Targeting_Pod = (9, Weapons.LANTIRN_Targeting_Pod)
         _2_LAU_10___4_ZUNI_MK_71______ = (9, Weapons._2_LAU_10___4_ZUNI_MK_71______)
@@ -14986,23 +15352,50 @@ class FA_18C_hornet(PlaneType):
 
     class Liveries:
 
+        class Georgia(Enum):
+            default_livery = "default livery"
+
+        class Syria(Enum):
+            default_livery = "default livery"
+
         class Finland(Enum):
-            Finland_21 = "Finland 21"
             Finland_31 = "Finland 31"
+            Finland_21 = "Finland 21"
+            default_livery = "default livery"
 
         class Australia(Enum):
             Australian_75th_Squadron = "Australian 75th Squadron"
             Australian_77th_Squadron = "Australian 77th Squadron"
+            default_livery = "default livery"
+
+        class Germany(Enum):
+            default_livery = "default livery"
+
+        class SaudiArabia(Enum):
+            default_livery = "default livery"
 
         class Israel(Enum):
             Fictional_Israel_Air_Force = "Fictional Israel Air Force"
+            default_livery = "default livery"
+
+        class Croatia(Enum):
+            default_livery = "default livery"
+
+        class CzechRepublic(Enum):
+            default_livery = "default livery"
+
+        class Norway(Enum):
+            default_livery = "default livery"
+
+        class Romania(Enum):
+            default_livery = "default livery"
 
         class Spain(Enum):
             Spain_111th_Escuadron_C_15_73 = "Spain 111th Escuadron C.15-73"
             Spain_111th_Escuadron_C_15_88 = "Spain 111th Escuadron C.15-88"
             Spain_121th_Escuadron_C_15_45 = "Spain 121th Escuadron C.15-45"
-            Spain_121th_Escuadron_C_15_60 = "Spain 121th Escuadron C.15-60"
             Spain_121th_Escuadron_C_15_50 = "Spain 121th Escuadron C.15-50"
+            Spain_121th_Escuadron_C_15_60 = "Spain 121th Escuadron C.15-60"
             Spain_121th_Escuadron_C_15_34_50th_Anniversary = "Spain 121th Escuadron C.15-34 50th Anniversary"
             Spain_151th_Escuadron_C_15_14_Tiger_Meet = "Spain 151th Escuadron C.15-14 Tiger Meet"
             Spain_151th_Escuadron_C_15_14 = "Spain 151th Escuadron C.15-14"
@@ -15013,29 +15406,104 @@ class FA_18C_hornet(PlaneType):
             Spain_211th_Escuadron_C_15_77 = "Spain 211th Escuadron C.15-77"
             Spain_462th_Escuadron_C_15_90 = "Spain 462th Escuadron C.15-90"
             Spain_462th_Escuadron_C_15_79 = "Spain 462th Escuadron C.15-79"
+            default_livery = "default livery"
 
         class Ukraine(Enum):
             Fictional_Ukraine_Air_Force = "Fictional Ukraine Air Force"
+            default_livery = "default livery"
+
+        class Belgium(Enum):
+            default_livery = "default livery"
+
+        class Slovakia(Enum):
+            default_livery = "default livery"
+
+        class Greece(Enum):
+            default_livery = "default livery"
 
         class UK(Enum):
             Fictional_UK_Air_Force = "Fictional UK Air Force"
+            default_livery = "default livery"
+
+        class Insurgents(Enum):
+            default_livery = "default livery"
+
+        class Hungary(Enum):
+            default_livery = "default livery"
+
+        class France(Enum):
+            default_livery = "default livery"
+
+        class Abkhazia(Enum):
+            default_livery = "default livery"
 
         class Russia(Enum):
             Fictional_Russia_Air_Force = "Fictional Russia Air Force"
+            default_livery = "default livery"
+
+        class Sweden(Enum):
+            default_livery = "default livery"
+
+        class Austria(Enum):
+            default_livery = "default livery"
 
         class Switzerland(Enum):
             Switzerland = "Switzerland"
+            default_livery = "default livery"
+
+        class Italy(Enum):
+            default_livery = "default livery"
+
+        class SouthOssetia(Enum):
+            default_livery = "default livery"
+
+        class SouthKorea(Enum):
+            default_livery = "default livery"
+
+        class Iran(Enum):
+            default_livery = "default livery"
+
+        class China(Enum):
+            default_livery = "default livery"
+
+        class Pakistan(Enum):
+            default_livery = "default livery"
+
+        class Belarus(Enum):
+            default_livery = "default livery"
+
+        class NorthKorea(Enum):
+            default_livery = "default livery"
+
+        class Iraq(Enum):
+            default_livery = "default livery"
+
+        class Kazakhstan(Enum):
+            default_livery = "default livery"
+
+        class Bulgaria(Enum):
+            default_livery = "default livery"
+
+        class Serbia(Enum):
+            default_livery = "default livery"
+
+        class India(Enum):
+            default_livery = "default livery"
 
         class USAFAggressors(Enum):
             Fictional_Russia_Air_Force = "Fictional Russia Air Force"
             VFC_12 = "VFC-12"
             NAWDC_blue = "NAWDC blue"
+            NAWDC_black = "NAWDC black"
             NAWDC_brown = "NAWDC brown"
             NSAWC_brown_splinter = "NSAWC brown splinter"
             NSAWC_blue = "NSAWC blue"
+            default_livery = "default livery"
 
         class USA(Enum):
             VFA_37 = "VFA-37"
+            VFA_106 = "VFA-106"
+            VFA_106_high_visibility = "VFA-106 high visibility"
             VFA_113 = "VFA-113"
             VFA_122 = "VFA-122"
             VFA_131 = "VFA-131"
@@ -15050,7 +15518,10 @@ class FA_18C_hornet(PlaneType):
             VMFA_232 = "VMFA-232"
             VMFA_232_high_visibility = "VMFA-232 high visibility"
             VMFA_251 = "VMFA-251"
+            VMFA_251_high_visibility = "VMFA-251 high visibility"
+            VMFA_312 = "VMFA-312"
             VMFA_312_high_visibility = "VMFA-312 high visibility"
+            VMFA_314 = "VMFA-314"
             VMFA_323 = "VMFA-323"
             VMFA_323_high_visibility = "VMFA-323 high visibility"
             VMFA_531 = "VMFA-531"
@@ -15061,26 +15532,45 @@ class FA_18C_hornet(PlaneType):
             VX_31_CoNA = "VX-31 CoNA"
             VX_9 = "VX-9"
             NAWDC_blue = "NAWDC blue"
+            NAWDC_black = "NAWDC black"
             NAWDC_brown = "NAWDC brown"
             NSAWC_brown_splinter = "NSAWC brown splinter"
             NSAWC_blue = "NSAWC blue"
             NSAWC_gray = "NSAWC gray"
+            default_livery = "default livery"
             Blue_Angels_Jet_Team = "Blue Angels Jet Team"
+
+        class Denmark(Enum):
+            default_livery = "default livery"
+
+        class Egypt(Enum):
+            default_livery = "default livery"
 
         class Canada(Enum):
             Canada_150_Demo_Jet = "Canada 150 Demo Jet"
             Canada_409th_Squadron = "Canada 409th Squadron"
             Canada_425th_Squadron = "Canada 425th Squadron"
             Canada_NORAD_60_Demo_Jet = "Canada NORAD 60 Demo Jet"
+            default_livery = "default livery"
+
+        class TheNetherlands(Enum):
+            default_livery = "default livery"
 
         class Turkey(Enum):
             Fictional_Turkey_162nd_Sq = "Fictional Turkey 162nd Sq"
+            default_livery = "default livery"
+
+        class Japan(Enum):
+            default_livery = "default livery"
+
+        class Poland(Enum):
+            default_livery = "default livery"
 
     class Pylon1:
-        AIM_9M = (1, Weapons.AIM_9M)
+        AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
         CATM_9M = (1, Weapons.CATM_9M)
-        AIM_9L = (1, Weapons.AIM_9L)
-        AIM_9X = (1, Weapons.AIM_9X)
+        AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
+        AIM_9X_Sidewinder_IR_AAM = (1, Weapons.AIM_9X_Sidewinder_IR_AAM)
         AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
 
     class Pylon2:
@@ -15129,6 +15619,14 @@ class FA_18C_hornet(PlaneType):
         BRU_33___2_x_CBU_99 = (2, Weapons.BRU_33___2_x_CBU_99)
         BRU_33___2_x_GBU_12 = (2, Weapons.BRU_33___2_x_GBU_12)
 #ERRR <CLEAN>
+        AGM_154A = (2, Weapons.AGM_154A)
+        BRU_55___2_x_AGM_154A = (2, Weapons.BRU_55___2_x_AGM_154A)
+        AGM_154C = (2, Weapons.AGM_154C)
+        BRU_55___2_x_AGM_154C = (2, Weapons.BRU_55___2_x_AGM_154C)
+        GBU_31 = (2, Weapons.GBU_31)
+        GBU_31_V_3_B = (2, Weapons.GBU_31_V_3_B)
+        GBU_38 = (2, Weapons.GBU_38)
+        BRU_55___2_x_GBU_38 = (2, Weapons.BRU_55___2_x_GBU_38)
 
     class Pylon3:
         LAU_115___AIM_7M = (3, Weapons.LAU_115___AIM_7M)
@@ -15167,6 +15665,14 @@ class FA_18C_hornet(PlaneType):
         Mk_20 = (3, Weapons.Mk_20)
         BRU_33___2_x_GBU_12 = (3, Weapons.BRU_33___2_x_GBU_12)
 #ERRR <CLEAN>
+        AGM_154A = (3, Weapons.AGM_154A)
+        BRU_55___2_x_AGM_154A = (3, Weapons.BRU_55___2_x_AGM_154A)
+        AGM_154C = (3, Weapons.AGM_154C)
+        BRU_55___2_x_AGM_154C = (3, Weapons.BRU_55___2_x_AGM_154C)
+        GBU_31 = (3, Weapons.GBU_31)
+        GBU_31_V_3_B = (3, Weapons.GBU_31_V_3_B)
+        GBU_38 = (3, Weapons.GBU_38)
+        BRU_55___2_x_GBU_38 = (3, Weapons.BRU_55___2_x_GBU_38)
 
     class Pylon4:
         AIM_7M = (4, Weapons.AIM_7M)
@@ -15235,6 +15741,14 @@ class FA_18C_hornet(PlaneType):
         Mk_20 = (7, Weapons.Mk_20)
         BRU_33___2_x_GBU_12 = (7, Weapons.BRU_33___2_x_GBU_12)
 #ERRR <CLEAN>
+        AGM_154A = (7, Weapons.AGM_154A)
+        BRU_55___2_x_AGM_154A = (7, Weapons.BRU_55___2_x_AGM_154A)
+        AGM_154C = (7, Weapons.AGM_154C)
+        BRU_55___2_x_AGM_154C = (7, Weapons.BRU_55___2_x_AGM_154C)
+        GBU_31 = (7, Weapons.GBU_31)
+        GBU_31_V_3_B = (7, Weapons.GBU_31_V_3_B)
+        GBU_38 = (7, Weapons.GBU_38)
+        BRU_55___2_x_GBU_38 = (7, Weapons.BRU_55___2_x_GBU_38)
 
     class Pylon8:
         LAU_115_2_LAU_127_AIM_9M = (8, Weapons.LAU_115_2_LAU_127_AIM_9M)
@@ -15282,12 +15796,20 @@ class FA_18C_hornet(PlaneType):
         BRU_33___2_x_CBU_99 = (8, Weapons.BRU_33___2_x_CBU_99)
         BRU_33___2_x_GBU_12 = (8, Weapons.BRU_33___2_x_GBU_12)
 #ERRR <CLEAN>
+        AGM_154A = (8, Weapons.AGM_154A)
+        BRU_55___2_x_AGM_154A = (8, Weapons.BRU_55___2_x_AGM_154A)
+        AGM_154C = (8, Weapons.AGM_154C)
+        BRU_55___2_x_AGM_154C = (8, Weapons.BRU_55___2_x_AGM_154C)
+        GBU_31 = (8, Weapons.GBU_31)
+        GBU_31_V_3_B = (8, Weapons.GBU_31_V_3_B)
+        GBU_38 = (8, Weapons.GBU_38)
+        BRU_55___2_x_GBU_38 = (8, Weapons.BRU_55___2_x_GBU_38)
 
     class Pylon9:
-        AIM_9M = (9, Weapons.AIM_9M)
+        AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
         CATM_9M = (9, Weapons.CATM_9M)
-        AIM_9L = (9, Weapons.AIM_9L)
-        AIM_9X = (9, Weapons.AIM_9X)
+        AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
+        AIM_9X_Sidewinder_IR_AAM = (9, Weapons.AIM_9X_Sidewinder_IR_AAM)
         AN_ASQ_T50_TCTS_Pod = (9, Weapons.AN_ASQ_T50_TCTS_Pod)
 
     class Pylon10:
@@ -15548,7 +16070,7 @@ class Hawk(PlaneType):
             XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
 
     class Pylon1:
-        LAU_7_AIM_9M = (1, Weapons.LAU_7_AIM_9M)
+        LAU_7_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_7_AIM_9M_Sidewinder_IR_AAM)
 
     class Pylon2:
         Matra_Type_155_Rocket_Pod = (2, Weapons.Matra_Type_155_Rocket_Pod)
@@ -15566,12 +16088,539 @@ class Hawk(PlaneType):
         Mk_82 = (4, Weapons.Mk_82)
 
     class Pylon5:
-        LAU_7_AIM_9M = (5, Weapons.LAU_7_AIM_9M)
+        LAU_7_AIM_9M_Sidewinder_IR_AAM = (5, Weapons.LAU_7_AIM_9M_Sidewinder_IR_AAM)
 
     class Pylon6:
         Smoke_Generator___red = (6, Weapons.Smoke_Generator___red)
         Smoke_Generator___white = (6, Weapons.Smoke_Generator___white)
         Smoke_Generator___blue = (6, Weapons.Smoke_Generator___blue)
+
+    pylons = {1, 2, 3, 4, 5, 6}
+
+    tasks = [task.CAP, task.CAS, task.Escort, task.FighterSweep, task.GroundAttack, task.Intercept]
+    task_default = task.CAP
+
+
+class I_16(PlaneType):
+    id = "I-16"
+    height = 3.25
+    width = 9.004
+    length = 6.13
+    fuel_max = 191
+    max_speed = 464.4
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 124
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 105,
+                2: 124,
+                4: 139,
+                3: 131
+            },
+        },
+    }
+
+    property_defaults = {
+        "landingTorch": False,
+    }
+
+    class Properties:
+
+        class landingTorch:
+            id = "landingTorch"
+
+    class Liveries:
+
+        class Georgia(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Syria(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Finland(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Australia(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Germany(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class SaudiArabia(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Israel(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Croatia(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class CzechRepublic(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Norway(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Romania(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Spain(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Ukraine(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Belgium(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Slovakia(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Greece(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class UK(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Insurgents(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Hungary(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class France(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Abkhazia(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Russia(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Sweden(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Austria(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Switzerland(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Italy(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class SouthOssetia(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class SouthKorea(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Iran(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class China(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Pakistan(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Belarus(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class NorthKorea(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Iraq(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Kazakhstan(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Bulgaria(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Serbia(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class India(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class USAFAggressors(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class USA(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Denmark(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Egypt(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Canada(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class TheNetherlands(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Turkey(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Japan(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Poland(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+    class Pylon1:
+        I16_RS_82 = (1, Weapons.I16_RS_82)
+#ERRR I16_RS_82_S
+
+    class Pylon2:
+        I16_RS_82 = (2, Weapons.I16_RS_82)
+
+    class Pylon3:
+        I16_RS_82 = (3, Weapons.I16_RS_82)
+
+    class Pylon4:
+        I16_RS_82 = (4, Weapons.I16_RS_82)
+
+    class Pylon5:
+        I16_RS_82 = (5, Weapons.I16_RS_82)
+
+    class Pylon6:
+        I16_RS_82 = (6, Weapons.I16_RS_82)
 
     pylons = {1, 2, 3, 4, 5, 6}
 
@@ -16208,7 +17257,7 @@ class M_2000C(PlaneType):
         Matra_Type_155_Rocket_Pod = (2, Weapons.Matra_Type_155_Rocket_Pod)
         Mk_82 = (2, Weapons.Mk_82)
         Mk_82_SnakeEye = (2, Weapons.Mk_82_SnakeEye)
-        BLG_66_AC_Belouga = (2, Weapons.BLG_66_AC_Belouga)
+        BLG_66_AC_Belouga_ = (2, Weapons.BLG_66_AC_Belouga_)
         AUF2_MK_82_x_2 = (2, Weapons.AUF2_MK_82_x_2)
         AUF2_MK_82_Snakeyes_x_2 = (2, Weapons.AUF2_MK_82_Snakeyes_x_2)
         AUF2_BLG_66_AC_x_2 = (2, Weapons.AUF2_BLG_66_AC_x_2)
@@ -16218,16 +17267,16 @@ class M_2000C(PlaneType):
     class Pylon3:
         Mk_82 = (3, Weapons.Mk_82)
         Mk_82_SnakeEye = (3, Weapons.Mk_82_SnakeEye)
-        BLG_66_AC_Belouga = (3, Weapons.BLG_66_AC_Belouga)
+        BLG_66_AC_Belouga_ = (3, Weapons.BLG_66_AC_Belouga_)
         GBU_12 = (3, Weapons.GBU_12)
 
     class Pylon4:
         Mk_82 = (4, Weapons.Mk_82)
         Mk_82_SnakeEye = (4, Weapons.Mk_82_SnakeEye)
-        BLG_66_AC_Belouga = (4, Weapons.BLG_66_AC_Belouga)
+        BLG_66_AC_Belouga_ = (4, Weapons.BLG_66_AC_Belouga_)
 
     class Pylon5:
-        BLG_66_AC_Belouga = (5, Weapons.BLG_66_AC_Belouga)
+        BLG_66_AC_Belouga_ = (5, Weapons.BLG_66_AC_Belouga_)
         GBU_12 = (5, Weapons.GBU_12)
         GBU_16 = (5, Weapons.GBU_16)
         GBU_24 = (5, Weapons.GBU_24)
@@ -16244,12 +17293,12 @@ class M_2000C(PlaneType):
     class Pylon6:
         Mk_82 = (6, Weapons.Mk_82)
         Mk_82_SnakeEye = (6, Weapons.Mk_82_SnakeEye)
-        BLG_66_AC_Belouga = (6, Weapons.BLG_66_AC_Belouga)
+        BLG_66_AC_Belouga_ = (6, Weapons.BLG_66_AC_Belouga_)
 
     class Pylon7:
         Mk_82 = (7, Weapons.Mk_82)
         Mk_82_SnakeEye = (7, Weapons.Mk_82_SnakeEye)
-        BLG_66_AC_Belouga = (7, Weapons.BLG_66_AC_Belouga)
+        BLG_66_AC_Belouga_ = (7, Weapons.BLG_66_AC_Belouga_)
         GBU_12 = (7, Weapons.GBU_12)
 
     class Pylon8:
@@ -16258,7 +17307,7 @@ class M_2000C(PlaneType):
         Matra_Type_155_Rocket_Pod = (8, Weapons.Matra_Type_155_Rocket_Pod)
         Mk_82 = (8, Weapons.Mk_82)
         Mk_82_SnakeEye = (8, Weapons.Mk_82_SnakeEye)
-        BLG_66_AC_Belouga = (8, Weapons.BLG_66_AC_Belouga)
+        BLG_66_AC_Belouga_ = (8, Weapons.BLG_66_AC_Belouga_)
         AUF2_MK_82_x_2 = (8, Weapons.AUF2_MK_82_x_2)
         AUF2_MK_82_Snakeyes_x_2 = (8, Weapons.AUF2_MK_82_Snakeyes_x_2)
         AUF2_BLG_66_AC_x_2 = (8, Weapons.AUF2_BLG_66_AC_x_2)
@@ -16352,148 +17401,164 @@ class MiG_15bis(PlaneType):
 
         class Georgia(Enum):
             USSR_Air_Forces = "USSR_Air Forces"
+            default_livery = "default livery"
 
         class Syria(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Finland(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Australia(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Germany(Enum):
             GDR_Air_Force = "GDR_Air Force"
+            default_livery = "default livery"
 
         class SaudiArabia(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Israel(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Croatia(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class CzechRepublic(Enum):
             Czechoslovakia_Air_Force = "Czechoslovakia_Air Force"
+            default_livery = "default livery"
 
         class Norway(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Romania(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Spain(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Ukraine(Enum):
             USSR_Air_Forces = "USSR_Air Forces"
+            default_livery = "default livery"
 
         class Belgium(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Slovakia(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Greece(Enum):
-            default_livery = "default_livery"
             HAF_Fictional = "HAF Fictional"
+            default_livery = "default livery"
 
         class UK(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Insurgents(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Hungary(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class France(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Abkhazia(Enum):
             USSR_Air_Forces = "USSR_Air Forces"
+            default_livery = "default livery"
 
         class Russia(Enum):
+            USSR_Air_Forces_Old = "USSR_Air Forces Old"
             USSR_Air_Forces = "USSR_Air Forces"
             North_Korea_Air_Force_Major__Arkady__Boitsow = "North_Korea_Air Force_Major_ Arkady_ Boitsow"
             USSR_Pepelyaev = "USSR_Pepelyaev"
             USSR_Red = "USSR_Red"
+            default_livery = "default livery"
 
         class Sweden(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Austria(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Switzerland(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Italy(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class SouthOssetia(Enum):
             USSR_Air_Forces = "USSR_Air Forces"
+            default_livery = "default livery"
 
         class SouthKorea(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Iran(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class China(Enum):
-            North_Korea_Air_Force_Major__Arkady__Boitsow = "North_Korea_Air Force_Major_ Arkady_ Boitsow"
             China_Air_Force = "China_Air Force"
             China_Volunteer_Air_Force = "China Volunteer Air Force"
+            default_livery = "default livery"
 
         class Pakistan(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Belarus(Enum):
             USSR_Air_Forces = "USSR_Air Forces"
+            default_livery = "default livery"
 
         class NorthKorea(Enum):
             North_Korea_Air_Force = "North_Korea_Air Force"
             North_Korea_Air_Force_Major__Arkady__Boitsow = "North_Korea_Air Force_Major_ Arkady_ Boitsow"
+            USSR_Pepelyaev = "USSR_Pepelyaev"
+            default_livery = "default livery"
 
         class Iraq(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Kazakhstan(Enum):
             USSR_Air_Forces = "USSR_Air Forces"
+            default_livery = "default livery"
 
         class Bulgaria(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Serbia(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class India(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
+
+        class USAFAggressors(Enum):
+            default_livery = "default livery"
 
         class USA(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Denmark(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Egypt(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Canada(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class TheNetherlands(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Turkey(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Japan(Enum):
-            default_livery = "default_livery"
+            default_livery = "default livery"
 
         class Poland(Enum):
             Polish_Air_Force = "Polish_Air Force"
+            default_livery = "default livery"
 
     class Pylon1:
         FAB_50_ = (1, Weapons.FAB_50_)
@@ -18545,7 +19610,6 @@ class Su_34(PlaneType):
             Russian_Air_Force_Old = "Russian Air Force Old"
 
     class Pylon1:
-        R_73 = (1, Weapons.R_73)
         L005_Sorbtsiya_ECM_pod__left_ = (1, Weapons.L005_Sorbtsiya_ECM_pod__left_)
         L175V_Khibiny_ECM_pod = (1, Weapons.L175V_Khibiny_ECM_pod)
 
@@ -18554,13 +19618,13 @@ class Su_34(PlaneType):
         R_77 = (2, Weapons.R_77)
 
     class Pylon3:
-        Kh_25MPU = (3, Weapons.Kh_25MPU)
-        Kh_25ML = (3, Weapons.Kh_25ML)
-        Kh_25MR = (3, Weapons.Kh_25MR)
-        Kh_29T = (3, Weapons.Kh_29T)
-        Kh_29L = (3, Weapons.Kh_29L)
-        Kh_31A = (3, Weapons.Kh_31A)
-        Kh_31P = (3, Weapons.Kh_31P)
+        Kh_29T__ = (3, Weapons.Kh_29T__)
+        Kh_29L__ = (3, Weapons.Kh_29L__)
+        Kh_31A__ = (3, Weapons.Kh_31A__)
+        Kh_31P__ = (3, Weapons.Kh_31P__)
+        Kh_25MPU__ = (3, Weapons.Kh_25MPU__)
+        Kh_25ML__ = (3, Weapons.Kh_25ML__)
+        Kh_25MR_ = (3, Weapons.Kh_25MR_)
         B_8M1___20_S_8KOM = (3, Weapons.B_8M1___20_S_8KOM)
         B_13L___5_S_13_OF = (3, Weapons.B_13L___5_S_13_OF)
         BetAB_500 = (3, Weapons.BetAB_500)
@@ -18579,16 +19643,22 @@ class Su_34(PlaneType):
         MER_6_FAB_100 = (3, Weapons.MER_6_FAB_100)
         KMGU_2___96_AO_2_5RT = (3, Weapons.KMGU_2___96_AO_2_5RT)
         KMGU_2___96_PTAB_2_5KO = (3, Weapons.KMGU_2___96_PTAB_2_5KO)
+        R_73 = (3, Weapons.R_73)
+        R_77 = (3, Weapons.R_77)
+        R_27R = (3, Weapons.R_27R)
+        R_27ER = (3, Weapons.R_27ER)
+        R_27T = (3, Weapons.R_27T)
+        R_27ET = (3, Weapons.R_27ET)
         MER_6_5_FAB_250 = (3, Weapons.MER_6_5_FAB_250)
 
     class Pylon4:
-        Kh_25MPU = (4, Weapons.Kh_25MPU)
-        Kh_25ML = (4, Weapons.Kh_25ML)
-        Kh_25MR = (4, Weapons.Kh_25MR)
-        Kh_29T = (4, Weapons.Kh_29T)
-        Kh_29L = (4, Weapons.Kh_29L)
-        Kh_31A = (4, Weapons.Kh_31A)
-        Kh_31P = (4, Weapons.Kh_31P)
+        Kh_29T__ = (4, Weapons.Kh_29T__)
+        Kh_29L__ = (4, Weapons.Kh_29L__)
+        Kh_31A__ = (4, Weapons.Kh_31A__)
+        Kh_31P__ = (4, Weapons.Kh_31P__)
+        Kh_25MPU__ = (4, Weapons.Kh_25MPU__)
+        Kh_25ML__ = (4, Weapons.Kh_25ML__)
+        Kh_25MR_ = (4, Weapons.Kh_25MR_)
         B_8M1___20_S_8KOM = (4, Weapons.B_8M1___20_S_8KOM)
         B_13L___5_S_13_OF = (4, Weapons.B_13L___5_S_13_OF)
         BetAB_500 = (4, Weapons.BetAB_500)
@@ -18607,6 +19677,11 @@ class Su_34(PlaneType):
         MER_6_FAB_100 = (4, Weapons.MER_6_FAB_100)
         KMGU_2___96_AO_2_5RT = (4, Weapons.KMGU_2___96_AO_2_5RT)
         KMGU_2___96_PTAB_2_5KO = (4, Weapons.KMGU_2___96_PTAB_2_5KO)
+        R_77 = (4, Weapons.R_77)
+        R_27R = (4, Weapons.R_27R)
+        R_27ER = (4, Weapons.R_27ER)
+        R_27T = (4, Weapons.R_27T)
+        R_27ET = (4, Weapons.R_27ET)
         FAB_1500_M54 = (4, Weapons.FAB_1500_M54)
         MER_6_5_FAB_250 = (4, Weapons.MER_6_5_FAB_250)
         KAB_1500L = (4, Weapons.KAB_1500L)
@@ -18614,13 +19689,14 @@ class Su_34(PlaneType):
         KAB_1500Kr = (4, Weapons.KAB_1500Kr)
 
     class Pylon5:
-        Kh_25MPU = (5, Weapons.Kh_25MPU)
-        Kh_25ML = (5, Weapons.Kh_25ML)
-        Kh_25MR = (5, Weapons.Kh_25MR)
-        Kh_29T = (5, Weapons.Kh_29T)
-        Kh_29L = (5, Weapons.Kh_29L)
-        Kh_31A = (5, Weapons.Kh_31A)
-        Kh_31P = (5, Weapons.Kh_31P)
+        R_77 = (5, Weapons.R_77)
+        R_27R = (5, Weapons.R_27R)
+        R_27ER = (5, Weapons.R_27ER)
+        MER_6_5_FAB_250 = (5, Weapons.MER_6_5_FAB_250)
+        Kh_29T__ = (5, Weapons.Kh_29T__)
+        Kh_29L__ = (5, Weapons.Kh_29L__)
+        Kh_31A__ = (5, Weapons.Kh_31A__)
+        Kh_31P__ = (5, Weapons.Kh_31P__)
         BetAB_500 = (5, Weapons.BetAB_500)
         RBK_250_PTAB_2_5M = (5, Weapons.RBK_250_PTAB_2_5M)
         RBK_250_275_AO_1SCh = (5, Weapons.RBK_250_275_AO_1SCh)
@@ -18635,7 +19711,6 @@ class Su_34(PlaneType):
         SAB_100 = (5, Weapons.SAB_100)
         FAB_100 = (5, Weapons.FAB_100)
         MER_6_FAB_100 = (5, Weapons.MER_6_FAB_100)
-        MER_6_5_FAB_250 = (5, Weapons.MER_6_5_FAB_250)
 
     class Pylon6:
         BetAB_500 = (6, Weapons.BetAB_500)
@@ -18652,7 +19727,8 @@ class Su_34(PlaneType):
         SAB_100 = (6, Weapons.SAB_100)
         FAB_100 = (6, Weapons.FAB_100)
         MER_6_FAB_100 = (6, Weapons.MER_6_FAB_100)
-        FAB_1500_M54 = (6, Weapons.FAB_1500_M54)
+        R_27R = (6, Weapons.R_27R)
+        R_27ER = (6, Weapons.R_27ER)
 
     class Pylon7:
         BetAB_500 = (7, Weapons.BetAB_500)
@@ -18669,20 +19745,23 @@ class Su_34(PlaneType):
         SAB_100 = (7, Weapons.SAB_100)
         FAB_100 = (7, Weapons.FAB_100)
         MER_6_FAB_100 = (7, Weapons.MER_6_FAB_100)
-        FAB_1500_M54 = (7, Weapons.FAB_1500_M54)
+        R_27R = (7, Weapons.R_27R)
+        R_27ER = (7, Weapons.R_27ER)
         KAB_1500L = (7, Weapons.KAB_1500L)
         KAB_1500LG_Pr = (7, Weapons.KAB_1500LG_Pr)
         KAB_1500Kr = (7, Weapons.KAB_1500Kr)
         MER_6_FAB_250 = (7, Weapons.MER_6_FAB_250)
+        FAB_1500_M54 = (7, Weapons.FAB_1500_M54)
 
     class Pylon8:
-        Kh_25MPU = (8, Weapons.Kh_25MPU)
-        Kh_25ML = (8, Weapons.Kh_25ML)
-        Kh_25MR = (8, Weapons.Kh_25MR)
-        Kh_29T = (8, Weapons.Kh_29T)
-        Kh_29L = (8, Weapons.Kh_29L)
-        Kh_31A = (8, Weapons.Kh_31A)
-        Kh_31P = (8, Weapons.Kh_31P)
+        R_77 = (8, Weapons.R_77)
+        R_27R = (8, Weapons.R_27R)
+        R_27ER = (8, Weapons.R_27ER)
+        MER_6_5_FAB_250 = (8, Weapons.MER_6_5_FAB_250)
+        Kh_29T__ = (8, Weapons.Kh_29T__)
+        Kh_29L__ = (8, Weapons.Kh_29L__)
+        Kh_31A__ = (8, Weapons.Kh_31A__)
+        Kh_31P__ = (8, Weapons.Kh_31P__)
         BetAB_500 = (8, Weapons.BetAB_500)
         RBK_250_PTAB_2_5M = (8, Weapons.RBK_250_PTAB_2_5M)
         RBK_250_275_AO_1SCh = (8, Weapons.RBK_250_275_AO_1SCh)
@@ -18697,16 +19776,15 @@ class Su_34(PlaneType):
         SAB_100 = (8, Weapons.SAB_100)
         FAB_100 = (8, Weapons.FAB_100)
         MER_6_FAB_100 = (8, Weapons.MER_6_FAB_100)
-        MER_6_5_FAB_250 = (8, Weapons.MER_6_5_FAB_250)
 
     class Pylon9:
-        Kh_25MPU = (9, Weapons.Kh_25MPU)
-        Kh_25ML = (9, Weapons.Kh_25ML)
-        Kh_25MR = (9, Weapons.Kh_25MR)
-        Kh_29T = (9, Weapons.Kh_29T)
-        Kh_29L = (9, Weapons.Kh_29L)
-        Kh_31A = (9, Weapons.Kh_31A)
-        Kh_31P = (9, Weapons.Kh_31P)
+        Kh_29T__ = (9, Weapons.Kh_29T__)
+        Kh_29L__ = (9, Weapons.Kh_29L__)
+        Kh_31A__ = (9, Weapons.Kh_31A__)
+        Kh_31P__ = (9, Weapons.Kh_31P__)
+        Kh_25MPU__ = (9, Weapons.Kh_25MPU__)
+        Kh_25ML__ = (9, Weapons.Kh_25ML__)
+        Kh_25MR_ = (9, Weapons.Kh_25MR_)
         B_8M1___20_S_8KOM = (9, Weapons.B_8M1___20_S_8KOM)
         B_13L___5_S_13_OF = (9, Weapons.B_13L___5_S_13_OF)
         BetAB_500 = (9, Weapons.BetAB_500)
@@ -18725,6 +19803,11 @@ class Su_34(PlaneType):
         MER_6_FAB_100 = (9, Weapons.MER_6_FAB_100)
         KMGU_2___96_AO_2_5RT = (9, Weapons.KMGU_2___96_AO_2_5RT)
         KMGU_2___96_PTAB_2_5KO = (9, Weapons.KMGU_2___96_PTAB_2_5KO)
+        R_77 = (9, Weapons.R_77)
+        R_27R = (9, Weapons.R_27R)
+        R_27ER = (9, Weapons.R_27ER)
+        R_27T = (9, Weapons.R_27T)
+        R_27ET = (9, Weapons.R_27ET)
         FAB_1500_M54 = (9, Weapons.FAB_1500_M54)
         MER_6_5_FAB_250 = (9, Weapons.MER_6_5_FAB_250)
         KAB_1500L = (9, Weapons.KAB_1500L)
@@ -18732,13 +19815,13 @@ class Su_34(PlaneType):
         KAB_1500Kr = (9, Weapons.KAB_1500Kr)
 
     class Pylon10:
-        Kh_25MPU = (10, Weapons.Kh_25MPU)
-        Kh_25ML = (10, Weapons.Kh_25ML)
-        Kh_25MR = (10, Weapons.Kh_25MR)
-        Kh_29T = (10, Weapons.Kh_29T)
-        Kh_29L = (10, Weapons.Kh_29L)
-        Kh_31A = (10, Weapons.Kh_31A)
-        Kh_31P = (10, Weapons.Kh_31P)
+        Kh_29T__ = (10, Weapons.Kh_29T__)
+        Kh_29L__ = (10, Weapons.Kh_29L__)
+        Kh_31A__ = (10, Weapons.Kh_31A__)
+        Kh_31P__ = (10, Weapons.Kh_31P__)
+        Kh_25MPU__ = (10, Weapons.Kh_25MPU__)
+        Kh_25ML__ = (10, Weapons.Kh_25ML__)
+        Kh_25MR_ = (10, Weapons.Kh_25MR_)
         B_8M1___20_S_8KOM = (10, Weapons.B_8M1___20_S_8KOM)
         B_13L___5_S_13_OF = (10, Weapons.B_13L___5_S_13_OF)
         BetAB_500 = (10, Weapons.BetAB_500)
@@ -18757,6 +19840,12 @@ class Su_34(PlaneType):
         MER_6_FAB_100 = (10, Weapons.MER_6_FAB_100)
         KMGU_2___96_AO_2_5RT = (10, Weapons.KMGU_2___96_AO_2_5RT)
         KMGU_2___96_PTAB_2_5KO = (10, Weapons.KMGU_2___96_PTAB_2_5KO)
+        R_73 = (10, Weapons.R_73)
+        R_77 = (10, Weapons.R_77)
+        R_27R = (10, Weapons.R_27R)
+        R_27ER = (10, Weapons.R_27ER)
+        R_27T = (10, Weapons.R_27T)
+        R_27ET = (10, Weapons.R_27ET)
         MER_6_5_FAB_250 = (10, Weapons.MER_6_5_FAB_250)
 
     class Pylon11:
@@ -18764,7 +19853,6 @@ class Su_34(PlaneType):
         R_77 = (11, Weapons.R_77)
 
     class Pylon12:
-        R_73 = (12, Weapons.R_73)
         L005_Sorbtsiya_ECM_pod__right_ = (12, Weapons.L005_Sorbtsiya_ECM_pod__right_)
         L175V_Khibiny_ECM_pod = (12, Weapons.L175V_Khibiny_ECM_pod)
 
@@ -19242,6 +20330,7 @@ plane_map = {
     "A-10C": A_10C,
     "KC-135": KC_135,
     "FW-190D9": FW_190D9,
+    "FW-190A8": FW_190A8,
     "Bf-109K-4": Bf_109K_4,
     "SpitfireLFMkIX": SpitfireLFMkIX,
     "SpitfireLFMkIXCW": SpitfireLFMkIXCW,
@@ -19262,6 +20351,7 @@ plane_map = {
     "F-14B": F_14B,
     "FA-18C_hornet": FA_18C_hornet,
     "Hawk": Hawk,
+    "I-16": I_16,
     "L-39C": L_39C,
     "L-39ZA": L_39ZA,
     "M-2000C": M_2000C,

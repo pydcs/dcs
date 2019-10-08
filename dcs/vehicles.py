@@ -731,6 +731,13 @@ class Fortification:
         threat_range = 800
         air_weapon_dist = 800
 
+    class TACAN_Beacon__Man_Portable__TTS_3030(unittype.VehicleType):
+        id = "TACAN_beacon"
+        name = "TACAN Beacon (Man Portable) TTS 3030"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
     class Bunker_with_SK_C_28_15cm_naval_gun(unittype.VehicleType):
         id = "SK_C_28_naval_gun"
         name = "Bunker with SK C/28 15cm naval gun"
@@ -976,6 +983,13 @@ class Unarmed:
     class Land_Rover_109_S3(unittype.VehicleType):
         id = "Land_Rover_109_S3"
         name = "Land Rover 109 S3"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Warning_Board_A(unittype.VehicleType):
+        id = "warning_board_a"
+        name = "Warning Board A"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -1278,6 +1292,14 @@ class Armor:
         threat_range = 3500
         air_weapon_dist = 1200
 
+    class ZBD_04A(unittype.VehicleType):
+        id = "ZBD04A"
+        name = "ZBD-04A"
+        detection_range = 0
+        threat_range = None
+        air_weapon_dist = 1000
+        eprls = True
+
     class HT_Pz_Kpfw_VI_Tiger_I(unittype.VehicleType):
         id = "Tiger_I"
         name = "HT Pz.Kpfw.VI Tiger I"
@@ -1396,6 +1418,20 @@ class MissilesSS:
 
 class Locomotive:
 
+    class Electric_locomotive_VL80(unittype.VehicleType):
+        id = "Electric locomotive"
+        name = "Electric locomotive VL80"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Locomotive_CHME3T(unittype.VehicleType):
+        id = "Locomotive"
+        name = "Locomotive CHME3T"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
     class ES44AH(unittype.VehicleType):
         id = "ES44AH"
         name = "ES44AH"
@@ -1412,6 +1448,48 @@ class Locomotive:
 
 
 class Carriage:
+
+    class Coach_for_cargo(unittype.VehicleType):
+        id = "Coach cargo"
+        name = "Coach for cargo"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Coach_for_open_cargo(unittype.VehicleType):
+        id = "Coach cargo open"
+        name = "Coach for open cargo"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Coach_a_tank_blue(unittype.VehicleType):
+        id = "Coach a tank blue"
+        name = "Coach a tank blue"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Coach_a_tank_yellow(unittype.VehicleType):
+        id = "Coach a tank yellow"
+        name = "Coach a tank yellow"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Coach_for_passengers(unittype.VehicleType):
+        id = "Coach a passenger"
+        name = "Coach for passengers"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Coach_flatbed(unittype.VehicleType):
+        id = "Coach a platform"
+        name = "Coach flatbed"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
 
     class Boxcartrinity(unittype.VehicleType):
         id = "Boxcartrinity"
@@ -1561,6 +1639,7 @@ vehicle_map = {
     "outpost_road": Fortification.Road_outpost,
     "outpost": Fortification.Outpost,
     "houseA_arm": Fortification.Armed_house,
+    "TACAN_beacon": Fortification.TACAN_Beacon__Man_Portable__TTS_3030,
     "Challenger2": Armor.MBT_Challenger_II,
     "Leclerc": Armor.MBT_Leclerc,
     "Leopard-2": Armor.MBT_Leopard_2,
@@ -1604,6 +1683,14 @@ vehicle_map = {
     "ZIL-131 KUNG": Unarmed.Transport_ZIL_131_KUNG,
     "ZIL-4331": Unarmed.Transport_ZIL_4331,
     "KrAZ6322": Unarmed.Transport_KrAZ_6322,
+    "Electric locomotive": Locomotive.Electric_locomotive_VL80,
+    "Locomotive": Locomotive.Locomotive_CHME3T,
+    "Coach cargo": Carriage.Coach_for_cargo,
+    "Coach cargo open": Carriage.Coach_for_open_cargo,
+    "Coach a tank blue": Carriage.Coach_a_tank_blue,
+    "Coach a tank yellow": Carriage.Coach_a_tank_yellow,
+    "Coach a passenger": Carriage.Coach_for_passengers,
+    "Coach a platform": Carriage.Coach_flatbed,
     "S_75M_Volhov": AirDefence.SAM_SA_2_LN_SM_90,
     "SNR_75V": AirDefence.SAM_SA_2_TR_SNR_75_Fan_Song,
     "rapier_fsa_launcher": AirDefence.Rapier_FSA_Launcher,
@@ -1617,6 +1704,8 @@ vehicle_map = {
     "Boxcartrinity": Carriage.Boxcartrinity,
     "Tankcartrinity": Carriage.Tankcartrinity,
     "Wellcarnsc": Carriage.Wellcarnsc,
+    "ZBD04A": Armor.ZBD_04A,
+    "warning_board_a": Unarmed.Warning_Board_A,
     "Kubelwagen_82": Unarmed.Kübelwagen_82,
     "Blitz_36-6700A": Unarmed.Blitz_3_6_6700A,
     "Sd_Kfz_2": Unarmed.Sd_Kfz_2,
