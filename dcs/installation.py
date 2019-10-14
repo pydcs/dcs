@@ -49,6 +49,10 @@ def is_using_dcs_standalone_edition():
         winreg.CloseKey(dcs_path_key)
         return True
     except FileNotFoundError as fnfe:
+        dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World OpenBeta")
+        winreg.CloseKey(dcs_path_key)
+        return True
+    except FileNotFoundError:
         return False
 
 
@@ -60,6 +64,12 @@ def get_dcs_install_directory():
     if is_using_dcs_standalone_edition():
         try:
             dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World")
+            path = winreg.QueryValueEx(dcs_path_key, "Path")
+            dcs_dir = path[0] + os.path.sep
+            winreg.CloseKey(dcs_path_key)
+            return dcs_dir
+        except FileNotFoundError as fnfe:
+            dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World OpenBeta")
             path = winreg.QueryValueEx(dcs_path_key, "Path")
             dcs_dir = path[0] + os.path.sep
             winreg.CloseKey(dcs_path_key)
