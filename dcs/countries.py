@@ -178,6 +178,7 @@ class Russia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -236,6 +237,7 @@ class Russia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -494,6 +496,7 @@ class Ukraine(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -543,6 +546,7 @@ class Ukraine(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -760,6 +764,7 @@ class USA(Country):
         AJS37 = planes.AJS37
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         F_14B = planes.F_14B
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
@@ -818,6 +823,7 @@ class USA(Country):
         Plane.AJS37,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.F_14B,
         Plane.I_16,
         Plane.M_2000C,
@@ -1097,6 +1103,7 @@ class Turkey(Country):
         KC130 = planes.KC130
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -1133,6 +1140,7 @@ class Turkey(Country):
         Plane.KC130,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -1284,6 +1292,7 @@ class UK(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -1320,6 +1329,7 @@ class UK(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -1478,6 +1488,7 @@ class France(Country):
         AV8BNA = planes.AV8BNA
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -1514,6 +1525,7 @@ class France(Country):
         Plane.AV8BNA,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -1737,6 +1749,7 @@ class Germany(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -1775,6 +1788,7 @@ class Germany(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -2066,6 +2080,7 @@ class USAFAggressors(Country):
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
         J_11A = planes.J_11A
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -2155,6 +2170,7 @@ class USAFAggressors(Country):
         Plane.C_101EB,
         Plane.C_101CC,
         Plane.J_11A,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -2393,6 +2409,7 @@ class Canada(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -2425,6 +2442,7 @@ class Canada(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -2566,6 +2584,7 @@ class Spain(Country):
         P_51D_30_NA = planes.P_51D_30_NA
         AJS37 = planes.AJS37
         KC135MPRS = planes.KC135MPRS
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -2601,6 +2620,7 @@ class Spain(Country):
         Plane.P_51D_30_NA,
         Plane.AJS37,
         Plane.KC135MPRS,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -2749,6 +2769,7 @@ class TheNetherlands(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -2784,6 +2805,7 @@ class TheNetherlands(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -2922,6 +2944,7 @@ class Belgium(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -2955,6 +2978,7 @@ class Belgium(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -3082,6 +3106,7 @@ class Norway(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -3115,6 +3140,7 @@ class Norway(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -3241,6 +3267,7 @@ class Denmark(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -3275,6 +3302,7 @@ class Denmark(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -3421,6 +3449,7 @@ class Israel(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -3457,6 +3486,7 @@ class Israel(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -3638,6 +3668,7 @@ class Georgia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -3671,6 +3702,7 @@ class Georgia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -3817,6 +3849,7 @@ class Insurgents(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -3842,6 +3875,7 @@ class Insurgents(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -4003,6 +4037,7 @@ class Abkhazia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -4033,6 +4068,7 @@ class Abkhazia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -4183,6 +4219,7 @@ class SouthOssetia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -4207,6 +4244,7 @@ class SouthOssetia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -4337,6 +4375,7 @@ class Italy(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -4374,6 +4413,7 @@ class Italy(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -4505,6 +4545,7 @@ class Australia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -4539,6 +4580,7 @@ class Australia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -4657,6 +4699,7 @@ class Switzerland(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_86F_Sabre = planes.F_86F_Sabre
@@ -4685,6 +4728,7 @@ class Switzerland(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_86F_Sabre,
@@ -4786,6 +4830,7 @@ class Austria(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_86F_Sabre = planes.F_86F_Sabre
         FA_18C_hornet = planes.FA_18C_hornet
@@ -4812,6 +4857,7 @@ class Austria(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_86F_Sabre,
         Plane.FA_18C_hornet,
@@ -4994,6 +5040,7 @@ class Belarus(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -5031,6 +5078,7 @@ class Belarus(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -5204,6 +5252,7 @@ class Bulgaria(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -5239,6 +5288,7 @@ class Bulgaria(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -5373,6 +5423,7 @@ class CzechRepublic(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -5405,6 +5456,7 @@ class CzechRepublic(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -5545,6 +5597,7 @@ class China(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -5582,6 +5635,7 @@ class China(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -5696,6 +5750,7 @@ class Croatia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -5723,6 +5778,7 @@ class Croatia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -5890,6 +5946,7 @@ class Egypt(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -5919,6 +5976,7 @@ class Egypt(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -6077,6 +6135,7 @@ class Finland(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -6103,6 +6162,7 @@ class Finland(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -6251,6 +6311,7 @@ class Greece(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -6285,6 +6346,7 @@ class Greece(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -6455,6 +6517,7 @@ class Hungary(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -6486,6 +6549,7 @@ class Hungary(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -6621,6 +6685,7 @@ class India(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -6655,6 +6720,7 @@ class India(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -6821,6 +6887,7 @@ class Iran(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_14B = planes.F_14B
         FA_18C_hornet = planes.FA_18C_hornet
@@ -6857,6 +6924,7 @@ class Iran(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_14B,
         Plane.FA_18C_hornet,
@@ -7019,6 +7087,7 @@ class Iraq(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -7050,6 +7119,7 @@ class Iraq(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -7191,6 +7261,7 @@ class Japan(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -7220,6 +7291,7 @@ class Japan(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -7416,6 +7488,7 @@ class Kazakhstan(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -7453,6 +7526,7 @@ class Kazakhstan(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -7578,6 +7652,7 @@ class NorthKorea(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -7606,6 +7681,7 @@ class NorthKorea(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -7727,6 +7803,7 @@ class Pakistan(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -7757,6 +7834,7 @@ class Pakistan(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -7909,6 +7987,7 @@ class Poland(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -7945,6 +8024,7 @@ class Poland(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -8100,6 +8180,7 @@ class Romania(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -8132,6 +8213,7 @@ class Romania(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -8266,6 +8348,7 @@ class SaudiArabia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
@@ -8297,6 +8380,7 @@ class SaudiArabia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.FA_18C_hornet,
         Plane.I_16,
@@ -8453,6 +8537,7 @@ class Serbia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -8482,6 +8567,7 @@ class Serbia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -8615,6 +8701,7 @@ class Slovakia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -8646,6 +8733,7 @@ class Slovakia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -8775,6 +8863,7 @@ class SouthKorea(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
@@ -8805,6 +8894,7 @@ class SouthKorea(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.FA_18C_hornet,
         Plane.I_16,
@@ -8910,6 +9000,7 @@ class Sweden(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -8939,6 +9030,7 @@ class Sweden(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -9078,6 +9170,7 @@ class Syria(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -9109,6 +9202,7 @@ class Syria(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -9236,6 +9330,7 @@ class Yemen(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_86F_Sabre = planes.F_86F_Sabre
         FA_18C_hornet = planes.FA_18C_hornet
@@ -9265,6 +9360,7 @@ class Yemen(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_86F_Sabre,
         Plane.FA_18C_hornet,
@@ -9405,6 +9501,7 @@ class Vietnam(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_86F_Sabre = planes.F_86F_Sabre
         FA_18C_hornet = planes.FA_18C_hornet
@@ -9436,6 +9533,7 @@ class Vietnam(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_86F_Sabre,
         Plane.FA_18C_hornet,
@@ -9560,6 +9658,7 @@ class Venezuela(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -9588,6 +9687,7 @@ class Venezuela(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -9691,6 +9791,7 @@ class Tunisia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
@@ -9717,6 +9818,7 @@ class Tunisia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.FA_18C_hornet,
         Plane.Hawk,
@@ -9824,6 +9926,7 @@ class Thailand(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
@@ -9853,6 +9956,7 @@ class Thailand(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.FA_18C_hornet,
         Plane.Hawk,
@@ -9973,6 +10077,7 @@ class Sudan(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_86F_Sabre = planes.F_86F_Sabre
         FA_18C_hornet = planes.FA_18C_hornet
@@ -10003,6 +10108,7 @@ class Sudan(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_86F_Sabre,
         Plane.FA_18C_hornet,
@@ -10107,6 +10213,7 @@ class Philippines(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
@@ -10135,6 +10242,7 @@ class Philippines(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.FA_18C_hornet,
         Plane.Hawk,
@@ -10256,6 +10364,7 @@ class Morocco(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_86F_Sabre = planes.F_86F_Sabre
         FA_18C_hornet = planes.FA_18C_hornet
@@ -10282,6 +10391,7 @@ class Morocco(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_86F_Sabre,
         Plane.FA_18C_hornet,
@@ -10388,6 +10498,7 @@ class Mexico(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_86F_Sabre = planes.F_86F_Sabre
         FA_18C_hornet = planes.FA_18C_hornet
@@ -10416,6 +10527,7 @@ class Mexico(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_86F_Sabre,
         Plane.FA_18C_hornet,
@@ -10522,6 +10634,7 @@ class Malaysia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_86F_Sabre = planes.F_86F_Sabre
         FA_18C_hornet = planes.FA_18C_hornet
@@ -10549,6 +10662,7 @@ class Malaysia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_86F_Sabre,
         Plane.FA_18C_hornet,
@@ -10674,6 +10788,7 @@ class Libya(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -10702,6 +10817,7 @@ class Libya(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -10821,6 +10937,7 @@ class Jordan(Country):
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
         KC135MPRS = planes.KC135MPRS
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_86F_Sabre = planes.F_86F_Sabre
         FA_18C_hornet = planes.FA_18C_hornet
@@ -10849,6 +10966,7 @@ class Jordan(Country):
         Plane.AV8BNA,
         Plane.KC130,
         Plane.KC135MPRS,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_86F_Sabre,
         Plane.FA_18C_hornet,
@@ -10976,6 +11094,7 @@ class Indonesia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_86F_Sabre = planes.F_86F_Sabre
         FA_18C_hornet = planes.FA_18C_hornet
@@ -11008,6 +11127,7 @@ class Indonesia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_86F_Sabre,
         Plane.FA_18C_hornet,
@@ -11100,6 +11220,7 @@ class Honduras(Country):
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
         KC135MPRS = planes.KC135MPRS
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_86F_Sabre = planes.F_86F_Sabre
         FA_18C_hornet = planes.FA_18C_hornet
@@ -11126,6 +11247,7 @@ class Honduras(Country):
         Plane.AV8BNA,
         Plane.KC130,
         Plane.KC135MPRS,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_86F_Sabre,
         Plane.FA_18C_hornet,
@@ -11254,6 +11376,7 @@ class Ethiopia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
@@ -11283,6 +11406,7 @@ class Ethiopia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.FA_18C_hornet,
         Plane.Hawk,
@@ -11397,6 +11521,7 @@ class Chile(Country):
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_86F_Sabre = planes.F_86F_Sabre
         FA_18C_hornet = planes.FA_18C_hornet
@@ -11428,6 +11553,7 @@ class Chile(Country):
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_86F_Sabre,
         Plane.FA_18C_hornet,
@@ -11553,6 +11679,7 @@ class Brazil(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_86F_Sabre = planes.F_86F_Sabre
         FA_18C_hornet = planes.FA_18C_hornet
@@ -11580,6 +11707,7 @@ class Brazil(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_86F_Sabre,
         Plane.FA_18C_hornet,
@@ -11699,6 +11827,7 @@ class Bahrain(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_86F_Sabre = planes.F_86F_Sabre
         FA_18C_hornet = planes.FA_18C_hornet
@@ -11724,6 +11853,7 @@ class Bahrain(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_86F_Sabre,
         Plane.FA_18C_hornet,
@@ -11844,6 +11974,7 @@ class ThirdReich(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -11871,6 +12002,7 @@ class ThirdReich(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -11991,6 +12123,7 @@ class Yugoslavia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -12019,6 +12152,7 @@ class Yugoslavia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -12236,6 +12370,7 @@ class USSR(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -12286,6 +12421,7 @@ class USSR(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -12421,6 +12557,7 @@ class ItalianSocialRepublic(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -12446,6 +12583,7 @@ class ItalianSocialRepublic(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -12633,6 +12771,7 @@ class Algeria(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -12674,6 +12813,7 @@ class Algeria(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -12814,6 +12954,7 @@ class Kuwait(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -12842,6 +12983,7 @@ class Kuwait(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -12954,6 +13096,7 @@ class Qatar(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -12981,6 +13124,7 @@ class Qatar(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -13107,6 +13251,7 @@ class Oman(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -13135,6 +13280,7 @@ class Oman(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -13265,6 +13411,7 @@ class UnitedArabEmirates(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -13294,6 +13441,7 @@ class UnitedArabEmirates(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -13405,6 +13553,7 @@ class SouthAfrica(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -13434,6 +13583,7 @@ class SouthAfrica(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -13587,6 +13737,7 @@ class Cuba(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -13623,6 +13774,7 @@ class Cuba(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,

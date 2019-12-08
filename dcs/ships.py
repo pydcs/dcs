@@ -171,7 +171,7 @@ class LHA_1_Tarawa(unittype.ShipType):
     name = "LHA-1 Tarawa"
     plane_num = 40
     helicopter_num = 36
-    parking = 5
+    parking = 4
     detection_range = 300000
     threat_range = 150000
     air_weapon_dist = 150000

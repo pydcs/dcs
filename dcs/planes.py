@@ -10534,6 +10534,10 @@ class C_101EB(PlaneType):
             Patrulla_Aguila_25_Aniversario = "Patrulla Aguila 25 Aniversario"
             Patrulla_Aguila_30_Aniversario = "Patrulla Aguila 30 Aniversario"
             Patrulla_Aguila_Spanish_AGA = "Patrulla Aguila Spanish AGA"
+            XE_25_01_Prototype_1978_Farnborough_Airshow = "XE-25 01 Prototype 1978 Farnborough Airshow"
+            XE25_02_Prototype = "XE25-02 Prototype"
+            XE25_02_Prototype_1989_TV_Commercial = "XE25-02 Prototype 1989 TV Commercial"
+            XE25_03_Prototype = "XE25-03 Prototype"
 
         class Ukraine(Enum):
             default = "default"
@@ -11185,6 +11189,136 @@ class J_11A(PlaneType):
     pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
     tasks = [task.CAP, task.Intercept, task.Escort, task.FighterSweep, task.AFAC, task.CAS, task.GroundAttack, task.RunwayAttack, task.AntishipStrike]
+    task_default = task.CAP
+
+
+class JF_17(PlaneType):
+    id = "JF-17"
+    flyable = True
+    height = 4.7
+    width = 8.5
+    length = 14.25
+    fuel_max = 2325
+    max_speed = 2520
+    chaff = 36
+    flare = 32
+    charge_total = 68
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    eplrs = True
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 243
+
+    class Liveries:
+
+        class China(Enum):
+            Proto_06 = "Proto 06"
+            PLAAF_125th_AB__Fictional = "PLAAF 125th AB (Fictional)"
+
+        class Pakistan(Enum):
+            PAKAF_Spider = "PAKAF Spider"
+
+    class Pylon1:
+        DIS_PL_5EII = (1, Weapons.DIS_PL_5EII)
+
+    class Pylon2:
+        DIS_PL_5EII = (2, Weapons.DIS_PL_5EII)
+        DIS_SD_10 = (2, Weapons.DIS_SD_10)
+        DIS_SD_10_DUAL_L = (2, Weapons.DIS_SD_10_DUAL_L)
+        DIS_LD_10 = (2, Weapons.DIS_LD_10)
+        DIS_LD_10_DUAL_L = (2, Weapons.DIS_LD_10_DUAL_L)
+        DIS_C_701T = (2, Weapons.DIS_C_701T)
+        DIS_C_701IR = (2, Weapons.DIS_C_701IR)
+        DIS_LS_6_500 = (2, Weapons.DIS_LS_6_500)
+        Mk_82_SnakeEye = (2, Weapons.Mk_82_SnakeEye)
+        Mk_82 = (2, Weapons.Mk_82)
+        Mk_83 = (2, Weapons.Mk_83)
+        DIS_MK_20 = (2, Weapons.DIS_MK_20)
+        DIS_GBU_12 = (2, Weapons.DIS_GBU_12)
+        BRU_33___2_x_Mk_82 = (2, Weapons.BRU_33___2_x_Mk_82)
+        BRU_33___2_x_Mk_82_SnakeEye = (2, Weapons.BRU_33___2_x_Mk_82_SnakeEye)
+        BRU_33___2_x_Mk_20_Rockeye = (2, Weapons.BRU_33___2_x_Mk_20_Rockeye)
+        DIS_GBU_12_DUAL = (2, Weapons.DIS_GBU_12_DUAL)
+        DIS_BRM1_90 = (2, Weapons.DIS_BRM1_90)
+        DIS_RKT_90_UG = (2, Weapons.DIS_RKT_90_UG)
+        BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_ = (2, Weapons.BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_)
+        DIS_WMD7 = (2, Weapons.DIS_WMD7)
+        DIS_AKG_DLPOD = (2, Weapons.DIS_AKG_DLPOD)
+
+    class Pylon3:
+        DIS_C_802AK = (3, Weapons.DIS_C_802AK)
+        DIS_CM_802AKG = (3, Weapons.DIS_CM_802AKG)
+        DIS_LS_6_500 = (3, Weapons.DIS_LS_6_500)
+        DIS_GB6 = (3, Weapons.DIS_GB6)
+        DIS_GB6_TSP = (3, Weapons.DIS_GB6_TSP)
+        DIS_GB6_HE = (3, Weapons.DIS_GB6_HE)
+        DIS_TANK800 = (3, Weapons.DIS_TANK800)
+        DIS_TANK1100 = (3, Weapons.DIS_TANK1100)
+        Mk_83 = (3, Weapons.Mk_83)
+        Mk_84 = (3, Weapons.Mk_84)
+        DIS_GBU_10 = (3, Weapons.DIS_GBU_10)
+        DIS_GBU_16 = (3, Weapons.DIS_GBU_16)
+        DIS_BRM1_90 = (3, Weapons.DIS_BRM1_90)
+        DIS_RKT_90_UG = (3, Weapons.DIS_RKT_90_UG)
+        BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_ = (3, Weapons.BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_)
+
+    class Pylon4:
+        DIS_TANK800 = (4, Weapons.DIS_TANK800)
+        Mk_83 = (4, Weapons.Mk_83)
+        Mk_84 = (4, Weapons.Mk_84)
+        DIS_GBU_10 = (4, Weapons.DIS_GBU_10)
+        DIS_GBU_16 = (4, Weapons.DIS_GBU_16)
+        DIS_WMD7 = (4, Weapons.DIS_WMD7)
+        DIS_AKG_DLPOD = (4, Weapons.DIS_AKG_DLPOD)
+        DIS_SPJ_POD = (4, Weapons.DIS_SPJ_POD)
+
+    class Pylon5:
+        DIS_C_802AK = (5, Weapons.DIS_C_802AK)
+        DIS_CM_802AKG = (5, Weapons.DIS_CM_802AKG)
+        DIS_LS_6_500 = (5, Weapons.DIS_LS_6_500)
+        DIS_GB6 = (5, Weapons.DIS_GB6)
+        DIS_GB6_TSP = (5, Weapons.DIS_GB6_TSP)
+        DIS_GB6_HE = (5, Weapons.DIS_GB6_HE)
+        DIS_TANK800 = (5, Weapons.DIS_TANK800)
+        DIS_TANK1100 = (5, Weapons.DIS_TANK1100)
+        Mk_83 = (5, Weapons.Mk_83)
+        Mk_84 = (5, Weapons.Mk_84)
+        DIS_GBU_10 = (5, Weapons.DIS_GBU_10)
+        DIS_GBU_16 = (5, Weapons.DIS_GBU_16)
+        DIS_BRM1_90 = (5, Weapons.DIS_BRM1_90)
+        DIS_RKT_90_UG = (5, Weapons.DIS_RKT_90_UG)
+        BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_ = (5, Weapons.BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_)
+
+    class Pylon6:
+        DIS_PL_5EII = (6, Weapons.DIS_PL_5EII)
+        DIS_SD_10 = (6, Weapons.DIS_SD_10)
+        DIS_SD_10_DUAL_R = (6, Weapons.DIS_SD_10_DUAL_R)
+        DIS_LD_10 = (6, Weapons.DIS_LD_10)
+        DIS_LD_10_DUAL_R = (6, Weapons.DIS_LD_10_DUAL_R)
+        DIS_C_701T = (6, Weapons.DIS_C_701T)
+        DIS_C_701IR = (6, Weapons.DIS_C_701IR)
+        DIS_LS_6_500 = (6, Weapons.DIS_LS_6_500)
+        Mk_82_SnakeEye = (6, Weapons.Mk_82_SnakeEye)
+        Mk_82 = (6, Weapons.Mk_82)
+        Mk_83 = (6, Weapons.Mk_83)
+        DIS_MK_20 = (6, Weapons.DIS_MK_20)
+        DIS_GBU_12 = (6, Weapons.DIS_GBU_12)
+        BRU_33___2_x_Mk_82 = (6, Weapons.BRU_33___2_x_Mk_82)
+        BRU_33___2_x_Mk_82_SnakeEye = (6, Weapons.BRU_33___2_x_Mk_82_SnakeEye)
+        BRU_33___2_x_Mk_20_Rockeye = (6, Weapons.BRU_33___2_x_Mk_20_Rockeye)
+        DIS_GBU_12_DUAL = (6, Weapons.DIS_GBU_12_DUAL)
+        DIS_BRM1_90 = (6, Weapons.DIS_BRM1_90)
+        DIS_RKT_90_UG = (6, Weapons.DIS_RKT_90_UG)
+        BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_ = (6, Weapons.BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_)
+        DIS_WMD7 = (6, Weapons.DIS_WMD7)
+        DIS_AKG_DLPOD = (6, Weapons.DIS_AKG_DLPOD)
+
+    class Pylon7:
+        DIS_PL_5EII = (7, Weapons.DIS_PL_5EII)
+
+    pylons = {1, 2, 3, 4, 5, 6, 7}
+
+    tasks = [task.Intercept, task.CAP, task.AFAC, task.Reconnaissance, task.Escort, task.FighterSweep, task.SEAD, task.AntishipStrike, task.CAS, task.GroundAttack, task.PinpointStrike, task.RunwayAttack]
     task_default = task.CAP
 
 
@@ -12811,6 +12945,9 @@ class F_16C_50(PlaneType):
         TER_9A___2_x_Mk_82AIR = (4, Weapons.TER_9A___2_x_Mk_82AIR)
         TER_9A___2_x_CBU_87 = (4, Weapons.TER_9A___2_x_CBU_87)
         TER_9A___2_x_CBU_97 = (4, Weapons.TER_9A___2_x_CBU_97)
+
+    class Pylon5:
+        Fuel_tank_300_gal = (5, Weapons.Fuel_tank_300_gal)
 #ERRR <CLEAN>
 
     class Pylon6:
@@ -15372,6 +15509,8 @@ class F_14B(PlaneType):
         AIM_54A_Mk47_ = (2, Weapons.AIM_54A_Mk47_)
         AIM_54A_Mk60_ = (2, Weapons.AIM_54A_Mk60_)
         AIM_7M_ = (2, Weapons.AIM_7M_)
+        AIM_7F_ = (2, Weapons.AIM_7F_)
+        AIM_7MH_ = (2, Weapons.AIM_7MH_)
         LAU_7_AIM_9M = (2, Weapons.LAU_7_AIM_9M)
         LAU_7_AIM_9L = (2, Weapons.LAU_7_AIM_9L)
         _2_LAU_10___4_ZUNI_MK_71_________ = (2, Weapons._2_LAU_10___4_ZUNI_MK_71_________)
@@ -15392,6 +15531,8 @@ class F_14B(PlaneType):
         AIM_54A_Mk60 = (4, Weapons.AIM_54A_Mk60)
         AIM_54C_Mk47 = (4, Weapons.AIM_54C_Mk47)
         AIM_7M__ = (4, Weapons.AIM_7M__)
+        AIM_7F__ = (4, Weapons.AIM_7F__)
+        AIM_7MH__ = (4, Weapons.AIM_7MH__)
 #ERRR <CLEAN>
         Mk_82_ = (4, Weapons.Mk_82_)
         Mk_82AIR_ = (4, Weapons.Mk_82AIR_)
@@ -15418,6 +15559,8 @@ class F_14B(PlaneType):
         AIM_54A_Mk60 = (5, Weapons.AIM_54A_Mk60)
         AIM_54C_Mk47 = (5, Weapons.AIM_54C_Mk47)
         AIM_7M__ = (5, Weapons.AIM_7M__)
+        AIM_7F__ = (5, Weapons.AIM_7F__)
+        AIM_7MH__ = (5, Weapons.AIM_7MH__)
 #ERRR <CLEAN>
         Mk_82_ = (5, Weapons.Mk_82_)
         Mk_82AIR_ = (5, Weapons.Mk_82AIR_)
@@ -15442,6 +15585,8 @@ class F_14B(PlaneType):
         AIM_54A_Mk60 = (6, Weapons.AIM_54A_Mk60)
         AIM_54C_Mk47 = (6, Weapons.AIM_54C_Mk47)
         AIM_7M__ = (6, Weapons.AIM_7M__)
+        AIM_7F__ = (6, Weapons.AIM_7F__)
+        AIM_7MH__ = (6, Weapons.AIM_7MH__)
 #ERRR <CLEAN>
         Mk_82_ = (6, Weapons.Mk_82_)
         Mk_82AIR_ = (6, Weapons.Mk_82AIR_)
@@ -15467,6 +15612,8 @@ class F_14B(PlaneType):
         AIM_54A_Mk60 = (7, Weapons.AIM_54A_Mk60)
         AIM_54C_Mk47 = (7, Weapons.AIM_54C_Mk47)
         AIM_7M__ = (7, Weapons.AIM_7M__)
+        AIM_7F__ = (7, Weapons.AIM_7F__)
+        AIM_7MH__ = (7, Weapons.AIM_7MH__)
 #ERRR <CLEAN>
         Mk_82_ = (7, Weapons.Mk_82_)
         Mk_82AIR_ = (7, Weapons.Mk_82AIR_)
@@ -15496,6 +15643,8 @@ class F_14B(PlaneType):
         AIM_54A_Mk47__ = (9, Weapons.AIM_54A_Mk47__)
         AIM_54A_Mk60__ = (9, Weapons.AIM_54A_Mk60__)
         AIM_7M_ = (9, Weapons.AIM_7M_)
+        AIM_7F_ = (9, Weapons.AIM_7F_)
+        AIM_7MH_ = (9, Weapons.AIM_7MH_)
         LAU_7_AIM_9M = (9, Weapons.LAU_7_AIM_9M)
         LAU_7_AIM_9L = (9, Weapons.LAU_7_AIM_9L)
         LANTIRN_Targeting_Pod = (9, Weapons.LANTIRN_Targeting_Pod)
@@ -15618,44 +15767,56 @@ class FA_18C_hornet(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Syria(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Finland(Enum):
-            Finland_31 = "Finland 31"
+            F_18_IRIAF = "F-18 IRIAF"
             Finland_21 = "Finland 21"
+            Finland_31 = "Finland 31"
             default_livery = "default livery"
 
         class Australia(Enum):
             Australian_75th_Squadron = "Australian 75th Squadron"
             Australian_77th_Squadron = "Australian 77th Squadron"
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Germany(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class SaudiArabia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Israel(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_Israel_Air_Force = "Fictional Israel Air Force"
             default_livery = "default livery"
 
         class Croatia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class CzechRepublic(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Norway(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Romania(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Spain(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Spain_111th_Escuadron_C_15_73 = "Spain 111th Escuadron C.15-73"
             Spain_111th_Escuadron_C_15_88 = "Spain 111th Escuadron C.15-88"
             Spain_121th_Escuadron_C_15_45 = "Spain 121th Escuadron C.15-45"
@@ -15674,88 +15835,115 @@ class FA_18C_hornet(PlaneType):
             default_livery = "default livery"
 
         class Ukraine(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_Ukraine_Air_Force = "Fictional Ukraine Air Force"
             default_livery = "default livery"
 
         class Belgium(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Slovakia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Greece(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class UK(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_UK_Air_Force = "Fictional UK Air Force"
             default_livery = "default livery"
 
         class Insurgents(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Hungary(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class France(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Abkhazia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Russia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_Russia_Air_Force = "Fictional Russia Air Force"
             default_livery = "default livery"
 
         class Sweden(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Austria(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Switzerland(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Switzerland = "Switzerland"
             default_livery = "default livery"
 
         class Italy(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class SouthOssetia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class SouthKorea(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Iran(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class China(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Pakistan(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Belarus(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class NorthKorea(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Iraq(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Kazakhstan(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Bulgaria(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Serbia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class India(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class USAFAggressors(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_Russia_Air_Force = "Fictional Russia Air Force"
             VFC_12 = "VFC-12"
             NAWDC_blue = "NAWDC blue"
@@ -15767,6 +15955,7 @@ class FA_18C_hornet(PlaneType):
 
         class USA(Enum):
             VFA_37 = "VFA-37"
+            F_18_IRIAF = "F-18 IRIAF"
             VFA_106 = "VFA-106"
             VFA_106_high_visibility = "VFA-106 high visibility"
             VFA_113 = "VFA-113"
@@ -15806,9 +15995,11 @@ class FA_18C_hornet(PlaneType):
             Blue_Angels_Jet_Team = "Blue Angels Jet Team"
 
         class Denmark(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Egypt(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Canada(Enum):
@@ -15816,19 +16007,24 @@ class FA_18C_hornet(PlaneType):
             Canada_409th_Squadron = "Canada 409th Squadron"
             Canada_425th_Squadron = "Canada 425th Squadron"
             Canada_NORAD_60_Demo_Jet = "Canada NORAD 60 Demo Jet"
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class TheNetherlands(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Turkey(Enum):
             Fictional_Turkey_162nd_Sq = "Fictional Turkey 162nd Sq"
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Japan(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Poland(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
     class Pylon1:
@@ -15893,6 +16089,8 @@ class FA_18C_hornet(PlaneType):
         GBU_38 = (2, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (2, Weapons.BRU_55___2_x_GBU_38)
         AGM_84D = (2, Weapons.AGM_84D)
+        AGM_62 = (2, Weapons.AGM_62)
+        AWW_13_DATALINK_POD = (2, Weapons.AWW_13_DATALINK_POD)
 
     class Pylon3:
         LAU_115___AIM_7M = (3, Weapons.LAU_115___AIM_7M)
@@ -15940,6 +16138,7 @@ class FA_18C_hornet(PlaneType):
         GBU_38 = (3, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (3, Weapons.BRU_55___2_x_GBU_38)
         AGM_84D = (3, Weapons.AGM_84D)
+        AWW_13_DATALINK_POD = (3, Weapons.AWW_13_DATALINK_POD)
 
     class Pylon4:
         AIM_7M = (4, Weapons.AIM_7M)
@@ -15963,6 +16162,7 @@ class FA_18C_hornet(PlaneType):
         BRU_33___2_x_CBU_99 = (5, Weapons.BRU_33___2_x_CBU_99)
         Mk_20 = (5, Weapons.Mk_20)
         AN_AAQ_28_LITENING = (5, Weapons.AN_AAQ_28_LITENING)
+        AWW_13_DATALINK_POD = (5, Weapons.AWW_13_DATALINK_POD)
 #ERRR <CLEAN>
 
     class Pylon6:
@@ -16018,6 +16218,7 @@ class FA_18C_hornet(PlaneType):
         GBU_38 = (7, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (7, Weapons.BRU_55___2_x_GBU_38)
         AGM_84D = (7, Weapons.AGM_84D)
+        AWW_13_DATALINK_POD = (7, Weapons.AWW_13_DATALINK_POD)
 
     class Pylon8:
         LAU_115_2_LAU_127_AIM_9M = (8, Weapons.LAU_115_2_LAU_127_AIM_9M)
@@ -16074,6 +16275,8 @@ class FA_18C_hornet(PlaneType):
         GBU_38 = (8, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (8, Weapons.BRU_55___2_x_GBU_38)
         AGM_84D = (8, Weapons.AGM_84D)
+        AGM_62 = (8, Weapons.AGM_62)
+        AWW_13_DATALINK_POD = (8, Weapons.AWW_13_DATALINK_POD)
 
     class Pylon9:
         AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
@@ -16875,7 +17078,6 @@ class I_16(PlaneType):
 
     class Pylon1:
         I16_RS_82 = (1, Weapons.I16_RS_82)
-#ERRR I16_RS_82_S
 
     class Pylon2:
         I16_RS_82 = (2, Weapons.I16_RS_82)
@@ -16884,15 +17086,21 @@ class I_16(PlaneType):
         I16_RS_82 = (3, Weapons.I16_RS_82)
 
     class Pylon4:
-        I16_RS_82 = (4, Weapons.I16_RS_82)
+        I16_FAB_100SV = (4, Weapons.I16_FAB_100SV)
 
     class Pylon5:
-        I16_RS_82 = (5, Weapons.I16_RS_82)
+        I16_FAB_100SV = (5, Weapons.I16_FAB_100SV)
 
     class Pylon6:
         I16_RS_82 = (6, Weapons.I16_RS_82)
 
-    pylons = {1, 2, 3, 4, 5, 6}
+    class Pylon7:
+        I16_RS_82 = (7, Weapons.I16_RS_82)
+
+    class Pylon8:
+        I16_RS_82 = (8, Weapons.I16_RS_82)
+
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8}
 
     tasks = [task.CAP, task.CAS, task.Escort, task.FighterSweep, task.GroundAttack, task.Intercept]
     task_default = task.CAP
@@ -17455,6 +17663,7 @@ class M_2000C(PlaneType):
         "LaserCode1": 8,
         "WpBullseye": 0,
         "ForceINSRules": False,
+        "LoadNVGCase": False,
     }
 
     class Properties:
@@ -17492,6 +17701,9 @@ class M_2000C(PlaneType):
 
         class ForceINSRules:
             id = "ForceINSRules"
+
+        class LoadNVGCase:
+            id = "LoadNVGCase"
 
     class Liveries:
 
@@ -17852,6 +18064,7 @@ class MiG_15bis(PlaneType):
 
 class MiG_19P(PlaneType):
     id = "MiG-19P"
+    flyable = True
     height = 3.8885
     width = 9
     length = 13.025
@@ -20617,6 +20830,7 @@ plane_map = {
     "C-101EB": C_101EB,
     "C-101CC": C_101CC,
     "J-11A": J_11A,
+    "JF-17": JF_17,
     "KJ-2000": KJ_2000,
     "Christen Eagle II": Christen_Eagle_II,
     "F-16C_50": F_16C_50,
