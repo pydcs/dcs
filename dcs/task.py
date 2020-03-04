@@ -21,7 +21,7 @@ def _create_from_dict(d):
         else:
             t = wrappedactions[actionid].create_from_dict(d)
     elif _id == "EngageTargets":
-        t = engagetargets_tasks[d["key"]].create_from_dict(d)
+        t = engagetargets_tasks[d.get("key")].create_from_dict(d)
     else:
         t = tasks_map[_id].create_from_dict(d)
 
@@ -386,12 +386,22 @@ class FighterSweepTaskAction(Task):
         d["key"] = FighterSweepTaskAction.Key
         return d
 
+
+class EmptyTaskAction(Task):
+    @classmethod
+    def create_from_dict(cls, d):
+        t = cls(d["id"])
+        t.params = d["params"]
+        return t
+
+
 engagetargets_tasks = {
     AntishipStrikeTaskAction.Key: AntishipStrikeTaskAction,
     CASTaskAction.Key: CASTaskAction,
     CAPTaskAction.Key: CAPTaskAction,
     SEADTaskAction.Key: SEADTaskAction,
-    FighterSweepTaskAction.Key: FighterSweepTaskAction
+    FighterSweepTaskAction.Key: FighterSweepTaskAction,
+    None: EmptyTaskAction,
 }
 
 
@@ -794,6 +804,13 @@ class CargoTransportation(Task):
             self.params["zoneId"] = zoneid
 
 
+class EWR(Task):
+    Id = "EWR"
+
+    def __init__(self):
+        super(EWR, self).__init__(self.Id)
+
+
 tasks_map = {
     ControlledTask.Id: ControlledTask,
     EscortTaskAction.Id: EscortTaskAction,
@@ -816,7 +833,8 @@ tasks_map = {
     Embarking.Id: Embarking,
     EmbarkToTransport.Id: EmbarkToTransport,
     DisembarkFromTransport.Id: DisembarkFromTransport,
-    CargoTransportation.Id: CargoTransportation
+    CargoTransportation.Id: CargoTransportation,
+    EWR.Id: EWR,
 }
 
 
@@ -1327,7 +1345,10 @@ class OptEngageAirWeapons(Option):
     def __init__(self, value=None):
         super(OptEngageAirWeapons, self).__init__(value)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> Improved .miz loading compatibility; Added new tasks and options; Fixed invalid FARP instantiation
 class OptNoReportWaypointPass(Option):
     Key = 19
 
@@ -1342,6 +1363,7 @@ class OptRestrictAirToAirAttack(Option):
         super(OptRestrictAirToAirAttack, self).__init__(value)
 
 
+<<<<<<< HEAD
 class OptRTBOnOutOfAmmo(Option):
     Key = 10
 

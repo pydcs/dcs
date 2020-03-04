@@ -333,9 +333,9 @@ class FARP(Static):
 
     def load_from_dict(self, d):
         super(FARP, self).load_from_dict(d)
-        self.heliport_frequency = d["heliport_frequency"]
-        self.heliport_modulation = d["heliport_modulation"]
-        self.heliport_callsign_id = int(d["heliport_callsign_id"])
+        self.heliport_frequency = d.get("heliport_frequency")
+        self.heliport_modulation = d.get("heliport_modulation")
+        self.heliport_callsign_id = d.get("heliport_callsign_id", 0)
 
     def dict(self):
         d = super(FARP, self).dict()
