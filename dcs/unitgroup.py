@@ -213,7 +213,9 @@ class MovingGroup(Group):
         self.task = d.get("task")  # ships don't have a task
         self.spawn_probability = d.get("probability", 1.0)
         for t in d.get("tasks", []):
-            self.tasks.append(task._create_from_dict(d["task"]["params"]["tasks"][t]))
+            task_dict = d["tasks"][t]
+            self.tasks.append(task._create_from_dict(task_dict))
+
         self.task_selected = d.get("taskSelected", False)
         self.late_activation = d.get("lateActivation", False)
 

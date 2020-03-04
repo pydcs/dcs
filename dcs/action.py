@@ -1432,7 +1432,8 @@ class AITaskPush(Action):
 
     @classmethod
     def create_from_dict(cls, d, mission):
-        return cls(d["ai_task"][0], d["ai_task"][1])
+        values = list(d["ai_task"].values())
+        return cls(values[0], values[1])
 
     def dict(self):
         d = super(AITaskPush, self).dict()

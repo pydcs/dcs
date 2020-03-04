@@ -172,8 +172,7 @@ class Coalition:
                         if imp_unit["type"] == "FARP":
                             static = FARP(
                                 unit_id=imp_unit["unitId"],
-                                name=mission.translation.get_string(imp_unit["name"]),
-                                _type=imp_unit["type"])
+                                name=mission.translation.get_string(imp_unit["name"]))
                         else:
                             static = Static(
                                 unit_id=imp_unit["unitId"],

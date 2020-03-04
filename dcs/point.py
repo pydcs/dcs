@@ -21,6 +21,7 @@ class PointAction(Enum):
     Diamond = "Diamond"
     EchelonLeft = "EchelonL"
     EchelonRight = "EchelonR"
+    FromGroundArea = "From Ground Area"
     Custom = "Custom"
 
 
@@ -91,11 +92,11 @@ class PointProperties:
             self.vangle = 0
 
     def load_from_dict(self, d):
-        self.vnav = VNav(d["vnav"])
-        self.scale = Scale(d["scale"])
-        self.steer = Steer(d["steer"])
-        self.angle = d["angle"]
-        self.vangle = d["vangle"]
+        self.vnav = VNav(d.get("vnav", VNav.VNone.value))
+        self.scale = Scale(d.get("scale", Scale.None_.value))
+        self.steer = Steer(d.get("steer", Steer.None_.value))
+        self.angle = d.get("angle")
+        self.vangle = d.get("vangle")
 
     def dict(self):
         return {
