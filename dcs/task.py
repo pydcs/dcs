@@ -1086,7 +1086,9 @@ wrappedactions = {
 
 
 class MainTask:
-    name = None
+    id = None  # type: int
+    name = None  # type: str
+    internal_name = None  # type: str
     sub_tasks = []
     perform_task = []  # type: List[Task]
     map = {}  # type: Dict[str, MainTask]
@@ -1095,18 +1097,21 @@ class MainTask:
 class Nothing(MainTask):
     id = 15
     name = "Nothing"
+    internal_name = "Nothing"
     sub_tasks = [OrbitAction, Follow, Aerobatics]
 
 
 class AFAC(MainTask):
     id = 16
     name = "AFAC"
+    internal_name = "AFAK"
     sub_tasks = [OrbitAction, Follow, AttackGroup, AttackUnit, Bombing, AttackMapObject]
 
 
 class AWACS(MainTask):
     id = 14
     name = "AWACS"
+    internal_name = "AWACS"
     sub_tasks = [OrbitAction, Follow, RefuelingTaskAction]
     perform_task = [AWACSTaskAction]
 
@@ -1114,6 +1119,7 @@ class AWACS(MainTask):
 class AntishipStrike(MainTask):
     id = 30
     name = "Antiship Strike"
+    internal_name = "AntishipStrike"
     sub_tasks = [OrbitAction, Follow, AttackGroup, AttackUnit]
     perform_task = [AntishipStrikeTaskAction]
 
@@ -1121,6 +1127,7 @@ class AntishipStrike(MainTask):
 class CAS(MainTask):
     id = 31
     name = "CAS"
+    internal_name = "CAS"
     sub_tasks = [OrbitAction, Follow, AttackGroup, AttackUnit, Aerobatics, RefuelingTaskAction]
     perform_task = [CASTaskAction]
 
@@ -1133,6 +1140,7 @@ class CAS(MainTask):
 class CAP(MainTask):
     id = 11
     name = "CAP"
+    internal_name = "CAP"
     sub_tasks = [OrbitAction, Follow, Aerobatics]
     perform_task = [CAPTaskAction]
 
@@ -1146,6 +1154,7 @@ class CAP(MainTask):
 class Escort(MainTask):
     id = 18
     name = "Escort"
+    internal_name = "Escort"
     sub_tasks = [OrbitAction, Follow, EscortTaskAction]
     perform_task = [EscortTaskAction]
 
@@ -1153,6 +1162,7 @@ class Escort(MainTask):
 class FighterSweep(MainTask):
     id = 19
     name = "Fighter Sweep"
+    internal_name = "FighterSweep"
     sub_tasks = [OrbitAction, Follow, Aerobatics]
     perform_task = [FighterSweepTaskAction]
 
@@ -1160,24 +1170,28 @@ class FighterSweep(MainTask):
 class GroundAttack(MainTask):
     id = 32
     name = "Ground Attack"
+    internal_name = "GroundAttack"
     sub_tasks = [OrbitAction, Follow, Bombing, AttackMapObject, Aerobatics]
 
 
 class Intercept(MainTask):
     id = 10
     name = "Intercept"
+    internal_name = "Intercept"
     sub_tasks = [OrbitAction, Follow, AttackGroup, AttackUnit, Aerobatics]
 
 
 class PinpointStrike(MainTask):
     id = 33
     name = "Pinpoint Strike"
+    internal_name = "PinpointStrike"
     sub_tasks = [OrbitAction, Follow, Bombing, AttackMapObject]
 
 
 class Reconnaissance(MainTask):
     id = 17
     name = "Reconnaissance"
+    internal_name = "Reconnaissance"
     sub_tasks = [OrbitAction, Follow, Aerobatics]
     perform_task = []
 
@@ -1185,13 +1199,15 @@ class Reconnaissance(MainTask):
 class Refueling(MainTask):
     id = 13
     name = "Refueling"
+    internal_name = "Refueling"
     sub_tasks = [OrbitAction, Follow]
     perform_task = [Tanker]
 
 
 class RunwayAttack(MainTask):
     id = 34
-    name = "Ground Attack"
+    name = "Runway Attack"
+    internal_name = "RunwayAttack"
     sub_tasks = [OrbitAction, Follow, Bombing, BombingRunway, AttackMapObject]
     perform_task = []
 
@@ -1199,6 +1215,7 @@ class RunwayAttack(MainTask):
 class SEAD(MainTask):
     id = 29
     name = "SEAD"
+    internal_name = "SEAD"
     sub_tasks = [OrbitAction, Follow, AttackGroup, AttackUnit, EscortTaskAction]
     perform_task = [SEADTaskAction]
 
@@ -1206,6 +1223,7 @@ class SEAD(MainTask):
 class Transport(MainTask):
     id = 35
     name = "Transport"
+    internal_name = "Transport"
     sub_tasks = [OrbitAction, Follow, Aerobatics]
     perform_task = []
 
@@ -1341,6 +1359,27 @@ class OptRestrictAirToAirAttack(Option):
         super(OptRestrictAirToAirAttack, self).__init__(value)
 
 
+class OptRTBOnOutOfAmmo(Option):
+    Key = 10
+
+    def __init__(self, value=None):
+        super(OptRTBOnOutOfAmmo, self).__init__(value)
+
+
+class OptRTBOnBingoFuel(Option):
+    Key = 6
+
+    def __init__(self, value=None):
+        super(OptRTBOnBingoFuel, self).__init__(value)
+
+
+class OptRestrictJettison(Option):
+    Key = 15
+
+    def __init__(self, value=None):
+        super(OptRestrictJettison, self).__init__(value)
+
+
 options = {
     OptDisparseUnderFire.Key: OptDisparseUnderFire,
     OptReactOnThreat.Key: OptReactOnThreat,
@@ -1349,4 +1388,7 @@ options = {
     OptAlarmState.Key: OptAlarmState,
     OptNoReportWaypointPass.Key: OptNoReportWaypointPass,
     OptRestrictAirToAirAttack.Key: OptRestrictAirToAirAttack,
+    OptRTBOnOutOfAmmo.Key: OptRTBOnOutOfAmmo,
+    OptRTBOnBingoFuel.Key: OptRTBOnBingoFuel,
+    OptRestrictJettison.Key: OptRestrictJettison,
 }

@@ -1,14 +1,21 @@
-def loads(tablestr):
+def loads(tablestr, _globals: dict = None):
 
     class Parser:
-
-        def __init__(self, buffer: str):
+        def __init__(self, buffer: str, _globals: dict = None):
             self.buffer = buffer
+            if _globals:
+                self.variables = _globals.copy()
+            else:
+                self.variables = {}
+
+            self.returned_values = None
+            self._variable_assignment_queue = []
+
             self.buflen = len(buffer)
             self.pos = 0  # type: int
             self.lineno = 1  # type: int
 
-        def value(self):
+        def parse(self):
             self.eat_ws()
 
             c = self.buffer[self.pos]
@@ -21,17 +28,48 @@ def loads(tablestr):
             elif c == '_':
                 return self.str_function()
             else:  # varname
+                self.eat_ws()
+
                 varname = self.eatvarname()
                 if varname == 'false' or varname == 'true':
                     return varname == 'true'
-                if varname == 'local':
-                    # ignore local keyword
+                elif varname == 'local':
                     self.eat_ws()
-                    varname = self.eatvarname()
+                    # push names for assignment into queue
+                    self.push_assigned_variable_names(self.eatvarnamelist())
+
+                elif varname == 'return':
+                    self.eat_ws()
+
+                    # setup returned values dict
+                    name = self.eatvarname()
+                    self.returned_values = {name: self.variables[name]}
+                    return None
+                elif varname in self.variables:
+                    # substitute value from variables
+                    return self.variables[varname]
+                else:
+                    # shortcut syntax without `local`
+                    self.push_assigned_variable_names([varname])
+
                 self.eat_ws()
                 if not self.eob() and self.buffer[self.pos] == '=':
-                    self.pos += 1
-                    return {varname: self.value()}
+                    while True:
+                        # skip comma or whitespace
+                        self.advance()
+
+                        self.eat_ws()
+                        self.assign_local_variable(self.parse())
+                        self.eat_ws()
+
+                        if self.eob():
+                            # file ended on variable declaration
+                            return None
+                        elif self.char() != ',':
+                            # value list ended
+                            break
+
+                    return self.parse()
                 else:
                     se = SyntaxError()
                     se.text = varname + " '" + self.buffer[self.pos] + "'"
@@ -201,7 +239,7 @@ def loads(tablestr):
                     key = inc_key
                     inc_key += 1
 
-                val = self.value()
+                val = self.parse()
 
                 self.eat_ws()
 
@@ -229,13 +267,35 @@ def loads(tablestr):
 
             return d
 
+        def push_assigned_variable_names(self, variable_names):
+            self._variable_assignment_queue += variable_names
+
+        def assign_local_variable(self, value):
+            self.variables[self._variable_assignment_queue.pop(0)] = value
+
         def eatvarname(self):
             varname = ''
-            while (not self.eob()) and self.buffer[self.pos].isalnum():
+            while (not self.eob()) and (self.buffer[self.pos].isalnum() or self.buffer[self.pos] == '_'):
                 varname += self.buffer[self.pos]
                 self.pos += 1
 
             return varname
+
+        def eatvarnamelist(self):
+            varnames = []
+            while not self.eob():
+                self.eat_ws()
+                name = self.eatvarname()
+                if len(name) > 0:
+                    varnames.append(name)
+                self.eat_ws()
+
+                if self.char() == ',':
+                    self.advance()
+                else:
+                    break
+
+            return varnames
 
         def eat_comment(self):
             if (self.buffer[self.pos] == '-' and
@@ -277,5 +337,6 @@ def loads(tablestr):
             self.pos += 1
             return self.eob()
 
-    p = Parser(tablestr)
-    return p.value()
+    p = Parser(tablestr, _globals)
+    p.parse()
+    return p.returned_values or p.variables

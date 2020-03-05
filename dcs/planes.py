@@ -8631,6 +8631,9 @@ class P_51D_30_NA(PlaneType):
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAS
 
+    class Liveries:
+        pass
+
 
 class AJS37(PlaneType):
     id = "AJS37"
