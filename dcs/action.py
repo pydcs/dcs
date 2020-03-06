@@ -492,6 +492,30 @@ class Explosion(Action):
         return d
 
 
+class Smoke(Action):
+    predicate = "a_effect_smoke"
+
+    def __init__(self, zone="", density=1, preset=1):
+        super(Smoke, self).__init__(Smoke.predicate)
+        self.zone = zone
+        self.params.append(self.zone)
+        self.density = density
+        self.params.append(self.density)
+        self.preset = preset
+        self.params.append(self.preset)
+
+    @classmethod
+    def create_from_dict(cls, d, mission):
+        return cls(d["zone"], d["density"], d["preset"])
+
+    def dict(self):
+        d = super(Smoke, self).dict()
+        d["zone"] = self.zone
+        d["density"] = self.density
+        d["preset"] = self.preset
+        return d
+
+
 class FallInTemplate(Action):
     predicate = "a_fall_in_template"
 
@@ -1552,6 +1576,7 @@ actions_map = {
     "a_explosion_marker": ExplodeWPMarker,
     "a_explosion_marker_unit": ExplodeWPMarkerOnUnit,
     "a_explosion": Explosion,
+    "a_effect_smoke": Smoke,
     "a_fall_in_template": FallInTemplate,
     "a_group_off": GroupAIOff,
     "a_group_on": GroupAIOn,
