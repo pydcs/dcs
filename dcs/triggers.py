@@ -173,15 +173,15 @@ class TriggerContinious(TriggerRule):
 class TriggerStart(TriggerRule):
     predicate = "triggerStart"
 
-    def __init__(self, comment=""):
-        super(TriggerStart, self).__init__(Event.NoEvent, comment)
+    def __init__(self, event: Event =Event.NoEvent, comment=""):
+        super(TriggerStart, self).__init__(event, comment)
 
 
 class TriggerCondition(TriggerRule):
     predicate = "triggerFront"
 
-    def __init__(self, comment=""):
-        super(TriggerCondition, self).__init__(Event.NoEvent, comment)
+    def __init__(self, event: Event =Event.NoEvent, comment=""):
+        super(TriggerCondition, self).__init__(event, comment)
 
 trigger_map = {
     TriggerOnce.predicate: TriggerOnce,

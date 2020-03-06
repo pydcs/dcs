@@ -22,6 +22,7 @@ class PointAction(Enum):
     EchelonLeft = "EchelonL"
     EchelonRight = "EchelonR"
     FromGroundArea = "From Ground Area"
+    FromGroundAreaHot = "From Ground Area Hot"
     Custom = "Custom"
 
 

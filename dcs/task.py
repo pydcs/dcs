@@ -811,6 +811,20 @@ class EWR(Task):
         super(EWR, self).__init__(self.Id)
 
 
+class GoToWaypoint(Task):
+    Id = "GoToWaypoint"
+
+    def __init__(self, fromIndex=None, toIndex=None):
+        super(GoToWaypoint, self).__init__(self.Id)
+
+        self.params = {}
+        if fromIndex:
+            self.params["fromWaypointIndex"] = fromIndex
+
+        if toIndex:
+            self.params["nWaypointIndx"] = toIndex
+
+
 tasks_map = {
     ControlledTask.Id: ControlledTask,
     EscortTaskAction.Id: EscortTaskAction,
@@ -835,6 +849,7 @@ tasks_map = {
     DisembarkFromTransport.Id: DisembarkFromTransport,
     CargoTransportation.Id: CargoTransportation,
     EWR.Id: EWR,
+    GoToWaypoint.Id: GoToWaypoint,
 }
 
 
@@ -1345,10 +1360,6 @@ class OptEngageAirWeapons(Option):
     def __init__(self, value=None):
         super(OptEngageAirWeapons, self).__init__(value)
 
-<<<<<<< HEAD
-
-=======
->>>>>>> Improved .miz loading compatibility; Added new tasks and options; Fixed invalid FARP instantiation
 class OptNoReportWaypointPass(Option):
     Key = 19
 
@@ -1363,7 +1374,6 @@ class OptRestrictAirToAirAttack(Option):
         super(OptRestrictAirToAirAttack, self).__init__(value)
 
 
-<<<<<<< HEAD
 class OptRTBOnOutOfAmmo(Option):
     Key = 10
 
@@ -1385,6 +1395,13 @@ class OptRestrictJettison(Option):
         super(OptRestrictJettison, self).__init__(value)
 
 
+class OptRadarUsing(Option):
+    Key = 3
+
+    def __init__(self, value=None):
+        super(OptRadarUsing, self).__init__(value)
+
+
 options = {
     OptDisparseUnderFire.Key: OptDisparseUnderFire,
     OptReactOnThreat.Key: OptReactOnThreat,
@@ -1396,4 +1413,5 @@ options = {
     OptRTBOnOutOfAmmo.Key: OptRTBOnOutOfAmmo,
     OptRTBOnBingoFuel.Key: OptRTBOnBingoFuel,
     OptRestrictJettison.Key: OptRestrictJettison,
+    OptRadarUsing.Key: OptRadarUsing,
 }
