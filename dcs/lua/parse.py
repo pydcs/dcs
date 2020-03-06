@@ -302,8 +302,8 @@ def loads(tablestr, _globals: Optional[Dict[str, Any]] = None):
             return varnames
 
         def eat_comment(self):
-            if (self.buffer[self.pos] == '-' and
-               self.pos + 1 < self.buflen and
+            if (self.pos + 1 < self.buflen and
+                self.buffer[self.pos] == '-' and
                self.buffer[self.pos + 1] == '-'):
                 while not self.eob() and self.buffer[self.pos] != '\n':
                     self.pos += 1

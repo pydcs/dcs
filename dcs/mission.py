@@ -229,22 +229,28 @@ class Mission:
         warehouse_dict = {}
         dictionary_dict = {}
 
-        def loaddict(fname, mizfile):
+        def loaddict(fname, mizfile, reserved_files):
+            reserved_files.append(fname)
             with mizfile.open(fname) as mfile:
                 data = mfile.read()
                 data = data.decode()
                 return lua.loads(data)
 
         with zipfile.ZipFile(filename, 'r') as miz:
-            mission_dict = loaddict('mission', miz)
+            reserved_files = []
+            mission_dict = loaddict('mission', miz, reserved_files)
+
             if mission_dict["mission"]["version"] < 16:
                 print("Mission file is using an old format, be aware!", file=sys.stderr)
-            options_dict = loaddict('options', miz)
-            warehouse_dict = loaddict('warehouses', miz)
-            dictionary_dict = loaddict('l10n/DEFAULT/dictionary', miz)
+            options_dict = loaddict('options', miz, reserved_files)
+            warehouse_dict = loaddict('warehouses', miz, reserved_files)
+            dictionary_dict = loaddict('l10n/DEFAULT/dictionary', miz, reserved_files)
+
             if 'l10n/DEFAULT/mapResource' in miz.namelist():
-                mapresource_dict = loaddict('l10n/DEFAULT/mapResource', miz)
+                mapresource_dict = loaddict('l10n/DEFAULT/mapResource', miz, reserved_files)
                 self.map_resource.load_from_dict(mapresource_dict, miz)
+
+            self.map_resource.load_binary_files(miz, reserved_files)
 
         imp_mission = mission_dict["mission"]
 
@@ -1908,6 +1914,8 @@ class MapResource:
     """
     def __init__(self, mission: Mission):
         self.files = {}
+        self.binary_files = []
+        self.added_paths = []
         self.mission = mission
 
     def load_from_dict(self, _dict, zipf: zipfile.ZipFile, lang='DEFAULT'):
@@ -1915,21 +1923,35 @@ class MapResource:
 
         for key in _dict:
             filename = _dict[key]
-            extractedpath = zipf.extract('l10n/{lang}/{fn}'.format(lang=lang, fn=filename), tempfile.gettempdir())
+            filepath = 'l10n/{lang}/{fn}'.format(lang=lang, fn=filename)
+            self.added_paths.append(filepath)
+
+            extractedpath = zipf.extract(filepath, tempfile.gettempdir())
             self.add_resource_file(extractedpath, lang, key)
 
-    def add_resource_file(self, filepath, lang='DEFAULT', key=None):
+    def load_binary_files(self, zipf: zipfile.ZipFile, reserved_files: [str]):
+        for filepath in zipf.namelist():
+            if filepath in reserved_files or filepath in self.added_paths:
+                continue
+
+            extractedpath = zipf.extract(filepath, tempfile.gettempdir())
+            self.binary_files.append({
+                "path": os.path.abspath(extractedpath),
+                "respath": filepath,
+            })
+
+    def add_resource_file(self, extracted_path, lang='DEFAULT', key=None):
         """Adds a file to the mission resource depot.
 
         Args:
-            filepath: path to the file to add
+            extracted_path: path to the file to add
             lang: language this file belongs too.
             key: should None, needed for loading
 
         Returns:
             resource key to use in scripts
         """
-        abspath = os.path.abspath(filepath)
+        abspath = os.path.abspath(extracted_path)
         resource_key = key if key else "ResKey_" + str(self.mission.next_dict_id())
         if lang not in self.files:
             self.files[lang] = {}
@@ -1941,6 +1963,10 @@ class MapResource:
 
     def store(self, zipf: zipfile.ZipFile, lang='DEFAULT'):
         d = {}
+
+        for file in self.binary_files:
+            zipf.write(file["path"], file["respath"])
+
         if lang in self.files:
             for x in self.files[lang]:
                 mr = self.files[lang][x]
