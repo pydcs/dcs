@@ -155,6 +155,17 @@ class SSK_641B(unittype.ShipType):
     air_weapon_dist = 0
 
 
+class CV_1143_5_Admiral_Kuznetsov_2017(unittype.ShipType):
+    id = "CV_1143_5"
+    name = "CV 1143.5 Admiral Kuznetsov(2017)"
+    plane_num = 24
+    helicopter_num = 12
+    parking = 3
+    detection_range = 25000
+    threat_range = 12000
+    air_weapon_dist = 12000
+
+
 class CVN_74_John_C__Stennis(unittype.ShipType):
     id = "Stennis"
     name = "CVN-74 John C. Stennis"
@@ -164,6 +175,49 @@ class CVN_74_John_C__Stennis(unittype.ShipType):
     detection_range = 30000
     threat_range = 15000
     air_weapon_dist = 15000
+
+
+class CVN_71_Theodore_Roosevelt(unittype.ShipType):
+    id = "CVN_71"
+    name = "CVN-71 Theodore Roosevelt"
+    plane_num = 72
+    helicopter_num = 6
+    parking = 4
+    detection_range = 30000
+    threat_range = 15000
+    air_weapon_dist = 15000
+
+
+class CVN_72_Abraham_Lincoln(unittype.ShipType):
+    id = "CVN_72"
+    name = "CVN-72 Abraham Lincoln"
+    plane_num = 72
+    helicopter_num = 6
+    parking = 4
+    detection_range = 30000
+    threat_range = 15000
+    air_weapon_dist = 15000
+
+
+class CVN_73_George_Washington(unittype.ShipType):
+    id = "CVN_73"
+    name = "CVN-73 George Washington"
+    plane_num = 72
+    helicopter_num = 6
+    parking = 4
+    detection_range = 30000
+    threat_range = 15000
+    air_weapon_dist = 15000
+
+
+class USS_Arleigh_Burke_IIa(unittype.ShipType):
+    id = "USS_Arleigh_Burke_IIa"
+    name = "USS Arleigh Burke IIa"
+    helicopter_num = 2
+    parking = 1
+    detection_range = 150000
+    threat_range = 100000
+    air_weapon_dist = 100000
 
 
 class LHA_1_Tarawa(unittype.ShipType):
@@ -210,6 +264,14 @@ class Type_052C_Destroyer(unittype.ShipType):
     air_weapon_dist = 100000
 
 
+class Type_093(unittype.ShipType):
+    id = "Type 093"
+    name = "Type 093"
+    detection_range = 40000
+    threat_range = 40000
+    air_weapon_dist = 30000
+
+
 class LST_Mk_II(unittype.ShipType):
     id = "LST_Mk2"
     name = "LST Mk.II"
@@ -233,6 +295,22 @@ class LCVP__Higgins_boat(unittype.ShipType):
     threat_range = 1000
     air_weapon_dist = 1000
 
+
+class Uboat_VIIC_U_flak(unittype.ShipType):
+    id = "Uboat_VIIC"
+    name = "Uboat VIIC U-flak"
+    detection_range = 12000
+    threat_range = 4000
+    air_weapon_dist = 4000
+
+
+class Schnellboot_type_S130(unittype.ShipType):
+    id = "Schnellboot_type_S130"
+    name = "Schnellboot type S130"
+    detection_range = 12000
+    threat_range = 7000
+    air_weapon_dist = 7000
+
 ship_map = {
     "speedboat": Armed_speedboat,
     "VINSON": CVN_70_Carl_Vinson,
@@ -251,12 +329,20 @@ ship_map = {
     "ZWEZDNY": Civil_boat_Zvezdny,
     "KILO": SSK_877,
     "SOM": SSK_641B,
+    "CV_1143_5": CV_1143_5_Admiral_Kuznetsov_2017,
     "Stennis": CVN_74_John_C__Stennis,
+    "CVN_71": CVN_71_Theodore_Roosevelt,
+    "CVN_72": CVN_72_Abraham_Lincoln,
+    "CVN_73": CVN_73_George_Washington,
+    "USS_Arleigh_Burke_IIa": USS_Arleigh_Burke_IIa,
     "LHA_Tarawa": LHA_1_Tarawa,
     "052B": Type_052B_Destroyer,
     "054A": Type_054A_Frigate,
     "052C": Type_052C_Destroyer,
+    "Type 093": Type_093,
     "LST_Mk2": LST_Mk_II,
     "USS_Samuel_Chase": LS_Samuel_Chase,
     "Higgins_boat": LCVP__Higgins_boat,
+    "Uboat_VIIC": Uboat_VIIC_U_flak,
+    "Schnellboot_type_S130": Schnellboot_type_S130,
 }

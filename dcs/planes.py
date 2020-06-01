@@ -651,7 +651,6 @@ class F_14A(PlaneType):
 
 class Tu_22M3(PlaneType):
     id = "Tu-22M3"
-    group_size_max = 1
     large_parking_slot = True
     height = 11.05
     width = 34.28
@@ -811,7 +810,6 @@ class F_4E(PlaneType):
 
 class B_52H(PlaneType):
     id = "B-52H"
-    group_size_max = 1
     large_parking_slot = True
     height = 12.4
     width = 56.4
@@ -868,9 +866,6 @@ class MiG_27K(PlaneType):
     flare_charge_size = 1
 
     class Liveries:
-
-        class Ukraine(Enum):
-            af_standard = "af standard"
 
         class Russia(Enum):
             af_standard = "af standard"
@@ -1292,7 +1287,6 @@ class A_10A(PlaneType):
         LAU_105_2_AIM_9P5 = (1, Weapons.LAU_105_2_AIM_9P5)
         LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
         LAU_105_1_AIM_9M_L = (1, Weapons.LAU_105_1_AIM_9M_L)
-        LAU_105_1_CATM_9M_L = (1, Weapons.LAU_105_1_CATM_9M_L)
         LAU_105___2_AIM_9P_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9P_Sidewinder_IR_AAM)
         ALQ_131 = (1, Weapons.ALQ_131)
         ALQ_184 = (1, Weapons.ALQ_184)
@@ -1344,10 +1338,6 @@ class A_10A(PlaneType):
         LAU_88_AGM_65H_2_L = (3, Weapons.LAU_88_AGM_65H_2_L)
         LAU_88_AGM_65D_3 = (3, Weapons.LAU_88_AGM_65D_3)
         LAU_88_AGM_65H_3 = (3, Weapons.LAU_88_AGM_65H_3)
-        LAU_117_CATM_65K = (3, Weapons.LAU_117_CATM_65K)
-        LAU_117_TGM_65D = (3, Weapons.LAU_117_TGM_65D)
-        LAU_117_TGM_65G = (3, Weapons.LAU_117_TGM_65G)
-        LAU_117_TGM_65H = (3, Weapons.LAU_117_TGM_65H)
         Mk_84 = (3, Weapons.Mk_84)
         Mk_82 = (3, Weapons.Mk_82)
         Mk_82AIR = (3, Weapons.Mk_82AIR)
@@ -1473,10 +1463,6 @@ class A_10A(PlaneType):
         LAU_88_AGM_65H_2_R = (9, Weapons.LAU_88_AGM_65H_2_R)
         LAU_88_AGM_65D_3 = (9, Weapons.LAU_88_AGM_65D_3)
         LAU_88_AGM_65H_3 = (9, Weapons.LAU_88_AGM_65H_3)
-        LAU_117_CATM_65K = (9, Weapons.LAU_117_CATM_65K)
-        LAU_117_TGM_65D = (9, Weapons.LAU_117_TGM_65D)
-        LAU_117_TGM_65G = (9, Weapons.LAU_117_TGM_65G)
-        LAU_117_TGM_65H = (9, Weapons.LAU_117_TGM_65H)
         Mk_84 = (9, Weapons.Mk_84)
         Mk_82 = (9, Weapons.Mk_82)
         Mk_82AIR = (9, Weapons.Mk_82AIR)
@@ -1535,7 +1521,6 @@ class A_10A(PlaneType):
         LAU_105_2_AIM_9P5 = (11, Weapons.LAU_105_2_AIM_9P5)
         LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (11, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
         LAU_105_1_AIM_9M_R = (11, Weapons.LAU_105_1_AIM_9M_R)
-        LAU_105_1_CATM_9M_R = (11, Weapons.LAU_105_1_CATM_9M_R)
         LAU_105___2_AIM_9P_Sidewinder_IR_AAM = (11, Weapons.LAU_105___2_AIM_9P_Sidewinder_IR_AAM)
         ALQ_131 = (11, Weapons.ALQ_131)
         ALQ_184 = (11, Weapons.ALQ_184)
@@ -1837,9 +1822,6 @@ class MiG_23MLD(PlaneType):
 
     class Liveries:
 
-        class Ukraine(Enum):
-            af_standard = "af standard"
-
         class Russia(Enum):
             af_standard = "af standard"
             af_standard_1 = "af standard-1"
@@ -1935,8 +1917,8 @@ class Su_25(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
-            field_camo_scheme__1__native_01 = "field camo scheme #1 (native)01"
             _scorpion__demo_scheme__native = "`scorpion` demo scheme (native)"
+            field_camo_scheme__1__native_01 = "field camo scheme #1 (native)01"
 
         class Ukraine(Enum):
             broken_camo_scheme__1__native___299th_oshap = "broken camo scheme #1 (native). 299th oshap"
@@ -3056,9 +3038,6 @@ class MiG_25PD(PlaneType):
 
     class Liveries:
 
-        class Ukraine(Enum):
-            af_standard = "af standard"
-
         class Russia(Enum):
             af_standard = "af standard"
 
@@ -3095,9 +3074,6 @@ class MiG_25RBT(PlaneType):
     max_speed = 3000
 
     class Liveries:
-
-        class Ukraine(Enum):
-            af_standard = "af standard"
 
         class Russia(Enum):
             af_standard = "af standard"
@@ -3175,16 +3151,16 @@ class Su_30(PlaneType):
     class Liveries:
 
         class Russia(Enum):
+            _desert__test_paint_scheme = "`desert` test paint scheme"
+            _russian_knights__team__25 = "`russian knights` team #25"
+            _snow__test_paint_scheme = "`snow` test paint scheme"
+            _test_pilots__team__597 = "`test-pilots` team #597"
             adf_148th_ctc_savasleyka_ab = "adf 148th ctc savasleyka ab"
             af_standard = "af standard"
             af_standard_early = "af standard early"
             af_standard_early__worn_out = "af standard early (worn-out)"
             af_standard_last = "af standard last"
             af_standard_last__worn_out = "af standard last (worn-out)"
-            _desert__test_paint_scheme = "`desert` test paint scheme"
-            _russian_knights__team__25 = "`russian knights` team #25"
-            _snow__test_paint_scheme = "`snow` test paint scheme"
-            _test_pilots__team__597 = "`test-pilots` team #597"
 
     class Pylon1:
         R_73 = (1, Weapons.R_73)
@@ -3581,8 +3557,8 @@ class MiG_31(PlaneType):
 
         class Russia(Enum):
             _174_GvIAP_Boris_Safonov = "174 GvIAP_Boris Safonov"
-            af_standard = "af standard"
             _903_White = "903_White"
+            af_standard = "af standard"
 
     class Pylon1:
         R_40R = (1, Weapons.R_40R)
@@ -3614,7 +3590,6 @@ class MiG_31(PlaneType):
 
 class Tu_95MS(PlaneType):
     id = "Tu-95MS"
-    group_size_max = 1
     large_parking_slot = True
     height = 13.3
     width = 50.04
@@ -3851,9 +3826,6 @@ class Su_24MR(PlaneType):
 
     class Liveries:
 
-        class Ukraine(Enum):
-            af_standard = "af standard"
-
         class Russia(Enum):
             af_standard = "af standard"
 
@@ -3943,7 +3915,6 @@ class F_117A(PlaneType):
 
 class B_1B(PlaneType):
     id = "B-1B"
-    group_size_max = 1
     large_parking_slot = True
     height = 10.36
     width = 41.67
@@ -4000,7 +3971,6 @@ class B_1B(PlaneType):
 
 class S_3B(PlaneType):
     id = "S-3B"
-    group_size_max = 1
     large_parking_slot = True
     height = 6.93
     width = 20.93
@@ -4075,7 +4045,6 @@ class S_3B(PlaneType):
 
 class S_3B_Tanker(PlaneType):
     id = "S-3B Tanker"
-    group_size_max = 1
     large_parking_slot = True
     height = 6.93
     width = 20.93
@@ -4125,9 +4094,9 @@ class Mirage_2000_5(PlaneType):
             ec1_2__spa103__cigogne_de_fonck = "ec1_2  spa103 `cigogne de fonck`"
             ec1_2__spa12__cigogne_a_ailes_ouvertes = "ec1_2  spa12 `cigogne a ailes ouvertes`"
             ec1_2_spa3__cigogne_de_guynemer = "ec1_2 spa3 `cigogne de guynemer`"
-            ec2_2_spa94__lamort_qui_fauche = "ec2_2 spa94 `lamort qui fauche`"
             ec2_2__cote_d_or__spa57__mouette = "ec2_2 `cote d'or` spa57 `mouette`"
             ec2_2__cote_d_or__spa65__chimere = "ec2_2 `cote d'or` spa65 `chimere`"
+            ec2_2_spa94__lamort_qui_fauche = "ec2_2 spa94 `lamort qui fauche`"
 
     class Pylon1:
         R_550_Magic_2 = (1, Weapons.R_550_Magic_2)
@@ -4973,6 +4942,15 @@ class MiG_29S(PlaneType):
             _115_GvIAP_Termez = "115 GvIAP_Termez"
             _31_GvIAP_Zernograd = "31 GvIAP_Zernograd"
 
+        class Belarus(Enum):
+            Belarusian_Air_Force = "Belarusian Air Force"
+
+        class Kazakhstan(Enum):
+            KazAADF_new__fictional = "KazAADF new (fictional)"
+            KazAADF_new__fictional_digital = "KazAADF new (fictional digital)"
+            KazAADF_new_faded__fictional = "KazAADF new faded (fictional)"
+            KazAADF_old__fictional = "KazAADF old (fictional)"
+
     class Pylon1:
         R_60M = (1, Weapons.R_60M)
         R_73 = (1, Weapons.R_73)
@@ -5718,7 +5696,6 @@ class MiG_29K(PlaneType):
 
 class Tu_142(PlaneType):
     id = "Tu-142"
-    group_size_max = 1
     large_parking_slot = True
     height = 13.3
     width = 50.04
@@ -5747,7 +5724,6 @@ class Tu_142(PlaneType):
 
 class C_130(PlaneType):
     id = "C-130"
-    group_size_max = 1
     large_parking_slot = True
     height = 11.66
     width = 40.4
@@ -5810,7 +5786,6 @@ class C_130(PlaneType):
 
 class An_26B(PlaneType):
     id = "An-26B"
-    group_size_max = 1
     large_parking_slot = True
     height = 8.575
     width = 29.2
@@ -5849,7 +5824,6 @@ class An_26B(PlaneType):
 
 class An_30M(PlaneType):
     id = "An-30M"
-    group_size_max = 1
     large_parking_slot = True
     height = 8.575
     width = 29.2
@@ -5881,7 +5855,6 @@ class An_30M(PlaneType):
 
 class C_17A(PlaneType):
     id = "C-17A"
-    group_size_max = 1
     large_parking_slot = True
     height = 16.79
     width = 51.76
@@ -5907,7 +5880,6 @@ class C_17A(PlaneType):
 
 class A_50(PlaneType):
     id = "A-50"
-    group_size_max = 1
     large_parking_slot = True
     height = 14.76
     width = 50.5
@@ -5935,7 +5907,6 @@ class A_50(PlaneType):
 
 class E_3A(PlaneType):
     id = "E-3A"
-    group_size_max = 1
     large_parking_slot = True
     height = 12.93
     width = 44.4
@@ -5970,7 +5941,6 @@ class E_3A(PlaneType):
 
 class IL_78M(PlaneType):
     id = "IL-78M"
-    group_size_max = 1
     large_parking_slot = True
     height = 14.76
     width = 50.5
@@ -6002,7 +5972,6 @@ class IL_78M(PlaneType):
 
 class E_2C(PlaneType):
     id = "E-2C"
-    group_size_max = 1
     large_parking_slot = True
     height = 5.59
     width = 24.56
@@ -6031,7 +6000,6 @@ class E_2C(PlaneType):
 
 class IL_76MD(PlaneType):
     id = "IL-76MD"
-    group_size_max = 1
     large_parking_slot = True
     height = 14.76
     width = 50.5
@@ -6640,9 +6608,9 @@ class F_16A_MLU(PlaneType):
             CMD_extended_skins = "CMD extended skins"
 
         class Norway(Enum):
+            CMD_extended_skins = "CMD extended skins"
             norway_338_skvadron = "norway 338 skvadron"
             norway_skv338 = "norway skv338"
-            CMD_extended_skins = "CMD extended skins"
 
         class Romania(Enum):
             CMD_extended_skins = "CMD extended skins"
@@ -6747,9 +6715,9 @@ class F_16A_MLU(PlaneType):
             CMD_extended_skins = "CMD extended skins"
 
         class TheNetherlands(Enum):
+            CMD_extended_skins = "CMD extended skins"
             the_netherlands__313th_squadron____twenthe_ab = "the netherlands (313th squadron `` twenthe ab)"
             the_netherlands_313th__tigers__squadron = "the netherlands 313th `tigers` squadron"
-            CMD_extended_skins = "CMD extended skins"
 
         class Turkey(Enum):
             CMD_extended_skins = "CMD extended skins"
@@ -6928,7 +6896,6 @@ class RQ_1A_Predator(PlaneType):
 
 class Yak_40(PlaneType):
     id = "Yak-40"
-    group_size_max = 1
     large_parking_slot = True
     height = 6.5
     width = 25
@@ -7510,7 +7477,6 @@ class A_10C(PlaneType):
 
 class KC_135(PlaneType):
     id = "KC-135"
-    group_size_max = 1
     large_parking_slot = True
     height = 12.93
     width = 40
@@ -7648,154 +7614,423 @@ class FW_190A8(PlaneType):
 
         class Georgia(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Syria(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Finland(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Australia(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Germany(Enum):
             FW_190A8_2_JG_54 = "FW-190A8_2.JG 54"
             FW_190A8_2_JG_54_Hans_Dortenmann = "FW-190A8_2.JG 54_Hans Dortenmann"
+            Fw190_Alfred_Bindseil = "Fw190_Alfred_Bindseil"
+            Fw190_Ewald_Preisz = "Fw190_Ewald_Preisz"
             FW_190A8 = "FW-190A8"
+            Factory_skin = "Factory skin"
+            FW_190A8_Yellow_4 = "FW-190A8 Yellow 4"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
+            FW_190A8_JG26_Priller = "FW-190A8 JG26 Priller"
+            FW_190A8_JG3_Maximowitz = "FW-190A8 JG3 Maximowitz"
+            JG3_White_nose_Wulf = "JG3 White nose Wulf"
+            Inspired_by_JG2_skin_of_early_Fw_190A = "Inspired by JG2 skin of early Fw 190A"
+            Black_13_Schwarze_Katze_from_JG1 = "Black 13 Schwarze Katze from JG1"
+            Fw190_Fuselage_D_JG301 = "Fw190_Fuselage_D_JG301"
 
         class SaudiArabia(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Israel(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Croatia(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class CzechRepublic(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
+            Fw_190_A_8_Czech_Avia_S_90 = "Fw 190 A-8 Czech Avia S.90"
 
         class Norway(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Romania(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
+            RoAF_Grupul7 = "RoAF-Grupul7"
 
         class Spain(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Ukraine(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Belgium(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Slovakia(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Greece(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class UK(Enum):
             FW_190A8 = "FW-190A8"
+            FW_190A8_RAF = "FW-190A8_RAF"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Insurgents(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Hungary(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
+            FW_190A8_JG26_Priller = "FW-190A8 JG26 Priller"
+            FW_190A8_JG3_Maximowitz = "FW-190A8 JG3 Maximowitz"
+            FW_190A8_RHAF = "FW-190A8 RHAF"
 
         class France(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Abkhazia(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Russia(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Sweden(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Austria(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Switzerland(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Italy(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class SouthOssetia(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class SouthKorea(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Iran(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class China(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Pakistan(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Belarus(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class NorthKorea(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Iraq(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Kazakhstan(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Bulgaria(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Serbia(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class India(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class USAFAggressors(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
+            Turkish_Air_Force__5th_FR__1942 = "Turkish Air Force, 5th FR (1942)"
 
         class USA(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Denmark(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Egypt(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Canada(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class TheNetherlands(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Turkey(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
+            Turkish_Air_Force__5th_FR__1942 = "Turkish Air Force, 5th FR (1942)"
 
         class Japan(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 
         class Poland(Enum):
             FW_190A8 = "FW-190A8"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
 #ERRR <CLEAN>
 
     class Pylon1:
-        SC_250 = (1, Weapons.SC_250)
+        ER_4_SC50 = (1, Weapons.ER_4_SC50)
+        SC_501_SC250 = (1, Weapons.SC_501_SC250)
+        SC_250_Type_1_L2 = (1, Weapons.SC_250_Type_1_L2)
+        SC_501_SC500 = (1, Weapons.SC_501_SC500)
+        SC_500_L2 = (1, Weapons.SC_500_L2)
+        SD_250_Stg = (1, Weapons.SD_250_Stg)
+        SD_500_A = (1, Weapons.SD_500_A)
+        AB_250_2__w__SD_2_ = (1, Weapons.AB_250_2__w__SD_2_)
+        AB_250_2__w__SD_10A_ = (1, Weapons.AB_250_2__w__SD_10A_)
+        AB_500_1__w__SD_10A_ = (1, Weapons.AB_500_1__w__SD_10A_)
+        BF109K_4_FUEL_TANK = (1, Weapons.BF109K_4_FUEL_TANK)
 
-    pylons = {1}
+    class Pylon2:
+        Werfer_Granate_21 = (2, Weapons.Werfer_Granate_21)
 
-    tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
+    class Pylon3:
+        Werfer_Granate_21 = (3, Weapons.Werfer_Granate_21)
+
+    pylons = {1, 2, 3}
+
+    tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike, task.Reconnaissance]
     task_default = task.CAP
 
 
@@ -8066,8 +8301,8 @@ class Bf_109K_4(PlaneType):
             Bf_109_K4_Dogfight_RED = "Bf-109 K4 Dogfight RED"
 
         class USA(Enum):
-            Bf_109_K4_Irmgard = "Bf-109 K4 Irmgard"
             Bf_109_K4_Dogfight_BLUE = "Bf-109 K4 Dogfight BLUE"
+            Bf_109_K4_Irmgard = "Bf-109 K4 Irmgard"
             Green = "Green"
             Bf_109_K4_Dogfight_RED = "Bf-109 K4 Dogfight RED"
             Bf_109_K4_US_captured = "Bf-109 K4 US captured"
@@ -8631,9 +8866,6 @@ class P_51D_30_NA(PlaneType):
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAS
 
-    class Liveries:
-        pass
-
 
 class AJS37(PlaneType):
     id = "AJS37"
@@ -8643,10 +8875,10 @@ class AJS37(PlaneType):
     length = 16.3
     fuel_max = 4476
     max_speed = 2203.2
-    chaff = 105
-    flare = 36
+    chaff = 210
+    flare = 72
     charge_total = 280
-    chaff_charge_size = 4
+    chaff_charge_size = 1
     flare_charge_size = 1
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
     radio_frequency = 305
@@ -9217,7 +9449,9 @@ class AV8BNA(PlaneType):
         "EWDispenserBL": 2,
         "EWDispenserBR": 2,
         "WpBullseye": 0,
-        "ForceINSRules": False,
+        "AAR_Zone1": 0,
+        "AAR_Zone2": 0,
+        "AAR_Zone3": 0,
     }
 
     class Properties:
@@ -9284,8 +9518,14 @@ class AV8BNA(PlaneType):
         class WpBullseye:
             id = "WpBullseye"
 
-        class ForceINSRules:
-            id = "ForceINSRules"
+        class AAR_Zone1:
+            id = "AAR_Zone1"
+
+        class AAR_Zone2:
+            id = "AAR_Zone2"
+
+        class AAR_Zone3:
+            id = "AAR_Zone3"
 
     class Liveries:
 
@@ -10173,7 +10413,7 @@ class AV8BNA(PlaneType):
         _2_GBU_12 = (2, Weapons._2_GBU_12)
         _3_GBU_12 = (2, Weapons._3_GBU_12)
         _2_MK_82_AIR = (2, Weapons._2_MK_82_AIR)
-        _3_Mk_82AIR = (2, Weapons._3_Mk_82AIR)
+        _3_Mk_82AIR_ = (2, Weapons._3_Mk_82AIR_)
         _2_MK_82_SNAKEYE = (2, Weapons._2_MK_82_SNAKEYE)
         _3_MK_82_SNAKEYE = (2, Weapons._3_MK_82_SNAKEYE)
         _2_GBU_38 = (2, Weapons._2_GBU_38)
@@ -10225,7 +10465,7 @@ class AV8BNA(PlaneType):
         _3_GBU_12 = (3, Weapons._3_GBU_12)
         _2_GBU_16 = (3, Weapons._2_GBU_16)
         _2_MK_82_AIR = (3, Weapons._2_MK_82_AIR)
-        _3_Mk_82AIR = (3, Weapons._3_Mk_82AIR)
+        _3_Mk_82AIR_ = (3, Weapons._3_Mk_82AIR_)
         _2_MK_82_SNAKEYE = (3, Weapons._2_MK_82_SNAKEYE)
         _3_MK_82_SNAKEYE = (3, Weapons._3_MK_82_SNAKEYE)
         _2_GBU_38 = (3, Weapons._2_GBU_38)
@@ -10282,7 +10522,7 @@ class AV8BNA(PlaneType):
         _3_GBU_12 = (6, Weapons._3_GBU_12)
         _2_GBU_16_ = (6, Weapons._2_GBU_16_)
         _2_MK_82_AIR_ = (6, Weapons._2_MK_82_AIR_)
-        _3_Mk_82AIR = (6, Weapons._3_Mk_82AIR)
+        _3_Mk_82AIR_ = (6, Weapons._3_Mk_82AIR_)
         _2_MK_82_SNAKEYE_ = (6, Weapons._2_MK_82_SNAKEYE_)
         _3_MK_82_SNAKEYE = (6, Weapons._3_MK_82_SNAKEYE)
         _2_GBU_38_ = (6, Weapons._2_GBU_38_)
@@ -10330,7 +10570,7 @@ class AV8BNA(PlaneType):
         _2_GBU_12_ = (7, Weapons._2_GBU_12_)
         _3_GBU_12 = (7, Weapons._3_GBU_12)
         _2_MK_82_AIR_ = (7, Weapons._2_MK_82_AIR_)
-        _3_Mk_82AIR = (7, Weapons._3_Mk_82AIR)
+        _3_Mk_82AIR_ = (7, Weapons._3_Mk_82AIR_)
         _2_MK_82_SNAKEYE_ = (7, Weapons._2_MK_82_SNAKEYE_)
         _3_MK_82_SNAKEYE = (7, Weapons._3_MK_82_SNAKEYE)
         _2_GBU_38_ = (7, Weapons._2_GBU_38_)
@@ -10483,6 +10723,8 @@ class C_101EB(PlaneType):
         "SoloFlight": False,
         "NetCrewControlPriority": 1,
         "MountIFRHood": False,
+        "NS430allow": True,
+        "SmokeOnGround": False,
     }
 
     class Properties:
@@ -10501,6 +10743,12 @@ class C_101EB(PlaneType):
 
         class MountIFRHood:
             id = "MountIFRHood"
+
+        class NS430allow:
+            id = "NS430allow"
+
+        class SmokeOnGround:
+            id = "SmokeOnGround"
 
     class Liveries:
 
@@ -10538,15 +10786,16 @@ class C_101EB(PlaneType):
             default = "default"
 
         class Spain(Enum):
+            default = "default"
             AGA__Spanish_Air_School = "AGA (Spanish Air School)"
             AGA__Spanish_Air_School__1980 = "AGA (Spanish Air School) 1980"
             AGA__Spanish_Air_School__1985 = "AGA (Spanish Air School) 1985"
-            default = "default"
             CLAEX___Centro_Logístico_de_Armamento_y_Experimentación = "CLAEX - Centro Logístico de Armamento y Experimentación"
             _74_squadron_Matacan = "74 squadron Matacan"
             Patrulla_Aguila_25_Aniversario = "Patrulla Aguila 25 Aniversario"
             Patrulla_Aguila_30_Aniversario = "Patrulla Aguila 30 Aniversario"
             Patrulla_Aguila_Spanish_AGA = "Patrulla Aguila Spanish AGA"
+            XE_25_01_Prototype = "XE-25 01 Prototype"
             XE_25_01_Prototype_1978_Farnborough_Airshow = "XE-25 01 Prototype 1978 Farnborough Airshow"
             XE25_02_Prototype = "XE25-02 Prototype"
             XE25_02_Prototype_1989_TV_Commercial = "XE25-02 Prototype 1989 TV Commercial"
@@ -10718,6 +10967,7 @@ class C_101CC(PlaneType):
         "MountIFRHood": False,
         "CameraRecorder": False,
         "SightSunFilter": False,
+        "NS430allow": True,
     }
 
     class Properties:
@@ -10742,6 +10992,9 @@ class C_101CC(PlaneType):
 
         class SightSunFilter:
             id = "SightSunFilter"
+
+        class NS430allow:
+            id = "NS430allow"
 
     class Liveries:
 
@@ -10898,7 +11151,6 @@ class C_101CC(PlaneType):
 
     class Pylon2:
         Sea_Eagle = (2, Weapons.Sea_Eagle)
-        Mk_84 = (2, Weapons.Mk_84)
         Mk_82 = (2, Weapons.Mk_82)
         LAU_61___19_2_75__rockets_MK151_HE = (2, Weapons.LAU_61___19_2_75__rockets_MK151_HE)
         LAU_68___7_2_75__rockets_M151__HE_ = (2, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
@@ -10910,7 +11162,6 @@ class C_101CC(PlaneType):
         FAB_100 = (2, Weapons.FAB_100)
         Belouga = (2, Weapons.Belouga)
         BR_250 = (2, Weapons.BR_250)
-        BR_500 = (2, Weapons.BR_500)
         BIN_200 = (2, Weapons.BIN_200)
 
     class Pylon3:
@@ -10918,7 +11169,6 @@ class C_101CC(PlaneType):
         LAU_68___7_2_75__rockets_M156_WP_ = (3, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
         LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (3, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
         LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (3, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
-        Mk_84 = (3, Weapons.Mk_84)
         Mk_82 = (3, Weapons.Mk_82)
         BL755 = (3, Weapons.BL755)
         FAB_250 = (3, Weapons.FAB_250)
@@ -10938,7 +11188,6 @@ class C_101CC(PlaneType):
         LAU_68___7_2_75__rockets_M156_WP_ = (5, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
         LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (5, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
         LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (5, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
-        Mk_84 = (5, Weapons.Mk_84)
         Mk_82 = (5, Weapons.Mk_82)
         BL755 = (5, Weapons.BL755)
         FAB_250 = (5, Weapons.FAB_250)
@@ -10951,7 +11200,6 @@ class C_101CC(PlaneType):
 
     class Pylon6:
         Sea_Eagle = (6, Weapons.Sea_Eagle)
-        Mk_84 = (6, Weapons.Mk_84)
         Mk_82 = (6, Weapons.Mk_82)
         LAU_61___19_2_75__rockets_MK151_HE = (6, Weapons.LAU_61___19_2_75__rockets_MK151_HE)
         LAU_68___7_2_75__rockets_M151__HE_ = (6, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
@@ -10963,7 +11211,6 @@ class C_101CC(PlaneType):
         FAB_100 = (6, Weapons.FAB_100)
         Belouga = (6, Weapons.Belouga)
         BR_250 = (6, Weapons.BR_250)
-        BR_500 = (6, Weapons.BR_500)
         BIN_200 = (6, Weapons.BIN_200)
 
     class Pylon7:
@@ -11249,6 +11496,27 @@ class JF_17(PlaneType):
         },
     }
 
+    property_defaults = {
+        "LaserCode100": 6,
+        "LaserCode10": 8,
+        "LaserCode1": 8,
+        "AARProbe": False,
+    }
+
+    class Properties:
+
+        class LaserCode100:
+            id = "LaserCode100"
+
+        class LaserCode10:
+            id = "LaserCode10"
+
+        class LaserCode1:
+            id = "LaserCode1"
+
+        class AARProbe:
+            id = "AARProbe"
+
     class Liveries:
 
         class Georgia(Enum):
@@ -11397,6 +11665,12 @@ class JF_17(PlaneType):
 
     class Pylon1:
         DIS_PL_5EII = (1, Weapons.DIS_PL_5EII)
+        DIS_SMOKE_GENERATOR_R = (1, Weapons.DIS_SMOKE_GENERATOR_R)
+        DIS_SMOKE_GENERATOR_G = (1, Weapons.DIS_SMOKE_GENERATOR_G)
+        DIS_SMOKE_GENERATOR_B = (1, Weapons.DIS_SMOKE_GENERATOR_B)
+        DIS_SMOKE_GENERATOR_W = (1, Weapons.DIS_SMOKE_GENERATOR_W)
+        DIS_SMOKE_GENERATOR_Y = (1, Weapons.DIS_SMOKE_GENERATOR_Y)
+        DIS_SMOKE_GENERATOR_O = (1, Weapons.DIS_SMOKE_GENERATOR_O)
 
     class Pylon2:
         DIS_PL_5EII = (2, Weapons.DIS_PL_5EII)
@@ -11412,6 +11686,8 @@ class JF_17(PlaneType):
         Mk_83 = (2, Weapons.Mk_83)
         DIS_MK_20 = (2, Weapons.DIS_MK_20)
         DIS_GBU_12 = (2, Weapons.DIS_GBU_12)
+        DIS_TYPE200 = (2, Weapons.DIS_TYPE200)
+        DIS_TYPE200_DUAL_L = (2, Weapons.DIS_TYPE200_DUAL_L)
         BRU_33___2_x_Mk_82 = (2, Weapons.BRU_33___2_x_Mk_82)
         BRU_33___2_x_Mk_82_SnakeEye = (2, Weapons.BRU_33___2_x_Mk_82_SnakeEye)
         BRU_33___2_x_Mk_20_Rockeye = (2, Weapons.BRU_33___2_x_Mk_20_Rockeye)
@@ -11421,6 +11697,12 @@ class JF_17(PlaneType):
         BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_ = (2, Weapons.BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_)
         DIS_WMD7 = (2, Weapons.DIS_WMD7)
         DIS_AKG_DLPOD = (2, Weapons.DIS_AKG_DLPOD)
+        DIS_SMOKE_GENERATOR_R = (2, Weapons.DIS_SMOKE_GENERATOR_R)
+        DIS_SMOKE_GENERATOR_G = (2, Weapons.DIS_SMOKE_GENERATOR_G)
+        DIS_SMOKE_GENERATOR_B = (2, Weapons.DIS_SMOKE_GENERATOR_B)
+        DIS_SMOKE_GENERATOR_W = (2, Weapons.DIS_SMOKE_GENERATOR_W)
+        DIS_SMOKE_GENERATOR_Y = (2, Weapons.DIS_SMOKE_GENERATOR_Y)
+        DIS_SMOKE_GENERATOR_O = (2, Weapons.DIS_SMOKE_GENERATOR_O)
 
     class Pylon3:
         DIS_C_802AK = (3, Weapons.DIS_C_802AK)
@@ -11435,9 +11717,6 @@ class JF_17(PlaneType):
         Mk_84 = (3, Weapons.Mk_84)
         DIS_GBU_10 = (3, Weapons.DIS_GBU_10)
         DIS_GBU_16 = (3, Weapons.DIS_GBU_16)
-        DIS_BRM1_90 = (3, Weapons.DIS_BRM1_90)
-        DIS_RKT_90_UG = (3, Weapons.DIS_RKT_90_UG)
-        BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_ = (3, Weapons.BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_)
 
     class Pylon4:
         DIS_TANK800 = (4, Weapons.DIS_TANK800)
@@ -11448,6 +11727,12 @@ class JF_17(PlaneType):
         DIS_WMD7 = (4, Weapons.DIS_WMD7)
         DIS_AKG_DLPOD = (4, Weapons.DIS_AKG_DLPOD)
         DIS_SPJ_POD = (4, Weapons.DIS_SPJ_POD)
+        DIS_SMOKE_GENERATOR_R = (4, Weapons.DIS_SMOKE_GENERATOR_R)
+        DIS_SMOKE_GENERATOR_G = (4, Weapons.DIS_SMOKE_GENERATOR_G)
+        DIS_SMOKE_GENERATOR_B = (4, Weapons.DIS_SMOKE_GENERATOR_B)
+        DIS_SMOKE_GENERATOR_W = (4, Weapons.DIS_SMOKE_GENERATOR_W)
+        DIS_SMOKE_GENERATOR_Y = (4, Weapons.DIS_SMOKE_GENERATOR_Y)
+        DIS_SMOKE_GENERATOR_O = (4, Weapons.DIS_SMOKE_GENERATOR_O)
 
     class Pylon5:
         DIS_C_802AK = (5, Weapons.DIS_C_802AK)
@@ -11462,9 +11747,6 @@ class JF_17(PlaneType):
         Mk_84 = (5, Weapons.Mk_84)
         DIS_GBU_10 = (5, Weapons.DIS_GBU_10)
         DIS_GBU_16 = (5, Weapons.DIS_GBU_16)
-        DIS_BRM1_90 = (5, Weapons.DIS_BRM1_90)
-        DIS_RKT_90_UG = (5, Weapons.DIS_RKT_90_UG)
-        BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_ = (5, Weapons.BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_)
 
     class Pylon6:
         DIS_PL_5EII = (6, Weapons.DIS_PL_5EII)
@@ -11480,6 +11762,8 @@ class JF_17(PlaneType):
         Mk_83 = (6, Weapons.Mk_83)
         DIS_MK_20 = (6, Weapons.DIS_MK_20)
         DIS_GBU_12 = (6, Weapons.DIS_GBU_12)
+        DIS_TYPE200 = (6, Weapons.DIS_TYPE200)
+        DIS_TYPE200_DUAL_R = (6, Weapons.DIS_TYPE200_DUAL_R)
         BRU_33___2_x_Mk_82 = (6, Weapons.BRU_33___2_x_Mk_82)
         BRU_33___2_x_Mk_82_SnakeEye = (6, Weapons.BRU_33___2_x_Mk_82_SnakeEye)
         BRU_33___2_x_Mk_20_Rockeye = (6, Weapons.BRU_33___2_x_Mk_20_Rockeye)
@@ -11489,9 +11773,21 @@ class JF_17(PlaneType):
         BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_ = (6, Weapons.BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_)
         DIS_WMD7 = (6, Weapons.DIS_WMD7)
         DIS_AKG_DLPOD = (6, Weapons.DIS_AKG_DLPOD)
+        DIS_SMOKE_GENERATOR_R = (6, Weapons.DIS_SMOKE_GENERATOR_R)
+        DIS_SMOKE_GENERATOR_G = (6, Weapons.DIS_SMOKE_GENERATOR_G)
+        DIS_SMOKE_GENERATOR_B = (6, Weapons.DIS_SMOKE_GENERATOR_B)
+        DIS_SMOKE_GENERATOR_W = (6, Weapons.DIS_SMOKE_GENERATOR_W)
+        DIS_SMOKE_GENERATOR_Y = (6, Weapons.DIS_SMOKE_GENERATOR_Y)
+        DIS_SMOKE_GENERATOR_O = (6, Weapons.DIS_SMOKE_GENERATOR_O)
 
     class Pylon7:
         DIS_PL_5EII = (7, Weapons.DIS_PL_5EII)
+        DIS_SMOKE_GENERATOR_R = (7, Weapons.DIS_SMOKE_GENERATOR_R)
+        DIS_SMOKE_GENERATOR_G = (7, Weapons.DIS_SMOKE_GENERATOR_G)
+        DIS_SMOKE_GENERATOR_B = (7, Weapons.DIS_SMOKE_GENERATOR_B)
+        DIS_SMOKE_GENERATOR_W = (7, Weapons.DIS_SMOKE_GENERATOR_W)
+        DIS_SMOKE_GENERATOR_Y = (7, Weapons.DIS_SMOKE_GENERATOR_Y)
+        DIS_SMOKE_GENERATOR_O = (7, Weapons.DIS_SMOKE_GENERATOR_O)
 
     pylons = {1, 2, 3, 4, 5, 6, 7}
 
@@ -13047,6 +13343,17 @@ class F_16C_50(PlaneType):
 
         class USA(Enum):
             default = "default"
+            _13th_Fighter_Squadron = "13th_Fighter_Squadron"
+            _14th_Fighter_Squadron = "14th_Fighter_Squadron"
+            _179th_Fighter_Squadron = "179th_Fighter_Squadron"
+            _22nd_Fighter_Squadron = "22nd_Fighter_Squadron"
+            _23rd_Fighter_Squadron = "23rd_Fighter_Squadron"
+            _480th_Fighter_Squadron = "480th_Fighter_Squadron"
+            _522nd_Fighter_Squadron = "522nd_Fighter_Squadron"
+            _55th_Fighter_Squadron = "55th_Fighter_Squadron"
+            _77th_Fighter_Squadron = "77th_Fighter_Squadron"
+            _79th_Fighter_Squadron = "79th_Fighter_Squadron"
+            Dark_Viper = "Dark_Viper"
 
     class Pylon1:
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
@@ -13353,15 +13660,15 @@ class F_5E(PlaneType):
             USA_standard = "USA standard"
 
         class USAFAggressors(Enum):
-            aggressor__desert__scheme = "aggressor `desert` scheme"
-            aggressor__marine__scheme = "aggressor `marine` scheme"
-            aggressor__snake__scheme = "aggressor `snake` scheme"
+            Aggressor_Desert_Scheme = "Aggressor Desert Scheme"
+            Aggressor_Marine_Scheme = "Aggressor Marine Scheme"
+            Aggressor_Snake_Scheme = "Aggressor Snake Scheme"
             USA_standard = "USA standard"
 
         class USA(Enum):
-            aggressor__desert__scheme = "aggressor `desert` scheme"
-            aggressor__marine__scheme = "aggressor `marine` scheme"
-            aggressor__snake__scheme = "aggressor `snake` scheme"
+            Aggressor_Desert_Scheme = "Aggressor Desert Scheme"
+            Aggressor_Marine_Scheme = "Aggressor Marine Scheme"
+            Aggressor_Snake_Scheme = "Aggressor Snake Scheme"
             USA_standard = "USA standard"
 
         class Denmark(Enum):
@@ -13858,17 +14165,16 @@ class F_5E_3(PlaneType):
             USA_standard = "USA standard"
 
         class USAFAggressors(Enum):
+            Aggressor_Desert_Scheme = "Aggressor Desert Scheme"
+            Aggressor_Marine_Scheme = "Aggressor Marine Scheme"
+            Aggressor_Snake_Scheme = "Aggressor Snake Scheme"
             US_Aggressor_VFC_13_01 = "US Aggressor VFC-13 01"
+            Aggressor_VFC_13_11 = "Aggressor VFC-13 11"
+            Aggressor_VFC_13_21 = "Aggressor VFC-13 21"
             US_Aggressor_VFC_13_25 = "US Aggressor VFC-13 25"
             US_Aggressor_VFC_13_28_Fict_Splinter = "US Aggressor VFC-13 28 Fict Splinter"
             US_Aggressor_VFC_13_40 = "US Aggressor VFC-13 40"
             US_Aggressor_VMFT_401_02_2011 = "US Aggressor VMFT-401 02 2011"
-            aggressor_VFC_13__11 = "aggressor VFC-13 '11'"
-            aggressor_VFC_13__21 = "aggressor VFC-13 '21'"
-            aggressor__desert__scheme = "aggressor `desert` scheme"
-            aggressor__marine__scheme = "aggressor `marine` scheme"
-            aggressor__snake__scheme = "aggressor `snake` scheme"
-            black__Mig_28 = "black 'Mig-28'"
             TW_NGRC_5315 = "TW NGRC 5315"
             ROCAF_7th_Fighter_Group = "ROCAF 7th Fighter Group"
             TW_ROCAF_7thFG_M = "TW ROCAF 7thFG(M)"
@@ -13879,19 +14185,19 @@ class F_5E_3(PlaneType):
             USA_standard = "USA standard"
             USAF__Southeast_Asia = "USAF 'Southeast Asia'"
             US_USAF_Grape_31 = "US USAF Grape 31"
+            black__Mig_28 = "black 'Mig-28'"
 
         class USA(Enum):
+            Aggressor_Desert_Scheme = "Aggressor Desert Scheme"
+            Aggressor_Marine_Scheme = "Aggressor Marine Scheme"
+            Aggressor_Snake_Scheme = "Aggressor Snake Scheme"
             US_Aggressor_VFC_13_01 = "US Aggressor VFC-13 01"
+            Aggressor_VFC_13_11 = "Aggressor VFC-13 11"
+            Aggressor_VFC_13_21 = "Aggressor VFC-13 21"
             US_Aggressor_VFC_13_25 = "US Aggressor VFC-13 25"
             US_Aggressor_VFC_13_28_Fict_Splinter = "US Aggressor VFC-13 28 Fict Splinter"
             US_Aggressor_VFC_13_40 = "US Aggressor VFC-13 40"
             US_Aggressor_VMFT_401_02_2011 = "US Aggressor VMFT-401 02 2011"
-            aggressor_VFC_13__11 = "aggressor VFC-13 '11'"
-            aggressor_VFC_13__21 = "aggressor VFC-13 '21'"
-            aggressor__desert__scheme = "aggressor `desert` scheme"
-            aggressor__marine__scheme = "aggressor `marine` scheme"
-            aggressor__snake__scheme = "aggressor `snake` scheme"
-            black__Mig_28 = "black 'Mig-28'"
             TW_NGRC_5315 = "TW NGRC 5315"
             TW_ROCAF_7thFG_M = "TW ROCAF 7thFG(M)"
             US_Aggressor_VFC_111_01 = "US Aggressor VFC-111 01"
@@ -13901,6 +14207,7 @@ class F_5E_3(PlaneType):
             USA_standard = "USA standard"
             USAF__Southeast_Asia = "USAF 'Southeast Asia'"
             US_USAF_Grape_31 = "US USAF Grape 31"
+            black__Mig_28 = "black 'Mig-28'"
 
         class Denmark(Enum):
             USA_standard = "USA standard"
@@ -14267,9 +14574,9 @@ class F_86F_Sabre(PlaneType):
             US_Air_Force = "US Air Force"
             US_Air_Force__Green = "US Air Force (Green)"
             US_Air_Force__Squadron_39 = "US Air Force (Squadron 39)"
-            US_Air_Force__ex_USAF_F_86A_Sabre = "US Air Force (ex-USAF F-86A Sabre)"
             US_Air_Force__code_FU_178 = "US Air Force (code FU-178)"
             US_Air_Force__Skyblazers = "US Air Force (Skyblazers)"
+            US_Air_Force__ex_USAF_F_86A_Sabre = "US Air Force (ex-USAF F-86A Sabre)"
             default_livery = "default livery"
 
         class Denmark(Enum):
@@ -15949,144 +16256,183 @@ class FA_18C_hornet(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Syria(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Finland(Enum):
-            Finland_31 = "Finland 31"
+            F_18_IRIAF = "F-18 IRIAF"
             Finland_21 = "Finland 21"
+            Finland_31 = "Finland 31"
             default_livery = "default livery"
 
         class Australia(Enum):
             Australian_75th_Squadron = "Australian 75th Squadron"
             Australian_77th_Squadron = "Australian 77th Squadron"
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Germany(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class SaudiArabia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Israel(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_Israel_Air_Force = "Fictional Israel Air Force"
             default_livery = "default livery"
 
         class Croatia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class CzechRepublic(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Norway(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Romania(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Spain(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
+            Spain_462th_Escuadron_C_15_79 = "Spain 462th Escuadron C.15-79"
             Spain_111th_Escuadron_C_15_73 = "Spain 111th Escuadron C.15-73"
             Spain_111th_Escuadron_C_15_88 = "Spain 111th Escuadron C.15-88"
             Spain_121th_Escuadron_C_15_45 = "Spain 121th Escuadron C.15-45"
             Spain_121th_Escuadron_C_15_50 = "Spain 121th Escuadron C.15-50"
             Spain_121th_Escuadron_C_15_60 = "Spain 121th Escuadron C.15-60"
             Spain_121th_Escuadron_C_15_34_50th_Anniversary = "Spain 121th Escuadron C.15-34 50th Anniversary"
-            Spain_151th_Escuadron_C_15_14_Tiger_Meet = "Spain 151th Escuadron C.15-14 Tiger Meet"
             Spain_151th_Escuadron_C_15_14 = "Spain 151th Escuadron C.15-14"
             Spain_151th_Escuadron_C_15_18 = "Spain 151th Escuadron C.15-18"
             Spain_151th_Escuadron_C_15_23 = "Spain 151th Escuadron C.15-23"
             Spain_151th_Escuadron_C_15_24 = "Spain 151th Escuadron C.15-24"
+            Spain_151th_Escuadron_C_15_14_Tiger_Meet = "Spain 151th Escuadron C.15-14 Tiger Meet"
             Spain_211th_Escuadron_C_15_76 = "Spain 211th Escuadron C.15-76"
             Spain_211th_Escuadron_C_15_77 = "Spain 211th Escuadron C.15-77"
             Spain_462th_Escuadron_C_15_90 = "Spain 462th Escuadron C.15-90"
-            Spain_462th_Escuadron_C_15_79 = "Spain 462th Escuadron C.15-79"
             default_livery = "default livery"
 
         class Ukraine(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_Ukraine_Air_Force = "Fictional Ukraine Air Force"
             default_livery = "default livery"
 
         class Belgium(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Slovakia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Greece(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class UK(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_UK_Air_Force = "Fictional UK Air Force"
             default_livery = "default livery"
 
         class Insurgents(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Hungary(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class France(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Abkhazia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Russia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_Russia_Air_Force = "Fictional Russia Air Force"
             default_livery = "default livery"
 
         class Sweden(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Austria(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Switzerland(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Switzerland = "Switzerland"
             default_livery = "default livery"
 
         class Italy(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class SouthOssetia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class SouthKorea(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Iran(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class China(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Pakistan(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Belarus(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class NorthKorea(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Iraq(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Kazakhstan(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Bulgaria(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Serbia(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class India(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class USAFAggressors(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             Fictional_Russia_Air_Force = "Fictional Russia Air Force"
             VFC_12 = "VFC-12"
             NAWDC_blue = "NAWDC blue"
@@ -16098,6 +16444,7 @@ class FA_18C_hornet(PlaneType):
 
         class USA(Enum):
             VFA_37 = "VFA-37"
+            F_18_IRIAF = "F-18 IRIAF"
             VFA_106 = "VFA-106"
             VFA_106_high_visibility = "VFA-106 high visibility"
             VFA_113 = "VFA-113"
@@ -16137,9 +16484,11 @@ class FA_18C_hornet(PlaneType):
             Blue_Angels_Jet_Team = "Blue Angels Jet Team"
 
         class Denmark(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Egypt(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Canada(Enum):
@@ -16147,19 +16496,24 @@ class FA_18C_hornet(PlaneType):
             Canada_409th_Squadron = "Canada 409th Squadron"
             Canada_425th_Squadron = "Canada 425th Squadron"
             Canada_NORAD_60_Demo_Jet = "Canada NORAD 60 Demo Jet"
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class TheNetherlands(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Turkey(Enum):
             Fictional_Turkey_162nd_Sq = "Fictional Turkey 162nd Sq"
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Japan(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
         class Poland(Enum):
+            F_18_IRIAF = "F-18 IRIAF"
             default_livery = "default livery"
 
     class Pylon1:
@@ -16194,8 +16548,8 @@ class FA_18C_hornet(PlaneType):
         BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_ = (2, Weapons.BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_)
         BRU_33_LAU_10___4_ZUNI_MK_71 = (2, Weapons.BRU_33_LAU_10___4_ZUNI_MK_71)
         BRU_33___2_LAU_10___4_ZUNI_MK_71 = (2, Weapons.BRU_33___2_LAU_10___4_ZUNI_MK_71)
-        BRU_33_LAU_61___19_2_75__rockets_MK151_HE = (2, Weapons.BRU_33_LAU_61___19_2_75__rockets_MK151_HE)
-        BRU_33___2_LAU_61___19_2_75__rockets_MK151_HE = (2, Weapons.BRU_33___2_LAU_61___19_2_75__rockets_MK151_HE)
+        BRU_33_LAU_61___19_2_75__rockets_M151__HE_ = (2, Weapons.BRU_33_LAU_61___19_2_75__rockets_M151__HE_)
+        BRU_33___2_LAU_61___19_2_75__rockets_M151__HE_ = (2, Weapons.BRU_33___2_LAU_61___19_2_75__rockets_M151__HE_)
         Mk_82 = (2, Weapons.Mk_82)
         Mk_82_SnakeEye = (2, Weapons.Mk_82_SnakeEye)
         Mk_82Y = (2, Weapons.Mk_82Y)
@@ -16240,10 +16594,12 @@ class FA_18C_hornet(PlaneType):
         AGM_88C_ = (3, Weapons.AGM_88C_)
         BRU_33_LAU_68___7_2_75__rockets_M151__HE_ = (3, Weapons.BRU_33_LAU_68___7_2_75__rockets_M151__HE_)
         BRU_33___2_LAU_68___7_2_75__rockets_M151__HE_ = (3, Weapons.BRU_33___2_LAU_68___7_2_75__rockets_M151__HE_)
+        BRU_33_LAU_68___7_2_75__rockets_MK5__HE_ = (3, Weapons.BRU_33_LAU_68___7_2_75__rockets_MK5__HE_)
+        BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_ = (3, Weapons.BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_)
         BRU_33_LAU_10___4_ZUNI_MK_71 = (3, Weapons.BRU_33_LAU_10___4_ZUNI_MK_71)
         BRU_33___2_LAU_10___4_ZUNI_MK_71 = (3, Weapons.BRU_33___2_LAU_10___4_ZUNI_MK_71)
-        BRU_33_LAU_61___19_2_75__rockets_MK151_HE = (3, Weapons.BRU_33_LAU_61___19_2_75__rockets_MK151_HE)
-        BRU_33___2_LAU_61___19_2_75__rockets_MK151_HE = (3, Weapons.BRU_33___2_LAU_61___19_2_75__rockets_MK151_HE)
+        BRU_33_LAU_61___19_2_75__rockets_M151__HE_ = (3, Weapons.BRU_33_LAU_61___19_2_75__rockets_M151__HE_)
+        BRU_33___2_LAU_61___19_2_75__rockets_M151__HE_ = (3, Weapons.BRU_33___2_LAU_61___19_2_75__rockets_M151__HE_)
         Mk_82 = (3, Weapons.Mk_82)
         Mk_82_SnakeEye = (3, Weapons.Mk_82_SnakeEye)
         Mk_82Y = (3, Weapons.Mk_82Y)
@@ -16281,6 +16637,7 @@ class FA_18C_hornet(PlaneType):
         AIM_7MH = (4, Weapons.AIM_7MH)
         AIM_120B = (4, Weapons.AIM_120B)
         AIM_120C = (4, Weapons.AIM_120C)
+        AN_AAQ_28_LITENING_ = (4, Weapons.AN_AAQ_28_LITENING_)
 
     class Pylon5:
         FPU_8A_Fuel_Tank_330_gallons = (5, Weapons.FPU_8A_Fuel_Tank_330_gallons)
@@ -16320,10 +16677,12 @@ class FA_18C_hornet(PlaneType):
         AGM_88C_ = (7, Weapons.AGM_88C_)
         BRU_33_LAU_68___7_2_75__rockets_M151__HE_ = (7, Weapons.BRU_33_LAU_68___7_2_75__rockets_M151__HE_)
         BRU_33___2_LAU_68___7_2_75__rockets_M151__HE_ = (7, Weapons.BRU_33___2_LAU_68___7_2_75__rockets_M151__HE_)
+        BRU_33_LAU_68___7_2_75__rockets_MK5__HE_ = (7, Weapons.BRU_33_LAU_68___7_2_75__rockets_MK5__HE_)
+        BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_ = (7, Weapons.BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_)
         BRU_33_LAU_10___4_ZUNI_MK_71 = (7, Weapons.BRU_33_LAU_10___4_ZUNI_MK_71)
         BRU_33___2_LAU_10___4_ZUNI_MK_71 = (7, Weapons.BRU_33___2_LAU_10___4_ZUNI_MK_71)
-        BRU_33_LAU_61___19_2_75__rockets_MK151_HE = (7, Weapons.BRU_33_LAU_61___19_2_75__rockets_MK151_HE)
-        BRU_33___2_LAU_61___19_2_75__rockets_MK151_HE = (7, Weapons.BRU_33___2_LAU_61___19_2_75__rockets_MK151_HE)
+        BRU_33_LAU_61___19_2_75__rockets_M151__HE_ = (7, Weapons.BRU_33_LAU_61___19_2_75__rockets_M151__HE_)
+        BRU_33___2_LAU_61___19_2_75__rockets_M151__HE_ = (7, Weapons.BRU_33___2_LAU_61___19_2_75__rockets_M151__HE_)
         Mk_82 = (7, Weapons.Mk_82)
         Mk_82_SnakeEye = (7, Weapons.Mk_82_SnakeEye)
         Mk_82Y = (7, Weapons.Mk_82Y)
@@ -16380,8 +16739,8 @@ class FA_18C_hornet(PlaneType):
         BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_ = (8, Weapons.BRU_33___2_LAU_68___7_2_75__rockets_MK5__HE_)
         BRU_33_LAU_10___4_ZUNI_MK_71 = (8, Weapons.BRU_33_LAU_10___4_ZUNI_MK_71)
         BRU_33___2_LAU_10___4_ZUNI_MK_71 = (8, Weapons.BRU_33___2_LAU_10___4_ZUNI_MK_71)
-        BRU_33_LAU_61___19_2_75__rockets_MK151_HE = (8, Weapons.BRU_33_LAU_61___19_2_75__rockets_MK151_HE)
-        BRU_33___2_LAU_61___19_2_75__rockets_MK151_HE = (8, Weapons.BRU_33___2_LAU_61___19_2_75__rockets_MK151_HE)
+        BRU_33_LAU_61___19_2_75__rockets_M151__HE_ = (8, Weapons.BRU_33_LAU_61___19_2_75__rockets_M151__HE_)
+        BRU_33___2_LAU_61___19_2_75__rockets_M151__HE_ = (8, Weapons.BRU_33___2_LAU_61___19_2_75__rockets_M151__HE_)
         Mk_82 = (8, Weapons.Mk_82)
         Mk_82_SnakeEye = (8, Weapons.Mk_82_SnakeEye)
         Mk_82Y = (8, Weapons.Mk_82Y)
@@ -18017,7 +18376,6 @@ class MiG_15bis(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
-            USSR_Air_Forces = "USSR_Air Forces"
             default_livery = "default livery"
 
         class Syria(Enum):
@@ -18056,7 +18414,6 @@ class MiG_15bis(PlaneType):
             default_livery = "default livery"
 
         class Ukraine(Enum):
-            USSR_Air_Forces = "USSR_Air Forces"
             default_livery = "default livery"
 
         class Belgium(Enum):
@@ -18082,7 +18439,6 @@ class MiG_15bis(PlaneType):
             default_livery = "default livery"
 
         class Abkhazia(Enum):
-            USSR_Air_Forces = "USSR_Air Forces"
             default_livery = "default livery"
 
         class Russia(Enum):
@@ -18106,7 +18462,6 @@ class MiG_15bis(PlaneType):
             default_livery = "default livery"
 
         class SouthOssetia(Enum):
-            USSR_Air_Forces = "USSR_Air Forces"
             default_livery = "default livery"
 
         class SouthKorea(Enum):
@@ -18124,7 +18479,6 @@ class MiG_15bis(PlaneType):
             default_livery = "default livery"
 
         class Belarus(Enum):
-            USSR_Air_Forces = "USSR_Air Forces"
             default_livery = "default livery"
 
         class NorthKorea(Enum):
@@ -18137,7 +18491,6 @@ class MiG_15bis(PlaneType):
             default_livery = "default livery"
 
         class Kazakhstan(Enum):
-            USSR_Air_Forces = "USSR_Air Forces"
             default_livery = "default livery"
 
         class Bulgaria(Enum):
@@ -18257,292 +18610,292 @@ class MiG_19P(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Syria(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Finland(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Australia(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Germany(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class SaudiArabia(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Israel(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Croatia(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class CzechRepublic(Enum):
+            default = "default"
             IAP = "IAP"
             CZechoslovakia = "CZechoslovakia"
-            default = "default"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Norway(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Romania(Enum):
+            default = "default"
             IAP = "IAP"
             Romania___66th_Fighter_Division = "Romania - 66th Fighter Division"
-            default = "default"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Spain(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Ukraine(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Belgium(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Slovakia(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Greece(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class UK(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Insurgents(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Hungary(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class France(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Abkhazia(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Russia(Enum):
+            default = "default"
             IAP = "IAP"
             USSR_2 = "USSR_2"
-            default = "default"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Sweden(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Austria(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Switzerland(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Italy(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class SouthOssetia(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class SouthKorea(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Iran(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class China(Enum):
+            default = "default"
             PLAAF = "PLAAF"
             IAP = "IAP"
-            default = "default"
             DDR___Fictional = "DDR - Fictional"
             PLAAF_CAMO = "PLAAF CAMO"
             Snow___Fictional = "Snow - Fictional"
 
         class Pakistan(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Belarus(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class NorthKorea(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Iraq(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Kazakhstan(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Bulgaria(Enum):
+            default = "default"
             Bulgaria = "Bulgaria"
             IAP = "IAP"
-            default = "default"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Serbia(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class India(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class USAFAggressors(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class USA(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Denmark(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Egypt(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Canada(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class TheNetherlands(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Turkey(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Japan(Enum):
-            IAP = "IAP"
             default = "default"
+            IAP = "IAP"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
         class Poland(Enum):
+            default = "default"
             IAP = "IAP"
             Poland_39_PLM = "Poland 39 PLM"
             Poland_62_PLM = "Poland 62 PLM"
-            default = "default"
             DDR___Fictional = "DDR - Fictional"
             Snow___Fictional = "Snow - Fictional"
 
@@ -18649,9 +19002,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -18680,9 +19033,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -18711,9 +19064,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -18742,9 +19095,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -18773,9 +19126,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -18804,9 +19157,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -18835,9 +19188,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -18866,9 +19219,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -18897,9 +19250,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -18928,9 +19281,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -18959,9 +19312,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -18990,9 +19343,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19021,9 +19374,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19052,9 +19405,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19083,9 +19436,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19114,9 +19467,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19145,9 +19498,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19176,9 +19529,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19207,9 +19560,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19238,9 +19591,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19269,9 +19622,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19300,9 +19653,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19331,9 +19684,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19362,9 +19715,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19393,9 +19746,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19424,9 +19777,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19455,9 +19808,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19486,9 +19839,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19517,9 +19870,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19548,9 +19901,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19579,9 +19932,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19610,9 +19963,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19641,9 +19994,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19672,9 +20025,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19703,9 +20056,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19734,9 +20087,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19765,9 +20118,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19796,9 +20149,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19827,9 +20180,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19858,9 +20211,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19889,9 +20242,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19920,9 +20273,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19951,9 +20304,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -19982,9 +20335,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -20013,9 +20366,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -20044,9 +20397,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -20075,9 +20428,9 @@ class MiG_21Bis(PlaneType):
             Egypt_Tan = "Egypt Tan"
             Finland___HavLLv_31 = "Finland - HavLLv 31"
             HunAF_Griff_Sqn___47th_AB = "HunAF Griff Sqn. (47th AB)"
-            India___15_Sqn = "India - 15 Sqn"
             IRIAF___51st_SQN = "IRIAF - 51st SQN"
             IRIAF___Standard = "IRIAF - Standard"
+            India___15_Sqn = "India - 15 Sqn"
             Iraq_AF___17th_SQN__1 = "Iraq AF - 17th SQN (1)"
             Iraq_AF___17th_SQN__2 = "Iraq AF - 17th SQN (2)"
             Northeria___32_FS = "Northeria - 32 FS"
@@ -20492,7 +20845,6 @@ class Yak_52(PlaneType):
     length = 7.745
     fuel_max = 87.84
     max_speed = 270
-    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
     radio_frequency = 132
 
     panel_radio = {
@@ -20716,6 +21068,58 @@ class B_17G(PlaneType):
     pylons = {1}
 
     tasks = [task.GroundAttack, task.RunwayAttack]
+    task_default = task.GroundAttack
+
+
+class A_20G(PlaneType):
+    id = "A-20G"
+    height = 4.83
+    width = 18.69
+    length = 14.63
+    fuel_max = 1500
+    max_speed = 619.2
+
+    property_defaults = {
+    }
+
+    class Liveries:
+
+        class UK(Enum):
+            _107_Sqn = "107 Sqn"
+
+        class Russia(Enum):
+            USSR_1st_GMTAP = "USSR 1st GMTAP"
+            USSR_27_APE_DD = "USSR 27 APE DD"
+
+        class USA(Enum):
+            USAF_645th_BS = "USAF 645th BS"
+            USAF_668th_BS = "USAF 668th BS"
+
+    class Pylon1:
+        _4___AN_M64 = (1, Weapons._4___AN_M64)
+
+    pylons = {1}
+
+    tasks = [task.GroundAttack, task.RunwayAttack, task.CAS]
+    task_default = task.CAS
+
+
+class Ju_88A4(PlaneType):
+    id = "Ju-88A4"
+    height = 5.07
+    width = 20.08
+    length = 14.35
+    fuel_max = 2120
+    max_speed = 540
+
+    property_defaults = {
+    }
+#ERRR {LTF_5B}
+#ERRR {LTF_5B}
+
+    pylons = {1, 3}
+
+    tasks = [task.GroundAttack, task.RunwayAttack, task.AntishipStrike]
     task_default = task.GroundAttack
 
 
@@ -20986,5 +21390,7 @@ plane_map = {
     "Su-34": Su_34,
     "Yak-52": Yak_52,
     "B-17G": B_17G,
+    "A-20G": A_20G,
+    "Ju-88A4": Ju_88A4,
     "TF-51D": TF_51D,
 }

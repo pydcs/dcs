@@ -644,9 +644,9 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
 
-    class AAA_Flak_18(unittype.VehicleType):
+    class AAA_8_8cm_Flak_18(unittype.VehicleType):
         id = "flak18"
-        name = "AAA Flak 18"
+        name = "AAA 8,8cm Flak 18"
         detection_range = 0
         threat_range = 15000
         air_weapon_dist = 15000
@@ -658,16 +658,16 @@ class AirDefence:
         threat_range = 2500
         air_weapon_dist = 2500
 
-    class AAA_Flak_36(unittype.VehicleType):
+    class AAA_8_8cm_Flak_36(unittype.VehicleType):
         id = "flak36"
-        name = "AAA Flak 36"
+        name = "AAA 8,8cm Flak 36"
         detection_range = 0
         threat_range = 15000
         air_weapon_dist = 15000
 
-    class AAA_Flak_37(unittype.VehicleType):
+    class AAA_8_8cm_Flak_37(unittype.VehicleType):
         id = "flak37"
-        name = "AAA Flak 37"
+        name = "AAA 8,8cm Flak 37"
         detection_range = 0
         threat_range = 15000
         air_weapon_dist = 15000
@@ -685,6 +685,27 @@ class AirDefence:
         detection_range = 30000
         threat_range = 0
         air_weapon_dist = 0
+
+    class Flak_Searchlight_37(unittype.VehicleType):
+        id = "Flakscheinwerfer_37"
+        name = "Flak Searchlight 37"
+        detection_range = 8000
+        threat_range = 6000
+        air_weapon_dist = 0
+
+    class Maschinensatz_33(unittype.VehicleType):
+        id = "Maschinensatz_33"
+        name = "Maschinensatz_33"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class AAA_8_8cm_Flak_41(unittype.VehicleType):
+        id = "flak41"
+        name = "AAA 8,8cm Flak 41"
+        detection_range = 0
+        threat_range = 20000
+        air_weapon_dist = 20000
 
     class AAA_Bofors_40mm(unittype.VehicleType):
         id = "bofors40"
@@ -1213,9 +1234,9 @@ class Armor:
         threat_range = 1000
         air_weapon_dist = 1000
 
-    class ARV_MTLB_U_BOMAN(unittype.VehicleType):
-        id = "Boman"
-        name = "ARV MTLB-U BOMAN"
+    class FDDM_Grad(unittype.VehicleType):
+        id = "Grad_FDDM"
+        name = "FDDM Grad"
         detection_range = 0
         threat_range = 1000
         air_weapon_dist = 1000
@@ -1333,7 +1354,7 @@ class Armor:
         id = "Tiger_II_H"
         name = "HT Pz.Kpfw.VI Ausf. B 'Tiger II'"
         detection_range = 0
-        threat_range = 5000
+        threat_range = 6000
         air_weapon_dist = 0
 
     class MT_Pz_Kpfw_V_Panther_Ausf_G(unittype.VehicleType):
@@ -1350,16 +1371,16 @@ class Armor:
         threat_range = 3000
         air_weapon_dist = 0
 
-    class Jagdpanther_G1(unittype.VehicleType):
+    class TD_Jagdpanther_G1(unittype.VehicleType):
         id = "Jagdpanther_G1"
-        name = "Jagdpanther G1"
+        name = "TD Jagdpanther G1"
         detection_range = 0
         threat_range = 5000
         air_weapon_dist = 0
 
-    class Jagdpanzer_IV(unittype.VehicleType):
+    class TD_Jagdpanzer_IV(unittype.VehicleType):
         id = "JagdPz_IV"
-        name = "Jagdpanzer IV"
+        name = "TD Jagdpanzer IV"
         detection_range = 0
         threat_range = 3000
         air_weapon_dist = 0
@@ -1385,6 +1406,20 @@ class Armor:
         threat_range = 1100
         air_weapon_dist = 0
 
+    class StuG_III_Ausf__G(unittype.VehicleType):
+        id = "Stug_III"
+        name = "StuG III Ausf. G"
+        detection_range = 0
+        threat_range = 3000
+        air_weapon_dist = 0
+
+    class Sd_Kfz_184_Elefant(unittype.VehicleType):
+        id = "Elefant_SdKfz_184"
+        name = "Sd.Kfz.184 Elefant"
+        detection_range = 0
+        threat_range = 6000
+        air_weapon_dist = 0
+
     class CT_Cromwell_IV(unittype.VehicleType):
         id = "Cromwell_IV"
         name = "CT Cromwell IV"
@@ -1395,6 +1430,20 @@ class Armor:
     class MT_M4A4_Sherman_Firefly(unittype.VehicleType):
         id = "M4A4_Sherman_FF"
         name = "MT M4A4 Sherman Firefly"
+        detection_range = 0
+        threat_range = 3000
+        air_weapon_dist = 0
+
+    class ST_Centaur_IV(unittype.VehicleType):
+        id = "Centaur_IV"
+        name = "ST Centaur IV"
+        detection_range = 0
+        threat_range = 6000
+        air_weapon_dist = 0
+
+    class HIT_Churchill_VII(unittype.VehicleType):
+        id = "Churchill_VII"
+        name = "HIT Churchill_VII"
         detection_range = 0
         threat_range = 3000
         air_weapon_dist = 0
@@ -1420,8 +1469,29 @@ class Armor:
         threat_range = 1200
         air_weapon_dist = 0
 
+    class TD_M10_GMC(unittype.VehicleType):
+        id = "M10_GMC"
+        name = "TD M10 GMC"
+        detection_range = 0
+        threat_range = 6000
+        air_weapon_dist = 0
+
+    class LAC_M8_Greyhound(unittype.VehicleType):
+        id = "M8_Greyhound"
+        name = "LAC M8 Greyhound"
+        detection_range = 0
+        threat_range = 2000
+        air_weapon_dist = 0
+
 
 class MissilesSS:
+
+    class SRBM_SS_1C_Scud_B_9K72_LN_9P117M(unittype.VehicleType):
+        id = "Scud_B"
+        name = "SRBM SS-1C Scud-B 9K72 LN 9P117M"
+        detection_range = 0
+        threat_range = 460000
+        air_weapon_dist = 460000
 
     class SS_N_2_Silkworm(unittype.VehicleType):
         id = "hy_launcher"
@@ -1434,6 +1504,13 @@ class MissilesSS:
         id = "Silkworm_SR"
         name = "Silkworm Radar"
         detection_range = 200000
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class V_1_ramp(unittype.VehicleType):
+        id = "v1_launcher"
+        name = "V-1 ramp"
+        detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
@@ -1583,7 +1660,7 @@ vehicle_map = {
     "MTLB": Armor.APC_MTLB,
     "Marder": Armor.IFV_Marder,
     "TPZ": Armor.TPz_Fuchs,
-    "Boman": Armor.ARV_MTLB_U_BOMAN,
+    "Grad_FDDM": Armor.FDDM_Grad,
     "Bunker": Fortification.Bunker_2,
     "Paratrooper RPG-16": Infantry.Paratrooper_RPG_16,
     "Paratrooper AKS-74": Infantry.Paratrooper_AKS,
@@ -1713,6 +1790,7 @@ vehicle_map = {
     "Coach a tank yellow": Carriage.Coach_a_tank_yellow,
     "Coach a passenger": Carriage.Coach_for_passengers,
     "Coach a platform": Carriage.Coach_flatbed,
+    "Scud_B": MissilesSS.SRBM_SS_1C_Scud_B_9K72_LN_9P117M,
     "S_75M_Volhov": AirDefence.SAM_SA_2_LN_SM_90,
     "SNR_75V": AirDefence.SAM_SA_2_TR_SNR_75_Fan_Song,
     "rapier_fsa_launcher": AirDefence.Rapier_FSA_Launcher,
@@ -1740,26 +1818,34 @@ vehicle_map = {
     "Tiger_II_H": Armor.HT_Pz_Kpfw_VI_Ausf__B__Tiger_II,
     "Pz_V_Panther_G": Armor.MT_Pz_Kpfw_V_Panther_Ausf_G,
     "Pz_IV_H": Armor.MT_Pz_Kpfw_IV_Ausf_H,
-    "Jagdpanther_G1": Armor.Jagdpanther_G1,
-    "JagdPz_IV": Armor.Jagdpanzer_IV,
+    "Jagdpanther_G1": Armor.TD_Jagdpanther_G1,
+    "JagdPz_IV": Armor.TD_Jagdpanzer_IV,
     "Stug_IV": Armor.StuG_IV,
     "SturmPzIV": Artillery.Sturmpanzer_IV_Brummbär,
     "Sd_Kfz_234_2_Puma": Armor.IFV_Sd_Kfz_234_2_Puma,
     "Sd_Kfz_251": Armor.APC_Sd_Kfz_251,
-    "flak18": AirDefence.AAA_Flak_18,
+    "flak18": AirDefence.AAA_8_8cm_Flak_18,
     "flak30": AirDefence.AAA_Flak_38,
-    "flak36": AirDefence.AAA_Flak_36,
-    "flak37": AirDefence.AAA_Flak_37,
+    "flak36": AirDefence.AAA_8_8cm_Flak_36,
+    "flak37": AirDefence.AAA_8_8cm_Flak_37,
     "flak38": AirDefence.AAA_Flak_Vierling_38,
     "KDO_Mod40": AirDefence.AAA_Kdo_G_40,
+    "Flakscheinwerfer_37": AirDefence.Flak_Searchlight_37,
+    "Maschinensatz_33": AirDefence.Maschinensatz_33,
     "soldier_mauser98": Infantry.Infantry_Mauser_98,
     "SK_C_28_naval_gun": Fortification.Bunker_with_SK_C_28_15cm_naval_gun,
     "fire_control": Fortification.Fire_control_bunker,
+    "Stug_III": Armor.StuG_III_Ausf__G,
+    "Elefant_SdKfz_184": Armor.Sd_Kfz_184_Elefant,
+    "flak41": AirDefence.AAA_8_8cm_Flak_41,
+    "v1_launcher": MissilesSS.V_1_ramp,
     "Bedford_MWD": Unarmed.Bedford_MWD,
     "Cromwell_IV": Armor.CT_Cromwell_IV,
     "M4A4_Sherman_FF": Armor.MT_M4A4_Sherman_Firefly,
     "bofors40": AirDefence.AAA_Bofors_40mm,
     "soldier_wwii_br_01": Infantry.Infantry_SMLE_No_4_Mk_1,
+    "Centaur_IV": Armor.ST_Centaur_IV,
+    "Churchill_VII": Armor.HIT_Churchill_VII,
     "CCKW_353": Unarmed.CCKW_353,
     "Willys_MB": Unarmed.Willys_MB,
     "M4_Sherman": Armor.MT_M4_Sherman,
@@ -1767,6 +1853,8 @@ vehicle_map = {
     "M30_CC": Armor.M30_Cargo_Carrier,
     "M2A1_halftrack": Armor.APC_M2A1,
     "soldier_wwii_us": Infantry.Infantry_M1_Garand,
+    "M10_GMC": Armor.TD_M10_GMC,
+    "M8_Greyhound": Armor.LAC_M8_Greyhound,
     "DR_50Ton_Flat_Wagon": Carriage.DR_50_ton_flat_wagon,
     "DRG_Class_86": Locomotive.DRG_Class_86,
     "German_covered_wagon_G10": Carriage.German_covered_wagon_G10,

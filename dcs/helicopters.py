@@ -93,9 +93,9 @@ class Ka_50(HelicopterType):
             ukraine_camo_1_dirt = "ukraine camo 1 dirt"
 
         class Belgium(Enum):
+            belgium_sar = "belgium sar"
             belgium_camo = "belgium camo"
             belgium_olive = "belgium olive"
-            belgium_sar = "belgium sar"
 
         class Greece(Enum):
             Greek_Army_Aviation = "Greek Army Aviation"
@@ -115,13 +115,13 @@ class Ka_50(HelicopterType):
 
         class Russia(Enum):
             Russia_Standard_Army = "Russia Standard Army"
+            Russia_DOSAAF = "Russia DOSAAF"
             Russia_Demo__024 = "Russia Demo #024"
             Russia_Demo__22__Black_Shark = "Russia Demo #22 `Black Shark`"
             Russia_Demo__Werewolf = "Russia Demo `Werewolf`"
-            Russia_DOSAAF = "Russia DOSAAF"
+            Russia_Fictional_Swedish = "Russia Fictional Swedish"
             Russia_fictional_desert_scheme = "Russia fictional desert scheme"
             Russia_Fictional_Olive_Grey = "Russia Fictional Olive Grey"
-            Russia_Fictional_Swedish = "Russia Fictional Swedish"
             Russia_Fictional_Snow_Splatter = "Russia Fictional Snow Splatter"
             Russia_Fictional_Tropic_Green = "Russia Fictional Tropic Green"
             Russia_New_Year = "Russia New Year"
@@ -152,10 +152,10 @@ class Ka_50(HelicopterType):
             Netherlands_RNAF_wooded = "Netherlands RNAF wooded"
 
         class Turkey(Enum):
-            Turkey_fictional_desert_scheme = "Turkey fictional desert scheme"
             Turkey_Fictional_Light_Gray = "Turkey Fictional Light Gray"
             Turkey_Fictional_1 = "Turkey Fictional 1"
             Turkey_Fictional = "Turkey Fictional"
+            Turkey_fictional_desert_scheme = "Turkey fictional desert scheme"
 
     class Pylon1:
         B_8V20A_CM = (1, Weapons.B_8V20A_CM)
@@ -1582,8 +1582,8 @@ class UH_1H(HelicopterType):
             id = "NetCrewControlPriority"
 
             class Values:
-                Instructor = 0
-                Pilot = 1
+                Pilot = 0
+                Copilot = 1
                 Ask_Always = -1
                 Equally_Responsible = -2
 
@@ -1982,6 +1982,7 @@ class SA342L(HelicopterType):
 
     class Pylon2:
         LAU_SNEB68G___8xSNEB68_EAP = (2, Weapons.LAU_SNEB68G___8xSNEB68_EAP)
+        LAU_SNEB68G___8xSNEB68_WP = (2, Weapons.LAU_SNEB68G___8xSNEB68_WP)
 
     class Pylon5:
         Sand_Filter = (5, Weapons.Sand_Filter)
