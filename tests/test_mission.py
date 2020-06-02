@@ -166,6 +166,52 @@ class BasicTests(unittest.TestCase):
 
         m.save('missions/basic_mission.miz')
 
+    def test_nav_target_points(self):
+
+        m = dcs.Mission()
+        batumi = m.terrain.batumi()
+        batumi.set_blue()
+        usa = m.country("USA")
+
+        jeff = m.flight_group_from_airport(usa, "JF17", dcs.planes.JF_17, group_size=2, airport=m.terrain.batumi())
+        jeff.set_client()
+        jeff.add_waypoint(m.terrain.batumi().position.point_from_heading(-90, 10000), 600)
+
+        pp1_pos = batumi.position.point_from_heading(-90, 12000)
+        jeff.add_nav_target_point(batumi.position.point_from_heading(-90, 12000), "PP1")
+        jeff.add_nav_target_point(batumi.position.point_from_heading(-90, 14000), "PP2")
+        jeff.add_nav_target_point(batumi.position.point_from_heading(-90, 16000), "PP3")
+        jeff.add_nav_target_point(batumi.position.point_from_heading(-90, 18000), "PP4")
+
+        # Test pydcs model
+        self.assertEqual(len(jeff.nav_target_points), 4)
+        self.assertEqual(jeff.nav_target_points[0].text_comment, "PP1")
+        self.assertEqual(jeff.nav_target_points[0].position.x, pp1_pos.x)
+        self.assertEqual(jeff.nav_target_points[0].position.y, pp1_pos.y)
+        self.assertEqual(jeff.nav_target_points[0].index, 1)
+
+        # Test dict representation
+        self.assertTrue("NavTargetPoints" in jeff.dict().keys())
+        self.assertTrue(jeff.dict()["NavTargetPoints"][0]["text_comment"] == "PP1")
+        self.assertTrue(jeff.dict()["NavTargetPoints"][0]["x"] == pp1_pos.x)
+        self.assertTrue(jeff.dict()["NavTargetPoints"][0]["y"] == pp1_pos.y)
+        self.assertTrue(jeff.dict()["NavTargetPoints"][0]["index"] == 1)
+
+        m.save("missions/mission_with_nav_target_points.miz")
+
+        # load the mission back
+        m2 = dcs.mission.Mission()
+        self.assertTrue(m2.load_file("missions/mission_with_nav_target_points.miz"))
+        jeff_miz = usa.find_group("JF17")
+
+        # Test pydcs model from loaded mission
+        self.assertEqual(len(jeff_miz.nav_target_points), 4)
+        self.assertEqual(jeff_miz.nav_target_points[0].text_comment, "PP1")
+        self.assertEqual(jeff_miz.nav_target_points[0].position.x, pp1_pos.x)
+        self.assertEqual(jeff_miz.nav_target_points[0].position.y, pp1_pos.y)
+        self.assertEqual(jeff_miz.nav_target_points[0].index, 1)
+
+
     def test_loadmission(self):
         m = dcs.mission.Mission()
         self.assertTrue(m.load_file('tests/loadtest.miz'))
