@@ -3,10 +3,12 @@ import random
 import copy
 from enum import Enum
 from typing import List, Union, Optional
+
 from .unit import Unit, Skill, FlyingUnit, Plane, PlaneType, Helicopter, HelicopterType, FlyingType
 from .point import StaticPoint, MovingPoint, PointAction, PointProperties
 from .translation import String
 from .terrain import Airport, Runway
+from .nav_target_point import NavTargetPoint
 from . import planes
 from . import helicopters
 from . import triggers
@@ -303,6 +305,7 @@ class FlyingGroup(MovingGroup):
         self.radio_set = False
         self.task = "CAS"
         self.units = []  # type: List[FlyingUnit]
+        self.nav_target_points = []  # type: List[NavTargetPoint]
 
     def starts_from_airport(self) -> bool:
         return self.points[0].airdrome_id if self.points else False
@@ -322,6 +325,19 @@ class FlyingGroup(MovingGroup):
         self.communication = d.get("communication", False)
         self.uncontrolled = d["uncontrolled"]
         self.radio_set = d.get("radioSet", False)
+        self.nav_target_points = []
+        for n in d.get("NavTargetPoints", []):
+            nav_target_point_dict = d["NavTargetPoints"][n]
+            self.nav_target_points.append(NavTargetPoint.create_from_dict(nav_target_point_dict))
+
+    def add_nav_target_point(self, pos: mapping.Point, text_comment: str):
+        nt = NavTargetPoint()
+        nt.position = mapping.Point(pos.x, pos.y)
+        nt.text_comment = text_comment
+        nt.index = len(self.nav_target_points) + 1
+
+        self.nav_target_points.append(nt)
+        return nt
 
     def add_waypoint(self, pos: mapping.Point, altitude, speed=600, name: String=None) -> MovingPoint:
         mp = MovingPoint()
@@ -463,6 +479,9 @@ class FlyingGroup(MovingGroup):
         d["communication"] = self.communication
         d["uncontrolled"] = self.uncontrolled
         d["radioSet"] = self.radio_set
+
+        if self.nav_target_points:
+            d["NavTargetPoints"] = [n.dict() for n in self.nav_target_points]
 
         return d
 
