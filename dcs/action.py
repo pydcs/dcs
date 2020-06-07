@@ -669,6 +669,124 @@ class LoadMission(Action):
         return d
 
 
+class Coalition(Enum):
+    Blue = "blue"
+    Red = "red"
+    Neutral = "neutral"
+
+
+class MarkToAll(Action):
+    predicate = "a_mark_to_all"
+
+    def __init__(self, value: int, zone: int, text=String(), comment=String(), meters: int=1000, readonly=True):
+        super(MarkToAll, self).__init__(MarkToAll.predicate)
+        self.value = value
+        self.params.append(self.value)
+        self.zone = zone
+        self.params.append(self.zone)
+        self.text = text
+        self.params.append(self.text)
+        self.comment = comment
+        self.params.append(self.comment)
+        self.meters = meters
+        self.params.append(self.meters)
+        self.readonly = readonly
+        self.params.append(self.readonly)
+
+    @classmethod
+    def create_from_dict(cls, d, mission):
+        return cls(d["value"], d["zone"], mission.translation.get_string(d["text"]),
+                   mission.translation.get_string(d["comment"]), d["meters"], d["readonly"])
+
+    def dict(self):
+        d = super(MarkToAll, self).dict()
+        d["value"] = self.value
+        d["zone"] = self.zone
+        d["text"] = self.text.id
+        d["comment"] = self.comment.id
+        d["meters"] = self.meters
+        d["readonly"] = self.readonly
+        return d
+
+
+class MarkToCoalition(Action):
+    predicate = "a_mark_to_coalition"
+
+    def __init__(self, value: int, zone: int, coalitionlist: Coalition=Coalition.Blue, text=String(), comment=String(),
+                 meters: int=1000, readonly=True):
+        super(MarkToCoalition, self).__init__(MarkToCoalition.predicate)
+        self.value = value
+        self.params.append(self.value)
+        self.zone = zone
+        self.params.append(self.zone)
+        if not isinstance(coalitionlist, Coalition):
+            raise TypeError("Unexpected type for coalitionlist")
+        self.coalitionlist = coalitionlist.value
+        self.params.append(self.coalitionlist)
+        self.text = text
+        self.params.append(self.text)
+        self.comment = comment
+        self.params.append(self.comment)
+        self.meters = meters
+        self.params.append(self.meters)
+        self.readonly = readonly
+        self.params.append(self.readonly)
+
+    @classmethod
+    def create_from_dict(cls, d, mission):
+        return cls(d["value"], d["zone"], Coalition(d["coalitionlist"]), mission.translation.get_string(d["text"]),
+                   mission.translation.get_string(d["comment"]), d["meters"], d["readonly"])
+
+    def dict(self):
+        d = super(MarkToCoalition, self).dict()
+        d["value"] = self.value
+        d["zone"] = self.zone
+        d["coalitionlist"] = self.coalitionlist
+        d["text"] = self.text.id
+        d["comment"] = self.comment.id
+        d["meters"] = self.meters
+        d["readonly"] = self.readonly
+        return d
+
+
+class MarkToGroup(Action):
+    predicate = "a_mark_to_group"
+
+    def __init__(self, value: int, zone: int, group=0, text=String(), comment=String(),
+                 meters: int = 1000, readonly=True):
+        super(MarkToGroup, self).__init__(MarkToGroup.predicate)
+        self.value = value
+        self.params.append(self.value)
+        self.zone = zone
+        self.params.append(self.zone)
+        self.group = group
+        self.params.append(self.group)
+        self.text = text
+        self.params.append(self.text)
+        self.comment = comment
+        self.params.append(self.comment)
+        self.meters = meters
+        self.params.append(self.meters)
+        self.readonly = readonly
+        self.params.append(self.readonly)
+
+    @classmethod
+    def create_from_dict(cls, d, mission):
+        return cls(d["value"], d["zone"], d["group"], mission.translation.get_string(d["text"]),
+                   mission.translation.get_string(d["comment"]), d["meters"], d["readonly"])
+
+    def dict(self):
+        d = super(MarkToGroup, self).dict()
+        d["value"] = self.value
+        d["zone"] = self.zone
+        d["group"] = self.group
+        d["text"] = self.text.id
+        d["comment"] = self.comment.id
+        d["meters"] = self.meters
+        d["readonly"] = self.readonly
+        return d
+
+
 class MessageToAll(Action):
     predicate = "a_out_text_delay"
 
@@ -691,12 +809,6 @@ class MessageToAll(Action):
         d["seconds"] = self.seconds
         d["clearview"] = self.clearview
         return d
-
-
-class Coalition(Enum):
-    Blue = "blue"
-    Red = "red"
-    Neutral = "neutral"
 
 
 class MessageToCoalition(Action):
@@ -1585,6 +1697,9 @@ actions_map = {
     "a_illumination_bomb": IlluminatingBomb,
     "a_inc_flag": IncreaseFlag,
     "a_load_mission": LoadMission,
+    "a_mark_to_all": MarkToAll,
+    "a_mark_to_coalition": MarkToCoalition,
+    "a_mark_to_group": MarkToGroup,
     "a_out_text_delay": MessageToAll,
     "a_out_text_delay_s": MessageToCoalition,
     "a_out_text_delay_c": MessageToCountry,

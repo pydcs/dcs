@@ -202,7 +202,8 @@ class BasicTests(unittest.TestCase):
         # load the mission back
         m2 = dcs.mission.Mission()
         self.assertTrue(m2.load_file("missions/mission_with_nav_target_points.miz"))
-        jeff_miz = usa.find_group("JF17")
+        usa_miz = m2.country("USA")
+        jeff_miz = usa_miz.find_group("JF17")
 
         # Test pydcs model from loaded mission
         self.assertEqual(len(jeff_miz.nav_target_points), 4)
@@ -210,6 +211,94 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(jeff_miz.nav_target_points[0].position.x, pp1_pos.x)
         self.assertEqual(jeff_miz.nav_target_points[0].position.y, pp1_pos.y)
         self.assertEqual(jeff_miz.nav_target_points[0].index, 1)
+
+
+    def test_create_mission_with_marks(self):
+
+        m = dcs.Mission()
+        batumi = m.terrain.batumi()
+        batumi.set_blue()
+        kutaisi = m.terrain.kutaisi()
+        kutaisi.set_red()
+        usa = m.country("USA")
+        rus = m.country("Russia")
+
+        # Create some group to use if you want to check visibility of marks in game
+        su25_group = m.flight_group_from_airport(usa, "SU25", dcs.planes.Su_25T, group_size=1, airport=m.terrain.batumi())
+        su25_group.set_client()
+
+        f15_group = m.flight_group_from_airport(usa, "F15C", dcs.planes.F_15C, group_size=1, airport=m.terrain.batumi())
+        f15_group.set_client()
+
+        su25_red_group = m.flight_group_from_airport(rus, "SU25 RED", dcs.planes.Su_25T, group_size=1, airport=m.terrain.kutaisi())
+        su25_red_group.set_client()
+
+        # In DCS, you have to create a trigger zone to add a mark.
+        # This mark will be visible for all (after 2 sec)
+        mark_all_pos = batumi.position.point_from_heading(-90, 12000)
+        mark_all_zone = m.triggers.add_triggerzone(mark_all_pos, 1, False, "MARK TO ALL ZONE")
+        mark_all_trigger = dcs.triggers.TriggerOnce(comment="Create Mark for ALL")
+        mark_all_trigger.add_condition(dcs.condition.TimeAfter(2))
+        mark_all_trigger.add_action(dcs.action.MarkToAll(10, mark_all_zone.id, m.string("Mark to all"),
+                                                         m.string("Mark to all has been added"), 1000, True))
+        m.triggerrules.triggers.append(mark_all_trigger)
+
+        # This mark will be visible for blue coalition only (after 5 sec)
+        mark_blue_pos = batumi.position.point_from_heading(-90, 24000)
+        mark_blue_zone = m.triggers.add_triggerzone(mark_blue_pos, 1, False, "MARK TO BLUE COALITION ZONE")
+        mark_blue_trigger = dcs.triggers.TriggerOnce(comment="Create Mark for BLUE")
+        mark_blue_trigger.add_condition(dcs.condition.TimeAfter(5))
+        mark_blue_trigger.add_action(
+            dcs.action.MarkToCoalition(11, mark_blue_zone.id, dcs.action.Coalition.Blue, m.string("Mark to Blue"),
+                                       m.string("Mark to Blue coalition has been added"), 2000, True))
+        m.triggerrules.triggers.append(mark_blue_trigger)
+
+        # This mark will be visible for red coalition only (after 8 sec)
+        mark_red_pos = batumi.position.point_from_heading(-90, 24000).point_from_heading(0, 5000)
+        mark_red_zone = m.triggers.add_triggerzone(mark_red_pos, 1, False, "MARK TO RED COALITION ZONE")
+        mark_red_trigger = dcs.triggers.TriggerOnce(comment="Create Mark for RED")
+        mark_red_trigger.add_condition(dcs.condition.TimeAfter(8))
+        mark_red_trigger.add_action(
+            dcs.action.MarkToCoalition(12, mark_red_zone.id, dcs.action.Coalition.Red, m.string("Mark to RED"),
+                                       m.string("Mark to Red coalition has been added"), 3000, True))
+        m.triggerrules.triggers.append(mark_red_trigger)
+
+        # This mark will be visible for the F15 group only (after 11 sec)
+        mark_f15_pos = batumi.position.point_from_heading(-90, 12000).point_from_heading(0, 5000)
+        mark_f15_zone = m.triggers.add_triggerzone(mark_f15_pos, 1, False, "MARK TO F15 ZONE")
+        mark_f15_trigger = dcs.triggers.TriggerOnce(comment="Create Mark for F15")
+        mark_f15_trigger.add_condition(dcs.condition.TimeAfter(11))
+        mark_f15_trigger.add_action(
+            dcs.action.MarkToGroup(13, mark_f15_zone.id, f15_group.id, m.string("Mark to F15"),
+                                   m.string("Mark to F15 group has been added"), 4000, False))
+        m.triggerrules.triggers.append(mark_f15_trigger)
+
+        self.assertEqual(len(m.triggerrules.triggers), 4)
+
+        self.assertEqual(mark_all_trigger.actions[0].dict()["zone"], mark_all_zone.id)
+        self.assertEqual(mark_all_trigger.actions[0].dict()["value"], 10)
+        self.assertEqual(mark_all_trigger.actions[0].dict()["meters"], 1000)
+        self.assertEqual(mark_all_trigger.actions[0].dict()["readonly"], True)
+
+        self.assertEqual(mark_blue_trigger.actions[0].dict()["zone"], mark_blue_zone.id)
+        self.assertEqual(mark_blue_trigger.actions[0].dict()["coalitionlist"], dcs.action.Coalition.Blue.value)
+        self.assertEqual(mark_blue_trigger.actions[0].dict()["value"], 11)
+        self.assertEqual(mark_blue_trigger.actions[0].dict()["meters"], 2000)
+        self.assertEqual(mark_blue_trigger.actions[0].dict()["readonly"], True)
+
+        self.assertEqual(mark_red_trigger.actions[0].dict()["zone"], mark_red_zone.id)
+        self.assertEqual(mark_red_trigger.actions[0].dict()["coalitionlist"], dcs.action.Coalition.Red.value)
+        self.assertEqual(mark_red_trigger.actions[0].dict()["value"], 12)
+        self.assertEqual(mark_red_trigger.actions[0].dict()["meters"], 3000)
+        self.assertEqual(mark_red_trigger.actions[0].dict()["readonly"], True)
+
+        self.assertEqual(mark_f15_trigger.actions[0].dict()["zone"], mark_f15_zone.id)
+        self.assertEqual(mark_f15_trigger.actions[0].dict()["group"], f15_group.id)
+        self.assertEqual(mark_f15_trigger.actions[0].dict()["value"], 13)
+        self.assertEqual(mark_f15_trigger.actions[0].dict()["meters"], 4000)
+        self.assertEqual(mark_f15_trigger.actions[0].dict()["readonly"], False)
+
+        m.save("missions/mission_with_marks_triggers.miz")
 
 
     def test_loadmission(self):
