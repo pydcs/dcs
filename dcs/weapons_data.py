@@ -82,8 +82,11 @@ class Weapons:
     AN_ASQ_173_LST_SCAM = {"clsid": "{1C2B16EB-8EB0-43de-8788-8EBB2D70B8BC}", "name": "AN/ASQ-173 LST/SCAM", "weight": 250}
     AN_ASQ_T50_TCTS_Pod = {"clsid": "{AIS_ASQ_T50}", "name": "AN/ASQ-T50 TCTS Pod", "weight": 62.6}
     AN_M3 = {"clsid": "{AN-M3}", "name": "AN-M3", "weight": 218}
+    AN_M30A1 = {"clsid": "{AN_M30A1}", "name": "AN-M30A1", "weight": 45.8}
+    AN_M57 = {"clsid": "{AN_M57}", "name": "AN-M57", "weight": 113}
     AN_M64 = {"clsid": "{AN-M64}", "name": "AN-M64", "weight": 227}
     AN_M64_ = {"clsid": "{F86ANM64}", "name": "AN-M64", "weight": 227}
+    AN_M65 = {"clsid": "{AN_M65}", "name": "AN-M65", "weight": 475}
     APU_60_1_R_60M = {"clsid": "{APU-60-1_R_60M}", "name": "APU-60-1 R-60M", "weight": 76}
     APU_6___6_9A4172_Vikhr = {"clsid": "{A6FD14D3-6D30-4C85-88A7-8D17BEE120E2}", "name": "APU-6 - 6 9A4172 Vikhr", "weight": 330}
     APU_8___8_9A4172_Vikhr = {"clsid": "{F789E86A-EE2E-4E6B-B81E-D5E5F903B6ED}", "name": "APU-8 - 8 9A4172 Vikhr", "weight": 404}
@@ -403,6 +406,8 @@ class Weapons:
     LAU_115___AIM_120B = {"clsid": "{LAU-115 - AIM-120B}", "name": "LAU-115 - AIM-120B", "weight": 212.2}
     LAU_115___AIM_120C = {"clsid": "{LAU-115 - AIM-120C}", "name": "LAU-115 - AIM-120C", "weight": 215.9}
     LAU_115___AIM_7M = {"clsid": "{LAU-115 - AIM-7M}", "name": "LAU-115 - AIM-7M", "weight": 284.4}
+    LAU_117_AGM_65A = {"clsid": "LAU_117_AGM_65A", "name": "LAU-117,AGM-65A", "weight": 269.5}
+    LAU_117_AGM_65B = {"clsid": "LAU_117_AGM_65B", "name": "LAU-117,AGM-65B", "weight": 269.5}
     LAU_117_AGM_65D = {"clsid": "{444BA8AE-82A7-4345-842E-76154EFCCA46}", "name": "LAU-117,AGM-65D", "weight": 277}
     LAU_117_AGM_65E = {"clsid": "{F16A4DE0-116C-4A71-97F0-2CF85B0313EC}", "name": "LAU-117,AGM-65E", "weight": 345}
     LAU_117_AGM_65F = {"clsid": "LAU_117_AGM_65F", "name": "LAU-117,AGM-65F", "weight": 360}
@@ -1004,8 +1009,11 @@ weapon_ids = {
     "{1C2B16EB-8EB0-43de-8788-8EBB2D70B8BC}": Weapons.AN_ASQ_173_LST_SCAM,
     "{AIS_ASQ_T50}": Weapons.AN_ASQ_T50_TCTS_Pod,
     "{AN-M3}": Weapons.AN_M3,
+    "{AN_M30A1}": Weapons.AN_M30A1,
+    "{AN_M57}": Weapons.AN_M57,
     "{AN-M64}": Weapons.AN_M64,
     "{F86ANM64}": Weapons.AN_M64_,
+    "{AN_M65}": Weapons.AN_M65,
     "{APU-60-1_R_60M}": Weapons.APU_60_1_R_60M,
     "{A6FD14D3-6D30-4C85-88A7-8D17BEE120E2}": Weapons.APU_6___6_9A4172_Vikhr,
     "{F789E86A-EE2E-4E6B-B81E-D5E5F903B6ED}": Weapons.APU_8___8_9A4172_Vikhr,
@@ -1325,6 +1333,8 @@ weapon_ids = {
     "{LAU-115 - AIM-120B}": Weapons.LAU_115___AIM_120B,
     "{LAU-115 - AIM-120C}": Weapons.LAU_115___AIM_120C,
     "{LAU-115 - AIM-7M}": Weapons.LAU_115___AIM_7M,
+    "LAU_117_AGM_65A": Weapons.LAU_117_AGM_65A,
+    "LAU_117_AGM_65B": Weapons.LAU_117_AGM_65B,
     "{444BA8AE-82A7-4345-842E-76154EFCCA46}": Weapons.LAU_117_AGM_65D,
     "{F16A4DE0-116C-4A71-97F0-2CF85B0313EC}": Weapons.LAU_117_AGM_65E,
     "LAU_117_AGM_65F": Weapons.LAU_117_AGM_65F,

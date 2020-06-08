@@ -175,6 +175,7 @@ class Russia(Country):
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         P_51D_30_NA = planes.P_51D_30_NA
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -236,6 +237,7 @@ class Russia(Country):
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.P_51D_30_NA,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -501,6 +503,7 @@ class Ukraine(Country):
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         P_51D_30_NA = planes.P_51D_30_NA
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -554,6 +557,7 @@ class Ukraine(Country):
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.P_51D_30_NA,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -779,6 +783,7 @@ class USA(Country):
         FW_190D9 = planes.FW_190D9
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
@@ -839,6 +844,7 @@ class USA(Country):
         Plane.FW_190D9,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.C_101EB,
         Plane.C_101CC,
@@ -1123,6 +1129,7 @@ class Turkey(Country):
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         P_51D_30_NA = planes.P_51D_30_NA
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -1164,6 +1171,7 @@ class Turkey(Country):
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.P_51D_30_NA,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -1319,6 +1327,7 @@ class UK(Country):
         FW_190D9 = planes.FW_190D9
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         KC130 = planes.KC130
         KC135MPRS = planes.KC135MPRS
@@ -1358,6 +1367,7 @@ class UK(Country):
         Plane.FW_190D9,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.KC130,
         Plane.KC135MPRS,
@@ -1523,6 +1533,7 @@ class France(Country):
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         P_51D_30_NA = planes.P_51D_30_NA
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         C_101EB = planes.C_101EB
@@ -1562,6 +1573,7 @@ class France(Country):
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.P_51D_30_NA,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.C_101EB,
@@ -1794,6 +1806,7 @@ class Germany(Country):
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         P_51D_30_NA = planes.P_51D_30_NA
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -1835,6 +1848,7 @@ class Germany(Country):
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.P_51D_30_NA,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -2147,6 +2161,7 @@ class USAFAggressors(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -2239,6 +2254,7 @@ class USAFAggressors(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -2495,6 +2511,7 @@ class Canada(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC135MPRS = planes.KC135MPRS
@@ -2531,6 +2548,7 @@ class Canada(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC135MPRS,
@@ -2677,6 +2695,7 @@ class Spain(Country):
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         P_51D_30_NA = planes.P_51D_30_NA
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         KC135MPRS = planes.KC135MPRS
         JF_17 = planes.JF_17
@@ -2715,6 +2734,7 @@ class Spain(Country):
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.P_51D_30_NA,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.KC135MPRS,
         Plane.JF_17,
@@ -2869,6 +2889,7 @@ class TheNetherlands(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -2908,6 +2929,7 @@ class TheNetherlands(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -3053,6 +3075,7 @@ class Belgium(Country):
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         P_51D_30_NA = planes.P_51D_30_NA
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -3090,6 +3113,7 @@ class Belgium(Country):
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.P_51D_30_NA,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -3221,6 +3245,7 @@ class Norway(Country):
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         P_51D_30_NA = planes.P_51D_30_NA
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -3258,6 +3283,7 @@ class Norway(Country):
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.P_51D_30_NA,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -3387,6 +3413,7 @@ class Denmark(Country):
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         P_51D_30_NA = planes.P_51D_30_NA
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -3424,6 +3451,7 @@ class Denmark(Country):
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.P_51D_30_NA,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -3577,6 +3605,7 @@ class Israel(Country):
         KC130 = planes.KC130
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC135MPRS = planes.KC135MPRS
@@ -3618,6 +3647,7 @@ class Israel(Country):
         Plane.KC130,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC135MPRS,
@@ -3801,6 +3831,7 @@ class Georgia(Country):
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         P_51D_30_NA = planes.P_51D_30_NA
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -3838,6 +3869,7 @@ class Georgia(Country):
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.P_51D_30_NA,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -3988,6 +4020,7 @@ class Insurgents(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -4017,6 +4050,7 @@ class Insurgents(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -4183,6 +4217,7 @@ class Abkhazia(Country):
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         P_51D_30_NA = planes.P_51D_30_NA
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -4217,6 +4252,7 @@ class Abkhazia(Country):
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.P_51D_30_NA,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -4370,6 +4406,7 @@ class SouthOssetia(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -4398,6 +4435,7 @@ class SouthOssetia(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -4535,6 +4573,7 @@ class Italy(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
@@ -4576,6 +4615,7 @@ class Italy(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.KC135MPRS,
         Plane.C_101EB,
@@ -4713,6 +4753,7 @@ class Australia(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -4751,6 +4792,7 @@ class Australia(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -4874,6 +4916,7 @@ class Switzerland(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -4907,6 +4950,7 @@ class Switzerland(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -5008,6 +5052,7 @@ class Austria(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -5038,6 +5083,7 @@ class Austria(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -5226,6 +5272,7 @@ class Belarus(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -5267,6 +5314,7 @@ class Belarus(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -5452,6 +5500,7 @@ class Bulgaria(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -5490,6 +5539,7 @@ class Bulgaria(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -5634,6 +5684,7 @@ class CzechRepublic(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -5669,6 +5720,7 @@ class CzechRepublic(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -5814,6 +5866,7 @@ class China(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -5854,6 +5907,7 @@ class China(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -5968,6 +6022,7 @@ class Croatia(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -5998,6 +6053,7 @@ class Croatia(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -6169,6 +6225,7 @@ class Egypt(Country):
         M_2000C = planes.M_2000C
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -6202,6 +6259,7 @@ class Egypt(Country):
         Plane.M_2000C,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -6374,6 +6432,7 @@ class Finland(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -6404,6 +6463,7 @@ class Finland(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -6558,6 +6618,7 @@ class Greece(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -6595,6 +6656,7 @@ class Greece(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -6776,6 +6838,7 @@ class Hungary(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -6810,6 +6873,7 @@ class Hungary(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -6951,6 +7015,7 @@ class India(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -6989,6 +7054,7 @@ class India(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -7160,6 +7226,7 @@ class Iran(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -7199,6 +7266,7 @@ class Iran(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -7367,6 +7435,7 @@ class Iraq(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -7404,6 +7473,7 @@ class Iraq(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -7557,6 +7627,7 @@ class Japan(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC135MPRS = planes.KC135MPRS
@@ -7589,6 +7660,7 @@ class Japan(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC135MPRS,
@@ -7792,6 +7864,7 @@ class Kazakhstan(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -7833,6 +7906,7 @@ class Kazakhstan(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -7962,6 +8036,7 @@ class NorthKorea(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -7994,6 +8069,7 @@ class NorthKorea(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -8121,6 +8197,7 @@ class Pakistan(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -8157,6 +8234,7 @@ class Pakistan(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -8320,6 +8398,7 @@ class Poland(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -8361,6 +8440,7 @@ class Poland(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -8530,6 +8610,7 @@ class Romania(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -8565,6 +8646,7 @@ class Romania(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -8707,6 +8789,7 @@ class SaudiArabia(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC135MPRS = planes.KC135MPRS
@@ -8742,6 +8825,7 @@ class SaudiArabia(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC135MPRS,
@@ -8901,6 +8985,7 @@ class Serbia(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -8934,6 +9019,7 @@ class Serbia(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -9072,6 +9158,7 @@ class Slovakia(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -9106,6 +9193,7 @@ class Slovakia(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -9242,6 +9330,7 @@ class SouthKorea(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -9279,6 +9368,7 @@ class SouthKorea(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -9391,6 +9481,7 @@ class Sweden(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AV8BNA = planes.AV8BNA
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
@@ -9425,6 +9516,7 @@ class Sweden(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AV8BNA,
         Plane.KC135MPRS,
         Plane.C_101EB,
@@ -9568,6 +9660,7 @@ class Syria(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -9603,6 +9696,7 @@ class Syria(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -9736,6 +9830,7 @@ class Yemen(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -9769,6 +9864,7 @@ class Yemen(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -9915,6 +10011,7 @@ class Vietnam(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -9950,6 +10047,7 @@ class Vietnam(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -10078,6 +10176,7 @@ class Venezuela(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -10110,6 +10209,7 @@ class Venezuela(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -10217,6 +10317,7 @@ class Tunisia(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -10247,6 +10348,7 @@ class Tunisia(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -10358,6 +10460,7 @@ class Thailand(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -10391,6 +10494,7 @@ class Thailand(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -10515,6 +10619,7 @@ class Sudan(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -10549,6 +10654,7 @@ class Sudan(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -10658,6 +10764,7 @@ class Philippines(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -10691,6 +10798,7 @@ class Philippines(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -10819,6 +10927,7 @@ class Morocco(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC135MPRS = planes.KC135MPRS
@@ -10851,6 +10960,7 @@ class Morocco(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC135MPRS,
@@ -10959,6 +11069,7 @@ class Mexico(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -10990,6 +11101,7 @@ class Mexico(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -11101,6 +11213,7 @@ class Malaysia(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC135MPRS = planes.KC135MPRS
@@ -11132,6 +11245,7 @@ class Malaysia(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC135MPRS,
@@ -11263,6 +11377,7 @@ class Libya(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC135MPRS = planes.KC135MPRS
@@ -11295,6 +11410,7 @@ class Libya(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC135MPRS,
@@ -11419,6 +11535,7 @@ class Jordan(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -11451,6 +11568,7 @@ class Jordan(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -11583,6 +11701,7 @@ class Indonesia(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC135MPRS = planes.KC135MPRS
@@ -11621,6 +11740,7 @@ class Indonesia(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC135MPRS,
@@ -11718,6 +11838,7 @@ class Honduras(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -11748,6 +11869,7 @@ class Honduras(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -11878,6 +12000,7 @@ class Ethiopia(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -11911,6 +12034,7 @@ class Ethiopia(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -12033,6 +12157,7 @@ class Chile(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -12069,6 +12194,7 @@ class Chile(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -12196,6 +12322,7 @@ class Brazil(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC135MPRS = planes.KC135MPRS
@@ -12227,6 +12354,7 @@ class Brazil(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC135MPRS,
@@ -12349,6 +12477,7 @@ class Bahrain(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -12378,6 +12507,7 @@ class Bahrain(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -12509,6 +12639,7 @@ class ThirdReich(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -12539,6 +12670,7 @@ class ThirdReich(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -12672,6 +12804,7 @@ class Yugoslavia(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -12704,6 +12837,7 @@ class Yugoslavia(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -12931,6 +13065,7 @@ class USSR(Country):
         MiG_19P = planes.MiG_19P
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -12986,6 +13121,7 @@ class USSR(Country):
         Plane.MiG_19P,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -13133,6 +13269,7 @@ class ItalianSocialRepublic(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -13162,6 +13299,7 @@ class ItalianSocialRepublic(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -13354,6 +13492,7 @@ class Algeria(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -13399,6 +13538,7 @@ class Algeria(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -13544,6 +13684,7 @@ class Kuwait(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC135MPRS = planes.KC135MPRS
@@ -13576,6 +13717,7 @@ class Kuwait(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC135MPRS,
@@ -13691,6 +13833,7 @@ class Qatar(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -13722,6 +13865,7 @@ class Qatar(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -13854,6 +13998,7 @@ class Oman(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -13886,6 +14031,7 @@ class Oman(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -14022,6 +14168,7 @@ class UnitedArabEmirates(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -14055,6 +14202,7 @@ class UnitedArabEmirates(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -14170,6 +14318,7 @@ class SouthAfrica(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -14203,6 +14352,7 @@ class SouthAfrica(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -14364,6 +14514,7 @@ class Cuba(Country):
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -14405,6 +14556,7 @@ class Cuba(Country):
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
@@ -14528,6 +14680,7 @@ class Portugal(Country):
         C_17A = planes.C_17A
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
+        P_47D_30 = planes.P_47D_30
         AJS37 = planes.AJS37
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
@@ -14563,6 +14716,7 @@ class Portugal(Country):
         Plane.C_17A,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
+        Plane.P_47D_30,
         Plane.AJS37,
         Plane.AV8BNA,
         Plane.KC130,
