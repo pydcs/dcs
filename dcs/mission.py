@@ -92,7 +92,8 @@ class Mission:
             terrain_.Caucasus,
             terrain_.Nevada,
             terrain_.Normandy,
-            terrain_.PersianGulf]=None
+            terrain_.PersianGulf,
+            terrain_.TheChannel]=None
     ):
         if terrain is None:
             terrain = terrain_.Caucasus()
@@ -271,6 +272,10 @@ class Mission:
             self.terrain = terrain_.Nevada()
         elif imp_mission["theatre"] == 'PersianGulf':
             self.terrain = terrain_.PersianGulf()
+        elif imp_mission["theatre"] == 'Normandy':
+            self.terrain = terrain_.Normandy()
+        elif imp_mission["theatre"] == 'TheChannel':
+            self.terrain = terrain_.TheChannel()
         else:
             raise RuntimeError("Unknown theatre: '{theatre}'".format(theatre=imp_mission["theatre"]))
 

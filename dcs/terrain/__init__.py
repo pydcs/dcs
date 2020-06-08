@@ -4,3 +4,4 @@ from .caucasus import Caucasus
 from .nevada import Nevada
 from .normandy import Normandy
 from .persiangulf import PersianGulf
+from .thechannel import TheChannel

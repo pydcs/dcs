@@ -300,6 +300,25 @@ class BasicTests(unittest.TestCase):
 
         m.save("missions/mission_with_marks_triggers.miz")
 
+    def test_create_mission_on_channel_map(self):
+
+        m = dcs.mission.Mission(terrain=dcs.terrain.TheChannel())
+
+        usa = m.country("USA")
+        russia = m.country("Russia")
+        fw190 = m.flight_group_from_airport(russia, "FW-190", dcs.planes.FW_190D9, group_size=1,
+                                            airport=m.terrain.dunkirk_mardyck())
+        fw190.add_waypoint(m.terrain.dunkirk_mardyck().position.point_from_heading(-90, 40000), 500, 300)
+        p47 = m.flight_group_from_airport(usa, "P-47", dcs.planes.P_47D_30, group_size=1,
+                                          airport=m.terrain.hawkinge())
+        p47.add_waypoint(m.terrain.dunkirk_mardyck().position.point_from_heading(-90, 40000), 500, 300)
+
+        m.save('missions/test_mission_the_channel.miz')
+
+        # Test load mission
+        m2 = dcs.mission.Mission()
+        self.assertTrue(m2.load_file('missions/test_mission_the_channel.miz'))
+        self.assertEqual(m2.terrain.__class__, dcs.terrain.TheChannel)
 
     def test_loadmission(self):
         m = dcs.mission.Mission()
