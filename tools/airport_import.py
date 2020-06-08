@@ -3,6 +3,8 @@ This script imports airport data, that was previously exported by a lua function
 
 The lua function to export is just beneath this comment block, insert it somewhere in the mission editor
 and call it somewhere
+
+See https://github.com/pydcs/dcs/issues/36
 """
 
 """
@@ -39,7 +41,7 @@ def safename(name):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--terrain", choices=["caucasus", "nevada", "normandy"], default="caucasus")
+    parser.add_argument("-t", "--terrain", choices=["caucasus", "nevada", "normandy", "persiangulf", "thechannel"], default="caucasus")
     parser.add_argument("airportinfofile")
 
     args = parser.parse_args()
