@@ -1341,6 +1341,15 @@ class OptReactOnThreat(Option):
         super(OptReactOnThreat, self).__init__(value)
 
 
+class OptFormation(Option):
+    Key = 5
+
+    # TODO missing option enums
+
+    def __init__(self, value=None):
+        super(OptFormation, self).__init__(value)
+
+
 class OptDisparseUnderFire(Option):
     Key = 8
 
@@ -1424,16 +1433,17 @@ class OptChaffFlareUsing(Option):
 
 
 options = {
-    OptDisparseUnderFire.Key: OptDisparseUnderFire,
-    OptReactOnThreat.Key: OptReactOnThreat,
     OptROE.Key: OptROE,
-    OptEngageAirWeapons.Key: OptEngageAirWeapons,
-    OptAlarmState.Key: OptAlarmState,
-    OptNoReportWaypointPass.Key: OptNoReportWaypointPass,
-    OptRestrictAirToAirAttack.Key: OptRestrictAirToAirAttack,
-    OptRTBOnOutOfAmmo.Key: OptRTBOnOutOfAmmo,
-    OptRTBOnBingoFuel.Key: OptRTBOnBingoFuel,
-    OptRestrictJettison.Key: OptRestrictJettison,
+    OptReactOnThreat.Key: OptReactOnThreat,
     OptRadarUsing.Key: OptRadarUsing,
     OptChaffFlareUsing.Key: OptChaffFlareUsing,
+    OptFormation.Key: OptFormation,
+    OptRTBOnBingoFuel.Key: OptRTBOnBingoFuel,
+    OptDisparseUnderFire.Key: OptDisparseUnderFire,
+    OptAlarmState.Key: OptAlarmState,
+    OptRTBOnOutOfAmmo.Key: OptRTBOnOutOfAmmo,
+    OptRestrictAirToAirAttack.Key: OptRestrictAirToAirAttack,
+    OptRestrictJettison.Key: OptRestrictJettison,
+    OptNoReportWaypointPass.Key: OptNoReportWaypointPass,
+    OptEngageAirWeapons.Key: OptEngageAirWeapons,
 }
