@@ -35,6 +35,9 @@ class Group:
         self.points = []  # type: List[Union[StaticPoint, MovingPoint]]
         self.name = name if name else String()
 
+    def __str__(self):
+        return "Group: " + str(self.name)
+
     def load_from_dict(self, d):
         self.hidden = d.get("hidden")
 
