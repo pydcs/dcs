@@ -320,7 +320,7 @@ class BasicTests(unittest.TestCase):
         self.assertTrue(m2.load_file('missions/test_mission_the_channel.miz'))
         self.assertEqual(m2.terrain.__class__, dcs.terrain.TheChannel)
 
-    def test_loadmission(self):
+    def test_load_prepared_mission(self):
         m = dcs.mission.Mission()
         self.assertTrue(m.load_file('tests/loadtest.miz'))
 
@@ -354,3 +354,12 @@ class BasicTests(unittest.TestCase):
         self.assertEqual("2", m.triggerrules.triggers[1].comment)
 
         m.save('missions/loadtest.miz')
+
+    def test_load_test_missions(self):
+        test_mission_folder = os.path.join(os.path.dirname(__file__), 'missions')
+        for f in os.listdir(test_mission_folder):
+            if f.endswith('.miz'):
+                print('-' * 10, "Loading", f)
+                m = dcs.mission.Mission()
+                self.assertTrue(m.load_file(os.path.join(test_mission_folder, f)))
+                self.assertTrue(m.save('missions/unittest_' + f))
