@@ -59,7 +59,8 @@ class ForcedOptions:
         self.radio = d.get("radio")
         self.tips = d.get("tips")
         if d.get("geffect") is not None:
-            self.geffect = ForcedOptions.GEffect(d["geffect"])
+            geffect = ForcedOptions.GEffect.Game.value if d["geffect"] == "reduced" else d["geffect"]
+            self.geffect = ForcedOptions.GEffect(geffect)
         self.external_views = d.get("externalViews")
         self.birds = d.get("birds")
         if d.get("civTraffic") is not None:
