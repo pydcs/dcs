@@ -1931,19 +1931,25 @@ class MapResource:
             filepath = 'l10n/{lang}/{fn}'.format(lang=lang, fn=filename)
             self.added_paths.append(filepath)
 
-            extractedpath = zipf.extract(filepath, tempfile.gettempdir())
-            self.add_resource_file(extractedpath, lang, key)
+            try:
+                extractedpath = zipf.extract(filepath, tempfile.gettempdir())
+                self.add_resource_file(extractedpath, lang, key)
+            except KeyError as ke:
+                print(ke, file=sys.stderr)
 
     def load_binary_files(self, zipf: zipfile.ZipFile, reserved_files: [str]):
         for filepath in zipf.namelist():
             if filepath in reserved_files or filepath in self.added_paths:
                 continue
 
-            extractedpath = zipf.extract(filepath, tempfile.gettempdir())
-            self.binary_files.append({
-                "path": os.path.abspath(extractedpath),
-                "respath": filepath,
-            })
+            try:
+                extractedpath = zipf.extract(filepath, tempfile.gettempdir())
+                self.binary_files.append({
+                    "path": os.path.abspath(extractedpath),
+                    "respath": filepath,
+                })
+            except KeyError as ke:
+                print(ke, file=sys.stderr)
 
     def add_resource_file(self, extracted_path: str, lang: str = 'DEFAULT', key=None) -> ResourceKey:
         """Adds a file to the mission resource depot.
