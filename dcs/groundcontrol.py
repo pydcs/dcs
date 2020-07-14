@@ -31,10 +31,10 @@ class GroundControl:
         self.blue_jtac = int(d["roles"]["forward_observer"]["blue"])
         self.blue_observer = int(d["roles"]["observer"]["blue"])
 
-        self.neutrals_game_masters = int(d["roles"]["instructor"]["neutrals"])
-        self.neutrals_tactical_commander = int(d["roles"]["artillery_commander"]["neutrals"])
-        self.neutrals_jtac = int(d["roles"]["forward_observer"]["neutrals"])
-        self.neutrals_observer = int(d["roles"]["observer"]["neutrals"])
+        self.neutrals_game_masters = int(d["roles"]["instructor"].get("neutrals", 0))
+        self.neutrals_tactical_commander = int(d["roles"]["artillery_commander"].get("neutrals", 0))
+        self.neutrals_jtac = int(d["roles"]["forward_observer"].get("neutrals", 0))
+        self.neutrals_observer = int(d["roles"]["observer"].get("neutrals", 0))
 
     def dict(self):
         return {
