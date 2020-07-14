@@ -1,3 +1,4 @@
+import sys
 from typing import Dict
 from . import countries
 from . import unitgroup
@@ -109,7 +110,14 @@ class Coalition:
                         if plane_group.points[0].airdrome_id is not None and plane.parking is not None:
                             airport = mission.terrain.airport_by_id(plane_group.points[0].airdrome_id)
                             slot = airport.parking_slot(plane.parking)
-                            plane.set_parking(slot)
+                            if slot is not None:
+                                plane.set_parking(slot)
+                            else:
+                                print("Parking slot id '{i}' for '{p}' on airport '{a}' not valid, placing on next free"
+                                      .format(i=plane.parking, a=airport.name, p=plane_group.name),
+                                      file=sys.stderr)
+                                slot = airport.free_parking_slot(plane.unit_type)
+                                plane.set_parking(slot)
 
                         mission.current_unit_id = max(mission.current_unit_id, plane.id)
                         plane_group.add_unit(plane)
