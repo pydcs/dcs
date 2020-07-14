@@ -1361,6 +1361,7 @@ class OptEngageAirWeapons(Option):
     def __init__(self, value=None):
         super(OptEngageAirWeapons, self).__init__(value)
 
+
 class OptNoReportWaypointPass(Option):
     Key = 19
 
@@ -1403,6 +1404,25 @@ class OptRadarUsing(Option):
         super(OptRadarUsing, self).__init__(value)
 
 
+class OptChaffFlareUsing(Option):
+    Key = 4
+
+    class Values:
+        NeverUse = 0
+        """
+        Never use chaff or flare
+        """
+        UseAgainstFiredMissile = 1
+        """AI will use chaff/flare against fired missiles"""
+        UseWhenFlyingInSAMWEZ = 2
+        """AI will use chaff/flare while in SAM range"""
+        UseWhenFlyingNearEnemies = 3
+        """AI will use chaff/flare while enemies are near"""
+
+    def __init__(self, value=None):
+        super(OptChaffFlareUsing, self).__init__(value)
+
+
 options = {
     OptDisparseUnderFire.Key: OptDisparseUnderFire,
     OptReactOnThreat.Key: OptReactOnThreat,
@@ -1415,4 +1435,5 @@ options = {
     OptRTBOnBingoFuel.Key: OptRTBOnBingoFuel,
     OptRestrictJettison.Key: OptRestrictJettison,
     OptRadarUsing.Key: OptRadarUsing,
+    OptChaffFlareUsing.Key: OptChaffFlareUsing,
 }
