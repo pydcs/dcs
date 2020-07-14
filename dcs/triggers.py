@@ -1,5 +1,5 @@
 import copy
-from typing import List
+from typing import List, Dict, Any
 from enum import Enum
 
 from dcs import mapping
@@ -194,11 +194,12 @@ trigger_map = {
 
 class Rules:
     def __init__(self):
-        self.triggers = []  # type: List[TriggerRule]
+        self.triggers: List[TriggerRule] = []
 
-    def load_from_dict(self, mission, d):
+    def load_from_dict(self, mission, d: Dict[Any, Any]):
         self.triggers.clear()
-        for x in d:
+        sorted_keys = sorted(d.keys())
+        for x in sorted_keys:
             self.triggers.append(trigger_map[d[x]["predicate"]].create_from_dict(mission, d[x]))
 
     def trig(self):
