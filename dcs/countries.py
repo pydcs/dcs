@@ -22,6 +22,7 @@ class Russia(Country):
             SPH_2S19_Msta = vehicles.Artillery.SPH_2S19_Msta
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
             MLRS_9K57_Uragan_BM_27 = vehicles.Artillery.MLRS_9K57_Uragan_BM_27
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
 
         class Infantry:
             Infantry_Soldier_Rus = vehicles.Infantry.Infantry_Soldier_Rus
@@ -358,6 +359,7 @@ class Ukraine(Country):
             SPH_2S1_Gvozdika = vehicles.Artillery.SPH_2S1_Gvozdika
             SPH_2S19_Msta = vehicles.Artillery.SPH_2S19_Msta
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
             MLRS_9K57_Uragan_BM_27 = vehicles.Artillery.MLRS_9K57_Uragan_BM_27
 
         class Infantry:
@@ -1914,6 +1916,7 @@ class USAFAggressors(Country):
             SPH_2S1_Gvozdika = vehicles.Artillery.SPH_2S1_Gvozdika
             SPH_2S19_Msta = vehicles.Artillery.SPH_2S19_Msta
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
             MLRS_9K57_Uragan_BM_27 = vehicles.Artillery.MLRS_9K57_Uragan_BM_27
             SpGH_Dana = vehicles.Artillery.SpGH_Dana
             M12_GMC = vehicles.Artillery.M12_GMC
@@ -2408,9 +2411,10 @@ class USAFAggressors(Country):
         CGN_1144_2_Pyotr_Velikiy = ships.CGN_1144_2_Pyotr_Velikiy
         CV_1143_5_Admiral_Kuznetsov_2017 = ships.CV_1143_5_Admiral_Kuznetsov_2017
         Type_052B_Destroyer = ships.Type_052B_Destroyer
-        Type_052C_Destroyer = ships.Type_052C_Destroyer
         Type_054A_Frigate = ships.Type_054A_Frigate
-        Type_093 = ships.Type_093
+        Type_052C_Destroyer = ships.Type_052C_Destroyer
+        Type_093_Attack_Submarine = ships.Type_093_Attack_Submarine
+        Type_071_Amphibious_Transport_Dock = ships.Type_071_Amphibious_Transport_Dock
         CVN_70_Carl_Vinson = ships.CVN_70_Carl_Vinson
         Ticonderoga_class = ships.Ticonderoga_class
         CVN_74_John_C__Stennis = ships.CVN_74_John_C__Stennis
@@ -5145,6 +5149,7 @@ class Belarus(Country):
             SPH_2S19_Msta = vehicles.Artillery.SPH_2S19_Msta
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
             MLRS_9K57_Uragan_BM_27 = vehicles.Artillery.MLRS_9K57_Uragan_BM_27
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
 
         class Infantry:
             Infantry_Soldier_Rus = vehicles.Infantry.Infantry_Soldier_Rus
@@ -5779,6 +5784,7 @@ class China(Country):
 
         class Artillery:
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
             SPH_2S9_Nona = vehicles.Artillery.SPH_2S9_Nona
 
         class AirDefence:
@@ -5954,9 +5960,10 @@ class China(Country):
         Armed_speedboat = ships.Armed_speedboat
         SSK_877 = ships.SSK_877
         Type_052B_Destroyer = ships.Type_052B_Destroyer
-        Type_052C_Destroyer = ships.Type_052C_Destroyer
         Type_054A_Frigate = ships.Type_054A_Frigate
-        Type_093 = ships.Type_093
+        Type_052C_Destroyer = ships.Type_052C_Destroyer
+        Type_093_Attack_Submarine = ships.Type_093_Attack_Submarine
+        Type_071_Amphibious_Transport_Dock = ships.Type_071_Amphibious_Transport_Dock
 
     def __init__(self):
         super(China, self).__init__(China.id, China.name)
@@ -6929,6 +6936,7 @@ class India(Country):
 
         class Artillery:
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
             MLRS_BM_21_Grad = vehicles.Artillery.MLRS_BM_21_Grad
             SPH_2S1_Gvozdika = vehicles.Artillery.SPH_2S1_Gvozdika
 
@@ -7730,6 +7738,7 @@ class Kazakhstan(Country):
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
             SPH_2S1_Gvozdika = vehicles.Artillery.SPH_2S1_Gvozdika
             _2B11_mortar = vehicles.Artillery._2B11_mortar
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
 
         class Infantry:
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
@@ -8124,6 +8133,7 @@ class Pakistan(Country):
 
         class Artillery:
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
             MLRS_BM_21_Grad = vehicles.Artillery.MLRS_BM_21_Grad
 
         class AirDefence:
@@ -9570,6 +9580,7 @@ class Syria(Country):
         class Artillery:
             _2B11_mortar = vehicles.Artillery._2B11_mortar
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
             MLRS_9K57_Uragan_BM_27 = vehicles.Artillery.MLRS_9K57_Uragan_BM_27
             MLRS_BM_21_Grad = vehicles.Artillery.MLRS_BM_21_Grad
             SPH_2S1_Gvozdika = vehicles.Artillery.SPH_2S1_Gvozdika
@@ -10104,6 +10115,7 @@ class Venezuela(Country):
             MLRS_BM_21_Grad = vehicles.Artillery.MLRS_BM_21_Grad
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
             SPH_2S19_Msta = vehicles.Artillery.SPH_2S19_Msta
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
             _2B11_mortar = vehicles.Artillery._2B11_mortar
 
         class AirDefence:
@@ -10852,6 +10864,7 @@ class Morocco(Country):
             SPH_M109_Paladin = vehicles.Artillery.SPH_M109_Paladin
             SPH_2S19_Msta = vehicles.Artillery.SPH_2S19_Msta
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
             MLRS_BM_21_Grad = vehicles.Artillery.MLRS_BM_21_Grad
 
         class AirDefence:
@@ -12902,6 +12915,7 @@ class USSR(Country):
             SPH_2S1_Gvozdika = vehicles.Artillery.SPH_2S1_Gvozdika
             SPH_2S19_Msta = vehicles.Artillery.SPH_2S19_Msta
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
             MLRS_9K57_Uragan_BM_27 = vehicles.Artillery.MLRS_9K57_Uragan_BM_27
             SpGH_Dana = vehicles.Artillery.SpGH_Dana
             M12_GMC = vehicles.Artillery.M12_GMC
@@ -13360,6 +13374,7 @@ class Algeria(Country):
             SPH_2S3_Akatsia = vehicles.Artillery.SPH_2S3_Akatsia
             SPH_2S1_Gvozdika = vehicles.Artillery.SPH_2S1_Gvozdika
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
 
         class Infantry:
             Infantry_Soldier_Rus = vehicles.Infantry.Infantry_Soldier_Rus
@@ -13612,6 +13627,7 @@ class Kuwait(Country):
 
         class Artillery:
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
 
         class AirDefence:
             SAM_Hawk_TR_AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR_AN_MPQ_46
@@ -14089,6 +14105,7 @@ class UnitedArabEmirates(Country):
             SPH_M109_Paladin = vehicles.Artillery.SPH_M109_Paladin
             MLRS_BM_21_Grad = vehicles.Artillery.MLRS_BM_21_Grad
             MLRS_9A52_Smerch = vehicles.Artillery.MLRS_9A52_Smerch
+            MLRS_9A52_Smerch_HE = vehicles.Artillery.MLRS_9A52_Smerch_HE
 
         class AirDefence:
             SAM_Patriot_STR_AN_MPQ_53 = vehicles.AirDefence.SAM_Patriot_STR_AN_MPQ_53

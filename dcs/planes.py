@@ -8894,8 +8894,8 @@ class P_47D_30(PlaneType):
 
         class USA(Enum):
             USAF_Standard = "USAF Standard"
-            _53rd_FS_36th_FG_9th_Air_Force = "53rd_FS,36th_FG,9th_Air_Force"
-            Lt_Col_Benjamin_Mayo = "Lt Col Benjamin Mayo"
+            _53rd_FS_9th_Air_Force = "53rd_FS_9th_Air_Force"
+            Lt_Col_Benjamin_Mayo = "Lt_Col_Benjamin_Mayo"
 
     class Pylon1:
         AN_M30A1 = (1, Weapons.AN_M30A1)
@@ -11769,10 +11769,13 @@ class JF_17(PlaneType):
         DIS_GB6_HE = (3, Weapons.DIS_GB6_HE)
         DIS_TANK800 = (3, Weapons.DIS_TANK800)
         DIS_TANK1100 = (3, Weapons.DIS_TANK1100)
+        Mk_82 = (3, Weapons.Mk_82)
         Mk_83 = (3, Weapons.Mk_83)
         Mk_84 = (3, Weapons.Mk_84)
+        DIS_GBU_12 = (3, Weapons.DIS_GBU_12)
         DIS_GBU_10 = (3, Weapons.DIS_GBU_10)
         DIS_GBU_16 = (3, Weapons.DIS_GBU_16)
+        DIS_TYPE200 = (3, Weapons.DIS_TYPE200)
 
     class Pylon4:
         DIS_TANK800 = (4, Weapons.DIS_TANK800)
@@ -11799,10 +11802,13 @@ class JF_17(PlaneType):
         DIS_GB6_HE = (5, Weapons.DIS_GB6_HE)
         DIS_TANK800 = (5, Weapons.DIS_TANK800)
         DIS_TANK1100 = (5, Weapons.DIS_TANK1100)
+        Mk_82 = (5, Weapons.Mk_82)
         Mk_83 = (5, Weapons.Mk_83)
         Mk_84 = (5, Weapons.Mk_84)
         DIS_GBU_10 = (5, Weapons.DIS_GBU_10)
         DIS_GBU_16 = (5, Weapons.DIS_GBU_16)
+        DIS_GBU_12 = (5, Weapons.DIS_GBU_12)
+        DIS_TYPE200 = (5, Weapons.DIS_TYPE200)
 
     class Pylon6:
         DIS_PL_5EII = (6, Weapons.DIS_PL_5EII)
@@ -16098,6 +16104,7 @@ class F_14B(PlaneType):
         ADM_141A__ = (4, Weapons.ADM_141A__)
         Mk_84_ = (4, Weapons.Mk_84_)
         GBU_10_ = (4, Weapons.GBU_10_)
+        MAK79_2_MK_20 = (4, Weapons.MAK79_2_MK_20)
         GBU_24_ = (4, Weapons.GBU_24_)
 
     class Pylon5:
@@ -16125,6 +16132,7 @@ class F_14B(PlaneType):
         Mk_20_ = (5, Weapons.Mk_20_)
         ADM_141A__ = (5, Weapons.ADM_141A__)
         Mk_84_ = (5, Weapons.Mk_84_)
+        MAK79_MK_20_ = (5, Weapons.MAK79_MK_20_)
 
     class Pylon6:
         AIM_54A_Mk47 = (6, Weapons.AIM_54A_Mk47)
@@ -16151,6 +16159,7 @@ class F_14B(PlaneType):
         Mk_20_ = (6, Weapons.Mk_20_)
         ADM_141A__ = (6, Weapons.ADM_141A__)
         Mk_84_ = (6, Weapons.Mk_84_)
+        MAK79_MK_20 = (6, Weapons.MAK79_MK_20)
         GBU_24_ = (6, Weapons.GBU_24_)
 
     class Pylon7:
@@ -16179,6 +16188,7 @@ class F_14B(PlaneType):
         ADM_141A__ = (7, Weapons.ADM_141A__)
         Mk_84_ = (7, Weapons.Mk_84_)
         GBU_10_ = (7, Weapons.GBU_10_)
+        MAK79_2_MK_20_ = (7, Weapons.MAK79_2_MK_20_)
 
     class Pylon8:
         Fuel_tank_300_gal_ = (8, Weapons.Fuel_tank_300_gal_)

@@ -84,6 +84,13 @@ class Artillery:
         threat_range = 70000
         air_weapon_dist = 70000
 
+    class MLRS_9A52_Smerch_HE(unittype.VehicleType):
+        id = "Smerch_HE"
+        name = "MLRS 9A52 Smerch HE"
+        detection_range = 0
+        threat_range = 70000
+        air_weapon_dist = 70000
+
     class MLRS_M270(unittype.VehicleType):
         id = "MLRS"
         name = "MLRS M270"
@@ -1676,6 +1683,7 @@ vehicle_map = {
     "Grad-URAL": Artillery.MLRS_BM_21_Grad,
     "Uragan_BM-27": Artillery.MLRS_9K57_Uragan_BM_27,
     "Smerch": Artillery.MLRS_9A52_Smerch,
+    "Smerch_HE": Artillery.MLRS_9A52_Smerch_HE,
     "MLRS": Artillery.MLRS_M270,
     "2S6 Tunguska": AirDefence.SAM_SA_19_Tunguska_2S6,
     "Kub 2P25 ln": AirDefence.SAM_SA_6_Kub_LN_2P25,

@@ -232,7 +232,7 @@ class LHA_1_Tarawa(unittype.ShipType):
 
 
 class Type_052B_Destroyer(unittype.ShipType):
-    id = "052B"
+    id = "Type_052B"
     name = "Type 052B Destroyer"
     plane_num = 0
     helicopter_num = 1
@@ -243,7 +243,7 @@ class Type_052B_Destroyer(unittype.ShipType):
 
 
 class Type_054A_Frigate(unittype.ShipType):
-    id = "054A"
+    id = "Type_054A"
     name = "Type 054A Frigate"
     plane_num = 0
     helicopter_num = 1
@@ -254,7 +254,7 @@ class Type_054A_Frigate(unittype.ShipType):
 
 
 class Type_052C_Destroyer(unittype.ShipType):
-    id = "052C"
+    id = "Type_052C"
     name = "Type 052C Destroyer"
     plane_num = 0
     helicopter_num = 1
@@ -264,12 +264,22 @@ class Type_052C_Destroyer(unittype.ShipType):
     air_weapon_dist = 100000
 
 
-class Type_093(unittype.ShipType):
-    id = "Type 093"
-    name = "Type 093"
+class Type_093_Attack_Submarine(unittype.ShipType):
+    id = "Type_093"
+    name = "Type 093 Attack Submarine"
     detection_range = 40000
     threat_range = 40000
     air_weapon_dist = 30000
+
+
+class Type_071_Amphibious_Transport_Dock(unittype.ShipType):
+    id = "Type_071"
+    name = "Type 071 Amphibious Transport Dock"
+    helicopter_num = 2
+    parking = 2
+    detection_range = 300000
+    threat_range = 150000
+    air_weapon_dist = 150000
 
 
 class LST_Mk_II(unittype.ShipType):
@@ -336,10 +346,11 @@ ship_map = {
     "CVN_73": CVN_73_George_Washington,
     "USS_Arleigh_Burke_IIa": USS_Arleigh_Burke_IIa,
     "LHA_Tarawa": LHA_1_Tarawa,
-    "052B": Type_052B_Destroyer,
-    "054A": Type_054A_Frigate,
-    "052C": Type_052C_Destroyer,
-    "Type 093": Type_093,
+    "Type_052B": Type_052B_Destroyer,
+    "Type_054A": Type_054A_Frigate,
+    "Type_052C": Type_052C_Destroyer,
+    "Type_093": Type_093_Attack_Submarine,
+    "Type_071": Type_071_Amphibious_Transport_Dock,
     "LST_Mk2": LST_Mk_II,
     "USS_Samuel_Chase": LS_Samuel_Chase,
     "Higgins_boat": LCVP__Higgins_boat,

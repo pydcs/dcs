@@ -513,6 +513,8 @@ class Weapons:
     M261_MK156 = {"clsid": "M261_MK156", "name": "M261 - 19 2.75' rockets MK156 WP", "weight": 234}
     M60_SIDE_L = {"clsid": "M60_SIDE_L", "name": "M60 Gun Left Door", "weight": 141.4}
     M60_SIDE_R = {"clsid": "M60_SIDE_R", "name": "M60 Gun Right Door", "weight": 141.4}
+    MAK79_2_MK_20 = {"clsid": "{MAK79_MK20 2L}", "name": "MAK79 2 MK-20", "weight": 464}
+    MAK79_2_MK_20_ = {"clsid": "{MAK79_MK20 2R}", "name": "MAK79 2 MK-20", "weight": 464}
     MAK79_3_BDU_33 = {"clsid": "{MAK79_BDU33 3L}", "name": "MAK79 3 BDU-33", "weight": 63}
     MAK79_3_BDU_33_ = {"clsid": "{MAK79_BDU33 3R}", "name": "MAK79 3 BDU-33", "weight": 63}
     MAK79_3_Mk_81 = {"clsid": "{MAK79_MK81 3L}", "name": "MAK79 3 Mk-81", "weight": 384}
@@ -530,6 +532,8 @@ class Weapons:
     MAK79_4_Mk_82 = {"clsid": "{MAK79_MK82 4}", "name": "MAK79 4 Mk-82", "weight": 1004}
     MAK79_4_Mk_82AIR = {"clsid": "{MAK79_MK82AIR 4}", "name": "MAK79 4 Mk-82AIR", "weight": 1004}
     MAK79_4_Mk_82_SnakeEye = {"clsid": "{MAK79_MK82SE 4}", "name": "MAK79 4 Mk-82 SnakeEye", "weight": 1004}
+    MAK79_MK_20 = {"clsid": "{MAK79_MK20 1R}", "name": "MAK79 MK-20", "weight": 232}
+    MAK79_MK_20_ = {"clsid": "{MAK79_MK20 1L}", "name": "MAK79 MK-20", "weight": 232}
     MAK79_Mk_83 = {"clsid": "{MAK79_MK83 1R}", "name": "MAK79 Mk-83", "weight": 457}
     MAK79_Mk_83_ = {"clsid": "{MAK79_MK83 1L}", "name": "MAK79 Mk-83", "weight": 457}
     Matra_Magic_II = {"clsid": "{MMagicII}", "name": "Matra Magic II", "weight": 85}
@@ -1440,6 +1444,8 @@ weapon_ids = {
     "M261_MK156": Weapons.M261_MK156,
     "M60_SIDE_L": Weapons.M60_SIDE_L,
     "M60_SIDE_R": Weapons.M60_SIDE_R,
+    "{MAK79_MK20 2L}": Weapons.MAK79_2_MK_20,
+    "{MAK79_MK20 2R}": Weapons.MAK79_2_MK_20_,
     "{MAK79_BDU33 3L}": Weapons.MAK79_3_BDU_33,
     "{MAK79_BDU33 3R}": Weapons.MAK79_3_BDU_33_,
     "{MAK79_MK81 3L}": Weapons.MAK79_3_Mk_81,
@@ -1457,6 +1463,8 @@ weapon_ids = {
     "{MAK79_MK82 4}": Weapons.MAK79_4_Mk_82,
     "{MAK79_MK82AIR 4}": Weapons.MAK79_4_Mk_82AIR,
     "{MAK79_MK82SE 4}": Weapons.MAK79_4_Mk_82_SnakeEye,
+    "{MAK79_MK20 1R}": Weapons.MAK79_MK_20,
+    "{MAK79_MK20 1L}": Weapons.MAK79_MK_20_,
     "{MAK79_MK83 1R}": Weapons.MAK79_Mk_83,
     "{MAK79_MK83 1L}": Weapons.MAK79_Mk_83_,
     "{MMagicII}": Weapons.Matra_Magic_II,
