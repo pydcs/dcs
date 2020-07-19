@@ -7,8 +7,8 @@ There are 2 type of tasks, a MainTask and a Task action.
 
 Also options and commands are task actions.
 """
-from typing import List, Dict, Optional, Type, Any
-from enum import Enum
+from typing import List, Dict, Optional, Type, Any, Union
+from enum import Enum, IntEnum
 from .mapping import Point
 
 
@@ -1278,6 +1278,10 @@ class Option(Task):
         if value:
             self.params["action"]["params"]["value"] = value
 
+    @property
+    def value(self) -> Union[str, int, bool]:
+        return self.params["action"]["params"]["value"]
+
 
 class OptROE(Option):
     """
@@ -1316,7 +1320,7 @@ class OptReactOnThreat(Option):
     """
     Key = 1
 
-    class Values:
+    class Values(IntEnum):
         NoReaction = 0
         """No defensive actions will take place to counter threats"""
         PassiveDefense = 1
@@ -1338,7 +1342,33 @@ class OptReactOnThreat(Option):
         """If a threat is deemed severe enough the AI will abort its mission and return to base."""
 
     def __init__(self, value=Values.NoReaction):
-        super(OptReactOnThreat, self).__init__(value)
+        super(OptReactOnThreat, self).__init__(value.value)
+
+
+class OptRadarUsing(Option):
+    Key = 3
+
+    def __init__(self, value=None):
+        super(OptRadarUsing, self).__init__(value)
+
+
+class OptChaffFlareUsing(Option):
+    Key = 4
+
+    class Values(IntEnum):
+        NeverUse = 0
+        """
+        Never use chaff or flare
+        """
+        UseAgainstFiredMissile = 1
+        """AI will use chaff/flare against fired missiles"""
+        UseWhenFlyingInSAMWEZ = 2
+        """AI will use chaff/flare while in SAM range"""
+        UseWhenFlyingNearEnemies = 3
+        """AI will use chaff/flare while enemies are near"""
+
+    def __init__(self, value: Values = Values.UseWhenFlyingInSAMWEZ):
+        super(OptChaffFlareUsing, self).__init__(value.value)
 
 
 class OptFormation(Option):
@@ -1348,6 +1378,20 @@ class OptFormation(Option):
 
     def __init__(self, value=None):
         super(OptFormation, self).__init__(value)
+
+
+class OptRTBOnBingoFuel(Option):
+    Key = 6
+
+    def __init__(self, value=None):
+        super(OptRTBOnBingoFuel, self).__init__(value)
+
+
+class OptRadioSilence(Option):
+    Key = 7
+
+    def __init__(self, value=None):
+        super(OptRadioSilence, self).__init__(value)
 
 
 class OptDisparseUnderFire(Option):
@@ -1364,27 +1408,6 @@ class OptAlarmState(Option):
         super(OptAlarmState, self).__init__(value)
 
 
-class OptEngageAirWeapons(Option):
-    Key = 20
-
-    def __init__(self, value=None):
-        super(OptEngageAirWeapons, self).__init__(value)
-
-
-class OptNoReportWaypointPass(Option):
-    Key = 19
-
-    def __init__(self, value=None):
-        super(OptNoReportWaypointPass, self).__init__(value)
-
-
-class OptRestrictAirToAirAttack(Option):
-    Key = 14
-
-    def __init__(self, value=None):
-        super(OptRestrictAirToAirAttack, self).__init__(value)
-
-
 class OptRTBOnOutOfAmmo(Option):
     Key = 10
 
@@ -1392,11 +1415,24 @@ class OptRTBOnOutOfAmmo(Option):
         super(OptRTBOnOutOfAmmo, self).__init__(value)
 
 
-class OptRTBOnBingoFuel(Option):
-    Key = 6
+class OptECMUsing(Option):
+    Key = 13
 
-    def __init__(self, value=None):
-        super(OptRTBOnBingoFuel, self).__init__(value)
+    class Values(IntEnum):
+        NeverUse = 0
+        UseIfOnlyLockByRadar = 1
+        UseIfDetectedLockByRadar = 2
+        AlwaysUse = 3
+
+    def __init__(self, value: Values = Values.UseIfOnlyLockByRadar):
+        super(OptECMUsing, self).__init__(value.value)
+
+
+class OptRestrictAirToAirAttack(Option):
+    Key = 14
+
+    def __init__(self, value: bool = True):
+        super(OptRestrictAirToAirAttack, self).__init__(value)
 
 
 class OptRestrictJettison(Option):
@@ -1406,30 +1442,67 @@ class OptRestrictJettison(Option):
         super(OptRestrictJettison, self).__init__(value)
 
 
-class OptRadarUsing(Option):
-    Key = 3
+class OptRestrictAfterburner(Option):
+    Key = 16
 
     def __init__(self, value=None):
-        super(OptRadarUsing, self).__init__(value)
+        super(OptRestrictAfterburner, self).__init__(value)
 
 
-class OptChaffFlareUsing(Option):
-    Key = 4
+class OptRestrictAirToGround(Option):
+    Key = 17
 
-    class Values:
-        NeverUse = 0
-        """
-        Never use chaff or flare
-        """
-        UseAgainstFiredMissile = 1
-        """AI will use chaff/flare against fired missiles"""
-        UseWhenFlyingInSAMWEZ = 2
-        """AI will use chaff/flare while in SAM range"""
-        UseWhenFlyingNearEnemies = 3
-        """AI will use chaff/flare while enemies are near"""
+    def __init__(self, value: bool = True):
+        super(OptRestrictAirToGround, self).__init__(value)
+
+
+class OptAAMissileAttackRange(Option):
+    Key = 18
+
+    class Values(IntEnum):
+        MaxRange = 0
+        NoEscRange = 1
+        HalfWayRMaxNoEsc = 2
+        TargetThreatEst = 3
+        RandomRange = 4
+
+    def __init__(self, value: Values = Values.TargetThreatEst):
+        super(OptAAMissileAttackRange, self).__init__(value.value)
+
+
+class OptNoReportWaypointPass(Option):
+    Key = 19
 
     def __init__(self, value=None):
-        super(OptChaffFlareUsing, self).__init__(value)
+        super(OptNoReportWaypointPass, self).__init__(value)
+
+
+class OptEngageAirWeapons(Option):
+    Key = 20
+
+    def __init__(self, value=None):
+        super(OptEngageAirWeapons, self).__init__(value)
+
+
+class OptRadioUsageContact(Option):
+    Key = 21
+
+    def __init__(self, value: Type[TargetType] = Targets.All):
+        super(OptRadioUsageContact, self).__init__(value)
+
+
+class OptRadioUsageEngage(Option):
+    Key = 22
+
+    def __init__(self, value: Type[TargetType] = Targets.All):
+        super(OptRadioUsageEngage, self).__init__(value)
+
+
+class OptRadioUsageKill(Option):
+    Key = 23
+
+    def __init__(self, value: Type[TargetType] = Targets.All):
+        super(OptRadioUsageKill, self).__init__(value)
 
 
 options = {
@@ -1439,11 +1512,19 @@ options = {
     OptChaffFlareUsing.Key: OptChaffFlareUsing,
     OptFormation.Key: OptFormation,
     OptRTBOnBingoFuel.Key: OptRTBOnBingoFuel,
+    OptRadioSilence.Key: OptRadioSilence,
     OptDisparseUnderFire.Key: OptDisparseUnderFire,
     OptAlarmState.Key: OptAlarmState,
     OptRTBOnOutOfAmmo.Key: OptRTBOnOutOfAmmo,
+    OptECMUsing.Key: OptECMUsing,
     OptRestrictAirToAirAttack.Key: OptRestrictAirToAirAttack,
     OptRestrictJettison.Key: OptRestrictJettison,
+    OptRestrictAfterburner.Key: OptRestrictAfterburner,
+    OptRestrictAirToGround.Key: OptRestrictAirToGround,
+    OptAAMissileAttackRange.Key: OptAAMissileAttackRange,
     OptNoReportWaypointPass.Key: OptNoReportWaypointPass,
     OptEngageAirWeapons.Key: OptEngageAirWeapons,
+    OptRadioUsageContact.Key: OptRadioUsageContact,
+    OptRadioUsageEngage.Key: OptRadioUsageEngage,
+    OptRadioUsageKill.Key: OptRadioUsageKill,
 }
