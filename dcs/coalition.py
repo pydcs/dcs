@@ -5,7 +5,8 @@ from . import unitgroup
 from . import planes
 from . import helicopters
 from . import ships
-from dcs.unit import Vehicle, Plane, Helicopter, Static, Ship, FARP, SingleHeliPad
+from dcs.unit import Vehicle, Static, Ship, FARP, SingleHeliPad
+from .flyingunit import Plane, Helicopter
 from dcs.point import MovingPoint, StaticPoint
 from dcs.country import Country
 

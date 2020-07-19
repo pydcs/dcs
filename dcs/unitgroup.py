@@ -4,7 +4,11 @@ import copy
 from enum import Enum
 from typing import List, Union, Optional
 
-from .unit import Unit, Skill, FlyingUnit, Plane, PlaneType, Helicopter, HelicopterType, FlyingType
+from .unit import Unit, Skill
+from .flyingunit import FlyingUnit, Plane, Helicopter
+from .unittype import FlyingType
+from .planes import PlaneType
+from .helicopters import HelicopterType
 from .point import StaticPoint, MovingPoint, PointAction, PointProperties
 from .translation import String
 from .terrain import Airport, Runway

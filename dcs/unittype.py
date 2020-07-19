@@ -1,12 +1,9 @@
 from . import lua
 from . import installation
-from . import task
 import os
 import re
 import sys
 from typing import Optional, Type, Any
-
-_UnitPayloadGlobals = {v.internal_name: v.id for k, v in task.MainTask.map.items()}
 
 
 class UnitType:
@@ -86,8 +83,7 @@ class FlyingType(UnitType):
     task_default = None
 
     _payload_cache = None
-
-    _UnitPayloadGlobals = {v.internal_name: v.id for k, v in task.MainTask.map.items()}
+    _UnitPayloadGlobals = None
 
     @classmethod
     def scan_payload_dir(cls):
@@ -110,6 +106,11 @@ class FlyingType(UnitType):
 
     @classmethod
     def load_payloads(cls):
+        # avoid cyclic dependency
+        if FlyingType._UnitPayloadGlobals is None:
+            from . import task
+            FlyingType._UnitPayloadGlobals = {v.internal_name: v.id for k, v in task.MainTask.map.items()}
+
         FlyingType.scan_payload_dir()
         if cls.payloads:
             return cls.payloads
@@ -123,7 +124,7 @@ class FlyingType(UnitType):
                 if FlyingType._payload_cache[payload_filename] == cls.id and os.path.exists(payload_filename):
                     with open(payload_filename, 'r') as payload:
                         try:
-                            payload_main = lua.loads(payload.read(), _globals=_UnitPayloadGlobals)
+                            payload_main = lua.loads(payload.read(), _globals=FlyingType._UnitPayloadGlobals)
                             pays = payload_main["unitPayloads"]
                             if pays["unitType"] == cls.id:
                                 if cls.payloads:

@@ -34,7 +34,8 @@ from .goals import Goals
 from .groundcontrol import GroundControl
 from .point import StaticPoint, MovingPoint, PointAction, PointProperties
 from .translation import Translation, String, ResourceKey
-from .unit import Unit, Plane, Helicopter, Ship, Vehicle, Static
+from .unit import Unit, Ship, Vehicle, Static
+from .flyingunit import Plane, Helicopter
 
 
 class StartType(Enum):
