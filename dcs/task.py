@@ -10,6 +10,7 @@ Also options and commands are task actions.
 from typing import List, Dict, Optional, Type, Any, Union
 from enum import Enum, IntEnum
 from .mapping import Point
+from .unit import Unit
 
 
 def _create_from_dict(d) -> 'Task':
@@ -49,6 +50,9 @@ class Task:
         self.auto: bool = False
         self.number: int = 1
         self.enabled: bool = True
+
+    def __repr__(self):
+        return str(self.dict())
 
     @classmethod
     def create_from_dict(cls, d):
@@ -860,6 +864,10 @@ class WrappedAction(Task):
     def __init__(self):
         super(WrappedAction, self).__init__(WrappedAction.Id)
 
+    @property
+    def value(self):
+        return self.params["action"]["params"].get("value")
+
 
 class EPLRS(WrappedAction):
     Key = "EPLRS"
@@ -908,6 +916,19 @@ class ActivateBeaconCommand(WrappedAction):
                     "bearing": bearing,
                     "system": 4 if aa else 3,
                 }
+            }
+        }
+
+
+class DeActivateBeaconCommand(WrappedAction):
+    Key = "DeactivateBeacon"
+
+    def __init__(self):
+        super(DeActivateBeaconCommand, self).__init__()
+        self.params = {
+            "action": {
+                "id": DeActivateBeaconCommand.Key,
+                "params": {}
             }
         }
 
@@ -1016,14 +1037,37 @@ class SetFrequencyCommand(WrappedAction):
     """
     Key = "SetFrequency"
 
-    def __init__(self, frequency=133, modulation: Modulation=Modulation.AM):
+    def __init__(self, frequency=133, modulation: Modulation = Modulation.AM, power: int = 10):
         super(SetFrequencyCommand, self).__init__()
         self.params = {
             "action": {
                 "id": SetFrequencyCommand.Key,
-                "params": {"modulation": modulation.value, "frequency": frequency * 1000000}
+                "params": {"modulation": modulation.value, "frequency": frequency * 1000000, "power": power}
             }
         }
+
+
+class SetFrequencyForUnitCommand(WrappedAction):
+    """Set the groups radio frequency.
+
+    :param frequency: frequency band in mhz.
+    :param modulation: AM or FM, see :py:class:`dcs.task.Modulation`
+    """
+    Key = "SetFrequencyForUnit"
+
+    def __init__(self, frequency=133, modulation: Modulation = Modulation.AM, power: int = 10, unit: Unit = None):
+        super(SetFrequencyForUnitCommand, self).__init__()
+        self.params = {
+            "action": {
+                "id": SetFrequencyForUnitCommand.Key,
+                "params": {
+                    "modulation": modulation.value,
+                    "frequency": frequency * 1000000,
+                    "power": power}
+            }
+        }
+        if unit:
+            self.params["action"]["params"]["unitId"] = unit.id
 
 
 class SwitchWaypoint(WrappedAction):
@@ -1073,6 +1117,19 @@ class SetImmortalCommand(WrappedAction):
         }
 
 
+class SmokeCommand(WrappedAction):
+    Key = "SMOKE_ON_OFF"
+
+    def __init__(self, value: bool = True):
+        super(SmokeCommand, self).__init__()
+        self.params = {
+            "action": {
+                "id": SmokeCommand.Key,
+                "params": {"value": value}
+            }
+        }
+
+
 class StartCommand(WrappedAction):
     Key = "Start"
 
@@ -1085,11 +1142,14 @@ class StartCommand(WrappedAction):
             }
         }
 
+
 wrappedactions = {
     EPLRS.Key: EPLRS,
     ActivateBeaconCommand.Key: ActivateBeaconCommand,
+    DeActivateBeaconCommand.Key: DeActivateBeaconCommand,
     ActivateICLSCommand.Key: ActivateICLSCommand,
     SetFrequencyCommand.Key: SetFrequencyCommand,
+    SetFrequencyForUnitCommand.Key: SetFrequencyForUnitCommand,
     SetInvisibleCommand.Key: SetInvisibleCommand,
     SetImmortalCommand.Key: SetImmortalCommand,
     RunScript.Key: RunScript,
@@ -1097,7 +1157,8 @@ wrappedactions = {
     TransmitMessage.Key: TransmitMessage,
     StopTransmission.Key: StopTransmission,
     SwitchWaypoint.Key: SwitchWaypoint,
-    StartCommand.Key: StartCommand
+    StartCommand.Key: StartCommand,
+    SmokeCommand.Key: SmokeCommand,
 }
 
 
