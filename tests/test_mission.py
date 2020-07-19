@@ -320,10 +320,7 @@ class BasicTests(unittest.TestCase):
         self.assertTrue(m2.load_file('missions/test_mission_the_channel.miz'))
         self.assertEqual(m2.terrain.__class__, dcs.terrain.TheChannel)
 
-    def test_load_prepared_mission(self):
-        m = dcs.mission.Mission()
-        self.assertTrue(m.load_file('tests/loadtest.miz'))
-
+    def assert_prepared_mission_load(self, m: dcs.mission.Mission):
         usa = m.country(dcs.countries.USA.name)
 
         # find single heli pad
@@ -344,16 +341,47 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(blue_farp.heliport_frequency, 128.5)
 
         # check map resources
-        self.assertEqual(2, len(m.map_resource.files['DEFAULT']))
+        self.assertEqual(3, len(m.map_resource.files['DEFAULT']))
         self.assertEqual("sample.lua", m.map_resource.get_file_path((m.map_resource.get_resource_keys()[0])))
         self.assertEqual("sample.lua", m.map_resource.get_file_path((m.map_resource.get_resource_keys()[1])))
+        self.assertEqual("test.lua", m.map_resource.get_file_path((m.map_resource.get_resource_keys()[2])))
 
         # check triggers
         self.assertEqual(3, len(m.triggerrules.triggers))
         self.assertEqual("1", m.triggerrules.triggers[0].comment)
         self.assertEqual("2", m.triggerrules.triggers[1].comment)
 
+        # check options count
+        all_task_flight = usa.find_plane_group("AllTasks")
+        self.assertIsNotNone(all_task_flight)
+        self.assertEqual(8, len(all_task_flight.points))
+        wp1 = all_task_flight.points[1]
+        self.assertTrue(all([isinstance(t, dcs.task.Option) for t in wp1.tasks]))
+        self.assertEqual(18, len(wp1.tasks))
+        opt_radio_silence = wp1.tasks[7]
+        self.assertIsInstance(opt_radio_silence, dcs.task.OptRadioSilence)
+        self.assertTrue(opt_radio_silence.value)
+
+        # check commands
+        wp8 = all_task_flight.points[7]
+        self.assertEqual(11, len(wp8.tasks))
+        com_immortal = wp8.tasks[7]
+        self.assertIsInstance(com_immortal, dcs.task.SetImmortalCommand)
+        self.assertTrue(com_immortal.value)
+
+    def test_load_prepared_mission(self):
+        m = dcs.mission.Mission()
+        self.assertTrue(m.load_file('tests/loadtest.miz'))
+
+        self.assert_prepared_mission_load(m)
+
         m.save('missions/loadtest.miz')
+
+        # reload mission
+        m = dcs.mission.Mission()
+        self.assertTrue(m.load_file('missions/loadtest.miz'))
+
+        self.assert_prepared_mission_load(m)
 
     def test_load_test_missions(self):
         test_mission_folder = os.path.join(os.path.dirname(__file__), 'missions')
