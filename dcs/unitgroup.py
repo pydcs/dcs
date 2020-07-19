@@ -221,7 +221,7 @@ class MovingGroup(Group):
         self.frequency = d.get("frequency")
         self.task = d.get("task")  # ships don't have a task
         self.spawn_probability = d.get("probability", 1.0)
-        for t in d.get("tasks", []):
+        for t in sorted(d.get("tasks", [])):
             task_dict = d["tasks"][t]
             self.tasks.append(task._create_from_dict(task_dict))
 
