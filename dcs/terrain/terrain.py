@@ -1,5 +1,5 @@
 # terrain module
-from typing import List, Dict, Optional, Tuple, Set
+from typing import List, Dict, Optional, Tuple, Set, Type
 from collections import defaultdict, deque
 from dcs import mapping, lua, point
 from dcs import unittype, weather
@@ -211,7 +211,7 @@ class Airport:
         else:
             return self._free_parking_slots_resolve_v2(aircraft_type)
 
-    def free_parking_slot(self, aircraft_type: unittype.FlyingType) -> Optional[ParkingSlot]:
+    def free_parking_slot(self, aircraft_type: Type[unittype.FlyingType]) -> Optional[ParkingSlot]:
         slots = self.free_parking_slots(aircraft_type)
         if slots:
             return slots[0]

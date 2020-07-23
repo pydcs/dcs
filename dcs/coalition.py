@@ -1,5 +1,5 @@
 import sys
-from typing import Dict
+from typing import Dict, Union, TYPE_CHECKING
 from . import countries
 from . import unitgroup
 from . import planes
@@ -9,6 +9,9 @@ from dcs.unit import Vehicle, Static, Ship, FARP, SingleHeliPad
 from .flyingunit import Plane, Helicopter
 from dcs.point import MovingPoint, StaticPoint
 from dcs.country import Country
+
+if TYPE_CHECKING:
+    from . import Mission
 
 
 class Coalition:
@@ -35,6 +38,26 @@ class Coalition:
             point.load_from_dict(imp_point, mission.translation)
             group.add_point(point)
         return group
+
+    @staticmethod
+    def _park_unit_on_airport(mission: 'Mission', group: unitgroup.Group, unit: Union[Plane, Helicopter]):
+        if group.points[0].airdrome_id is not None and unit.parking is not None:
+            airport = mission.terrain.airport_by_id(group.points[0].airdrome_id)
+            slot = airport.parking_slot(unit.parking)
+            if slot is not None:
+                unit.set_parking(slot)
+            else:
+                print("WARN: Parking slot id '{i}' for unit '{u}' in group '{p}' on airport '{a}' "
+                      "not valid, placing on next free"
+                      .format(i=unit.parking, u=unit.name, a=airport.name, p=group.name),
+                      file=sys.stderr)
+                slot = airport.free_parking_slot(unit.unit_type)
+                if slot is not None:
+                    unit.set_parking(slot)
+                else:
+                    print("ERRO: No free parking slots for unit '{u}' in unit group '{p}' on airport '{a}', ignoring"
+                          .format(u=unit.name, a=airport.name, p=group.name),
+                          file=sys.stderr)
 
     def load_from_dict(self, mission, d):
         for country_idx in d["country"]:
@@ -108,17 +131,7 @@ class Coalition:
                             _country=_country)
                         plane.load_from_dict(imp_unit)
 
-                        if plane_group.points[0].airdrome_id is not None and plane.parking is not None:
-                            airport = mission.terrain.airport_by_id(plane_group.points[0].airdrome_id)
-                            slot = airport.parking_slot(plane.parking)
-                            if slot is not None:
-                                plane.set_parking(slot)
-                            else:
-                                print("Parking slot id '{i}' for '{p}' on airport '{a}' not valid, placing on next free"
-                                      .format(i=plane.parking, a=airport.name, p=plane_group.name),
-                                      file=sys.stderr)
-                                slot = airport.free_parking_slot(plane.unit_type)
-                                plane.set_parking(slot)
+                        self._park_unit_on_airport(mission, plane_group, plane)
 
                         mission.current_unit_id = max(mission.current_unit_id, plane.id)
                         plane_group.add_unit(plane)
@@ -151,10 +164,7 @@ class Coalition:
                             _country=_country)
                         heli.load_from_dict(imp_unit)
 
-                        if helicopter_group.points[0].airdrome_id is not None and heli.parking is not None:
-                            airport = mission.terrain.airport_by_id(helicopter_group.points[0].airdrome_id)
-                            slot = airport.parking_slot(heli.parking)
-                            heli.set_parking(slot)
+                        self._park_unit_on_airport(mission, helicopter_group, heli)
 
                         mission.current_unit_id = max(mission.current_unit_id, heli.id)
                         helicopter_group.add_unit(heli)
