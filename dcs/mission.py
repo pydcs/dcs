@@ -302,15 +302,17 @@ class Mission:
         imp_date = imp_mission.get("date", {"Year": 2011, "Month": 6, "Day": 1})
         hour = int(imp_mission["start_time"] / 3600)
         minutes = int(imp_mission["start_time"] / 60) - hour * 60
-        self.start_time = datetime(
-            year=imp_date["Year"],
-            month=imp_date["Month"],
-            day=imp_date["Day"],
-            hour=hour,
-            minute=minutes,
-            second=imp_mission["start_time"] % 60
-        )
-        # self.start_time = datetime.fromtimestamp(1306886400 + imp_mission["start_time"], timezone.utc)
+        if self.version > 11:
+            self.start_time = datetime(
+                year=imp_date["Year"],
+                month=imp_date["Month"],
+                day=imp_date["Day"],
+                hour=hour,
+                minute=minutes,
+                second=imp_mission["start_time"] % 60
+            )
+        else:
+            self.start_time = datetime.fromtimestamp(1306886400 + imp_mission["start_time"], timezone.utc)
         self.usedModules = imp_mission.get("usedModules", None)
         self.needModules = imp_mission.get("needModules", None)
 
