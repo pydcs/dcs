@@ -1,6 +1,7 @@
 import unittest
 import os
 import dcs
+from dcs.translation import String
 
 
 class BasicTests(unittest.TestCase):
@@ -319,6 +320,41 @@ class BasicTests(unittest.TestCase):
         m2 = dcs.mission.Mission()
         self.assertTrue(m2.load_file('missions/test_mission_the_channel.miz'))
         self.assertEqual(m2.terrain.__class__, dcs.terrain.TheChannel)
+
+    def test_create_mission_with_part_of_coalition_zone_trigger(self):
+
+        m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
+
+        usa = m.country("USA")
+
+        trigger_zone = m.triggers.add_triggerzone(m.terrain.batumi().position.point_from_heading(90, 15000), radius=5000, hidden=False, name="TRIGGER_ZONE")
+        trigger = dcs.triggers.TriggerOnce(dcs.triggers.Event.NoEvent, "Detection of blue aircraft")
+        trigger.add_condition(dcs.condition.PartOfCoalitionInZone("blue", trigger_zone.id, "AIRPLANE"))
+        trigger.add_action(dcs.action.MessageToAll(text=String("Blue aircraft detected in trigger zone !")))
+        m.triggerrules.triggers.append(trigger)
+
+        trigger_zone_2 = m.triggers.add_triggerzone(m.terrain.batumi().position, radius=5000, hidden=False, name="BATUMI_ZONE")
+        trigger_outside = dcs.triggers.TriggerOnce(dcs.triggers.Event.NoEvent, "No blue in batumi zone")
+        trigger_outside.add_condition(dcs.condition.PartOfCoalitionOutsideZone("blue", trigger_zone_2.id, "AIRPLANE"))
+        trigger_outside.add_action(dcs.action.MessageToAll(text=String("Blue aircraft are not in batumi zone anymore!")))
+        m.triggerrules.triggers.append(trigger_outside)
+
+        f15 = m.flight_group_inflight(usa, "F15", dcs.planes.F_15C, m.terrain.batumi().position, 1000)
+        f15.add_waypoint(trigger_zone.position, 500)
+
+        m.save('missions/mission_with_part_of_coalition_zone_trigger.miz')
+
+        # Test load mission
+        m2 = dcs.mission.Mission()
+        self.assertTrue(m2.load_file('missions/mission_with_part_of_coalition_zone_trigger.miz'))
+
+        self.assertEqual(m2.triggerrules.triggers[0].rules[0].unitType, "AIRPLANE")
+        self.assertEqual(m2.triggerrules.triggers[0].rules[0].zone, trigger_zone.id)
+        self.assertEqual(m2.triggerrules.triggers[0].rules[0].coalitionlist, "blue")
+
+        self.assertEqual(m2.triggerrules.triggers[1].rules[0].unitType, "AIRPLANE")
+        self.assertEqual(m2.triggerrules.triggers[1].rules[0].zone, trigger_zone_2.id)
+        self.assertEqual(m2.triggerrules.triggers[1].rules[0].coalitionlist, "blue")
 
     def assert_prepared_mission_load(self, m: dcs.mission.Mission):
         usa = m.country(dcs.countries.USA.name)

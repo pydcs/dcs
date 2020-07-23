@@ -578,42 +578,48 @@ class Or(Condition):
 class PartOfCoalitionInZone(Condition):
     predicate = "c_part_of_coalition_in_zone"
 
-    def __init__(self, coalitionlist, zone):
+    def __init__(self, coalitionlist, zone, unitType="ALL"):
         super(PartOfCoalitionInZone, self).__init__(PartOfCoalitionInZone.predicate)
         self.coalitionlist = coalitionlist
         self.params.append(self.coalitionlist)
         self.zone = zone
         self.params.append(self.zone)
+        self.unitType = unitType
+        self.params.append(self.unitType)
 
     @classmethod
     def create_from_dict(cls, d):
-        return cls(d["coalitionlist"], d["zone"])
+        return cls(d["coalitionlist"], d["zone"], d["unitType"] if "unitType" in d.keys() else "ALL")
 
     def dict(self):
         d = super(PartOfCoalitionInZone, self).dict()
         d["coalitionlist"] = self.coalitionlist
         d["zone"] = self.zone
+        d["unitType"] = self.unitType
         return d
 
 
 class PartOfCoalitionOutsideZone(Condition):
     predicate = "c_part_of_coalition_out_zone"
 
-    def __init__(self, coalitionlist, zone):
+    def __init__(self, coalitionlist, zone, unitType="ALL"):
         super(PartOfCoalitionOutsideZone, self).__init__(PartOfCoalitionOutsideZone.predicate)
         self.coalitionlist = coalitionlist
         self.params.append(self.coalitionlist)
         self.zone = zone
         self.params.append(self.zone)
+        self.unitType = unitType
+        self.params.append(self.unitType)
 
     @classmethod
     def create_from_dict(cls, d):
-        return cls(d["coalitionlist"], d["zone"])
+        return cls(d["coalitionlist"], d["zone"], d["unitType"] if "unitType" in d.keys() else "ALL")
 
     def dict(self):
         d = super(PartOfCoalitionOutsideZone, self).dict()
         d["coalitionlist"] = self.coalitionlist
         d["zone"] = self.zone
+        d["unitType"] = self.unitType
         return d
 
 
