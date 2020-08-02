@@ -1444,14 +1444,14 @@ class OptFormation(Option):
 class OptRTBOnBingoFuel(Option):
     Key = 6
 
-    def __init__(self, value=None):
+    def __init__(self, value: bool=True):
         super(OptRTBOnBingoFuel, self).__init__(value)
 
 
 class OptRadioSilence(Option):
     Key = 7
 
-    def __init__(self, value=None):
+    def __init__(self, value: bool=True):
         super(OptRadioSilence, self).__init__(value)
 
 
@@ -1474,6 +1474,34 @@ class OptRTBOnOutOfAmmo(Option):
 
     def __init__(self, value=None):
         super(OptRTBOnOutOfAmmo, self).__init__(value)
+
+    class Values(IntEnum):
+        NoWeapon = 0
+        All = 4294967295
+        Unguided = 805339120
+        Cannon = 805306368
+        Rockets = 30720
+        SmokeRockets = 4096
+        LightRockets = 2048
+        CandleRockets = 8192
+        HeavyRockets = 16384
+        Bombs = 2032
+        IronBombs = 240
+        ClusterBombs = 768
+        CandleBombs = 1024
+        Guided = 268402702
+        GuidedBombs = 14
+        Missiles = 268402688
+        ASM = 4161536
+        ATGM = 131072
+        StandardASM = 1835008
+        ARM = 32768
+        Antiship = 65536
+        CruiseMissile = 2097152
+        AAM = 264241152
+        SR_AAM = 4194304
+        MR_AAM = 8388608
+        LR_AAM = 16777216
 
 
 class OptECMUsing(Option):
