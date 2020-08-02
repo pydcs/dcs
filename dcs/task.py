@@ -1409,7 +1409,13 @@ class OptReactOnThreat(Option):
 class OptRadarUsing(Option):
     Key = 3
 
-    def __init__(self, value=None):
+    class Values(IntEnum):
+        NeverUse = 0
+        UseForAttackOnly = 1
+        UseForSearchIfRequired = 2
+        UseForContinuousSearch = 3
+
+    def __init__(self, value: Values = Values.UseForContinuousSearch):
         super(OptRadarUsing, self).__init__(value)
 
 
@@ -1472,9 +1478,6 @@ class OptAlarmState(Option):
 class OptRTBOnOutOfAmmo(Option):
     Key = 10
 
-    def __init__(self, value=None):
-        super(OptRTBOnOutOfAmmo, self).__init__(value)
-
     class Values(IntEnum):
         NoWeapon = 0
         All = 4294967295
@@ -1502,6 +1505,9 @@ class OptRTBOnOutOfAmmo(Option):
         SR_AAM = 4194304
         MR_AAM = 8388608
         LR_AAM = 16777216
+
+    def __init__(self, value: Values=Values.All):
+        super(OptRTBOnOutOfAmmo, self).__init__(value)
 
 
 class OptECMUsing(Option):
