@@ -263,12 +263,14 @@ class VehicleGroup(MovingGroup):
         self.frequency = None
         self.visible = False  # visible before start flag
         self.spans = []
+        self.manualHeading = False
 
     def load_from_dict(self, d):
         super(VehicleGroup, self).load_from_dict(d)
         self.modulation = d.get("modulation")
         self.communication = d.get("communication", False)
         self.visible = d.get("visible", False)
+        self.manualHeading = d.get("manualHeading", False)
 
     def add_span(self, position: mapping.Point):
         self.spans.append({"x": position.x, "y": position.y})
@@ -292,6 +294,7 @@ class VehicleGroup(MovingGroup):
             d["communication"] = self.communication
             d["frequency"] = self.frequency
         d["visible"] = self.visible
+        d["manualHeading"] = self.manualHeading
         if self.spans is not None:
             # spans
             d["route"]["spans"] = {}
