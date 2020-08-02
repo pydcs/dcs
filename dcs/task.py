@@ -1416,7 +1416,7 @@ class OptRadarUsing(Option):
         UseForContinuousSearch = 3
 
     def __init__(self, value: Values = Values.UseForContinuousSearch):
-        super(OptRadarUsing, self).__init__(value)
+        super(OptRadarUsing, self).__init__(value.value)
 
 
 class OptChaffFlareUsing(Option):
@@ -1507,7 +1507,7 @@ class OptRTBOnOutOfAmmo(Option):
         LR_AAM = 16777216
 
     def __init__(self, value: Values=Values.All):
-        super(OptRTBOnOutOfAmmo, self).__init__(value)
+        super(OptRTBOnOutOfAmmo, self).__init__(value.value)
 
 
 class OptECMUsing(Option):
