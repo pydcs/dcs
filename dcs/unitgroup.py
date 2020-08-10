@@ -190,7 +190,11 @@ class Group:
                 d["units"][i] = unit.dict()
                 dunit = d["units"][i]
                 if len(self.points) > 1:
-                    hdg = self.points[0].position.heading_between_point(self.points[1].position)
+                    use_manual_heading = getattr(self, "manualHeading", False)
+                    if not use_manual_heading:
+                        hdg = self.points[0].position.heading_between_point(self.points[1].position)
+                    else:
+                        hdg = unit.heading
                     rhdg = math.radians(hdg)
                     dunit["heading"] = round(rhdg, 13)
                     if "psi" in dunit:
