@@ -1,6 +1,7 @@
 import unittest
 import os
 import dcs
+import time
 from dcs.translation import String
 
 
@@ -420,10 +421,16 @@ class BasicTests(unittest.TestCase):
         self.assert_prepared_mission_load(m)
 
     def test_load_test_missions(self):
+        current_milli_time = lambda: int(round(time.time() * 1000))
         test_mission_folder = os.path.join(os.path.dirname(__file__), 'missions')
         for f in os.listdir(test_mission_folder):
             if f.endswith('.miz'):
                 print('-' * 10, "Loading", f)
+                start = current_milli_time()
                 m = dcs.mission.Mission()
                 self.assertTrue(m.load_file(os.path.join(test_mission_folder, f)))
+                print('-' * 10, "Loaded", f, "in", current_milli_time() - start, "ms")
+                print('-' * 10, "Saving", f)
+                start = current_milli_time()
                 self.assertTrue(m.save('missions/unittest_' + f))
+                print('-' * 10, "Saved", f, "in", current_milli_time() - start, "ms")
