@@ -174,8 +174,9 @@ class FlyingType(UnitType):
             return LiveryOverwrites.map[cls.id + "." + country_name]
         else:
             liveries = cls.Liveries
-            for x in liveries.__dict__:
-                clas = liveries.__dict__[x]
-                if clas and getattr(clas, "__name__", "") == country_name:
-                    return list(clas)[0].value
+            if liveries is not None:
+                for x in liveries.__dict__:
+                    clas = liveries.__dict__[x]
+                    if clas and getattr(clas, "__name__", "") == country_name:
+                        return list(clas)[0].value
         return ""
