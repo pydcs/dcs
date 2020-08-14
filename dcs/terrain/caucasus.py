@@ -1,8 +1,8 @@
 import os
 from typing import List
 
-from .terrain import Terrain, Airport, Runway, ParkingSlot, MapView, Graph
-from .. import mapping
+from dcs.terrain.terrain import Terrain, Airport, Runway, ParkingSlot, MapView, Graph
+import dcs.mapping as mapping
 
 
 class Anapa_Vityazevo(Airport):

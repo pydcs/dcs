@@ -23,7 +23,7 @@ def point_from_heading(_x, _y, heading, distance):
     return x, y
 
 
-def distance(x1, y1, x2, y2):
+def _distance(x1, y1, x2, y2):
     """Returns the distance between 2 points
 
     :param x1: x coordinate of point 1
@@ -66,7 +66,7 @@ class Point:
         return heading_between_points(self.x, self.y, point.x, point.y)
 
     def distance_to_point(self, point):
-        return distance(self.x, self.y, point.x, point.y)
+        return _distance(self.x, self.y, point.x, point.y)
 
     def random_point_within(self, distance, min_distance=0):
         """Returns a random point within the given distance.
@@ -215,7 +215,7 @@ class Rectangle:
 
 
 class Polygon:
-    def __init__(self, points: List[Point]=None):
+    def __init__(self, points: List[Point] = None):
         if points is None:
             points = []
         self.points = copy.copy(points)

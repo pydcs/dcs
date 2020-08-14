@@ -1,12 +1,16 @@
 # terrain module
-from typing import List, Dict, Optional, Tuple, Set, Type
-from collections import defaultdict, deque
-from dcs import mapping, lua, point
-from dcs import unittype, weather
+import dcs.mapping as mapping
+import dcs.lua as lua
+import dcs.point as point
+import dcs.unittype as unittype
+import dcs.weather as weather
+
 import random
 import pickle
 import sys
 from datetime import datetime
+from typing import List, Dict, Optional, Tuple, Set, Type
+from collections import defaultdict, deque
 
 
 class ParkingSlot:

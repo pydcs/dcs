@@ -1,4 +1,4 @@
-from .unitgroup import VehicleGroup, ShipGroup, PlaneGroup, StaticGroup, HelicopterGroup, FlyingGroup, Group
+from dcs.unitgroup import VehicleGroup, ShipGroup, PlaneGroup, StaticGroup, HelicopterGroup, FlyingGroup, Group
 from typing import List, Dict
 
 
@@ -8,6 +8,7 @@ def find_exact(group_name, find_name):
 
 def find_match(group_name, find_name):
     return find_name in group_name
+
 
 find_map = {
     "exact": find_exact,

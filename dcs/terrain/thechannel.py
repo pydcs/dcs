@@ -1,5 +1,5 @@
-from dcs import mapping
-from dcs.terrain import Airport, Runway, ParkingSlot, Terrain, MapView
+import dcs.mapping as mapping
+from dcs.terrain.terrain import Airport, Runway, ParkingSlot, Terrain, MapView
 
 
 class Abbeville_Drucat(Airport):

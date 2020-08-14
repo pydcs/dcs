@@ -4,22 +4,22 @@ import copy
 from enum import Enum
 from typing import List, Union, Optional
 
-from .unit import Unit, Skill
-from .flyingunit import FlyingUnit, Plane, Helicopter
-from .unittype import FlyingType
-from .planes import PlaneType
-from .helicopters import HelicopterType
-from .point import StaticPoint, MovingPoint, PointAction, PointProperties
-from .translation import String
-from .terrain import Airport, Runway
-from .nav_target_point import NavTargetPoint
-from . import planes
-from . import helicopters
-from . import triggers
-from . import action
-from . import condition
-from . import task
-from . import mapping
+from dcs.unit import Unit, Skill
+from dcs.flyingunit import FlyingUnit, Plane, Helicopter
+from dcs.unittype import FlyingType
+from dcs.planes import PlaneType
+from dcs.helicopters import HelicopterType
+from dcs.point import StaticPoint, MovingPoint, PointAction, PointProperties
+from dcs.translation import String
+from dcs.terrain import Airport, Runway
+from dcs.nav_target_point import NavTargetPoint
+import dcs.planes as planes
+import dcs.helicopters as helicopters
+import dcs.triggers as triggers
+import dcs.action as action
+import dcs.condition as condition
+import dcs.task as task
+import dcs.mapping as mapping
 
 
 class Group:

@@ -1,6 +1,6 @@
-from .translation import String
-from .unittype import UnitType, StaticType, ShipType, VehicleType
-from . import mapping
+from dcs.translation import String
+from dcs.unittype import UnitType, StaticType, ShipType, VehicleType
+import dcs.mapping as mapping
 import copy
 import math
 from enum import Enum

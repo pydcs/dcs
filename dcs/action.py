@@ -1,5 +1,5 @@
-from .lua.serialize import dumps
-from .translation import String, ResourceKey
+from dcs.lua.serialize import dumps
+from dcs.translation import String, ResourceKey
 from enum import Enum
 
 

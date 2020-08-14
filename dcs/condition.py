@@ -1,4 +1,5 @@
-from .lua.serialize import dumps
+from dcs.lua.serialize import dumps
+
 
 class Condition:
     def __init__(self, predicate):
@@ -564,7 +565,6 @@ class Or(Condition):
     def __init__(self, ):
         super(Or, self).__init__(Or.predicate)
 
-
     @classmethod
     def create_from_dict(cls, d):
         return cls()
@@ -578,13 +578,13 @@ class Or(Condition):
 class PartOfCoalitionInZone(Condition):
     predicate = "c_part_of_coalition_in_zone"
 
-    def __init__(self, coalitionlist, zone, unitType="ALL"):
+    def __init__(self, coalitionlist, zone, unit_type="ALL"):
         super(PartOfCoalitionInZone, self).__init__(PartOfCoalitionInZone.predicate)
         self.coalitionlist = coalitionlist
         self.params.append(self.coalitionlist)
         self.zone = zone
         self.params.append(self.zone)
-        self.unitType = unitType
+        self.unitType = unit_type
         self.params.append(self.unitType)
 
     @classmethod
@@ -602,13 +602,13 @@ class PartOfCoalitionInZone(Condition):
 class PartOfCoalitionOutsideZone(Condition):
     predicate = "c_part_of_coalition_out_zone"
 
-    def __init__(self, coalitionlist, zone, unitType="ALL"):
+    def __init__(self, coalitionlist, zone, unit_type="ALL"):
         super(PartOfCoalitionOutsideZone, self).__init__(PartOfCoalitionOutsideZone.predicate)
         self.coalitionlist = coalitionlist
         self.params.append(self.coalitionlist)
         self.zone = zone
         self.params.append(self.zone)
-        self.unitType = unitType
+        self.unitType = unit_type
         self.params.append(self.unitType)
 
     @classmethod
@@ -918,6 +918,7 @@ class UnitAltitudeLowerAGL(Condition):
         d["unit"] = self.unit
         d["altitude"] = self.altitude
         return d
+
 
 class UnitBankWithin(Condition):
     predicate = "c_unit_bank"

@@ -1,8 +1,8 @@
-from .unit import Unit, Skill
-from .unittype import FlyingType
-from .terrain import ParkingSlot
-from .planes import PlaneType, A_10C
-from .helicopters import HelicopterType, Ka_50
+from dcs.unit import Unit, Skill
+from dcs.unittype import FlyingType
+from dcs.terrain import ParkingSlot
+from dcs.planes import PlaneType, A_10C
+from dcs.helicopters import HelicopterType, Ka_50
 
 import json
 from typing import Type

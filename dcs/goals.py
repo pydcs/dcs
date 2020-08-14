@@ -1,5 +1,5 @@
 from typing import List
-from . import condition
+import dcs.condition as condition
 
 
 class Goal:
@@ -79,4 +79,5 @@ class Goals:
         return d
 
     def dict(self):
-        return {i+1: self.goals[side][i].dict() for side in ["blue", "red", "offline"] for i in range(0, len(self.goals[side]))}
+        return {i+1: self.goals[side][i].dict()
+                for side in ["blue", "red", "offline"] for i in range(0, len(self.goals[side]))}

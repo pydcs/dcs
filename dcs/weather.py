@@ -3,7 +3,7 @@ import random
 import math
 from enum import Enum
 from typing import List
-from . import mapping, terrain
+from dcs import mapping, terrain
 
 
 class Wind:

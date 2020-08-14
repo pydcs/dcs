@@ -9,8 +9,8 @@ Also options and commands are task actions.
 """
 from typing import List, Dict, Optional, Type, Any, Union
 from enum import Enum, IntEnum
-from .mapping import Point
-from .unit import Unit
+from dcs.mapping import Point
+from dcs.unit import Unit
 
 
 def _create_from_dict(d) -> 'Task':

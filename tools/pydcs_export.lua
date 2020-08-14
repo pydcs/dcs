@@ -237,9 +237,9 @@ local function export_aircraft(file, aircrafts, export_type, exportplane)
     file:write(
 [[# This file is generated from pydcs_export.lua
 
-from .weapons_data import Weapons
-from . import task
-from .unittype import FlyingType
+from dcs.weapons_data import Weapons
+import dcs.task as task
+from dcs.unittype import FlyingType
 from enum import Enum
 
 
@@ -507,7 +507,7 @@ local file = io.open(export_path.."vehicles.py", "w")
 file:write(
 [[# This file is generated from pydcs_export.lua
 
-from . import unittype
+import dcs.unittype as unittype
 ]])
 
 -- sort by categories
@@ -583,7 +583,7 @@ local file = io.open(export_path.."statics.py", "w")
 file:write(
 [[# This file is generated from pydcs_export.lua
 
-from . import unittype
+import dcs.unittype as unittype
 ]])
 
 local function lookup_map(file, parent, arr, b_parent)
@@ -687,7 +687,7 @@ local file = io.open(export_path.."ships.py", "w")
 file:write(
 [[# This file is generated from pydcs_export.lua
 
-from . import unittype
+import dcs.unittype as unittype
 ]])
 
 for i in pairs(db.Units.Ships.Ship) do
@@ -746,11 +746,11 @@ end
 
 writeln(file, '# This file is generated from pydcs_export.lua')
 writeln(file, '')
-writeln(file, 'from .country import Country')
-writeln(file, 'from . import vehicles')
-writeln(file, 'from . import planes')
-writeln(file, 'from . import helicopters')
-writeln(file, 'from . import ships')
+writeln(file, 'from dcs.country import Country')
+writeln(file, 'import dcs.vehicles as vehicles')
+writeln(file, 'import dcs.planes as planes')
+writeln(file, 'import dcs.helicopters as helicopters')
+writeln(file, 'import dcs.ships as ships')
 local countryPlaneIgnore = { "Su_30MK", "F_86F", "F_16C_50", "F_5E_MAC", "F_86F_MAC", "TF_51", "MiG_15bis_MAC",
                              "L_39_MAC" }
 local countryHeliIgnore = { "Mi_24P" }

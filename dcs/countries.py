@@ -1,10 +1,10 @@
 # This file is generated from pydcs_export.lua
 
-from .country import Country
-from . import vehicles
-from . import planes
-from . import helicopters
-from . import ships
+from dcs.country import Country
+import dcs.vehicles as vehicles
+import dcs.planes as planes
+import dcs.helicopters as helicopters
+import dcs.ships as ships
 
 
 class Russia(Country):

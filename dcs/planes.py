@@ -1,8 +1,8 @@
 # This file is generated from pydcs_export.lua
 
-from .weapons_data import Weapons
-from . import task
-from .unittype import FlyingType
+from dcs.weapons_data import Weapons
+import dcs.task as task
+from dcs.unittype import FlyingType
 from enum import Enum
 
 

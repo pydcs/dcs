@@ -1,5 +1,5 @@
-from . import lua
-from . import installation
+import dcs.lua as lua
+import dcs.installation as installation
 import os
 import re
 import sys
@@ -99,7 +99,7 @@ class FlyingType(UnitType):
                 if payload_filename not in FlyingType._payload_cache:
                     with open(payload_filename, 'r') as payloadfile:
                         for line in payloadfile:
-                            g = re.search(r'\["unitType"\]\s*=\s*"([^"]*)', line)
+                            g = re.search(r'\["unitType"]\s*=\s*"([^"]*)', line)
                             if g:
                                 FlyingType._payload_cache[payload_filename] = g.group(1)
                                 break

@@ -1,6 +1,6 @@
-from .translation import String
-from . import task
-from . import mapping
+from dcs.translation import String
+import dcs.task as task
+import dcs.mapping as mapping
 from typing import List, Optional
 from enum import Enum
 
@@ -81,7 +81,7 @@ class Steer(Enum):
 
 
 class PointProperties:
-    def __init__(self, vnav: VNav=VNav.V2D, scale: Scale=Scale.Enroute, steer: Steer=Steer.ToTo, angle=None):
+    def __init__(self, vnav: VNav = VNav.V2D, scale: Scale = Scale.Enroute, steer: Steer = Steer.ToTo, angle=None):
         self.vnav = vnav
         self.scale = scale
         self.steer = steer
@@ -175,9 +175,9 @@ class MovingPoint(StaticPoint):
         if self.airdrome_id is not None:
             d["airdromeId"] = self.airdrome_id
         if self.helipad_id is not None:
-                d["helipadId"] = self.helipad_id
+            d["helipadId"] = self.helipad_id
         if self.link_unit is not None:
-                d["linkUnit"] = self.link_unit
+            d["linkUnit"] = self.link_unit
         if self.properties is not None:
             d["properties"] = self.properties.dict()
         return d

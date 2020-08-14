@@ -1,4 +1,4 @@
 # lua table serialization
 
-from .parse import loads
-from .serialize import dumps
+from dcs.lua.parse import loads
+from dcs.lua.serialize import dumps

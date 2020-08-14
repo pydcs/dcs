@@ -1,12 +1,12 @@
 import sys
 from typing import Dict, Union, TYPE_CHECKING
-from . import countries
-from . import unitgroup
-from . import planes
-from . import helicopters
-from . import ships
+import dcs.countries as countries
+import dcs.unitgroup as unitgroup
+import dcs.planes as planes
+import dcs.helicopters as helicopters
+import dcs.ships as ships
 from dcs.unit import Vehicle, Static, Ship, FARP, SingleHeliPad
-from .flyingunit import Plane, Helicopter
+from dcs.flyingunit import Plane, Helicopter
 from dcs.point import MovingPoint, StaticPoint
 from dcs.country import Country
 

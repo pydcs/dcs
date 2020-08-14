@@ -14,28 +14,28 @@ from typing import List, Dict, Union, Optional, Type
 from dcs.coalition import Coalition
 from dcs.terrain.terrain import Warehouses
 from dcs.triggers import Triggers
-from . import countries
-from . import helicopters
-from . import lua
-from . import mapping
-from . import planes
-from . import task
-from . import unitgroup
-from . import unittype
-from . import weather
-from . import triggers
-from . import terrain as terrain_
-from . import condition
-from . import action
-from . import unit
-from .country import Country
-from .forcedoptions import ForcedOptions
-from .goals import Goals
-from .groundcontrol import GroundControl
-from .point import StaticPoint, MovingPoint, PointAction, PointProperties
-from .translation import Translation, String, ResourceKey
-from .unit import Unit, Ship, Vehicle, Static
-from .flyingunit import Plane, Helicopter
+import dcs.countries as countries
+import dcs.helicopters as helicopters
+import dcs.lua as lua
+import dcs.mapping as mapping
+import dcs.planes as planes
+import dcs.task as task
+import dcs.unitgroup as unitgroup
+import dcs.unittype as unittype
+import dcs.weather as weather
+import dcs.triggers as triggers
+import dcs.terrain as terrain_
+import dcs.condition as condition
+import dcs.action as action
+import dcs.unit as unit
+from dcs.country import Country
+from dcs.forcedoptions import ForcedOptions
+from dcs.goals import Goals
+from dcs.groundcontrol import GroundControl
+from dcs.point import StaticPoint, MovingPoint, PointAction, PointProperties
+from dcs.translation import Translation, String, ResourceKey
+from dcs.unit import Unit, Ship, Vehicle, Static
+from dcs.flyingunit import Plane, Helicopter
 
 
 class StartType(Enum):

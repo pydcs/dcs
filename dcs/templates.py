@@ -1,7 +1,7 @@
-from .countries import Russia, USA
-from . import unit
-from .mission import Mission
-from . import mapping
+from dcs.countries import Russia, USA
+import dcs.unit as unit
+from dcs.mission import Mission
+import dcs.mapping as mapping
 import dcs.vehicles
 
 
@@ -44,7 +44,12 @@ class VehicleTemplate:
         @staticmethod
         def patriot_site(mission: Mission, position, heading, prefix="", skill=unit.Skill.Average):
             usa = mission.country("USA")
-            vg = mission.vehicle_group(usa, prefix + "Patriot site", USA.Vehicle.AirDefence.SAM_Patriot_ICC, position, heading)
+            vg = mission.vehicle_group(
+                usa,
+                prefix + "Patriot site",
+                USA.Vehicle.AirDefence.SAM_Patriot_ICC,
+                position,
+                heading)
             u = mission.vehicle("Operator 1", USA.Vehicle.Infantry.Infantry_M4)
             u.position = position.point_from_heading(heading + 180, 5)
             u.heading = heading
@@ -88,7 +93,12 @@ class VehicleTemplate:
         @staticmethod
         def hawk_site(mission: Mission, position, heading, prefix="", skill=unit.Skill.Average):
             usa = mission.country("USA")
-            vg = mission.vehicle_group(usa, prefix + "Hawk site", USA.Vehicle.AirDefence.SAM_Hawk_PCP, position, heading)
+            vg = mission.vehicle_group(
+                usa,
+                prefix + "Hawk site",
+                USA.Vehicle.AirDefence.SAM_Hawk_PCP,
+                position,
+                heading)
 
             u = mission.vehicle("Operator 1", USA.Vehicle.Infantry.Infantry_M4)
             u.position = position.point_from_heading(heading + 180, 5)

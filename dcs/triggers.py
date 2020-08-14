@@ -84,7 +84,7 @@ class Event(Enum):
     TookControl = "took control"
     RefuelStop = "refuel stop"
     Failure = "failure"
-    MissionStart="mission start"
+    MissionStart = "mission start"
 
 
 class TriggerRule:

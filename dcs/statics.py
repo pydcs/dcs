@@ -1,6 +1,6 @@
 # This file is generated from pydcs_export.lua
 
-from . import unittype
+import dcs.unittype as unittype
 
 
 class Fortification:
