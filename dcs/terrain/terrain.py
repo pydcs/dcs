@@ -142,8 +142,10 @@ class Airport:
         return mapping.Rectangle.from_point(mapping.Point(self.position.x + 500, self.position.y), 200)
 
     def occupy_runway(self, group):
-        if self.runway_used is not None:
-            raise RunwayOccupiedError("Runway already in use by group {gname}".format(gname=self.runway_used.name))
+        # if self.runway_used is not None:
+        #     raise RunwayOccupiedError(
+        #         "{a} Airport runway already in use by group {gname}, cannot assign {g} to it.".format(
+        #             a=self.name, gname=self.runway_used.name, g=group.name)
         self.runway_used = group
         return self.runway_used
 

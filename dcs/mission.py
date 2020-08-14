@@ -916,8 +916,8 @@ class Mission:
                 unit.set_parking(parking_slot)
             unit.position = copy.copy(spos)
 
-        if start_type == StartType.Runway:
-            airport.occupy_runway(group)
+        # if start_type == StartType.Runway:
+        #     airport.occupy_runway(group)
 
         group.load_task_default_loadout(maintask)
 
