@@ -5,3 +5,4 @@ from dcs.terrain.nevada import Nevada
 from dcs.terrain.normandy import Normandy
 from dcs.terrain.persiangulf import PersianGulf
 from dcs.terrain.thechannel import TheChannel
+from dcs.terrain.syria import Syria
