@@ -749,6 +749,7 @@ class Mi_8MT(HelicopterType):
         SAB_100 = (1, Weapons.SAB_100)
         FAB_250 = (1, Weapons.FAB_250)
         GUV_VOG = (1, Weapons.GUV_VOG)
+#ERRR <CLEAN>
 
     class Pylon2:
         B_8V20A_CM = (2, Weapons.B_8V20A_CM)
@@ -762,6 +763,7 @@ class Mi_8MT(HelicopterType):
         GUV_VOG = (2, Weapons.GUV_VOG)
         FAB_100 = (2, Weapons.FAB_100)
         SAB_100 = (2, Weapons.SAB_100)
+#ERRR <CLEAN>
 
     class Pylon3:
         B_8V20A_CM = (3, Weapons.B_8V20A_CM)
@@ -771,6 +773,7 @@ class Mi_8MT(HelicopterType):
         FAB_250 = (3, Weapons.FAB_250)
         FAB_100 = (3, Weapons.FAB_100)
         SAB_100 = (3, Weapons.SAB_100)
+#ERRR <CLEAN-200.5>
 
     class Pylon4:
         B_8V20A_CM = (4, Weapons.B_8V20A_CM)
@@ -780,6 +783,7 @@ class Mi_8MT(HelicopterType):
         FAB_250 = (4, Weapons.FAB_250)
         FAB_100 = (4, Weapons.FAB_100)
         SAB_100 = (4, Weapons.SAB_100)
+#ERRR <CLEAN-200.5>
 
     class Pylon5:
         B_8V20A_CM = (5, Weapons.B_8V20A_CM)
@@ -793,6 +797,7 @@ class Mi_8MT(HelicopterType):
         GUV_VOG = (5, Weapons.GUV_VOG)
         FAB_100 = (5, Weapons.FAB_100)
         SAB_100 = (5, Weapons.SAB_100)
+#ERRR <CLEAN>
 
     class Pylon6:
         B_8V20A_CM = (6, Weapons.B_8V20A_CM)
@@ -803,6 +808,7 @@ class Mi_8MT(HelicopterType):
         SAB_100 = (6, Weapons.SAB_100)
         FAB_250 = (6, Weapons.FAB_250)
         GUV_VOG = (6, Weapons.GUV_VOG)
+#ERRR <CLEAN>
 
     class Pylon7:
         KORD_12_7 = (7, Weapons.KORD_12_7)

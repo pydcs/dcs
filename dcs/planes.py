@@ -10818,6 +10818,7 @@ class C_101EB(PlaneType):
 
         class Australia(Enum):
             default = "default"
+            RAAF_Roulettes__Fictional = "RAAF Roulettes (Fictional)"
 
         class Germany(Enum):
             default = "default"
@@ -11772,9 +11773,9 @@ class JF_17(PlaneType):
         Mk_82 = (3, Weapons.Mk_82)
         Mk_83 = (3, Weapons.Mk_83)
         Mk_84 = (3, Weapons.Mk_84)
-        DIS_GBU_12 = (3, Weapons.DIS_GBU_12)
         DIS_GBU_10 = (3, Weapons.DIS_GBU_10)
         DIS_GBU_16 = (3, Weapons.DIS_GBU_16)
+        DIS_GBU_12 = (3, Weapons.DIS_GBU_12)
         DIS_TYPE200 = (3, Weapons.DIS_TYPE200)
 
     class Pylon4:
@@ -11878,6 +11879,46 @@ class KJ_2000(PlaneType):
 
     tasks = [task.AWACS]
     task_default = task.AWACS
+
+
+class WingLoong_I(PlaneType):
+    id = "WingLoong-I"
+    group_size_max = 1
+    height = 2.77
+    width = 14
+    length = 9.05
+    fuel_max = 400
+    max_speed = 280
+    eplrs = True
+    radio_frequency = 127.5
+
+    class Liveries:
+
+        class SaudiArabia(Enum):
+            default = "default"
+
+        class China(Enum):
+            PLAAF = "PLAAF"
+
+        class Pakistan(Enum):
+            default = "default"
+
+        class Serbia(Enum):
+            default = "default"
+
+        class Egypt(Enum):
+            default = "default"
+
+    class Pylon1:
+        DIS_AKD_10 = (1, Weapons.DIS_AKD_10)
+
+    class Pylon2:
+        DIS_AKD_10 = (2, Weapons.DIS_AKD_10)
+
+    pylons = {1, 2}
+
+    tasks = [task.GroundAttack, task.AFAC, task.Reconnaissance]
+    task_default = task.Reconnaissance
 
 
 class Christen_Eagle_II(PlaneType):
@@ -21443,6 +21484,7 @@ plane_map = {
     "J-11A": J_11A,
     "JF-17": JF_17,
     "KJ-2000": KJ_2000,
+    "WingLoong-I": WingLoong_I,
     "Christen Eagle II": Christen_Eagle_II,
     "F-16C_50": F_16C_50,
     "F-5E": F_5E,

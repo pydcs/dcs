@@ -177,6 +177,7 @@ class Weapons:
     CBU_97 = {"clsid": "{5335D97A-35A5-4643-9D9B-026C75961E52}", "name": "CBU-97", "weight": 417}
     CBU_99 = {"clsid": "{CBU_99}", "name": "CBU-99", "weight": 222}
     DEFA_553 = {"clsid": "{C-101-DEFA553}", "name": "DEFA-553", "weight": 218}
+    DIS_AKD_10 = {"clsid": "DIS_AKD-10", "name": "AKD-10", "weight": 58}
     DIS_AKG_DLPOD = {"clsid": "DIS_AKG_DLPOD", "name": "DATA-LINK POD", "weight": 295}
     DIS_BRM1_90 = {"clsid": "DIS_BRM1_90", "name": "BRM-1_90MM", "weight": 462.5}
     DIS_CM_802AKG = {"clsid": "DIS_CM-802AKG", "name": "CM-802AKG", "weight": 765}
@@ -1108,6 +1109,7 @@ weapon_ids = {
     "{5335D97A-35A5-4643-9D9B-026C75961E52}": Weapons.CBU_97,
     "{CBU_99}": Weapons.CBU_99,
     "{C-101-DEFA553}": Weapons.DEFA_553,
+    "DIS_AKD-10": Weapons.DIS_AKD_10,
     "DIS_AKG_DLPOD": Weapons.DIS_AKG_DLPOD,
     "DIS_BRM1_90": Weapons.DIS_BRM1_90,
     "DIS_CM-802AKG": Weapons.DIS_CM_802AKG,
