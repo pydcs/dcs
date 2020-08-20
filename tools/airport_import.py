@@ -11,7 +11,7 @@ See https://github.com/pydcs/dcs/issues/36
 function dumpairportdata()
     local S	= require('Serializer')
     local airdromedump = {}
-    for k, v in base.pairs(MapWindow.listAirdromes) do
+    for k, v in base.pairs(base.MapWindow.listAirdromes) do
         --MapWindow.listAirdromes[unit.boss.route.points[1].airdromeId].roadnet
         local sList = Terrain.getStandList(v.roadnet, {"SHELTER","FOR_HELICOPTERS","FOR_AIRPLANES","WIDTH","LENGTH","HEIGHT"})
         info = {}
@@ -19,7 +19,7 @@ function dumpairportdata()
         info["standlist"] = sList
         airdromedump[k] = info
     end
-    local f = base.io.open("C:\\tmp\\standlist.lua", 'w')
+    local f = base.io.open("C:\\standlist.lua", 'w')
     if f then
             local s = S.new(f)
             s:serialize_simple2('airports', airdromedump)
@@ -41,7 +41,7 @@ def safename(name):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--terrain", choices=["caucasus", "nevada", "normandy", "persiangulf", "thechannel"], default="caucasus")
+    parser.add_argument("-t", "--terrain", choices=["caucasus", "nevada", "normandy", "persiangulf", "thechannel", "syria"], default="caucasus")
     parser.add_argument("airportinfofile")
 
     args = parser.parse_args()
