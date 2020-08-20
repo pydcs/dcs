@@ -322,6 +322,26 @@ class BasicTests(unittest.TestCase):
         self.assertTrue(m2.load_file('missions/test_mission_the_channel.miz'))
         self.assertEqual(m2.terrain.__class__, dcs.terrain.TheChannel)
 
+    def test_create_mission_on_syria_map(self):
+
+        m = dcs.mission.Mission(terrain=dcs.terrain.Syria())
+
+        usa = m.country("USA")
+        russia = m.country("Russia")
+        fa18 = m.flight_group_from_airport(usa, "F/A-18C", dcs.planes.FA_18C_hornet, group_size=1,
+                                            airport=m.terrain.damascus())
+        fa18.add_waypoint(m.terrain.damascus().position.point_from_heading(-90, 40000), 500, 300)
+        su22 = m.flight_group_from_airport(russia, "Su22", dcs.planes.Su_17M4, group_size=1,
+                                          airport=m.terrain.damascus())
+        su22.add_waypoint(m.terrain.damascus().position.point_from_heading(-90, 40000), 500, 300)
+
+        m.save('missions/test_mission_syria.miz')
+
+        # Test load mission
+        m2 = dcs.mission.Mission()
+        self.assertTrue(m2.load_file('missions/test_mission_syria.miz'))
+        self.assertEqual(m2.terrain.__class__, dcs.terrain.Syria)
+
     def test_create_mission_with_part_of_coalition_zone_trigger(self):
 
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
