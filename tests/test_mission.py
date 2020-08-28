@@ -1,7 +1,10 @@
-import unittest
 import os
-import dcs
 import time
+import unittest
+from pathlib import Path
+import zipfile
+
+import dcs
 from dcs.translation import String
 
 
@@ -454,3 +457,15 @@ class BasicTests(unittest.TestCase):
                 start = current_milli_time()
                 self.assertTrue(m.save('missions/unittest_' + f))
                 print('-' * 10, "Saved", f, "in", current_milli_time() - start, "ms")
+
+    def test_kneeboard(self):
+        m = dcs.mission.Mission()
+        # Kneeboards need to be images for DCS, but we don't care in the test.
+        kneeboard = Path("missions/kneeboard.txt")
+        kneeboard.write_bytes(b"Hello, world!")
+        m.add_aircraft_kneeboard(dcs.planes.F_15C, kneeboard)
+        mission_file = Path('missions/kneeboard_mission.miz')
+        m.save(mission_file)
+        with zipfile.ZipFile(mission_file) as zipf:
+            with zipf.open("KNEEBOARD/F-15C/IMAGES/kneeboard.txt") as zipkb:
+                self.assertEqual(b"Hello, world!", zipkb.read())

@@ -7,8 +7,10 @@ import sys
 import tempfile
 import zipfile
 import random
+from collections import defaultdict
 from datetime import datetime, timezone, timedelta
 from enum import Enum
+from pathlib import Path
 from typing import List, Dict, Union, Optional, Type
 
 from dcs.coalition import Coalition
@@ -210,6 +212,8 @@ class Mission:
             'Hawk T.1A by VEAO Simulations': True,
             'F-86F Sabre AI by Eagle Dynamics': True
         }
+
+        self.aircraft_kneeboards: Dict[unittype.FlyingType, List[Path]] = defaultdict(list)
 
     def load_file(self, filename: str):
         """Load a mission file (.miz) file, replacing all current data.
@@ -1628,6 +1632,21 @@ class Mission:
 
         return sf
 
+    def add_aircraft_kneeboard(self, aircraft: unittype.FlyingType, page: Path):
+        """Adds an aircraft specific kneeboard page to the mission.
+
+        Note that DCS does not support flight-specific kneeboards, so the
+        kneeboard page will be visible to all aircraft of the same type
+        regardless of group or coalition. For PvE, make sure pages are labeled
+        for their flights. For PvP, avoid including sensitive information in
+        the kneeboard.
+
+        Args:
+            aircraft: The aircraft type to display the kneeboard page for.
+            page: Path to the image file for the kneeboard page.
+        """
+        self.aircraft_kneeboards[aircraft].append(page)
+
     def country(self, name):
         """Returns the country object for the mission by the given string
 
@@ -1840,6 +1859,11 @@ class Mission:
             mapresource = self.map_resource.store(zipf, 'DEFAULT')
             # print(mapresource)
             zipf.writestr('l10n/DEFAULT/mapResource', lua.dumps(mapresource, "mapResource", 1))
+
+            for unit_type, pages in self.aircraft_kneeboards.items():
+                directory = f'KNEEBOARD/{unit_type.id}/IMAGES/'
+                for idx, page in enumerate(pages):
+                    zipf.write(page, arcname=f'{directory}/{page.name}')
 
             zipf.writestr('mission', str(self))
 
