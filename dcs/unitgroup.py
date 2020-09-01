@@ -477,17 +477,32 @@ class FlyingGroup(MovingGroup):
         for u in self.units:
             u.reset_loadout()
 
-    def set_frequency(self, frequency):
+    def set_frequency(self, frequency: float, radio_id: int = 1) -> None:
+        """Sets the intra-flight frequency.
+
+        This is equivalent to setting the frequency field of the aircraft group
+        in the mission editor. The primary use is in determining which frequency
+        an AI pilot will listen/transmit on for intra-flight communication.
+
+        The first channel of the first compatible radio will automatically be
+        set to this value by DCS. Any calls to
+        FlyingUnit.set_radio_channel_preset for that radio will have no effect.
+
+        Args:
+            frequency: The intra-flight frequency to assign to the group.
+            radio_id: The index of the radio that should be used for
+                intra-flight communications. Typically it is okay to use the
+                default value of 1, but for some cases (such as a VHF
+                intra-flight channel for the F-16), another radio should be
+                used.
+        """
         self.frequency = frequency
         self.radio_set = True
-
-    def dict(self):
-        # if a player/client is in the group
-        # make sure his 1. preset channel is at frequency
         for u in self.units:
             if u.skill in [Skill.Client, Skill.Player]:
-                u.set_default_preset_channel(self.frequency)
+                u.set_radio_channel_preset(radio_id, 1, self.frequency)
 
+    def dict(self):
         d = super(FlyingGroup, self).dict()
         d["modulation"] = self.modulation
         d["communication"] = self.communication

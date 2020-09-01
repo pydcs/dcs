@@ -95,13 +95,44 @@ class FlyingUnit(Unit):
     def reset_loadout(self):
         self.pylons = {}
 
-    def set_default_preset_channel(self, freq):
-        if self.radio:
-            self.radio[1]["channels"][1] = freq
+    def set_default_preset_channel(self, freq: float) -> None:
+        """Sets the frequency for channel 1 of the main radio."""
+        self.set_radio_channel_preset(1, 1, freq)
 
     def set_radio_preset(self):
+        """Resets the radio channel configuration to the airframe's default."""
         if self.unit_type.panel_radio:
             self.radio = self.unit_type.panel_radio
+
+    def num_radio_channels(self, radio_id: int) -> int:
+        """Returns the number of channels available for the given radio."""
+        return len(self.radio[radio_id]["channels"])
+
+    def set_radio_channel_preset(self, radio_id: int, channel: int,
+                                 frequency: float) -> None:
+        """Sets a preset radio channel to the given frequency.
+
+        Note that DCS will clobber the first compatible channel for the flight's
+        frequency. For example, if a flight of F-16s is assigned 118 MHz, COM2
+        channel 1 will be set to 118 MHz regardless of what this function sets
+        it to.
+
+        Args:
+             radio_id: The index of the radio to set the channel for.
+             channel: The channel number to set.
+             frequency: The frequency to set the channel to, in megahertz.
+
+        Raises:
+            KeyError: No such radio or channel number.
+        """
+        if self.radio is None:
+            # Not all aircraft have configurable radio channels.
+            return
+
+        radio = self.radio[radio_id]
+        if channel not in radio["channels"]:
+            raise KeyError
+        radio["channels"][channel] = frequency
 
     def set_player(self):
         if not self.unit_type.flyable:

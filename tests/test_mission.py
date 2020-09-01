@@ -469,3 +469,33 @@ class BasicTests(unittest.TestCase):
         with zipfile.ZipFile(mission_file) as zipf:
             with zipf.open("KNEEBOARD/F-15C/IMAGES/kneeboard.txt") as zipkb:
                 self.assertEqual(b"Hello, world!", zipkb.read())
+
+    def test_radio_channels(self):
+        m = dcs.mission.Mission(terrain=dcs.terrain.Syria())
+
+        country_name = "USA"
+        group_name = "F/A-18C"
+        group = m.flight_group_from_airport(
+            m.country(country_name),
+            group_name,
+            dcs.planes.FA_18C_hornet,
+            group_size=1,
+            airport=m.terrain.damascus()
+        )
+        unit = group.units[0]
+        unit.set_client()
+        frequency = 300.0
+        self.assertNotAlmostEqual(unit.radio[2]["channels"][1], frequency)
+        unit.set_radio_channel_preset(2, 1, frequency)
+        mission_file = Path('missions/radio_channels.miz')
+        m.save(mission_file)
+
+        m = dcs.mission.Mission()
+        self.assertTrue(m.load_file('missions/radio_channels.miz'))
+        group = m.country(country_name).find_group(group_name)
+        self.assertIsNotNone(group)
+        self.assertIsInstance(group, dcs.unitgroup.FlyingGroup)
+        self.assertEqual(1, len(group.units))
+        unit = group.units[0]
+        self.assertIsInstance(unit, dcs.flyingunit.FlyingUnit)
+        self.assertAlmostEqual(unit.radio[2]["channels"][1], frequency)
