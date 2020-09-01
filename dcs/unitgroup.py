@@ -556,6 +556,15 @@ class ShipGroup(MovingGroup):
         self.add_point(mp)
         return mp
 
+    def set_frequency(self, frequency: int) -> None:
+        """Sets the communications frequency for each unit in the group.
+
+        Args:
+            frequency: The frequency of the communications channel in hertz.
+        """
+        for unit in self.units:
+            unit.set_frequency(frequency)
+
     def dict(self):
         d = super(ShipGroup, self).dict()
         d["visible"] = self.visible

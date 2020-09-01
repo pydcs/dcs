@@ -87,13 +87,24 @@ class Ship(Unit):
     def __init__(self, id=None, name=None, _type=None):
         super(Ship, self).__init__(id, name, _type.id)
         self.transportable = {"randomTransportable": False}
+        self.frequency = 127500000
+
+    def set_frequency(self, frequency: int) -> None:
+        """Sets the communications frequency for this unit.
+
+        Args:
+            frequency: The frequency of the communications channel in hertz.
+        """
+        self.frequency = frequency
 
     def load_from_dict(self, d):
         super(Ship, self).load_from_dict(d)
+        self.frequency = d.get("frequency", self.frequency)
         self.transportable = d["transportable"]
 
     def dict(self):
         d = super(Ship, self).dict()
+        d["frequency"] = self.frequency
         d["transportable"] = self.transportable
         return d
 

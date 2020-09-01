@@ -499,3 +499,40 @@ class BasicTests(unittest.TestCase):
         unit = group.units[0]
         self.assertIsInstance(unit, dcs.flyingunit.FlyingUnit)
         self.assertAlmostEqual(unit.radio[2]["channels"][1], frequency)
+
+    def test_ship_frequency(self):
+        m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
+
+        country_name = "USA"
+        group_name = "CVN"
+        batumi = m.terrain.airports["Batumi"]
+        mission_name = "ship_radios"
+
+        seapoint = batumi.unit_zones[0].random_point()
+        seapoint.y -= 10 * 1000
+        group = m.ship_group(
+            m.country(country_name),
+            group_name,
+            dcs.countries.USA.Ship.CVN_70_Carl_Vinson,
+            seapoint
+        )
+        unit = group.units[0]
+        frequency = 300000000
+        self.assertNotEqual(unit.frequency, frequency)
+        unit.set_frequency(frequency)
+        self.assertEqual(unit.frequency, frequency)
+        frequency = 250000000
+        group.set_frequency(frequency)
+        self.assertEqual(unit.frequency, frequency)
+        mission_file = Path(f"missions/{mission_name}.miz")
+        m.save(mission_file)
+
+        m = dcs.mission.Mission()
+        self.assertTrue(m.load_file(f"missions/{mission_name}.miz"))
+        group = m.country(country_name).find_group(group_name)
+        self.assertIsNotNone(group)
+        self.assertIsInstance(group, dcs.unitgroup.ShipGroup)
+        self.assertEqual(1, len(group.units))
+        unit = group.units[0]
+        self.assertIsInstance(unit, dcs.unit.Ship)
+        self.assertEqual(unit.frequency, frequency)
