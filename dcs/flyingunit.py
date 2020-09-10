@@ -149,6 +149,36 @@ class FlyingUnit(Unit):
     def is_human(self):
         return self.skill in [Skill.Player, Skill.Client]
 
+    @property
+    def callsign_is_western(self) -> bool:
+        """Returns true if this units callsign is in the Western format.
+
+        Western callsigns have a group name and number as well as a unit number,
+        whereas other callsigns are just an arbitrary integer with no group
+        association.
+        """
+        return self.callsign is None
+
+    def callsign_as_str(self) -> str:
+        """Returns the raw callsign for the given unit.
+
+        Note that callsigns come in one of two forms depending on the unit's
+        country, as defined by <DCS>/Scripts/Database/db_callnames.lua.
+
+        For "Western" nations, the callsign will be in the format
+        `<name><group ID><unit ID>`, where the name and group ID are common to
+        the whole unit group but the unit ID is unique among the group. E.g.
+        "Enfield11", "Enfield12", and so on. The group ID can be between one and
+        three digits, but the unit ID will always be one digit, so "Enfield1234"
+        is the callsign of Enfield 123-4.
+
+        For other nations, the callsign is just an integer and there is no group
+        association.
+        """
+        if not self.callsign_is_western:
+            return str(self.callsign)
+        return self.callsign_dict["name"]
+
     def dict(self):
         d = super(FlyingUnit, self).dict()
         d["alt"] = self.alt
