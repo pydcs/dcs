@@ -1575,6 +1575,7 @@ class AITaskPush(Action):
         super(AITaskPush, self).__init__(AITaskPush.predicate)
         self.groupid = groupid
         self.task_index = task_index
+        self.params.extend([self.groupid, self.task_index])
 
     @classmethod
     def create_from_dict(cls, d, mission):
@@ -1594,6 +1595,7 @@ class AITaskSet(Action):
         super(AITaskSet, self).__init__(AITaskSet.predicate)
         self.groupid = groupid
         self.task_index = task_index
+        self.params.extend([self.groupid, self.task_index])
 
     @classmethod
     def create_from_dict(cls, d, mission):
