@@ -1,14 +1,15 @@
+from typing import Any, Dict
 from dcs.lua.serialize import dumps
 from dcs.translation import String, ResourceKey
 from enum import Enum
 
 
 class Action:
-    def __init__(self, predicate):
+    def __init__(self, predicate: str) -> None:
         self.predicate = predicate
         self.params = []
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         s = []
         for x in self.params:
             if isinstance(x, String):
@@ -17,10 +18,22 @@ class Action:
                 s.append(dumps(x))
         return self.predicate + "(" + ", ".join(s) + ")"
 
-    def dict(self):
+    def dict(self) -> Dict[Any, Any]:
         d = {
-            "predicate": self.predicate
+            "predicate": self.predicate,
         }
+        return d
+
+
+class TextAction(Action):
+    def __init__(self, predicate: str, text: String) -> None:
+        super().__init__(predicate)
+        self.text = text
+
+    def dict(self) -> Dict[Any, Any]:
+        d = super().dict()
+        d["KeyDict_text"] = self.text.id
+        d["text"] = self.text.id
         return d
 
 
@@ -345,22 +358,16 @@ class DecreaseFlag(Action):
         return d
 
 
-class DoScript(Action):
+class DoScript(TextAction):
     predicate = "a_do_script"
 
-    def __init__(self, text: String = String()):
-        super(DoScript, self).__init__(DoScript.predicate)
-        self.text = text
+    def __init__(self, text: String = String()) -> None:
+        super().__init__(DoScript.predicate, text)
         self.params.append(self.text)
 
     @classmethod
-    def create_from_dict(cls, d, mission):
+    def create_from_dict(cls, d: Dict[Any, Any], mission) -> "DoScript":
         return cls(mission.translation.get_string(d["text"]))
-
-    def dict(self):
-        d = super(DoScript, self).dict()
-        d["text"] = self.text.id
-        return d
 
 
 class DoScriptFile(Action):
@@ -382,24 +389,22 @@ class DoScriptFile(Action):
         return d
 
 
-class EndMission(Action):
+class EndMission(TextAction):
     predicate = "a_end_mission"
 
-    def __init__(self, winner="", text=String()):
-        super(EndMission, self).__init__(EndMission.predicate)
+    def __init__(self, winner="", text: String = String()) -> None:
+        super().__init__(EndMission.predicate, text)
         self.winner = winner
         self.params.append(self.winner)
-        self.text = text
         self.params.append(self.text)
 
     @classmethod
-    def create_from_dict(cls, d, mission):
+    def create_from_dict(cls, d: Dict[Any, Any], mission) -> "EndMission":
         return cls(d["winner"], mission.translation.get_string(d["text"]))
 
-    def dict(self):
-        d = super(EndMission, self).dict()
+    def dict(self) -> Dict[Any, Any]:
+        d = super().dict()
         d["winner"] = self.winner
-        d["text"] = self.text.id
         return d
 
 
@@ -676,16 +681,17 @@ class Coalition(Enum):
     Neutral = "neutral"
 
 
-class MarkToAll(Action):
+class MarkToAll(TextAction):
     predicate = "a_mark_to_all"
 
-    def __init__(self, value: int, zone: int, text=String(), comment=String(), meters: int=1000, readonly=True):
-        super(MarkToAll, self).__init__(MarkToAll.predicate)
+    def __init__(self, value: int, zone: int, text: String = String(),
+                 comment: String = String(), meters: int = 1000,
+                 readonly: bool = True) -> None:
+        super().__init__(MarkToAll.predicate, text)
         self.value = value
         self.params.append(self.value)
         self.zone = zone
         self.params.append(self.zone)
-        self.text = text
         self.params.append(self.text)
         self.comment = comment
         self.params.append(self.comment)
@@ -695,27 +701,28 @@ class MarkToAll(Action):
         self.params.append(self.readonly)
 
     @classmethod
-    def create_from_dict(cls, d, mission):
+    def create_from_dict(cls, d: Dict[Any, Any], mission) -> "MarkToAll":
         return cls(d["value"], d["zone"], mission.translation.get_string(d["text"]),
                    mission.translation.get_string(d["comment"]), d["meters"], d["readonly"])
 
-    def dict(self):
-        d = super(MarkToAll, self).dict()
+    def dict(self) -> Dict[Any, Any]:
+        d = super().dict()
         d["value"] = self.value
         d["zone"] = self.zone
-        d["text"] = self.text.id
         d["comment"] = self.comment.id
         d["meters"] = self.meters
         d["readonly"] = self.readonly
         return d
 
 
-class MarkToCoalition(Action):
+class MarkToCoalition(TextAction):
     predicate = "a_mark_to_coalition"
 
-    def __init__(self, value: int, zone: int, coalitionlist: Coalition=Coalition.Blue, text=String(), comment=String(),
-                 meters: int=1000, readonly=True):
-        super(MarkToCoalition, self).__init__(MarkToCoalition.predicate)
+    def __init__(self, value: int, zone: int,
+                 coalitionlist: Coalition = Coalition.Blue,
+                 text: String = String(), comment: String = String(),
+                 meters: int = 1000, readonly: bool = True) -> None:
+        super().__init__(MarkToCoalition.predicate, text)
         self.value = value
         self.params.append(self.value)
         self.zone = zone
@@ -724,7 +731,6 @@ class MarkToCoalition(Action):
             raise TypeError("Unexpected type for coalitionlist")
         self.coalitionlist = coalitionlist.value
         self.params.append(self.coalitionlist)
-        self.text = text
         self.params.append(self.text)
         self.comment = comment
         self.params.append(self.comment)
@@ -734,35 +740,36 @@ class MarkToCoalition(Action):
         self.params.append(self.readonly)
 
     @classmethod
-    def create_from_dict(cls, d, mission):
-        return cls(d["value"], d["zone"], Coalition(d["coalitionlist"]), mission.translation.get_string(d["text"]),
-                   mission.translation.get_string(d["comment"]), d["meters"], d["readonly"])
+    def create_from_dict(cls, d: Dict[Any, Any], mission) -> "MarkToCoalition":
+        return cls(d["value"], d["zone"], Coalition(d["coalitionlist"]),
+                   mission.translation.get_string(d["text"]),
+                   mission.translation.get_string(d["comment"]), d["meters"],
+                   d["readonly"])
 
     def dict(self):
-        d = super(MarkToCoalition, self).dict()
+        d = super().dict()
         d["value"] = self.value
         d["zone"] = self.zone
         d["coalitionlist"] = self.coalitionlist
-        d["text"] = self.text.id
         d["comment"] = self.comment.id
         d["meters"] = self.meters
         d["readonly"] = self.readonly
         return d
 
 
-class MarkToGroup(Action):
+class MarkToGroup(TextAction):
     predicate = "a_mark_to_group"
 
-    def __init__(self, value: int, zone: int, group=0, text=String(), comment=String(),
-                 meters: int = 1000, readonly=True):
-        super(MarkToGroup, self).__init__(MarkToGroup.predicate)
+    def __init__(self, value: int, zone: int, group: int = 0,
+                 text: String = String(), comment: String = String(),
+                 meters: int = 1000, readonly: bool = True) -> None:
+        super(MarkToGroup, self).__init__(MarkToGroup.predicate, text)
         self.value = value
         self.params.append(self.value)
         self.zone = zone
         self.params.append(self.zone)
         self.group = group
         self.params.append(self.group)
-        self.text = text
         self.params.append(self.text)
         self.comment = comment
         self.params.append(self.comment)
@@ -772,28 +779,27 @@ class MarkToGroup(Action):
         self.params.append(self.readonly)
 
     @classmethod
-    def create_from_dict(cls, d, mission):
+    def create_from_dict(cls, d: Dict[Any, Any], mission) -> "MarkToGroup":
         return cls(d["value"], d["zone"], d["group"], mission.translation.get_string(d["text"]),
                    mission.translation.get_string(d["comment"]), d["meters"], d["readonly"])
 
-    def dict(self):
-        d = super(MarkToGroup, self).dict()
+    def dict(self) -> Dict[Any, Any]:
+        d = super().dict()
         d["value"] = self.value
         d["zone"] = self.zone
         d["group"] = self.group
-        d["text"] = self.text.id
         d["comment"] = self.comment.id
         d["meters"] = self.meters
         d["readonly"] = self.readonly
         return d
 
 
-class MessageToAll(Action):
+class MessageToAll(TextAction):
     predicate = "a_out_text_delay"
 
-    def __init__(self, text=String(), seconds=10, clearview=False):
-        super(MessageToAll, self).__init__(MessageToAll.predicate)
-        self.text = text
+    def __init__(self, text: String = String(), seconds: int = 10,
+                 clearview: bool = False) -> None:
+        super().__init__(MessageToAll.predicate, text)
         self.params.append(self.text)
         self.seconds = seconds
         self.params.append(self.seconds)
@@ -801,27 +807,28 @@ class MessageToAll(Action):
         self.params.append(self.clearview)
 
     @classmethod
-    def create_from_dict(cls, d, mission):
-        return cls(mission.translation.get_string(d["text"]), d["seconds"], d["clearview"])
+    def create_from_dict(cls, d: Dict[Any, Any], mission) -> "MessageToAll":
+        return cls(mission.translation.get_string(d["text"]), d["seconds"],
+                   d["clearview"])
 
-    def dict(self):
-        d = super(MessageToAll, self).dict()
-        d["text"] = self.text.id
+    def dict(self) -> Dict[Any, Any]:
+        d = super().dict()
         d["seconds"] = self.seconds
         d["clearview"] = self.clearview
         return d
 
 
-class MessageToCoalition(Action):
+class MessageToCoalition(TextAction):
     predicate = "a_out_text_delay_s"
 
-    def __init__(self, coalitionlist: Coalition=Coalition.Blue, text=String(), seconds=10, clearview=False):
-        super(MessageToCoalition, self).__init__(MessageToCoalition.predicate)
+    def __init__(self, coalitionlist: Coalition = Coalition.Blue,
+                 text: String = String(), seconds: int = 10,
+                 clearview: bool = False) -> None:
+        super().__init__(MessageToCoalition.predicate, text)
         if not isinstance(coalitionlist, Coalition):
             raise TypeError("Unexpected type for coalitionlist")
         self.coalitionlist = coalitionlist.value
         self.params.append(self.coalitionlist)
-        self.text = text
         self.params.append(self.text)
         self.seconds = seconds
         self.params.append(self.seconds)
@@ -829,26 +836,28 @@ class MessageToCoalition(Action):
         self.params.append(self.clearview)
 
     @classmethod
-    def create_from_dict(cls, d, mission):
-        return cls(Coalition(d["coalitionlist"]), mission.translation.get_string(d["text"]), d["seconds"], d["clearview"])
+    def create_from_dict(cls, d: Dict[Any, Any],
+                         mission) -> "MessageToCoalition":
+        return cls(Coalition(d["coalitionlist"]),
+                   mission.translation.get_string(d["text"]), d["seconds"],
+                   d["clearview"])
 
-    def dict(self):
+    def dict(self) -> Dict[Any, Any]:
         d = super(MessageToCoalition, self).dict()
         d["coalitionlist"] = self.coalitionlist
-        d["text"] = self.text.id
         d["seconds"] = self.seconds
         d["clearview"] = self.clearview
         return d
 
 
-class MessageToCountry(Action):
+class MessageToCountry(TextAction):
     predicate = "a_out_text_delay_c"
 
-    def __init__(self, countrylist="", text=String(), seconds=10, clearview=False):
-        super(MessageToCountry, self).__init__(MessageToCountry.predicate)
+    def __init__(self, countrylist: str = "", text: String = String(),
+                 seconds: int = 10, clearview: bool = False) -> None:
+        super().__init__(MessageToCountry.predicate, text)
         self.countrylist = countrylist
         self.params.append(self.countrylist)
-        self.text = text
         self.params.append(self.text)
         self.seconds = seconds
         self.params.append(self.seconds)
@@ -856,26 +865,26 @@ class MessageToCountry(Action):
         self.params.append(self.clearview)
 
     @classmethod
-    def create_from_dict(cls, d, mission):
-        return cls(d["countrylist"], mission.translation.get_string(d["text"]), d["seconds"], d["clearview"])
+    def create_from_dict(cls, d: Dict[Any, Any], mission) -> "MessageToCountry":
+        return cls(d["countrylist"], mission.translation.get_string(d["text"]),
+                   d["seconds"], d["clearview"])
 
-    def dict(self):
+    def dict(self) -> Dict[Any, Any]:
         d = super(MessageToCountry, self).dict()
         d["countrylist"] = self.countrylist
-        d["text"] = self.text.id
         d["seconds"] = self.seconds
         d["clearview"] = self.clearview
         return d
 
 
-class MessageToGroup(Action):
+class MessageToGroup(TextAction):
     predicate = "a_out_text_delay_g"
 
-    def __init__(self, group=0, text=String(), seconds=10, clearview=False):
-        super(MessageToGroup, self).__init__(MessageToGroup.predicate)
+    def __init__(self, group: int = 0, text: String = String(),
+                 seconds: int = 10, clearview: bool = False) -> None:
+        super().__init__(MessageToGroup.predicate, text)
         self.group = group
         self.params.append(self.group)
-        self.text = text
         self.params.append(self.text)
         self.seconds = seconds
         self.params.append(self.seconds)
@@ -883,13 +892,13 @@ class MessageToGroup(Action):
         self.params.append(self.clearview)
 
     @classmethod
-    def create_from_dict(cls, d, mission):
-        return cls(d["group"], mission.translation.get_string(d["text"]), d["seconds"], d["clearview"])
+    def create_from_dict(cls, d: Dict[Any, Any], mission) -> "MessageToGroup":
+        return cls(d["group"], mission.translation.get_string(d["text"]),
+                   d["seconds"], d["clearview"])
 
     def dict(self):
         d = super(MessageToGroup, self).dict()
         d["group"] = self.group
-        d["text"] = self.text.id
         d["seconds"] = self.seconds
         d["clearview"] = self.clearview
         return d
