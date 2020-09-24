@@ -183,22 +183,22 @@ class Infantry:
         id = "soldier_mauser98"
         name = "Infantry Mauser 98"
         detection_range = 0
-        threat_range = 1100
-        air_weapon_dist = 1100
+        threat_range = 500
+        air_weapon_dist = 500
 
     class Infantry_SMLE_No_4_Mk_1(unittype.VehicleType):
         id = "soldier_wwii_br_01"
         name = "Infantry SMLE No.4 Mk-1"
         detection_range = 0
-        threat_range = 1100
-        air_weapon_dist = 1100
+        threat_range = 500
+        air_weapon_dist = 500
 
     class Infantry_M1_Garand(unittype.VehicleType):
         id = "soldier_wwii_us"
         name = "Infantry M1 Garand"
         detection_range = 0
-        threat_range = 1100
-        air_weapon_dist = 1100
+        threat_range = 500
+        air_weapon_dist = 500
 
 
 class AirDefence:

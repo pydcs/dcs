@@ -210,6 +210,17 @@ class CVN_73_George_Washington(unittype.ShipType):
     air_weapon_dist = 15000
 
 
+class CVN_75_Harry_S__Truman(unittype.ShipType):
+    id = "CVN_75"
+    name = "CVN-75 Harry S. Truman"
+    plane_num = 72
+    helicopter_num = 6
+    parking = 4
+    detection_range = 30000
+    threat_range = 15000
+    air_weapon_dist = 15000
+
+
 class USS_Arleigh_Burke_IIa(unittype.ShipType):
     id = "USS_Arleigh_Burke_IIa"
     name = "USS Arleigh Burke IIa"
@@ -344,6 +355,7 @@ ship_map = {
     "CVN_71": CVN_71_Theodore_Roosevelt,
     "CVN_72": CVN_72_Abraham_Lincoln,
     "CVN_73": CVN_73_George_Washington,
+    "CVN_75": CVN_75_Harry_S__Truman,
     "USS_Arleigh_Burke_IIa": USS_Arleigh_Burke_IIa,
     "LHA_Tarawa": LHA_1_Tarawa,
     "Type_052B": Type_052B_Destroyer,

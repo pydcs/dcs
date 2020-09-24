@@ -1867,35 +1867,35 @@ class SA342M(HelicopterType):
     class Liveries:
 
         class Syria(Enum):
-            Syria_Fictional = "Syria Fictional"
+            syria_fictional = "syria fictional"
 
         class Germany(Enum):
-            Germany_Fictional = "Germany Fictional"
+            germany_fictional = "germany fictional"
 
         class Israel(Enum):
-            Israel_Fictional = "Israel Fictional"
+            israel_fictional = "israel fictional"
 
         class Greece(Enum):
-            Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
+            greece_cyprus_fictional_desert = "greece cyprus fictional desert"
 
         class UK(Enum):
-            UK_Fictional = "UK Fictional"
+            uk_fictional = "uk fictional"
 
         class France(Enum):
-            Combat = "Combat"
-            Tiger_Meet = "Tiger Meet"
-            Tiger_Meet_2 = "Tiger Meet 2"
-            Training = "Training"
+            combat = "combat"
+            tiger_meet = "tiger meet"
+            tiger_meet_2 = "tiger meet 2"
+            training = "training"
 
         class Russia(Enum):
-            Russia_Fictional = "Russia Fictional"
+            russia_fictional = "russia fictional"
 
         class Serbia(Enum):
-            Serbia_Fictional = "Serbia Fictional"
-            Yugoslav_Fictional = "Yugoslav Fictional"
+            serbia_fictional = "serbia fictional"
+            yugoslav_fictional = "yugoslav fictional"
 
         class USA(Enum):
-            US_Marines_Fictional = "US Marines Fictional"
+            us_marines_fictional = "us marines fictional"
 
     class Pylon1:
         HOT3_ = (1, Weapons.HOT3_)
@@ -1955,35 +1955,35 @@ class SA342L(HelicopterType):
     class Liveries:
 
         class Syria(Enum):
-            Syria_Fictional = "Syria Fictional"
+            syria_fictional = "syria fictional"
 
         class Germany(Enum):
-            Germany_Fictional = "Germany Fictional"
+            germany_fictional = "germany fictional"
 
         class Israel(Enum):
-            Israel_Fictional = "Israel Fictional"
+            israel_fictional = "israel fictional"
 
         class Greece(Enum):
-            Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
+            greece_cyprus_fictional_desert = "greece cyprus fictional desert"
 
         class UK(Enum):
-            UK_Fictional = "UK Fictional"
+            uk_fictional = "uk fictional"
 
         class France(Enum):
-            Combat = "Combat"
-            Tiger_Meet = "Tiger Meet"
-            Tiger_Meet_2 = "Tiger Meet 2"
-            Training = "Training"
+            combat = "combat"
+            tiger_meet = "tiger meet"
+            tiger_meet_2 = "tiger meet 2"
+            training = "training"
 
         class Russia(Enum):
-            Russia_Fictional = "Russia Fictional"
+            russia_fictional = "russia fictional"
 
         class Serbia(Enum):
-            Serbia_Fictional = "Serbia Fictional"
-            Yugoslav_Fictional = "Yugoslav Fictional"
+            serbia_fictional = "serbia fictional"
+            yugoslav_fictional = "yugoslav fictional"
 
         class USA(Enum):
-            US_Marines_Fictional = "US Marines Fictional"
+            us_marines_fictional = "us marines fictional"
 #ERRR {GIAT_M621G}
 
     class Pylon2:
@@ -2036,35 +2036,35 @@ class SA342Mistral(HelicopterType):
     class Liveries:
 
         class Syria(Enum):
-            Syria_Fictional = "Syria Fictional"
+            syria_fictional = "syria fictional"
 
         class Germany(Enum):
-            Germany_Fictional = "Germany Fictional"
+            germany_fictional = "germany fictional"
 
         class Israel(Enum):
-            Israel_Fictional = "Israel Fictional"
+            israel_fictional = "israel fictional"
 
         class Greece(Enum):
-            Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
+            greece_cyprus_fictional_desert = "greece cyprus fictional desert"
 
         class UK(Enum):
-            UK_Fictional = "UK Fictional"
+            uk_fictional = "uk fictional"
 
         class France(Enum):
-            Combat = "Combat"
-            Tiger_Meet = "Tiger Meet"
-            Tiger_Meet_2 = "Tiger Meet 2"
-            Training = "Training"
+            combat = "combat"
+            tiger_meet = "tiger meet"
+            tiger_meet_2 = "tiger meet 2"
+            training = "training"
 
         class Russia(Enum):
-            Russia_Fictional = "Russia Fictional"
+            russia_fictional = "russia fictional"
 
         class Serbia(Enum):
-            Serbia_Fictional = "Serbia Fictional"
-            Yugoslav_Fictional = "Yugoslav Fictional"
+            serbia_fictional = "serbia fictional"
+            yugoslav_fictional = "yugoslav fictional"
 
         class USA(Enum):
-            US_Marines_Fictional = "US Marines Fictional"
+            us_marines_fictional = "us marines fictional"
 
     class Pylon1:
         Mistral_ = (1, Weapons.Mistral_)
@@ -2124,35 +2124,35 @@ class SA342Minigun(HelicopterType):
     class Liveries:
 
         class Syria(Enum):
-            Syria_Fictional = "Syria Fictional"
+            syria_fictional = "syria fictional"
 
         class Germany(Enum):
-            Germany_Fictional = "Germany Fictional"
+            germany_fictional = "germany fictional"
 
         class Israel(Enum):
-            Israel_Fictional = "Israel Fictional"
+            israel_fictional = "israel fictional"
 
         class Greece(Enum):
-            Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
+            greece_cyprus_fictional_desert = "greece cyprus fictional desert"
 
         class UK(Enum):
-            UK_Fictional = "UK Fictional"
+            uk_fictional = "uk fictional"
 
         class France(Enum):
-            Combat = "Combat"
-            Tiger_Meet = "Tiger Meet"
-            Tiger_Meet_2 = "Tiger Meet 2"
-            Training = "Training"
+            combat = "combat"
+            tiger_meet = "tiger meet"
+            tiger_meet_2 = "tiger meet 2"
+            training = "training"
 
         class Russia(Enum):
-            Russia_Fictional = "Russia Fictional"
+            russia_fictional = "russia fictional"
 
         class Serbia(Enum):
-            Serbia_Fictional = "Serbia Fictional"
-            Yugoslav_Fictional = "Yugoslav Fictional"
+            serbia_fictional = "serbia fictional"
+            yugoslav_fictional = "yugoslav fictional"
 
         class USA(Enum):
-            US_Marines_Fictional = "US Marines Fictional"
+            us_marines_fictional = "us marines fictional"
 #ERRR {MINIGUN}
 
     class Pylon5:

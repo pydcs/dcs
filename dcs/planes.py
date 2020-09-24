@@ -423,7 +423,7 @@ class F_A_18C(PlaneType):
         LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (2, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
         LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (2, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
         GBU_31_V_3_B = (2, Weapons.GBU_31_V_3_B)
-        GBU_31 = (2, Weapons.GBU_31)
+        GBU_31_V_1_B = (2, Weapons.GBU_31_V_1_B)
         GBU_38 = (2, Weapons.GBU_38)
         LAU_117_AGM_65G = (2, Weapons.LAU_117_AGM_65G)
         LAU_115_2_LAU_127_AIM_9M = (2, Weapons.LAU_115_2_LAU_127_AIM_9M)
@@ -441,7 +441,7 @@ class F_A_18C(PlaneType):
         MER_2_MK_82 = (3, Weapons.MER_2_MK_82)
         Fuel_tank_330_gal_ = (3, Weapons.Fuel_tank_330_gal_)
         GBU_31_V_3_B = (3, Weapons.GBU_31_V_3_B)
-        GBU_31 = (3, Weapons.GBU_31)
+        GBU_31_V_1_B = (3, Weapons.GBU_31_V_1_B)
         GBU_38 = (3, Weapons.GBU_38)
         GBU_10 = (3, Weapons.GBU_10)
         GBU_12 = (3, Weapons.GBU_12)
@@ -496,7 +496,7 @@ class F_A_18C(PlaneType):
         MER_2_MK_82 = (7, Weapons.MER_2_MK_82)
         Fuel_tank_330_gal_ = (7, Weapons.Fuel_tank_330_gal_)
         GBU_31_V_3_B = (7, Weapons.GBU_31_V_3_B)
-        GBU_31 = (7, Weapons.GBU_31)
+        GBU_31_V_1_B = (7, Weapons.GBU_31_V_1_B)
         GBU_38 = (7, Weapons.GBU_38)
         GBU_10 = (7, Weapons.GBU_10)
         GBU_12 = (7, Weapons.GBU_12)
@@ -537,7 +537,7 @@ class F_A_18C(PlaneType):
         Mk_84 = (8, Weapons.Mk_84)
         _2_Mk_20_Rockeye = (8, Weapons._2_Mk_20_Rockeye)
         GBU_31_V_3_B = (8, Weapons.GBU_31_V_3_B)
-        GBU_31 = (8, Weapons.GBU_31)
+        GBU_31_V_1_B = (8, Weapons.GBU_31_V_1_B)
         GBU_38 = (8, Weapons.GBU_38)
         LAU_117_AGM_65G = (8, Weapons.LAU_117_AGM_65G)
         Mk_82 = (8, Weapons.Mk_82)
@@ -585,7 +585,125 @@ class F_14A(PlaneType):
 
     class Liveries:
 
+        class Georgia(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Syria(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Finland(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Australia(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Germany(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class SaudiArabia(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Israel(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Croatia(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class CzechRepublic(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Norway(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Romania(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Spain(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Ukraine(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Belgium(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Slovakia(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Greece(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class UK(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Insurgents(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Hungary(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class France(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Abkhazia(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Russia(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Sweden(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Austria(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Switzerland(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Italy(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class SouthOssetia(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class SouthKorea(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Iran(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class China(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Pakistan(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Belarus(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class NorthKorea(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Iraq(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Kazakhstan(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Bulgaria(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Serbia(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class India(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class USAFAggressors(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
         class USA(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
             black_demo_scheme = "black demo scheme"
             vf_1__wolfpack = "vf-1 `wolfpack`"
             vf_111__sundowners___1 = "vf-111 `sundowners`- 1"
@@ -596,6 +714,27 @@ class F_14A(PlaneType):
             vf_41__black_aces = "vf-41 `black aces`"
             vf_84__jolly_rogers = "vf-84 `jolly rogers`"
             vf_xxx__aardvarks = "vf-xxx `aardvarks`"
+
+        class Denmark(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Egypt(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Canada(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class TheNetherlands(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Turkey(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Japan(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
+
+        class Poland(Enum):
+            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
 
     class Pylon1:
         AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
@@ -1175,373 +1314,6 @@ class F_111F(PlaneType):
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.AFAC]
     task_default = task.GroundAttack
-
-
-class A_10A(PlaneType):
-    id = "A-10A"
-    flyable = True
-    height = 4.47
-    width = 17.53
-    length = 16.26
-    fuel_max = 5029
-    max_speed = 840
-    chaff = 240
-    flare = 120
-    charge_total = 480
-    chaff_charge_size = 1
-    flare_charge_size = 2
-    radio_frequency = 124
-
-    callnames = {
-        "USA": [
-            "Hawg",
-            "Boar",
-            "Pig",
-            "Tusk",
-        ]
-    }
-
-    class Liveries:
-
-        class Georgia(Enum):
-            Fictional_Georgian_Grey = "Fictional Georgian Grey"
-            Fictional_Georgian_Olive = "Fictional Georgian Olive"
-
-        class Australia(Enum):
-            Australia_Notional_RAAF = "Australia Notional RAAF"
-
-        class Germany(Enum):
-            Fictional_German_3322 = "Fictional German 3322"
-            Fictional_German_3323 = "Fictional German 3323"
-
-        class Israel(Enum):
-            Fictional_Israel_115_Sqn_Flying_Dragon = "Fictional Israel 115 Sqn Flying Dragon"
-
-        class Norway(Enum):
-            Fictional_Royal_Norwegian_Air_Force = "Fictional Royal Norwegian Air Force"
-
-        class Spain(Enum):
-            Fictional_Spanish_12nd_Wing = "Fictional Spanish 12nd Wing"
-            Fictional_Spanish_AGA = "Fictional Spanish AGA"
-            Fictional_Spanish_Tritonal = "Fictional Spanish Tritonal"
-
-        class Ukraine(Enum):
-            Fictional_Ukraine_Air_Force_1 = "Fictional Ukraine Air Force 1"
-
-        class Belgium(Enum):
-            A_10_Grey = "A-10 Grey"
-
-        class Greece(Enum):
-            HAF_Fictional = "HAF Fictional"
-
-        class UK(Enum):
-            A_10_Grey = "A-10 Grey"
-
-        class France(Enum):
-            Fictional_France_Escadron_de_Chasse_03_003_ARDENNES = "Fictional France Escadron de Chasse 03.003 ARDENNES"
-
-        class Russia(Enum):
-            Fictional_Russian_Air_Force_1 = "Fictional Russian Air Force 1"
-            Fictional_Russian_Air_Force_2 = "Fictional Russian Air Force 2"
-
-        class Italy(Enum):
-            Fictional_Italian_AM__23Gruppo = "Fictional Italian AM (23Gruppo)"
-
-        class USA(Enum):
-            _104th_FS_Maryland_ANG__Baltimore__MD = "104th FS Maryland ANG, Baltimore (MD)"
-            _118th_FS_Bradley_ANGB__Connecticut__CT = "118th FS Bradley ANGB, Connecticut (CT)"
-            _118th_FS_Bradley_ANGB__Connecticut__CT__N621 = "118th FS Bradley ANGB, Connecticut (CT) N621"
-            _172nd_FS_Battle_Creek_ANGB__Michigan__BC = "172nd FS Battle Creek ANGB, Michigan (BC)"
-            _184th_FS_Arkansas_ANG__Fort_Smith__FS = "184th FS Arkansas ANG, Fort Smith (FS)"
-            _190th_FS_Boise_ANGB__Idaho__ID = "190th FS Boise ANGB, Idaho (ID)"
-            _23rd_TFW_England_AFB__EL = "23rd TFW England AFB (EL)"
-            _25th_FS_Osan_AB__Korea__OS = "25th FS Osan AB, Korea (OS)"
-            _354th_FS_Davis_Monthan_AFB__Arizona__DM = "354th FS Davis Monthan AFB, Arizona (DM)"
-            _355th_FS_Eielson_AFB__Alaska__AK = "355th FS Eielson AFB, Alaska (AK)"
-            _357th_FS_Davis_Monthan_AFB__Arizona__DM = "357th FS Davis Monthan AFB, Arizona (DM)"
-            _358th_FS_Davis_Monthan_AFB__Arizona__DM = "358th FS Davis Monthan AFB, Arizona (DM)"
-            _422nd_TES_Nellis_AFB__Nevada__OT = "422nd TES Nellis AFB, Nevada (OT)"
-            _47th_FS_Barksdale_AFB__Louisiana__BD = "47th FS Barksdale AFB, Louisiana (BD)"
-            _66th_WS_Nellis_AFB__Nevada__WA = "66th WS Nellis AFB, Nevada (WA)"
-            _74th_FS_Moody_AFB__Georgia__FT = "74th FS Moody AFB, Georgia (FT)"
-            _81st_FS_Spangdahlem_AB__Germany__SP__1 = "81st FS Spangdahlem AB, Germany (SP) 1"
-            _81st_FS_Spangdahlem_AB__Germany__SP__2 = "81st FS Spangdahlem AB, Germany (SP) 2"
-
-        class Denmark(Enum):
-            A_10_Grey = "A-10 Grey"
-
-        class Canada(Enum):
-            Fictional_Canadian_Air_Force_Pixel_Camo = "Fictional Canadian Air Force Pixel Camo"
-            Canada_RCAF_409_Squadron = "Canada RCAF 409 Squadron"
-            Canada_RCAF_442_Snow_Scheme = "Canada RCAF 442 Snow Scheme"
-
-        class TheNetherlands(Enum):
-            A_10_Grey = "A-10 Grey"
-
-        class Turkey(Enum):
-            A_10_Grey = "A-10 Grey"
-
-    class Pylon1:
-        LAU_105_2_AIM_9L = (1, Weapons.LAU_105_2_AIM_9L)
-        LAU_105_1_AIM_9L_L = (1, Weapons.LAU_105_1_AIM_9L_L)
-        LAU_105_2_AIM_9P5 = (1, Weapons.LAU_105_2_AIM_9P5)
-        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
-        LAU_105_1_AIM_9M_L = (1, Weapons.LAU_105_1_AIM_9M_L)
-        LAU_105___2_AIM_9P_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9P_Sidewinder_IR_AAM)
-        ALQ_131 = (1, Weapons.ALQ_131)
-        ALQ_184 = (1, Weapons.ALQ_184)
-        Smokewinder___red = (1, Weapons.Smokewinder___red)
-        Smokewinder___green = (1, Weapons.Smokewinder___green)
-        Smokewinder___blue = (1, Weapons.Smokewinder___blue)
-        Smokewinder___white = (1, Weapons.Smokewinder___white)
-        Smokewinder___yellow = (1, Weapons.Smokewinder___yellow)
-        Smokewinder___orange = (1, Weapons.Smokewinder___orange)
-        Mk_82AIR = (1, Weapons.Mk_82AIR)
-        CBU_87 = (1, Weapons.CBU_87)
-        BDU_50LD = (1, Weapons.BDU_50LD)
-        BDU_50HD = (1, Weapons.BDU_50HD)
-        CBU_97 = (1, Weapons.CBU_97)
-        Mk_82 = (1, Weapons.Mk_82)
-        LAU_105_AIS_ASQ_T50_L = (1, Weapons.LAU_105_AIS_ASQ_T50_L)
-
-    class Pylon2:
-        Mk_82 = (2, Weapons.Mk_82)
-        SUU_25___8_LUU_2 = (2, Weapons.SUU_25___8_LUU_2)
-        Mk_82AIR = (2, Weapons.Mk_82AIR)
-        CBU_87 = (2, Weapons.CBU_87)
-        BDU_50LD = (2, Weapons.BDU_50LD)
-        BDU_50HD = (2, Weapons.BDU_50HD)
-        LAU_68___7_2_75__rockets_MK1__Practice_ = (2, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
-        LAU_68___7_2_75__rockets_MK5__HE_ = (2, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
-        LAU_68___7_2_75__rockets_MK61__Practice_ = (2, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
-        LAU_68___7_2_75__rockets_M151__HE_ = (2, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
-        LAU_68___7_2_75__rockets_M156_WP_ = (2, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
-        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (2, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (2, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (2, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
-        LAU_131___7_2_75__rockets_Mk1__Practice_ = (2, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
-        LAU_131___7_2_75__rockets_MK5__HE_ = (2, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
-        LAU_131___7_2_75__rockets_MK61__Practice_ = (2, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
-        LAU_131___7_2_75__rockets_M151__HE_ = (2, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
-        LAU_131___7_2_75__rockets_M156__WP_ = (2, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
-        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (2, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
-        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (2, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (2, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
-        CBU_97 = (2, Weapons.CBU_97)
-
-    class Pylon3:
-        LAU_117_AGM_65K = (3, Weapons.LAU_117_AGM_65K)
-        LAU_117_AGM_65D = (3, Weapons.LAU_117_AGM_65D)
-        LAU_117_AGM_65G = (3, Weapons.LAU_117_AGM_65G)
-        LAU_117_AGM_65H = (3, Weapons.LAU_117_AGM_65H)
-        LAU_88_AGM_65D_2 = (3, Weapons.LAU_88_AGM_65D_2)
-        LAU_88_AGM_65H_2_L = (3, Weapons.LAU_88_AGM_65H_2_L)
-        LAU_88_AGM_65D_3 = (3, Weapons.LAU_88_AGM_65D_3)
-        LAU_88_AGM_65H_3 = (3, Weapons.LAU_88_AGM_65H_3)
-        Mk_84 = (3, Weapons.Mk_84)
-        Mk_82 = (3, Weapons.Mk_82)
-        Mk_82AIR = (3, Weapons.Mk_82AIR)
-        CBU_87 = (3, Weapons.CBU_87)
-        BDU_50LD = (3, Weapons.BDU_50LD)
-        BDU_50HD = (3, Weapons.BDU_50HD)
-        BRU_42_3_BDU_33 = (3, Weapons.BRU_42_3_BDU_33)
-        _3_Mk_82 = (3, Weapons._3_Mk_82)
-        _3_Mk_82AIR = (3, Weapons._3_Mk_82AIR)
-        LAU_68___7_2_75__rockets_MK1__Practice_ = (3, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
-        LAU_68___7_2_75__rockets_MK5__HE_ = (3, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
-        LAU_68___7_2_75__rockets_MK61__Practice_ = (3, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
-        LAU_68___7_2_75__rockets_M151__HE_ = (3, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
-        LAU_68___7_2_75__rockets_M156_WP_ = (3, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
-        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (3, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (3, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (3, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
-        LAU_131___7_2_75__rockets_Mk1__Practice_ = (3, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
-        LAU_131___7_2_75__rockets_MK5__HE_ = (3, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
-        LAU_131___7_2_75__rockets_MK61__Practice_ = (3, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
-        LAU_131___7_2_75__rockets_M151__HE_ = (3, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
-        LAU_131___7_2_75__rockets_M156__WP_ = (3, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
-        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (3, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
-        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (3, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (3, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
-        CBU_97 = (3, Weapons.CBU_97)
-
-    class Pylon4:
-        Mk_82 = (4, Weapons.Mk_82)
-        Mk_84 = (4, Weapons.Mk_84)
-        Mk_82AIR = (4, Weapons.Mk_82AIR)
-        CBU_87 = (4, Weapons.CBU_87)
-        BDU_50LD = (4, Weapons.BDU_50LD)
-        BDU_50HD = (4, Weapons.BDU_50HD)
-        BRU_42_3_BDU_33 = (4, Weapons.BRU_42_3_BDU_33)
-        _3_Mk_82 = (4, Weapons._3_Mk_82)
-        _3_Mk_82AIR = (4, Weapons._3_Mk_82AIR)
-        LAU_68___7_2_75__rockets_MK1__Practice_ = (4, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
-        LAU_68___7_2_75__rockets_MK5__HE_ = (4, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
-        LAU_68___7_2_75__rockets_MK61__Practice_ = (4, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
-        LAU_68___7_2_75__rockets_M151__HE_ = (4, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
-        LAU_68___7_2_75__rockets_M156_WP_ = (4, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
-        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (4, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (4, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (4, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
-        LAU_131___7_2_75__rockets_Mk1__Practice_ = (4, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
-        LAU_131___7_2_75__rockets_MK5__HE_ = (4, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
-        LAU_131___7_2_75__rockets_MK61__Practice_ = (4, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
-        LAU_131___7_2_75__rockets_M151__HE_ = (4, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
-        LAU_131___7_2_75__rockets_M156__WP_ = (4, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
-        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (4, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
-        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (4, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (4, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
-        Fuel_Tank_FT600 = (4, Weapons.Fuel_Tank_FT600)
-        CBU_97 = (4, Weapons.CBU_97)
-
-    class Pylon5:
-        Mk_82 = (5, Weapons.Mk_82)
-        Mk_84 = (5, Weapons.Mk_84)
-        Mk_82AIR = (5, Weapons.Mk_82AIR)
-        CBU_87 = (5, Weapons.CBU_87)
-        BDU_50LD = (5, Weapons.BDU_50LD)
-        BDU_50HD = (5, Weapons.BDU_50HD)
-        BRU_42_3_BDU_33 = (5, Weapons.BRU_42_3_BDU_33)
-        CBU_97 = (5, Weapons.CBU_97)
-
-    class Pylon6:
-        Mk_82 = (6, Weapons.Mk_82)
-        Mk_84 = (6, Weapons.Mk_84)
-        Mk_82AIR = (6, Weapons.Mk_82AIR)
-        CBU_87 = (6, Weapons.CBU_87)
-        BDU_50LD = (6, Weapons.BDU_50LD)
-        BDU_50HD = (6, Weapons.BDU_50HD)
-        BRU_42_3_BDU_33 = (6, Weapons.BRU_42_3_BDU_33)
-        Fuel_Tank_FT600 = (6, Weapons.Fuel_Tank_FT600)
-        CBU_97 = (6, Weapons.CBU_97)
-
-    class Pylon7:
-        Mk_82 = (7, Weapons.Mk_82)
-        Mk_84 = (7, Weapons.Mk_84)
-        Mk_82AIR = (7, Weapons.Mk_82AIR)
-        CBU_87 = (7, Weapons.CBU_87)
-        BDU_50LD = (7, Weapons.BDU_50LD)
-        BDU_50HD = (7, Weapons.BDU_50HD)
-        BRU_42_3_BDU_33 = (7, Weapons.BRU_42_3_BDU_33)
-        CBU_97 = (7, Weapons.CBU_97)
-
-    class Pylon8:
-        Mk_82 = (8, Weapons.Mk_82)
-        Mk_84 = (8, Weapons.Mk_84)
-        Mk_82AIR = (8, Weapons.Mk_82AIR)
-        CBU_87 = (8, Weapons.CBU_87)
-        BDU_50LD = (8, Weapons.BDU_50LD)
-        BDU_50HD = (8, Weapons.BDU_50HD)
-        BRU_42_3_BDU_33 = (8, Weapons.BRU_42_3_BDU_33)
-        _3_Mk_82 = (8, Weapons._3_Mk_82)
-        _3_Mk_82AIR = (8, Weapons._3_Mk_82AIR)
-        LAU_68___7_2_75__rockets_MK1__Practice_ = (8, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
-        LAU_68___7_2_75__rockets_MK5__HE_ = (8, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
-        LAU_68___7_2_75__rockets_MK61__Practice_ = (8, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
-        LAU_68___7_2_75__rockets_M151__HE_ = (8, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
-        LAU_68___7_2_75__rockets_M156_WP_ = (8, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
-        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (8, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (8, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (8, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
-        LAU_131___7_2_75__rockets_Mk1__Practice_ = (8, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
-        LAU_131___7_2_75__rockets_MK5__HE_ = (8, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
-        LAU_131___7_2_75__rockets_MK61__Practice_ = (8, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
-        LAU_131___7_2_75__rockets_M151__HE_ = (8, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
-        LAU_131___7_2_75__rockets_M156__WP_ = (8, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
-        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (8, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
-        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (8, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (8, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
-        Fuel_Tank_FT600 = (8, Weapons.Fuel_Tank_FT600)
-        CBU_97 = (8, Weapons.CBU_97)
-
-    class Pylon9:
-        LAU_117_AGM_65K = (9, Weapons.LAU_117_AGM_65K)
-        LAU_117_AGM_65D = (9, Weapons.LAU_117_AGM_65D)
-        LAU_117_AGM_65G = (9, Weapons.LAU_117_AGM_65G)
-        LAU_117_AGM_65H = (9, Weapons.LAU_117_AGM_65H)
-        LAU_88_AGM_65D_2_ = (9, Weapons.LAU_88_AGM_65D_2_)
-        LAU_88_AGM_65H_2_R = (9, Weapons.LAU_88_AGM_65H_2_R)
-        LAU_88_AGM_65D_3 = (9, Weapons.LAU_88_AGM_65D_3)
-        LAU_88_AGM_65H_3 = (9, Weapons.LAU_88_AGM_65H_3)
-        Mk_84 = (9, Weapons.Mk_84)
-        Mk_82 = (9, Weapons.Mk_82)
-        Mk_82AIR = (9, Weapons.Mk_82AIR)
-        CBU_87 = (9, Weapons.CBU_87)
-        BDU_50LD = (9, Weapons.BDU_50LD)
-        BDU_50HD = (9, Weapons.BDU_50HD)
-        BRU_42_3_BDU_33 = (9, Weapons.BRU_42_3_BDU_33)
-        _3_Mk_82 = (9, Weapons._3_Mk_82)
-        _3_Mk_82AIR = (9, Weapons._3_Mk_82AIR)
-        LAU_68___7_2_75__rockets_MK1__Practice_ = (9, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
-        LAU_68___7_2_75__rockets_MK5__HE_ = (9, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
-        LAU_68___7_2_75__rockets_MK61__Practice_ = (9, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
-        LAU_68___7_2_75__rockets_M151__HE_ = (9, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
-        LAU_68___7_2_75__rockets_M156_WP_ = (9, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
-        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (9, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (9, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (9, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
-        LAU_131___7_2_75__rockets_Mk1__Practice_ = (9, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
-        LAU_131___7_2_75__rockets_MK5__HE_ = (9, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
-        LAU_131___7_2_75__rockets_MK61__Practice_ = (9, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
-        LAU_131___7_2_75__rockets_M151__HE_ = (9, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
-        LAU_131___7_2_75__rockets_M156__WP_ = (9, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
-        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (9, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
-        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (9, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (9, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
-        CBU_97 = (9, Weapons.CBU_97)
-
-    class Pylon10:
-        Mk_82 = (10, Weapons.Mk_82)
-        SUU_25___8_LUU_2 = (10, Weapons.SUU_25___8_LUU_2)
-        Mk_82AIR = (10, Weapons.Mk_82AIR)
-        CBU_87 = (10, Weapons.CBU_87)
-        BDU_50LD = (10, Weapons.BDU_50LD)
-        BDU_50HD = (10, Weapons.BDU_50HD)
-        LAU_68___7_2_75__rockets_MK1__Practice_ = (10, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
-        LAU_68___7_2_75__rockets_MK5__HE_ = (10, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
-        LAU_68___7_2_75__rockets_MK61__Practice_ = (10, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
-        LAU_68___7_2_75__rockets_M151__HE_ = (10, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
-        LAU_68___7_2_75__rockets_M156_WP_ = (10, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
-        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (10, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (10, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (10, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
-        LAU_131___7_2_75__rockets_Mk1__Practice_ = (10, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
-        LAU_131___7_2_75__rockets_MK5__HE_ = (10, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
-        LAU_131___7_2_75__rockets_MK61__Practice_ = (10, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
-        LAU_131___7_2_75__rockets_M151__HE_ = (10, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
-        LAU_131___7_2_75__rockets_M156__WP_ = (10, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
-        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (10, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
-        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (10, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (10, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
-        CBU_97 = (10, Weapons.CBU_97)
-
-    class Pylon11:
-        LAU_105_2_AIM_9L = (11, Weapons.LAU_105_2_AIM_9L)
-        LAU_105_1_AIM_9L_R = (11, Weapons.LAU_105_1_AIM_9L_R)
-        LAU_105_2_AIM_9P5 = (11, Weapons.LAU_105_2_AIM_9P5)
-        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (11, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
-        LAU_105_1_AIM_9M_R = (11, Weapons.LAU_105_1_AIM_9M_R)
-        LAU_105___2_AIM_9P_Sidewinder_IR_AAM = (11, Weapons.LAU_105___2_AIM_9P_Sidewinder_IR_AAM)
-        ALQ_131 = (11, Weapons.ALQ_131)
-        ALQ_184 = (11, Weapons.ALQ_184)
-        Smokewinder___red = (11, Weapons.Smokewinder___red)
-        Smokewinder___green = (11, Weapons.Smokewinder___green)
-        Smokewinder___blue = (11, Weapons.Smokewinder___blue)
-        Smokewinder___white = (11, Weapons.Smokewinder___white)
-        Smokewinder___yellow = (11, Weapons.Smokewinder___yellow)
-        Smokewinder___orange = (11, Weapons.Smokewinder___orange)
-        Mk_82AIR = (11, Weapons.Mk_82AIR)
-        CBU_87 = (11, Weapons.CBU_87)
-        BDU_50LD = (11, Weapons.BDU_50LD)
-        BDU_50HD = (11, Weapons.BDU_50HD)
-        CBU_97 = (11, Weapons.CBU_97)
-        Mk_82 = (11, Weapons.Mk_82)
-        LAU_105_AIS_ASQ_T50_R = (11, Weapons.LAU_105_AIS_ASQ_T50_R)
-
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
-
-    tasks = [task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
-    task_default = task.CAS
 
 
 class Su_27(PlaneType):
@@ -4316,7 +4088,7 @@ class F_15E(PlaneType):
         GBU_10 = (2, Weapons.GBU_10)
         GBU_12 = (2, Weapons.GBU_12)
         GBU_27 = (2, Weapons.GBU_27)
-        GBU_31 = (2, Weapons.GBU_31)
+        GBU_31_V_1_B = (2, Weapons.GBU_31_V_1_B)
         GBU_38 = (2, Weapons.GBU_38)
         SUU_25___8_LUU_2 = (2, Weapons.SUU_25___8_LUU_2)
         CBU_87 = (2, Weapons.CBU_87)
@@ -4379,7 +4151,7 @@ class F_15E(PlaneType):
         GBU_10 = (7, Weapons.GBU_10)
         GBU_12 = (7, Weapons.GBU_12)
         GBU_27 = (7, Weapons.GBU_27)
-        GBU_31 = (7, Weapons.GBU_31)
+        GBU_31_V_1_B = (7, Weapons.GBU_31_V_1_B)
         GBU_38 = (7, Weapons.GBU_38)
         SUU_25___8_LUU_2 = (7, Weapons.SUU_25___8_LUU_2)
         CBU_87 = (7, Weapons.CBU_87)
@@ -4406,7 +4178,7 @@ class F_15E(PlaneType):
         GBU_10 = (9, Weapons.GBU_10)
         GBU_12 = (9, Weapons.GBU_12)
         GBU_27 = (9, Weapons.GBU_27)
-        GBU_31 = (9, Weapons.GBU_31)
+        GBU_31_V_1_B = (9, Weapons.GBU_31_V_1_B)
         GBU_38 = (9, Weapons.GBU_38)
         SUU_25___8_LUU_2 = (9, Weapons.SUU_25___8_LUU_2)
         CBU_87 = (9, Weapons.CBU_87)
@@ -4421,7 +4193,7 @@ class F_15E(PlaneType):
         GBU_10 = (10, Weapons.GBU_10)
         GBU_12 = (10, Weapons.GBU_12)
         GBU_27 = (10, Weapons.GBU_27)
-        GBU_31 = (10, Weapons.GBU_31)
+        GBU_31_V_1_B = (10, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (10, Weapons.GBU_31_V_3_B)
         GBU_38 = (10, Weapons.GBU_38)
         SUU_25___8_LUU_2 = (10, Weapons.SUU_25___8_LUU_2)
@@ -4438,7 +4210,7 @@ class F_15E(PlaneType):
         GBU_10 = (11, Weapons.GBU_10)
         GBU_12 = (11, Weapons.GBU_12)
         GBU_27 = (11, Weapons.GBU_27)
-        GBU_31 = (11, Weapons.GBU_31)
+        GBU_31_V_1_B = (11, Weapons.GBU_31_V_1_B)
         GBU_38 = (11, Weapons.GBU_38)
         SUU_25___8_LUU_2 = (11, Weapons.SUU_25___8_LUU_2)
         CBU_87 = (11, Weapons.CBU_87)
@@ -4465,7 +4237,7 @@ class F_15E(PlaneType):
         GBU_10 = (13, Weapons.GBU_10)
         GBU_12 = (13, Weapons.GBU_12)
         GBU_27 = (13, Weapons.GBU_27)
-        GBU_31 = (13, Weapons.GBU_31)
+        GBU_31_V_1_B = (13, Weapons.GBU_31_V_1_B)
         GBU_38 = (13, Weapons.GBU_38)
         SUU_25___8_LUU_2 = (13, Weapons.SUU_25___8_LUU_2)
         CBU_87 = (13, Weapons.CBU_87)
@@ -4523,7 +4295,7 @@ class F_15E(PlaneType):
         GBU_10 = (18, Weapons.GBU_10)
         GBU_12 = (18, Weapons.GBU_12)
         GBU_27 = (18, Weapons.GBU_27)
-        GBU_31 = (18, Weapons.GBU_31)
+        GBU_31_V_1_B = (18, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (18, Weapons.GBU_31_V_3_B)
         GBU_38 = (18, Weapons.GBU_38)
         SUU_25___8_LUU_2 = (18, Weapons.SUU_25___8_LUU_2)
@@ -6105,7 +5877,7 @@ class F_16C_bl_50(PlaneType):
         Mk_82AIR = (3, Weapons.Mk_82AIR)
         _3_Mk_82AIR = (3, Weapons._3_Mk_82AIR)
         GBU_38 = (3, Weapons.GBU_38)
-        GBU_31 = (3, Weapons.GBU_31)
+        GBU_31_V_1_B = (3, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (3, Weapons.GBU_31_V_3_B)
         CBU_87 = (3, Weapons.CBU_87)
         CBU_97 = (3, Weapons.CBU_97)
@@ -6134,7 +5906,7 @@ class F_16C_bl_50(PlaneType):
         Mk_82AIR = (4, Weapons.Mk_82AIR)
         _3_Mk_82AIR = (4, Weapons._3_Mk_82AIR)
         GBU_38 = (4, Weapons.GBU_38)
-        GBU_31 = (4, Weapons.GBU_31)
+        GBU_31_V_1_B = (4, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (4, Weapons.GBU_31_V_3_B)
         CBU_87 = (4, Weapons.CBU_87)
         CBU_97 = (4, Weapons.CBU_97)
@@ -6164,7 +5936,7 @@ class F_16C_bl_50(PlaneType):
         Mk_82AIR = (7, Weapons.Mk_82AIR)
         _3_Mk_82AIR = (7, Weapons._3_Mk_82AIR)
         GBU_38 = (7, Weapons.GBU_38)
-        GBU_31 = (7, Weapons.GBU_31)
+        GBU_31_V_1_B = (7, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (7, Weapons.GBU_31_V_3_B)
         CBU_87 = (7, Weapons.CBU_87)
         CBU_97 = (7, Weapons.CBU_97)
@@ -6193,7 +5965,7 @@ class F_16C_bl_50(PlaneType):
         Mk_82AIR = (8, Weapons.Mk_82AIR)
         _3_Mk_82AIR = (8, Weapons._3_Mk_82AIR)
         GBU_38 = (8, Weapons.GBU_38)
-        GBU_31 = (8, Weapons.GBU_31)
+        GBU_31_V_1_B = (8, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (8, Weapons.GBU_31_V_3_B)
         CBU_87 = (8, Weapons.CBU_87)
         CBU_97 = (8, Weapons.CBU_97)
@@ -6305,7 +6077,7 @@ class F_16C_bl_52d(PlaneType):
         Mk_82AIR = (3, Weapons.Mk_82AIR)
         _3_Mk_82AIR = (3, Weapons._3_Mk_82AIR)
         GBU_38 = (3, Weapons.GBU_38)
-        GBU_31 = (3, Weapons.GBU_31)
+        GBU_31_V_1_B = (3, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (3, Weapons.GBU_31_V_3_B)
         CBU_87 = (3, Weapons.CBU_87)
         CBU_97 = (3, Weapons.CBU_97)
@@ -6337,7 +6109,7 @@ class F_16C_bl_52d(PlaneType):
         Mk_82AIR = (4, Weapons.Mk_82AIR)
         _3_Mk_82AIR = (4, Weapons._3_Mk_82AIR)
         GBU_38 = (4, Weapons.GBU_38)
-        GBU_31 = (4, Weapons.GBU_31)
+        GBU_31_V_1_B = (4, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (4, Weapons.GBU_31_V_3_B)
         CBU_87 = (4, Weapons.CBU_87)
         CBU_97 = (4, Weapons.CBU_97)
@@ -6371,7 +6143,7 @@ class F_16C_bl_52d(PlaneType):
         Mk_82AIR = (7, Weapons.Mk_82AIR)
         _3_Mk_82AIR = (7, Weapons._3_Mk_82AIR)
         GBU_38 = (7, Weapons.GBU_38)
-        GBU_31 = (7, Weapons.GBU_31)
+        GBU_31_V_1_B = (7, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (7, Weapons.GBU_31_V_3_B)
         CBU_87 = (7, Weapons.CBU_87)
         CBU_97 = (7, Weapons.CBU_97)
@@ -6400,7 +6172,7 @@ class F_16C_bl_52d(PlaneType):
         Mk_82AIR = (8, Weapons.Mk_82AIR)
         _3_Mk_82AIR = (8, Weapons._3_Mk_82AIR)
         GBU_38 = (8, Weapons.GBU_38)
-        GBU_31 = (8, Weapons.GBU_31)
+        GBU_31_V_1_B = (8, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (8, Weapons.GBU_31_V_3_B)
         CBU_87 = (8, Weapons.CBU_87)
         CBU_97 = (8, Weapons.CBU_97)
@@ -6765,7 +6537,7 @@ class F_16A_MLU(PlaneType):
         Mk_82AIR = (3, Weapons.Mk_82AIR)
         _3_Mk_82AIR = (3, Weapons._3_Mk_82AIR)
         GBU_38 = (3, Weapons.GBU_38)
-        GBU_31 = (3, Weapons.GBU_31)
+        GBU_31_V_1_B = (3, Weapons.GBU_31_V_1_B)
         _2xGBU_12 = (3, Weapons._2xGBU_12)
         AGM_154C = (3, Weapons.AGM_154C)
         AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
@@ -6788,7 +6560,7 @@ class F_16A_MLU(PlaneType):
         Mk_82AIR = (4, Weapons.Mk_82AIR)
         _3_Mk_82AIR = (4, Weapons._3_Mk_82AIR)
         GBU_38 = (4, Weapons.GBU_38)
-        GBU_31 = (4, Weapons.GBU_31)
+        GBU_31_V_1_B = (4, Weapons.GBU_31_V_1_B)
 
     class Pylon5:
         Lantirn_F_16 = (5, Weapons.Lantirn_F_16)
@@ -6813,7 +6585,7 @@ class F_16A_MLU(PlaneType):
         Mk_82AIR = (7, Weapons.Mk_82AIR)
         _3_Mk_82AIR = (7, Weapons._3_Mk_82AIR)
         GBU_38 = (7, Weapons.GBU_38)
-        GBU_31 = (7, Weapons.GBU_31)
+        GBU_31_V_1_B = (7, Weapons.GBU_31_V_1_B)
 
     class Pylon8:
         AIM_120B = (8, Weapons.AIM_120B)
@@ -6835,7 +6607,7 @@ class F_16A_MLU(PlaneType):
         Mk_82AIR = (8, Weapons.Mk_82AIR)
         _3_Mk_82AIR = (8, Weapons._3_Mk_82AIR)
         GBU_38 = (8, Weapons.GBU_38)
-        GBU_31 = (8, Weapons.GBU_31)
+        GBU_31_V_1_B = (8, Weapons.GBU_31_V_1_B)
         _2xGBU_12_ = (8, Weapons._2xGBU_12_)
         AGM_154C = (8, Weapons.AGM_154C)
         AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
@@ -6921,558 +6693,6 @@ class Yak_40(PlaneType):
 
     tasks = [task.Transport]
     task_default = task.Transport
-
-
-class A_10C(PlaneType):
-    id = "A-10C"
-    flyable = True
-    height = 4.47
-    width = 17.53
-    length = 16.26
-    fuel_max = 5029
-    max_speed = 840
-    chaff = 240
-    flare = 120
-    charge_total = 480
-    chaff_charge_size = 1
-    flare_charge_size = 2
-    eplrs = True
-
-    callnames = {
-        "USA": [
-            "Hawg",
-            "Boar",
-            "Pig",
-            "Tusk",
-        ]
-    }
-
-    class Liveries:
-
-        class Georgia(Enum):
-            Fictional_Georgian_Grey = "Fictional Georgian Grey"
-            Fictional_Georgian_Olive = "Fictional Georgian Olive"
-
-        class Australia(Enum):
-            Australia_Notional_RAAF = "Australia Notional RAAF"
-
-        class Germany(Enum):
-            Fictional_German_3322 = "Fictional German 3322"
-            Fictional_German_3323 = "Fictional German 3323"
-
-        class Israel(Enum):
-            Fictional_Israel_115_Sqn_Flying_Dragon = "Fictional Israel 115 Sqn Flying Dragon"
-
-        class Norway(Enum):
-            Fictional_Royal_Norwegian_Air_Force = "Fictional Royal Norwegian Air Force"
-
-        class Spain(Enum):
-            Fictional_Spanish_12nd_Wing = "Fictional Spanish 12nd Wing"
-            Fictional_Spanish_AGA = "Fictional Spanish AGA"
-            Fictional_Spanish_Tritonal = "Fictional Spanish Tritonal"
-
-        class Ukraine(Enum):
-            Fictional_Ukraine_Air_Force_1 = "Fictional Ukraine Air Force 1"
-
-        class Belgium(Enum):
-            A_10_Grey = "A-10 Grey"
-
-        class Greece(Enum):
-            HAF_Fictional = "HAF Fictional"
-
-        class UK(Enum):
-            A_10_Grey = "A-10 Grey"
-
-        class France(Enum):
-            Fictional_France_Escadron_de_Chasse_03_003_ARDENNES = "Fictional France Escadron de Chasse 03.003 ARDENNES"
-
-        class Russia(Enum):
-            Fictional_Russian_Air_Force_1 = "Fictional Russian Air Force 1"
-            Fictional_Russian_Air_Force_2 = "Fictional Russian Air Force 2"
-
-        class Italy(Enum):
-            Fictional_Italian_AM__23Gruppo = "Fictional Italian AM (23Gruppo)"
-
-        class USA(Enum):
-            _104th_FS_Maryland_ANG__Baltimore__MD = "104th FS Maryland ANG, Baltimore (MD)"
-            _118th_FS_Bradley_ANGB__Connecticut__CT = "118th FS Bradley ANGB, Connecticut (CT)"
-            _118th_FS_Bradley_ANGB__Connecticut__CT__N621 = "118th FS Bradley ANGB, Connecticut (CT) N621"
-            _172nd_FS_Battle_Creek_ANGB__Michigan__BC = "172nd FS Battle Creek ANGB, Michigan (BC)"
-            _184th_FS_Arkansas_ANG__Fort_Smith__FS = "184th FS Arkansas ANG, Fort Smith (FS)"
-            _190th_FS_Boise_ANGB__Idaho__ID = "190th FS Boise ANGB, Idaho (ID)"
-            _23rd_TFW_England_AFB__EL = "23rd TFW England AFB (EL)"
-            _25th_FS_Osan_AB__Korea__OS = "25th FS Osan AB, Korea (OS)"
-            _354th_FS_Davis_Monthan_AFB__Arizona__DM = "354th FS Davis Monthan AFB, Arizona (DM)"
-            _355th_FS_Eielson_AFB__Alaska__AK = "355th FS Eielson AFB, Alaska (AK)"
-            _357th_FS_Davis_Monthan_AFB__Arizona__DM = "357th FS Davis Monthan AFB, Arizona (DM)"
-            _358th_FS_Davis_Monthan_AFB__Arizona__DM = "358th FS Davis Monthan AFB, Arizona (DM)"
-            _422nd_TES_Nellis_AFB__Nevada__OT = "422nd TES Nellis AFB, Nevada (OT)"
-            _47th_FS_Barksdale_AFB__Louisiana__BD = "47th FS Barksdale AFB, Louisiana (BD)"
-            _66th_WS_Nellis_AFB__Nevada__WA = "66th WS Nellis AFB, Nevada (WA)"
-            _74th_FS_Moody_AFB__Georgia__FT = "74th FS Moody AFB, Georgia (FT)"
-            _81st_FS_Spangdahlem_AB__Germany__SP__1 = "81st FS Spangdahlem AB, Germany (SP) 1"
-            _81st_FS_Spangdahlem_AB__Germany__SP__2 = "81st FS Spangdahlem AB, Germany (SP) 2"
-
-        class Denmark(Enum):
-            A_10_Grey = "A-10 Grey"
-
-        class Canada(Enum):
-            Fictional_Canadian_Air_Force_Pixel_Camo = "Fictional Canadian Air Force Pixel Camo"
-            Canada_RCAF_409_Squadron = "Canada RCAF 409 Squadron"
-            Canada_RCAF_442_Snow_Scheme = "Canada RCAF 442 Snow Scheme"
-
-        class TheNetherlands(Enum):
-            A_10_Grey = "A-10 Grey"
-
-        class Turkey(Enum):
-            A_10_Grey = "A-10 Grey"
-
-    class Pylon1:
-        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
-        Mk_82 = (1, Weapons.Mk_82)
-        LAU_105_1_AIM_9M_L = (1, Weapons.LAU_105_1_AIM_9M_L)
-        LAU_105 = (1, Weapons.LAU_105)
-        LAU_105_2_CATM_9M = (1, Weapons.LAU_105_2_CATM_9M)
-        LAU_105_1_CATM_9M_L = (1, Weapons.LAU_105_1_CATM_9M_L)
-        ALQ_131 = (1, Weapons.ALQ_131)
-        Smokewinder___red = (1, Weapons.Smokewinder___red)
-        Smokewinder___green = (1, Weapons.Smokewinder___green)
-        Smokewinder___blue = (1, Weapons.Smokewinder___blue)
-        Smokewinder___white = (1, Weapons.Smokewinder___white)
-        Smokewinder___yellow = (1, Weapons.Smokewinder___yellow)
-        Smokewinder___orange = (1, Weapons.Smokewinder___orange)
-        GBU_12 = (1, Weapons.GBU_12)
-        BDU_50LD = (1, Weapons.BDU_50LD)
-        BDU_50LGB = (1, Weapons.BDU_50LGB)
-        BDU_50HD = (1, Weapons.BDU_50HD)
-        Mk_82AIR = (1, Weapons.Mk_82AIR)
-        CBU_87 = (1, Weapons.CBU_87)
-        ALQ_184 = (1, Weapons.ALQ_184)
-        CBU_97 = (1, Weapons.CBU_97)
-        LAU_105_AIS_ASQ_T50_L = (1, Weapons.LAU_105_AIS_ASQ_T50_L)
-        LAU_105_2_AIM_9L = (1, Weapons.LAU_105_2_AIM_9L)
-        LAU_105_1_AIM_9L_L = (1, Weapons.LAU_105_1_AIM_9L_L)
-
-    class Pylon2:
-        Mk_82 = (2, Weapons.Mk_82)
-        AN_AAQ_28_LITENING = (2, Weapons.AN_AAQ_28_LITENING)
-        GBU_12 = (2, Weapons.GBU_12)
-        BDU_50LD = (2, Weapons.BDU_50LD)
-        BDU_50HD = (2, Weapons.BDU_50HD)
-        Mk_82AIR = (2, Weapons.Mk_82AIR)
-        CBU_87 = (2, Weapons.CBU_87)
-        LAU_68___7_2_75__rockets_MK1__Practice_ = (2, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
-        LAU_68___7_2_75__rockets_MK5__HE_ = (2, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
-        LAU_68___7_2_75__rockets_MK61__Practice_ = (2, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
-        LAU_68___7_2_75__rockets_M151__HE_ = (2, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
-        LAU_68___7_2_75__rockets_M156_WP_ = (2, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
-        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (2, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (2, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (2, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
-#ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131___7_2_75__rockets_Mk1__Practice_ = (2, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
-        LAU_131___7_2_75__rockets_MK5__HE_ = (2, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
-        LAU_131___7_2_75__rockets_MK61__Practice_ = (2, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
-        LAU_131___7_2_75__rockets_M151__HE_ = (2, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
-        LAU_131___7_2_75__rockets_M156__WP_ = (2, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
-        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (2, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
-        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (2, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (2, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
-#ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
-        CBU_97 = (2, Weapons.CBU_97)
-        BDU_50LGB = (2, Weapons.BDU_50LGB)
-        SUU_25___8_LUU_2 = (2, Weapons.SUU_25___8_LUU_2)
-
-    class Pylon3:
-        LAU_117_AGM_65K = (3, Weapons.LAU_117_AGM_65K)
-        LAU_88_AGM_65D_ONE = (3, Weapons.LAU_88_AGM_65D_ONE)
-        LAU_88_AGM_65D_2 = (3, Weapons.LAU_88_AGM_65D_2)
-        LAU_88_AGM_65D_3 = (3, Weapons.LAU_88_AGM_65D_3)
-        LAU_117_AGM_65D = (3, Weapons.LAU_117_AGM_65D)
-        Mk_84 = (3, Weapons.Mk_84)
-        Mk_82 = (3, Weapons.Mk_82)
-        _3_Mk_82 = (3, Weapons._3_Mk_82)
-        GBU_12 = (3, Weapons.GBU_12)
-        BDU_50LD = (3, Weapons.BDU_50LD)
-        BDU_50HD = (3, Weapons.BDU_50HD)
-        Mk_82AIR = (3, Weapons.Mk_82AIR)
-        CBU_87 = (3, Weapons.CBU_87)
-        GBU_10 = (3, Weapons.GBU_10)
-        GBU_31 = (3, Weapons.GBU_31)
-        GBU_31_V_3_B = (3, Weapons.GBU_31_V_3_B)
-        GBU_38 = (3, Weapons.GBU_38)
-        LAU_68___7_2_75__rockets_MK1__Practice_ = (3, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
-        LAU_68___7_2_75__rockets_MK5__HE_ = (3, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
-        LAU_68___7_2_75__rockets_MK61__Practice_ = (3, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
-        LAU_68___7_2_75__rockets_M151__HE_ = (3, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
-        LAU_68___7_2_75__rockets_M156_WP_ = (3, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
-        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (3, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (3, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (3, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
-#ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131___7_2_75__rockets_Mk1__Practice_ = (3, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
-        LAU_131___7_2_75__rockets_MK5__HE_ = (3, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
-        LAU_131___7_2_75__rockets_MK61__Practice_ = (3, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
-        LAU_131___7_2_75__rockets_M151__HE_ = (3, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
-        LAU_131___7_2_75__rockets_M156__WP_ = (3, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
-        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (3, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
-        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (3, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (3, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
-#ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
-        LAU_68_3___7_2_75__rockets_MK1__Practice_ = (3, Weapons.LAU_68_3___7_2_75__rockets_MK1__Practice_)
-        LAU_68_3___7_2_75__rockets_MK5__HE_ = (3, Weapons.LAU_68_3___7_2_75__rockets_MK5__HE_)
-        LAU_68_3___7_2_75__rockets_MK61__Practice_ = (3, Weapons.LAU_68_3___7_2_75__rockets_MK61__Practice_)
-        LAU_68_3___7_2_75__rockets_M151__HE_ = (3, Weapons.LAU_68_3___7_2_75__rockets_M151__HE_)
-        LAU_68_3___7_2_75__rockets_M156__WP_ = (3, Weapons.LAU_68_3___7_2_75__rockets_M156__WP_)
-        LAU_68_3___7_2_75__rockets_WTU1B__Practice_ = (3, Weapons.LAU_68_3___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68_3___7_2_75__rockets_M274__Practice_smoke_ = (3, Weapons.LAU_68_3___7_2_75__rockets_M274__Practice_smoke_)
-        LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_ = (3, Weapons.LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_)
-#ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
-        LAU_131x3_HYDRA_70_MK1 = (3, Weapons.LAU_131x3_HYDRA_70_MK1)
-        LAU_131x3_HYDRA_70_MK5 = (3, Weapons.LAU_131x3_HYDRA_70_MK5)
-        LAU_131x3_HYDRA_70_MK61 = (3, Weapons.LAU_131x3_HYDRA_70_MK61)
-        LAU_131x3_HYDRA_70_M151 = (3, Weapons.LAU_131x3_HYDRA_70_M151)
-        LAU_131x3_HYDRA_70_M156 = (3, Weapons.LAU_131x3_HYDRA_70_M156)
-        LAU_131x3_HYDRA_70_WTU1B = (3, Weapons.LAU_131x3_HYDRA_70_WTU1B)
-        LAU_131x3_HYDRA_70_M257 = (3, Weapons.LAU_131x3_HYDRA_70_M257)
-        LAU_131x3_HYDRA_70_M274 = (3, Weapons.LAU_131x3_HYDRA_70_M274)
-#ERRR LAU_131x3_HYDRA_70_M278
-        MXU_648_TP = (3, Weapons.MXU_648_TP)
-        BRU_42_LS = (3, Weapons.BRU_42_LS)
-        BRU_42_3_BDU_33 = (3, Weapons.BRU_42_3_BDU_33)
-        LAU_117_AGM_65H = (3, Weapons.LAU_117_AGM_65H)
-        LAU_117_AGM_65G = (3, Weapons.LAU_117_AGM_65G)
-        LAU_88_AGM_65H = (3, Weapons.LAU_88_AGM_65H)
-        LAU_88_AGM_65H_2_L = (3, Weapons.LAU_88_AGM_65H_2_L)
-        LAU_88_AGM_65H_3 = (3, Weapons.LAU_88_AGM_65H_3)
-        LAU_117_TGM_65D = (3, Weapons.LAU_117_TGM_65D)
-        LAU_117_TGM_65G = (3, Weapons.LAU_117_TGM_65G)
-        LAU_117_TGM_65H = (3, Weapons.LAU_117_TGM_65H)
-        LAU_117_CATM_65K = (3, Weapons.LAU_117_CATM_65K)
-        BRU_42_3_GBU_12 = (3, Weapons.BRU_42_3_GBU_12)
-        CBU_97 = (3, Weapons.CBU_97)
-        CBU_105 = (3, Weapons.CBU_105)
-        CBU_103 = (3, Weapons.CBU_103)
-        BDU_50LGB = (3, Weapons.BDU_50LGB)
-        SUU_25___8_LUU_2 = (3, Weapons.SUU_25___8_LUU_2)
-        _3_Mk_82AIR = (3, Weapons._3_Mk_82AIR)
-        _3_SUU_25___8_LUU_2 = (3, Weapons._3_SUU_25___8_LUU_2)
-
-    class Pylon4:
-        Mk_82 = (4, Weapons.Mk_82)
-        Mk_84 = (4, Weapons.Mk_84)
-        Fuel_Tank_FT600 = (4, Weapons.Fuel_Tank_FT600)
-        GBU_12 = (4, Weapons.GBU_12)
-        BDU_50LD = (4, Weapons.BDU_50LD)
-        BDU_50HD = (4, Weapons.BDU_50HD)
-        Mk_82AIR = (4, Weapons.Mk_82AIR)
-        GBU_10 = (4, Weapons.GBU_10)
-        GBU_31 = (4, Weapons.GBU_31)
-        GBU_31_V_3_B = (4, Weapons.GBU_31_V_3_B)
-        GBU_38 = (4, Weapons.GBU_38)
-        CBU_87 = (4, Weapons.CBU_87)
-        LAU_68___7_2_75__rockets_MK1__Practice_ = (4, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
-        LAU_68___7_2_75__rockets_MK5__HE_ = (4, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
-        LAU_68___7_2_75__rockets_MK61__Practice_ = (4, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
-        LAU_68___7_2_75__rockets_M151__HE_ = (4, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
-        LAU_68___7_2_75__rockets_M156_WP_ = (4, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
-        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (4, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (4, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (4, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
-#ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131___7_2_75__rockets_Mk1__Practice_ = (4, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
-        LAU_131___7_2_75__rockets_MK5__HE_ = (4, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
-        LAU_131___7_2_75__rockets_MK61__Practice_ = (4, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
-        LAU_131___7_2_75__rockets_M151__HE_ = (4, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
-        LAU_131___7_2_75__rockets_M156__WP_ = (4, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
-        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (4, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
-        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (4, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (4, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
-#ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
-        LAU_68_3___7_2_75__rockets_MK1__Practice_ = (4, Weapons.LAU_68_3___7_2_75__rockets_MK1__Practice_)
-        LAU_68_3___7_2_75__rockets_MK5__HE_ = (4, Weapons.LAU_68_3___7_2_75__rockets_MK5__HE_)
-        LAU_68_3___7_2_75__rockets_MK61__Practice_ = (4, Weapons.LAU_68_3___7_2_75__rockets_MK61__Practice_)
-        LAU_68_3___7_2_75__rockets_M151__HE_ = (4, Weapons.LAU_68_3___7_2_75__rockets_M151__HE_)
-        LAU_68_3___7_2_75__rockets_M156__WP_ = (4, Weapons.LAU_68_3___7_2_75__rockets_M156__WP_)
-        LAU_68_3___7_2_75__rockets_WTU1B__Practice_ = (4, Weapons.LAU_68_3___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68_3___7_2_75__rockets_M274__Practice_smoke_ = (4, Weapons.LAU_68_3___7_2_75__rockets_M274__Practice_smoke_)
-        LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_ = (4, Weapons.LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_)
-#ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
-        LAU_131x3_HYDRA_70_MK1 = (4, Weapons.LAU_131x3_HYDRA_70_MK1)
-        LAU_131x3_HYDRA_70_MK5 = (4, Weapons.LAU_131x3_HYDRA_70_MK5)
-        LAU_131x3_HYDRA_70_MK61 = (4, Weapons.LAU_131x3_HYDRA_70_MK61)
-        LAU_131x3_HYDRA_70_M151 = (4, Weapons.LAU_131x3_HYDRA_70_M151)
-        LAU_131x3_HYDRA_70_M156 = (4, Weapons.LAU_131x3_HYDRA_70_M156)
-        LAU_131x3_HYDRA_70_WTU1B = (4, Weapons.LAU_131x3_HYDRA_70_WTU1B)
-        LAU_131x3_HYDRA_70_M257 = (4, Weapons.LAU_131x3_HYDRA_70_M257)
-        LAU_131x3_HYDRA_70_M274 = (4, Weapons.LAU_131x3_HYDRA_70_M274)
-#ERRR LAU_131x3_HYDRA_70_M278
-        MXU_648_TP = (4, Weapons.MXU_648_TP)
-        BRU_42_LS = (4, Weapons.BRU_42_LS)
-        BRU_42_3_BDU_33 = (4, Weapons.BRU_42_3_BDU_33)
-        BRU_42_3_GBU_12 = (4, Weapons.BRU_42_3_GBU_12)
-        CBU_97 = (4, Weapons.CBU_97)
-        CBU_105 = (4, Weapons.CBU_105)
-        CBU_103 = (4, Weapons.CBU_103)
-        BDU_50LGB = (4, Weapons.BDU_50LGB)
-        _3_Mk_82AIR = (4, Weapons._3_Mk_82AIR)
-        _3_Mk_82 = (4, Weapons._3_Mk_82)
-
-    class Pylon5:
-        Mk_82 = (5, Weapons.Mk_82)
-        Mk_84 = (5, Weapons.Mk_84)
-        GBU_12 = (5, Weapons.GBU_12)
-        BDU_50LD = (5, Weapons.BDU_50LD)
-        BDU_50HD = (5, Weapons.BDU_50HD)
-        Mk_82AIR = (5, Weapons.Mk_82AIR)
-        GBU_10 = (5, Weapons.GBU_10)
-        GBU_31 = (5, Weapons.GBU_31)
-        GBU_31_V_3_B = (5, Weapons.GBU_31_V_3_B)
-        GBU_38 = (5, Weapons.GBU_38)
-        CBU_87 = (5, Weapons.CBU_87)
-        MXU_648_TP = (5, Weapons.MXU_648_TP)
-        BRU_42_LS = (5, Weapons.BRU_42_LS)
-        BRU_42_3_BDU_33 = (5, Weapons.BRU_42_3_BDU_33)
-        CBU_97 = (5, Weapons.CBU_97)
-        CBU_105 = (5, Weapons.CBU_105)
-        CBU_103 = (5, Weapons.CBU_103)
-        BDU_50LGB = (5, Weapons.BDU_50LGB)
-        _3_Mk_82 = (5, Weapons._3_Mk_82)
-        _3_Mk_82AIR = (5, Weapons._3_Mk_82AIR)
-
-    class Pylon6:
-        Mk_82 = (6, Weapons.Mk_82)
-        Mk_84 = (6, Weapons.Mk_84)
-        GBU_12 = (6, Weapons.GBU_12)
-        BDU_50LD = (6, Weapons.BDU_50LD)
-        BDU_50HD = (6, Weapons.BDU_50HD)
-        Mk_82AIR = (6, Weapons.Mk_82AIR)
-        GBU_10 = (6, Weapons.GBU_10)
-        CBU_87 = (6, Weapons.CBU_87)
-        MXU_648_TP = (6, Weapons.MXU_648_TP)
-        BRU_42_LS = (6, Weapons.BRU_42_LS)
-        BRU_42_3_BDU_33 = (6, Weapons.BRU_42_3_BDU_33)
-        CBU_97 = (6, Weapons.CBU_97)
-        BDU_50LGB = (6, Weapons.BDU_50LGB)
-        Fuel_Tank_FT600 = (6, Weapons.Fuel_Tank_FT600)
-
-    class Pylon7:
-        Mk_82 = (7, Weapons.Mk_82)
-        Mk_84 = (7, Weapons.Mk_84)
-        GBU_12 = (7, Weapons.GBU_12)
-        BDU_50LD = (7, Weapons.BDU_50LD)
-        BDU_50HD = (7, Weapons.BDU_50HD)
-        Mk_82AIR = (7, Weapons.Mk_82AIR)
-        GBU_10 = (7, Weapons.GBU_10)
-        GBU_31 = (7, Weapons.GBU_31)
-        GBU_31_V_3_B = (7, Weapons.GBU_31_V_3_B)
-        GBU_38 = (7, Weapons.GBU_38)
-        CBU_87 = (7, Weapons.CBU_87)
-        MXU_648_TP = (7, Weapons.MXU_648_TP)
-        BRU_42_LS = (7, Weapons.BRU_42_LS)
-        BRU_42_3_BDU_33 = (7, Weapons.BRU_42_3_BDU_33)
-        CBU_97 = (7, Weapons.CBU_97)
-        CBU_105 = (7, Weapons.CBU_105)
-        CBU_103 = (7, Weapons.CBU_103)
-        BDU_50LGB = (7, Weapons.BDU_50LGB)
-        _3_Mk_82 = (7, Weapons._3_Mk_82)
-        _3_Mk_82AIR = (7, Weapons._3_Mk_82AIR)
-
-    class Pylon8:
-        Mk_82 = (8, Weapons.Mk_82)
-        Mk_84 = (8, Weapons.Mk_84)
-        Fuel_Tank_FT600 = (8, Weapons.Fuel_Tank_FT600)
-        GBU_12 = (8, Weapons.GBU_12)
-        BDU_50LD = (8, Weapons.BDU_50LD)
-        BDU_50HD = (8, Weapons.BDU_50HD)
-        Mk_82AIR = (8, Weapons.Mk_82AIR)
-        GBU_10 = (8, Weapons.GBU_10)
-        GBU_31 = (8, Weapons.GBU_31)
-        GBU_31_V_3_B = (8, Weapons.GBU_31_V_3_B)
-        GBU_38 = (8, Weapons.GBU_38)
-        CBU_87 = (8, Weapons.CBU_87)
-        LAU_68___7_2_75__rockets_MK1__Practice_ = (8, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
-        LAU_68___7_2_75__rockets_MK5__HE_ = (8, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
-        LAU_68___7_2_75__rockets_MK61__Practice_ = (8, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
-        LAU_68___7_2_75__rockets_M151__HE_ = (8, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
-        LAU_68___7_2_75__rockets_M156_WP_ = (8, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
-        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (8, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (8, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (8, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
-#ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131___7_2_75__rockets_Mk1__Practice_ = (8, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
-        LAU_131___7_2_75__rockets_MK5__HE_ = (8, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
-        LAU_131___7_2_75__rockets_MK61__Practice_ = (8, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
-        LAU_131___7_2_75__rockets_M151__HE_ = (8, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
-        LAU_131___7_2_75__rockets_M156__WP_ = (8, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
-        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (8, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
-        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (8, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (8, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
-#ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
-        LAU_68_3___7_2_75__rockets_MK1__Practice_ = (8, Weapons.LAU_68_3___7_2_75__rockets_MK1__Practice_)
-        LAU_68_3___7_2_75__rockets_MK5__HE_ = (8, Weapons.LAU_68_3___7_2_75__rockets_MK5__HE_)
-        LAU_68_3___7_2_75__rockets_MK61__Practice_ = (8, Weapons.LAU_68_3___7_2_75__rockets_MK61__Practice_)
-        LAU_68_3___7_2_75__rockets_M151__HE_ = (8, Weapons.LAU_68_3___7_2_75__rockets_M151__HE_)
-        LAU_68_3___7_2_75__rockets_M156__WP_ = (8, Weapons.LAU_68_3___7_2_75__rockets_M156__WP_)
-        LAU_68_3___7_2_75__rockets_WTU1B__Practice_ = (8, Weapons.LAU_68_3___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68_3___7_2_75__rockets_M274__Practice_smoke_ = (8, Weapons.LAU_68_3___7_2_75__rockets_M274__Practice_smoke_)
-        LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_ = (8, Weapons.LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_)
-#ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
-        LAU_131x3_HYDRA_70_MK1 = (8, Weapons.LAU_131x3_HYDRA_70_MK1)
-        LAU_131x3_HYDRA_70_MK5 = (8, Weapons.LAU_131x3_HYDRA_70_MK5)
-        LAU_131x3_HYDRA_70_MK61 = (8, Weapons.LAU_131x3_HYDRA_70_MK61)
-        LAU_131x3_HYDRA_70_M151 = (8, Weapons.LAU_131x3_HYDRA_70_M151)
-        LAU_131x3_HYDRA_70_M156 = (8, Weapons.LAU_131x3_HYDRA_70_M156)
-        LAU_131x3_HYDRA_70_WTU1B = (8, Weapons.LAU_131x3_HYDRA_70_WTU1B)
-        LAU_131x3_HYDRA_70_M257 = (8, Weapons.LAU_131x3_HYDRA_70_M257)
-        LAU_131x3_HYDRA_70_M274 = (8, Weapons.LAU_131x3_HYDRA_70_M274)
-#ERRR LAU_131x3_HYDRA_70_M278
-        MXU_648_TP = (8, Weapons.MXU_648_TP)
-        BRU_42_LS = (8, Weapons.BRU_42_LS)
-        BRU_42_3_BDU_33 = (8, Weapons.BRU_42_3_BDU_33)
-        BRU_42_3_GBU_12 = (8, Weapons.BRU_42_3_GBU_12)
-        CBU_97 = (8, Weapons.CBU_97)
-        CBU_105 = (8, Weapons.CBU_105)
-        CBU_103 = (8, Weapons.CBU_103)
-        BDU_50LGB = (8, Weapons.BDU_50LGB)
-        _3_Mk_82AIR = (8, Weapons._3_Mk_82AIR)
-        _3_Mk_82 = (8, Weapons._3_Mk_82)
-
-    class Pylon9:
-        LAU_117_AGM_65K = (9, Weapons.LAU_117_AGM_65K)
-        LAU_88_AGM_65D_ONE = (9, Weapons.LAU_88_AGM_65D_ONE)
-        LAU_88_AGM_65D_2_ = (9, Weapons.LAU_88_AGM_65D_2_)
-        LAU_88_AGM_65D_3 = (9, Weapons.LAU_88_AGM_65D_3)
-        LAU_117_AGM_65D = (9, Weapons.LAU_117_AGM_65D)
-        Mk_84 = (9, Weapons.Mk_84)
-        Mk_82 = (9, Weapons.Mk_82)
-        _3_Mk_82 = (9, Weapons._3_Mk_82)
-        GBU_12 = (9, Weapons.GBU_12)
-        BDU_50LD = (9, Weapons.BDU_50LD)
-        BDU_50HD = (9, Weapons.BDU_50HD)
-        Mk_82AIR = (9, Weapons.Mk_82AIR)
-        GBU_10 = (9, Weapons.GBU_10)
-        GBU_31 = (9, Weapons.GBU_31)
-        GBU_31_V_3_B = (9, Weapons.GBU_31_V_3_B)
-        GBU_38 = (9, Weapons.GBU_38)
-        CBU_87 = (9, Weapons.CBU_87)
-        LAU_68___7_2_75__rockets_MK1__Practice_ = (9, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
-        LAU_68___7_2_75__rockets_MK5__HE_ = (9, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
-        LAU_68___7_2_75__rockets_MK61__Practice_ = (9, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
-        LAU_68___7_2_75__rockets_M151__HE_ = (9, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
-        LAU_68___7_2_75__rockets_M156_WP_ = (9, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
-        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (9, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (9, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (9, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
-#ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131___7_2_75__rockets_Mk1__Practice_ = (9, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
-        LAU_131___7_2_75__rockets_MK5__HE_ = (9, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
-        LAU_131___7_2_75__rockets_MK61__Practice_ = (9, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
-        LAU_131___7_2_75__rockets_M151__HE_ = (9, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
-        LAU_131___7_2_75__rockets_M156__WP_ = (9, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
-        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (9, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
-        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (9, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (9, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
-#ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
-        LAU_68_3___7_2_75__rockets_MK1__Practice_ = (9, Weapons.LAU_68_3___7_2_75__rockets_MK1__Practice_)
-        LAU_68_3___7_2_75__rockets_MK5__HE_ = (9, Weapons.LAU_68_3___7_2_75__rockets_MK5__HE_)
-        LAU_68_3___7_2_75__rockets_MK61__Practice_ = (9, Weapons.LAU_68_3___7_2_75__rockets_MK61__Practice_)
-        LAU_68_3___7_2_75__rockets_M151__HE_ = (9, Weapons.LAU_68_3___7_2_75__rockets_M151__HE_)
-        LAU_68_3___7_2_75__rockets_M156__WP_ = (9, Weapons.LAU_68_3___7_2_75__rockets_M156__WP_)
-        LAU_68_3___7_2_75__rockets_WTU1B__Practice_ = (9, Weapons.LAU_68_3___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68_3___7_2_75__rockets_M274__Practice_smoke_ = (9, Weapons.LAU_68_3___7_2_75__rockets_M274__Practice_smoke_)
-        LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_ = (9, Weapons.LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_)
-#ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
-        LAU_131x3_HYDRA_70_MK1 = (9, Weapons.LAU_131x3_HYDRA_70_MK1)
-        LAU_131x3_HYDRA_70_MK5 = (9, Weapons.LAU_131x3_HYDRA_70_MK5)
-        LAU_131x3_HYDRA_70_MK61 = (9, Weapons.LAU_131x3_HYDRA_70_MK61)
-        LAU_131x3_HYDRA_70_M151 = (9, Weapons.LAU_131x3_HYDRA_70_M151)
-        LAU_131x3_HYDRA_70_M156 = (9, Weapons.LAU_131x3_HYDRA_70_M156)
-        LAU_131x3_HYDRA_70_WTU1B = (9, Weapons.LAU_131x3_HYDRA_70_WTU1B)
-        LAU_131x3_HYDRA_70_M257 = (9, Weapons.LAU_131x3_HYDRA_70_M257)
-        LAU_131x3_HYDRA_70_M274 = (9, Weapons.LAU_131x3_HYDRA_70_M274)
-#ERRR LAU_131x3_HYDRA_70_M278
-        MXU_648_TP = (9, Weapons.MXU_648_TP)
-        BRU_42_LS = (9, Weapons.BRU_42_LS)
-        BRU_42_3_BDU_33 = (9, Weapons.BRU_42_3_BDU_33)
-        LAU_117_AGM_65H = (9, Weapons.LAU_117_AGM_65H)
-        LAU_117_AGM_65G = (9, Weapons.LAU_117_AGM_65G)
-        LAU_88_AGM_65H = (9, Weapons.LAU_88_AGM_65H)
-        LAU_88_AGM_65H_2_R = (9, Weapons.LAU_88_AGM_65H_2_R)
-        LAU_88_AGM_65H_3 = (9, Weapons.LAU_88_AGM_65H_3)
-        LAU_117_TGM_65D = (9, Weapons.LAU_117_TGM_65D)
-        LAU_117_TGM_65G = (9, Weapons.LAU_117_TGM_65G)
-        LAU_117_TGM_65H = (9, Weapons.LAU_117_TGM_65H)
-        LAU_117_CATM_65K = (9, Weapons.LAU_117_CATM_65K)
-        BRU_42_3_GBU_12 = (9, Weapons.BRU_42_3_GBU_12)
-        CBU_97 = (9, Weapons.CBU_97)
-        CBU_105 = (9, Weapons.CBU_105)
-        CBU_103 = (9, Weapons.CBU_103)
-        BDU_50LGB = (9, Weapons.BDU_50LGB)
-        SUU_25___8_LUU_2 = (9, Weapons.SUU_25___8_LUU_2)
-        _3_Mk_82AIR = (9, Weapons._3_Mk_82AIR)
-        _3_SUU_25___8_LUU_2 = (9, Weapons._3_SUU_25___8_LUU_2)
-
-    class Pylon10:
-        Mk_82 = (10, Weapons.Mk_82)
-        SUU_25___8_LUU_2 = (10, Weapons.SUU_25___8_LUU_2)
-        AN_AAQ_28_LITENING = (10, Weapons.AN_AAQ_28_LITENING)
-        GBU_12 = (10, Weapons.GBU_12)
-        BDU_50LD = (10, Weapons.BDU_50LD)
-        BDU_50HD = (10, Weapons.BDU_50HD)
-        Mk_82AIR = (10, Weapons.Mk_82AIR)
-        CBU_87 = (10, Weapons.CBU_87)
-        LAU_68___7_2_75__rockets_MK1__Practice_ = (10, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
-        LAU_68___7_2_75__rockets_MK5__HE_ = (10, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
-        LAU_68___7_2_75__rockets_MK61__Practice_ = (10, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
-        LAU_68___7_2_75__rockets_M151__HE_ = (10, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
-        LAU_68___7_2_75__rockets_M156_WP_ = (10, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
-        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (10, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
-        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (10, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (10, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
-#ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131___7_2_75__rockets_Mk1__Practice_ = (10, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
-        LAU_131___7_2_75__rockets_MK5__HE_ = (10, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
-        LAU_131___7_2_75__rockets_MK61__Practice_ = (10, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
-        LAU_131___7_2_75__rockets_M151__HE_ = (10, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
-        LAU_131___7_2_75__rockets_M156__WP_ = (10, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
-        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (10, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
-        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (10, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
-        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (10, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
-#ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
-        CBU_97 = (10, Weapons.CBU_97)
-        BDU_50LGB = (10, Weapons.BDU_50LGB)
-
-    class Pylon11:
-        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (11, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
-        Smokewinder___red = (11, Weapons.Smokewinder___red)
-        Smokewinder___green = (11, Weapons.Smokewinder___green)
-        Smokewinder___blue = (11, Weapons.Smokewinder___blue)
-        Smokewinder___white = (11, Weapons.Smokewinder___white)
-        Smokewinder___yellow = (11, Weapons.Smokewinder___yellow)
-        Smokewinder___orange = (11, Weapons.Smokewinder___orange)
-        ALQ_131 = (11, Weapons.ALQ_131)
-        GBU_12 = (11, Weapons.GBU_12)
-        BDU_50LD = (11, Weapons.BDU_50LD)
-        BDU_50HD = (11, Weapons.BDU_50HD)
-        Mk_82AIR = (11, Weapons.Mk_82AIR)
-        Mk_82 = (11, Weapons.Mk_82)
-        CBU_87 = (11, Weapons.CBU_87)
-        BDU_50LGB = (11, Weapons.BDU_50LGB)
-        CBU_97 = (11, Weapons.CBU_97)
-        LAU_105_1_AIM_9M_R = (11, Weapons.LAU_105_1_AIM_9M_R)
-        LAU_105 = (11, Weapons.LAU_105)
-        ALQ_184 = (11, Weapons.ALQ_184)
-        LAU_105_2_CATM_9M = (11, Weapons.LAU_105_2_CATM_9M)
-        LAU_105_1_CATM_9M_R = (11, Weapons.LAU_105_1_CATM_9M_R)
-        LAU_105_AIS_ASQ_T50_R = (11, Weapons.LAU_105_AIS_ASQ_T50_R)
-        LAU_105_2_AIM_9L = (11, Weapons.LAU_105_2_AIM_9L)
-        LAU_105_1_AIM_9L_R = (11, Weapons.LAU_105_1_AIM_9L_R)
-
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
-
-    tasks = [task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
-    task_default = task.CAS
 
 
 class KC_135(PlaneType):
@@ -8379,19 +7599,19 @@ class SpitfireLFMkIX(PlaneType):
     class Liveries:
 
         class UK(Enum):
-            RAF_Standard = "RAF Standard"
-            RAF_2_TAF__July_1944 = "RAF 2 TAF, July 1944"
-            RAF_2_TAF__June_1944 = "RAF 2 TAF, June 1944"
-            RAF_2_TAF__Sept_1944 = "RAF 2 TAF, Sept 1944"
-            RAF__No__126_Squadron__Harrowbeer = "RAF, No. 126 Squadron, Harrowbeer"
-            RAF__No__145_Squadron = "RAF, No. 145 Squadron"
-            RAF__No__16_Squadron = "RAF, No. 16 Squadron"
+            raf_standard = "raf standard"
+            raf_2_taf__july_1944 = "raf 2 taf, july 1944"
+            raf_2_taf__june_1944 = "raf 2 taf, june 1944"
+            raf_2_taf__sept_1944 = "raf 2 taf, sept 1944"
+            raf__no__126_squadron__harrowbeer = "raf, no. 126 squadron, harrowbeer"
+            raf__no__145_squadron = "raf, no. 145 squadron"
+            raf__no__16_squadron = "raf, no. 16 squadron"
 
         class Russia(Enum):
-            USSR_26th_GvIAP__PVO = "USSR 26th GvIAP, PVO"
-            USSR_3rd_AE_57th_GvIAP = "USSR_3rd_AE_57th_GvIAP"
-            USSR_Spitfire_57th_GvIAP = "USSR Spitfire 57th GvIAP"
-            USSR_pilot_Lt__Col__V__A__Matsiyevitch__26th_GvIAP = "USSR pilot Lt. Col. V. A. Matsiyevitch, 26th GvIAP"
+            ussr_26th_gviap__pvo = "ussr 26th gviap, pvo"
+            ussr_3rd_ae_57th_gviap = "ussr_3rd_ae_57th_gviap"
+            ussr_spitfire_57th_gviap = "ussr spitfire 57th gviap"
+            ussr_pilot_lt__col__v__a__matsiyevitch__26th_gviap = "ussr pilot lt. col. v. a. matsiyevitch, 26th gviap"
 
     class Pylon1:
         British_GP_250LBS_Bomb_MK4_on_LH_Spitfire_Wing_Carrier = (1, Weapons.British_GP_250LBS_Bomb_MK4_on_LH_Spitfire_Wing_Carrier)
@@ -8434,19 +7654,19 @@ class SpitfireLFMkIXCW(PlaneType):
     class Liveries:
 
         class UK(Enum):
-            RAF_Standard = "RAF Standard"
-            RAF_2_TAF__July_1944 = "RAF 2 TAF, July 1944"
-            RAF_2_TAF__June_1944 = "RAF 2 TAF, June 1944"
-            RAF_2_TAF__Sept_1944 = "RAF 2 TAF, Sept 1944"
-            RAF__No__126_Squadron__Harrowbeer = "RAF, No. 126 Squadron, Harrowbeer"
-            RAF__No__145_Squadron = "RAF, No. 145 Squadron"
-            RAF__No__16_Squadron = "RAF, No. 16 Squadron"
+            raf_standard = "raf standard"
+            raf_2_taf__july_1944 = "raf 2 taf, july 1944"
+            raf_2_taf__june_1944 = "raf 2 taf, june 1944"
+            raf_2_taf__sept_1944 = "raf 2 taf, sept 1944"
+            raf__no__126_squadron__harrowbeer = "raf, no. 126 squadron, harrowbeer"
+            raf__no__145_squadron = "raf, no. 145 squadron"
+            raf__no__16_squadron = "raf, no. 16 squadron"
 
         class Russia(Enum):
-            USSR_26th_GvIAP__PVO = "USSR 26th GvIAP, PVO"
-            USSR_3rd_AE_57th_GvIAP = "USSR_3rd_AE_57th_GvIAP"
-            USSR_Spitfire_57th_GvIAP = "USSR Spitfire 57th GvIAP"
-            USSR_pilot_Lt__Col__V__A__Matsiyevitch__26th_GvIAP = "USSR pilot Lt. Col. V. A. Matsiyevitch, 26th GvIAP"
+            ussr_26th_gviap__pvo = "ussr 26th gviap, pvo"
+            ussr_3rd_ae_57th_gviap = "ussr_3rd_ae_57th_gviap"
+            ussr_spitfire_57th_gviap = "ussr spitfire 57th gviap"
+            ussr_pilot_lt__col__v__a__matsiyevitch__26th_gviap = "ussr pilot lt. col. v. a. matsiyevitch, 26th gviap"
 
     class Pylon1:
         British_GP_250LBS_Bomb_MK4_on_LH_Spitfire_Wing_Carrier = (1, Weapons.British_GP_250LBS_Bomb_MK4_on_LH_Spitfire_Wing_Carrier)
@@ -8658,8 +7878,8 @@ class P_51D(PlaneType):
             Bare_Metal = "Bare Metal"
             Dogfight_Blue = "Dogfight Blue"
             Dogfight_Red = "Dogfight Red"
-            PLAAF_P_51D_Late_1940s = "PLAAF P-51D Late 1940s"
-            PLAAF_P_51K_Oct_1_1949 = "PLAAF P-51K Oct.1.1949"
+            plaaf_p_51d_late_1940s = "plaaf p-51d late 1940s"
+            plaaf_p_51k_oct_1_1949 = "plaaf p-51k oct.1.1949"
 
         class Pakistan(Enum):
             Bare_Metal = "Bare Metal"
@@ -8775,7 +7995,7 @@ class P_51D(PlaneType):
 
     class Pylon4:
         AN_M64 = (4, Weapons.AN_M64)
-        Drop_Tank_75Gal = (4, Weapons.Drop_Tank_75Gal)
+        _75_US_gal__Fuel_Tank = (4, Weapons._75_US_gal__Fuel_Tank)
         HVAR = (4, Weapons.HVAR)
 
     class Pylon5:
@@ -8786,7 +8006,7 @@ class P_51D(PlaneType):
 
     class Pylon7:
         AN_M64 = (7, Weapons.AN_M64)
-        Drop_Tank_75Gal = (7, Weapons.Drop_Tank_75Gal)
+        _75_US_gal__Fuel_Tank = (7, Weapons._75_US_gal__Fuel_Tank)
         HVAR = (7, Weapons.HVAR)
 
     class Pylon8:
@@ -8838,7 +8058,7 @@ class P_51D_30_NA(PlaneType):
 
     class Pylon4:
         AN_M64 = (4, Weapons.AN_M64)
-        Drop_Tank_75Gal = (4, Weapons.Drop_Tank_75Gal)
+        _75_US_gal__Fuel_Tank = (4, Weapons._75_US_gal__Fuel_Tank)
         HVAR = (4, Weapons.HVAR)
 
     class Pylon5:
@@ -8849,7 +8069,7 @@ class P_51D_30_NA(PlaneType):
 
     class Pylon7:
         AN_M64 = (7, Weapons.AN_M64)
-        Drop_Tank_75Gal = (7, Weapons.Drop_Tank_75Gal)
+        _75_US_gal__Fuel_Tank = (7, Weapons._75_US_gal__Fuel_Tank)
         HVAR = (7, Weapons.HVAR)
 
     class Pylon8:
@@ -8893,14 +8113,20 @@ class P_47D_30(PlaneType):
     class Liveries:
 
         class USA(Enum):
-            USAF_Standard = "USAF Standard"
-            _53rd_FS_9th_Air_Force = "53rd_FS_9th_Air_Force"
-            Lt_Col_Benjamin_Mayo = "Lt_Col_Benjamin_Mayo"
+            usaf_standard = "usaf standard"
+            _53rd_fs_9th_air_force = "53rd_fs_9th_air_force"
+            _61st_fs_d_day = "61st_fs_d_day"
+            _61st_fs_1944 = "61st_fs_1944"
+            lt_col_benjamin_mayo = "lt_col_benjamin_mayo"
+            lt_col_gabreski_d_day = "lt_col_gabreski_d_day"
+            lt_col_gabreski_1944 = "lt_col_gabreski_1944"
 
     class Pylon1:
         AN_M30A1 = (1, Weapons.AN_M30A1)
         AN_M57 = (1, Weapons.AN_M57)
         AN_M64 = (1, Weapons.AN_M64)
+        _108_US_gal__Paper_Fuel_Tank = (1, Weapons._108_US_gal__Paper_Fuel_Tank)
+        _110_US_gal__Fuel_Tank = (1, Weapons._110_US_gal__Fuel_Tank)
 #ERRR <CLEAN>
 
     class Pylon2:
@@ -8908,6 +8134,15 @@ class P_47D_30(PlaneType):
         AN_M57 = (2, Weapons.AN_M57)
         AN_M64 = (2, Weapons.AN_M64)
         AN_M65 = (2, Weapons.AN_M65)
+        _108_US_gal__Paper_Fuel_Tank = (2, Weapons._108_US_gal__Paper_Fuel_Tank)
+        _110_US_gal__Fuel_Tank = (2, Weapons._110_US_gal__Fuel_Tank)
+        _150_US_gal__Fuel_Tank = (2, Weapons._150_US_gal__Fuel_Tank)
+        M10_Smoke_Tank___red = (2, Weapons.M10_Smoke_Tank___red)
+        M10_Smoke_Tank___yellow = (2, Weapons.M10_Smoke_Tank___yellow)
+        M10_Smoke_Tank___orange = (2, Weapons.M10_Smoke_Tank___orange)
+        M10_Smoke_Tank___green = (2, Weapons.M10_Smoke_Tank___green)
+        M10_Smoke_Tank___blue = (2, Weapons.M10_Smoke_Tank___blue)
+        M10_Smoke_Tank___white = (2, Weapons.M10_Smoke_Tank___white)
 #ERRR <CLEAN>
 
     class Pylon3:
@@ -8915,11 +8150,1083 @@ class P_47D_30(PlaneType):
         AN_M57 = (3, Weapons.AN_M57)
         AN_M64 = (3, Weapons.AN_M64)
         AN_M65 = (3, Weapons.AN_M65)
+        _108_US_gal__Paper_Fuel_Tank = (3, Weapons._108_US_gal__Paper_Fuel_Tank)
+        _110_US_gal__Fuel_Tank = (3, Weapons._110_US_gal__Fuel_Tank)
+        _150_US_gal__Fuel_Tank = (3, Weapons._150_US_gal__Fuel_Tank)
+        M10_Smoke_Tank___red = (3, Weapons.M10_Smoke_Tank___red)
+        M10_Smoke_Tank___yellow = (3, Weapons.M10_Smoke_Tank___yellow)
+        M10_Smoke_Tank___orange = (3, Weapons.M10_Smoke_Tank___orange)
+        M10_Smoke_Tank___green = (3, Weapons.M10_Smoke_Tank___green)
+        M10_Smoke_Tank___blue = (3, Weapons.M10_Smoke_Tank___blue)
+        M10_Smoke_Tank___white = (3, Weapons.M10_Smoke_Tank___white)
 
     pylons = {1, 2, 3}
 
     tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
+
+
+class P_47D_30bl1(PlaneType):
+    id = "P-47D-30bl1"
+    height = 4.77
+    width = 12.42
+    length = 11
+    fuel_max = 830
+    max_speed = 828
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 124
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 39,
+                2: 40,
+                4: 42,
+                3: 41
+            },
+        },
+    }
+
+    class Pylon1:
+        AN_M30A1 = (1, Weapons.AN_M30A1)
+        AN_M57 = (1, Weapons.AN_M57)
+        AN_M64 = (1, Weapons.AN_M64)
+        _108_US_gal__Paper_Fuel_Tank = (1, Weapons._108_US_gal__Paper_Fuel_Tank)
+        _110_US_gal__Fuel_Tank = (1, Weapons._110_US_gal__Fuel_Tank)
+#ERRR <CLEAN>
+
+    class Pylon2:
+        AN_M30A1 = (2, Weapons.AN_M30A1)
+        AN_M57 = (2, Weapons.AN_M57)
+        AN_M64 = (2, Weapons.AN_M64)
+        _108_US_gal__Paper_Fuel_Tank = (2, Weapons._108_US_gal__Paper_Fuel_Tank)
+        _110_US_gal__Fuel_Tank = (2, Weapons._110_US_gal__Fuel_Tank)
+        _150_US_gal__Fuel_Tank = (2, Weapons._150_US_gal__Fuel_Tank)
+        M10_Smoke_Tank___red = (2, Weapons.M10_Smoke_Tank___red)
+        M10_Smoke_Tank___yellow = (2, Weapons.M10_Smoke_Tank___yellow)
+        M10_Smoke_Tank___orange = (2, Weapons.M10_Smoke_Tank___orange)
+        M10_Smoke_Tank___green = (2, Weapons.M10_Smoke_Tank___green)
+        M10_Smoke_Tank___blue = (2, Weapons.M10_Smoke_Tank___blue)
+        M10_Smoke_Tank___white = (2, Weapons.M10_Smoke_Tank___white)
+#ERRR <CLEAN>
+
+    class Pylon3:
+        AN_M30A1 = (3, Weapons.AN_M30A1)
+        AN_M57 = (3, Weapons.AN_M57)
+        AN_M64 = (3, Weapons.AN_M64)
+        _108_US_gal__Paper_Fuel_Tank = (3, Weapons._108_US_gal__Paper_Fuel_Tank)
+        _110_US_gal__Fuel_Tank = (3, Weapons._110_US_gal__Fuel_Tank)
+        _150_US_gal__Fuel_Tank = (3, Weapons._150_US_gal__Fuel_Tank)
+        M10_Smoke_Tank___red = (3, Weapons.M10_Smoke_Tank___red)
+        M10_Smoke_Tank___yellow = (3, Weapons.M10_Smoke_Tank___yellow)
+        M10_Smoke_Tank___orange = (3, Weapons.M10_Smoke_Tank___orange)
+        M10_Smoke_Tank___green = (3, Weapons.M10_Smoke_Tank___green)
+        M10_Smoke_Tank___blue = (3, Weapons.M10_Smoke_Tank___blue)
+        M10_Smoke_Tank___white = (3, Weapons.M10_Smoke_Tank___white)
+
+    pylons = {1, 2, 3}
+
+    tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
+    task_default = task.CAP
+
+
+class P_47D_40(PlaneType):
+    id = "P-47D-40"
+    height = 4.77
+    width = 12.42
+    length = 11
+    fuel_max = 830
+    max_speed = 828
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 124
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 39,
+                2: 40,
+                4: 42,
+                3: 41
+            },
+        },
+    }
+
+    class Pylon1:
+        AN_M30A1 = (1, Weapons.AN_M30A1)
+        AN_M57 = (1, Weapons.AN_M57)
+        AN_M64 = (1, Weapons.AN_M64)
+        _108_US_gal__Paper_Fuel_Tank = (1, Weapons._108_US_gal__Paper_Fuel_Tank)
+        _110_US_gal__Fuel_Tank = (1, Weapons._110_US_gal__Fuel_Tank)
+#ERRR <CLEAN>
+
+    class Pylon2:
+        AN_M30A1 = (2, Weapons.AN_M30A1)
+        AN_M57 = (2, Weapons.AN_M57)
+        AN_M64 = (2, Weapons.AN_M64)
+        AN_M65 = (2, Weapons.AN_M65)
+        _108_US_gal__Paper_Fuel_Tank = (2, Weapons._108_US_gal__Paper_Fuel_Tank)
+        _110_US_gal__Fuel_Tank = (2, Weapons._110_US_gal__Fuel_Tank)
+        _150_US_gal__Fuel_Tank = (2, Weapons._150_US_gal__Fuel_Tank)
+        M10_Smoke_Tank___red = (2, Weapons.M10_Smoke_Tank___red)
+        M10_Smoke_Tank___yellow = (2, Weapons.M10_Smoke_Tank___yellow)
+        M10_Smoke_Tank___orange = (2, Weapons.M10_Smoke_Tank___orange)
+        M10_Smoke_Tank___green = (2, Weapons.M10_Smoke_Tank___green)
+        M10_Smoke_Tank___blue = (2, Weapons.M10_Smoke_Tank___blue)
+        M10_Smoke_Tank___white = (2, Weapons.M10_Smoke_Tank___white)
+#ERRR <CLEAN>
+
+    class Pylon3:
+        AN_M30A1 = (3, Weapons.AN_M30A1)
+        AN_M57 = (3, Weapons.AN_M57)
+        AN_M64 = (3, Weapons.AN_M64)
+        AN_M65 = (3, Weapons.AN_M65)
+        _108_US_gal__Paper_Fuel_Tank = (3, Weapons._108_US_gal__Paper_Fuel_Tank)
+        _110_US_gal__Fuel_Tank = (3, Weapons._110_US_gal__Fuel_Tank)
+        _150_US_gal__Fuel_Tank = (3, Weapons._150_US_gal__Fuel_Tank)
+        M10_Smoke_Tank___red = (3, Weapons.M10_Smoke_Tank___red)
+        M10_Smoke_Tank___yellow = (3, Weapons.M10_Smoke_Tank___yellow)
+        M10_Smoke_Tank___orange = (3, Weapons.M10_Smoke_Tank___orange)
+        M10_Smoke_Tank___green = (3, Weapons.M10_Smoke_Tank___green)
+        M10_Smoke_Tank___blue = (3, Weapons.M10_Smoke_Tank___blue)
+        M10_Smoke_Tank___white = (3, Weapons.M10_Smoke_Tank___white)
+
+    class Pylon4:
+        _5_x_HVAR_UnGd_Rkt = (4, Weapons._5_x_HVAR_UnGd_Rkt)
+        _3_x_4_5_Inch_M8 = (4, Weapons._3_x_4_5_Inch_M8)
+
+    class Pylon5:
+        _5_x_HVAR_UnGd_Rkt_ = (5, Weapons._5_x_HVAR_UnGd_Rkt_)
+        _3_x_4_5_Inch_M8 = (5, Weapons._3_x_4_5_Inch_M8)
+
+    pylons = {1, 2, 3, 4, 5}
+
+    tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
+    task_default = task.CAP
+
+
+class A_10A(PlaneType):
+    id = "A-10A"
+    flyable = True
+    height = 4.47
+    width = 17.53
+    length = 16.26
+    fuel_max = 5029
+    max_speed = 720
+    chaff = 240
+    flare = 120
+    charge_total = 480
+    chaff_charge_size = 1
+    flare_charge_size = 2
+    radio_frequency = 124
+
+    callnames = {
+        "USA": [
+            "Hawg",
+            "Boar",
+            "Pig",
+            "Tusk",
+        ]
+    }
+
+    property_defaults = {
+    }
+
+    class Liveries:
+
+        class Georgia(Enum):
+            fictional_georgian_grey = "fictional georgian grey"
+            fictional_georgian_olive = "fictional georgian olive"
+
+        class Australia(Enum):
+            australia_notional_raaf = "australia notional raaf"
+
+        class Germany(Enum):
+            fictional_german_3322 = "fictional german 3322"
+            fictional_german_3323 = "fictional german 3323"
+
+        class Israel(Enum):
+            fictional_israel_115_sqn_flying_dragon = "fictional israel 115 sqn flying dragon"
+
+        class Norway(Enum):
+            fictional_royal_norwegian_air_force = "fictional royal norwegian air force"
+
+        class Spain(Enum):
+            fictional_spanish_12nd_wing = "fictional spanish 12nd wing"
+            fictional_spanish_aga = "fictional spanish aga"
+            fictional_spanish_tritonal = "fictional spanish tritonal"
+
+        class Ukraine(Enum):
+            fictional_ukraine_air_force_1 = "fictional ukraine air force 1"
+
+        class Belgium(Enum):
+            a_10_grey = "a-10 grey"
+
+        class Greece(Enum):
+            haf_fictional = "haf fictional"
+
+        class UK(Enum):
+            a_10_grey = "a-10 grey"
+
+        class France(Enum):
+            fictional_france_escadron_de_chasse_03_003_ardennes = "fictional france escadron de chasse 03.003 ardennes"
+
+        class Russia(Enum):
+            fictional_russian_air_force_1 = "fictional russian air force 1"
+            fictional_russian_air_force_2 = "fictional russian air force 2"
+
+        class Italy(Enum):
+            fictional_italian_am__23gruppo = "fictional italian am (23gruppo)"
+
+        class USA(Enum):
+            _104th_fs_maryland_ang__baltimore__md = "104th fs maryland ang, baltimore (md)"
+            _118th_fs_bradley_angb__connecticut__ct = "118th fs bradley angb, connecticut (ct)"
+            _118th_fs_bradley_angb__connecticut__ct__n621 = "118th fs bradley angb, connecticut (ct) n621"
+            _172nd_fs_battle_creek_angb__michigan__bc = "172nd fs battle creek angb, michigan (bc)"
+            _184th_fs_arkansas_ang__fort_smith__fs = "184th fs arkansas ang, fort smith (fs)"
+            _190th_fs_boise_angb__idaho__id = "190th fs boise angb, idaho (id)"
+            _23rd_tfw_england_afb__el = "23rd tfw england afb (el)"
+            _25th_fs_osan_ab__korea__os = "25th fs osan ab, korea (os)"
+            _354th_fs_davis_monthan_afb__arizona__dm = "354th fs davis monthan afb, arizona (dm)"
+            _355th_fs_eielson_afb__alaska__ak = "355th fs eielson afb, alaska (ak)"
+            _357th_fs_davis_monthan_afb__arizona__dm = "357th fs davis monthan afb, arizona (dm)"
+            _358th_fs_davis_monthan_afb__arizona__dm = "358th fs davis monthan afb, arizona (dm)"
+            _422nd_tes_nellis_afb__nevada__ot = "422nd tes nellis afb, nevada (ot)"
+            _47th_fs_barksdale_afb__louisiana__bd = "47th fs barksdale afb, louisiana (bd)"
+            _66th_ws_nellis_afb__nevada__wa = "66th ws nellis afb, nevada (wa)"
+            _74th_fs_moody_afb__georgia__ft = "74th fs moody afb, georgia (ft)"
+            _81st_fs_spangdahlem_ab__germany__sp__1 = "81st fs spangdahlem ab, germany (sp) 1"
+            _81st_fs_spangdahlem_ab__germany__sp__2 = "81st fs spangdahlem ab, germany (sp) 2"
+
+        class Denmark(Enum):
+            a_10_grey = "a-10 grey"
+
+        class Canada(Enum):
+            canada_rcaf_409_squadron = "canada rcaf 409 squadron"
+            canada_rcaf_442_snow_scheme = "canada rcaf 442 snow scheme"
+            fictional_canadian_air_force_pixel_camo = "fictional canadian air force pixel camo"
+
+        class TheNetherlands(Enum):
+            a_10_grey = "a-10 grey"
+
+        class Turkey(Enum):
+            a_10_grey = "a-10 grey"
+
+    class Pylon1:
+        LAU_105_2_AIM_9L = (1, Weapons.LAU_105_2_AIM_9L)
+        LAU_105_1_AIM_9L_L = (1, Weapons.LAU_105_1_AIM_9L_L)
+        LAU_105_2_AIM_9P5 = (1, Weapons.LAU_105_2_AIM_9P5)
+        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
+        LAU_105_1_AIM_9M_L = (1, Weapons.LAU_105_1_AIM_9M_L)
+        LAU_105___2_AIM_9P_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9P_Sidewinder_IR_AAM)
+        ALQ_131 = (1, Weapons.ALQ_131)
+        ALQ_184 = (1, Weapons.ALQ_184)
+        Smokewinder___red = (1, Weapons.Smokewinder___red)
+        Smokewinder___green = (1, Weapons.Smokewinder___green)
+        Smokewinder___blue = (1, Weapons.Smokewinder___blue)
+        Smokewinder___white = (1, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (1, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (1, Weapons.Smokewinder___orange)
+        Mk_82AIR = (1, Weapons.Mk_82AIR)
+        CBU_87 = (1, Weapons.CBU_87)
+        BDU_50LD = (1, Weapons.BDU_50LD)
+        BDU_50HD = (1, Weapons.BDU_50HD)
+        CBU_97 = (1, Weapons.CBU_97)
+        Mk_82 = (1, Weapons.Mk_82)
+        LAU_105_AIS_ASQ_T50_L = (1, Weapons.LAU_105_AIS_ASQ_T50_L)
+
+    class Pylon2:
+        Mk_82 = (2, Weapons.Mk_82)
+        SUU_25___8_LUU_2 = (2, Weapons.SUU_25___8_LUU_2)
+        Mk_82AIR = (2, Weapons.Mk_82AIR)
+        CBU_87 = (2, Weapons.CBU_87)
+        BDU_50LD = (2, Weapons.BDU_50LD)
+        BDU_50HD = (2, Weapons.BDU_50HD)
+        LAU_68___7_2_75__rockets_MK1__Practice_ = (2, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
+        LAU_68___7_2_75__rockets_MK5__HE_ = (2, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
+        LAU_68___7_2_75__rockets_MK61__Practice_ = (2, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
+        LAU_68___7_2_75__rockets_M151__HE_ = (2, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
+        LAU_68___7_2_75__rockets_M156_WP_ = (2, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
+        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (2, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (2, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (2, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
+        LAU_131___7_2_75__rockets_Mk1__Practice_ = (2, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
+        LAU_131___7_2_75__rockets_MK5__HE_ = (2, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
+        LAU_131___7_2_75__rockets_MK61__Practice_ = (2, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
+        LAU_131___7_2_75__rockets_M151__HE_ = (2, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
+        LAU_131___7_2_75__rockets_M156__WP_ = (2, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
+        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (2, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
+        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (2, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (2, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
+        CBU_97 = (2, Weapons.CBU_97)
+
+    class Pylon3:
+        LAU_117_AGM_65K = (3, Weapons.LAU_117_AGM_65K)
+        LAU_117_AGM_65D = (3, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65G = (3, Weapons.LAU_117_AGM_65G)
+        LAU_117_AGM_65H = (3, Weapons.LAU_117_AGM_65H)
+        LAU_88_AGM_65D_2 = (3, Weapons.LAU_88_AGM_65D_2)
+        LAU_88_AGM_65H_2_L = (3, Weapons.LAU_88_AGM_65H_2_L)
+        LAU_88_AGM_65D_3 = (3, Weapons.LAU_88_AGM_65D_3)
+        LAU_88_AGM_65H_3 = (3, Weapons.LAU_88_AGM_65H_3)
+        Mk_84 = (3, Weapons.Mk_84)
+        Mk_82 = (3, Weapons.Mk_82)
+        Mk_82AIR = (3, Weapons.Mk_82AIR)
+        CBU_87 = (3, Weapons.CBU_87)
+        BDU_50LD = (3, Weapons.BDU_50LD)
+        BDU_50HD = (3, Weapons.BDU_50HD)
+        BRU_42_3_BDU_33 = (3, Weapons.BRU_42_3_BDU_33)
+        _3_Mk_82 = (3, Weapons._3_Mk_82)
+        _3_Mk_82AIR = (3, Weapons._3_Mk_82AIR)
+        LAU_68___7_2_75__rockets_MK1__Practice_ = (3, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
+        LAU_68___7_2_75__rockets_MK5__HE_ = (3, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
+        LAU_68___7_2_75__rockets_MK61__Practice_ = (3, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
+        LAU_68___7_2_75__rockets_M151__HE_ = (3, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
+        LAU_68___7_2_75__rockets_M156_WP_ = (3, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
+        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (3, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (3, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (3, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
+        LAU_131___7_2_75__rockets_Mk1__Practice_ = (3, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
+        LAU_131___7_2_75__rockets_MK5__HE_ = (3, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
+        LAU_131___7_2_75__rockets_MK61__Practice_ = (3, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
+        LAU_131___7_2_75__rockets_M151__HE_ = (3, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
+        LAU_131___7_2_75__rockets_M156__WP_ = (3, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
+        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (3, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
+        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (3, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (3, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
+        CBU_97 = (3, Weapons.CBU_97)
+
+    class Pylon4:
+        Mk_82 = (4, Weapons.Mk_82)
+        Mk_84 = (4, Weapons.Mk_84)
+        Mk_82AIR = (4, Weapons.Mk_82AIR)
+        CBU_87 = (4, Weapons.CBU_87)
+        BDU_50LD = (4, Weapons.BDU_50LD)
+        BDU_50HD = (4, Weapons.BDU_50HD)
+        BRU_42_3_BDU_33 = (4, Weapons.BRU_42_3_BDU_33)
+        _3_Mk_82 = (4, Weapons._3_Mk_82)
+        _3_Mk_82AIR = (4, Weapons._3_Mk_82AIR)
+        LAU_68___7_2_75__rockets_MK1__Practice_ = (4, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
+        LAU_68___7_2_75__rockets_MK5__HE_ = (4, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
+        LAU_68___7_2_75__rockets_MK61__Practice_ = (4, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
+        LAU_68___7_2_75__rockets_M151__HE_ = (4, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
+        LAU_68___7_2_75__rockets_M156_WP_ = (4, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
+        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (4, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (4, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (4, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
+        LAU_131___7_2_75__rockets_Mk1__Practice_ = (4, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
+        LAU_131___7_2_75__rockets_MK5__HE_ = (4, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
+        LAU_131___7_2_75__rockets_MK61__Practice_ = (4, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
+        LAU_131___7_2_75__rockets_M151__HE_ = (4, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
+        LAU_131___7_2_75__rockets_M156__WP_ = (4, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
+        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (4, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
+        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (4, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (4, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
+        Fuel_Tank_FT600 = (4, Weapons.Fuel_Tank_FT600)
+        CBU_97 = (4, Weapons.CBU_97)
+
+    class Pylon5:
+        Mk_82 = (5, Weapons.Mk_82)
+        Mk_84 = (5, Weapons.Mk_84)
+        Mk_82AIR = (5, Weapons.Mk_82AIR)
+        CBU_87 = (5, Weapons.CBU_87)
+        BDU_50LD = (5, Weapons.BDU_50LD)
+        BDU_50HD = (5, Weapons.BDU_50HD)
+        BRU_42_3_BDU_33 = (5, Weapons.BRU_42_3_BDU_33)
+        CBU_97 = (5, Weapons.CBU_97)
+
+    class Pylon6:
+        Mk_82 = (6, Weapons.Mk_82)
+        Mk_84 = (6, Weapons.Mk_84)
+        Mk_82AIR = (6, Weapons.Mk_82AIR)
+        CBU_87 = (6, Weapons.CBU_87)
+        BDU_50LD = (6, Weapons.BDU_50LD)
+        BDU_50HD = (6, Weapons.BDU_50HD)
+        BRU_42_3_BDU_33 = (6, Weapons.BRU_42_3_BDU_33)
+        Fuel_Tank_FT600 = (6, Weapons.Fuel_Tank_FT600)
+        CBU_97 = (6, Weapons.CBU_97)
+
+    class Pylon7:
+        Mk_82 = (7, Weapons.Mk_82)
+        Mk_84 = (7, Weapons.Mk_84)
+        Mk_82AIR = (7, Weapons.Mk_82AIR)
+        CBU_87 = (7, Weapons.CBU_87)
+        BDU_50LD = (7, Weapons.BDU_50LD)
+        BDU_50HD = (7, Weapons.BDU_50HD)
+        BRU_42_3_BDU_33 = (7, Weapons.BRU_42_3_BDU_33)
+        CBU_97 = (7, Weapons.CBU_97)
+
+    class Pylon8:
+        Mk_82 = (8, Weapons.Mk_82)
+        Mk_84 = (8, Weapons.Mk_84)
+        Mk_82AIR = (8, Weapons.Mk_82AIR)
+        CBU_87 = (8, Weapons.CBU_87)
+        BDU_50LD = (8, Weapons.BDU_50LD)
+        BDU_50HD = (8, Weapons.BDU_50HD)
+        BRU_42_3_BDU_33 = (8, Weapons.BRU_42_3_BDU_33)
+        _3_Mk_82 = (8, Weapons._3_Mk_82)
+        _3_Mk_82AIR = (8, Weapons._3_Mk_82AIR)
+        LAU_68___7_2_75__rockets_MK1__Practice_ = (8, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
+        LAU_68___7_2_75__rockets_MK5__HE_ = (8, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
+        LAU_68___7_2_75__rockets_MK61__Practice_ = (8, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
+        LAU_68___7_2_75__rockets_M151__HE_ = (8, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
+        LAU_68___7_2_75__rockets_M156_WP_ = (8, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
+        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (8, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (8, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (8, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
+        LAU_131___7_2_75__rockets_Mk1__Practice_ = (8, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
+        LAU_131___7_2_75__rockets_MK5__HE_ = (8, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
+        LAU_131___7_2_75__rockets_MK61__Practice_ = (8, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
+        LAU_131___7_2_75__rockets_M151__HE_ = (8, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
+        LAU_131___7_2_75__rockets_M156__WP_ = (8, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
+        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (8, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
+        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (8, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (8, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
+        Fuel_Tank_FT600 = (8, Weapons.Fuel_Tank_FT600)
+        CBU_97 = (8, Weapons.CBU_97)
+
+    class Pylon9:
+        LAU_117_AGM_65K = (9, Weapons.LAU_117_AGM_65K)
+        LAU_117_AGM_65D = (9, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65G = (9, Weapons.LAU_117_AGM_65G)
+        LAU_117_AGM_65H = (9, Weapons.LAU_117_AGM_65H)
+        LAU_88_AGM_65D_2_ = (9, Weapons.LAU_88_AGM_65D_2_)
+        LAU_88_AGM_65H_2_R = (9, Weapons.LAU_88_AGM_65H_2_R)
+        LAU_88_AGM_65D_3 = (9, Weapons.LAU_88_AGM_65D_3)
+        LAU_88_AGM_65H_3 = (9, Weapons.LAU_88_AGM_65H_3)
+        Mk_84 = (9, Weapons.Mk_84)
+        Mk_82 = (9, Weapons.Mk_82)
+        Mk_82AIR = (9, Weapons.Mk_82AIR)
+        CBU_87 = (9, Weapons.CBU_87)
+        BDU_50LD = (9, Weapons.BDU_50LD)
+        BDU_50HD = (9, Weapons.BDU_50HD)
+        BRU_42_3_BDU_33 = (9, Weapons.BRU_42_3_BDU_33)
+        _3_Mk_82 = (9, Weapons._3_Mk_82)
+        _3_Mk_82AIR = (9, Weapons._3_Mk_82AIR)
+        LAU_68___7_2_75__rockets_MK1__Practice_ = (9, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
+        LAU_68___7_2_75__rockets_MK5__HE_ = (9, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
+        LAU_68___7_2_75__rockets_MK61__Practice_ = (9, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
+        LAU_68___7_2_75__rockets_M151__HE_ = (9, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
+        LAU_68___7_2_75__rockets_M156_WP_ = (9, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
+        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (9, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (9, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (9, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
+        LAU_131___7_2_75__rockets_Mk1__Practice_ = (9, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
+        LAU_131___7_2_75__rockets_MK5__HE_ = (9, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
+        LAU_131___7_2_75__rockets_MK61__Practice_ = (9, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
+        LAU_131___7_2_75__rockets_M151__HE_ = (9, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
+        LAU_131___7_2_75__rockets_M156__WP_ = (9, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
+        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (9, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
+        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (9, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (9, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
+        CBU_97 = (9, Weapons.CBU_97)
+
+    class Pylon10:
+        Mk_82 = (10, Weapons.Mk_82)
+        SUU_25___8_LUU_2 = (10, Weapons.SUU_25___8_LUU_2)
+        Mk_82AIR = (10, Weapons.Mk_82AIR)
+        CBU_87 = (10, Weapons.CBU_87)
+        BDU_50LD = (10, Weapons.BDU_50LD)
+        BDU_50HD = (10, Weapons.BDU_50HD)
+        LAU_68___7_2_75__rockets_MK1__Practice_ = (10, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
+        LAU_68___7_2_75__rockets_MK5__HE_ = (10, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
+        LAU_68___7_2_75__rockets_MK61__Practice_ = (10, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
+        LAU_68___7_2_75__rockets_M151__HE_ = (10, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
+        LAU_68___7_2_75__rockets_M156_WP_ = (10, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
+        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (10, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (10, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (10, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
+        LAU_131___7_2_75__rockets_Mk1__Practice_ = (10, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
+        LAU_131___7_2_75__rockets_MK5__HE_ = (10, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
+        LAU_131___7_2_75__rockets_MK61__Practice_ = (10, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
+        LAU_131___7_2_75__rockets_M151__HE_ = (10, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
+        LAU_131___7_2_75__rockets_M156__WP_ = (10, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
+        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (10, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
+        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (10, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (10, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
+        CBU_97 = (10, Weapons.CBU_97)
+
+    class Pylon11:
+        LAU_105_2_AIM_9L = (11, Weapons.LAU_105_2_AIM_9L)
+        LAU_105_1_AIM_9L_R = (11, Weapons.LAU_105_1_AIM_9L_R)
+        LAU_105_2_AIM_9P5 = (11, Weapons.LAU_105_2_AIM_9P5)
+        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (11, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
+        LAU_105_1_AIM_9M_R = (11, Weapons.LAU_105_1_AIM_9M_R)
+        LAU_105___2_AIM_9P_Sidewinder_IR_AAM = (11, Weapons.LAU_105___2_AIM_9P_Sidewinder_IR_AAM)
+        ALQ_131 = (11, Weapons.ALQ_131)
+        ALQ_184 = (11, Weapons.ALQ_184)
+        Smokewinder___red = (11, Weapons.Smokewinder___red)
+        Smokewinder___green = (11, Weapons.Smokewinder___green)
+        Smokewinder___blue = (11, Weapons.Smokewinder___blue)
+        Smokewinder___white = (11, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (11, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (11, Weapons.Smokewinder___orange)
+        Mk_82AIR = (11, Weapons.Mk_82AIR)
+        CBU_87 = (11, Weapons.CBU_87)
+        BDU_50LD = (11, Weapons.BDU_50LD)
+        BDU_50HD = (11, Weapons.BDU_50HD)
+        CBU_97 = (11, Weapons.CBU_97)
+        Mk_82 = (11, Weapons.Mk_82)
+        LAU_105_AIS_ASQ_T50_R = (11, Weapons.LAU_105_AIS_ASQ_T50_R)
+
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+
+    tasks = [task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
+    task_default = task.CAS
+
+
+class A_10C(PlaneType):
+    id = "A-10C"
+    flyable = True
+    height = 4.47
+    width = 17.53
+    length = 16.26
+    fuel_max = 5029
+    max_speed = 720
+    chaff = 240
+    flare = 120
+    charge_total = 480
+    chaff_charge_size = 1
+    flare_charge_size = 2
+    eplrs = True
+
+    callnames = {
+        "USA": [
+            "Hawg",
+            "Boar",
+            "Pig",
+            "Tusk",
+        ]
+    }
+
+    property_defaults = {
+    }
+
+    class Liveries:
+
+        class Georgia(Enum):
+            fictional_georgian_grey = "fictional georgian grey"
+            fictional_georgian_olive = "fictional georgian olive"
+
+        class Australia(Enum):
+            australia_notional_raaf = "australia notional raaf"
+
+        class Germany(Enum):
+            fictional_german_3322 = "fictional german 3322"
+            fictional_german_3323 = "fictional german 3323"
+
+        class Israel(Enum):
+            fictional_israel_115_sqn_flying_dragon = "fictional israel 115 sqn flying dragon"
+
+        class Norway(Enum):
+            fictional_royal_norwegian_air_force = "fictional royal norwegian air force"
+
+        class Spain(Enum):
+            fictional_spanish_12nd_wing = "fictional spanish 12nd wing"
+            fictional_spanish_aga = "fictional spanish aga"
+            fictional_spanish_tritonal = "fictional spanish tritonal"
+
+        class Ukraine(Enum):
+            fictional_ukraine_air_force_1 = "fictional ukraine air force 1"
+
+        class Belgium(Enum):
+            a_10_grey = "a-10 grey"
+
+        class Greece(Enum):
+            haf_fictional = "haf fictional"
+
+        class UK(Enum):
+            a_10_grey = "a-10 grey"
+
+        class France(Enum):
+            fictional_france_escadron_de_chasse_03_003_ardennes = "fictional france escadron de chasse 03.003 ardennes"
+
+        class Russia(Enum):
+            fictional_russian_air_force_1 = "fictional russian air force 1"
+            fictional_russian_air_force_2 = "fictional russian air force 2"
+
+        class Italy(Enum):
+            fictional_italian_am__23gruppo = "fictional italian am (23gruppo)"
+
+        class USA(Enum):
+            _104th_fs_maryland_ang__baltimore__md = "104th fs maryland ang, baltimore (md)"
+            _118th_fs_bradley_angb__connecticut__ct = "118th fs bradley angb, connecticut (ct)"
+            _118th_fs_bradley_angb__connecticut__ct__n621 = "118th fs bradley angb, connecticut (ct) n621"
+            _172nd_fs_battle_creek_angb__michigan__bc = "172nd fs battle creek angb, michigan (bc)"
+            _184th_fs_arkansas_ang__fort_smith__fs = "184th fs arkansas ang, fort smith (fs)"
+            _190th_fs_boise_angb__idaho__id = "190th fs boise angb, idaho (id)"
+            _23rd_tfw_england_afb__el = "23rd tfw england afb (el)"
+            _25th_fs_osan_ab__korea__os = "25th fs osan ab, korea (os)"
+            _354th_fs_davis_monthan_afb__arizona__dm = "354th fs davis monthan afb, arizona (dm)"
+            _355th_fs_eielson_afb__alaska__ak = "355th fs eielson afb, alaska (ak)"
+            _357th_fs_davis_monthan_afb__arizona__dm = "357th fs davis monthan afb, arizona (dm)"
+            _358th_fs_davis_monthan_afb__arizona__dm = "358th fs davis monthan afb, arizona (dm)"
+            _422nd_tes_nellis_afb__nevada__ot = "422nd tes nellis afb, nevada (ot)"
+            _47th_fs_barksdale_afb__louisiana__bd = "47th fs barksdale afb, louisiana (bd)"
+            _66th_ws_nellis_afb__nevada__wa = "66th ws nellis afb, nevada (wa)"
+            _74th_fs_moody_afb__georgia__ft = "74th fs moody afb, georgia (ft)"
+            _81st_fs_spangdahlem_ab__germany__sp__1 = "81st fs spangdahlem ab, germany (sp) 1"
+            _81st_fs_spangdahlem_ab__germany__sp__2 = "81st fs spangdahlem ab, germany (sp) 2"
+
+        class Denmark(Enum):
+            a_10_grey = "a-10 grey"
+
+        class Canada(Enum):
+            canada_rcaf_409_squadron = "canada rcaf 409 squadron"
+            canada_rcaf_442_snow_scheme = "canada rcaf 442 snow scheme"
+            fictional_canadian_air_force_pixel_camo = "fictional canadian air force pixel camo"
+
+        class TheNetherlands(Enum):
+            a_10_grey = "a-10 grey"
+
+        class Turkey(Enum):
+            a_10_grey = "a-10 grey"
+
+    class Pylon1:
+        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
+        Mk_82 = (1, Weapons.Mk_82)
+        LAU_105_1_AIM_9M_L = (1, Weapons.LAU_105_1_AIM_9M_L)
+        LAU_105 = (1, Weapons.LAU_105)
+        LAU_105_2_CATM_9M = (1, Weapons.LAU_105_2_CATM_9M)
+        LAU_105_1_CATM_9M_L = (1, Weapons.LAU_105_1_CATM_9M_L)
+        ALQ_131 = (1, Weapons.ALQ_131)
+        Smokewinder___red = (1, Weapons.Smokewinder___red)
+        Smokewinder___green = (1, Weapons.Smokewinder___green)
+        Smokewinder___blue = (1, Weapons.Smokewinder___blue)
+        Smokewinder___white = (1, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (1, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (1, Weapons.Smokewinder___orange)
+        GBU_12 = (1, Weapons.GBU_12)
+        BDU_50LD = (1, Weapons.BDU_50LD)
+        BDU_50LGB = (1, Weapons.BDU_50LGB)
+        BDU_50HD = (1, Weapons.BDU_50HD)
+        Mk_82AIR = (1, Weapons.Mk_82AIR)
+        CBU_87 = (1, Weapons.CBU_87)
+        ALQ_184 = (1, Weapons.ALQ_184)
+        CBU_97 = (1, Weapons.CBU_97)
+        LAU_105_AIS_ASQ_T50_L = (1, Weapons.LAU_105_AIS_ASQ_T50_L)
+        LAU_105_2_AIM_9L = (1, Weapons.LAU_105_2_AIM_9L)
+        LAU_105_1_AIM_9L_L = (1, Weapons.LAU_105_1_AIM_9L_L)
+
+    class Pylon2:
+        Mk_82 = (2, Weapons.Mk_82)
+        AN_AAQ_28_LITENING = (2, Weapons.AN_AAQ_28_LITENING)
+        GBU_12 = (2, Weapons.GBU_12)
+        BDU_50LD = (2, Weapons.BDU_50LD)
+        BDU_50HD = (2, Weapons.BDU_50HD)
+        Mk_82AIR = (2, Weapons.Mk_82AIR)
+        CBU_87 = (2, Weapons.CBU_87)
+        LAU_68___7_2_75__rockets_MK1__Practice_ = (2, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
+        LAU_68___7_2_75__rockets_MK5__HE_ = (2, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
+        LAU_68___7_2_75__rockets_MK61__Practice_ = (2, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
+        LAU_68___7_2_75__rockets_M151__HE_ = (2, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
+        LAU_68___7_2_75__rockets_M156_WP_ = (2, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
+        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (2, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (2, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (2, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
+#ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
+        LAU_131___7_2_75__rockets_Mk1__Practice_ = (2, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
+        LAU_131___7_2_75__rockets_MK5__HE_ = (2, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
+        LAU_131___7_2_75__rockets_MK61__Practice_ = (2, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
+        LAU_131___7_2_75__rockets_M151__HE_ = (2, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
+        LAU_131___7_2_75__rockets_M156__WP_ = (2, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
+        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (2, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
+        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (2, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (2, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
+#ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
+        CBU_97 = (2, Weapons.CBU_97)
+        BDU_50LGB = (2, Weapons.BDU_50LGB)
+        SUU_25___8_LUU_2 = (2, Weapons.SUU_25___8_LUU_2)
+
+    class Pylon3:
+        LAU_117_AGM_65K = (3, Weapons.LAU_117_AGM_65K)
+        LAU_88_AGM_65D_ONE = (3, Weapons.LAU_88_AGM_65D_ONE)
+        LAU_88_AGM_65D_2 = (3, Weapons.LAU_88_AGM_65D_2)
+        LAU_88_AGM_65D_3 = (3, Weapons.LAU_88_AGM_65D_3)
+        LAU_117_AGM_65D = (3, Weapons.LAU_117_AGM_65D)
+        Mk_84 = (3, Weapons.Mk_84)
+        Mk_82 = (3, Weapons.Mk_82)
+        _3_Mk_82 = (3, Weapons._3_Mk_82)
+        GBU_12 = (3, Weapons.GBU_12)
+        BDU_50LD = (3, Weapons.BDU_50LD)
+        BDU_50HD = (3, Weapons.BDU_50HD)
+        Mk_82AIR = (3, Weapons.Mk_82AIR)
+        CBU_87 = (3, Weapons.CBU_87)
+        GBU_10 = (3, Weapons.GBU_10)
+        GBU_31_V_1_B = (3, Weapons.GBU_31_V_1_B)
+        GBU_31_V_3_B = (3, Weapons.GBU_31_V_3_B)
+        GBU_38 = (3, Weapons.GBU_38)
+        LAU_68___7_2_75__rockets_MK1__Practice_ = (3, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
+        LAU_68___7_2_75__rockets_MK5__HE_ = (3, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
+        LAU_68___7_2_75__rockets_MK61__Practice_ = (3, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
+        LAU_68___7_2_75__rockets_M151__HE_ = (3, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
+        LAU_68___7_2_75__rockets_M156_WP_ = (3, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
+        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (3, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (3, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (3, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
+#ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
+        LAU_131___7_2_75__rockets_Mk1__Practice_ = (3, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
+        LAU_131___7_2_75__rockets_MK5__HE_ = (3, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
+        LAU_131___7_2_75__rockets_MK61__Practice_ = (3, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
+        LAU_131___7_2_75__rockets_M151__HE_ = (3, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
+        LAU_131___7_2_75__rockets_M156__WP_ = (3, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
+        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (3, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
+        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (3, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (3, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
+#ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
+        LAU_68_3___7_2_75__rockets_MK1__Practice_ = (3, Weapons.LAU_68_3___7_2_75__rockets_MK1__Practice_)
+        LAU_68_3___7_2_75__rockets_MK5__HE_ = (3, Weapons.LAU_68_3___7_2_75__rockets_MK5__HE_)
+        LAU_68_3___7_2_75__rockets_MK61__Practice_ = (3, Weapons.LAU_68_3___7_2_75__rockets_MK61__Practice_)
+        LAU_68_3___7_2_75__rockets_M151__HE_ = (3, Weapons.LAU_68_3___7_2_75__rockets_M151__HE_)
+        LAU_68_3___7_2_75__rockets_M156__WP_ = (3, Weapons.LAU_68_3___7_2_75__rockets_M156__WP_)
+        LAU_68_3___7_2_75__rockets_WTU1B__Practice_ = (3, Weapons.LAU_68_3___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68_3___7_2_75__rockets_M274__Practice_smoke_ = (3, Weapons.LAU_68_3___7_2_75__rockets_M274__Practice_smoke_)
+        LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_ = (3, Weapons.LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_)
+#ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
+        LAU_131x3_HYDRA_70_MK1 = (3, Weapons.LAU_131x3_HYDRA_70_MK1)
+        LAU_131x3_HYDRA_70_MK5 = (3, Weapons.LAU_131x3_HYDRA_70_MK5)
+        LAU_131x3_HYDRA_70_MK61 = (3, Weapons.LAU_131x3_HYDRA_70_MK61)
+        LAU_131x3_HYDRA_70_M151 = (3, Weapons.LAU_131x3_HYDRA_70_M151)
+        LAU_131x3_HYDRA_70_M156 = (3, Weapons.LAU_131x3_HYDRA_70_M156)
+        LAU_131x3_HYDRA_70_WTU1B = (3, Weapons.LAU_131x3_HYDRA_70_WTU1B)
+        LAU_131x3_HYDRA_70_M257 = (3, Weapons.LAU_131x3_HYDRA_70_M257)
+        LAU_131x3_HYDRA_70_M274 = (3, Weapons.LAU_131x3_HYDRA_70_M274)
+#ERRR LAU_131x3_HYDRA_70_M278
+        MXU_648_TP = (3, Weapons.MXU_648_TP)
+        BRU_42_LS = (3, Weapons.BRU_42_LS)
+        BRU_42_3_BDU_33 = (3, Weapons.BRU_42_3_BDU_33)
+        LAU_117_AGM_65H = (3, Weapons.LAU_117_AGM_65H)
+        LAU_117_AGM_65G = (3, Weapons.LAU_117_AGM_65G)
+        LAU_88_AGM_65H = (3, Weapons.LAU_88_AGM_65H)
+        LAU_88_AGM_65H_2_L = (3, Weapons.LAU_88_AGM_65H_2_L)
+        LAU_88_AGM_65H_3 = (3, Weapons.LAU_88_AGM_65H_3)
+        LAU_117_TGM_65D = (3, Weapons.LAU_117_TGM_65D)
+        LAU_117_TGM_65G = (3, Weapons.LAU_117_TGM_65G)
+        LAU_117_TGM_65H = (3, Weapons.LAU_117_TGM_65H)
+        LAU_117_CATM_65K = (3, Weapons.LAU_117_CATM_65K)
+        BRU_42_3_GBU_12 = (3, Weapons.BRU_42_3_GBU_12)
+        CBU_97 = (3, Weapons.CBU_97)
+        CBU_105 = (3, Weapons.CBU_105)
+        CBU_103 = (3, Weapons.CBU_103)
+        BDU_50LGB = (3, Weapons.BDU_50LGB)
+        SUU_25___8_LUU_2 = (3, Weapons.SUU_25___8_LUU_2)
+        _3_Mk_82AIR = (3, Weapons._3_Mk_82AIR)
+        _3_SUU_25___8_LUU_2 = (3, Weapons._3_SUU_25___8_LUU_2)
+
+    class Pylon4:
+        Mk_82 = (4, Weapons.Mk_82)
+        Mk_84 = (4, Weapons.Mk_84)
+        Fuel_Tank_FT600 = (4, Weapons.Fuel_Tank_FT600)
+        GBU_12 = (4, Weapons.GBU_12)
+        BDU_50LD = (4, Weapons.BDU_50LD)
+        BDU_50HD = (4, Weapons.BDU_50HD)
+        Mk_82AIR = (4, Weapons.Mk_82AIR)
+        GBU_10 = (4, Weapons.GBU_10)
+        GBU_31_V_1_B = (4, Weapons.GBU_31_V_1_B)
+        GBU_31_V_3_B = (4, Weapons.GBU_31_V_3_B)
+        GBU_38 = (4, Weapons.GBU_38)
+        CBU_87 = (4, Weapons.CBU_87)
+        LAU_68___7_2_75__rockets_MK1__Practice_ = (4, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
+        LAU_68___7_2_75__rockets_MK5__HE_ = (4, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
+        LAU_68___7_2_75__rockets_MK61__Practice_ = (4, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
+        LAU_68___7_2_75__rockets_M151__HE_ = (4, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
+        LAU_68___7_2_75__rockets_M156_WP_ = (4, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
+        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (4, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (4, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (4, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
+#ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
+        LAU_131___7_2_75__rockets_Mk1__Practice_ = (4, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
+        LAU_131___7_2_75__rockets_MK5__HE_ = (4, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
+        LAU_131___7_2_75__rockets_MK61__Practice_ = (4, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
+        LAU_131___7_2_75__rockets_M151__HE_ = (4, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
+        LAU_131___7_2_75__rockets_M156__WP_ = (4, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
+        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (4, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
+        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (4, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (4, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
+#ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
+        LAU_68_3___7_2_75__rockets_MK1__Practice_ = (4, Weapons.LAU_68_3___7_2_75__rockets_MK1__Practice_)
+        LAU_68_3___7_2_75__rockets_MK5__HE_ = (4, Weapons.LAU_68_3___7_2_75__rockets_MK5__HE_)
+        LAU_68_3___7_2_75__rockets_MK61__Practice_ = (4, Weapons.LAU_68_3___7_2_75__rockets_MK61__Practice_)
+        LAU_68_3___7_2_75__rockets_M151__HE_ = (4, Weapons.LAU_68_3___7_2_75__rockets_M151__HE_)
+        LAU_68_3___7_2_75__rockets_M156__WP_ = (4, Weapons.LAU_68_3___7_2_75__rockets_M156__WP_)
+        LAU_68_3___7_2_75__rockets_WTU1B__Practice_ = (4, Weapons.LAU_68_3___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68_3___7_2_75__rockets_M274__Practice_smoke_ = (4, Weapons.LAU_68_3___7_2_75__rockets_M274__Practice_smoke_)
+        LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_ = (4, Weapons.LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_)
+#ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
+        LAU_131x3_HYDRA_70_MK1 = (4, Weapons.LAU_131x3_HYDRA_70_MK1)
+        LAU_131x3_HYDRA_70_MK5 = (4, Weapons.LAU_131x3_HYDRA_70_MK5)
+        LAU_131x3_HYDRA_70_MK61 = (4, Weapons.LAU_131x3_HYDRA_70_MK61)
+        LAU_131x3_HYDRA_70_M151 = (4, Weapons.LAU_131x3_HYDRA_70_M151)
+        LAU_131x3_HYDRA_70_M156 = (4, Weapons.LAU_131x3_HYDRA_70_M156)
+        LAU_131x3_HYDRA_70_WTU1B = (4, Weapons.LAU_131x3_HYDRA_70_WTU1B)
+        LAU_131x3_HYDRA_70_M257 = (4, Weapons.LAU_131x3_HYDRA_70_M257)
+        LAU_131x3_HYDRA_70_M274 = (4, Weapons.LAU_131x3_HYDRA_70_M274)
+#ERRR LAU_131x3_HYDRA_70_M278
+        MXU_648_TP = (4, Weapons.MXU_648_TP)
+        BRU_42_LS = (4, Weapons.BRU_42_LS)
+        BRU_42_3_BDU_33 = (4, Weapons.BRU_42_3_BDU_33)
+        BRU_42_3_GBU_12 = (4, Weapons.BRU_42_3_GBU_12)
+        CBU_97 = (4, Weapons.CBU_97)
+        CBU_105 = (4, Weapons.CBU_105)
+        CBU_103 = (4, Weapons.CBU_103)
+        BDU_50LGB = (4, Weapons.BDU_50LGB)
+        _3_Mk_82AIR = (4, Weapons._3_Mk_82AIR)
+        _3_Mk_82 = (4, Weapons._3_Mk_82)
+
+    class Pylon5:
+        Mk_82 = (5, Weapons.Mk_82)
+        Mk_84 = (5, Weapons.Mk_84)
+        GBU_12 = (5, Weapons.GBU_12)
+        BDU_50LD = (5, Weapons.BDU_50LD)
+        BDU_50HD = (5, Weapons.BDU_50HD)
+        Mk_82AIR = (5, Weapons.Mk_82AIR)
+        GBU_10 = (5, Weapons.GBU_10)
+        GBU_31_V_1_B = (5, Weapons.GBU_31_V_1_B)
+        GBU_31_V_3_B = (5, Weapons.GBU_31_V_3_B)
+        GBU_38 = (5, Weapons.GBU_38)
+        CBU_87 = (5, Weapons.CBU_87)
+        MXU_648_TP = (5, Weapons.MXU_648_TP)
+        BRU_42_LS = (5, Weapons.BRU_42_LS)
+        BRU_42_3_BDU_33 = (5, Weapons.BRU_42_3_BDU_33)
+        CBU_97 = (5, Weapons.CBU_97)
+        CBU_105 = (5, Weapons.CBU_105)
+        CBU_103 = (5, Weapons.CBU_103)
+        BDU_50LGB = (5, Weapons.BDU_50LGB)
+        _3_Mk_82 = (5, Weapons._3_Mk_82)
+        _3_Mk_82AIR = (5, Weapons._3_Mk_82AIR)
+
+    class Pylon6:
+        Mk_82 = (6, Weapons.Mk_82)
+        Mk_84 = (6, Weapons.Mk_84)
+        GBU_12 = (6, Weapons.GBU_12)
+        BDU_50LD = (6, Weapons.BDU_50LD)
+        BDU_50HD = (6, Weapons.BDU_50HD)
+        Mk_82AIR = (6, Weapons.Mk_82AIR)
+        GBU_10 = (6, Weapons.GBU_10)
+        CBU_87 = (6, Weapons.CBU_87)
+        MXU_648_TP = (6, Weapons.MXU_648_TP)
+        BRU_42_LS = (6, Weapons.BRU_42_LS)
+        BRU_42_3_BDU_33 = (6, Weapons.BRU_42_3_BDU_33)
+        CBU_97 = (6, Weapons.CBU_97)
+        BDU_50LGB = (6, Weapons.BDU_50LGB)
+        Fuel_Tank_FT600 = (6, Weapons.Fuel_Tank_FT600)
+
+    class Pylon7:
+        Mk_82 = (7, Weapons.Mk_82)
+        Mk_84 = (7, Weapons.Mk_84)
+        GBU_12 = (7, Weapons.GBU_12)
+        BDU_50LD = (7, Weapons.BDU_50LD)
+        BDU_50HD = (7, Weapons.BDU_50HD)
+        Mk_82AIR = (7, Weapons.Mk_82AIR)
+        GBU_10 = (7, Weapons.GBU_10)
+        GBU_31_V_1_B = (7, Weapons.GBU_31_V_1_B)
+        GBU_31_V_3_B = (7, Weapons.GBU_31_V_3_B)
+        GBU_38 = (7, Weapons.GBU_38)
+        CBU_87 = (7, Weapons.CBU_87)
+        MXU_648_TP = (7, Weapons.MXU_648_TP)
+        BRU_42_LS = (7, Weapons.BRU_42_LS)
+        BRU_42_3_BDU_33 = (7, Weapons.BRU_42_3_BDU_33)
+        CBU_97 = (7, Weapons.CBU_97)
+        CBU_105 = (7, Weapons.CBU_105)
+        CBU_103 = (7, Weapons.CBU_103)
+        BDU_50LGB = (7, Weapons.BDU_50LGB)
+        _3_Mk_82 = (7, Weapons._3_Mk_82)
+        _3_Mk_82AIR = (7, Weapons._3_Mk_82AIR)
+
+    class Pylon8:
+        Mk_82 = (8, Weapons.Mk_82)
+        Mk_84 = (8, Weapons.Mk_84)
+        Fuel_Tank_FT600 = (8, Weapons.Fuel_Tank_FT600)
+        GBU_12 = (8, Weapons.GBU_12)
+        BDU_50LD = (8, Weapons.BDU_50LD)
+        BDU_50HD = (8, Weapons.BDU_50HD)
+        Mk_82AIR = (8, Weapons.Mk_82AIR)
+        GBU_10 = (8, Weapons.GBU_10)
+        GBU_31_V_1_B = (8, Weapons.GBU_31_V_1_B)
+        GBU_31_V_3_B = (8, Weapons.GBU_31_V_3_B)
+        GBU_38 = (8, Weapons.GBU_38)
+        CBU_87 = (8, Weapons.CBU_87)
+        LAU_68___7_2_75__rockets_MK1__Practice_ = (8, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
+        LAU_68___7_2_75__rockets_MK5__HE_ = (8, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
+        LAU_68___7_2_75__rockets_MK61__Practice_ = (8, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
+        LAU_68___7_2_75__rockets_M151__HE_ = (8, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
+        LAU_68___7_2_75__rockets_M156_WP_ = (8, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
+        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (8, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (8, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (8, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
+#ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
+        LAU_131___7_2_75__rockets_Mk1__Practice_ = (8, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
+        LAU_131___7_2_75__rockets_MK5__HE_ = (8, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
+        LAU_131___7_2_75__rockets_MK61__Practice_ = (8, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
+        LAU_131___7_2_75__rockets_M151__HE_ = (8, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
+        LAU_131___7_2_75__rockets_M156__WP_ = (8, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
+        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (8, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
+        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (8, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (8, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
+#ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
+        LAU_68_3___7_2_75__rockets_MK1__Practice_ = (8, Weapons.LAU_68_3___7_2_75__rockets_MK1__Practice_)
+        LAU_68_3___7_2_75__rockets_MK5__HE_ = (8, Weapons.LAU_68_3___7_2_75__rockets_MK5__HE_)
+        LAU_68_3___7_2_75__rockets_MK61__Practice_ = (8, Weapons.LAU_68_3___7_2_75__rockets_MK61__Practice_)
+        LAU_68_3___7_2_75__rockets_M151__HE_ = (8, Weapons.LAU_68_3___7_2_75__rockets_M151__HE_)
+        LAU_68_3___7_2_75__rockets_M156__WP_ = (8, Weapons.LAU_68_3___7_2_75__rockets_M156__WP_)
+        LAU_68_3___7_2_75__rockets_WTU1B__Practice_ = (8, Weapons.LAU_68_3___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68_3___7_2_75__rockets_M274__Practice_smoke_ = (8, Weapons.LAU_68_3___7_2_75__rockets_M274__Practice_smoke_)
+        LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_ = (8, Weapons.LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_)
+#ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
+        LAU_131x3_HYDRA_70_MK1 = (8, Weapons.LAU_131x3_HYDRA_70_MK1)
+        LAU_131x3_HYDRA_70_MK5 = (8, Weapons.LAU_131x3_HYDRA_70_MK5)
+        LAU_131x3_HYDRA_70_MK61 = (8, Weapons.LAU_131x3_HYDRA_70_MK61)
+        LAU_131x3_HYDRA_70_M151 = (8, Weapons.LAU_131x3_HYDRA_70_M151)
+        LAU_131x3_HYDRA_70_M156 = (8, Weapons.LAU_131x3_HYDRA_70_M156)
+        LAU_131x3_HYDRA_70_WTU1B = (8, Weapons.LAU_131x3_HYDRA_70_WTU1B)
+        LAU_131x3_HYDRA_70_M257 = (8, Weapons.LAU_131x3_HYDRA_70_M257)
+        LAU_131x3_HYDRA_70_M274 = (8, Weapons.LAU_131x3_HYDRA_70_M274)
+#ERRR LAU_131x3_HYDRA_70_M278
+        MXU_648_TP = (8, Weapons.MXU_648_TP)
+        BRU_42_LS = (8, Weapons.BRU_42_LS)
+        BRU_42_3_BDU_33 = (8, Weapons.BRU_42_3_BDU_33)
+        BRU_42_3_GBU_12 = (8, Weapons.BRU_42_3_GBU_12)
+        CBU_97 = (8, Weapons.CBU_97)
+        CBU_105 = (8, Weapons.CBU_105)
+        CBU_103 = (8, Weapons.CBU_103)
+        BDU_50LGB = (8, Weapons.BDU_50LGB)
+        _3_Mk_82AIR = (8, Weapons._3_Mk_82AIR)
+        _3_Mk_82 = (8, Weapons._3_Mk_82)
+
+    class Pylon9:
+        LAU_117_AGM_65K = (9, Weapons.LAU_117_AGM_65K)
+        LAU_88_AGM_65D_ONE = (9, Weapons.LAU_88_AGM_65D_ONE)
+        LAU_88_AGM_65D_2_ = (9, Weapons.LAU_88_AGM_65D_2_)
+        LAU_88_AGM_65D_3 = (9, Weapons.LAU_88_AGM_65D_3)
+        LAU_117_AGM_65D = (9, Weapons.LAU_117_AGM_65D)
+        Mk_84 = (9, Weapons.Mk_84)
+        Mk_82 = (9, Weapons.Mk_82)
+        _3_Mk_82 = (9, Weapons._3_Mk_82)
+        GBU_12 = (9, Weapons.GBU_12)
+        BDU_50LD = (9, Weapons.BDU_50LD)
+        BDU_50HD = (9, Weapons.BDU_50HD)
+        Mk_82AIR = (9, Weapons.Mk_82AIR)
+        GBU_10 = (9, Weapons.GBU_10)
+        GBU_31_V_1_B = (9, Weapons.GBU_31_V_1_B)
+        GBU_31_V_3_B = (9, Weapons.GBU_31_V_3_B)
+        GBU_38 = (9, Weapons.GBU_38)
+        CBU_87 = (9, Weapons.CBU_87)
+        LAU_68___7_2_75__rockets_MK1__Practice_ = (9, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
+        LAU_68___7_2_75__rockets_MK5__HE_ = (9, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
+        LAU_68___7_2_75__rockets_MK61__Practice_ = (9, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
+        LAU_68___7_2_75__rockets_M151__HE_ = (9, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
+        LAU_68___7_2_75__rockets_M156_WP_ = (9, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
+        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (9, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (9, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (9, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
+#ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
+        LAU_131___7_2_75__rockets_Mk1__Practice_ = (9, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
+        LAU_131___7_2_75__rockets_MK5__HE_ = (9, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
+        LAU_131___7_2_75__rockets_MK61__Practice_ = (9, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
+        LAU_131___7_2_75__rockets_M151__HE_ = (9, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
+        LAU_131___7_2_75__rockets_M156__WP_ = (9, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
+        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (9, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
+        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (9, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (9, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
+#ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
+        LAU_68_3___7_2_75__rockets_MK1__Practice_ = (9, Weapons.LAU_68_3___7_2_75__rockets_MK1__Practice_)
+        LAU_68_3___7_2_75__rockets_MK5__HE_ = (9, Weapons.LAU_68_3___7_2_75__rockets_MK5__HE_)
+        LAU_68_3___7_2_75__rockets_MK61__Practice_ = (9, Weapons.LAU_68_3___7_2_75__rockets_MK61__Practice_)
+        LAU_68_3___7_2_75__rockets_M151__HE_ = (9, Weapons.LAU_68_3___7_2_75__rockets_M151__HE_)
+        LAU_68_3___7_2_75__rockets_M156__WP_ = (9, Weapons.LAU_68_3___7_2_75__rockets_M156__WP_)
+        LAU_68_3___7_2_75__rockets_WTU1B__Practice_ = (9, Weapons.LAU_68_3___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68_3___7_2_75__rockets_M274__Practice_smoke_ = (9, Weapons.LAU_68_3___7_2_75__rockets_M274__Practice_smoke_)
+        LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_ = (9, Weapons.LAU_68_3___7_2_75__rockets_M257__Parachute_illumination_)
+#ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
+        LAU_131x3_HYDRA_70_MK1 = (9, Weapons.LAU_131x3_HYDRA_70_MK1)
+        LAU_131x3_HYDRA_70_MK5 = (9, Weapons.LAU_131x3_HYDRA_70_MK5)
+        LAU_131x3_HYDRA_70_MK61 = (9, Weapons.LAU_131x3_HYDRA_70_MK61)
+        LAU_131x3_HYDRA_70_M151 = (9, Weapons.LAU_131x3_HYDRA_70_M151)
+        LAU_131x3_HYDRA_70_M156 = (9, Weapons.LAU_131x3_HYDRA_70_M156)
+        LAU_131x3_HYDRA_70_WTU1B = (9, Weapons.LAU_131x3_HYDRA_70_WTU1B)
+        LAU_131x3_HYDRA_70_M257 = (9, Weapons.LAU_131x3_HYDRA_70_M257)
+        LAU_131x3_HYDRA_70_M274 = (9, Weapons.LAU_131x3_HYDRA_70_M274)
+#ERRR LAU_131x3_HYDRA_70_M278
+        MXU_648_TP = (9, Weapons.MXU_648_TP)
+        BRU_42_LS = (9, Weapons.BRU_42_LS)
+        BRU_42_3_BDU_33 = (9, Weapons.BRU_42_3_BDU_33)
+        LAU_117_AGM_65H = (9, Weapons.LAU_117_AGM_65H)
+        LAU_117_AGM_65G = (9, Weapons.LAU_117_AGM_65G)
+        LAU_88_AGM_65H = (9, Weapons.LAU_88_AGM_65H)
+        LAU_88_AGM_65H_2_R = (9, Weapons.LAU_88_AGM_65H_2_R)
+        LAU_88_AGM_65H_3 = (9, Weapons.LAU_88_AGM_65H_3)
+        LAU_117_TGM_65D = (9, Weapons.LAU_117_TGM_65D)
+        LAU_117_TGM_65G = (9, Weapons.LAU_117_TGM_65G)
+        LAU_117_TGM_65H = (9, Weapons.LAU_117_TGM_65H)
+        LAU_117_CATM_65K = (9, Weapons.LAU_117_CATM_65K)
+        BRU_42_3_GBU_12 = (9, Weapons.BRU_42_3_GBU_12)
+        CBU_97 = (9, Weapons.CBU_97)
+        CBU_105 = (9, Weapons.CBU_105)
+        CBU_103 = (9, Weapons.CBU_103)
+        BDU_50LGB = (9, Weapons.BDU_50LGB)
+        SUU_25___8_LUU_2 = (9, Weapons.SUU_25___8_LUU_2)
+        _3_Mk_82AIR = (9, Weapons._3_Mk_82AIR)
+        _3_SUU_25___8_LUU_2 = (9, Weapons._3_SUU_25___8_LUU_2)
+
+    class Pylon10:
+        Mk_82 = (10, Weapons.Mk_82)
+        SUU_25___8_LUU_2 = (10, Weapons.SUU_25___8_LUU_2)
+        AN_AAQ_28_LITENING = (10, Weapons.AN_AAQ_28_LITENING)
+        GBU_12 = (10, Weapons.GBU_12)
+        BDU_50LD = (10, Weapons.BDU_50LD)
+        BDU_50HD = (10, Weapons.BDU_50HD)
+        Mk_82AIR = (10, Weapons.Mk_82AIR)
+        CBU_87 = (10, Weapons.CBU_87)
+        LAU_68___7_2_75__rockets_MK1__Practice_ = (10, Weapons.LAU_68___7_2_75__rockets_MK1__Practice_)
+        LAU_68___7_2_75__rockets_MK5__HE_ = (10, Weapons.LAU_68___7_2_75__rockets_MK5__HE_)
+        LAU_68___7_2_75__rockets_MK61__Practice_ = (10, Weapons.LAU_68___7_2_75__rockets_MK61__Practice_)
+        LAU_68___7_2_75__rockets_M151__HE_ = (10, Weapons.LAU_68___7_2_75__rockets_M151__HE_)
+        LAU_68___7_2_75__rockets_M156_WP_ = (10, Weapons.LAU_68___7_2_75__rockets_M156_WP_)
+        LAU_68___7_2_75__rockets_WTU1B__Practice_ = (10, Weapons.LAU_68___7_2_75__rockets_WTU1B__Practice_)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (10, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_68___7_2_75__rockets_M274__Practice_smoke_ = (10, Weapons.LAU_68___7_2_75__rockets_M274__Practice_smoke_)
+#ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
+        LAU_131___7_2_75__rockets_Mk1__Practice_ = (10, Weapons.LAU_131___7_2_75__rockets_Mk1__Practice_)
+        LAU_131___7_2_75__rockets_MK5__HE_ = (10, Weapons.LAU_131___7_2_75__rockets_MK5__HE_)
+        LAU_131___7_2_75__rockets_MK61__Practice_ = (10, Weapons.LAU_131___7_2_75__rockets_MK61__Practice_)
+        LAU_131___7_2_75__rockets_M151__HE_ = (10, Weapons.LAU_131___7_2_75__rockets_M151__HE_)
+        LAU_131___7_2_75__rockets_M156__WP_ = (10, Weapons.LAU_131___7_2_75__rockets_M156__WP_)
+        LAU_131___7_2_75__rockets_WTU1B__Practice_ = (10, Weapons.LAU_131___7_2_75__rockets_WTU1B__Practice_)
+        LAU_131___7_2_75__rockets_M257__Parachute_illumination_ = (10, Weapons.LAU_131___7_2_75__rockets_M257__Parachute_illumination_)
+        LAU_131___7_2_75__rockets_M274__Practice_smoke_ = (10, Weapons.LAU_131___7_2_75__rockets_M274__Practice_smoke_)
+#ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
+        CBU_97 = (10, Weapons.CBU_97)
+        BDU_50LGB = (10, Weapons.BDU_50LGB)
+
+    class Pylon11:
+        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (11, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
+        Smokewinder___red = (11, Weapons.Smokewinder___red)
+        Smokewinder___green = (11, Weapons.Smokewinder___green)
+        Smokewinder___blue = (11, Weapons.Smokewinder___blue)
+        Smokewinder___white = (11, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (11, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (11, Weapons.Smokewinder___orange)
+        ALQ_131 = (11, Weapons.ALQ_131)
+        GBU_12 = (11, Weapons.GBU_12)
+        BDU_50LD = (11, Weapons.BDU_50LD)
+        BDU_50HD = (11, Weapons.BDU_50HD)
+        Mk_82AIR = (11, Weapons.Mk_82AIR)
+        Mk_82 = (11, Weapons.Mk_82)
+        CBU_87 = (11, Weapons.CBU_87)
+        BDU_50LGB = (11, Weapons.BDU_50LGB)
+        CBU_97 = (11, Weapons.CBU_97)
+        LAU_105_1_AIM_9M_R = (11, Weapons.LAU_105_1_AIM_9M_R)
+        LAU_105 = (11, Weapons.LAU_105)
+        ALQ_184 = (11, Weapons.ALQ_184)
+        LAU_105_2_CATM_9M = (11, Weapons.LAU_105_2_CATM_9M)
+        LAU_105_1_CATM_9M_R = (11, Weapons.LAU_105_1_CATM_9M_R)
+        LAU_105_AIS_ASQ_T50_R = (11, Weapons.LAU_105_AIS_ASQ_T50_R)
+        LAU_105_2_AIM_9L = (11, Weapons.LAU_105_2_AIM_9L)
+        LAU_105_1_AIM_9L_R = (11, Weapons.LAU_105_1_AIM_9L_R)
+
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+
+    tasks = [task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
+    task_default = task.CAS
 
 
 class AJS37(PlaneType):
@@ -8999,285 +9306,285 @@ class AJS37(PlaneType):
 
         class Georgia(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Syria(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Finland(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Australia(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Germany(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class SaudiArabia(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Israel(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Croatia(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class CzechRepublic(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Norway(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Romania(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Spain(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Ukraine(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Belgium(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Slovakia(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Greece(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class UK(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Insurgents(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Hungary(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class France(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Abkhazia(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Russia(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Sweden(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Austria(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Switzerland(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Italy(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class SouthOssetia(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class SouthKorea(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Iran(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class China(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Pakistan(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Belarus(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class NorthKorea(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Iraq(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Kazakhstan(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Bulgaria(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Serbia(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class India(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class USAFAggressors(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class USA(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Denmark(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Egypt(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Canada(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class TheNetherlands(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Turkey(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Japan(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
         class Poland(Enum):
             _37 = "37"
-            BareMetal = "BareMetal"
+            baremetal = "baremetal"
             _37402 = "37402"
-            F7_Skaraborg = "F7 Skaraborg"
+            f7_skaraborg = "f7 skaraborg"
 
     class Pylon1:
         RB_24J_with_launcher = (1, Weapons.RB_24J_with_launcher)
@@ -9586,849 +9893,849 @@ class AV8BNA(PlaneType):
 
         class Georgia(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Syria(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Finland(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Australia(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Germany(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class SaudiArabia(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Israel(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Croatia(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class CzechRepublic(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Norway(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Romania(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Spain(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Ukraine(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Belgium(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Slovakia(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Greece(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class UK(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Insurgents(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Hungary(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class France(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Abkhazia(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Russia(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Sweden(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Austria(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Switzerland(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Italy(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class SouthOssetia(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class SouthKorea(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Iran(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class China(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Pakistan(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Belarus(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class NorthKorea(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Iraq(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Kazakhstan(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Bulgaria(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Serbia(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class India(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class USAFAggressors(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class USA(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Denmark(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Egypt(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Canada(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class TheNetherlands(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Turkey(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Japan(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
         class Poland(Enum):
             default = "default"
-            VMA_211 = "VMA-211"
-            VMA_211D = "VMA-211D"
-            VMA_214 = "VMA-214"
-            VMA_214D = "VMA-214D"
-            VMA_223D = "VMA-223D"
-            VMA_231_1 = "VMA-231-1"
-            VMA_231_2 = "VMA-231-2"
-            VMA_231D = "VMA-231D"
-            VMA_311 = "VMA-311"
-            VMA_311D = "VMA-311D"
-            VMA_513 = "VMA-513"
-            VMA_513D = "VMA-513D"
-            VMAT_203 = "VMAT-203"
-            VMAT_203S = "VMAT-203S"
-            VMA_542 = "VMA-542"
+            vma_211 = "vma-211"
+            vma_211d = "vma-211d"
+            vma_214 = "vma-214"
+            vma_214d = "vma-214d"
+            vma_223d = "vma-223d"
+            vma_231_1 = "vma-231-1"
+            vma_231_2 = "vma-231-2"
+            vma_231d = "vma-231d"
+            vma_311 = "vma-311"
+            vma_311d = "vma-311d"
+            vma_513 = "vma-513"
+            vma_513d = "vma-513d"
+            vmat_203 = "vmat-203"
+            vmat_203s = "vmat-203s"
+            vma_542 = "vma-542"
 
     class Pylon1:
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
@@ -10461,6 +10768,8 @@ class AV8BNA(PlaneType):
         GBU_12 = (2, Weapons.GBU_12)
         GBU_16 = (2, Weapons.GBU_16)
         GBU_38 = (2, Weapons.GBU_38)
+        GBU_32_V_2_B = (2, Weapons.GBU_32_V_2_B)
+        GBU_54_V_1_B = (2, Weapons.GBU_54_V_1_B)
         _3_MK_81_LD = (2, Weapons._3_MK_81_LD)
         _2_MK_82 = (2, Weapons._2_MK_82)
         _3_MK_82_LD = (2, Weapons._3_MK_82_LD)
@@ -10476,8 +10785,7 @@ class AV8BNA(PlaneType):
         BDU_33 = (2, Weapons.BDU_33)
         BRU_42_3_BDU_33 = (2, Weapons.BRU_42_3_BDU_33)
         LAU_117_AGM_65E = (2, Weapons.LAU_117_AGM_65E)
-        LAU_117_AGM_65G = (2, Weapons.LAU_117_AGM_65G)
-        LAU_117_TGM_65G = (2, Weapons.LAU_117_TGM_65G)
+        LAU_117_AGM_65F = (2, Weapons.LAU_117_AGM_65F)
         LAU_10___4_ZUNI_MK_71 = (2, Weapons.LAU_10___4_ZUNI_MK_71)
         LAU_3___19_FFAR_M156_WP = (2, Weapons.LAU_3___19_FFAR_M156_WP)
         LAU_3___19_FFAR_Mk1_HE = (2, Weapons.LAU_3___19_FFAR_Mk1_HE)
@@ -10509,6 +10817,8 @@ class AV8BNA(PlaneType):
         GBU_12 = (3, Weapons.GBU_12)
         GBU_16 = (3, Weapons.GBU_16)
         GBU_38 = (3, Weapons.GBU_38)
+        GBU_32_V_2_B = (3, Weapons.GBU_32_V_2_B)
+        GBU_54_V_1_B = (3, Weapons.GBU_54_V_1_B)
         _3_MK_81_LD = (3, Weapons._3_MK_81_LD)
         _2_MK_82 = (3, Weapons._2_MK_82)
         _3_MK_82_LD = (3, Weapons._3_MK_82_LD)
@@ -10527,8 +10837,7 @@ class AV8BNA(PlaneType):
         BDU_33 = (3, Weapons.BDU_33)
         BRU_42_3_BDU_33 = (3, Weapons.BRU_42_3_BDU_33)
         LAU_117_AGM_65E = (3, Weapons.LAU_117_AGM_65E)
-        LAU_117_AGM_65G = (3, Weapons.LAU_117_AGM_65G)
-        LAU_117_TGM_65G = (3, Weapons.LAU_117_TGM_65G)
+        LAU_117_AGM_65F = (3, Weapons.LAU_117_AGM_65F)
         LAU_10___4_ZUNI_MK_71 = (3, Weapons.LAU_10___4_ZUNI_MK_71)
         LAU_3___19_FFAR_M156_WP = (3, Weapons.LAU_3___19_FFAR_M156_WP)
         LAU_3___19_FFAR_Mk1_HE = (3, Weapons.LAU_3___19_FFAR_Mk1_HE)
@@ -10566,6 +10875,8 @@ class AV8BNA(PlaneType):
         GBU_12 = (6, Weapons.GBU_12)
         GBU_16 = (6, Weapons.GBU_16)
         GBU_38 = (6, Weapons.GBU_38)
+        GBU_32_V_2_B = (6, Weapons.GBU_32_V_2_B)
+        GBU_54_V_1_B = (6, Weapons.GBU_54_V_1_B)
         _3_MK_81_LD = (6, Weapons._3_MK_81_LD)
         _2_MK_82_ = (6, Weapons._2_MK_82_)
         _3_MK_82_LD = (6, Weapons._3_MK_82_LD)
@@ -10584,8 +10895,7 @@ class AV8BNA(PlaneType):
         BDU_33 = (6, Weapons.BDU_33)
         BRU_42_3_BDU_33 = (6, Weapons.BRU_42_3_BDU_33)
         LAU_117_AGM_65E = (6, Weapons.LAU_117_AGM_65E)
-        LAU_117_AGM_65G = (6, Weapons.LAU_117_AGM_65G)
-        LAU_117_TGM_65G = (6, Weapons.LAU_117_TGM_65G)
+        LAU_117_AGM_65F = (6, Weapons.LAU_117_AGM_65F)
         LAU_10___4_ZUNI_MK_71 = (6, Weapons.LAU_10___4_ZUNI_MK_71)
         LAU_3___19_FFAR_M156_WP = (6, Weapons.LAU_3___19_FFAR_M156_WP)
         LAU_3___19_FFAR_Mk1_HE = (6, Weapons.LAU_3___19_FFAR_Mk1_HE)
@@ -10618,6 +10928,8 @@ class AV8BNA(PlaneType):
         GBU_12 = (7, Weapons.GBU_12)
         GBU_16 = (7, Weapons.GBU_16)
         GBU_38 = (7, Weapons.GBU_38)
+        GBU_32_V_2_B = (7, Weapons.GBU_32_V_2_B)
+        GBU_54_V_1_B = (7, Weapons.GBU_54_V_1_B)
         _3_MK_81_LD = (7, Weapons._3_MK_81_LD)
         _2_MK_82_ = (7, Weapons._2_MK_82_)
         _3_MK_82_LD = (7, Weapons._3_MK_82_LD)
@@ -10633,8 +10945,7 @@ class AV8BNA(PlaneType):
         BDU_33 = (7, Weapons.BDU_33)
         BRU_42_3_BDU_33 = (7, Weapons.BRU_42_3_BDU_33)
         LAU_117_AGM_65E = (7, Weapons.LAU_117_AGM_65E)
-        LAU_117_AGM_65G = (7, Weapons.LAU_117_AGM_65G)
-        LAU_117_TGM_65G = (7, Weapons.LAU_117_TGM_65G)
+        LAU_117_AGM_65F = (7, Weapons.LAU_117_AGM_65F)
         LAU_10___4_ZUNI_MK_71 = (7, Weapons.LAU_10___4_ZUNI_MK_71)
         LAU_3___19_FFAR_M156_WP = (7, Weapons.LAU_3___19_FFAR_M156_WP)
         LAU_3___19_FFAR_Mk1_HE = (7, Weapons.LAU_3___19_FFAR_Mk1_HE)
@@ -10727,8 +11038,8 @@ class KC135MPRS(PlaneType):
     class Liveries:
 
         class USA(Enum):
-            _100th_ARW = "100th ARW"
-            _22nd_ARW = "22nd ARW"
+            _100th_arw = "100th arw"
+            _22nd_arw = "22nd arw"
 
     pylons = {}
 
@@ -10778,7 +11089,7 @@ class C_101EB(PlaneType):
         "SoloFlight": False,
         "NetCrewControlPriority": 1,
         "MountIFRHood": False,
-        "NS430allow": True,
+        "NS430allow": 1,
         "SmokeOnGround": False,
     }
 
@@ -10802,6 +11113,11 @@ class C_101EB(PlaneType):
         class NS430allow:
             id = "NS430allow"
 
+            class Values:
+                Not_installed = 0
+                Forward_seat = 1
+                Rear_seat = 2
+
         class SmokeOnGround:
             id = "SmokeOnGround"
 
@@ -10818,7 +11134,7 @@ class C_101EB(PlaneType):
 
         class Australia(Enum):
             default = "default"
-            RAAF_Roulettes__Fictional = "RAAF Roulettes (Fictional)"
+            raaf_roulettes__fictional = "raaf roulettes (fictional)"
 
         class Germany(Enum):
             default = "default"
@@ -10843,19 +11159,19 @@ class C_101EB(PlaneType):
 
         class Spain(Enum):
             default = "default"
-            AGA__Spanish_Air_School = "AGA (Spanish Air School)"
-            AGA__Spanish_Air_School__1980 = "AGA (Spanish Air School) 1980"
-            AGA__Spanish_Air_School__1985 = "AGA (Spanish Air School) 1985"
-            CLAEX___Centro_Logístico_de_Armamento_y_Experimentación = "CLAEX - Centro Logístico de Armamento y Experimentación"
-            _74_squadron_Matacan = "74 squadron Matacan"
-            Patrulla_Aguila_25_Aniversario = "Patrulla Aguila 25 Aniversario"
-            Patrulla_Aguila_30_Aniversario = "Patrulla Aguila 30 Aniversario"
-            Patrulla_Aguila_Spanish_AGA = "Patrulla Aguila Spanish AGA"
-            XE_25_01_Prototype = "XE-25 01 Prototype"
-            XE_25_01_Prototype_1978_Farnborough_Airshow = "XE-25 01 Prototype 1978 Farnborough Airshow"
-            XE25_02_Prototype = "XE25-02 Prototype"
-            XE25_02_Prototype_1989_TV_Commercial = "XE25-02 Prototype 1989 TV Commercial"
-            XE25_03_Prototype = "XE25-03 Prototype"
+            aga__spanish_air_school = "aga (spanish air school)"
+            aga__spanish_air_school__1980 = "aga (spanish air school) 1980"
+            aga__spanish_air_school__1985 = "aga (spanish air school) 1985"
+            claex___centro_logístico_de_armamento_y_experimentación = "claex - centro logístico de armamento y experimentación"
+            _74_squadron_matacan = "74 squadron matacan"
+            patrulla_aguila_25_aniversario = "patrulla aguila 25 aniversario"
+            patrulla_aguila_30_aniversario = "patrulla aguila 30 aniversario"
+            patrulla_aguila_spanish_aga = "patrulla aguila spanish aga"
+            xe_25_01_prototype = "xe-25 01 prototype"
+            xe_25_01_prototype_1978_farnborough_airshow = "xe-25 01 prototype 1978 farnborough airshow"
+            xe25_02_prototype = "xe25-02 prototype"
+            xe25_02_prototype_1989_tv_commercial = "xe25-02 prototype 1989 tv commercial"
+            xe25_03_prototype = "xe25-03 prototype"
 
         class Ukraine(Enum):
             default = "default"
@@ -10871,7 +11187,7 @@ class C_101EB(PlaneType):
 
         class UK(Enum):
             default = "default"
-            UK_Trainer_Fictional = "UK Trainer Fictional"
+            uk_trainer_fictional = "uk trainer fictional"
 
         class Insurgents(Enum):
             default = "default"
@@ -10881,14 +11197,14 @@ class C_101EB(PlaneType):
 
         class France(Enum):
             default = "default"
-            France_Trainer_Fictional = "France Trainer Fictional"
+            france_trainer_fictional = "france trainer fictional"
 
         class Abkhazia(Enum):
             default = "default"
 
         class Russia(Enum):
             default = "default"
-            Russia_Trainer_Fictional = "Russia Trainer Fictional"
+            russia_trainer_fictional = "russia trainer fictional"
 
         class Sweden(Enum):
             default = "default"
@@ -10943,7 +11259,7 @@ class C_101EB(PlaneType):
 
         class USA(Enum):
             default = "default"
-            USAF_Trainer_Fictional = "USAF Trainer Fictional"
+            usaf_trainer_fictional = "usaf trainer fictional"
 
         class Denmark(Enum):
             default = "default"
@@ -11023,7 +11339,7 @@ class C_101CC(PlaneType):
         "MountIFRHood": False,
         "CameraRecorder": False,
         "SightSunFilter": False,
-        "NS430allow": True,
+        "NS430allow": 1,
     }
 
     class Properties:
@@ -11052,153 +11368,158 @@ class C_101CC(PlaneType):
         class NS430allow:
             id = "NS430allow"
 
+            class Values:
+                Not_installed = 0
+                Forward_seat = 1
+                Rear_seat = 2
+
     class Liveries:
 
         class Georgia(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Syria(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Finland(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Australia(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Germany(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class SaudiArabia(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Israel(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Croatia(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class CzechRepublic(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Norway(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Romania(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Spain(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
-            CLAEX_Desert_Camu_Skin___Centro_Logistico_de_Armamento_y_Experimentacion = "CLAEX Desert Camu Skin - Centro Logistico de Armamento y Experimentacion"
-            CLAEX_Green_Camu_Skin___Centro_Logistico_de_Armamento_y_Experimentacion = "CLAEX Green Camu Skin - Centro Logistico de Armamento y Experimentacion"
+            aviodev_skin = "aviodev skin"
+            claex_desert_camu_skin___centro_logistico_de_armamento_y_experimentacion = "claex desert camu skin - centro logistico de armamento y experimentacion"
+            claex_green_camu_skin___centro_logistico_de_armamento_y_experimentacion = "claex green camu skin - centro logistico de armamento y experimentacion"
 
         class Ukraine(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Belgium(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Slovakia(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Greece(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class UK(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Insurgents(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Hungary(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class France(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Abkhazia(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Russia(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
-            Russia_Combat_Fictional = "Russia Combat Fictional"
+            aviodev_skin = "aviodev skin"
+            russia_combat_fictional = "russia combat fictional"
 
         class Sweden(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Austria(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Switzerland(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Italy(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class SouthOssetia(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class SouthKorea(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Iran(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class China(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Pakistan(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Belarus(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class NorthKorea(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Iraq(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Kazakhstan(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Bulgaria(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Serbia(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class India(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class USAFAggressors(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
-            USAF_Agressor_Fictional = "USAF Agressor Fictional"
+            aviodev_skin = "aviodev skin"
+            usaf_agressor_fictional = "usaf agressor fictional"
 
         class USA(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
-            USAF_Agressor_Fictional = "USAF Agressor Fictional"
+            aviodev_skin = "aviodev skin"
+            usaf_agressor_fictional = "usaf agressor fictional"
 
         class Denmark(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Egypt(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Canada(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class TheNetherlands(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Turkey(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Japan(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
         class Poland(Enum):
-            AVIODEV_Skin = "AVIODEV Skin"
+            aviodev_skin = "aviodev skin"
 
     class Pylon1:
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
@@ -11299,29 +11620,29 @@ class J_11A(PlaneType):
     class Liveries:
 
         class China(Enum):
-            PLAAF_14th_AD = "PLAAF 14th AD"
-            PLAAF_14th_AD__Reworked = "PLAAF 14th AD (Reworked)"
-            PLAAF_17th_AB = "PLAAF 17th AB"
-            PLAAF_18th_AD__Thunderclap_Wing___Fictional = "PLAAF 18th AD 'Thunderclap Wing' (Fictional)"
-            PLAAF_19th_AD = "PLAAF 19th AD"
-            PLAAF_19th_AD__Reworked = "PLAAF 19th AD (Reworked)"
-            PLAAF_2nd_AD = "PLAAF 2nd AD"
-            PLAAF_2nd_AD__Parade = "PLAAF 2nd AD (Parade)"
-            PLAAF_2nd_AD__Reworked = "PLAAF 2nd AD (Reworked)"
-            PLAAF_33th_AD = "PLAAF 33th AD"
-            PLAAF_33th_AD__Reworked = "PLAAF 33th AD (Reworked)"
-            PLAAF_6th_AD = "PLAAF 6th AD"
-            PLAAF_7th_AD = "PLAAF 7th AD"
-            PLAAF_7th_AD__Reworked = "PLAAF 7th AD (Reworked)"
-            PLAAF_Ghost_Gray__Fictional = "PLAAF Ghost Gray (Fictional)"
-            PLAAF_OPFOR__Desert___Fictional = "PLAAF OPFOR 'Desert' (Fictional)"
-            PLAAF_OPFOR__Jungle___Fictional = "PLAAF OPFOR 'Jungle' (Fictional)"
-            Sky_Hunter = "Sky Hunter"
+            plaaf_14th_ad = "plaaf 14th ad"
+            plaaf_14th_ad__reworked = "plaaf 14th ad (reworked)"
+            plaaf_17th_ab = "plaaf 17th ab"
+            plaaf_18th_ad__thunderclap_wing___fictional = "plaaf 18th ad 'thunderclap wing' (fictional)"
+            plaaf_19th_ad = "plaaf 19th ad"
+            plaaf_19th_ad__reworked = "plaaf 19th ad (reworked)"
+            plaaf_2nd_ad = "plaaf 2nd ad"
+            plaaf_2nd_ad__parade = "plaaf 2nd ad (parade)"
+            plaaf_2nd_ad__reworked = "plaaf 2nd ad (reworked)"
+            plaaf_33th_ad = "plaaf 33th ad"
+            plaaf_33th_ad__reworked = "plaaf 33th ad (reworked)"
+            plaaf_6th_ad = "plaaf 6th ad"
+            plaaf_7th_ad = "plaaf 7th ad"
+            plaaf_7th_ad__reworked = "plaaf 7th ad (reworked)"
+            plaaf_ghost_gray__fictional = "plaaf ghost gray (fictional)"
+            plaaf_opfor__desert___fictional = "plaaf opfor 'desert' (fictional)"
+            plaaf_opfor__jungle___fictional = "plaaf opfor 'jungle' (fictional)"
+            sky_hunter = "sky hunter"
 
         class USAFAggressors(Enum):
-            USAF_65th_Aggressor_SQN__Desert___Fictional = "USAF 65th Aggressor SQN 'Desert' (Fictional)"
-            USAF_65th_Aggressor_SQN__Gray___Fictional = "USAF 65th Aggressor SQN 'Gray' (Fictional)"
-            USN_Aggressor_VFC_13__Ferris___Fictional = "USN Aggressor VFC-13 'Ferris' (Fictional)"
+            usaf_65th_aggressor_sqn__desert___fictional = "usaf 65th aggressor sqn 'desert' (fictional)"
+            usaf_65th_aggressor_sqn__gray___fictional = "usaf 65th aggressor sqn 'gray' (fictional)"
+            usn_aggressor_vfc_13__ferris___fictional = "usn aggressor vfc-13 'ferris' (fictional)"
 
     class Pylon1:
         R_73 = (1, Weapons.R_73)
@@ -11576,148 +11897,148 @@ class JF_17(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Syria(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Finland(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Australia(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Germany(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class SaudiArabia(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Israel(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Croatia(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class CzechRepublic(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Norway(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Romania(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Spain(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Ukraine(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Belgium(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Slovakia(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Greece(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class UK(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Insurgents(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Hungary(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class France(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Abkhazia(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Russia(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Sweden(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Austria(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Switzerland(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Italy(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class SouthOssetia(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class SouthKorea(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Iran(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class China(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
-            Proto_06 = "Proto 06"
-            PLAAF_125th_AB__Fictional = "PLAAF 125th AB (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
+            proto_06 = "proto 06"
+            plaaf_125th_ab__fictional = "plaaf 125th ab (fictional)"
 
         class Pakistan(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
-            PAKAF_Black_Spider__default = "PAKAF Black Spider (default)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
+            pakaf_black_spider__default = "pakaf black spider (default)"
 
         class Belarus(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class NorthKorea(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Iraq(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Kazakhstan(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Bulgaria(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Serbia(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class India(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class USAFAggressors(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class USA(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Denmark(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Egypt(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Canada(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class TheNetherlands(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Turkey(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Japan(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
         class Poland(Enum):
-            _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            _splinter__camo_for_blue_side__fictional = "'splinter' camo for blue side (fictional)"
 
     class Pylon1:
         DIS_PL_5EII = (1, Weapons.DIS_PL_5EII)
@@ -11872,8 +12193,8 @@ class KJ_2000(PlaneType):
     class Liveries:
 
         class China(Enum):
-            China_Air_Force_KJ_2000__Parade_93 = "China Air Force KJ-2000 (Parade 93)"
-            China_Air_Force_KJ_2000 = "China Air Force KJ-2000"
+            china_air_force_kj_2000__parade_93 = "china air force kj-2000 (parade 93)"
+            china_air_force_kj_2000 = "china air force kj-2000"
 
     pylons = {}
 
@@ -11898,10 +12219,13 @@ class WingLoong_I(PlaneType):
             default = "default"
 
         class China(Enum):
-            PLAAF = "PLAAF"
+            plaaf = "plaaf"
 
         class Pakistan(Enum):
             default = "default"
+
+        class Kazakhstan(Enum):
+            kazakh_armed_forces = "kazakh armed forces"
 
         class Serbia(Enum):
             default = "default"
@@ -11979,1367 +12303,1367 @@ class Christen_Eagle_II(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Syria(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Finland(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Australia(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Germany(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class SaudiArabia(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Israel(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Croatia(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class CzechRepublic(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Norway(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Romania(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Spain(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Ukraine(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Belgium(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Slovakia(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Greece(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class UK(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Insurgents(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Hungary(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class France(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Abkhazia(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Russia(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Sweden(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Austria(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Switzerland(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Italy(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class SouthOssetia(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class SouthKorea(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Iran(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class China(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Pakistan(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Belarus(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class NorthKorea(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Iraq(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Kazakhstan(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Bulgaria(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Serbia(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class India(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class USAFAggressors(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class USA(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Denmark(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Egypt(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Canada(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class TheNetherlands(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Turkey(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Japan(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
         class Poland(Enum):
-            C_FTIJ = "C-FTIJ"
-            G_KLAW = "G-KLAW"
-            LV_X352 = "LV-X352"
-            MAG3 = "MAG3"
-            N104GF = "N104GF"
-            N14KH = "N14KH"
-            N229HP = "N229HP"
-            N22XS = "N22XS"
-            N24AL = "N24AL"
-            N2FC = "N2FC"
-            N31PA = "N31PA"
-            N38RC = "N38RC"
-            N49AE = "N49AE"
-            N56CE = "N56CE"
-            N78JP = "N78JP"
-            N828DM = "N828DM"
-            N83FC = "N83FC"
-            N83TS = "N83TS"
-            N8EC = "N8EC"
-            NX110GM = "NX110GM"
-            Top_Gun_F_14A = "Top Gun F-14A"
-            Top_Gun_MiG_28 = "Top Gun MiG-28"
-            TrackIR = "TrackIR"
-            VARS = "VARS"
-            Virtual_Vultures = "Virtual Vultures"
-            WW1_Red_Baron = "WW1 Red Baron"
-            WW1_SE5a = "WW1 SE5a"
+            c_ftij = "c-ftij"
+            g_klaw = "g-klaw"
+            lv_x352 = "lv-x352"
+            mag3 = "mag3"
+            n104gf = "n104gf"
+            n14kh = "n14kh"
+            n229hp = "n229hp"
+            n22xs = "n22xs"
+            n24al = "n24al"
+            n2fc = "n2fc"
+            n31pa = "n31pa"
+            n38rc = "n38rc"
+            n49ae = "n49ae"
+            n56ce = "n56ce"
+            n78jp = "n78jp"
+            n828dm = "n828dm"
+            n83fc = "n83fc"
+            n83ts = "n83ts"
+            n8ec = "n8ec"
+            nx110gm = "nx110gm"
+            top_gun_f_14a = "top gun f-14a"
+            top_gun_mig_28 = "top gun mig-28"
+            trackir = "trackir"
+            vars = "vars"
+            virtual_vultures = "virtual vultures"
+            ww1_red_baron = "ww1 red baron"
+            ww1_se5a = "ww1 se5a"
 
     class Pylon1:
         Smoke_for_Christen_Eagle_II__white = (1, Weapons.Smoke_for_Christen_Eagle_II__white)
@@ -13423,6 +13747,7 @@ class F_16C_50(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
+        "HelmetMountedDevice": 1,
     }
 
     class Properties:
@@ -13443,21 +13768,79 @@ class F_16C_50(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
+        class HelmetMountedDevice:
+            id = "HelmetMountedDevice"
+
+            class Values:
+                Not_installed = 0
+                JHMCS = 1
+                NVG = 2
+
     class Liveries:
+
+        class Israel(Enum):
+            iaf_101st_squadron = "iaf_101st_squadron"
+            iaf_110th_squadron = "iaf_110th_squadron"
+            iaf_115th_aggressors_squadron = "iaf_115th_aggressors_squadron"
+            iaf_117th_squadron = "iaf_117th_squadron"
+
+        class Greece(Enum):
+            haf__330_thunder = "haf_ 330_thunder"
+            haf_335_tiger = "haf_335_tiger"
+            haf_336_olympus = "haf_336_olympus"
+            haf_337_ghost = "haf_337_ghost"
+            haf_340_fox = "haf_340_fox"
+            haf_341_arrow = "haf_341_arrow"
+            haf_343_star = "haf_343_star"
+            haf_346_jason = "haf_346_jason"
+            haf_347_perseus = "haf_347_perseus"
+
+        class Italy(Enum):
+            ami__5_stormo_23_gruppo = "ami, 5 stormo 23 gruppo"
+
+        class Pakistan(Enum):
+            paf_no_11_arrows = "paf_no.11_arrows"
+            paf_no_19_sherdils = "paf_no.19_sherdils"
+            paf_no_29_aggressors = "paf_no.29_aggressors"
+            paf_no_5_falcons = "paf_no.5_falcons"
+            paf_no_9_griffins_2 = "paf_no.9 griffins_2"
+            paf_no_9_griffins_1 = "paf_no.9_griffins_1"
 
         class USA(Enum):
             default = "default"
-            _13th_Fighter_Squadron = "13th_Fighter_Squadron"
-            _14th_Fighter_Squadron = "14th_Fighter_Squadron"
-            _179th_Fighter_Squadron = "179th_Fighter_Squadron"
-            _22nd_Fighter_Squadron = "22nd_Fighter_Squadron"
-            _23rd_Fighter_Squadron = "23rd_Fighter_Squadron"
-            _480th_Fighter_Squadron = "480th_Fighter_Squadron"
-            _522nd_Fighter_Squadron = "522nd_Fighter_Squadron"
-            _55th_Fighter_Squadron = "55th_Fighter_Squadron"
-            _77th_Fighter_Squadron = "77th_Fighter_Squadron"
-            _79th_Fighter_Squadron = "79th_Fighter_Squadron"
-            Dark_Viper = "Dark_Viper"
+            _18th_agrs_arctic_splinter = "18th agrs arctic splinter"
+            _18th_agrs_bdu_splinter = "18th agrs bdu splinter"
+            _18th_agrs_splinter = "18th agrs splinter"
+            usaf_64th_aggressor_sqn___shark = "usaf 64th aggressor sqn - shark"
+            usaf_64th_aggressor_sqn_splinter = "usaf 64th aggressor sqn-splinter"
+            _132nd_wing__iowa_ang = "132nd_wing _iowa_ang"
+            _13th_fighter_squadron = "13th_fighter_squadron"
+            _14th_fighter_squadron = "14th_fighter_squadron"
+            _152nd_fighter_squadron = "152nd_fighter_squadron"
+            _174th_fighter_squadron = "174th_fighter_squadron"
+            _179th_fighter_squadron = "179th_fighter_squadron"
+            _22nd_fighter_squadron = "22nd_fighter_squadron"
+            _23rd_fighter_squadron = "23rd_fighter_squadron"
+            _36th_fighter_squadron = "36th_fighter_squadron"
+            _480th_fighter_squadron = "480th_fighter_squadron"
+            _522nd_fighter_squadron = "522nd_fighter_squadron"
+            _55th_fighter_squadron = "55th_fighter_squadron"
+            _64th_aggressor_squadron_ghost = "64th_aggressor_squadron_ghost"
+            _77th_fighter_squadron = "77th_fighter_squadron"
+            _79th_fighter_squadron = "79th_fighter_squadron"
+            _80th_fighter_squadron = "80th_fighter_squadron"
+            dark_viper = "dark_viper"
+
+        class Turkey(Enum):
+            thk_191_filo = "thk_191_filo"
+
+        class Japan(Enum):
+            jasdf_6th_tfs = "jasdf 6th tfs"
+            jasdf_8th_tfs = "jasdf 8th tfs"
+
+        class Poland(Enum):
+            polish_af_standard = "polish af standard"
+            polish_af_31blt6th_tactical_sqn = "polish_af_31blt6th_tactical_sqn"
 
     class Pylon1:
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
@@ -13503,6 +13886,16 @@ class F_16C_50(PlaneType):
         CBU_87 = (3, Weapons.CBU_87)
         CBU_97 = (3, Weapons.CBU_97)
         TER_9A___3_x_BDU_33 = (3, Weapons.TER_9A___3_x_BDU_33)
+        LAU_117_AGM_65D = (3, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65G = (3, Weapons.LAU_117_AGM_65G)
+        LAU_117_AGM_65H = (3, Weapons.LAU_117_AGM_65H)
+        LAU_117_AGM_65K = (3, Weapons.LAU_117_AGM_65K)
+        LAU_88_AGM_65D_ONE = (3, Weapons.LAU_88_AGM_65D_ONE)
+        LAU_88_AGM_65D_3 = (3, Weapons.LAU_88_AGM_65D_3)
+        LAU_88_AGM_65H = (3, Weapons.LAU_88_AGM_65H)
+        LAU_88_AGM_65H_3 = (3, Weapons.LAU_88_AGM_65H_3)
+        AGM_88C_ = (3, Weapons.AGM_88C_)
+        MXU_648_TP = (3, Weapons.MXU_648_TP)
 #ERRR <CLEAN>
         TER_9A___2_x_Mk_82 = (3, Weapons.TER_9A___2_x_Mk_82)
         TER_9A___2_x_Mk_82_SnakeEye = (3, Weapons.TER_9A___2_x_Mk_82_SnakeEye)
@@ -13510,6 +13903,8 @@ class F_16C_50(PlaneType):
         TER_9A___2_x_GBU_12 = (3, Weapons.TER_9A___2_x_GBU_12)
         TER_9A___2_x_CBU_87 = (3, Weapons.TER_9A___2_x_CBU_87)
         TER_9A___2_x_CBU_97 = (3, Weapons.TER_9A___2_x_CBU_97)
+        LAU_88_AGM_65D_2 = (3, Weapons.LAU_88_AGM_65D_2)
+        LAU_88_AGM_65H_2_L = (3, Weapons.LAU_88_AGM_65H_2_L)
 
     class Pylon4:
         LAU3_WP156 = (4, Weapons.LAU3_WP156)
@@ -13532,6 +13927,7 @@ class F_16C_50(PlaneType):
         TER_9A___3_x_CBU_97 = (4, Weapons.TER_9A___3_x_CBU_97)
         TER_9A___3_x_BDU_33 = (4, Weapons.TER_9A___3_x_BDU_33)
         Fuel_tank_370_gal = (4, Weapons.Fuel_tank_370_gal)
+        MXU_648_TP = (4, Weapons.MXU_648_TP)
 #ERRR <CLEAN>
         TER_9A___2_x_Mk_82 = (4, Weapons.TER_9A___2_x_Mk_82)
         TER_9A___2_x_Mk_82_SnakeEye = (4, Weapons.TER_9A___2_x_Mk_82_SnakeEye)
@@ -13541,6 +13937,7 @@ class F_16C_50(PlaneType):
 
     class Pylon5:
         Fuel_tank_300_gal = (5, Weapons.Fuel_tank_300_gal)
+        MXU_648_TP = (5, Weapons.MXU_648_TP)
 #ERRR <CLEAN>
 
     class Pylon6:
@@ -13564,6 +13961,7 @@ class F_16C_50(PlaneType):
         TER_9A___3_x_CBU_97 = (6, Weapons.TER_9A___3_x_CBU_97)
         TER_9A___3_x_BDU_33 = (6, Weapons.TER_9A___3_x_BDU_33)
         Fuel_tank_370_gal = (6, Weapons.Fuel_tank_370_gal)
+        MXU_648_TP = (6, Weapons.MXU_648_TP)
 #ERRR <CLEAN>
         TER_9A___2_x_Mk_82_ = (6, Weapons.TER_9A___2_x_Mk_82_)
         TER_9A___2_x_Mk_82_SnakeEye_ = (6, Weapons.TER_9A___2_x_Mk_82_SnakeEye_)
@@ -13596,6 +13994,16 @@ class F_16C_50(PlaneType):
         CBU_87 = (7, Weapons.CBU_87)
         CBU_97 = (7, Weapons.CBU_97)
         TER_9A___3_x_BDU_33 = (7, Weapons.TER_9A___3_x_BDU_33)
+        LAU_117_AGM_65D = (7, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65G = (7, Weapons.LAU_117_AGM_65G)
+        LAU_117_AGM_65H = (7, Weapons.LAU_117_AGM_65H)
+        LAU_117_AGM_65K = (7, Weapons.LAU_117_AGM_65K)
+        LAU_88_AGM_65D_ONE = (7, Weapons.LAU_88_AGM_65D_ONE)
+        LAU_88_AGM_65D_3 = (7, Weapons.LAU_88_AGM_65D_3)
+        LAU_88_AGM_65H = (7, Weapons.LAU_88_AGM_65H)
+        LAU_88_AGM_65H_3 = (7, Weapons.LAU_88_AGM_65H_3)
+        AGM_88C_ = (7, Weapons.AGM_88C_)
+        MXU_648_TP = (7, Weapons.MXU_648_TP)
 #ERRR <CLEAN>
         TER_9A___2_x_Mk_82_ = (7, Weapons.TER_9A___2_x_Mk_82_)
         TER_9A___2_x_Mk_82_SnakeEye_ = (7, Weapons.TER_9A___2_x_Mk_82_SnakeEye_)
@@ -13603,6 +14011,8 @@ class F_16C_50(PlaneType):
         TER_9A___2_x_GBU_12_ = (7, Weapons.TER_9A___2_x_GBU_12_)
         TER_9A___2_x_CBU_87_ = (7, Weapons.TER_9A___2_x_CBU_87_)
         TER_9A___2_x_CBU_97_ = (7, Weapons.TER_9A___2_x_CBU_97_)
+        LAU_88_AGM_65D_2_ = (7, Weapons.LAU_88_AGM_65D_2_)
+        LAU_88_AGM_65H_2_R = (7, Weapons.LAU_88_AGM_65H_2_R)
 
     class Pylon8:
         AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
@@ -13650,151 +14060,151 @@ class F_5E(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Syria(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Finland(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Australia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Germany(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class SaudiArabia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Israel(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Croatia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class CzechRepublic(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Norway(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Romania(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Spain(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Ukraine(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Belgium(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Slovakia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Greece(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class UK(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Insurgents(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Hungary(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class France(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Abkhazia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Russia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Sweden(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Austria(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Switzerland(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Italy(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class SouthOssetia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class SouthKorea(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Iran(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class China(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Pakistan(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Belarus(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class NorthKorea(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Iraq(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Kazakhstan(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Bulgaria(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Serbia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class India(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class USAFAggressors(Enum):
-            Aggressor_Desert_Scheme = "Aggressor Desert Scheme"
-            Aggressor_Marine_Scheme = "Aggressor Marine Scheme"
-            Aggressor_Snake_Scheme = "Aggressor Snake Scheme"
-            USA_standard = "USA standard"
+            aggressor_desert_scheme = "aggressor desert scheme"
+            aggressor_marine_scheme = "aggressor marine scheme"
+            aggressor_snake_scheme = "aggressor snake scheme"
+            usa_standard = "usa standard"
 
         class USA(Enum):
-            Aggressor_Desert_Scheme = "Aggressor Desert Scheme"
-            Aggressor_Marine_Scheme = "Aggressor Marine Scheme"
-            Aggressor_Snake_Scheme = "Aggressor Snake Scheme"
-            USA_standard = "USA standard"
+            aggressor_desert_scheme = "aggressor desert scheme"
+            aggressor_marine_scheme = "aggressor marine scheme"
+            aggressor_snake_scheme = "aggressor snake scheme"
+            usa_standard = "usa standard"
 
         class Denmark(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Egypt(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Canada(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class TheNetherlands(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Turkey(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Japan(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Poland(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
     class Pylon1:
         GAR_8_Sidewinder_IR_AAM = (1, Weapons.GAR_8_Sidewinder_IR_AAM)
@@ -14123,219 +14533,219 @@ class F_5E_3(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Syria(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Finland(Enum):
-            Fi_11th_FS_Lapland_Air_Command = "Fi 11th FS Lapland Air Command"
-            USA_standard = "USA standard"
+            fi_11th_fs_lapland_air_command = "fi 11th fs lapland air command"
+            usa_standard = "usa standard"
 
         class Australia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Germany(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class SaudiArabia(Enum):
-            SA_Royal_Saudi_Air_Force = "SA Royal Saudi Air Force"
-            USA_standard = "USA standard"
+            sa_royal_saudi_air_force = "sa royal saudi air force"
+            usa_standard = "usa standard"
 
         class Israel(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Croatia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class CzechRepublic(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Norway(Enum):
-            NO_336_sq = "NO 336 sq"
-            NO_332_sqn_AH_P = "NO 332 sqn AH-P"
-            NO_334_sqn_373 = "NO 334 sqn 373"
-            NO_334_sqn_RI_H = "NO 334 sqn RI-H"
-            NO_338_sqn_215 = "NO 338 sqn 215"
-            USA_standard = "USA standard"
+            no_336_sq = "no 336 sq"
+            no_332_sqn_ah_p = "no 332 sqn ah-p"
+            no_334_sqn_373 = "no 334 sqn 373"
+            no_334_sqn_ri_h = "no 334 sqn ri-h"
+            no_338_sqn_215 = "no 338 sqn 215"
+            usa_standard = "usa standard"
 
         class Romania(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Spain(Enum):
-            SP_Spanish_Air_Force_464_48 = "SP Spanish Air Force 464-48"
-            SP_Spanish_Air_Force_21_51 = "SP Spanish Air Force 21-51"
-            USA_standard = "USA standard"
+            sp_spanish_air_force_464_48 = "sp spanish air force 464-48"
+            sp_spanish_air_force_21_51 = "sp spanish air force 21-51"
+            usa_standard = "usa standard"
 
         class Ukraine(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Belgium(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Slovakia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Greece(Enum):
-            GR_HAF_F_5E_Grey = "GR HAF F-5E Grey"
-            USA_standard = "USA standard"
+            gr_haf_f_5e_grey = "gr haf f-5e grey"
+            usa_standard = "usa standard"
 
         class UK(Enum):
-            GB_No_29_Squadron_RAF = "GB No.29 Squadron RAF"
-            USA_standard = "USA standard"
+            gb_no_29_squadron_raf = "gb no.29 squadron raf"
+            usa_standard = "usa standard"
 
         class Insurgents(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Hungary(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class France(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Abkhazia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Russia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Sweden(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Austria(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Switzerland(Enum):
-            CH_J_3001_Variante_2000 = "CH J-3001 Variante 2000"
-            CH_J_3001_Variante_1986 = "CH J-3001 Variante 1986"
-            CH_J_3001_Variante_1996 = "CH J-3001 Variante 1996"
-            CH_J_3008 = "CH J-3008"
-            CH_J_3025 = "CH J-3025"
-            CH_J_3026 = "CH J-3026"
-            CH_J_3033_2017 = "CH J-3033_2017"
-            CH_J_3036 = "CH J-3036"
-            CH_J_3036_2017 = "CH J-3036 2017"
-            CH_J_3038 = "CH J-3038"
-            CH_J_3073_2017 = "CH J-3073 2017"
-            CH_J_3074 = "CH J-3074"
-            CH_J_3079 = "CH J-3079"
-            CH_J_3098 = "CH J-3098"
-            CH_Patrouille_Suisse_J_3088 = "CH Patrouille Suisse J-3088"
-            CH_Swiss_Generic = "CH Swiss Generic"
-            USA_standard = "USA standard"
+            ch_j_3001_variante_2000 = "ch j-3001 variante 2000"
+            ch_j_3001_variante_1986 = "ch j-3001 variante 1986"
+            ch_j_3001_variante_1996 = "ch j-3001 variante 1996"
+            ch_j_3008 = "ch j-3008"
+            ch_j_3025 = "ch j-3025"
+            ch_j_3026 = "ch j-3026"
+            ch_j_3033_2017 = "ch j-3033_2017"
+            ch_j_3036 = "ch j-3036"
+            ch_j_3036_2017 = "ch j-3036 2017"
+            ch_j_3038 = "ch j-3038"
+            ch_j_3073_2017 = "ch j-3073 2017"
+            ch_j_3074 = "ch j-3074"
+            ch_j_3079 = "ch j-3079"
+            ch_j_3098 = "ch j-3098"
+            ch_patrouille_suisse_j_3088 = "ch patrouille suisse j-3088"
+            ch_swiss_generic = "ch swiss generic"
+            usa_standard = "usa standard"
 
         class Italy(Enum):
-            IT_Aereonautica_Militare_Italiana = "IT Aereonautica Militare Italiana"
-            USA_standard = "USA standard"
+            it_aereonautica_militare_italiana = "it aereonautica militare italiana"
+            usa_standard = "usa standard"
 
         class SouthOssetia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class SouthKorea(Enum):
-            KR_ROKAF_10th_Fighter_Wing = "KR ROKAF 10th Fighter Wing"
-            USA_standard = "USA standard"
+            kr_rokaf_10th_fighter_wing = "kr rokaf 10th fighter wing"
+            usa_standard = "usa standard"
 
         class Iran(Enum):
-            IR_IRIAF_Azarakhsh = "IR IRIAF Azarakhsh"
-            IR_IRIAF_43rd_TFS = "IR IRIAF 43rd TFS"
-            IR_IRIAF_Camo = "IR IRIAF Camo"
-            USA_standard = "USA standard"
+            ir_iriaf_azarakhsh = "ir iriaf azarakhsh"
+            ir_iriaf_43rd_tfs = "ir iriaf 43rd tfs"
+            ir_iriaf_camo = "ir iriaf camo"
+            usa_standard = "usa standard"
 
         class China(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Pakistan(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Belarus(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class NorthKorea(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Iraq(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Kazakhstan(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Bulgaria(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Serbia(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class India(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class USAFAggressors(Enum):
-            Aggressor_Desert_Scheme = "Aggressor Desert Scheme"
-            Aggressor_Marine_Scheme = "Aggressor Marine Scheme"
-            Aggressor_Snake_Scheme = "Aggressor Snake Scheme"
-            US_Aggressor_VFC_13_01 = "US Aggressor VFC-13 01"
-            Aggressor_VFC_13_11 = "Aggressor VFC-13 11"
-            Aggressor_VFC_13_21 = "Aggressor VFC-13 21"
-            US_Aggressor_VFC_13_25 = "US Aggressor VFC-13 25"
-            US_Aggressor_VFC_13_28_Fict_Splinter = "US Aggressor VFC-13 28 Fict Splinter"
-            US_Aggressor_VFC_13_40 = "US Aggressor VFC-13 40"
-            US_Aggressor_VMFT_401_02_2011 = "US Aggressor VMFT-401 02 2011"
-            TW_NGRC_5315 = "TW NGRC 5315"
-            ROCAF_7th_Fighter_Group = "ROCAF 7th Fighter Group"
-            TW_ROCAF_7thFG_M = "TW ROCAF 7thFG(M)"
-            US_Aggressor_VFC_111_01 = "US Aggressor VFC-111 01"
-            US_Aggressor_VFC_111_105_WWII_B = "US Aggressor VFC-111 105 WWII B"
-            US_Aggressor_VFC_111_115 = "US Aggressor VFC-111 115"
-            US_Aggressor_VFC_111_116 = "US Aggressor VFC-111 116"
-            USA_standard = "USA standard"
-            USAF__Southeast_Asia = "USAF 'Southeast Asia'"
-            US_USAF_Grape_31 = "US USAF Grape 31"
-            black__Mig_28 = "black 'Mig-28'"
+            aggressor_desert_scheme = "aggressor desert scheme"
+            aggressor_marine_scheme = "aggressor marine scheme"
+            aggressor_snake_scheme = "aggressor snake scheme"
+            us_aggressor_vfc_13_01 = "us aggressor vfc-13 01"
+            aggressor_vfc_13_11 = "aggressor vfc-13 11"
+            aggressor_vfc_13_21 = "aggressor vfc-13 21"
+            us_aggressor_vfc_13_25 = "us aggressor vfc-13 25"
+            us_aggressor_vfc_13_28_fict_splinter = "us aggressor vfc-13 28 fict splinter"
+            us_aggressor_vfc_13_40 = "us aggressor vfc-13 40"
+            us_aggressor_vmft_401_02_2011 = "us aggressor vmft-401 02 2011"
+            tw_ngrc_5315 = "tw ngrc 5315"
+            rocaf_7th_fighter_group = "rocaf 7th fighter group"
+            tw_rocaf_7thfg_m = "tw rocaf 7thfg(m)"
+            us_aggressor_vfc_111_01 = "us aggressor vfc-111 01"
+            us_aggressor_vfc_111_105_wwii_b = "us aggressor vfc-111 105 wwii b"
+            us_aggressor_vfc_111_115 = "us aggressor vfc-111 115"
+            us_aggressor_vfc_111_116 = "us aggressor vfc-111 116"
+            usa_standard = "usa standard"
+            usaf__southeast_asia = "usaf 'southeast asia'"
+            us_usaf_grape_31 = "us usaf grape 31"
+            black__mig_28 = "black 'mig-28'"
 
         class USA(Enum):
-            Aggressor_Desert_Scheme = "Aggressor Desert Scheme"
-            Aggressor_Marine_Scheme = "Aggressor Marine Scheme"
-            Aggressor_Snake_Scheme = "Aggressor Snake Scheme"
-            US_Aggressor_VFC_13_01 = "US Aggressor VFC-13 01"
-            Aggressor_VFC_13_11 = "Aggressor VFC-13 11"
-            Aggressor_VFC_13_21 = "Aggressor VFC-13 21"
-            US_Aggressor_VFC_13_25 = "US Aggressor VFC-13 25"
-            US_Aggressor_VFC_13_28_Fict_Splinter = "US Aggressor VFC-13 28 Fict Splinter"
-            US_Aggressor_VFC_13_40 = "US Aggressor VFC-13 40"
-            US_Aggressor_VMFT_401_02_2011 = "US Aggressor VMFT-401 02 2011"
-            TW_NGRC_5315 = "TW NGRC 5315"
-            TW_ROCAF_7thFG_M = "TW ROCAF 7thFG(M)"
-            US_Aggressor_VFC_111_01 = "US Aggressor VFC-111 01"
-            US_Aggressor_VFC_111_105_WWII_B = "US Aggressor VFC-111 105 WWII B"
-            US_Aggressor_VFC_111_115 = "US Aggressor VFC-111 115"
-            US_Aggressor_VFC_111_116 = "US Aggressor VFC-111 116"
-            USA_standard = "USA standard"
-            USAF__Southeast_Asia = "USAF 'Southeast Asia'"
-            US_USAF_Grape_31 = "US USAF Grape 31"
-            black__Mig_28 = "black 'Mig-28'"
+            aggressor_desert_scheme = "aggressor desert scheme"
+            aggressor_marine_scheme = "aggressor marine scheme"
+            aggressor_snake_scheme = "aggressor snake scheme"
+            us_aggressor_vfc_13_01 = "us aggressor vfc-13 01"
+            aggressor_vfc_13_11 = "aggressor vfc-13 11"
+            aggressor_vfc_13_21 = "aggressor vfc-13 21"
+            us_aggressor_vfc_13_25 = "us aggressor vfc-13 25"
+            us_aggressor_vfc_13_28_fict_splinter = "us aggressor vfc-13 28 fict splinter"
+            us_aggressor_vfc_13_40 = "us aggressor vfc-13 40"
+            us_aggressor_vmft_401_02_2011 = "us aggressor vmft-401 02 2011"
+            tw_ngrc_5315 = "tw ngrc 5315"
+            tw_rocaf_7thfg_m = "tw rocaf 7thfg(m)"
+            us_aggressor_vfc_111_01 = "us aggressor vfc-111 01"
+            us_aggressor_vfc_111_105_wwii_b = "us aggressor vfc-111 105 wwii b"
+            us_aggressor_vfc_111_115 = "us aggressor vfc-111 115"
+            us_aggressor_vfc_111_116 = "us aggressor vfc-111 116"
+            usa_standard = "usa standard"
+            usaf__southeast_asia = "usaf 'southeast asia'"
+            us_usaf_grape_31 = "us usaf grape 31"
+            black__mig_28 = "black 'mig-28'"
 
         class Denmark(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Egypt(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Canada(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class TheNetherlands(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Turkey(Enum):
-            _3rd_Main_Jet_Base_Group_Command__Turkey = "3rd Main Jet Base Group Command, Turkey"
-            _5th_fs_Merzifon_air_base__Turkey = "5th fs Merzifon air base, Turkey"
-            TR_Turkish_Stars = "TR Turkish Stars"
-            USA_standard = "USA standard"
+            _3rd_main_jet_base_group_command__turkey = "3rd main jet base group command, turkey"
+            _5th_fs_merzifon_air_base__turkey = "5th fs merzifon air base, turkey"
+            tr_turkish_stars = "tr turkish stars"
+            usa_standard = "usa standard"
 
         class Japan(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
         class Poland(Enum):
-            USA_standard = "USA standard"
+            usa_standard = "usa standard"
 
     class Pylon1:
         GAR_8_Sidewinder_IR_AAM = (1, Weapons.GAR_8_Sidewinder_IR_AAM)
@@ -14569,7 +14979,7 @@ class F_86F_Sabre(PlaneType):
             default_livery = "default livery"
 
         class SaudiArabia(Enum):
-            Royal_Saudi_Air_Force = "Royal Saudi Air Force"
+            royal_saudi_air_force = "royal saudi air force"
             default_livery = "default livery"
 
         class Israel(Enum):
@@ -14600,8 +15010,8 @@ class F_86F_Sabre(PlaneType):
             default_livery = "default livery"
 
         class Greece(Enum):
-            HAF_341sqn = "HAF 341sqn"
-            HAF_342sqn = "HAF 342sqn"
+            haf_341sqn = "haf 341sqn"
+            haf_342sqn = "haf 342sqn"
             default_livery = "default livery"
 
         class UK(Enum):
@@ -14641,7 +15051,7 @@ class F_86F_Sabre(PlaneType):
             default_livery = "default livery"
 
         class Iran(Enum):
-            IIAF_Bare_Metall = "IIAF Bare Metall"
+            iiaf_bare_metall = "iiaf bare metall"
             default_livery = "default livery"
 
         class China(Enum):
@@ -14675,12 +15085,12 @@ class F_86F_Sabre(PlaneType):
             default_livery = "default livery"
 
         class USA(Enum):
-            US_Air_Force = "US Air Force"
-            US_Air_Force__Green = "US Air Force (Green)"
-            US_Air_Force__Squadron_39 = "US Air Force (Squadron 39)"
-            US_Air_Force__code_FU_178 = "US Air Force (code FU-178)"
-            US_Air_Force__Skyblazers = "US Air Force (Skyblazers)"
-            US_Air_Force__ex_USAF_F_86A_Sabre = "US Air Force (ex-USAF F-86A Sabre)"
+            us_air_force = "us air force"
+            us_air_force__green = "us air force (green)"
+            us_air_force__squadron_39 = "us air force (squadron 39)"
+            us_air_force__code_fu_178 = "us air force (code fu-178)"
+            us_air_force__skyblazers = "us air force (skyblazers)"
+            us_air_force__ex_usaf_f_86a_sabre = "us air force (ex-usaf f-86a sabre)"
             default_livery = "default livery"
 
         class Denmark(Enum):
@@ -14690,7 +15100,7 @@ class F_86F_Sabre(PlaneType):
             default_livery = "default livery"
 
         class Canada(Enum):
-            Canada_Air_Force = "Canada Air Force"
+            canada_air_force = "canada air force"
             default_livery = "default livery"
 
         class TheNetherlands(Enum):
@@ -14700,7 +15110,7 @@ class F_86F_Sabre(PlaneType):
             default_livery = "default livery"
 
         class Japan(Enum):
-            Japan_Air_Force = "Japan Air Force"
+            japan_air_force = "japan air force"
             default_livery = "default livery"
 
         class Poland(Enum):
@@ -14911,1179 +15321,1179 @@ class F_14B(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Syria(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Finland(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Australia(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Germany(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class SaudiArabia(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Israel(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Croatia(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class CzechRepublic(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Norway(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Romania(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Spain(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Ukraine(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Belgium(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Slovakia(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Greece(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class UK(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Insurgents(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Hungary(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class France(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Abkhazia(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Russia(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Sweden(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Austria(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Switzerland(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Italy(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class SouthOssetia(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class SouthKorea(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Iran(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class China(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Pakistan(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Belarus(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class NorthKorea(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Iraq(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Kazakhstan(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Bulgaria(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Serbia(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class India(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class USAFAggressors(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class USA(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Denmark(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Egypt(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Canada(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class TheNetherlands(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Turkey(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Japan(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
         class Poland(Enum):
-            VF_102_Diamondbacks = "VF-102 Diamondbacks"
-            Santa = "Santa"
-            ChromeCat = "ChromeCat"
-            VF_101_Dark = "VF-101 Dark"
-            VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
-            VF_101_Red = "VF-101 Red"
-            VF_102_Diamondbacks_102 = "VF-102 Diamondbacks 102"
-            VF_103_Jolly_Rogers_Hi_Viz = "VF-103 Jolly Rogers Hi Viz"
-            VF_103_Last_Ride = "VF-103 Last Ride"
-            VF_103_Sluggers_206__1995 = "VF-103 Sluggers 206 (1995)"
-            VF_103_Sluggers_207__1991 = "VF-103 Sluggers 207 (1991)"
-            VF_11_Red_Rippers__1997 = "VF-11 Red Rippers (1997)"
-            VF_142_Ghostriders = "VF-142 Ghostriders"
-            VF_143_Pukin_Dogs_Low_Vis__1995 = "VF-143 Pukin Dogs Low Vis (1995)"
-            VF_143_Pukin_Dogs_Low_Vis = "VF-143 Pukin Dogs Low Vis"
-            VF_143_Pukin_Dogs_CAG = "VF-143 Pukin Dogs CAG"
-            VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
-            VF_24_Renegades = "VF-24 Renegades"
-            VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
-            VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
-            VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
-            VF_74_Adversary = "VF-74 Adversary"
-            VF_74_BeDevilers_1991 = "VF-74 BeDevilers 1991"
+            vf_102_diamondbacks = "vf-102 diamondbacks"
+            santa = "santa"
+            chromecat = "chromecat"
+            vf_101_dark = "vf-101 dark"
+            vf_101_grim_reapers_low_vis = "vf-101 grim reapers low vis"
+            vf_101_red = "vf-101 red"
+            vf_102_diamondbacks_102 = "vf-102 diamondbacks 102"
+            vf_103_jolly_rogers_hi_viz = "vf-103 jolly rogers hi viz"
+            vf_103_last_ride = "vf-103 last ride"
+            vf_103_sluggers_206__1995 = "vf-103 sluggers 206 (1995)"
+            vf_103_sluggers_207__1991 = "vf-103 sluggers 207 (1991)"
+            vf_11_red_rippers__1997 = "vf-11 red rippers (1997)"
+            vf_142_ghostriders = "vf-142 ghostriders"
+            vf_143_pukin_dogs_low_vis__1995 = "vf-143 pukin dogs low vis (1995)"
+            vf_143_pukin_dogs_low_vis = "vf-143 pukin dogs low vis"
+            vf_143_pukin_dogs_cag = "vf-143 pukin dogs cag"
+            vf_211_fighting_checkmates = "vf-211 fighting checkmates"
+            vf_24_renegades = "vf-24 renegades"
+            vf_32_fighting_swordsmen_101 = "vf-32 fighting swordsmen 101"
+            vf_32_fighting_swordsmen_102 = "vf-32 fighting swordsmen 102"
+            vf_32_fighting_swordsmen_103 = "vf-32 fighting swordsmen 103"
+            vf_74_adversary = "vf-74 adversary"
+            vf_74_bedevilers_1991 = "vf-74 bedevilers 1991"
 
     class Pylon1:
         LAU_138_AIM_9M = (1, Weapons.LAU_138_AIM_9M)
@@ -16146,7 +16556,7 @@ class F_14B(PlaneType):
         Mk_84_ = (4, Weapons.Mk_84_)
         GBU_10_ = (4, Weapons.GBU_10_)
         MAK79_2_MK_20 = (4, Weapons.MAK79_2_MK_20)
-        GBU_24_ = (4, Weapons.GBU_24_)
+        GBU_24__ = (4, Weapons.GBU_24__)
 
     class Pylon5:
         AIM_54A_Mk47 = (5, Weapons.AIM_54A_Mk47)
@@ -16201,7 +16611,7 @@ class F_14B(PlaneType):
         ADM_141A__ = (6, Weapons.ADM_141A__)
         Mk_84_ = (6, Weapons.Mk_84_)
         MAK79_MK_20 = (6, Weapons.MAK79_MK_20)
-        GBU_24_ = (6, Weapons.GBU_24_)
+        GBU_24__ = (6, Weapons.GBU_24__)
 
     class Pylon7:
         AIM_54A_Mk47 = (7, Weapons.AIM_54A_Mk47)
@@ -16343,6 +16753,7 @@ class FA_18C_hornet(PlaneType):
     property_defaults = {
         "OuterBoard": 0,
         "InnerBoard": 0,
+        "HelmetMountedDevice": 1,
     }
 
     class Properties:
@@ -16361,267 +16772,275 @@ class FA_18C_hornet(PlaneType):
                 Single = 0
                 Ripple = 1
 
+        class HelmetMountedDevice:
+            id = "HelmetMountedDevice"
+
+            class Values:
+                Not_installed = 0
+                JHMCS = 1
+                NVG = 2
+
     class Liveries:
 
         class Georgia(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Syria(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Finland(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
-            Finland_21 = "Finland 21"
-            Finland_31 = "Finland 31"
+            f_18_iriaf = "f-18 iriaf"
+            finland_21 = "finland 21"
+            finland_31 = "finland 31"
             default_livery = "default livery"
 
         class Australia(Enum):
-            Australian_75th_Squadron = "Australian 75th Squadron"
-            Australian_77th_Squadron = "Australian 77th Squadron"
-            F_18_IRIAF = "F-18 IRIAF"
+            australian_75th_squadron = "australian 75th squadron"
+            australian_77th_squadron = "australian 77th squadron"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Germany(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class SaudiArabia(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Israel(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
-            Fictional_Israel_Air_Force = "Fictional Israel Air Force"
+            f_18_iriaf = "f-18 iriaf"
+            fictional_israel_air_force = "fictional israel air force"
             default_livery = "default livery"
 
         class Croatia(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class CzechRepublic(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Norway(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Romania(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Spain(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
-            Spain_462th_Escuadron_C_15_79 = "Spain 462th Escuadron C.15-79"
-            Spain_111th_Escuadron_C_15_73 = "Spain 111th Escuadron C.15-73"
-            Spain_111th_Escuadron_C_15_88 = "Spain 111th Escuadron C.15-88"
-            Spain_121th_Escuadron_C_15_45 = "Spain 121th Escuadron C.15-45"
-            Spain_121th_Escuadron_C_15_50 = "Spain 121th Escuadron C.15-50"
-            Spain_121th_Escuadron_C_15_60 = "Spain 121th Escuadron C.15-60"
-            Spain_121th_Escuadron_C_15_34_50th_Anniversary = "Spain 121th Escuadron C.15-34 50th Anniversary"
-            Spain_151th_Escuadron_C_15_14 = "Spain 151th Escuadron C.15-14"
-            Spain_151th_Escuadron_C_15_18 = "Spain 151th Escuadron C.15-18"
-            Spain_151th_Escuadron_C_15_23 = "Spain 151th Escuadron C.15-23"
-            Spain_151th_Escuadron_C_15_24 = "Spain 151th Escuadron C.15-24"
-            Spain_151th_Escuadron_C_15_14_Tiger_Meet = "Spain 151th Escuadron C.15-14 Tiger Meet"
-            Spain_211th_Escuadron_C_15_76 = "Spain 211th Escuadron C.15-76"
-            Spain_211th_Escuadron_C_15_77 = "Spain 211th Escuadron C.15-77"
-            Spain_462th_Escuadron_C_15_90 = "Spain 462th Escuadron C.15-90"
+            f_18_iriaf = "f-18 iriaf"
+            spain_462th_escuadron_c_15_79 = "spain 462th escuadron c.15-79"
+            spain_111th_escuadron_c_15_73 = "spain 111th escuadron c.15-73"
+            spain_111th_escuadron_c_15_88 = "spain 111th escuadron c.15-88"
+            spain_121th_escuadron_c_15_45 = "spain 121th escuadron c.15-45"
+            spain_121th_escuadron_c_15_50 = "spain 121th escuadron c.15-50"
+            spain_121th_escuadron_c_15_60 = "spain 121th escuadron c.15-60"
+            spain_121th_escuadron_c_15_34_50th_anniversary = "spain 121th escuadron c.15-34 50th anniversary"
+            spain_151th_escuadron_c_15_14 = "spain 151th escuadron c.15-14"
+            spain_151th_escuadron_c_15_18 = "spain 151th escuadron c.15-18"
+            spain_151th_escuadron_c_15_23 = "spain 151th escuadron c.15-23"
+            spain_151th_escuadron_c_15_24 = "spain 151th escuadron c.15-24"
+            spain_151th_escuadron_c_15_14_tiger_meet = "spain 151th escuadron c.15-14 tiger meet"
+            spain_211th_escuadron_c_15_76 = "spain 211th escuadron c.15-76"
+            spain_211th_escuadron_c_15_77 = "spain 211th escuadron c.15-77"
+            spain_462th_escuadron_c_15_90 = "spain 462th escuadron c.15-90"
             default_livery = "default livery"
 
         class Ukraine(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
-            Fictional_Ukraine_Air_Force = "Fictional Ukraine Air Force"
+            f_18_iriaf = "f-18 iriaf"
+            fictional_ukraine_air_force = "fictional ukraine air force"
             default_livery = "default livery"
 
         class Belgium(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Slovakia(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Greece(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class UK(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
-            Fictional_UK_Air_Force = "Fictional UK Air Force"
+            f_18_iriaf = "f-18 iriaf"
+            fictional_uk_air_force = "fictional uk air force"
             default_livery = "default livery"
 
         class Insurgents(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Hungary(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class France(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Abkhazia(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Russia(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
-            Fictional_Russia_Air_Force = "Fictional Russia Air Force"
+            f_18_iriaf = "f-18 iriaf"
+            fictional_russia_air_force = "fictional russia air force"
             default_livery = "default livery"
 
         class Sweden(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Austria(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Switzerland(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
-            Switzerland = "Switzerland"
+            f_18_iriaf = "f-18 iriaf"
+            switzerland = "switzerland"
             default_livery = "default livery"
 
         class Italy(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class SouthOssetia(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class SouthKorea(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Iran(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class China(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Pakistan(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Belarus(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class NorthKorea(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Iraq(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Kazakhstan(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Bulgaria(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Serbia(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class India(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class USAFAggressors(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
-            Fictional_Russia_Air_Force = "Fictional Russia Air Force"
-            VFC_12 = "VFC-12"
-            NAWDC_blue = "NAWDC blue"
-            NAWDC_black = "NAWDC black"
-            NAWDC_brown = "NAWDC brown"
-            NSAWC_brown_splinter = "NSAWC brown splinter"
-            NSAWC_blue = "NSAWC blue"
+            f_18_iriaf = "f-18 iriaf"
+            fictional_russia_air_force = "fictional russia air force"
+            vfc_12 = "vfc-12"
+            nawdc_blue = "nawdc blue"
+            nawdc_black = "nawdc black"
+            nawdc_brown = "nawdc brown"
+            nsawc_brown_splinter = "nsawc brown splinter"
+            nsawc_blue = "nsawc blue"
             default_livery = "default livery"
 
         class USA(Enum):
-            VFA_37 = "VFA-37"
-            F_18_IRIAF = "F-18 IRIAF"
-            VFA_106 = "VFA-106"
-            VFA_106_high_visibility = "VFA-106 high visibility"
-            VFA_113 = "VFA-113"
-            VFA_122 = "VFA-122"
-            VFA_131 = "VFA-131"
-            VFA_192 = "VFA-192"
-            VFA_34 = "VFA-34"
-            VFA_83 = "VFA-83"
-            VFA_87 = "VFA-87"
-            VFA_97 = "VFA-97"
-            VFC_12 = "VFC-12"
-            VMFA_122 = "VMFA-122"
-            VMFA_122_high_visibility = "VMFA-122 high visibility"
-            VMFA_232 = "VMFA-232"
-            VMFA_232_high_visibility = "VMFA-232 high visibility"
-            VMFA_251 = "VMFA-251"
-            VMFA_251_high_visibility = "VMFA-251 high visibility"
-            VMFA_312 = "VMFA-312"
-            VMFA_312_high_visibility = "VMFA-312 high visibility"
-            VMFA_314 = "VMFA-314"
-            VMFA_323 = "VMFA-323"
-            VMFA_323_high_visibility = "VMFA-323 high visibility"
-            VMFA_531 = "VMFA-531"
-            VMFAT_101 = "VMFAT-101"
-            VMFAT_101_high_visibility = "VMFAT-101 high visibility"
-            VMFAT_101_high_visibility_2005 = "VMFAT-101 high visibility 2005"
-            VX_23 = "VX-23"
-            VX_31_CoNA = "VX-31 CoNA"
-            VX_9 = "VX-9"
-            NAWDC_blue = "NAWDC blue"
-            NAWDC_black = "NAWDC black"
-            NAWDC_brown = "NAWDC brown"
-            NSAWC_brown_splinter = "NSAWC brown splinter"
-            NSAWC_blue = "NSAWC blue"
-            NSAWC_gray = "NSAWC gray"
+            vfa_37 = "vfa-37"
+            f_18_iriaf = "f-18 iriaf"
+            vfa_106 = "vfa-106"
+            vfa_106_high_visibility = "vfa-106 high visibility"
+            vfa_113 = "vfa-113"
+            vfa_122 = "vfa-122"
+            vfa_131 = "vfa-131"
+            vfa_192 = "vfa-192"
+            vfa_34 = "vfa-34"
+            vfa_83 = "vfa-83"
+            vfa_87 = "vfa-87"
+            vfa_97 = "vfa-97"
+            vfc_12 = "vfc-12"
+            vmfa_122 = "vmfa-122"
+            vmfa_122_high_visibility = "vmfa-122 high visibility"
+            vmfa_232 = "vmfa-232"
+            vmfa_232_high_visibility = "vmfa-232 high visibility"
+            vmfa_251 = "vmfa-251"
+            vmfa_251_high_visibility = "vmfa-251 high visibility"
+            vmfa_312 = "vmfa-312"
+            vmfa_312_high_visibility = "vmfa-312 high visibility"
+            vmfa_314 = "vmfa-314"
+            vmfa_323 = "vmfa-323"
+            vmfa_323_high_visibility = "vmfa-323 high visibility"
+            vmfa_531 = "vmfa-531"
+            vmfat_101 = "vmfat-101"
+            vmfat_101_high_visibility = "vmfat-101 high visibility"
+            vmfat_101_high_visibility_2005 = "vmfat-101 high visibility 2005"
+            vx_23 = "vx-23"
+            vx_31_cona = "vx-31 cona"
+            vx_9 = "vx-9"
+            nawdc_blue = "nawdc blue"
+            nawdc_black = "nawdc black"
+            nawdc_brown = "nawdc brown"
+            nsawc_brown_splinter = "nsawc brown splinter"
+            nsawc_blue = "nsawc blue"
+            nsawc_gray = "nsawc gray"
             default_livery = "default livery"
-            Blue_Angels_Jet_Team = "Blue Angels Jet Team"
+            blue_angels_jet_team = "blue angels jet team"
 
         class Denmark(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Egypt(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Canada(Enum):
-            Canada_150_Demo_Jet = "Canada 150 Demo Jet"
-            Canada_409th_Squadron = "Canada 409th Squadron"
-            Canada_425th_Squadron = "Canada 425th Squadron"
-            Canada_NORAD_60_Demo_Jet = "Canada NORAD 60 Demo Jet"
-            F_18_IRIAF = "F-18 IRIAF"
+            canada_150_demo_jet = "canada 150 demo jet"
+            canada_409th_squadron = "canada 409th squadron"
+            canada_425th_squadron = "canada 425th squadron"
+            canada_norad_60_demo_jet = "canada norad 60 demo jet"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class TheNetherlands(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Turkey(Enum):
-            Fictional_Turkey_162nd_Sq = "Fictional Turkey 162nd Sq"
-            F_18_IRIAF = "F-18 IRIAF"
+            fictional_turkey_162nd_sq = "fictional turkey 162nd sq"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Japan(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Poland(Enum):
-            F_18_IRIAF = "F-18 IRIAF"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
     class Pylon1:
@@ -16681,7 +17100,7 @@ class FA_18C_hornet(PlaneType):
         BRU_55___2_x_AGM_154A = (2, Weapons.BRU_55___2_x_AGM_154A)
         AGM_154C = (2, Weapons.AGM_154C)
         BRU_55___2_x_AGM_154C = (2, Weapons.BRU_55___2_x_AGM_154C)
-        GBU_31 = (2, Weapons.GBU_31)
+        GBU_31_V_1_B = (2, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (2, Weapons.GBU_31_V_3_B)
         GBU_38 = (2, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (2, Weapons.BRU_55___2_x_GBU_38)
@@ -16733,7 +17152,7 @@ class FA_18C_hornet(PlaneType):
         BRU_55___2_x_AGM_154A = (3, Weapons.BRU_55___2_x_AGM_154A)
         AGM_154C = (3, Weapons.AGM_154C)
         BRU_55___2_x_AGM_154C = (3, Weapons.BRU_55___2_x_AGM_154C)
-        GBU_31 = (3, Weapons.GBU_31)
+        GBU_31_V_1_B = (3, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (3, Weapons.GBU_31_V_3_B)
         GBU_38 = (3, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (3, Weapons.BRU_55___2_x_GBU_38)
@@ -16817,7 +17236,7 @@ class FA_18C_hornet(PlaneType):
         BRU_55___2_x_AGM_154A = (7, Weapons.BRU_55___2_x_AGM_154A)
         AGM_154C = (7, Weapons.AGM_154C)
         BRU_55___2_x_AGM_154C = (7, Weapons.BRU_55___2_x_AGM_154C)
-        GBU_31 = (7, Weapons.GBU_31)
+        GBU_31_V_1_B = (7, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (7, Weapons.GBU_31_V_3_B)
         GBU_38 = (7, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (7, Weapons.BRU_55___2_x_GBU_38)
@@ -16875,7 +17294,7 @@ class FA_18C_hornet(PlaneType):
         BRU_55___2_x_AGM_154A = (8, Weapons.BRU_55___2_x_AGM_154A)
         AGM_154C = (8, Weapons.AGM_154C)
         BRU_55___2_x_AGM_154C = (8, Weapons.BRU_55___2_x_AGM_154C)
-        GBU_31 = (8, Weapons.GBU_31)
+        GBU_31_V_1_B = (8, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (8, Weapons.GBU_31_V_3_B)
         GBU_38 = (8, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (8, Weapons.BRU_55___2_x_GBU_38)
@@ -16944,209 +17363,209 @@ class Hawk(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class Finland(Enum):
-            Finland_HW_329_Green_Brown = "Finland HW-329 Green Brown"
-            Finland_HW_341_Grey = "Finland HW-341 Grey"
-            Finland_HW_373_Ex_Swiss_Air_Force = "Finland HW-373 Ex-Swiss Air Force"
+            finland_hw_329_green_brown = "finland hw-329 green brown"
+            finland_hw_341_grey = "finland hw-341 grey"
+            finland_hw_373_ex_swiss_air_force = "finland hw-373 ex-swiss air force"
 
         class Australia(Enum):
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class Germany(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class Israel(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class Norway(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class Spain(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class Ukraine(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class Belgium(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class UK(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            XX218___208Sqn = "XX218 - 208Sqn"
-            XX226___74Sqn_1992_2000 = "XX226 - 74Sqn 1992-2000"
-            XX316___74Sqn_1998_2000 = "XX316 - 74Sqn 1998-2000"
-            XX179___Red_Arrows_1979_2007 = "XX179 - Red Arrows 1979-2007"
-            XX179___Red_Arrows_2008_2012 = "XX179 - Red Arrows 2008-2012"
-            XX159___FRADU_Royal_Navy_Anniversary = "XX159 - FRADU Royal Navy Anniversary"
-            XX175___FRADU_Royal_Navy = "XX175 - FRADU Royal Navy"
-            XX316___FRADU_Royal_Navy = "XX316 - FRADU Royal Navy"
-            XX100___TFC = "XX100 - TFC"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX228___VEAO = "XX228 - VEAO"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            xx218___208sqn = "xx218 - 208sqn"
+            xx226___74sqn_1992_2000 = "xx226 - 74sqn 1992-2000"
+            xx316___74sqn_1998_2000 = "xx316 - 74sqn 1998-2000"
+            xx179___red_arrows_1979_2007 = "xx179 - red arrows 1979-2007"
+            xx179___red_arrows_2008_2012 = "xx179 - red arrows 2008-2012"
+            xx159___fradu_royal_navy_anniversary = "xx159 - fradu royal navy anniversary"
+            xx175___fradu_royal_navy = "xx175 - fradu royal navy"
+            xx316___fradu_royal_navy = "xx316 - fradu royal navy"
+            xx100___tfc = "xx100 - tfc"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx228___veao = "xx228 - veao"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class Insurgents(Enum):
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class France(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class Abkhazia(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class Russia(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class Switzerland(Enum):
-            Swiss_U_1251___White = "Swiss U-1251 - White"
-            Swiss_U_1252___Normal = "Swiss U-1252 - Normal"
-            Swiss_U_1268___ByeByeHawk = "Swiss U-1268 - ByeByeHawk"
-            Swiss_U_1270___Wallis = "Swiss U-1270 - Wallis"
+            swiss_u_1251___white = "swiss u-1251 - white"
+            swiss_u_1252___normal = "swiss u-1252 - normal"
+            swiss_u_1268___byebyehawk = "swiss u-1268 - byebyehawk"
+            swiss_u_1270___wallis = "swiss u-1270 - wallis"
 
         class Italy(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class SouthOssetia(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class USA(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            _12th_FTW__Randolph_AFB__Texas__RA = "12th FTW, Randolph AFB, Texas (RA)"
-            _1st_RS__Beale_AFB__California__BB = "1st RS, Beale AFB, California (BB)"
-            _25th_FTS__Vance_AFB__Oklahoma__VN = "25th FTS, Vance AFB, Oklahoma (VN)"
-            _509th_BS__Whitman_AFB__Missouri__WM = "509th BS, Whitman AFB, Missouri (WM)"
-            _88th_FTS__Sheppard_AFB__Texas__EN = "88th FTS, Sheppard AFB, Texas (EN)"
-            NAS_Meridian__Mississippi_Seven__VT_7 = "NAS Meridian, Mississippi Seven (VT-7)"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            _12th_ftw__randolph_afb__texas__ra = "12th ftw, randolph afb, texas (ra)"
+            _1st_rs__beale_afb__california__bb = "1st rs, beale afb, california (bb)"
+            _25th_fts__vance_afb__oklahoma__vn = "25th fts, vance afb, oklahoma (vn)"
+            _509th_bs__whitman_afb__missouri__wm = "509th bs, whitman afb, missouri (wm)"
+            _88th_fts__sheppard_afb__texas__en = "88th fts, sheppard afb, texas (en)"
+            nas_meridian__mississippi_seven__vt_7 = "nas meridian, mississippi seven (vt-7)"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class Denmark(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class Canada(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class TheNetherlands(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
         class Turkey(Enum):
-            XX189___100Sqn = "XX189 - 100Sqn"
-            USAF_Aggressor_269 = "USAF Aggressor 269"
-            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
-            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
-            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
-            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
-            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+            xx189___100sqn = "xx189 - 100sqn"
+            usaf_aggressor_269 = "usaf aggressor 269"
+            xx159___2004_raf_hawk_display = "xx159 - 2004 raf hawk display"
+            xx178___1994_raf_hawk_display = "xx178 - 1994 raf hawk display"
+            xx201___2010_raf_hawk_display = "xx201 - 2010 raf hawk display"
+            xx245___2009_raf_hawk_display = "xx245 - 2009 raf hawk display"
+            xx337___92_sqn_blue_tail = "xx337 - 92 sqn blue tail"
 
     class Pylon1:
         LAU_7_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_7_AIM_9M_Sidewinder_IR_AAM)
@@ -17213,474 +17632,474 @@ class I_16(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Syria(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Finland(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Australia(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Germany(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class SaudiArabia(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Israel(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Croatia(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class CzechRepublic(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Norway(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Romania(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Spain(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Ukraine(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Belgium(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Slovakia(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Greece(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class UK(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Insurgents(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Hungary(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class France(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Abkhazia(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Russia(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Sweden(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Austria(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Switzerland(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Italy(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class SouthOssetia(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class SouthKorea(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Iran(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class China(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Pakistan(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Belarus(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class NorthKorea(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Iraq(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Kazakhstan(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Bulgaria(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Serbia(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class India(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class USAFAggressors(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class USA(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Denmark(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Egypt(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Canada(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class TheNetherlands(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Turkey(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Japan(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
         class Poland(Enum):
-            Red_Army_Standard = "Red Army Standard"
-            Finnish_AF = "Finnish AF"
-            Clear = "Clear"
-            Japan = "Japan"
-            Red_Army_Camo = "Red Army Camo"
-            Red_Army_Winter = "Red Army Winter"
-            Spain_Nationalists = "Spain Nationalists"
-            Spain_Republicans = "Spain Republicans"
+            red_army_standard = "red army standard"
+            finnish_af = "finnish af"
+            clear = "clear"
+            japan = "japan"
+            red_army_camo = "red army camo"
+            red_army_winter = "red army winter"
+            spain_nationalists = "spain nationalists"
+            spain_republicans = "spain republicans"
 
     class Pylon1:
         I16_RS_82 = (1, Weapons.I16_RS_82)
@@ -17788,32 +18207,32 @@ class L_39C(PlaneType):
     class Liveries:
 
         class Germany(Enum):
-            German_Bundeswehr_28_53 = "German Bundeswehr 28+53"
-            DDR_Luftwaffe = "DDR Luftwaffe"
-            DDR_Luftwaffe_Early = "DDR Luftwaffe Early"
+            german_bundeswehr_28_53 = "german bundeswehr 28+53"
+            ddr_luftwaffe = "ddr luftwaffe"
+            ddr_luftwaffe_early = "ddr luftwaffe early"
 
         class CzechRepublic(Enum):
-            Czech_Air_Force = "Czech Air Force"
-            Czech_Air_Force_CLV = "Czech Air Force CLV"
-            Czechoslovakia_Air_Force = "Czechoslovakia Air Force"
+            czech_air_force = "czech air force"
+            czech_air_force_clv = "czech air force clv"
+            czechoslovakia_air_force = "czechoslovakia air force"
 
         class Ukraine(Enum):
-            Ukraine_Air_Force_UKHW = "Ukraine Air Force UKHW"
+            ukraine_air_force_ukhw = "ukraine air force ukhw"
 
         class Slovakia(Enum):
-            Slovak_Air_Force = "Slovak Air Force"
+            slovak_air_force = "slovak air force"
 
         class France(Enum):
-            France_EC24_Fictional = "France EC24 Fictional"
+            france_ec24_fictional = "france ec24 fictional"
 
         class Russia(Enum):
-            Russian_Air_Force = "Russian Air Force"
-            Russian_Air_Force_Navy = "Russian Air Force Navy"
-            Russ_Jet_Team = "Russ Jet Team"
-            Russian_Air_Force_Old = "Russian Air Force Old"
+            russian_air_force = "russian air force"
+            russian_air_force_navy = "russian air force navy"
+            russ_jet_team = "russ jet team"
+            russian_air_force_old = "russian air force old"
 
         class USA(Enum):
-            Black_Diamond_Jet_Team = "Black Diamond Jet Team"
+            black_diamond_jet_team = "black diamond jet team"
 
     class Pylon1:
         FAB_100 = (1, Weapons.FAB_100)
@@ -17929,196 +18348,196 @@ class L_39ZA(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Syria(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Finland(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Australia(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Germany(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class SaudiArabia(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Israel(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Croatia(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class CzechRepublic(Enum):
-            Czech_Air_Force = "Czech Air Force"
-            Czechoslovakia_Air_Force = "Czechoslovakia Air Force"
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            czech_air_force = "czech air force"
+            czechoslovakia_air_force = "czechoslovakia air force"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Norway(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Romania(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Spain(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Ukraine(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Belgium(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Slovakia(Enum):
-            Slovak_Air_Force = "Slovak Air Force"
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            slovak_air_force = "slovak air force"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Greece(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class UK(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Insurgents(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Hungary(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class France(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Abkhazia(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Russia(Enum):
-            Russian_Air_Force = "Russian Air Force"
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            russian_air_force = "russian air force"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Sweden(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Austria(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Switzerland(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Italy(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class SouthOssetia(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class SouthKorea(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Iran(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class China(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Pakistan(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Belarus(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class NorthKorea(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Iraq(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Kazakhstan(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Bulgaria(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Serbia(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class India(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class USAFAggressors(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class USA(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Denmark(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Egypt(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Canada(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class TheNetherlands(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Turkey(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Japan(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
         class Poland(Enum):
-            Splinter_camo_desert = "Splinter camo desert"
-            Splinter_camo_woodland = "Splinter camo woodland"
+            splinter_camo_desert = "splinter camo desert"
+            splinter_camo_woodland = "splinter camo woodland"
 
     class Pylon1:
         FAB_100 = (1, Weapons.FAB_100)
@@ -18314,20 +18733,20 @@ class M_2000C(PlaneType):
     class Liveries:
 
         class Greece(Enum):
-            Greek_Air_Force = "Greek Air Force"
+            greek_air_force = "greek air force"
 
         class France(Enum):
-            _2003_Tigermeet = "2003 Tigermeet"
-            _2004_Tigermeet = "2004 Tigermeet"
-            _2010_Tigermeet = "2010 Tigermeet"
-            Cambresis = "Cambresis"
-            AdA_Chasse_2_5 = "AdA Chasse 2-5"
-            AdA_Alsace_LF_2 = "AdA Alsace LF-2"
-            Brasilian_Air_Force = "Brasilian Air Force"
-            Peru052 = "Peru052"
-            Peru064 = "Peru064"
-            Greek_Air_Force = "Greek Air Force"
-            UAE_Air_Force = "UAE Air Force"
+            _2003_tigermeet = "2003 tigermeet"
+            _2004_tigermeet = "2004 tigermeet"
+            _2010_tigermeet = "2010 tigermeet"
+            cambresis = "cambresis"
+            ada_chasse_2_5 = "ada chasse 2-5"
+            ada_alsace_lf_2 = "ada alsace lf-2"
+            brasilian_air_force = "brasilian air force"
+            peru052 = "peru052"
+            peru064 = "peru064"
+            greek_air_force = "greek air force"
+            uae_air_force = "uae air force"
 
     class Pylon1:
         Matra_Magic_II = (1, Weapons.Matra_Magic_II)
@@ -18500,7 +18919,7 @@ class MiG_15bis(PlaneType):
             default_livery = "default livery"
 
         class Germany(Enum):
-            GDR_Air_Force = "GDR_Air Force"
+            gdr_air_force = "gdr_air force"
             default_livery = "default livery"
 
         class SaudiArabia(Enum):
@@ -18513,7 +18932,7 @@ class MiG_15bis(PlaneType):
             default_livery = "default livery"
 
         class CzechRepublic(Enum):
-            Czechoslovakia_Air_Force = "Czechoslovakia_Air Force"
+            czechoslovakia_air_force = "czechoslovakia_air force"
             default_livery = "default livery"
 
         class Norway(Enum):
@@ -18535,7 +18954,7 @@ class MiG_15bis(PlaneType):
             default_livery = "default livery"
 
         class Greece(Enum):
-            HAF_Fictional = "HAF Fictional"
+            haf_fictional = "haf fictional"
             default_livery = "default livery"
 
         class UK(Enum):
@@ -18554,11 +18973,11 @@ class MiG_15bis(PlaneType):
             default_livery = "default livery"
 
         class Russia(Enum):
-            USSR_Air_Forces_Old = "USSR_Air Forces Old"
-            USSR_Air_Forces = "USSR_Air Forces"
-            North_Korea_Air_Force_Major__Arkady__Boitsow = "North_Korea_Air Force_Major_ Arkady_ Boitsow"
-            USSR_Pepelyaev = "USSR_Pepelyaev"
-            USSR_Red = "USSR_Red"
+            ussr_air_forces_old = "ussr_air forces old"
+            ussr_air_forces = "ussr_air forces"
+            north_korea_air_force_major__arkady__boitsow = "north_korea_air force_major_ arkady_ boitsow"
+            ussr_pepelyaev = "ussr_pepelyaev"
+            ussr_red = "ussr_red"
             default_livery = "default livery"
 
         class Sweden(Enum):
@@ -18583,8 +19002,8 @@ class MiG_15bis(PlaneType):
             default_livery = "default livery"
 
         class China(Enum):
-            China_Air_Force = "China_Air Force"
-            China_Volunteer_Air_Force = "China Volunteer Air Force"
+            china_air_force = "china_air force"
+            china_volunteer_air_force = "china volunteer air force"
             default_livery = "default livery"
 
         class Pakistan(Enum):
@@ -18594,9 +19013,9 @@ class MiG_15bis(PlaneType):
             default_livery = "default livery"
 
         class NorthKorea(Enum):
-            North_Korea_Air_Force = "North_Korea_Air Force"
-            North_Korea_Air_Force_Major__Arkady__Boitsow = "North_Korea_Air Force_Major_ Arkady_ Boitsow"
-            USSR_Pepelyaev = "USSR_Pepelyaev"
+            north_korea_air_force = "north_korea_air force"
+            north_korea_air_force_major__arkady__boitsow = "north_korea_air force_major_ arkady_ boitsow"
+            ussr_pepelyaev = "ussr_pepelyaev"
             default_livery = "default livery"
 
         class Iraq(Enum):
@@ -18639,7 +19058,7 @@ class MiG_15bis(PlaneType):
             default_livery = "default livery"
 
         class Poland(Enum):
-            Polish_Air_Force = "Polish_Air Force"
+            polish_air_force = "polish_air force"
             default_livery = "default livery"
 
     class Pylon1:
@@ -18723,293 +19142,293 @@ class MiG_19P(PlaneType):
 
         class Georgia(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Syria(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Finland(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Australia(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Germany(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class SaudiArabia(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Israel(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Croatia(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class CzechRepublic(Enum):
             default = "default"
-            IAP = "IAP"
-            CZechoslovakia = "CZechoslovakia"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            czechoslovakia = "czechoslovakia"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Norway(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Romania(Enum):
             default = "default"
-            IAP = "IAP"
-            Romania___66th_Fighter_Division = "Romania - 66th Fighter Division"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            romania___66th_fighter_division = "romania - 66th fighter division"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Spain(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Ukraine(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Belgium(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Slovakia(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Greece(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class UK(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Insurgents(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Hungary(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class France(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Abkhazia(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Russia(Enum):
             default = "default"
-            IAP = "IAP"
-            USSR_2 = "USSR_2"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ussr_2 = "ussr_2"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Sweden(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Austria(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Switzerland(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Italy(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class SouthOssetia(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class SouthKorea(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Iran(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class China(Enum):
             default = "default"
-            PLAAF = "PLAAF"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            PLAAF_CAMO = "PLAAF CAMO"
-            Snow___Fictional = "Snow - Fictional"
+            plaaf = "plaaf"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            plaaf_camo = "plaaf camo"
+            snow___fictional = "snow - fictional"
 
         class Pakistan(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Belarus(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class NorthKorea(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Iraq(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Kazakhstan(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Bulgaria(Enum):
             default = "default"
-            Bulgaria = "Bulgaria"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            bulgaria = "bulgaria"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Serbia(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class India(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class USAFAggressors(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class USA(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Denmark(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Egypt(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Canada(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class TheNetherlands(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Turkey(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Japan(Enum):
             default = "default"
-            IAP = "IAP"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
         class Poland(Enum):
             default = "default"
-            IAP = "IAP"
-            Poland_39_PLM = "Poland 39 PLM"
-            Poland_62_PLM = "Poland 62 PLM"
-            DDR___Fictional = "DDR - Fictional"
-            Snow___Fictional = "Snow - Fictional"
+            iap = "iap"
+            poland_39_plm = "poland 39 plm"
+            poland_62_plm = "poland 62 plm"
+            ddr___fictional = "ddr - fictional"
+            snow___fictional = "snow - fictional"
 
     class Pylon1:
         K_13A = (1, Weapons.K_13A)
@@ -19100,1461 +19519,1461 @@ class MiG_21Bis(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Syria(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Finland(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Australia(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Germany(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class SaudiArabia(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Israel(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Croatia(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class CzechRepublic(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Norway(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Romania(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Spain(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Ukraine(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Belgium(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Slovakia(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Greece(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class UK(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Insurgents(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Hungary(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class France(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Abkhazia(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Russia(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Sweden(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Austria(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Switzerland(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Italy(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class SouthOssetia(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class SouthKorea(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Iran(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class China(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Pakistan(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Belarus(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class NorthKorea(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Iraq(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Kazakhstan(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Bulgaria(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Serbia(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class India(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class USAFAggressors(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class USA(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Denmark(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Egypt(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Canada(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class TheNetherlands(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Turkey(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Japan(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
         class Poland(Enum):
-            Bare_Metal = "Bare Metal"
-            Bulgaria___1_3_IAE = "Bulgaria - 1-3 IAE"
-            Bulgaria___1_3_IAE__2 = "Bulgaria - 1-3 IAE (2)"
-            Bulgaria___1_3_IAE__3 = "Bulgaria - 1-3 IAE (3)"
-            Croatia___1st_FS_1992 = "Croatia - 1st FS 1992"
-            Cuba___UM_5010_IS = "Cuba - UM 5010 IS"
-            DPRK___2016___42 = "DPRK - 2016 - 42"
-            Draken_International = "Draken International"
-            Germany_East___JG_8 = "Germany East - JG-8"
-            Egypt___Grey_1982 = "Egypt - Grey 1982"
-            Egypt___Tan_1982 = "Egypt - Tan 1982"
-            Finland___HävLLv_31 = "Finland - HävLLv 31"
-            India___15th_Sqn = "India - 15th Sqn"
-            Iran___51st_Sqn = "Iran - 51st Sqn"
-            Iran___Standard = "Iran - Standard"
-            Iraq___17th_Sqn__1 = "Iraq - 17th Sqn (1)"
-            Iraq___17th_Sqn__2 = "Iraq - 17th Sqn (2)"
-            Northeria___32nd_FS = "Northeria - 32nd FS"
-            Poland___1_DLMW = "Poland - 1 DLMW"
-            Poland___Metal = "Poland - Metal"
-            Serbia___101st_LAE = "Serbia - 101st LAE"
-            Slovakia___1998 = "Slovakia - 1998"
-            Southeria = "Southeria"
-            Syria__1 = "Syria (1)"
-            Syria__2 = "Syria (2)"
-            VVS___AMT_11_Grey = "VVS - AMT-11 Grey"
-            VVS___185th_GvIAP = "VVS - 185th GvIAP"
-            VVS___Demonstrator = "VVS - Demonstrator"
-            VVS___Metal = "VVS - Metal"
+            bare_metal = "bare metal"
+            bulgaria___1_3_iae = "bulgaria - 1-3 iae"
+            bulgaria___1_3_iae__2 = "bulgaria - 1-3 iae (2)"
+            bulgaria___1_3_iae__3 = "bulgaria - 1-3 iae (3)"
+            croatia___1st_fs_1992 = "croatia - 1st fs 1992"
+            cuba___um_5010_is = "cuba - um 5010 is"
+            dprk___2016___42 = "dprk - 2016 - 42"
+            draken_international = "draken international"
+            germany_east___jg_8 = "germany east - jg-8"
+            egypt___grey_1982 = "egypt - grey 1982"
+            egypt___tan_1982 = "egypt - tan 1982"
+            finland___hävllv_31 = "finland - hävllv 31"
+            india___15th_sqn = "india - 15th sqn"
+            iran___51st_sqn = "iran - 51st sqn"
+            iran___standard = "iran - standard"
+            iraq___17th_sqn__1 = "iraq - 17th sqn (1)"
+            iraq___17th_sqn__2 = "iraq - 17th sqn (2)"
+            northeria___32nd_fs = "northeria - 32nd fs"
+            poland___1_dlmw = "poland - 1 dlmw"
+            poland___metal = "poland - metal"
+            serbia___101st_lae = "serbia - 101st lae"
+            slovakia___1998 = "slovakia - 1998"
+            southeria = "southeria"
+            syria__1 = "syria (1)"
+            syria__2 = "syria (2)"
+            vvs___amt_11_grey = "vvs - amt-11 grey"
+            vvs___185th_gviap = "vvs - 185th gviap"
+            vvs___demonstrator = "vvs - demonstrator"
+            vvs___metal = "vvs - metal"
 
     class Pylon1:
         UB_16UM___16_S_5M = (1, Weapons.UB_16UM___16_S_5M)
@@ -20569,7 +20988,7 @@ class MiG_21Bis(PlaneType):
         R_13M1 = (1, Weapons.R_13M1)
         R_3R = (1, Weapons.R_3R)
         R_3S = (1, Weapons.R_3S)
-        RS_2US = (1, Weapons.RS_2US)
+        RS2US = (1, Weapons.RS2US)
         R_60 = (1, Weapons.R_60)
         R_60M_ = (1, Weapons.R_60M_)
         R_60M_x_2 = (1, Weapons.R_60M_x_2)
@@ -20596,7 +21015,7 @@ class MiG_21Bis(PlaneType):
         R_13M1 = (2, Weapons.R_13M1)
         R_3R = (2, Weapons.R_3R)
         R_3S = (2, Weapons.R_3S)
-        RS_2US = (2, Weapons.RS_2US)
+        RS2US = (2, Weapons.RS2US)
         R_55 = (2, Weapons.R_55)
         R_60 = (2, Weapons.R_60)
         R_60M_ = (2, Weapons.R_60M_)
@@ -20631,7 +21050,7 @@ class MiG_21Bis(PlaneType):
         R_13M1 = (4, Weapons.R_13M1)
         R_3R = (4, Weapons.R_3R)
         R_3S = (4, Weapons.R_3S)
-        RS_2US = (4, Weapons.RS_2US)
+        RS2US = (4, Weapons.RS2US)
         R_55 = (4, Weapons.R_55)
         R_60 = (4, Weapons.R_60)
         R_60M_ = (4, Weapons.R_60M_)
@@ -20653,7 +21072,7 @@ class MiG_21Bis(PlaneType):
         R_13M1 = (5, Weapons.R_13M1)
         R_3R = (5, Weapons.R_3R)
         R_3S = (5, Weapons.R_3S)
-        RS_2US = (5, Weapons.RS_2US)
+        RS2US = (5, Weapons.RS2US)
         R_60 = (5, Weapons.R_60)
         R_60M_ = (5, Weapons.R_60M_)
         R_60M_x_2_ = (5, Weapons.R_60M_x_2_)
@@ -20689,8 +21108,8 @@ class Su_34(PlaneType):
     class Liveries:
 
         class Russia(Enum):
-            Russian_Air_Force = "Russian Air Force"
-            Russian_Air_Force_Old = "Russian Air Force Old"
+            russian_air_force = "russian air force"
+            russian_air_force_old = "russian air force old"
 
     class Pylon1:
         R_73 = (1, Weapons.R_73)
@@ -21004,150 +21423,150 @@ class Yak_52(PlaneType):
     class Liveries:
 
         class Georgia(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Syria(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Finland(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Australia(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Germany(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class SaudiArabia(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Israel(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Croatia(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class CzechRepublic(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Norway(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Romania(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Spain(Enum):
-            Bare_Metall = "Bare_Metall"
-            Pobeda = "Pobeda"
+            bare_metall = "bare_metall"
+            pobeda = "pobeda"
 
         class Ukraine(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Belgium(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Slovakia(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Greece(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class UK(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Insurgents(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Hungary(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class France(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Abkhazia(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Russia(Enum):
-            Bare_Metall = "Bare_Metall"
-            DOSAAF_RF = "DOSAAF_RF"
-            DOSAAF_USSR = "DOSAAF_USSR"
-            The_First_Flight = "The First Flight"
-            The_Yakovlevs = "The Yakovlevs"
+            bare_metall = "bare_metall"
+            dosaaf_rf = "dosaaf_rf"
+            dosaaf_ussr = "dosaaf_ussr"
+            the_first_flight = "the first flight"
+            the_yakovlevs = "the yakovlevs"
 
         class Sweden(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Austria(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Switzerland(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Italy(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class SouthOssetia(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class SouthKorea(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Iran(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class China(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Pakistan(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Belarus(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class NorthKorea(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Iraq(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Kazakhstan(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Bulgaria(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Serbia(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class India(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class USAFAggressors(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class USA(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Denmark(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Egypt(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Canada(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class TheNetherlands(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Turkey(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Japan(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
         class Poland(Enum):
-            Bare_Metall = "Bare_Metall"
+            bare_metall = "bare_metall"
 
     class Pylon1:
         Smoke_Generator___red_ = (1, Weapons.Smoke_Generator___red_)
@@ -21197,15 +21616,15 @@ class A_20G(PlaneType):
     class Liveries:
 
         class UK(Enum):
-            _107_Sqn = "107 Sqn"
+            _107_sqn = "107 sqn"
 
         class Russia(Enum):
-            USSR_1st_GMTAP = "USSR 1st GMTAP"
-            USSR_27_APE_DD = "USSR 27 APE DD"
+            ussr_1st_gmtap = "ussr 1st gmtap"
+            ussr_27_ape_dd = "ussr 27 ape dd"
 
         class USA(Enum):
-            USAF_645th_BS = "USAF 645th BS"
-            USAF_668th_BS = "USAF 668th BS"
+            usaf_645th_bs = "usaf 645th bs"
+            usaf_668th_bs = "usaf 668th bs"
 
     class Pylon1:
         _4___AN_M64 = (1, Weapons._4___AN_M64)
@@ -21422,7 +21841,6 @@ plane_map = {
     "B-52H": B_52H,
     "MiG-27K": MiG_27K,
     "F-111F": F_111F,
-    "A-10A": A_10A,
     "Su-27": Su_27,
     "MiG-23MLD": MiG_23MLD,
     "Su-25": Su_25,
@@ -21465,7 +21883,6 @@ plane_map = {
     "F-16A MLU": F_16A_MLU,
     "RQ-1A Predator": RQ_1A_Predator,
     "Yak-40": Yak_40,
-    "A-10C": A_10C,
     "KC-135": KC_135,
     "FW-190D9": FW_190D9,
     "FW-190A8": FW_190A8,
@@ -21475,6 +21892,10 @@ plane_map = {
     "P-51D": P_51D,
     "P-51D-30-NA": P_51D_30_NA,
     "P-47D-30": P_47D_30,
+    "P-47D-30bl1": P_47D_30bl1,
+    "P-47D-40": P_47D_40,
+    "A-10A": A_10A,
+    "A-10C": A_10C,
     "AJS37": AJS37,
     "AV8BNA": AV8BNA,
     "KC130": KC130,
