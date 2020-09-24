@@ -780,7 +780,6 @@ class USA(Country):
         F_16A_MLU = planes.F_16A_MLU
         F_16C_bl_50 = planes.F_16C_bl_50
         F_4E = planes.F_4E
-        F_4E_new = planes.F_4E_new
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
@@ -844,7 +843,6 @@ class USA(Country):
         Plane.F_16A_MLU,
         Plane.F_16C_bl_50,
         Plane.F_4E,
-        Plane.F_4E_new,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
@@ -1145,7 +1143,6 @@ class Turkey(Country):
         F_86F_Sabre = planes.F_86F_Sabre
         KC135MPRS = planes.KC135MPRS
         RQ_1A_Predator = planes.RQ_1A_Predator
-        F_4E_new = planes.F_4E_new
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -1191,7 +1188,6 @@ class Turkey(Country):
         Plane.F_86F_Sabre,
         Plane.KC135MPRS,
         Plane.RQ_1A_Predator,
-        Plane.F_4E_new,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -1841,7 +1837,6 @@ class Germany(Country):
         Su_17M4 = planes.Su_17M4
         Yak_40 = planes.Yak_40
         Yak_52 = planes.Yak_52
-        F_4E_new = planes.F_4E_new
         FW_190D9 = planes.FW_190D9
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
@@ -1887,7 +1882,6 @@ class Germany(Country):
         Plane.Su_17M4,
         Plane.Yak_40,
         Plane.Yak_52,
-        Plane.F_4E_new,
         Plane.FW_190D9,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
@@ -2279,7 +2273,6 @@ class USAFAggressors(Country):
         RQ_1A_Predator = planes.RQ_1A_Predator
         F_A_18C = planes.F_A_18C
         F_4E = planes.F_4E
-        F_4E_new = planes.F_4E_new
         WingLoong_I = planes.WingLoong_I
         Su_33 = planes.Su_33
         Su_25TM = planes.Su_25TM
@@ -2376,7 +2369,6 @@ class USAFAggressors(Country):
         Plane.RQ_1A_Predator,
         Plane.F_A_18C,
         Plane.F_4E,
-        Plane.F_4E_new,
         Plane.WingLoong_I,
         Plane.Su_33,
         Plane.Su_25TM,
@@ -2758,7 +2750,6 @@ class Spain(Country):
         I_16 = planes.I_16
         KC130 = planes.KC130
         FW_190A8 = planes.FW_190A8
-        F_4E_new = planes.F_4E_new
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
@@ -2801,7 +2792,6 @@ class Spain(Country):
         Plane.I_16,
         Plane.KC130,
         Plane.FW_190A8,
-        Plane.F_4E_new,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
@@ -3702,7 +3692,6 @@ class Israel(Country):
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         KC130 = planes.KC130
-        F_4E_new = planes.F_4E_new
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         P_47D_30 = planes.P_47D_30
@@ -3748,7 +3737,6 @@ class Israel(Country):
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.KC130,
-        Plane.F_4E_new,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.P_47D_30,
@@ -4892,7 +4880,6 @@ class Australia(Country):
         F_A_18A = planes.F_A_18A
         MQ_9_Reaper = planes.MQ_9_Reaper
         Hawk = planes.Hawk
-        F_4E_new = planes.F_4E_new
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -4935,7 +4922,6 @@ class Australia(Country):
         Plane.F_A_18A,
         Plane.MQ_9_Reaper,
         Plane.Hawk,
-        Plane.F_4E_new,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -6421,7 +6407,6 @@ class Egypt(Country):
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         M_2000C = planes.M_2000C
-        F_4E_new = planes.F_4E_new
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         P_47D_30 = planes.P_47D_30
@@ -6460,7 +6445,6 @@ class Egypt(Country):
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.M_2000C,
-        Plane.F_4E_new,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.P_47D_30,
@@ -6828,7 +6812,6 @@ class Greece(Country):
         P_51D = planes.P_51D
         C_17A = planes.C_17A
         M_2000C = planes.M_2000C
-        F_4E_new = planes.F_4E_new
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -6870,7 +6853,6 @@ class Greece(Country):
         Plane.P_51D,
         Plane.C_17A,
         Plane.M_2000C,
-        Plane.F_4E_new,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -7457,7 +7439,6 @@ class Iran(Country):
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
         Su_25T = planes.Su_25T
-        F_4E_new = planes.F_4E_new
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -7501,7 +7482,6 @@ class Iran(Country):
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
         Plane.Su_25T,
-        Plane.F_4E_new,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -9639,7 +9619,6 @@ class SouthKorea(Country):
         F_16C_bl_52d = planes.F_16C_bl_52d
         F_86F_Sabre = planes.F_86F_Sabre
         Hawk = planes.Hawk
-        F_4E_new = planes.F_4E_new
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -9681,7 +9660,6 @@ class SouthKorea(Country):
         Plane.F_16C_bl_52d,
         Plane.F_86F_Sabre,
         Plane.Hawk,
-        Plane.F_4E_new,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -15975,7 +15953,6 @@ class CombinedJointTaskForcesBlue(Country):
         RQ_1A_Predator = planes.RQ_1A_Predator
         F_A_18C = planes.F_A_18C
         F_4E = planes.F_4E
-        F_4E_new = planes.F_4E_new
         WingLoong_I = planes.WingLoong_I
         Su_33 = planes.Su_33
         Su_25TM = planes.Su_25TM
@@ -16072,7 +16049,6 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.RQ_1A_Predator,
         Plane.F_A_18C,
         Plane.F_4E,
-        Plane.F_4E_new,
         Plane.WingLoong_I,
         Plane.Su_33,
         Plane.Su_25TM,
@@ -16512,7 +16488,6 @@ class CombinedJointTaskForcesRed(Country):
         RQ_1A_Predator = planes.RQ_1A_Predator
         F_A_18C = planes.F_A_18C
         F_4E = planes.F_4E
-        F_4E_new = planes.F_4E_new
         WingLoong_I = planes.WingLoong_I
         Su_33 = planes.Su_33
         Su_25TM = planes.Su_25TM
@@ -16609,7 +16584,6 @@ class CombinedJointTaskForcesRed(Country):
         Plane.RQ_1A_Predator,
         Plane.F_A_18C,
         Plane.F_4E,
-        Plane.F_4E_new,
         Plane.WingLoong_I,
         Plane.Su_33,
         Plane.Su_25TM,
@@ -17049,7 +17023,6 @@ class UnitedNationsPeacekeepers(Country):
         RQ_1A_Predator = planes.RQ_1A_Predator
         F_A_18C = planes.F_A_18C
         F_4E = planes.F_4E
-        F_4E_new = planes.F_4E_new
         WingLoong_I = planes.WingLoong_I
         Su_33 = planes.Su_33
         Su_25TM = planes.Su_25TM
@@ -17146,7 +17119,6 @@ class UnitedNationsPeacekeepers(Country):
         Plane.RQ_1A_Predator,
         Plane.F_A_18C,
         Plane.F_4E,
-        Plane.F_4E_new,
         Plane.WingLoong_I,
         Plane.Su_33,
         Plane.Su_25TM,
