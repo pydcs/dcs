@@ -244,6 +244,7 @@ def _find_steam_dcs_directory():
     return ""
 
 
+
 if __name__ == "__main__":
     print("Using Windows : " + str(is_windows_os))
     print("Using STEAM Edition : " + str(is_using_dcs_steam_edition()))
