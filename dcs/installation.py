@@ -37,65 +37,157 @@ def is_using_dcs_steam_edition():
     except FileNotFoundError as fnfe:
         return False
 
-
-def is_using_dcs_standalone_edition():
+def is_using_dcs_standalone_edition_stable():
     """
-    Check if DCS World standalone edition is installed on this computer
-    :return True if Standalone is installed, False if it is not
+    Check if dcs standalone stable version is installed
     """
-    if not is_windows_os:
-        return False
     try:
         dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World")
         winreg.CloseKey(dcs_path_key)
         return True
     except FileNotFoundError as fnfe:
-        try:
-            dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World OpenBeta")
-            winreg.CloseKey(dcs_path_key)
-            return True
-        except FileNotFoundError:
-            return False
+        return False
 
-
-def get_dcs_install_directory():
+def get_dcs_install_directory_standalone_stable():
     """
-    Get the DCS World install directory for this computer
-    :return DCS World install directory
+        Get dcs stable install dir if avail
     """
-    if is_using_dcs_standalone_edition():
-        try:
-            dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World")
-            path = winreg.QueryValueEx(dcs_path_key, "Path")
-            dcs_dir = path[0] + os.path.sep
-            winreg.CloseKey(dcs_path_key)
-            return dcs_dir
-        except FileNotFoundError as fnfe:
-            try:
-                dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World OpenBeta")
-                path = winreg.QueryValueEx(dcs_path_key, "Path")
-                dcs_dir = path[0] + os.path.sep
-                winreg.CloseKey(dcs_path_key)
-                return dcs_dir
-            except FileNotFoundError:
-                print("Couldn't detect DCS World installation folder")
-                return ""
-        except Exception as e:
-            print("Couldn't detect DCS World installation folder")
-            return ""
-    elif is_using_dcs_steam_edition():
-        return _find_steam_dcs_directory()
-    else:
-        print("Couldn't detect any installed DCS World version")
+    try:
+        dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World")
+        path = winreg.QueryValueEx(dcs_path_key, "Path")
+        dcs_dir = path[0] + os.path.sep
+        winreg.CloseKey(dcs_path_key)
+        return dcs_dir
+    except FileNotFoundError:
+        print("Couldn't detect DCS World stable installation folder")
         return ""
 
+def is_using_dcs_standalone_edition_openbeta():
+    """
+        Check if dcs standalone openbeta version is installed
+    """
+    try:
+        dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World OpenBeta")
+        winreg.CloseKey(dcs_path_key)
+        return True
+    except FileNotFoundError:
+        return False
 
-def get_dcs_saved_games_directory():
+def get_dcs_install_directory_standalone_openbeta():
+    """
+        Get dcs openbeeta install dir if avail
+    """
+    try:
+        dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World OpenBeta")
+        path = winreg.QueryValueEx(dcs_path_key, "Path")
+        dcs_dir = path[0] + os.path.sep
+        winreg.CloseKey(dcs_path_key)
+        return dcs_dir
+    except FileNotFoundError:
+        print("Couldn't detect DCS World openbeta installation folder")
+        return ""
+
+def is_using_dcs_standalone_edition():
+    """
+    Check if DCS World standalone edition is installed on this computer
+    :return True if any Standalone (stable or openbeta) is installed, False if it is not
+    """
+    if not is_windows_os:
+        return False
+
+    if is_using_dcs_standalone_edition_stable():
+        return True
+    elif is_using_dcs_standalone_edition_openbeta():
+        return True
+
+    else:
+        return False
+
+def get_dcs_install_directory(target="any"):
+    """
+    Get the DCS World install directory for this computer. prefer can be "any", "stable", "openbeta", "steam"
+    :return DCS World install directory
+    """
+
+    if target not in ["any", "stable", "openbeta", "steam"]:
+        print("Unknown prefer variable %s" % target)
+        return ""
+
+    try_list = []
+    if target=="any":
+        try_list += ["stable", "openbeta", "steam"]
+    else:
+        try_list.append(target)
+
+    dcs_dir = ""
+    for edition in try_list:
+        if edition == "stable":
+            if is_using_dcs_standalone_edition_stable():
+                stable_dir = get_dcs_install_directory_standalone_stable()
+                if stable_dir == "":
+                    print("Couldn't detect DCS World standalone stable installation folder")
+                else:
+                    dcs_dir = stable_dir
+                    break
+            else:
+                print("Couldn't detect DCS standalone stable")
+        elif edition == "openbeta":
+            if is_using_dcs_standalone_edition_openbeta():
+                openbeta_dir = get_dcs_install_directory_standalone_openbeta()
+                if openbeta_dir == "":
+                    print("Couldn't detect DCS World standalone opebeta installation folder")
+                else:
+                    dcs_dir = openbeta_dir
+                    break
+            else:
+                print("Couldn't detect DCS standalone openbeta")
+
+        elif edition == "steam":
+            if is_using_dcs_steam_edition():
+                steam_dir = _find_steam_dcs_directory()
+                if steam_dir == "":
+                    print("Couldn't detect DCS World steam installation folder")
+                else:
+                    dcs_dir = steam_dir
+                    break
+            else:
+                print("Couldn't detect DCS steam")
+
+    if dcs_dir == "":
+        print("Couldn't detect installed DCS World version: %s" % target)
+        return ""
+    # somehow found something
+    return dcs_dir
+
+
+def get_dcs_saved_games_directory(target="any"):
     """
     Get the save game directory for DCS World
     :return: Save game directory as string
     """
-    return os.path.join(os.path.expanduser("~"), "Saved Games", "DCS")
+
+    openbeta_savedir = os.path.join(os.path.expanduser("~"), "Saved Games", "DCS.openbeta")
+    stable_savedir = os.path.join(os.path.expanduser("~"), "Saved Games", "DCS")
+    steam_savedir = stable_savedir
+
+    if target == "any":
+        if is_using_dcs_standalone_edition_stable():
+            return stable_savedir
+        elif is_using_dcs_standalone_edition_openbeta():
+            return openbeta_savedir
+        elif is_using_dcs_steam_edition():
+            return steam_savedir
+        else:
+            return stable_savedir # compatible with previous versions..
+
+    elif target == "stable":
+        return stable_savedir
+    elif target == "openbeta":
+        return openbeta_savedir
+    elif target == "steam":
+        return steam_savedir
+    else:
+        return stable_savedir
 
 
 def _find_steam_directory():
@@ -156,5 +248,15 @@ if __name__ == "__main__":
     print("Using Windows : " + str(is_windows_os))
     print("Using STEAM Edition : " + str(is_using_dcs_steam_edition()))
     print("Using Standalone Edition : " + str(is_using_dcs_standalone_edition()))
+    print("Using Standalone Edition (stable): " + str(is_using_dcs_standalone_edition_stable()))
+    print("Using Standalone Edition (openbeta): " + str(is_using_dcs_standalone_edition_openbeta()))
+
     print("DCS Installation directory : " + get_dcs_install_directory())
+    print("DCS Installation directory stable: " + get_dcs_install_directory(target="stable"))
+    print("DCS Installation directory openbeta: " + get_dcs_install_directory(target="openbeta"))
+    print("DCS Installation directory steam: " + get_dcs_install_directory(target="steam"))
+
     print("DCS saved games directory : " + get_dcs_saved_games_directory())
+    print("DCS saved games directory stable : " + get_dcs_saved_games_directory(target="stable"))
+    print("DCS saved games directory openbeta: " + get_dcs_saved_games_directory(target="openbeta"))
+    print("DCS saved games directory steam: " + get_dcs_saved_games_directory(target="steam"))
