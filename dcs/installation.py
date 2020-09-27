@@ -37,10 +37,13 @@ def is_using_dcs_steam_edition():
     except FileNotFoundError as fnfe:
         return False
 
+
 def is_using_dcs_standalone_edition_stable():
     """
     Check if dcs standalone stable version is installed
     """
+    if not is_windows_os:
+        return False
     try:
         dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World")
         winreg.CloseKey(dcs_path_key)
@@ -48,10 +51,13 @@ def is_using_dcs_standalone_edition_stable():
     except FileNotFoundError as fnfe:
         return False
 
+
 def get_dcs_install_directory_standalone_stable():
     """
         Get dcs stable install dir if avail
     """
+    if not is_windows_os:
+        return False
     try:
         dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World")
         path = winreg.QueryValueEx(dcs_path_key, "Path")
@@ -62,16 +68,20 @@ def get_dcs_install_directory_standalone_stable():
         print("Couldn't detect DCS World stable installation folder")
         return ""
 
+
 def is_using_dcs_standalone_edition_openbeta():
     """
         Check if dcs standalone openbeta version is installed
     """
+    if not is_windows_os:
+        return False
     try:
         dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World OpenBeta")
         winreg.CloseKey(dcs_path_key)
         return True
     except FileNotFoundError:
         return False
+
 
 def get_dcs_install_directory_standalone_openbeta():
     """
@@ -86,6 +96,7 @@ def get_dcs_install_directory_standalone_openbeta():
     except FileNotFoundError:
         print("Couldn't detect DCS World openbeta installation folder")
         return ""
+
 
 def is_using_dcs_standalone_edition():
     """
@@ -102,6 +113,7 @@ def is_using_dcs_standalone_edition():
 
     else:
         return False
+
 
 def get_dcs_install_directory(target="any"):
     """
