@@ -97,7 +97,7 @@ class FlyingType(UnitType):
             for file in files:
                 payload_filename = os.path.join(payload_dir, file)
                 if payload_filename not in FlyingType._payload_cache:
-                    with open(payload_filename, 'r') as payloadfile:
+                    with open(payload_filename, 'r', encoding='utf-8') as payloadfile:
                         for line in payloadfile:
                             g = re.search(r'\["unitType"]\s*=\s*"([^"]*)', line)
                             if g:
@@ -122,7 +122,7 @@ class FlyingType(UnitType):
             for file in files:
                 payload_filename = os.path.join(payload_dir, file)
                 if FlyingType._payload_cache[payload_filename] == cls.id and os.path.exists(payload_filename):
-                    with open(payload_filename, 'r') as payload:
+                    with open(payload_filename, 'r', encoding='utf-8') as payload:
                         try:
                             payload_main = lua.loads(payload.read(), _globals=FlyingType._UnitPayloadGlobals)
                             pays = payload_main["unitPayloads"]
