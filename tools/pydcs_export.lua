@@ -592,7 +592,7 @@ for i in pairs(unit_categories) do
         writeln(file, '        threat_range = '..threat_range)
         writeln(file, '        air_weapon_dist = '..air_weapon_dist)
         if unit.EPLRS then
-            writeln(file, '        eprls = True')
+            writeln(file, '        eplrs = True')
         end
         --writeln(file, '        category = '..i)
     end

@@ -46,7 +46,7 @@ class Artillery:
         detection_range = 0
         threat_range = 22000
         air_weapon_dist = 22000
-        eprls = True
+        eplrs = True
 
     class SpGH_Dana(unittype.VehicleType):
         id = "SpGH_Dana"
@@ -61,7 +61,7 @@ class Artillery:
         detection_range = 0
         threat_range = 1200
         air_weapon_dist = 1200
-        eprls = True
+        eplrs = True
 
     class MLRS_BM_21_Grad(unittype.VehicleType):
         id = "Grad-URAL"
@@ -97,7 +97,7 @@ class Artillery:
         detection_range = 0
         threat_range = 32000
         air_weapon_dist = 32000
-        eprls = True
+        eplrs = True
 
     class Sturmpanzer_IV_Brummbär(unittype.VehicleType):
         id = "SturmPzIV"
@@ -300,7 +300,7 @@ class AirDefence:
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
-        eprls = True
+        eplrs = True
 
     class SPAAA_Gepard(unittype.VehicleType):
         id = "Gepard"
@@ -322,7 +322,7 @@ class AirDefence:
         detection_range = 5000
         threat_range = 2000
         air_weapon_dist = 2000
-        eprls = True
+        eplrs = True
 
     class SAM_Hawk_LN_M192(unittype.VehicleType):
         id = "Hawk ln"
@@ -337,7 +337,7 @@ class AirDefence:
         detection_range = 10000
         threat_range = 8500
         air_weapon_dist = 8500
-        eprls = True
+        eplrs = True
 
     class SAM_Linebacker_M6(unittype.VehicleType):
         id = "M6 Linebacker"
@@ -345,7 +345,7 @@ class AirDefence:
         detection_range = 8000
         threat_range = 4500
         air_weapon_dist = 4500
-        eprls = True
+        eplrs = True
 
     class SAM_Patriot_LN_M901(unittype.VehicleType):
         id = "Patriot ln"
@@ -360,7 +360,7 @@ class AirDefence:
         detection_range = 5200
         threat_range = 4500
         air_weapon_dist = 4500
-        eprls = True
+        eplrs = True
 
     class SAM_Patriot_EPP_III(unittype.VehicleType):
         id = "Patriot EPP"
@@ -564,7 +564,7 @@ class AirDefence:
         detection_range = 90000
         threat_range = 0
         air_weapon_dist = 0
-        eprls = True
+        eplrs = True
 
     class SAM_Patriot_STR_AN_MPQ_53(unittype.VehicleType):
         id = "Patriot str"
@@ -579,7 +579,7 @@ class AirDefence:
         detection_range = 70000
         threat_range = 0
         air_weapon_dist = 0
-        eprls = True
+        eplrs = True
 
     class SAM_SR_P_19(unittype.VehicleType):
         id = "p-19 s-125 sr"
@@ -880,7 +880,7 @@ class Unarmed:
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
-        eprls = True
+        eplrs = True
 
     class Transport_M818(unittype.VehicleType):
         id = "M 818"
@@ -1164,7 +1164,7 @@ class Armor:
         detection_range = 0
         threat_range = 1200
         air_weapon_dist = 1200
-        eprls = True
+        eplrs = True
 
     class ATGM_M1045_HMMWV_TOW(unittype.VehicleType):
         id = "M1045 HMMWV TOW"
@@ -1172,7 +1172,7 @@ class Armor:
         detection_range = 0
         threat_range = 3800
         air_weapon_dist = 0
-        eprls = True
+        eplrs = True
 
     class APC_M1126_Stryker_ICV(unittype.VehicleType):
         id = "M1126 Stryker ICV"
@@ -1180,7 +1180,7 @@ class Armor:
         detection_range = 0
         threat_range = 1200
         air_weapon_dist = 1200
-        eprls = True
+        eplrs = True
 
     class APC_M113(unittype.VehicleType):
         id = "M-113"
@@ -1188,7 +1188,7 @@ class Armor:
         detection_range = 0
         threat_range = 1200
         air_weapon_dist = 1200
-        eprls = True
+        eplrs = True
 
     class ATGM_M1134_Stryker(unittype.VehicleType):
         id = "M1134 Stryker ATGM"
@@ -1196,7 +1196,7 @@ class Armor:
         detection_range = 0
         threat_range = 3800
         air_weapon_dist = 1000
-        eprls = True
+        eplrs = True
 
     class IFV_M2A2_Bradley(unittype.VehicleType):
         id = "M-2 Bradley"
@@ -1204,7 +1204,7 @@ class Armor:
         detection_range = 0
         threat_range = 3800
         air_weapon_dist = 2500
-        eprls = True
+        eplrs = True
 
     class IFV_MCV_80(unittype.VehicleType):
         id = "MCV-80"
@@ -1275,7 +1275,7 @@ class Armor:
         detection_range = 0
         threat_range = 4000
         air_weapon_dist = 1200
-        eprls = True
+        eplrs = True
 
     class MBT_M1A2_Abrams(unittype.VehicleType):
         id = "M-1 Abrams"
@@ -1283,7 +1283,7 @@ class Armor:
         detection_range = 0
         threat_range = 3500
         air_weapon_dist = 1200
-        eprls = True
+        eplrs = True
 
     class MBT_T_55(unittype.VehicleType):
         id = "T-55"
@@ -1333,7 +1333,7 @@ class Armor:
         detection_range = 0
         threat_range = 5000
         air_weapon_dist = 3500
-        eprls = True
+        eplrs = True
 
     class ZBD_04A(unittype.VehicleType):
         id = "ZBD04A"
@@ -1341,7 +1341,7 @@ class Armor:
         detection_range = 0
         threat_range = 4800
         air_weapon_dist = 0
-        eprls = True
+        eplrs = True
 
     class HT_Pz_Kpfw_VI_Tiger_I(unittype.VehicleType):
         id = "Tiger_I"
