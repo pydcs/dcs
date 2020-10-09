@@ -9700,6 +9700,7 @@ class P_47D_30(PlaneType):
 
 class P_47D_30bl1(PlaneType):
     id = "P-47D-30bl1"
+    flyable = True
     height = 4.77
     width = 12.42
     length = 11
@@ -9764,6 +9765,7 @@ class P_47D_30bl1(PlaneType):
 
 class P_47D_40(PlaneType):
     id = "P-47D-40"
+    flyable = True
     height = 4.77
     width = 12.42
     length = 11
@@ -14256,6 +14258,7 @@ class C_101EB(PlaneType):
 
 class C_101CC(PlaneType):
     id = "C-101CC"
+    flyable = True
     height = 4.25
     width = 14
     length = 12.25

@@ -2269,6 +2269,7 @@ class SA342M(HelicopterType):
 
 class SA342L(HelicopterType):
     id = "SA342L"
+    flyable = True
     height = 3.192
     width = 10.5
     length = 11.97
@@ -2349,6 +2350,7 @@ class SA342L(HelicopterType):
 
 class SA342Mistral(HelicopterType):
     id = "SA342Mistral"
+    flyable = True
     height = 3.192
     width = 10.5
     length = 11.97
@@ -2436,6 +2438,7 @@ class SA342Mistral(HelicopterType):
 
 class SA342Minigun(HelicopterType):
     id = "SA342Minigun"
+    flyable = True
     height = 3.192
     width = 10.5
     length = 11.97
