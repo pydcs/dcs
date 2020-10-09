@@ -359,7 +359,7 @@ from enum import Enum
             if not exportplane and plane.HumanRadio.frequency ~= 127.5 then
                 bwritefreq = true
             end
-            if bwritefreq then
+            if bwritefreq and plane.HumanRadio.frequency ~= nil then
                 writeln(file, '    radio_frequency = '..plane.HumanRadio.frequency)
             end
             -- modulation seems always to be nil
@@ -465,7 +465,7 @@ from enum import Enum
         local pylons = {}
 
         for j in pairs(plane.Pylons) do
-            if #plane.Pylons[j].Launchers > 0 then
+            if plane.Pylons[j].Launchers ~= nil and #plane.Pylons[j].Launchers > 0 then
                 table.insert(pylons, j)
                 local pylons_written = false
                 for k in pairs(plane.Pylons[j].Launchers) do
@@ -909,42 +909,39 @@ while i <= country.maxIndex do
             end
         end
 
-        local countrycall = db.Callnames[i]
-        if countrycall then
-            for cat in pairs(categories) do
-                local call = db.Callnames[i][categories[cat]]
-                if call then
-                    safeName = string.gsub(categories[cat], "[-()/., *']", "")
-                    writeln(file, '')
-                    writeln(file, '    class Callsign'..safeName..':')
-                    for j in pairs(call) do
-                        callsignSafe = safe_name(call[j].Name)
-                        writeln(file, '        '..callsignSafe..' = "'..call[j].Name..'"')
-                    end
+        for cat in pairs(categories) do
+            local call = db.getCallnames(i, categories[cat])
+            if call then
+                safeName = string.gsub(categories[cat], "[-()/., *']", "")
+                writeln(file, '')
+                writeln(file, '    class Callsign'..safeName..':')
+                for j in pairs(call) do
+                    callsignSafe = safe_name(call[j].Name)
+                    writeln(file, '        '..callsignSafe..' = "'..call[j].Name..'"')
                 end
             end
-
-            writeln(file, '')
-            writeln(file, '    callsign = {')
-            for cat in pairs(categories) do
-                local call = db.Callnames[i][categories[cat]]
-                if call then
-                    safeName = string.gsub(categories[cat], "[-()/., *']", "")
-                    writeln(file, '        "'..safeName..'": [')
-                    local s = ''
-                    for j in pairs(call) do
-                        callsignSafe = safe_name(call[j].Name)
-                        s = '            Callsign'..safeName..'.'..callsignSafe
-                        if j < #call then
-                            s = s..','
-                        end
-                        writeln(file, s)
-                    end
-                    writeln(file, '        ],')
-                end
-            end
-            writeln(file, '    }')
         end
+
+        writeln(file, '')
+        writeln(file, '    callsign = {')
+        for cat in pairs(categories) do
+            local call = db.getCallnames(i, categories[cat])
+            if call then
+                safeName = string.gsub(categories[cat], "[-()/., *']", "")
+                writeln(file, '        "'..safeName..'": [')
+                local s = ''
+                for j in pairs(call) do
+                    callsignSafe = safe_name(call[j].Name)
+                    s = '            Callsign'..safeName..'.'..callsignSafe
+                    if j < #call then
+                        s = s..','
+                    end
+                    writeln(file, s)
+                end
+                writeln(file, '        ],')
+            end
+        end
+        writeln(file, '    }')
 
         writeln(file, '')
         writeln(file, '    def __init__(self):')
