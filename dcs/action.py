@@ -1,7 +1,7 @@
 from typing import Any, Dict
 from dcs.lua.serialize import dumps
 from dcs.translation import String, ResourceKey
-from enum import Enum
+from enum import Enum, IntEnum
 
 
 class Action:
@@ -1678,6 +1678,63 @@ class UnitEmissionOn(Action):
         d["unit"] = self.unit
         return d
 
+
+class RemoveSceneObjectsMask(IntEnum):
+    ALL = 0
+    TREES_ONLY = 1
+    OBJECTS_ONLY = 2
+
+
+class RemoveSceneObjects(Action):
+    predicate = "a_remove_scene_objects"
+
+    def __init__(self, objects_mask: RemoveSceneObjectsMask=RemoveSceneObjectsMask.ALL, zone="", meters=1000):
+        super(RemoveSceneObjects, self).__init__(RemoveSceneObjects.predicate)
+        self.objects_mask = objects_mask
+        self.params.append(self.objects_mask)
+        self.zone = zone
+        self.params.append(self.zone)
+        # Note : the parameter meters is in the DCS save file, but seems unused, and not editable from ME
+        self.meters = meters
+        self.params.append(self.meters)
+
+    @classmethod
+    def create_from_dict(cls, d, mission):
+        return cls(RemoveSceneObjectsMask(d["objects_mask"]), d["zone"], d["meters"])
+
+    def dict(self):
+        d = super(RemoveSceneObjects, self).dict()
+        d["objects_mask"] = self.objects_mask.value
+        d["zone"] = self.zone
+        d["meters"] = self.meters
+        return d
+
+
+class SceneryDestructionZone(Action):
+    predicate = "a_scenery_destruction_zone"
+
+    def __init__(self, destruction_level=100, zone="", meters=1000):
+        super(SceneryDestructionZone, self).__init__(SceneryDestructionZone.predicate)
+        self.destruction_level = destruction_level
+        self.params.append(self.destruction_level)
+        self.zone = zone
+        self.params.append(self.zone)
+        # Note : the parameter meters is in the DCS save file, but seems unused, and not editable from ME
+        self.meters = meters
+        self.params.append(self.meters)
+
+    @classmethod
+    def create_from_dict(cls, d, mission):
+        return cls(d["destruction_level"], d["zone"], d["meters"])
+
+    def dict(self):
+        d = super(SceneryDestructionZone, self).dict()
+        d["destruction_level"] = self.destruction_level
+        d["zone"] = self.zone
+        d["meters"] = self.meters
+        return d
+
+
 actions_map = {
     "a_activate_group": ActivateGroup,
     "a_add_radio_item": AddRadioItem,
@@ -1752,5 +1809,7 @@ actions_map = {
     "a_unit_emission_off": UnitEmissionOff,
     "a_unit_emission_on": UnitEmissionOn,
     "a_ai_task": AITaskPush,
-    "a_set_ai_task": AITaskSet
+    "a_set_ai_task": AITaskSet,
+    "a_remove_scene_objects": RemoveSceneObjects,
+    "a_scenery_destruction_zone": SceneryDestructionZone,
 }

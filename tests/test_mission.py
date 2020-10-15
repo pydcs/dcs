@@ -536,3 +536,111 @@ class BasicTests(unittest.TestCase):
         unit = group.units[0]
         self.assertIsInstance(unit, dcs.unit.Ship)
         self.assertEqual(unit.frequency, frequency)
+
+    def test_create_scenery_destruction_zone(self):
+
+        m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
+
+        usa = m.country("USA")
+        point = dcs.Point(-217283, 564863) # This is a compound north of sukhmi, with buildings and trees
+        m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.AAA_Vulcan_M163, position=point)
+
+        # Create trigger zone
+        destruction_zone = m.triggers.add_triggerzone(point, 1000, False, "destruction zone")
+
+        # Add destruction zone trigger
+        t = dcs.triggers.TriggerOnce(comment='Destruction')
+        t.actions.append(dcs.action.SceneryDestructionZone(95, destruction_zone.id))
+        m.triggerrules.triggers.append(t)
+
+        m.save('missions/test_mission_scenery_destruction.miz')
+
+        # Test reload the mission
+        m2 = dcs.mission.Mission()
+        self.assertTrue(m2.load_file('missions/test_mission_scenery_destruction.miz'))
+        self.assertEqual(m2.terrain.__class__, dcs.terrain.Caucasus)
+        self.assertTrue(type(m2.triggerrules.triggers[0].actions[0]) is dcs.action.SceneryDestructionZone)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[0].destruction_level, 95)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[0].meters, 1000)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[0].zone, destruction_zone.id)
+
+    def test_remove_trees_in_zone(self):
+
+        m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
+
+        usa = m.country("USA")
+        point = dcs.Point(-217283, 564863) # This is a compound north of sukhmi, with buildings and trees
+        m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.AAA_Vulcan_M163, position=point)
+
+        # Create trigger zone
+        removal_zone = m.triggers.add_triggerzone(point, 1000, False, "removal zone")
+
+        # Add destruction zone trigger
+        t = dcs.triggers.TriggerOnce(comment='Remove Trees')
+        t.actions.append(dcs.action.RemoveSceneObjects(dcs.action.RemoveSceneObjectsMask.TREES_ONLY, removal_zone.id))
+        m.triggerrules.triggers.append(t)
+
+        m.save('missions/test_mission_remove_trees.miz')
+
+        # Test reload the mission
+        m2 = dcs.mission.Mission()
+        self.assertTrue(m2.load_file('missions/test_mission_remove_trees.miz'))
+        self.assertEqual(m2.terrain.__class__, dcs.terrain.Caucasus)
+        self.assertTrue(type(m2.triggerrules.triggers[0].actions[0]) is dcs.action.RemoveSceneObjects)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[0].objects_mask, dcs.action.RemoveSceneObjectsMask.TREES_ONLY)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[0].meters, 1000)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[0].zone, removal_zone.id)
+
+    def test_remove_objects_in_zone(self):
+
+        m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
+
+        usa = m.country("USA")
+        point = dcs.Point(-217283, 564863) # This is a compound north of sukhmi, with buildings and trees
+        m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.AAA_Vulcan_M163, position=point)
+
+        # Create trigger zone
+        removal_zone = m.triggers.add_triggerzone(point, 1000, False, "removal zone")
+
+        # Add destruction zone trigger
+        t = dcs.triggers.TriggerOnce(comment='Remove Trees')
+        t.actions.append(dcs.action.RemoveSceneObjects(dcs.action.RemoveSceneObjectsMask.OBJECTS_ONLY, removal_zone.id))
+        m.triggerrules.triggers.append(t)
+
+        m.save('missions/test_mission_remove_objects.miz')
+
+        # Test reload the mission
+        m2 = dcs.mission.Mission()
+        self.assertTrue(m2.load_file('missions/test_mission_remove_objects.miz'))
+        self.assertEqual(m2.terrain.__class__, dcs.terrain.Caucasus)
+        self.assertTrue(type(m2.triggerrules.triggers[0].actions[0]) is dcs.action.RemoveSceneObjects)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[0].objects_mask, dcs.action.RemoveSceneObjectsMask.OBJECTS_ONLY)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[0].meters, 1000)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[0].zone, removal_zone.id)
+
+    def test_remove_trees_and_objects_in_zone(self):
+
+        m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
+
+        usa = m.country("USA")
+        point = dcs.Point(-217283, 564863) # This is a compound north of sukhmi, with buildings and trees
+        m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.AAA_Vulcan_M163, position=point)
+
+        # Create trigger zone
+        removal_zone = m.triggers.add_triggerzone(point, 1000, False, "removal zone")
+
+        # Add destruction zone trigger
+        t = dcs.triggers.TriggerOnce(comment='Remove Trees')
+        t.actions.append(dcs.action.RemoveSceneObjects(dcs.action.RemoveSceneObjectsMask.ALL, removal_zone.id))
+        m.triggerrules.triggers.append(t)
+
+        m.save('missions/test_mission_remove_all.miz')
+
+        # Test reload the mission
+        m2 = dcs.mission.Mission()
+        self.assertTrue(m2.load_file('missions/test_mission_remove_all.miz'))
+        self.assertEqual(m2.terrain.__class__, dcs.terrain.Caucasus)
+        self.assertTrue(type(m2.triggerrules.triggers[0].actions[0]) is dcs.action.RemoveSceneObjects)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[0].objects_mask, dcs.action.RemoveSceneObjectsMask.ALL)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[0].meters, 1000)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[0].zone, removal_zone.id)
