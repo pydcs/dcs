@@ -215,12 +215,13 @@ class Mission:
 
         self.aircraft_kneeboards: Dict[unittype.FlyingType, List[Path]] = defaultdict(list)
 
-    def load_file(self, filename: str):
+    def load_file(self, filename: str, bypass_triggers: bool = False):
         """Load a mission file (.miz) file, replacing all current data.
 
         Args:
             filename: path to the mission(.miz) file.
-
+            bypass_triggers: do not parse triggers, if a mission is loaded this way
+                             the same triggers will be exported on save
         Returns:
             bool: True if everything loaded correctly
 
@@ -231,6 +232,9 @@ class Mission:
         self.current_unit_id = 0
         self.current_group_id = 0
         self.current_dict_id = 0
+        self.bypassed_triggers = None
+        self.bypassed_trigrules = None
+        self.bypassed_trig = None
         mission_dict = {}
         options_dict = {}
         warehouse_dict = {}
@@ -335,11 +339,16 @@ class Mission:
         self.init_script = imp_mission.get("initScript")
 
         # triggers
-        self.triggers = Triggers()
-        self.triggers.load_from_dict(imp_mission["triggers"])
+        if bypass_triggers:
+            self.bypassed_triggers = imp_mission["triggers"]
+            self.bypassed_trigrules = imp_mission["trigrules"]
+            self.bypassed_trig = imp_mission["trig"]
+        else:
+            self.triggers = Triggers()
+            self.triggers.load_from_dict(imp_mission["triggers"])
 
-        # this will import trigrules and trig
-        self.triggerrules.load_from_dict(self, imp_mission["trigrules"])
+            # this will import trigrules and trig
+            self.triggerrules.load_from_dict(self, imp_mission["trigrules"])
 
         # failures
         self.failures = imp_mission["failures"]  # TODO
@@ -1871,8 +1880,6 @@ class Mission:
 
     def dict(self):
         m = {
-            "trig": self.triggerrules.trig(),
-            "trigrules": self.triggerrules.trigrules(),
             "start_time": int((self.start_time.hour * 60 * 60) + (self.start_time.minute * 60) + self.start_time.second)
         }
         if m["start_time"] < 0:
@@ -1888,7 +1895,14 @@ class Mission:
         if self.usedModules is not None:
             m["usedModules"] = self.usedModules
         m["resourceCounter"] = self.resourceCounter
-        m["triggers"] = self.triggers.dict()
+        if (hasattr(self, 'bypassed_triggers') and  self.bypassed_triggers is not None):
+            m["trig"] = self.bypassed_trig
+            m["trigrules"] = self.bypassed_trigrules
+            m["triggers"] = self.bypassed_triggers
+        else:
+            m["trig"] = self.triggerrules.trig()
+            m["trigrules"] = self.triggerrules.trigrules()
+            m["triggers"] = self.triggers.dict()
         m["weather"] = self.weather.dict()
         m["theatre"] = self.terrain.name
         if self.needModules:
