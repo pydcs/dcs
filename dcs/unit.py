@@ -179,7 +179,7 @@ class FARP(Static):
     def load_from_dict(self, d):
         super(FARP, self).load_from_dict(d)
         self.heliport_frequency = float(d.get("heliport_frequency", 127.5))
-        self.heliport_modulation = d.get("heliport_modulation")
+        self.heliport_modulation = d.get("heliport_modulation", 0)
         self.heliport_callsign_id = d.get("heliport_callsign_id", 0)
 
     def dict(self):
@@ -204,7 +204,7 @@ class SingleHeliPad(Static):
     def load_from_dict(self, d):
         super(SingleHeliPad, self).load_from_dict(d)
         self.heliport_frequency = float(d.get("heliport_frequency", 127.5))
-        self.heliport_modulation = d.get("heliport_modulation")
+        self.heliport_modulation = d.get("heliport_modulation", 0)
         self.heliport_callsign_id = d.get("heliport_callsign_id", 0)
 
     def dict(self):
