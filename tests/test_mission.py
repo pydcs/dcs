@@ -645,12 +645,12 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].meters, 1000)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].zone, removal_zone.id)
 
-    def test_bypass(self):
+    def test_bypass_triggers(self):
 
         m = dcs.mission.Mission()
-        m.load_file('missions/bypass.miz', True)
+        m.load_file('tests/bypass_triggers.miz', True)
 
-        saved_mission = 'missions/test_bypass.miz'
+        saved_mission = 'missions/test_bypass_triggers.miz'
         m.save(saved_mission)
 
         # Test reload the mission

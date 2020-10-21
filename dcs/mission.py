@@ -221,7 +221,7 @@ class Mission:
         Args:
             filename: path to the mission(.miz) file.
             bypass_triggers: do not parse triggers, if a mission is loaded this way
-                             the same triggers will be exported on save
+                             the same triggers will be exported on save.
         Returns:
             bool: True if everything loaded correctly
 
@@ -1895,7 +1895,7 @@ class Mission:
         if self.usedModules is not None:
             m["usedModules"] = self.usedModules
         m["resourceCounter"] = self.resourceCounter
-        if (hasattr(self, 'bypassed_triggers') and  self.bypassed_triggers is not None):
+        if hasattr(self, 'bypassed_triggers') and self.bypassed_triggers is not None:
             m["trig"] = self.bypassed_trig
             m["trigrules"] = self.bypassed_trigrules
             m["triggers"] = self.bypassed_triggers
