@@ -794,6 +794,1168 @@ class Fortification:
         threat_range = 1100
         air_weapon_dist = 1100
 
+    class _Aim_Off_Distance_Marker(unittype.VehicleType):
+        id = "Aim_Off_Marker"
+        name = "*Aim-Off Distance Marker"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _Conventional_Circle_A(unittype.VehicleType):
+        id = "Conventional_Circle_A"
+        name = "*Conventional Circle A"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _Conventional_Circle_B(unittype.VehicleType):
+        id = "Conventional_Circle_B"
+        name = "*Conventional Circle B"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _Foul_Line(unittype.VehicleType):
+        id = "Foul_Line"
+        name = "*Foul Line"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _Range_Tower__Main(unittype.VehicleType):
+        id = "Range_Tower_Main"
+        name = "*Range Tower (Main)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _Strafe_Pit(unittype.VehicleType):
+        id = "Strafe_Pit"
+        name = "*Strafe Pit"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _Silhouette__MiG_17(unittype.VehicleType):
+        id = "Tac_Bomb_MiG-17"
+        name = "*Silhouette (MiG-17)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _Silhouette__MiG_29(unittype.VehicleType):
+        id = "Tac_Bomb_MiG-29"
+        name = "*Silhouette (MiG-29)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _Bunker__Concrete__Sand_1(unittype.VehicleType):
+        id = "Tac_Bunker_Sand_1"
+        name = "*Bunker, Concrete (Sand 1)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _Revet_50x50x6__Sand_1(unittype.VehicleType):
+        id = "Tac_Revet_50x50x6_Sand_1"
+        name = "*Revet 50x50x6 (Sand 1)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _Tac_Strafe__Hard(unittype.VehicleType):
+        id = "Tac_Strafe_Hard"
+        name = "*Tac Strafe (Hard)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _Tac_Strafe__Soft(unittype.VehicleType):
+        id = "Tac_Strafe_Soft"
+        name = "*Tac Strafe (Soft)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x1__Blue(unittype.VehicleType):
+        id = "Container_40_1x1_Blu"
+        name = "*SeaLand 1x1 (Blue)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x1__Brown(unittype.VehicleType):
+        id = "Container_40_1x1_Bro"
+        name = "*SeaLand 1x1 (Brown)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x1__Green(unittype.VehicleType):
+        id = "Container_40_1x1_Grn"
+        name = "*SeaLand 1x1 (Green)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x1__Tan(unittype.VehicleType):
+        id = "Container_40_1x1_Tan"
+        name = "*SeaLand 1x1 (Tan)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x1__White(unittype.VehicleType):
+        id = "Container_40_1x1_Wht"
+        name = "*SeaLand 1x1 (White)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x2__Blue(unittype.VehicleType):
+        id = "Container_40_1x2_Blu"
+        name = "*SeaLand 1x2 (Blue)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x2__Brown(unittype.VehicleType):
+        id = "Container_40_1x2_Bro"
+        name = "*SeaLand 1x2 (Brown)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x2__Green(unittype.VehicleType):
+        id = "Container_40_1x2_Grn"
+        name = "*SeaLand 1x2 (Green)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x2__Tan(unittype.VehicleType):
+        id = "Container_40_1x2_Tan"
+        name = "*SeaLand 1x2 (Tan)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x2__White(unittype.VehicleType):
+        id = "Container_40_1x2_Wht"
+        name = "*SeaLand 1x2 (White)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x3__Blue(unittype.VehicleType):
+        id = "Container_40_1x3_Blu"
+        name = "*SeaLand 1x3 (Blue)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x3__Brown(unittype.VehicleType):
+        id = "Container_40_1x3_Bro"
+        name = "*SeaLand 1x3 (Brown)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x3__Green(unittype.VehicleType):
+        id = "Container_40_1x3_Grn"
+        name = "*SeaLand 1x3 (Green)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x3__Tan(unittype.VehicleType):
+        id = "Container_40_1x3_Tan"
+        name = "*SeaLand 1x3 (Tan)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_1x3__White(unittype.VehicleType):
+        id = "Container_40_1x3_Wht"
+        name = "*SeaLand 1x3 (White)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x1__Blue(unittype.VehicleType):
+        id = "Container_40_2x1_Blu"
+        name = "*SeaLand 2x1 (Blue)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x1__Brown(unittype.VehicleType):
+        id = "Container_40_2x1_Bro"
+        name = "*SeaLand 2x1 (Brown)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x1__Green(unittype.VehicleType):
+        id = "Container_40_2x1_Grn"
+        name = "*SeaLand 2x1 (Green)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x1__Tan(unittype.VehicleType):
+        id = "Container_40_2x1_Tan"
+        name = "*SeaLand 2x1 (Tan)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x1__White(unittype.VehicleType):
+        id = "Container_40_2x1_Wht"
+        name = "*SeaLand 2x1 (White)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x2__Blue(unittype.VehicleType):
+        id = "Container_40_2x2_Blu"
+        name = "*SeaLand 2x2 (Blue)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x2__Brown(unittype.VehicleType):
+        id = "Container_40_2x2_Bro"
+        name = "*SeaLand 2x2 (Brown)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x2__Green(unittype.VehicleType):
+        id = "Container_40_2x2_Grn"
+        name = "*SeaLand 2x2 (Green)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x2__Tan(unittype.VehicleType):
+        id = "Container_40_2x2_Tan"
+        name = "*SeaLand 2x2 (Tan)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x2__White(unittype.VehicleType):
+        id = "Container_40_2x2_Wht"
+        name = "*SeaLand 2x2 (White)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x3__Blue(unittype.VehicleType):
+        id = "Container_40_2x3_Blu"
+        name = "*SeaLand 2x3 (Blue)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x3__Brown(unittype.VehicleType):
+        id = "Container_40_2x3_Bro"
+        name = "*SeaLand 2x3 (Brown)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x3__Green(unittype.VehicleType):
+        id = "Container_40_2x3_Grn"
+        name = "*SeaLand 2x3 (Green)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x3__Tan(unittype.VehicleType):
+        id = "Container_40_2x3_Tan"
+        name = "*SeaLand 2x3 (Tan)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_2x3__White(unittype.VehicleType):
+        id = "Container_40_2x3_Wht"
+        name = "*SeaLand 2x3 (White)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x1__Blue(unittype.VehicleType):
+        id = "Container_40_3x1_Blu"
+        name = "*SeaLand 3x1 (Blue)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x1__Brown(unittype.VehicleType):
+        id = "Container_40_3x1_Bro"
+        name = "*SeaLand 3x1 (Brown)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x1__Green(unittype.VehicleType):
+        id = "Container_40_3x1_Grn"
+        name = "*SeaLand 3x1 (Green)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x1__Tan(unittype.VehicleType):
+        id = "Container_40_3x1_Tan"
+        name = "*SeaLand 3x1 (Tan)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x1__White(unittype.VehicleType):
+        id = "Container_40_3x1_Wht"
+        name = "*SeaLand 3x1 (White)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x2__Blue(unittype.VehicleType):
+        id = "Container_40_3x2_Blu"
+        name = "*SeaLand 3x2 (Blue)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x2__Brown(unittype.VehicleType):
+        id = "Container_40_3x2_Bro"
+        name = "*SeaLand 3x2 (Brown)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x2__Green(unittype.VehicleType):
+        id = "Container_40_3x2_Grn"
+        name = "*SeaLand 3x2 (Green)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x2__Tan(unittype.VehicleType):
+        id = "Container_40_3x2_Tan"
+        name = "*SeaLand 3x2 (Tan)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x2__White(unittype.VehicleType):
+        id = "Container_40_3x2_Wht"
+        name = "*SeaLand 3x2 (White)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x3__Blue(unittype.VehicleType):
+        id = "Container_40_3x3_Blu"
+        name = "*SeaLand 3x3 (Blue)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x3__Brown(unittype.VehicleType):
+        id = "Container_40_3x3_Bro"
+        name = "*SeaLand 3x3 (Brown)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x3__Green(unittype.VehicleType):
+        id = "Container_40_3x3_Grn"
+        name = "*SeaLand 3x3 (Green)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x3__Tan(unittype.VehicleType):
+        id = "Container_40_3x3_Tan"
+        name = "*SeaLand 3x3 (Tan)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_3x3__White(unittype.VehicleType):
+        id = "Container_40_3x3_Wht"
+        name = "*SeaLand 3x3 (White)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_9x1__Gray(unittype.VehicleType):
+        id = "Container_40_9x1_gray"
+        name = "*SeaLand 9x1 (Gray)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_Tower__Blue(unittype.VehicleType):
+        id = "Container_40_Tower_Blu"
+        name = "*SeaLand Tower (Blue)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_Tower__Brown(unittype.VehicleType):
+        id = "Container_40_Tower_Bro"
+        name = "*SeaLand Tower (Brown)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_Tower__Green(unittype.VehicleType):
+        id = "Container_40_Tower_Grn"
+        name = "*SeaLand Tower (Green)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_Tower__Tan(unittype.VehicleType):
+        id = "Container_40_Tower_Tan"
+        name = "*SeaLand Tower (Tan)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _SeaLand_Tower__White(unittype.VehicleType):
+        id = "Container_40_Tower_Wht"
+        name = "*SeaLand Tower (White)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_11_DMPI_01(unittype.VehicleType):
+        id = "NTTR Target 62-11 DMPI 01"
+        name = "*NTTR Target 62-11 DMPI 01"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_12_DMPI_203(unittype.VehicleType):
+        id = "NTTR Target 62-12 DMPI 203"
+        name = "*NTTR Target 62-12 DMPI 203"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_13_DMPI_310(unittype.VehicleType):
+        id = "NTTR Target 62-13 DMPI 310"
+        name = "*NTTR Target 62-13 DMPI 310"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_13_DMPI_313(unittype.VehicleType):
+        id = "NTTR Target 62-13 DMPI 313"
+        name = "*NTTR Target 62-13 DMPI 313"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_13_DMPI_321(unittype.VehicleType):
+        id = "NTTR Target 62-13 DMPI 321"
+        name = "*NTTR Target 62-13 DMPI 321"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_13_DMPI_334(unittype.VehicleType):
+        id = "NTTR Target 62-13 DMPI 334"
+        name = "*NTTR Target 62-13 DMPI 334"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_13_DMPI_344(unittype.VehicleType):
+        id = "NTTR Target 62-13 DMPI 344"
+        name = "*NTTR Target 62-13 DMPI 344"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_102(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 102"
+        name = "*NTTR Target 62-21 DMPI 102"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_107(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 107"
+        name = "*NTTR Target 62-21 DMPI 107"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_109(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 109"
+        name = "*NTTR Target 62-21 DMPI 109"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_111(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 111"
+        name = "*NTTR Target 62-21 DMPI 111"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_113(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 113"
+        name = "*NTTR Target 62-21 DMPI 113"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_116(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 116"
+        name = "*NTTR Target 62-21 DMPI 116"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_119(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 119"
+        name = "*NTTR Target 62-21 DMPI 119"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_124(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 124"
+        name = "*NTTR Target 62-21 DMPI 124"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_126(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 126"
+        name = "*NTTR Target 62-21 DMPI 126"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_128(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 128"
+        name = "*NTTR Target 62-21 DMPI 128"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_130(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 130"
+        name = "*NTTR Target 62-21 DMPI 130"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_131(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 131"
+        name = "*NTTR Target 62-21 DMPI 131"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_134(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 134"
+        name = "*NTTR Target 62-21 DMPI 134"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_135(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 135"
+        name = "*NTTR Target 62-21 DMPI 135"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_140(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 140"
+        name = "*NTTR Target 62-21 DMPI 140"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_142(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 142"
+        name = "*NTTR Target 62-21 DMPI 142"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_21_DMPI_147(unittype.VehicleType):
+        id = "NTTR Target 62-21 DMPI 147"
+        name = "*NTTR Target 62-21 DMPI 147"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_22_DMPI_205(unittype.VehicleType):
+        id = "NTTR Target 62-22 DMPI 205"
+        name = "*NTTR Target 62-22 DMPI 205"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_22_DMPI_206(unittype.VehicleType):
+        id = "NTTR Target 62-22 DMPI 206"
+        name = "*NTTR Target 62-22 DMPI 206"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_22_DMPI_208(unittype.VehicleType):
+        id = "NTTR Target 62-22 DMPI 208"
+        name = "*NTTR Target 62-22 DMPI 208"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_22_DMPI_210(unittype.VehicleType):
+        id = "NTTR Target 62-22 DMPI 210"
+        name = "*NTTR Target 62-22 DMPI 210"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_22_DMPI_214(unittype.VehicleType):
+        id = "NTTR Target 62-22 DMPI 214"
+        name = "*NTTR Target 62-22 DMPI 214"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_22_DMPI_217(unittype.VehicleType):
+        id = "NTTR Target 62-22 DMPI 217"
+        name = "*NTTR Target 62-22 DMPI 217"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_32_DMPI_205(unittype.VehicleType):
+        id = "NTTR Target 62-32 DMPI 205"
+        name = "*NTTR Target 62-32 DMPI 205"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_32_DMPI_216(unittype.VehicleType):
+        id = "NTTR Target 62-32 DMPI 216"
+        name = "*NTTR Target 62-32 DMPI 216"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_41_DMPI_103(unittype.VehicleType):
+        id = "NTTR Target 62-41 DMPI 103"
+        name = "*NTTR Target 62-41 DMPI 103"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_41_DMPI_110(unittype.VehicleType):
+        id = "NTTR Target 62-41 DMPI 110"
+        name = "*NTTR Target 62-41 DMPI 110"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_41_DMPI_121(unittype.VehicleType):
+        id = "NTTR Target 62-41 DMPI 121"
+        name = "*NTTR Target 62-41 DMPI 121"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_41_DMPI_122(unittype.VehicleType):
+        id = "NTTR Target 62-41 DMPI 122"
+        name = "*NTTR Target 62-41 DMPI 122"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_41_DMPI_123(unittype.VehicleType):
+        id = "NTTR Target 62-41 DMPI 123"
+        name = "*NTTR Target 62-41 DMPI 123"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_41_DMPI_136(unittype.VehicleType):
+        id = "NTTR Target 62-41 DMPI 136"
+        name = "*NTTR Target 62-41 DMPI 136"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_51_DMPI_103(unittype.VehicleType):
+        id = "NTTR Target 62-51 DMPI 103"
+        name = "*NTTR Target 62-51 DMPI 103"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_52_DMPI_203(unittype.VehicleType):
+        id = "NTTR Target 62-52 DMPI 203"
+        name = "*NTTR Target 62-52 DMPI 203"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_53_DMPI_305(unittype.VehicleType):
+        id = "NTTR Target 62-53 DMPI 305"
+        name = "*NTTR Target 62-53 DMPI 305"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_53_DMPI_306(unittype.VehicleType):
+        id = "NTTR Target 62-53 DMPI 306"
+        name = "*NTTR Target 62-53 DMPI 306"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_53_DMPI_309(unittype.VehicleType):
+        id = "NTTR Target 62-53 DMPI 309"
+        name = "*NTTR Target 62-53 DMPI 309"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_53_DMPI_310(unittype.VehicleType):
+        id = "NTTR Target 62-53 DMPI 310"
+        name = "*NTTR Target 62-53 DMPI 310"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_54_DMPI_407(unittype.VehicleType):
+        id = "NTTR Target 62-54 DMPI 407"
+        name = "*NTTR Target 62-54 DMPI 407"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_54_DMPI_413(unittype.VehicleType):
+        id = "NTTR Target 62-54 DMPI 413"
+        name = "*NTTR Target 62-54 DMPI 413"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_54_DMPI_419(unittype.VehicleType):
+        id = "NTTR Target 62-54 DMPI 419"
+        name = "*NTTR Target 62-54 DMPI 419"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_54_DMPI_421(unittype.VehicleType):
+        id = "NTTR Target 62-54 DMPI 421"
+        name = "*NTTR Target 62-54 DMPI 421"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_55_DMPI_501(unittype.VehicleType):
+        id = "NTTR Target 62-55 DMPI 501"
+        name = "*NTTR Target 62-55 DMPI 501"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_55_DMPI_510(unittype.VehicleType):
+        id = "NTTR Target 62-55 DMPI 510"
+        name = "*NTTR Target 62-55 DMPI 510"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_61_DMPI_102(unittype.VehicleType):
+        id = "NTTR Target 62-61 DMPI 102"
+        name = "*NTTR Target 62-61 DMPI 102"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_62_DMPI_201(unittype.VehicleType):
+        id = "NTTR Target 62-62 DMPI 201"
+        name = "*NTTR Target 62-62 DMPI 201"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_62_DMPI_207(unittype.VehicleType):
+        id = "NTTR Target 62-62 DMPI 207"
+        name = "*NTTR Target 62-62 DMPI 207"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_62_DMPI_209(unittype.VehicleType):
+        id = "NTTR Target 62-62 DMPI 209"
+        name = "*NTTR Target 62-62 DMPI 209"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_62_DMPI_213(unittype.VehicleType):
+        id = "NTTR Target 62-62 DMPI 213"
+        name = "*NTTR Target 62-62 DMPI 213"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_63_DMPI_301(unittype.VehicleType):
+        id = "NTTR Target 62-63 DMPI 301"
+        name = "*NTTR Target 62-63 DMPI 301"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_63_DMPI_303(unittype.VehicleType):
+        id = "NTTR Target 62-63 DMPI 303"
+        name = "*NTTR Target 62-63 DMPI 303"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_71_DMPI_101(unittype.VehicleType):
+        id = "NTTR Target 62-71 DMPI 101"
+        name = "*NTTR Target 62-71 DMPI 101"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_71_DMPI_113(unittype.VehicleType):
+        id = "NTTR Target 62-71 DMPI 113"
+        name = "*NTTR Target 62-71 DMPI 113"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_71_DMPI_119(unittype.VehicleType):
+        id = "NTTR Target 62-71 DMPI 119"
+        name = "*NTTR Target 62-71 DMPI 119"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_72_DMPI_201(unittype.VehicleType):
+        id = "NTTR Target 62-72 DMPI 201"
+        name = "*NTTR Target 62-72 DMPI 201"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_72_DMPI_204(unittype.VehicleType):
+        id = "NTTR Target 62-72 DMPI 204"
+        name = "*NTTR Target 62-72 DMPI 204"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_73_DMPI_301(unittype.VehicleType):
+        id = "NTTR Target 62-73 DMPI 301"
+        name = "*NTTR Target 62-73 DMPI 301"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_74_DMPI_401(unittype.VehicleType):
+        id = "NTTR Target 62-74 DMPI 401"
+        name = "*NTTR Target 62-74 DMPI 401"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_74_DMPI_411(unittype.VehicleType):
+        id = "NTTR Target 62-74 DMPI 411"
+        name = "*NTTR Target 62-74 DMPI 411"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_75_DMPI_501(unittype.VehicleType):
+        id = "NTTR Target 62-75 DMPI 501"
+        name = "*NTTR Target 62-75 DMPI 501"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_75_DMPI_514(unittype.VehicleType):
+        id = "NTTR Target 62-75 DMPI 514"
+        name = "*NTTR Target 62-75 DMPI 514"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_75_DMPI_524(unittype.VehicleType):
+        id = "NTTR Target 62-75 DMPI 524"
+        name = "*NTTR Target 62-75 DMPI 524"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_76_DMPI_601(unittype.VehicleType):
+        id = "NTTR Target 62-76 DMPI 601"
+        name = "*NTTR Target 62-76 DMPI 601"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_77_DMPI_701(unittype.VehicleType):
+        id = "NTTR Target 62-77 DMPI 701"
+        name = "*NTTR Target 62-77 DMPI 701"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_77_DMPI_712(unittype.VehicleType):
+        id = "NTTR Target 62-77 DMPI 712"
+        name = "*NTTR Target 62-77 DMPI 712"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_78_DMPI_802(unittype.VehicleType):
+        id = "NTTR Target 62-78 DMPI 802"
+        name = "*NTTR Target 62-78 DMPI 802"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_92_DMPI_201(unittype.VehicleType):
+        id = "NTTR Target 62-92 DMPI 201"
+        name = "*NTTR Target 62-92 DMPI 201"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_62_93_DMPI_301(unittype.VehicleType):
+        id = "NTTR Target 62-93 DMPI 301"
+        name = "*NTTR Target 62-93 DMPI 301"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_66_02_DMPI_01(unittype.VehicleType):
+        id = "NTTR Target 66-02 DMPI 01"
+        name = "*NTTR Target 66-02 DMPI 01"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_66_02_DMPI_02(unittype.VehicleType):
+        id = "NTTR Target 66-02 DMPI 02"
+        name = "*NTTR Target 66-02 DMPI 02"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_66_02_DMPI_40(unittype.VehicleType):
+        id = "NTTR Target 66-02 DMPI 40"
+        name = "*NTTR Target 66-02 DMPI 40"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_66_07_DMPI_02(unittype.VehicleType):
+        id = "NTTR Target 66-07 DMPI 02"
+        name = "*NTTR Target 66-07 DMPI 02"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_66_07_DMPI_03(unittype.VehicleType):
+        id = "NTTR Target 66-07 DMPI 03"
+        name = "*NTTR Target 66-07 DMPI 03"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_66_07_DMPI_04(unittype.VehicleType):
+        id = "NTTR Target 66-07 DMPI 04"
+        name = "*NTTR Target 66-07 DMPI 04"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_66_07_DMPI_05(unittype.VehicleType):
+        id = "NTTR Target 66-07 DMPI 05"
+        name = "*NTTR Target 66-07 DMPI 05"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_66_07_DMPI_06(unittype.VehicleType):
+        id = "NTTR Target 66-07 DMPI 06"
+        name = "*NTTR Target 66-07 DMPI 06"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_66_07_DMPI_07(unittype.VehicleType):
+        id = "NTTR Target 66-07 DMPI 07"
+        name = "*NTTR Target 66-07 DMPI 07"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_66_07_DMPI_09(unittype.VehicleType):
+        id = "NTTR Target 66-07 DMPI 09"
+        name = "*NTTR Target 66-07 DMPI 09"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_66_07_DMPI_13(unittype.VehicleType):
+        id = "NTTR Target 66-07 DMPI 13"
+        name = "*NTTR Target 66-07 DMPI 13"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_66_07_DMPI_18(unittype.VehicleType):
+        id = "NTTR Target 66-07 DMPI 18"
+        name = "*NTTR Target 66-07 DMPI 18"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_66_07_DMPI_31(unittype.VehicleType):
+        id = "NTTR Target 66-07 DMPI 31"
+        name = "*NTTR Target 66-07 DMPI 31"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_71_12_DMPI_01(unittype.VehicleType):
+        id = "NTTR Target 71-12 DMPI 01"
+        name = "*NTTR Target 71-12 DMPI 01"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_76_01_DMPI_01(unittype.VehicleType):
+        id = "NTTR Target 76-01 DMPI 01"
+        name = "*NTTR Target 76-01 DMPI 01"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_76_01_DMPI_13(unittype.VehicleType):
+        id = "NTTR Target 76-01 DMPI 13"
+        name = "*NTTR Target 76-01 DMPI 13"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_76_01_DMPI_14(unittype.VehicleType):
+        id = "NTTR Target 76-01 DMPI 14"
+        name = "*NTTR Target 76-01 DMPI 14"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_76_01_DMPI_306(unittype.VehicleType):
+        id = "NTTR Target 76-01 DMPI 306"
+        name = "*NTTR Target 76-01 DMPI 306"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_76_11_DMPI_02(unittype.VehicleType):
+        id = "NTTR Target 76-11 DMPI 02"
+        name = "*NTTR Target 76-11 DMPI 02"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_76_11_DMPI_04(unittype.VehicleType):
+        id = "NTTR Target 76-11 DMPI 04"
+        name = "*NTTR Target 76-11 DMPI 04"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_76_11_DMPI_06(unittype.VehicleType):
+        id = "NTTR Target 76-11 DMPI 06"
+        name = "*NTTR Target 76-11 DMPI 06"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_76_11_DMPI_210(unittype.VehicleType):
+        id = "NTTR Target 76-11 DMPI 210"
+        name = "*NTTR Target 76-11 DMPI 210"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_76_11_DMPI_23(unittype.VehicleType):
+        id = "NTTR Target 76-11 DMPI 23"
+        name = "*NTTR Target 76-11 DMPI 23"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_76_11_DMPI_24(unittype.VehicleType):
+        id = "NTTR Target 76-11 DMPI 24"
+        name = "*NTTR Target 76-11 DMPI 24"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_76_11_DMPI_27(unittype.VehicleType):
+        id = "NTTR Target 76-11 DMPI 27"
+        name = "*NTTR Target 76-11 DMPI 27"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_76_11_DMPI_33(unittype.VehicleType):
+        id = "NTTR Target 76-11 DMPI 33"
+        name = "*NTTR Target 76-11 DMPI 33"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_76_20_DMPI_01(unittype.VehicleType):
+        id = "NTTR Target 76-20 DMPI 01"
+        name = "*NTTR Target 76-20 DMPI 01"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _NTTR_Target_76_30_DMPI_14(unittype.VehicleType):
+        id = "NTTR Target 76-30 DMPI 14"
+        name = "*NTTR Target 76-30 DMPI 14"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class _FCLP_Box(unittype.VehicleType):
+        id = "fclp_box"
+        name = "*FCLP Box"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
 
 class Unarmed:
 
@@ -1859,4 +3021,170 @@ vehicle_map = {
     "DRG_Class_86": Locomotive.DRG_Class_86,
     "German_covered_wagon_G10": Carriage.German_covered_wagon_G10,
     "German_tank_wagon": Carriage.German_tank_wagon,
+    "Aim_Off_Marker": Fortification._Aim_Off_Distance_Marker,
+    "Conventional_Circle_A": Fortification._Conventional_Circle_A,
+    "Conventional_Circle_B": Fortification._Conventional_Circle_B,
+    "Foul_Line": Fortification._Foul_Line,
+    "Range_Tower_Main": Fortification._Range_Tower__Main,
+    "Strafe_Pit": Fortification._Strafe_Pit,
+    "Tac_Bomb_MiG-17": Fortification._Silhouette__MiG_17,
+    "Tac_Bomb_MiG-29": Fortification._Silhouette__MiG_29,
+    "Tac_Bunker_Sand_1": Fortification._Bunker__Concrete__Sand_1,
+    "Tac_Revet_50x50x6_Sand_1": Fortification._Revet_50x50x6__Sand_1,
+    "Tac_Strafe_Hard": Fortification._Tac_Strafe__Hard,
+    "Tac_Strafe_Soft": Fortification._Tac_Strafe__Soft,
+    "Container_40_1x1_Blu": Fortification._SeaLand_1x1__Blue,
+    "Container_40_1x1_Bro": Fortification._SeaLand_1x1__Brown,
+    "Container_40_1x1_Grn": Fortification._SeaLand_1x1__Green,
+    "Container_40_1x1_Tan": Fortification._SeaLand_1x1__Tan,
+    "Container_40_1x1_Wht": Fortification._SeaLand_1x1__White,
+    "Container_40_1x2_Blu": Fortification._SeaLand_1x2__Blue,
+    "Container_40_1x2_Bro": Fortification._SeaLand_1x2__Brown,
+    "Container_40_1x2_Grn": Fortification._SeaLand_1x2__Green,
+    "Container_40_1x2_Tan": Fortification._SeaLand_1x2__Tan,
+    "Container_40_1x2_Wht": Fortification._SeaLand_1x2__White,
+    "Container_40_1x3_Blu": Fortification._SeaLand_1x3__Blue,
+    "Container_40_1x3_Bro": Fortification._SeaLand_1x3__Brown,
+    "Container_40_1x3_Grn": Fortification._SeaLand_1x3__Green,
+    "Container_40_1x3_Tan": Fortification._SeaLand_1x3__Tan,
+    "Container_40_1x3_Wht": Fortification._SeaLand_1x3__White,
+    "Container_40_2x1_Blu": Fortification._SeaLand_2x1__Blue,
+    "Container_40_2x1_Bro": Fortification._SeaLand_2x1__Brown,
+    "Container_40_2x1_Grn": Fortification._SeaLand_2x1__Green,
+    "Container_40_2x1_Tan": Fortification._SeaLand_2x1__Tan,
+    "Container_40_2x1_Wht": Fortification._SeaLand_2x1__White,
+    "Container_40_2x2_Blu": Fortification._SeaLand_2x2__Blue,
+    "Container_40_2x2_Bro": Fortification._SeaLand_2x2__Brown,
+    "Container_40_2x2_Grn": Fortification._SeaLand_2x2__Green,
+    "Container_40_2x2_Tan": Fortification._SeaLand_2x2__Tan,
+    "Container_40_2x2_Wht": Fortification._SeaLand_2x2__White,
+    "Container_40_2x3_Blu": Fortification._SeaLand_2x3__Blue,
+    "Container_40_2x3_Bro": Fortification._SeaLand_2x3__Brown,
+    "Container_40_2x3_Grn": Fortification._SeaLand_2x3__Green,
+    "Container_40_2x3_Tan": Fortification._SeaLand_2x3__Tan,
+    "Container_40_2x3_Wht": Fortification._SeaLand_2x3__White,
+    "Container_40_3x1_Blu": Fortification._SeaLand_3x1__Blue,
+    "Container_40_3x1_Bro": Fortification._SeaLand_3x1__Brown,
+    "Container_40_3x1_Grn": Fortification._SeaLand_3x1__Green,
+    "Container_40_3x1_Tan": Fortification._SeaLand_3x1__Tan,
+    "Container_40_3x1_Wht": Fortification._SeaLand_3x1__White,
+    "Container_40_3x2_Blu": Fortification._SeaLand_3x2__Blue,
+    "Container_40_3x2_Bro": Fortification._SeaLand_3x2__Brown,
+    "Container_40_3x2_Grn": Fortification._SeaLand_3x2__Green,
+    "Container_40_3x2_Tan": Fortification._SeaLand_3x2__Tan,
+    "Container_40_3x2_Wht": Fortification._SeaLand_3x2__White,
+    "Container_40_3x3_Blu": Fortification._SeaLand_3x3__Blue,
+    "Container_40_3x3_Bro": Fortification._SeaLand_3x3__Brown,
+    "Container_40_3x3_Grn": Fortification._SeaLand_3x3__Green,
+    "Container_40_3x3_Tan": Fortification._SeaLand_3x3__Tan,
+    "Container_40_3x3_Wht": Fortification._SeaLand_3x3__White,
+    "Container_40_9x1_gray": Fortification._SeaLand_9x1__Gray,
+    "Container_40_Tower_Blu": Fortification._SeaLand_Tower__Blue,
+    "Container_40_Tower_Bro": Fortification._SeaLand_Tower__Brown,
+    "Container_40_Tower_Grn": Fortification._SeaLand_Tower__Green,
+    "Container_40_Tower_Tan": Fortification._SeaLand_Tower__Tan,
+    "Container_40_Tower_Wht": Fortification._SeaLand_Tower__White,
+    "NTTR Target 62-11 DMPI 01": Fortification._NTTR_Target_62_11_DMPI_01,
+    "NTTR Target 62-12 DMPI 203": Fortification._NTTR_Target_62_12_DMPI_203,
+    "NTTR Target 62-13 DMPI 310": Fortification._NTTR_Target_62_13_DMPI_310,
+    "NTTR Target 62-13 DMPI 313": Fortification._NTTR_Target_62_13_DMPI_313,
+    "NTTR Target 62-13 DMPI 321": Fortification._NTTR_Target_62_13_DMPI_321,
+    "NTTR Target 62-13 DMPI 334": Fortification._NTTR_Target_62_13_DMPI_334,
+    "NTTR Target 62-13 DMPI 344": Fortification._NTTR_Target_62_13_DMPI_344,
+    "NTTR Target 62-21 DMPI 102": Fortification._NTTR_Target_62_21_DMPI_102,
+    "NTTR Target 62-21 DMPI 107": Fortification._NTTR_Target_62_21_DMPI_107,
+    "NTTR Target 62-21 DMPI 109": Fortification._NTTR_Target_62_21_DMPI_109,
+    "NTTR Target 62-21 DMPI 111": Fortification._NTTR_Target_62_21_DMPI_111,
+    "NTTR Target 62-21 DMPI 113": Fortification._NTTR_Target_62_21_DMPI_113,
+    "NTTR Target 62-21 DMPI 116": Fortification._NTTR_Target_62_21_DMPI_116,
+    "NTTR Target 62-21 DMPI 119": Fortification._NTTR_Target_62_21_DMPI_119,
+    "NTTR Target 62-21 DMPI 124": Fortification._NTTR_Target_62_21_DMPI_124,
+    "NTTR Target 62-21 DMPI 126": Fortification._NTTR_Target_62_21_DMPI_126,
+    "NTTR Target 62-21 DMPI 128": Fortification._NTTR_Target_62_21_DMPI_128,
+    "NTTR Target 62-21 DMPI 130": Fortification._NTTR_Target_62_21_DMPI_130,
+    "NTTR Target 62-21 DMPI 131": Fortification._NTTR_Target_62_21_DMPI_131,
+    "NTTR Target 62-21 DMPI 134": Fortification._NTTR_Target_62_21_DMPI_134,
+    "NTTR Target 62-21 DMPI 135": Fortification._NTTR_Target_62_21_DMPI_135,
+    "NTTR Target 62-21 DMPI 140": Fortification._NTTR_Target_62_21_DMPI_140,
+    "NTTR Target 62-21 DMPI 142": Fortification._NTTR_Target_62_21_DMPI_142,
+    "NTTR Target 62-21 DMPI 147": Fortification._NTTR_Target_62_21_DMPI_147,
+    "NTTR Target 62-22 DMPI 205": Fortification._NTTR_Target_62_22_DMPI_205,
+    "NTTR Target 62-22 DMPI 206": Fortification._NTTR_Target_62_22_DMPI_206,
+    "NTTR Target 62-22 DMPI 208": Fortification._NTTR_Target_62_22_DMPI_208,
+    "NTTR Target 62-22 DMPI 210": Fortification._NTTR_Target_62_22_DMPI_210,
+    "NTTR Target 62-22 DMPI 214": Fortification._NTTR_Target_62_22_DMPI_214,
+    "NTTR Target 62-22 DMPI 217": Fortification._NTTR_Target_62_22_DMPI_217,
+    "NTTR Target 62-32 DMPI 205": Fortification._NTTR_Target_62_32_DMPI_205,
+    "NTTR Target 62-32 DMPI 216": Fortification._NTTR_Target_62_32_DMPI_216,
+    "NTTR Target 62-41 DMPI 103": Fortification._NTTR_Target_62_41_DMPI_103,
+    "NTTR Target 62-41 DMPI 110": Fortification._NTTR_Target_62_41_DMPI_110,
+    "NTTR Target 62-41 DMPI 121": Fortification._NTTR_Target_62_41_DMPI_121,
+    "NTTR Target 62-41 DMPI 122": Fortification._NTTR_Target_62_41_DMPI_122,
+    "NTTR Target 62-41 DMPI 123": Fortification._NTTR_Target_62_41_DMPI_123,
+    "NTTR Target 62-41 DMPI 136": Fortification._NTTR_Target_62_41_DMPI_136,
+    "NTTR Target 62-51 DMPI 103": Fortification._NTTR_Target_62_51_DMPI_103,
+    "NTTR Target 62-52 DMPI 203": Fortification._NTTR_Target_62_52_DMPI_203,
+    "NTTR Target 62-53 DMPI 305": Fortification._NTTR_Target_62_53_DMPI_305,
+    "NTTR Target 62-53 DMPI 306": Fortification._NTTR_Target_62_53_DMPI_306,
+    "NTTR Target 62-53 DMPI 309": Fortification._NTTR_Target_62_53_DMPI_309,
+    "NTTR Target 62-53 DMPI 310": Fortification._NTTR_Target_62_53_DMPI_310,
+    "NTTR Target 62-54 DMPI 407": Fortification._NTTR_Target_62_54_DMPI_407,
+    "NTTR Target 62-54 DMPI 413": Fortification._NTTR_Target_62_54_DMPI_413,
+    "NTTR Target 62-54 DMPI 419": Fortification._NTTR_Target_62_54_DMPI_419,
+    "NTTR Target 62-54 DMPI 421": Fortification._NTTR_Target_62_54_DMPI_421,
+    "NTTR Target 62-55 DMPI 501": Fortification._NTTR_Target_62_55_DMPI_501,
+    "NTTR Target 62-55 DMPI 510": Fortification._NTTR_Target_62_55_DMPI_510,
+    "NTTR Target 62-61 DMPI 102": Fortification._NTTR_Target_62_61_DMPI_102,
+    "NTTR Target 62-62 DMPI 201": Fortification._NTTR_Target_62_62_DMPI_201,
+    "NTTR Target 62-62 DMPI 207": Fortification._NTTR_Target_62_62_DMPI_207,
+    "NTTR Target 62-62 DMPI 209": Fortification._NTTR_Target_62_62_DMPI_209,
+    "NTTR Target 62-62 DMPI 213": Fortification._NTTR_Target_62_62_DMPI_213,
+    "NTTR Target 62-63 DMPI 301": Fortification._NTTR_Target_62_63_DMPI_301,
+    "NTTR Target 62-63 DMPI 303": Fortification._NTTR_Target_62_63_DMPI_303,
+    "NTTR Target 62-71 DMPI 101": Fortification._NTTR_Target_62_71_DMPI_101,
+    "NTTR Target 62-71 DMPI 113": Fortification._NTTR_Target_62_71_DMPI_113,
+    "NTTR Target 62-71 DMPI 119": Fortification._NTTR_Target_62_71_DMPI_119,
+    "NTTR Target 62-72 DMPI 201": Fortification._NTTR_Target_62_72_DMPI_201,
+    "NTTR Target 62-72 DMPI 204": Fortification._NTTR_Target_62_72_DMPI_204,
+    "NTTR Target 62-73 DMPI 301": Fortification._NTTR_Target_62_73_DMPI_301,
+    "NTTR Target 62-74 DMPI 401": Fortification._NTTR_Target_62_74_DMPI_401,
+    "NTTR Target 62-74 DMPI 411": Fortification._NTTR_Target_62_74_DMPI_411,
+    "NTTR Target 62-75 DMPI 501": Fortification._NTTR_Target_62_75_DMPI_501,
+    "NTTR Target 62-75 DMPI 514": Fortification._NTTR_Target_62_75_DMPI_514,
+    "NTTR Target 62-75 DMPI 524": Fortification._NTTR_Target_62_75_DMPI_524,
+    "NTTR Target 62-76 DMPI 601": Fortification._NTTR_Target_62_76_DMPI_601,
+    "NTTR Target 62-77 DMPI 701": Fortification._NTTR_Target_62_77_DMPI_701,
+    "NTTR Target 62-77 DMPI 712": Fortification._NTTR_Target_62_77_DMPI_712,
+    "NTTR Target 62-78 DMPI 802": Fortification._NTTR_Target_62_78_DMPI_802,
+    "NTTR Target 62-92 DMPI 201": Fortification._NTTR_Target_62_92_DMPI_201,
+    "NTTR Target 62-93 DMPI 301": Fortification._NTTR_Target_62_93_DMPI_301,
+    "NTTR Target 66-02 DMPI 01": Fortification._NTTR_Target_66_02_DMPI_01,
+    "NTTR Target 66-02 DMPI 02": Fortification._NTTR_Target_66_02_DMPI_02,
+    "NTTR Target 66-02 DMPI 40": Fortification._NTTR_Target_66_02_DMPI_40,
+    "NTTR Target 66-07 DMPI 02": Fortification._NTTR_Target_66_07_DMPI_02,
+    "NTTR Target 66-07 DMPI 03": Fortification._NTTR_Target_66_07_DMPI_03,
+    "NTTR Target 66-07 DMPI 04": Fortification._NTTR_Target_66_07_DMPI_04,
+    "NTTR Target 66-07 DMPI 05": Fortification._NTTR_Target_66_07_DMPI_05,
+    "NTTR Target 66-07 DMPI 06": Fortification._NTTR_Target_66_07_DMPI_06,
+    "NTTR Target 66-07 DMPI 07": Fortification._NTTR_Target_66_07_DMPI_07,
+    "NTTR Target 66-07 DMPI 09": Fortification._NTTR_Target_66_07_DMPI_09,
+    "NTTR Target 66-07 DMPI 13": Fortification._NTTR_Target_66_07_DMPI_13,
+    "NTTR Target 66-07 DMPI 18": Fortification._NTTR_Target_66_07_DMPI_18,
+    "NTTR Target 66-07 DMPI 31": Fortification._NTTR_Target_66_07_DMPI_31,
+    "NTTR Target 71-12 DMPI 01": Fortification._NTTR_Target_71_12_DMPI_01,
+    "NTTR Target 76-01 DMPI 01": Fortification._NTTR_Target_76_01_DMPI_01,
+    "NTTR Target 76-01 DMPI 13": Fortification._NTTR_Target_76_01_DMPI_13,
+    "NTTR Target 76-01 DMPI 14": Fortification._NTTR_Target_76_01_DMPI_14,
+    "NTTR Target 76-01 DMPI 306": Fortification._NTTR_Target_76_01_DMPI_306,
+    "NTTR Target 76-11 DMPI 02": Fortification._NTTR_Target_76_11_DMPI_02,
+    "NTTR Target 76-11 DMPI 04": Fortification._NTTR_Target_76_11_DMPI_04,
+    "NTTR Target 76-11 DMPI 06": Fortification._NTTR_Target_76_11_DMPI_06,
+    "NTTR Target 76-11 DMPI 210": Fortification._NTTR_Target_76_11_DMPI_210,
+    "NTTR Target 76-11 DMPI 23": Fortification._NTTR_Target_76_11_DMPI_23,
+    "NTTR Target 76-11 DMPI 24": Fortification._NTTR_Target_76_11_DMPI_24,
+    "NTTR Target 76-11 DMPI 27": Fortification._NTTR_Target_76_11_DMPI_27,
+    "NTTR Target 76-11 DMPI 33": Fortification._NTTR_Target_76_11_DMPI_33,
+    "NTTR Target 76-20 DMPI 01": Fortification._NTTR_Target_76_20_DMPI_01,
+    "NTTR Target 76-30 DMPI 14": Fortification._NTTR_Target_76_30_DMPI_14,
+    "fclp_box": Fortification._FCLP_Box,
 }

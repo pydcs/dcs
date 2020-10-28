@@ -28896,6 +28896,7693 @@ class TF_51D(PlaneType):
     task_default = task.Reconnaissance
 
 
+class A_4E_C(PlaneType):
+    id = "A-4E-C"
+    flyable = True
+    height = 4.57
+    width = 8.38
+    length = 12.22
+    fuel_max = 2467.5454273299
+    max_speed = 1082.88
+    chaff = 30
+    flare = 30
+    charge_total = 60
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 254
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 264,
+                2: 265,
+                4: 254,
+                8: 258,
+                16: 267,
+                17: 251,
+                9: 262,
+                18: 253,
+                5: 250,
+                10: 259,
+                20: 252,
+                11: 268,
+                3: 256,
+                6: 270,
+                12: 269,
+                13: 260,
+                7: 257,
+                14: 263,
+                19: 266,
+                15: 261
+            },
+        },
+    }
+
+    property_defaults = {
+        "CBU2ATPP": 0,
+        "CBU2BATPP": 0,
+        "CMS_BURSTS": 1,
+        "CMS_BURST_INTERVAL": 1,
+        "CMS_SALVOS": 1,
+        "CMS_SALVO_INTERVAL": 1,
+    }
+
+    class Properties:
+
+        class CBU2ATPP:
+            id = "CBU2ATPP"
+
+            class Values:
+                _1_tube = 0
+                _2_tubes = 1
+                _3_tubes = 2
+                _4_tubes = 3
+                _6_tubes = 4
+                _17_tubes__salvo = 5
+
+        class CBU2BATPP:
+            id = "CBU2BATPP"
+
+            class Values:
+                _2_tubes = 0
+                _4_tubes = 1
+                _6_tubes = 2
+
+        class CMS_BURSTS:
+            id = "CMS_BURSTS"
+
+            class Values:
+                _1 = 1
+                _2 = 2
+                _3 = 3
+                _4 = 4
+
+        class CMS_BURST_INTERVAL:
+            id = "CMS_BURST_INTERVAL"
+
+            class Values:
+                _0_2_seconds = 1
+                _0_3_seconds = 2
+                _0_4_seconds = 3
+                _0_5_seconds = 4
+
+        class CMS_SALVOS:
+            id = "CMS_SALVOS"
+
+            class Values:
+                _8 = 1
+                _12 = 2
+                _16 = 3
+                _20 = 4
+                _24 = 5
+                _28 = 6
+                _32 = 7
+
+        class CMS_SALVO_INTERVAL:
+            id = "CMS_SALVO_INTERVAL"
+
+            class Values:
+                _2_seconds = 1
+                _4_seconds = 2
+                _6_seconds = 3
+                _8_seconds = 4
+                _10_seconds = 5
+                _12_seconds = 6
+                _14_seconds = 7
+
+    class Liveries:
+
+        class Georgia(Enum):
+            unmarked = "unmarked"
+
+        class Australia(Enum):
+            international_australia = "international australia"
+            international_new_zealand = "international new zealand"
+            international_new_zealand_kiwi_red = "international new zealand kiwi red"
+            international_new_zealand_sqn_75 = "international new zealand sqn 75"
+            unmarked = "unmarked"
+
+        class Israel(Enum):
+            international_israel = "international israel"
+            unmarked = "unmarked"
+
+        class Norway(Enum):
+            unmarked = "unmarked"
+
+        class Romania(Enum):
+            unmarked = "unmarked"
+
+        class Iran(Enum):
+            unmarked = "unmarked"
+
+        class Ukraine(Enum):
+            unmarked = "unmarked"
+
+        class Belgium(Enum):
+            unmarked = "unmarked"
+
+        class Slovakia(Enum):
+            unmarked = "unmarked"
+
+        class Greece(Enum):
+            unmarked = "unmarked"
+
+        class UK(Enum):
+            trainer_bae_systems = "trainer bae systems"
+            unmarked = "unmarked"
+
+        class Hungary(Enum):
+            unmarked = "unmarked"
+
+        class Abkhazia(Enum):
+            unmarked = "unmarked"
+
+        class Switzerland(Enum):
+            unmarked = "unmarked"
+
+        class SouthOssetia(Enum):
+            unmarked = "unmarked"
+
+        class China(Enum):
+            unmarked = "unmarked"
+
+        class Kuwait(Enum):
+            international_kuwait = "international kuwait"
+
+        class Serbia(Enum):
+            unmarked = "unmarked"
+
+        class India(Enum):
+            unmarked = "unmarked"
+
+        class Egypt(Enum):
+            unmarked = "unmarked"
+
+        class TheNetherlands(Enum):
+            unmarked = "unmarked"
+
+        class Poland(Enum):
+            unmarked = "unmarked"
+
+        class Syria(Enum):
+            unmarked = "unmarked"
+
+        class Finland(Enum):
+            unmarked = "unmarked"
+
+        class Kazakhstan(Enum):
+            unmarked = "unmarked"
+
+        class Denmark(Enum):
+            unmarked = "unmarked"
+
+        class Sweden(Enum):
+            unmarked = "unmarked"
+
+        class Croatia(Enum):
+            unmarked = "unmarked"
+
+        class CzechRepublic(Enum):
+            unmarked = "unmarked"
+
+        class Bulgaria(Enum):
+            unmarked = "unmarked"
+
+        class SouthKorea(Enum):
+            unmarked = "unmarked"
+
+        class Insurgents(Enum):
+            unmarked = "unmarked"
+
+        class SaudiArabia(Enum):
+            unmarked = "unmarked"
+
+        class France(Enum):
+            unmarked = "unmarked"
+
+        class USA(Enum):
+            international_argentina = "international argentina"
+            international_australia = "international australia"
+            blue_angels_no_1 = "blue angels no 1"
+            blue_angels_no_2 = "blue angels no 2"
+            blue_angels_no_3 = "blue angels no 3"
+            blue_angels_no_4 = "blue angels no 4"
+            blue_angels_no_5 = "blue angels no 5"
+            blue_angels_no_6 = "blue angels no 6"
+            international_brazil = "international brazil"
+            community_a_4e = "community a-4e"
+            international_israel = "international israel"
+            international_kuwait = "international kuwait"
+            international_new_zealand = "international new zealand"
+            international_new_zealand_kiwi_red = "international new zealand kiwi red"
+            international_new_zealand_sqn_75 = "international new zealand sqn 75"
+            trainer_usmc_ptmc = "trainer usmc ptmc"
+            trainer_bae_systems = "trainer bae systems"
+            aggressor_usmc_topgun_mig_17 = "aggressor usmc topgun mig-17"
+            usmc_vma_121_green_knights = "usmc vma-121 green knights"
+            usmc_vma_131_diamondbacks = "usmc vma-131 diamondbacks"
+            usmc_vma_211_avengers = "usmc vma-211 avengers"
+            usmc_vma_311_tomcats = "usmc vma-311 tomcats"
+            trainer_usn_nfws_gray = "trainer usn nfws gray"
+            trainer_usn_nfws_green = "trainer usn nfws green"
+            aggressor_usn_topgun = "aggressor usn topgun"
+            usn_va_163_saints = "usn va-163 saints"
+            usn_va_195_dambusters = "usn va-195 dambusters"
+            usn_va_55_warhorses = "usn va-55 warhorses"
+            trainer_usn_vc_1_flecompron_one = "trainer usn vc-1 flecompron one"
+            usn_vc_7_tallyhoers = "usn vc-7 tallyhoers"
+            trainer_usn_vc_8_redtails = "trainer usn vc-8 redtails"
+            aggressor_usn_vf_126_bandits = "aggressor usn vf-126 bandits"
+            aggressor_usn_vf_127_royal_blues = "aggressor usn vf-127 royal blues"
+            aggressor_usn_vfa_127_cyclons__forest = "aggressor usn vfa-127 cyclons (forest)"
+            aggressor_usn_vfa_127_cyclons__sea = "aggressor usn vfa-127 cyclons (sea)"
+            trainer_usn_vt_7_eagles = "trainer usn vt-7 eagles"
+            unmarked = "unmarked"
+
+        class Russia(Enum):
+            unmarked = "unmarked"
+
+        class Austria(Enum):
+            unmarked = "unmarked"
+
+        class Italy(Enum):
+            unmarked = "unmarked"
+
+        class Turkey(Enum):
+            unmarked = "unmarked"
+
+        class Pakistan(Enum):
+            unmarked = "unmarked"
+
+        class Iraq(Enum):
+            unmarked = "unmarked"
+
+        class Germany(Enum):
+            unmarked = "unmarked"
+
+        class USAFAggressors(Enum):
+            aggressor_usmc_topgun_mig_17 = "aggressor usmc topgun mig-17"
+            aggressor_usn_topgun = "aggressor usn topgun"
+            aggressor_usn_vf_126_bandits = "aggressor usn vf-126 bandits"
+            aggressor_usn_vf_127_royal_blues = "aggressor usn vf-127 royal blues"
+            aggressor_usn_vfa_127_cyclons__forest = "aggressor usn vfa-127 cyclons (forest)"
+            aggressor_usn_vfa_127_cyclons__sea = "aggressor usn vfa-127 cyclons (sea)"
+            unmarked = "unmarked"
+
+        class Brazil(Enum):
+            international_argentina = "international argentina"
+            international_brazil = "international brazil"
+
+        class Spain(Enum):
+            unmarked = "unmarked"
+
+        class Belarus(Enum):
+            unmarked = "unmarked"
+
+        class Canada(Enum):
+            unmarked = "unmarked"
+
+        class NorthKorea(Enum):
+            unmarked = "unmarked"
+
+        class Japan(Enum):
+            unmarked = "unmarked"
+
+    class Pylon1:
+        LAU_10___4_ZUNI_MK_71 = (1, Weapons.LAU_10___4_ZUNI_MK_71)
+        LAU_3___19_FFAR_M156_WP = (1, Weapons.LAU_3___19_FFAR_M156_WP)
+        LAU_3___19_FFAR_Mk1_HE = (1, Weapons.LAU_3___19_FFAR_Mk1_HE)
+        LAU_3___19_FFAR_Mk5_HEAT = (1, Weapons.LAU_3___19_FFAR_Mk5_HEAT)
+        LAU_68___7_FFAR_M156_WP = (1, Weapons.LAU_68___7_FFAR_M156_WP)
+        LAU_68___7_FFAR_Mk1_HE = (1, Weapons.LAU_68___7_FFAR_Mk1_HE)
+        LAU_68___7_FFAR_Mk5_HEAT = (1, Weapons.LAU_68___7_FFAR_Mk5_HEAT)
+        AGM_45A = (1, Weapons.AGM_45A)
+#ERRR {AGM12_B}
+        Mk_20 = (1, Weapons.Mk_20)
+        Mk_81 = (1, Weapons.Mk_81)
+        Mk_81SE = (1, Weapons.Mk_81SE)
+        Mk_82 = (1, Weapons.Mk_82)
+        Mk_82_SnakeEye = (1, Weapons.Mk_82_SnakeEye)
+        Mk_77_mod_1 = (1, Weapons.Mk_77_mod_1)
+        AN_M30A1_ = (1, Weapons.AN_M30A1_)
+        AN_M57A1 = (1, Weapons.AN_M57A1)
+        AN_M64 = (1, Weapons.AN_M64)
+        AN_M81 = (1, Weapons.AN_M81)
+        AN_M88 = (1, Weapons.AN_M88)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (1, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        Smokewinder___red = (1, Weapons.Smokewinder___red)
+        Smokewinder___green = (1, Weapons.Smokewinder___green)
+        Smokewinder___blue = (1, Weapons.Smokewinder___blue)
+        Smokewinder___white = (1, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (1, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (1, Weapons.Smokewinder___orange)
+#ERRR <CLEAN>
+
+    class Pylon2:
+        Fuel_Tank_300_gallons_ = (2, Weapons.Fuel_Tank_300_gallons_)
+        Fuel_Tank_150_gallons = (2, Weapons.Fuel_Tank_150_gallons)
+        LAU_7_GAR_8_Sidewinder_IR_AAM = (2, Weapons.LAU_7_GAR_8_Sidewinder_IR_AAM)
+        LAU_7_AIM_9P_Sidewinder_IR_AAM = (2, Weapons.LAU_7_AIM_9P_Sidewinder_IR_AAM)
+        LAU_7_AIM_9P5_Sidewinder_IR_AAM = (2, Weapons.LAU_7_AIM_9P5_Sidewinder_IR_AAM)
+        LAU_10___4_ZUNI_MK_71 = (2, Weapons.LAU_10___4_ZUNI_MK_71)
+        LAU_10_2___4_ZUNI_MK_71_ = (2, Weapons.LAU_10_2___4_ZUNI_MK_71_)
+        LAU_3___19_FFAR_M156_WP = (2, Weapons.LAU_3___19_FFAR_M156_WP)
+        LAU_3___19_FFAR_Mk1_HE = (2, Weapons.LAU_3___19_FFAR_Mk1_HE)
+        LAU_3___19_FFAR_Mk5_HEAT = (2, Weapons.LAU_3___19_FFAR_Mk5_HEAT)
+        LAU_3_2___19_FFAR_M156_WP_ = (2, Weapons.LAU_3_2___19_FFAR_M156_WP_)
+        LAU_3_2___19_FFAR_Mk1_HE_ = (2, Weapons.LAU_3_2___19_FFAR_Mk1_HE_)
+        LAU_3_2___19_FFAR_Mk5_HEAT_ = (2, Weapons.LAU_3_2___19_FFAR_Mk5_HEAT_)
+        LAU_68___7_FFAR_M156_WP = (2, Weapons.LAU_68___7_FFAR_M156_WP)
+        LAU_68___7_FFAR_Mk1_HE = (2, Weapons.LAU_68___7_FFAR_Mk1_HE)
+        LAU_68___7_FFAR_Mk5_HEAT = (2, Weapons.LAU_68___7_FFAR_Mk5_HEAT)
+        LAU_68_2___7_FFAR_M156_WP_ = (2, Weapons.LAU_68_2___7_FFAR_M156_WP_)
+        LAU_68_2___7_FFAR_Mk1_HE_ = (2, Weapons.LAU_68_2___7_FFAR_Mk1_HE_)
+        LAU_68_2___7_FFAR_Mk5_HEAT_ = (2, Weapons.LAU_68_2___7_FFAR_Mk5_HEAT_)
+        AGM_45A = (2, Weapons.AGM_45A)
+#ERRR {AGM12_C}
+#ERRR {AGM12_B}
+        AGM_62 = (2, Weapons.AGM_62)
+        Mk_20 = (2, Weapons.Mk_20)
+        Mk_81 = (2, Weapons.Mk_81)
+        Mk_81SE = (2, Weapons.Mk_81SE)
+        Mk_82 = (2, Weapons.Mk_82)
+        Mk_82_SnakeEye = (2, Weapons.Mk_82_SnakeEye)
+        Mk_83 = (2, Weapons.Mk_83)
+        Mk_84 = (2, Weapons.Mk_84)
+        M117 = (2, Weapons.M117)
+        Mk_77_mod_0 = (2, Weapons.Mk_77_mod_0)
+        Mk_77_mod_1 = (2, Weapons.Mk_77_mod_1)
+        AN_M30A1_ = (2, Weapons.AN_M30A1_)
+        AN_M57A1 = (2, Weapons.AN_M57A1)
+        AN_M64 = (2, Weapons.AN_M64)
+        AN_M65A1 = (2, Weapons.AN_M65A1)
+        AN_M81 = (2, Weapons.AN_M81)
+        AN_M88 = (2, Weapons.AN_M88)
+        CBU_1_A = (2, Weapons.CBU_1_A)
+        CBU_2_A = (2, Weapons.CBU_2_A)
+        CBU_2B_A = (2, Weapons.CBU_2B_A)
+        CBU_1_A__2 = (2, Weapons.CBU_1_A__2)
+        CBU_2_A__2 = (2, Weapons.CBU_2_A__2)
+        CBU_2B_A__2 = (2, Weapons.CBU_2B_A__2)
+        Mk_20__2__TER_ = (2, Weapons.Mk_20__2__TER_)
+        Mk_81__5__MER_ = (2, Weapons.Mk_81__5__MER_)
+        Mk_81SE__5__MER_ = (2, Weapons.Mk_81SE__5__MER_)
+        Mk_82__2__TER_ = (2, Weapons.Mk_82__2__TER_)
+        Mk_82_Snakeye__2__TER_ = (2, Weapons.Mk_82_Snakeye__2__TER_)
+        AN_M57A1__5__MER_ = (2, Weapons.AN_M57A1__5__MER_)
+        AN_M81__5__MER_ = (2, Weapons.AN_M81__5__MER_)
+        AN_M88__5__MER_ = (2, Weapons.AN_M88__5__MER_)
+        Mk4_HIPEG = (2, Weapons.Mk4_HIPEG)
+        Smokewinder___red = (2, Weapons.Smokewinder___red)
+        Smokewinder___green = (2, Weapons.Smokewinder___green)
+        Smokewinder___blue = (2, Weapons.Smokewinder___blue)
+        Smokewinder___white = (2, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (2, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (2, Weapons.Smokewinder___orange)
+#ERRR <CLEAN>
+
+    class Pylon3:
+        Fuel_Tank_400_gallons = (3, Weapons.Fuel_Tank_400_gallons)
+        Fuel_Tank_300_gallons = (3, Weapons.Fuel_Tank_300_gallons)
+        Fuel_Tank_150_gallons = (3, Weapons.Fuel_Tank_150_gallons)
+        D_704_Refueling_Pod = (3, Weapons.D_704_Refueling_Pod)
+#ERRR {3*LAU-61}
+        LAU_68_3___7_2_75__rockets_MK5__HE_ = (3, Weapons.LAU_68_3___7_2_75__rockets_MK5__HE_)
+        LAU_10___4_ZUNI_MK_71 = (3, Weapons.LAU_10___4_ZUNI_MK_71)
+        LAU_10_2___4_ZUNI_MK_71 = (3, Weapons.LAU_10_2___4_ZUNI_MK_71)
+        LAU_10_3___4_ZUNI_MK_71 = (3, Weapons.LAU_10_3___4_ZUNI_MK_71)
+        LAU_3___19_FFAR_M156_WP = (3, Weapons.LAU_3___19_FFAR_M156_WP)
+        LAU_3___19_FFAR_Mk1_HE = (3, Weapons.LAU_3___19_FFAR_Mk1_HE)
+        LAU_3___19_FFAR_Mk5_HEAT = (3, Weapons.LAU_3___19_FFAR_Mk5_HEAT)
+        LAU_3_2___19_FFAR_M156_WP = (3, Weapons.LAU_3_2___19_FFAR_M156_WP)
+        LAU_3_2___19_FFAR_Mk1_HE = (3, Weapons.LAU_3_2___19_FFAR_Mk1_HE)
+        LAU_3_2___19_FFAR_Mk5_HEAT = (3, Weapons.LAU_3_2___19_FFAR_Mk5_HEAT)
+        LAU_3_3___19_FFAR_M156_WP = (3, Weapons.LAU_3_3___19_FFAR_M156_WP)
+        LAU_3_3___19_FFAR_Mk1_HE = (3, Weapons.LAU_3_3___19_FFAR_Mk1_HE)
+        LAU_3_3___19_FFAR_Mk5_HEAT = (3, Weapons.LAU_3_3___19_FFAR_Mk5_HEAT)
+        LAU_68___7_FFAR_M156_WP = (3, Weapons.LAU_68___7_FFAR_M156_WP)
+        LAU_68___7_FFAR_Mk1_HE = (3, Weapons.LAU_68___7_FFAR_Mk1_HE)
+        LAU_68___7_FFAR_Mk5_HEAT = (3, Weapons.LAU_68___7_FFAR_Mk5_HEAT)
+        LAU_68_2___7_FFAR_M156_WP = (3, Weapons.LAU_68_2___7_FFAR_M156_WP)
+        LAU_68_2___7_FFAR_Mk1_HE = (3, Weapons.LAU_68_2___7_FFAR_Mk1_HE)
+        LAU_68_2___7_FFAR_Mk5_HEAT = (3, Weapons.LAU_68_2___7_FFAR_Mk5_HEAT)
+        LAU_68_3___7_FFAR_M156_WP = (3, Weapons.LAU_68_3___7_FFAR_M156_WP)
+        LAU_68_3___7_FFAR_Mk1_HE = (3, Weapons.LAU_68_3___7_FFAR_Mk1_HE)
+        LAU_68_3___7_FFAR_Mk5_HEAT = (3, Weapons.LAU_68_3___7_FFAR_Mk5_HEAT)
+#ERRR {AGM12_B}
+        AGM_62 = (3, Weapons.AGM_62)
+        Mk_20 = (3, Weapons.Mk_20)
+        Mk_81 = (3, Weapons.Mk_81)
+        Mk_81SE = (3, Weapons.Mk_81SE)
+        Mk_82 = (3, Weapons.Mk_82)
+        Mk_82_SnakeEye = (3, Weapons.Mk_82_SnakeEye)
+        Mk_83 = (3, Weapons.Mk_83)
+        Mk_84 = (3, Weapons.Mk_84)
+        M117 = (3, Weapons.M117)
+        Mk_77_mod_0 = (3, Weapons.Mk_77_mod_0)
+        Mk_77_mod_1 = (3, Weapons.Mk_77_mod_1)
+        AN_M30A1_ = (3, Weapons.AN_M30A1_)
+        AN_M57A1 = (3, Weapons.AN_M57A1)
+        AN_M64 = (3, Weapons.AN_M64)
+        AN_M65A1 = (3, Weapons.AN_M65A1)
+        AN_M66A2 = (3, Weapons.AN_M66A2)
+        AN_M81 = (3, Weapons.AN_M81)
+        AN_M88 = (3, Weapons.AN_M88)
+        Mk_20__3__TER_ = (3, Weapons.Mk_20__3__TER_)
+        Mk_20__2__TER___ = (3, Weapons.Mk_20__2__TER___)
+        Mk_81__6__MER_ = (3, Weapons.Mk_81__6__MER_)
+        Mk_81SE__6__MER_ = (3, Weapons.Mk_81SE__6__MER_)
+        Mk_82__6__MER_ = (3, Weapons.Mk_82__6__MER_)
+        Mk_82__4__MER_ = (3, Weapons.Mk_82__4__MER_)
+        Mk_82__3__TER_ = (3, Weapons.Mk_82__3__TER_)
+        Mk_82_Snakeye__6__MER_ = (3, Weapons.Mk_82_Snakeye__6__MER_)
+        Mk_82_Snakeye__4__MER_ = (3, Weapons.Mk_82_Snakeye__4__MER_)
+        Mk_82_Snakeye__3__TER_ = (3, Weapons.Mk_82_Snakeye__3__TER_)
+        Mk_83__3__TER_ = (3, Weapons.Mk_83__3__TER_)
+        Mk_83__2__TER_ = (3, Weapons.Mk_83__2__TER_)
+        Mk_77_mod_1__2__TER___ = (3, Weapons.Mk_77_mod_1__2__TER___)
+        AN_M57A1__6__MER_ = (3, Weapons.AN_M57A1__6__MER_)
+#ERRR {AN-M57A1_MER_4_C}
+        AN_M81__6__MER_ = (3, Weapons.AN_M81__6__MER_)
+        AN_M88__6__MER_ = (3, Weapons.AN_M88__6__MER_)
+        Mk4_HIPEG = (3, Weapons.Mk4_HIPEG)
+        Smokewinder___red = (3, Weapons.Smokewinder___red)
+        Smokewinder___green = (3, Weapons.Smokewinder___green)
+        Smokewinder___blue = (3, Weapons.Smokewinder___blue)
+        Smokewinder___white = (3, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (3, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (3, Weapons.Smokewinder___orange)
+#ERRR <CLEAN>
+
+    class Pylon4:
+        Fuel_Tank_300_gallons_ = (4, Weapons.Fuel_Tank_300_gallons_)
+        Fuel_Tank_150_gallons = (4, Weapons.Fuel_Tank_150_gallons)
+        LAU_7_GAR_8_Sidewinder_IR_AAM = (4, Weapons.LAU_7_GAR_8_Sidewinder_IR_AAM)
+        LAU_7_AIM_9P_Sidewinder_IR_AAM = (4, Weapons.LAU_7_AIM_9P_Sidewinder_IR_AAM)
+        LAU_7_AIM_9P5_Sidewinder_IR_AAM = (4, Weapons.LAU_7_AIM_9P5_Sidewinder_IR_AAM)
+        LAU_10___4_ZUNI_MK_71 = (4, Weapons.LAU_10___4_ZUNI_MK_71)
+        LAU_10_2___4_ZUNI_MK_71__ = (4, Weapons.LAU_10_2___4_ZUNI_MK_71__)
+        LAU_3___19_FFAR_M156_WP = (4, Weapons.LAU_3___19_FFAR_M156_WP)
+        LAU_3___19_FFAR_Mk1_HE = (4, Weapons.LAU_3___19_FFAR_Mk1_HE)
+        LAU_3___19_FFAR_Mk5_HEAT = (4, Weapons.LAU_3___19_FFAR_Mk5_HEAT)
+        LAU_3_2___19_FFAR_M156_WP__ = (4, Weapons.LAU_3_2___19_FFAR_M156_WP__)
+        LAU_3_2___19_FFAR_Mk1_HE__ = (4, Weapons.LAU_3_2___19_FFAR_Mk1_HE__)
+        LAU_3_2___19_FFAR_Mk5_HEAT__ = (4, Weapons.LAU_3_2___19_FFAR_Mk5_HEAT__)
+        LAU_68___7_FFAR_M156_WP = (4, Weapons.LAU_68___7_FFAR_M156_WP)
+        LAU_68___7_FFAR_Mk1_HE = (4, Weapons.LAU_68___7_FFAR_Mk1_HE)
+        LAU_68___7_FFAR_Mk5_HEAT = (4, Weapons.LAU_68___7_FFAR_Mk5_HEAT)
+        LAU_68_2___7_FFAR_M156_WP__ = (4, Weapons.LAU_68_2___7_FFAR_M156_WP__)
+        LAU_68_2___7_FFAR_Mk1_HE__ = (4, Weapons.LAU_68_2___7_FFAR_Mk1_HE__)
+        LAU_68_2___7_FFAR_Mk5_HEAT__ = (4, Weapons.LAU_68_2___7_FFAR_Mk5_HEAT__)
+        AGM_45A = (4, Weapons.AGM_45A)
+#ERRR {AGM12_C}
+#ERRR {AGM12_B}
+        AGM_62 = (4, Weapons.AGM_62)
+        Mk_20 = (4, Weapons.Mk_20)
+        Mk_81 = (4, Weapons.Mk_81)
+        Mk_81SE = (4, Weapons.Mk_81SE)
+        Mk_82 = (4, Weapons.Mk_82)
+        Mk_82_SnakeEye = (4, Weapons.Mk_82_SnakeEye)
+        Mk_83 = (4, Weapons.Mk_83)
+        Mk_84 = (4, Weapons.Mk_84)
+        M117 = (4, Weapons.M117)
+        Mk_77_mod_0 = (4, Weapons.Mk_77_mod_0)
+        Mk_77_mod_1 = (4, Weapons.Mk_77_mod_1)
+        AN_M30A1_ = (4, Weapons.AN_M30A1_)
+        AN_M57A1 = (4, Weapons.AN_M57A1)
+        AN_M64 = (4, Weapons.AN_M64)
+        AN_M65A1 = (4, Weapons.AN_M65A1)
+        AN_M81 = (4, Weapons.AN_M81)
+        AN_M88 = (4, Weapons.AN_M88)
+        CBU_1_A = (4, Weapons.CBU_1_A)
+        CBU_2_A = (4, Weapons.CBU_2_A)
+        CBU_2B_A = (4, Weapons.CBU_2B_A)
+        CBU_1_A__2_ = (4, Weapons.CBU_1_A__2_)
+        CBU_2_A__2_ = (4, Weapons.CBU_2_A__2_)
+        CBU_2B_A__2_ = (4, Weapons.CBU_2B_A__2_)
+        Mk_20__2__TER__ = (4, Weapons.Mk_20__2__TER__)
+        Mk_81__5__MER__ = (4, Weapons.Mk_81__5__MER__)
+        Mk_81SE__5__MER__ = (4, Weapons.Mk_81SE__5__MER__)
+        Mk_82__2__TER__ = (4, Weapons.Mk_82__2__TER__)
+        Mk_82_Snakeye__2__TER__ = (4, Weapons.Mk_82_Snakeye__2__TER__)
+        AN_M57A1__5__MER__ = (4, Weapons.AN_M57A1__5__MER__)
+        AN_M81__5__MER__ = (4, Weapons.AN_M81__5__MER__)
+        AN_M88__5__MER__ = (4, Weapons.AN_M88__5__MER__)
+        Mk4_HIPEG = (4, Weapons.Mk4_HIPEG)
+        Smokewinder___red = (4, Weapons.Smokewinder___red)
+        Smokewinder___green = (4, Weapons.Smokewinder___green)
+        Smokewinder___blue = (4, Weapons.Smokewinder___blue)
+        Smokewinder___white = (4, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (4, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (4, Weapons.Smokewinder___orange)
+#ERRR <CLEAN>
+
+    class Pylon5:
+        LAU_10___4_ZUNI_MK_71 = (5, Weapons.LAU_10___4_ZUNI_MK_71)
+        LAU_3___19_FFAR_M156_WP = (5, Weapons.LAU_3___19_FFAR_M156_WP)
+        LAU_3___19_FFAR_Mk1_HE = (5, Weapons.LAU_3___19_FFAR_Mk1_HE)
+        LAU_3___19_FFAR_Mk5_HEAT = (5, Weapons.LAU_3___19_FFAR_Mk5_HEAT)
+        LAU_68___7_FFAR_M156_WP = (5, Weapons.LAU_68___7_FFAR_M156_WP)
+        LAU_68___7_FFAR_Mk1_HE = (5, Weapons.LAU_68___7_FFAR_Mk1_HE)
+        LAU_68___7_FFAR_Mk5_HEAT = (5, Weapons.LAU_68___7_FFAR_Mk5_HEAT)
+        AGM_45A = (5, Weapons.AGM_45A)
+#ERRR {AGM12_B}
+        Mk_20 = (5, Weapons.Mk_20)
+        Mk_81 = (5, Weapons.Mk_81)
+        Mk_81SE = (5, Weapons.Mk_81SE)
+        Mk_82 = (5, Weapons.Mk_82)
+        Mk_82_SnakeEye = (5, Weapons.Mk_82_SnakeEye)
+        Mk_77_mod_1 = (5, Weapons.Mk_77_mod_1)
+        AN_M30A1_ = (5, Weapons.AN_M30A1_)
+        AN_M57A1 = (5, Weapons.AN_M57A1)
+        AN_M64 = (5, Weapons.AN_M64)
+        AN_M81 = (5, Weapons.AN_M81)
+        AN_M88 = (5, Weapons.AN_M88)
+        LAU_68___7_2_75__rockets_M257__Parachute_illumination_ = (5, Weapons.LAU_68___7_2_75__rockets_M257__Parachute_illumination_)
+        Smokewinder___red = (5, Weapons.Smokewinder___red)
+        Smokewinder___green = (5, Weapons.Smokewinder___green)
+        Smokewinder___blue = (5, Weapons.Smokewinder___blue)
+        Smokewinder___white = (5, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (5, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (5, Weapons.Smokewinder___orange)
+#ERRR <CLEAN>
+
+    pylons = {1, 2, 3, 4, 5}
+
+    tasks = [task.CAP, task.CAS, task.SEAD, task.GroundAttack, task.AFAC, task.Refueling]
+    task_default = task.CAS
+
+
+class MiG_23UB(PlaneType):
+    id = "MiG-23UB"
+    flyable = True
+    height = 5.772
+    width = 14
+    length = 15.7
+    fuel_max = 3800
+    max_speed = 2495.7
+    chaff = 100
+    flare = 96
+    charge_total = 200
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+
+    class Liveries:
+
+        class USSR(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Georgia(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Venezuela(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Australia(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Israel(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Sudan(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Norway(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Romania(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Iran(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Ukraine(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Libya(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Belgium(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Slovakia(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Greece(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class UK(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Third_Reich(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Hungary(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Abkhazia(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Morocco(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class United_Nations_Peacekeepers(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Switzerland(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class SouthOssetia(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Vietnam(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class China(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Yemen(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Kuwait(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Serbia(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Oman(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class India(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Egypt(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class TheNetherlands(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Poland(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Syria(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Finland(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Kazakhstan(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Denmark(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Sweden(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Croatia(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class CzechRepublic(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class GDR(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Yugoslavia(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Bulgaria(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class SouthKorea(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Tunisia(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Lebanon(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Portugal(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Cuba(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Insurgents(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class SaudiArabia(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class France(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class USA(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Honduras(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Qatar(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Russia(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class United_Arab_Emirates(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Italian_Social_Republi(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Austria(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Bahrain(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Italy(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Chile(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Turkey(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Philippines(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Algeria(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Pakistan(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Malaysia(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Indonesia(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Iraq(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Germany(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class South_Africa(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Jordan(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Mexico(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class USAFAggressors(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Brazil(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Spain(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Belarus(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Canada(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class NorthKorea(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Ethiopia(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Japan(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+        class Thailand(Enum):
+            gdr_1091 = "gdr 1091"
+            russia_camo_green = "russia camo green"
+            cuba = "cuba"
+            cuba2 = "cuba2"
+            czech = "czech"
+            hungarianv1 = "hungarianv1"
+            hungarianv2 = "hungarianv2"
+            iraq = "iraq"
+            libya = "libya"
+            polish = "polish"
+            polish_gray = "polish gray"
+            russia = "russia"
+            russia_camo_blue = "russia camo blue"
+            russia_camov1 = "russia camov1"
+            russia_gray = "russia gray"
+
+    class Pylon1:
+        Wing_Fuel_Tank = (1, Weapons.Wing_Fuel_Tank)
+
+    class Pylon2:
+        K_13A = (2, Weapons.K_13A)
+        R_60M = (2, Weapons.R_60M)
+        OFAB_100_Jupiter_x2 = (2, Weapons.OFAB_100_Jupiter_x2)
+        FAB_100 = (2, Weapons.FAB_100)
+        FAB_250 = (2, Weapons.FAB_250)
+        FAB_500_M62 = (2, Weapons.FAB_500_M62)
+        UPK_23_250 = (2, Weapons.UPK_23_250)
+        UB_32A___32_S_5KO = (2, Weapons.UB_32A___32_S_5KO)
+        UB_16___16_S_5KO = (2, Weapons.UB_16___16_S_5KO)
+        B_8M1___20_S_8KOM = (2, Weapons.B_8M1___20_S_8KOM)
+        S_24B = (2, Weapons.S_24B)
+
+    class Pylon3:
+        K_13A = (3, Weapons.K_13A)
+        R_60M = (3, Weapons.R_60M)
+        OFAB_100_Jupiter_x2 = (3, Weapons.OFAB_100_Jupiter_x2)
+        FAB_100 = (3, Weapons.FAB_100)
+        FAB_250 = (3, Weapons.FAB_250)
+        UPK_23_250 = (3, Weapons.UPK_23_250)
+        UB_32A___32_S_5KO = (3, Weapons.UB_32A___32_S_5KO)
+        UB_16___16_S_5KO = (3, Weapons.UB_16___16_S_5KO)
+        B_8M1___20_S_8KOM = (3, Weapons.B_8M1___20_S_8KOM)
+        S_24B = (3, Weapons.S_24B)
+
+    class Pylon4:
+        Centerline_Fuel_Tank = (4, Weapons.Centerline_Fuel_Tank)
+
+    class Pylon5:
+        K_13A = (5, Weapons.K_13A)
+        R_60M = (5, Weapons.R_60M)
+        OFAB_100_Jupiter_x2 = (5, Weapons.OFAB_100_Jupiter_x2)
+        FAB_100 = (5, Weapons.FAB_100)
+        FAB_250 = (5, Weapons.FAB_250)
+        UPK_23_250 = (5, Weapons.UPK_23_250)
+        UB_32A___32_S_5KO = (5, Weapons.UB_32A___32_S_5KO)
+        UB_16___16_S_5KO = (5, Weapons.UB_16___16_S_5KO)
+        B_8M1___20_S_8KOM = (5, Weapons.B_8M1___20_S_8KOM)
+        S_24B = (5, Weapons.S_24B)
+
+    class Pylon6:
+        K_13A = (6, Weapons.K_13A)
+        R_60M = (6, Weapons.R_60M)
+        OFAB_100_Jupiter_x2 = (6, Weapons.OFAB_100_Jupiter_x2)
+        FAB_100 = (6, Weapons.FAB_100)
+        FAB_250 = (6, Weapons.FAB_250)
+        FAB_500_M62 = (6, Weapons.FAB_500_M62)
+        UPK_23_250 = (6, Weapons.UPK_23_250)
+        UB_32A___32_S_5KO = (6, Weapons.UB_32A___32_S_5KO)
+        UB_16___16_S_5KO = (6, Weapons.UB_16___16_S_5KO)
+        B_8M1___20_S_8KOM = (6, Weapons.B_8M1___20_S_8KOM)
+        S_24B = (6, Weapons.S_24B)
+
+    class Pylon7:
+        Wing_Fuel_Tank = (7, Weapons.Wing_Fuel_Tank)
+
+    pylons = {1, 2, 3, 4, 5, 6, 7}
+
+    tasks = [task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.CAS, task.CAP, task.Escort, task.FighterSweep, task.Intercept]
+    task_default = task.CAP
+
+
+class RST_Eurofighter(PlaneType):
+    id = "RST_Eurofighter"
+    flyable = True
+    height = 5.63
+    width = 13.05
+    length = 19.43
+    fuel_max = 6103
+    max_speed = 2649.996
+    chaff = 120
+    flare = 60
+    charge_total = 240
+    chaff_charge_size = 1
+    flare_charge_size = 2
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 127.5
+
+    class Liveries:
+
+        class USSR(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Georgia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Venezuela(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Australia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Israel(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Sudan(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Norway(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Romania(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Iran(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Ukraine(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Libya(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Belgium(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Slovakia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Greece(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class UK(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Third_Reich(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Hungary(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Abkhazia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Morocco(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class United_Nations_Peacekeepers(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Switzerland(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class SouthOssetia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Vietnam(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class China(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Yemen(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Kuwait(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Serbia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Oman(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class India(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Egypt(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class TheNetherlands(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Poland(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Syria(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Finland(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Kazakhstan(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Denmark(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Sweden(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Croatia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class CzechRepublic(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class GDR(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Yugoslavia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Bulgaria(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class SouthKorea(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Tunisia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Lebanon(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Portugal(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Cuba(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Insurgents(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class SaudiArabia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class France(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class USA(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Honduras(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Qatar(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Russia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class United_Arab_Emirates(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Italian_Social_Republi(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Austria(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Bahrain(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Italy(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Chile(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Turkey(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Philippines(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Algeria(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Pakistan(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Malaysia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Indonesia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Iraq(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Germany(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class South_Africa(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Jordan(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Mexico(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class USAFAggressors(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Brazil(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Spain(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Belarus(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Canada(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class NorthKorea(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Ethiopia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Japan(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Thailand(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+    class Pylon1:
+        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
+        AIM_120B = (1, Weapons.AIM_120B)
+        AIM_120C = (1, Weapons.AIM_120C)
+        AIM_7M = (1, Weapons.AIM_7M)
+        Smokewinder___red = (1, Weapons.Smokewinder___red)
+        Smokewinder___green = (1, Weapons.Smokewinder___green)
+        Smokewinder___blue = (1, Weapons.Smokewinder___blue)
+        Smokewinder___white = (1, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (1, Weapons.Smokewinder___yellow)
+        AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
+
+    class Pylon2:
+        AIM_120B = (2, Weapons.AIM_120B)
+        AIM_120C = (2, Weapons.AIM_120C)
+        AIM_7M = (2, Weapons.AIM_7M)
+        Fuel_tank_1150L = (2, Weapons.Fuel_tank_1150L)
+
+    class Pylon3:
+        AIM_120B = (3, Weapons.AIM_120B)
+        AIM_120C = (3, Weapons.AIM_120C)
+        AIM_7M = (3, Weapons.AIM_7M)
+
+    class Pylon4:
+        AIM_120B = (4, Weapons.AIM_120B)
+        AIM_120C = (4, Weapons.AIM_120C)
+        AIM_7M = (4, Weapons.AIM_7M)
+
+    class Pylon5:
+        AIM_120B = (5, Weapons.AIM_120B)
+        AIM_120C = (5, Weapons.AIM_120C)
+        AIM_7M = (5, Weapons.AIM_7M)
+        L005_Sorbtsiya_ECM_pod__left_ = (5, Weapons.L005_Sorbtsiya_ECM_pod__left_)
+
+    class Pylon6:
+        AIM_120B = (6, Weapons.AIM_120B)
+        AIM_120C = (6, Weapons.AIM_120C)
+        AIM_7M = (6, Weapons.AIM_7M)
+        Smokewinder___red = (6, Weapons.Smokewinder___red)
+        Smokewinder___green = (6, Weapons.Smokewinder___green)
+        Smokewinder___blue = (6, Weapons.Smokewinder___blue)
+        Smokewinder___white = (6, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (6, Weapons.Smokewinder___yellow)
+        Fuel_tank_1150L = (6, Weapons.Fuel_tank_1150L)
+
+    class Pylon7:
+        AIM_120B = (7, Weapons.AIM_120B)
+        AIM_120C = (7, Weapons.AIM_120C)
+        AIM_7M = (7, Weapons.AIM_7M)
+        L005_Sorbtsiya_ECM_pod__left_ = (7, Weapons.L005_Sorbtsiya_ECM_pod__left_)
+
+    class Pylon8:
+        AIM_120B = (8, Weapons.AIM_120B)
+        AIM_120C = (8, Weapons.AIM_120C)
+        AIM_7M = (8, Weapons.AIM_7M)
+
+    class Pylon9:
+        AIM_120B = (9, Weapons.AIM_120B)
+        AIM_120C = (9, Weapons.AIM_120C)
+        AIM_7M = (9, Weapons.AIM_7M)
+
+    class Pylon10:
+        AIM_120B = (10, Weapons.AIM_120B)
+        AIM_120C = (10, Weapons.AIM_120C)
+        AIM_7M = (10, Weapons.AIM_7M)
+        Fuel_tank_1150L = (10, Weapons.Fuel_tank_1150L)
+
+    class Pylon11:
+        AIM_120B = (11, Weapons.AIM_120B)
+        AIM_120C = (11, Weapons.AIM_120C)
+        AIM_7M = (11, Weapons.AIM_7M)
+        Smokewinder___red = (11, Weapons.Smokewinder___red)
+        Smokewinder___green = (11, Weapons.Smokewinder___green)
+        Smokewinder___blue = (11, Weapons.Smokewinder___blue)
+        Smokewinder___white = (11, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (11, Weapons.Smokewinder___yellow)
+        AN_ASQ_T50_TCTS_Pod = (11, Weapons.AN_ASQ_T50_TCTS_Pod)
+
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+
+    tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.Reconnaissance]
+    task_default = task.Intercept
+
+
+class RST_Eurofighter_AG(PlaneType):
+    id = "RST_Eurofighter_AG"
+    flyable = True
+    height = 5.63
+    width = 13.05
+    length = 19.43
+    fuel_max = 6103
+    max_speed = 2649.996
+    chaff = 120
+    flare = 60
+    charge_total = 240
+    chaff_charge_size = 1
+    flare_charge_size = 2
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 127.5
+
+    class Liveries:
+
+        class USSR(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Georgia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Venezuela(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Australia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Israel(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Sudan(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Norway(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Romania(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Iran(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Ukraine(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Libya(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Belgium(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Slovakia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Greece(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class UK(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Third_Reich(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Hungary(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Abkhazia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Morocco(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class United_Nations_Peacekeepers(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Switzerland(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class SouthOssetia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Vietnam(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class China(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Yemen(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Kuwait(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Serbia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Oman(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class India(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Egypt(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class TheNetherlands(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Poland(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Syria(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Finland(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Kazakhstan(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Denmark(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Sweden(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Croatia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class CzechRepublic(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class GDR(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Yugoslavia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Bulgaria(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class SouthKorea(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Tunisia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Lebanon(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Portugal(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Cuba(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Insurgents(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class SaudiArabia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class France(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class USA(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Honduras(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Qatar(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Russia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class United_Arab_Emirates(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Italian_Social_Republi(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Austria(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Bahrain(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Italy(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Chile(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Turkey(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Philippines(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Algeria(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Pakistan(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Malaysia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Indonesia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Iraq(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Germany(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class South_Africa(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Jordan(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Mexico(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class USAFAggressors(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Brazil(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Spain(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Belarus(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Canada(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class NorthKorea(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Ethiopia(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Japan(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+        class Thailand(Enum):
+            spanish_eurofighter_typhoon_14_06 = "spanish eurofighter typhoon 14-06"
+            spanish_eurofighter_typhoon_14_24 = "spanish eurofighter typhoon 14-24"
+            bundesheer_7lwg = "bundesheer 7lwg"
+            bundeswehr_jg71 = "bundeswehr_jg71"
+            bundeswehr_jg73_steinhoff = "bundeswehr_jg73_steinhoff"
+            bundeswehr_jg74 = "bundeswehr_jg74"
+            bw_30_06 = "bw 30-06"
+            bw_31_14 = "bw 31-14"
+            raf_1435_flt_falklands = "raf 1435 flt falklands"
+            raf_ii_sqn = "raf ii sqn"
+            rsaf_1008 = "rsaf 1008"
+            rsaf_309 = "rsaf 309"
+            rsaf_8011 = "rsaf 8011"
+
+    class Pylon1:
+        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
+        CBU_97 = (1, Weapons.CBU_97)
+        GBU_12 = (1, Weapons.GBU_12)
+        Mk_82 = (1, Weapons.Mk_82)
+        Mk_82AIR = (1, Weapons.Mk_82AIR)
+        Mk_82_SnakeEye = (1, Weapons.Mk_82_SnakeEye)
+        Smokewinder___red = (1, Weapons.Smokewinder___red)
+        Smokewinder___green = (1, Weapons.Smokewinder___green)
+        Smokewinder___blue = (1, Weapons.Smokewinder___blue)
+        Smokewinder___white = (1, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (1, Weapons.Smokewinder___yellow)
+        AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
+
+    class Pylon2:
+        CBU_97 = (2, Weapons.CBU_97)
+        GBU_16 = (2, Weapons.GBU_16)
+        LAU_88_AGM_65K_3 = (2, Weapons.LAU_88_AGM_65K_3)
+        LAU_88_AGM_65D_3 = (2, Weapons.LAU_88_AGM_65D_3)
+        _3_Mk_82 = (2, Weapons._3_Mk_82)
+        GBU_12 = (2, Weapons.GBU_12)
+        GBU_10 = (2, Weapons.GBU_10)
+        GBU_16 = (2, Weapons.GBU_16)
+        Fuel_tank_1150L = (2, Weapons.Fuel_tank_1150L)
+
+    class Pylon3:
+        CBU_97 = (3, Weapons.CBU_97)
+        GBU_16 = (3, Weapons.GBU_16)
+        GBU_12 = (3, Weapons.GBU_12)
+        LAU_88_AGM_65K_3 = (3, Weapons.LAU_88_AGM_65K_3)
+        LAU_88_AGM_65D_3 = (3, Weapons.LAU_88_AGM_65D_3)
+
+    class Pylon4:
+        CBU_97 = (4, Weapons.CBU_97)
+        GBU_16 = (4, Weapons.GBU_16)
+        Mk_84 = (4, Weapons.Mk_84)
+        Mk_20 = (4, Weapons.Mk_20)
+        LAU_88_AGM_65K_3 = (4, Weapons.LAU_88_AGM_65K_3)
+        LAU_88_AGM_65D_3 = (4, Weapons.LAU_88_AGM_65D_3)
+
+    class Pylon5:
+        LAU_117_AGM_65D = (5, Weapons.LAU_117_AGM_65D)
+        L005_Sorbtsiya_ECM_pod__left_ = (5, Weapons.L005_Sorbtsiya_ECM_pod__left_)
+
+    class Pylon6:
+        GBU_16 = (6, Weapons.GBU_16)
+        CBU_97 = (6, Weapons.CBU_97)
+        GBU_16 = (6, Weapons.GBU_16)
+        Smokewinder___red = (6, Weapons.Smokewinder___red)
+        Smokewinder___green = (6, Weapons.Smokewinder___green)
+        Smokewinder___blue = (6, Weapons.Smokewinder___blue)
+        Smokewinder___white = (6, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (6, Weapons.Smokewinder___yellow)
+        L_081_Fantasmagoria_ELINT_pod = (6, Weapons.L_081_Fantasmagoria_ELINT_pod)
+        Fuel_tank_1150L = (6, Weapons.Fuel_tank_1150L)
+
+    class Pylon7:
+        LAU_117_AGM_65D = (7, Weapons.LAU_117_AGM_65D)
+        L005_Sorbtsiya_ECM_pod__left_ = (7, Weapons.L005_Sorbtsiya_ECM_pod__left_)
+
+    class Pylon8:
+        CBU_97 = (8, Weapons.CBU_97)
+        GBU_16 = (8, Weapons.GBU_16)
+        Mk_84 = (8, Weapons.Mk_84)
+        Mk_20 = (8, Weapons.Mk_20)
+        LAU_88_AGM_65K_3 = (8, Weapons.LAU_88_AGM_65K_3)
+        LAU_88_AGM_65D_3 = (8, Weapons.LAU_88_AGM_65D_3)
+
+    class Pylon9:
+        CBU_97 = (9, Weapons.CBU_97)
+        GBU_16 = (9, Weapons.GBU_16)
+        GBU_12 = (9, Weapons.GBU_12)
+        LAU_88_AGM_65K_3 = (9, Weapons.LAU_88_AGM_65K_3)
+        LAU_88_AGM_65D_3 = (9, Weapons.LAU_88_AGM_65D_3)
+
+    class Pylon10:
+        CBU_97 = (10, Weapons.CBU_97)
+        GBU_16 = (10, Weapons.GBU_16)
+        LAU_88_AGM_65K_3 = (10, Weapons.LAU_88_AGM_65K_3)
+        LAU_88_AGM_65D_3 = (10, Weapons.LAU_88_AGM_65D_3)
+        GBU_12 = (10, Weapons.GBU_12)
+        GBU_10 = (10, Weapons.GBU_10)
+        GBU_16 = (10, Weapons.GBU_16)
+        _3_Mk_82 = (10, Weapons._3_Mk_82)
+        Fuel_tank_1150L = (10, Weapons.Fuel_tank_1150L)
+
+    class Pylon11:
+        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (11, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
+        CBU_97 = (11, Weapons.CBU_97)
+        GBU_12 = (11, Weapons.GBU_12)
+        Mk_82 = (11, Weapons.Mk_82)
+        Mk_82AIR = (11, Weapons.Mk_82AIR)
+        Mk_82_SnakeEye = (11, Weapons.Mk_82_SnakeEye)
+        Smokewinder___red = (11, Weapons.Smokewinder___red)
+        Smokewinder___green = (11, Weapons.Smokewinder___green)
+        Smokewinder___blue = (11, Weapons.Smokewinder___blue)
+        Smokewinder___white = (11, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (11, Weapons.Smokewinder___yellow)
+        AN_ASQ_T50_TCTS_Pod = (11, Weapons.AN_ASQ_T50_TCTS_Pod)
+
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+
+    tasks = [task.Reconnaissance, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.PinpointStrike]
+    task_default = task.GroundAttack
+
+
+class RST_Tornado_SEAD(PlaneType):
+    id = "RST_Tornado_SEAD"
+    flyable = True
+    height = 5.63
+    width = 13.05
+    length = 19.43
+    fuel_max = 6103
+    max_speed = 2649.996
+    chaff = 90
+    flare = 45
+    charge_total = 180
+    chaff_charge_size = 1
+    flare_charge_size = 2
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 127.5
+
+    class Liveries:
+
+        class USSR(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Georgia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Venezuela(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Australia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Israel(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Sudan(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Norway(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Romania(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Iran(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Ukraine(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Libya(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Belgium(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Slovakia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Greece(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class UK(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Third_Reich(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Hungary(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Abkhazia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Morocco(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class United_Nations_Peacekeepers(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Switzerland(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class SouthOssetia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Vietnam(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class China(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Yemen(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Kuwait(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Serbia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Oman(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class India(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Egypt(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class TheNetherlands(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Poland(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Syria(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Finland(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Kazakhstan(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Denmark(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Sweden(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Croatia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class CzechRepublic(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class GDR(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Yugoslavia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Bulgaria(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class SouthKorea(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Tunisia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Lebanon(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Portugal(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Cuba(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Insurgents(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class SaudiArabia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class France(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class USA(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Honduras(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Qatar(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Russia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class United_Arab_Emirates(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Italian_Social_Republi(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Austria(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Bahrain(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Italy(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Chile(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Turkey(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Philippines(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Algeria(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Pakistan(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Malaysia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Indonesia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Iraq(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Germany(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class South_Africa(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Jordan(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Mexico(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class USAFAggressors(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Brazil(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Spain(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Belarus(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Canada(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class NorthKorea(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Ethiopia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Japan(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Thailand(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+    class Pylon1:
+        Smokewinder___red = (1, Weapons.Smokewinder___red)
+        Smokewinder___green = (1, Weapons.Smokewinder___green)
+        Smokewinder___blue = (1, Weapons.Smokewinder___blue)
+        Smokewinder___white = (1, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (1, Weapons.Smokewinder___yellow)
+        AGM_88C_ = (1, Weapons.AGM_88C_)
+        ALARM = (1, Weapons.ALARM)
+        LAU_117_AGM_65K = (1, Weapons.LAU_117_AGM_65K)
+        LAU_117_AGM_65D = (1, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65E = (1, Weapons.LAU_117_AGM_65E)
+
+    class Pylon2:
+        TORNADO_Fuel_tank = (2, Weapons.TORNADO_Fuel_tank)
+        AGM_88C_ = (2, Weapons.AGM_88C_)
+        ALARM = (2, Weapons.ALARM)
+        LAU_117_AGM_65K = (2, Weapons.LAU_117_AGM_65K)
+        LAU_117_AGM_65D = (2, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65E = (2, Weapons.LAU_117_AGM_65E)
+
+    class Pylon3:
+        AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9X_Sidewinder_IR_AAM = (3, Weapons.AIM_9X_Sidewinder_IR_AAM)
+
+    class Pylon4:
+        LAU_117_AGM_65K = (4, Weapons.LAU_117_AGM_65K)
+        LAU_117_AGM_65D = (4, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65E = (4, Weapons.LAU_117_AGM_65E)
+
+    class Pylon5:
+        ALARM = (5, Weapons.ALARM)
+        BOZ_107 = (5, Weapons.BOZ_107)
+        Sky_Shadow_ECM_Pod = (5, Weapons.Sky_Shadow_ECM_Pod)
+
+    class Pylon6:
+        LAU_117_AGM_65K = (6, Weapons.LAU_117_AGM_65K)
+        LAU_117_AGM_65D = (6, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65E = (6, Weapons.LAU_117_AGM_65E)
+
+    class Pylon7:
+        ALARM = (7, Weapons.ALARM)
+        BOZ_107 = (7, Weapons.BOZ_107)
+        Sky_Shadow_ECM_Pod = (7, Weapons.Sky_Shadow_ECM_Pod)
+
+    class Pylon8:
+        LAU_117_AGM_65K = (8, Weapons.LAU_117_AGM_65K)
+        LAU_117_AGM_65D = (8, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65E = (8, Weapons.LAU_117_AGM_65E)
+        L_081_Fantasmagoria_ELINT_pod = (8, Weapons.L_081_Fantasmagoria_ELINT_pod)
+
+    class Pylon9:
+        AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9X_Sidewinder_IR_AAM = (9, Weapons.AIM_9X_Sidewinder_IR_AAM)
+
+    class Pylon10:
+        TORNADO_Fuel_tank = (10, Weapons.TORNADO_Fuel_tank)
+        AGM_88C_ = (10, Weapons.AGM_88C_)
+        ALARM = (10, Weapons.ALARM)
+        LAU_117_AGM_65K = (10, Weapons.LAU_117_AGM_65K)
+        LAU_117_AGM_65D = (10, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65E = (10, Weapons.LAU_117_AGM_65E)
+
+    class Pylon11:
+        AGM_88C_ = (11, Weapons.AGM_88C_)
+        ALARM = (11, Weapons.ALARM)
+        LAU_117_AGM_65K = (11, Weapons.LAU_117_AGM_65K)
+        LAU_117_AGM_65D = (11, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65E = (11, Weapons.LAU_117_AGM_65E)
+
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+
+    tasks = [task.Reconnaissance, task.GroundAttack, task.AFAC, task.SEAD]
+    task_default = task.SEAD
+
+
+class RST_Tornado_AG(PlaneType):
+    id = "RST_Tornado_AG"
+    flyable = True
+    height = 5.63
+    width = 13.05
+    length = 19.43
+    fuel_max = 6103
+    max_speed = 2649.996
+    chaff = 90
+    flare = 45
+    charge_total = 180
+    chaff_charge_size = 1
+    flare_charge_size = 2
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 127.5
+
+    class Liveries:
+
+        class USSR(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Georgia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Venezuela(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Australia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Israel(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Sudan(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Norway(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Romania(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Iran(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Ukraine(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Libya(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Belgium(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Slovakia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Greece(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class UK(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Third_Reich(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Hungary(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Abkhazia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Morocco(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class United_Nations_Peacekeepers(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Switzerland(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class SouthOssetia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Vietnam(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class China(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Yemen(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Kuwait(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Serbia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Oman(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class India(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Egypt(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class TheNetherlands(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Poland(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Syria(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Finland(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Kazakhstan(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Denmark(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Sweden(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Croatia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class CzechRepublic(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class GDR(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Yugoslavia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Bulgaria(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class SouthKorea(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Tunisia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Lebanon(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Portugal(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Cuba(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Insurgents(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class SaudiArabia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class France(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class USA(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Honduras(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Qatar(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Russia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class United_Arab_Emirates(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Italian_Social_Republi(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Austria(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Bahrain(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Italy(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Chile(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Turkey(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Philippines(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Algeria(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Pakistan(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Malaysia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Indonesia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Iraq(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Germany(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class South_Africa(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Jordan(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Mexico(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class USAFAggressors(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Brazil(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Spain(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Belarus(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Canada(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class NorthKorea(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Ethiopia(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Japan(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+        class Thailand(Enum):
+            ita_tornado__sesto_stormo_diavoli_rossi = "ita tornado (sesto stormo diavoli rossi)"
+            ita_tornado_black = "ita tornado black"
+            ita_tornado_mm55004 = "ita tornado mm55004"
+            ita_tornado_mm7042 = "ita tornado mm7042"
+
+    class Pylon1:
+        Smokewinder___red = (1, Weapons.Smokewinder___red)
+        Smokewinder___green = (1, Weapons.Smokewinder___green)
+        Smokewinder___blue = (1, Weapons.Smokewinder___blue)
+        Smokewinder___white = (1, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (1, Weapons.Smokewinder___yellow)
+        Mk_82 = (1, Weapons.Mk_82)
+        Mk_83 = (1, Weapons.Mk_83)
+        Mk_84 = (1, Weapons.Mk_84)
+        Mk_20 = (1, Weapons.Mk_20)
+        GBU_12 = (1, Weapons.GBU_12)
+        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
+
+    class Pylon2:
+        TORNADO_Fuel_tank = (2, Weapons.TORNADO_Fuel_tank)
+        Mk_82 = (2, Weapons.Mk_82)
+        Mk_83 = (2, Weapons.Mk_83)
+        Mk_84 = (2, Weapons.Mk_84)
+        Mk_20 = (2, Weapons.Mk_20)
+        MER_2_MK_82 = (2, Weapons.MER_2_MK_82)
+        MER_2_MK_83 = (2, Weapons.MER_2_MK_83)
+        _2_Mk_20_Rockeye = (2, Weapons._2_Mk_20_Rockeye)
+        CBU_97 = (2, Weapons.CBU_97)
+        CBU_87 = (2, Weapons.CBU_87)
+        GBU_16 = (2, Weapons.GBU_16)
+        GBU_24 = (2, Weapons.GBU_24)
+        GBU_10 = (2, Weapons.GBU_10)
+        GBU_12 = (2, Weapons.GBU_12)
+
+    class Pylon3:
+        AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9X_Sidewinder_IR_AAM = (3, Weapons.AIM_9X_Sidewinder_IR_AAM)
+
+    class Pylon4:
+        LAU_117_AGM_65K = (4, Weapons.LAU_117_AGM_65K)
+        LAU_117_AGM_65D = (4, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65E = (4, Weapons.LAU_117_AGM_65E)
+        GBU_10 = (4, Weapons.GBU_10)
+        Mk_82 = (4, Weapons.Mk_82)
+        Mk_83 = (4, Weapons.Mk_83)
+        Mk_84 = (4, Weapons.Mk_84)
+        Mk_20 = (4, Weapons.Mk_20)
+
+    class Pylon5:
+        LAU_117_AGM_65K = (5, Weapons.LAU_117_AGM_65K)
+        LAU_117_AGM_65D = (5, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65E = (5, Weapons.LAU_117_AGM_65E)
+        GBU_10 = (5, Weapons.GBU_10)
+        Mk_82 = (5, Weapons.Mk_82)
+        Mk_83 = (5, Weapons.Mk_83)
+        Mk_84 = (5, Weapons.Mk_84)
+        Mk_20 = (5, Weapons.Mk_20)
+        BOZ_107 = (5, Weapons.BOZ_107)
+        Sky_Shadow_ECM_Pod = (5, Weapons.Sky_Shadow_ECM_Pod)
+
+    class Pylon6:
+        LAU_117_AGM_65K = (6, Weapons.LAU_117_AGM_65K)
+        LAU_117_AGM_65D = (6, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65E = (6, Weapons.LAU_117_AGM_65E)
+        GBU_10 = (6, Weapons.GBU_10)
+        Mk_82 = (6, Weapons.Mk_82)
+        Mk_83 = (6, Weapons.Mk_83)
+        Mk_84 = (6, Weapons.Mk_84)
+        Mk_20 = (6, Weapons.Mk_20)
+
+    class Pylon7:
+        LAU_117_AGM_65K = (7, Weapons.LAU_117_AGM_65K)
+        LAU_117_AGM_65D = (7, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65E = (7, Weapons.LAU_117_AGM_65E)
+        GBU_10 = (7, Weapons.GBU_10)
+        Mk_82 = (7, Weapons.Mk_82)
+        Mk_83 = (7, Weapons.Mk_83)
+        Mk_84 = (7, Weapons.Mk_84)
+        Mk_20 = (7, Weapons.Mk_20)
+        BOZ_107 = (7, Weapons.BOZ_107)
+        Sky_Shadow_ECM_Pod = (7, Weapons.Sky_Shadow_ECM_Pod)
+
+    class Pylon8:
+        LAU_117_AGM_65K = (8, Weapons.LAU_117_AGM_65K)
+        LAU_117_AGM_65D = (8, Weapons.LAU_117_AGM_65D)
+        LAU_117_AGM_65E = (8, Weapons.LAU_117_AGM_65E)
+        Mk_82 = (8, Weapons.Mk_82)
+        Mk_83 = (8, Weapons.Mk_83)
+        Mk_84 = (8, Weapons.Mk_84)
+        Mk_20 = (8, Weapons.Mk_20)
+        L_081_Fantasmagoria_ELINT_pod = (8, Weapons.L_081_Fantasmagoria_ELINT_pod)
+
+    class Pylon9:
+        AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9X_Sidewinder_IR_AAM = (9, Weapons.AIM_9X_Sidewinder_IR_AAM)
+
+    class Pylon10:
+        TORNADO_Fuel_tank = (10, Weapons.TORNADO_Fuel_tank)
+        Mk_82 = (10, Weapons.Mk_82)
+        Mk_83 = (10, Weapons.Mk_83)
+        Mk_84 = (10, Weapons.Mk_84)
+        Mk_20 = (10, Weapons.Mk_20)
+        MER_2_MK_82 = (10, Weapons.MER_2_MK_82)
+        MER_2_MK_83 = (10, Weapons.MER_2_MK_83)
+        _2_Mk_20_Rockeye = (10, Weapons._2_Mk_20_Rockeye)
+        CBU_97 = (10, Weapons.CBU_97)
+        CBU_87 = (10, Weapons.CBU_87)
+        GBU_16 = (10, Weapons.GBU_16)
+        GBU_24 = (10, Weapons.GBU_24)
+        GBU_10 = (10, Weapons.GBU_10)
+        GBU_12 = (10, Weapons.GBU_12)
+
+    class Pylon11:
+        Smokewinder___red = (11, Weapons.Smokewinder___red)
+        Smokewinder___green = (11, Weapons.Smokewinder___green)
+        Smokewinder___blue = (11, Weapons.Smokewinder___blue)
+        Smokewinder___white = (11, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (11, Weapons.Smokewinder___yellow)
+        Mk_82 = (11, Weapons.Mk_82)
+        Mk_83 = (11, Weapons.Mk_83)
+        Mk_84 = (11, Weapons.Mk_84)
+        Mk_20 = (11, Weapons.Mk_20)
+        GBU_12 = (11, Weapons.GBU_12)
+        LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (11, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
+
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+
+    tasks = [task.Reconnaissance, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.PinpointStrike]
+    task_default = task.GroundAttack
+
+
+class Su_57(PlaneType):
+    id = "Su-57"
+    flyable = True
+    height = 4.074
+    width = 13.95
+    length = 19.008
+    fuel_max = 10300
+    max_speed = 2499.984
+    chaff = 100
+    flare = 96
+    charge_total = 200
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+
+    class Liveries:
+
+        class USSR(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Georgia(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Venezuela(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Australia(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Israel(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Sudan(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Norway(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Romania(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Iran(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Ukraine(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Libya(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Belgium(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Slovakia(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Greece(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class UK(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Third_Reich(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Hungary(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Abkhazia(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Morocco(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class United_Nations_Peacekeepers(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Switzerland(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class SouthOssetia(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Vietnam(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class China(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Yemen(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Kuwait(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Serbia(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Oman(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class India(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Egypt(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class TheNetherlands(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Poland(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Syria(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Finland(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Kazakhstan(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Denmark(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Sweden(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Croatia(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class CzechRepublic(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class GDR(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Yugoslavia(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Bulgaria(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class SouthKorea(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Tunisia(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Lebanon(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Portugal(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Cuba(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Insurgents(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class SaudiArabia(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class France(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class USA(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Honduras(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Qatar(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Russia(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class United_Arab_Emirates(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Italian_Social_Republi(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Austria(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Bahrain(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Italy(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Chile(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Turkey(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Philippines(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Algeria(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Pakistan(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Malaysia(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Indonesia(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Iraq(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Germany(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class South_Africa(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Jordan(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Mexico(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class USAFAggressors(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Brazil(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Spain(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Belarus(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Canada(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class NorthKorea(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Ethiopia(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Japan(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+        class Thailand(Enum):
+            _22 = "22"
+            _20 = "20"
+            _24 = "24"
+            _23 = "23"
+            _25 = "25"
+            _26 = "26"
+            _21 = "21"
+            _13 = "13"
+            _3 = "3"
+            _14 = "14"
+            _10 = "10"
+            _11 = "11"
+            _6 = "6"
+            _12 = "12"
+            _8 = "8"
+            _15 = "15"
+
+    class Pylon1:
+        R_73 = (1, Weapons.R_73)
+        RVV_AE = (1, Weapons.RVV_AE)
+        RVV_M = (1, Weapons.RVV_M)
+        Smoke_Generator___red = (1, Weapons.Smoke_Generator___red)
+        Smoke_Generator___green = (1, Weapons.Smoke_Generator___green)
+        Smoke_Generator___blue = (1, Weapons.Smoke_Generator___blue)
+        Smoke_Generator___white = (1, Weapons.Smoke_Generator___white)
+        Smoke_Generator___yellow = (1, Weapons.Smoke_Generator___yellow)
+        Smoke_Generator___orange = (1, Weapons.Smoke_Generator___orange)
+
+    class Pylon2:
+        R_27R = (2, Weapons.R_27R)
+        R_27ER = (2, Weapons.R_27ER)
+        R_27T = (2, Weapons.R_27T)
+        R_27ET = (2, Weapons.R_27ET)
+        R_77 = (2, Weapons.R_77)
+        R_73 = (2, Weapons.R_73)
+        Kh_31P = (2, Weapons.Kh_31P)
+        Kh_31A = (2, Weapons.Kh_31A)
+        Kh_29L = (2, Weapons.Kh_29L)
+        Kh_29T = (2, Weapons.Kh_29T)
+        Kh_59M = (2, Weapons.Kh_59M)
+        MER_6_FAB_100 = (2, Weapons.MER_6_FAB_100)
+        B_8M1___20_S_8KOM = (2, Weapons.B_8M1___20_S_8KOM)
+        B_13L___5_S_13_OF = (2, Weapons.B_13L___5_S_13_OF)
+        S_25_OFM = (2, Weapons.S_25_OFM)
+        BetAB_500 = (2, Weapons.BetAB_500)
+        KMGU_2___96_AO_2_5RT = (2, Weapons.KMGU_2___96_AO_2_5RT)
+        KMGU_2___96_PTAB_2_5KO = (2, Weapons.KMGU_2___96_PTAB_2_5KO)
+        FAB_250 = (2, Weapons.FAB_250)
+        RBK_250_PTAB_2_5M = (2, Weapons.RBK_250_PTAB_2_5M)
+        FAB_500_M62 = (2, Weapons.FAB_500_M62)
+        RBK_500_255_PTAB_10_5 = (2, Weapons.RBK_500_255_PTAB_10_5)
+        KAB_500L = (2, Weapons.KAB_500L)
+        KAB_500kr = (2, Weapons.KAB_500kr)
+        FAB_1500_M54 = (2, Weapons.FAB_1500_M54)
+        KAB_1500L = (2, Weapons.KAB_1500L)
+        MER_6_FAB_250 = (2, Weapons.MER_6_FAB_250)
+        RVV_BD = (2, Weapons.RVV_BD)
+        RVV_AE = (2, Weapons.RVV_AE)
+        RVV_M = (2, Weapons.RVV_M)
+        RVV_L = (2, Weapons.RVV_L)
+        Fuel_tank_800L_Wing = (2, Weapons.Fuel_tank_800L_Wing)
+        RN_28 = (2, Weapons.RN_28)
+        Su_57_Fuel_Tank = (2, Weapons.Su_57_Fuel_Tank)
+        Kh_59MK2 = (2, Weapons.Kh_59MK2)
+        Smoke_Generator___red = (2, Weapons.Smoke_Generator___red)
+        Smoke_Generator___green = (2, Weapons.Smoke_Generator___green)
+        Smoke_Generator___blue = (2, Weapons.Smoke_Generator___blue)
+        Smoke_Generator___white = (2, Weapons.Smoke_Generator___white)
+        Smoke_Generator___yellow = (2, Weapons.Smoke_Generator___yellow)
+        Smoke_Generator___orange = (2, Weapons.Smoke_Generator___orange)
+
+    class Pylon3:
+        R_73 = (3, Weapons.R_73)
+        Smoke_Generator___red = (3, Weapons.Smoke_Generator___red)
+        Smoke_Generator___green = (3, Weapons.Smoke_Generator___green)
+        Smoke_Generator___blue = (3, Weapons.Smoke_Generator___blue)
+        Smoke_Generator___white = (3, Weapons.Smoke_Generator___white)
+        Smoke_Generator___yellow = (3, Weapons.Smoke_Generator___yellow)
+        Smoke_Generator___orange = (3, Weapons.Smoke_Generator___orange)
+
+    class Pylon4:
+        R_27R = (4, Weapons.R_27R)
+        R_27ER = (4, Weapons.R_27ER)
+        R_27T = (4, Weapons.R_27T)
+        R_27ET = (4, Weapons.R_27ET)
+        R_77 = (4, Weapons.R_77)
+        R_73 = (4, Weapons.R_73)
+        Kh_31P = (4, Weapons.Kh_31P)
+        Kh_31A = (4, Weapons.Kh_31A)
+        Kh_29L = (4, Weapons.Kh_29L)
+        Kh_29T = (4, Weapons.Kh_29T)
+        Kh_59M = (4, Weapons.Kh_59M)
+        MER_6_FAB_100 = (4, Weapons.MER_6_FAB_100)
+        B_8M1___20_S_8KOM = (4, Weapons.B_8M1___20_S_8KOM)
+        B_13L___5_S_13_OF = (4, Weapons.B_13L___5_S_13_OF)
+        S_25_OFM = (4, Weapons.S_25_OFM)
+        BetAB_500 = (4, Weapons.BetAB_500)
+        KMGU_2___96_AO_2_5RT = (4, Weapons.KMGU_2___96_AO_2_5RT)
+        KMGU_2___96_PTAB_2_5KO = (4, Weapons.KMGU_2___96_PTAB_2_5KO)
+        FAB_250 = (4, Weapons.FAB_250)
+        RBK_250_PTAB_2_5M = (4, Weapons.RBK_250_PTAB_2_5M)
+        FAB_500_M62 = (4, Weapons.FAB_500_M62)
+        RBK_500_255_PTAB_10_5 = (4, Weapons.RBK_500_255_PTAB_10_5)
+        KAB_500L = (4, Weapons.KAB_500L)
+        KAB_500kr = (4, Weapons.KAB_500kr)
+        FAB_1500_M54 = (4, Weapons.FAB_1500_M54)
+        KAB_1500L = (4, Weapons.KAB_1500L)
+        MER_6_FAB_250 = (4, Weapons.MER_6_FAB_250)
+        RVV_BD = (4, Weapons.RVV_BD)
+        RVV_AE = (4, Weapons.RVV_AE)
+        RVV_M = (4, Weapons.RVV_M)
+        RVV_L = (4, Weapons.RVV_L)
+        RN_28 = (4, Weapons.RN_28)
+        Su_57_Fuel_Tank = (4, Weapons.Su_57_Fuel_Tank)
+        Kh_59MK2 = (4, Weapons.Kh_59MK2)
+
+    class Pylon5:
+        R_77 = (5, Weapons.R_77)
+        RVV_AE = (5, Weapons.RVV_AE)
+        RVV_M = (5, Weapons.RVV_M)
+        Kh_59MK2 = (5, Weapons.Kh_59MK2)
+
+    class Pylon6:
+        R_77 = (6, Weapons.R_77)
+        RVV_AE = (6, Weapons.RVV_AE)
+        RVV_M = (6, Weapons.RVV_M)
+        Kh_59MK2 = (6, Weapons.Kh_59MK2)
+
+    class Pylon7:
+        R_77 = (7, Weapons.R_77)
+        RVV_AE = (7, Weapons.RVV_AE)
+        RVV_M = (7, Weapons.RVV_M)
+        Kh_59MK2 = (7, Weapons.Kh_59MK2)
+
+    class Pylon8:
+        R_77 = (8, Weapons.R_77)
+        RVV_AE = (8, Weapons.RVV_AE)
+        RVV_M = (8, Weapons.RVV_M)
+        Kh_59MK2 = (8, Weapons.Kh_59MK2)
+
+    class Pylon9:
+        R_27R = (9, Weapons.R_27R)
+        R_27ER = (9, Weapons.R_27ER)
+        R_27T = (9, Weapons.R_27T)
+        R_27ET = (9, Weapons.R_27ET)
+        R_77 = (9, Weapons.R_77)
+        R_73 = (9, Weapons.R_73)
+        Kh_31P = (9, Weapons.Kh_31P)
+        Kh_31A = (9, Weapons.Kh_31A)
+        Kh_29L = (9, Weapons.Kh_29L)
+        Kh_29T = (9, Weapons.Kh_29T)
+        Kh_59M = (9, Weapons.Kh_59M)
+        MER_6_FAB_100 = (9, Weapons.MER_6_FAB_100)
+        B_8M1___20_S_8KOM = (9, Weapons.B_8M1___20_S_8KOM)
+        B_13L___5_S_13_OF = (9, Weapons.B_13L___5_S_13_OF)
+        S_25_OFM = (9, Weapons.S_25_OFM)
+        BetAB_500 = (9, Weapons.BetAB_500)
+        KMGU_2___96_AO_2_5RT = (9, Weapons.KMGU_2___96_AO_2_5RT)
+        KMGU_2___96_PTAB_2_5KO = (9, Weapons.KMGU_2___96_PTAB_2_5KO)
+        FAB_250 = (9, Weapons.FAB_250)
+        RBK_250_PTAB_2_5M = (9, Weapons.RBK_250_PTAB_2_5M)
+        FAB_500_M62 = (9, Weapons.FAB_500_M62)
+        RBK_500_255_PTAB_10_5 = (9, Weapons.RBK_500_255_PTAB_10_5)
+        KAB_500L = (9, Weapons.KAB_500L)
+        KAB_500kr = (9, Weapons.KAB_500kr)
+        FAB_1500_M54 = (9, Weapons.FAB_1500_M54)
+        KAB_1500L = (9, Weapons.KAB_1500L)
+        MER_6_FAB_250 = (9, Weapons.MER_6_FAB_250)
+        RVV_BD = (9, Weapons.RVV_BD)
+        RVV_AE = (9, Weapons.RVV_AE)
+        RVV_M = (9, Weapons.RVV_M)
+        RVV_L = (9, Weapons.RVV_L)
+        RN_28 = (9, Weapons.RN_28)
+        Su_57_Fuel_Tank = (9, Weapons.Su_57_Fuel_Tank)
+        Kh_59MK2 = (9, Weapons.Kh_59MK2)
+
+    class Pylon10:
+        R_73 = (10, Weapons.R_73)
+        Smoke_Generator___red = (10, Weapons.Smoke_Generator___red)
+        Smoke_Generator___green = (10, Weapons.Smoke_Generator___green)
+        Smoke_Generator___blue = (10, Weapons.Smoke_Generator___blue)
+        Smoke_Generator___white = (10, Weapons.Smoke_Generator___white)
+        Smoke_Generator___yellow = (10, Weapons.Smoke_Generator___yellow)
+        Smoke_Generator___orange = (10, Weapons.Smoke_Generator___orange)
+
+    class Pylon11:
+        R_27R = (11, Weapons.R_27R)
+        R_27ER = (11, Weapons.R_27ER)
+        R_27T = (11, Weapons.R_27T)
+        R_27ET = (11, Weapons.R_27ET)
+        R_77 = (11, Weapons.R_77)
+        R_73 = (11, Weapons.R_73)
+        Kh_31P = (11, Weapons.Kh_31P)
+        Kh_31A = (11, Weapons.Kh_31A)
+        Kh_29L = (11, Weapons.Kh_29L)
+        Kh_29T = (11, Weapons.Kh_29T)
+        Kh_59M = (11, Weapons.Kh_59M)
+        MER_6_FAB_100 = (11, Weapons.MER_6_FAB_100)
+        B_8M1___20_S_8KOM = (11, Weapons.B_8M1___20_S_8KOM)
+        B_13L___5_S_13_OF = (11, Weapons.B_13L___5_S_13_OF)
+        S_25_OFM = (11, Weapons.S_25_OFM)
+        BetAB_500 = (11, Weapons.BetAB_500)
+        KMGU_2___96_AO_2_5RT = (11, Weapons.KMGU_2___96_AO_2_5RT)
+        KMGU_2___96_PTAB_2_5KO = (11, Weapons.KMGU_2___96_PTAB_2_5KO)
+        FAB_250 = (11, Weapons.FAB_250)
+        RBK_250_PTAB_2_5M = (11, Weapons.RBK_250_PTAB_2_5M)
+        FAB_500_M62 = (11, Weapons.FAB_500_M62)
+        RBK_500_255_PTAB_10_5 = (11, Weapons.RBK_500_255_PTAB_10_5)
+        KAB_500L = (11, Weapons.KAB_500L)
+        KAB_500kr = (11, Weapons.KAB_500kr)
+        FAB_1500_M54 = (11, Weapons.FAB_1500_M54)
+        KAB_1500L = (11, Weapons.KAB_1500L)
+        MER_6_FAB_250 = (11, Weapons.MER_6_FAB_250)
+#ERRR {R-33}
+        RVV_BD = (11, Weapons.RVV_BD)
+        RVV_AE = (11, Weapons.RVV_AE)
+        RVV_M = (11, Weapons.RVV_M)
+        RVV_L = (11, Weapons.RVV_L)
+        Fuel_tank_800L_Wing = (11, Weapons.Fuel_tank_800L_Wing)
+        Su_57_Fuel_Tank = (11, Weapons.Su_57_Fuel_Tank)
+        RN_28 = (11, Weapons.RN_28)
+        Smoke_Generator___red = (11, Weapons.Smoke_Generator___red)
+        Smoke_Generator___green = (11, Weapons.Smoke_Generator___green)
+        Smoke_Generator___blue = (11, Weapons.Smoke_Generator___blue)
+        Smoke_Generator___white = (11, Weapons.Smoke_Generator___white)
+        Smoke_Generator___yellow = (11, Weapons.Smoke_Generator___yellow)
+        Smoke_Generator___orange = (11, Weapons.Smoke_Generator___orange)
+        Kh_59MK2 = (11, Weapons.Kh_59MK2)
+
+    class Pylon12:
+        R_73 = (12, Weapons.R_73)
+        RVV_AE = (12, Weapons.RVV_AE)
+        RVV_M = (12, Weapons.RVV_M)
+        Smoke_Generator___red = (12, Weapons.Smoke_Generator___red)
+        Smoke_Generator___green = (12, Weapons.Smoke_Generator___green)
+        Smoke_Generator___blue = (12, Weapons.Smoke_Generator___blue)
+        Smoke_Generator___white = (12, Weapons.Smoke_Generator___white)
+        Smoke_Generator___yellow = (12, Weapons.Smoke_Generator___yellow)
+        Smoke_Generator___orange = (12, Weapons.Smoke_Generator___orange)
+
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+
+    tasks = [task.CAP, task.Intercept, task.Escort, task.FighterSweep, task.AFAC, task.GroundAttack, task.RunwayAttack, task.AntishipStrike, task.CAS]
+    task_default = task.CAP
+
+
 plane_map = {
     "Tornado GR4": Tornado_GR4,
     "Tornado IDS": Tornado_IDS,
@@ -28995,4 +36682,11 @@ plane_map = {
     "A-20G": A_20G,
     "Ju-88A4": Ju_88A4,
     "TF-51D": TF_51D,
+    "A-4E-C": A_4E_C,
+    "MiG-23UB": MiG_23UB,
+    "RST_Eurofighter": RST_Eurofighter,
+    "RST_Eurofighter_AG": RST_Eurofighter_AG,
+    "RST_Tornado_SEAD": RST_Tornado_SEAD,
+    "RST_Tornado_AG": RST_Tornado_AG,
+    "Su-57": Su_57,
 }

@@ -332,6 +332,60 @@ class Schnellboot_type_S130(unittype.ShipType):
     threat_range = 7000
     air_weapon_dist = 7000
 
+
+class HMS_Hermes_1973(unittype.ShipType):
+    id = "HERMES73"
+    name = "HMS Hermes 1973"
+    plane_num = 15
+    helicopter_num = 12
+    parking = 2
+    detection_range = 18000
+    threat_range = 5000
+    air_weapon_dist = 5000
+
+
+class HMS_Hermes_1981(unittype.ShipType):
+    id = "HERMES81"
+    name = "HMS Hermes 1981"
+    plane_num = 15
+    helicopter_num = 12
+    parking = 4
+    detection_range = 1800
+    threat_range = 10000
+    air_weapon_dist = 10000
+
+
+class Sandown_Class_Mine_hunter(unittype.ShipType):
+    id = "Sandown"
+    name = "Sandown Class Mine hunter"
+    detection_range = 14000
+    threat_range = 5000
+    air_weapon_dist = 5000
+
+
+class Armed_vessel_2_guns(unittype.ShipType):
+    id = "OPV_02"
+    name = "Armed vessel 2 guns"
+    detection_range = 7000
+    threat_range = 5000
+    air_weapon_dist = 5000
+
+
+class Armed_vessel_4_guns(unittype.ShipType):
+    id = "OPV_03"
+    name = "Armed vessel 4 guns"
+    detection_range = 7000
+    threat_range = 5000
+    air_weapon_dist = 5000
+
+
+class Armed_vessel_seacats(unittype.ShipType):
+    id = "OPV_01"
+    name = "Armed vessel seacats"
+    detection_range = 7000
+    threat_range = 5000
+    air_weapon_dist = 5000
+
 ship_map = {
     "speedboat": Armed_speedboat,
     "VINSON": CVN_70_Carl_Vinson,
@@ -368,4 +422,10 @@ ship_map = {
     "Higgins_boat": LCVP__Higgins_boat,
     "Uboat_VIIC": Uboat_VIIC_U_flak,
     "Schnellboot_type_S130": Schnellboot_type_S130,
+    "HERMES73": HMS_Hermes_1973,
+    "HERMES81": HMS_Hermes_1981,
+    "Sandown": Sandown_Class_Mine_hunter,
+    "OPV_02": Armed_vessel_2_guns,
+    "OPV_03": Armed_vessel_4_guns,
+    "OPV_01": Armed_vessel_seacats,
 }
