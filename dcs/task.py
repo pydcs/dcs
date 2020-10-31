@@ -13,7 +13,10 @@ from dcs.mapping import Point
 from dcs.unit import Unit
 
 
-def _create_from_dict(d) -> 'Task':
+TaskDict = Dict[str, Any]
+
+
+def _create_from_dict(d: TaskDict) -> 'Task':
     _id = d["id"]
     if _id == "WrappedAction":
         actionid = d["params"]["action"]["id"]
@@ -51,16 +54,16 @@ class Task:
         self.number: int = 1
         self.enabled: bool = True
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return str(self.dict())
 
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d: TaskDict) -> "Task":
         t = cls()
         t.params = d["params"]
         return t
 
-    def dict(self):
+    def dict(self) -> TaskDict:
         return {
             "id": self.id,
             "auto": self.auto,
@@ -80,7 +83,7 @@ class ControlledTask(Task):
     """
     Id = "ControlledTask"
 
-    def __init__(self, task: Task=None):
+    def __init__(self, task: Optional[Task] = None):
         super(ControlledTask, self).__init__(self.Id)
         if task:
             self.params["task"] = task.dict()
@@ -187,7 +190,7 @@ class WeaponType(Enum):
 class TargetType(type):
     id = None
 
-    def __str__(self):
+    def __str__(self) -> str:
         return '"{id}"'.format(id=self.id)
 
 
@@ -339,7 +342,7 @@ class AntishipStrikeTaskAction(Task):
             "priority": 0
         }
 
-    def dict(self):
+    def dict(self) -> TaskDict:
         d = super(AntishipStrikeTaskAction, self).dict()
         d["key"] = AntishipStrikeTaskAction.Key
         return d
@@ -360,7 +363,7 @@ class CASTaskAction(Task):
             "priority": 0
         }
 
-    def dict(self):
+    def dict(self) -> TaskDict:
         d = super(CASTaskAction, self).dict()
         d["key"] = CASTaskAction.Key
         return d
@@ -377,7 +380,7 @@ class SEADTaskAction(Task):
             "priority": 0
         }
 
-    def dict(self):
+    def dict(self) -> TaskDict:
         d = super(SEADTaskAction, self).dict()
         d["key"] = SEADTaskAction.Key
         return d
@@ -394,7 +397,7 @@ class CAPTaskAction(Task):
             "priority": 0
         }
 
-    def dict(self):
+    def dict(self) -> TaskDict:
         d = super(CAPTaskAction, self).dict()
         d["key"] = CAPTaskAction.Key
         return d
@@ -411,7 +414,7 @@ class FighterSweepTaskAction(Task):
             "priority": 0
         }
 
-    def dict(self):
+    def dict(self) -> TaskDict:
         d = super(FighterSweepTaskAction, self).dict()
         d["key"] = FighterSweepTaskAction.Key
         return d
@@ -419,7 +422,7 @@ class FighterSweepTaskAction(Task):
 
 class EmptyTaskAction(Task):
     @classmethod
-    def create_from_dict(cls, d):
+    def create_from_dict(cls, d: TaskDict) -> "EmptyTaskAction":
         t = cls(d["id"])
         t.params = d["params"]
         return t
@@ -439,11 +442,11 @@ class EscortTaskAction(Task):
     Id = "Escort"
 
     def __init__(self,
-                 group_id=None,
-                 engagement_max_dist=60000,
-                 lastwpt=None,
-                 targets: List[str]=None,
-                 position: Dict[str, float]=None):
+                 group_id: Optional[int] = None,
+                 engagement_max_dist: int = 60000,
+                 lastwpt: Optional[int] = None,
+                 targets: Optional[List[str]] = None,
+                 position: Optional[Dict[str, float]] = None):
         super(EscortTaskAction, self).__init__(EscortTaskAction.Id)
         if targets is None:
             targets = [Targets.All.Air.Planes]
@@ -519,7 +522,8 @@ class BombingRunway(Task):
 class EngageTargets(Task):
     Id = "EngageTargets"
 
-    def __init__(self, max_distance=None, targets: List[Type[TargetType]] = None):
+    def __init__(self, max_distance: Optional[int] = None,
+                 targets: Optional[List[Type[TargetType]]] = None):
         super(EngageTargets, self).__init__(EngageTargets.Id)
         if targets is None:
             targets = [Targets.All]
@@ -534,7 +538,8 @@ class EngageTargets(Task):
 class EngageTargetsInZone(Task):
     Id = "EngageTargetsInZone"
 
-    def __init__(self, position: Point=Point(0, 0), radius=5000, targets: List[str]=None):
+    def __init__(self, position: Point = Point(0, 0), radius: int = 5000,
+                 targets: Optional[List[Type[TargetType]]] = None) -> None:
         super(EngageTargetsInZone, self).__init__(EngageTargetsInZone.Id)
         if targets is None:
             targets = [Targets.All]
