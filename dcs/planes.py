@@ -9642,6 +9642,19 @@ class P_47D_30(PlaneType):
         },
     }
 
+    property_defaults = {
+        "WaterTankContents": 1,
+    }
+
+    class Properties:
+
+        class WaterTankContents:
+            id = "WaterTankContents"
+
+            class Values:
+                Empty = 0
+                Water = 1
+
     class Liveries:
 
         class USA(Enum):
@@ -9720,6 +9733,19 @@ class P_47D_30bl1(PlaneType):
         },
     }
 
+    property_defaults = {
+        "WaterTankContents": 1,
+    }
+
+    class Properties:
+
+        class WaterTankContents:
+            id = "WaterTankContents"
+
+            class Values:
+                Empty = 0
+                Water = 1
+
     class Pylon1:
         AN_M30A1 = (1, Weapons.AN_M30A1)
         AN_M57 = (1, Weapons.AN_M57)
@@ -9785,6 +9811,19 @@ class P_47D_40(PlaneType):
         },
     }
 
+    property_defaults = {
+        "WaterTankContents": 1,
+    }
+
+    class Properties:
+
+        class WaterTankContents:
+            id = "WaterTankContents"
+
+            class Values:
+                Empty = 0
+                Water = 1
+
     class Pylon1:
         AN_M30A1 = (1, Weapons.AN_M30A1)
         AN_M57 = (1, Weapons.AN_M57)
@@ -9836,6 +9875,39 @@ class P_47D_40(PlaneType):
 
     tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
+
+
+class A_20G(PlaneType):
+    id = "A-20G"
+    height = 4.83
+    width = 18.69
+    length = 14.63
+    fuel_max = 1500
+    max_speed = 619.2
+
+    property_defaults = {
+    }
+
+    class Liveries:
+
+        class UK(Enum):
+            _107_sqn = "107 sqn"
+
+        class USA(Enum):
+            usaf_645th_bs = "usaf 645th bs"
+            usaf_668th_bs = "usaf 668th bs"
+
+        class Russia(Enum):
+            ussr_1st_gmtap = "ussr 1st gmtap"
+            ussr_27_ape_dd = "ussr 27 ape dd"
+
+    class Pylon1:
+        _4___AN_M64 = (1, Weapons._4___AN_M64)
+
+    pylons = {1}
+
+    tasks = [task.GroundAttack, task.RunwayAttack, task.CAS]
+    task_default = task.CAS
 
 
 class A_10A(PlaneType):
@@ -10780,10 +10852,10 @@ class A_10C_2(PlaneType):
     fuel_max = 5029
     max_speed = 720
     chaff = 240
-    flare = 120
+    flare = 240
     charge_total = 480
     chaff_charge_size = 1
-    flare_charge_size = 2
+    flare_charge_size = 1
     eplrs = True
 
     callnames = {
@@ -10796,17 +10868,7 @@ class A_10C_2(PlaneType):
     }
 
     property_defaults = {
-        "DefaultGunMode": 0,
     }
-
-    class Properties:
-
-        class DefaultGunMode:
-            id = "DefaultGunMode"
-
-            class Values:
-                CCIP_Gun_Reticle = 0
-                CCIP_Gun_Cross = 1
 
     class Pylon1:
         LAU_105___2_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105___2_AIM_9M_Sidewinder_IR_AAM)
@@ -13665,18 +13727,20 @@ class AV8BNA(PlaneType):
         GBU_38 = (2, Weapons.GBU_38)
         GBU_32_V_2_B = (2, Weapons.GBU_32_V_2_B)
         GBU_54_V_1_B = (2, Weapons.GBU_54_V_1_B)
-        _3_MK_81_LD = (2, Weapons._3_MK_81_LD)
         _2_MK_82 = (2, Weapons._2_MK_82)
-        _3_MK_82_LD = (2, Weapons._3_MK_82_LD)
         _2_Mk_20_Rockeye_ = (2, Weapons._2_Mk_20_Rockeye_)
         _2_GBU_12 = (2, Weapons._2_GBU_12)
-        _3_GBU_12 = (2, Weapons._3_GBU_12)
         _2_MK_82_AIR = (2, Weapons._2_MK_82_AIR)
-        _3_Mk_82AIR_ = (2, Weapons._3_Mk_82AIR_)
         _2_MK_82_SNAKEYE = (2, Weapons._2_MK_82_SNAKEYE)
-        _3_MK_82_SNAKEYE = (2, Weapons._3_MK_82_SNAKEYE)
         _2_GBU_38 = (2, Weapons._2_GBU_38)
+        _2_GBU_54_V_1_B = (2, Weapons._2_GBU_54_V_1_B)
+        _3_MK_81_LD = (2, Weapons._3_MK_81_LD)
+        _3_MK_82_LD = (2, Weapons._3_MK_82_LD)
+        _3_Mk_82AIR_ = (2, Weapons._3_Mk_82AIR_)
+        _3_MK_82_SNAKEYE = (2, Weapons._3_MK_82_SNAKEYE)
+        _3_GBU_12 = (2, Weapons._3_GBU_12)
         _3_GBU_38 = (2, Weapons._3_GBU_38)
+        _3_GBU_54_V_1_B = (2, Weapons._3_GBU_54_V_1_B)
         BDU_33 = (2, Weapons.BDU_33)
         BRU_42_3_BDU_33 = (2, Weapons.BRU_42_3_BDU_33)
         LAU_117_AGM_65E = (2, Weapons.LAU_117_AGM_65E)
@@ -13716,19 +13780,14 @@ class AV8BNA(PlaneType):
         GBU_54_V_1_B = (3, Weapons.GBU_54_V_1_B)
         _3_MK_81_LD = (3, Weapons._3_MK_81_LD)
         _2_MK_82 = (3, Weapons._2_MK_82)
-        _3_MK_82_LD = (3, Weapons._3_MK_82_LD)
         _2_MK_83 = (3, Weapons._2_MK_83)
-        _3_MK_83 = (3, Weapons._3_MK_83)
         _2_Mk_20_Rockeye_ = (3, Weapons._2_Mk_20_Rockeye_)
-        _3_MK_20_Rockeye = (3, Weapons._3_MK_20_Rockeye)
         _2_GBU_12 = (3, Weapons._2_GBU_12)
-        _3_GBU_12 = (3, Weapons._3_GBU_12)
         _2_GBU_16 = (3, Weapons._2_GBU_16)
         _2_MK_82_AIR = (3, Weapons._2_MK_82_AIR)
-        _3_Mk_82AIR_ = (3, Weapons._3_Mk_82AIR_)
         _2_MK_82_SNAKEYE = (3, Weapons._2_MK_82_SNAKEYE)
-        _3_MK_82_SNAKEYE = (3, Weapons._3_MK_82_SNAKEYE)
         _2_GBU_38 = (3, Weapons._2_GBU_38)
+        _2_GBU_54_V_1_B = (3, Weapons._2_GBU_54_V_1_B)
         BDU_33 = (3, Weapons.BDU_33)
         BRU_42_3_BDU_33 = (3, Weapons.BRU_42_3_BDU_33)
         LAU_117_AGM_65E = (3, Weapons.LAU_117_AGM_65E)
@@ -13774,19 +13833,14 @@ class AV8BNA(PlaneType):
         GBU_54_V_1_B = (6, Weapons.GBU_54_V_1_B)
         _3_MK_81_LD = (6, Weapons._3_MK_81_LD)
         _2_MK_82_ = (6, Weapons._2_MK_82_)
-        _3_MK_82_LD = (6, Weapons._3_MK_82_LD)
         _2_MK_83_ = (6, Weapons._2_MK_83_)
-        _3_MK_83 = (6, Weapons._3_MK_83)
         _2_Mk_20_Rockeye__ = (6, Weapons._2_Mk_20_Rockeye__)
-        _3_MK_20_Rockeye = (6, Weapons._3_MK_20_Rockeye)
         _2_GBU_12_ = (6, Weapons._2_GBU_12_)
-        _3_GBU_12 = (6, Weapons._3_GBU_12)
         _2_GBU_16_ = (6, Weapons._2_GBU_16_)
         _2_MK_82_AIR_ = (6, Weapons._2_MK_82_AIR_)
-        _3_Mk_82AIR_ = (6, Weapons._3_Mk_82AIR_)
         _2_MK_82_SNAKEYE_ = (6, Weapons._2_MK_82_SNAKEYE_)
-        _3_MK_82_SNAKEYE = (6, Weapons._3_MK_82_SNAKEYE)
         _2_GBU_38_ = (6, Weapons._2_GBU_38_)
+        _2_GBU_54_V_1_B_ = (6, Weapons._2_GBU_54_V_1_B_)
         BDU_33 = (6, Weapons.BDU_33)
         BRU_42_3_BDU_33 = (6, Weapons.BRU_42_3_BDU_33)
         LAU_117_AGM_65E = (6, Weapons.LAU_117_AGM_65E)
@@ -13825,18 +13879,20 @@ class AV8BNA(PlaneType):
         GBU_38 = (7, Weapons.GBU_38)
         GBU_32_V_2_B = (7, Weapons.GBU_32_V_2_B)
         GBU_54_V_1_B = (7, Weapons.GBU_54_V_1_B)
-        _3_MK_81_LD = (7, Weapons._3_MK_81_LD)
         _2_MK_82_ = (7, Weapons._2_MK_82_)
-        _3_MK_82_LD = (7, Weapons._3_MK_82_LD)
         _2_Mk_20_Rockeye__ = (7, Weapons._2_Mk_20_Rockeye__)
         _2_GBU_12_ = (7, Weapons._2_GBU_12_)
-        _3_GBU_12 = (7, Weapons._3_GBU_12)
         _2_MK_82_AIR_ = (7, Weapons._2_MK_82_AIR_)
-        _3_Mk_82AIR_ = (7, Weapons._3_Mk_82AIR_)
         _2_MK_82_SNAKEYE_ = (7, Weapons._2_MK_82_SNAKEYE_)
-        _3_MK_82_SNAKEYE = (7, Weapons._3_MK_82_SNAKEYE)
         _2_GBU_38_ = (7, Weapons._2_GBU_38_)
+        _2_GBU_54_V_1_B_ = (7, Weapons._2_GBU_54_V_1_B_)
+        _3_MK_81_LD = (7, Weapons._3_MK_81_LD)
+        _3_MK_82_LD = (7, Weapons._3_MK_82_LD)
+        _3_Mk_82AIR_ = (7, Weapons._3_Mk_82AIR_)
+        _3_MK_82_SNAKEYE = (7, Weapons._3_MK_82_SNAKEYE)
+        _3_GBU_12 = (7, Weapons._3_GBU_12)
         _3_GBU_38 = (7, Weapons._3_GBU_38)
+        _3_GBU_54_V_1_B = (7, Weapons._3_GBU_54_V_1_B)
         BDU_33 = (7, Weapons.BDU_33)
         BRU_42_3_BDU_33 = (7, Weapons.BRU_42_3_BDU_33)
         LAU_117_AGM_65E = (7, Weapons.LAU_117_AGM_65E)
@@ -14342,6 +14398,9 @@ class C_101CC(PlaneType):
 
         class Georgia(Enum):
             aviodev_skin = "aviodev skin"
+            georgia_combat_fictional_green = "georgia combat fictional green"
+            georgia_combat_fictional_spots = "georgia combat fictional spots"
+            georgia_combat_fictional_wolf = "georgia combat fictional wolf"
 
         class Venezuela(Enum):
             aviodev_skin = "aviodev skin"
@@ -14916,8 +14975,6 @@ class JF_17(PlaneType):
         "LaserCode10": 8,
         "LaserCode1": 8,
         "AARProbe": False,
-        "FPB_AGL": False,
-        "FPB_Alt": 10,
     }
 
     class Properties:
@@ -14933,12 +14990,6 @@ class JF_17(PlaneType):
 
         class AARProbe:
             id = "AARProbe"
-
-        class FPB_AGL:
-            id = "FPB_AGL"
-
-        class FPB_Alt:
-            id = "FPB_Alt"
 
     class Liveries:
 
@@ -18105,6 +18156,7 @@ class F_16C_50(PlaneType):
         TER_9A___3_x_BDU_33 = (4, Weapons.TER_9A___3_x_BDU_33)
         Fuel_tank_370_gal = (4, Weapons.Fuel_tank_370_gal)
         MXU_648_TP = (4, Weapons.MXU_648_TP)
+        AGM_88C_ = (4, Weapons.AGM_88C_)
 #ERRR <CLEAN>
         TER_9A___2_x_Mk_82 = (4, Weapons.TER_9A___2_x_Mk_82)
         TER_9A___2_x_Mk_82_SnakeEye = (4, Weapons.TER_9A___2_x_Mk_82_SnakeEye)
@@ -18139,6 +18191,7 @@ class F_16C_50(PlaneType):
         TER_9A___3_x_BDU_33 = (6, Weapons.TER_9A___3_x_BDU_33)
         Fuel_tank_370_gal = (6, Weapons.Fuel_tank_370_gal)
         MXU_648_TP = (6, Weapons.MXU_648_TP)
+        AGM_88C_ = (6, Weapons.AGM_88C_)
 #ERRR <CLEAN>
         TER_9A___2_x_Mk_82_ = (6, Weapons.TER_9A___2_x_Mk_82_)
         TER_9A___2_x_Mk_82_SnakeEye_ = (6, Weapons.TER_9A___2_x_Mk_82_SnakeEye_)
@@ -21974,155 +22027,220 @@ class FA_18C_hornet(PlaneType):
     class Liveries:
 
         class USSR(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Georgia(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Venezuela(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Australia(Enum):
             australian_75th_squadron = "australian 75th squadron"
             australian_77th_squadron = "australian 77th squadron"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Israel(Enum):
+            f_18_iriaf = "f-18 iriaf"
             fictional_israel_air_force = "fictional israel air force"
             default_livery = "default livery"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            f_18_iriaf = "f-18 iriaf"
+
         class Sudan(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Norway(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Romania(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Iran(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Ukraine(Enum):
+            f_18_iriaf = "f-18 iriaf"
             fictional_ukraine_air_force = "fictional ukraine air force"
             default_livery = "default livery"
 
         class Libya(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Belgium(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Slovakia(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Greece(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class UK(Enum):
+            f_18_iriaf = "f-18 iriaf"
             fictional_uk_air_force = "fictional uk air force"
             default_livery = "default livery"
 
         class Third_Reich(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Hungary(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Abkhazia(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Morocco(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
+        class United_Nations_Peacekeepers(Enum):
+            f_18_iriaf = "f-18 iriaf"
+
         class Switzerland(Enum):
+            f_18_iriaf = "f-18 iriaf"
             switzerland = "switzerland"
             default_livery = "default livery"
 
         class SouthOssetia(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Vietnam(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class China(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Yemen(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Kuwait(Enum):
             kuwait_25th_squadron = "kuwait 25th squadron"
             kuwait_9th_squadron = "kuwait 9th squadron"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Serbia(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Oman(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class India(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Egypt(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class TheNetherlands(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Poland(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Syria(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Finland(Enum):
+            f_18_iriaf = "f-18 iriaf"
             finland_21 = "finland 21"
             finland_31 = "finland 31"
             default_livery = "default livery"
 
         class Kazakhstan(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Denmark(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Sweden(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Croatia(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class CzechRepublic(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
+        class GDR(Enum):
+            f_18_iriaf = "f-18 iriaf"
+
         class Yugoslavia(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Bulgaria(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class SouthKorea(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Tunisia(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
+        class Combined_Joint_Task_Forces_Red(Enum):
+            f_18_iriaf = "f-18 iriaf"
+
+        class Lebanon(Enum):
+            f_18_iriaf = "f-18 iriaf"
+
+        class Portugal(Enum):
+            f_18_iriaf = "f-18 iriaf"
+
         class Cuba(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Insurgents(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class SaudiArabia(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class France(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class USA(Enum):
             vfa_37 = "vfa-37"
+            f_18_iriaf = "f-18 iriaf"
             vfa_106 = "vfa-106"
             vfa_106_high_visibility = "vfa-106 high visibility"
             vfa_113 = "vfa-113"
@@ -22162,68 +22280,89 @@ class FA_18C_hornet(PlaneType):
             blue_angels_jet_team = "blue angels jet team"
 
         class Honduras(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Qatar(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Russia(Enum):
+            f_18_iriaf = "f-18 iriaf"
             fictional_russia_air_force = "fictional russia air force"
             default_livery = "default livery"
 
         class United_Arab_Emirates(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Italian_Social_Republi(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Austria(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Bahrain(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Italy(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Chile(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Turkey(Enum):
             fictional_turkey_162nd_sq = "fictional turkey 162nd sq"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Philippines(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Algeria(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Pakistan(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Malaysia(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Indonesia(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Iraq(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Germany(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class South_Africa(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Jordan(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Mexico(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class USAFAggressors(Enum):
+            f_18_iriaf = "f-18 iriaf"
             fictional_russia_air_force = "fictional russia air force"
             vfc_12 = "vfc-12"
             nawdc_blue = "nawdc blue"
@@ -22234,9 +22373,11 @@ class FA_18C_hornet(PlaneType):
             default_livery = "default livery"
 
         class Brazil(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Spain(Enum):
+            f_18_iriaf = "f-18 iriaf"
             spain_462th_escuadron_c_15_79 = "spain 462th escuadron c.15-79"
             spain_111th_escuadron_c_15_73 = "spain 111th escuadron c.15-73"
             spain_111th_escuadron_c_15_88 = "spain 111th escuadron c.15-88"
@@ -22255,6 +22396,7 @@ class FA_18C_hornet(PlaneType):
             default_livery = "default livery"
 
         class Belarus(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Canada(Enum):
@@ -22262,18 +22404,23 @@ class FA_18C_hornet(PlaneType):
             canada_409th_squadron = "canada 409th squadron"
             canada_425th_squadron = "canada 425th squadron"
             canada_norad_60_demo_jet = "canada norad 60 demo jet"
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class NorthKorea(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Ethiopia(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Japan(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
         class Thailand(Enum):
+            f_18_iriaf = "f-18 iriaf"
             default_livery = "default livery"
 
     class Pylon1:
@@ -28563,39 +28710,6 @@ class B_17G(PlaneType):
     task_default = task.GroundAttack
 
 
-class A_20G(PlaneType):
-    id = "A-20G"
-    height = 4.83
-    width = 18.69
-    length = 14.63
-    fuel_max = 1500
-    max_speed = 619.2
-
-    property_defaults = {
-    }
-
-    class Liveries:
-
-        class UK(Enum):
-            _107_sqn = "107 sqn"
-
-        class USA(Enum):
-            usaf_645th_bs = "usaf 645th bs"
-            usaf_668th_bs = "usaf 668th bs"
-
-        class Russia(Enum):
-            ussr_1st_gmtap = "ussr 1st gmtap"
-            ussr_27_ape_dd = "ussr 27 ape dd"
-
-    class Pylon1:
-        _4___AN_M64 = (1, Weapons._4___AN_M64)
-
-    pylons = {1}
-
-    tasks = [task.GroundAttack, task.RunwayAttack, task.CAS]
-    task_default = task.CAS
-
-
 class Ju_88A4(PlaneType):
     id = "Ju-88A4"
     height = 5.07
@@ -28960,6 +29074,7 @@ plane_map = {
     "P-47D-30": P_47D_30,
     "P-47D-30bl1": P_47D_30bl1,
     "P-47D-40": P_47D_40,
+    "A-20G": A_20G,
     "A-10A": A_10A,
     "A-10C": A_10C,
     "A-10C_2": A_10C_2,
@@ -28992,7 +29107,6 @@ plane_map = {
     "Su-34": Su_34,
     "Yak-52": Yak_52,
     "B-17G": B_17G,
-    "A-20G": A_20G,
     "Ju-88A4": Ju_88A4,
     "TF-51D": TF_51D,
 }

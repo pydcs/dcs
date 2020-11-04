@@ -1909,6 +1909,7 @@ class UH_1H(HelicopterType):
         "ExhaustScreen": True,
         "GunnersAISkill": 90,
         "EngineResource": 90,
+        "SoloFlight": False,
         "NetCrewControlPriority": 1,
     }
 
@@ -1922,6 +1923,9 @@ class UH_1H(HelicopterType):
 
         class EngineResource:
             id = "EngineResource"
+
+        class SoloFlight:
+            id = "SoloFlight"
 
         class NetCrewControlPriority:
             id = "NetCrewControlPriority"

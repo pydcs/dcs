@@ -660,3 +660,22 @@ class BasicTests(unittest.TestCase):
                 result = content.find('["unknown_test_key"]')
 
         self.assertNotEqual(result, -1)
+
+    def test_mission_with_qf17_aaa(self):
+
+        m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
+
+        usa = m.country("USA")
+        caucasus = m.terrain
+        batumi = caucasus.batumi()
+        m.vehicle_group(usa, "qf17", dcs.countries.USA.Vehicle.AirDefence.AA_gun_QF_3_7, position=batumi.random_unit_zone().center())
+
+        m.save('missions/test_mission_qf17.miz')
+
+        m2 = dcs.mission.Mission()
+        self.assertTrue(m2.load_file('missions/test_mission_qf17.miz'))
+
+        group = m2.country("USA").find_group("qf17")
+        self.assertEqual(group.units[0].type, dcs.vehicles.AirDefence.AA_gun_QF_3_7.id)
+
+

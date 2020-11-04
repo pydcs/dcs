@@ -459,13 +459,13 @@ class Fortification:
     class Warning_Board_A(unittype.StaticType):
         id = "warning_board_a"
         name = "Warning Board A"
-        shape_name = None
+        shape_name = "biaoyu"
         rate = 1
 
     class Warning_Board_B(unittype.StaticType):
         id = "warning_board_b"
         name = "Warning Board B"
-        shape_name = None
+        shape_name = "biaoyu-2"
         rate = 1
 
     class Belgian_gate(unittype.StaticType):
@@ -606,6 +606,18 @@ class Fortification:
         shape_name = "Siegfried_Line"
         rate = 20
 
+    class Freya_Shelter_Brick(unittype.StaticType):
+        id = "Freya_Shelter_Brick"
+        name = "Freya Shelter Brick"
+        shape_name = "Freya_Shelter_Brick"
+        rate = 20
+
+    class Freya_Shelter_Concrete(unittype.StaticType):
+        id = "Freya_Shelter_Concrete"
+        name = "Freya Shelter Concrete"
+        shape_name = "Freya_Shelter_Concrete"
+        rate = 20
+
 fortification_map = {
     ".Command Center": Fortification.Command_Center,
     "Hangar A": Fortification.Hangar_A,
@@ -707,6 +719,8 @@ fortification_map = {
     "Log ramps 2": Fortification.Log_ramps_2,
     "Log ramps 3": Fortification.Log_ramps_3,
     "Siegfried Line": Fortification.Siegfried_line,
+    "Freya_Shelter_Brick": Fortification.Freya_Shelter_Brick,
+    "Freya_Shelter_Concrete": Fortification.Freya_Shelter_Concrete,
 }
 
 

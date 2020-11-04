@@ -320,7 +320,7 @@ class LCVP__Higgins_boat(unittype.ShipType):
 class Uboat_VIIC_U_flak(unittype.ShipType):
     id = "Uboat_VIIC"
     name = "Uboat VIIC U-flak"
-    detection_range = 12000
+    detection_range = 10000
     threat_range = 4000
     air_weapon_dist = 4000
 
@@ -328,9 +328,9 @@ class Uboat_VIIC_U_flak(unittype.ShipType):
 class Schnellboot_type_S130(unittype.ShipType):
     id = "Schnellboot_type_S130"
     name = "Schnellboot type S130"
-    detection_range = 12000
-    threat_range = 7000
-    air_weapon_dist = 7000
+    detection_range = 10000
+    threat_range = 4000
+    air_weapon_dist = 4000
 
 ship_map = {
     "speedboat": Armed_speedboat,

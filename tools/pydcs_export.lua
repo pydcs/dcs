@@ -23,10 +23,17 @@ local function safe_name(name)
     safeName = string.gsub(safeName, "[-()/., *'+`#%[%]]", "_")
     safeName = string.gsub(safeName, "_*$", "")  -- strip __ from end
     safeName = string.gsub(safeName, "^([0-9])", "_%1")
+    safeName = string.gsub(safeName, '%"', '') -- Remove the " character (Example unit using it : AA gun QF 3,7")
     if safeName == 'None' then
         safeName = 'None_'
     end
     return safeName
+end
+
+local function safe_display_name(name)
+    local safeDisplayName = name
+    safeDisplayName = string.gsub(safeDisplayName, '%"', '\\"')
+    return safeDisplayName
 end
 
 local function has_value (tab, val)
@@ -582,6 +589,7 @@ for i in pairs(unit_categories) do
     for j in pairs(unit_categories[i]) do
         local unit = unit_categories[i][j]
         local safename = safe_name(unit.DisplayName)
+        local safeDisplayName = safe_display_name(unit.DisplayName)
         local threat_range = 'None'
         if unit.ThreatRange ~= nil then
             threat_range = unit.ThreatRange
@@ -593,7 +601,7 @@ for i in pairs(unit_categories) do
         writeln(file, '')
         writeln(file, '    class '..safename..'(unittype.VehicleType):')
         writeln(file, '        id = "'..unit.type..'"')
-        writeln(file, '        name = "'..unit.DisplayName..'"')
+        writeln(file, '        name = "'..safeDisplayName..'"')
         writeln(file, '        detection_range = '..unit.DetectionRange)
         writeln(file, '        threat_range = '..threat_range)
         writeln(file, '        air_weapon_dist = '..air_weapon_dist)
@@ -654,10 +662,11 @@ writeln(file, 'class Fortification:')
 for i in pairs(db.Units.Fortifications.Fortification) do
     local unit = db.Units.Fortifications.Fortification[i]
     local safename = safe_name(unit.DisplayName)
+    local safeDisplayName = safe_display_name(unit.DisplayName)
     writeln(file, '')
     writeln(file, '    class '..safename..'(unittype.StaticType):')
     writeln(file, '        id = "'..unit.type..'"')
-    writeln(file, '        name = "'..unit.DisplayName..'"')
+    writeln(file, '        name = "'..safeDisplayName..'"')
     if unit.ShapeName ~= nil then
         writeln(file, '        shape_name = "'..unit.ShapeName..'"')
     else
@@ -677,10 +686,11 @@ writeln(file, 'class GroundObject:')
 for i in pairs(db.Units.GroundObjects.GroundObject) do
     local unit = db.Units.GroundObjects.GroundObject[i]
     local safename = safe_name(unit.DisplayName)
+    local safeDisplayName = safe_display_name(unit.DisplayName)
     writeln(file, '')
     writeln(file, '    class '..safename..'(unittype.StaticType):')
     writeln(file, '        id = "'..unit.type..'"')
-    writeln(file, '        name = "'..unit.DisplayName..'"')
+    writeln(file, '        name = "'..safeDisplayName..'"')
     writeln(file, '        category = ""')
 end
 
@@ -692,10 +702,11 @@ writeln(file, 'class Warehouse:')
 for i in pairs(db.Units.Warehouses.Warehouse) do
     local unit = db.Units.Warehouses.Warehouse[i]
     local safename = safe_name(unit.DisplayName)
+    local safeDisplayName = safe_display_name(unit.DisplayName)
     writeln(file, '')
     writeln(file, '    class '..safename..'(unittype.StaticType):')
     writeln(file, '        id = "'..unit.type..'"')
-    writeln(file, '        name = "'..unit.DisplayName..'"')
+    writeln(file, '        name = "'..safeDisplayName..'"')
     writeln(file, '        shape_name = "'..unit.ShapeName..'"')
     writeln(file, '        category = "Warehouses"')
     writeln(file, '        rate = '..unit.Rate)
@@ -712,10 +723,11 @@ writeln(file, 'class Cargo:')
 for i in pairs(db.Units.Cargos.Cargo) do
     local unit = db.Units.Cargos.Cargo[i]
     local safename = safe_name(unit.DisplayName)
+    local safeDisplayName = safe_display_name(unit.DisplayName)
     writeln(file, '')
     writeln(file, '    class '..safename..'(unittype.StaticType):')
     writeln(file, '        id = "'..unit.type..'"')
-    writeln(file, '        name = "'..unit.DisplayName..'"')
+    writeln(file, '        name = "'..safeDisplayName..'"')
     writeln(file, '        shape_name = "'..unit.ShapeName..'"')
     writeln(file, '        category = "Cargos"')
     writeln(file, '        rate = '..unit.Rate)
@@ -741,11 +753,12 @@ import dcs.unittype as unittype
 for i in pairs(db.Units.Ships.Ship) do
     local unit = db.Units.Ships.Ship[i]
     local safename = safe_name(unit.DisplayName)
+    local safeDisplayName = safe_display_name(unit.DisplayName)
     writeln(file, '')
     writeln(file, '')
     writeln(file, 'class '..safename..'(unittype.ShipType):')
     writeln(file, '    id = "'..unit.type..'"')
-    writeln(file, '    name = "'..unit.DisplayName..'"')
+    writeln(file, '    name = "'..safeDisplayName..'"')
     if unit.Plane_Num_ ~= nil then
         writeln(file, '    plane_num = '..unit.Plane_Num_)
     end
@@ -853,6 +866,7 @@ while i <= country.maxIndex do
                 for j in pairs(unit_categories[i]) do
                     local unit = unit_categories[i][j]
                     local safename = safe_name(unit.DisplayName)
+                    local safeDisplayName = safe_display_name(unit.DisplayName)
                     writeln(file, '            '..safename..' = vehicles.'..i..'.'..safename)
                 end
             end

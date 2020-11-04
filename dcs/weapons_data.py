@@ -829,6 +829,8 @@ class Weapons:
     _2_GBU_16_ = {"clsid": "{BRU-42_2*GBU-16_RIGHT}", "name": "2 GBU-16", "weight": 1050}
     _2_GBU_38 = {"clsid": "{BRU-42_2*GBU-38_LEFT}", "name": "2 GBU-38", "weight": 610}
     _2_GBU_38_ = {"clsid": "{BRU-42_2*GBU-38_RIGHT}", "name": "2 GBU-38", "weight": 610}
+    _2_GBU_54_V_1_B = {"clsid": "{BRU-70A_2*GBU-54_LEFT}", "name": "2 GBU-54(V)1/B", "weight": 566}
+    _2_GBU_54_V_1_B_ = {"clsid": "{BRU-70A_2*GBU-54_RIGHT}", "name": "2 GBU-54(V)1/B", "weight": 566}
     _2_LAU_10___4_ZUNI_MK_71 = {"clsid": "{BRU42_2*LAU10 L}", "name": "2 LAU-10 - 4 ZUNI MK 71", "weight": 1008}
     _2_LAU_10___4_ZUNI_MK_71_ = {"clsid": "{BRU3242_2*LAU10 L}", "name": "2 LAU-10 - 4 ZUNI MK 71", "weight": 1065.38}
     _2_LAU_10___4_ZUNI_MK_71__ = {"clsid": "{BRU42_2*LAU10 R}", "name": "2 LAU-10 - 4 ZUNI MK 71", "weight": 1008}
@@ -916,6 +918,7 @@ class Weapons:
     _3_GBU_16 = {"clsid": "{88D49E04-78DF-4F08-B47E-B81247A9E3C5}", "name": "3 GBU-16", "weight": 666}
     _3_GBU_16_ = {"clsid": "{BRU-42A_3*GBU-16}", "name": "3 GBU-16", "weight": 1545}
     _3_GBU_38 = {"clsid": "{BRU-42_3*GBU-38}", "name": "3 GBU-38", "weight": 885}
+    _3_GBU_54_V_1_B = {"clsid": "{BRU-70A_3*GBU-54}", "name": "3 GBU-54(V)1/B", "weight": 819}
     _3_MK_20_Rockeye = {"clsid": "{BRU-42_3*MK-20}", "name": "3 MK-20 Rockeye", "weight": 726}
     _3_MK_81_LD = {"clsid": "{BRU-42_3*Mk-81LD}", "name": "3 MK-81 LD", "weight": 414}
     _3_MK_82_LD = {"clsid": "{BRU-42_3*Mk-82LD}", "name": "3 MK-82 LD", "weight": 783}
@@ -1784,6 +1787,8 @@ weapon_ids = {
     "{BRU-42_2*GBU-16_RIGHT}": Weapons._2_GBU_16_,
     "{BRU-42_2*GBU-38_LEFT}": Weapons._2_GBU_38,
     "{BRU-42_2*GBU-38_RIGHT}": Weapons._2_GBU_38_,
+    "{BRU-70A_2*GBU-54_LEFT}": Weapons._2_GBU_54_V_1_B,
+    "{BRU-70A_2*GBU-54_RIGHT}": Weapons._2_GBU_54_V_1_B_,
     "{BRU42_2*LAU10 L}": Weapons._2_LAU_10___4_ZUNI_MK_71,
     "{BRU3242_2*LAU10 L}": Weapons._2_LAU_10___4_ZUNI_MK_71_,
     "{BRU42_2*LAU10 R}": Weapons._2_LAU_10___4_ZUNI_MK_71__,
@@ -1871,6 +1876,7 @@ weapon_ids = {
     "{88D49E04-78DF-4F08-B47E-B81247A9E3C5}": Weapons._3_GBU_16,
     "{BRU-42A_3*GBU-16}": Weapons._3_GBU_16_,
     "{BRU-42_3*GBU-38}": Weapons._3_GBU_38,
+    "{BRU-70A_3*GBU-54}": Weapons._3_GBU_54_V_1_B,
     "{BRU-42_3*MK-20}": Weapons._3_MK_20_Rockeye,
     "{BRU-42_3*Mk-81LD}": Weapons._3_MK_81_LD,
     "{BRU-42_3*Mk-82LD}": Weapons._3_MK_82_LD,
