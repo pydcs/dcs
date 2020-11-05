@@ -14,6 +14,8 @@ class Action:
         for x in self.params:
             if isinstance(x, String):
                 s.append("getValueDictByKey({})".format(dumps(x.id)))
+            elif isinstance(x, ResourceKey):
+                s.append("getValueResourceByKey({})".format(dumps(x.res_key)))
             else:
                 s.append(dumps(x))
         return self.predicate + "(" + ", ".join(s) + ")"

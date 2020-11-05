@@ -7,7 +7,26 @@ class Condition:
         self.params = []
 
     def __repr__(self):
-        return self.predicate + "(" + ",".join(map(dumps, self.params)) + ")"
+        return self.predicate + "(" + ", ".join(map(dumps, self.params)) + ")"
+
+    @classmethod
+    def condition_str(cls, rules):
+        if rules:
+            s = "return("
+
+            skip_logic_opr = True
+            for r in rules:
+                opr = " or " if isinstance(r, Or) else " and "
+                if not skip_logic_opr:
+                    s += opr
+
+                if isinstance(r, Or):
+                    skip_logic_opr = True
+                else:
+                    s += repr(r)
+                    skip_logic_opr = False
+            return s + " )"
+        return "return(true)"
 
     def dict(self):
         d = {

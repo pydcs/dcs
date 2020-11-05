@@ -21,9 +21,6 @@ class Goal:
             gr = condition.condition_map[rules[x]["predicate"]].create_from_dict(rules[x])
             self.rules.append(gr)
 
-    def conditions(self):
-        return " and ".join(map(repr, self.rules))
-
     def dict(self):
         return {
             "side": self.side,
@@ -69,7 +66,7 @@ class Goals:
         }
         funcstr = "if mission.result.{side}.conditions[{idx}]() then mission.result.{side}.actions[{idx}]() end"
         for side in ["blue", "red", "offline"]:
-            d[side]["conditions"] = {i + 1: "return(" + self.goals[side][i].conditions() + ")"
+            d[side]["conditions"] = {i + 1: condition.Condition.condition_str(self.goals[side][i].rules)
                                      for i in range(0, len(self.goals[side]))}
             d[side]["actions"] = {i + 1: "a_set_mission_result(" + str(self.goals[side][i].score) + ")"
                                   for i in range(0, len(self.goals[side])) if self.goals[side][i].rules}

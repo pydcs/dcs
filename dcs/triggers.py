@@ -115,17 +115,13 @@ class TriggerRule:
     def add_action(self, act: action.Action):
         self.actions.append(act)
 
-    def condition_str(self):
-        if self.rules:
-            return "return(" + " and ".join(map(repr, self.rules)) + ")"
-        return "return(true)"
-
     def action_str(self, idx):
-        actionstr = "; ".join([repr(x) for x in self.actions])
-        if self.eventlist != Event.NoEvent:
-            actionstr += '; mission.trig.events["' + str(self.eventlist.value) + '"][' + str(idx) + ']=nil;'
-        else:
-            actionstr += '; mission.trig.func[' + str(idx) + ']=nil;'
+        actionstr = ";".join([repr(x) for x in self.actions]) + ";"
+        if self.predicate == TriggerOnce.predicate:
+            if self.eventlist != Event.NoEvent:
+                actionstr += ' mission.trig.events["' + str(self.eventlist.value) + '"][' + str(idx) + ']=nil;'
+            else:
+                actionstr += ' mission.trig.func[' + str(idx) + ']=nil;'
         return actionstr
 
     def func_str(self, start, idx):
@@ -204,7 +200,7 @@ class Rules:
 
     def trig(self):
         d = {}
-        d["conditions"] = {i + 1: self.triggers[i].condition_str() for i in range(0, len(self.triggers))}
+        d["conditions"] = {i + 1: condition.Condition.condition_str(self.triggers[i].rules) for i in range(0, len(self.triggers))}
         d["actions"] = {i + 1: self.triggers[i].action_str(i + 1) for i in range(0, len(self.triggers))}
         d["func"] = {i + 1: self.triggers[i].func_str(False, i + 1) for i in range(0, len(self.triggers))
                      if self.triggers[i].func_str(False, i + 1)}
@@ -225,3 +221,6 @@ class Rules:
 
     def trigrules(self):
         return {i + 1: self.triggers[i].dict() for i in range(0, len(self.triggers))}
+
+    def __str__(self):
+        return str(self.trig())
