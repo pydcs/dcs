@@ -225,7 +225,15 @@ class CockpitHighlightIndication(Action):
 class CockpitHighlightPosition(Action):
     predicate = "a_cockpit_highlight_position"
 
-    def __init__(self, highlight_id=0, in_cockpit_position_x=1, in_cockpit_position_y=0, in_cockpit_position_z=0, size_of_box_x=0.1, size_of_box_y=0.1, size_of_box_z=0.1):
+    def __init__(
+            self,
+            highlight_id=0,
+            in_cockpit_position_x=1,
+            in_cockpit_position_y=0,
+            in_cockpit_position_z=0,
+            size_of_box_x=0.1,
+            size_of_box_y=0.1,
+            size_of_box_z=0.1):
         super(CockpitHighlightPosition, self).__init__(CockpitHighlightPosition.predicate)
         self.highlight_id = highlight_id
         self.params.append(self.highlight_id)
@@ -244,7 +252,14 @@ class CockpitHighlightPosition(Action):
 
     @classmethod
     def create_from_dict(cls, d, mission):
-        return cls(d["highlight_id"], d["in_cockpit_position_x"], d["in_cockpit_position_y"], d["in_cockpit_position_z"], d["size_of_box_x"], d["size_of_box_y"], d["size_of_box_z"])
+        return cls(
+            d["highlight_id"],
+            d["in_cockpit_position_x"],
+            d["in_cockpit_position_y"],
+            d["in_cockpit_position_z"],
+            d["size_of_box_x"],
+            d["size_of_box_y"],
+            d["size_of_box_z"])
 
     def dict(self):
         d = super(CockpitHighlightPosition, self).dict()
@@ -1690,7 +1705,7 @@ class RemoveSceneObjectsMask(IntEnum):
 class RemoveSceneObjects(Action):
     predicate = "a_remove_scene_objects"
 
-    def __init__(self, objects_mask: RemoveSceneObjectsMask=RemoveSceneObjectsMask.ALL, zone="", meters=1000):
+    def __init__(self, objects_mask: RemoveSceneObjectsMask = RemoveSceneObjectsMask.ALL, zone="", meters=1000):
         super(RemoveSceneObjects, self).__init__(RemoveSceneObjects.predicate)
         self.objects_mask = objects_mask
         self.params.append(self.objects_mask)

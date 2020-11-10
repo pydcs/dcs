@@ -39,6 +39,9 @@ def main():
     }
     difficulty = difficulty_map[args.difficulty]
 
+    destination_city = 'Adler'
+    zone_enemy = zone_abkhazia
+
     if args.output is None:
         args.output = os.path.join(os.path.expanduser("~"), "Saved Games\\DCS\\Missions\\oil_transport.miz")
         if args.terrain == "caucasus":
@@ -137,11 +140,13 @@ def main():
     # place farp for helis
     zugdidi_ne = city_graph.node('Zugidi NE')
     farp = m.farp(usa, "FARP Zugdidi", zugdidi_ne.position + dcs.mapping.Point(0, 500), callsign_id=1)
-    fg = m.flight_group_from_unit(usa, dcs.helicopters.Ka_50.id + " Client", dcs.helicopters.Ka_50, farp, dcs.task.CAS, group_size=2)
+    fg = m.flight_group_from_unit(
+        usa, dcs.helicopters.Ka_50.id + " Client", dcs.helicopters.Ka_50, farp, dcs.task.CAS, group_size=2)
     fg.set_client()
 
     farp = m.farp(usa, "FARP Kvemo", zugdidi_ne.position + dcs.mapping.Point(0, -22 * 1000), callsign_id=2)
-    fg = m.flight_group_from_unit(usa, dcs.helicopters.UH_1H.id + " Client", dcs.helicopters.UH_1H, farp, dcs.task.CAS, group_size=2)
+    fg = m.flight_group_from_unit(
+        usa, dcs.helicopters.UH_1H.id + " Client", dcs.helicopters.UH_1H, farp, dcs.task.CAS, group_size=2)
     fg.set_client()
 
     # place player
@@ -150,7 +155,8 @@ def main():
         for x in aircrafts:
             if dcs.task.CAS in x.tasks and x not in [dcs.planes.Su_33, dcs.planes.MiG_29A, dcs.planes.MiG_29S]:
                 country = m.country(dcs.countries.Georgia.name) if x in [dcs.planes.Su_25T, dcs.planes.Su_25] else usa
-                fg = m.flight_group_from_airport(country, x.id + " Client", x, m.terrain.senaki_kolkhi(), dcs.task.CAS, group_size=2)
+                fg = m.flight_group_from_airport(
+                    country, x.id + " Client", x, m.terrain.senaki_kolkhi(), dcs.task.CAS, group_size=2)
                 fg.add_runway_waypoint(m.terrain.senaki_kolkhi())
                 fg.set_client()
     else:
@@ -173,7 +179,9 @@ def main():
         trig_notify = dcs.triggers.TriggerOnce(comment='NotifyConvoyPosition #' + str(i))
         trig_notify.rules.append(dcs.condition.PartOfGroupInZone(oil_convoy.id, notify_zone.id))
         trig_notify.actions.append(dcs.action.MessageToCoalition(
-            dcs.action.Coalition.Blue, m.string('Intel just reported that the convoy just arrived at ' + notifier_node.name), 20))
+            dcs.action.Coalition.Blue,
+            m.string('Intel just reported that the convoy just arrived at ' + notifier_node.name),
+            20))
         m.triggerrules.triggers.append(trig_notify)
 
     trig_convoy_dead = dcs.triggers.TriggerOnce(dcs.triggers.Event.Destroy, comment='Convoy dead')
@@ -213,6 +221,7 @@ Mission objectives:
     m.save(args.output)
 
     return 0
+
 
 if __name__ == '__main__':
     sys.exit(main())

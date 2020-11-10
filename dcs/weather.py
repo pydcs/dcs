@@ -148,8 +148,8 @@ class Weather:
         c.centerX = position.x + x
         c.centerZ = position.y + y
         c.ellipticity = 1 + rands[2] * params['ellipticitystddev']
-        c.pressure_excess = math.floor(params['sign'] * abs(rands[3]) *
-                                       params['pressurestddev'] * mainpeakexcessmod + params['pressureoffset'])
+        c.pressure_excess = math.floor(params['sign'] * abs(rands[3])
+                                       * params['pressurestddev'] * mainpeakexcessmod + params['pressureoffset'])
         c.rotation = params['rotationstddev'] * rands[4]
         c.pressure_spread = params['spread'] + params['spreadstddev'] * mainpeakexcessmod * rands[5]
 
@@ -292,7 +292,7 @@ class Weather:
         assert isinstance(self.type_weather, int)
         d["type_weather"] = self.type_weather
         d["qnh"] = self.qnh
-        d["cyclones"] = {x+1: self.cyclones[x].dict() for x in range(0, len(self.cyclones))}
+        d["cyclones"] = {x + 1: self.cyclones[x].dict() for x in range(0, len(self.cyclones))}
         d["name"] = self.name
         d["fog"] = {"thickness": self.fog_thickness, "visibility": self.fog_visibility, "density": self.fog_density}
         d["visibility"] = {"distance": self.visibility_distance}

@@ -164,12 +164,12 @@ class MovingPoint(StaticPoint):
         d["speed_locked"] = self.speed_locked
         tasks = {}
         for i in range(0, len(self.tasks)):
-            self.tasks[i].number = i+1
-            tasks[i+1] = self.tasks[i].dict()
+            self.tasks[i].number = i + 1
+            tasks[i + 1] = self.tasks[i].dict()
         d["task"] = {
             "id": "ComboTask",
             "params": {
-                "tasks": {i+1: self.tasks[i].dict() for i in range(0, len(self.tasks))}
+                "tasks": {i + 1: self.tasks[i].dict() for i in range(0, len(self.tasks))}
             }
         }
         if self.airdrome_id is not None:

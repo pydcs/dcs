@@ -245,7 +245,7 @@ class MovingGroup(Group):
         d = super(MovingGroup, self).dict()
         if self.task:
             d["task"] = self.task
-        d["tasks"] = {i+1: self.tasks[i].dict() for i in range(0, len(self.tasks))}
+        d["tasks"] = {i + 1: self.tasks[i].dict() for i in range(0, len(self.tasks))}
         d["start_time"] = self.start_time
         if self.frequency:
             d["frequency"] = self.frequency
@@ -280,7 +280,7 @@ class VehicleGroup(MovingGroup):
         self.spans.append({"x": position.x, "y": position.y})
 
     def add_waypoint(self, position: mapping.Point,
-                     move_formation: PointAction=PointAction.OffRoad, speed=32) -> MovingPoint:
+                     move_formation: PointAction = PointAction.OffRoad, speed=32) -> MovingPoint:
         mp = MovingPoint()
         mp.type = "Turning Point"
         mp.action = move_formation
@@ -353,7 +353,7 @@ class FlyingGroup(MovingGroup):
         self.nav_target_points.append(nt)
         return nt
 
-    def add_waypoint(self, pos: mapping.Point, altitude, speed=600, name: String=None) -> MovingPoint:
+    def add_waypoint(self, pos: mapping.Point, altitude, speed=600, name: String = None) -> MovingPoint:
         mp = MovingPoint()
         mp.type = "Turning Point"
         mp.action = PointAction.TurningPoint
@@ -367,7 +367,7 @@ class FlyingGroup(MovingGroup):
         self.add_point(mp)
         return mp
 
-    def add_runway_waypoint(self, airport: Airport, runway: Runway=None,
+    def add_runway_waypoint(self, airport: Airport, runway: Optional[Runway] = None,
                             distance=random.randrange(6000, 8000, 100)) -> MovingPoint:
         """Adds a waypoint parallel to the given runway heading, for start or approach.
 

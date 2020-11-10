@@ -26423,6 +26423,7 @@ class UnitedNationsPeacekeepers(Country):
     def __init__(self):
         super(UnitedNationsPeacekeepers, self).__init__(UnitedNationsPeacekeepers.id, UnitedNationsPeacekeepers.name)
 
+
 country_dict = {
     Russia.id: Russia,
     Ukraine.id: Ukraine,
@@ -26519,4 +26520,3 @@ def get_by_id(_id: int):
         Country: a new country object
     """
     return country_dict[_id]()
-

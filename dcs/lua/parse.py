@@ -190,7 +190,7 @@ def loads(tablestr, _globals: Optional[Dict[str, Any]] = None):
                 se = SyntaxError()
                 se.lineno = self.lineno
                 se.offset = self.pos
-                se.text = "Expected character '{', got '{char}'".format(char=self.buffer[self.pos])
+                se.text = "Expected character '{{', got '{char}'".format(char=self.buffer[self.pos])
                 raise se
 
             if self.advance():
@@ -302,9 +302,9 @@ def loads(tablestr, _globals: Optional[Dict[str, Any]] = None):
             return varnames
 
         def eat_comment(self):
-            if (self.pos + 1 < self.buflen and
-                self.buffer[self.pos] == '-' and
-               self.buffer[self.pos + 1] == '-'):
+            if (self.pos + 1 < self.buflen
+                    and self.buffer[self.pos] == '-'
+                    and self.buffer[self.pos + 1] == '-'):
                 while not self.eob() and self.buffer[self.pos] != '\n':
                     self.pos += 1
 

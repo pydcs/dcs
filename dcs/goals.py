@@ -27,7 +27,7 @@ class Goal:
             "score": self.score,
             "predicate": self.predicate,
             "comment": self.comment,
-            "rules": {i+1: self.rules[i].dict() for i in range(0, len(self.rules))}
+            "rules": {i + 1: self.rules[i].dict() for i in range(0, len(self.rules))}
         }
 
 
@@ -71,10 +71,10 @@ class Goals:
             d[side]["actions"] = {i + 1: "a_set_mission_result(" + str(self.goals[side][i].score) + ")"
                                   for i in range(0, len(self.goals[side])) if self.goals[side][i].rules}
             d[side]["func"] = {
-                i + 1: funcstr.format(side=side, idx=i+1)
+                i + 1: funcstr.format(side=side, idx=i + 1)
                 for i in range(0, len(self.goals[side])) if self.goals[side][i].rules}
         return d
 
     def dict(self):
-        return {i+1: self.goals[side][i].dict()
+        return {i + 1: self.goals[side][i].dict()
                 for side in ["blue", "red", "offline"] for i in range(0, len(self.goals[side]))}

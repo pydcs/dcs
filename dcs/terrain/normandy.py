@@ -1,7 +1,5 @@
-from dcs.terrain.terrain import Terrain, Airport, Runway, ParkingSlot, MapView, Graph
+from dcs.terrain.terrain import Terrain, Airport, Runway, ParkingSlot, MapView
 import dcs.mapping as mapping
-import random
-from datetime import datetime
 
 
 class Saint_Pierre_du_Mont(Airport):
@@ -5938,6 +5936,7 @@ class Conches(Airport):
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=6, position=mapping.Point(-56959.0859375, 95226.2734375), large=False, heli=True,
                 airplanes=True, slot_name='01', length=24.0, width=33.0, height=7.0, shelter=False))
+
 
 class Normandy(Terrain):
     center = {"lat": 41.3, "long": 0.18}

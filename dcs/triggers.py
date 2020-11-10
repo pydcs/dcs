@@ -125,8 +125,8 @@ class TriggerRule:
         return actionstr
 
     def func_str(self, start, idx):
-        if self.eventlist == Event.NoEvent and (start and isinstance(self, TriggerStart) or
-                                                (not start and not isinstance(self, TriggerStart))):
+        if self.eventlist == Event.NoEvent and (start and isinstance(self, TriggerStart)
+                                                or (not start and not isinstance(self, TriggerStart))):
             if isinstance(self, TriggerCondition):
                 return "if mission.trig.conditions[{idx}]() then if not mission.trig.flag[{idx}" \
                        "] then mission.trig.actions[{idx}](); mission.trig.flag[{idx}" \
@@ -200,7 +200,8 @@ class Rules:
 
     def trig(self):
         d = {}
-        d["conditions"] = {i + 1: condition.Condition.condition_str(self.triggers[i].rules) for i in range(0, len(self.triggers))}
+        d["conditions"] = {i + 1: condition.Condition.condition_str(self.triggers[i].rules)
+                           for i in range(0, len(self.triggers))}
         d["actions"] = {i + 1: self.triggers[i].action_str(i + 1) for i in range(0, len(self.triggers))}
         d["func"] = {i + 1: self.triggers[i].func_str(False, i + 1) for i in range(0, len(self.triggers))
                      if self.triggers[i].func_str(False, i + 1)}

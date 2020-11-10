@@ -212,9 +212,13 @@ class BasicScenario:
         self.blue_airports = caucasus.default_blue_airports()
         for a in self.blue_airports:
             self.setup_airport(a, "blue", [dcs.vehicles.AirDefence.SAM_Avenger_M1097,
-                                                dcs.vehicles.AirDefence.AAA_Vulcan_M163])
+                                           dcs.vehicles.AirDefence.AAA_Vulcan_M163])
 
-    def setup_airport(self, airport: dcs.terrain.Airport, side: str, air_def_units: List[Type[dcs.unittype.VehicleType]]):
+    def setup_airport(
+            self,
+            airport: dcs.terrain.Airport,
+            side: str,
+            air_def_units: List[Type[dcs.unittype.VehicleType]]):
         airport.set_coalition(side)
 
         if not airport.civilian:
@@ -225,7 +229,7 @@ class BasicScenario:
                 dcs.templates.VehicleTemplate.USA.patriot_site(self.m, airport.random_unit_zone().center(), 330)
         else:
             slots = len(airport.parking_slots)
-            airdef = int(round(random.random() + slots/20, 0))
+            airdef = int(round(random.random() + slots / 20, 0))
             if airdef:
                 vg = self.m.vehicle_group(
                     self.m.country("Russia") if airport.is_red() else self.m.country("USA"),
@@ -260,8 +264,10 @@ class BasicScenario:
 
             slots = airport.free_parking_slot(ptype)
 
-            x = random.randrange(dcs.terrain.Caucasus.bounds.bottom+100*1000, dcs.terrain.Caucasus.bounds.top-100*1000)
-            y = random.randrange(dcs.terrain.Caucasus.bounds.left+600*1000, dcs.terrain.Caucasus.bounds.right-130*1000)
+            x = random.randrange(dcs.terrain.Caucasus.bounds.bottom + 100 * 1000,
+                                 dcs.terrain.Caucasus.bounds.top - 100 * 1000)
+            y = random.randrange(dcs.terrain.Caucasus.bounds.left + 600 * 1000,
+                                 dcs.terrain.Caucasus.bounds.right - 130 * 1000)
 
             pos = dcs.mapping.Point(x, y)
             name = "Civil " + str(c_count)
@@ -276,10 +282,10 @@ class BasicScenario:
                 pg = self.m.flight_group_from_airport(country, name, ptype, airport)
                 pg.uncontrolled = True
             else:
-                bound = dcs.mapping.Rectangle(dcs.terrain.Caucasus.bounds.top-100*1000,
-                                              dcs.terrain.Caucasus.bounds.left+200*1000,
-                                              dcs.terrain.Caucasus.bounds.bottom+100*1000,
-                                              dcs.terrain.Caucasus.bounds.right-130*1000)
+                bound = dcs.mapping.Rectangle(dcs.terrain.Caucasus.bounds.top - 100 * 1000,
+                                              dcs.terrain.Caucasus.bounds.left + 200 * 1000,
+                                              dcs.terrain.Caucasus.bounds.bottom + 100 * 1000,
+                                              dcs.terrain.Caucasus.bounds.right - 130 * 1000)
                 point = bound.random_point()
 
                 pg = self.m.flight_group_inflight(
@@ -288,7 +294,7 @@ class BasicScenario:
                 tmp = pg.add_waypoint(dcs.mapping.Point(0, 0), pg.points[0].alt)
                 wp = pg.add_runway_waypoint(airport, distance=random.randrange(6000, 8000, 100))
                 heading = wp.position.heading_between_point(point)
-                tmp.position = wp.position.point_from_heading(heading, 30*1000)
+                tmp.position = wp.position.point_from_heading(heading, 30 * 1000)
                 pg.land_at(airport)
             pg.set_frequency(240)
             return pg
@@ -305,7 +311,7 @@ class BasicScenario:
             rand = random.random()
             name = "Helicopter Transport " + str(c_count)
             if 0.7 < rand:
-                bound = dcs.mapping.Rectangle.from_point(start_airport.position, 100*1000)
+                bound = dcs.mapping.Rectangle.from_point(start_airport.position, 100 * 1000)
                 pos = bound.random_point()
                 hg = self.m.flight_group_inflight(country, name, htype, pos, random.randrange(800, 1500, 100), 200)
                 hg.add_runway_waypoint(start_airport)
@@ -314,7 +320,6 @@ class BasicScenario:
                 hg = self.m.flight_group_from_airport(country, name, htype, start_airport)
                 hg.uncontrolled = True
             else:
-                dest_airport = None
                 while True:
                     dest_airport = airports[random.randrange(0, len(airports))]
                     if dest_airport != start_airport:
@@ -394,8 +399,9 @@ class BasicScenario:
             airport = airports[random.randrange(0, len(airports))]
             if start == "inflight":
                 rp = placement_rect.random_point() if placement_rect else dcs.mapping.Rectangle.from_point(
-                        airport.position, 20*1000).random_point()
-                altitude = random.randrange(300, 1000, 100) if aircraft_type.helicopter else random.randrange(2000, 5000, 100)
+                    airport.position, 20 * 1000).random_point()
+                altitude = random.randrange(300, 1000, 100) \
+                    if aircraft_type.helicopter else random.randrange(2000, 5000, 100)
                 pg = self.m.flight_group_inflight(
                     country, name + str(c), aircraft_type, rp, altitude,
                     maintask=maintask, group_size=group_size)
@@ -502,7 +508,10 @@ class Refueling(BasicScenario):
 
         frequency = 140
         orbit_rect = dcs.mapping.Rectangle(
-            int(batumi.position.x + 120*1000), int(batumi.position.y - 100 * 1000), int(batumi.position.x), int(vaziani.position.y))
+            int(batumi.position.x + 120 * 1000),
+            int(batumi.position.y - 100 * 1000),
+            int(batumi.position.x),
+            int(vaziani.position.y))
 
         pos, heading, race_dist = Refueling.random_orbit(orbit_rect)
         awacs = self.m.awacs_flight(
@@ -541,7 +550,7 @@ class Refueling(BasicScenario):
             rcaps = list(self.air_force["red"]["CAP"].keys())
             rcap = self.air_force["red"]["CAP"][random.choice(rcaps)]
             cap_country = self.m.country(rcap["country"])
-            p1, p2 = self.air_zones[zone].outbound_rectangle().resize(0.6).random_distant_points(80*1000)
+            p1, p2 = self.air_zones[zone].outbound_rectangle().resize(0.6).random_distant_points(80 * 1000)
             pf = self.m.patrol_flight(cap_country, cap_country.name + " CAP " + str(i), rcap["type"], None,
                                       p1, p2, group_size=rcap["size"])
             pf.hidden = not unhide
@@ -598,7 +607,7 @@ KC-135 Tanker has TACAN 10X activated.""".format(freq=frequency))
         y1 = random.randrange(sy, rect.right)
         heading = 90 if y1 < (sy + (rect.right - sy) / 2) else 270
         heading = random.randrange(heading - 20, heading + 20)
-        race_dist = random.randrange(80*1000, 120*1000)
+        race_dist = random.randrange(80 * 1000, 120 * 1000)
         return dcs.mapping.Point(x1, y1), heading, race_dist
 
 
@@ -646,15 +655,19 @@ class CAS(BasicScenario):
         for force in [self.blue_force, self.red_force]:
             attack_hdg = (300 + (180 if isred else 0)) % 360
             defense_hdg = (attack_hdg + 180) % 360
-            rp = battle_point.point_from_heading(defense_hdg, 7*1000)
+            rp = battle_point.point_from_heading(defense_hdg, 7 * 1000)
             for force_type in force:
                 for conf in force[force_type]:
                     dist_hdg = front_hdg if random.getrandbits(1) else front_hdg + 180
                     rp = rp.point_from_heading(dist_hdg, random.randrange(100, 1000))
                     if force_type in ["Artillery", "Supply"]:
-                        rp = rp.point_from_heading(random.randrange(defense_hdg-30, defense_hdg+30), random.randrange(500, 3000))
+                        rp = rp.point_from_heading(
+                            random.randrange(defense_hdg - 30, defense_hdg + 30),
+                            random.randrange(500, 3000))
                     else:
-                        rp = rp.point_from_heading(random.randrange(attack_hdg-30, attack_hdg+30), random.randrange(0, 500))
+                        rp = rp.point_from_heading(
+                            random.randrange(attack_hdg - 30, attack_hdg + 30),
+                            random.randrange(0, 500))
 
                     plat = force[force_type][conf]
                     c = self.m.country(plat[0])
@@ -666,11 +679,14 @@ class CAS(BasicScenario):
                     if force_type not in ["Artillery", "Supply"] and isred:
                         wp = g.add_waypoint(g.position.point_from_heading(attack_hdg, 12000))
                         wp.action = dcs.point.PointAction.Vee
-                        g.add_waypoint(wp.position.point_from_heading(random.randrange(attack_hdg-10, attack_hdg+30), 5000))
+                        g.add_waypoint(wp.position.point_from_heading(
+                            random.randrange(attack_hdg - 10, attack_hdg + 30),
+                            5000))
 
                     if force_type in ["Artillery"]:
                         for x in range(0, 10):
-                            rect = dcs.mapping.Rectangle.from_point(battle_point.point_from_heading(attack_hdg, 7000), 2000)
+                            rect = dcs.mapping.Rectangle.from_point(
+                                battle_point.point_from_heading(attack_hdg, 7000), 2000)
                             g.points[0].tasks.append(dcs.task.FireAtPoint(rect.random_point(), 30, 30))
             isred = True
 
@@ -719,8 +735,7 @@ class CAS(BasicScenario):
 
         self.m.set_sortie_text("Random CAS")
         self.m.set_description_text("""Random generated CAS test mission.""")
-        self.m.set_description_bluetask_text(
-"""Support your ground troops at waypoint 2.
+        self.m.set_description_bluetask_text("""Support your ground troops at waypoint 2.
 Take care of enemy air defense.
 
 2 F-16 are supporting you with a SEAD strike""")
@@ -796,7 +811,7 @@ class CAP(BasicScenario):
 
         usa = self.m.country("USA")
         ukraine = self.m.country(dcs.countries.Ukraine.name)
-        race_dist = random.randrange(80*1000, 120*1000, 1000)
+        race_dist = random.randrange(80 * 1000, 120 * 1000, 1000)
         p1, p2 = patrol_zone.random_distant_points(race_dist)
         p1.heading_between_point(p2)
         awacs = self.m.awacs_flight(
@@ -811,7 +826,7 @@ class CAP(BasicScenario):
         self.m.escort_flight(usa, "AWACS Escort", dcs.countries.USA.Plane.F_15E,
                              None, awacs, dcs.mission.StartType.Warm)
 
-        race_dist = random.randrange(80*1000, 120*1000, 1000)
+        race_dist = random.randrange(80 * 1000, 120 * 1000, 1000)
         p1, p2 = patrol_zone.random_distant_points(race_dist)
         p1.heading_between_point(p2)
         self.m.refuel_flight(
@@ -828,7 +843,7 @@ class CAP(BasicScenario):
             rcaps = list(self.air_force["red"]["CAP"].keys())
             rcap = self.air_force["red"]["CAP"][random.choice(rcaps)]
             cap_country = self.m.country(rcap["country"])
-            p1, p2 = self.air_zones[zone].outbound_rectangle().resize(0.6).random_distant_points(80*1000)
+            p1, p2 = self.air_zones[zone].outbound_rectangle().resize(0.6).random_distant_points(80 * 1000)
             pf = self.m.patrol_flight(cap_country, cap_country.name + " CAP " + str(i), rcap["type"], None,
                                       p1, p2, group_size=rcap["size"])
             pf.hidden = not unhide
@@ -836,8 +851,8 @@ class CAP(BasicScenario):
                 pf.load_loadout(rcap["loadout"])
             i += 1
 
+        # for attack_type in self.air_force["red"].keys():
         for x in range(0, random.randrange(1, 3)):
-        #for attack_type in self.air_force["red"].keys():
             attack_type = random.choice(list(self.air_force["red"].keys()))
             af = self.air_force["red"][attack_type][random.choice(list(self.air_force["red"][attack_type].keys()))]
             spawn_rect = self.air_zones["russia_east"].outbound_rectangle()
@@ -848,7 +863,7 @@ class CAP(BasicScenario):
             attack_airport = random.choice(self.blue_airports)
 
             pos = attack_airport.position.point_from_heading(
-                random.randrange(290, 410), 60*1000) if af["type"].helicopter else spawn_rect.random_point()
+                random.randrange(290, 410), 60 * 1000) if af["type"].helicopter else spawn_rect.random_point()
             attack_flight = self.m.flight_group(
                 att_country,
                 att_country.name + " " + attack_type,
@@ -871,8 +886,7 @@ class CAP(BasicScenario):
 
         self.m.set_sortie_text("Random CAP")
         self.m.set_description_text("""Random generated CAP test mission.""")
-        self.m.set_description_bluetask_text(
-"""Protect your AWACS and Tanker
+        self.m.set_description_bluetask_text("""Protect your AWACS and Tanker
 
 AWACS and tanker are reachable on VHF-AM {freq} Mhz.""".format(freq=vhf_am))
 
@@ -896,18 +910,19 @@ def main():
     parser.add_argument("-s", "--start", default="inflight", choices=["inflight", "runway", "warm", "cold"])
     parser.add_argument("-t", "--missiontype", default="main", choices=["main", "CAS", "CAP", "refuel"])
     parser.add_argument("-d", "--daytime", choices=["random", "day", "night", "dusk", "dawn", "noon"], default="random")
-    parser.add_argument("-w", "--weather", choices=["dynamic", "dyncyclone", "dynanti", "dynone", "clear"], default="dynamic")
+    parser.add_argument(
+        "-w", "--weather", choices=["dynamic", "dyncyclone", "dynanti", "dynone", "clear"], default="dynamic")
     parser.add_argument("-u", "--unhide", action="store_true", default=False, help="Show enemy pre mission")
     parser.add_argument("--show-stats", action="store_true", default=False, help="Show generated missions stats")
     parser.add_argument("-o", "--output", help="Name and path of the generated mission",
-                        default=os.path.join(os.path.expanduser("~"),"Saved Games\\DCS\\Missions\\random.miz"))
+                        default=os.path.join(os.path.expanduser("~"), "Saved Games\\DCS\\Missions\\random.miz"))
 
     args = parser.parse_args()
     missiontype = args.missiontype
     if args.aircrafttype in [
-        dcs.planes.Su_25T.id,
-        dcs.helicopters.Ka_50.id,
-        dcs.planes.A_10C.id] and args.missiontype == "main":
+            dcs.planes.Su_25T.id,
+            dcs.helicopters.Ka_50.id,
+            dcs.planes.A_10C.id] and args.missiontype == "main":
         missiontype = "CAS"
     if args.aircrafttype in [dcs.planes.M_2000C.id, dcs.planes.MiG_21Bis.id] and args.missiontype == "main":
         missiontype = "CAP"
@@ -917,14 +932,16 @@ def main():
 
     if missiontype == "refuel":
         supported = [dcs.planes.A_10C.id, dcs.planes.M_2000C.id]
-        types = [x for x in types if x[1] in supported] if args.playercount > 1 else [x for x in types if x[1] == args.aircrafttype]
+        types = [x for x in types if x[1] in supported]\
+            if args.playercount > 1 else [x for x in types if x[1] == args.aircrafttype]
         s = Refueling(types, args.playercount, args.start, args.unhide)
     elif missiontype == "CAS":
         types = types if args.playercount > 1 else [x for x in types if x[1] == args.aircrafttype]
         s = CAS(types, args.playercount, args.start, args.unhide)
     elif missiontype == "CAP":
         supported = [dcs.planes.M_2000C.id, dcs.planes.MiG_21Bis]
-        types = [x for x in types if x[1] in supported] if args.playercount > 1 else [x for x in types if x[1] == args.aircrafttype]
+        types = [x for x in types if x[1] in supported]\
+            if args.playercount > 1 else [x for x in types if x[1] == args.aircrafttype]
         s = CAP(types, args.playercount, args.start, args.unhide)
     else:
         raise NotImplementedError(missiontype + " not implemented")

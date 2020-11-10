@@ -2,8 +2,6 @@ import dcs.mapping as mapping
 from dcs.terrain.terrain import Airport, Runway, ParkingSlot, Terrain, MapView
 
 
-
-
 class Abu_al_Duhur(Airport):
     id = 1
     name = "Abu al-Duhur"

@@ -161,7 +161,7 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
             planes=(10, 20),
             helicopters=(0, 8),
             hidden=True,
-            airports_to_use: List[dcs.terrain.Airport]=None):
+            airports_to_use: List[dcs.terrain.Airport] = None):
         p_count = random.randrange(planes[0], planes[1])
         h_count = random.randrange(helicopters[0], helicopters[1])
         if airports_to_use is None:
@@ -182,10 +182,10 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
 
             beatty = self.m.terrain.beatty_airport()
             groom = self.m.terrain.groom_lake_afb()
-            x = random.randrange(int(dcs.terrain.Nevada.bounds.bottom)+100*1000,
+            x = random.randrange(int(dcs.terrain.Nevada.bounds.bottom) + 100 * 1000,
                                  int(groom.position.x))
             y = random.randrange(int(beatty.position.y),
-                                 int(dcs.terrain.Nevada.bounds.right)-130*1000)
+                                 int(dcs.terrain.Nevada.bounds.right) - 130 * 1000)
 
             pos = dcs.mapping.Point(x, y)
             name = "Civil " + str(c_count)
@@ -200,10 +200,10 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
                 pg = self.m.flight_group_from_airport(country, name, ptype, airport)
                 pg.uncontrolled = True
             else:
-                bound = dcs.mapping.Rectangle(dcs.terrain.Nevada.bounds.top-100*1000,
-                                              dcs.terrain.Nevada.bounds.left+200*1000,
-                                              dcs.terrain.Nevada.bounds.bottom+100*1000,
-                                              dcs.terrain.Nevada.bounds.right-130*1000)
+                bound = dcs.mapping.Rectangle(dcs.terrain.Nevada.bounds.top - 100 * 1000,
+                                              dcs.terrain.Nevada.bounds.left + 200 * 1000,
+                                              dcs.terrain.Nevada.bounds.bottom + 100 * 1000,
+                                              dcs.terrain.Nevada.bounds.right - 130 * 1000)
                 point = bound.random_point()
 
                 pg = self.m.flight_group_inflight(
@@ -212,7 +212,7 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
                 tmp = pg.add_waypoint(dcs.mapping.Point(0, 0), pg.points[0].alt)
                 wp = pg.add_runway_waypoint(airport, distance=random.randrange(6000, 8000, 100))
                 heading = wp.position.heading_between_point(point)
-                tmp.position = wp.position.point_from_heading(heading, 30*1000)
+                tmp.position = wp.position.point_from_heading(heading, 30 * 1000)
                 pg.land_at(airport)
             pg.set_frequency(240)
             return pg
@@ -229,7 +229,7 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
             rand = random.random()
             name = "Helicopter Transport " + str(c_count)
             if 0.7 < rand:
-                bound = dcs.mapping.Rectangle.from_point(start_airport.position, 100*1000)
+                bound = dcs.mapping.Rectangle.from_point(start_airport.position, 100 * 1000)
                 pos = bound.random_point()
                 hg = self.m.flight_group_inflight(country, name, htype, pos, random.randrange(800, 1500, 100), 200)
                 hg.add_runway_waypoint(start_airport)
@@ -319,8 +319,9 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
             airport = random.choice(airports)
             if start == "inflight":
                 rp = placement_rect.random_point() if placement_rect else dcs.mapping.Rectangle.from_point(
-                        airport.position, 20*1000).random_point()
-                altitude = random.randrange(300, 1000, 100) if aircraft_type.helicopter else random.randrange(2000, 5000, 100)
+                    airport.position, 20 * 1000).random_point()
+                altitude = random.randrange(300, 1000, 100) \
+                    if aircraft_type.helicopter else random.randrange(2000, 5000, 100)
                 pg = self.m.flight_group_inflight(
                     country, name + str(c), aircraft_type, rp, altitude,
                     maintask=maintask, group_size=group_size)
@@ -381,7 +382,7 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
             self.m.country(dcs.countries.USA.name),
             "jtac1",
             dcs.countries.USA.Vehicle.Unarmed.APC_M1025_HMMWV,
-            pos1.point_from_heading(45, 5.5*1000),
+            pos1.point_from_heading(45, 5.5 * 1000),
             200
         )
         jtac1.units[0].player_can_drive = True
@@ -416,7 +417,7 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
             self.m.country(dcs.countries.USA.name),
             "jtac2",
             dcs.countries.USA.Vehicle.Unarmed.APC_M1025_HMMWV,
-            pos.point_from_heading(45, 8*1000),
+            pos.point_from_heading(45, 8 * 1000),
             200
         )
         jtac1.units[0].player_can_drive = True
@@ -436,7 +437,7 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
         y1 = random.randrange(sy, rect.right)
         heading = 90 if y1 < (sy + (rect.right - sy) / 2) else 270
         heading = random.randrange(heading - 20, heading + 20)
-        race_dist = random.randrange(80*1000, 120*1000)
+        race_dist = random.randrange(80 * 1000, 120 * 1000)
         return dcs.mapping.Point(x1, y1), heading, race_dist
 
 
@@ -458,7 +459,8 @@ def main():
     parser.add_argument("-p", "--playercount", default=1, type=int)
     parser.add_argument("-s", "--start", default="inflight", choices=["inflight", "runway", "warm", "cold"])
     parser.add_argument("-d", "--daytime", choices=["random", "day", "night", "dusk", "dawn", "noon"], default="random")
-    parser.add_argument("-w", "--weather", choices=["dynamic", "dyncyclone", "dynanti", "dynone", "clear"], default="dynamic")
+    parser.add_argument(
+        "-w", "--weather", choices=["dynamic", "dyncyclone", "dynanti", "dynone", "clear"], default="dynamic")
     parser.add_argument("-u", "--unhide", action="store_true", default=False, help="Show enemy pre mission")
     parser.add_argument("--show-stats", action="store_true", default=False, help="Show generated missions stats")
     parser.add_argument("-o", "--output", help="Name and path of the generated mission",

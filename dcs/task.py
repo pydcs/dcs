@@ -197,73 +197,103 @@ class TargetType(type):
 class Targets(metaclass=TargetType):
     class All(TargetType, metaclass=TargetType):
         id = "All"
+
         class Air(TargetType, metaclass=TargetType):
             id = "Air"
+
             class Planes(TargetType, metaclass=TargetType):
                 id = "Planes"
+
                 class Fighters(TargetType, metaclass=TargetType):
                     id = "Fighters"
+
                 class Bombers(TargetType, metaclass=TargetType):
                     id = "Bombers"
+
             class Helicopters(TargetType, metaclass=TargetType):
                 id = "Helicopters"
 
         class GroundUnits(TargetType, metaclass=TargetType):
             id = "Ground Units"
+
             class Infantry(TargetType, metaclass=TargetType):
                 id = "Infantry"
+
             class Fortifications(TargetType, metaclass=TargetType):
                 id = "Fortifications"
+
             class GroundVehicles(TargetType, metaclass=TargetType):
                 id = "Ground vehicles"
 
                 class ArmoredVehicles(TargetType, metaclass=TargetType):
                     id = "Armored vehicles"
+
                     class Tanks(TargetType, metaclass=TargetType):
                         id = "Tanks"
+
                     class IFV(TargetType, metaclass=TargetType):
                         id = "IFV"
+
                     class APC(TargetType, metaclass=TargetType):
                         id = "APC"
+
                 class Artillery(TargetType, metaclass=TargetType):
                     id = "Artillery"
+
                 class UnarmedVehicles(TargetType, metaclass=TargetType):
                     id = "Unarmed vehicles"
+
             class AirDefence(TargetType, metaclass=TargetType):
                 id = "Air Defence"
+
                 class AAA(TargetType, metaclass=TargetType):
                     id = "AAA"
+
                     class SAMRelated(TargetType, metaclass=TargetType):
                         id = "SAM related"
+
                         class SRSAM(TargetType, metaclass=TargetType):
                             id = "SR SAM"
+
                         class MRSAM(TargetType, metaclass=TargetType):
                             id = "MR SAM"
+
                         class LRSAM(TargetType, metaclass=TargetType):
                             id = "LR SAM"
 
         class Naval(TargetType, metaclass=TargetType):
             id = "Naval"
+
             class Ships(TargetType, metaclass=TargetType):
                 id = "Ships"
+
                 class ArmedShips(TargetType, metaclass=TargetType):
                     id = "Armed ships"
+
                     class HeavyArmedShips(TargetType, metaclass=TargetType):
                         id = "Heavy armed ships"
+
                         class AircraftCarriers(TargetType, metaclass=TargetType):
                             id = "Aircraft Carriers"
+
                         class Cruisers(TargetType, metaclass=TargetType):
                             id = "Cruisers"
+
                         class Destroyers(TargetType, metaclass=TargetType):
                             id = "Destroyers"
+
                         class Frigates(TargetType, metaclass=TargetType):
                             id = "Frigates"
+
                         class Corvettes(TargetType, metaclass=TargetType):
                             id = "Corvettes"
+
                     class LightArmedShips(TargetType, metaclass=TargetType):
                         id = "Light armed ships"
+
                 class UnarmedShips(TargetType, metaclass=TargetType):
                     id = "Unarmed ships"
+
             class Submarines(TargetType, metaclass=TargetType):
                 id = "Submarines"
 
@@ -283,7 +313,7 @@ class AttackGroup(Task):
     """
     Id = "AttackGroup"
 
-    def __init__(self, group_id=0, weapon_type: WeaponType=WeaponType.Auto):
+    def __init__(self, group_id=0, weapon_type: WeaponType = WeaponType.Auto):
         super(AttackGroup, self).__init__(AttackGroup.Id)
         self.params = {
             "groupId": group_id,
@@ -301,8 +331,8 @@ class AttackUnit(Task):
     """
     Id = "AttackUnit"
 
-    def __init__(self, unit_id=0, attack_limit: Optional[int]=None,
-                 weapon_type: WeaponType=WeaponType.Auto, group_attack=False):
+    def __init__(self, unit_id=0, attack_limit: Optional[int] = None,
+                 weapon_type: WeaponType = WeaponType.Auto, group_attack=False):
         super(AttackUnit, self).__init__(self.Id)
         self.params = {
             "groupId": unit_id,
@@ -316,8 +346,8 @@ class AttackUnit(Task):
 class AttackMapObject(Task):
     Id = "AttackMapObject"
 
-    def __init__(self, position: Point=Point(0, 0), attack_limit: Optional[int]=None,
-                 weapon_type: WeaponType=WeaponType.Auto, group_attack=False):
+    def __init__(self, position: Point = Point(0, 0), attack_limit: Optional[int] = None,
+                 weapon_type: WeaponType = WeaponType.Auto, group_attack=False):
         super(AttackMapObject, self).__init__(self.Id)
         self.params = {
             "x": position.x,
@@ -456,7 +486,7 @@ class EscortTaskAction(Task):
             "lastWptIndexFlagChangedManually": False,
             "lastWptIndexFlag": False,
             "engagementDistMax": engagement_max_dist,
-            "targetTypes": {i: targets[i-1] for i in range(1, len(targets)+1)},
+            "targetTypes": {i: targets[i - 1] for i in range(1, len(targets) + 1)},
             "pos": position
         }
         if group_id:
@@ -479,9 +509,9 @@ class Expend(Enum):
 class Bombing(Task):
     Id = "Bombing"
 
-    def __init__(self, position: Point=Point(0, 0), weapon_type: WeaponType=WeaponType.Auto,
-                 expend: Expend=Expend.Auto, attack_qty=1, group_attack=False,
-                 direction: Optional[int]=None, altitude: Optional[int]=None):
+    def __init__(self, position: Point = Point(0, 0), weapon_type: WeaponType = WeaponType.Auto,
+                 expend: Expend = Expend.Auto, attack_qty=1, group_attack=False,
+                 direction: Optional[int] = None, altitude: Optional[int] = None):
         super(Bombing, self).__init__(Bombing.Id)
         self.params = {
             "directionEnabled": direction is not None,
@@ -501,9 +531,9 @@ class Bombing(Task):
 class BombingRunway(Task):
     Id = "BombingRunway"
 
-    def __init__(self, airport_id: int=0, weapon_type: WeaponType=WeaponType.Auto,
-                 expend: Expend=Expend.Auto, attack_qty=1, group_attack=False,
-                 direction: Optional[int]=None, altitude: Optional[int]=None):
+    def __init__(self, airport_id: int = 0, weapon_type: WeaponType = WeaponType.Auto,
+                 expend: Expend = Expend.Auto, attack_qty: int = 1, group_attack: bool = False,
+                 direction: Optional[int] = None, altitude: Optional[int] = None):
         super(BombingRunway, self).__init__(BombingRunway.Id)
         self.params = {
             "directionEnabled": direction is not None,
@@ -528,7 +558,7 @@ class EngageTargets(Task):
         if targets is None:
             targets = [Targets.All]
         self.params = {
-            "targetTypes": {i: targets[i-1] for i in range(1, len(targets)+1)},
+            "targetTypes": {i: targets[i - 1] for i in range(1, len(targets) + 1)},
             "maxDistEnabled": True if max_distance else False,
             "maxDist": max_distance,
             "priority": 0
@@ -544,7 +574,7 @@ class EngageTargetsInZone(Task):
         if targets is None:
             targets = [Targets.All]
         self.params = {
-            "targetTypes": {i: targets[i-1] for i in range(1, len(targets)+1)},
+            "targetTypes": {i: targets[i - 1] for i in range(1, len(targets) + 1)},
             "priority": 0,
             "x": position.x,
             "y": position.y,
@@ -645,7 +675,7 @@ class OrbitAction(Task):
         RaceTrack = "Race-Track"
         Circle = "Circle"
 
-    def __init__(self, altitude=4000, speed=600, pattern: OrbitPattern=OrbitPattern.RaceTrack):
+    def __init__(self, altitude=4000, speed=600, pattern: OrbitPattern = OrbitPattern.RaceTrack):
         super(OrbitAction, self).__init__(OrbitAction.Id)
         self.params = {
             "altitude": altitude,
@@ -658,7 +688,7 @@ class OrbitAction(Task):
 class Follow(Task):
     Id = "Follow"
 
-    def __init__(self, groupid=None, position: Point=Point(-200, 0), altitude_difference=-200, last_wpt=None):
+    def __init__(self, groupid=None, position: Point = Point(-200, 0), altitude_difference=-200, last_wpt=None):
         super(Follow, self).__init__(self.Id)
 
         self.params = {
@@ -695,8 +725,8 @@ class Designation(Enum):
 class FAC(Task):
     Id = "FAC"
 
-    def __init__(self, callsign: int=1, designation: Designation=Designation.Auto,
-                 frequency: int=30, modulation: Modulation=Modulation.FM, number: int=1):
+    def __init__(self, callsign: int = 1, designation: Designation = Designation.Auto,
+                 frequency: int = 30, modulation: Modulation = Modulation.FM, number: int = 1):
         super(FAC, self).__init__(self.Id)
 
         self.params = {
@@ -712,9 +742,9 @@ class FAC(Task):
 class FACEngageGroup(Task):
     Id = "FAC_EngageGroup"
 
-    def __init__(self, group_id: int=0, visible=False, weapon_type: WeaponType=WeaponType.Auto, priority: int=0,
-                 callsign: int=1, designation: Designation=Designation.Auto,
-                 frequency: int=30, modulation: Modulation=Modulation.FM, datalink=True, number: int=1):
+    def __init__(self, group_id: int = 0, visible=False, weapon_type: WeaponType = WeaponType.Auto, priority: int = 0,
+                 callsign: int = 1, designation: Designation = Designation.Auto,
+                 frequency: int = 30, modulation: Modulation = Modulation.FM, datalink=True, number: int = 1):
         super(FACEngageGroup, self).__init__(self.Id)
 
         self.params = {
@@ -741,7 +771,7 @@ class Land(Task):
     """
     Id = "Land"
 
-    def __init__(self, position: Point=Point(0, 0), duration: int=None):
+    def __init__(self, position: Point = Point(0, 0), duration: int = None):
         super(Land, self).__init__(self.Id)
 
         self.params = {
@@ -764,8 +794,8 @@ class Embarking(Task):
     """
     Id = "Embarking"
 
-    def __init__(self, position: Point=Point(0, 0), groupids: List[int]=None,
-                 distribution: Dict[int, List[int]]=None, duration: int=None):
+    def __init__(self, position: Point = Point(0, 0), groupids: List[int] = None,
+                 distribution: Dict[int, List[int]] = None, duration: int = None):
         super(Embarking, self).__init__(self.Id)
 
         groupids = [] if groupids is None else groupids
@@ -791,7 +821,7 @@ class EmbarkToTransport(Task):
     """
     Id = "EmbarkToTransport"
 
-    def __init__(self, position: Point=Point(0, 0), zone_radius=200, concrete_unitid=None):
+    def __init__(self, position: Point = Point(0, 0), zone_radius=200, concrete_unitid=None):
         super(EmbarkToTransport, self).__init__(self.Id)
 
         self.params = {
@@ -811,7 +841,7 @@ class DisembarkFromTransport(Task):
     """
     Id = "DisembarkFromTransport"
 
-    def __init__(self, position: Point=Point(0, 0), zone_radius=200):
+    def __init__(self, position: Point = Point(0, 0), zone_radius=200):
         super(DisembarkFromTransport, self).__init__(self.Id)
 
         self.params = {
@@ -849,15 +879,15 @@ class EWR(Task):
 class GoToWaypoint(Task):
     Id = "GoToWaypoint"
 
-    def __init__(self, fromIndex=None, toIndex=None):
+    def __init__(self, from_index=None, to_index=None):
         super(GoToWaypoint, self).__init__(self.Id)
 
         self.params = {}
-        if fromIndex:
-            self.params["fromWaypointIndex"] = fromIndex
+        if from_index:
+            self.params["fromWaypointIndex"] = from_index
 
-        if toIndex:
-            self.params["nWaypointIndx"] = toIndex
+        if to_index:
+            self.params["nWaypointIndx"] = to_index
 
 
 tasks_map = {
@@ -988,7 +1018,7 @@ class RunScript(WrappedAction):
     """
     Key = "Script"
 
-    def __init__(self, script: str=""):
+    def __init__(self, script: str = ""):
         super(RunScript, self).__init__()
         self.params = {
             "action": {
@@ -1005,7 +1035,7 @@ class RunScriptFile(WrappedAction):
     """
     Key = "ScriptFile"
 
-    def __init__(self, resourcekey: str=""):
+    def __init__(self, resourcekey: str = ""):
         super(RunScriptFile, self).__init__()
         self.params = {
             "action": {
@@ -1026,7 +1056,7 @@ class TransmitMessage(WrappedAction):
     """
     Key = "TransmitMessage"
 
-    def __init__(self, soundfile_reskey: Optional[str]=None, subtitle_resstring: Optional[str]=None,
+    def __init__(self, soundfile_reskey: Optional[str] = None, subtitle_resstring: Optional[str] = None,
                  loop=False, subtitle_duration=5):
         super(TransmitMessage, self).__init__()
 
@@ -1481,14 +1511,14 @@ class OptFormation(Option):
 class OptRTBOnBingoFuel(Option):
     Key = 6
 
-    def __init__(self, value: bool=True):
+    def __init__(self, value: bool = True):
         super(OptRTBOnBingoFuel, self).__init__(value)
 
 
 class OptRadioSilence(Option):
     Key = 7
 
-    def __init__(self, value: bool=True):
+    def __init__(self, value: bool = True):
         super(OptRadioSilence, self).__init__(value)
 
 
@@ -1537,7 +1567,7 @@ class OptRTBOnOutOfAmmo(Option):
         MR_AAM = 8388608
         LR_AAM = 16777216
 
-    def __init__(self, value: Values=Values.All):
+    def __init__(self, value: Values = Values.All):
         super(OptRTBOnOutOfAmmo, self).__init__(value.value)
 
 

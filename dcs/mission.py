@@ -97,7 +97,7 @@ class Mission:
             terrain_.Normandy,
             terrain_.PersianGulf,
             terrain_.TheChannel,
-            terrain_.Syria]=None
+            terrain_.Syria] = None
     ):
         if terrain is None:
             terrain = terrain_.Caucasus()
@@ -653,7 +653,7 @@ class Mission:
     def vehicle_group(self, country, name, _type: Type[unittype.VehicleType], position: mapping.Point,
                       heading=0, group_size=1,
                       formation=unitgroup.VehicleGroup.Formation.Line,
-                      move_formation: PointAction=PointAction.OffRoad) -> unitgroup.VehicleGroup:
+                      move_formation: PointAction = PointAction.OffRoad) -> unitgroup.VehicleGroup:
         """Adds a new vehicle group to the given country.
 
         Args:
@@ -693,7 +693,7 @@ class Mission:
                               position: mapping.Point,
                               heading=0,
                               formation=unitgroup.VehicleGroup.Formation.Line,
-                              move_formation: PointAction=PointAction.OffRoad) -> unitgroup.VehicleGroup:
+                              move_formation: PointAction = PointAction.OffRoad) -> unitgroup.VehicleGroup:
         """Adds a new vehicle group to the given country and given vehicle types.
 
         Args:
@@ -899,12 +899,12 @@ class Mission:
             callsign_name = _country.next_callsign_category(category)
 
         i = 1
-        for unit in group.units:
+        for u in group.units:
             if category in _country.callsign:
-                unit.callsign_dict["name"] = callsign_name + str(1) + str(i)
-                unit.callsign_dict[3] = i
+                u.callsign_dict["name"] = callsign_name + str(1) + str(i)
+                u.callsign_dict[3] = i
             else:
-                unit.callsign = _country.next_callsign_id()
+                u.callsign = _country.next_callsign_id()
             i += 1
 
     @staticmethod
@@ -918,22 +918,22 @@ class Mission:
     def _flying_group_from_airport(self, _country, group: unitgroup.FlyingGroup,
                                    maintask: task.MainTask,
                                    airport: terrain_.Airport,
-                                   start_type: StartType=StartType.Cold,
+                                   start_type: StartType = StartType.Cold,
                                    parking_slots: List[terrain_.ParkingSlot] = None) -> unitgroup.FlyingGroup:
 
-        for unit in group.units:
+        for u in group.units:
             spos = airport.position
             if start_type != StartType.Runway:
                 parking_slot = parking_slots.pop(0) if parking_slots else airport.free_parking_slot(
-                    unit.unit_type)
+                    u.unit_type)
                 if parking_slot is None:
                     raise terrain_.NoParkingSlotError(
                         "No free parking slot at {airport} for {craft}".format(
                             airport=airport.name,
-                            craft=unit.unit_type.id))
+                            craft=u.unit_type.id))
                 spos = parking_slot.position
-                unit.set_parking(parking_slot)
-            unit.position = copy.copy(spos)
+                u.set_parking(parking_slot)
+            u.position = copy.copy(spos)
 
         # if start_type == StartType.Runway:
         #     airport.occupy_runway(group)
@@ -967,10 +967,10 @@ class Mission:
                                maintask: task.MainTask, altitude, speed) -> unitgroup.FlyingGroup:
 
         i = 0
-        for unit in group.units:
-            unit.alt = altitude
-            unit.position.x += i * 10
-            unit.speed = speed / 3.6
+        for u in group.units:
+            u.alt = altitude
+            u.position.x += i * 10
+            u.speed = speed / 3.6
             i += 1
 
         self._assign_callsign(_country, group)
@@ -1362,7 +1362,7 @@ class Mission:
                       start_type: StartType = StartType.Cold,
                       speed=600,
                       altitude=4000,
-                      max_engage_distance=60*1000,
+                      max_engage_distance=60 * 1000,
                       group_size=2) -> unitgroup.PlaneGroup:
         """Add an patrol flight group to the mission.
 
@@ -1408,7 +1408,7 @@ class Mission:
                                pos2,
                                speed=600,
                                altitude=4000,
-                               max_engage_distance=60*1000) -> unitgroup.PlaneGroup:
+                               max_engage_distance=60 * 1000) -> unitgroup.PlaneGroup:
         """Add patrol waypoints to an existing flying group
 
         A patrol flight is a flight group that will fly a orbit between 2 given points and
@@ -1441,10 +1441,10 @@ class Mission:
                          airport: terrain_.Airport,
                          zone: triggers.TriggerZone,
                          late_activation=True,
-                         start_type: StartType=StartType.Cold,
+                         start_type: StartType = StartType.Cold,
                          speed=600,
                          altitude=4000,
-                         max_engage_distance=60*1000,
+                         max_engage_distance=60 * 1000,
                          group_size=2) -> unitgroup.PlaneGroup:
         """Add an intercept flight group to the mission.
 
@@ -1519,8 +1519,10 @@ class Mission:
                 country, name, plane_type, airport,
                 maintask=task.SEAD, start_type=start_type, group_size=group_size
             )
-            wp = eg.add_runway_waypoint(airport)
-            wp = eg.add_waypoint(airport.position.point_from_heading(airport.position.heading_between_point(target_pos), 20*1000), 5000)
+            eg.add_runway_waypoint(airport)
+            eg.add_waypoint(airport.position.point_from_heading(
+                airport.position.heading_between_point(target_pos), 20 * 1000),
+                5000)
         else:
             eg = self.flight_group_inflight(
                 country, name, plane_type,
@@ -1811,7 +1813,7 @@ class Mission:
         """
         print("Mission Statistics")
         print(self.start_time.strftime("%d. %b %Y %H:%M:%S"))
-        print("-"*60)
+        print("-" * 60)
         output = {"red": [], "blue": []}
         for x in ["Blue", "Red"]:
             low = x.lower()
@@ -1828,7 +1830,7 @@ class Mission:
             output[low].append("{group:<15s} {gc:6d} {u:5d}".format(
                 group="Ship",
                 gc=d[low]["ship_groups"]["count"], u=d[low]["ship_groups"]["unit_count"]))
-            output[low].append("-"*28)
+            output[low].append("-" * 28)
             output[low].append("{group:<15s} {gc:6d} {u:5d}".format(group="Sum", gc=d[low]["count"], u=d[low]["unit_count"]))
 
         # merge tables

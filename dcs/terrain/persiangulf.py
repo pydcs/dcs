@@ -1,7 +1,5 @@
-from dcs.terrain.terrain import Terrain, Airport, Runway, ParkingSlot, MapView, Graph
+from dcs.terrain.terrain import Terrain, Airport, Runway, ParkingSlot, MapView
 import dcs.mapping as mapping
-from datetime import datetime, timezone
-import random
 
 
 class Abu_Musa_Island_Airport(Airport):

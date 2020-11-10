@@ -119,9 +119,9 @@ class Triangle:
         self.points = copy.copy(points)  # type: List[Point]
 
     def area(self):
-        a = (self.points[0].x * self.points[1].y + self.points[1].x * self.points[2].y +
-             self.points[2].x * self.points[0].y - self.points[0].y * self.points[1].x -
-             self.points[1].y * self.points[2].x - self.points[2].y * self.points[0].x)
+        a = (self.points[0].x * self.points[1].y + self.points[1].x * self.points[2].y
+             + self.points[2].x * self.points[0].y - self.points[0].y * self.points[1].x
+             - self.points[1].y * self.points[2].x - self.points[2].y * self.points[0].x)
         a /= 2
         return a
 
@@ -231,7 +231,7 @@ class Polygon:
 
         p1x = self.points[0].x
         p1y = self.points[0].y
-        for i in range(n+1):
+        for i in range(n + 1):
             p = self.points[i % n]
             p2x = p.x
             p2y = p.y
@@ -240,7 +240,7 @@ class Polygon:
                     if point.x <= max(p1x, p2x):
                         xints = 0
                         if p1y != p2y:
-                            xints = (point.y-p1y)*(p2x-p1x)/(p2y-p1y)+p1x
+                            xints = (point.y - p1y) * (p2x - p1x) / (p2y - p1y) + p1x
                         if p1x == p2x or point.x <= xints:
                             inside = not inside
             p1x, p1y = p2x, p2y
@@ -268,7 +268,7 @@ class Polygon:
             i += 1
 
         # return a random point from this triangle
-        return areas[i-1][0].random_point()
+        return areas[i - 1][0].random_point()
 
     @staticmethod
     def is_convex(a: Point, b: Point, c: Point):
@@ -280,17 +280,17 @@ class Polygon:
 
     @staticmethod
     def in_triangle(a, b, c, p):
-        l = [0, 0, 0]
+        l_kup = [0, 0, 0]
         eps = 0.0000001
         # calculate barycentric coefficients for point p
         # eps is needed as error correction since for very small distances denom->0
-        l[0] = ((b.y - c.y) * (p.x - c.x) + (c.x - b.x) * (p.y - c.y)) /\
-               (((b.y - c.y) * (a.x - c.x) + (c.x - b.x) * (a.y - c.y)) + eps)
-        l[1] = ((c.y - a.y) * (p.x - c.x) + (a.x - c.x) * (p.y - c.y)) /\
-               (((b.y - c.y) * (a.x - c.x) + (c.x - b.x) * (a.y - c.y)) + eps)
-        l[2] = 1 - l[0] - l[1]
+        l_kup[0] = ((b.y - c.y) * (p.x - c.x) + (c.x - b.x) * (p.y - c.y)) / (((b.y - c.y) * (a.x - c.x)
+                                                                               + (c.x - b.x) * (a.y - c.y)) + eps)
+        l_kup[1] = ((c.y - a.y) * (p.x - c.x) + (a.x - c.x) * (p.y - c.y)) / (((b.y - c.y) * (a.x - c.x)
+                                                                               + (c.x - b.x) * (a.y - c.y)) + eps)
+        l_kup[2] = 1 - l_kup[0] - l_kup[1]
         # check if p lies in triangle (a, b, c)
-        for x in l:
+        for x in l_kup:
             if x >= 1 or x <= 0:
                 return False
         return True
@@ -298,10 +298,10 @@ class Polygon:
     def is_clockwise(self):
         poly_length = len(self.points)
         # initialize sum with last element
-        sum_ = (self.points[0].x - self.points[poly_length-1].x) * (self.points[0].y + self.points[poly_length-1].y)
+        sum_ = (self.points[0].x - self.points[poly_length - 1].x) * (self.points[0].y + self.points[poly_length - 1].y)
         # iterate over all other elements (0 to n-1)
-        for i in range(poly_length-1):
-            sum_ += (self.points[i+1].x - self.points[i].x) * (self.points[i+1].y + self.points[i].y)
+        for i in range(poly_length - 1):
+            sum_ += (self.points[i + 1].x - self.points[i].x) * (self.points[i + 1].y + self.points[i].y)
         return sum_ > 0
 
     @staticmethod
@@ -315,9 +315,9 @@ class Polygon:
             return tri
         for i in range(size):
             tritest = False
-            p1 = poly[(i-1) % size]
+            p1 = poly[(i - 1) % size]
             p2 = poly[i % size]
-            p3 = poly[(i+1) % size]
+            p3 = poly[(i + 1) % size]
             if Polygon.is_convex(p1, p2, p3):
                 for x in poly:
                     if not (x in (p1, p2, p3)) and Polygon.in_triangle(p1, p2, p3, x):

@@ -19,7 +19,7 @@ class VehicleTemplate:
 
             hdg = 90
             for i in range(0, 3):  # 3 launchers
-                u = mission.vehicle("launcher #" + str(i+1), Russia.Vehicle.AirDefence.SAM_SA_10_S_300PS_LN_5P85C)
+                u = mission.vehicle("launcher #" + str(i + 1), Russia.Vehicle.AirDefence.SAM_SA_10_S_300PS_LN_5P85C)
                 u.position = position.point_from_heading(heading + hdg, 50)
                 u.heading = heading
                 vg.add_unit(u)
@@ -57,7 +57,7 @@ class VehicleTemplate:
 
             hdg = 90
             for i in range(0, 2):  # 2 launchers
-                u = mission.vehicle("launcher #" + str(i+1), USA.Vehicle.AirDefence.SAM_Patriot_LN_M901)
+                u = mission.vehicle("launcher #" + str(i + 1), USA.Vehicle.AirDefence.SAM_Patriot_LN_M901)
                 u.position = position.point_from_heading(heading + hdg, 50)
                 u.heading = heading
                 vg.add_unit(u)
@@ -107,7 +107,7 @@ class VehicleTemplate:
 
             hdg = 90
             for i in range(0, 2):  # 2 launchers
-                u = mission.vehicle("launcher #" + str(i+1), USA.Vehicle.AirDefence.SAM_Hawk_LN_M192)
+                u = mission.vehicle("launcher #" + str(i + 1), USA.Vehicle.AirDefence.SAM_Hawk_LN_M192)
                 u.position = position.point_from_heading(heading + hdg, 50)
                 u.heading = heading
                 vg.add_unit(u)

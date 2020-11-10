@@ -972,6 +972,7 @@ while i <= country.maxIndex do
 end
 
 writeln(file, '')
+writeln(file, '')
 writeln(file, 'country_dict = {')
 i = 0
 while i <= country.maxIndex do

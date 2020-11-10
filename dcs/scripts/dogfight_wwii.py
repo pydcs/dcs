@@ -63,7 +63,7 @@ def main():
         hdg = heading + 180 if m.is_blue(player_country) else heading
         fg = m.flight_group_inflight(player_country, "Player " + args.aircrafttype,
                                      dcs.planes.plane_map[args.aircrafttype],
-                                     position=battle_point.point_from_heading(hdg, 10*800),
+                                     position=battle_point.point_from_heading(hdg, 10 * 800),
                                      altitude=altitude, speed=500, maintask=dcs.task.Intercept)
         fg.add_waypoint(battle_point, altitude=altitude)
         fg.units[0].set_player()
@@ -92,8 +92,8 @@ def main():
             planetype = random.choice(c)
             country = m.country(planetype[0])
             hdg = heading + 180 if m.is_blue(country) else heading
-            pos = battle_point.point_from_heading(hdg, 10*800)
-            pos = pos.point_from_heading(hdg+90, random.randrange(-5000, 5000, 100))
+            pos = battle_point.point_from_heading(hdg, 10 * 800)
+            pos = pos.point_from_heading(hdg + 90, random.randrange(-5000, 5000, 100))
             fg = m.flight_group_inflight(country, planetype[0] + " " + planetype[1] + " #" + str(gc),
                                          dcs.planes.plane_map[planetype[1]],
                                          position=pos, altitude=random.randrange(altitude - 400, altitude + 400, 50),
@@ -123,7 +123,7 @@ def main():
     stats = m.stats()
     m.set_description_text("""A WWII dogfight encounter
 There are {pc} planes in the air battling for life and death.""".format(
-        pc=stats["red"]["plane_groups"]["unit_count"]+stats["blue"]["plane_groups"]["unit_count"]))
+        pc=stats["red"]["plane_groups"]["unit_count"] + stats["blue"]["plane_groups"]["unit_count"]))
     m.set_description_redtask_text("Fight the other planes!")
     m.set_description_bluetask_text("Fight the other planes!")
 
@@ -131,6 +131,7 @@ There are {pc} planes in the air battling for life and death.""".format(
 
     print("Mission created: " + args.output)
     return 0
+
 
 if __name__ == '__main__':
     sys.exit(main())

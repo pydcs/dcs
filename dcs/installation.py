@@ -2,9 +2,11 @@
 This utility classes provides methods to check players installed DCS environment.
 
 TODO : add method 'is_using_open_beta', 'is_using_stable'
-TODO : [NICE to have] add method to check list of installed DCS modules (could be done either through windows registry, or through filesystem analysis ?)
+TODO : [NICE to have] add method to check list of installed DCS modules
+       (could be done either through windows registry, or through filesystem analysis ?)
 """
 
+import sys
 import os
 
 is_windows_os = True
@@ -34,7 +36,7 @@ def is_using_dcs_steam_edition():
             return True
         else:
             return False
-    except FileNotFoundError as fnfe:
+    except FileNotFoundError:
         return False
 
 
@@ -49,7 +51,7 @@ def is_using_dcs_standalone_edition():
         dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World")
         winreg.CloseKey(dcs_path_key)
         return True
-    except FileNotFoundError as fnfe:
+    except FileNotFoundError:
         try:
             dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World OpenBeta")
             winreg.CloseKey(dcs_path_key)
@@ -70,7 +72,7 @@ def get_dcs_install_directory():
             dcs_dir = path[0] + os.path.sep
             winreg.CloseKey(dcs_path_key)
             return dcs_dir
-        except FileNotFoundError as fnfe:
+        except FileNotFoundError:
             try:
                 dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World OpenBeta")
                 path = winreg.QueryValueEx(dcs_path_key, "Path")
@@ -78,15 +80,15 @@ def get_dcs_install_directory():
                 winreg.CloseKey(dcs_path_key)
                 return dcs_dir
             except FileNotFoundError:
-                print("Couldn't detect DCS World installation folder")
+                print("Couldn't detect DCS World installation folder", file=sys.stderr)
                 return ""
-        except Exception as e:
-            print("Couldn't detect DCS World installation folder")
+        except OSError:
+            print("Couldn't detect DCS World installation folder", file=sys.stderr)
             return ""
     elif is_using_dcs_steam_edition():
         return _find_steam_dcs_directory()
     else:
-        print("Couldn't detect any installed DCS World version")
+        print("Couldn't detect any installed DCS World version", file=sys.stderr)
         return ""
 
 
@@ -109,7 +111,7 @@ def _find_steam_directory():
         winreg.CloseKey(steam_key)
         return path
     except FileNotFoundError as fnfe:
-        print(fnfe)
+        print(fnfe, file=sys.stderr)
         return ""
 
 
@@ -120,8 +122,8 @@ def _get_steam_library_folders():
     """
     try:
         steam_dir = _find_steam_directory()
-        """        
-        For reference here is what the vdf file is supposed to look like : 
+        """
+        For reference here is what the vdf file is supposed to look like :
 
         "LibraryFolders"
         {
@@ -133,7 +135,7 @@ def _get_steam_library_folders():
         """
         vdf_file_location = steam_dir + os.path.sep + "steamapps" + os.path.sep + "libraryfolders.vdf"
         with open(vdf_file_location) as adf_file:
-            paths = [l.split("\"")[3] for l in adf_file.readlines()[1:] if ':\\\\' in l]
+            paths = [line.split("\"")[3] for line in adf_file.readlines()[1:] if ':\\\\' in line]
             return paths
     except Exception as e:
         print(e)

@@ -178,32 +178,32 @@ class Airport:
     def _free_parking_slots_resolve_v1(self, large: bool, helicopter: bool) -> List[ParkingSlot]:
         slots_index = range(0, len(self.parking_slots))
         free_large_slots = {x for x in slots_index
-                            if self.parking_slots[x].unit_id is None and
-                            self.parking_slots[x].large}
+                            if self.parking_slots[x].unit_id is None
+                            and self.parking_slots[x].large}
 
         large_slots = sorted([self.parking_slots[x] for x in free_large_slots], key=lambda x: x.slot_name)
         if large:
             return large_slots
 
         free_heli_slots = {x for x in slots_index
-                           if self.parking_slots[x].unit_id is None and
-                           self.parking_slots[x].helicopter and not self.parking_slots[x].large}
+                           if self.parking_slots[x].unit_id is None
+                           and self.parking_slots[x].helicopter and not self.parking_slots[x].large}
 
         heli_slots = sorted([self.parking_slots[x] for x in free_heli_slots], key=lambda x: x.slot_name)
         if helicopter:
             return heli_slots + large_slots
 
-        free_slots = list(self.parking_slots[x] for x in slots_index if self.parking_slots[x].unit_id is None and
-                          not self.parking_slots[x].large and not self.parking_slots[x].helicopter)
+        free_slots = list(self.parking_slots[x] for x in slots_index if self.parking_slots[x].unit_id is None
+                          and not self.parking_slots[x].large and not self.parking_slots[x].helicopter)
         free_slots = sorted(free_slots, key=lambda x: x.slot_name)
         return free_slots + heli_slots + large_slots
 
     def _free_parking_slots_resolve_v2(self, aircraft_type: unittype.FlyingType) -> List[ParkingSlot]:
         free_slots = [x for x in self.parking_slots
-                      if x.unit_id is None and
-                      aircraft_type.width < x.width and
-                      aircraft_type.height < (x.height or 1000) and
-                      aircraft_type.length < x.length]
+                      if x.unit_id is None
+                      and aircraft_type.width < x.width
+                      and aircraft_type.height < (x.height or 1000)
+                      and aircraft_type.length < x.length]
 
         if aircraft_type.helicopter:
             free_slots = [x for x in free_slots if x.helicopter]
