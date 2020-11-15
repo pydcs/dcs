@@ -266,6 +266,7 @@ flyable["Ka-50"] = true
 flyable["Mi-8MT"] = true
 flyable["UH-1H"] = true
 flyable["SpitfireLFMkIX"] = true
+flyable["SpitfireLFMkIXCW"] = true
 flyable["SA342L"] = true
 flyable["SA342M"] = true
 flyable["SA342Minigun"] = true

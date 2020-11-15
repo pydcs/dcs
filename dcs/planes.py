@@ -8979,6 +8979,7 @@ class SpitfireLFMkIX(PlaneType):
 
 class SpitfireLFMkIXCW(PlaneType):
     id = "SpitfireLFMkIXCW"
+    flyable = True
     height = 4.77
     width = 11.25
     length = 12.13
