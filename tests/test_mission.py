@@ -680,7 +680,7 @@ class BasicTests(unittest.TestCase):
 
     def test_mission_neutral(self):
         m = dcs.mission.Mission()
-        m.load_file('loadtest.miz')
+        m.load_file('tests/loadtest.miz')
 
         neutral_country_name = "Sweden"
         sweden = m.country(neutral_country_name)
