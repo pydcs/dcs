@@ -96,8 +96,8 @@ class PointProperties:
         self.vnav = VNav(d.get("vnav", VNav.VNone.value))
         self.scale = Scale(d.get("scale", Scale.None_.value))
         self.steer = Steer(d.get("steer", Steer.None_.value))
-        self.angle = d.get("angle")
-        self.vangle = d.get("vangle")
+        self.angle = d.get("angle", 0)
+        self.vangle = d.get("vangle", 0)
 
     def dict(self):
         return {

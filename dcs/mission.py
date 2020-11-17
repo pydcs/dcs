@@ -369,7 +369,7 @@ class Mission:
         self.weather.load_from_dict(imp_weather)
 
         # import coalition with countries and units
-        for col_name in ["blue", "red", "neutral"]:
+        for col_name in ["blue", "red", "neutrals"]:
             if col_name in imp_mission["coalition"]:
                 self.coalition[col_name] = Coalition(col_name, imp_mission["coalition"][col_name]["bullseye"])
                 self.coalition[col_name].load_from_dict(self, imp_mission["coalition"][col_name])

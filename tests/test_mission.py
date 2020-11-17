@@ -678,4 +678,24 @@ class BasicTests(unittest.TestCase):
         group = m2.country("USA").find_group("qf17")
         self.assertEqual(group.units[0].type, dcs.vehicles.AirDefence.AA_gun_QF_3_7.id)
 
+    def test_mission_neutral(self):
+        m = dcs.mission.Mission()
+        m.load_file('loadtest.miz')
 
+        neutral_country_name = "Sweden"
+        sweden = m.country(neutral_country_name)
+
+        self.assertTrue(sweden is not None)
+        self.assertEqual(len(sweden.ship_group), 1)
+        self.assertEqual(len(sweden.plane_group), 1)
+
+        mission_path = 'missions/test_mission_neutral.miz'
+        m.save(mission_path)
+
+        m2 = dcs.mission.Mission()
+        self.assertTrue(m2.load_file(mission_path))
+
+        sweden2 = m.country(neutral_country_name)
+        self.assertTrue(sweden2 is not None)
+        self.assertEqual(len(sweden2.ship_group), 1)
+        self.assertEqual(len(sweden2.plane_group), 1)
