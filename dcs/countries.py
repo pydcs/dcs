@@ -938,6 +938,7 @@ class USA(Country):
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
         JF_17 = planes.JF_17
+        F_14A_135_GR = planes.F_14A_135_GR
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
         MiG_15bis = planes.MiG_15bis
@@ -1002,6 +1003,7 @@ class USA(Country):
         Plane.C_101EB,
         Plane.C_101CC,
         Plane.JF_17,
+        Plane.F_14A_135_GR,
         Plane.I_16,
         Plane.M_2000C,
         Plane.MiG_15bis,
@@ -2900,6 +2902,7 @@ class USAFAggressors(Country):
         S_3B_Tanker = planes.S_3B_Tanker
         S_3B = planes.S_3B
         F_14B = planes.F_14B
+        F_14A_135_GR = planes.F_14A_135_GR
         Tornado_GR4 = planes.Tornado_GR4
 
     planes = [
@@ -2997,6 +3000,7 @@ class USAFAggressors(Country):
         Plane.S_3B_Tanker,
         Plane.S_3B,
         Plane.F_14B,
+        Plane.F_14A_135_GR,
         Plane.Tornado_GR4,
     ]
 
@@ -10834,6 +10838,7 @@ class Iran(Country):
         JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_14B = planes.F_14B
+        F_14A_135_GR = planes.F_14A_135_GR
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -10878,6 +10883,7 @@ class Iran(Country):
         Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_14B,
+        Plane.F_14A_135_GR,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -24785,6 +24791,7 @@ class CombinedJointTaskForcesBlue(Country):
         S_3B_Tanker = planes.S_3B_Tanker
         S_3B = planes.S_3B
         F_14B = planes.F_14B
+        F_14A_135_GR = planes.F_14A_135_GR
         Tornado_GR4 = planes.Tornado_GR4
 
     planes = [
@@ -24882,6 +24889,7 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.S_3B_Tanker,
         Plane.S_3B,
         Plane.F_14B,
+        Plane.F_14A_135_GR,
         Plane.Tornado_GR4,
     ]
 
@@ -25447,6 +25455,7 @@ class CombinedJointTaskForcesRed(Country):
         S_3B_Tanker = planes.S_3B_Tanker
         S_3B = planes.S_3B
         F_14B = planes.F_14B
+        F_14A_135_GR = planes.F_14A_135_GR
         Tornado_GR4 = planes.Tornado_GR4
 
     planes = [
@@ -25544,6 +25553,7 @@ class CombinedJointTaskForcesRed(Country):
         Plane.S_3B_Tanker,
         Plane.S_3B,
         Plane.F_14B,
+        Plane.F_14A_135_GR,
         Plane.Tornado_GR4,
     ]
 
@@ -26109,6 +26119,7 @@ class UnitedNationsPeacekeepers(Country):
         S_3B_Tanker = planes.S_3B_Tanker
         S_3B = planes.S_3B
         F_14B = planes.F_14B
+        F_14A_135_GR = planes.F_14A_135_GR
         Tornado_GR4 = planes.Tornado_GR4
 
     planes = [
@@ -26206,6 +26217,7 @@ class UnitedNationsPeacekeepers(Country):
         Plane.S_3B_Tanker,
         Plane.S_3B,
         Plane.F_14B,
+        Plane.F_14A_135_GR,
         Plane.Tornado_GR4,
     ]
 

@@ -585,164 +585,7 @@ class F_14A(PlaneType):
 
     class Liveries:
 
-        class USSR(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Georgia(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Venezuela(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Australia(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Israel(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Combined_Joint_Task_Forces_Blue(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Sudan(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Norway(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Romania(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Iran(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Ukraine(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Libya(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Belgium(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Slovakia(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Greece(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class UK(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Third_Reich(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Hungary(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Abkhazia(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Morocco(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class United_Nations_Peacekeepers(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Switzerland(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class SouthOssetia(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Vietnam(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class China(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Yemen(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Kuwait(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Serbia(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Oman(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class India(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Egypt(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class TheNetherlands(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Poland(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Syria(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Finland(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Kazakhstan(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Denmark(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Sweden(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Croatia(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class CzechRepublic(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class GDR(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Yugoslavia(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Bulgaria(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class SouthKorea(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Tunisia(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Combined_Joint_Task_Forces_Red(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Lebanon(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Portugal(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Cuba(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Insurgents(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class SaudiArabia(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class France(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
         class USA(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
             black_demo_scheme = "black demo scheme"
             vf_1__wolfpack = "vf-1 `wolfpack`"
             vf_111__sundowners___1 = "vf-111 `sundowners`- 1"
@@ -753,93 +596,6 @@ class F_14A(PlaneType):
             vf_41__black_aces = "vf-41 `black aces`"
             vf_84__jolly_rogers = "vf-84 `jolly rogers`"
             vf_xxx__aardvarks = "vf-xxx `aardvarks`"
-
-        class Honduras(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Qatar(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Russia(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class United_Arab_Emirates(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Italian_Social_Republi(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Austria(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Bahrain(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Italy(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Chile(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Turkey(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Philippines(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Algeria(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Pakistan(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Malaysia(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Indonesia(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Iraq(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Germany(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class South_Africa(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Jordan(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Mexico(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class USAFAggressors(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Brazil(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Spain(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Belarus(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Canada(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class NorthKorea(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Ethiopia(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Japan(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
-
-        class Thailand(Enum):
-            vf_1_wolfpack_101 = "vf-1 wolfpack 101"
 
     class Pylon1:
         AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
@@ -13784,7 +13540,6 @@ class AV8BNA(PlaneType):
         _2_MK_83 = (3, Weapons._2_MK_83)
         _2_Mk_20_Rockeye_ = (3, Weapons._2_Mk_20_Rockeye_)
         _2_GBU_12 = (3, Weapons._2_GBU_12)
-        _2_GBU_16 = (3, Weapons._2_GBU_16)
         _2_MK_82_AIR = (3, Weapons._2_MK_82_AIR)
         _2_MK_82_SNAKEYE = (3, Weapons._2_MK_82_SNAKEYE)
         _2_GBU_38 = (3, Weapons._2_GBU_38)
@@ -13837,7 +13592,6 @@ class AV8BNA(PlaneType):
         _2_MK_83_ = (6, Weapons._2_MK_83_)
         _2_Mk_20_Rockeye__ = (6, Weapons._2_Mk_20_Rockeye__)
         _2_GBU_12_ = (6, Weapons._2_GBU_12_)
-        _2_GBU_16_ = (6, Weapons._2_GBU_16_)
         _2_MK_82_AIR_ = (6, Weapons._2_MK_82_AIR_)
         _2_MK_82_SNAKEYE_ = (6, Weapons._2_MK_82_SNAKEYE_)
         _2_GBU_38_ = (6, Weapons._2_GBU_38_)
@@ -14005,7 +13759,7 @@ class C_101EB(PlaneType):
     height = 4.25
     width = 14
     length = 12.25
-    fuel_max = 1881.5
+    fuel_max = 1796
     max_speed = 925.2
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
     radio_frequency = 225
@@ -21899,7 +21653,6 @@ class F_14B(PlaneType):
         AIM_7MH_ = (9, Weapons.AIM_7MH_)
         LAU_7_AIM_9M = (9, Weapons.LAU_7_AIM_9M)
         LAU_7_AIM_9L = (9, Weapons.LAU_7_AIM_9L)
-        LANTIRN_Targeting_Pod = (9, Weapons.LANTIRN_Targeting_Pod)
         _2_LAU_10___4_ZUNI_MK_71______ = (9, Weapons._2_LAU_10___4_ZUNI_MK_71______)
         _2_Mk_81__ = (9, Weapons._2_Mk_81__)
         _2_Mk_82__ = (9, Weapons._2_Mk_82__)
@@ -21908,6 +21661,836 @@ class F_14B(PlaneType):
         _2_MK_20__ = (9, Weapons._2_MK_20__)
         Mk_83____ = (9, Weapons.Mk_83____)
         _3_BDU_33____ = (9, Weapons._3_BDU_33____)
+        LANTIRN_Targeting_Pod = (9, Weapons.LANTIRN_Targeting_Pod)
+
+    class Pylon10:
+        LAU_138_AIM_9M = (10, Weapons.LAU_138_AIM_9M)
+        LAU_138_AIM_9L = (10, Weapons.LAU_138_AIM_9L)
+        AN_ASQ_T50_TCTS_Pod = (10, Weapons.AN_ASQ_T50_TCTS_Pod)
+        CATM_9M = (10, Weapons.CATM_9M)
+        Smokewinder___red = (10, Weapons.Smokewinder___red)
+        Smokewinder___green = (10, Weapons.Smokewinder___green)
+        Smokewinder___blue = (10, Weapons.Smokewinder___blue)
+        Smokewinder___white = (10, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (10, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (10, Weapons.Smokewinder___orange)
+
+    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+    tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.Reconnaissance, task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.AntishipStrike, task.CAS]
+    task_default = task.Intercept
+
+
+class F_14A_135_GR(PlaneType):
+    id = "F-14A-135-GR"
+    flyable = True
+    height = 4.8
+    width = 10.15
+    length = 16.6
+    fuel_max = 7348
+    max_speed = 2520
+    chaff = 140
+    flare = 60
+    charge_total = 200
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    radio_frequency = 124
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 225,
+                2: 258,
+                4: 270,
+                8: 257,
+                16: 252,
+                17: 268,
+                9: 253,
+                18: 269,
+                5: 255,
+                10: 263,
+                20: 269,
+                11: 267,
+                3: 260,
+                6: 259,
+                12: 254,
+                13: 264,
+                7: 262,
+                14: 266,
+                19: 268,
+                15: 265
+            },
+        },
+        2: {
+            "channels": {
+                1: 225,
+                2: 258,
+                4: 270,
+                8: 257,
+                16: 252,
+                17: 268,
+                9: 253,
+                18: 269,
+                5: 255,
+                10: 263,
+                20: 269,
+                30: 263,
+                21: 225,
+                11: 267,
+                22: 258,
+                3: 260,
+                6: 259,
+                12: 254,
+                24: 270,
+                19: 268,
+                25: 255,
+                13: 264,
+                26: 259,
+                27: 262,
+                7: 262,
+                14: 266,
+                28: 257,
+                23: 260,
+                29: 253,
+                15: 265
+            },
+        },
+    }
+
+    property_defaults = {
+        "M61BURST": 0,
+        "ALE39Loadout": 0,
+        "UseLAU138": True,
+        "INSAlignmentStored": False,
+        "TacanChannel": 0,
+        "TacanBand": 0,
+        "IlsChannel": 1,
+        "KY28Key": 1,
+        "LGB1000": 1,
+        "LGB100": 6,
+        "LGB10": 8,
+        "LGB1": 8,
+    }
+
+    class Properties:
+
+        class M61BURST:
+            id = "M61BURST"
+
+            class Values:
+                Burst_200 = 0
+                Burst_100 = 1
+                Burst_50 = 2
+                Manual = 3
+
+        class ALE39Loadout:
+            id = "ALE39Loadout"
+
+            class Values:
+                _60_Flares___0_Chaff = 0
+                _50_Flares___10_Chaff = 1
+                _40_Flares___20_Chaff = 2
+                _30_Flares___30_Chaff = 3
+                _20_Flares___40_Chaff = 4
+                _10_Flares___50_Chaff = 5
+                _0_Flares___60_Chaff = 6
+
+        class UseLAU138:
+            id = "UseLAU138"
+
+        class INSAlignmentStored:
+            id = "INSAlignmentStored"
+
+        class TacanChannel:
+            id = "TacanChannel"
+
+        class TacanBand:
+            id = "TacanBand"
+
+            class Values:
+                X = 0
+                Y = 1
+
+        class IlsChannel:
+            id = "IlsChannel"
+
+        class KY28Key:
+            id = "KY28Key"
+
+        class LGB1000:
+            id = "LGB1000"
+
+        class LGB100:
+            id = "LGB100"
+
+        class LGB10:
+            id = "LGB10"
+
+        class LGB1:
+            id = "LGB1"
+
+    class Liveries:
+
+        class USSR(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Georgia(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Venezuela(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Australia(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Israel(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Sudan(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Norway(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Romania(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Iran(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Ukraine(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Libya(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Belgium(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Slovakia(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Greece(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class UK(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Third_Reich(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Hungary(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Abkhazia(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Morocco(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class United_Nations_Peacekeepers(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Switzerland(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class SouthOssetia(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Vietnam(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class China(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Yemen(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Kuwait(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Serbia(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Oman(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class India(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Egypt(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class TheNetherlands(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Poland(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Syria(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Finland(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Kazakhstan(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Denmark(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Sweden(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Croatia(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class CzechRepublic(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class GDR(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Yugoslavia(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Bulgaria(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class SouthKorea(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Tunisia(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Lebanon(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Portugal(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Cuba(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Insurgents(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class SaudiArabia(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class France(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class USA(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Honduras(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Qatar(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Russia(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class United_Arab_Emirates(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Italian_Social_Republi(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Austria(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Bahrain(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Italy(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Chile(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Turkey(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Philippines(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Algeria(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Pakistan(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Malaysia(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Indonesia(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Iraq(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Germany(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class South_Africa(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Jordan(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Mexico(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class USAFAggressors(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Brazil(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Spain(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Belarus(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Canada(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class NorthKorea(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Ethiopia(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Japan(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+        class Thailand(Enum):
+            vf_154_black_knights_101 = "vf-154 black knights 101"
+            vf_111_sundowners_200 = "vf-111 sundowners 200"
+            vf_21_freelancers_200 = "vf-21 freelancers 200"
+            vf_211_fighting_checkmates_105 = "vf-211 fighting checkmates 105"
+
+    class Pylon1:
+        LAU_138_AIM_9M = (1, Weapons.LAU_138_AIM_9M)
+        LAU_138_AIM_9L = (1, Weapons.LAU_138_AIM_9L)
+        AN_ASQ_T50_TCTS_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod)
+        CATM_9M = (1, Weapons.CATM_9M)
+        Smokewinder___red = (1, Weapons.Smokewinder___red)
+        Smokewinder___green = (1, Weapons.Smokewinder___green)
+        Smokewinder___blue = (1, Weapons.Smokewinder___blue)
+        Smokewinder___white = (1, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (1, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (1, Weapons.Smokewinder___orange)
+
+    class Pylon2:
+        AIM_54C_Mk47_ = (2, Weapons.AIM_54C_Mk47_)
+        AIM_54A_Mk47_ = (2, Weapons.AIM_54A_Mk47_)
+        AIM_54A_Mk60_ = (2, Weapons.AIM_54A_Mk60_)
+        AIM_7M_ = (2, Weapons.AIM_7M_)
+        AIM_7F_ = (2, Weapons.AIM_7F_)
+        AIM_7MH_ = (2, Weapons.AIM_7MH_)
+        LAU_7_AIM_9M = (2, Weapons.LAU_7_AIM_9M)
+        LAU_7_AIM_9L = (2, Weapons.LAU_7_AIM_9L)
+        _2_LAU_10___4_ZUNI_MK_71_________ = (2, Weapons._2_LAU_10___4_ZUNI_MK_71_________)
+        _2_Mk_81_____ = (2, Weapons._2_Mk_81_____)
+        _2_Mk_82_____ = (2, Weapons._2_Mk_82_____)
+        _2_Mk_82AIR_____ = (2, Weapons._2_Mk_82AIR_____)
+        _2_Mk_82_SnakeEye_____ = (2, Weapons._2_Mk_82_SnakeEye_____)
+        _2_MK_20_____ = (2, Weapons._2_MK_20_____)
+        Mk_83_______ = (2, Weapons.Mk_83_______)
+        _3_BDU_33____ = (2, Weapons._3_BDU_33____)
+
+    class Pylon3:
+        Fuel_tank_300_gal_ = (3, Weapons.Fuel_tank_300_gal_)
+        Fuel_tank_300_gal__empty_ = (3, Weapons.Fuel_tank_300_gal__empty_)
+
+    class Pylon4:
+        AIM_54A_Mk47 = (4, Weapons.AIM_54A_Mk47)
+        AIM_54A_Mk60 = (4, Weapons.AIM_54A_Mk60)
+        AIM_54C_Mk47 = (4, Weapons.AIM_54C_Mk47)
+        AIM_7M__ = (4, Weapons.AIM_7M__)
+        AIM_7F__ = (4, Weapons.AIM_7F__)
+        AIM_7MH__ = (4, Weapons.AIM_7MH__)
+#ERRR <CLEAN>
+        Mk_82_ = (4, Weapons.Mk_82_)
+        Mk_82AIR_ = (4, Weapons.Mk_82AIR_)
+        Mk_82_SnakeEye_ = (4, Weapons.Mk_82_SnakeEye_)
+        MAK79_4_Mk_81 = (4, Weapons.MAK79_4_Mk_81)
+        MAK79_4_Mk_82 = (4, Weapons.MAK79_4_Mk_82)
+        MAK79_4_BDU_33 = (4, Weapons.MAK79_4_BDU_33)
+        _3_BDU_33_ = (4, Weapons._3_BDU_33_)
+        MAK79_4_Mk_82AIR = (4, Weapons.MAK79_4_Mk_82AIR)
+        MAK79_4_Mk_82_SnakeEye = (4, Weapons.MAK79_4_Mk_82_SnakeEye)
+        MAK79_3_Mk_83 = (4, Weapons.MAK79_3_Mk_83)
+        Mk_83_ = (4, Weapons.Mk_83_)
+        GBU_12_ = (4, Weapons.GBU_12_)
+        GBU_16_ = (4, Weapons.GBU_16_)
+        _2_LAU_10___4_ZUNI_MK_71___ = (4, Weapons._2_LAU_10___4_ZUNI_MK_71___)
+        Mk_20_ = (4, Weapons.Mk_20_)
+        ADM_141A__ = (4, Weapons.ADM_141A__)
+        Mk_84_ = (4, Weapons.Mk_84_)
+        GBU_10_ = (4, Weapons.GBU_10_)
+        MAK79_2_MK_20 = (4, Weapons.MAK79_2_MK_20)
+        GBU_24__ = (4, Weapons.GBU_24__)
+
+    class Pylon5:
+        AIM_54A_Mk47 = (5, Weapons.AIM_54A_Mk47)
+        AIM_54A_Mk60 = (5, Weapons.AIM_54A_Mk60)
+        AIM_54C_Mk47 = (5, Weapons.AIM_54C_Mk47)
+        AIM_7M__ = (5, Weapons.AIM_7M__)
+        AIM_7F__ = (5, Weapons.AIM_7F__)
+        AIM_7MH__ = (5, Weapons.AIM_7MH__)
+#ERRR <CLEAN>
+        Mk_82_ = (5, Weapons.Mk_82_)
+        Mk_82AIR_ = (5, Weapons.Mk_82AIR_)
+        Mk_82_SnakeEye_ = (5, Weapons.Mk_82_SnakeEye_)
+        MAK79_3_Mk_81 = (5, Weapons.MAK79_3_Mk_81)
+        MAK79_3_Mk_82 = (5, Weapons.MAK79_3_Mk_82)
+        MAK79_3_BDU_33 = (5, Weapons.MAK79_3_BDU_33)
+        _3_BDU_33_ = (5, Weapons._3_BDU_33_)
+        MAK79_3_Mk_82AIR = (5, Weapons.MAK79_3_Mk_82AIR)
+        MAK79_3_Mk_82_SnakeEye = (5, Weapons.MAK79_3_Mk_82_SnakeEye)
+        MAK79_Mk_83_ = (5, Weapons.MAK79_Mk_83_)
+        Mk_83_ = (5, Weapons.Mk_83_)
+        GBU_12_ = (5, Weapons.GBU_12_)
+        GBU_16_ = (5, Weapons.GBU_16_)
+        _2_SUU_25___8_LUU_2___ = (5, Weapons._2_SUU_25___8_LUU_2___)
+        Mk_20_ = (5, Weapons.Mk_20_)
+        ADM_141A__ = (5, Weapons.ADM_141A__)
+        Mk_84_ = (5, Weapons.Mk_84_)
+        MAK79_MK_20_ = (5, Weapons.MAK79_MK_20_)
+
+    class Pylon6:
+        AIM_54A_Mk47 = (6, Weapons.AIM_54A_Mk47)
+        AIM_54A_Mk60 = (6, Weapons.AIM_54A_Mk60)
+        AIM_54C_Mk47 = (6, Weapons.AIM_54C_Mk47)
+        AIM_7M__ = (6, Weapons.AIM_7M__)
+        AIM_7F__ = (6, Weapons.AIM_7F__)
+        AIM_7MH__ = (6, Weapons.AIM_7MH__)
+#ERRR <CLEAN>
+        Mk_82_ = (6, Weapons.Mk_82_)
+        Mk_82AIR_ = (6, Weapons.Mk_82AIR_)
+        Mk_82_SnakeEye_ = (6, Weapons.Mk_82_SnakeEye_)
+        MAK79_3_Mk_81_ = (6, Weapons.MAK79_3_Mk_81_)
+        MAK79_3_Mk_82_ = (6, Weapons.MAK79_3_Mk_82_)
+        MAK79_3_BDU_33_ = (6, Weapons.MAK79_3_BDU_33_)
+        _3_BDU_33_ = (6, Weapons._3_BDU_33_)
+        MAK79_3_Mk_82AIR_ = (6, Weapons.MAK79_3_Mk_82AIR_)
+        MAK79_3_Mk_82_SnakeEye_ = (6, Weapons.MAK79_3_Mk_82_SnakeEye_)
+        MAK79_Mk_83 = (6, Weapons.MAK79_Mk_83)
+        Mk_83_ = (6, Weapons.Mk_83_)
+        GBU_12_ = (6, Weapons.GBU_12_)
+        GBU_16_ = (6, Weapons.GBU_16_)
+        SUU_25___8_LUU_2__ = (6, Weapons.SUU_25___8_LUU_2__)
+        Mk_20_ = (6, Weapons.Mk_20_)
+        ADM_141A__ = (6, Weapons.ADM_141A__)
+        Mk_84_ = (6, Weapons.Mk_84_)
+        MAK79_MK_20 = (6, Weapons.MAK79_MK_20)
+        GBU_24__ = (6, Weapons.GBU_24__)
+
+    class Pylon7:
+        AIM_54A_Mk47 = (7, Weapons.AIM_54A_Mk47)
+        AIM_54A_Mk60 = (7, Weapons.AIM_54A_Mk60)
+        AIM_54C_Mk47 = (7, Weapons.AIM_54C_Mk47)
+        AIM_7M__ = (7, Weapons.AIM_7M__)
+        AIM_7F__ = (7, Weapons.AIM_7F__)
+        AIM_7MH__ = (7, Weapons.AIM_7MH__)
+#ERRR <CLEAN>
+        Mk_82_ = (7, Weapons.Mk_82_)
+        Mk_82AIR_ = (7, Weapons.Mk_82AIR_)
+        Mk_82_SnakeEye_ = (7, Weapons.Mk_82_SnakeEye_)
+        MAK79_4_Mk_81 = (7, Weapons.MAK79_4_Mk_81)
+        MAK79_4_Mk_82 = (7, Weapons.MAK79_4_Mk_82)
+        MAK79_4_BDU_33 = (7, Weapons.MAK79_4_BDU_33)
+        _3_BDU_33_ = (7, Weapons._3_BDU_33_)
+        MAK79_4_Mk_82AIR = (7, Weapons.MAK79_4_Mk_82AIR)
+        MAK79_4_Mk_82_SnakeEye = (7, Weapons.MAK79_4_Mk_82_SnakeEye)
+        MAK79_3_Mk_83_ = (7, Weapons.MAK79_3_Mk_83_)
+        Mk_83_ = (7, Weapons.Mk_83_)
+        GBU_12_ = (7, Weapons.GBU_12_)
+        GBU_16_ = (7, Weapons.GBU_16_)
+        LAU_10___4_ZUNI_MK_71__ = (7, Weapons.LAU_10___4_ZUNI_MK_71__)
+        Mk_20_ = (7, Weapons.Mk_20_)
+        ADM_141A__ = (7, Weapons.ADM_141A__)
+        Mk_84_ = (7, Weapons.Mk_84_)
+        GBU_10_ = (7, Weapons.GBU_10_)
+        MAK79_2_MK_20_ = (7, Weapons.MAK79_2_MK_20_)
+
+    class Pylon8:
+        Fuel_tank_300_gal_ = (8, Weapons.Fuel_tank_300_gal_)
+        Fuel_tank_300_gal__empty_ = (8, Weapons.Fuel_tank_300_gal__empty_)
+
+    class Pylon9:
+        AIM_54C_Mk47__ = (9, Weapons.AIM_54C_Mk47__)
+        AIM_54A_Mk47__ = (9, Weapons.AIM_54A_Mk47__)
+        AIM_54A_Mk60__ = (9, Weapons.AIM_54A_Mk60__)
+        AIM_7M_ = (9, Weapons.AIM_7M_)
+        AIM_7F_ = (9, Weapons.AIM_7F_)
+        AIM_7MH_ = (9, Weapons.AIM_7MH_)
+        LAU_7_AIM_9M = (9, Weapons.LAU_7_AIM_9M)
+        LAU_7_AIM_9L = (9, Weapons.LAU_7_AIM_9L)
+        _2_LAU_10___4_ZUNI_MK_71______ = (9, Weapons._2_LAU_10___4_ZUNI_MK_71______)
+        _2_Mk_81__ = (9, Weapons._2_Mk_81__)
+        _2_Mk_82__ = (9, Weapons._2_Mk_82__)
+        _2_Mk_82AIR__ = (9, Weapons._2_Mk_82AIR__)
+        _2_Mk_82_SnakeEye__ = (9, Weapons._2_Mk_82_SnakeEye__)
+        _2_MK_20__ = (9, Weapons._2_MK_20__)
+        Mk_83____ = (9, Weapons.Mk_83____)
+        _3_BDU_33____ = (9, Weapons._3_BDU_33____)
+        LANTIRN_Targeting_Pod = (9, Weapons.LANTIRN_Targeting_Pod)
 
     class Pylon10:
         LAU_138_AIM_9M = (10, Weapons.LAU_138_AIM_9M)
@@ -22483,6 +23066,9 @@ class FA_18C_hornet(PlaneType):
         BRU_55___2_x_AGM_154C = (2, Weapons.BRU_55___2_x_AGM_154C)
         GBU_31_V_1_B = (2, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (2, Weapons.GBU_31_V_3_B)
+        GBU_31_V_2_B = (2, Weapons.GBU_31_V_2_B)
+        GBU_31_V_4_B = (2, Weapons.GBU_31_V_4_B)
+        GBU_32_V_2_B = (2, Weapons.GBU_32_V_2_B)
         GBU_38 = (2, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (2, Weapons.BRU_55___2_x_GBU_38)
         AGM_84D = (2, Weapons.AGM_84D)
@@ -22535,6 +23121,9 @@ class FA_18C_hornet(PlaneType):
         BRU_55___2_x_AGM_154C = (3, Weapons.BRU_55___2_x_AGM_154C)
         GBU_31_V_1_B = (3, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (3, Weapons.GBU_31_V_3_B)
+        GBU_31_V_2_B = (3, Weapons.GBU_31_V_2_B)
+        GBU_31_V_4_B = (3, Weapons.GBU_31_V_4_B)
+        GBU_32_V_2_B = (3, Weapons.GBU_32_V_2_B)
         GBU_38 = (3, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (3, Weapons.BRU_55___2_x_GBU_38)
         AGM_84D = (3, Weapons.AGM_84D)
@@ -22619,6 +23208,9 @@ class FA_18C_hornet(PlaneType):
         BRU_55___2_x_AGM_154C = (7, Weapons.BRU_55___2_x_AGM_154C)
         GBU_31_V_1_B = (7, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (7, Weapons.GBU_31_V_3_B)
+        GBU_31_V_2_B = (7, Weapons.GBU_31_V_2_B)
+        GBU_31_V_4_B = (7, Weapons.GBU_31_V_4_B)
+        GBU_32_V_2_B = (7, Weapons.GBU_32_V_2_B)
         GBU_38 = (7, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (7, Weapons.BRU_55___2_x_GBU_38)
         AGM_84D = (7, Weapons.AGM_84D)
@@ -22677,6 +23269,9 @@ class FA_18C_hornet(PlaneType):
         BRU_55___2_x_AGM_154C = (8, Weapons.BRU_55___2_x_AGM_154C)
         GBU_31_V_1_B = (8, Weapons.GBU_31_V_1_B)
         GBU_31_V_3_B = (8, Weapons.GBU_31_V_3_B)
+        GBU_31_V_2_B = (8, Weapons.GBU_31_V_2_B)
+        GBU_31_V_4_B = (8, Weapons.GBU_31_V_4_B)
+        GBU_32_V_2_B = (8, Weapons.GBU_32_V_2_B)
         GBU_38 = (8, Weapons.GBU_38)
         BRU_55___2_x_GBU_38 = (8, Weapons.BRU_55___2_x_GBU_38)
         AGM_84D = (8, Weapons.AGM_84D)
@@ -29095,6 +29690,7 @@ plane_map = {
     "F-5E-3": F_5E_3,
     "F-86F Sabre": F_86F_Sabre,
     "F-14B": F_14B,
+    "F-14A-135-GR": F_14A_135_GR,
     "FA-18C_hornet": FA_18C_hornet,
     "Hawk": Hawk,
     "I-16": I_16,
