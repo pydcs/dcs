@@ -462,8 +462,10 @@ class Terrain:
             yield self.airports[x]
 
     def nearest_airport(self, position: mapping.Point, coalition: str = None) -> Optional[Airport]:
-        airports = [x for x in self.airports.values()
-                    if x.coalition.lower() == coalition.lower()] if coalition else self.airports
+        airports = self.airports.values()
+        if coalition:
+            airports = [x for x in airports if
+                        x.coalition.lower() == coalition.lower()]
 
         dist = sys.float_info.max
         airport = None
