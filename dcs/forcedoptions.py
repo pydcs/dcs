@@ -22,27 +22,47 @@ class ForcedOptions:
         Game = "game"
         Realistic = "realistic"
 
+    class Labels(Enum):
+        None_ = 0
+        Full = 1
+        Abbreviate = 2
+        DotOnly = 3
+
     def __init__(self):
-        self.fuel = None
-        self.easy_radar = None
-        self.mini_hud = None
-        self.accidental_failures = None
+        # In the order they appear in the ME.
+        self.permit_crash: Optional[bool] = None
+        self.external_views: Optional[bool] = None
         self.options_view: Optional[ForcedOptions.Views] = None
-        self.permit_crash = None
-        self.immportal = None
-        self.easy_communication = None
-        self.cockpit_visual_recon_mode = None
-        self.easy_flight = None
-        self.radio = None
-        self.tips = None
-        self.geffect = None
-        self.external_views = None
-        self.birds = None
+        self.labels: Optional[ForcedOptions.Labels] = None
+        self.easy_flight: Optional[bool] = None
+        self.easy_radar: Optional[bool] = None
+        self.immortal: Optional[bool] = None
+        self.fuel: Optional[bool] = None
+        self.weapons: Optional[bool] = None
+        self.easy_communication: Optional[bool] = None
+        self.radio: Optional[bool] = None
+        self.unrestricted_satnav: Optional[bool] = None
+        self.padlock: Optional[bool] = None
+        self.wake_turbulence: Optional[bool] = None
+        self.geffect: Optional[bool] = None
+        self.accidental_failures = None
+        self.mini_hud: Optional[bool] = None
+        self.cockpit_visual_recon_mode: Optional[bool] = None
+        self.user_marks: Optional[bool] = None
         self.civil_traffic: Optional[ForcedOptions.CivilTraffic] = None
-        self.weapons = None
-        self.padlock = None
-        self.scenes = None
-        self.labels = None
+        self.birds: Optional[int] = None
+        self.cockpit_status_bar: Optional[bool] = None
+        self.battle_damage_assessment: Optional[bool] = None
+
+    @property
+    def immportal(self) -> Optional[bool]:
+        """Source compatibility for the old typo attribute."""
+        return self.immortal
+
+    @immportal.setter
+    def immportal(self, value: Optional[bool]) -> None:
+        """Source compatibility for the old typo attribute."""
+        self.immortal = value
 
     def load_from_dict(self, d):
         self.fuel = d.get("fuel")
@@ -52,12 +72,11 @@ class ForcedOptions:
         if d.get("optionsView") is not None:
             self.options_view = ForcedOptions.Views(d["optionsView"])
         self.permit_crash = d.get("permitCrash")
-        self.immportal = d.get("immortal")
+        self.immortal = d.get("immortal")
         self.easy_communication = d.get("easyCommunication")
         self.cockpit_visual_recon_mode = d.get("cockpitVisualRM")
         self.easy_flight = d.get("easyFlight")
         self.radio = d.get("radio")
-        self.tips = d.get("tips")
         if d.get("geffect") is not None:
             geffect = ForcedOptions.GEffect.Game.value if d["geffect"] == "reduced" else d["geffect"]
             self.geffect = ForcedOptions.GEffect(geffect)
@@ -67,8 +86,13 @@ class ForcedOptions:
             self.civil_traffic = ForcedOptions.CivilTraffic(d["civTraffic"])
         self.weapons = d.get("weapons")
         self.padlock = d.get("padlock")
-        self.labels = d.get("labels")
-        self.scenes = d.get("scenes")
+        if "labels" in d:
+            self.labels = ForcedOptions.Labels(d["labels"])
+        self.unrestricted_satnav = d.get("unrestrictedSATNAV")
+        self.wake_turbulence = d.get("wakeTurbulence")
+        self.cockpit_status_bar = d.get("cockpitStatusBarAllowed")
+        self.battle_damage_assessment = d.get("RBDAI")
+        self.user_marks = d.get("userMarks")
 
     def dict(self):
         d = {}
@@ -84,8 +108,8 @@ class ForcedOptions:
             d["optionsView"] = self.options_view.value
         if self.permit_crash is not None:
             d["permitCrash"] = self.permit_crash
-        if self.immportal is not None:
-            d["immortal"] = self.immportal
+        if self.immortal is not None:
+            d["immortal"] = self.immortal
         if self.easy_communication is not None:
             d["easyCommunication"] = self.easy_communication
         if self.cockpit_visual_recon_mode is not None:
@@ -94,8 +118,6 @@ class ForcedOptions:
             d["easyFlight"] = self.easy_flight
         if self.radio is not None:
             d["radio"] = self.radio
-        if self.tips is not None:
-            d["tips"] = self.tips
         if self.geffect is not None:
             d["geffect"] = self.geffect.value
         if self.external_views is not None:
@@ -109,7 +131,15 @@ class ForcedOptions:
         if self.padlock is not None:
             d["padlock"] = self.padlock
         if self.labels is not None:
-            d["labels"] = self.labels
-        if self.scenes is not None:
-            d["scenes"] = self.scenes
+            d["labels"] = self.labels.value
+        if self.unrestricted_satnav is not None:
+            d["unrestrictedSATNAV"] = self.unrestricted_satnav
+        if self.wake_turbulence is not None:
+            d["wakeTurbulence"] = self.wake_turbulence
+        if self.cockpit_status_bar is not None:
+            d["cockpitStatusBarAllowed"] = self.cockpit_status_bar
+        if self.battle_damage_assessment is not None:
+            d["RBDAI"] = self.battle_damage_assessment
+        if self.user_marks is not None:
+            d["userMarks"] = self.user_marks
         return d
