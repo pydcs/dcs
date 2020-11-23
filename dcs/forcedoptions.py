@@ -54,16 +54,6 @@ class ForcedOptions:
         self.cockpit_status_bar: Optional[bool] = None
         self.battle_damage_assessment: Optional[bool] = None
 
-    @property
-    def immportal(self) -> Optional[bool]:
-        """Source compatibility for the old typo attribute."""
-        return self.immortal
-
-    @immportal.setter
-    def immportal(self, value: Optional[bool]) -> None:
-        """Source compatibility for the old typo attribute."""
-        self.immortal = value
-
     def load_from_dict(self, d):
         self.fuel = d.get("fuel")
         self.easy_radar = d.get("easyRadar")
