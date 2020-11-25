@@ -1916,10 +1916,10 @@ class Mission:
         m["descriptionText"] = self._description_text.id
         m["pictureFileNameR"] = {}
         for i in range(0, len(self.pictureFileNameR)):
-            m["pictureFileNameR"][i + 1] = self.pictureFileNameR[i]
+            m["pictureFileNameR"][i + 1] = str(self.pictureFileNameR[i])
         m["pictureFileNameB"] = {}
         for i in range(0, len(self.pictureFileNameB)):
-            m["pictureFileNameB"][i + 1] = self.pictureFileNameB[i]
+            m["pictureFileNameB"][i + 1] = str(self.pictureFileNameB[i])
         m["descriptionBlueTask"] = self._description_bluetask.id
         m["descriptionRedTask"] = self._description_redtask.id
         if self.init_script_file is not None:

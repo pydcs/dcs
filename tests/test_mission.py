@@ -699,3 +699,20 @@ class BasicTests(unittest.TestCase):
         self.assertTrue(sweden2 is not None)
         self.assertEqual(len(sweden2.ship_group), 1)
         self.assertEqual(len(sweden2.plane_group), 1)
+
+    def test_mission_save_pictureFileName(self):
+        m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
+        image_path = 'tests/images/blue.png'
+        reskey_B = m.add_picture_blue(image_path)
+        reskey_R =m.add_picture_red(image_path)
+
+        mission_path = 'missions/test_mission_pictureFileName.miz'
+        m.save(mission_path)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(mission_path)
+
+        self.assertEqual(len(m2.pictureFileNameB), 1)
+        self.assertEqual(m2.pictureFileNameB[0], reskey_B.key)
+        self.assertEqual(len(m2.pictureFileNameR), 1)
+        self.assertEqual(m2.pictureFileNameR[0], reskey_R.key)
