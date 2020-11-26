@@ -704,7 +704,7 @@ class BasicTests(unittest.TestCase):
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
         image_path = 'tests/images/blue.png'
         reskey_B = m.add_picture_blue(image_path)
-        reskey_R =m.add_picture_red(image_path)
+        reskey_R = m.add_picture_red(image_path)
 
         mission_path = 'missions/test_mission_pictureFileName.miz'
         m.save(mission_path)
