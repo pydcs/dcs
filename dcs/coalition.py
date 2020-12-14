@@ -22,8 +22,19 @@ class Coalition:
         self.nav_points = []  # TODO
 
     @staticmethod
+    def _sort_keys(points):
+        keys = []
+        for imp_point_idx in points:
+            keys.append(int(imp_point_idx))
+
+        keys.sort()
+        return keys
+
+    @staticmethod
     def _import_moving_point(mission, group: unitgroup.Group, imp_group) -> unitgroup.Group:
-        for imp_point_idx in imp_group["route"]["points"]:
+        keys = Coalition._sort_keys(imp_group["route"]["points"])
+
+        for imp_point_idx in keys:
             imp_point = imp_group["route"]["points"][imp_point_idx]
             point = MovingPoint()
             point.load_from_dict(imp_point, mission.translation)
@@ -32,7 +43,9 @@ class Coalition:
 
     @staticmethod
     def _import_static_point(mission, group: unitgroup.Group, imp_group) -> unitgroup.Group:
-        for imp_point_idx in imp_group["route"]["points"]:
+        keys = Coalition._sort_keys(imp_group["route"]["points"])
+
+        for imp_point_idx in keys:
             imp_point = imp_group["route"]["points"][imp_point_idx]
             point = StaticPoint()
             point.load_from_dict(imp_point, mission.translation)
