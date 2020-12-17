@@ -670,9 +670,9 @@ class Weapons:
     RB_24J_with_launcher = {"clsid": "{Robot24J}", "name": "RB-24J with launcher", "weight": 90}
     RB_24_with_launcher = {"clsid": "{Robot24}", "name": "RB-24 with launcher", "weight": 90}
     RB_74_with_launcher = {"clsid": "{Robot74}", "name": "RB-74 with launcher", "weight": 90}
-    RB_75B_with_launcher = {"clsid": "{RB75B}", "name": "RB-75B with launcher", "weight": 210}
-    RB_75T_with_launcher = {"clsid": "{RB75T}", "name": "RB-75T with launcher", "weight": 354}
-    RB_75_with_launcher = {"clsid": "{RB75}", "name": "RB-75 with launcher", "weight": 210}
+    RB_75A = {"clsid": "{RB75}", "name": "RB-75A", "weight": 210}
+    RB_75B = {"clsid": "{RB75B}", "name": "RB-75B", "weight": 210}
+    RB_75T = {"clsid": "{RB75T}", "name": "RB-75T", "weight": 210}
     REFLEX_9M119 = {"clsid": "REFLEX_9M119", "name": "AT-11 SNIPER (Reflex)", "weight": None}
     RKL609_ECM_Pod__Left_ = {"clsid": "{RKL609_L}", "name": "RKL609 ECM Pod (Left)", "weight": 150}
     RKL609_ECM_Pod__Right_ = {"clsid": "{RKL609_R}", "name": "RKL609 ECM Pod (Right)", "weight": 150}
@@ -1628,9 +1628,9 @@ weapon_ids = {
     "{Robot24J}": Weapons.RB_24J_with_launcher,
     "{Robot24}": Weapons.RB_24_with_launcher,
     "{Robot74}": Weapons.RB_74_with_launcher,
-    "{RB75B}": Weapons.RB_75B_with_launcher,
-    "{RB75T}": Weapons.RB_75T_with_launcher,
-    "{RB75}": Weapons.RB_75_with_launcher,
+    "{RB75}": Weapons.RB_75A,
+    "{RB75B}": Weapons.RB_75B,
+    "{RB75T}": Weapons.RB_75T,
     "REFLEX_9M119": Weapons.REFLEX_9M119,
     "{RKL609_L}": Weapons.RKL609_ECM_Pod__Left_,
     "{RKL609_R}": Weapons.RKL609_ECM_Pod__Right_,

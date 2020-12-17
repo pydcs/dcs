@@ -7,7 +7,7 @@
 -------------------------------------------------------------------------------
 
 -- edit export_path to your export folder
-local export_path = "C:\\Users\\peint\\Documents\\dcs\\dcs\\"
+local export_path = "D:\\Work\\DCS\\dcs\\dcs\\"
 
 local loadLiveries = require('loadLiveries')
 
@@ -215,8 +215,11 @@ class Weapons:
 local i = 1
 while i <= #keys do
 	local x = keys[i]
-	writeln(file, "    " .. x .. " = {\"clsid\": \"" .. weapons[x].clsid
-		.. "\", \"name\": \"" .. weapons[x].displayName .. "\", \"weight\": " .. weapons[x].weight .. "}")
+
+    if weapons[x].displayName ~= nil then
+        writeln(file, "    " .. x .. " = {\"clsid\": \"" .. weapons[x].clsid
+            .. "\", \"name\": \"" .. weapons[x].displayName .. "\", \"weight\": " .. weapons[x].weight .. "}")
+    end
 	i = i + 1
 end
 
@@ -603,7 +606,11 @@ for i in pairs(unit_categories) do
         writeln(file, '    class '..safename..'(unittype.VehicleType):')
         writeln(file, '        id = "'..unit.type..'"')
         writeln(file, '        name = "'..safeDisplayName..'"')
-        writeln(file, '        detection_range = '..unit.DetectionRange)
+        if unit.DetectionRange ~= nil then
+            writeln(file, '        detection_range = '..unit.DetectionRange)
+        else
+            writeln(file, '        detection_range = 0')
+        end
         writeln(file, '        threat_range = '..threat_range)
         writeln(file, '        air_weapon_dist = '..air_weapon_dist)
         if unit.EPLRS then
@@ -814,7 +821,7 @@ writeln(file, 'import dcs.planes as planes')
 writeln(file, 'import dcs.helicopters as helicopters')
 writeln(file, 'import dcs.ships as ships')
 local countryPlaneIgnore = { "Su_30MK", "F_86F", "F_16C_50", "F_5E_MAC", "F_86F_MAC", "TF_51", "MiG_15bis_MAC",
-                             "L_39_MAC", "F_4E_new" }
+                             "L_39_MAC", "F_4E_new", "F_14A_95_GR" }
 local countryHeliIgnore = { "Mi_24P" }
 local i = 0
 while i <= country.maxIndex do

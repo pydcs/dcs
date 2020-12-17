@@ -616,6 +616,13 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
 
+    class AAA_ZSU_57_2(unittype.VehicleType):
+        id = "ZSU_57_2"
+        name = "AAA ZSU-57-2"
+        detection_range = 5000
+        threat_range = 7000
+        air_weapon_dist = 7000
+
     class AAA_Bofors_40mm(unittype.VehicleType):
         id = "bofors40"
         name = "AAA Bofors 40mm"
@@ -1369,6 +1376,20 @@ class Armor:
         threat_range = 1200
         air_weapon_dist = 0
 
+    class MBT_T_72B3(unittype.VehicleType):
+        id = "T-72B3"
+        name = "MBT T-72B3"
+        detection_range = 0
+        threat_range = 4000
+        air_weapon_dist = 3500
+
+    class APC_BTR_82A(unittype.VehicleType):
+        id = "BTR-82A"
+        name = "APC BTR-82A"
+        detection_range = 0
+        threat_range = 2000
+        air_weapon_dist = 2000
+
     class MT_Pz_Kpfw_IV_Ausf_H(unittype.VehicleType):
         id = "Pz_IV_H"
         name = "MT Pz.Kpfw.IV Ausf.H"
@@ -1539,8 +1560,8 @@ class MissilesSS:
         id = "Scud_B"
         name = "SRBM SS-1C Scud-B 9K72 LN 9P117M"
         detection_range = 0
-        threat_range = 460000
-        air_weapon_dist = 460000
+        threat_range = 320000
+        air_weapon_dist = 320000
 
     class SS_N_2_Silkworm(unittype.VehicleType):
         id = "hy_launcher"
@@ -1845,6 +1866,9 @@ vehicle_map = {
     "M2A1_halftrack": Armor.APC_M2A1,
     "S_75M_Volhov": AirDefence.SAM_SA_2_LN_SM_90,
     "SNR_75V": AirDefence.SAM_SA_2_TR_SNR_75_Fan_Song,
+    "ZSU_57_2": AirDefence.AAA_ZSU_57_2,
+    "T-72B3": Armor.MBT_T_72B3,
+    "BTR-82A": Armor.APC_BTR_82A,
     "Bedford_MWD": Unarmed.Bedford_MWD,
     "bofors40": AirDefence.AAA_Bofors_40mm,
     "rapier_fsa_launcher": AirDefence.Rapier_FSA_Launcher,

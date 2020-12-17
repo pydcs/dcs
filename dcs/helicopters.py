@@ -1910,7 +1910,7 @@ class UH_1H(HelicopterType):
         "GunnersAISkill": 90,
         "EngineResource": 90,
         "SoloFlight": False,
-        "NetCrewControlPriority": 1,
+        "NetCrewControlPriority": 0,
     }
 
     class Properties:

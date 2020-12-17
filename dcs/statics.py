@@ -763,9 +763,9 @@ class Warehouse:
         category = "Warehouses"
         rate = 100
 
-    class Tank(unittype.StaticType):
+    class Tank_1(unittype.StaticType):
         id = "Tank"
-        name = "Tank"
+        name = "Tank 1"
         shape_name = "bak"
         category = "Warehouses"
         rate = 100
@@ -793,7 +793,7 @@ class Warehouse:
 
 warehouse_map = {
     "Warehouse": Warehouse.Warehouse,
-    "Tank": Warehouse.Tank,
+    "Tank": Warehouse.Tank_1,
     ".Ammunition depot": Warehouse.Ammunition_depot,
     "Tank 2": Warehouse.Tank_2,
     "Tank 3": Warehouse.Tank_3,
