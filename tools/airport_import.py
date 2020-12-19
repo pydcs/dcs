@@ -41,7 +41,9 @@ def safename(name):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--terrain", choices=["caucasus", "nevada", "normandy", "persiangulf", "thechannel", "syria"], default="caucasus")
+    parser.add_argument("-t", "--terrain",
+                        choices=["caucasus", "nevada", "normandy", "persiangulf", "thechannel", "syria"],
+                        default="caucasus")
     parser.add_argument("airportinfofile")
 
     args = parser.parse_args()
@@ -49,12 +51,11 @@ def main():
     with codecs.open(args.airportinfofile, "r", "utf-8") as f:
         data = dcs.lua.loads(f.read())
 
-        for id in sorted(data["airports"]):
-            airport = data["airports"][id]
-            tacan = None  #airports[id].get("tacan", None)
+        for id_ in sorted(data["airports"]):
+            airport = data["airports"][id_]
+            tacan = airport.get("tacan", None)
             tacan = '"' + tacan + '"' if tacan else None
-            print(
-"""
+            print("""
 
 class {sname}(Airport):
     id = {id}
@@ -67,12 +68,16 @@ class {sname}(Airport):
 
     def __init__(self):
         super({sname}, self).__init__()
-""".format(sname=safename(airport['airport']['display_name']), name=airport['airport']['display_name'], id=id, x=airport["airport"]["reference_point"]["x"],
-           y=airport["airport"]["reference_point"]["y"], tacan=tacan,
-#           freq=", ".join(map(str, airport["airport"]["frequency"].values())),
-           civ=airport["airport"].get("civilian", True),
-           slot_version=2)
-            )
+"""
+                  .format(sname=safename(airport['airport']['display_name']),
+                          name=airport['airport']['display_name'],
+                          id=id_,
+                          x=airport["airport"]["reference_point"]["x"],
+                          y=airport["airport"]["reference_point"]["y"],
+                          tacan=tacan,
+                          # freq=", ".join(map(str, airport["airport"]["frequency"].values())),
+                          civ=airport["airport"].get("civilian", True),
+                          slot_version=2))
 
             i = 0
             for runway in airport['airport']["runwayName"]:
@@ -92,20 +97,22 @@ class {sname}(Airport):
                 crossroad_idx={crossidx}, position=mapping.Point({x}, {y}), large={large}, heli={heli},
                 airplanes={airplanes}, slot_name='{name}', length={length}, width={width}, height={height}, shelter={shelter}))""".format(
                     crossidx=slot["crossroad_index"], x=slot["x"], y=slot["y"],
-                    large=large, heli=slot["params"]["FOR_HELICOPTERS"] == "1", airplanes=slot["params"]["FOR_AIRPLANES"] == "1",
+                    large=large,
+                    heli=slot["params"]["FOR_HELICOPTERS"] == "1",
+                    airplanes=slot["params"]["FOR_AIRPLANES"] == "1",
                     name=slot["name"],
                     length=float(slot["params"]["LENGTH"]), width=float(slot["params"]["WIDTH"]), height=height,
                     shelter=slot["params"]["SHELTER"] == "1"
                 ))
 
-        for id in sorted(data["airports"]):
-            airport = data["airports"][id]
+        for id_ in sorted(data["airports"]):
+            airport = data["airports"][id_]
             sname = safename(airport['airport']['display_name'])
             keyname = airport['airport']['display_name']
             print("self.airports['{keyname}'] = {name}()".format(keyname=keyname, name=sname))
 
-        for id in sorted(data["airports"]):
-            airport = data["airports"][id]
+        for id_ in sorted(data["airports"]):
+            airport = data["airports"][id_]
             sname = safename(airport['airport']['display_name']).lower()
             keyname = airport['airport']['display_name']
             print("""
