@@ -1661,6 +1661,13 @@ class OptRadioUsageKill(Option):
         super(OptRadioUsageKill, self).__init__(value)
 
 
+class OptInterceptionRange(Option):
+    Key = 24
+
+    def __init__(self, value: int = 100):
+        super(OptInterceptionRange, self).__init__(value)
+
+
 options = {
     OptROE.Key: OptROE,
     OptReactOnThreat.Key: OptReactOnThreat,
@@ -1683,4 +1690,5 @@ options = {
     OptRadioUsageContact.Key: OptRadioUsageContact,
     OptRadioUsageEngage.Key: OptRadioUsageEngage,
     OptRadioUsageKill.Key: OptRadioUsageKill,
+    OptInterceptionRange.Key: OptInterceptionRange
 }
