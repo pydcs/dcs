@@ -315,6 +315,7 @@ class Russia(Country):
         FFG_11540_Neustrashimy = ships.FFG_11540_Neustrashimy
         Bulk_cargo_ship_Yakushev = ships.Bulk_cargo_ship_Yakushev
         Dry_cargo_ship_Ivanov = ships.Dry_cargo_ship_Ivanov
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         CV_1143_5_Admiral_Kuznetsov_2017 = ships.CV_1143_5_Admiral_Kuznetsov_2017
 
     class CallsignAWACS:
@@ -724,6 +725,7 @@ class Ukraine(Country):
         Bulk_cargo_ship_Yakushev = ships.Bulk_cargo_ship_Yakushev
         Dry_cargo_ship_Ivanov = ships.Dry_cargo_ship_Ivanov
         FF_1135M_Rezky = ships.FF_1135M_Rezky
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -1064,6 +1066,7 @@ class USA(Country):
         LHA_1_Tarawa = ships.LHA_1_Tarawa
         USS_Arleigh_Burke_IIa = ships.USS_Arleigh_Burke_IIa
         CVN_75_Harry_S__Truman = ships.CVN_75_Harry_S__Truman
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         CVN_71_Theodore_Roosevelt = ships.CVN_71_Theodore_Roosevelt
         CVN_72_Abraham_Lincoln = ships.CVN_72_Abraham_Lincoln
         CVN_73_George_Washington = ships.CVN_73_George_Washington
@@ -1391,6 +1394,7 @@ class Turkey(Country):
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
         Oliver_Hazzard_Perry_class = ships.Oliver_Hazzard_Perry_class
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -1719,6 +1723,7 @@ class UK(Country):
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
         LST_Mk_II = ships.LST_Mk_II
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         LCVP__Higgins_boat = ships.LCVP__Higgins_boat
 
@@ -2032,6 +2037,7 @@ class France(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         LST_Mk_II = ships.LST_Mk_II
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         LCVP__Higgins_boat = ships.LCVP__Higgins_boat
@@ -2422,6 +2428,7 @@ class Germany(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         Uboat_VIIC_U_flak = ships.Uboat_VIIC_U_flak
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -3056,6 +3063,7 @@ class USAFAggressors(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         Uboat_VIIC_U_flak = ships.Uboat_VIIC_U_flak
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
         FFL_1124_4_Grisha = ships.FFL_1124_4_Grisha
@@ -3398,6 +3406,7 @@ class Canada(Country):
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
         LST_Mk_II = ships.LST_Mk_II
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         LCVP__Higgins_boat = ships.LCVP__Higgins_boat
 
@@ -3710,6 +3719,7 @@ class Spain(Country):
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
         Oliver_Hazzard_Perry_class = ships.Oliver_Hazzard_Perry_class
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -4046,6 +4056,7 @@ class TheNetherlands(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         LST_Mk_II = ships.LST_Mk_II
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         LCVP__Higgins_boat = ships.LCVP__Higgins_boat
@@ -4358,6 +4369,7 @@ class Belgium(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         LST_Mk_II = ships.LST_Mk_II
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         LCVP__Higgins_boat = ships.LCVP__Higgins_boat
@@ -4655,6 +4667,7 @@ class Norway(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -4951,6 +4964,7 @@ class Denmark(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -5282,6 +5296,7 @@ class Israel(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -5633,6 +5648,7 @@ class Georgia(Country):
         Bulk_cargo_ship_Yakushev = ships.Bulk_cargo_ship_Yakushev
         Dry_cargo_ship_Ivanov = ships.Dry_cargo_ship_Ivanov
         Civil_boat_Zvezdny = ships.Civil_boat_Zvezdny
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -5939,6 +5955,7 @@ class Insurgents(Country):
         Bulk_cargo_ship_Yakushev = ships.Bulk_cargo_ship_Yakushev
         Dry_cargo_ship_Ivanov = ships.Dry_cargo_ship_Ivanov
         Civil_boat_Zvezdny = ships.Civil_boat_Zvezdny
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -6188,6 +6205,7 @@ class Abkhazia(Country):
         Civil_boat_Zvezdny = ships.Civil_boat_Zvezdny
         Bulk_cargo_ship_Yakushev = ships.Bulk_cargo_ship_Yakushev
         Dry_cargo_ship_Ivanov = ships.Dry_cargo_ship_Ivanov
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -6410,6 +6428,9 @@ class SouthOssetia(Country):
         Helicopter.SA342Mistral,
         Helicopter.SA342Minigun,
     ]
+
+    class Ship:
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -6635,6 +6656,7 @@ class Italy(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -6947,6 +6969,7 @@ class Australia(Country):
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
         Oliver_Hazzard_Perry_class = ships.Oliver_Hazzard_Perry_class
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         LST_Mk_II = ships.LST_Mk_II
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         LCVP__Higgins_boat = ships.LCVP__Higgins_boat
@@ -7224,6 +7247,7 @@ class Switzerland(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -7487,6 +7511,7 @@ class Austria(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -7851,6 +7876,7 @@ class Belarus(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -8115,6 +8141,7 @@ class Bulgaria(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         Uboat_VIIC_U_flak = ships.Uboat_VIIC_U_flak
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -8433,6 +8460,7 @@ class CzechRepublic(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         LST_Mk_II = ships.LST_Mk_II
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         LCVP__Higgins_boat = ships.LCVP__Higgins_boat
@@ -8755,6 +8783,7 @@ class China(Country):
         Type_052B_Destroyer = ships.Type_052B_Destroyer
         Type_052C_Destroyer = ships.Type_052C_Destroyer
         Type_054A_Frigate = ships.Type_054A_Frigate
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         Type_071_Amphibious_Transport_Dock = ships.Type_071_Amphibious_Transport_Dock
         Type_093_Attack_Submarine = ships.Type_093_Attack_Submarine
 
@@ -8944,6 +8973,7 @@ class Croatia(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -9282,6 +9312,7 @@ class Egypt(Country):
         Armed_speedboat = ships.Armed_speedboat
         Oliver_Hazzard_Perry_class = ships.Oliver_Hazzard_Perry_class
         FSG_1241_1MP_Molniya = ships.FSG_1241_1MP_Molniya
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -9603,6 +9634,7 @@ class Finland(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         Uboat_VIIC_U_flak = ships.Uboat_VIIC_U_flak
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -9938,6 +9970,7 @@ class Greece(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -10274,6 +10307,7 @@ class Hungary(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         Uboat_VIIC_U_flak = ships.Uboat_VIIC_U_flak
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -10594,6 +10628,7 @@ class India(Country):
         FSG_1241_1MP_Molniya = ships.FSG_1241_1MP_Molniya
         SSK_877 = ships.SSK_877
         FSG_1241_1MP_Molniya = ships.FSG_1241_1MP_Molniya
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -10938,6 +10973,7 @@ class Iran(Country):
         SSK_877 = ships.SSK_877
         Bulk_cargo_ship_Yakushev = ships.Bulk_cargo_ship_Yakushev
         Dry_cargo_ship_Ivanov = ships.Dry_cargo_ship_Ivanov
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -11261,6 +11297,7 @@ class Iraq(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -11583,6 +11620,7 @@ class Japan(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         Uboat_VIIC_U_flak = ships.Uboat_VIIC_U_flak
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -11962,6 +12000,7 @@ class Kazakhstan(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -12246,6 +12285,7 @@ class NorthKorea(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -12542,6 +12582,7 @@ class Pakistan(Country):
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
         Oliver_Hazzard_Perry_class = ships.Oliver_Hazzard_Perry_class
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -12883,6 +12924,7 @@ class Poland(Country):
         Oliver_Hazzard_Perry_class = ships.Oliver_Hazzard_Perry_class
         SSK_877 = ships.SSK_877
         FSG_1241_1MP_Molniya = ships.FSG_1241_1MP_Molniya
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         LST_Mk_II = ships.LST_Mk_II
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         LCVP__Higgins_boat = ships.LCVP__Higgins_boat
@@ -13217,6 +13259,7 @@ class Romania(Country):
         FSG_1241_1MP_Molniya = ships.FSG_1241_1MP_Molniya
         SSK_877 = ships.SSK_877
         FSG_1241_1MP_Molniya = ships.FSG_1241_1MP_Molniya
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         Uboat_VIIC_U_flak = ships.Uboat_VIIC_U_flak
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -13531,6 +13574,7 @@ class SaudiArabia(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -13848,6 +13892,7 @@ class Serbia(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -14149,6 +14194,7 @@ class Slovakia(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -14451,6 +14497,7 @@ class SouthKorea(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -14724,6 +14771,7 @@ class Sweden(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -15037,6 +15085,7 @@ class Syria(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -15336,6 +15385,7 @@ class Yemen(Country):
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
         FSG_1241_1MP_Molniya = ships.FSG_1241_1MP_Molniya
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -15642,6 +15692,7 @@ class Vietnam(Country):
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
         FSG_1241_1MP_Molniya = ships.FSG_1241_1MP_Molniya
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -15935,6 +15986,7 @@ class Venezuela(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -16195,6 +16247,7 @@ class Tunisia(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -16474,6 +16527,7 @@ class Thailand(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -16758,6 +16812,7 @@ class Sudan(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -17026,6 +17081,7 @@ class Philippines(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -17320,6 +17376,7 @@ class Morocco(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -17591,6 +17648,7 @@ class Mexico(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -17859,6 +17917,7 @@ class Malaysia(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -18152,6 +18211,7 @@ class Libya(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -18440,6 +18500,7 @@ class Jordan(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -18734,6 +18795,7 @@ class Indonesia(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -18992,6 +19054,7 @@ class Honduras(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -19283,6 +19346,7 @@ class Ethiopia(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -19574,6 +19638,7 @@ class Chile(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -19860,6 +19925,7 @@ class Brazil(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -20140,6 +20206,7 @@ class Bahrain(Country):
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
         Oliver_Hazzard_Perry_class = ships.Oliver_Hazzard_Perry_class
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -20431,6 +20498,7 @@ class ThirdReich(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         Uboat_VIIC_U_flak = ships.Uboat_VIIC_U_flak
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -20732,6 +20800,7 @@ class Yugoslavia(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         LST_Mk_II = ships.LST_Mk_II
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         LCVP__Higgins_boat = ships.LCVP__Higgins_boat
@@ -21081,6 +21150,7 @@ class USSR(Country):
         FF_1135M_Rezky = ships.FF_1135M_Rezky
         SSK_641B = ships.SSK_641B
         Civil_boat_Zvezdny = ships.Civil_boat_Zvezdny
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         LST_Mk_II = ships.LST_Mk_II
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         LCVP__Higgins_boat = ships.LCVP__Higgins_boat
@@ -21289,6 +21359,7 @@ class ItalianSocialRepublic(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         Uboat_VIIC_U_flak = ships.Uboat_VIIC_U_flak
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -21677,6 +21748,7 @@ class Algeria(Country):
         Bulk_cargo_ship_Yakushev = ships.Bulk_cargo_ship_Yakushev
         Dry_cargo_ship_Ivanov = ships.Dry_cargo_ship_Ivanov
         FF_1135M_Rezky = ships.FF_1135M_Rezky
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -21965,6 +22037,7 @@ class Kuwait(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -22240,6 +22313,7 @@ class Qatar(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -22535,6 +22609,7 @@ class Oman(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -22843,6 +22918,7 @@ class UnitedArabEmirates(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -23112,6 +23188,7 @@ class SouthAfrica(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -23449,6 +23526,7 @@ class Cuba(Country):
         Civil_boat_Zvezdny = ships.Civil_boat_Zvezdny
         Bulk_cargo_ship_Yakushev = ships.Bulk_cargo_ship_Yakushev
         Dry_cargo_ship_Ivanov = ships.Dry_cargo_ship_Ivanov
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -23730,6 +23808,7 @@ class Portugal(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -24040,6 +24119,7 @@ class GDR(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -24331,6 +24411,7 @@ class Lebanon(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -24963,6 +25044,7 @@ class CombinedJointTaskForcesBlue(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         Uboat_VIIC_U_flak = ships.Uboat_VIIC_U_flak
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
         FFL_1124_4_Grisha = ships.FFL_1124_4_Grisha
@@ -25629,6 +25711,7 @@ class CombinedJointTaskForcesRed(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         Uboat_VIIC_U_flak = ships.Uboat_VIIC_U_flak
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
         FFL_1124_4_Grisha = ships.FFL_1124_4_Grisha
@@ -26295,6 +26378,7 @@ class UnitedNationsPeacekeepers(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
         Uboat_VIIC_U_flak = ships.Uboat_VIIC_U_flak
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
         FFL_1124_4_Grisha = ships.FFL_1124_4_Grisha
@@ -26606,6 +26690,7 @@ class Argentina(Country):
 
     class Ship:
         Armed_speedboat = ships.Armed_speedboat
+        Bulk_carrier_Handy_Wind = ships.Bulk_carrier_Handy_Wind
 
     class CallsignAWACS:
         Overlord = "Overlord"

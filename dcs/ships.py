@@ -166,6 +166,16 @@ class CV_1143_5_Admiral_Kuznetsov_2017(unittype.ShipType):
     air_weapon_dist = 12000
 
 
+class Bulk_carrier_Handy_Wind(unittype.ShipType):
+    id = "HandyWind"
+    name = "Bulk carrier Handy Wind"
+    helicopter_num = 1
+    parking = 1
+    detection_range = 0
+    threat_range = 0
+    air_weapon_dist = 0
+
+
 class CVN_74_John_C__Stennis(unittype.ShipType):
     id = "Stennis"
     name = "CVN-74 John C. Stennis"
@@ -351,6 +361,7 @@ ship_map = {
     "KILO": SSK_877,
     "SOM": SSK_641B,
     "CV_1143_5": CV_1143_5_Admiral_Kuznetsov_2017,
+    "HandyWind": Bulk_carrier_Handy_Wind,
     "Stennis": CVN_74_John_C__Stennis,
     "CVN_71": CVN_71_Theodore_Roosevelt,
     "CVN_72": CVN_72_Abraham_Lincoln,

@@ -2214,6 +2214,15 @@ class SA342M(HelicopterType):
         },
     }
 
+    property_defaults = {
+        "NS430allow": True,
+    }
+
+    class Properties:
+
+        class NS430allow:
+            id = "NS430allow"
+
     class Liveries:
 
         class Israel(Enum):
@@ -2302,6 +2311,15 @@ class SA342L(HelicopterType):
         },
     }
 
+    property_defaults = {
+        "NS430allow": True,
+    }
+
+    class Properties:
+
+        class NS430allow:
+            id = "NS430allow"
+
     class Liveries:
 
         class Israel(Enum):
@@ -2382,6 +2400,15 @@ class SA342Mistral(HelicopterType):
             },
         },
     }
+
+    property_defaults = {
+        "NS430allow": True,
+    }
+
+    class Properties:
+
+        class NS430allow:
+            id = "NS430allow"
 
     class Liveries:
 
@@ -2470,6 +2497,15 @@ class SA342Minigun(HelicopterType):
             },
         },
     }
+
+    property_defaults = {
+        "NS430allow": True,
+    }
+
+    class Properties:
+
+        class NS430allow:
+            id = "NS430allow"
 
     class Liveries:
 
