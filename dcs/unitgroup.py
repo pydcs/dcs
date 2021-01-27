@@ -35,6 +35,8 @@ class Group:
             raise TypeError("id must be an integer")
         self.id = _id
         self.hidden = False
+        self.hidden_on_planner = False
+        self.hidden_on_mfd = False
         self.units = []  # type: List[Unit]
         self.points = []  # type: List[Union[StaticPoint, MovingPoint]]
         self.name = name if name else String()
@@ -44,6 +46,8 @@ class Group:
 
     def load_from_dict(self, d):
         self.hidden = d.get("hidden")
+        self.hidden_on_planner = d.get("hiddenOnPlanner")
+        self.hidden_on_mfd = d.get("hiddenOnMFD")
 
     def add_unit(self, unit: Unit):
         self.units.append(unit)
@@ -181,6 +185,10 @@ class Group:
         }
         if self.hidden is not None:
             d["hidden"] = self.hidden
+        if self.hidden_on_planner is not None:
+            d["hiddenOnPlanner"] = self.hidden_on_planner
+        if self.hidden_on_mfd is not None:
+            d["hiddenOnMFD"] = self.hidden_on_mfd
         if self.units:
             d["x"] = self.units[0].position.x
             d["y"] = self.units[0].position.y
