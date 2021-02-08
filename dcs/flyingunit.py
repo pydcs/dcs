@@ -1,3 +1,5 @@
+from random import randrange
+
 from dcs.unit import Unit, Skill
 from dcs.unittype import FlyingType
 from dcs.terrain import ParkingSlot
@@ -6,6 +8,19 @@ from dcs.helicopters import HelicopterType, Ka_50
 
 import json
 from typing import Type
+
+
+onboard_nums = []
+def get_onbaord_num():
+    onboard_num = randrange(1,1000)
+    if len(onboard_nums) < 999:
+        while 1:
+            if onboard_num in onboard_nums:
+                onboard_num = randrange(1,1000)
+            else:
+                break
+    onboard_nums.append(onboard_num)
+    return onboard_num
 
 
 class FlyingUnit(Unit):
@@ -17,7 +32,7 @@ class FlyingUnit(Unit):
         self.parking = None  # crossroad idx
         self.parking_id = None  # parking slot name (01, 02, ..)
         self.psi = 0
-        self.onboard_num = "010"
+        self.onboard_num = str(get_onbaord_num()).zfill(3)
         self.alt = 0
         self.alt_type = "BARO"
         self.flare = _type.flare
