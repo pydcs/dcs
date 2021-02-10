@@ -1,5 +1,5 @@
 from dcs.unitgroup import VehicleGroup, ShipGroup, PlaneGroup, StaticGroup, HelicopterGroup, FlyingGroup, Group
-from typing import List, Dict
+from typing import List, Dict, Set
 
 
 def find_exact(group_name, find_name):
@@ -31,6 +31,7 @@ class Country:
         self.static_group = []  # type: List[StaticGroup]
         self.current_callsign_id = 99
         self.current_callsign_category = {}  # type: Dict[str,int]
+        self._tail_numbers: Set[int] = set()
 
     def add_vehicle_group(self, vgroup):
         self.vehicle_group.append(vgroup)
@@ -138,6 +139,26 @@ class Country:
         if self.current_callsign_category[category] >= len(self.callsign[category]):
             self.current_callsign_category[category] = 0
         return self.callsign.get(category)[self.current_callsign_category[category]]
+
+    @property
+    def unused_onboard_numbers(self) -> Set[int]:
+        return self._tail_numbers
+
+    def reserve_onboard_num(self, number: int) -> bool:
+        """
+        Reserve the give onboard_num (tail number), if already used return True.
+        :param int number: onboard num
+        :return: True if number is already in use, else False
+        """
+        is_in = number in self._tail_numbers
+        self._tail_numbers.add(number)
+        return is_in
+
+    def next_onboard_num(self) -> int:
+        free_set = {x for x in range(10, 999)} - self._tail_numbers
+        tailnum = free_set.pop()
+        self.reserve_onboard_num(tailnum)
+        return tailnum
 
     def dict(self):
         d = {

@@ -907,6 +907,11 @@ class Mission:
                 u.callsign = _country.next_callsign_id()
             i += 1
 
+    @classmethod
+    def _assign_onboard_num(cls, _country, group: unitgroup.FlyingGroup):
+        for u in group.units:
+            u.onboard_num = _country.next_onboard_num()
+
     @staticmethod
     def _load_tasks(mp: MovingPoint, maintask: task.MainTask):
         for t in maintask.perform_task:
@@ -941,6 +946,7 @@ class Mission:
         group.load_task_default_loadout(maintask)
 
         self._assign_callsign(_country, group)
+        self._assign_onboard_num(_country, group)
 
         point_start_type_map = {
             StartType.Cold: ("TakeOffParking", PointAction.FromParkingArea),
@@ -974,6 +980,7 @@ class Mission:
             i += 1
 
         self._assign_callsign(_country, group)
+        self._assign_onboard_num(_country, group)
 
         group.load_task_default_loadout(maintask)
 
@@ -1123,6 +1130,7 @@ class Mission:
         ag.load_task_default_loadout(maintask)
 
         self._assign_callsign(country, ag)
+        self._assign_onboard_num(country, ag)
 
         point_start_type_map = {
             StartType.Cold: ("TakeOffParking", PointAction.FromParkingArea),

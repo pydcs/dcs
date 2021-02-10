@@ -144,6 +144,9 @@ class Coalition:
                             _country=_country)
                         plane.load_from_dict(imp_unit)
 
+                        if _country.reserve_onboard_num(plane.onboard_num):
+                            print("WARN:", "{c} Plane '{p}' already using tail number: {t}".format(
+                                c=self.name.upper(), p=plane.name, t=plane.onboard_num), file=sys.stderr)
                         self._park_unit_on_airport(mission, plane_group, plane)
 
                         mission.current_unit_id = max(mission.current_unit_id, plane.id)
@@ -177,6 +180,9 @@ class Coalition:
                             _country=_country)
                         heli.load_from_dict(imp_unit)
 
+                        if _country.reserve_onboard_num(heli.onboard_num):
+                            print("WARN:", "{c} Helicopter '{h}' already using tail number: {t}".format(
+                                c=self.name.upper(), h=heli.name, t=heli.onboard_num), file=sys.stderr)
                         self._park_unit_on_airport(mission, helicopter_group, heli)
 
                         mission.current_unit_id = max(mission.current_unit_id, heli.id)
