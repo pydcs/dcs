@@ -23,6 +23,7 @@ class PointAction(Enum):
     EchelonRight = "EchelonR"
     FromGroundArea = "From Ground Area"
     FromGroundAreaHot = "From Ground Area Hot"
+    LandingReFuAr = "LandingReFuAr"
     Custom = "Custom"
 
 
@@ -130,9 +131,10 @@ class MovingPoint(StaticPoint):
         self.ETA_locked = d["ETA_locked"]
         self.ETA = d["ETA"]
         self.speed_locked = d["speed_locked"]
-        task_keys = sorted(d["task"]["params"]["tasks"].keys())
-        for t in task_keys:
-            self.tasks.append(task._create_from_dict(d["task"]["params"]["tasks"][t]))
+        if d.get("task") is not None:
+            task_keys = sorted(d["task"]["params"]["tasks"].keys())
+            for t in task_keys:
+                self.tasks.append(task._create_from_dict(d["task"]["params"]["tasks"][t]))
         self.airdrome_id = d.get("airdromeId", None)
         self.helipad_id = d.get("helipadId", None)
         self.link_unit = d.get("linkUnit", None)
