@@ -1740,6 +1740,20 @@ class Mission:
         """
         return country.name in self.coalition["blue"].countries
 
+    def reassign_onboard_numbers(self):
+        """
+        Resets all onboard numbers of units and reassigns them.
+
+        :return: None
+        """
+        for coalation_name in self.coalition:
+            coaltion = self.coalition[coalation_name]
+            for country_name in coaltion.countries:
+                country = coaltion.country(country_name)
+                country.reset_onboard_numbers()
+                for group in country.plane_group + country.helicopter_group:
+                    self._assign_onboard_num(country, group)
+
     def random_date(self):
         """Sets a random date for the mission"""
         self.start_time = datetime.fromtimestamp(1306886400 + 43200, timezone.utc)  # 01-06-2011 12:00:00 UTC

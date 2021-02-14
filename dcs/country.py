@@ -144,6 +144,13 @@ class Country:
     def unused_onboard_numbers(self) -> Set[int]:
         return self._tail_numbers
 
+    def reset_onboard_numbers(self):
+        """
+        Resets/clears reserved onboard numbers for this country.
+        :return:
+        """
+        self._tail_numbers = set()
+
     def reserve_onboard_num(self, number: int) -> bool:
         """
         Reserve the give onboard_num (tail number), if already used return True.

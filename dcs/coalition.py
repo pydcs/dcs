@@ -149,9 +149,9 @@ class Coalition:
                         if _country.reserve_onboard_num(plane.onboard_num):
                             msg = "{c} Plane '{p}' already using tail number: {t}".format(
                                 c=self.name.upper(), p=plane.name, t=plane.onboard_num)
-                            status.append(StatusMessage(msg, MessageType.WARN))
+                            status.append(StatusMessage(msg, MessageType.ONBOARD_NUM_DUPLICATE, MessageSeverity.WARN))
                             print("WARN:", msg, file=sys.stderr)
-                        self._park_unit_on_airport(mission, plane_group, plane)
+                        status += self._park_unit_on_airport(mission, plane_group, plane)
 
                         mission.current_unit_id = max(mission.current_unit_id, plane.id)
                         plane_group.add_unit(plane)
@@ -187,9 +187,9 @@ class Coalition:
                         if _country.reserve_onboard_num(heli.onboard_num):
                             msg = "{c} Helicopter '{h}' already using tail number: {t}".format(
                                 c=self.name.upper(), h=heli.name, t=heli.onboard_num)
-                            status.append(StatusMessage(msg, MessageType.WARN))
+                            status.append(StatusMessage(msg, MessageType.ONBOARD_NUM_DUPLICATE, MessageSeverity.WARN))
                             print("WARN:", msg, file=sys.stderr)
-                        self._park_unit_on_airport(mission, helicopter_group, heli)
+                        status += self._park_unit_on_airport(mission, helicopter_group, heli)
 
                         mission.current_unit_id = max(mission.current_unit_id, heli.id)
                         helicopter_group.add_unit(heli)

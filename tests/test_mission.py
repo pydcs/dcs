@@ -6,7 +6,7 @@ import zipfile
 
 import dcs
 from dcs.translation import String
-from dcs.status_message import MessageType
+from dcs.status_message import MessageSeverity, MessageType
 from dcs.flyingunit import FlyingUnit
 from dcs.unit import Ship
 
@@ -461,6 +461,21 @@ class BasicTests(unittest.TestCase):
                 start = current_milli_time()
                 self.assertTrue(m.save('missions/unittest_' + f))
                 print('-' * 10, "Saved", f, "in", current_milli_time() - start, "ms")
+
+    def test_fix_onboard_numbers(self):
+        m = dcs.mission.Mission()
+        msgs = m.load_file(os.path.join(os.path.dirname(__file__), 'missions', 'Forestry_Operations.miz'))
+        self.assertEqual(4, len(msgs))
+        self.assertTrue(all([x.severity == MessageSeverity.WARN for x in msgs]))
+
+        m.reassign_onboard_numbers()
+
+        save_path = os.path.join('missions', 'fix_onboard_Forestry_Operations.miz')
+        m.save(save_path)
+        print('-' * 10, "Saved", save_path)
+        # reload mission
+        m = dcs.mission.Mission()
+        msgs = m.load_file(save_path)
 
     def test_kneeboard(self):
         m = dcs.mission.Mission()
