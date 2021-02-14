@@ -4,7 +4,7 @@ import copy
 from enum import Enum
 from typing import List, Union, Optional
 
-from dcs.unit import Unit, Skill
+from dcs.unit import Unit, Skill, Ship, Vehicle, Static
 from dcs.flyingunit import FlyingUnit, Plane, Helicopter
 from dcs.unittype import FlyingType
 from dcs.planes import PlaneType
@@ -37,7 +37,7 @@ class Group:
         self.hidden = False
         self.hidden_on_planner = False
         self.hidden_on_mfd = False
-        self.units = []  # type: List[Unit]
+        self.units: List[Union[Unit, Ship, Plane, Helicopter, Vehicle, Static]] = []
         self.points = []  # type: List[Union[StaticPoint, MovingPoint]]
         self.name = name if name else String()
 

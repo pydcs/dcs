@@ -6,6 +6,8 @@ import zipfile
 
 import dcs
 from dcs.translation import String
+from dcs.flyingunit import FlyingUnit
+from dcs.unit import Ship
 
 
 class BasicTests(unittest.TestCase):
@@ -497,7 +499,7 @@ class BasicTests(unittest.TestCase):
         self.assertIsInstance(group, dcs.unitgroup.FlyingGroup)
         self.assertEqual(1, len(group.units))
         unit = group.units[0]
-        self.assertIsInstance(unit, dcs.flyingunit.FlyingUnit)
+        self.assertIsInstance(unit, FlyingUnit)
         self.assertAlmostEqual(unit.radio[2]["channels"][1], frequency)
 
     def test_ship_frequency(self):
@@ -516,7 +518,7 @@ class BasicTests(unittest.TestCase):
             dcs.countries.USA.Ship.CVN_70_Carl_Vinson,
             seapoint
         )
-        unit = group.units[0]
+        unit: Ship = group.units[0]
         frequency = 300000000
         self.assertNotEqual(unit.frequency, frequency)
         unit.set_frequency(frequency)

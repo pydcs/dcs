@@ -38,6 +38,8 @@ from dcs.point import StaticPoint, MovingPoint, PointAction, PointProperties
 from dcs.translation import Translation, String, ResourceKey
 from dcs.unit import Unit, Ship, Vehicle, Static
 from dcs.flyingunit import Plane, Helicopter
+from dcs.helicopters import HelicopterType
+from dcs.planes import PlaneType
 
 
 class StartType(Enum):
@@ -216,7 +218,7 @@ class Mission:
             'F-86F Sabre AI by Eagle Dynamics': True
         }
 
-        self.aircraft_kneeboards: Dict[unittype.FlyingType, List[Path]] = defaultdict(list)
+        self.aircraft_kneeboards: Dict[Type[unittype.FlyingType], List[Path]] = defaultdict(list)
 
     def load_file(self, filename: str, bypass_triggers: bool = False):
         """Load a mission file (.miz) file, replacing all current data.
@@ -851,7 +853,10 @@ class Mission:
         """
         return Helicopter(self.next_unit_id(), self.string(name), _type, country)
 
-    def aircraft(self, name, _type: Type[unittype.FlyingType], country: Country) -> Union[Plane, Helicopter]:
+    def aircraft(self,
+                 name,
+                 _type: Type[Union[unittype.FlyingType, HelicopterType, PlaneType]],
+                 country: Country) -> Union[Plane, Helicopter]:
         """Creates a new plane or helicopter unit, depending on the _type.
 
         This method is a advanced interface method not intended for simple usage.
@@ -1654,7 +1659,7 @@ class Mission:
 
         return sf
 
-    def add_aircraft_kneeboard(self, aircraft: unittype.FlyingType, page: Path):
+    def add_aircraft_kneeboard(self, aircraft: Type[unittype.FlyingType], page: Path):
         """Adds an aircraft specific kneeboard page to the mission.
 
         Note that DCS does not support flight-specific kneeboards, so the
