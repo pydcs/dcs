@@ -1839,7 +1839,8 @@ class Mission:
                 group="Ship",
                 gc=d[low]["ship_groups"]["count"], u=d[low]["ship_groups"]["unit_count"]))
             output[low].append("-" * 28)
-            output[low].append("{group:<15s} {gc:6d} {u:5d}".format(group="Sum", gc=d[low]["count"], u=d[low]["unit_count"]))
+            output[low].append(
+                "{group:<15s} {gc:6d} {u:5d}".format(group="Sum", gc=d[low]["count"], u=d[low]["unit_count"]))
 
         # merge tables
         for i in range(0, len(output["blue"])):

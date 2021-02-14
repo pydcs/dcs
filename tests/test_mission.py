@@ -67,7 +67,7 @@ class BasicTests(unittest.TestCase):
         self.assertIsNotNone(usa)
 
         house = m.static_group(usa, "house", dcs.statics.Fortification.Small_house_1A,
-                       batumi.unit_zones[0].random_point(), 230)
+                               batumi.unit_zones[0].random_point(), 230)
         self.assertEqual(str(house.name), "house")
 
         pg = m.flight_group_from_airport(usa, "Airgroup", dcs.planes.A_10C, kobuleti,
@@ -136,13 +136,13 @@ class BasicTests(unittest.TestCase):
         p = last_wp.position.point_from_heading(heading, distance - 1000)
         last_wp = su25.add_waypoint(p, 3000)
         last_wp.tasks.append(dcs.task.CAS.EnrouteTasks.EngageGroup(ustanks.id))
-        last_wp = su25.add_waypoint(dcs.mapping.Point(last_wp.position.x + 1000 * 10, last_wp.position.y), 3000)
+        su25.add_waypoint(dcs.mapping.Point(last_wp.position.x + 1000 * 10, last_wp.position.y), 3000)
         su25.add_runway_waypoint(sukhumi)
         su25.land_at(sukhumi)
 
         sg = m.ship_group(russia, "TaskForce", dcs.ships.CG_1164_Moskva,
                           dcs.mapping.Point(-209571.42857143, 500728.57142858), 0)
-        wp = sg.add_waypoint(dcs.mapping.Point(sg.x - 1000 * 60, sg.y + 1000 * 10))
+        sg.add_waypoint(dcs.mapping.Point(sg.x - 1000 * 60, sg.y + 1000 * 10))
 
         seapoint = batumi.unit_zones[0].random_point()
         seapoint.y -= 10 * 1000
@@ -175,7 +175,6 @@ class BasicTests(unittest.TestCase):
         m.save('missions/basic_mission.miz')
 
     def test_nav_target_points(self):
-
         m = dcs.Mission()
         batumi = m.terrain.batumi()
         batumi.set_blue()
@@ -220,9 +219,7 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(jeff_miz.nav_target_points[0].position.y, pp1_pos.y)
         self.assertEqual(jeff_miz.nav_target_points[0].index, 1)
 
-
     def test_create_mission_with_marks(self):
-
         m = dcs.Mission()
         batumi = m.terrain.batumi()
         batumi.set_blue()
@@ -232,13 +229,16 @@ class BasicTests(unittest.TestCase):
         rus = m.country("Russia")
 
         # Create some group to use if you want to check visibility of marks in game
-        su25_group = m.flight_group_from_airport(usa, "SU25", dcs.planes.Su_25T, group_size=1, airport=m.terrain.batumi())
+        su25_group = m.flight_group_from_airport(usa, "SU25", dcs.planes.Su_25T,
+                                                 group_size=1, airport=m.terrain.batumi())
         su25_group.set_client()
 
-        f15_group = m.flight_group_from_airport(usa, "F15C", dcs.planes.F_15C, group_size=1, airport=m.terrain.batumi())
+        f15_group = m.flight_group_from_airport(usa, "F15C", dcs.planes.F_15C,
+                                                group_size=1, airport=m.terrain.batumi())
         f15_group.set_client()
 
-        su25_red_group = m.flight_group_from_airport(rus, "SU25 RED", dcs.planes.Su_25T, group_size=1, airport=m.terrain.kutaisi())
+        su25_red_group = m.flight_group_from_airport(rus, "SU25 RED", dcs.planes.Su_25T,
+                                                     group_size=1, airport=m.terrain.kutaisi())
         su25_red_group.set_client()
 
         # In DCS, you have to create a trigger zone to add a mark.
@@ -309,7 +309,6 @@ class BasicTests(unittest.TestCase):
         m.save("missions/mission_with_marks_triggers.miz")
 
     def test_create_mission_on_channel_map(self):
-
         m = dcs.mission.Mission(terrain=dcs.terrain.TheChannel())
 
         usa = m.country("USA")
@@ -329,16 +328,15 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(m2.terrain.__class__, dcs.terrain.TheChannel)
 
     def test_create_mission_on_syria_map(self):
-
         m = dcs.mission.Mission(terrain=dcs.terrain.Syria())
 
         usa = m.country("USA")
         russia = m.country("Russia")
         fa18 = m.flight_group_from_airport(usa, "F/A-18C", dcs.planes.FA_18C_hornet, group_size=1,
-                                            airport=m.terrain.damascus())
+                                           airport=m.terrain.damascus())
         fa18.add_waypoint(m.terrain.damascus().position.point_from_heading(-90, 40000), 500, 300)
         su22 = m.flight_group_from_airport(russia, "Su22", dcs.planes.Su_17M4, group_size=1,
-                                          airport=m.terrain.damascus())
+                                           airport=m.terrain.damascus())
         su22.add_waypoint(m.terrain.damascus().position.point_from_heading(-90, 40000), 500, 300)
 
         m.save('missions/test_mission_syria.miz')
@@ -349,21 +347,23 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(m2.terrain.__class__, dcs.terrain.Syria)
 
     def test_create_mission_with_part_of_coalition_zone_trigger(self):
-
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
 
         usa = m.country("USA")
 
-        trigger_zone = m.triggers.add_triggerzone(m.terrain.batumi().position.point_from_heading(90, 15000), radius=5000, hidden=False, name="TRIGGER_ZONE")
+        trigger_zone = m.triggers.add_triggerzone(m.terrain.batumi().position.point_from_heading(90, 15000),
+                                                  radius=5000, hidden=False, name="TRIGGER_ZONE")
         trigger = dcs.triggers.TriggerOnce(dcs.triggers.Event.NoEvent, "Detection of blue aircraft")
         trigger.add_condition(dcs.condition.PartOfCoalitionInZone("blue", trigger_zone.id, "AIRPLANE"))
         trigger.add_action(dcs.action.MessageToAll(text=String("Blue aircraft detected in trigger zone !")))
         m.triggerrules.triggers.append(trigger)
 
-        trigger_zone_2 = m.triggers.add_triggerzone(m.terrain.batumi().position, radius=5000, hidden=False, name="BATUMI_ZONE")
+        trigger_zone_2 = m.triggers.add_triggerzone(m.terrain.batumi().position, radius=5000, hidden=False,
+                                                    name="BATUMI_ZONE")
         trigger_outside = dcs.triggers.TriggerOnce(dcs.triggers.Event.NoEvent, "No blue in batumi zone")
         trigger_outside.add_condition(dcs.condition.PartOfCoalitionOutsideZone("blue", trigger_zone_2.id, "AIRPLANE"))
-        trigger_outside.add_action(dcs.action.MessageToAll(text=String("Blue aircraft are not in batumi zone anymore!")))
+        trigger_outside.add_action(dcs.action.MessageToAll(
+            text=String("Blue aircraft are not in batumi zone anymore!")))
         m.triggerrules.triggers.append(trigger_outside)
 
         f15 = m.flight_group_inflight(usa, "F15", dcs.planes.F_15C, m.terrain.batumi().position, 1000)
@@ -383,7 +383,7 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(m2.triggerrules.triggers[1].rules[0].zone, trigger_zone_2.id)
         self.assertEqual(m2.triggerrules.triggers[1].rules[0].coalitionlist, "blue")
 
-    def assert_prepared_mission_load(self, m: dcs.mission.Mission):
+    def _assert_prepared_mission_load(self, m: dcs.mission.Mission):
         usa = m.country(dcs.countries.USA.name)
 
         # find single heli pad
@@ -436,7 +436,7 @@ class BasicTests(unittest.TestCase):
         m = dcs.mission.Mission()
         m.load_file('tests/loadtest.miz')
 
-        self.assert_prepared_mission_load(m)
+        self._assert_prepared_mission_load(m)
 
         m.save('missions/loadtest.miz')
 
@@ -444,10 +444,11 @@ class BasicTests(unittest.TestCase):
         m = dcs.mission.Mission()
         m.load_file('missions/loadtest.miz')
 
-        self.assert_prepared_mission_load(m)
+        self._assert_prepared_mission_load(m)
 
     def test_load_test_missions(self):
-        current_milli_time = lambda: int(round(time.time() * 1000))
+        def current_milli_time():
+            return int(round(time.time() * 1000))
         test_mission_folder = os.path.join(os.path.dirname(__file__), 'missions')
         for f in os.listdir(test_mission_folder):
             if f.endswith('.miz'):
@@ -541,11 +542,10 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(unit.frequency, frequency)
 
     def test_create_scenery_destruction_zone(self):
-
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
 
         usa = m.country("USA")
-        point = dcs.Point(-217283, 564863) # This is a compound north of sukhmi, with buildings and trees
+        point = dcs.Point(-217283, 564863)  # This is a compound north of sukhmi, with buildings and trees
         m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.AAA_Vulcan_M163, position=point)
 
         # Create trigger zone
@@ -568,11 +568,10 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].zone, destruction_zone.id)
 
     def test_remove_trees_in_zone(self):
-
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
 
         usa = m.country("USA")
-        point = dcs.Point(-217283, 564863) # This is a compound north of sukhmi, with buildings and trees
+        point = dcs.Point(-217283, 564863)  # This is a compound north of sukhmi, with buildings and trees
         m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.AAA_Vulcan_M163, position=point)
 
         # Create trigger zone
@@ -590,16 +589,16 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(0, len(m2.load_file('missions/test_mission_remove_trees.miz')))
         self.assertEqual(m2.terrain.__class__, dcs.terrain.Caucasus)
         self.assertTrue(type(m2.triggerrules.triggers[0].actions[0]) is dcs.action.RemoveSceneObjects)
-        self.assertEqual(m2.triggerrules.triggers[0].actions[0].objects_mask, dcs.action.RemoveSceneObjectsMask.TREES_ONLY)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[0].objects_mask,
+                         dcs.action.RemoveSceneObjectsMask.TREES_ONLY)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].meters, 1000)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].zone, removal_zone.id)
 
     def test_remove_objects_in_zone(self):
-
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
 
         usa = m.country("USA")
-        point = dcs.Point(-217283, 564863) # This is a compound north of sukhmi, with buildings and trees
+        point = dcs.Point(-217283, 564863)  # This is a compound north of sukhmi, with buildings and trees
         m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.AAA_Vulcan_M163, position=point)
 
         # Create trigger zone
@@ -617,16 +616,16 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(0, len(m2.load_file('missions/test_mission_remove_objects.miz')))
         self.assertEqual(m2.terrain.__class__, dcs.terrain.Caucasus)
         self.assertTrue(type(m2.triggerrules.triggers[0].actions[0]) is dcs.action.RemoveSceneObjects)
-        self.assertEqual(m2.triggerrules.triggers[0].actions[0].objects_mask, dcs.action.RemoveSceneObjectsMask.OBJECTS_ONLY)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[0].objects_mask,
+                         dcs.action.RemoveSceneObjectsMask.OBJECTS_ONLY)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].meters, 1000)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].zone, removal_zone.id)
 
     def test_remove_trees_and_objects_in_zone(self):
-
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
 
         usa = m.country("USA")
-        point = dcs.Point(-217283, 564863) # This is a compound north of sukhmi, with buildings and trees
+        point = dcs.Point(-217283, 564863)  # This is a compound north of sukhmi, with buildings and trees
         m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.AAA_Vulcan_M163, position=point)
 
         # Create trigger zone
@@ -649,7 +648,6 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].zone, removal_zone.id)
 
     def test_bypass_triggers(self):
-
         m = dcs.mission.Mission()
         self.assertEqual(0, len(m.load_file('tests/bypass_triggers.miz', True)))
 
@@ -665,13 +663,13 @@ class BasicTests(unittest.TestCase):
         self.assertNotEqual(result, -1)
 
     def test_mission_with_qf17_aaa(self):
-
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
 
         usa = m.country("USA")
         caucasus = m.terrain
         batumi = caucasus.batumi()
-        m.vehicle_group(usa, "qf17", dcs.countries.USA.Vehicle.AirDefence.AA_gun_QF_3_7, position=batumi.random_unit_zone().center())
+        m.vehicle_group(usa, "qf17", dcs.countries.USA.Vehicle.AirDefence.AA_gun_QF_3_7,
+                        position=batumi.random_unit_zone().center())
 
         m.save('missions/test_mission_qf17.miz')
 
@@ -706,8 +704,8 @@ class BasicTests(unittest.TestCase):
     def test_mission_save_pictureFileName(self):
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
         image_path = 'tests/images/blue.png'
-        reskey_B = m.add_picture_blue(image_path)
-        reskey_R = m.add_picture_red(image_path)
+        reskey_b = m.add_picture_blue(image_path)
+        reskey_r = m.add_picture_red(image_path)
 
         mission_path = 'missions/test_mission_pictureFileName.miz'
         m.save(mission_path)
@@ -716,6 +714,6 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(0, len(m2.load_file(mission_path)))
 
         self.assertEqual(len(m2.pictureFileNameB), 1)
-        self.assertEqual(m2.pictureFileNameB[0], reskey_B.key)
+        self.assertEqual(m2.pictureFileNameB[0], reskey_b.key)
         self.assertEqual(len(m2.pictureFileNameR), 1)
-        self.assertEqual(m2.pictureFileNameR[0], reskey_R.key)
+        self.assertEqual(m2.pictureFileNameR[0], reskey_r.key)
