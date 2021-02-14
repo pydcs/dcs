@@ -9,6 +9,9 @@ class MessageSeverity(IntEnum):
 
 class MessageType(IntEnum):
     ONBOARD_NUM_DUPLICATE = 0
+    PARKING_SLOT_NOT_VALID = 1
+    PARKING_SLOTS_FULL = 3
+    MISSION_FORMAT_OLD = 4
 
 
 class StatusMessage:

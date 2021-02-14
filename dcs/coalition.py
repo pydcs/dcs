@@ -9,7 +9,7 @@ from dcs.unit import Vehicle, Static, Ship, FARP, SingleHeliPad
 from dcs.flyingunit import Plane, Helicopter
 from dcs.point import MovingPoint, StaticPoint
 from dcs.country import Country
-from dcs.status_message import StatusMessage, MessageType
+from dcs.status_message import StatusMessage, MessageType, MessageSeverity
 
 if TYPE_CHECKING:
     from . import Mission
@@ -54,24 +54,31 @@ class Coalition:
         return group
 
     @staticmethod
-    def _park_unit_on_airport(mission: 'Mission', group: unitgroup.Group, unit: Union[Plane, Helicopter]):
+    def _park_unit_on_airport(
+            mission: 'Mission',
+            group: unitgroup.Group,
+            unit: Union[Plane, Helicopter]) -> List[StatusMessage]:
+        ret = []
         if group.points[0].airdrome_id is not None and unit.parking is not None:
             airport = mission.terrain.airport_by_id(group.points[0].airdrome_id)
             slot = airport.parking_slot(unit.parking)
             if slot is not None:
                 unit.set_parking(slot)
             else:
-                print("WARN: Parking slot id '{i}' for unit '{u}' in group '{p}' on airport '{a}' "
-                      "not valid, placing on next free"
-                      .format(i=unit.parking, u=unit.name, a=airport.name, p=group.name),
-                      file=sys.stderr)
+                msg = "Parking slot id '{i}' for unit '{u}' in group '{p}' on airport '{a}' " \
+                      "not valid, placing on next free".format(i=unit.parking, u=unit.name,
+                                                               a=airport.name, p=group.name)
+                print("WARN", msg, file=sys.stderr)
+                ret.append(StatusMessage(msg, MessageType.PARKING_SLOT_NOT_VALID, MessageSeverity.WARN))
                 slot = airport.free_parking_slot(unit.unit_type)
                 if slot is not None:
                     unit.set_parking(slot)
                 else:
-                    print("ERRO: No free parking slots for unit '{u}' in unit group '{p}' on airport '{a}', ignoring"
-                          .format(u=unit.name, a=airport.name, p=group.name),
-                          file=sys.stderr)
+                    msg = "No free parking slots for unit '{u}' in unit group '{p}' on airport '{a}', ignoring"\
+                        .format(u=unit.name, a=airport.name, p=group.name)
+                    print("ERRO", msg, file=sys.stderr)
+                    ret.append(StatusMessage(msg, MessageType.PARKING_SLOTS_FULL, MessageSeverity.ERROR))
+        return ret
 
     def load_from_dict(self, mission, d) -> List[StatusMessage]:
         status: List[StatusMessage] = []

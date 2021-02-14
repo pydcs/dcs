@@ -40,7 +40,7 @@ from dcs.unit import Unit, Ship, Vehicle, Static
 from dcs.flyingunit import Plane, Helicopter
 from dcs.helicopters import HelicopterType
 from dcs.planes import PlaneType
-from dcs.status_message import StatusMessage
+from dcs.status_message import StatusMessage, MessageType, MessageSeverity
 
 
 class StartType(Enum):
@@ -249,7 +249,9 @@ class Mission:
             mission_dict = loaddict('mission', miz, reserved_files)
 
             if mission_dict["mission"]["version"] < 16:
-                print("Mission file is using an old format, be aware!", file=sys.stderr)
+                msg = "Mission file is using an old format, be aware!"
+                print(msg, file=sys.stderr)
+                status.append(StatusMessage(msg, MessageType.MISSION_FORMAT_OLD, MessageSeverity.WARN))
             options_dict = loaddict('options', miz, reserved_files)
             warehouse_dict = loaddict('warehouses', miz, reserved_files)
             dictionary_dict = loaddict('l10n/DEFAULT/dictionary', miz, reserved_files)
