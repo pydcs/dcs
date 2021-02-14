@@ -40,6 +40,7 @@ from dcs.unit import Unit, Ship, Vehicle, Static
 from dcs.flyingunit import Plane, Helicopter
 from dcs.helicopters import HelicopterType
 from dcs.planes import PlaneType
+from dcs.status_message import StatusMessage
 
 
 class StartType(Enum):
@@ -220,27 +221,21 @@ class Mission:
 
         self.aircraft_kneeboards: Dict[Type[unittype.FlyingType], List[Path]] = defaultdict(list)
 
-    def load_file(self, filename: str, bypass_triggers: bool = False):
-        """Load a mission file (.miz) file, replacing all current data.
+    def load_file(self, filename: str, bypass_triggers: bool = False) -> List[StatusMessage]:
+        """
+        Load a mission file (.miz) file, replacing all current data.
 
-        Args:
-            filename: path to the mission(.miz) file.
-            bypass_triggers: do not parse triggers, if a mission is loaded this way
-                             the same triggers will be exported on save.
-        Returns:
-            bool: True if everything loaded correctly
-
-        Raises:
-            RuntimeError: if an unknown value is encountered
+        :param filename: path to the mission(.miz) file.
+        :param bypass_triggers: do not parse triggers, if a mission is loaded this way
+            the same triggers will be exported on save.
+        :return: List of LoadStatus objects, might be empty if everything was fine
+        :raises RuntimeError: if an unknown value is encountered
         """
         self.filename = filename
         self.current_unit_id = 0
         self.current_group_id = 0
         self.current_dict_id = 0
-        mission_dict = {}
-        options_dict = {}
-        warehouse_dict = {}
-        dictionary_dict = {}
+        status = []
 
         def loaddict(fname, mizfile, reserved_files):
             reserved_files.append(fname)
@@ -374,9 +369,9 @@ class Mission:
         for col_name in ["blue", "red", "neutrals"]:
             if col_name in imp_mission["coalition"]:
                 self.coalition[col_name] = Coalition(col_name, imp_mission["coalition"][col_name]["bullseye"])
-                self.coalition[col_name].load_from_dict(self, imp_mission["coalition"][col_name])
+                status += self.coalition[col_name].load_from_dict(self, imp_mission["coalition"][col_name])
 
-        return True
+        return status
 
     def sortie_text(self) -> str:
         """Returns the mission sortie text.

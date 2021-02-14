@@ -6,6 +6,7 @@ import zipfile
 
 import dcs
 from dcs.translation import String
+from dcs.status_message import MessageType
 from dcs.flyingunit import FlyingUnit
 from dcs.unit import Ship
 
@@ -208,7 +209,7 @@ class BasicTests(unittest.TestCase):
 
         # load the mission back
         m2 = dcs.mission.Mission()
-        self.assertTrue(m2.load_file("missions/mission_with_nav_target_points.miz"))
+        self.assertEqual(0, len(m2.load_file("missions/mission_with_nav_target_points.miz")))
         usa_miz = m2.country("USA")
         jeff_miz = usa_miz.find_group("JF17")
 
@@ -324,7 +325,7 @@ class BasicTests(unittest.TestCase):
 
         # Test load mission
         m2 = dcs.mission.Mission()
-        self.assertTrue(m2.load_file('missions/test_mission_the_channel.miz'))
+        self.assertEqual(0, len(m2.load_file('missions/test_mission_the_channel.miz')))
         self.assertEqual(m2.terrain.__class__, dcs.terrain.TheChannel)
 
     def test_create_mission_on_syria_map(self):
@@ -344,7 +345,7 @@ class BasicTests(unittest.TestCase):
 
         # Test load mission
         m2 = dcs.mission.Mission()
-        self.assertTrue(m2.load_file('missions/test_mission_syria.miz'))
+        self.assertEqual(0, len(m2.load_file('missions/test_mission_syria.miz')))
         self.assertEqual(m2.terrain.__class__, dcs.terrain.Syria)
 
     def test_create_mission_with_part_of_coalition_zone_trigger(self):
@@ -372,7 +373,7 @@ class BasicTests(unittest.TestCase):
 
         # Test load mission
         m2 = dcs.mission.Mission()
-        self.assertTrue(m2.load_file('missions/mission_with_part_of_coalition_zone_trigger.miz'))
+        self.assertEqual(0, len(m2.load_file('missions/mission_with_part_of_coalition_zone_trigger.miz')))
 
         self.assertEqual(m2.triggerrules.triggers[0].rules[0].unitType, "AIRPLANE")
         self.assertEqual(m2.triggerrules.triggers[0].rules[0].zone, trigger_zone.id)
@@ -433,7 +434,7 @@ class BasicTests(unittest.TestCase):
 
     def test_load_prepared_mission(self):
         m = dcs.mission.Mission()
-        self.assertTrue(m.load_file('tests/loadtest.miz'))
+        m.load_file('tests/loadtest.miz')
 
         self.assert_prepared_mission_load(m)
 
@@ -441,7 +442,7 @@ class BasicTests(unittest.TestCase):
 
         # reload mission
         m = dcs.mission.Mission()
-        self.assertTrue(m.load_file('missions/loadtest.miz'))
+        m.load_file('missions/loadtest.miz')
 
         self.assert_prepared_mission_load(m)
 
@@ -453,7 +454,7 @@ class BasicTests(unittest.TestCase):
                 print('-' * 10, "Loading", f)
                 start = current_milli_time()
                 m = dcs.mission.Mission()
-                self.assertTrue(m.load_file(os.path.join(test_mission_folder, f)))
+                m.load_file(os.path.join(test_mission_folder, f))
                 print('-' * 10, "Loaded", f, "in", current_milli_time() - start, "ms")
                 print('-' * 10, "Saving", f)
                 start = current_milli_time()
@@ -493,7 +494,7 @@ class BasicTests(unittest.TestCase):
         m.save(mission_file)
 
         m = dcs.mission.Mission()
-        self.assertTrue(m.load_file('missions/radio_channels.miz'))
+        self.assertEqual(0, len(m.load_file('missions/radio_channels.miz')))
         group = m.country(country_name).find_group(group_name)
         self.assertIsNotNone(group)
         self.assertIsInstance(group, dcs.unitgroup.FlyingGroup)
@@ -530,7 +531,7 @@ class BasicTests(unittest.TestCase):
         m.save(mission_file)
 
         m = dcs.mission.Mission()
-        self.assertTrue(m.load_file(f"missions/{mission_name}.miz"))
+        self.assertEqual(0, len(m.load_file(f"missions/{mission_name}.miz")))
         group = m.country(country_name).find_group(group_name)
         self.assertIsNotNone(group)
         self.assertIsInstance(group, dcs.unitgroup.ShipGroup)
@@ -559,7 +560,7 @@ class BasicTests(unittest.TestCase):
 
         # Test reload the mission
         m2 = dcs.mission.Mission()
-        self.assertTrue(m2.load_file('missions/test_mission_scenery_destruction.miz'))
+        self.assertEqual(0, len(m2.load_file('missions/test_mission_scenery_destruction.miz')))
         self.assertEqual(m2.terrain.__class__, dcs.terrain.Caucasus)
         self.assertTrue(type(m2.triggerrules.triggers[0].actions[0]) is dcs.action.SceneryDestructionZone)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].destruction_level, 95)
@@ -586,7 +587,7 @@ class BasicTests(unittest.TestCase):
 
         # Test reload the mission
         m2 = dcs.mission.Mission()
-        self.assertTrue(m2.load_file('missions/test_mission_remove_trees.miz'))
+        self.assertEqual(0, len(m2.load_file('missions/test_mission_remove_trees.miz')))
         self.assertEqual(m2.terrain.__class__, dcs.terrain.Caucasus)
         self.assertTrue(type(m2.triggerrules.triggers[0].actions[0]) is dcs.action.RemoveSceneObjects)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].objects_mask, dcs.action.RemoveSceneObjectsMask.TREES_ONLY)
@@ -613,7 +614,7 @@ class BasicTests(unittest.TestCase):
 
         # Test reload the mission
         m2 = dcs.mission.Mission()
-        self.assertTrue(m2.load_file('missions/test_mission_remove_objects.miz'))
+        self.assertEqual(0, len(m2.load_file('missions/test_mission_remove_objects.miz')))
         self.assertEqual(m2.terrain.__class__, dcs.terrain.Caucasus)
         self.assertTrue(type(m2.triggerrules.triggers[0].actions[0]) is dcs.action.RemoveSceneObjects)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].objects_mask, dcs.action.RemoveSceneObjectsMask.OBJECTS_ONLY)
@@ -640,7 +641,7 @@ class BasicTests(unittest.TestCase):
 
         # Test reload the mission
         m2 = dcs.mission.Mission()
-        self.assertTrue(m2.load_file('missions/test_mission_remove_all.miz'))
+        self.assertEqual(0, len(m2.load_file('missions/test_mission_remove_all.miz')))
         self.assertEqual(m2.terrain.__class__, dcs.terrain.Caucasus)
         self.assertTrue(type(m2.triggerrules.triggers[0].actions[0]) is dcs.action.RemoveSceneObjects)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].objects_mask, dcs.action.RemoveSceneObjectsMask.ALL)
@@ -650,7 +651,7 @@ class BasicTests(unittest.TestCase):
     def test_bypass_triggers(self):
 
         m = dcs.mission.Mission()
-        m.load_file('tests/bypass_triggers.miz', True)
+        self.assertEqual(0, len(m.load_file('tests/bypass_triggers.miz', True)))
 
         saved_mission = 'missions/test_bypass_triggers.miz'
         m.save(saved_mission)
@@ -675,14 +676,14 @@ class BasicTests(unittest.TestCase):
         m.save('missions/test_mission_qf17.miz')
 
         m2 = dcs.mission.Mission()
-        self.assertTrue(m2.load_file('missions/test_mission_qf17.miz'))
+        self.assertEqual(0, len(m2.load_file('missions/test_mission_qf17.miz')))
 
         group = m2.country("USA").find_group("qf17")
         self.assertEqual(group.units[0].type, dcs.vehicles.AirDefence.AA_gun_QF_3_7.id)
 
     def test_mission_neutral(self):
         m = dcs.mission.Mission()
-        m.load_file('tests/loadtest.miz')
+        self.assertEqual(0, len(m.load_file('tests/loadtest.miz')))
 
         neutral_country_name = "Sweden"
         sweden = m.country(neutral_country_name)
@@ -695,7 +696,7 @@ class BasicTests(unittest.TestCase):
         m.save(mission_path)
 
         m2 = dcs.mission.Mission()
-        self.assertTrue(m2.load_file(mission_path))
+        self.assertEqual(0, len(m2.load_file(mission_path)))
 
         sweden2 = m.country(neutral_country_name)
         self.assertTrue(sweden2 is not None)
@@ -712,7 +713,7 @@ class BasicTests(unittest.TestCase):
         m.save(mission_path)
 
         m2 = dcs.mission.Mission()
-        m2.load_file(mission_path)
+        self.assertEqual(0, len(m2.load_file(mission_path)))
 
         self.assertEqual(len(m2.pictureFileNameB), 1)
         self.assertEqual(m2.pictureFileNameB[0], reskey_B.key)

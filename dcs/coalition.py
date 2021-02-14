@@ -1,5 +1,5 @@
 import sys
-from typing import Dict, Union, TYPE_CHECKING
+from typing import Dict, Union, List, TYPE_CHECKING
 import dcs.countries as countries
 import dcs.unitgroup as unitgroup
 import dcs.planes as planes
@@ -9,6 +9,7 @@ from dcs.unit import Vehicle, Static, Ship, FARP, SingleHeliPad
 from dcs.flyingunit import Plane, Helicopter
 from dcs.point import MovingPoint, StaticPoint
 from dcs.country import Country
+from dcs.status_message import StatusMessage, MessageType
 
 if TYPE_CHECKING:
     from . import Mission
@@ -72,7 +73,8 @@ class Coalition:
                           .format(u=unit.name, a=airport.name, p=group.name),
                           file=sys.stderr)
 
-    def load_from_dict(self, mission, d):
+    def load_from_dict(self, mission, d) -> List[StatusMessage]:
+        status: List[StatusMessage] = []
         for country_idx in d["country"]:
             imp_country = d["country"][country_idx]
             _country = countries.get_by_id(imp_country["id"])
@@ -226,6 +228,7 @@ class Coalition:
                         static_group.add_unit(static)
                     _country.add_static_group(static_group)
             self.add_country(_country)
+        return status
 
     def set_bullseye(self, bulls):
         self.bullseye = bulls
