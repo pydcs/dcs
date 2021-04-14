@@ -3,9 +3,9 @@
 import dcs.unittype as unittype
 
 
-class Armed_speedboat(unittype.ShipType):
+class Boat_Armed_Hi_speed(unittype.ShipType):
     id = "speedboat"
-    name = "Armed speedboat"
+    name = "Boat Armed Hi-speed"
     detection_range = 3000
     threat_range = 1000
     air_weapon_dist = 1000
@@ -22,9 +22,9 @@ class CVN_70_Carl_Vinson(unittype.ShipType):
     air_weapon_dist = 15000
 
 
-class Oliver_Hazzard_Perry_class(unittype.ShipType):
+class FFG_Oliver_Hazzard_Perry(unittype.ShipType):
     id = "PERRY"
-    name = "Oliver Hazzard Perry class"
+    name = "FFG Oliver Hazzard Perry"
     helicopter_num = 2
     parking = 1
     detection_range = 150000
@@ -32,9 +32,9 @@ class Oliver_Hazzard_Perry_class(unittype.ShipType):
     air_weapon_dist = 100000
 
 
-class Ticonderoga_class(unittype.ShipType):
+class CG_Ticonderoga(unittype.ShipType):
     id = "TICONDEROG"
-    name = "Ticonderoga class"
+    name = "CG Ticonderoga"
     helicopter_num = 2
     parking = 1
     detection_range = 150000
@@ -42,9 +42,9 @@ class Ticonderoga_class(unittype.ShipType):
     air_weapon_dist = 100000
 
 
-class FFL_1124_4_Grisha(unittype.ShipType):
+class Corvette_1124_4_Grisha(unittype.ShipType):
     id = "ALBATROS"
-    name = "FFL 1124.4 Grisha"
+    name = "Corvette 1124.4 Grisha"
     detection_range = 30000
     threat_range = 16000
     air_weapon_dist = 16000
@@ -61,17 +61,17 @@ class CV_1143_5_Admiral_Kuznetsov(unittype.ShipType):
     air_weapon_dist = 12000
 
 
-class FSG_1241_1MP_Molniya(unittype.ShipType):
+class Corvette_1241_1_Molniya(unittype.ShipType):
     id = "MOLNIYA"
-    name = "FSG 1241.1MP Molniya"
+    name = "Corvette 1241.1 Molniya"
     detection_range = 21000
     threat_range = 2000
     air_weapon_dist = 2000
 
 
-class CG_1164_Moskva(unittype.ShipType):
+class Cruiser_1164_Moskva(unittype.ShipType):
     id = "MOSCOW"
-    name = "CG 1164 Moskva"
+    name = "Cruiser 1164 Moskva"
     helicopter_num = 1
     parking = 1
     detection_range = 160000
@@ -79,9 +79,9 @@ class CG_1164_Moskva(unittype.ShipType):
     air_weapon_dist = 75000
 
 
-class FFG_11540_Neustrashimy(unittype.ShipType):
+class Frigate_11540_Neustrashimy(unittype.ShipType):
     id = "NEUSTRASH"
-    name = "FFG 11540 Neustrashimy"
+    name = "Frigate 11540 Neustrashimy"
     helicopter_num = 1
     parking = 1
     detection_range = 27000
@@ -89,9 +89,9 @@ class FFG_11540_Neustrashimy(unittype.ShipType):
     air_weapon_dist = 12000
 
 
-class CGN_1144_2_Pyotr_Velikiy(unittype.ShipType):
+class Battlecruiser_1144_2_Pyotr_Velikiy(unittype.ShipType):
     id = "PIOTR"
-    name = "CGN 1144.2 Pyotr Velikiy"
+    name = "Battlecruiser 1144.2 Pyotr Velikiy"
     helicopter_num = 1
     parking = 1
     detection_range = 250000
@@ -99,9 +99,9 @@ class CGN_1144_2_Pyotr_Velikiy(unittype.ShipType):
     air_weapon_dist = 190000
 
 
-class FF_1135M_Rezky(unittype.ShipType):
+class Frigate_1135M_Rezky(unittype.ShipType):
     id = "REZKY"
-    name = "FF 1135M Rezky"
+    name = "Frigate 1135M Rezky"
     detection_range = 30000
     threat_range = 16000
     air_weapon_dist = 16000
@@ -115,41 +115,49 @@ class Tanker_Elnya_160(unittype.ShipType):
     air_weapon_dist = 0
 
 
-class Dry_cargo_ship_Ivanov(unittype.ShipType):
+class Cargo_Ivanov(unittype.ShipType):
     id = "Dry-cargo ship-2"
-    name = "Dry cargo ship Ivanov"
+    name = "Cargo Ivanov"
     detection_range = 0
     threat_range = 0
     air_weapon_dist = 0
 
 
-class Bulk_cargo_ship_Yakushev(unittype.ShipType):
+class Bulker_Yakushev(unittype.ShipType):
     id = "Dry-cargo ship-1"
-    name = "Bulk cargo ship Yakushev"
+    name = "Bulker Yakushev"
     detection_range = 0
     threat_range = 0
     air_weapon_dist = 0
 
 
-class Civil_boat_Zvezdny(unittype.ShipType):
+class Boat_Zvezdny_type(unittype.ShipType):
     id = "ZWEZDNY"
-    name = "Civil boat Zvezdny"
+    name = "Boat Zvezdny type"
     detection_range = 0
     threat_range = 0
     air_weapon_dist = 0
 
 
-class SSK_877(unittype.ShipType):
+class SSK_877V_Kilo(unittype.ShipType):
     id = "KILO"
-    name = "SSK 877"
+    name = "SSK 877V Kilo"
     detection_range = 0
     threat_range = 0
     air_weapon_dist = 0
 
 
-class SSK_641B(unittype.ShipType):
+class SSK_636_Improved_Kilo(unittype.ShipType):
+    id = "IMPROVED_KILO"
+    name = "SSK 636 Improved Kilo"
+    detection_range = 0
+    threat_range = 0
+    air_weapon_dist = 0
+
+
+class SSK_641B_Tango(unittype.ShipType):
     id = "SOM"
-    name = "SSK 641B"
+    name = "SSK 641B Tango"
     detection_range = 0
     threat_range = 0
     air_weapon_dist = 0
@@ -166,9 +174,9 @@ class CV_1143_5_Admiral_Kuznetsov_2017(unittype.ShipType):
     air_weapon_dist = 12000
 
 
-class Bulk_carrier_Handy_Wind(unittype.ShipType):
+class Bulker_Handy_Wind(unittype.ShipType):
     id = "HandyWind"
-    name = "Bulk carrier Handy Wind"
+    name = "Bulker Handy Wind"
     helicopter_num = 1
     parking = 1
     detection_range = 0
@@ -193,9 +201,9 @@ class CVN_71_Theodore_Roosevelt(unittype.ShipType):
     plane_num = 72
     helicopter_num = 6
     parking = 4
-    detection_range = 30000
-    threat_range = 15000
-    air_weapon_dist = 15000
+    detection_range = 50000
+    threat_range = 25000
+    air_weapon_dist = 25000
 
 
 class CVN_72_Abraham_Lincoln(unittype.ShipType):
@@ -204,9 +212,9 @@ class CVN_72_Abraham_Lincoln(unittype.ShipType):
     plane_num = 72
     helicopter_num = 6
     parking = 4
-    detection_range = 30000
-    threat_range = 15000
-    air_weapon_dist = 15000
+    detection_range = 50000
+    threat_range = 25000
+    air_weapon_dist = 25000
 
 
 class CVN_73_George_Washington(unittype.ShipType):
@@ -215,9 +223,9 @@ class CVN_73_George_Washington(unittype.ShipType):
     plane_num = 72
     helicopter_num = 6
     parking = 4
-    detection_range = 30000
-    threat_range = 15000
-    air_weapon_dist = 15000
+    detection_range = 50000
+    threat_range = 25000
+    air_weapon_dist = 25000
 
 
 class CVN_75_Harry_S__Truman(unittype.ShipType):
@@ -226,14 +234,14 @@ class CVN_75_Harry_S__Truman(unittype.ShipType):
     plane_num = 72
     helicopter_num = 6
     parking = 4
-    detection_range = 30000
-    threat_range = 15000
-    air_weapon_dist = 15000
+    detection_range = 50000
+    threat_range = 25000
+    air_weapon_dist = 25000
 
 
-class USS_Arleigh_Burke_IIa(unittype.ShipType):
+class DDG_Arleigh_Burke_IIa(unittype.ShipType):
     id = "USS_Arleigh_Burke_IIa"
-    name = "USS Arleigh Burke IIa"
+    name = "DDG Arleigh Burke IIa"
     helicopter_num = 2
     parking = 1
     detection_range = 150000
@@ -247,9 +255,9 @@ class LHA_1_Tarawa(unittype.ShipType):
     plane_num = 40
     helicopter_num = 36
     parking = 4
-    detection_range = 300000
-    threat_range = 150000
-    air_weapon_dist = 150000
+    detection_range = 150000
+    threat_range = 20000
+    air_weapon_dist = 20000
 
 
 class Type_052B_Destroyer(unittype.ShipType):
@@ -319,55 +327,56 @@ class LS_Samuel_Chase(unittype.ShipType):
     air_weapon_dist = 7000
 
 
-class LCVP__Higgins_boat(unittype.ShipType):
+class Boat_LCVP_Higgins(unittype.ShipType):
     id = "Higgins_boat"
-    name = "LCVP (Higgins boat)"
+    name = "Boat LCVP Higgins"
     detection_range = 3000
     threat_range = 1000
     air_weapon_dist = 1000
 
 
-class Uboat_VIIC_U_flak(unittype.ShipType):
+class U_boat_VIIC_U_flak(unittype.ShipType):
     id = "Uboat_VIIC"
-    name = "Uboat VIIC U-flak"
+    name = "U-boat VIIC U-flak"
     detection_range = 10000
     threat_range = 4000
     air_weapon_dist = 4000
 
 
-class Schnellboot_type_S130(unittype.ShipType):
+class Boat_Schnellboot_type_S130(unittype.ShipType):
     id = "Schnellboot_type_S130"
-    name = "Schnellboot type S130"
+    name = "Boat Schnellboot type S130"
     detection_range = 10000
     threat_range = 4000
     air_weapon_dist = 4000
 
 ship_map = {
-    "speedboat": Armed_speedboat,
+    "speedboat": Boat_Armed_Hi_speed,
     "VINSON": CVN_70_Carl_Vinson,
-    "PERRY": Oliver_Hazzard_Perry_class,
-    "TICONDEROG": Ticonderoga_class,
-    "ALBATROS": FFL_1124_4_Grisha,
+    "PERRY": FFG_Oliver_Hazzard_Perry,
+    "TICONDEROG": CG_Ticonderoga,
+    "ALBATROS": Corvette_1124_4_Grisha,
     "KUZNECOW": CV_1143_5_Admiral_Kuznetsov,
-    "MOLNIYA": FSG_1241_1MP_Molniya,
-    "MOSCOW": CG_1164_Moskva,
-    "NEUSTRASH": FFG_11540_Neustrashimy,
-    "PIOTR": CGN_1144_2_Pyotr_Velikiy,
-    "REZKY": FF_1135M_Rezky,
+    "MOLNIYA": Corvette_1241_1_Molniya,
+    "MOSCOW": Cruiser_1164_Moskva,
+    "NEUSTRASH": Frigate_11540_Neustrashimy,
+    "PIOTR": Battlecruiser_1144_2_Pyotr_Velikiy,
+    "REZKY": Frigate_1135M_Rezky,
     "ELNYA": Tanker_Elnya_160,
-    "Dry-cargo ship-2": Dry_cargo_ship_Ivanov,
-    "Dry-cargo ship-1": Bulk_cargo_ship_Yakushev,
-    "ZWEZDNY": Civil_boat_Zvezdny,
-    "KILO": SSK_877,
-    "SOM": SSK_641B,
+    "Dry-cargo ship-2": Cargo_Ivanov,
+    "Dry-cargo ship-1": Bulker_Yakushev,
+    "ZWEZDNY": Boat_Zvezdny_type,
+    "KILO": SSK_877V_Kilo,
+    "IMPROVED_KILO": SSK_636_Improved_Kilo,
+    "SOM": SSK_641B_Tango,
     "CV_1143_5": CV_1143_5_Admiral_Kuznetsov_2017,
-    "HandyWind": Bulk_carrier_Handy_Wind,
+    "HandyWind": Bulker_Handy_Wind,
     "Stennis": CVN_74_John_C__Stennis,
     "CVN_71": CVN_71_Theodore_Roosevelt,
     "CVN_72": CVN_72_Abraham_Lincoln,
     "CVN_73": CVN_73_George_Washington,
     "CVN_75": CVN_75_Harry_S__Truman,
-    "USS_Arleigh_Burke_IIa": USS_Arleigh_Burke_IIa,
+    "USS_Arleigh_Burke_IIa": DDG_Arleigh_Burke_IIa,
     "LHA_Tarawa": LHA_1_Tarawa,
     "Type_052B": Type_052B_Destroyer,
     "Type_054A": Type_054A_Frigate,
@@ -376,7 +385,7 @@ ship_map = {
     "Type_071": Type_071_Amphibious_Transport_Dock,
     "LST_Mk2": LST_Mk_II,
     "USS_Samuel_Chase": LS_Samuel_Chase,
-    "Higgins_boat": LCVP__Higgins_boat,
-    "Uboat_VIIC": Uboat_VIIC_U_flak,
-    "Schnellboot_type_S130": Schnellboot_type_S130,
+    "Higgins_boat": Boat_LCVP_Higgins,
+    "Uboat_VIIC": U_boat_VIIC_U_flak,
+    "Schnellboot_type_S130": Boat_Schnellboot_type_S130,
 }

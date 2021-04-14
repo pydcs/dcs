@@ -456,6 +456,12 @@ class Fortification:
         shape_name = "H-Windsock_RW"
         rate = 3
 
+    class Beer_Bomb(unittype.StaticType):
+        id = "Beer Bomb"
+        name = "\"Beer Bomb\""
+        shape_name = "barrelofbeer_support"
+        rate = 5
+
     class Warning_Board_A(unittype.StaticType):
         id = "warning_board_a"
         name = "Warning Board A"
@@ -694,6 +700,7 @@ fortification_map = {
     "Black_Tyre_RF": Fortification.Mark_Tyre_with_Red_Flag,
     "Black_Tyre_WF": Fortification.Mark_Tyre_with_White_Flag,
     "Windsock": Fortification.Windsock,
+    "Beer Bomb": Fortification.Beer_Bomb,
     "warning_board_a": Fortification.Warning_Board_A,
     "warning_board_b": Fortification.Warning_Board_B,
     "Belgian gate": Fortification.Belgian_gate,
