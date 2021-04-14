@@ -1417,26 +1417,26 @@ class AH_64A(HelicopterType):
             standard_dirty = "standard dirty"
 
     class Pylon1:
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
         AGM_114K___4 = (1, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
 
     class Pylon2:
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M156__Wht_Phos)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
         AGM_114K___4 = (2, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
 
     class Pylon3:
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M156__Wht_Phos)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
         AGM_114K___4 = (3, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
 
     class Pylon4:
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
         AGM_114K___4 = (4, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
 
     pylons = {1, 2, 3, 4}
 
@@ -1476,25 +1476,25 @@ class AH_64D(HelicopterType):
 
     class Pylon1:
         AGM_114K___4 = (1, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
 
     class Pylon2:
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M156__Wht_Phos)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
         AGM_114K___4 = (2, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
 
     class Pylon3:
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M156__Wht_Phos)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
         AGM_114K___4 = (3, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
 
     class Pylon4:
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
         AGM_114K___4 = (4, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
 
     pylons = {1, 2, 3, 4}
 
@@ -1532,24 +1532,24 @@ class AH_1W(HelicopterType):
     class Pylon1:
         AGM_114K___4 = (1, Weapons.AGM_114K___4)
         _4_x_BGM_71D_TOW_ATGM = (1, Weapons._4_x_BGM_71D_TOW_ATGM)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
         M260_HYDRA = (1, Weapons.M260_HYDRA)
 
     class Pylon2:
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
         M260_HYDRA = (2, Weapons.M260_HYDRA)
         M260_HYDRA_WP = (2, Weapons.M260_HYDRA_WP)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M156__Wht_Phos)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
 
     class Pylon3:
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
         M260_HYDRA = (3, Weapons.M260_HYDRA)
         M260_HYDRA_WP = (3, Weapons.M260_HYDRA_WP)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M156__Wht_Phos)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
 
     class Pylon4:
         AGM_114K___4 = (4, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75"_Hydra__UnGd_Rkts_M151__HE)
+        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
         M260_HYDRA = (4, Weapons.M260_HYDRA)
         _4_x_BGM_71D_TOW_ATGM = (4, Weapons._4_x_BGM_71D_TOW_ATGM)
 

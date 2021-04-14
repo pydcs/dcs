@@ -176,9 +176,15 @@ for j in pairs({CAT_BOMBS,CAT_MISSILES,CAT_ROCKETS,CAT_AIR_TO_AIR,CAT_FUEL_TANKS
         elseif v.displayName == "SS-N-12 SANDBOX" then
             pyName = "_4M80"
             myclsid = pyName
+        elseif v.displayName == 'AN/AAS-38 "Nite hawk" FLIR, Laser designator & Laser spot tracker pod' then
+            pyName = "_NiteHawk_FLIR"
+            myclsid = pyName
         else
 		    pyName = string.gsub(pyName, "[-()/., *']", "_")
 		    pyName = string.gsub(pyName,"^([0-9])", "_%1")
+            pyName = string.gsub(pyName,"%&", "")
+            pyName = string.gsub(pyName,'%"', "")
+            pyName = string.gsub(pyName,'%+', "")
         end
 		key = pyName
 		if weapons[key] ~= nil then
@@ -191,7 +197,7 @@ for j in pairs({CAT_BOMBS,CAT_MISSILES,CAT_ROCKETS,CAT_AIR_TO_AIR,CAT_FUEL_TANKS
 		while weapons[key] ~= nil do
 			key = key..'_'
 		end
-		weapons[key] = {clsid = myclsid, displayName = v.displayName, weight = w}
+		weapons[key] = {clsid = myclsid, displayName = safe_name(v.displayName), weight = w}
 		table.insert(keys, key)
 		-- print("    " .. key .. " = {\"clsid\": \"" .. v.CLSID .. "\", \"name\": \"" .. v.displayName .. "\"}")
 	end
