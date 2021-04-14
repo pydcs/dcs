@@ -24,6 +24,7 @@ local function safe_name(name)
     safeName = string.gsub(safeName, "_*$", "")  -- strip __ from end
     safeName = string.gsub(safeName, "^([0-9])", "_%1")
     safeName = string.gsub(safeName, '%"', '') -- Remove the " character (Example unit using it : AA gun QF 3,7")
+    safeName = string.gsub(safeName, "%&", "")  -- Remove the '&' sign
     if safeName == 'None' then
         safeName = 'None_'
     end
