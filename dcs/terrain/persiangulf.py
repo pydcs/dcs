@@ -4370,89 +4370,89 @@ class PersianGulf(Terrain):
         self.airports['Ras Al Khaimah Intl'] = Ras_Al_Khaimah_Intl()
         self.airports['Liwa AFB'] = Liwa_AFB()
 
-        def abu_musa_island(self) -> Airport:
-            return self.airports["Abu Musa Island"]
+    def abu_musa_island(self) -> Airport:
+        return self.airports["Abu Musa Island"]
 
-        def bandar_abbas_intl(self) -> Airport:
-            return self.airports["Bandar Abbas Intl"]
+    def bandar_abbas_intl(self) -> Airport:
+        return self.airports["Bandar Abbas Intl"]
 
-        def bandar_lengeh(self) -> Airport:
-            return self.airports["Bandar Lengeh"]
+    def bandar_lengeh(self) -> Airport:
+        return self.airports["Bandar Lengeh"]
 
-        def al_dhafra_afb(self) -> Airport:
-            return self.airports["Al Dhafra AFB"]
+    def al_dhafra_afb(self) -> Airport:
+        return self.airports["Al Dhafra AFB"]
 
-        def dubai_intl(self) -> Airport:
-            return self.airports["Dubai Intl"]
+    def dubai_intl(self) -> Airport:
+        return self.airports["Dubai Intl"]
 
-        def al_maktoum_intl(self) -> Airport:
-            return self.airports["Al Maktoum Intl"]
+    def al_maktoum_intl(self) -> Airport:
+        return self.airports["Al Maktoum Intl"]
 
-        def fujairah_intl(self) -> Airport:
-            return self.airports["Fujairah Intl"]
+    def fujairah_intl(self) -> Airport:
+        return self.airports["Fujairah Intl"]
 
-        def tunb_island_afb(self) -> Airport:
-            return self.airports["Tunb Island AFB"]
+    def tunb_island_afb(self) -> Airport:
+        return self.airports["Tunb Island AFB"]
 
-        def havadarya(self) -> Airport:
-            return self.airports["Havadarya"]
+    def havadarya(self) -> Airport:
+        return self.airports["Havadarya"]
 
-        def khasab(self) -> Airport:
-            return self.airports["Khasab"]
+    def khasab(self) -> Airport:
+        return self.airports["Khasab"]
 
-        def lar(self) -> Airport:
-            return self.airports["Lar"]
+    def lar(self) -> Airport:
+        return self.airports["Lar"]
 
-        def al_minhad_afb(self) -> Airport:
-            return self.airports["Al Minhad AFB"]
+    def al_minhad_afb(self) -> Airport:
+        return self.airports["Al Minhad AFB"]
 
-        def qeshm_island(self) -> Airport:
-            return self.airports["Qeshm Island"]
+    def qeshm_island(self) -> Airport:
+        return self.airports["Qeshm Island"]
 
-        def sharjah_intl(self) -> Airport:
-            return self.airports["Sharjah Intl"]
+    def sharjah_intl(self) -> Airport:
+        return self.airports["Sharjah Intl"]
 
-        def sirri_island(self) -> Airport:
-            return self.airports["Sirri Island"]
+    def sirri_island(self) -> Airport:
+        return self.airports["Sirri Island"]
 
-        def tunb_kochak(self) -> Airport:
-            return self.airports["Tunb Kochak"]
+    def tunb_kochak(self) -> Airport:
+        return self.airports["Tunb Kochak"]
 
-        def sir_abu_nuayr(self) -> Airport:
-            return self.airports["Sir Abu Nuayr"]
+    def sir_abu_nuayr(self) -> Airport:
+        return self.airports["Sir Abu Nuayr"]
 
-        def kerman(self) -> Airport:
-            return self.airports["Kerman"]
+    def kerman(self) -> Airport:
+        return self.airports["Kerman"]
 
-        def shiraz_intl(self) -> Airport:
-            return self.airports["Shiraz Intl"]
+    def shiraz_intl(self) -> Airport:
+        return self.airports["Shiraz Intl"]
 
-        def sas_al_nakheel(self) -> Airport:
-            return self.airports["Sas Al Nakheel"]
+    def sas_al_nakheel(self) -> Airport:
+        return self.airports["Sas Al Nakheel"]
 
-        def bandar_e_jask(self) -> Airport:
-            return self.airports["Bandar-e-Jask"]
+    def bandar_e_jask(self) -> Airport:
+        return self.airports["Bandar-e-Jask"]
 
-        def abu_dhabi_intl(self) -> Airport:
-            return self.airports["Abu Dhabi Intl"]
+    def abu_dhabi_intl(self) -> Airport:
+        return self.airports["Abu Dhabi Intl"]
 
-        def al_bateen(self) -> Airport:
-            return self.airports["Al-Bateen"]
+    def al_bateen(self) -> Airport:
+        return self.airports["Al-Bateen"]
 
-        def kish_intl(self) -> Airport:
-            return self.airports["Kish Intl"]
+    def kish_intl(self) -> Airport:
+        return self.airports["Kish Intl"]
 
-        def al_ain_intl(self) -> Airport:
-            return self.airports["Al Ain Intl"]
+    def al_ain_intl(self) -> Airport:
+        return self.airports["Al Ain Intl"]
 
-        def lavan_island(self) -> Airport:
-            return self.airports["Lavan Island"]
+    def lavan_island(self) -> Airport:
+        return self.airports["Lavan Island"]
 
-        def jiroft(self) -> Airport:
-            return self.airports["Jiroft"]
+    def jiroft(self) -> Airport:
+        return self.airports["Jiroft"]
 
-        def ras_al_khaimah_intl(self) -> Airport:
-            return self.airports["Ras Al Khaimah Intl"]
+    def ras_al_khaimah_intl(self) -> Airport:
+        return self.airports["Ras Al Khaimah Intl"]
 
-        def liwa_afb(self) -> Airport:
-            return self.airports["Liwa AFB"]
+    def liwa_afb(self) -> Airport:
+        return self.airports["Liwa AFB"]
