@@ -27533,4 +27533,3 @@ def get_by_id(_id: int):
         Country: a new country object
     """
     return country_dict[_id]()
-
