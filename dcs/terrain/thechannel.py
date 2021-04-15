@@ -1947,38 +1947,38 @@ class TheChannel(Terrain):
         self.airports['Headcorn'] = Headcorn()
         self.airports['Biggin Hill'] = Biggin_Hill()
 
-        def abbeville_drucat(self) -> Airport:
-            return self.airports["Abbeville Drucat"]
+    def abbeville_drucat(self) -> Airport:
+        return self.airports["Abbeville Drucat"]
 
-        def merville_calonne(self) -> Airport:
-            return self.airports["Merville Calonne"]
+    def merville_calonne(self) -> Airport:
+        return self.airports["Merville Calonne"]
 
-        def saint_omer_longuenesse(self) -> Airport:
-            return self.airports["Saint Omer Longuenesse"]
+    def saint_omer_longuenesse(self) -> Airport:
+        return self.airports["Saint Omer Longuenesse"]
 
-        def dunkirk_mardyck(self) -> Airport:
-            return self.airports["Dunkirk Mardyck"]
+    def dunkirk_mardyck(self) -> Airport:
+        return self.airports["Dunkirk Mardyck"]
 
-        def manston(self) -> Airport:
-            return self.airports["Manston"]
+    def manston(self) -> Airport:
+        return self.airports["Manston"]
 
-        def hawkinge(self) -> Airport:
-            return self.airports["Hawkinge"]
+    def hawkinge(self) -> Airport:
+        return self.airports["Hawkinge"]
 
-        def lympne(self) -> Airport:
-            return self.airports["Lympne"]
+    def lympne(self) -> Airport:
+        return self.airports["Lympne"]
 
-        def detling(self) -> Airport:
-            return self.airports["Detling"]
+    def detling(self) -> Airport:
+        return self.airports["Detling"]
 
-        def eastchurch(self) -> Airport:
-            return self.airports["Eastchurch"]
+    def eastchurch(self) -> Airport:
+        return self.airports["Eastchurch"]
 
-        def high_halden(self) -> Airport:
-            return self.airports["High Halden"]
+    def high_halden(self) -> Airport:
+        return self.airports["High Halden"]
 
-        def headcorn(self) -> Airport:
-            return self.airports["Headcorn"]
+    def headcorn(self) -> Airport:
+        return self.airports["Headcorn"]
 
-        def biggin_hill(self) -> Airport:
-            return self.airports["Biggin Hill"]
+    def biggin_hill(self) -> Airport:
+        return self.airports["Biggin Hill"]

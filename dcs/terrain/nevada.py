@@ -16,8 +16,8 @@ class Creech_AFB(Airport):
     def __init__(self):
         super(Creech_AFB, self).__init__()
 
-        self.runways.append(Runway(80))
-        self.runways.append(Runway(130))
+        self.runways.append(Runway(260))
+        self.runways.append(Runway(310))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-359540.25, -74552.5390625), large=False, heli=False,
                 airplanes=True, slot_name='D15', length=26.0, width=24.0, height=7.0, shelter=False))
@@ -185,7 +185,7 @@ class Groom_Lake_AFB(Airport):
     def __init__(self):
         super(Groom_Lake_AFB, self).__init__()
 
-        self.runways.append(Runway(320))
+        self.runways.append(Runway(140))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=2, position=mapping.Point(-287726.5625, -88658.625), large=False, heli=True,
                 airplanes=False, slot_name='H04', length=42.0, width=34.0, height=14.0, shelter=False))
@@ -356,8 +356,8 @@ class McCarran_International_Airport(Airport):
     def __init__(self):
         super(McCarran_International_Airport, self).__init__()
 
-        self.runways.append(Runway(70))
-        self.runways.append(Runway(70))
+        self.runways.append(Runway(250))
+        self.runways.append(Runway(250))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-415461.59375, -25559.572265625), large=False, heli=True,
                 airplanes=True, slot_name='04', length=39.857483, width=40.0, height=18.0, shelter=False))
@@ -417,8 +417,8 @@ class Nellis_AFB(Airport):
     def __init__(self):
         super(Nellis_AFB, self).__init__()
 
-        self.runways.append(Runway(30))
-        self.runways.append(Runway(30))
+        self.runways.append(Runway(210))
+        self.runways.append(Runway(210))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-399382, -19269.25390625), large=False, heli=False,
                 airplanes=True, slot_name='F164', length=23.076286, width=14.5, height=8.0, shelter=False))
@@ -1174,7 +1174,7 @@ class Beatty_Airport(Airport):
     def __init__(self):
         super(Beatty_Airport, self).__init__()
 
-        self.runways.append(Runway(160))
+        self.runways.append(Runway(340))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=2, position=mapping.Point(-329737.78125, -174776.515625), large=False, heli=True,
                 airplanes=True, slot_name='01', length=30.5, width=20.5, height=6.0, shelter=False))
@@ -1198,8 +1198,8 @@ class Boulder_City_Airport(Airport):
     def __init__(self):
         super(Boulder_City_Airport, self).__init__()
 
-        self.runways.append(Runway(330))
-        self.runways.append(Runway(270))
+        self.runways.append(Runway(150))
+        self.runways.append(Runway(90))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=2, position=mapping.Point(-429671, -475.66937255859), large=False, heli=True,
                 airplanes=True, slot_name='B03', length=30.5, width=20.5, height=6.0, shelter=False))
@@ -1325,7 +1325,7 @@ class Echo_Bay(Airport):
     def __init__(self):
         super(Echo_Bay, self).__init__()
 
-        self.runways.append(Runway(60))
+        self.runways.append(Runway(240))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-388552.3125, 33604.30078125), large=False, heli=True,
                 airplanes=True, slot_name='H02', length=16.0, width=16.0, height=6.0, shelter=False))
@@ -1346,8 +1346,8 @@ class Henderson_Executive_Airport(Airport):
     def __init__(self):
         super(Henderson_Executive_Airport, self).__init__()
 
-        self.runways.append(Runway(350))
-        self.runways.append(Runway(350))
+        self.runways.append(Runway(170))
+        self.runways.append(Runway(170))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-428026.78125, -26065.75), large=False, heli=True,
                 airplanes=True, slot_name='H02', length=30.5, width=20.5, height=6.0, shelter=False))
@@ -1491,8 +1491,8 @@ class Jean_Airport(Airport):
     def __init__(self):
         super(Jean_Airport, self).__init__()
 
-        self.runways.append(Runway(200))
-        self.runways.append(Runway(200))
+        self.runways.append(Runway(20))
+        self.runways.append(Runway(20))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=4, position=mapping.Point(-450104.78125, -42994.28515625), large=False, heli=True,
                 airplanes=True, slot_name='A01', length=30.5, width=20.5, height=6.0, shelter=False))
@@ -1519,7 +1519,7 @@ class Laughlin_Airport(Airport):
     def __init__(self):
         super(Laughlin_Airport, self).__init__()
 
-        self.runways.append(Runway(160))
+        self.runways.append(Runway(340))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=2, position=mapping.Point(-516446.90625, 28580.93359375), large=False, heli=True,
                 airplanes=True, slot_name='A02', length=30.5, width=20.5, height=6.0, shelter=False))
@@ -1582,7 +1582,7 @@ class Lincoln_County(Airport):
     def __init__(self):
         super(Lincoln_County, self).__init__()
 
-        self.runways.append(Runway(170))
+        self.runways.append(Runway(350))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=2, position=mapping.Point(-224143.265625, 33338.26953125), large=False, heli=True,
                 airplanes=True, slot_name='02', length=30.5, width=20.5, height=6.0, shelter=False))
@@ -1615,7 +1615,7 @@ class Mesquite(Airport):
     def __init__(self):
         super(Mesquite, self).__init__()
 
-        self.runways.append(Runway(10))
+        self.runways.append(Runway(190))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-329683.28125, 68345.796875), large=False, heli=False,
                 airplanes=True, slot_name='A10', length=22.727446, width=18.0, height=6.0, shelter=False))
@@ -1663,7 +1663,7 @@ class Mina_Airport_3Q0(Airport):
     def __init__(self):
         super(Mina_Airport_3Q0, self).__init__()
 
-        self.runways.append(Runway(130))
+        self.runways.append(Runway(310))
 
 
 class North_Las_Vegas(Airport):
@@ -1678,9 +1678,9 @@ class North_Las_Vegas(Airport):
     def __init__(self):
         super(North_Las_Vegas, self).__init__()
 
-        self.runways.append(Runway(250))
-        self.runways.append(Runway(300))
+        self.runways.append(Runway(70))
         self.runways.append(Runway(120))
+        self.runways.append(Runway(300))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=2, position=mapping.Point(-401630.4375, -32211.359375), large=False, heli=False,
                 airplanes=True, slot_name='B17', length=22.727446, width=18.0, height=6.0, shelter=False))
@@ -1836,7 +1836,7 @@ class Pahute_Mesa_Airstrip(Airport):
     def __init__(self):
         super(Pahute_Mesa_Airstrip, self).__init__()
 
-        self.runways.append(Runway(360))
+        self.runways.append(Runway(180))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-303524.92167696, -133026.1164952), large=False, heli=True,
                 airplanes=True, slot_name='05', length=30.5, width=20.5, height=6.0, shelter=False))
@@ -1866,8 +1866,8 @@ class Tonopah_Airport(Airport):
     def __init__(self):
         super(Tonopah_Airport, self).__init__()
 
-        self.runways.append(Runway(290))
-        self.runways.append(Runway(330))
+        self.runways.append(Runway(110))
+        self.runways.append(Runway(150))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=4, position=mapping.Point(-198277.78125, -202084.4375), large=False, heli=True,
                 airplanes=True, slot_name='A01', length=39.857483, width=40.0, height=18.0, shelter=False))
@@ -1957,7 +1957,7 @@ class Tonopah_Test_Range_Airfield(Airport):
     def __init__(self):
         super(Tonopah_Test_Range_Airfield, self).__init__()
 
-        self.runways.append(Runway(320))
+        self.runways.append(Runway(140))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=2, position=mapping.Point(-225679.28125, -174488.90625), large=False, heli=True,
                 airplanes=True, slot_name='D14', length=78.722809, width=67.096466, height=18.0, shelter=False))
