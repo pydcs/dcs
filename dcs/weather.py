@@ -2,7 +2,7 @@ from datetime import datetime
 import random
 import math
 from enum import Enum
-from typing import List
+from typing import Any, Dict, List, Optional
 from dcs import mapping, terrain
 
 
@@ -39,6 +39,27 @@ class Cyclone:
         return self.__class__.__name__ + '(' + str(self.dict()) + ')'
 
 
+class CloudPreset:
+    def __init__(self, name: str, ui_name: str, description: str, min_base: int,
+                 max_base: int) -> None:
+        self.name = name
+        self.ui_name = ui_name
+        self.description = description
+        self.min_base = min_base
+        self.max_base = max_base
+
+    def validate_base(self, base: int) -> None:
+        if not self.min_base <= base <= self.max_base:
+            raise ValueError(
+                f"Cloud base {base}m is out of range for {self.name}. Must be between "
+                f"{self.min_base}m and {self.max_base}m.")
+
+    @classmethod
+    def by_name(cls, name: str) -> "CloudPreset":
+        from dcs.cloud_presets import Clouds
+        return Clouds.from_name(name).value
+
+
 class Weather:
     class BaricSystem(Enum):
         Cyclone = 0
@@ -65,8 +86,8 @@ class Weather:
         self.name = "Summer, clean sky"
         self.fog_thickness = 0
         self.fog_visibility = 25
-        self.fog_density = 7
         self.visibility_distance = 80000
+        self.clouds_preset: Optional[CloudPreset] = None
         self.clouds_thickness = 200
         self.clouds_density = 0
         self.clouds_base = 300
@@ -104,7 +125,6 @@ class Weather:
         fog = d.get("fog", {})
         self.fog_thickness = fog.get("thickness", 0)
         self.fog_visibility = fog.get("visibility", 25)
-        self.fog_density = fog.get("density", 7)
         visibility = d.get("visiblity", {})
         self.visibility_distance = visibility.get("distance", 80000)
         clouds = d.get("clouds", {})
@@ -112,6 +132,11 @@ class Weather:
         self.clouds_density = clouds.get("density", 0)
         self.clouds_base = clouds.get("base", 300)
         self.clouds_iprecptns = Weather.Preceptions(clouds.get("iprecptns", 0))
+        cloud_preset_name = clouds.get("preset")
+        if cloud_preset_name is None:
+            self.clouds_preset = None
+        else:
+            self.clouds_preset = CloudPreset.by_name(cloud_preset_name)
 
         self.enable_dust = d.get("enable_dust", False)
         self.dust_density = d.get("dust_density", 0)
@@ -266,7 +291,6 @@ class Weather:
 
         fog_base = min(0.8, random.random())
         self.enable_fog = True
-        self.fog_density = 3
         self.fog_thickness = int(700 * fog_base)
         self.fog_visibility = int(5500 - (4000 * fog_base))
 
@@ -280,7 +304,28 @@ class Weather:
         """
         self.season_temperature = terrain.weather(dt, self)
 
-    def dict(self):
+    def _make_cloud_dict(self) -> Dict[str, Any]:
+        if self.clouds_preset is None:
+            return {
+                "thickness": self.clouds_thickness,
+                "density": self.clouds_density,
+                "base": self.clouds_base,
+                "iprecptns": self.clouds_iprecptns.value,
+            }
+
+        self.clouds_preset.validate_base(self.clouds_base)
+
+        # The hard coded values here seem to be the case for all presets. They are not
+        # configurable in the ME and not defined by clouds.lua.
+        return {
+            "base": self.clouds_base,
+            "density": 0,
+            "preset": self.clouds_preset.name,
+            "thickness": 200,
+            "iprecptns": 0,
+        }
+
+    def dict(self) -> Dict[str, Any]:
         d = {}
         d["atmosphere_type"] = self.atmosphere_type
         d["wind"] = {"atGround": self.wind_at_ground.dict(),
@@ -294,12 +339,9 @@ class Weather:
         d["qnh"] = self.qnh
         d["cyclones"] = {x + 1: self.cyclones[x].dict() for x in range(0, len(self.cyclones))}
         d["name"] = self.name
-        d["fog"] = {"thickness": self.fog_thickness, "visibility": self.fog_visibility, "density": self.fog_density}
+        d["fog"] = {"thickness": self.fog_thickness, "visibility": self.fog_visibility}
         d["visibility"] = {"distance": self.visibility_distance}
-        d["clouds"] = {"thickness": self.clouds_thickness,
-                       "density": self.clouds_density,
-                       "base": self.clouds_base,
-                       "iprecptns": self.clouds_iprecptns.value}
+        d["clouds"] = self._make_cloud_dict()
         d["enable_dust"] = self.enable_dust
         d["dust_density"] = self.dust_density
         return d
