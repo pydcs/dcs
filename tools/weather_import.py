@@ -71,7 +71,15 @@ import argparse
 from contextlib import contextmanager
 import dataclasses
 import logging
-import lupa
+
+try:
+    import lupa
+except ImportError as ex:
+    raise RuntimeError(
+        "Run `pip install lupa` to use this tool. It is not included in "
+        "requirements.txt since most users will not need this dependency."
+    ) from ex
+
 from pathlib import Path
 import operator
 import os
