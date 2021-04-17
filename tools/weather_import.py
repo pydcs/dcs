@@ -162,7 +162,7 @@ class Importer:
 
                     @staticmethod
                     def from_name(name: str) -> "CloudPreset":
-                        return CLOUD_PRESETS[name] 
+                        return CLOUD_PRESETS[name]
 
                 """
             ))
@@ -186,7 +186,7 @@ class Importer:
                 )
                 output.write(textwrap.indent(preset_src, "    "))
 
-            output.write("CLOUD_PRESETS = {\n")
+            output.write("\nCLOUD_PRESETS = {\n")
             for name in names:
                 output.write(f"    {repr(name)}: Clouds.{name},\n")
             output.write("}\n")

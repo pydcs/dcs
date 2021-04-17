@@ -8,7 +8,7 @@ class Clouds(Enum):
 
     @staticmethod
     def from_name(name: str) -> "CloudPreset":
-        return CLOUD_PRESETS[name] 
+        return CLOUD_PRESETS[name]
 
     Preset1 = CloudPreset(
         name='Preset1',
@@ -249,6 +249,7 @@ class Clouds(Enum):
         min_base=840,
         max_base=2520,
     )
+
 
 CLOUD_PRESETS = {
     'Preset1': Clouds.Preset1,
