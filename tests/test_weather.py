@@ -2,9 +2,10 @@ import unittest
 
 from dcs.terrain import Caucasus
 from dcs.weather import CloudPreset, Weather
+from dcs.cloud_presets import Clouds
 
 
-class TriggerTests(unittest.TestCase):
+class CloudPresetTests(unittest.TestCase):
     def test_validate_base(self) -> None:
         preset = CloudPreset("test preset", "", "", 2, 3)
 
@@ -21,13 +22,18 @@ class TriggerTests(unittest.TestCase):
         with self.assertRaises(KeyError):
             CloudPreset.by_name("does not exist")
 
-        self.assertIsNotNone(CloudPreset.by_name("Preset1"))
-
-    def test_all_presets(self) -> None:
-        self.assertGreater(len(CloudPreset.all_presets()), 0)
+        self.assertEqual(CloudPreset.by_name("Preset1"), Clouds.Preset1.value)
 
 
-class TestWeather(unittest.TestCase):
+class CloudsTests(unittest.TestCase):
+    def test_list(self) -> None:
+        self.assertGreater(len(Clouds), 0)
+
+    def test_enum(self) -> None:
+        self.assertIsNotNone(Clouds.Preset1)
+
+
+class WeatherTests(unittest.TestCase):
     def test_old_clouds(self) -> None:
         weather = Weather(Caucasus())
         clouds = weather.dict()["clouds"]
@@ -35,7 +41,7 @@ class TestWeather(unittest.TestCase):
 
     def test_cloud_presets(self) -> None:
         weather = Weather(Caucasus())
-        weather.clouds_preset = CloudPreset.by_name("Preset1")
+        weather.clouds_preset = Clouds.Preset1.value
         weather.clouds_base = 1000
         weather_dict = weather.dict()
         clouds = weather.dict()["clouds"]

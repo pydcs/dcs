@@ -56,13 +56,8 @@ class CloudPreset:
 
     @classmethod
     def by_name(cls, name: str) -> "CloudPreset":
-        from dcs.cloud_presets import CLOUD_PRESETS
-        return CLOUD_PRESETS[name]
-
-    @classmethod
-    def all_presets(cls) -> List["CloudPreset"]:
-        from dcs.cloud_presets import CLOUD_PRESETS
-        return CLOUD_PRESETS.values()
+        from dcs.cloud_presets import Clouds
+        return Clouds.from_name(name).value
 
 
 class Weather:

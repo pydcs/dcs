@@ -152,27 +152,43 @@ class Importer:
         with self.export_path.open("w") as output:
             output.write(textwrap.dedent(
                 """\
+                from enum import Enum, unique
+
                 from dcs.weather import CloudPreset
-                
-                CLOUD_PRESETS = {
+
+
+                @unique
+                class Clouds(Enum):
+
+                    @staticmethod
+                    def from_name(name: str) -> "CloudPreset":
+                        return CLOUD_PRESETS[name] 
+
                 """
             ))
 
             presets = sorted(cloud_presets(self.dcs_path),
                              key=operator.attrgetter("name"))
+            names = []
             for preset in presets:
+                names.append(preset.name)
                 preset_src = textwrap.dedent(
                     f"""\
-                    {repr(preset.name)}: CloudPreset(
+                    {preset.name} = CloudPreset(
                         name={repr(preset.name)},
                         ui_name={repr(preset.ui_name)},
                         description={repr(preset.description)},
                         min_base={repr(preset.min_base)},
                         max_base={repr(preset.max_base)},
-                    ),
+                    )
+
                     """
                 )
                 output.write(textwrap.indent(preset_src, "    "))
+
+            output.write("CLOUD_PRESETS = {\n")
+            for name in names:
+                output.write(f"    {repr(name)}: Clouds.{name},\n")
             output.write("}\n")
 
 
