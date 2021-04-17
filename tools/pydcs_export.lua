@@ -141,12 +141,12 @@ countries["United Nations Peacekeepers"] = "UN"
 local weapons = {}
 local keys = {}
 for j in pairs({CAT_BOMBS,CAT_MISSILES,CAT_ROCKETS,CAT_AIR_TO_AIR,CAT_FUEL_TANKS,CAT_PODS}) do
-	for i, v in ipairs(db.Weapons.Categories[j].Launchers) do
-		local pyName = v.displayName
+    for i, v in ipairs(db.Weapons.Categories[j].Launchers) do
+        local pyName = v.displayName
         local myclsid = v.CLSID
-		if string.sub(v.CLSID, 0, 1) ~= "{" then
-			pyName = v.CLSID
-		end
+        if string.sub(v.CLSID, 0, 1) ~= "{" then
+            pyName = v.CLSID
+        end
 
         -- this is all special code because, ED has for no reason some non utf8/ascii chars in their ids
         if v.displayName == "AT-4 SPIGOT" then
@@ -180,27 +180,29 @@ for j in pairs({CAT_BOMBS,CAT_MISSILES,CAT_ROCKETS,CAT_AIR_TO_AIR,CAT_FUEL_TANKS
             pyName = "_NiteHawk_FLIR"
             myclsid = pyName
         else
-		    pyName = string.gsub(pyName, "[-()/., *']", "_")
-		    pyName = string.gsub(pyName,"^([0-9])", "_%1")
+            pyName = string.gsub(pyName, "[-()/., *']", "_")
+            pyName = string.gsub(pyName,"^([0-9])", "_%1")
             pyName = string.gsub(pyName,"%&", "")
             pyName = string.gsub(pyName,'%"', "")
             pyName = string.gsub(pyName,'%+', "")
         end
-		key = pyName
-		if weapons[key] ~= nil then
-			key = pyName .. "_"
-		end
-		local w = "None"
-		if v["Weight"] ~= nil then
-			w = v["Weight"]
-		end
-		while weapons[key] ~= nil do
-			key = key..'_'
-		end
-		weapons[key] = {clsid = myclsid, displayName = safe_name(v.displayName), weight = w}
-		table.insert(keys, key)
-		-- print("    " .. key .. " = {\"clsid\": \"" .. v.CLSID .. "\", \"name\": \"" .. v.displayName .. "\"}")
-	end
+        key = pyName
+        if weapons[key] ~= nil then
+            key = pyName .. "_"
+        end
+        local w = "None"
+        if v["Weight"] ~= nil then
+            w = v["Weight"]
+        end
+        while weapons[key] ~= nil do
+            key = key..'_'
+        end
+
+        local displayName = string.gsub(v.displayName,'%"', "")
+        weapons[key] = {clsid = myclsid, displayName = displayName, weight = w}
+        table.insert(keys, key)
+        -- print("    " .. key .. " = {\"clsid\": \"" .. v.CLSID .. "\", \"name\": \"" .. v.displayName .. "\"}")
+    end
 end
 
 table.sort( keys )
@@ -208,9 +210,9 @@ table.sort( keys )
 local weapons_map = {}
 local i = 1
 while i <= #keys do
-	local x = keys[i]
-	weapons_map[weapons[x].clsid] = x
-	i = i + 1
+    local x = keys[i]
+    weapons_map[weapons[x].clsid] = x
+    i = i + 1
 end
 
 file = io.open(export_path.."weapons_data.py", "w")
@@ -221,26 +223,26 @@ class Weapons:
 ]])
 local i = 1
 while i <= #keys do
-	local x = keys[i]
+    local x = keys[i]
 
     if weapons[x].displayName ~= nil then
         writeln(file, "    " .. x .. " = {\"clsid\": \"" .. weapons[x].clsid
-            .. "\", \"name\": \"" .. weapons[x].displayName .. "\", \"weight\": " .. weapons[x].weight .. "}")
+                .. "\", \"name\": \"" .. weapons[x].displayName .. "\", \"weight\": " .. weapons[x].weight .. "}")
     end
-	i = i + 1
+    i = i + 1
 end
 
 writeln(file, '')
 writeln(file, "weapon_ids = {")
 i = 1
 while i <= #keys do
-	local x = keys[i]
-	local s = "    \"" .. weapons[x].clsid .. "\": Weapons." .. x
-	i = i + 1
-	if i <= #keys then
-		s = s .. ","
-	end
-	writeln(file, s)
+    local x = keys[i]
+    local s = "    \"" .. weapons[x].clsid .. "\": Weapons." .. x
+    i = i + 1
+    if i <= #keys then
+        s = s .. ","
+    end
+    writeln(file, s)
 end
 writeln(file, "}")
 file:close()
@@ -297,15 +299,15 @@ flyable["MiG-19P"] = true
 local function export_aircraft(file, aircrafts, export_type, exportplane)
     -- generate export output
     file:write(
-[[# This file is generated from pydcs_export.lua
+        [[# This file is generated from pydcs_export.lua
 
-from dcs.weapons_data import Weapons
-import dcs.task as task
-from dcs.unittype import FlyingType
-from enum import Enum
+        from dcs.weapons_data import Weapons
+        import dcs.task as task
+        from dcs.unittype import FlyingType
+        from enum import Enum
 
 
-]])
+        ]])
     writeln(file, 'class '..export_type..'Type(FlyingType):')
     if exportplane then
         writeln(file, '    pass')
@@ -402,7 +404,7 @@ from enum import Enum
                     channel = plane.panelRadio[j]["channels"][c]
                     local s = '                '..c..': '..channel.default
                     if cnt + 1 < #plane.panelRadio[j]["channels"] then
-                       s = s..','
+                        s = s..','
                     end
                     writeln(file, s)
                     cnt = cnt + 1
@@ -567,10 +569,10 @@ file:close()
 local file = io.open(export_path.."vehicles.py", "w")
 
 file:write(
-[[# This file is generated from pydcs_export.lua
+    [[# This file is generated from pydcs_export.lua
 
-import dcs.unittype as unittype
-]])
+    import dcs.unittype as unittype
+    ]])
 
 -- sort by categories
 local unit_categories = {}
@@ -648,10 +650,10 @@ file:close()
 local file = io.open(export_path.."statics.py", "w")
 
 file:write(
-[[# This file is generated from pydcs_export.lua
+    [[# This file is generated from pydcs_export.lua
 
-import dcs.unittype as unittype
-]])
+    import dcs.unittype as unittype
+    ]])
 
 local function lookup_map(file, parent, arr, b_parent)
     if b_parent == nil then
@@ -760,10 +762,10 @@ file:close()
 local file = io.open(export_path.."ships.py", "w")
 
 file:write(
-[[# This file is generated from pydcs_export.lua
+    [[# This file is generated from pydcs_export.lua
 
-import dcs.unittype as unittype
-]])
+    import dcs.unittype as unittype
+    ]])
 
 for i in pairs(db.Units.Ships.Ship) do
     local unit = db.Units.Ships.Ship[i]
@@ -790,8 +792,8 @@ for i in pairs(db.Units.Ships.Ship) do
     writeln(file, '    detection_range = '..unit.DetectionRange)
     writeln(file, '    threat_range = '..unit.ThreatRange)
     writeln(file, '    air_weapon_dist = '..air_weapon_dist)
---    writeln(file, '    shape_name = "'..unit.ShapeName..'"')
---    writeln(file, '    rate = '..unit.Rate)
+    --    writeln(file, '    shape_name = "'..unit.ShapeName..'"')
+    --    writeln(file, '    rate = '..unit.Rate)
 end
 
 lookup_map(file, "ship", db.Units.Ships.Ship, false)
@@ -828,7 +830,7 @@ writeln(file, 'import dcs.planes as planes')
 writeln(file, 'import dcs.helicopters as helicopters')
 writeln(file, 'import dcs.ships as ships')
 local countryPlaneIgnore = { "Su_30MK", "F_86F", "F_16C_50", "F_5E_MAC", "F_86F_MAC", "TF_51", "MiG_15bis_MAC",
-                             "L_39_MAC", "F_4E_new", "F_14A_95_GR" }
+    "L_39_MAC", "F_4E_new", "F_14A_95_GR" }
 local countryHeliIgnore = { "Mi_24P" }
 local i = 0
 while i <= country.maxIndex do
