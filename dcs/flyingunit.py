@@ -17,7 +17,7 @@ class FlyingUnit(Unit):
         self.parking = None  # crossroad idx
         self.parking_id = None  # parking slot name (01, 02, ..)
         self.psi = 0
-        self.onboard_num: int = 9
+        self.onboard_num = '9'
         self.alt = 0
         self.alt_type = "BARO"
         self.flare = _type.flare
@@ -46,7 +46,7 @@ class FlyingUnit(Unit):
         self.chaff = d["payload"]["chaff"]
         self.ammo_type = d["payload"].get("ammo_type")
         self.pylons = d["payload"]["pylons"]
-        self.onboard_num = int(d["onboard_num"])
+        self.onboard_num = d["onboard_num"]
         if isinstance(d["callsign"], int):
             self.callsign = d["callsign"]
         else:
@@ -190,7 +190,7 @@ class FlyingUnit(Unit):
         if self.livery_id:
             d["livery_id"] = self.livery_id
         d["psi"] = self.psi
-        d["onboard_num"] = "{:03}".format(self.onboard_num)
+        d["onboard_num"] = self.onboard_num
         d["speed"] = round(self.speed, 13)
         if self.hardpoint_racks is not None:
             d["hardpoint_racks"] = self.hardpoint_racks
