@@ -140,6 +140,10 @@ class Country:
             self.current_callsign_category[category] = 0
         return self.callsign.get(category)[self.current_callsign_category[category]]
 
+    @property
+    def unused_onboard_numbers(self) -> Set[str]:
+        return self._tail_numbers
+
     def reset_onboard_numbers(self):
         """
         Resets/clears reserved onboard numbers for this country.
@@ -158,7 +162,7 @@ class Country:
         return is_in
 
     def next_onboard_num(self) -> str:
-        free_set = {str(x) for x in range(10, 999)} - self._tail_numbers
+        free_set = {"{:03}".format(x) for x in range(10, 999)} - self._tail_numbers
         tailnum = free_set.pop()
         self.reserve_onboard_num(tailnum)
         return tailnum
