@@ -44,16 +44,19 @@ class Translation:
         self.strings = {}  # type: Dict[str,Dict[str,str]]
         self.mission = _mission
 
+    def has_string(self, _id: str, lang: str = 'DEFAULT') -> bool:
+        return _id in self.strings[lang]
+
     def set_string(self, _id, string, lang='DEFAULT'):
         if lang not in self.strings:
             self.strings[lang] = {}
         self.strings[lang][_id] = string
         return _id
 
-    def get_string(self, _id):
+    def get_string(self, _id: str) -> String:
         return String(_id, self)
 
-    def create_string(self, s: str, lang: str = 'DEFAULT'):
+    def create_string(self, s: str, lang: str = 'DEFAULT') -> String:
         _id = 'DictKey_Translation_{dict_id}'.format(dict_id=self.mission.next_dict_id())
         self.set_string(_id, s, lang)
         return String(_id, self)

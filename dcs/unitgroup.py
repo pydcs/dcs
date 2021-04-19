@@ -30,7 +30,7 @@ class Group:
         Scattered = 4
         Vee = 5
 
-    def __init__(self, _id: int, name=None):
+    def __init__(self, _id: int, name: Optional[Union[str, String]] = None) -> None:
         if not isinstance(_id, int):
             raise TypeError("id must be an integer")
         self.id = _id
@@ -39,7 +39,7 @@ class Group:
         self.hidden_on_mfd = False
         self.units: List[Union[Unit, Ship, Plane, Helicopter, Vehicle, Static]] = []
         self.points = []  # type: List[Union[StaticPoint, MovingPoint]]
-        self.name = name if name else String()
+        self.name = name if name is not None else String()
 
     def __str__(self):
         return "Group: " + str(self.name)

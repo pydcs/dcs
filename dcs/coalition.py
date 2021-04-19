@@ -10,6 +10,7 @@ from dcs.flyingunit import Plane, Helicopter
 from dcs.point import MovingPoint, StaticPoint
 from dcs.country import Country
 from dcs.status_message import StatusMessage, MessageType, MessageSeverity
+from dcs.translation import String
 
 if TYPE_CHECKING:
     from . import Mission
@@ -80,6 +81,13 @@ class Coalition:
                     ret.append(StatusMessage(msg, MessageType.PARKING_SLOTS_FULL, MessageSeverity.ERROR))
         return ret
 
+    @staticmethod
+    def group_name(mission: "Mission", name: str) -> Union[str, String]:
+        # Group names are not localized for missions are created in 2.7.
+        if mission.translation.has_string(name):
+            return mission.translation.get_string(name)
+        return name
+
     def load_from_dict(self, mission, d) -> List[StatusMessage]:
         status: List[StatusMessage] = []
         for country_idx in d["country"]:
@@ -89,7 +97,7 @@ class Coalition:
             if "vehicle" in imp_country:
                 for vgroup_idx in imp_country["vehicle"]["group"]:
                     vgroup = imp_country["vehicle"]["group"][vgroup_idx]
-                    vg = unitgroup.VehicleGroup(vgroup["groupId"], mission.translation.get_string(vgroup["name"]),
+                    vg = unitgroup.VehicleGroup(vgroup["groupId"], self.group_name(mission, vgroup["name"]),
                                                 vgroup["start_time"])
                     vg.load_from_dict(vgroup)
                     mission.current_group_id = max(mission.current_group_id, vg.id)
@@ -112,7 +120,7 @@ class Coalition:
             if "ship" in imp_country:
                 for group_idx in imp_country["ship"]["group"]:
                     imp_group = imp_country["ship"]["group"][group_idx]
-                    vg = unitgroup.ShipGroup(imp_group["groupId"], mission.translation.get_string(imp_group["name"]),
+                    vg = unitgroup.ShipGroup(imp_group["groupId"], self.group_name(mission, imp_group["name"]),
                                              imp_group["start_time"])
                     vg.load_from_dict(imp_group)
                     mission.current_group_id = max(mission.current_group_id, vg.id)
@@ -136,7 +144,7 @@ class Coalition:
                 for pgroup_idx in imp_country["plane"]["group"]:
                     pgroup = imp_country["plane"]["group"][pgroup_idx]
                     plane_group = unitgroup.PlaneGroup(pgroup["groupId"],
-                                                       mission.translation.get_string(pgroup["name"]),
+                                                       self.group_name(mission, pgroup["name"]),
                                                        pgroup["start_time"])
                     plane_group.load_from_dict(pgroup)
                     mission.current_group_id = max(mission.current_group_id, plane_group.id)
@@ -174,7 +182,7 @@ class Coalition:
                     pgroup = imp_country["helicopter"]["group"][pgroup_idx]
                     helicopter_group = unitgroup.HelicopterGroup(
                         pgroup["groupId"],
-                        mission.translation.get_string(pgroup["name"]),
+                        self.group_name(mission, pgroup["name"]),
                         pgroup["start_time"])
                     helicopter_group.load_from_dict(pgroup)
                     mission.current_group_id = max(mission.current_group_id, helicopter_group.id)
@@ -211,7 +219,7 @@ class Coalition:
                 for sgroup_idx in imp_country["static"]["group"]:
                     sgroup = imp_country["static"]["group"][sgroup_idx]
                     static_group = unitgroup.StaticGroup(sgroup["groupId"],
-                                                         mission.translation.get_string(sgroup["name"]))
+                                                         self.group_name(mission, sgroup["name"]))
                     static_group.load_from_dict(sgroup)
                     mission.current_group_id = max(mission.current_group_id, static_group.id)
 
