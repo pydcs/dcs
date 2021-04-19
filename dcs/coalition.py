@@ -81,13 +81,6 @@ class Coalition:
                     ret.append(StatusMessage(msg, MessageType.PARKING_SLOTS_FULL, MessageSeverity.ERROR))
         return ret
 
-    @staticmethod
-    def get_name(mission: "Mission", name: str) -> Union[str, String]:
-        # Group, unit names are not localized for missions are created in 2.7.
-        if mission.translation.has_string(name):
-            return mission.translation.get_string(name)
-        return name
-
     def load_from_dict(self, mission, d) -> List[StatusMessage]:
         status: List[StatusMessage] = []
         for country_idx in d["country"]:
@@ -97,7 +90,7 @@ class Coalition:
             if "vehicle" in imp_country:
                 for vgroup_idx in imp_country["vehicle"]["group"]:
                     vgroup = imp_country["vehicle"]["group"][vgroup_idx]
-                    vg = unitgroup.VehicleGroup(vgroup["groupId"], self.get_name(mission, vgroup["name"]),
+                    vg = unitgroup.VehicleGroup(vgroup["groupId"], vgroup["name"],
                                                 vgroup["start_time"])
                     vg.load_from_dict(vgroup)
                     mission.current_group_id = max(mission.current_group_id, vg.id)
@@ -109,7 +102,7 @@ class Coalition:
                         imp_unit = vgroup["units"][imp_unit_idx]
                         unit = Vehicle(
                             id=imp_unit["unitId"],
-                            name=self.get_name(mission, imp_unit["name"]),
+                            name=imp_unit["name"],
                             _type=imp_unit["type"])
                         unit.load_from_dict(imp_unit)
 
@@ -120,7 +113,7 @@ class Coalition:
             if "ship" in imp_country:
                 for group_idx in imp_country["ship"]["group"]:
                     imp_group = imp_country["ship"]["group"][group_idx]
-                    vg = unitgroup.ShipGroup(imp_group["groupId"], self.get_name(mission, imp_group["name"]),
+                    vg = unitgroup.ShipGroup(imp_group["groupId"], imp_group["name"],
                                              imp_group["start_time"])
                     vg.load_from_dict(imp_group)
                     mission.current_group_id = max(mission.current_group_id, vg.id)
@@ -132,7 +125,7 @@ class Coalition:
                         imp_unit = imp_group["units"][imp_unit_idx]
                         unit = Ship(
                             id=imp_unit["unitId"],
-                            name=self.get_name(mission, imp_unit["name"]),
+                            name=imp_unit["name"],
                             _type=ships.ship_map[imp_unit["type"]])
                         unit.load_from_dict(imp_unit)
 
@@ -144,7 +137,7 @@ class Coalition:
                 for pgroup_idx in imp_country["plane"]["group"]:
                     pgroup = imp_country["plane"]["group"][pgroup_idx]
                     plane_group = unitgroup.PlaneGroup(pgroup["groupId"],
-                                                       self.get_name(mission, pgroup["name"]),
+                                                       pgroup["name"],
                                                        pgroup["start_time"])
                     plane_group.load_from_dict(pgroup)
                     mission.current_group_id = max(mission.current_group_id, plane_group.id)
@@ -156,7 +149,7 @@ class Coalition:
                         imp_unit = pgroup["units"][imp_unit_idx]
                         plane = Plane(
                             _id=imp_unit["unitId"],
-                            name=self.get_name(mission, imp_unit["name"]),
+                            name=imp_unit["name"],
                             _type=planes.plane_map[imp_unit["type"]],
                             _country=_country)
                         plane.load_from_dict(imp_unit)
@@ -182,7 +175,7 @@ class Coalition:
                     pgroup = imp_country["helicopter"]["group"][pgroup_idx]
                     helicopter_group = unitgroup.HelicopterGroup(
                         pgroup["groupId"],
-                        self.get_name(mission, pgroup["name"]),
+                        pgroup["name"],
                         pgroup["start_time"])
                     helicopter_group.load_from_dict(pgroup)
                     mission.current_group_id = max(mission.current_group_id, helicopter_group.id)
@@ -194,7 +187,7 @@ class Coalition:
                         imp_unit = pgroup["units"][imp_unit_idx]
                         heli = Helicopter(
                             _id=imp_unit["unitId"],
-                            name=self.get_name(mission, imp_unit["name"]),
+                            name=imp_unit["name"],
                             _type=helicopters.helicopter_map[imp_unit["type"]],
                             _country=_country)
                         heli.load_from_dict(imp_unit)
@@ -219,7 +212,7 @@ class Coalition:
                 for sgroup_idx in imp_country["static"]["group"]:
                     sgroup = imp_country["static"]["group"][sgroup_idx]
                     static_group = unitgroup.StaticGroup(sgroup["groupId"],
-                                                         self.get_name(mission, sgroup["name"]))
+                                                         sgroup["name"])
                     static_group.load_from_dict(sgroup)
                     mission.current_group_id = max(mission.current_group_id, static_group.id)
 
@@ -231,15 +224,15 @@ class Coalition:
                         if imp_unit["type"] == "FARP":
                             static = FARP(
                                 unit_id=imp_unit["unitId"],
-                                name=self.get_name(mission, imp_unit["name"]))
+                                name=imp_unit["name"])
                         elif imp_unit["type"] == "SINGLE_HELIPAD":
                             static = SingleHeliPad(
                                 unit_id=imp_unit["unitId"],
-                                name=self.get_name(mission, imp_unit["name"]))
+                                name=imp_unit["name"])
                         else:
                             static = Static(
                                 unit_id=imp_unit["unitId"],
-                                name=self.get_name(mission, imp_unit["name"]),
+                                name=imp_unit["name"],
                                 _type=imp_unit["type"])
                         static.load_from_dict(imp_unit)
 
