@@ -10,7 +10,6 @@ from dcs.flyingunit import Plane, Helicopter
 from dcs.point import MovingPoint, StaticPoint
 from dcs.country import Country
 from dcs.status_message import StatusMessage, MessageType, MessageSeverity
-from dcs.translation import String
 
 if TYPE_CHECKING:
     from . import Mission
