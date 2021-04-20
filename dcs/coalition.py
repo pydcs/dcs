@@ -84,9 +84,10 @@ class Coalition:
     @staticmethod
     def get_name(mission: "Mission", name: str) -> Union[str, String]:
         # Group, unit names are not localized for missions are created in 2.7.
-        if mission.translation.has_string(name):
+        if mission.version < 19:
             return mission.translation.get_string(name)
-        return name
+        else:
+            return name
 
     def load_from_dict(self, mission, d) -> List[StatusMessage]:
         status: List[StatusMessage] = []
