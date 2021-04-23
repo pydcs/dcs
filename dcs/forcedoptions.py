@@ -27,6 +27,7 @@ class ForcedOptions:
         Full = 1
         Abbreviate = 2
         DotOnly = 3
+        NeutralDot = 4
 
     def __init__(self):
         # In the order they appear in the ME.
