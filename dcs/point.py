@@ -1,7 +1,7 @@
 from dcs.translation import String
 import dcs.task as task
 import dcs.mapping as mapping
-from typing import List, Optional
+from typing import Any, Dict, List, Optional
 from enum import Enum
 
 
@@ -36,8 +36,9 @@ class StaticPoint:
         self.speed = 0
         self.formation_template = ""
         self.action = PointAction.None_  # type: PointAction
+        self.landing_refuel_rearm_time: Optional[str] = None
 
-    def load_from_dict(self, d, translation):
+    def load_from_dict(self, d: Dict[str, Any], translation) -> None:
         self.alt = d["alt"]
         self.type = d["type"]
         self.position.x = d["x"]
@@ -47,9 +48,10 @@ class StaticPoint:
         self.speed = d["speed"]
         if "name" in d:
             self.name = translation.get_string(d["name"])
+        self.landing_refuel_rearm_time = d.get("timeReFuAr")
 
-    def dict(self):
-        return {
+    def dict(self) -> Dict[str, Any]:
+        d = {
             "alt": self.alt,
             "type": self.type,
             "name": self.name.id,
@@ -59,6 +61,11 @@ class StaticPoint:
             "formation_template": self.formation_template,
             "action": self.action.value
         }
+
+        if self.landing_refuel_rearm_time:
+            d["timeReFuAr"] = self.landing_refuel_rearm_time
+
+        return d
 
 
 class VNav(Enum):
