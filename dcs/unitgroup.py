@@ -71,6 +71,11 @@ class Group:
     def position(self) -> mapping.Point:
         return self.units[0].position
 
+    def get_name(self):
+        if isinstance(self.name, String):
+            return self.name.id
+        return self.name
+
     def formation_line(self, heading, distance=20):
         pos = self.units[0].position
         for i in range(1, len(self.units)):
@@ -180,7 +185,7 @@ class Group:
 
     def dict(self):
         d = {
-            "name": self.name.id,
+            "name": self.get_name(),
             "groupId": self.id
         }
         if self.hidden is not None:
