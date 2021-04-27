@@ -48,6 +48,11 @@ class Unit:
         new.id = _id
         return new
 
+    def get_name(self):
+        if isinstance(self.name, String):
+            return self.name.id
+        return self.name
+
     def dict(self):
         d = {
             "type": self.type,
@@ -55,7 +60,7 @@ class Unit:
             "y": self.position.y,
             "heading": round(math.radians(self.heading), 13),
             "unitId": self.id,
-            "name": self.name.id
+            "name": self.get_name()
         }
         if self.skill is not None:
             d["skill"] = self.skill.value
