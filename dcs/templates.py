@@ -11,26 +11,26 @@ class VehicleTemplate:
         def sa10_site(mission: Mission, position: mapping.Point, heading, prefix="", skill=unit.Skill.Average):
             russia = mission.country("Russia")
             vg = mission.vehicle_group(russia, prefix + "SA10 site",
-                                       Russia.Vehicle.AirDefence.SAM_SA_10_S_300PS_CP_54K6, position, heading)
-            u = mission.vehicle("Operator 1", Russia.Vehicle.Infantry.Infantry_Soldier_Rus)
+                                       Russia.Vehicle.AirDefence.SAM_SA_10_S_300_Grumble_Big_Bird_SR, position, heading)
+            u = mission.vehicle("Operator 1", Russia.Vehicle.Infantry.Infantry_AK_74_Rus)
             u.position = position.point_from_heading(heading + 180, 10)
             u.heading = heading
             vg.add_unit(u)
 
             hdg = 90
             for i in range(0, 3):  # 3 launchers
-                u = mission.vehicle("launcher #" + str(i + 1), Russia.Vehicle.AirDefence.SAM_SA_10_S_300PS_LN_5P85C)
+                u = mission.vehicle("launcher #" + str(i + 1), Russia.Vehicle.AirDefence.SAM_SA_10_S_300_Grumble_TEL_C)
                 u.position = position.point_from_heading(heading + hdg, 50)
                 u.heading = heading
                 vg.add_unit(u)
                 hdg += 90
 
-            u = mission.vehicle("radar", Russia.Vehicle.AirDefence.SAM_SA_10_S_300PS_TR_30N6)
+            u = mission.vehicle("radar", Russia.Vehicle.AirDefence.SAM_SA_10_S_300_Grumble_Flap_Lid_TR)
             u.position = position.point_from_heading(heading, 80)
             u.heading = heading
             vg.add_unit(u)
 
-            u = mission.vehicle("radar", Russia.Vehicle.AirDefence.SAM_SA_10_S_300PS_SR_64H6E)
+            u = mission.vehicle("radar", Russia.Vehicle.AirDefence.SAM_SA_10_S_300_Grumble_C2)
             u.position = position.point_from_heading(heading + 180, 100)
             u.heading = heading
             vg.add_unit(u)
@@ -47,7 +47,7 @@ class VehicleTemplate:
             vg = mission.vehicle_group(
                 usa,
                 prefix + "Patriot site",
-                USA.Vehicle.AirDefence.SAM_Patriot_ICC,
+                USA.Vehicle.AirDefence.SAM_Patriot_C2_ICC,
                 position,
                 heading)
             u = mission.vehicle("Operator 1", USA.Vehicle.Infantry.Infantry_M4)
@@ -57,7 +57,7 @@ class VehicleTemplate:
 
             hdg = 90
             for i in range(0, 2):  # 2 launchers
-                u = mission.vehicle("launcher #" + str(i + 1), USA.Vehicle.AirDefence.SAM_Patriot_LN_M901)
+                u = mission.vehicle("launcher #" + str(i + 1), USA.Vehicle.AirDefence.SAM_Patriot_LN)
                 u.position = position.point_from_heading(heading + hdg, 50)
                 u.heading = heading
                 vg.add_unit(u)
@@ -68,7 +68,7 @@ class VehicleTemplate:
             u.heading = heading
             vg.add_unit(u)
 
-            u = mission.vehicle("radar", USA.Vehicle.AirDefence.SAM_Patriot_STR_AN_MPQ_53)
+            u = mission.vehicle("radar", USA.Vehicle.AirDefence.SAM_Patriot_STR)
             u.position = position.point_from_heading(heading, 80)
             u.heading = heading
             vg.add_unit(u)
@@ -77,12 +77,12 @@ class VehicleTemplate:
             inf.position = position.point_from_heading(heading + 270, 5)
             vg.add_unit(inf)
 
-            u = mission.vehicle("Antenna", USA.Vehicle.AirDefence.SAM_Patriot_AMG_AN_MRC_137)
+            u = mission.vehicle("Antenna", USA.Vehicle.AirDefence.SAM_Patriot_CR__AMG_AN_MRC_137)
             u.position = position.point_from_heading(heading + 180, 100)
             u.heading = heading
             vg.add_unit(u)
 
-            u = mission.vehicle("ECS", USA.Vehicle.AirDefence.SAM_Patriot_ECS_AN_MSQ_104)
+            u = mission.vehicle("ECS", USA.Vehicle.AirDefence.SAM_Patriot_ECS)
             u.position = position.point_from_heading(heading + 120, 80)
             u.heading = heading
             vg.add_unit(u)
@@ -96,7 +96,7 @@ class VehicleTemplate:
             vg = mission.vehicle_group(
                 usa,
                 prefix + "Hawk site",
-                USA.Vehicle.AirDefence.SAM_Hawk_PCP,
+                USA.Vehicle.AirDefence.SAM_Hawk_Generator__PCP,
                 position,
                 heading)
 
@@ -113,7 +113,7 @@ class VehicleTemplate:
                 vg.add_unit(u)
                 hdg += 90
 
-            u = mission.vehicle("Radar", USA.Vehicle.AirDefence.SAM_Hawk_SR_AN_MPQ_50)
+            u = mission.vehicle("Radar", USA.Vehicle.AirDefence.SAM_Hawk_SR__AN_MPQ_50)
             u.position = position.point_from_heading(heading + 180, 20)
             u.heading = heading
             vg.add_unit(u)
@@ -122,7 +122,7 @@ class VehicleTemplate:
             inf.position = position.point_from_heading(heading + 270, 5)
             vg.add_unit(inf)
 
-            u = mission.vehicle("Tower", USA.Vehicle.AirDefence.SAM_Hawk_TR_AN_MPQ_46)
+            u = mission.vehicle("Tower", USA.Vehicle.AirDefence.SAM_Hawk_TR__AN_MPQ_46)
             u.position = position.point_from_heading(heading + 80, 80)
             u.heading = heading
             vg.add_unit(u)
@@ -138,22 +138,22 @@ class VehicleTemplate:
     @staticmethod
     def sa11_site(mission, country, position, heading, prefix="", skill=unit.Skill.Average):
         vg = mission.vehicle_group(country, prefix + "SA11 site",
-                                   dcs.vehicles.AirDefence.SAM_SA_11_Buk_CC_9S470M1, position, heading)
+                                   dcs.vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_C2, position, heading)
 
-        u = mission.vehicle("Operator 1", Russia.Vehicle.Infantry.Infantry_Soldier_Rus)
+        u = mission.vehicle("Operator 1", Russia.Vehicle.Infantry.Infantry_AK_74_Rus)
         u.position = position.point_from_heading(heading + 180, 10)
         u.heading = heading
         vg.add_unit(u)
 
         hdg = 90
         for i in range(0, 2):  # 2 launchers
-            u = mission.vehicle("launcher #" + str(i + 1), dcs.vehicles.AirDefence.SAM_SA_11_Buk_LN_9A310M1)
+            u = mission.vehicle("launcher #" + str(i + 1), dcs.vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_Fire_Dome_TEL)
             u.position = position.point_from_heading(heading + hdg, 50)
             u.heading = heading
             vg.add_unit(u)
             hdg += 90
 
-        u = mission.vehicle("radar", dcs.vehicles.AirDefence.SAM_SA_11_Buk_SR_9S18M1)
+        u = mission.vehicle("radar", dcs.vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_Snow_Drift_SR)
         u.position = position.point_from_heading(heading, 80)
         u.heading = heading
         vg.add_unit(u)
@@ -166,16 +166,16 @@ class VehicleTemplate:
     @staticmethod
     def sa15_site(mission, country, position, heading, prefix="", skill=unit.Skill.Average):
         vg = mission.vehicle_group(country, prefix + "SA15 site",
-                                   dcs.vehicles.AirDefence.CP_9S80M1_Sborka, position, heading)
+                                   dcs.vehicles.AirDefence.MCC_SR_Sborka_Dog_Ear_SR, position, heading)
 
-        u = mission.vehicle("Operator 1", Russia.Vehicle.Infantry.Infantry_Soldier_Rus)
+        u = mission.vehicle("Operator 1", Russia.Vehicle.Infantry.Infantry_AK_74_Rus)
         u.position = position.point_from_heading(heading + 180, 10)
         u.heading = heading
         vg.add_unit(u)
 
         hdg = 90
         for i in range(0, 4):  # 4 tor vehicles
-            u = mission.vehicle("tor #" + str(i + 1), dcs.vehicles.AirDefence.SAM_SA_15_Tor_9A331)
+            u = mission.vehicle("tor #" + str(i + 1), dcs.vehicles.AirDefence.SAM_SA_15_Tor_Gauntlet)
             u.position = position.point_from_heading(heading + hdg, 50)
             u.heading = heading
             vg.add_unit(u)
@@ -191,22 +191,22 @@ class VehicleTemplate:
         vg = mission.vehicle_group(
             country,
             prefix + "SA6 site",
-            dcs.vehicles.AirDefence.SAM_SA_6_Kub_STR_9S91,
+            dcs.vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR,
             position,
             heading
         )
 
-        u = mission.vehicle("Launcher 1", dcs.vehicles.AirDefence.SAM_SA_6_Kub_LN_2P25)
+        u = mission.vehicle("Launcher 1", dcs.vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL)
         u.position = position.point_from_heading(heading + 140, 30)
         u.heading = heading
         vg.add_unit(u)
 
-        u = mission.vehicle("Launcher 2", dcs.vehicles.AirDefence.SAM_SA_6_Kub_LN_2P25)
+        u = mission.vehicle("Launcher 2", dcs.vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL)
         u.position = position.point_from_heading(heading + 210, 30)
         u.heading = heading
         vg.add_unit(u)
 
-        u = mission.vehicle("Rearm Truck", dcs.vehicles.Unarmed.Transport_Ural_375)
+        u = mission.vehicle("Rearm Truck", dcs.vehicles.Unarmed.Truck_Ural_375)
         u.position = position.point_from_heading(heading + 0, 40)
         u.heading = heading
         vg.add_unit(u)
@@ -222,9 +222,9 @@ class ShipTemplate:
     def kuznetsov_taskgroup(mission: dcs.mission.Mission, position, heading, prefix="", skill=unit.Skill.Average):
         kuznetsov = mission.ship_group(mission.country("Russia"), prefix + " Kuznetsov Taskgroup",
                                        dcs.ships.CV_1143_5_Admiral_Kuznetsov, position, heading)
-        kuznetsov.add_unit(mission.ship("Pyotr", dcs.ships.CGN_1144_2_Pyotr_Velikiy))
-        kuznetsov.add_unit(mission.ship("Neystrahsimy 1", dcs.ships.FFG_11540_Neustrashimy))
-        kuznetsov.add_unit(mission.ship("Neystrahsimy 2", dcs.ships.FFG_11540_Neustrashimy))
+        kuznetsov.add_unit(mission.ship("Pyotr", dcs.ships.Battlecruiser_1144_2_Pyotr_Velikiy))
+        kuznetsov.add_unit(mission.ship("Neystrahsimy 1", dcs.ships.Frigate_11540_Neustrashimy))
+        kuznetsov.add_unit(mission.ship("Neystrahsimy 2", dcs.ships.Frigate_11540_Neustrashimy))
         kuznetsov.add_unit(mission.ship("Tanker 1", dcs.ships.Tanker_Elnya_160))
         kuznetsov.add_unit(mission.ship("Tanker 2", dcs.ships.Tanker_Elnya_160))
         kuznetsov.add_unit(mission.ship("Tanker 3", dcs.ships.Tanker_Elnya_160))
