@@ -6,10 +6,6 @@ class String:
         self.translation = translation
         self.id = _id
 
-    def __del__(self):
-        if self.translation:
-            self.translation.delete_string(self.id)
-
     def set(self, text, lang='DEFAULT'):
         self.translation.set_string(self.id, text, lang)
         return str(self)
