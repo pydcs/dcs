@@ -476,8 +476,7 @@ class BasicTests(unittest.TestCase):
         # reload mission
         m = dcs.mission.Mission()
         msgs = m.load_file(save_path)
-        self.assertEqual(1, len(msgs))
-        self.assertEqual(MessageType.MISSION_FORMAT_OLD, msgs[0].type)
+        self.assertEqual(0, len(msgs))
 
     def test_kneeboard(self):
         m = dcs.mission.Mission()

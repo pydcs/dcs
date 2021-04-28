@@ -94,6 +94,8 @@ class Mission:
     """
     _COUNTRY_IDS = {x for x in range(0, 13)} | {x for x in range(15, 47)}
 
+    _CURRENT_MIZ_VERSION: int = 19  # on save this version number will be written
+
     def __init__(self, terrain: Union[
             terrain_.Caucasus,
             terrain_.Nevada,
@@ -119,7 +121,7 @@ class Mission:
         self._sortie = self.string("")
         self.pictureFileNameR = []
         self.pictureFileNameB = []
-        self.version = 16
+        self.version = Mission._CURRENT_MIZ_VERSION
         self.currentKey = 0
         self.start_time = datetime.fromtimestamp(1306886400 + 43200, timezone.utc)  # 01-06-2011 12:00:00 UTC
         self.random_weather = False
@@ -1965,7 +1967,7 @@ class Mission:
             "red": {x + 1: col_red[x] for x in range(0, len(col_red))}
         }
         m["sortie"] = self._sortie.id
-        m["version"] = self.version
+        m["version"] = Mission._CURRENT_MIZ_VERSION
         m["goals"] = self.goals.dict()
         m["result"] = self.goals.generate_result()
         m["currentKey"] = self.currentKey
