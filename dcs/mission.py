@@ -1884,19 +1884,22 @@ class Mission:
             raise RuntimeError("No filename given.")
         self.filename = filename  # store filename
 
+        options = str(self.options)
+        warehouses = str(self.warehouses)
+        mission = str(self)
+
         with zipfile.ZipFile(filename, 'w', compression=zipfile.ZIP_DEFLATED) as zipf:
             # options
-            zipf.writestr('options', str(self.options))
+            zipf.writestr('options', options)
 
             # warehouses
-            zipf.writestr('warehouses', str(self.warehouses))
+            zipf.writestr('warehouses', warehouses)
 
             # translation files
             dicttext = lua.dumps(self.translation.dict('DEFAULT'), "dictionary", 1)
             zipf.writestr('l10n/DEFAULT/dictionary', dicttext)
 
             mapresource = self.map_resource.store(zipf, 'DEFAULT')
-            # print(mapresource)
             zipf.writestr('l10n/DEFAULT/mapResource', lua.dumps(mapresource, "mapResource", 1))
 
             for unit_type, pages in self.aircraft_kneeboards.items():
@@ -1904,7 +1907,7 @@ class Mission:
                 for idx, page in enumerate(pages):
                     zipf.write(page, arcname=f'{directory}/{page.name}')
 
-            zipf.writestr('mission', str(self))
+            zipf.writestr('mission', mission)
 
         return True
 
