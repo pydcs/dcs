@@ -1,4 +1,3 @@
-from dcs.translation import String
 import dcs.task as task
 import dcs.mapping as mapping
 from typing import Any, Dict, List, Optional
@@ -31,7 +30,7 @@ class StaticPoint:
     def __init__(self):
         self.alt = 0
         self.type = ""
-        self.name = String()
+        self.name: str = ""
         self.position = mapping.Point(0, 0)
         self.speed = 0
         self.formation_template = ""
@@ -47,14 +46,17 @@ class StaticPoint:
         self.formation_template = d["formation_template"]
         self.speed = d["speed"]
         if "name" in d:
-            self.name = translation.get_string(d["name"])
+            if d["name"].startswith("DictKey_Translation_"):
+                self.name = str(translation.get_string(d["name"]))
+            else:
+                self.name = d["name"]
         self.landing_refuel_rearm_time = d.get("timeReFuAr")
 
     def dict(self) -> Dict[str, Any]:
         d = {
             "alt": self.alt,
             "type": self.type,
-            "name": self.name.id,
+            "name": self.name,
             "x": self.position.x,
             "y": self.position.y,
             "speed": round(self.speed, 13),

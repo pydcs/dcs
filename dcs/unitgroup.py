@@ -360,11 +360,11 @@ class FlyingGroup(MovingGroup):
         self.nav_target_points.append(nt)
         return nt
 
-    def add_waypoint(self, pos: mapping.Point, altitude, speed=600, name: String = None) -> MovingPoint:
+    def add_waypoint(self, pos: mapping.Point, altitude, speed=600, name: Optional[str] = None) -> MovingPoint:
         mp = MovingPoint()
         mp.type = "Turning Point"
         mp.action = PointAction.TurningPoint
-        mp.name = name if name else String()
+        mp.name = name if name else ""
         mp.position = mapping.Point(pos.x, pos.y)
         mp.alt = altitude
         mp.speed = speed / 3.6

@@ -1438,9 +1438,9 @@ class Mission:
             PlaneGroup: the created patrol group
         """
         pg.points[0].tasks[0] = task.EngageTargets(max_engage_distance, [task.Targets.All.Air])
-        wp = pg.add_waypoint(pos1, altitude, speed, self.string("P1"))
+        wp = pg.add_waypoint(pos1, altitude, speed, "P1")
         wp.tasks.append(task.OrbitAction(altitude, speed, task.OrbitAction.OrbitPattern.RaceTrack))
-        pg.add_waypoint(pos2, altitude, speed, self.string("P2"))
+        pg.add_waypoint(pos2, altitude, speed, "P2")
 
         return pg
 
@@ -1564,12 +1564,12 @@ class Mission:
         attack_hdg = sg.position.heading_between_point(target_pos) + 180
         var_hdg = random.randint(-15, 15)
         wp = sg.add_waypoint(target_pos.point_from_heading(attack_hdg + var_hdg, 30000), 5000, speed)
-        wp.name = self.string("IP")
+        wp.name = "IP"
         wp = sg.add_waypoint(target_pos, 0, speed)
         wp.tasks.append(task.EngageTargets(max_engage_distance, [task.Targets.All.GroundUnits.AirDefence]))
-        wp.name = self.string("SEAD")
+        wp.name = "SEAD"
         wp = sg.add_waypoint(target_pos.point_from_heading(attack_hdg - var_hdg, 30000), 5000, speed)
-        wp.name = self.string("Fence out")
+        wp.name = "Fence out"
 
         if sg.starts_from_airport():
             airport = self.terrain.airport_by_id(sg.airport_id())
@@ -1643,11 +1643,11 @@ class Mission:
         attack_hdg = sf.position.heading_between_point(target.position) + 180
         var_hdg = random.randint(-15, 15)
         wp = sf.add_waypoint(target.position.point_from_heading(attack_hdg + var_hdg, 30000), altitude, speed)
-        wp.name = self.string("IP")
+        wp.name = "IP"
         wp = sf.add_waypoint(target.position, 0, speed)
-        wp.name = self.string("Attack")
+        wp.name = "Attack"
         wp = sf.add_waypoint(target.position.point_from_heading(attack_hdg - var_hdg, 30000), altitude, speed)
-        wp.name = self.string("Fence out")
+        wp.name = "Fence out"
 
         if sf.starts_from_airport():
             airport = self.terrain.airport_by_id(sf.airport_id())
