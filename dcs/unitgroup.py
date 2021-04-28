@@ -10,7 +10,6 @@ from dcs.unittype import FlyingType
 from dcs.planes import PlaneType
 from dcs.helicopters import HelicopterType
 from dcs.point import StaticPoint, MovingPoint, PointAction, PointProperties
-from dcs.translation import String
 from dcs.terrain import Airport, Runway
 from dcs.nav_target_point import NavTargetPoint
 import dcs.planes as planes
@@ -30,7 +29,7 @@ class Group:
         Scattered = 4
         Vee = 5
 
-    def __init__(self, _id: int, name: Optional[Union[str, String]] = None) -> None:
+    def __init__(self, _id: int, name: Optional[str] = None) -> None:
         if not isinstance(_id, int):
             raise TypeError("id must be an integer")
         self.id = _id
@@ -39,10 +38,10 @@ class Group:
         self.hidden_on_mfd = False
         self.units: List[Union[Unit, Ship, Plane, Helicopter, Vehicle, Static]] = []
         self.points = []  # type: List[Union[StaticPoint, MovingPoint]]
-        self.name = name if name is not None else String()
+        self.name: str = name if name is not None else ""
 
     def __str__(self):
-        return "Group: " + str(self.name)
+        return "Group: " + self.name
 
     def load_from_dict(self, d):
         self.hidden = d.get("hidden")
@@ -180,7 +179,7 @@ class Group:
 
     def dict(self):
         d = {
-            "name": self.name.id,
+            "name": self.name,
             "groupId": self.id
         }
         if self.hidden is not None:

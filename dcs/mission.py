@@ -547,7 +547,7 @@ class Mission:
         """
         return self.translation.create_string(s, lang)
 
-    def static(self, name, _type: Type[unittype.UnitType]) -> Static:
+    def static(self, name: str, _type: Type[unittype.UnitType]) -> Static:
         """Creates a plain static object to be added to a group
 
         Args:
@@ -557,9 +557,9 @@ class Mission:
         Returns:
             Static: a new static object
         """
-        return Static(self.next_unit_id(), self.string(name), _type)
+        return Static(self.next_unit_id(), name, _type)
 
-    def static_group(self, country, name, _type: Type[unittype.UnitType], position: mapping.Point,
+    def static_group(self, country, name: str, _type: Type[unittype.UnitType], position: mapping.Point,
                      heading=0, hidden=False, dead=False):
         """Add a static group with 1 static object.
 
@@ -575,7 +575,7 @@ class Mission:
         Returns:
             StaticGroup: the new static group
         """
-        sg = unitgroup.StaticGroup(self.next_group_id(), self.string(name))
+        sg = unitgroup.StaticGroup(self.next_group_id(), name)
 
         s = self.static(name + " object", _type)
         s.position = copy.copy(position)
@@ -594,7 +594,7 @@ class Mission:
 
     def farp(self,
              country,
-             name,
+             name: str,
              position: mapping.Point,
              frequency=127.5,
              modulation=task.Modulation.AM.value,
@@ -618,9 +618,9 @@ class Mission:
         Returns:
             StaticGroup: the new farp group
         """
-        sg = unitgroup.StaticGroup(self.next_group_id(), self.string(name))
+        sg = unitgroup.StaticGroup(self.next_group_id(), name)
 
-        s = unit.FARP(self.next_unit_id(), self.string(name), frequency, modulation, callsign_id)
+        s = unit.FARP(self.next_unit_id(), name, frequency, modulation, callsign_id)
         s.position = copy.copy(position)
         s.heading = heading
         sg.add_unit(s)
@@ -635,7 +635,7 @@ class Mission:
         country.add_static_group(sg)
         return sg
 
-    def vehicle(self, name, _type: Type[unittype.VehicleType]) -> Vehicle:
+    def vehicle(self, name: str, _type: Type[unittype.VehicleType]) -> Vehicle:
         """Creates a plain vehicle unit to be added to a group
 
         Args:
@@ -647,9 +647,9 @@ class Mission:
         """
         if not issubclass(_type, unittype.VehicleType):
             raise TypeError("_type not a unittype.VehicleType class: " + repr(_type))
-        return Vehicle(self.next_unit_id(), self.string(name), _type.id)
+        return Vehicle(self.next_unit_id(), name, _type.id)
 
-    def vehicle_group(self, country, name, _type: Type[unittype.VehicleType], position: mapping.Point,
+    def vehicle_group(self, country, name: str, _type: Type[unittype.VehicleType], position: mapping.Point,
                       heading=0, group_size=1,
                       formation=unitgroup.VehicleGroup.Formation.Line,
                       move_formation: PointAction = PointAction.OffRoad) -> unitgroup.VehicleGroup:
@@ -668,7 +668,7 @@ class Mission:
         Returns:
             VehicleGroup: the new vehicle group object
         """
-        vg = unitgroup.VehicleGroup(self.next_group_id(), self.string(name))
+        vg = unitgroup.VehicleGroup(self.next_group_id(), name)
 
         for i in range(1, group_size + 1):
             v = self.vehicle(name + " Unit #{nr}".format(nr=i), _type)
@@ -687,7 +687,7 @@ class Mission:
         country.add_vehicle_group(vg)
         return vg
 
-    def vehicle_group_platoon(self, country, name,
+    def vehicle_group_platoon(self, country, name: str,
                               types: List[Type[unittype.VehicleType]],
                               position: mapping.Point,
                               heading=0,
@@ -707,7 +707,7 @@ class Mission:
         Returns:
             VehicleGroup: the new vehicle group object
         """
-        vg = unitgroup.VehicleGroup(self.next_group_id(), self.string(name))
+        vg = unitgroup.VehicleGroup(self.next_group_id(), name)
 
         eplrs = False
         for i in range(0, len(types)):
@@ -730,7 +730,7 @@ class Mission:
         country.add_vehicle_group(vg)
         return vg
 
-    def ship(self, name, _type: Type[unittype.ShipType]) -> Ship:
+    def ship(self, name: str, _type: Type[unittype.ShipType]) -> Ship:
         """Creates a plain ship unit to be added to a group
 
         Args:
@@ -740,9 +740,9 @@ class Mission:
         Returns:
             Ship: a new ship unit.
         """
-        return Ship(self.next_unit_id(), self.string(name), _type)
+        return Ship(self.next_unit_id(), name, _type)
 
-    def ship_group(self, country, name, _type: Type[unittype.ShipType],
+    def ship_group(self, country, name: str, _type: Type[unittype.ShipType],
                    position: mapping.Point, heading=0, group_size=1) -> unitgroup.ShipGroup:
         """Adds a ship group to the given country.
 
@@ -757,7 +757,7 @@ class Mission:
         Returns:
             ShipGroup: the new ship group object
         """
-        sg = unitgroup.ShipGroup(self.next_group_id(), self.string(name))
+        sg = unitgroup.ShipGroup(self.next_group_id(), name)
 
         for i in range(1, group_size + 1):
             v = self.ship(name + " Unit #{nr}".format(nr=i), _type)
@@ -772,7 +772,7 @@ class Mission:
         country.add_ship_group(sg)
         return sg
 
-    def plane_group(self, name) -> unitgroup.PlaneGroup:
+    def plane_group(self, name: str) -> unitgroup.PlaneGroup:
         """This creates a plain plane group without any units or starting points.
 
         This method is a advanced interface method not intended for simple use.
@@ -788,7 +788,7 @@ class Mission:
         Returns:
             PlaneGroup: A new :py:class:`dcs.unitgroup.PlaneGroup`
         """
-        return unitgroup.PlaneGroup(self.next_group_id(), self.string(name))
+        return unitgroup.PlaneGroup(self.next_group_id(), name)
 
     def remove_plane_group(self, pgroup: unitgroup.PlaneGroup):
         for coln, col in self.coalition.items():
@@ -810,7 +810,7 @@ class Mission:
 
         return False
 
-    def plane(self, name, _type: Type[planes.PlaneType], country: Country):
+    def plane(self, name: str, _type: Type[planes.PlaneType], country: Country):
         """Creates a new plane unit.
 
         This method is a advanced interface method not intended for simple usage.
@@ -828,9 +828,9 @@ class Mission:
         Return:
             Plane: A new :py:class:`dcs.unit.Plane`
         """
-        return Plane(self.next_unit_id(), self.string(name), _type, country)
+        return Plane(self.next_unit_id(), name, _type, country)
 
-    def helicopter(self, name, _type: Type[helicopters.HelicopterType], country: Country):
+    def helicopter(self, name: str, _type: Type[helicopters.HelicopterType], country: Country):
         """Creates a new helicopter unit.
 
         This method is a advanced interface method not intended for simple usage.
@@ -848,10 +848,10 @@ class Mission:
         Returns:
             Helicopter: A new :py:class:`dcs.unit.Helicopter`
         """
-        return Helicopter(self.next_unit_id(), self.string(name), _type, country)
+        return Helicopter(self.next_unit_id(), name, _type, country)
 
     def aircraft(self,
-                 name,
+                 name: str,
                  _type: Type[Union[unittype.FlyingType, HelicopterType, PlaneType]],
                  country: Country) -> Union[Plane, Helicopter]:
         """Creates a new plane or helicopter unit, depending on the _type.
@@ -872,10 +872,10 @@ class Mission:
             Helicopter: A new :py:class:`dcs.unit.Plane` or :py:class:`dcs.unit.Helicopter`
         """
         if _type.helicopter:
-            return Helicopter(self.next_unit_id(), self.string(name), _type, country)
-        return Plane(self.next_unit_id(), self.string(name), _type, country)
+            return Helicopter(self.next_unit_id(), name, _type, country)
+        return Plane(self.next_unit_id(), name, _type, country)
 
-    def helicopter_group(self, name) -> unitgroup.HelicopterGroup:
+    def helicopter_group(self, name: str) -> unitgroup.HelicopterGroup:
         """Creates a plain helicopter group without any units or starting points.
 
         This method is a advanced interface method not intended for simple usage.
@@ -891,7 +891,7 @@ class Mission:
         Returns:
             HelicopterGroup: A new :py:class:`dcs.unitgroup.HelicopterGroup`
         """
-        return unitgroup.HelicopterGroup(self.next_group_id(), self.string(name))
+        return unitgroup.HelicopterGroup(self.next_group_id(), name)
 
     @classmethod
     def _assign_callsign(cls, _country, group: unitgroup.FlyingGroup):

@@ -10,7 +10,6 @@ from dcs.flyingunit import Plane, Helicopter
 from dcs.point import MovingPoint, StaticPoint
 from dcs.country import Country
 from dcs.status_message import StatusMessage, MessageType, MessageSeverity
-from dcs.translation import String
 
 if TYPE_CHECKING:
     from . import Mission
@@ -82,10 +81,10 @@ class Coalition:
         return ret
 
     @staticmethod
-    def get_name(mission: "Mission", name: str) -> Union[str, String]:
+    def get_name(mission: "Mission", name: str) -> str:
         # Group, unit names are not localized for missions are created in 2.7.
         if mission.version < 19:
-            return mission.translation.get_string(name)
+            return str(mission.translation.get_string(name))
         else:
             return name
 

@@ -70,35 +70,35 @@ class Country:
                   self.static_group]
         for search_group in groups:
             for group in search_group:
-                if find_map[search](group.name.str(), group_name):
+                if find_map[search](group.name, group_name):
                     return group
         return None
 
     def find_vehicle_group(self, name: str, search="exact"):
         for group in self.vehicle_group:
-            if find_map[search](group.name.str(), name):
+            if find_map[search](group.name, name):
                 return group
         return None
 
     def find_ship_group(self, name: str, search="exact"):
         for group in self.ship_group:
-            if find_map[search](group.name.str(), name):
+            if find_map[search](group.name, name):
                 return group
         return None
 
     def find_plane_group(self, name: str, search="exact"):
         for group in self.plane_group:
-            if find_map[search](group.name.str(), name):
+            if find_map[search](group.name, name):
                 return group
 
     def find_helicopter_group(self, name: str, search="exact"):
         for group in self.helicopter_group:
-            if find_map[search](group.name.str(), name):
+            if find_map[search](group.name, name):
                 return group
 
     def find_static_group(self, name: str, search="exact"):
         for group in self.static_group:
-            if find_map[search](group.name.str(), name):
+            if find_map[search](group.name, name):
                 return group
         return None
 

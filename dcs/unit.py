@@ -1,10 +1,9 @@
-from dcs.translation import String
 from dcs.unittype import UnitType, StaticType, ShipType, VehicleType
 import dcs.mapping as mapping
 import copy
 import math
 from enum import Enum
-from typing import Type, Union
+from typing import Type, Union, Optional
 
 
 class Skill(Enum):
@@ -30,13 +29,14 @@ class Skill(Enum):
 
 
 class Unit:
-    def __init__(self, _id, name=None, type=""):
+    def __init__(self, _id, name: Optional[str] = None, type=""):
+        self.type = type
         self.type = type
         self.position = mapping.Point(0, 0)
         self.heading = 0
         self.id = _id
         self.skill = Skill.Average  # type: Skill
-        self.name = name if name else String()
+        self.name: str = name if name else ""
 
     def load_from_dict(self, d):
         self.position = mapping.Point(d["x"], d["y"])
@@ -55,7 +55,7 @@ class Unit:
             "y": self.position.y,
             "heading": round(math.radians(self.heading), 13),
             "unitId": self.id,
-            "name": self.name.id
+            "name": self.name
         }
         if self.skill is not None:
             d["skill"] = self.skill.value
@@ -66,7 +66,7 @@ class Unit:
 
 
 class Vehicle(Unit):
-    def __init__(self, id=None, name=None, _type="Sandbox"):
+    def __init__(self, id=None, name: Optional[str] = None, _type="Sandbox"):
         super(Vehicle, self).__init__(id, name, _type)
         self.player_can_drive = False
         self.transportable = {"randomTransportable": False}
@@ -84,7 +84,7 @@ class Vehicle(Unit):
 
 
 class Ship(Unit):
-    def __init__(self, id=None, name=None, _type=None):
+    def __init__(self, id=None, name: Optional[str] = None, _type=None):
         super(Ship, self).__init__(id, name, _type.id)
         self.transportable = {"randomTransportable": False}
         self.frequency = 127500000
@@ -110,7 +110,7 @@ class Ship(Unit):
 
 
 class Static(Unit):
-    def __init__(self, unit_id=None, name=None, _type: Union[str, Type[UnitType]] = None):
+    def __init__(self, unit_id=None, name: Optional[str] = None, _type: Union[str, Type[UnitType]] = None):
         from .planes import PlaneType
         from .helicopters import HelicopterType
 
@@ -167,7 +167,7 @@ class Static(Unit):
 
 
 class FARP(Static):
-    def __init__(self, unit_id=None, name=None, frequency=127.5, modulation=0, callsign_id=1):
+    def __init__(self, unit_id=None, name: Optional[str] = None, frequency=127.5, modulation=0, callsign_id=1):
         super(FARP, self).__init__(unit_id, name, "FARP")
         self.category = "Heliports"
         self.shape_name = "FARPS"
@@ -192,7 +192,7 @@ class FARP(Static):
 
 
 class SingleHeliPad(Static):
-    def __init__(self, unit_id=None, name=None, frequency=127.5, modulation=0, callsign_id=1):
+    def __init__(self, unit_id=None, name: Optional[str] = None, frequency=127.5, modulation=0, callsign_id=1):
         super(SingleHeliPad, self).__init__(unit_id, name, "SINGLE_HELIPAD")
         self.category = "Heliports"
         self.shape_name = "FARP"
