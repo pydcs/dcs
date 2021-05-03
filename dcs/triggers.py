@@ -30,8 +30,8 @@ class TriggerZone:
         }
 
     def __repr__(self):
-        return "TriggerZone({id}, {x}, {y}, {r}, '{n}', '{m}', '{o}')".format(
-            id=self.id, x=self.position.x, y=self.position.y, r=self.radius, n=self.name, m=self.color, o=self.properties
+        return "TriggerZone({id}, {x}, {y}, {r}, '{m}', '{n}', '{o}')".format(
+            id=self.id, x=self.position.x, y=self.position.y, r=self.radius, m=self.name, n=self.color, o=self.properties
         )
 
 
