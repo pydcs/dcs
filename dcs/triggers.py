@@ -8,13 +8,14 @@ from dcs import condition
 
 
 class TriggerZone:
-    def __init__(self, _id, position: mapping.Point, radius=1500, hidden=False, name=""):
+    def __init__(self, _id, position: mapping.Point, radius=1500, hidden=False, name="", properties=None):
         self.id = _id
         self.radius = radius
         self.position = copy.copy(position)
         self.hidden = hidden
         self.name = name
         self.color = {1: 1, 2: 1, 3: 1, 4: 0.15}  # TODO color attributes
+        self.properties = properties
 
     def dict(self):
         return {
@@ -24,12 +25,13 @@ class TriggerZone:
             "y": self.position.y,
             "zoneId": self.id,
             "radius": self.radius,
-            "color": self.color
+            "color": self.color,
+            "properties": self.properties
         }
 
     def __repr__(self):
-        return "TriggerZone({id}, {x}, {y}, {r}, '{n}')".format(
-            id=self.id, x=self.position.x, y=self.position.y, r=self.radius, n=self.name
+        return "TriggerZone({id}, {x}, {y}, {r}, '{n}', '{m}')".format(
+            id=self.id, x=self.position.x, y=self.position.y, r=self.radius, n=self.name, m=self.properties
         )
 
 
@@ -48,7 +50,8 @@ class Triggers:
                 mapping.Point(imp_zone["x"], imp_zone["y"]),
                 imp_zone["radius"],
                 imp_zone["hidden"],
-                imp_zone["name"]
+                imp_zone["name"],
+                imp_zone["properties"]
             )
             tz.color = imp_zone["color"]
             self._zones.append(tz)
