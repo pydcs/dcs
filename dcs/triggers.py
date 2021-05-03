@@ -57,9 +57,9 @@ class Triggers:
             self._zones.append(tz)
             self.current_zone_id = max(self.current_zone_id, tz.id)
 
-    def add_triggerzone(self, position: mapping.Point, radius=1500, hidden=False, name="") -> TriggerZone:
+    def add_triggerzone(self, position: mapping.Point, radius=1500, hidden=False, name="", properites=None) -> TriggerZone:
         self.current_zone_id += 1
-        tz = TriggerZone(self.current_zone_id, position, radius, hidden, name)
+        tz = TriggerZone(self.current_zone_id, position, radius, hidden, name, properites)
         self._zones.append(tz)
         return tz
 
