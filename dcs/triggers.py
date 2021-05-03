@@ -8,13 +8,13 @@ from dcs import condition
 
 
 class TriggerZone:
-    def __init__(self, _id, position: mapping.Point, radius=1500, hidden=False, name="", properties=None):
+    def __init__(self, _id, position: mapping.Point, radius=1500, hidden=False, name="", color={1: 1, 2: 1, 3: 1, 4: 0.15}, properties = None):
         self.id = _id
         self.radius = radius
         self.position = copy.copy(position)
         self.hidden = hidden
         self.name = name
-        self.color = {1: 1, 2: 1, 3: 1, 4: 0.15}  # TODO color attributes
+        self.color = color
         self.properties = properties
 
     def dict(self):
@@ -30,8 +30,8 @@ class TriggerZone:
         }
 
     def __repr__(self):
-        return "TriggerZone({id}, {x}, {y}, {r}, '{n}', '{m}')".format(
-            id=self.id, x=self.position.x, y=self.position.y, r=self.radius, n=self.name, m=self.properties
+        return "TriggerZone({id}, {x}, {y}, {r}, '{n}', '{m}', '{o}')".format(
+            id=self.id, x=self.position.x, y=self.position.y, r=self.radius, n=self.name, m=self.color, o=self.properties
         )
 
 
@@ -51,15 +51,15 @@ class Triggers:
                 imp_zone["radius"],
                 imp_zone["hidden"],
                 imp_zone["name"],
+                imp_zone["color"],
                 imp_zone["properties"]
             )
-            tz.color = imp_zone["color"]
             self._zones.append(tz)
             self.current_zone_id = max(self.current_zone_id, tz.id)
 
-    def add_triggerzone(self, position: mapping.Point, radius=1500, hidden=False, name="", properites=None) -> TriggerZone:
+    def add_triggerzone(self, position: mapping.Point, radius=1500, hidden=False, name="", color={1: 1, 2: 1, 3: 1, 4: 0.15}, properites=None) -> TriggerZone:
         self.current_zone_id += 1
-        tz = TriggerZone(self.current_zone_id, position, radius, hidden, name, properites)
+        tz = TriggerZone(self.current_zone_id, position, radius, hidden, name, color, properites)
         self._zones.append(tz)
         return tz
 
