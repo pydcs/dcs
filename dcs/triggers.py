@@ -14,16 +14,8 @@ class TriggerZone:
         self.position = copy.copy(position)
         self.hidden = hidden
         self.name = name
-
-        if color is None:
-            self.color = {1: 1, 2: 1, 3: 1, 4: 0.15}
-        else:
-            self.color = color
-        
-        if properties is None:
-            self.properties = {}
-        else:
-            self.properties = properties
+        self.color = color if color is not None else {1: 1, 2: 1, 3: 1, 4: 0.15}
+        self.properties = properties if properties is not None else {}
 
     def dict(self):
         return {
@@ -68,15 +60,8 @@ class Triggers:
     def add_triggerzone(self, position: mapping.Point, radius=1500, hidden=False, name="", color=None, properties=None) -> TriggerZone:
         self.current_zone_id += 1
 
-        if color is None:
-            real_color = {1: 1, 2: 1, 3: 1, 4: 0.15}
-        else:
-            real_color = color
-
-        if properties is None:
-            real_properties = {}
-        else:
-            real_properties = properties
+        real_color = color if color is not None else {1: 1, 2: 1, 3: 1, 4: 0.15}
+        real_properties = properties if properties is not None else {}
 
         tz = TriggerZone(self.current_zone_id, position, radius, hidden, name, real_color, real_properties)
         self._zones.append(tz)
