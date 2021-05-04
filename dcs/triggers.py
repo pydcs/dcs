@@ -8,13 +8,18 @@ from dcs import condition
 
 
 class TriggerZone:
-    def __init__(self, _id, position: mapping.Point, radius=1500, hidden=False, name="", color={1: 1, 2: 1, 3: 1, 4: 0.15}, properties={}):
+    def __init__(self, _id, position: mapping.Point, radius=1500, hidden=False, name="", color=None, properties={}):
         self.id = _id
         self.radius = radius
         self.position = copy.copy(position)
         self.hidden = hidden
         self.name = name
-        self.color = color
+
+        if color is None:
+            self.color = {1: 1, 2: 1, 3: 1, 4: 0.15}
+        else:
+            self.color = color
+        
         self.properties = properties
 
     def dict(self):
@@ -52,14 +57,20 @@ class Triggers:
                 imp_zone["hidden"],
                 imp_zone["name"],
                 imp_zone["color"],
-                imp_zone["properties"]
+                imp_zone.get("properties",{})
             )
             self._zones.append(tz)
             self.current_zone_id = max(self.current_zone_id, tz.id)
 
-    def add_triggerzone(self, position: mapping.Point, radius=1500, hidden=False, name="", color={1: 1, 2: 1, 3: 1, 4: 0.15}, properites={}) -> TriggerZone:
+    def add_triggerzone(self, position: mapping.Point, radius=1500, hidden=False, name="", color=None, properites={}) -> TriggerZone:
         self.current_zone_id += 1
-        tz = TriggerZone(self.current_zone_id, position, radius, hidden, name, color, properites)
+
+        if color is None:
+            real_color = {1: 1, 2: 1, 3: 1, 4: 0.15}
+        else:
+            real_color = color
+
+        tz = TriggerZone(self.current_zone_id, position, radius, hidden, name, real_color, properites)
         self._zones.append(tz)
         return tz
 
