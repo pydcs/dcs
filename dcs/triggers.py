@@ -8,7 +8,7 @@ from dcs import condition
 
 
 class TriggerZone:
-    def __init__(self, _id, position: mapping.Point, radius=1500, hidden=False, name="", color=None, properties={}):
+    def __init__(self, _id, position: mapping.Point, radius=1500, hidden=False, name="", color=None, properties=None):
         self.id = _id
         self.radius = radius
         self.position = copy.copy(position)
@@ -20,7 +20,10 @@ class TriggerZone:
         else:
             self.color = color
         
-        self.properties = properties
+        if properties is None:
+            self.properties = {}
+        else:
+            self.properties = properties
 
     def dict(self):
         return {
@@ -62,7 +65,7 @@ class Triggers:
             self._zones.append(tz)
             self.current_zone_id = max(self.current_zone_id, tz.id)
 
-    def add_triggerzone(self, position: mapping.Point, radius=1500, hidden=False, name="", color=None, properites={}) -> TriggerZone:
+    def add_triggerzone(self, position: mapping.Point, radius=1500, hidden=False, name="", color=None, properties=None) -> TriggerZone:
         self.current_zone_id += 1
 
         if color is None:
@@ -70,7 +73,12 @@ class Triggers:
         else:
             real_color = color
 
-        tz = TriggerZone(self.current_zone_id, position, radius, hidden, name, real_color, properites)
+        if properties is None:
+            real_properties = {}
+        else:
+            real_properties = properties
+
+        tz = TriggerZone(self.current_zone_id, position, radius, hidden, name, real_color, real_properties)
         self._zones.append(tz)
         return tz
 
