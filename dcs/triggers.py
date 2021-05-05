@@ -52,12 +52,20 @@ class Triggers:
                 imp_zone["hidden"],
                 imp_zone["name"],
                 imp_zone["color"],
-                imp_zone.get("properties",{})
+                imp_zone.get("properties", {})
             )
             self._zones.append(tz)
             self.current_zone_id = max(self.current_zone_id, tz.id)
 
-    def add_triggerzone(self, position: mapping.Point, radius=1500, hidden=False, name="", color=None, properties=None) -> TriggerZone:
+    def add_triggerzone(
+            self,
+            position: mapping.Point,
+            radius=1500, hidden=False,
+            name="",
+            color=None,
+            properties=None
+            ) -> TriggerZone:
+
         self.current_zone_id += 1
 
         real_color = color if color is not None else {1: 1, 2: 1, 3: 1, 4: 0.15}
