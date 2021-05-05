@@ -57,14 +57,14 @@ class Triggers:
             self._zones.append(tz)
             self.current_zone_id = max(self.current_zone_id, tz.id)
 
-    def add_triggerzone(
-            self,
-            position: mapping.Point,
-            radius=1500, hidden=False,
-            name="",
-            color=None,
-            properties=None
-            ) -> TriggerZone:
+    def add_triggerzone(self,
+                        position: mapping.Point,
+                        radius=1500,
+                        hidden=False,
+                        name="",
+                        color=None,
+                        properties=None
+                        ) -> TriggerZone:
 
         self.current_zone_id += 1
 
