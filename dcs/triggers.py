@@ -68,10 +68,7 @@ class Triggers:
 
         self.current_zone_id += 1
 
-        real_color = color if color is not None else {1: 1, 2: 1, 3: 1, 4: 0.15}
-        real_properties = properties if properties is not None else {}
-
-        tz = TriggerZone(self.current_zone_id, position, radius, hidden, name, real_color, real_properties)
+        tz = TriggerZone(self.current_zone_id, position, radius, hidden, name, color, properties)
         self._zones.append(tz)
         return tz
 
