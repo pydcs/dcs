@@ -5,6 +5,7 @@ from dcs.planes import PlaneType, A_10C
 from dcs.helicopters import HelicopterType, Ka_50
 
 import json
+import copy
 from typing import Type
 
 
@@ -64,6 +65,7 @@ class FlyingUnit(Unit):
         parking_slot.unit_id = self.id
         self.parking = parking_slot.crossroad_idx
         self.parking_id = parking_slot.slot_name
+        self.position=copy.copy(parking_slot.position)
 
     def set_property(self, prop_name, value):
         if self.addpropaircraft is None:

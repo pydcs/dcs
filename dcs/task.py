@@ -1176,6 +1176,7 @@ class SetImmortalCommand(WrappedAction):
                 "params": {"value": value}
             }
         }
+
 class SetCallsignCommand(WrappedAction):
     Key = "SetCallsign"
 
