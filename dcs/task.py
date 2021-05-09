@@ -1185,7 +1185,6 @@ class SetCallsignCommand(WrappedAction):
             "action": {
                 "id": SetCallsignCommand.Key,
                 "params": {
-                    "number": 1,
                     "callnameFlag": False,
                     "callname": 500,
                 }
