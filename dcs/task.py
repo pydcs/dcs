@@ -1176,7 +1176,21 @@ class SetImmortalCommand(WrappedAction):
                 "params": {"value": value}
             }
         }
+class SetCallsignCommand(WrappedAction):
+    Key = "SetCallsign"
 
+    def __init__(self, value=True):
+        super(SetCallsignCommand, self).__init__()
+        self.params = {
+            "action": {
+                "id": SetCallsignCommand.Key,
+                "params": {
+                    "number": 1,
+                    "callnameFlag": False,
+                    "callname": 500,
+                }
+            }
+        }
 
 class SmokeCommand(WrappedAction):
     Key = "SMOKE_ON_OFF"
@@ -1213,6 +1227,7 @@ wrappedactions = {
     SetFrequencyForUnitCommand.Key: SetFrequencyForUnitCommand,
     SetInvisibleCommand.Key: SetInvisibleCommand,
     SetImmortalCommand.Key: SetImmortalCommand,
+    SetCallsignCommand.Key: SetCallsignCommand,
     RunScript.Key: RunScript,
     RunScriptFile.Key: RunScriptFile,
     TransmitMessage.Key: TransmitMessage,
