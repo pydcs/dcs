@@ -1177,6 +1177,7 @@ class SetImmortalCommand(WrappedAction):
             }
         }
 
+
 class SetCallsignCommand(WrappedAction):
     Key = "SetCallsign"
 
@@ -1191,6 +1192,7 @@ class SetCallsignCommand(WrappedAction):
                 }
             }
         }
+
 
 class SmokeCommand(WrappedAction):
     Key = "SMOKE_ON_OFF"
