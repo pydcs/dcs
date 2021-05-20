@@ -184,6 +184,24 @@ class Bulker_Handy_Wind(unittype.ShipType):
     air_weapon_dist = 0
 
 
+class Tanker_Seawise_Giant(unittype.ShipType):
+    id = "Seawise_Giant"
+    name = "Tanker Seawise Giant"
+    helicopter_num = 1
+    parking = 1
+    detection_range = 0
+    threat_range = 0
+    air_weapon_dist = 0
+
+
+class FAC_La_Combattante_IIa(unittype.ShipType):
+    id = "La_Combattante_II"
+    name = "FAC La Combattante IIa"
+    detection_range = 19000
+    threat_range = 4000
+    air_weapon_dist = 4000
+
+
 class CVN_74_John_C__Stennis(unittype.ShipType):
     id = "Stennis"
     name = "CVN-74 John C. Stennis"
@@ -350,6 +368,7 @@ class Boat_Schnellboot_type_S130(unittype.ShipType):
     threat_range = 4000
     air_weapon_dist = 4000
 
+
 ship_map = {
     "speedboat": Boat_Armed_Hi_speed,
     "VINSON": CVN_70_Carl_Vinson,
@@ -371,6 +390,8 @@ ship_map = {
     "SOM": SSK_641B_Tango,
     "CV_1143_5": CV_1143_5_Admiral_Kuznetsov_2017,
     "HandyWind": Bulker_Handy_Wind,
+    "Seawise_Giant": Tanker_Seawise_Giant,
+    "La_Combattante_II": FAC_La_Combattante_IIa,
     "Stennis": CVN_74_John_C__Stennis,
     "CVN_71": CVN_71_Theodore_Roosevelt,
     "CVN_72": CVN_72_Abraham_Lincoln,

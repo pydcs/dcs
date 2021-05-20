@@ -33,9 +33,9 @@ class Artillery:
         threat_range = 17000
         air_weapon_dist = 17000
 
-    class SPH_2S9_Nona_120mm_M(unittype.VehicleType):
+    class SPM_2S9_Nona_120mm_M(unittype.VehicleType):
         id = "SAU 2-C9"
-        name = "SPH 2S9 Nona 120mm M"
+        name = "SPM 2S9 Nona 120mm M"
         detection_range = 0
         threat_range = 7000
         air_weapon_dist = 7000
@@ -62,9 +62,9 @@ class Artillery:
         threat_range = 1000
         air_weapon_dist = 1000
 
-    class HUMVEE_JTAC(unittype.VehicleType):
+    class MRLS_FDDM__FC(unittype.VehicleType):
         id = "MLRS FDDM"
-        name = "HUMVEE JTAC"
+        name = "MRLS FDDM (FC)"
         detection_range = 0
         threat_range = 1200
         air_weapon_dist = 1200
@@ -77,9 +77,9 @@ class Artillery:
         threat_range = 19000
         air_weapon_dist = 19000
 
-    class MLRS_BM_27_Uragan_220mm(unittype.VehicleType):
+    class MLRS_9K57_Uragan_BM_27_220mm(unittype.VehicleType):
         id = "Uragan_BM-27"
-        name = "MLRS BM-27 Uragan 220mm"
+        name = "MLRS 9K57 Uragan BM-27 220mm"
         detection_range = 0
         threat_range = 35800
         air_weapon_dist = 35800
@@ -106,6 +106,13 @@ class Artillery:
         air_weapon_dist = 32000
         eplrs = True
 
+    class SPH_T155_Firtina_155mm(unittype.VehicleType):
+        id = "T155_Firtina"
+        name = "SPH T155 Firtina 155mm"
+        detection_range = 0
+        threat_range = 41000
+        air_weapon_dist = 41000
+
     class PLZ_05(unittype.VehicleType):
         id = "PLZ05"
         name = "PLZ-05"
@@ -113,13 +120,6 @@ class Artillery:
         threat_range = 23500
         air_weapon_dist = 23500
         eplrs = True
-
-    class SPG_Sturmpanzer_IV_Brummbar(unittype.VehicleType):
-        id = "SturmPzIV"
-        name = "SPG Sturmpanzer IV Brummbar"
-        detection_range = 0
-        threat_range = 4500
-        air_weapon_dist = 2500
 
     class SPG_M12_GMC_155mm(unittype.VehicleType):
         id = "M12_GMC"
@@ -324,9 +324,9 @@ class AirDefence:
         threat_range = 4000
         air_weapon_dist = 4000
 
-    class SAM_Hawk_Generator__PCP(unittype.VehicleType):
+    class SAM_Hawk_Platoon_Command_Post__PCP(unittype.VehicleType):
         id = "Hawk pcp"
-        name = "SAM Hawk Generator (PCP)"
+        name = "SAM Hawk Platoon Command Post (PCP)"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -454,9 +454,9 @@ class AirDefence:
         threat_range = 2500
         air_weapon_dist = 2500
 
-    class AAA_ZU_23_Closed_Emplacement_Insurgent(unittype.VehicleType):
+    class AAA_ZU_23_Insurgent_Closed_Emplacement(unittype.VehicleType):
         id = "ZU-23 Closed Insurgent"
-        name = "AAA ZU-23 Closed Emplacement Insurgent"
+        name = "AAA ZU-23 Insurgent Closed Emplacement"
         detection_range = 5000
         threat_range = 2500
         air_weapon_dist = 2500
@@ -468,9 +468,9 @@ class AirDefence:
         threat_range = 2500
         air_weapon_dist = 2500
 
-    class AAA_ZU_23_Insurgent(unittype.VehicleType):
+    class AAA_ZU_23_Insurgent_Emplacement(unittype.VehicleType):
         id = "ZU-23 Insurgent"
-        name = "AAA ZU-23 Insurgent"
+        name = "AAA ZU-23 Insurgent Emplacement"
         detection_range = 5000
         threat_range = 2500
         air_weapon_dist = 2500
@@ -517,9 +517,9 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
 
-    class SAM_SA_6_Kub_Long_Track_STR(unittype.VehicleType):
+    class SAM_SA_6_Kub_Straight_Flush_STR(unittype.VehicleType):
         id = "Kub 1S91 str"
-        name = "SAM SA-6 Kub \"Long Track\" STR"
+        name = "SAM SA-6 Kub \"Straight Flush\" STR"
         detection_range = 70000
         threat_range = 0
         air_weapon_dist = 0
@@ -645,12 +645,19 @@ class AirDefence:
         threat_range = 7000
         air_weapon_dist = 7000
 
-    class AAA_40mm_Bofors(unittype.VehicleType):
-        id = "bofors40"
-        name = "AAA 40mm Bofors"
+    class Disel_Power_Station_5I57A(unittype.VehicleType):
+        id = "generator_5i57"
+        name = "Disel Power Station 5I57A"
         detection_range = 0
-        threat_range = 7160
-        air_weapon_dist = 7160
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class AAA_Bofors_40mm(unittype.VehicleType):
+        id = "bofors40"
+        name = "AAA Bofors 40mm"
+        detection_range = 0
+        threat_range = 4000
+        air_weapon_dist = 4000
 
     class SAM_Rapier_LN(unittype.VehicleType):
         id = "rapier_fsa_launcher"
@@ -861,9 +868,9 @@ class Fortification:
 
 class Unarmed:
 
-    class GPU_APA_5D(unittype.VehicleType):
+    class GPU_APA_5D_on_Ural_4320(unittype.VehicleType):
         id = "Ural-4320 APA-5D"
-        name = "GPU APA-5D"
+        name = "GPU APA-5D on Ural 4320"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -910,9 +917,9 @@ class Unarmed:
         threat_range = 0
         air_weapon_dist = 0
 
-    class Truck_HEMMT_TFFT_Fire(unittype.VehicleType):
+    class Firefighter_HEMMT_TFFT(unittype.VehicleType):
         id = "HEMTT TFFT"
-        name = "Truck HEMMT TFFT Fire"
+        name = "Firefighter HEMMT TFFT"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -945,9 +952,9 @@ class Unarmed:
         threat_range = 0
         air_weapon_dist = 0
 
-    class APC_HMMWV_Jeep(unittype.VehicleType):
+    class LUV_HMMWV_Jeep(unittype.VehicleType):
         id = "Hummer"
-        name = "APC HMMWV Jeep"
+        name = "LUV HMMWV Jeep"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -988,9 +995,9 @@ class Unarmed:
         threat_range = 0
         air_weapon_dist = 0
 
-    class APC_Tigr(unittype.VehicleType):
+    class LUV_Tigr(unittype.VehicleType):
         id = "Tigr_233036"
-        name = "APC Tigr"
+        name = "LUV Tigr"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -1009,9 +1016,9 @@ class Unarmed:
         threat_range = 0
         air_weapon_dist = 0
 
-    class Truck_Ural_ATsP_6_Firefighter(unittype.VehicleType):
+    class Firefighter_Ural_ATsP_6(unittype.VehicleType):
         id = "Ural ATsP-6"
-        name = "Truck Ural ATsP-6 Firefighter"
+        name = "Firefighter Ural ATsP-6"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -1082,6 +1089,20 @@ class Unarmed:
     class Truck_KrAZ_6322_6x6(unittype.VehicleType):
         id = "KrAZ6322"
         name = "Truck KrAZ-6322 6x6"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Refueler_ATZ_5(unittype.VehicleType):
+        id = "ATZ-5"
+        name = "Refueler ATZ-5"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Fire_Fight_Vehicle_AA_7_2_60(unittype.VehicleType):
+        id = "AA8"
+        name = "Fire Fight Vehicle AA-7.2/60"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -1208,9 +1229,9 @@ class Armor:
         threat_range = 4000
         air_weapon_dist = 2000
 
-    class IFV_BRDM_2(unittype.VehicleType):
+    class Scout_BRDM_2(unittype.VehicleType):
         id = "BRDM-2"
-        name = "IFV BRDM-2"
+        name = "Scout BRDM-2"
         detection_range = 0
         threat_range = 1600
         air_weapon_dist = 1600
@@ -1229,9 +1250,9 @@ class Armor:
         threat_range = 3000
         air_weapon_dist = 1000
 
-    class APC_Cobra__Scout(unittype.VehicleType):
+    class Scout_Cobra(unittype.VehicleType):
         id = "Cobra"
-        name = "APC Cobra (Scout)"
+        name = "Scout Cobra"
         detection_range = 0
         threat_range = 1200
         air_weapon_dist = 1200
@@ -1243,9 +1264,9 @@ class Armor:
         threat_range = 2500
         air_weapon_dist = 2500
 
-    class APC_HMMWV__Scout(unittype.VehicleType):
+    class Scout_HMMWV(unittype.VehicleType):
         id = "M1043 HMMWV Armament"
-        name = "APC HMMWV (Scout)"
+        name = "Scout HMMWV"
         detection_range = 0
         threat_range = 1200
         air_weapon_dist = 1200
@@ -1333,13 +1354,6 @@ class Armor:
         threat_range = 3500
         air_weapon_dist = 1500
 
-    class MBT_Leopard_2(unittype.VehicleType):
-        id = "Leopard-2"
-        name = "MBT Leopard 2"
-        detection_range = 0
-        threat_range = 3500
-        air_weapon_dist = 1500
-
     class MBT_M60A3_Patton(unittype.VehicleType):
         id = "M-60"
         name = "MBT M60A3 Patton"
@@ -1405,9 +1419,9 @@ class Armor:
         threat_range = 3500
         air_weapon_dist = 1200
 
-    class MT_M4_Sherman(unittype.VehicleType):
+    class Tk_M4_Sherman(unittype.VehicleType):
         id = "M4_Sherman"
-        name = "MT M4 Sherman"
+        name = "Tk M4 Sherman"
         detection_range = 0
         threat_range = 3000
         air_weapon_dist = 0
@@ -1426,16 +1440,30 @@ class Armor:
         threat_range = 4000
         air_weapon_dist = 3500
 
-    class APC_BTR_82A(unittype.VehicleType):
+    class IFV_BTR_82A(unittype.VehicleType):
         id = "BTR-82A"
-        name = "APC BTR-82A"
+        name = "IFV BTR-82A"
         detection_range = 0
         threat_range = 2000
         air_weapon_dist = 2000
 
-    class MT_PzIV_H(unittype.VehicleType):
+    class LT_PT_76(unittype.VehicleType):
+        id = "PT_76"
+        name = "LT PT-76"
+        detection_range = 0
+        threat_range = 2000
+        air_weapon_dist = 1000
+
+    class MBT_Chieftain_Mk_3(unittype.VehicleType):
+        id = "Chieftain_mk3"
+        name = "MBT Chieftain Mk.3"
+        detection_range = 0
+        threat_range = 3500
+        air_weapon_dist = 1500
+
+    class Tk_PzIV_H(unittype.VehicleType):
         id = "Pz_IV_H"
-        name = "MT PzIV H"
+        name = "Tk PzIV H"
         detection_range = 0
         threat_range = 3000
         air_weapon_dist = 0
@@ -1446,6 +1474,42 @@ class Armor:
         detection_range = 0
         threat_range = 1100
         air_weapon_dist = 0
+
+    class MBT_Leopard_2A5(unittype.VehicleType):
+        id = "Leopard-2A5"
+        name = "MBT Leopard-2A5"
+        detection_range = 0
+        threat_range = 3500
+        air_weapon_dist = 1500
+
+    class MBT_Leopard_2A6M(unittype.VehicleType):
+        id = "Leopard-2"
+        name = "MBT Leopard-2A6M"
+        detection_range = 0
+        threat_range = 3500
+        air_weapon_dist = 1500
+
+    class MBT_Leopard_2A4(unittype.VehicleType):
+        id = "leopard-2A4"
+        name = "MBT Leopard-2A4"
+        detection_range = 0
+        threat_range = 3500
+        air_weapon_dist = 1500
+
+    class MBT_Leopard_2A4_Trs(unittype.VehicleType):
+        id = "leopard-2A4_trs"
+        name = "MBT Leopard-2A4 Trs"
+        detection_range = 0
+        threat_range = 3500
+        air_weapon_dist = 1500
+
+    class ATGM_VAB_Mephisto(unittype.VehicleType):
+        id = "VAB_Mephisto"
+        name = "ATGM VAB Mephisto"
+        detection_range = 0
+        threat_range = 3800
+        air_weapon_dist = 3800
+        eplrs = True
 
     class ZTZ_96B(unittype.VehicleType):
         id = "ZTZ96B"
@@ -1504,6 +1568,13 @@ class Armor:
         detection_range = 0
         threat_range = 3000
         air_weapon_dist = 0
+
+    class SPG_Sturmpanzer_IV_Brummbar(unittype.VehicleType):
+        id = "SturmPzIV"
+        name = "SPG Sturmpanzer IV Brummbar"
+        detection_range = 0
+        threat_range = 4500
+        air_weapon_dist = 2500
 
     class IFV_Sd_Kfz_234_2_Puma(unittype.VehicleType):
         id = "Sd_Kfz_234_2_Puma"
@@ -1736,7 +1807,7 @@ vehicle_map = {
     "SAU Gvozdika": Artillery.SPH_2S1_Gvozdika_122mm,
     "SAU Msta": Artillery.SPH_2S19_Msta_152mm,
     "SAU Akatsia": Artillery.SPH_2S3_Akatsia_152mm,
-    "SAU 2-C9": Artillery.SPH_2S9_Nona_120mm_M,
+    "SAU 2-C9": Artillery.SPM_2S9_Nona_120mm_M,
     "M-109": Artillery.SPH_M109_Paladin_155mm,
     "SpGH_Dana": Artillery.SPH_Dana_vz77_152mm,
     "AAV7": Armor.APC_AAV_7_Amphibious,
@@ -1744,12 +1815,12 @@ vehicle_map = {
     "BMP-1": Armor.IFV_BMP_1,
     "BMP-2": Armor.IFV_BMP_2,
     "BMP-3": Armor.IFV_BMP_3,
-    "BRDM-2": Armor.IFV_BRDM_2,
+    "BRDM-2": Armor.Scout_BRDM_2,
     "BTR-80": Armor.APC_BTR_80,
     "BTR_D": Armor.APC_BTR_RD,
-    "Cobra": Armor.APC_Cobra__Scout,
+    "Cobra": Armor.Scout_Cobra,
     "LAV-25": Armor.IFV_LAV_25,
-    "M1043 HMMWV Armament": Armor.APC_HMMWV__Scout,
+    "M1043 HMMWV Armament": Armor.Scout_HMMWV,
     "M1045 HMMWV TOW": Armor.ATGM_HMMWV,
     "M1126 Stryker ICV": Armor.IFV_M1126_Stryker_ICV,
     "M-113": Armor.APC_M113,
@@ -1771,9 +1842,9 @@ vehicle_map = {
     "Soldier M4": Infantry.Infantry_M4,
     "Soldier M4 GRG": Infantry.Infantry_M4_Georgia,
     "Soldier RPG": Infantry.Infantry_RPG,
-    "MLRS FDDM": Artillery.HUMVEE_JTAC,
+    "MLRS FDDM": Artillery.MRLS_FDDM__FC,
     "Grad-URAL": Artillery.MLRS_BM_21_Grad_122mm,
-    "Uragan_BM-27": Artillery.MLRS_BM_27_Uragan_220mm,
+    "Uragan_BM-27": Artillery.MLRS_9K57_Uragan_BM_27_220mm,
     "Smerch": Artillery.MLRS_9A52_Smerch_CM_300mm,
     "Smerch_HE": Artillery.MLRS_9A52_Smerch_HE_300mm,
     "MLRS": Artillery.MLRS_M270_227mm,
@@ -1792,7 +1863,7 @@ vehicle_map = {
     "Patriot AMG": AirDefence.SAM_Patriot_CR__AMG_AN_MRC_137,
     "Patriot ECS": AirDefence.SAM_Patriot_ECS,
     "Gepard": AirDefence.SPAAA_Gepard,
-    "Hawk pcp": AirDefence.SAM_Hawk_Generator__PCP,
+    "Hawk pcp": AirDefence.SAM_Hawk_Platoon_Command_Post__PCP,
     "Vulcan": AirDefence.SPAAA_Vulcan_M163,
     "Hawk ln": AirDefence.SAM_Hawk_LN_M192,
     "M48 Chaparral": AirDefence.SAM_Chaparral_M48,
@@ -1810,16 +1881,16 @@ vehicle_map = {
     "ZU-23 Emplacement Closed": AirDefence.AAA_ZU_23_Closed_Emplacement,
     "ZU-23 Emplacement": AirDefence.AAA_ZU_23_Emplacement,
     "Ural-375 ZU-23": AirDefence.SPAAA_ZU_23_2_Mounted_Ural_375,
-    "ZU-23 Closed Insurgent": AirDefence.AAA_ZU_23_Closed_Emplacement_Insurgent,
+    "ZU-23 Closed Insurgent": AirDefence.AAA_ZU_23_Insurgent_Closed_Emplacement,
     "Ural-375 ZU-23 Insurgent": AirDefence.SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375,
-    "ZU-23 Insurgent": AirDefence.AAA_ZU_23_Insurgent,
+    "ZU-23 Insurgent": AirDefence.AAA_ZU_23_Insurgent_Emplacement,
     "SA-18 Igla manpad": AirDefence.MANPADS_SA_18_Igla_Grouse,
     "SA-18 Igla comm": AirDefence.MANPADS_SA_18_Igla_Grouse_C2,
     "SA-18 Igla-S manpad": AirDefence.MANPADS_SA_18_Igla_S_Grouse,
     "SA-18 Igla-S comm": AirDefence.MANPADS_SA_18_Igla_S_Grouse_C2,
     "Igla manpad INS": AirDefence.MANPADS_SA_18_Igla_Grouse_Ins,
     "1L13 EWR": AirDefence.EWR_1L13,
-    "Kub 1S91 str": AirDefence.SAM_SA_6_Kub_Long_Track_STR,
+    "Kub 1S91 str": AirDefence.SAM_SA_6_Kub_Straight_Flush_STR,
     "S-300PS 40B6M tr": AirDefence.SAM_SA_10_S_300_Grumble_Flap_Lid_TR,
     "S-300PS 40B6MD sr": AirDefence.SAM_SA_10_S_300_Grumble_Clam_Shell_SR,
     "55G6 EWR": AirDefence.EWR_55G6,
@@ -1841,7 +1912,6 @@ vehicle_map = {
     "TACAN_beacon": Fortification.Beacon_TACAN_Portable_TTS_3030,
     "Challenger2": Armor.MBT_Challenger_II,
     "Leclerc": Armor.MBT_Leclerc,
-    "Leopard-2": Armor.MBT_Leopard_2,
     "M-60": Armor.MBT_M60A3_Patton,
     "M1128 Stryker MGS": Armor.SPG_Stryker_MGS,
     "M-1 Abrams": Armor.MBT_M1A2_Abrams,
@@ -1851,28 +1921,28 @@ vehicle_map = {
     "T-90": Armor.MBT_T_90,
     "Leopard1A3": Armor.MBT_Leopard_1A3,
     "Merkava_Mk4": Armor.MBT_Merkava_IV,
-    "Ural-4320 APA-5D": Unarmed.GPU_APA_5D,
+    "Ural-4320 APA-5D": Unarmed.GPU_APA_5D_on_Ural_4320,
     "ATMZ-5": Unarmed.Refueler_ATMZ_5,
     "ATZ-10": Unarmed.Refueler_ATZ_10,
     "GAZ-3307": Unarmed.Truck_GAZ_3307,
     "GAZ-3308": Unarmed.Truck_GAZ_3308,
     "GAZ-66": Unarmed.Truck_GAZ_66,
     "M978 HEMTT Tanker": Unarmed.Refueler_M978_HEMTT,
-    "HEMTT TFFT": Unarmed.Truck_HEMMT_TFFT_Fire,
+    "HEMTT TFFT": Unarmed.Firefighter_HEMMT_TFFT,
     "IKARUS Bus": Unarmed.Bus_IKARUS_280,
     "KAMAZ Truck": Unarmed.Truck_KAMAZ_43101,
     "LAZ Bus": Unarmed.Bus_LAZ_695,
     "LiAZ Bus": Unarmed.Bus_LiAZ_677,
-    "Hummer": Unarmed.APC_HMMWV_Jeep,
+    "Hummer": Unarmed.LUV_HMMWV_Jeep,
     "M 818": Unarmed.Truck_M818_6x6,
     "MAZ-6303": Unarmed.Truck_MAZ_6303,
     "Predator GCS": Unarmed.MCC_Predator_UAV_CP__GCS,
     "Predator TrojanSpirit": Unarmed.MCC_COMM_Predator_UAV_CL,
     "Suidae": Unarmed.Suidae,
-    "Tigr_233036": Unarmed.APC_Tigr,
+    "Tigr_233036": Unarmed.LUV_Tigr,
     "Trolley bus": Unarmed.Bus_ZIU_9_Trolley,
     "UAZ-469": Unarmed.LUV_UAZ_469_Jeep,
-    "Ural ATsP-6": Unarmed.Truck_Ural_ATsP_6_Firefighter,
+    "Ural ATsP-6": Unarmed.Firefighter_Ural_ATsP_6,
     "Ural-4320-31": Unarmed.Truck_Ural_4320_31_Arm_d,
     "Ural-4320T": Unarmed.Truck_Ural_4320T,
     "Ural-375 PBU": Unarmed.Truck_Ural_375_Mobile_C2,
@@ -1892,31 +1962,42 @@ vehicle_map = {
     "Coach a passenger": Carriage.Passenger_Car,
     "Coach a platform": Carriage.Coach_Platform,
     "Scud_B": MissilesSS.SSM_SS_1C_Scud_B,
-    "M4_Sherman": Armor.MT_M4_Sherman,
+    "M4_Sherman": Armor.Tk_M4_Sherman,
     "M2A1_halftrack": Armor.APC_M2A1_Halftrack,
     "S_75M_Volhov": AirDefence.SAM_SA_2_S_75_Guideline_LN,
     "SNR_75V": AirDefence.SAM_SA_2_S_75_Fan_Song_TR,
     "ZSU_57_2": AirDefence.SPAAA_ZSU_57_2,
     "T-72B3": Armor.MBT_T_72B3,
-    "BTR-82A": Armor.APC_BTR_82A,
+    "BTR-82A": Armor.IFV_BTR_82A,
     "S-60_Type59_Artillery": AirDefence.AAA_S_60_57mm,
+    "generator_5i57": AirDefence.Disel_Power_Station_5I57A,
+    "ATZ-5": Unarmed.Refueler_ATZ_5,
+    "AA8": Unarmed.Fire_Fight_Vehicle_AA_7_2_60,
+    "PT_76": Armor.LT_PT_76,
     "Bedford_MWD": Unarmed.Truck_Bedford,
-    "bofors40": AirDefence.AAA_40mm_Bofors,
+    "bofors40": AirDefence.AAA_Bofors_40mm,
     "rapier_fsa_launcher": AirDefence.SAM_Rapier_LN,
     "rapier_fsa_optical_tracker_unit": AirDefence.SAM_Rapier_Tracker,
     "rapier_fsa_blindfire_radar": AirDefence.SAM_Rapier_Blindfire_TR,
     "Land_Rover_101_FC": Unarmed.Truck_Land_Rover_101_FC,
     "Land_Rover_109_S3": Unarmed.LUV_Land_Rover_109,
+    "Chieftain_mk3": Armor.MBT_Chieftain_Mk_3,
     "hy_launcher": MissilesSS.AShM_SS_N_2_Silkworm,
     "Silkworm_SR": MissilesSS.AShM_Silkworm_SR,
     "ES44AH": Locomotive.Loco_ES44AH,
     "Boxcartrinity": Carriage.Flatcar,
     "Tankcartrinity": Carriage.Tank_Cartrinity,
     "Wellcarnsc": Carriage.Well_Car,
-    "Pz_IV_H": Armor.MT_PzIV_H,
+    "Pz_IV_H": Armor.Tk_PzIV_H,
     "Sd_Kfz_251": Armor.APC_Sd_Kfz_251_Halftrack,
     "flak18": AirDefence.AAA_8_8cm_Flak_18,
     "Blitz_36-6700A": Unarmed.Truck_Opel_Blitz,
+    "Leopard-2A5": Armor.MBT_Leopard_2A5,
+    "Leopard-2": Armor.MBT_Leopard_2A6M,
+    "leopard-2A4": Armor.MBT_Leopard_2A4,
+    "leopard-2A4_trs": Armor.MBT_Leopard_2A4_Trs,
+    "T155_Firtina": Artillery.SPH_T155_Firtina_155mm,
+    "VAB_Mephisto": Armor.ATGM_VAB_Mephisto,
     "ZTZ96B": Armor.ZTZ_96B,
     "ZBD04A": Armor.ZBD_04A,
     "HQ-7_LN_SP": AirDefence.HQ_7_Self_Propelled_LN,
@@ -1932,7 +2013,7 @@ vehicle_map = {
     "Jagdpanther_G1": Armor.SPG_Jagdpanther_G1,
     "JagdPz_IV": Armor.SPG_Jagdpanzer_IV,
     "Stug_IV": Armor.SPG_StuG_IV,
-    "SturmPzIV": Artillery.SPG_Sturmpanzer_IV_Brummbar,
+    "SturmPzIV": Armor.SPG_Sturmpanzer_IV_Brummbar,
     "Sd_Kfz_234_2_Puma": Armor.IFV_Sd_Kfz_234_2_Puma,
     "flak30": AirDefence.AAA_Flak_38_20mm,
     "flak36": AirDefence.AAA_8_8cm_Flak_36,

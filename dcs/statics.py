@@ -4,7 +4,6 @@ import dcs.unittype as unittype
 
 
 class Fortification:
-
     class Command_Center(unittype.StaticType):
         id = ".Command Center"
         name = "Command Center"
@@ -624,6 +623,7 @@ class Fortification:
         shape_name = "Freya_Shelter_Concrete"
         rate = 20
 
+
 fortification_map = {
     ".Command Center": Fortification.Command_Center,
     "Hangar A": Fortification.Hangar_A,
@@ -732,7 +732,6 @@ fortification_map = {
 
 
 class GroundObject:
-
     class Building(unittype.StaticType):
         id = "Building"
         name = "Building"
@@ -753,6 +752,7 @@ class GroundObject:
         name = "Train"
         category = ""
 
+
 groundobject_map = {
     "Building": GroundObject.Building,
     "Bridge": GroundObject.Bridge,
@@ -762,7 +762,6 @@ groundobject_map = {
 
 
 class Warehouse:
-
     class Warehouse(unittype.StaticType):
         id = "Warehouse"
         name = "Warehouse"
@@ -798,6 +797,7 @@ class Warehouse:
         category = "Warehouses"
         rate = 100
 
+
 warehouse_map = {
     "Warehouse": Warehouse.Warehouse,
     "Tank": Warehouse.Tank_1,
@@ -808,7 +808,6 @@ warehouse_map = {
 
 
 class Cargo:
-
     class UH_1H_cargo(unittype.StaticType):
         id = "uh1h_cargo"
         name = "UH-1H cargo"
@@ -928,6 +927,7 @@ class Cargo:
         category = "Cargos"
         rate = 100
         can_cargo = True
+
 
 cargo_map = {
     "uh1h_cargo": Cargo.UH_1H_cargo,

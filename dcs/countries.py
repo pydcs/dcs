@@ -17,12 +17,12 @@ class Russia(Country):
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
             Grad_MRL_FDDM__FC = vehicles.Artillery.Grad_MRL_FDDM__FC
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
-            SPH_2S9_Nona_120mm_M = vehicles.Artillery.SPH_2S9_Nona_120mm_M
+            SPM_2S9_Nona_120mm_M = vehicles.Artillery.SPM_2S9_Nona_120mm_M
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
             SPH_2S19_Msta_152mm = vehicles.Artillery.SPH_2S19_Msta_152mm
             MLRS_9A52_Smerch_CM_300mm = vehicles.Artillery.MLRS_9A52_Smerch_CM_300mm
-            MLRS_BM_27_Uragan_220mm = vehicles.Artillery.MLRS_BM_27_Uragan_220mm
+            MLRS_9K57_Uragan_BM_27_220mm = vehicles.Artillery.MLRS_9K57_Uragan_BM_27_220mm
             MLRS_9A52_Smerch_HE_300mm = vehicles.Artillery.MLRS_9A52_Smerch_HE_300mm
 
         class Infantry:
@@ -36,7 +36,7 @@ class Russia(Country):
             EWR_55G6 = vehicles.AirDefence.EWR_55G6
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             MCC_SR_Sborka_Dog_Ear_SR = vehicles.AirDefence.MCC_SR_Sborka_Dog_Ear_SR
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
@@ -64,6 +64,7 @@ class Russia(Country):
             MANPADS_SA_18_Igla_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse
             MANPADS_SA_18_Igla_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_C2
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
             SPAAA_ZSU_57_2 = vehicles.AirDefence.SPAAA_ZSU_57_2
 
         class Fortification:
@@ -88,26 +89,28 @@ class Russia(Country):
             Bus_LiAZ_677 = vehicles.Unarmed.Bus_LiAZ_677
             Truck_MAZ_6303 = vehicles.Unarmed.Truck_MAZ_6303
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
-            APC_Tigr = vehicles.Unarmed.APC_Tigr
+            LUV_Tigr = vehicles.Unarmed.LUV_Tigr
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
             LUV_UAZ_469_Jeep = vehicles.Unarmed.LUV_UAZ_469_Jeep
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             Truck_Ural_375_Mobile_C2 = vehicles.Unarmed.Truck_Ural_375_Mobile_C2
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
             Truck_Ural_4320_31_Arm_d = vehicles.Unarmed.Truck_Ural_4320_31_Arm_d
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
             GPU_APA_80_on_ZIL_131 = vehicles.Unarmed.GPU_APA_80_on_ZIL_131
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
             Truck_ZIL_4331 = vehicles.Unarmed.Truck_ZIL_4331
+            Fire_Fight_Vehicle_AA_7_2_60 = vehicles.Unarmed.Fire_Fight_Vehicle_AA_7_2_60
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
 
         class Armor:
             IFV_BMD_1 = vehicles.Armor.IFV_BMD_1
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             IFV_BMP_3 = vehicles.Armor.IFV_BMP_3
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_BTR_RD = vehicles.Armor.APC_BTR_RD
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             APC_MTLB = vehicles.Armor.APC_MTLB
@@ -116,7 +119,8 @@ class Russia(Country):
             MBT_T_80U = vehicles.Armor.MBT_T_80U
             MBT_T_90 = vehicles.Armor.MBT_T_90
             MBT_T_72B3 = vehicles.Armor.MBT_T_72B3
-            APC_BTR_82A = vehicles.Armor.APC_BTR_82A
+            IFV_BTR_82A = vehicles.Armor.IFV_BTR_82A
+            LT_PT_76 = vehicles.Armor.LT_PT_76
 
         class MissilesSS:
             SSM_SS_1C_Scud_B = vehicles.MissilesSS.SSM_SS_1C_Scud_B
@@ -320,6 +324,7 @@ class Russia(Country):
         Bulker_Yakushev = ships.Bulker_Yakushev
         Cargo_Ivanov = ships.Cargo_Ivanov
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
         CV_1143_5_Admiral_Kuznetsov_2017 = ships.CV_1143_5_Admiral_Kuznetsov_2017
 
     class CallsignAWACS:
@@ -456,13 +461,13 @@ class Ukraine(Country):
         class Artillery:
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
-            SPH_2S9_Nona_120mm_M = vehicles.Artillery.SPH_2S9_Nona_120mm_M
+            SPM_2S9_Nona_120mm_M = vehicles.Artillery.SPM_2S9_Nona_120mm_M
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
             SPH_2S19_Msta_152mm = vehicles.Artillery.SPH_2S19_Msta_152mm
             MLRS_9A52_Smerch_CM_300mm = vehicles.Artillery.MLRS_9A52_Smerch_CM_300mm
             MLRS_9A52_Smerch_HE_300mm = vehicles.Artillery.MLRS_9A52_Smerch_HE_300mm
-            MLRS_BM_27_Uragan_220mm = vehicles.Artillery.MLRS_BM_27_Uragan_220mm
+            MLRS_9K57_Uragan_BM_27_220mm = vehicles.Artillery.MLRS_9K57_Uragan_BM_27_220mm
 
         class Infantry:
             Paratrooper_AKS = vehicles.Infantry.Paratrooper_AKS
@@ -473,7 +478,7 @@ class Ukraine(Country):
             SAM_SA_19_Tunguska_Grison = vehicles.AirDefence.SAM_SA_19_Tunguska_Grison
             EWR_55G6 = vehicles.AirDefence.EWR_55G6
             MCC_SR_Sborka_Dog_Ear_SR = vehicles.AirDefence.MCC_SR_Sborka_Dog_Ear_SR
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
@@ -500,6 +505,7 @@ class Ukraine(Country):
             MANPADS_SA_18_Igla_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse
             MANPADS_SA_18_Igla_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_C2
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
             SAM_SA_2_S_75_Guideline_LN = vehicles.AirDefence.SAM_SA_2_S_75_Guideline_LN
             SAM_SA_2_S_75_Fan_Song_TR = vehicles.AirDefence.SAM_SA_2_S_75_Fan_Song_TR
 
@@ -528,32 +534,34 @@ class Ukraine(Country):
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
             LUV_UAZ_469_Jeep = vehicles.Unarmed.LUV_UAZ_469_Jeep
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             Truck_Ural_375_Mobile_C2 = vehicles.Unarmed.Truck_Ural_375_Mobile_C2
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
             GPU_APA_80_on_ZIL_131 = vehicles.Unarmed.GPU_APA_80_on_ZIL_131
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
             Truck_ZIL_4331 = vehicles.Unarmed.Truck_ZIL_4331
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_Ural_4320_31_Arm_d = vehicles.Unarmed.Truck_Ural_4320_31_Arm_d
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
 
         class Armor:
             IFV_BMD_1 = vehicles.Armor.IFV_BMD_1
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             IFV_BMP_3 = vehicles.Armor.IFV_BMP_3
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_BTR_RD = vehicles.Armor.APC_BTR_RD
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             APC_MTLB = vehicles.Armor.APC_MTLB
             MBT_T_55 = vehicles.Armor.MBT_T_55
             MBT_T_72B = vehicles.Armor.MBT_T_72B
             MBT_T_80U = vehicles.Armor.MBT_T_80U
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
+            LT_PT_76 = vehicles.Armor.LT_PT_76
 
         class MissilesSS:
             SSM_SS_1C_Scud_B = vehicles.MissilesSS.SSM_SS_1C_Scud_B
@@ -781,7 +789,7 @@ class USA(Country):
         class Artillery:
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
             SPG_M12_GMC_155mm = vehicles.Artillery.SPG_M12_GMC_155mm
 
@@ -793,7 +801,7 @@ class USA(Country):
         class AirDefence:
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Avenger__Stinger = vehicles.AirDefence.SAM_Avenger__Stinger
@@ -808,7 +816,7 @@ class USA(Country):
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
             SPAAA_Vulcan_M163 = vehicles.AirDefence.SPAAA_Vulcan_M163
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_8_8cm_Flak_36 = vehicles.AirDefence.AAA_8_8cm_Flak_36
             SAM_Roland_ADS = vehicles.AirDefence.SAM_Roland_ADS
             SAM_Roland_EWR = vehicles.AirDefence.SAM_Roland_EWR
@@ -830,8 +838,8 @@ class USA(Country):
             Beacon_TACAN_Portable_TTS_3030 = vehicles.Fortification.Beacon_TACAN_Portable_TTS_3030
 
         class Unarmed:
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
             MCC_Predator_UAV_CP__GCS = vehicles.Unarmed.MCC_Predator_UAV_CP__GCS
@@ -849,16 +857,16 @@ class USA(Country):
             APC_M113 = vehicles.Armor.APC_M113
             IFV_M2A2_Bradley = vehicles.Armor.IFV_M2A2_Bradley
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             IFV_M1126_Stryker_ICV = vehicles.Armor.IFV_M1126_Stryker_ICV
             SPG_Stryker_MGS = vehicles.Armor.SPG_Stryker_MGS
             ATGM_Stryker = vehicles.Armor.ATGM_Stryker
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
             APC_TPz_Fuchs = vehicles.Armor.APC_TPz_Fuchs
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             SPG_M10_GMC = vehicles.Armor.SPG_M10_GMC
             Car_M8_Greyhound_Armored = vehicles.Armor.Car_M8_Greyhound_Armored
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
@@ -1076,6 +1084,7 @@ class USA(Country):
         CVN_73_George_Washington = ships.CVN_73_George_Washington
         CVN_75_Harry_S__Truman = ships.CVN_75_Harry_S__Truman
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -1208,19 +1217,20 @@ class Turkey(Country):
 
         class Artillery:
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
+            SPH_T155_Firtina_155mm = vehicles.Artillery.SPH_T155_Firtina_155mm
 
         class AirDefence:
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_Avenger__Stinger = vehicles.AirDefence.SAM_Avenger__Stinger
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             MANPADS_SA_18_Igla_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse
             MANPADS_SA_18_Igla_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_C2
             SAM_Rapier_LN = vehicles.AirDefence.SAM_Rapier_LN
@@ -1238,10 +1248,10 @@ class Turkey(Country):
             Beacon_TACAN_Portable_TTS_3030 = vehicles.Fortification.Beacon_TACAN_Portable_TTS_3030
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             MCC_Predator_UAV_CP__GCS = vehicles.Unarmed.MCC_Predator_UAV_CP__GCS
             MCC_COMM_Predator_UAV_CL = vehicles.Unarmed.MCC_COMM_Predator_UAV_CL
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
@@ -1250,14 +1260,15 @@ class Turkey(Country):
 
         class Armor:
             APC_M113 = vehicles.Armor.APC_M113
-            APC_Cobra__Scout = vehicles.Armor.APC_Cobra__Scout
+            Scout_Cobra = vehicles.Armor.Scout_Cobra
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             APC_AAV_7_Amphibious = vehicles.Armor.APC_AAV_7_Amphibious
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
+            MBT_Leopard_2A4_Trs = vehicles.Armor.MBT_Leopard_2A4_Trs
 
         class Locomotive:
             Loco_VL80_Electric = vehicles.Locomotive.Loco_VL80_Electric
@@ -1266,6 +1277,7 @@ class Turkey(Country):
             Loco_DRG_Class_86 = vehicles.Locomotive.Loco_DRG_Class_86
 
         class Carriage:
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Freight_Van = vehicles.Carriage.Freight_Van
             Open_Wagon = vehicles.Carriage.Open_Wagon
             Tank_Car_blue = vehicles.Carriage.Tank_Car_blue
@@ -1401,6 +1413,7 @@ class Turkey(Country):
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         FFG_Oliver_Hazzard_Perry = ships.FFG_Oliver_Hazzard_Perry
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -1533,7 +1546,7 @@ class UK(Country):
 
         class Artillery:
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
             SPG_M12_GMC_155mm = vehicles.Artillery.SPG_M12_GMC_155mm
 
         class Infantry:
@@ -1548,7 +1561,7 @@ class UK(Country):
             SAM_Rapier_Blindfire_TR = vehicles.AirDefence.SAM_Rapier_Blindfire_TR
             AAA_M45_Quadmount_HB_12_7mm = vehicles.AirDefence.AAA_M45_Quadmount_HB_12_7mm
             AAA_QF_3_7 = vehicles.AirDefence.AAA_QF_3_7
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_M1_37mm = vehicles.AirDefence.AAA_M1_37mm
 
         class Fortification:
@@ -1562,7 +1575,7 @@ class UK(Country):
             Beacon_TACAN_Portable_TTS_3030 = vehicles.Fortification.Beacon_TACAN_Portable_TTS_3030
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             MCC_Predator_UAV_CP__GCS = vehicles.Unarmed.MCC_Predator_UAV_CP__GCS
             MCC_COMM_Predator_UAV_CL = vehicles.Unarmed.MCC_COMM_Predator_UAV_CL
@@ -1581,14 +1594,15 @@ class UK(Country):
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             CT_Centaur_IV = vehicles.Armor.CT_Centaur_IV
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             SPG_M10_GMC = vehicles.Armor.SPG_M10_GMC
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             LT_Mk_VII_Tetrarch = vehicles.Armor.LT_Mk_VII_Tetrarch
             Car_Daimler_Armored = vehicles.Armor.Car_Daimler_Armored
+            MBT_Chieftain_Mk_3 = vehicles.Armor.MBT_Chieftain_Mk_3
             HIT_Churchill_VII = vehicles.Armor.HIT_Churchill_VII
             Car_M8_Greyhound_Armored = vehicles.Armor.Car_M8_Greyhound_Armored
 
@@ -1731,6 +1745,7 @@ class UK(Country):
         LST_Mk_II = ships.LST_Mk_II
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
         Boat_Schnellboot_type_S130 = ships.Boat_Schnellboot_type_S130
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         Boat_LCVP_Higgins = ships.Boat_LCVP_Higgins
 
@@ -1859,16 +1874,16 @@ class France(Country):
 
         class Artillery:
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
             SPG_M12_GMC_155mm = vehicles.Artillery.SPG_M12_GMC_155mm
 
         class AirDefence:
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_Roland_ADS = vehicles.AirDefence.SAM_Roland_ADS
             SAM_Roland_EWR = vehicles.AirDefence.SAM_Roland_EWR
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
@@ -1903,9 +1918,10 @@ class France(Country):
         class Armor:
             MBT_Leclerc = vehicles.Armor.MBT_Leclerc
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             SPG_M10_GMC = vehicles.Armor.SPG_M10_GMC
+            ATGM_VAB_Mephisto = vehicles.Armor.ATGM_VAB_Mephisto
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
             CT_Centaur_IV = vehicles.Armor.CT_Centaur_IV
@@ -2045,6 +2061,7 @@ class France(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
         LST_Mk_II = ships.LST_Mk_II
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         Boat_LCVP_Higgins = ships.Boat_LCVP_Higgins
@@ -2175,12 +2192,11 @@ class Germany(Country):
         class Artillery:
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
-            SPG_Sturmpanzer_IV_Brummbar = vehicles.Artillery.SPG_Sturmpanzer_IV_Brummbar
 
         class Infantry:
             Infantry_Mauser_98 = vehicles.Infantry.Infantry_Mauser_98
@@ -2194,7 +2210,7 @@ class Germany(Country):
             SAM_Patriot_C2_ICC = vehicles.AirDefence.SAM_Patriot_C2_ICC
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_Roland_ADS = vehicles.AirDefence.SAM_Roland_ADS
@@ -2203,7 +2219,7 @@ class Germany(Country):
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
             SPAAA_ZU_23_2_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Mounted_Ural_375
@@ -2212,7 +2228,7 @@ class Germany(Country):
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             SAM_SA_10_S_300_Grumble_TEL_D = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_TEL_D
@@ -2250,11 +2266,11 @@ class Germany(Country):
             Bunker_with_Fire_Control_Center = vehicles.Fortification.Bunker_with_Fire_Control_Center
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
             GPU_APA_80_on_ZIL_131 = vehicles.Unarmed.GPU_APA_80_on_ZIL_131
             Refueler_ATMZ_5 = vehicles.Unarmed.Refueler_ATMZ_5
             Refueler_ATZ_10 = vehicles.Unarmed.Refueler_ATZ_10
@@ -2264,33 +2280,37 @@ class Germany(Country):
             Truck_KAMAZ_43101 = vehicles.Unarmed.Truck_KAMAZ_43101
             LUV_Kettenrad = vehicles.Unarmed.LUV_Kettenrad
             LUV_UAZ_469_Jeep = vehicles.Unarmed.LUV_UAZ_469_Jeep
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
             Truck_Ural_4320_31_Arm_d = vehicles.Unarmed.Truck_Ural_4320_31_Arm_d
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
             LUV_Kubelwagen_82 = vehicles.Unarmed.LUV_Kubelwagen_82
             Carrier_Sd_Kfz_7_Tractor = vehicles.Unarmed.Carrier_Sd_Kfz_7_Tractor
 
         class Armor:
             APC_M113 = vehicles.Armor.APC_M113
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
+            MBT_Leopard_2A5 = vehicles.Armor.MBT_Leopard_2A5
             IFV_Marder = vehicles.Armor.IFV_Marder
             APC_TPz_Fuchs = vehicles.Armor.APC_TPz_Fuchs
             APC_MTLB = vehicles.Armor.APC_MTLB
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             MBT_T_55 = vehicles.Armor.MBT_T_55
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             APC_Sd_Kfz_251_Halftrack = vehicles.Armor.APC_Sd_Kfz_251_Halftrack
+            MBT_Leopard_2A4 = vehicles.Armor.MBT_Leopard_2A4
             HT_Pz_Kpfw_VI_Tiger_I = vehicles.Armor.HT_Pz_Kpfw_VI_Tiger_I
             HT_Pz_Kpfw_VI_Ausf__B_Tiger_II = vehicles.Armor.HT_Pz_Kpfw_VI_Ausf__B_Tiger_II
             MT_Pz_Kpfw_V_Panther_Ausf_G = vehicles.Armor.MT_Pz_Kpfw_V_Panther_Ausf_G
             SPG_Jagdpanther_G1 = vehicles.Armor.SPG_Jagdpanther_G1
             SPG_Jagdpanzer_IV = vehicles.Armor.SPG_Jagdpanzer_IV
             SPG_StuG_IV = vehicles.Armor.SPG_StuG_IV
+            SPG_Sturmpanzer_IV_Brummbar = vehicles.Armor.SPG_Sturmpanzer_IV_Brummbar
             IFV_Sd_Kfz_234_2_Puma = vehicles.Armor.IFV_Sd_Kfz_234_2_Puma
             SPG_StuG_III_Ausf__G = vehicles.Armor.SPG_StuG_III_Ausf__G
             SPG_Sd_Kfz_184_Elefant = vehicles.Armor.SPG_Sd_Kfz_184_Elefant
@@ -2308,6 +2328,7 @@ class Germany(Country):
         class Carriage:
             Wagon_G10__Germany = vehicles.Carriage.Wagon_G10__Germany
             DR_50_ton_flat_wagon = vehicles.Carriage.DR_50_ton_flat_wagon
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Freight_Van = vehicles.Carriage.Freight_Van
             Open_Wagon = vehicles.Carriage.Open_Wagon
@@ -2436,6 +2457,8 @@ class Germany(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
+        FAC_La_Combattante_IIa = ships.FAC_La_Combattante_IIa
         U_boat_VIIC_U_flak = ships.U_boat_VIIC_U_flak
         Boat_Schnellboot_type_S130 = ships.Boat_Schnellboot_type_S130
 
@@ -2569,23 +2592,23 @@ class USAFAggressors(Country):
     class Vehicle:
 
         class Artillery:
-            SPG_Sturmpanzer_IV_Brummbar = vehicles.Artillery.SPG_Sturmpanzer_IV_Brummbar
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
             Grad_MRL_FDDM__FC = vehicles.Artillery.Grad_MRL_FDDM__FC
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
-            SPH_2S9_Nona_120mm_M = vehicles.Artillery.SPH_2S9_Nona_120mm_M
+            SPM_2S9_Nona_120mm_M = vehicles.Artillery.SPM_2S9_Nona_120mm_M
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
             SPH_2S19_Msta_152mm = vehicles.Artillery.SPH_2S19_Msta_152mm
             MLRS_9A52_Smerch_CM_300mm = vehicles.Artillery.MLRS_9A52_Smerch_CM_300mm
             MLRS_9A52_Smerch_HE_300mm = vehicles.Artillery.MLRS_9A52_Smerch_HE_300mm
-            MLRS_BM_27_Uragan_220mm = vehicles.Artillery.MLRS_BM_27_Uragan_220mm
+            MLRS_9K57_Uragan_BM_27_220mm = vehicles.Artillery.MLRS_9K57_Uragan_BM_27_220mm
             SPH_Dana_vz77_152mm = vehicles.Artillery.SPH_Dana_vz77_152mm
             SPG_M12_GMC_155mm = vehicles.Artillery.SPG_M12_GMC_155mm
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
             PLZ_05 = vehicles.Artillery.PLZ_05
+            SPH_T155_Firtina_155mm = vehicles.Artillery.SPH_T155_Firtina_155mm
 
         class Infantry:
             Infantry_Mauser_98 = vehicles.Infantry.Infantry_Mauser_98
@@ -2618,7 +2641,7 @@ class USAFAggressors(Country):
             EWR_55G6 = vehicles.AirDefence.EWR_55G6
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             MCC_SR_Sborka_Dog_Ear_SR = vehicles.AirDefence.MCC_SR_Sborka_Dog_Ear_SR
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
@@ -2643,8 +2666,9 @@ class USAFAggressors(Country):
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
             SPAAA_ZSU_57_2 = vehicles.AirDefence.SPAAA_ZSU_57_2
             AAA_QF_3_7 = vehicles.AirDefence.AAA_QF_3_7
             AAA_M45_Quadmount_HB_12_7mm = vehicles.AirDefence.AAA_M45_Quadmount_HB_12_7mm
@@ -2654,12 +2678,12 @@ class USAFAggressors(Country):
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Chaparral_M48 = vehicles.AirDefence.SAM_Chaparral_M48
             MANPADS_SA_18_Igla_S_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_S_Grouse
             MANPADS_SA_18_Igla_S_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_S_Grouse_C2
-            AAA_ZU_23_Closed_Emplacement_Insurgent = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement_Insurgent
-            AAA_ZU_23_Insurgent = vehicles.AirDefence.AAA_ZU_23_Insurgent
+            AAA_ZU_23_Insurgent_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Insurgent_Closed_Emplacement
+            AAA_ZU_23_Insurgent_Emplacement = vehicles.AirDefence.AAA_ZU_23_Insurgent_Emplacement
             SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375
             SAM_Avenger__Stinger = vehicles.AirDefence.SAM_Avenger__Stinger
             SAM_Roland_ADS = vehicles.AirDefence.SAM_Roland_ADS
@@ -2711,10 +2735,10 @@ class USAFAggressors(Country):
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
             LUV_UAZ_469_Jeep = vehicles.Unarmed.LUV_UAZ_469_Jeep
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             Truck_Ural_375_Mobile_C2 = vehicles.Unarmed.Truck_Ural_375_Mobile_C2
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
             Truck_Ural_4320_31_Arm_d = vehicles.Unarmed.Truck_Ural_4320_31_Arm_d
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
@@ -2722,25 +2746,27 @@ class USAFAggressors(Country):
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
             Truck_ZIL_4331 = vehicles.Unarmed.Truck_ZIL_4331
             Car_Willys_Jeep = vehicles.Unarmed.Car_Willys_Jeep
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
+            Fire_Fight_Vehicle_AA_7_2_60 = vehicles.Unarmed.Fire_Fight_Vehicle_AA_7_2_60
             Truck_Bedford = vehicles.Unarmed.Truck_Bedford
             Truck_GMC_Jimmy_6x6_Truck = vehicles.Unarmed.Truck_GMC_Jimmy_6x6_Truck
             Carrier_M30_Cargo = vehicles.Unarmed.Carrier_M30_Cargo
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_KrAZ_6322_6x6 = vehicles.Unarmed.Truck_KrAZ_6322_6x6
             Truck_GAZ_3308 = vehicles.Unarmed.Truck_GAZ_3308
             Truck_MAZ_6303 = vehicles.Unarmed.Truck_MAZ_6303
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
             Truck_Land_Rover_101_FC = vehicles.Unarmed.Truck_Land_Rover_101_FC
             LUV_Land_Rover_109 = vehicles.Unarmed.LUV_Land_Rover_109
             MCC_Predator_UAV_CP__GCS = vehicles.Unarmed.MCC_Predator_UAV_CP__GCS
             MCC_COMM_Predator_UAV_CL = vehicles.Unarmed.MCC_COMM_Predator_UAV_CL
-            APC_Tigr = vehicles.Unarmed.APC_Tigr
+            LUV_Tigr = vehicles.Unarmed.LUV_Tigr
 
         class Armor:
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             APC_Sd_Kfz_251_Halftrack = vehicles.Armor.APC_Sd_Kfz_251_Halftrack
             HT_Pz_Kpfw_VI_Tiger_I = vehicles.Armor.HT_Pz_Kpfw_VI_Tiger_I
             HT_Pz_Kpfw_VI_Ausf__B_Tiger_II = vehicles.Armor.HT_Pz_Kpfw_VI_Ausf__B_Tiger_II
@@ -2748,6 +2774,7 @@ class USAFAggressors(Country):
             SPG_Jagdpanther_G1 = vehicles.Armor.SPG_Jagdpanther_G1
             SPG_Jagdpanzer_IV = vehicles.Armor.SPG_Jagdpanzer_IV
             SPG_StuG_IV = vehicles.Armor.SPG_StuG_IV
+            SPG_Sturmpanzer_IV_Brummbar = vehicles.Armor.SPG_Sturmpanzer_IV_Brummbar
             IFV_Sd_Kfz_234_2_Puma = vehicles.Armor.IFV_Sd_Kfz_234_2_Puma
             SPG_StuG_III_Ausf__G = vehicles.Armor.SPG_StuG_III_Ausf__G
             SPG_Sd_Kfz_184_Elefant = vehicles.Armor.SPG_Sd_Kfz_184_Elefant
@@ -2755,7 +2782,7 @@ class USAFAggressors(Country):
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             IFV_BMP_3 = vehicles.Armor.IFV_BMP_3
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_BTR_RD = vehicles.Armor.APC_BTR_RD
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             APC_MTLB = vehicles.Armor.APC_MTLB
@@ -2765,14 +2792,15 @@ class USAFAggressors(Country):
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             CT_Centaur_IV = vehicles.Armor.CT_Centaur_IV
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             SPG_M10_GMC = vehicles.Armor.SPG_M10_GMC
             LT_Mk_VII_Tetrarch = vehicles.Armor.LT_Mk_VII_Tetrarch
+            LT_PT_76 = vehicles.Armor.LT_PT_76
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
             HIT_Churchill_VII = vehicles.Armor.HIT_Churchill_VII
             Car_Daimler_Armored = vehicles.Armor.Car_Daimler_Armored
             Car_M8_Greyhound_Armored = vehicles.Armor.Car_M8_Greyhound_Armored
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             APC_M113 = vehicles.Armor.APC_M113
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             MBT_M1A2_Abrams = vehicles.Armor.MBT_M1A2_Abrams
@@ -2780,23 +2808,28 @@ class USAFAggressors(Country):
             MBT_T_90 = vehicles.Armor.MBT_T_90
             APC_AAV_7_Amphibious = vehicles.Armor.APC_AAV_7_Amphibious
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
             MBT_T_72B3 = vehicles.Armor.MBT_T_72B3
-            APC_BTR_82A = vehicles.Armor.APC_BTR_82A
+            IFV_BTR_82A = vehicles.Armor.IFV_BTR_82A
             IFV_M2A2_Bradley = vehicles.Armor.IFV_M2A2_Bradley
             APC_TPz_Fuchs = vehicles.Armor.APC_TPz_Fuchs
-            APC_Cobra__Scout = vehicles.Armor.APC_Cobra__Scout
+            Scout_Cobra = vehicles.Armor.Scout_Cobra
             IFV_LAV_25 = vehicles.Armor.IFV_LAV_25
+            ATGM_VAB_Mephisto = vehicles.Armor.ATGM_VAB_Mephisto
             MBT_Merkava_IV = vehicles.Armor.MBT_Merkava_IV
+            MBT_Leopard_2A5 = vehicles.Armor.MBT_Leopard_2A5
             IFV_Marder = vehicles.Armor.IFV_Marder
+            MBT_Leopard_2A4 = vehicles.Armor.MBT_Leopard_2A4
             MBT_Leclerc = vehicles.Armor.MBT_Leclerc
             ZBD_04A = vehicles.Armor.ZBD_04A
             ZTZ_96B = vehicles.Armor.ZTZ_96B
+            MBT_Leopard_2A4_Trs = vehicles.Armor.MBT_Leopard_2A4_Trs
             MBT_Challenger_II = vehicles.Armor.MBT_Challenger_II
             IFV_M1126_Stryker_ICV = vehicles.Armor.IFV_M1126_Stryker_ICV
             SPG_Stryker_MGS = vehicles.Armor.SPG_Stryker_MGS
             ATGM_Stryker = vehicles.Armor.ATGM_Stryker
             IFV_Warrior = vehicles.Armor.IFV_Warrior
+            MBT_Chieftain_Mk_3 = vehicles.Armor.MBT_Chieftain_Mk_3
 
         class MissilesSS:
             SSM_V_1_Launcher = vehicles.MissilesSS.SSM_V_1_Launcher
@@ -2822,6 +2855,8 @@ class USAFAggressors(Country):
             Well_Car = vehicles.Carriage.Well_Car
             DR_50_ton_flat_wagon = vehicles.Carriage.DR_50_ton_flat_wagon
             Wagon_G10__Germany = vehicles.Carriage.Wagon_G10__Germany
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
@@ -3094,9 +3129,11 @@ class USAFAggressors(Country):
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         Boat_LCVP_Higgins = ships.Boat_LCVP_Higgins
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
         FFG_Oliver_Hazzard_Perry = ships.FFG_Oliver_Hazzard_Perry
         Battlecruiser_1144_2_Pyotr_Velikiy = ships.Battlecruiser_1144_2_Pyotr_Velikiy
         CV_1143_5_Admiral_Kuznetsov_2017 = ships.CV_1143_5_Admiral_Kuznetsov_2017
+        FAC_La_Combattante_IIa = ships.FAC_La_Combattante_IIa
         Type_052B_Destroyer = ships.Type_052B_Destroyer
         Type_052C_Destroyer = ships.Type_052C_Destroyer
         Type_054A_Frigate = ships.Type_054A_Frigate
@@ -3248,7 +3285,7 @@ class Canada(Country):
         class AirDefence:
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_M45_Quadmount_HB_12_7mm = vehicles.AirDefence.AAA_M45_Quadmount_HB_12_7mm
             AAA_QF_3_7 = vehicles.AirDefence.AAA_QF_3_7
             AAA_M1_37mm = vehicles.AirDefence.AAA_M1_37mm
@@ -3264,10 +3301,10 @@ class Canada(Country):
             Beacon_TACAN_Portable_TTS_3030 = vehicles.Fortification.Beacon_TACAN_Portable_TTS_3030
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
             Truck_Bedford = vehicles.Unarmed.Truck_Bedford
             Truck_GMC_Jimmy_6x6_Truck = vehicles.Unarmed.Truck_GMC_Jimmy_6x6_Truck
@@ -3278,10 +3315,10 @@ class Canada(Country):
             APC_M113 = vehicles.Armor.APC_M113
             IFV_LAV_25 = vehicles.Armor.IFV_LAV_25
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
             Car_Daimler_Armored = vehicles.Armor.Car_Daimler_Armored
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
@@ -3299,6 +3336,7 @@ class Canada(Country):
             Loco_DRG_Class_86 = vehicles.Locomotive.Loco_DRG_Class_86
 
         class Carriage:
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Freight_Van = vehicles.Carriage.Freight_Van
             Open_Wagon = vehicles.Carriage.Open_Wagon
             Tank_Car_blue = vehicles.Carriage.Tank_Car_blue
@@ -3559,14 +3597,14 @@ class Spain(Country):
         class AirDefence:
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
             SAM_Roland_ADS = vehicles.AirDefence.SAM_Roland_ADS
             SAM_Roland_EWR = vehicles.AirDefence.SAM_Roland_EWR
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_8_8cm_Flak_18 = vehicles.AirDefence.AAA_8_8cm_Flak_18
             SAM_Patriot_CR__AMG_AN_MRC_137 = vehicles.AirDefence.SAM_Patriot_CR__AMG_AN_MRC_137
             SAM_Patriot_ECS = vehicles.AirDefence.SAM_Patriot_ECS
@@ -3586,7 +3624,7 @@ class Spain(Country):
             Beacon_TACAN_Portable_TTS_3030 = vehicles.Fortification.Beacon_TACAN_Portable_TTS_3030
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             MCC_Predator_UAV_CP__GCS = vehicles.Unarmed.MCC_Predator_UAV_CP__GCS
             MCC_COMM_Predator_UAV_CL = vehicles.Unarmed.MCC_COMM_Predator_UAV_CL
@@ -3594,12 +3632,12 @@ class Spain(Country):
 
         class Armor:
             APC_M113 = vehicles.Armor.APC_M113
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             APC_AAV_7_Amphibious = vehicles.Armor.APC_AAV_7_Amphibious
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
 
         class Locomotive:
             Loco_VL80_Electric = vehicles.Locomotive.Loco_VL80_Electric
@@ -3608,6 +3646,7 @@ class Spain(Country):
             Loco_DRG_Class_86 = vehicles.Locomotive.Loco_DRG_Class_86
 
         class Carriage:
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Freight_Van = vehicles.Carriage.Freight_Van
             Open_Wagon = vehicles.Carriage.Open_Wagon
             Tank_Car_blue = vehicles.Carriage.Tank_Car_blue
@@ -3733,6 +3772,7 @@ class Spain(Country):
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         FFG_Oliver_Hazzard_Perry = ships.FFG_Oliver_Hazzard_Perry
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -3866,7 +3906,7 @@ class TheNetherlands(Country):
         class Artillery:
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
             SPG_M12_GMC_155mm = vehicles.Artillery.SPG_M12_GMC_155mm
 
         class AirDefence:
@@ -3878,12 +3918,12 @@ class TheNetherlands(Country):
             SAM_Patriot_C2_ICC = vehicles.AirDefence.SAM_Patriot_C2_ICC
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_Rapier_LN = vehicles.AirDefence.SAM_Rapier_LN
             SAM_Rapier_Tracker = vehicles.AirDefence.SAM_Rapier_Tracker
             SAM_Rapier_Blindfire_TR = vehicles.AirDefence.SAM_Rapier_Blindfire_TR
@@ -3905,7 +3945,7 @@ class TheNetherlands(Country):
             Bunker_with_Fire_Control_Center = vehicles.Fortification.Bunker_with_Fire_Control_Center
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             MCC_Predator_UAV_CP__GCS = vehicles.Unarmed.MCC_Predator_UAV_CP__GCS
             MCC_COMM_Predator_UAV_CL = vehicles.Unarmed.MCC_COMM_Predator_UAV_CL
@@ -3916,15 +3956,16 @@ class TheNetherlands(Country):
             Carrier_M30_Cargo = vehicles.Unarmed.Carrier_M30_Cargo
 
         class Armor:
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
             APC_TPz_Fuchs = vehicles.Armor.APC_TPz_Fuchs
             APC_M113 = vehicles.Armor.APC_M113
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
+            MBT_Leopard_2A5 = vehicles.Armor.MBT_Leopard_2A5
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             CT_Centaur_IV = vehicles.Armor.CT_Centaur_IV
             HIT_Churchill_VII = vehicles.Armor.HIT_Churchill_VII
@@ -3942,6 +3983,7 @@ class TheNetherlands(Country):
         class Carriage:
             Wagon_G10__Germany = vehicles.Carriage.Wagon_G10__Germany
             DR_50_ton_flat_wagon = vehicles.Carriage.DR_50_ton_flat_wagon
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Freight_Van = vehicles.Carriage.Freight_Van
             Open_Wagon = vehicles.Carriage.Open_Wagon
@@ -4070,6 +4112,7 @@ class TheNetherlands(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
         LST_Mk_II = ships.LST_Mk_II
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         Boat_LCVP_Higgins = ships.Boat_LCVP_Higgins
@@ -4210,12 +4253,12 @@ class Belgium(Country):
         class AirDefence:
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SPAAA_Gepard = vehicles.AirDefence.SPAAA_Gepard
             AAA_QF_3_7 = vehicles.AirDefence.AAA_QF_3_7
             AAA_M45_Quadmount_HB_12_7mm = vehicles.AirDefence.AAA_M45_Quadmount_HB_12_7mm
@@ -4234,7 +4277,7 @@ class Belgium(Country):
             Bunker_with_Fire_Control_Center = vehicles.Fortification.Bunker_with_Fire_Control_Center
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
             Truck_Bedford = vehicles.Unarmed.Truck_Bedford
@@ -4246,7 +4289,7 @@ class Belgium(Country):
             APC_M113 = vehicles.Armor.APC_M113
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
             Car_Daimler_Armored = vehicles.Armor.Car_Daimler_Armored
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
@@ -4519,17 +4562,17 @@ class Norway(Country):
         class Artillery:
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
 
         class AirDefence:
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -4544,13 +4587,13 @@ class Norway(Country):
             Bunker_with_Fire_Control_Center = vehicles.Fortification.Bunker_with_Fire_Control_Center
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
 
         class Armor:
             APC_M113 = vehicles.Armor.APC_M113
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
             APC_TPz_Fuchs = vehicles.Armor.APC_TPz_Fuchs
 
@@ -4561,6 +4604,7 @@ class Norway(Country):
             Loco_DRG_Class_86 = vehicles.Locomotive.Loco_DRG_Class_86
 
         class Carriage:
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Freight_Van = vehicles.Carriage.Freight_Van
             Open_Wagon = vehicles.Carriage.Open_Wagon
             Tank_Car_blue = vehicles.Carriage.Tank_Car_blue
@@ -4681,6 +4725,7 @@ class Norway(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -4814,17 +4859,17 @@ class Denmark(Country):
         class Artillery:
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
 
         class AirDefence:
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -4839,17 +4884,18 @@ class Denmark(Country):
             Bunker_with_Fire_Control_Center = vehicles.Fortification.Bunker_with_Fire_Control_Center
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
 
         class Armor:
             APC_M113 = vehicles.Armor.APC_M113
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
+            MBT_Leopard_2A5 = vehicles.Armor.MBT_Leopard_2A5
 
         class Locomotive:
             Loco_VL80_Electric = vehicles.Locomotive.Loco_VL80_Electric
@@ -5110,7 +5156,7 @@ class Israel(Country):
         class Artillery:
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
 
         class AirDefence:
             SAM_Avenger__Stinger = vehicles.AirDefence.SAM_Avenger__Stinger
@@ -5122,7 +5168,7 @@ class Israel(Country):
             SAM_Patriot_C2_ICC = vehicles.AirDefence.SAM_Patriot_C2_ICC
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SPAAA_Vulcan_M163 = vehicles.AirDefence.SPAAA_Vulcan_M163
@@ -5132,7 +5178,7 @@ class Israel(Country):
             MANPADS_Stinger_C2_Desert = vehicles.AirDefence.MANPADS_Stinger_C2_Desert
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_QF_3_7 = vehicles.AirDefence.AAA_QF_3_7
 
         class Fortification:
@@ -5146,7 +5192,7 @@ class Israel(Country):
             Beacon_TACAN_Portable_TTS_3030 = vehicles.Fortification.Beacon_TACAN_Portable_TTS_3030
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
 
         class Armor:
@@ -5155,14 +5201,14 @@ class Israel(Country):
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             MBT_T_55 = vehicles.Armor.MBT_T_55
             MBT_Merkava_IV = vehicles.Armor.MBT_Merkava_IV
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             CT_Centaur_IV = vehicles.Armor.CT_Centaur_IV
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             SPG_M10_GMC = vehicles.Armor.SPG_M10_GMC
             Car_Daimler_Armored = vehicles.Armor.Car_Daimler_Armored
 
@@ -5309,6 +5355,7 @@ class Israel(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -5445,8 +5492,8 @@ class Georgia(Country):
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
             SPH_2S19_Msta_152mm = vehicles.Artillery.SPH_2S19_Msta_152mm
             SPH_Dana_vz77_152mm = vehicles.Artillery.SPH_Dana_vz77_152mm
-            MLRS_BM_27_Uragan_220mm = vehicles.Artillery.MLRS_BM_27_Uragan_220mm
-            SPH_2S9_Nona_120mm_M = vehicles.Artillery.SPH_2S9_Nona_120mm_M
+            MLRS_9K57_Uragan_BM_27_220mm = vehicles.Artillery.MLRS_9K57_Uragan_BM_27_220mm
+            SPM_2S9_Nona_120mm_M = vehicles.Artillery.SPM_2S9_Nona_120mm_M
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
 
         class Infantry:
@@ -5503,26 +5550,27 @@ class Georgia(Country):
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
             LUV_UAZ_469_Jeep = vehicles.Unarmed.LUV_UAZ_469_Jeep
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             Truck_Ural_375_Mobile_C2 = vehicles.Unarmed.Truck_Ural_375_Mobile_C2
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
             GPU_APA_80_on_ZIL_131 = vehicles.Unarmed.GPU_APA_80_on_ZIL_131
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
             Truck_ZIL_4331 = vehicles.Unarmed.Truck_ZIL_4331
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_Ural_4320_31_Arm_d = vehicles.Unarmed.Truck_Ural_4320_31_Arm_d
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
 
         class Armor:
             IFV_BMD_1 = vehicles.Armor.IFV_BMD_1
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
-            APC_Cobra__Scout = vehicles.Armor.APC_Cobra__Scout
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_Cobra = vehicles.Armor.Scout_Cobra
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             APC_MTLB = vehicles.Armor.APC_MTLB
             MBT_T_55 = vehicles.Armor.MBT_T_55
             MBT_T_72B = vehicles.Armor.MBT_T_72B
@@ -5795,7 +5843,7 @@ class Insurgents(Country):
 
         class Artillery:
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
-            SPH_2S9_Nona_120mm_M = vehicles.Artillery.SPH_2S9_Nona_120mm_M
+            SPM_2S9_Nona_120mm_M = vehicles.Artillery.SPM_2S9_Nona_120mm_M
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
 
@@ -5808,8 +5856,8 @@ class Insurgents(Country):
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             SAM_SA_13_Strela_10M3_Gopher_TEL = vehicles.AirDefence.SAM_SA_13_Strela_10M3_Gopher_TEL
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
-            AAA_ZU_23_Insurgent = vehicles.AirDefence.AAA_ZU_23_Insurgent
-            AAA_ZU_23_Closed_Emplacement_Insurgent = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement_Insurgent
+            AAA_ZU_23_Insurgent_Emplacement = vehicles.AirDefence.AAA_ZU_23_Insurgent_Emplacement
+            AAA_ZU_23_Insurgent_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Insurgent_Closed_Emplacement
             SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375
             MANPADS_SA_18_Igla_Grouse_Ins = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_Ins
             MANPADS_SA_18_Igla_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_C2
@@ -5844,13 +5892,14 @@ class Insurgents(Country):
             Truck_ZIL_4331 = vehicles.Unarmed.Truck_ZIL_4331
             GPU_APA_80_on_ZIL_131 = vehicles.Unarmed.GPU_APA_80_on_ZIL_131
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
 
         class Armor:
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             IFV_BMD_1 = vehicles.Armor.IFV_BMD_1
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_MTLB = vehicles.Armor.APC_MTLB
             MBT_T_55 = vehicles.Armor.MBT_T_55
 
@@ -6018,7 +6067,7 @@ class Abkhazia(Country):
         class Artillery:
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
-            SPH_2S9_Nona_120mm_M = vehicles.Artillery.SPH_2S9_Nona_120mm_M
+            SPM_2S9_Nona_120mm_M = vehicles.Artillery.SPM_2S9_Nona_120mm_M
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
 
@@ -6030,7 +6079,7 @@ class Abkhazia(Country):
         class AirDefence:
             SAM_SA_19_Tunguska_Grison = vehicles.AirDefence.SAM_SA_19_Tunguska_Grison
             MCC_SR_Sborka_Dog_Ear_SR = vehicles.AirDefence.MCC_SR_Sborka_Dog_Ear_SR
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_SA_11_Buk_Gadfly_C2 = vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_C2
@@ -6069,21 +6118,22 @@ class Abkhazia(Country):
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
             LUV_UAZ_469_Jeep = vehicles.Unarmed.LUV_UAZ_469_Jeep
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             Truck_Ural_375_Mobile_C2 = vehicles.Unarmed.Truck_Ural_375_Mobile_C2
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
             GPU_APA_80_on_ZIL_131 = vehicles.Unarmed.GPU_APA_80_on_ZIL_131
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
             Truck_ZIL_4331 = vehicles.Unarmed.Truck_ZIL_4331
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
 
         class Armor:
             IFV_BMD_1 = vehicles.Armor.IFV_BMD_1
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_BTR_RD = vehicles.Armor.APC_BTR_RD
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             APC_MTLB = vehicles.Armor.APC_MTLB
@@ -6268,7 +6318,7 @@ class SouthOssetia(Country):
         class Artillery:
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
-            SPH_2S9_Nona_120mm_M = vehicles.Artillery.SPH_2S9_Nona_120mm_M
+            SPM_2S9_Nona_120mm_M = vehicles.Artillery.SPM_2S9_Nona_120mm_M
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
 
@@ -6312,21 +6362,22 @@ class SouthOssetia(Country):
             Truck_MAZ_6303 = vehicles.Unarmed.Truck_MAZ_6303
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
             LUV_UAZ_469_Jeep = vehicles.Unarmed.LUV_UAZ_469_Jeep
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             Truck_Ural_375_Mobile_C2 = vehicles.Unarmed.Truck_Ural_375_Mobile_C2
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
             GPU_APA_80_on_ZIL_131 = vehicles.Unarmed.GPU_APA_80_on_ZIL_131
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
             Truck_ZIL_4331 = vehicles.Unarmed.Truck_ZIL_4331
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
 
         class Armor:
             IFV_BMD_1 = vehicles.Armor.IFV_BMD_1
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_BTR_RD = vehicles.Armor.APC_BTR_RD
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             APC_MTLB = vehicles.Armor.APC_MTLB
@@ -6491,18 +6542,18 @@ class Italy(Country):
         class Artillery:
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
 
         class AirDefence:
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -6515,10 +6566,10 @@ class Italy(Country):
             Beacon_TACAN_Portable_TTS_3030 = vehicles.Fortification.Beacon_TACAN_Portable_TTS_3030
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             MCC_Predator_UAV_CP__GCS = vehicles.Unarmed.MCC_Predator_UAV_CP__GCS
             MCC_COMM_Predator_UAV_CL = vehicles.Unarmed.MCC_COMM_Predator_UAV_CL
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
@@ -6527,9 +6578,9 @@ class Italy(Country):
             APC_M113 = vehicles.Armor.APC_M113
             APC_AAV_7_Amphibious = vehicles.Armor.APC_AAV_7_Amphibious
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
 
         class Locomotive:
             Loco_VL80_Electric = vehicles.Locomotive.Loco_VL80_Electric
@@ -6668,6 +6719,7 @@ class Italy(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -6802,7 +6854,7 @@ class Australia(Country):
             SPG_M12_GMC_155mm = vehicles.Artillery.SPG_M12_GMC_155mm
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_Rapier_LN = vehicles.AirDefence.SAM_Rapier_LN
             SAM_Rapier_Tracker = vehicles.AirDefence.SAM_Rapier_Tracker
             SAM_Rapier_Blindfire_TR = vehicles.AirDefence.SAM_Rapier_Blindfire_TR
@@ -6821,7 +6873,7 @@ class Australia(Country):
             Beacon_TACAN_Portable_TTS_3030 = vehicles.Fortification.Beacon_TACAN_Portable_TTS_3030
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             MCC_Predator_UAV_CP__GCS = vehicles.Unarmed.MCC_Predator_UAV_CP__GCS
             MCC_COMM_Predator_UAV_CL = vehicles.Unarmed.MCC_COMM_Predator_UAV_CL
@@ -6839,7 +6891,7 @@ class Australia(Country):
             IFV_LAV_25 = vehicles.Armor.IFV_LAV_25
             APC_M113 = vehicles.Armor.APC_M113
             Car_Daimler_Armored = vehicles.Armor.Car_Daimler_Armored
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
@@ -6959,6 +7011,7 @@ class Australia(Country):
     class Helicopter:
         Ka_50 = helicopters.Ka_50
         CH_47D = helicopters.CH_47D
+        SH_60B = helicopters.SH_60B
         UH_1H = helicopters.UH_1H
         UH_60A = helicopters.UH_60A
         SA342M = helicopters.SA342M
@@ -6969,6 +7022,7 @@ class Australia(Country):
     helicopters = [
         Helicopter.Ka_50,
         Helicopter.CH_47D,
+        Helicopter.SH_60B,
         Helicopter.UH_1H,
         Helicopter.UH_60A,
         Helicopter.SA342M,
@@ -6981,6 +7035,7 @@ class Australia(Country):
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         FFG_Oliver_Hazzard_Perry = ships.FFG_Oliver_Hazzard_Perry
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
         LST_Mk_II = ships.LST_Mk_II
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         Boat_LCVP_Higgins = ships.Boat_LCVP_Higgins
@@ -7120,7 +7175,7 @@ class Switzerland(Country):
         class AirDefence:
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_Rapier_LN = vehicles.AirDefence.SAM_Rapier_LN
             SAM_Rapier_Tracker = vehicles.AirDefence.SAM_Rapier_Tracker
             SAM_Rapier_Blindfire_TR = vehicles.AirDefence.SAM_Rapier_Blindfire_TR
@@ -7141,7 +7196,7 @@ class Switzerland(Country):
             LUV_Land_Rover_109 = vehicles.Unarmed.LUV_Land_Rover_109
 
         class Armor:
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
             APC_M113 = vehicles.Armor.APC_M113
 
         class Locomotive:
@@ -7151,6 +7206,7 @@ class Switzerland(Country):
             Loco_DRG_Class_86 = vehicles.Locomotive.Loco_DRG_Class_86
 
         class Carriage:
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Freight_Van = vehicles.Carriage.Freight_Van
             Open_Wagon = vehicles.Carriage.Open_Wagon
             Tank_Car_blue = vehicles.Carriage.Tank_Car_blue
@@ -7389,7 +7445,7 @@ class Austria(Country):
     class Vehicle:
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -7420,6 +7476,7 @@ class Austria(Country):
         class Carriage:
             Wagon_G10__Germany = vehicles.Carriage.Wagon_G10__Germany
             DR_50_ton_flat_wagon = vehicles.Carriage.DR_50_ton_flat_wagon
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Freight_Van = vehicles.Carriage.Freight_Van
             Open_Wagon = vehicles.Carriage.Open_Wagon
@@ -7655,12 +7712,12 @@ class Belarus(Country):
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
             Grad_MRL_FDDM__FC = vehicles.Artillery.Grad_MRL_FDDM__FC
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
-            SPH_2S9_Nona_120mm_M = vehicles.Artillery.SPH_2S9_Nona_120mm_M
+            SPM_2S9_Nona_120mm_M = vehicles.Artillery.SPM_2S9_Nona_120mm_M
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
             SPH_2S19_Msta_152mm = vehicles.Artillery.SPH_2S19_Msta_152mm
             MLRS_9A52_Smerch_CM_300mm = vehicles.Artillery.MLRS_9A52_Smerch_CM_300mm
-            MLRS_BM_27_Uragan_220mm = vehicles.Artillery.MLRS_BM_27_Uragan_220mm
+            MLRS_9K57_Uragan_BM_27_220mm = vehicles.Artillery.MLRS_9K57_Uragan_BM_27_220mm
             MLRS_9A52_Smerch_HE_300mm = vehicles.Artillery.MLRS_9A52_Smerch_HE_300mm
 
         class Infantry:
@@ -7674,7 +7731,7 @@ class Belarus(Country):
             EWR_55G6 = vehicles.AirDefence.EWR_55G6
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             MCC_SR_Sborka_Dog_Ear_SR = vehicles.AirDefence.MCC_SR_Sborka_Dog_Ear_SR
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
@@ -7698,6 +7755,7 @@ class Belarus(Country):
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -7723,30 +7781,32 @@ class Belarus(Country):
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
             LUV_UAZ_469_Jeep = vehicles.Unarmed.LUV_UAZ_469_Jeep
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             Truck_Ural_375_Mobile_C2 = vehicles.Unarmed.Truck_Ural_375_Mobile_C2
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
             Truck_Ural_4320_31_Arm_d = vehicles.Unarmed.Truck_Ural_4320_31_Arm_d
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
             GPU_APA_80_on_ZIL_131 = vehicles.Unarmed.GPU_APA_80_on_ZIL_131
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
             Truck_ZIL_4331 = vehicles.Unarmed.Truck_ZIL_4331
-            APC_Tigr = vehicles.Unarmed.APC_Tigr
+            LUV_Tigr = vehicles.Unarmed.LUV_Tigr
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
 
         class Armor:
             IFV_BMD_1 = vehicles.Armor.IFV_BMD_1
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             IFV_BMP_3 = vehicles.Armor.IFV_BMP_3
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_BTR_RD = vehicles.Armor.APC_BTR_RD
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             APC_MTLB = vehicles.Armor.APC_MTLB
             MBT_T_55 = vehicles.Armor.MBT_T_55
             MBT_T_72B = vehicles.Armor.MBT_T_72B
             MBT_T_72B3 = vehicles.Armor.MBT_T_72B3
+            LT_PT_76 = vehicles.Armor.LT_PT_76
 
         class MissilesSS:
             SSM_SS_1C_Scud_B = vehicles.MissilesSS.SSM_SS_1C_Scud_B
@@ -7940,7 +8000,6 @@ class Bulgaria(Country):
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
-            SPG_Sturmpanzer_IV_Brummbar = vehicles.Artillery.SPG_Sturmpanzer_IV_Brummbar
 
         class Infantry:
             Infantry_Mauser_98 = vehicles.Infantry.Infantry_Mauser_98
@@ -7953,7 +8012,7 @@ class Bulgaria(Country):
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             SAM_SA_10_S_300_Grumble_Flap_Lid_TR = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_Flap_Lid_TR
@@ -7966,6 +8025,7 @@ class Bulgaria(Country):
             MANPADS_SA_18_Igla_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_C2
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
             AAA_8_8cm_Flak_18 = vehicles.AirDefence.AAA_8_8cm_Flak_18
             AAA_8_8cm_Flak_36 = vehicles.AirDefence.AAA_8_8cm_Flak_36
             AAA_8_8cm_Flak_37 = vehicles.AirDefence.AAA_8_8cm_Flak_37
@@ -7991,7 +8051,7 @@ class Bulgaria(Country):
 
         class Unarmed:
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Bus_IKARUS_280 = vehicles.Unarmed.Bus_IKARUS_280
             Truck_KAMAZ_43101 = vehicles.Unarmed.Truck_KAMAZ_43101
             Truck_MAZ_6303 = vehicles.Unarmed.Truck_MAZ_6303
@@ -8005,14 +8065,15 @@ class Bulgaria(Country):
             LUV_Horch_901_Staff_Car = vehicles.Unarmed.LUV_Horch_901_Staff_Car
 
         class Armor:
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             APC_M113 = vehicles.Armor.APC_M113
             APC_MTLB = vehicles.Armor.APC_MTLB
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             MBT_T_55 = vehicles.Armor.MBT_T_55
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
+            LT_PT_76 = vehicles.Armor.LT_PT_76
             APC_Sd_Kfz_251_Halftrack = vehicles.Armor.APC_Sd_Kfz_251_Halftrack
             HT_Pz_Kpfw_VI_Tiger_I = vehicles.Armor.HT_Pz_Kpfw_VI_Tiger_I
             HT_Pz_Kpfw_VI_Ausf__B_Tiger_II = vehicles.Armor.HT_Pz_Kpfw_VI_Ausf__B_Tiger_II
@@ -8020,6 +8081,7 @@ class Bulgaria(Country):
             SPG_Jagdpanther_G1 = vehicles.Armor.SPG_Jagdpanther_G1
             SPG_Jagdpanzer_IV = vehicles.Armor.SPG_Jagdpanzer_IV
             SPG_StuG_IV = vehicles.Armor.SPG_StuG_IV
+            SPG_Sturmpanzer_IV_Brummbar = vehicles.Armor.SPG_Sturmpanzer_IV_Brummbar
             IFV_Sd_Kfz_234_2_Puma = vehicles.Armor.IFV_Sd_Kfz_234_2_Puma
             SPG_StuG_III_Ausf__G = vehicles.Armor.SPG_StuG_III_Ausf__G
             SPG_Sd_Kfz_184_Elefant = vehicles.Armor.SPG_Sd_Kfz_184_Elefant
@@ -8297,11 +8359,11 @@ class CzechRepublic(Country):
 
         class AirDefence:
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
             SAM_SA_2_S_75_Guideline_LN = vehicles.AirDefence.SAM_SA_2_S_75_Guideline_LN
@@ -8335,12 +8397,12 @@ class CzechRepublic(Country):
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
 
         class Armor:
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             MBT_T_55 = vehicles.Armor.MBT_T_55
             MBT_T_72B = vehicles.Armor.MBT_T_72B
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
@@ -8612,7 +8674,7 @@ class China(Country):
         class Artillery:
             MLRS_9A52_Smerch_CM_300mm = vehicles.Artillery.MLRS_9A52_Smerch_CM_300mm
             MLRS_9A52_Smerch_HE_300mm = vehicles.Artillery.MLRS_9A52_Smerch_HE_300mm
-            SPH_2S9_Nona_120mm_M = vehicles.Artillery.SPH_2S9_Nona_120mm_M
+            SPM_2S9_Nona_120mm_M = vehicles.Artillery.SPM_2S9_Nona_120mm_M
             PLZ_05 = vehicles.Artillery.PLZ_05
 
         class AirDefence:
@@ -8624,7 +8686,7 @@ class China(Country):
             SAM_SA_10_S_300_Grumble_TEL_C = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_TEL_C
             SAM_SA_10_S_300_Grumble_C2 = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_C2
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_8_8cm_Flak_18 = vehicles.AirDefence.AAA_8_8cm_Flak_18
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
@@ -8634,6 +8696,7 @@ class China(Country):
             HQ_7_Self_Propelled_STR = vehicles.AirDefence.HQ_7_Self_Propelled_STR
             HQ_7_Self_Propelled_LN = vehicles.AirDefence.HQ_7_Self_Propelled_LN
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -8647,12 +8710,12 @@ class China(Country):
 
         class Unarmed:
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            APC_Tigr = vehicles.Unarmed.APC_Tigr
+            LUV_Tigr = vehicles.Unarmed.LUV_Tigr
 
         class Armor:
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             MBT_T_55 = vehicles.Armor.MBT_T_55
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             ZBD_04A = vehicles.Armor.ZBD_04A
             ZTZ_96B = vehicles.Armor.ZTZ_96B
 
@@ -8803,6 +8866,7 @@ class China(Country):
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
         Type_071_Amphibious_Transport_Dock = ships.Type_071_Amphibious_Transport_Dock
         Type_093_Attack_Submarine = ships.Type_093_Attack_Submarine
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -8854,7 +8918,7 @@ class Croatia(Country):
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
 
         class Fortification:
@@ -8873,7 +8937,7 @@ class Croatia(Country):
 
         class Armor:
             APC_Sd_Kfz_251_Halftrack = vehicles.Armor.APC_Sd_Kfz_251_Halftrack
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             MBT_T_55 = vehicles.Armor.MBT_T_55
 
         class Locomotive:
@@ -9121,13 +9185,13 @@ class Egypt(Country):
     class Vehicle:
 
         class Artillery:
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
 
         class AirDefence:
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SPAAA_Vulcan_M163 = vehicles.AirDefence.SPAAA_Vulcan_M163
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
@@ -9137,7 +9201,7 @@ class Egypt(Country):
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_SA_2_S_75_Fan_Song_TR = vehicles.AirDefence.SAM_SA_2_S_75_Fan_Song_TR
             SAM_SA_2_S_75_Guideline_LN = vehicles.AirDefence.SAM_SA_2_S_75_Guideline_LN
@@ -9145,7 +9209,7 @@ class Egypt(Country):
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             SAM_SA_10_S_300_Grumble_Flap_Lid_TR = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_Flap_Lid_TR
             SAM_SA_10_S_300_Grumble_Clam_Shell_SR = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_Clam_Shell_SR
@@ -9166,6 +9230,7 @@ class Egypt(Country):
             MANPADS_Stinger_C2_Desert = vehicles.AirDefence.MANPADS_Stinger_C2_Desert
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -9179,24 +9244,25 @@ class Egypt(Country):
 
         class Unarmed:
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Truck_KrAZ_6322_6x6 = vehicles.Unarmed.Truck_KrAZ_6322_6x6
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
 
         class Armor:
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             APC_M113 = vehicles.Armor.APC_M113
             APC_MTLB = vehicles.Armor.APC_MTLB
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             MBT_T_55 = vehicles.Armor.MBT_T_55
             MBT_T_80U = vehicles.Armor.MBT_T_80U
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             SPG_M10_GMC = vehicles.Armor.SPG_M10_GMC
+            LT_PT_76 = vehicles.Armor.LT_PT_76
 
         class MissilesSS:
             SSM_SS_1C_Scud_B = vehicles.MissilesSS.SSM_SS_1C_Scud_B
@@ -9330,6 +9396,7 @@ class Egypt(Country):
         FFG_Oliver_Hazzard_Perry = ships.FFG_Oliver_Hazzard_Perry
         Corvette_1241_1_Molniya = ships.Corvette_1241_1_Molniya
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -9464,13 +9531,12 @@ class Finland(Country):
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
-            SPG_Sturmpanzer_IV_Brummbar = vehicles.Artillery.SPG_Sturmpanzer_IV_Brummbar
 
         class Infantry:
             Infantry_Mauser_98 = vehicles.Infantry.Infantry_Mauser_98
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_8_8cm_Flak_37 = vehicles.AirDefence.AAA_8_8cm_Flak_37
             AAA_Flak_38_20mm = vehicles.AirDefence.AAA_Flak_38_20mm
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
@@ -9530,7 +9596,9 @@ class Finland(Country):
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             MBT_T_55 = vehicles.Armor.MBT_T_55
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            LT_PT_76 = vehicles.Armor.LT_PT_76
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             APC_Sd_Kfz_251_Halftrack = vehicles.Armor.APC_Sd_Kfz_251_Halftrack
             HT_Pz_Kpfw_VI_Tiger_I = vehicles.Armor.HT_Pz_Kpfw_VI_Tiger_I
             HT_Pz_Kpfw_VI_Ausf__B_Tiger_II = vehicles.Armor.HT_Pz_Kpfw_VI_Ausf__B_Tiger_II
@@ -9538,6 +9606,7 @@ class Finland(Country):
             SPG_Jagdpanther_G1 = vehicles.Armor.SPG_Jagdpanther_G1
             SPG_Jagdpanzer_IV = vehicles.Armor.SPG_Jagdpanzer_IV
             SPG_StuG_IV = vehicles.Armor.SPG_StuG_IV
+            SPG_Sturmpanzer_IV_Brummbar = vehicles.Armor.SPG_Sturmpanzer_IV_Brummbar
             IFV_Sd_Kfz_234_2_Puma = vehicles.Armor.IFV_Sd_Kfz_234_2_Puma
             SPG_StuG_III_Ausf__G = vehicles.Armor.SPG_StuG_III_Ausf__G
             SPG_Sd_Kfz_184_Elefant = vehicles.Armor.SPG_Sd_Kfz_184_Elefant
@@ -9552,6 +9621,7 @@ class Finland(Country):
             Loco_DRG_Class_86 = vehicles.Locomotive.Loco_DRG_Class_86
 
         class Carriage:
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Freight_Van = vehicles.Carriage.Freight_Van
             Open_Wagon = vehicles.Carriage.Open_Wagon
             Tank_Car_blue = vehicles.Carriage.Tank_Car_blue
@@ -9788,7 +9858,7 @@ class Greece(Country):
         class Artillery:
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
 
         class Infantry:
@@ -9812,16 +9882,17 @@ class Greece(Country):
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_SA_10_S_300_Grumble_Flap_Lid_TR = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_Flap_Lid_TR
             SAM_SA_10_S_300_Grumble_Clam_Shell_SR = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_Clam_Shell_SR
             SAM_SA_10_S_300_Grumble_Big_Bird_SR = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_Big_Bird_SR
             SAM_SA_10_S_300_Grumble_TEL_D = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_TEL_D
             SAM_SA_10_S_300_Grumble_TEL_C = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_TEL_C
             SAM_SA_10_S_300_Grumble_C2 = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_C2
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_8_8cm_Flak_18 = vehicles.AirDefence.AAA_8_8cm_Flak_18
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -9834,9 +9905,9 @@ class Greece(Country):
             Beacon_TACAN_Portable_TTS_3030 = vehicles.Fortification.Beacon_TACAN_Portable_TTS_3030
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
@@ -9844,10 +9915,10 @@ class Greece(Country):
         class Armor:
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             APC_M113 = vehicles.Armor.APC_M113
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             CT_Centaur_IV = vehicles.Armor.CT_Centaur_IV
@@ -9861,6 +9932,7 @@ class Greece(Country):
             Loco_DRG_Class_86 = vehicles.Locomotive.Loco_DRG_Class_86
 
         class Carriage:
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Freight_Van = vehicles.Carriage.Freight_Van
             Open_Wagon = vehicles.Carriage.Open_Wagon
             Tank_Car_blue = vehicles.Carriage.Tank_Car_blue
@@ -9988,6 +10060,7 @@ class Greece(Country):
 
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
+        FAC_La_Combattante_IIa = ships.FAC_La_Combattante_IIa
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -10123,7 +10196,6 @@ class Hungary(Country):
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
-            SPG_Sturmpanzer_IV_Brummbar = vehicles.Artillery.SPG_Sturmpanzer_IV_Brummbar
 
         class Infantry:
             Infantry_Mauser_98 = vehicles.Infantry.Infantry_Mauser_98
@@ -10138,7 +10210,7 @@ class Hungary(Country):
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             MANPADS_SA_18_Igla_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse
             MANPADS_SA_18_Igla_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_C2
@@ -10170,7 +10242,7 @@ class Hungary(Country):
 
         class Unarmed:
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Bus_IKARUS_280 = vehicles.Unarmed.Bus_IKARUS_280
             Truck_MAZ_6303 = vehicles.Unarmed.Truck_MAZ_6303
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
@@ -10183,20 +10255,21 @@ class Hungary(Country):
 
         class Armor:
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             APC_MTLB = vehicles.Armor.APC_MTLB
             APC_Sd_Kfz_251_Halftrack = vehicles.Armor.APC_Sd_Kfz_251_Halftrack
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             MBT_T_55 = vehicles.Armor.MBT_T_55
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             HT_Pz_Kpfw_VI_Tiger_I = vehicles.Armor.HT_Pz_Kpfw_VI_Tiger_I
             HT_Pz_Kpfw_VI_Ausf__B_Tiger_II = vehicles.Armor.HT_Pz_Kpfw_VI_Ausf__B_Tiger_II
             MT_Pz_Kpfw_V_Panther_Ausf_G = vehicles.Armor.MT_Pz_Kpfw_V_Panther_Ausf_G
             SPG_Jagdpanther_G1 = vehicles.Armor.SPG_Jagdpanther_G1
             SPG_Jagdpanzer_IV = vehicles.Armor.SPG_Jagdpanzer_IV
             SPG_StuG_IV = vehicles.Armor.SPG_StuG_IV
+            SPG_Sturmpanzer_IV_Brummbar = vehicles.Armor.SPG_Sturmpanzer_IV_Brummbar
             IFV_Sd_Kfz_234_2_Puma = vehicles.Armor.IFV_Sd_Kfz_234_2_Puma
             SPG_StuG_III_Ausf__G = vehicles.Armor.SPG_StuG_III_Ausf__G
             SPG_Sd_Kfz_184_Elefant = vehicles.Armor.SPG_Sd_Kfz_184_Elefant
@@ -10212,6 +10285,7 @@ class Hungary(Country):
             Loco_DRG_Class_86 = vehicles.Locomotive.Loco_DRG_Class_86
 
         class Carriage:
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Freight_Van = vehicles.Carriage.Freight_Van
@@ -10466,7 +10540,7 @@ class India(Country):
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
             SPAAA_ZU_23_2_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Mounted_Ural_375
@@ -10476,7 +10550,7 @@ class India(Country):
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             MANPADS_SA_18_Igla_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse
@@ -10504,14 +10578,15 @@ class India(Country):
             Truck_KrAZ_6322_6x6 = vehicles.Unarmed.Truck_KrAZ_6322_6x6
 
         class Armor:
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMD_1 = vehicles.Armor.IFV_BMD_1
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             MBT_T_55 = vehicles.Armor.MBT_T_55
             MBT_T_90 = vehicles.Armor.MBT_T_90
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             Car_Daimler_Armored = vehicles.Armor.Car_Daimler_Armored
+            LT_PT_76 = vehicles.Armor.LT_PT_76
 
         class Locomotive:
             Loco_VL80_Electric = vehicles.Locomotive.Loco_VL80_Electric
@@ -10651,6 +10726,7 @@ class India(Country):
         SSK_877V_Kilo = ships.SSK_877V_Kilo
         Corvette_1241_1_Molniya = ships.Corvette_1241_1_Molniya
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -10791,7 +10867,7 @@ class Iran(Country):
             Infantry_RPG = vehicles.Infantry.Infantry_RPG
 
         class AirDefence:
-            AAA_ZU_23_Closed_Emplacement_Insurgent = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement_Insurgent
+            AAA_ZU_23_Insurgent_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Insurgent_Closed_Emplacement
             SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375
             SAM_SA_10_S_300_Grumble_Flap_Lid_TR = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_Flap_Lid_TR
             SAM_SA_10_S_300_Grumble_Clam_Shell_SR = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_Clam_Shell_SR
@@ -10799,13 +10875,13 @@ class Iran(Country):
             SAM_SA_10_S_300_Grumble_TEL_D = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_TEL_D
             SAM_SA_10_S_300_Grumble_TEL_C = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_TEL_C
             SAM_SA_10_S_300_Grumble_C2 = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_C2
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
             MANPADS_SA_18_Igla_Grouse_Ins = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_Ins
             MANPADS_SA_18_Igla_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_C2
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_SA_11_Buk_Gadfly_Snow_Drift_SR = vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_Snow_Drift_SR
@@ -10822,6 +10898,7 @@ class Iran(Country):
             HQ_7_Self_Propelled_STR = vehicles.AirDefence.HQ_7_Self_Propelled_STR
             HQ_7_Self_Propelled_LN = vehicles.AirDefence.HQ_7_Self_Propelled_LN
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -10848,8 +10925,8 @@ class Iran(Country):
             APC_M113 = vehicles.Armor.APC_M113
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             IFV_BMD_1 = vehicles.Armor.IFV_BMD_1
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
 
         class MissilesSS:
             SSM_SS_1C_Scud_B = vehicles.MissilesSS.SSM_SS_1C_Scud_B
@@ -11000,6 +11077,8 @@ class Iran(Country):
         Bulker_Yakushev = ships.Bulker_Yakushev
         Cargo_Ivanov = ships.Cargo_Ivanov
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
+        FAC_La_Combattante_IIa = ships.FAC_La_Combattante_IIa
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -11137,9 +11216,9 @@ class Iraq(Country):
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
-            AAA_ZU_23_Closed_Emplacement_Insurgent = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement_Insurgent
-            AAA_ZU_23_Insurgent = vehicles.AirDefence.AAA_ZU_23_Insurgent
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
+            AAA_ZU_23_Insurgent_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Insurgent_Closed_Emplacement
+            AAA_ZU_23_Insurgent_Emplacement = vehicles.AirDefence.AAA_ZU_23_Insurgent_Emplacement
             SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375
             SAM_Avenger__Stinger = vehicles.AirDefence.SAM_Avenger__Stinger
             SAM_Roland_ADS = vehicles.AirDefence.SAM_Roland_ADS
@@ -11150,7 +11229,7 @@ class Iraq(Country):
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             MANPADS_SA_18_Igla_S_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_S_Grouse
@@ -11176,24 +11255,25 @@ class Iraq(Country):
 
         class Unarmed:
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_KrAZ_6322_6x6 = vehicles.Unarmed.Truck_KrAZ_6322_6x6
             Truck_Land_Rover_101_FC = vehicles.Unarmed.Truck_Land_Rover_101_FC
             LUV_Land_Rover_109 = vehicles.Unarmed.LUV_Land_Rover_109
 
         class Armor:
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             APC_M113 = vehicles.Armor.APC_M113
             APC_MTLB = vehicles.Armor.APC_MTLB
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMD_1 = vehicles.Armor.IFV_BMD_1
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             IFV_BMP_3 = vehicles.Armor.IFV_BMP_3
             MBT_T_55 = vehicles.Armor.MBT_T_55
             MBT_T_90 = vehicles.Armor.MBT_T_90
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
+            LT_PT_76 = vehicles.Armor.LT_PT_76
 
         class MissilesSS:
             SSM_SS_1C_Scud_B = vehicles.MissilesSS.SSM_SS_1C_Scud_B
@@ -11456,18 +11536,17 @@ class Japan(Country):
 
         class Artillery:
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
-            SPG_Sturmpanzer_IV_Brummbar = vehicles.Artillery.SPG_Sturmpanzer_IV_Brummbar
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
 
         class Infantry:
             Infantry_Mauser_98 = vehicles.Infantry.Infantry_Mauser_98
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_Patriot_CR__AMG_AN_MRC_137 = vehicles.AirDefence.SAM_Patriot_CR__AMG_AN_MRC_137
             SAM_Patriot_ECS = vehicles.AirDefence.SAM_Patriot_ECS
@@ -11503,7 +11582,7 @@ class Japan(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_Opel_Blitz = vehicles.Unarmed.Truck_Opel_Blitz
             LUV_Kubelwagen_82 = vehicles.Unarmed.LUV_Kubelwagen_82
             LUV_Kettenrad = vehicles.Unarmed.LUV_Kettenrad
@@ -11511,8 +11590,8 @@ class Japan(Country):
             LUV_Horch_901_Staff_Car = vehicles.Unarmed.LUV_Horch_901_Staff_Car
 
         class Armor:
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             APC_Sd_Kfz_251_Halftrack = vehicles.Armor.APC_Sd_Kfz_251_Halftrack
             HT_Pz_Kpfw_VI_Tiger_I = vehicles.Armor.HT_Pz_Kpfw_VI_Tiger_I
             HT_Pz_Kpfw_VI_Ausf__B_Tiger_II = vehicles.Armor.HT_Pz_Kpfw_VI_Ausf__B_Tiger_II
@@ -11520,6 +11599,7 @@ class Japan(Country):
             SPG_Jagdpanther_G1 = vehicles.Armor.SPG_Jagdpanther_G1
             SPG_Jagdpanzer_IV = vehicles.Armor.SPG_Jagdpanzer_IV
             SPG_StuG_IV = vehicles.Armor.SPG_StuG_IV
+            SPG_Sturmpanzer_IV_Brummbar = vehicles.Armor.SPG_Sturmpanzer_IV_Brummbar
             IFV_Sd_Kfz_234_2_Puma = vehicles.Armor.IFV_Sd_Kfz_234_2_Puma
             SPG_StuG_III_Ausf__G = vehicles.Armor.SPG_StuG_III_Ausf__G
             SPG_Sd_Kfz_184_Elefant = vehicles.Armor.SPG_Sd_Kfz_184_Elefant
@@ -11648,6 +11728,7 @@ class Japan(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
         U_boat_VIIC_U_flak = ships.U_boat_VIIC_U_flak
         Boat_Schnellboot_type_S130 = ships.Boat_Schnellboot_type_S130
 
@@ -11783,9 +11864,9 @@ class Kazakhstan(Country):
         class Artillery:
             SPH_2S19_Msta_152mm = vehicles.Artillery.SPH_2S19_Msta_152mm
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
-            SPH_2S9_Nona_120mm_M = vehicles.Artillery.SPH_2S9_Nona_120mm_M
+            SPM_2S9_Nona_120mm_M = vehicles.Artillery.SPM_2S9_Nona_120mm_M
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
-            MLRS_BM_27_Uragan_220mm = vehicles.Artillery.MLRS_BM_27_Uragan_220mm
+            MLRS_9K57_Uragan_BM_27_220mm = vehicles.Artillery.MLRS_9K57_Uragan_BM_27_220mm
             MLRS_9A52_Smerch_CM_300mm = vehicles.Artillery.MLRS_9A52_Smerch_CM_300mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
             Grad_MRL_FDDM__FC = vehicles.Artillery.Grad_MRL_FDDM__FC
@@ -11808,7 +11889,7 @@ class Kazakhstan(Country):
             SAM_SA_11_Buk_Gadfly_Snow_Drift_SR = vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_Snow_Drift_SR
             SAM_SA_11_Buk_Gadfly_C2 = vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_C2
             SAM_SA_11_Buk_Gadfly_Fire_Dome_TEL = vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_Fire_Dome_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
@@ -11828,6 +11909,7 @@ class Kazakhstan(Country):
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
             MANPADS_SA_18_Igla_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse
             MANPADS_SA_18_Igla_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_C2
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
             SAM_SA_2_S_75_Guideline_LN = vehicles.AirDefence.SAM_SA_2_S_75_Guideline_LN
             SAM_SA_2_S_75_Fan_Song_TR = vehicles.AirDefence.SAM_SA_2_S_75_Fan_Song_TR
 
@@ -11861,28 +11943,28 @@ class Kazakhstan(Country):
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
             Truck_Ural_4320_31_Arm_d = vehicles.Unarmed.Truck_Ural_4320_31_Arm_d
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             GPU_APA_80_on_ZIL_131 = vehicles.Unarmed.GPU_APA_80_on_ZIL_131
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
-            APC_Tigr = vehicles.Unarmed.APC_Tigr
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
+            LUV_Tigr = vehicles.Unarmed.LUV_Tigr
 
         class Armor:
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             IFV_BMD_1 = vehicles.Armor.IFV_BMD_1
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             MBT_T_80U = vehicles.Armor.MBT_T_80U
             IFV_BMP_3 = vehicles.Armor.IFV_BMP_3
             APC_BTR_RD = vehicles.Armor.APC_BTR_RD
             APC_MTLB = vehicles.Armor.APC_MTLB
             MBT_T_72B = vehicles.Armor.MBT_T_72B
             MBT_T_55 = vehicles.Armor.MBT_T_55
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
-            APC_Cobra__Scout = vehicles.Armor.APC_Cobra__Scout
-            APC_BTR_82A = vehicles.Armor.APC_BTR_82A
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
+            Scout_Cobra = vehicles.Armor.Scout_Cobra
+            IFV_BTR_82A = vehicles.Armor.IFV_BTR_82A
 
         class MissilesSS:
             SSM_SS_1C_Scud_B = vehicles.MissilesSS.SSM_SS_1C_Scud_B
@@ -12188,11 +12270,12 @@ class NorthKorea(Country):
 
         class Armor:
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             CT_Centaur_IV = vehicles.Armor.CT_Centaur_IV
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             MBT_T_55 = vehicles.Armor.MBT_T_55
+            LT_PT_76 = vehicles.Armor.LT_PT_76
 
         class MissilesSS:
             SSM_SS_1C_Scud_B = vehicles.MissilesSS.SSM_SS_1C_Scud_B
@@ -12452,7 +12535,7 @@ class Pakistan(Country):
 
         class AirDefence:
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
             SPAAA_ZU_23_2_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Mounted_Ural_375
@@ -12481,9 +12564,10 @@ class Pakistan(Country):
 
         class Armor:
             APC_M113 = vehicles.Armor.APC_M113
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             MBT_T_55 = vehicles.Armor.MBT_T_55
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
+            LT_PT_76 = vehicles.Armor.LT_PT_76
 
         class MissilesSS:
             AShM_SS_N_2_Silkworm = vehicles.MissilesSS.AShM_SS_N_2_Silkworm
@@ -12613,6 +12697,7 @@ class Pakistan(Country):
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         FFG_Oliver_Hazzard_Perry = ships.FFG_Oliver_Hazzard_Perry
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -12752,7 +12837,7 @@ class Poland(Country):
 
         class AirDefence:
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
             SPAAA_ZU_23_2_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Mounted_Ural_375
@@ -12761,7 +12846,7 @@ class Poland(Country):
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
@@ -12782,7 +12867,7 @@ class Poland(Country):
 
         class Unarmed:
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Bus_IKARUS_280 = vehicles.Unarmed.Bus_IKARUS_280
             Truck_KAMAZ_43101 = vehicles.Unarmed.Truck_KAMAZ_43101
             Truck_MAZ_6303 = vehicles.Unarmed.Truck_MAZ_6303
@@ -12796,21 +12881,23 @@ class Poland(Country):
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
 
         class Armor:
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             APC_M113 = vehicles.Armor.APC_M113
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
             APC_MTLB = vehicles.Armor.APC_MTLB
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             CT_Centaur_IV = vehicles.Armor.CT_Centaur_IV
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
             MBT_T_55 = vehicles.Armor.MBT_T_55
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
             Car_Daimler_Armored = vehicles.Armor.Car_Daimler_Armored
+            LT_PT_76 = vehicles.Armor.LT_PT_76
+            MBT_Leopard_2A5 = vehicles.Armor.MBT_Leopard_2A5
             HIT_Churchill_VII = vehicles.Armor.HIT_Churchill_VII
             LT_Mk_VII_Tetrarch = vehicles.Armor.LT_Mk_VII_Tetrarch
             SPG_M10_GMC = vehicles.Armor.SPG_M10_GMC
@@ -12828,6 +12915,7 @@ class Poland(Country):
         class Carriage:
             Wagon_G10__Germany = vehicles.Carriage.Wagon_G10__Germany
             DR_50_ton_flat_wagon = vehicles.Carriage.DR_50_ton_flat_wagon
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
@@ -12957,6 +13045,7 @@ class Poland(Country):
         SSK_877V_Kilo = ships.SSK_877V_Kilo
         Corvette_1241_1_Molniya = ships.Corvette_1241_1_Molniya
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
         LST_Mk_II = ships.LST_Mk_II
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         Boat_LCVP_Higgins = ships.Boat_LCVP_Higgins
@@ -13093,7 +13182,6 @@ class Romania(Country):
         class Artillery:
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
-            SPG_Sturmpanzer_IV_Brummbar = vehicles.Artillery.SPG_Sturmpanzer_IV_Brummbar
 
         class Infantry:
             Infantry_Mauser_98 = vehicles.Infantry.Infantry_Mauser_98
@@ -13105,7 +13193,7 @@ class Romania(Country):
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             SPAAA_Gepard = vehicles.AirDefence.SPAAA_Gepard
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
@@ -13135,7 +13223,7 @@ class Romania(Country):
 
         class Unarmed:
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Bus_IKARUS_280 = vehicles.Unarmed.Bus_IKARUS_280
             Truck_KAMAZ_43101 = vehicles.Unarmed.Truck_KAMAZ_43101
             Truck_MAZ_6303 = vehicles.Unarmed.Truck_MAZ_6303
@@ -13150,18 +13238,19 @@ class Romania(Country):
 
         class Armor:
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             APC_Sd_Kfz_251_Halftrack = vehicles.Armor.APC_Sd_Kfz_251_Halftrack
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             MBT_T_55 = vehicles.Armor.MBT_T_55
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             HT_Pz_Kpfw_VI_Tiger_I = vehicles.Armor.HT_Pz_Kpfw_VI_Tiger_I
             HT_Pz_Kpfw_VI_Ausf__B_Tiger_II = vehicles.Armor.HT_Pz_Kpfw_VI_Ausf__B_Tiger_II
             MT_Pz_Kpfw_V_Panther_Ausf_G = vehicles.Armor.MT_Pz_Kpfw_V_Panther_Ausf_G
             SPG_Jagdpanther_G1 = vehicles.Armor.SPG_Jagdpanther_G1
             SPG_Jagdpanzer_IV = vehicles.Armor.SPG_Jagdpanzer_IV
             SPG_StuG_IV = vehicles.Armor.SPG_StuG_IV
+            SPG_Sturmpanzer_IV_Brummbar = vehicles.Armor.SPG_Sturmpanzer_IV_Brummbar
             IFV_Sd_Kfz_234_2_Puma = vehicles.Armor.IFV_Sd_Kfz_234_2_Puma
             SPG_StuG_III_Ausf__G = vehicles.Armor.SPG_StuG_III_Ausf__G
             SPG_Sd_Kfz_184_Elefant = vehicles.Armor.SPG_Sd_Kfz_184_Elefant
@@ -13294,6 +13383,7 @@ class Romania(Country):
         SSK_877V_Kilo = ships.SSK_877V_Kilo
         Corvette_1241_1_Molniya = ships.Corvette_1241_1_Molniya
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
         U_boat_VIIC_U_flak = ships.U_boat_VIIC_U_flak
         Boat_Schnellboot_type_S130 = ships.Boat_Schnellboot_type_S130
 
@@ -13429,7 +13519,7 @@ class SaudiArabia(Country):
         class Artillery:
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
 
         class AirDefence:
@@ -13444,10 +13534,10 @@ class SaudiArabia(Country):
             SAM_Patriot_C2_ICC = vehicles.AirDefence.SAM_Patriot_C2_ICC
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -13460,20 +13550,20 @@ class SaudiArabia(Country):
             Beacon_TACAN_Portable_TTS_3030 = vehicles.Fortification.Beacon_TACAN_Portable_TTS_3030
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
 
         class Armor:
             APC_M113 = vehicles.Armor.APC_M113
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             MBT_M1A2_Abrams = vehicles.Armor.MBT_M1A2_Abrams
             IFV_M2A2_Bradley = vehicles.Armor.IFV_M2A2_Bradley
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             APC_TPz_Fuchs = vehicles.Armor.APC_TPz_Fuchs
-            APC_Cobra__Scout = vehicles.Armor.APC_Cobra__Scout
+            Scout_Cobra = vehicles.Armor.Scout_Cobra
             IFV_LAV_25 = vehicles.Armor.IFV_LAV_25
 
         class Locomotive:
@@ -13609,6 +13699,7 @@ class SaudiArabia(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -13754,7 +13845,7 @@ class Serbia(Country):
             SAM_SA_11_Buk_Gadfly_Snow_Drift_SR = vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_Snow_Drift_SR
             SAM_SA_11_Buk_Gadfly_C2 = vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_C2
             SAM_SA_11_Buk_Gadfly_Fire_Dome_TEL = vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_Fire_Dome_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             SAM_SA_13_Strela_10M3_Gopher_TEL = vehicles.AirDefence.SAM_SA_13_Strela_10M3_Gopher_TEL
@@ -13766,7 +13857,7 @@ class Serbia(Country):
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             MANPADS_SA_18_Igla_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse
             MANPADS_SA_18_Igla_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_C2
 
@@ -13789,11 +13880,11 @@ class Serbia(Country):
             Bus_IKARUS_280 = vehicles.Unarmed.Bus_IKARUS_280
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             GPU_APA_80_on_ZIL_131 = vehicles.Unarmed.GPU_APA_80_on_ZIL_131
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_KAMAZ_43101 = vehicles.Unarmed.Truck_KAMAZ_43101
             Truck_MAZ_6303 = vehicles.Unarmed.Truck_MAZ_6303
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
@@ -13802,11 +13893,11 @@ class Serbia(Country):
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_MTLB = vehicles.Armor.APC_MTLB
             MBT_T_72B = vehicles.Armor.MBT_T_72B
             MBT_T_55 = vehicles.Armor.MBT_T_55
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
 
         class Locomotive:
             Loco_VL80_Electric = vehicles.Locomotive.Loco_VL80_Electric
@@ -14069,7 +14160,7 @@ class Slovakia(Country):
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_10_S_300_Grumble_TEL_D = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_TEL_D
             SAM_SA_10_S_300_Grumble_TEL_C = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_TEL_C
             SAM_SA_10_S_300_Grumble_C2 = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_C2
@@ -14079,6 +14170,7 @@ class Slovakia(Country):
             MANPADS_SA_18_Igla_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse
             MANPADS_SA_18_Igla_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_C2
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -14092,7 +14184,7 @@ class Slovakia(Country):
 
         class Unarmed:
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            APC_Tigr = vehicles.Unarmed.APC_Tigr
+            LUV_Tigr = vehicles.Unarmed.LUV_Tigr
             Bus_IKARUS_280 = vehicles.Unarmed.Bus_IKARUS_280
             Truck_KAMAZ_43101 = vehicles.Unarmed.Truck_KAMAZ_43101
             Truck_MAZ_6303 = vehicles.Unarmed.Truck_MAZ_6303
@@ -14101,7 +14193,7 @@ class Slovakia(Country):
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
 
         class Armor:
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             MBT_T_55 = vehicles.Armor.MBT_T_55
@@ -14360,15 +14452,15 @@ class SouthKorea(Country):
 
         class Artillery:
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SPAAA_Vulcan_M163 = vehicles.AirDefence.SPAAA_Vulcan_M163
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_Patriot_CR__AMG_AN_MRC_137 = vehicles.AirDefence.SAM_Patriot_CR__AMG_AN_MRC_137
             SAM_Patriot_ECS = vehicles.AirDefence.SAM_Patriot_ECS
@@ -14393,7 +14485,7 @@ class SouthKorea(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
 
@@ -14402,7 +14494,7 @@ class SouthKorea(Country):
             APC_M113 = vehicles.Armor.APC_M113
             IFV_BMP_3 = vehicles.Armor.IFV_BMP_3
             MBT_T_80U = vehicles.Armor.MBT_T_80U
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
 
         class Locomotive:
             Loco_VL80_Electric = vehicles.Locomotive.Loco_VL80_Electric
@@ -14531,6 +14623,7 @@ class SouthKorea(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -14662,11 +14755,11 @@ class Sweden(Country):
     class Vehicle:
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
 
         class Fortification:
@@ -14681,12 +14774,12 @@ class Sweden(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
 
         class Armor:
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
 
         class Locomotive:
             Loco_VL80_Electric = vehicles.Locomotive.Loco_VL80_Electric
@@ -14695,6 +14788,7 @@ class Sweden(Country):
             Loco_DRG_Class_86 = vehicles.Locomotive.Loco_DRG_Class_86
 
         class Carriage:
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Freight_Van = vehicles.Carriage.Freight_Van
             Open_Wagon = vehicles.Carriage.Open_Wagon
             Tank_Car_blue = vehicles.Carriage.Tank_Car_blue
@@ -14938,7 +15032,7 @@ class Syria(Country):
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
             MLRS_9A52_Smerch_CM_300mm = vehicles.Artillery.MLRS_9A52_Smerch_CM_300mm
             MLRS_9A52_Smerch_HE_300mm = vehicles.Artillery.MLRS_9A52_Smerch_HE_300mm
-            MLRS_BM_27_Uragan_220mm = vehicles.Artillery.MLRS_BM_27_Uragan_220mm
+            MLRS_9K57_Uragan_BM_27_220mm = vehicles.Artillery.MLRS_9K57_Uragan_BM_27_220mm
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
@@ -14953,7 +15047,7 @@ class Syria(Country):
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             SAM_SA_11_Buk_Gadfly_Fire_Dome_TEL = vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_Fire_Dome_TEL
@@ -14979,21 +15073,23 @@ class Syria(Country):
 
         class Unarmed:
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            APC_Tigr = vehicles.Unarmed.APC_Tigr
+            LUV_Tigr = vehicles.Unarmed.LUV_Tigr
             Truck_GAZ_3308 = vehicles.Unarmed.Truck_GAZ_3308
             Truck_KrAZ_6322_6x6 = vehicles.Unarmed.Truck_KrAZ_6322_6x6
 
         class Armor:
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             MBT_T_55 = vehicles.Armor.MBT_T_55
             MBT_T_90 = vehicles.Armor.MBT_T_90
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             MBT_T_72B3 = vehicles.Armor.MBT_T_72B3
-            APC_BTR_82A = vehicles.Armor.APC_BTR_82A
+            IFV_BTR_82A = vehicles.Armor.IFV_BTR_82A
+            LT_PT_76 = vehicles.Armor.LT_PT_76
+            MBT_Leopard_2A5 = vehicles.Armor.MBT_Leopard_2A5
 
         class MissilesSS:
             SSM_SS_1C_Scud_B = vehicles.MissilesSS.SSM_SS_1C_Scud_B
@@ -15251,13 +15347,13 @@ class Yemen(Country):
     class Vehicle:
 
         class Artillery:
-            MLRS_BM_27_Uragan_220mm = vehicles.Artillery.MLRS_BM_27_Uragan_220mm
+            MLRS_9K57_Uragan_BM_27_220mm = vehicles.Artillery.MLRS_9K57_Uragan_BM_27_220mm
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
 
         class AirDefence:
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SPAAA_Vulcan_M163 = vehicles.AirDefence.SPAAA_Vulcan_M163
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
@@ -15267,7 +15363,7 @@ class Yemen(Country):
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
@@ -15284,13 +15380,13 @@ class Yemen(Country):
 
         class Unarmed:
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_KrAZ_6322_6x6 = vehicles.Unarmed.Truck_KrAZ_6322_6x6
 
         class Armor:
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             APC_M113 = vehicles.Armor.APC_M113
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             MBT_T_55 = vehicles.Armor.MBT_T_55
@@ -15557,7 +15653,7 @@ class Vietnam(Country):
 
         class AirDefence:
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
             SPAAA_ZU_23_2_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Mounted_Ural_375
@@ -15566,7 +15662,7 @@ class Vietnam(Country):
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             SAM_SA_10_S_300_Grumble_TEL_D = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_TEL_D
             SAM_SA_10_S_300_Grumble_TEL_C = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_TEL_C
@@ -15578,6 +15674,7 @@ class Vietnam(Country):
             MANPADS_SA_18_Igla_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_C2
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -15595,11 +15692,12 @@ class Vietnam(Country):
         class Armor:
             APC_M113 = vehicles.Armor.APC_M113
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             MBT_T_55 = vehicles.Armor.MBT_T_55
             MBT_T_90 = vehicles.Armor.MBT_T_90
+            LT_PT_76 = vehicles.Armor.LT_PT_76
 
         class MissilesSS:
             SSM_SS_1C_Scud_B = vehicles.MissilesSS.SSM_SS_1C_Scud_B
@@ -15867,7 +15965,7 @@ class Venezuela(Country):
 
         class AirDefence:
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
             SPAAA_ZU_23_2_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Mounted_Ural_375
@@ -15885,6 +15983,7 @@ class Venezuela(Country):
             SAM_SA_15_Tor_Gauntlet = vehicles.AirDefence.SAM_SA_15_Tor_Gauntlet
             MANPADS_SA_18_Igla_S_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_S_Grouse
             MANPADS_SA_18_Igla_S_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_S_Grouse_C2
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -16166,11 +16265,11 @@ class Tunisia(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
 
         class Armor:
             APC_M113 = vehicles.Armor.APC_M113
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
 
         class Locomotive:
@@ -16412,7 +16511,7 @@ class Thailand(Country):
     class Vehicle:
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SPAAA_Vulcan_M163 = vehicles.AirDefence.SPAAA_Vulcan_M163
             MANPADS_SA_18_Igla_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse
             MANPADS_SA_18_Igla_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_C2
@@ -16432,12 +16531,12 @@ class Thailand(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_KrAZ_6322_6x6 = vehicles.Unarmed.Truck_KrAZ_6322_6x6
 
         class Armor:
             APC_M113 = vehicles.Armor.APC_M113
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             APC_AAV_7_Amphibious = vehicles.Armor.APC_AAV_7_Amphibious
 
@@ -16562,6 +16661,7 @@ class Thailand(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -16698,7 +16798,7 @@ class Sudan(Country):
 
         class AirDefence:
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SPAAA_Vulcan_M163 = vehicles.AirDefence.SPAAA_Vulcan_M163
             SAM_SA_2_S_75_Fan_Song_TR = vehicles.AirDefence.SAM_SA_2_S_75_Fan_Song_TR
             SAM_SA_2_S_75_Guideline_LN = vehicles.AirDefence.SAM_SA_2_S_75_Guideline_LN
@@ -16717,14 +16817,14 @@ class Sudan(Country):
 
         class Unarmed:
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
 
         class Armor:
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             APC_M113 = vehicles.Armor.APC_M113
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             MBT_T_55 = vehicles.Armor.MBT_T_55
@@ -16978,7 +17078,7 @@ class Philippines(Country):
     class Vehicle:
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -16992,14 +17092,14 @@ class Philippines(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
 
         class Armor:
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             APC_M113 = vehicles.Armor.APC_M113
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
 
         class Locomotive:
             Loco_VL80_Electric = vehicles.Locomotive.Loco_VL80_Electric
@@ -17257,7 +17357,7 @@ class Morocco(Country):
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Chaparral_M48 = vehicles.AirDefence.SAM_Chaparral_M48
             SPAAA_Vulcan_M163 = vehicles.AirDefence.SPAAA_Vulcan_M163
             SAM_SA_19_Tunguska_Grison = vehicles.AirDefence.SAM_SA_19_Tunguska_Grison
@@ -17281,8 +17381,8 @@ class Morocco(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
 
         class Armor:
@@ -17290,7 +17390,7 @@ class Morocco(Country):
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             MBT_M1A2_Abrams = vehicles.Armor.MBT_M1A2_Abrams
             MBT_T_72B = vehicles.Armor.MBT_T_72B
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
 
         class Locomotive:
@@ -17540,7 +17640,7 @@ class Mexico(Country):
     class Vehicle:
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             MANPADS_SA_18_Igla_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse
             MANPADS_SA_18_Igla_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_C2
 
@@ -17556,13 +17656,13 @@ class Mexico(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
 
         class Armor:
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
 
         class Locomotive:
             Loco_VL80_Electric = vehicles.Locomotive.Loco_VL80_Electric
@@ -17681,6 +17781,7 @@ class Mexico(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -17812,7 +17913,7 @@ class Malaysia(Country):
     class Vehicle:
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             MANPADS_SA_18_Igla_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse
             MANPADS_SA_18_Igla_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse_C2
             SAM_Rapier_LN = vehicles.AirDefence.SAM_Rapier_LN
@@ -17950,6 +18051,8 @@ class Malaysia(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
+        FAC_La_Combattante_IIa = ships.FAC_La_Combattante_IIa
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -18088,7 +18191,7 @@ class Libya(Country):
 
         class AirDefence:
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
             SPAAA_ZU_23_2_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Mounted_Ural_375
@@ -18097,7 +18200,7 @@ class Libya(Country):
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             MANPADS_SA_18_Igla_S_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_S_Grouse
@@ -18124,7 +18227,7 @@ class Libya(Country):
             LUV_Land_Rover_109 = vehicles.Unarmed.LUV_Land_Rover_109
 
         class Armor:
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             MBT_T_55 = vehicles.Armor.MBT_T_55
 
@@ -18245,6 +18348,7 @@ class Libya(Country):
 
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
+        FAC_La_Combattante_IIa = ships.FAC_La_Combattante_IIa
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -18376,12 +18480,12 @@ class Jordan(Country):
     class Vehicle:
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SPAAA_Vulcan_M163 = vehicles.AirDefence.SPAAA_Vulcan_M163
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             MANPADS_SA_18_Igla_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse
@@ -18403,14 +18507,14 @@ class Jordan(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
 
         class Armor:
             APC_M113 = vehicles.Armor.APC_M113
             IFV_Marder = vehicles.Armor.IFV_Marder
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
@@ -18668,7 +18772,7 @@ class Indonesia(Country):
 
         class AirDefence:
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
             SPAAA_ZU_23_2_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Mounted_Ural_375
@@ -18702,7 +18806,8 @@ class Indonesia(Country):
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             IFV_BMP_3 = vehicles.Armor.IFV_BMP_3
             IFV_Marder = vehicles.Armor.IFV_Marder
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
+            LT_PT_76 = vehicles.Armor.LT_PT_76
 
         class Locomotive:
             Loco_VL80_Electric = vehicles.Locomotive.Loco_VL80_Electric
@@ -18711,6 +18816,7 @@ class Indonesia(Country):
             Loco_DRG_Class_86 = vehicles.Locomotive.Loco_DRG_Class_86
 
         class Carriage:
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Freight_Van = vehicles.Carriage.Freight_Van
             Open_Wagon = vehicles.Carriage.Open_Wagon
             Tank_Car_blue = vehicles.Carriage.Tank_Car_blue
@@ -18829,6 +18935,7 @@ class Indonesia(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -18971,10 +19078,10 @@ class Honduras(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
 
         class Armor:
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
 
         class Locomotive:
@@ -19234,7 +19341,7 @@ class Ethiopia(Country):
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
@@ -19251,17 +19358,17 @@ class Ethiopia(Country):
 
         class Unarmed:
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
 
         class Armor:
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             APC_M113 = vehicles.Armor.APC_M113
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMD_1 = vehicles.Armor.IFV_BMD_1
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             MBT_T_55 = vehicles.Armor.MBT_T_55
             MBT_T_72B = vehicles.Armor.MBT_T_72B
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
 
         class Locomotive:
             Loco_VL80_Electric = vehicles.Locomotive.Loco_VL80_Electric
@@ -19516,7 +19623,7 @@ class Chile(Country):
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
             SPAAA_Vulcan_M163 = vehicles.AirDefence.SPAAA_Vulcan_M163
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_Avenger__Stinger = vehicles.AirDefence.SAM_Avenger__Stinger
             SAM_Chaparral_M48 = vehicles.AirDefence.SAM_Chaparral_M48
             SPAAA_Gepard = vehicles.AirDefence.SPAAA_Gepard
@@ -19532,17 +19639,18 @@ class Chile(Country):
             Beacon_TACAN_Portable_TTS_3030 = vehicles.Fortification.Beacon_TACAN_Portable_TTS_3030
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
 
         class Armor:
             APC_M113 = vehicles.Armor.APC_M113
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
             IFV_Marder = vehicles.Armor.IFV_Marder
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
+            MBT_Leopard_2A5 = vehicles.Armor.MBT_Leopard_2A5
 
         class Locomotive:
             Loco_VL80_Electric = vehicles.Locomotive.Loco_VL80_Electric
@@ -19551,6 +19659,7 @@ class Chile(Country):
             Loco_DRG_Class_86 = vehicles.Locomotive.Loco_DRG_Class_86
 
         class Carriage:
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Freight_Van = vehicles.Carriage.Freight_Van
             Open_Wagon = vehicles.Carriage.Open_Wagon
             Tank_Car_blue = vehicles.Carriage.Tank_Car_blue
@@ -19671,6 +19780,7 @@ class Chile(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -19811,7 +19921,7 @@ class Brazil(Country):
         class AirDefence:
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_Roland_ADS = vehicles.AirDefence.SAM_Roland_ADS
             SAM_Roland_EWR = vehicles.AirDefence.SAM_Roland_EWR
             MANPADS_SA_18_Igla_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse
@@ -19832,7 +19942,7 @@ class Brazil(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
 
         class Armor:
@@ -19841,7 +19951,7 @@ class Brazil(Country):
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
 
         class Locomotive:
             Loco_ES44AH = vehicles.Locomotive.Loco_ES44AH
@@ -19958,6 +20068,7 @@ class Brazil(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -20091,7 +20202,7 @@ class Bahrain(Country):
         class Artillery:
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
 
         class Infantry:
             Infantry_M4 = vehicles.Infantry.Infantry_M4
@@ -20103,10 +20214,10 @@ class Bahrain(Country):
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -20120,12 +20231,12 @@ class Bahrain(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
 
         class Armor:
-            APC_Cobra__Scout = vehicles.Armor.APC_Cobra__Scout
+            Scout_Cobra = vehicles.Armor.Scout_Cobra
             APC_M113 = vehicles.Armor.APC_M113
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
 
@@ -20368,9 +20479,6 @@ class ThirdReich(Country):
 
     class Vehicle:
 
-        class Artillery:
-            SPG_Sturmpanzer_IV_Brummbar = vehicles.Artillery.SPG_Sturmpanzer_IV_Brummbar
-
         class Infantry:
             Infantry_Mauser_98 = vehicles.Infantry.Infantry_Mauser_98
 
@@ -20407,7 +20515,7 @@ class ThirdReich(Country):
             LUV_Horch_901_Staff_Car = vehicles.Unarmed.LUV_Horch_901_Staff_Car
 
         class Armor:
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             APC_Sd_Kfz_251_Halftrack = vehicles.Armor.APC_Sd_Kfz_251_Halftrack
             HT_Pz_Kpfw_VI_Tiger_I = vehicles.Armor.HT_Pz_Kpfw_VI_Tiger_I
             HT_Pz_Kpfw_VI_Ausf__B_Tiger_II = vehicles.Armor.HT_Pz_Kpfw_VI_Ausf__B_Tiger_II
@@ -20415,6 +20523,7 @@ class ThirdReich(Country):
             SPG_Jagdpanther_G1 = vehicles.Armor.SPG_Jagdpanther_G1
             SPG_Jagdpanzer_IV = vehicles.Armor.SPG_Jagdpanzer_IV
             SPG_StuG_IV = vehicles.Armor.SPG_StuG_IV
+            SPG_Sturmpanzer_IV_Brummbar = vehicles.Armor.SPG_Sturmpanzer_IV_Brummbar
             IFV_Sd_Kfz_234_2_Puma = vehicles.Armor.IFV_Sd_Kfz_234_2_Puma
             SPG_StuG_III_Ausf__G = vehicles.Armor.SPG_StuG_III_Ausf__G
             SPG_Sd_Kfz_184_Elefant = vehicles.Armor.SPG_Sd_Kfz_184_Elefant
@@ -20673,11 +20782,11 @@ class Yugoslavia(Country):
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             SAM_SA_3_S_125_Low_Blow_TR = vehicles.AirDefence.SAM_SA_3_S_125_Low_Blow_TR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_QF_3_7 = vehicles.AirDefence.AAA_QF_3_7
             AAA_M45_Quadmount_HB_12_7mm = vehicles.AirDefence.AAA_M45_Quadmount_HB_12_7mm
             AAA_M1_37mm = vehicles.AirDefence.AAA_M1_37mm
@@ -20702,9 +20811,10 @@ class Yugoslavia(Country):
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
 
         class Armor:
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             MBT_T_55 = vehicles.Armor.MBT_T_55
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
+            LT_PT_76 = vehicles.Armor.LT_PT_76
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
@@ -20885,13 +20995,13 @@ class USSR(Country):
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
             Grad_MRL_FDDM__FC = vehicles.Artillery.Grad_MRL_FDDM__FC
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
-            SPH_2S9_Nona_120mm_M = vehicles.Artillery.SPH_2S9_Nona_120mm_M
+            SPM_2S9_Nona_120mm_M = vehicles.Artillery.SPM_2S9_Nona_120mm_M
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
             SPH_2S19_Msta_152mm = vehicles.Artillery.SPH_2S19_Msta_152mm
             MLRS_9A52_Smerch_CM_300mm = vehicles.Artillery.MLRS_9A52_Smerch_CM_300mm
             MLRS_9A52_Smerch_HE_300mm = vehicles.Artillery.MLRS_9A52_Smerch_HE_300mm
-            MLRS_BM_27_Uragan_220mm = vehicles.Artillery.MLRS_BM_27_Uragan_220mm
+            MLRS_9K57_Uragan_BM_27_220mm = vehicles.Artillery.MLRS_9K57_Uragan_BM_27_220mm
             SPH_Dana_vz77_152mm = vehicles.Artillery.SPH_Dana_vz77_152mm
             SPG_M12_GMC_155mm = vehicles.Artillery.SPG_M12_GMC_155mm
 
@@ -20906,7 +21016,7 @@ class USSR(Country):
             EWR_55G6 = vehicles.AirDefence.EWR_55G6
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             MCC_SR_Sborka_Dog_Ear_SR = vehicles.AirDefence.MCC_SR_Sborka_Dog_Ear_SR
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
@@ -20931,9 +21041,10 @@ class USSR(Country):
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_8_8cm_Flak_36 = vehicles.AirDefence.AAA_8_8cm_Flak_36
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
             SPAAA_ZSU_57_2 = vehicles.AirDefence.SPAAA_ZSU_57_2
             AAA_QF_3_7 = vehicles.AirDefence.AAA_QF_3_7
             AAA_M45_Quadmount_HB_12_7mm = vehicles.AirDefence.AAA_M45_Quadmount_HB_12_7mm
@@ -20961,10 +21072,10 @@ class USSR(Country):
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
             LUV_UAZ_469_Jeep = vehicles.Unarmed.LUV_UAZ_469_Jeep
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             Truck_Ural_375_Mobile_C2 = vehicles.Unarmed.Truck_Ural_375_Mobile_C2
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
             Truck_Ural_4320_31_Arm_d = vehicles.Unarmed.Truck_Ural_4320_31_Arm_d
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
@@ -20972,6 +21083,8 @@ class USSR(Country):
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
             Truck_ZIL_4331 = vehicles.Unarmed.Truck_ZIL_4331
             Car_Willys_Jeep = vehicles.Unarmed.Car_Willys_Jeep
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
+            Fire_Fight_Vehicle_AA_7_2_60 = vehicles.Unarmed.Fire_Fight_Vehicle_AA_7_2_60
             Truck_Bedford = vehicles.Unarmed.Truck_Bedford
             Truck_GMC_Jimmy_6x6_Truck = vehicles.Unarmed.Truck_GMC_Jimmy_6x6_Truck
             Carrier_M30_Cargo = vehicles.Unarmed.Carrier_M30_Cargo
@@ -20982,7 +21095,7 @@ class USSR(Country):
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             IFV_BMP_3 = vehicles.Armor.IFV_BMP_3
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_BTR_RD = vehicles.Armor.APC_BTR_RD
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             APC_MTLB = vehicles.Armor.APC_MTLB
@@ -20992,10 +21105,11 @@ class USSR(Country):
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             CT_Centaur_IV = vehicles.Armor.CT_Centaur_IV
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             SPG_M10_GMC = vehicles.Armor.SPG_M10_GMC
             LT_Mk_VII_Tetrarch = vehicles.Armor.LT_Mk_VII_Tetrarch
+            LT_PT_76 = vehicles.Armor.LT_PT_76
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
             HIT_Churchill_VII = vehicles.Armor.HIT_Churchill_VII
             Car_Daimler_Armored = vehicles.Armor.Car_Daimler_Armored
@@ -21233,9 +21347,6 @@ class ItalianSocialRepublic(Country):
 
     class Vehicle:
 
-        class Artillery:
-            SPG_Sturmpanzer_IV_Brummbar = vehicles.Artillery.SPG_Sturmpanzer_IV_Brummbar
-
         class Infantry:
             Infantry_Mauser_98 = vehicles.Infantry.Infantry_Mauser_98
 
@@ -21272,7 +21383,7 @@ class ItalianSocialRepublic(Country):
             LUV_Horch_901_Staff_Car = vehicles.Unarmed.LUV_Horch_901_Staff_Car
 
         class Armor:
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             APC_Sd_Kfz_251_Halftrack = vehicles.Armor.APC_Sd_Kfz_251_Halftrack
             HT_Pz_Kpfw_VI_Tiger_I = vehicles.Armor.HT_Pz_Kpfw_VI_Tiger_I
             HT_Pz_Kpfw_VI_Ausf__B_Tiger_II = vehicles.Armor.HT_Pz_Kpfw_VI_Ausf__B_Tiger_II
@@ -21280,6 +21391,7 @@ class ItalianSocialRepublic(Country):
             SPG_Jagdpanther_G1 = vehicles.Armor.SPG_Jagdpanther_G1
             SPG_Jagdpanzer_IV = vehicles.Armor.SPG_Jagdpanzer_IV
             SPG_StuG_IV = vehicles.Armor.SPG_StuG_IV
+            SPG_Sturmpanzer_IV_Brummbar = vehicles.Armor.SPG_Sturmpanzer_IV_Brummbar
             IFV_Sd_Kfz_234_2_Puma = vehicles.Armor.IFV_Sd_Kfz_234_2_Puma
             SPG_StuG_III_Ausf__G = vehicles.Armor.SPG_StuG_III_Ausf__G
             SPG_Sd_Kfz_184_Elefant = vehicles.Armor.SPG_Sd_Kfz_184_Elefant
@@ -21544,7 +21656,7 @@ class Algeria(Country):
             EWR_55G6 = vehicles.AirDefence.EWR_55G6
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             MCC_SR_Sborka_Dog_Ear_SR = vehicles.AirDefence.MCC_SR_Sborka_Dog_Ear_SR
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
@@ -21566,10 +21678,11 @@ class Algeria(Country):
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_SA_2_S_75_Fan_Song_TR = vehicles.AirDefence.SAM_SA_2_S_75_Fan_Song_TR
             SAM_SA_2_S_75_Guideline_LN = vehicles.AirDefence.SAM_SA_2_S_75_Guideline_LN
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
             HQ_7_Self_Propelled_LN = vehicles.AirDefence.HQ_7_Self_Propelled_LN
             HQ_7_Self_Propelled_STR = vehicles.AirDefence.HQ_7_Self_Propelled_STR
 
@@ -21589,7 +21702,7 @@ class Algeria(Country):
             Truck_GAZ_3307 = vehicles.Unarmed.Truck_GAZ_3307
             Truck_GAZ_3308 = vehicles.Unarmed.Truck_GAZ_3308
             Truck_GAZ_66 = vehicles.Unarmed.Truck_GAZ_66
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Bus_IKARUS_280 = vehicles.Unarmed.Bus_IKARUS_280
             Truck_KAMAZ_43101 = vehicles.Unarmed.Truck_KAMAZ_43101
             Bus_LAZ_695 = vehicles.Unarmed.Bus_LAZ_695
@@ -21597,23 +21710,24 @@ class Algeria(Country):
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             Truck_MAZ_6303 = vehicles.Unarmed.Truck_MAZ_6303
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
-            APC_Tigr = vehicles.Unarmed.APC_Tigr
+            LUV_Tigr = vehicles.Unarmed.LUV_Tigr
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
             LUV_UAZ_469_Jeep = vehicles.Unarmed.LUV_UAZ_469_Jeep
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             Truck_Ural_375_Mobile_C2 = vehicles.Unarmed.Truck_Ural_375_Mobile_C2
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
             GPU_APA_80_on_ZIL_131 = vehicles.Unarmed.GPU_APA_80_on_ZIL_131
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
             Truck_ZIL_4331 = vehicles.Unarmed.Truck_ZIL_4331
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
 
         class Armor:
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             APC_MTLB = vehicles.Armor.APC_MTLB
             MBT_T_55 = vehicles.Armor.MBT_T_55
@@ -21923,7 +22037,7 @@ class Kuwait(Country):
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_Patriot_CR__AMG_AN_MRC_137 = vehicles.AirDefence.SAM_Patriot_CR__AMG_AN_MRC_137
             SAM_Patriot_ECS = vehicles.AirDefence.SAM_Patriot_ECS
@@ -21945,12 +22059,12 @@ class Kuwait(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
 
         class Armor:
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             APC_M113 = vehicles.Armor.APC_M113
             APC_TPz_Fuchs = vehicles.Armor.APC_TPz_Fuchs
@@ -22207,7 +22321,7 @@ class Qatar(Country):
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_Roland_ADS = vehicles.AirDefence.SAM_Roland_ADS
             SAM_Roland_EWR = vehicles.AirDefence.SAM_Roland_EWR
             MANPADS_SA_18_Igla_S_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_S_Grouse
@@ -22230,12 +22344,12 @@ class Qatar(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
 
         class Armor:
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             Car_Daimler_Armored = vehicles.Armor.Car_Daimler_Armored
 
         class Locomotive:
@@ -22493,7 +22607,7 @@ class Oman(Country):
             SAM_Patriot_EPP_III = vehicles.AirDefence.SAM_Patriot_EPP_III
             SAM_Patriot_ECS = vehicles.AirDefence.SAM_Patriot_ECS
             SAM_Patriot_C2_ICC = vehicles.AirDefence.SAM_Patriot_C2_ICC
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
             MANPADS_Stinger_C2_Desert = vehicles.AirDefence.MANPADS_Stinger_C2_Desert
@@ -22512,9 +22626,9 @@ class Oman(Country):
             Beacon_TACAN_Portable_TTS_3030 = vehicles.Fortification.Beacon_TACAN_Portable_TTS_3030
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
             Truck_Land_Rover_101_FC = vehicles.Unarmed.Truck_Land_Rover_101_FC
             LUV_Land_Rover_109 = vehicles.Unarmed.LUV_Land_Rover_109
@@ -22522,7 +22636,7 @@ class Oman(Country):
         class Armor:
             MBT_Challenger_II = vehicles.Armor.MBT_Challenger_II
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
 
@@ -22644,6 +22758,7 @@ class Oman(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -22788,11 +22903,11 @@ class UnitedArabEmirates(Country):
             SAM_Patriot_ECS = vehicles.AirDefence.SAM_Patriot_ECS
             SAM_Patriot_C2_ICC = vehicles.AirDefence.SAM_Patriot_C2_ICC
             SAM_Avenger__Stinger = vehicles.AirDefence.SAM_Avenger__Stinger
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_Hawk_TR__AN_MPQ_46 = vehicles.AirDefence.SAM_Hawk_TR__AN_MPQ_46
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_Rapier_LN = vehicles.AirDefence.SAM_Rapier_LN
             SAM_Rapier_Tracker = vehicles.AirDefence.SAM_Rapier_Tracker
@@ -22812,7 +22927,7 @@ class UnitedArabEmirates(Country):
             MCC_Predator_UAV_CP__GCS = vehicles.Unarmed.MCC_Predator_UAV_CP__GCS
             MCC_COMM_Predator_UAV_CL = vehicles.Unarmed.MCC_COMM_Predator_UAV_CL
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
             Truck_Land_Rover_101_FC = vehicles.Unarmed.Truck_Land_Rover_101_FC
             LUV_Land_Rover_109 = vehicles.Unarmed.LUV_Land_Rover_109
@@ -22821,7 +22936,7 @@ class UnitedArabEmirates(Country):
             IFV_BMP_3 = vehicles.Armor.IFV_BMP_3
             APC_TPz_Fuchs = vehicles.Armor.APC_TPz_Fuchs
             MBT_Leclerc = vehicles.Armor.MBT_Leclerc
-            APC_Cobra__Scout = vehicles.Armor.APC_Cobra__Scout
+            Scout_Cobra = vehicles.Armor.Scout_Cobra
 
         class MissilesSS:
             SSM_SS_1C_Scud_B = vehicles.MissilesSS.SSM_SS_1C_Scud_B
@@ -22953,6 +23068,7 @@ class UnitedArabEmirates(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -23086,7 +23202,7 @@ class SouthAfrica(Country):
         class AirDefence:
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -23103,7 +23219,7 @@ class SouthAfrica(Country):
             LUV_Land_Rover_109 = vehicles.Unarmed.LUV_Land_Rover_109
 
         class Armor:
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
 
         class Locomotive:
@@ -23223,6 +23339,7 @@ class SouthAfrica(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -23378,7 +23495,7 @@ class Cuba(Country):
             SAM_SA_2_S_75_Fan_Song_TR = vehicles.AirDefence.SAM_SA_2_S_75_Fan_Song_TR
             SAM_SA_2_S_75_Guideline_LN = vehicles.AirDefence.SAM_SA_2_S_75_Guideline_LN
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             MANPADS_SA_18_Igla_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_Grouse
@@ -23404,19 +23521,20 @@ class Cuba(Country):
             Bus_IKARUS_280 = vehicles.Unarmed.Bus_IKARUS_280
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             GPU_APA_80_on_ZIL_131 = vehicles.Unarmed.GPU_APA_80_on_ZIL_131
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
 
         class Armor:
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_MTLB = vehicles.Armor.APC_MTLB
             MBT_T_55 = vehicles.Armor.MBT_T_55
             IFV_BMD_1 = vehicles.Armor.IFV_BMD_1
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
+            LT_PT_76 = vehicles.Armor.LT_PT_76
 
         class MissilesSS:
             SSM_SS_1C_Scud_B = vehicles.MissilesSS.SSM_SS_1C_Scud_B
@@ -23699,7 +23817,7 @@ class Portugal(Country):
             MANPADS_Stinger = vehicles.AirDefence.MANPADS_Stinger
             MANPADS_Stinger_C2 = vehicles.AirDefence.MANPADS_Stinger_C2
             SPAAA_Vulcan_M163 = vehicles.AirDefence.SPAAA_Vulcan_M163
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             MANPADS_Stinger_C2_Desert = vehicles.AirDefence.MANPADS_Stinger_C2_Desert
 
         class Fortification:
@@ -23717,7 +23835,7 @@ class Portugal(Country):
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
 
         class Armor:
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             APC_M113 = vehicles.Armor.APC_M113
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
@@ -23997,11 +24115,12 @@ class GDR(Country):
             SAM_SA_10_S_300_Grumble_Clam_Shell_SR = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_Clam_Shell_SR
             SAM_SA_10_S_300_Grumble_Big_Bird_SR = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_Big_Bird_SR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
             SPAAA_ZSU_57_2 = vehicles.AirDefence.SPAAA_ZSU_57_2
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
 
         class Fortification:
             Bunker_2 = vehicles.Fortification.Bunker_2
@@ -24014,22 +24133,23 @@ class GDR(Country):
             Beacon_TACAN_Portable_TTS_3030 = vehicles.Fortification.Beacon_TACAN_Portable_TTS_3030
 
         class Unarmed:
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
             GPU_APA_80_on_ZIL_131 = vehicles.Unarmed.GPU_APA_80_on_ZIL_131
             Refueler_ATMZ_5 = vehicles.Unarmed.Refueler_ATMZ_5
             Refueler_ATZ_10 = vehicles.Unarmed.Refueler_ATZ_10
             Truck_GAZ_66 = vehicles.Unarmed.Truck_GAZ_66
             Truck_KAMAZ_43101 = vehicles.Unarmed.Truck_KAMAZ_43101
             LUV_UAZ_469_Jeep = vehicles.Unarmed.LUV_UAZ_469_Jeep
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
             Truck_Ural_4320_31_Arm_d = vehicles.Unarmed.Truck_Ural_4320_31_Arm_d
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
 
         class Armor:
             APC_MTLB = vehicles.Armor.APC_MTLB
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             MBT_T_55 = vehicles.Armor.MBT_T_55
@@ -24296,7 +24416,7 @@ class Lebanon(Country):
             Infantry_M4 = vehicles.Infantry.Infantry_M4
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SPAAA_ZU_23_2_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Mounted_Ural_375
             SAM_SA_9_Strela_1_Gaskin_TEL = vehicles.AirDefence.SAM_SA_9_Strela_1_Gaskin_TEL
             SAM_SA_13_Strela_10M3_Gopher_TEL = vehicles.AirDefence.SAM_SA_13_Strela_10M3_Gopher_TEL
@@ -24316,7 +24436,7 @@ class Lebanon(Country):
 
         class Unarmed:
             Refueler_ATMZ_5 = vehicles.Unarmed.Refueler_ATMZ_5
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_KAMAZ_43101 = vehicles.Unarmed.Truck_KAMAZ_43101
             Truck_Land_Rover_101_FC = vehicles.Unarmed.Truck_Land_Rover_101_FC
             LUV_Land_Rover_109 = vehicles.Unarmed.LUV_Land_Rover_109
@@ -24327,11 +24447,12 @@ class Lebanon(Country):
             APC_M113 = vehicles.Armor.APC_M113
             IFV_M2A2_Bradley = vehicles.Armor.IFV_M2A2_Bradley
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
             MBT_T_55 = vehicles.Armor.MBT_T_55
+            ATGM_VAB_Mephisto = vehicles.Armor.ATGM_VAB_Mephisto
 
         class Locomotive:
             Loco_VL80_Electric = vehicles.Locomotive.Loco_VL80_Electric
@@ -24446,6 +24567,7 @@ class Lebanon(Country):
     class Ship:
         Boat_Armed_Hi_speed = ships.Boat_Armed_Hi_speed
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -24577,23 +24699,23 @@ class CombinedJointTaskForcesBlue(Country):
     class Vehicle:
 
         class Artillery:
-            SPG_Sturmpanzer_IV_Brummbar = vehicles.Artillery.SPG_Sturmpanzer_IV_Brummbar
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
             Grad_MRL_FDDM__FC = vehicles.Artillery.Grad_MRL_FDDM__FC
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
-            SPH_2S9_Nona_120mm_M = vehicles.Artillery.SPH_2S9_Nona_120mm_M
+            SPM_2S9_Nona_120mm_M = vehicles.Artillery.SPM_2S9_Nona_120mm_M
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
             SPH_2S19_Msta_152mm = vehicles.Artillery.SPH_2S19_Msta_152mm
             MLRS_9A52_Smerch_CM_300mm = vehicles.Artillery.MLRS_9A52_Smerch_CM_300mm
             MLRS_9A52_Smerch_HE_300mm = vehicles.Artillery.MLRS_9A52_Smerch_HE_300mm
-            MLRS_BM_27_Uragan_220mm = vehicles.Artillery.MLRS_BM_27_Uragan_220mm
+            MLRS_9K57_Uragan_BM_27_220mm = vehicles.Artillery.MLRS_9K57_Uragan_BM_27_220mm
             SPH_Dana_vz77_152mm = vehicles.Artillery.SPH_Dana_vz77_152mm
             SPG_M12_GMC_155mm = vehicles.Artillery.SPG_M12_GMC_155mm
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
             PLZ_05 = vehicles.Artillery.PLZ_05
+            SPH_T155_Firtina_155mm = vehicles.Artillery.SPH_T155_Firtina_155mm
 
         class Infantry:
             Infantry_Mauser_98 = vehicles.Infantry.Infantry_Mauser_98
@@ -24626,7 +24748,7 @@ class CombinedJointTaskForcesBlue(Country):
             EWR_55G6 = vehicles.AirDefence.EWR_55G6
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             MCC_SR_Sborka_Dog_Ear_SR = vehicles.AirDefence.MCC_SR_Sborka_Dog_Ear_SR
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
@@ -24651,8 +24773,9 @@ class CombinedJointTaskForcesBlue(Country):
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
             SPAAA_ZSU_57_2 = vehicles.AirDefence.SPAAA_ZSU_57_2
             AAA_QF_3_7 = vehicles.AirDefence.AAA_QF_3_7
             AAA_M45_Quadmount_HB_12_7mm = vehicles.AirDefence.AAA_M45_Quadmount_HB_12_7mm
@@ -24662,12 +24785,12 @@ class CombinedJointTaskForcesBlue(Country):
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Chaparral_M48 = vehicles.AirDefence.SAM_Chaparral_M48
             MANPADS_SA_18_Igla_S_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_S_Grouse
             MANPADS_SA_18_Igla_S_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_S_Grouse_C2
-            AAA_ZU_23_Closed_Emplacement_Insurgent = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement_Insurgent
-            AAA_ZU_23_Insurgent = vehicles.AirDefence.AAA_ZU_23_Insurgent
+            AAA_ZU_23_Insurgent_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Insurgent_Closed_Emplacement
+            AAA_ZU_23_Insurgent_Emplacement = vehicles.AirDefence.AAA_ZU_23_Insurgent_Emplacement
             SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375
             SAM_Avenger__Stinger = vehicles.AirDefence.SAM_Avenger__Stinger
             SAM_Roland_ADS = vehicles.AirDefence.SAM_Roland_ADS
@@ -24719,10 +24842,10 @@ class CombinedJointTaskForcesBlue(Country):
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
             LUV_UAZ_469_Jeep = vehicles.Unarmed.LUV_UAZ_469_Jeep
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             Truck_Ural_375_Mobile_C2 = vehicles.Unarmed.Truck_Ural_375_Mobile_C2
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
             Truck_Ural_4320_31_Arm_d = vehicles.Unarmed.Truck_Ural_4320_31_Arm_d
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
@@ -24730,25 +24853,27 @@ class CombinedJointTaskForcesBlue(Country):
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
             Truck_ZIL_4331 = vehicles.Unarmed.Truck_ZIL_4331
             Car_Willys_Jeep = vehicles.Unarmed.Car_Willys_Jeep
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
+            Fire_Fight_Vehicle_AA_7_2_60 = vehicles.Unarmed.Fire_Fight_Vehicle_AA_7_2_60
             Truck_Bedford = vehicles.Unarmed.Truck_Bedford
             Truck_GMC_Jimmy_6x6_Truck = vehicles.Unarmed.Truck_GMC_Jimmy_6x6_Truck
             Carrier_M30_Cargo = vehicles.Unarmed.Carrier_M30_Cargo
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_KrAZ_6322_6x6 = vehicles.Unarmed.Truck_KrAZ_6322_6x6
             Truck_GAZ_3308 = vehicles.Unarmed.Truck_GAZ_3308
             Truck_MAZ_6303 = vehicles.Unarmed.Truck_MAZ_6303
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
             Truck_Land_Rover_101_FC = vehicles.Unarmed.Truck_Land_Rover_101_FC
             LUV_Land_Rover_109 = vehicles.Unarmed.LUV_Land_Rover_109
             MCC_Predator_UAV_CP__GCS = vehicles.Unarmed.MCC_Predator_UAV_CP__GCS
             MCC_COMM_Predator_UAV_CL = vehicles.Unarmed.MCC_COMM_Predator_UAV_CL
-            APC_Tigr = vehicles.Unarmed.APC_Tigr
+            LUV_Tigr = vehicles.Unarmed.LUV_Tigr
 
         class Armor:
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             APC_Sd_Kfz_251_Halftrack = vehicles.Armor.APC_Sd_Kfz_251_Halftrack
             HT_Pz_Kpfw_VI_Tiger_I = vehicles.Armor.HT_Pz_Kpfw_VI_Tiger_I
             HT_Pz_Kpfw_VI_Ausf__B_Tiger_II = vehicles.Armor.HT_Pz_Kpfw_VI_Ausf__B_Tiger_II
@@ -24756,6 +24881,7 @@ class CombinedJointTaskForcesBlue(Country):
             SPG_Jagdpanther_G1 = vehicles.Armor.SPG_Jagdpanther_G1
             SPG_Jagdpanzer_IV = vehicles.Armor.SPG_Jagdpanzer_IV
             SPG_StuG_IV = vehicles.Armor.SPG_StuG_IV
+            SPG_Sturmpanzer_IV_Brummbar = vehicles.Armor.SPG_Sturmpanzer_IV_Brummbar
             IFV_Sd_Kfz_234_2_Puma = vehicles.Armor.IFV_Sd_Kfz_234_2_Puma
             SPG_StuG_III_Ausf__G = vehicles.Armor.SPG_StuG_III_Ausf__G
             SPG_Sd_Kfz_184_Elefant = vehicles.Armor.SPG_Sd_Kfz_184_Elefant
@@ -24763,7 +24889,7 @@ class CombinedJointTaskForcesBlue(Country):
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             IFV_BMP_3 = vehicles.Armor.IFV_BMP_3
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_BTR_RD = vehicles.Armor.APC_BTR_RD
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             APC_MTLB = vehicles.Armor.APC_MTLB
@@ -24773,14 +24899,15 @@ class CombinedJointTaskForcesBlue(Country):
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             CT_Centaur_IV = vehicles.Armor.CT_Centaur_IV
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             SPG_M10_GMC = vehicles.Armor.SPG_M10_GMC
             LT_Mk_VII_Tetrarch = vehicles.Armor.LT_Mk_VII_Tetrarch
+            LT_PT_76 = vehicles.Armor.LT_PT_76
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
             HIT_Churchill_VII = vehicles.Armor.HIT_Churchill_VII
             Car_Daimler_Armored = vehicles.Armor.Car_Daimler_Armored
             Car_M8_Greyhound_Armored = vehicles.Armor.Car_M8_Greyhound_Armored
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             APC_M113 = vehicles.Armor.APC_M113
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             MBT_M1A2_Abrams = vehicles.Armor.MBT_M1A2_Abrams
@@ -24788,23 +24915,28 @@ class CombinedJointTaskForcesBlue(Country):
             MBT_T_90 = vehicles.Armor.MBT_T_90
             APC_AAV_7_Amphibious = vehicles.Armor.APC_AAV_7_Amphibious
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
             MBT_T_72B3 = vehicles.Armor.MBT_T_72B3
-            APC_BTR_82A = vehicles.Armor.APC_BTR_82A
+            IFV_BTR_82A = vehicles.Armor.IFV_BTR_82A
             IFV_M2A2_Bradley = vehicles.Armor.IFV_M2A2_Bradley
             APC_TPz_Fuchs = vehicles.Armor.APC_TPz_Fuchs
-            APC_Cobra__Scout = vehicles.Armor.APC_Cobra__Scout
+            Scout_Cobra = vehicles.Armor.Scout_Cobra
             IFV_LAV_25 = vehicles.Armor.IFV_LAV_25
+            ATGM_VAB_Mephisto = vehicles.Armor.ATGM_VAB_Mephisto
             MBT_Merkava_IV = vehicles.Armor.MBT_Merkava_IV
+            MBT_Leopard_2A5 = vehicles.Armor.MBT_Leopard_2A5
             IFV_Marder = vehicles.Armor.IFV_Marder
+            MBT_Leopard_2A4 = vehicles.Armor.MBT_Leopard_2A4
             MBT_Leclerc = vehicles.Armor.MBT_Leclerc
             ZBD_04A = vehicles.Armor.ZBD_04A
             ZTZ_96B = vehicles.Armor.ZTZ_96B
+            MBT_Leopard_2A4_Trs = vehicles.Armor.MBT_Leopard_2A4_Trs
             MBT_Challenger_II = vehicles.Armor.MBT_Challenger_II
             IFV_M1126_Stryker_ICV = vehicles.Armor.IFV_M1126_Stryker_ICV
             SPG_Stryker_MGS = vehicles.Armor.SPG_Stryker_MGS
             ATGM_Stryker = vehicles.Armor.ATGM_Stryker
             IFV_Warrior = vehicles.Armor.IFV_Warrior
+            MBT_Chieftain_Mk_3 = vehicles.Armor.MBT_Chieftain_Mk_3
 
         class MissilesSS:
             SSM_V_1_Launcher = vehicles.MissilesSS.SSM_V_1_Launcher
@@ -24830,6 +24962,8 @@ class CombinedJointTaskForcesBlue(Country):
             Well_Car = vehicles.Carriage.Well_Car
             DR_50_ton_flat_wagon = vehicles.Carriage.DR_50_ton_flat_wagon
             Wagon_G10__Germany = vehicles.Carriage.Wagon_G10__Germany
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
@@ -25102,9 +25236,11 @@ class CombinedJointTaskForcesBlue(Country):
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         Boat_LCVP_Higgins = ships.Boat_LCVP_Higgins
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
         FFG_Oliver_Hazzard_Perry = ships.FFG_Oliver_Hazzard_Perry
         Battlecruiser_1144_2_Pyotr_Velikiy = ships.Battlecruiser_1144_2_Pyotr_Velikiy
         CV_1143_5_Admiral_Kuznetsov_2017 = ships.CV_1143_5_Admiral_Kuznetsov_2017
+        FAC_La_Combattante_IIa = ships.FAC_La_Combattante_IIa
         Type_052B_Destroyer = ships.Type_052B_Destroyer
         Type_052C_Destroyer = ships.Type_052C_Destroyer
         Type_054A_Frigate = ships.Type_054A_Frigate
@@ -25250,23 +25386,23 @@ class CombinedJointTaskForcesRed(Country):
     class Vehicle:
 
         class Artillery:
-            SPG_Sturmpanzer_IV_Brummbar = vehicles.Artillery.SPG_Sturmpanzer_IV_Brummbar
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
             Grad_MRL_FDDM__FC = vehicles.Artillery.Grad_MRL_FDDM__FC
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
-            SPH_2S9_Nona_120mm_M = vehicles.Artillery.SPH_2S9_Nona_120mm_M
+            SPM_2S9_Nona_120mm_M = vehicles.Artillery.SPM_2S9_Nona_120mm_M
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
             SPH_2S19_Msta_152mm = vehicles.Artillery.SPH_2S19_Msta_152mm
             MLRS_9A52_Smerch_CM_300mm = vehicles.Artillery.MLRS_9A52_Smerch_CM_300mm
             MLRS_9A52_Smerch_HE_300mm = vehicles.Artillery.MLRS_9A52_Smerch_HE_300mm
-            MLRS_BM_27_Uragan_220mm = vehicles.Artillery.MLRS_BM_27_Uragan_220mm
+            MLRS_9K57_Uragan_BM_27_220mm = vehicles.Artillery.MLRS_9K57_Uragan_BM_27_220mm
             SPH_Dana_vz77_152mm = vehicles.Artillery.SPH_Dana_vz77_152mm
             SPG_M12_GMC_155mm = vehicles.Artillery.SPG_M12_GMC_155mm
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
             PLZ_05 = vehicles.Artillery.PLZ_05
+            SPH_T155_Firtina_155mm = vehicles.Artillery.SPH_T155_Firtina_155mm
 
         class Infantry:
             Infantry_Mauser_98 = vehicles.Infantry.Infantry_Mauser_98
@@ -25299,7 +25435,7 @@ class CombinedJointTaskForcesRed(Country):
             EWR_55G6 = vehicles.AirDefence.EWR_55G6
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             MCC_SR_Sborka_Dog_Ear_SR = vehicles.AirDefence.MCC_SR_Sborka_Dog_Ear_SR
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
@@ -25324,8 +25460,9 @@ class CombinedJointTaskForcesRed(Country):
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
             SPAAA_ZSU_57_2 = vehicles.AirDefence.SPAAA_ZSU_57_2
             AAA_QF_3_7 = vehicles.AirDefence.AAA_QF_3_7
             AAA_M45_Quadmount_HB_12_7mm = vehicles.AirDefence.AAA_M45_Quadmount_HB_12_7mm
@@ -25335,12 +25472,12 @@ class CombinedJointTaskForcesRed(Country):
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Chaparral_M48 = vehicles.AirDefence.SAM_Chaparral_M48
             MANPADS_SA_18_Igla_S_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_S_Grouse
             MANPADS_SA_18_Igla_S_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_S_Grouse_C2
-            AAA_ZU_23_Closed_Emplacement_Insurgent = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement_Insurgent
-            AAA_ZU_23_Insurgent = vehicles.AirDefence.AAA_ZU_23_Insurgent
+            AAA_ZU_23_Insurgent_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Insurgent_Closed_Emplacement
+            AAA_ZU_23_Insurgent_Emplacement = vehicles.AirDefence.AAA_ZU_23_Insurgent_Emplacement
             SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375
             SAM_Avenger__Stinger = vehicles.AirDefence.SAM_Avenger__Stinger
             SAM_Roland_ADS = vehicles.AirDefence.SAM_Roland_ADS
@@ -25392,10 +25529,10 @@ class CombinedJointTaskForcesRed(Country):
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
             LUV_UAZ_469_Jeep = vehicles.Unarmed.LUV_UAZ_469_Jeep
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             Truck_Ural_375_Mobile_C2 = vehicles.Unarmed.Truck_Ural_375_Mobile_C2
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
             Truck_Ural_4320_31_Arm_d = vehicles.Unarmed.Truck_Ural_4320_31_Arm_d
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
@@ -25403,25 +25540,27 @@ class CombinedJointTaskForcesRed(Country):
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
             Truck_ZIL_4331 = vehicles.Unarmed.Truck_ZIL_4331
             Car_Willys_Jeep = vehicles.Unarmed.Car_Willys_Jeep
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
+            Fire_Fight_Vehicle_AA_7_2_60 = vehicles.Unarmed.Fire_Fight_Vehicle_AA_7_2_60
             Truck_Bedford = vehicles.Unarmed.Truck_Bedford
             Truck_GMC_Jimmy_6x6_Truck = vehicles.Unarmed.Truck_GMC_Jimmy_6x6_Truck
             Carrier_M30_Cargo = vehicles.Unarmed.Carrier_M30_Cargo
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_KrAZ_6322_6x6 = vehicles.Unarmed.Truck_KrAZ_6322_6x6
             Truck_GAZ_3308 = vehicles.Unarmed.Truck_GAZ_3308
             Truck_MAZ_6303 = vehicles.Unarmed.Truck_MAZ_6303
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
             Truck_Land_Rover_101_FC = vehicles.Unarmed.Truck_Land_Rover_101_FC
             LUV_Land_Rover_109 = vehicles.Unarmed.LUV_Land_Rover_109
             MCC_Predator_UAV_CP__GCS = vehicles.Unarmed.MCC_Predator_UAV_CP__GCS
             MCC_COMM_Predator_UAV_CL = vehicles.Unarmed.MCC_COMM_Predator_UAV_CL
-            APC_Tigr = vehicles.Unarmed.APC_Tigr
+            LUV_Tigr = vehicles.Unarmed.LUV_Tigr
 
         class Armor:
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             APC_Sd_Kfz_251_Halftrack = vehicles.Armor.APC_Sd_Kfz_251_Halftrack
             HT_Pz_Kpfw_VI_Tiger_I = vehicles.Armor.HT_Pz_Kpfw_VI_Tiger_I
             HT_Pz_Kpfw_VI_Ausf__B_Tiger_II = vehicles.Armor.HT_Pz_Kpfw_VI_Ausf__B_Tiger_II
@@ -25429,6 +25568,7 @@ class CombinedJointTaskForcesRed(Country):
             SPG_Jagdpanther_G1 = vehicles.Armor.SPG_Jagdpanther_G1
             SPG_Jagdpanzer_IV = vehicles.Armor.SPG_Jagdpanzer_IV
             SPG_StuG_IV = vehicles.Armor.SPG_StuG_IV
+            SPG_Sturmpanzer_IV_Brummbar = vehicles.Armor.SPG_Sturmpanzer_IV_Brummbar
             IFV_Sd_Kfz_234_2_Puma = vehicles.Armor.IFV_Sd_Kfz_234_2_Puma
             SPG_StuG_III_Ausf__G = vehicles.Armor.SPG_StuG_III_Ausf__G
             SPG_Sd_Kfz_184_Elefant = vehicles.Armor.SPG_Sd_Kfz_184_Elefant
@@ -25436,7 +25576,7 @@ class CombinedJointTaskForcesRed(Country):
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             IFV_BMP_3 = vehicles.Armor.IFV_BMP_3
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_BTR_RD = vehicles.Armor.APC_BTR_RD
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             APC_MTLB = vehicles.Armor.APC_MTLB
@@ -25446,14 +25586,15 @@ class CombinedJointTaskForcesRed(Country):
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             CT_Centaur_IV = vehicles.Armor.CT_Centaur_IV
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             SPG_M10_GMC = vehicles.Armor.SPG_M10_GMC
             LT_Mk_VII_Tetrarch = vehicles.Armor.LT_Mk_VII_Tetrarch
+            LT_PT_76 = vehicles.Armor.LT_PT_76
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
             HIT_Churchill_VII = vehicles.Armor.HIT_Churchill_VII
             Car_Daimler_Armored = vehicles.Armor.Car_Daimler_Armored
             Car_M8_Greyhound_Armored = vehicles.Armor.Car_M8_Greyhound_Armored
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             APC_M113 = vehicles.Armor.APC_M113
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             MBT_M1A2_Abrams = vehicles.Armor.MBT_M1A2_Abrams
@@ -25461,23 +25602,28 @@ class CombinedJointTaskForcesRed(Country):
             MBT_T_90 = vehicles.Armor.MBT_T_90
             APC_AAV_7_Amphibious = vehicles.Armor.APC_AAV_7_Amphibious
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
             MBT_T_72B3 = vehicles.Armor.MBT_T_72B3
-            APC_BTR_82A = vehicles.Armor.APC_BTR_82A
+            IFV_BTR_82A = vehicles.Armor.IFV_BTR_82A
             IFV_M2A2_Bradley = vehicles.Armor.IFV_M2A2_Bradley
             APC_TPz_Fuchs = vehicles.Armor.APC_TPz_Fuchs
-            APC_Cobra__Scout = vehicles.Armor.APC_Cobra__Scout
+            Scout_Cobra = vehicles.Armor.Scout_Cobra
             IFV_LAV_25 = vehicles.Armor.IFV_LAV_25
+            ATGM_VAB_Mephisto = vehicles.Armor.ATGM_VAB_Mephisto
             MBT_Merkava_IV = vehicles.Armor.MBT_Merkava_IV
+            MBT_Leopard_2A5 = vehicles.Armor.MBT_Leopard_2A5
             IFV_Marder = vehicles.Armor.IFV_Marder
+            MBT_Leopard_2A4 = vehicles.Armor.MBT_Leopard_2A4
             MBT_Leclerc = vehicles.Armor.MBT_Leclerc
             ZBD_04A = vehicles.Armor.ZBD_04A
             ZTZ_96B = vehicles.Armor.ZTZ_96B
+            MBT_Leopard_2A4_Trs = vehicles.Armor.MBT_Leopard_2A4_Trs
             MBT_Challenger_II = vehicles.Armor.MBT_Challenger_II
             IFV_M1126_Stryker_ICV = vehicles.Armor.IFV_M1126_Stryker_ICV
             SPG_Stryker_MGS = vehicles.Armor.SPG_Stryker_MGS
             ATGM_Stryker = vehicles.Armor.ATGM_Stryker
             IFV_Warrior = vehicles.Armor.IFV_Warrior
+            MBT_Chieftain_Mk_3 = vehicles.Armor.MBT_Chieftain_Mk_3
 
         class MissilesSS:
             SSM_V_1_Launcher = vehicles.MissilesSS.SSM_V_1_Launcher
@@ -25503,6 +25649,8 @@ class CombinedJointTaskForcesRed(Country):
             Well_Car = vehicles.Carriage.Well_Car
             DR_50_ton_flat_wagon = vehicles.Carriage.DR_50_ton_flat_wagon
             Wagon_G10__Germany = vehicles.Carriage.Wagon_G10__Germany
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
@@ -25775,9 +25923,11 @@ class CombinedJointTaskForcesRed(Country):
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         Boat_LCVP_Higgins = ships.Boat_LCVP_Higgins
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
         FFG_Oliver_Hazzard_Perry = ships.FFG_Oliver_Hazzard_Perry
         Battlecruiser_1144_2_Pyotr_Velikiy = ships.Battlecruiser_1144_2_Pyotr_Velikiy
         CV_1143_5_Admiral_Kuznetsov_2017 = ships.CV_1143_5_Admiral_Kuznetsov_2017
+        FAC_La_Combattante_IIa = ships.FAC_La_Combattante_IIa
         Type_052B_Destroyer = ships.Type_052B_Destroyer
         Type_052C_Destroyer = ships.Type_052C_Destroyer
         Type_054A_Frigate = ships.Type_054A_Frigate
@@ -25923,23 +26073,23 @@ class UnitedNationsPeacekeepers(Country):
     class Vehicle:
 
         class Artillery:
-            SPG_Sturmpanzer_IV_Brummbar = vehicles.Artillery.SPG_Sturmpanzer_IV_Brummbar
             Mortar_2B11_120mm = vehicles.Artillery.Mortar_2B11_120mm
             Grad_MRL_FDDM__FC = vehicles.Artillery.Grad_MRL_FDDM__FC
             MLRS_BM_21_Grad_122mm = vehicles.Artillery.MLRS_BM_21_Grad_122mm
-            SPH_2S9_Nona_120mm_M = vehicles.Artillery.SPH_2S9_Nona_120mm_M
+            SPM_2S9_Nona_120mm_M = vehicles.Artillery.SPM_2S9_Nona_120mm_M
             SPH_2S3_Akatsia_152mm = vehicles.Artillery.SPH_2S3_Akatsia_152mm
             SPH_2S1_Gvozdika_122mm = vehicles.Artillery.SPH_2S1_Gvozdika_122mm
             SPH_2S19_Msta_152mm = vehicles.Artillery.SPH_2S19_Msta_152mm
             MLRS_9A52_Smerch_CM_300mm = vehicles.Artillery.MLRS_9A52_Smerch_CM_300mm
             MLRS_9A52_Smerch_HE_300mm = vehicles.Artillery.MLRS_9A52_Smerch_HE_300mm
-            MLRS_BM_27_Uragan_220mm = vehicles.Artillery.MLRS_BM_27_Uragan_220mm
+            MLRS_9K57_Uragan_BM_27_220mm = vehicles.Artillery.MLRS_9K57_Uragan_BM_27_220mm
             SPH_Dana_vz77_152mm = vehicles.Artillery.SPH_Dana_vz77_152mm
             SPG_M12_GMC_155mm = vehicles.Artillery.SPG_M12_GMC_155mm
             SPH_M109_Paladin_155mm = vehicles.Artillery.SPH_M109_Paladin_155mm
             MLRS_M270_227mm = vehicles.Artillery.MLRS_M270_227mm
-            HUMVEE_JTAC = vehicles.Artillery.HUMVEE_JTAC
+            MRLS_FDDM__FC = vehicles.Artillery.MRLS_FDDM__FC
             PLZ_05 = vehicles.Artillery.PLZ_05
+            SPH_T155_Firtina_155mm = vehicles.Artillery.SPH_T155_Firtina_155mm
 
         class Infantry:
             Infantry_Mauser_98 = vehicles.Infantry.Infantry_Mauser_98
@@ -25972,7 +26122,7 @@ class UnitedNationsPeacekeepers(Country):
             EWR_55G6 = vehicles.AirDefence.EWR_55G6
             SAM_SA_3_S_125_Goa_LN = vehicles.AirDefence.SAM_SA_3_S_125_Goa_LN
             MCC_SR_Sborka_Dog_Ear_SR = vehicles.AirDefence.MCC_SR_Sborka_Dog_Ear_SR
-            SAM_SA_6_Kub_Long_Track_STR = vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR
+            SAM_SA_6_Kub_Straight_Flush_STR = vehicles.AirDefence.SAM_SA_6_Kub_Straight_Flush_STR
             SAM_SA_6_Kub_Gainful_TEL = vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL
             SAM_SA_8_Osa_Gecko_TEL = vehicles.AirDefence.SAM_SA_8_Osa_Gecko_TEL
             SAM_P19_Flat_Face_SR__SA_2_3 = vehicles.AirDefence.SAM_P19_Flat_Face_SR__SA_2_3
@@ -25997,8 +26147,9 @@ class UnitedNationsPeacekeepers(Country):
             SPAAA_ZSU_23_4_Shilka_Gun_Dish = vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka_Gun_Dish
             AAA_ZU_23_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement
             AAA_ZU_23_Emplacement = vehicles.AirDefence.AAA_ZU_23_Emplacement
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             AAA_S_60_57mm = vehicles.AirDefence.AAA_S_60_57mm
+            Disel_Power_Station_5I57A = vehicles.AirDefence.Disel_Power_Station_5I57A
             SPAAA_ZSU_57_2 = vehicles.AirDefence.SPAAA_ZSU_57_2
             AAA_QF_3_7 = vehicles.AirDefence.AAA_QF_3_7
             AAA_M45_Quadmount_HB_12_7mm = vehicles.AirDefence.AAA_M45_Quadmount_HB_12_7mm
@@ -26008,12 +26159,12 @@ class UnitedNationsPeacekeepers(Country):
             SAM_Hawk_SR__AN_MPQ_50 = vehicles.AirDefence.SAM_Hawk_SR__AN_MPQ_50
             SAM_Hawk_LN_M192 = vehicles.AirDefence.SAM_Hawk_LN_M192
             SAM_Hawk_CWAR_AN_MPQ_55 = vehicles.AirDefence.SAM_Hawk_CWAR_AN_MPQ_55
-            SAM_Hawk_Generator__PCP = vehicles.AirDefence.SAM_Hawk_Generator__PCP
+            SAM_Hawk_Platoon_Command_Post__PCP = vehicles.AirDefence.SAM_Hawk_Platoon_Command_Post__PCP
             SAM_Chaparral_M48 = vehicles.AirDefence.SAM_Chaparral_M48
             MANPADS_SA_18_Igla_S_Grouse = vehicles.AirDefence.MANPADS_SA_18_Igla_S_Grouse
             MANPADS_SA_18_Igla_S_Grouse_C2 = vehicles.AirDefence.MANPADS_SA_18_Igla_S_Grouse_C2
-            AAA_ZU_23_Closed_Emplacement_Insurgent = vehicles.AirDefence.AAA_ZU_23_Closed_Emplacement_Insurgent
-            AAA_ZU_23_Insurgent = vehicles.AirDefence.AAA_ZU_23_Insurgent
+            AAA_ZU_23_Insurgent_Closed_Emplacement = vehicles.AirDefence.AAA_ZU_23_Insurgent_Closed_Emplacement
+            AAA_ZU_23_Insurgent_Emplacement = vehicles.AirDefence.AAA_ZU_23_Insurgent_Emplacement
             SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375 = vehicles.AirDefence.SPAAA_ZU_23_2_Insurgent_Mounted_Ural_375
             SAM_Avenger__Stinger = vehicles.AirDefence.SAM_Avenger__Stinger
             SAM_Roland_ADS = vehicles.AirDefence.SAM_Roland_ADS
@@ -26065,10 +26216,10 @@ class UnitedNationsPeacekeepers(Country):
             Truck_SKP_11_Mobile_ATC = vehicles.Unarmed.Truck_SKP_11_Mobile_ATC
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
             LUV_UAZ_469_Jeep = vehicles.Unarmed.LUV_UAZ_469_Jeep
-            Truck_Ural_ATsP_6_Firefighter = vehicles.Unarmed.Truck_Ural_ATsP_6_Firefighter
+            Firefighter_Ural_ATsP_6 = vehicles.Unarmed.Firefighter_Ural_ATsP_6
             Truck_Ural_375_Mobile_C2 = vehicles.Unarmed.Truck_Ural_375_Mobile_C2
             Truck_Ural_375 = vehicles.Unarmed.Truck_Ural_375
-            GPU_APA_5D = vehicles.Unarmed.GPU_APA_5D
+            GPU_APA_5D_on_Ural_4320 = vehicles.Unarmed.GPU_APA_5D_on_Ural_4320
             Truck_Ural_4320_31_Arm_d = vehicles.Unarmed.Truck_Ural_4320_31_Arm_d
             Truck_Ural_4320T = vehicles.Unarmed.Truck_Ural_4320T
             Car_VAZ_2109 = vehicles.Unarmed.Car_VAZ_2109
@@ -26076,25 +26227,27 @@ class UnitedNationsPeacekeepers(Country):
             Truck_ZIL_131__C2 = vehicles.Unarmed.Truck_ZIL_131__C2
             Truck_ZIL_4331 = vehicles.Unarmed.Truck_ZIL_4331
             Car_Willys_Jeep = vehicles.Unarmed.Car_Willys_Jeep
+            Refueler_ATZ_5 = vehicles.Unarmed.Refueler_ATZ_5
+            Fire_Fight_Vehicle_AA_7_2_60 = vehicles.Unarmed.Fire_Fight_Vehicle_AA_7_2_60
             Truck_Bedford = vehicles.Unarmed.Truck_Bedford
             Truck_GMC_Jimmy_6x6_Truck = vehicles.Unarmed.Truck_GMC_Jimmy_6x6_Truck
             Carrier_M30_Cargo = vehicles.Unarmed.Carrier_M30_Cargo
             Tractor_M4_Hi_Speed = vehicles.Unarmed.Tractor_M4_Hi_Speed
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_KrAZ_6322_6x6 = vehicles.Unarmed.Truck_KrAZ_6322_6x6
             Truck_GAZ_3308 = vehicles.Unarmed.Truck_GAZ_3308
             Truck_MAZ_6303 = vehicles.Unarmed.Truck_MAZ_6303
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
             Truck_Land_Rover_101_FC = vehicles.Unarmed.Truck_Land_Rover_101_FC
             LUV_Land_Rover_109 = vehicles.Unarmed.LUV_Land_Rover_109
             MCC_Predator_UAV_CP__GCS = vehicles.Unarmed.MCC_Predator_UAV_CP__GCS
             MCC_COMM_Predator_UAV_CL = vehicles.Unarmed.MCC_COMM_Predator_UAV_CL
-            APC_Tigr = vehicles.Unarmed.APC_Tigr
+            LUV_Tigr = vehicles.Unarmed.LUV_Tigr
 
         class Armor:
-            MT_PzIV_H = vehicles.Armor.MT_PzIV_H
+            Tk_PzIV_H = vehicles.Armor.Tk_PzIV_H
             APC_Sd_Kfz_251_Halftrack = vehicles.Armor.APC_Sd_Kfz_251_Halftrack
             HT_Pz_Kpfw_VI_Tiger_I = vehicles.Armor.HT_Pz_Kpfw_VI_Tiger_I
             HT_Pz_Kpfw_VI_Ausf__B_Tiger_II = vehicles.Armor.HT_Pz_Kpfw_VI_Ausf__B_Tiger_II
@@ -26102,6 +26255,7 @@ class UnitedNationsPeacekeepers(Country):
             SPG_Jagdpanther_G1 = vehicles.Armor.SPG_Jagdpanther_G1
             SPG_Jagdpanzer_IV = vehicles.Armor.SPG_Jagdpanzer_IV
             SPG_StuG_IV = vehicles.Armor.SPG_StuG_IV
+            SPG_Sturmpanzer_IV_Brummbar = vehicles.Armor.SPG_Sturmpanzer_IV_Brummbar
             IFV_Sd_Kfz_234_2_Puma = vehicles.Armor.IFV_Sd_Kfz_234_2_Puma
             SPG_StuG_III_Ausf__G = vehicles.Armor.SPG_StuG_III_Ausf__G
             SPG_Sd_Kfz_184_Elefant = vehicles.Armor.SPG_Sd_Kfz_184_Elefant
@@ -26109,7 +26263,7 @@ class UnitedNationsPeacekeepers(Country):
             IFV_BMP_1 = vehicles.Armor.IFV_BMP_1
             IFV_BMP_2 = vehicles.Armor.IFV_BMP_2
             IFV_BMP_3 = vehicles.Armor.IFV_BMP_3
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
             APC_BTR_RD = vehicles.Armor.APC_BTR_RD
             APC_BTR_80 = vehicles.Armor.APC_BTR_80
             APC_MTLB = vehicles.Armor.APC_MTLB
@@ -26119,14 +26273,15 @@ class UnitedNationsPeacekeepers(Country):
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
             CT_Cromwell_IV = vehicles.Armor.CT_Cromwell_IV
             CT_Centaur_IV = vehicles.Armor.CT_Centaur_IV
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             SPG_M10_GMC = vehicles.Armor.SPG_M10_GMC
             LT_Mk_VII_Tetrarch = vehicles.Armor.LT_Mk_VII_Tetrarch
+            LT_PT_76 = vehicles.Armor.LT_PT_76
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
             HIT_Churchill_VII = vehicles.Armor.HIT_Churchill_VII
             Car_Daimler_Armored = vehicles.Armor.Car_Daimler_Armored
             Car_M8_Greyhound_Armored = vehicles.Armor.Car_M8_Greyhound_Armored
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             APC_M113 = vehicles.Armor.APC_M113
             MBT_M60A3_Patton = vehicles.Armor.MBT_M60A3_Patton
             MBT_M1A2_Abrams = vehicles.Armor.MBT_M1A2_Abrams
@@ -26134,23 +26289,28 @@ class UnitedNationsPeacekeepers(Country):
             MBT_T_90 = vehicles.Armor.MBT_T_90
             APC_AAV_7_Amphibious = vehicles.Armor.APC_AAV_7_Amphibious
             MBT_Leopard_1A3 = vehicles.Armor.MBT_Leopard_1A3
-            MBT_Leopard_2 = vehicles.Armor.MBT_Leopard_2
+            MBT_Leopard_2A6M = vehicles.Armor.MBT_Leopard_2A6M
             MBT_T_72B3 = vehicles.Armor.MBT_T_72B3
-            APC_BTR_82A = vehicles.Armor.APC_BTR_82A
+            IFV_BTR_82A = vehicles.Armor.IFV_BTR_82A
             IFV_M2A2_Bradley = vehicles.Armor.IFV_M2A2_Bradley
             APC_TPz_Fuchs = vehicles.Armor.APC_TPz_Fuchs
-            APC_Cobra__Scout = vehicles.Armor.APC_Cobra__Scout
+            Scout_Cobra = vehicles.Armor.Scout_Cobra
             IFV_LAV_25 = vehicles.Armor.IFV_LAV_25
+            ATGM_VAB_Mephisto = vehicles.Armor.ATGM_VAB_Mephisto
             MBT_Merkava_IV = vehicles.Armor.MBT_Merkava_IV
+            MBT_Leopard_2A5 = vehicles.Armor.MBT_Leopard_2A5
             IFV_Marder = vehicles.Armor.IFV_Marder
+            MBT_Leopard_2A4 = vehicles.Armor.MBT_Leopard_2A4
             MBT_Leclerc = vehicles.Armor.MBT_Leclerc
             ZBD_04A = vehicles.Armor.ZBD_04A
             ZTZ_96B = vehicles.Armor.ZTZ_96B
+            MBT_Leopard_2A4_Trs = vehicles.Armor.MBT_Leopard_2A4_Trs
             MBT_Challenger_II = vehicles.Armor.MBT_Challenger_II
             IFV_M1126_Stryker_ICV = vehicles.Armor.IFV_M1126_Stryker_ICV
             SPG_Stryker_MGS = vehicles.Armor.SPG_Stryker_MGS
             ATGM_Stryker = vehicles.Armor.ATGM_Stryker
             IFV_Warrior = vehicles.Armor.IFV_Warrior
+            MBT_Chieftain_Mk_3 = vehicles.Armor.MBT_Chieftain_Mk_3
 
         class MissilesSS:
             SSM_V_1_Launcher = vehicles.MissilesSS.SSM_V_1_Launcher
@@ -26176,6 +26336,8 @@ class UnitedNationsPeacekeepers(Country):
             Well_Car = vehicles.Carriage.Well_Car
             DR_50_ton_flat_wagon = vehicles.Carriage.DR_50_ton_flat_wagon
             Wagon_G10__Germany = vehicles.Carriage.Wagon_G10__Germany
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
+            Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
             Tank_Car__Germany = vehicles.Carriage.Tank_Car__Germany
@@ -26448,9 +26610,11 @@ class UnitedNationsPeacekeepers(Country):
         LS_Samuel_Chase = ships.LS_Samuel_Chase
         Boat_LCVP_Higgins = ships.Boat_LCVP_Higgins
         Bulker_Handy_Wind = ships.Bulker_Handy_Wind
+        Tanker_Seawise_Giant = ships.Tanker_Seawise_Giant
         FFG_Oliver_Hazzard_Perry = ships.FFG_Oliver_Hazzard_Perry
         Battlecruiser_1144_2_Pyotr_Velikiy = ships.Battlecruiser_1144_2_Pyotr_Velikiy
         CV_1143_5_Admiral_Kuznetsov_2017 = ships.CV_1143_5_Admiral_Kuznetsov_2017
+        FAC_La_Combattante_IIa = ships.FAC_La_Combattante_IIa
         Type_052B_Destroyer = ships.Type_052B_Destroyer
         Type_052C_Destroyer = ships.Type_052C_Destroyer
         Type_054A_Frigate = ships.Type_054A_Frigate
@@ -26596,7 +26760,7 @@ class Argentina(Country):
     class Vehicle:
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_Roland_ADS = vehicles.AirDefence.SAM_Roland_ADS
             SAM_Roland_EWR = vehicles.AirDefence.SAM_Roland_EWR
 
@@ -26611,17 +26775,17 @@ class Argentina(Country):
             Beacon_TACAN_Portable_TTS_3030 = vehicles.Fortification.Beacon_TACAN_Portable_TTS_3030
 
         class Unarmed:
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             Bus_ZIU_9_Trolley = vehicles.Unarmed.Bus_ZIU_9_Trolley
 
         class Armor:
             APC_AAV_7_Amphibious = vehicles.Armor.APC_AAV_7_Amphibious
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             APC_M113 = vehicles.Armor.APC_M113
             APC_M2A1_Halftrack = vehicles.Armor.APC_M2A1_Halftrack
-            MT_M4_Sherman = vehicles.Armor.MT_M4_Sherman
+            Tk_M4_Sherman = vehicles.Armor.Tk_M4_Sherman
             MT_M4A4_Sherman_Firefly = vehicles.Armor.MT_M4A4_Sherman_Firefly
 
         class Locomotive:
@@ -26880,7 +27044,7 @@ class Cyprus(Country):
             Infantry_M4 = vehicles.Infantry.Infantry_M4
 
         class AirDefence:
-            AAA_40mm_Bofors = vehicles.AirDefence.AAA_40mm_Bofors
+            AAA_Bofors_40mm = vehicles.AirDefence.AAA_Bofors_40mm
             SAM_SA_10_S_300_Grumble_Flap_Lid_TR = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_Flap_Lid_TR
             SAM_SA_10_S_300_Grumble_Clam_Shell_SR = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_Clam_Shell_SR
             SAM_SA_10_S_300_Grumble_C2 = vehicles.AirDefence.SAM_SA_10_S_300_Grumble_C2
@@ -26910,7 +27074,7 @@ class Cyprus(Country):
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
             Truck_KAMAZ_43101 = vehicles.Unarmed.Truck_KAMAZ_43101
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
 
         class Armor:
             IFV_BMP_3 = vehicles.Armor.IFV_BMP_3
@@ -27182,14 +27346,14 @@ class Slovenia(Country):
 
         class Unarmed:
             Truck_M818_6x6 = vehicles.Unarmed.Truck_M818_6x6
-            Truck_HEMMT_TFFT_Fire = vehicles.Unarmed.Truck_HEMMT_TFFT_Fire
-            APC_HMMWV_Jeep = vehicles.Unarmed.APC_HMMWV_Jeep
+            Firefighter_HEMMT_TFFT = vehicles.Unarmed.Firefighter_HEMMT_TFFT
+            LUV_HMMWV_Jeep = vehicles.Unarmed.LUV_HMMWV_Jeep
             Refueler_M978_HEMTT = vehicles.Unarmed.Refueler_M978_HEMTT
 
         class Armor:
-            IFV_BRDM_2 = vehicles.Armor.IFV_BRDM_2
-            APC_Cobra__Scout = vehicles.Armor.APC_Cobra__Scout
-            APC_HMMWV__Scout = vehicles.Armor.APC_HMMWV__Scout
+            Scout_BRDM_2 = vehicles.Armor.Scout_BRDM_2
+            Scout_Cobra = vehicles.Armor.Scout_Cobra
+            Scout_HMMWV = vehicles.Armor.Scout_HMMWV
             ATGM_HMMWV = vehicles.Armor.ATGM_HMMWV
             APC_MTLB = vehicles.Armor.APC_MTLB
             MBT_T_55 = vehicles.Armor.MBT_T_55
