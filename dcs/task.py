@@ -207,6 +207,9 @@ class Targets(metaclass=TargetType):
                 class Fighters(TargetType, metaclass=TargetType):
                     id = "Fighters"
 
+                class MultiroleFighters(TargetType, metaclass=TargetType):
+                    id = "Multirole fighters"
+
                 class Bombers(TargetType, metaclass=TargetType):
                     id = "Bombers"
 
@@ -559,6 +562,7 @@ class EngageTargets(Task):
             targets = [Targets.All]
         self.params = {
             "targetTypes": {i: targets[i - 1] for i in range(1, len(targets) + 1)},
+            "value": ";".join([t.id for t in targets]),
             "maxDistEnabled": True if max_distance else False,
             "maxDist": max_distance,
             "priority": 0
@@ -575,6 +579,7 @@ class EngageTargetsInZone(Task):
             targets = [Targets.All]
         self.params = {
             "targetTypes": {i: targets[i - 1] for i in range(1, len(targets) + 1)},
+            "value": ";".join([t.id for t in targets]),
             "priority": 0,
             "x": position.x,
             "y": position.y,
