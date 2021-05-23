@@ -1,6 +1,5 @@
 import dcs.lua as lua
-import dcs.installation as installation
-import os
+from dcs.payloads import PayloadDirectories
 import re
 import sys
 from typing import Any, Dict, Optional, Type
@@ -66,19 +65,6 @@ class FlyingType(UnitType):
     Liveries: Optional[Type[Any]] = None
     # Dict from payload name to the DCS payload structure. None if not yet initialized.
     payloads: Optional[Dict[str, Dict[str, Any]]] = None
-    dcs_dir = installation.get_dcs_install_directory()
-    payload_dirs = []
-    dcs_aircraft_dir = os.path.join(dcs_dir, "CoreMods", "aircraft")
-    if os.path.exists(dcs_aircraft_dir):
-        payload_dirs = [dcs_dir + os.path.join("MissionEditor", "data", "scripts", "UnitPayloads")]
-        for entry in os.scandir(dcs_aircraft_dir):
-            add_dir = os.path.join(dcs_aircraft_dir, entry.name, "UnitPayloads")
-            if entry.is_dir() and os.path.exists(add_dir):
-                payload_dirs.append(add_dir)
-    payload_dirs += [
-        os.path.join(installation.get_dcs_saved_games_directory(), "MissionEditor", "UnitPayloads"),
-        os.path.join(os.path.dirname(os.path.realpath(__file__)), "payloads")
-    ]
 
     tasks = ['Nothing']
     task_default = None
@@ -91,18 +77,16 @@ class FlyingType(UnitType):
         if FlyingType._payload_cache:
             return
         FlyingType._payload_cache = {}
-        for payload_dir in FlyingType.payload_dirs:
-            if not os.path.exists(payload_dir):
+        for payload_dir in PayloadDirectories.payload_dirs():
+            if not payload_dir.exists():
                 continue
-            files = [file for file in os.listdir(payload_dir) if file.endswith('.lua')]
-            for file in files:
-                payload_filename = os.path.join(payload_dir, file)
-                if payload_filename not in FlyingType._payload_cache:
-                    with open(payload_filename, 'r', encoding='utf-8') as payloadfile:
-                        for line in payloadfile:
+            for payload_path in payload_dir.glob("*.lua"):
+                if payload_path not in FlyingType._payload_cache:
+                    with payload_path.open('r', encoding='utf-8') as payload_file:
+                        for line in payload_file:
                             g = re.search(r'\["unitType"]\s*=\s*"([^"]*)', line)
                             if g:
-                                FlyingType._payload_cache[payload_filename] = g.group(1)
+                                FlyingType._payload_cache[payload_path] = g.group(1)
                                 break
 
     @classmethod
@@ -117,23 +101,25 @@ class FlyingType(UnitType):
             return cls.payloads
         cls.payloads = {}
 
-        for payload_dir in FlyingType.payload_dirs:
-            if not os.path.exists(payload_dir):
+        for payload_dir in PayloadDirectories.payload_dirs():
+            if not payload_dir.exists():
                 continue
-            files = [file for file in os.listdir(payload_dir) if file.endswith('.lua')]
-            for file in files:
-                payload_filename = os.path.join(payload_dir, file)
-                if FlyingType._payload_cache[payload_filename] == cls.id and os.path.exists(payload_filename):
-                    with open(payload_filename, 'r', encoding='utf-8') as payload:
-                        try:
-                            payload_main = lua.loads(payload.read(), _globals=FlyingType._UnitPayloadGlobals)
-                            pays = payload_main["unitPayloads"]
-                            if pays["unitType"] == cls.id:
-                                for load in pays["payloads"].values():
-                                    cls.payloads[load["name"]] = load
-                        except SyntaxError as se:
-                            print("Error parsing lua file '{f}'".format(f=payload_filename), file=sys.stderr)
-                            raise se
+            for payload_path in payload_dir.glob("*.lua"):
+                if FlyingType._payload_cache[payload_path] == cls.id and payload_path.exists():
+                    try:
+                        payload_main = lua.loads(payload_path.read_text(), _globals=FlyingType._UnitPayloadGlobals)
+                    except SyntaxError:
+                        print("Error parsing lua file '{f}'".format(f=payload_path), file=sys.stderr)
+                        raise
+                    pays = payload_main["unitPayloads"]
+                    if pays["unitType"] == cls.id:
+                        for load in pays["payloads"].values():
+                            name = load["name"]
+                            # Payload directories are iterated in decreasing order of
+                            # preference, so if we already have a payload matching the
+                            # name, ignore it.
+                            if name not in cls.payloads:
+                                cls.payloads[load["name"]] = load
 
         return cls.payloads
 
