@@ -53,6 +53,8 @@ class StaticPoint:
         self.landing_refuel_rearm_time = d.get("timeReFuAr")
 
     def dict(self) -> Dict[str, Any]:
+        if not isinstance(self.name, str):
+            raise TypeError("Point name expected to be `str`")
         d = {
             "alt": self.alt,
             "type": self.type,

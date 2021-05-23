@@ -31,7 +31,6 @@ class Skill(Enum):
 class Unit:
     def __init__(self, _id, name: Optional[str] = None, type=""):
         self.type = type
-        self.type = type
         self.position = mapping.Point(0, 0)
         self.heading = 0
         self.id = _id
@@ -49,6 +48,8 @@ class Unit:
         return new
 
     def dict(self):
+        if not isinstance(self.name, str):
+            raise TypeError("Point name expected to be `str`")
         d = {
             "type": self.type,
             "x": self.position.x,

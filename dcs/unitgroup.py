@@ -178,6 +178,8 @@ class Group:
             u.skill = skill
 
     def dict(self):
+        if not isinstance(self.name, str):
+            raise TypeError("Point name expected to be `str`")
         d = {
             "name": self.name,
             "groupId": self.id
