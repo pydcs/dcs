@@ -535,6 +535,7 @@ class IndicationTextEqual(Condition):
         d["element_value"] = self.element_value
         return d
 
+
 class MissileInZone(Condition):
     predicate = "c_missile_in_zone"
 
