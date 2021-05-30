@@ -149,7 +149,7 @@ class BombInZone(Condition):
     def __init__(self, typebomb, numbombs, zone):
         super(BombInZone, self).__init__(BombInZone.predicate)
         self.typebomb = typebomb
-        self.params.append(self.typebomb)
+        self.params.append('.'.join(str(x) for x in self.typebomb.values()))
         self.numbombs = numbombs
         self.params.append(self.numbombs)
         self.zone = zone
@@ -533,6 +533,29 @@ class IndicationTextEqual(Condition):
         d["indicator_id"] = self.indicator_id
         d["element_name"] = self.element_name
         d["element_value"] = self.element_value
+        return d
+
+class MissileInZone(Condition):
+    predicate = "c_missile_in_zone"
+
+    def __init__(self, typemissile, nummissiles, zone):
+        super(MissileInZone, self).__init__(MissileInZone.predicate)
+        self.typemissile = typemissile
+        self.params.append('.'.join(str(x) for x in self.typemissile.values()))
+        self.nummissiles = nummissiles
+        self.params.append(self.nummissiles)
+        self.zone = zone
+        self.params.append(self.zone)
+
+    @classmethod
+    def create_from_dict(cls, d):
+        return cls(d["typemissile"], d["nummissiles"], d["zone"])
+
+    def dict(self):
+        d = super(MissileInZone, self).dict()
+        d["typemissile"] = self.typemissile
+        d["nummissiles"] = self.nummissiles
+        d["zone"] = self.zone
         return d
 
 
@@ -1259,6 +1282,7 @@ condition_map = {
     "c_group_dead": GroupDead,
     "c_group_life_less": GroupLifeLess,
     "c_indication_txt_equal_to": IndicationTextEqual,
+    "c_missile_in_zone": MissileInZone,
     "c_mission_score_higher": MissionScoreHigher,
     "c_mission_score_lower": MissionScoreLower,
     "or": Or,
