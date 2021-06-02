@@ -603,7 +603,8 @@ class Mission:
              callsign_id=1,
              heading=0,
              hidden=False,
-             dead=False):
+             dead=False,
+             farp_type=unit.FARP):
         """Add a static group with 1 static object.
 
         Args:
@@ -616,13 +617,14 @@ class Mission:
             heading: of the object
             hidden: should the object be hidden on the map
             dead: should the object be rendered as dead
+            farp_type: the desired farp type
 
         Returns:
             StaticGroup: the new farp group
         """
         sg = unitgroup.StaticGroup(self.next_group_id(), name)
 
-        s = unit.FARP(self.next_unit_id(), name, frequency, modulation, callsign_id)
+        s = farp_type(self.next_unit_id(), name, frequency, modulation, callsign_id)
         s.position = copy.copy(position)
         s.heading = heading
         sg.add_unit(s)

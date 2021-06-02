@@ -215,3 +215,27 @@ class SingleHeliPad(Static):
         d["heliport_callsign_id"] = self.heliport_callsign_id
 
         return d
+
+class InvisibleFARP(Static):
+    def __init__(self, unit_id=None, name=None, frequency=127.5, modulation=0, callsign_id=1):
+        super(InvisibleFARP, self).__init__(unit_id, name, "Invisible FARP")
+        self.category = "Heliports"
+        self.shape_name = "invisiblefarp"
+        self.heliport_frequency: float = frequency
+        self.heliport_modulation = modulation
+        self.heliport_callsign_id: int = callsign_id
+        self.can_cargo = False
+
+    def load_from_dict(self, d):
+        super(InvisibleFARP, self).load_from_dict(d)
+        self.heliport_frequency = float(d.get("heliport_frequency", 127.5))
+        self.heliport_modulation = d.get("heliport_modulation", 0)
+        self.heliport_callsign_id = d.get("heliport_callsign_id", 0)
+
+    def dict(self):
+        d = super(InvisibleFARP, self).dict()
+        d["heliport_frequency"] = self.heliport_frequency
+        d["heliport_modulation"] = self.heliport_modulation
+        d["heliport_callsign_id"] = self.heliport_callsign_id
+
+        return d
