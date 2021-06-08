@@ -15,12 +15,29 @@ def _find_dcs_payload_paths() -> List[Path]:
         airframe_specific = entry / "UnitPayloads"
         if airframe_specific.exists():
             payload_dirs.append(airframe_specific)
+
+    return payload_dirs
+
+
+def _find_mod_payload_paths() -> List[Path]:
+    user_dir = Path(installation.get_dcs_saved_games_directory())
+    mod_aircraft_dir = user_dir / "Mods" / "Aircraft"
+    if not mod_aircraft_dir.exists():
+        return []
+
+    payload_dirs = []
+    for entry in mod_aircraft_dir.iterdir():
+        airframe_specific = entry / "UnitPayloads"
+        if airframe_specific.exists():
+            payload_dirs.append(airframe_specific)
+
     return payload_dirs
 
 
 class PayloadDirectories:
     fallback: Optional[Path] = None
     dcs: List[Path] = _find_dcs_payload_paths()
+    mod: List[Path] = _find_mod_payload_paths()
     user: Path = (
         Path(installation.get_dcs_saved_games_directory()) / "MissionEditor" / "UnitPayloads"
     )
@@ -41,5 +58,6 @@ class PayloadDirectories:
             yield cls.preferred
         yield cls.user
         yield from cls.dcs
+        yield from cls.mod
         if cls.fallback:
             yield cls.fallback
