@@ -604,7 +604,7 @@ class Mission:
              heading=0,
              hidden=False,
              dead=False,
-             farp_type=unit.FARP):
+             farp_type : Union[str, Type[unit.FARP], Type[unit.SingleHeliPad], Type[unit.InvisibleFARP]] = unit.FARP):
         """Add a static group with 1 static object.
 
         Args:
@@ -617,12 +617,18 @@ class Mission:
             heading: of the object
             hidden: should the object be hidden on the map
             dead: should the object be rendered as dead
-            farp_type: the desired farp type
+            farp_type: the desired farp type or its name
 
         Returns:
             StaticGroup: the new farp group
         """
         sg = unitgroup.StaticGroup(self.next_group_id(), name)
+
+        from dcs.unit import farp_mapping
+        if isinstance(farp_type, str):
+            farp_type = farp_mapping.get(farp_type)
+        if farp_type not in farp_mapping.values():
+            raise TypeError(f"'{type(farp_type)}' is not a valid FARP type.")
 
         s = farp_type(self.next_unit_id(), name, frequency, modulation, callsign_id)
         s.position = copy.copy(position)

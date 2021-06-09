@@ -242,7 +242,7 @@ class InvisibleFARP(Static):
         return d
 
 
-farp_map = {
+farp_mapping = {
     "FARP": FARP,
     "SingleHeliPad": SingleHeliPad,
     "InvisibleFARP": InvisibleFARP,
