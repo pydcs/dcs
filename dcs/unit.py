@@ -216,6 +216,7 @@ class SingleHeliPad(Static):
 
         return d
 
+
 class InvisibleFARP(Static):
     def __init__(self, unit_id=None, name=None, frequency=127.5, modulation=0, callsign_id=1):
         super(InvisibleFARP, self).__init__(unit_id, name, "Invisible FARP")
@@ -239,3 +240,10 @@ class InvisibleFARP(Static):
         d["heliport_callsign_id"] = self.heliport_callsign_id
 
         return d
+
+
+farp_map = {
+    "FARP": FARP,
+    "SingleHeliPad": SingleHeliPad,
+    "InvisibleFARP": InvisibleFARP,
+}
