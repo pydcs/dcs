@@ -604,7 +604,7 @@ class Mission:
              heading=0,
              hidden=False,
              dead=False,
-             farp_type : Union[str, Type[unit.FARP], Type[unit.SingleHeliPad], Type[unit.InvisibleFARP]] = unit.FARP):
+             farp_type: Union[str, Type[unit.FARP], Type[unit.SingleHeliPad], Type[unit.InvisibleFARP]] = unit.FARP):
         """Add a static group with 1 static object.
 
         Args:
