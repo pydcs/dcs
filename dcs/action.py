@@ -1752,6 +1752,27 @@ class SceneryDestructionZone(Action):
         return d
 
 
+class ZoneIncrementResize(Action):
+    predicate = "a_zone_increment_resize"
+
+    def __init__(self, zone="", meters=1000) -> None:
+        super().__init__(ZoneIncrementResize.predicate)
+        self.zone = zone
+        self.params.append(self.zone)
+        self.meters = meters
+        self.params.append(self.meters)
+
+    @classmethod
+    def create_from_dict(cls, d, mission):
+        return cls(d["zone"], d["meters"])
+
+    def dict(self):
+        d = super().dict()
+        d["zone"] = self.zone
+        d["meters"] = self.meters
+        return d
+
+
 actions_map = {
     "a_activate_group": ActivateGroup,
     "a_add_radio_item": AddRadioItem,
@@ -1829,4 +1850,5 @@ actions_map = {
     "a_set_ai_task": AITaskSet,
     "a_remove_scene_objects": RemoveSceneObjects,
     "a_scenery_destruction_zone": SceneryDestructionZone,
+    "a_zone_increment_resize": ZoneIncrementResize
 }

@@ -744,6 +744,30 @@ class FAC(Task):
         }
 
 
+class FACAttackGroup(Task):
+    Id = "FAC_AttackGroup"
+
+    def __init__(self, group_id: int = 0, groupName: str = "", position: Point = Point(0,0), weapon_type: WeaponType = WeaponType.Auto,
+                 callsign: int = 1, designation: Designation = Designation.Auto,
+                 frequency: int = 30, modulation: Modulation = Modulation.FM, datalink=True, useDatalink: bool = True, number: int = 1):
+        super(FACAttackGroup, self).__init__(self.Id)
+
+        self.params = {
+            "groupId": group_id,
+            "groupName": groupName,
+            "x": position.x,
+            "y": position.y,
+            "weaponType": weapon_type.value,
+            "designation": designation.value,
+            "frequency": frequency * 1000000,
+            "modulation": modulation.value,
+            "datalink": datalink,
+            "useDatalink": useDatalink,
+            "callname": callsign,
+            "number": number
+        }
+
+
 class FACEngageGroup(Task):
     Id = "FAC_EngageGroup"
 
@@ -753,15 +777,15 @@ class FACEngageGroup(Task):
         super(FACEngageGroup, self).__init__(self.Id)
 
         self.params = {
-            "groupId": group_id,
+            "groupId": group_id, #
             "visible": visible,
-            "weaponType": weapon_type.value,
-            "designation": designation.value,
-            "frequency": frequency * 1000000,
-            "modulation": modulation.value,
-            "datalink": datalink,
-            "callname": callsign,
-            "number": number,
+            "weaponType": weapon_type.value, #
+            "designation": designation.value, #
+            "frequency": frequency * 1000000, #
+            "modulation": modulation.value, #
+            "datalink": datalink, #
+            "callname": callsign, #
+            "number": number, #
             "priority": priority
         }
 
@@ -912,6 +936,7 @@ tasks_map = {
     Aerobatics.Id: Aerobatics,
     FAC.Id: FAC,
     FACEngageGroup.Id: FACEngageGroup,
+    FACAttackGroup.Id: FACAttackGroup,
     Hold.Id: Hold,
     Land.Id: Land,
     Embarking.Id: Embarking,

@@ -226,9 +226,11 @@ class Helicopter(FlyingUnit):
 
     def load_from_dict(self, d):
         super(Helicopter, self).load_from_dict(d)
-        self.rope_length = d["ropeLength"]
+        if "ropeLength" in d:
+            self.rope_length = d["ropeLength"]
 
     def dict(self):
         d = super(Helicopter, self).dict()
-        d["ropeLength"] = self.rope_length
+        if self.rope_length:
+            d["ropeLength"] = self.rope_length
         return d
