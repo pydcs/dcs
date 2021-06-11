@@ -777,15 +777,15 @@ class FACEngageGroup(Task):
         super(FACEngageGroup, self).__init__(self.Id)
 
         self.params = {
-            "groupId": group_id, #
+            "groupId": group_id,
             "visible": visible,
-            "weaponType": weapon_type.value, #
-            "designation": designation.value, #
-            "frequency": frequency * 1000000, #
-            "modulation": modulation.value, #
-            "datalink": datalink, #
-            "callname": callsign, #
-            "number": number, #
+            "weaponType": weapon_type.value,
+            "designation": designation.value,
+            "frequency": frequency * 1000000,
+            "modulation": modulation.value,
+            "datalink": datalink,
+            "callname": callsign,
+            "number": number,
             "priority": priority
         }
 
