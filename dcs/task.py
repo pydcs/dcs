@@ -747,7 +747,7 @@ class FAC(Task):
 class FACAttackGroup(Task):
     Id = "FAC_AttackGroup"
 
-    def __init__(self, group_id: int = 0, groupName: str = "", position: Point = Point(0,0),
+    def __init__(self, group_id: int = 0, groupName: str = "", position: Point = Point(0, 0),
                  weapon_type: WeaponType = WeaponType.Auto, callsign: int = 1,
                  designation: Designation = Designation.Auto, frequency: int = 30,
                  modulation: Modulation = Modulation.FM,
