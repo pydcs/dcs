@@ -31,7 +31,7 @@ class BasicTests(unittest.TestCase):
         batumi = caucasus.batumi()
         self.assertIsNotNone(usa)
         pos = batumi.random_unit_zone().center()
-        vg = m.vehicle_group(usa, "Tanks", dcs.countries.USA.Vehicle.Armor.MBT_M1A2_Abrams, pos)
+        vg = m.vehicle_group(usa, "Tanks", dcs.countries.USA.Vehicle.Armor.M_1_Abrams, pos)
         self.assertIsInstance(vg, dcs.unitgroup.VehicleGroup)
         pg = m.flight_group_inflight(usa, "Airgroup 1", dcs.planes.A_10C, dcs.Point(pos.x + 200, pos.y + 200), 2000)
         self.assertIsInstance(pg, dcs.unitgroup.PlaneGroup)
@@ -91,10 +91,10 @@ class BasicTests(unittest.TestCase):
         self.assertIsNotNone(tanker)
         self.assertIsNotNone(tanker.points[0].find_task(dcs.task.Tanker))
 
-        ustanks = m.vehicle_group(usa, "DefTanks", dcs.countries.USA.Vehicle.Armor.MBT_M1A2_Abrams,
+        ustanks = m.vehicle_group(usa, "DefTanks", dcs.countries.USA.Vehicle.Armor.M_1_Abrams,
                                   dcs.mapping.Point(-283177.42857144, 659188), 300, 3)
-        ustanks.add_unit(m.vehicle("airdef", dcs.countries.USA.Vehicle.AirDefence.SAM_Avenger__Stinger))
-        ustanks.add_unit(m.vehicle("aaa", dcs.countries.USA.Vehicle.AirDefence.SPAAA_Vulcan_M163))
+        ustanks.add_unit(m.vehicle("airdef", dcs.countries.USA.Vehicle.AirDefence.M1097_Avenger))
+        ustanks.add_unit(m.vehicle("aaa", dcs.countries.USA.Vehicle.AirDefence.Vulcan))
         ustanks.units[-1].skill = dcs.unit.Skill.High
         ustanks.formation(heading=310)
 
@@ -112,7 +112,7 @@ class BasicTests(unittest.TestCase):
         senaki = m.terrain.senaki_kolkhi()
         senaki.set_red()
         russia = m.coalition["red"].country("Russia")
-        bg = m.vehicle_group(russia, "Tanks", dcs.countries.Russia.Vehicle.Armor.MBT_T_90,
+        bg = m.vehicle_group(russia, "Tanks", dcs.countries.Russia.Vehicle.Armor.T_90,
                              dcs.mapping.Point(-281599.97853068, 645570.27528559), 180, 4,
                              move_formation=dcs.point.PointAction.OnRoad)
         bg.add_waypoint(dcs.mapping.Point(-317423.36510278, 636737.32119577), dcs.point.PointAction.OnRoad, 50)
@@ -140,7 +140,7 @@ class BasicTests(unittest.TestCase):
         su25.add_runway_waypoint(sukhumi)
         su25.land_at(sukhumi)
 
-        sg = m.ship_group(russia, "TaskForce", dcs.ships.Cruiser_1164_Moskva,
+        sg = m.ship_group(russia, "TaskForce", dcs.ships.MOSCOW,
                           dcs.mapping.Point(-209571.42857143, 500728.57142858), 0)
         sg.add_waypoint(dcs.mapping.Point(sg.x - 1000 * 60, sg.y + 1000 * 10))
 
@@ -148,15 +148,15 @@ class BasicTests(unittest.TestCase):
         seapoint.y -= 10 * 1000
 
         # carrier with aircraft
-        sg = m.ship_group(usa, "CVN", dcs.countries.USA.Ship.CVN_70_Carl_Vinson, seapoint)
+        sg = m.ship_group(usa, "CVN", dcs.countries.USA.Ship.VINSON, seapoint)
         m.flight_group_from_unit(usa, "F18 Carrier", dcs.planes.F_A_18C, sg, group_size=4)
 
         # some statics
         m.static_group(usa, "Static", dcs.statics.Fortification.Cafe, batumi.unit_zones[0].random_point())
         m.static_group(usa, "SPlane", dcs.planes.B_1B, batumi.unit_zones[0].random_point())
         m.static_group(usa, "SHeli", dcs.countries.USA.Helicopter.Mi_8MT, batumi.unit_zones[0].random_point())
-        m.static_group(usa, "SVehicle", dcs.countries.USA.Vehicle.Armor.IFV_LAV_25, batumi.unit_zones[0].random_point())
-        m.static_group(usa, "SShip", dcs.countries.USA.Ship.FFG_Oliver_Hazzard_Perry,
+        m.static_group(usa, "SVehicle", dcs.countries.USA.Vehicle.Armor.LAV_25, batumi.unit_zones[0].random_point())
+        m.static_group(usa, "SShip", dcs.countries.USA.Ship.PERRY,
                        dcs.Rectangle.from_point(seapoint, 10000).random_point())
 
         batumi_zone = m.triggers.add_triggerzone(batumi.position, 200, False, "batumi zone")
@@ -533,7 +533,7 @@ class BasicTests(unittest.TestCase):
         group = m.ship_group(
             m.country(country_name),
             group_name,
-            dcs.countries.USA.Ship.CVN_70_Carl_Vinson,
+            dcs.countries.USA.Ship.VINSON,
             seapoint
         )
         unit: Ship = group.units[0]
@@ -562,7 +562,7 @@ class BasicTests(unittest.TestCase):
 
         usa = m.country("USA")
         point = dcs.Point(-217283, 564863)  # This is a compound north of sukhmi, with buildings and trees
-        m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.SPAAA_Vulcan_M163, position=point)
+        m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.Vulcan, position=point)
 
         # Create trigger zone
         destruction_zone = m.triggers.add_triggerzone(point, 1000, False, "destruction zone")
@@ -588,7 +588,7 @@ class BasicTests(unittest.TestCase):
 
         usa = m.country("USA")
         point = dcs.Point(-217283, 564863)  # This is a compound north of sukhmi, with buildings and trees
-        m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.SPAAA_Vulcan_M163, position=point)
+        m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.Vulcan, position=point)
 
         # Create trigger zone
         removal_zone = m.triggers.add_triggerzone(point, 1000, False, "removal zone")
@@ -615,7 +615,7 @@ class BasicTests(unittest.TestCase):
 
         usa = m.country("USA")
         point = dcs.Point(-217283, 564863)  # This is a compound north of sukhmi, with buildings and trees
-        m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.SPAAA_Vulcan_M163, position=point)
+        m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.Vulcan, position=point)
 
         # Create trigger zone
         removal_zone = m.triggers.add_triggerzone(point, 1000, False, "removal zone")
@@ -642,7 +642,7 @@ class BasicTests(unittest.TestCase):
 
         usa = m.country("USA")
         point = dcs.Point(-217283, 564863)  # This is a compound north of sukhmi, with buildings and trees
-        m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.SPAAA_Vulcan_M163, position=point)
+        m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.Vulcan, position=point)
 
         # Create trigger zone
         removal_zone = m.triggers.add_triggerzone(point, 1000, False, "removal zone")
@@ -684,7 +684,7 @@ class BasicTests(unittest.TestCase):
         usa = m.country("USA")
         caucasus = m.terrain
         batumi = caucasus.batumi()
-        m.vehicle_group(usa, "qf17", dcs.countries.USA.Vehicle.AirDefence.AAA_QF_3_7,
+        m.vehicle_group(usa, "qf17", dcs.countries.USA.Vehicle.AirDefence.QF_37_AA,
                         position=batumi.random_unit_zone().center())
 
         m.save('missions/test_mission_qf17.miz')
@@ -693,7 +693,7 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(0, len(m2.load_file('missions/test_mission_qf17.miz')))
 
         group = m2.country("USA").find_group("qf17")
-        self.assertEqual(group.units[0].type, dcs.vehicles.AirDefence.AAA_QF_3_7.id)
+        self.assertEqual(group.units[0].type, dcs.vehicles.AirDefence.QF_37_AA.id)
 
     def test_mission_neutral(self):
         m = dcs.mission.Mission()

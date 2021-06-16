@@ -5,7 +5,6 @@ import dcs.task as task
 from dcs.unittype import FlyingType
 from enum import Enum
 
-
 class HelicopterType(FlyingType):
     helicopter = True
 
@@ -176,7 +175,7 @@ class Ka_50(HelicopterType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (1, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (1, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (1, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
-        Fuel_tank_Ka_50 = (1, Weapons.Fuel_tank_Ka_50)
+        Fuel_tank_PTB_450 = (1, Weapons.Fuel_tank_PTB_450)
 
     class Pylon2:
         B_8V20A_CM = (2, Weapons.B_8V20A_CM)
@@ -189,7 +188,7 @@ class Ka_50(HelicopterType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (2, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
-        Fuel_tank_Ka_50 = (2, Weapons.Fuel_tank_Ka_50)
+        Fuel_tank_PTB_450 = (2, Weapons.Fuel_tank_PTB_450)
 
     class Pylon3:
         B_8V20A_CM = (3, Weapons.B_8V20A_CM)
@@ -202,7 +201,7 @@ class Ka_50(HelicopterType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (3, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (3, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
-        Fuel_tank_Ka_50 = (3, Weapons.Fuel_tank_Ka_50)
+        Fuel_tank_PTB_450 = (3, Weapons.Fuel_tank_PTB_450)
 
     class Pylon4:
         B_8V20A_CM = (4, Weapons.B_8V20A_CM)
@@ -217,7 +216,7 @@ class Ka_50(HelicopterType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (4, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (4, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (4, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
-        Fuel_tank_Ka_50 = (4, Weapons.Fuel_tank_Ka_50)
+        Fuel_tank_PTB_450 = (4, Weapons.Fuel_tank_PTB_450)
 
     pylons = {1, 2, 3, 4}
 
@@ -276,7 +275,7 @@ class Mi_24V(HelicopterType):
         B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (2, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (2, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
-        Fuel_tank_Ka_50 = (2, Weapons.Fuel_tank_Ka_50)
+        Fuel_tank_PTB_450 = (2, Weapons.Fuel_tank_PTB_450)
         B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (2, Weapons.B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
         GUV_VOG = (2, Weapons.GUV_VOG)
 
@@ -292,7 +291,7 @@ class Mi_24V(HelicopterType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (3, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
-        Fuel_tank_Ka_50 = (3, Weapons.Fuel_tank_Ka_50)
+        Fuel_tank_PTB_450 = (3, Weapons.Fuel_tank_PTB_450)
         GUV_YakB_GSHP = (3, Weapons.GUV_YakB_GSHP)
         GUV_VOG = (3, Weapons.GUV_VOG)
 
@@ -308,7 +307,7 @@ class Mi_24V(HelicopterType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (4, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (4, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (4, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
-        Fuel_tank_Ka_50 = (4, Weapons.Fuel_tank_Ka_50)
+        Fuel_tank_PTB_450 = (4, Weapons.Fuel_tank_PTB_450)
         GUV_YakB_GSHP = (4, Weapons.GUV_YakB_GSHP)
         GUV_VOG = (4, Weapons.GUV_VOG)
 
@@ -321,7 +320,7 @@ class Mi_24V(HelicopterType):
         B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (5, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (5, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (5, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
-        Fuel_tank_Ka_50 = (5, Weapons.Fuel_tank_Ka_50)
+        Fuel_tank_PTB_450 = (5, Weapons.Fuel_tank_PTB_450)
         B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (5, Weapons.B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
         GUV_VOG = (5, Weapons.GUV_VOG)
 
@@ -514,6 +513,7 @@ class Mi_8MT(HelicopterType):
             Russia_Police = "Russia_Police"
             Russia_UTair = "Russia_UTair"
             Russia_Vertolety_Russia = "Russia_Vertolety_Russia"
+            Russia_Vertolety_Russia_2 = "Russia_Vertolety_Russia_2"
             Russia_Naryan_Mar = "Russia_Naryan-Mar"
             Russia_VVS_Grey = "Russia_VVS_Grey"
             Russia_VVS_Grey_2 = "Russia_VVS_Grey_2"
@@ -1824,7 +1824,7 @@ class Mi_28N(HelicopterType):
         FAB_250___250kg_GP_Bomb_LD = (1, Weapons.FAB_250___250kg_GP_Bomb_LD)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (1, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (1, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        Fuel_tank_Ka_50 = (1, Weapons.Fuel_tank_Ka_50)
+        Fuel_tank_PTB_450 = (1, Weapons.Fuel_tank_PTB_450)
         B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (1, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
         FAB_500_M_62___500kg_GP_Bomb_LD = (1, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (1, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -1837,7 +1837,7 @@ class Mi_28N(HelicopterType):
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        Fuel_tank_Ka_50 = (2, Weapons.Fuel_tank_Ka_50)
+        Fuel_tank_PTB_450 = (2, Weapons.Fuel_tank_PTB_450)
         B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (2, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
         FAB_500_M_62___500kg_GP_Bomb_LD = (2, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (2, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -1851,7 +1851,7 @@ class Mi_28N(HelicopterType):
         FAB_250___250kg_GP_Bomb_LD = (3, Weapons.FAB_250___250kg_GP_Bomb_LD)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        Fuel_tank_Ka_50 = (3, Weapons.Fuel_tank_Ka_50)
+        Fuel_tank_PTB_450 = (3, Weapons.Fuel_tank_PTB_450)
         B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (3, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
         FAB_500_M_62___500kg_GP_Bomb_LD = (3, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (3, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -1865,7 +1865,7 @@ class Mi_28N(HelicopterType):
         FAB_250___250kg_GP_Bomb_LD = (4, Weapons.FAB_250___250kg_GP_Bomb_LD)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (4, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (4, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        Fuel_tank_Ka_50 = (4, Weapons.Fuel_tank_Ka_50)
+        Fuel_tank_PTB_450 = (4, Weapons.Fuel_tank_PTB_450)
         B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (4, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
         FAB_500_M_62___500kg_GP_Bomb_LD = (4, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (4, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -1907,6 +1907,211 @@ class OH_58D(HelicopterType):
 
     tasks = [task.AFAC, task.Transport, task.GroundAttack, task.Escort, task.AntishipStrike]
     task_default = task.AFAC
+
+
+class Mi_24P(HelicopterType):
+    id = "Mi-24P"
+    flyable = True
+    height = 4.354
+    width = 17.3
+    length = 20.953
+    fuel_max = 1701
+    max_speed = 330
+    chaff = 0
+    flare = 192
+    charge_total = 192
+    chaff_charge_size = 1
+    flare_charge_size = 1
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 127.5,
+                2: 135,
+                4: 127,
+                8: 128,
+                16: 132,
+                17: 138,
+                9: 126,
+                18: 122,
+                5: 125,
+                10: 133,
+                20: 137,
+                11: 130,
+                3: 136,
+                6: 121,
+                12: 129,
+                13: 123,
+                7: 141,
+                14: 131,
+                19: 124,
+                15: 134
+            },
+        },
+        2: {
+            "channels": {
+                7: 40,
+                1: 21.5,
+                2: 25.7,
+                4: 28,
+                8: 50,
+                9: 55.5,
+                5: 30,
+                10: 59.9,
+                3: 27,
+                6: 32
+            },
+        },
+    }
+
+    property_defaults = {
+        "ExhaustScreen": True,
+        "LeftEngineResource": 90,
+        "RightEngineResource": 90,
+        "GunnersAISkill": 90,
+        "NetCrewControlPriority": 0,
+        "NS430allow": True,
+        "SimplifiedAI": False,
+        "HideAngleBoxes": False,
+    }
+
+    class Properties:
+
+        class ExhaustScreen:
+            id = "ExhaustScreen"
+
+        class LeftEngineResource:
+            id = "LeftEngineResource"
+
+        class RightEngineResource:
+            id = "RightEngineResource"
+
+        class GunnersAISkill:
+            id = "GunnersAISkill"
+
+        class NetCrewControlPriority:
+            id = "NetCrewControlPriority"
+
+            class Values:
+                Pilot = 0
+                Operator = 1
+                Ask_Always = -1
+                Equally_Responsible = -2
+
+        class NS430allow:
+            id = "NS430allow"
+
+        class SimplifiedAI:
+            id = "SimplifiedAI"
+
+        class HideAngleBoxes:
+            id = "HideAngleBoxes"
+
+    class Liveries:
+
+        class Georgia(Enum):
+            Georgian_Air_Force = "Georgian Air Force"
+            United_Nations = "United Nations"
+
+        class Ukraine(Enum):
+            Ukrainian_Army_Aviation = "Ukrainian Army Aviation"
+            United_Nations = "United Nations"
+
+        class Syria(Enum):
+            SyAAF = "SyAAF"
+
+        class Russia(Enum):
+            Russian_Air_Force = "Russian Air Force"
+            United_Nations = "United Nations"
+            AF_Standard3_Old = "AF Standard3 Old"
+
+        class Iraq(Enum):
+            IQAF = "IQAF"
+
+    class Pylon1:
+        _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (1, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        _9M114_Shturm_V_2_Rack = (1, Weapons._9M114_Shturm_V_2_Rack)
+
+    class Pylon2:
+        B_8V20A_CM = (2, Weapons.B_8V20A_CM)
+        B_8V20A_OFP2 = (2, Weapons.B_8V20A_OFP2)
+        B_8V20A_OM = (2, Weapons.B_8V20A_OM)
+        UB_32A_24_pod___32_x_S_5KO = (2, Weapons.UB_32A_24_pod___32_x_S_5KO)
+        _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (2, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
+        Fuel_tank_PTB_450 = (2, Weapons.Fuel_tank_PTB_450)
+        B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (2, Weapons.B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
+        FAB_100___100kg_GP_Bomb_LD = (2, Weapons.FAB_100___100kg_GP_Bomb_LD)
+        RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (2, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
+        RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (2, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
+        APU_68___S_24B = (2, Weapons.APU_68___S_24B)
+        GUV_VOG = (2, Weapons.GUV_VOG)
+
+    class Pylon3:
+        B_8V20A_CM = (3, Weapons.B_8V20A_CM)
+        B_8V20A_OFP2 = (3, Weapons.B_8V20A_OFP2)
+        B_8V20A_OM = (3, Weapons.B_8V20A_OM)
+        UB_32A_24_pod___32_x_S_5KO = (3, Weapons.UB_32A_24_pod___32_x_S_5KO)
+        B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        FAB_100___100kg_GP_Bomb_LD = (3, Weapons.FAB_100___100kg_GP_Bomb_LD)
+        FAB_250___250kg_GP_Bomb_LD = (3, Weapons.FAB_250___250kg_GP_Bomb_LD)
+        FAB_500_M_62___500kg_GP_Bomb_LD = (3, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
+        RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (3, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
+        RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (3, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
+        RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (3, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
+        RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (3, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
+        RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (3, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
+        KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
+        Fuel_tank_PTB_450 = (3, Weapons.Fuel_tank_PTB_450)
+        APU_68___S_24B = (3, Weapons.APU_68___S_24B)
+        GUV_YakB_GSHP = (3, Weapons.GUV_YakB_GSHP)
+        GUV_VOG = (3, Weapons.GUV_VOG)
+
+    class Pylon4:
+        B_8V20A_CM = (4, Weapons.B_8V20A_CM)
+        B_8V20A_OFP2 = (4, Weapons.B_8V20A_OFP2)
+        B_8V20A_OM = (4, Weapons.B_8V20A_OM)
+        UB_32A_24_pod___32_x_S_5KO = (4, Weapons.UB_32A_24_pod___32_x_S_5KO)
+        B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (4, Weapons.B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        FAB_100___100kg_GP_Bomb_LD = (4, Weapons.FAB_100___100kg_GP_Bomb_LD)
+        FAB_250___250kg_GP_Bomb_LD = (4, Weapons.FAB_250___250kg_GP_Bomb_LD)
+        FAB_500_M_62___500kg_GP_Bomb_LD = (4, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
+        RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (4, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
+        RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (4, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
+        RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (4, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
+        RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (4, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
+        RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (4, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
+        KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (4, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
+        Fuel_tank_PTB_450 = (4, Weapons.Fuel_tank_PTB_450)
+        APU_68___S_24B = (4, Weapons.APU_68___S_24B)
+        GUV_YakB_GSHP = (4, Weapons.GUV_YakB_GSHP)
+        GUV_VOG = (4, Weapons.GUV_VOG)
+
+    class Pylon5:
+        B_8V20A_CM = (5, Weapons.B_8V20A_CM)
+        B_8V20A_OFP2 = (5, Weapons.B_8V20A_OFP2)
+        B_8V20A_OM = (5, Weapons.B_8V20A_OM)
+        UB_32A_24_pod___32_x_S_5KO = (5, Weapons.UB_32A_24_pod___32_x_S_5KO)
+        _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (5, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (5, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
+        Fuel_tank_PTB_450 = (5, Weapons.Fuel_tank_PTB_450)
+        B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (5, Weapons.B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        FAB_250___250kg_GP_Bomb_LD = (5, Weapons.FAB_250___250kg_GP_Bomb_LD)
+        FAB_100___100kg_GP_Bomb_LD = (5, Weapons.FAB_100___100kg_GP_Bomb_LD)
+        RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (5, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
+        RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (5, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
+        APU_68___S_24B = (5, Weapons.APU_68___S_24B)
+        GUV_VOG = (5, Weapons.GUV_VOG)
+
+    class Pylon6:
+        _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (6, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        _9M114_Shturm_V_2_Rack = (6, Weapons._9M114_Shturm_V_2_Rack)
+
+    pylons = {1, 2, 3, 4, 5, 6}
+
+    tasks = [task.CAS, task.GroundAttack, task.Escort, task.Transport, task.AFAC, task.AntishipStrike]
+    task_default = task.CAS
 
 
 class SA342M(HelicopterType):
@@ -2296,6 +2501,7 @@ helicopter_map = {
     "UH-1H": UH_1H,
     "Mi-28N": Mi_28N,
     "OH-58D": OH_58D,
+    "Mi-24P": Mi_24P,
     "SA342M": SA342M,
     "SA342L": SA342L,
     "SA342Mistral": SA342Mistral,

@@ -31,6 +31,10 @@ local function safe_name(name)
     return safeName
 end
 
+local function safe_class_name(name)
+    return safe_name(name):gsub("^%l", string.upper)
+end
+
 local function safe_display_name(name)
     local safeDisplayName = name
     safeDisplayName = string.gsub(safeDisplayName, '%"', '\\"')
@@ -186,23 +190,22 @@ for j in pairs({CAT_BOMBS,CAT_MISSILES,CAT_ROCKETS,CAT_AIR_TO_AIR,CAT_FUEL_TANKS
             pyName = string.gsub(pyName,'%"', "")
             pyName = string.gsub(pyName,'%+', "")
         end
-        key = pyName
-        if weapons[key] ~= nil then
-            key = pyName .. "_"
-        end
-        local w = "None"
-        if v["Weight"] ~= nil then
-            w = v["Weight"]
-        end
-        while weapons[key] ~= nil do
-            key = key..'_'
-        end
 
-        local displayName = string.gsub(v.displayName,'%"', "")
-        weapons[key] = {clsid = myclsid, displayName = displayName, weight = w}
-        table.insert(keys, key)
-        -- print("    " .. key .. " = {\"clsid\": \"" .. v.CLSID .. "\", \"name\": \"" .. v.displayName .. "\"}")
-    end
+		key = pyName
+		if weapons[key] ~= nil then
+			key = pyName .. "_"
+		end
+		local w = "None"
+		if v["Weight"] ~= nil then
+			w = v["Weight"]
+		end
+		while weapons[key] ~= nil do
+			key = key..'_'
+		end
+		weapons[key] = {clsid = myclsid, displayName = safe_name(v.displayName), weight = w}
+		table.insert(keys, key)
+		-- print("    " .. key .. " = {\"clsid\": \"" .. v.CLSID .. "\", \"name\": \"" .. v.displayName .. "\"}")
+	end
 end
 
 table.sort( keys )
@@ -299,15 +302,14 @@ flyable["MiG-19P"] = true
 local function export_aircraft(file, aircrafts, export_type, exportplane)
     -- generate export output
     file:write(
-        [[# This file is generated from pydcs_export.lua
+[[# This file is generated from pydcs_export.lua
 
-        from dcs.weapons_data import Weapons
-        import dcs.task as task
-        from dcs.unittype import FlyingType
-        from enum import Enum
+from dcs.weapons_data import Weapons
+import dcs.task as task
+from dcs.unittype import FlyingType
+from enum import Enum
 
-
-        ]])
+]])
     writeln(file, 'class '..export_type..'Type(FlyingType):')
     if exportplane then
         writeln(file, '    pass')
@@ -569,10 +571,10 @@ file:close()
 local file = io.open(export_path.."vehicles.py", "w")
 
 file:write(
-    [[# This file is generated from pydcs_export.lua
+[[# This file is generated from pydcs_export.lua
 
-    import dcs.unittype as unittype
-    ]])
+import dcs.unittype as unittype
+]])
 
 -- sort by categories
 local unit_categories = {}
@@ -601,7 +603,7 @@ for i in pairs(unit_categories) do
     writeln(file, 'class '..i..':')
     for j in pairs(unit_categories[i]) do
         local unit = unit_categories[i][j]
-        local safename = safe_name(unit.DisplayName)
+        local safename = safe_class_name(unit.type)
         local safeDisplayName = safe_display_name(unit.DisplayName)
         local threat_range = '0'
         if unit.ThreatRange ~= nil then
@@ -633,7 +635,7 @@ writeln(file, '')
 writeln(file, "vehicle_map = {")
 for i in pairs(db.Units.Cars.Car) do
     local unit = db.Units.Cars.Car[i];
-    local safename = safe_name(unit.DisplayName)
+    local safename = safe_class_name(unit.type)
     local cat = "AirDefence"
     if unit.category ~= "Air Defence" then
         cat = unit.category
@@ -650,10 +652,10 @@ file:close()
 local file = io.open(export_path.."statics.py", "w")
 
 file:write(
-    [[# This file is generated from pydcs_export.lua
+[[# This file is generated from pydcs_export.lua
 
-    import dcs.unittype as unittype
-    ]])
+import dcs.unittype as unittype
+]])
 
 local function lookup_map(file, parent, arr, b_parent)
     if b_parent == nil then
@@ -663,7 +665,7 @@ local function lookup_map(file, parent, arr, b_parent)
     writeln(file, string.lower(parent).."_map = {")
     for i in pairs(arr) do
         local unit = arr[i];
-        local safename = safe_name(unit.DisplayName)
+        local safename = safe_class_name(unit.type)
         if b_parent then
             writeln(file, '    "'..unit.type..'": '..parent..'.'..safename..',')
         else
@@ -678,7 +680,7 @@ writeln(file, '')
 writeln(file, 'class Fortification:')
 for i in pairs(db.Units.Fortifications.Fortification) do
     local unit = db.Units.Fortifications.Fortification[i]
-    local safename = safe_name(unit.DisplayName)
+    local safename = safe_class_name(unit.type)
     local safeDisplayName = safe_display_name(unit.DisplayName)
     writeln(file, '')
     writeln(file, '    class '..safename..'(unittype.StaticType):')
@@ -702,7 +704,7 @@ writeln(file, '')
 writeln(file, 'class GroundObject:')
 for i in pairs(db.Units.GroundObjects.GroundObject) do
     local unit = db.Units.GroundObjects.GroundObject[i]
-    local safename = safe_name(unit.DisplayName)
+    local safename = safe_class_name(unit.type)
     local safeDisplayName = safe_display_name(unit.DisplayName)
     writeln(file, '')
     writeln(file, '    class '..safename..'(unittype.StaticType):')
@@ -718,7 +720,7 @@ writeln(file, '')
 writeln(file, 'class Warehouse:')
 for i in pairs(db.Units.Warehouses.Warehouse) do
     local unit = db.Units.Warehouses.Warehouse[i]
-    local safename = safe_name(unit.DisplayName)
+    local safename = safe_class_name(unit.type)
     local safeDisplayName = safe_display_name(unit.DisplayName)
     writeln(file, '')
     writeln(file, '    class '..safename..'(unittype.StaticType):')
@@ -739,7 +741,7 @@ writeln(file, '')
 writeln(file, 'class Cargo:')
 for i in pairs(db.Units.Cargos.Cargo) do
     local unit = db.Units.Cargos.Cargo[i]
-    local safename = safe_name(unit.DisplayName)
+    local safename = safe_class_name(unit.type)
     local safeDisplayName = safe_display_name(unit.DisplayName)
     writeln(file, '')
     writeln(file, '    class '..safename..'(unittype.StaticType):')
@@ -762,14 +764,14 @@ file:close()
 local file = io.open(export_path.."ships.py", "w")
 
 file:write(
-    [[# This file is generated from pydcs_export.lua
+[[# This file is generated from pydcs_export.lua
 
-    import dcs.unittype as unittype
-    ]])
+import dcs.unittype as unittype
+]])
 
 for i in pairs(db.Units.Ships.Ship) do
     local unit = db.Units.Ships.Ship[i]
-    local safename = safe_name(unit.DisplayName)
+    local safename = safe_class_name(unit.type)
     local safeDisplayName = safe_display_name(unit.DisplayName)
     writeln(file, '')
     writeln(file, '')
@@ -882,7 +884,7 @@ while i <= country.maxIndex do
                 writeln(file, '        class '..i..':')
                 for j in pairs(unit_categories[i]) do
                     local unit = unit_categories[i][j]
-                    local safename = safe_name(unit.DisplayName)
+                    local safename = safe_class_name(unit.type)
                     local safeDisplayName = safe_display_name(unit.DisplayName)
                     writeln(file, '            '..safename..' = vehicles.'..i..'.'..safename)
                 end
@@ -940,7 +942,7 @@ while i <= country.maxIndex do
             for u in pairs(ships) do
                 local funit = getUnit(db.Units.Ships.Ship, ships[u].Name)
                 if funit ~= nil then
-                    local safeName = safe_name(funit.DisplayName)
+                    local safeName = safe_class_name(funit.type)
                     writeln(file, '        '..safeName..' = ships.'..safeName)
                 end
             end
@@ -1014,6 +1016,5 @@ def get_by_id(_id: int):
     Returns:
         Country: a new country object
     """
-    return country_dict[_id]()
-]])
+    return country_dict[_id]()]])
 file:close()

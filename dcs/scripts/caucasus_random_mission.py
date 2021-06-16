@@ -65,43 +65,43 @@ class BasicScenario:
     red_force = {
         "Armor": {
             "Tank Platoon": (Russia.name, [
-                Russia.Vehicle.Armor.MBT_T_90,
-                Russia.Vehicle.Armor.MBT_T_90,
-                Russia.Vehicle.Armor.MBT_T_90,
-                Russia.Vehicle.Armor.MBT_T_90
+                Russia.Vehicle.Armor.T_90,
+                Russia.Vehicle.Armor.T_90,
+                Russia.Vehicle.Armor.T_90,
+                Russia.Vehicle.Armor.T_90
             ]),
             "Tank Platoon 2": (Russia.name, [
-                Russia.Vehicle.Armor.MBT_T_90,
-                Russia.Vehicle.Armor.MBT_T_90,
-                Russia.Vehicle.Armor.MBT_T_90,
-                Russia.Vehicle.Armor.MBT_T_90
+                Russia.Vehicle.Armor.T_90,
+                Russia.Vehicle.Armor.T_90,
+                Russia.Vehicle.Armor.T_90,
+                Russia.Vehicle.Armor.T_90
             ])
         },
         "LightArmor": {
             "Light Armor 01": (Russia.name, [
-                Russia.Vehicle.Armor.IFV_BMP_3,
-                Russia.Vehicle.Armor.IFV_BMP_3,
-                Russia.Vehicle.Armor.IFV_BMP_3
+                Russia.Vehicle.Armor.BMP_3,
+                Russia.Vehicle.Armor.BMP_3,
+                Russia.Vehicle.Armor.BMP_3
             ]),
             "Light Armor 02": (Russia.name, [
-                Russia.Vehicle.Armor.IFV_BMP_3,
-                Russia.Vehicle.Armor.IFV_BMP_3,
-                Russia.Vehicle.Armor.IFV_BMP_3
+                Russia.Vehicle.Armor.BMP_3,
+                Russia.Vehicle.Armor.BMP_3,
+                Russia.Vehicle.Armor.BMP_3
             ]),
             "Light Armor 03": (Russia.name, [
-                Russia.Vehicle.Armor.IFV_BMP_3,
-                Russia.Vehicle.Armor.IFV_BMP_3,
-                Russia.Vehicle.Armor.IFV_BMP_3
+                Russia.Vehicle.Armor.BMP_3,
+                Russia.Vehicle.Armor.BMP_3,
+                Russia.Vehicle.Armor.BMP_3
             ])
         },
         "Artillery": {
             "Artillery": (Russia.name, [
-                Russia.Vehicle.Artillery.SPH_2S1_Gvozdika,
-                Russia.Vehicle.Artillery.SPH_2S1_Gvozdika,
-                Russia.Vehicle.Artillery.SPH_2S1_Gvozdika,
-                Russia.Vehicle.Artillery.SPH_2S1_Gvozdika,
-                Russia.Vehicle.Unarmed.Transport_Ural_4320T,
-                Russia.Vehicle.AirDefence.SAM_SA_19_Tunguska_2S6
+                Russia.Vehicle.Artillery.SAU_Gvozdika,
+                Russia.Vehicle.Artillery.SAU_Gvozdika,
+                Russia.Vehicle.Artillery.SAU_Gvozdika,
+                Russia.Vehicle.Artillery.SAU_Gvozdika,
+                Russia.Vehicle.Unarmed.Ural_4320T,
+                Russia.Vehicle.AirDefence._2S6_Tunguska
             ])
         },
         "AirDefence": {
@@ -134,45 +134,45 @@ class BasicScenario:
     blue_force = {
         "Armor": {
             "1st Tank Platoon 01": (USA.name, [
-                USA.Vehicle.Armor.MBT_M1A2_Abrams,
-                USA.Vehicle.Armor.MBT_M1A2_Abrams,
-                USA.Vehicle.Armor.MBT_M1A2_Abrams,
-                USA.Vehicle.Armor.MBT_M1A2_Abrams
+                USA.Vehicle.Armor.M_1_Abrams,
+                USA.Vehicle.Armor.M_1_Abrams,
+                USA.Vehicle.Armor.M_1_Abrams,
+                USA.Vehicle.Armor.M_1_Abrams
             ])
         },
         "LightArmor": {
             "1st Light Armor Brigade 01": (USA.name, [
-                USA.Vehicle.Armor.IFV_M2A2_Bradley,
-                USA.Vehicle.Armor.IFV_M2A2_Bradley,
-                USA.Vehicle.Armor.IFV_M2A2_Bradley,
+                USA.Vehicle.Armor.M_2_Bradley,
+                USA.Vehicle.Armor.M_2_Bradley,
+                USA.Vehicle.Armor.M_2_Bradley,
             ])
         },
         "Artillery": {
             "1st Artillery Corps 01": (USA.name, [
-                USA.Vehicle.Artillery.SPH_M109_Paladin,
-                USA.Vehicle.Artillery.SPH_M109_Paladin,
-                USA.Vehicle.Artillery.SPH_M109_Paladin,
-                USA.Vehicle.Artillery.SPH_M109_Paladin,
+                USA.Vehicle.Artillery.M_109,
+                USA.Vehicle.Artillery.M_109,
+                USA.Vehicle.Artillery.M_109,
+                USA.Vehicle.Artillery.M_109,
                 USA.Vehicle.Unarmed.HEMTT_TFFT,
-                USA.Vehicle.AirDefence.SAM_Stinger_comm,
-                USA.Vehicle.AirDefence.Stinger_MANPADS
+                USA.Vehicle.AirDefence.Soldier_stinger,
+                USA.Vehicle.AirDefence.Stinger_comm
             ])
         },
         "AirDefence": {
             "Air Defense Battery 01": (USA.name, [
-                USA.Vehicle.Unarmed.APC_M1025_HMMWV,
-                USA.Vehicle.Unarmed.APC_M1025_HMMWV,
-                USA.Vehicle.AirDefence.SAM_Avenger_M1097,
-                USA.Vehicle.AirDefence.SAM_Avenger_M1097,
-                USA.Vehicle.AirDefence.SAM_Avenger_M1097,
-                USA.Vehicle.AirDefence.SAM_Avenger_M1097
+                USA.Vehicle.Unarmed.Hummer,
+                USA.Vehicle.Unarmed.Hummer,
+                USA.Vehicle.AirDefence.M1097_Avenger,
+                USA.Vehicle.AirDefence.M1097_Avenger,
+                USA.Vehicle.AirDefence.M1097_Avenger,
+                USA.Vehicle.AirDefence.M1097_Avenger
             ])
         },
         "Supply": {
             "US Supply": (USA.name, [
-                USA.Vehicle.Unarmed.Transport_M818,
-                USA.Vehicle.Unarmed.Transport_M818,
-                USA.Vehicle.Unarmed.Tanker_M978_HEMTT,
+                USA.Vehicle.Unarmed.M_818,
+                USA.Vehicle.Unarmed.M_818,
+                USA.Vehicle.Unarmed.M978_HEMTT_Tanker,
                 USA.Vehicle.Unarmed.HEMTT_TFFT
             ])
         }
@@ -206,13 +206,13 @@ class BasicScenario:
         caucasus = self.m.terrain  # type: dcs.terrain.Caucasus
         self.red_airports = caucasus.default_red_airports()
         for a in self.red_airports:
-            self.setup_airport(a, "red", [dcs.vehicles.AirDefence.SAM_SA_19_Tunguska_2S6,
-                                          dcs.vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka])
+            self.setup_airport(a, "red", [dcs.vehicles.AirDefence._2S6_Tunguska,
+                                          dcs.vehicles.AirDefence.ZSU_23_4_Shilka])
 
         self.blue_airports = caucasus.default_blue_airports()
         for a in self.blue_airports:
-            self.setup_airport(a, "blue", [dcs.vehicles.AirDefence.SAM_Avenger_M1097,
-                                           dcs.vehicles.AirDefence.AAA_Vulcan_M163])
+            self.setup_airport(a, "blue", [dcs.vehicles.AirDefence.M1097_Avenger,
+                                           dcs.vehicles.AirDefence.Vulcan])
 
     def setup_airport(
             self,

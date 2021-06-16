@@ -4,7 +4,8 @@ import dcs.unittype as unittype
 
 
 class Fortification:
-    class Command_Center(unittype.StaticType):
+
+    class _Command_Center(unittype.StaticType):
         id = ".Command Center"
         name = "Command Center"
         shape_name = "ComCenter"
@@ -184,25 +185,25 @@ class Fortification:
         shape_name = "him_bak_a"
         rate = 100
 
-    class Small_warehouse_1(unittype.StaticType):
+    class Small_werehouse_1(unittype.StaticType):
         id = "Small werehouse 1"
         name = "Small warehouse 1"
         shape_name = "s1"
         rate = 100
 
-    class Small_warehouse_2(unittype.StaticType):
+    class Small_werehouse_2(unittype.StaticType):
         id = "Small werehouse 2"
         name = "Small warehouse 2"
         shape_name = "s2"
         rate = 100
 
-    class Small_warehouse_3(unittype.StaticType):
+    class Small_werehouse_3(unittype.StaticType):
         id = "Small werehouse 3"
         name = "Small warehouse 3"
         shape_name = "s3"
         rate = 100
 
-    class Small_warehouse_4(unittype.StaticType):
+    class Small_werehouse_4(unittype.StaticType):
         id = "Small werehouse 4"
         name = "Small warehouse 4"
         shape_name = "s4"
@@ -371,7 +372,7 @@ class Fortification:
         shape_name = "landmine"
         rate = 1
 
-    class FARP_Ammo_Storage(unittype.StaticType):
+    class FARP_Ammo_Dump_Coating(unittype.StaticType):
         id = "FARP Ammo Dump Coating"
         name = "FARP Ammo Storage"
         shape_name = "SetkaKP"
@@ -383,7 +384,7 @@ class Fortification:
         shape_name = "PalatkaB"
         rate = 50
 
-    class FARP_Command_Post(unittype.StaticType):
+    class FARP_CP_Blindage(unittype.StaticType):
         id = "FARP CP Blindage"
         name = "FARP Command Post"
         shape_name = "kp_ug"
@@ -401,7 +402,7 @@ class Fortification:
         shape_name = "GeneratorF"
         rate = 100
 
-    class Airshow_cone(unittype.StaticType):
+    class Airshow_Cone(unittype.StaticType):
         id = "Airshow_Cone"
         name = "Airshow cone"
         shape_name = "Comp_cone"
@@ -413,37 +414,37 @@ class Fortification:
         shape_name = "Crowd1"
         rate = 100
 
-    class Mark_Flag_Red(unittype.StaticType):
+    class Red_Flag(unittype.StaticType):
         id = "Red_Flag"
         name = "Mark Flag Red"
         shape_name = "H-flag_R"
         rate = 3
 
-    class Mark_Flag_White(unittype.StaticType):
+    class White_Flag(unittype.StaticType):
         id = "White_Flag"
         name = "Mark Flag White"
         shape_name = "H-Flag_W"
         rate = 3
 
-    class Mark_Tyre_Black(unittype.StaticType):
+    class Black_Tyre(unittype.StaticType):
         id = "Black_Tyre"
         name = "Mark Tyre Black"
         shape_name = "H-tyre_B"
         rate = 3
 
-    class Mark_Tyre_White(unittype.StaticType):
+    class White_Tyre(unittype.StaticType):
         id = "White_Tyre"
         name = "Mark Tyre White"
         shape_name = "H-tyre_W"
         rate = 3
 
-    class Mark_Tyre_with_Red_Flag(unittype.StaticType):
+    class Black_Tyre_RF(unittype.StaticType):
         id = "Black_Tyre_RF"
         name = "Mark Tyre with Red Flag"
         shape_name = "H-tyre_B_RF"
         rate = 3
 
-    class Mark_Tyre_with_White_Flag(unittype.StaticType):
+    class Black_Tyre_WF(unittype.StaticType):
         id = "Black_Tyre_WF"
         name = "Mark Tyre with White Flag"
         shape_name = "H-tyre_B_WF"
@@ -461,15 +462,15 @@ class Fortification:
         shape_name = "barrelofbeer_support"
         rate = 5
 
-    class Warning_Board_A(unittype.StaticType):
+    class Warning_board_a(unittype.StaticType):
         id = "warning_board_a"
-        name = "Warning Board A"
+        name = "Warning Board: Spy Cannot Escape!"
         shape_name = "biaoyu"
         rate = 1
 
-    class Warning_Board_B(unittype.StaticType):
+    class Warning_board_b(unittype.StaticType):
         id = "warning_board_b"
-        name = "Warning Board B"
+        name = "Warning Board: Catch Spy!"
         shape_name = "biaoyu-2"
         rate = 1
 
@@ -539,7 +540,7 @@ class Fortification:
         shape_name = "Dragonsteeth_04"
         rate = 20
 
-    class Fire_control_bunker(unittype.StaticType):
+    class Fire_Control_Bunker(unittype.StaticType):
         id = "Fire Control Bunker"
         name = "Fire control bunker"
         shape_name = "fire_control"
@@ -605,7 +606,7 @@ class Fortification:
         shape_name = "Log_ramps_02"
         rate = 12
 
-    class Siegfried_line(unittype.StaticType):
+    class Siegfried_Line(unittype.StaticType):
         id = "Siegfried Line"
         name = "Siegfried line"
         shape_name = "Siegfried_Line"
@@ -623,9 +624,8 @@ class Fortification:
         shape_name = "Freya_Shelter_Concrete"
         rate = 20
 
-
 fortification_map = {
-    ".Command Center": Fortification.Command_Center,
+    ".Command Center": Fortification._Command_Center,
     "Hangar A": Fortification.Hangar_A,
     "Tech hangar A": Fortification.Tech_hangar_A,
     "Farm A": Fortification.Farm_A,
@@ -655,10 +655,10 @@ fortification_map = {
     "Shop": Fortification.Shop,
     "Tech combine": Fortification.Tech_combine,
     "Chemical tank A": Fortification.Chemical_tank_A,
-    "Small werehouse 1": Fortification.Small_warehouse_1,
-    "Small werehouse 2": Fortification.Small_warehouse_2,
-    "Small werehouse 3": Fortification.Small_warehouse_3,
-    "Small werehouse 4": Fortification.Small_warehouse_4,
+    "Small werehouse 1": Fortification.Small_werehouse_1,
+    "Small werehouse 2": Fortification.Small_werehouse_2,
+    "Small werehouse 3": Fortification.Small_werehouse_3,
+    "Small werehouse 4": Fortification.Small_werehouse_4,
     "Garage B": Fortification.Garage_B,
     "Garage small A": Fortification.Garage_small_A,
     "Garage small B": Fortification.Garage_small_B,
@@ -686,23 +686,23 @@ fortification_map = {
     "Subsidiary structure F": Fortification.Subsidiary_structure_F,
     "Subsidiary structure G": Fortification.Subsidiary_structure_G,
     "Landmine": Fortification.Landmine,
-    "FARP Ammo Dump Coating": Fortification.FARP_Ammo_Storage,
+    "FARP Ammo Dump Coating": Fortification.FARP_Ammo_Dump_Coating,
     "FARP Tent": Fortification.FARP_Tent,
-    "FARP CP Blindage": Fortification.FARP_Command_Post,
+    "FARP CP Blindage": Fortification.FARP_CP_Blindage,
     "FARP Fuel Depot": Fortification.FARP_Fuel_Depot,
     "GeneratorF": Fortification.GeneratorF,
-    "Airshow_Cone": Fortification.Airshow_cone,
+    "Airshow_Cone": Fortification.Airshow_Cone,
     "Airshow_Crowd": Fortification.Airshow_Crowd,
-    "Red_Flag": Fortification.Mark_Flag_Red,
-    "White_Flag": Fortification.Mark_Flag_White,
-    "Black_Tyre": Fortification.Mark_Tyre_Black,
-    "White_Tyre": Fortification.Mark_Tyre_White,
-    "Black_Tyre_RF": Fortification.Mark_Tyre_with_Red_Flag,
-    "Black_Tyre_WF": Fortification.Mark_Tyre_with_White_Flag,
+    "Red_Flag": Fortification.Red_Flag,
+    "White_Flag": Fortification.White_Flag,
+    "Black_Tyre": Fortification.Black_Tyre,
+    "White_Tyre": Fortification.White_Tyre,
+    "Black_Tyre_RF": Fortification.Black_Tyre_RF,
+    "Black_Tyre_WF": Fortification.Black_Tyre_WF,
     "Windsock": Fortification.Windsock,
     "Beer Bomb": Fortification.Beer_Bomb,
-    "warning_board_a": Fortification.Warning_Board_A,
-    "warning_board_b": Fortification.Warning_Board_B,
+    "warning_board_a": Fortification.Warning_board_a,
+    "warning_board_b": Fortification.Warning_board_b,
     "Belgian gate": Fortification.Belgian_gate,
     "Concertina wire": Fortification.Concertina_wire,
     "Tetrahydra": Fortification.Tetrahydra,
@@ -714,7 +714,7 @@ fortification_map = {
     "Dragonteeth 3": Fortification.Dragonteeth_3,
     "Dragonteeth 4": Fortification.Dragonteeth_4,
     "Dragonteeth 5": Fortification.Dragonteeth_5,
-    "Fire Control Bunker": Fortification.Fire_control_bunker,
+    "Fire Control Bunker": Fortification.Fire_Control_Bunker,
     "Haystack 1": Fortification.Haystack_1,
     "Haystack 2": Fortification.Haystack_2,
     "Haystack 3": Fortification.Haystack_3,
@@ -725,13 +725,14 @@ fortification_map = {
     "Log ramps 1": Fortification.Log_ramps_1,
     "Log ramps 2": Fortification.Log_ramps_2,
     "Log ramps 3": Fortification.Log_ramps_3,
-    "Siegfried Line": Fortification.Siegfried_line,
+    "Siegfried Line": Fortification.Siegfried_Line,
     "Freya_Shelter_Brick": Fortification.Freya_Shelter_Brick,
     "Freya_Shelter_Concrete": Fortification.Freya_Shelter_Concrete,
 }
 
 
 class GroundObject:
+
     class Building(unittype.StaticType):
         id = "Building"
         name = "Building"
@@ -752,7 +753,6 @@ class GroundObject:
         name = "Train"
         category = ""
 
-
 groundobject_map = {
     "Building": GroundObject.Building,
     "Bridge": GroundObject.Bridge,
@@ -762,6 +762,7 @@ groundobject_map = {
 
 
 class Warehouse:
+
     class Warehouse(unittype.StaticType):
         id = "Warehouse"
         name = "Warehouse"
@@ -769,14 +770,14 @@ class Warehouse:
         category = "Warehouses"
         rate = 100
 
-    class Tank_1(unittype.StaticType):
+    class Tank(unittype.StaticType):
         id = "Tank"
         name = "Tank 1"
         shape_name = "bak"
         category = "Warehouses"
         rate = 100
 
-    class Ammunition_depot(unittype.StaticType):
+    class _Ammunition_depot(unittype.StaticType):
         id = ".Ammunition depot"
         name = "Ammunition depot"
         shape_name = "SkladC"
@@ -797,18 +798,18 @@ class Warehouse:
         category = "Warehouses"
         rate = 100
 
-
 warehouse_map = {
     "Warehouse": Warehouse.Warehouse,
-    "Tank": Warehouse.Tank_1,
-    ".Ammunition depot": Warehouse.Ammunition_depot,
+    "Tank": Warehouse.Tank,
+    ".Ammunition depot": Warehouse._Ammunition_depot,
     "Tank 2": Warehouse.Tank_2,
     "Tank 3": Warehouse.Tank_3,
 }
 
 
 class Cargo:
-    class UH_1H_cargo(unittype.StaticType):
+
+    class Uh1h_cargo(unittype.StaticType):
         id = "uh1h_cargo"
         name = "UH-1H cargo"
         shape_name = "ab-212_cargo"
@@ -816,7 +817,7 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-    class Ammo(unittype.StaticType):
+    class Ammo_cargo(unittype.StaticType):
         id = "ammo_cargo"
         name = "Ammo"
         shape_name = "ammo_box_cargo"
@@ -824,7 +825,7 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-    class F_shape_barrier(unittype.StaticType):
+    class F_bar_cargo(unittype.StaticType):
         id = "f_bar_cargo"
         name = "F-shape barrier"
         shape_name = "f_bar_cargo"
@@ -832,7 +833,7 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-    class M117_bombs(unittype.StaticType):
+    class M117_cargo(unittype.StaticType):
         id = "m117_cargo"
         name = "M117 bombs"
         shape_name = "m117_cargo"
@@ -840,7 +841,7 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-    class ISO_container(unittype.StaticType):
+    class Iso_container(unittype.StaticType):
         id = "iso_container"
         name = "ISO container"
         shape_name = "iso_container_cargo"
@@ -848,7 +849,7 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-    class ISO_container_small(unittype.StaticType):
+    class Iso_container_small(unittype.StaticType):
         id = "iso_container_small"
         name = "ISO container small"
         shape_name = "iso_container_small_cargo"
@@ -856,7 +857,7 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-    class Barrels(unittype.StaticType):
+    class Barrels_cargo(unittype.StaticType):
         id = "barrels_cargo"
         name = "Barrels"
         shape_name = "barrels_cargo"
@@ -864,7 +865,7 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-    class Container(unittype.StaticType):
+    class Container_cargo(unittype.StaticType):
         id = "container_cargo"
         name = "Container"
         shape_name = "bw_container_cargo"
@@ -872,7 +873,7 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-    class Tetrapod(unittype.StaticType):
+    class Tetrapod_cargo(unittype.StaticType):
         id = "tetrapod_cargo"
         name = "Tetrapod"
         shape_name = "tetrapod_cargo"
@@ -880,7 +881,7 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-    class Fueltank(unittype.StaticType):
+    class Fueltank_cargo(unittype.StaticType):
         id = "fueltank_cargo"
         name = "Fueltank"
         shape_name = "fueltank_cargo"
@@ -888,7 +889,7 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-    class Oiltank(unittype.StaticType):
+    class Oiltank_cargo(unittype.StaticType):
         id = "oiltank_cargo"
         name = "Oiltank"
         shape_name = "oiltank_cargo"
@@ -896,7 +897,7 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-    class Pipes_big(unittype.StaticType):
+    class Pipes_big_cargo(unittype.StaticType):
         id = "pipes_big_cargo"
         name = "Pipes big"
         shape_name = "pipes_big_cargo"
@@ -904,7 +905,7 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-    class Pipes_small(unittype.StaticType):
+    class Pipes_small_cargo(unittype.StaticType):
         id = "pipes_small_cargo"
         name = "Pipes small"
         shape_name = "pipes_small_cargo"
@@ -912,7 +913,7 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-    class Trunks_short(unittype.StaticType):
+    class Trunks_small_cargo(unittype.StaticType):
         id = "trunks_small_cargo"
         name = "Trunks short"
         shape_name = "trunks_small_cargo"
@@ -920,7 +921,7 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-    class Trunks_long(unittype.StaticType):
+    class Trunks_long_cargo(unittype.StaticType):
         id = "trunks_long_cargo"
         name = "Trunks long"
         shape_name = "trunks_long_cargo"
@@ -928,21 +929,20 @@ class Cargo:
         rate = 100
         can_cargo = True
 
-
 cargo_map = {
-    "uh1h_cargo": Cargo.UH_1H_cargo,
-    "ammo_cargo": Cargo.Ammo,
-    "f_bar_cargo": Cargo.F_shape_barrier,
-    "m117_cargo": Cargo.M117_bombs,
-    "iso_container": Cargo.ISO_container,
-    "iso_container_small": Cargo.ISO_container_small,
-    "barrels_cargo": Cargo.Barrels,
-    "container_cargo": Cargo.Container,
-    "tetrapod_cargo": Cargo.Tetrapod,
-    "fueltank_cargo": Cargo.Fueltank,
-    "oiltank_cargo": Cargo.Oiltank,
-    "pipes_big_cargo": Cargo.Pipes_big,
-    "pipes_small_cargo": Cargo.Pipes_small,
-    "trunks_small_cargo": Cargo.Trunks_short,
-    "trunks_long_cargo": Cargo.Trunks_long,
+    "uh1h_cargo": Cargo.Uh1h_cargo,
+    "ammo_cargo": Cargo.Ammo_cargo,
+    "f_bar_cargo": Cargo.F_bar_cargo,
+    "m117_cargo": Cargo.M117_cargo,
+    "iso_container": Cargo.Iso_container,
+    "iso_container_small": Cargo.Iso_container_small,
+    "barrels_cargo": Cargo.Barrels_cargo,
+    "container_cargo": Cargo.Container_cargo,
+    "tetrapod_cargo": Cargo.Tetrapod_cargo,
+    "fueltank_cargo": Cargo.Fueltank_cargo,
+    "oiltank_cargo": Cargo.Oiltank_cargo,
+    "pipes_big_cargo": Cargo.Pipes_big_cargo,
+    "pipes_small_cargo": Cargo.Pipes_small_cargo,
+    "trunks_small_cargo": Cargo.Trunks_small_cargo,
+    "trunks_long_cargo": Cargo.Trunks_long_cargo,
 }

@@ -352,7 +352,7 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
         rus_vehicles = dcs.countries.Russia.Vehicle
         vtypes = [
             rus_vehicles.Armor.MBT_T_72B,
-            rus_vehicles.Armor.IFV_BMP_3,
+            rus_vehicles.Armor.BMP_3,
             rus_vehicles.Artillery.SPH_2S3_Akatsia,
             rus_vehicles.Unarmed.Transport_GAZ_3308,
             rus_vehicles.Armor.MBT_T_80U]
