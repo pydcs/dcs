@@ -202,7 +202,7 @@ for j in pairs({CAT_BOMBS,CAT_MISSILES,CAT_ROCKETS,CAT_AIR_TO_AIR,CAT_FUEL_TANKS
 		while weapons[key] ~= nil do
 			key = key..'_'
 		end
-		weapons[key] = {clsid = myclsid, displayName = safe_name(v.displayName), weight = w}
+		weapons[key] = {clsid = myclsid, displayName = safe_display_name(v.displayName), weight = w}
 		table.insert(keys, key)
 		-- print("    " .. key .. " = {\"clsid\": \"" .. v.CLSID .. "\", \"name\": \"" .. v.displayName .. "\"}")
 	end
