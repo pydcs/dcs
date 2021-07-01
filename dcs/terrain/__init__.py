@@ -6,4 +6,4 @@ from dcs.terrain.normandy import Normandy
 from dcs.terrain.persiangulf import PersianGulf
 from dcs.terrain.thechannel import TheChannel
 from dcs.terrain.syria import Syria
-from dcs.terrain.marianasislands import MarianasIslands
+from dcs.terrain.marianaislands import MarianaIslands

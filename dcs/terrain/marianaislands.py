@@ -826,7 +826,7 @@ class Andersen_AFB(Airport):
                 airplanes=True, slot_name='121', length=60.0, width=60.0, height=18.0, shelter=False))
 
 
-class MarianasIslands(Terrain):
+class MarianaIslands(Terrain):
     center = {"lat": 13.485, "long": 144.798}
     bounds = mapping.Rectangle(1000 * 10000, -1000 * 1000, -300 * 1000, 500 * 1000)
     map_view_default = MapView(mapping.Point(76432, 48051), 1000000)
@@ -850,8 +850,8 @@ class MarianasIslands(Terrain):
     assert(len(temperature) == 12)
 
     def __init__(self):
-        super(MarianasIslands, self).__init__("MarianasIslands")
-        self.bullseye_blue = {"x": MarianasIslands.bounds.center().x, "y": MarianasIslands.bounds.center().y}
+        super(MarianaIslands, self).__init__("MarianaIslands")
+        self.bullseye_blue = {"x": MarianaIslands.bounds.center().x, "y": MarianaIslands.bounds.center().y}
         self.bullseye_red = {"x": 0, "y": 0}
         self.airports['Rota Intl'] = Rota_Intl()
         self.airports['Saipan Intl'] = Saipan_Intl()
