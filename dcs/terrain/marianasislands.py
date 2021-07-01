@@ -1,7 +1,5 @@
-import os
-
 from dcs import mapping
-from dcs.terrain import Airport, Runway, ParkingSlot, Terrain, MapView, Graph
+from dcs.terrain import Airport, Runway, ParkingSlot, Terrain, MapView
 
 class Rota_Intl(Airport):
     id = 1

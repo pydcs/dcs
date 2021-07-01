@@ -31,7 +31,7 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --max-complexity=10 --max-line-length=127 --statistics --ignore=C901,W503 \
           --extend-exclude=tests/,doc/,tools/,dcs/helicopters.py,dcs/planes.py,dcs/statics.py,dcs/ships.py,dcs/weapons_data.py,dcs/vehicles.py \
-          --per-file-ignores="__init__.py:F401 syria.py:E126 thechannel.py:E126 persiangulf.py:E126 normandy.py:E126 nevada.py:E126 caucasus.py:E126 dcs/lua/test_parse.py:E501"
+          --per-file-ignores="__init__.py:F401 syria.py:E126 thechannel.py:E126 persiangulf.py:E126 normandy.py:E126 nevada.py:E126 caucasus.py:E126 marianasislands.py:E126 dcs/lua/test_parse.py:E501"
     - name: Test with pytest
       run: |
         python setup.py test
