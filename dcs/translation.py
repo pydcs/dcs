@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Dict, List
 
 
 class String:
@@ -62,8 +62,8 @@ class Translation:
             if _id in self.strings[lang]:
                 del self.strings[lang][_id]
 
-    def languages(self) -> [str]:
-        return self.strings.keys()
+    def languages(self) -> List[str]:
+        return list(self.strings.keys())
 
     def dict(self, lang='DEFAULT'):
         if lang in self.strings:

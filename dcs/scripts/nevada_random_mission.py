@@ -1,22 +1,24 @@
-import dcs
-import random
 import argparse
 import os
+import random
 import sys
-from typing import List, Tuple
+from typing import List, Optional, Sequence, Tuple, Type
+
+import dcs
+from dcs.terrain.terrain import Airport
+from dcs.unitgroup import FlyingGroup
 
 
 class TrainingScenario:
     def __init__(self, aircraft_types: List[Tuple[str, str]], playercount: int, start: str, unhide):
-        self.m = dcs.Mission(terrain=dcs.terrain.Nevada())
+        nevada = dcs.terrain.Nevada()
+        self.m = dcs.Mission(terrain=nevada)
         self.m.groundControl.pilot_can_control_vehicles = True
         self.m.groundControl.blue_jtac = 1
 
         self.red_airports = []  # type: List[dcs.terrain.Airport]
         self.blue_airports = []  # type: List[dcs.terrain.Airport]
         self.setup_airports()
-
-        nevada = self.m.terrain  # type: dcs.terrain.Nevada
 
         self.add_civil_airtraffic(hidden=not unhide,
                                   airports_to_use=[
@@ -90,8 +92,8 @@ class TrainingScenario:
         else:
             fuel_percent = 0.5
 
-        airport = None  # type: dcs.terrain.Airport
-        pg = None  # type: dcs.unitgroup.FlyingGroup
+        airport: Optional[Airport] = None
+        pg: Optional[FlyingGroup] = None
 
         for pg in player_groups:
             airport = self.m.terrain.airport_by_id(pg.points[0].airdrome_id)
@@ -99,7 +101,7 @@ class TrainingScenario:
                 airport = random.choice(blue_military)
 
             for u in pg.units:
-                u.fuel *= fuel_percent
+                u.fuel = int(u.fuel * fuel_percent)
 
             if not pg.units[0].unit_type.helicopter:
                 if pg.units[0].unit_type in [dcs.planes.A_10C]:
@@ -110,6 +112,9 @@ class TrainingScenario:
             pg.add_runway_waypoint(airport)
             pg.land_at(airport)
             pg.load_loadout("Combat Air Patrol")
+
+        assert airport is not None
+        assert pg is not None
 
         goal = dcs.goals.Goal("home and alive")
         goal.rules.append(dcs.condition.UnitAlive(pg.units[0].id))
@@ -282,12 +287,10 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
             c_count += 1
 
     def add_uncontrolled_military_planes(self, airports: List[dcs.terrain.Airport],
-                                         planes: List[Tuple[str, dcs.unittype.FlyingType, int]], hidden=True):
+                                         planes: Sequence[Tuple[str, Type[dcs.unittype.FlyingType], int]], hidden=True):
 
         g_idx = 1
-        while planes:
-            country, ptype, group_size = planes.pop()
-
+        for country, ptype, group_size in planes:
             while True:
                 airport = random.choice(airports)
 
@@ -313,8 +316,8 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
         c = 1
         for _type in aircraft_types:
             country = self.m.country(_type[0])
-            aircraft_type = _type[1]
-            aircraft_type = dict(dcs.planes.plane_map, **dcs.helicopters.helicopter_map)[aircraft_type]
+            aircraft_type_name = _type[1]
+            aircraft_type = dict(dcs.planes.plane_map, **dcs.helicopters.helicopter_map)[aircraft_type_name]
 
             airport = random.choice(airports)
             if start == "inflight":

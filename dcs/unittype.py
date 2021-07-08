@@ -2,12 +2,15 @@ import dcs.lua as lua
 from dcs.payloads import PayloadDirectories
 import re
 import sys
-from typing import Any, Dict, Optional, Type
+from typing import Any, Dict, List, Optional, Set, Type, Union, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from dcs.task import MainTask
 
 
 class UnitType:
-    id = None
-    name = None
+    id: str
+    name: str
 
 
 class VehicleType(UnitType):
@@ -21,7 +24,7 @@ class ShipType(UnitType):
 
 
 class StaticType(UnitType):
-    shape_name = None
+    shape_name: str
     rate = 0
     category = "Fortifications"
     sea_object = False
@@ -35,16 +38,28 @@ class LiveryOverwrites:
     }
 
 
+#: A dict of 1-indexed channel IDs to the preset frequency.
+RadioPresets = Dict[int, float]
+
+
+#: A dict mapping "channels" to the radio channel presets.
+RadioConfig = Dict[str, RadioPresets]
+
+
+#: A dict mapping the 1-indexed radio ID to the radio configuration.
+AircraftRadioPresets = Dict[int, RadioConfig]
+
+
 class FlyingType(UnitType):
     flyable = False
     group_size_max = 4
     large_parking_slot = False
     helicopter = False
-    fuel_max = 0
-    max_speed = 500
-    height = 0
-    width = 0
-    length = 0
+    fuel_max: float = 0
+    max_speed: float = 500
+    height: float = 0
+    width: float = 0
+    length: float = 0
     ammo_type = None
     chaff = 0
     flare = 0
@@ -56,18 +71,21 @@ class FlyingType(UnitType):
     tacan = False
     eplrs = False
 
-    radio_frequency = 251
-    panel_radio = None
+    radio_frequency: float = 251
 
-    property_defaults = None
+    #: The preset radio channels for the aircraft, if the aircraft supports them. Not all aircraft support radio presets. Those
+    # that don't will have None for their panel_radio.
+    panel_radio: Optional[AircraftRadioPresets] = None
 
-    pylons = {}
+    property_defaults: Optional[Dict[str, Any]] = None
+
+    pylons: Set[int] = set()
     Liveries: Optional[Type[Any]] = None
     # Dict from payload name to the DCS payload structure. None if not yet initialized.
     payloads: Optional[Dict[str, Dict[str, Any]]] = None
 
-    tasks = ['Nothing']
-    task_default = None
+    tasks: List[Union[str, Type["MainTask"]]] = ["Nothing"]
+    task_default: Optional[Type["MainTask"]] = None
 
     _payload_cache = None
     _UnitPayloadGlobals = None

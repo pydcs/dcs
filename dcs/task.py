@@ -188,7 +188,7 @@ class WeaponType(Enum):
 
 
 class TargetType(type):
-    id = None
+    id: str
 
     def __str__(self) -> str:
         return '"{id}"'.format(id=self.id)
@@ -461,7 +461,7 @@ class EmptyTaskAction(Task):
         return t
 
 
-engagetargets_tasks = {
+engagetargets_tasks: Dict[Optional[str], Type[Task]] = {
     AntishipStrikeTaskAction.Key: AntishipStrikeTaskAction,
     CASTaskAction.Key: CASTaskAction,
     CAPTaskAction.Key: CAPTaskAction,
@@ -482,7 +482,7 @@ class EscortTaskAction(Task):
                  position: Optional[Dict[str, float]] = None):
         super(EscortTaskAction, self).__init__(EscortTaskAction.Id)
         if targets is None:
-            targets = [Targets.All.Air.Planes]
+            targets = [Targets.All.Air.Planes.id]
         if position is None:
             position = {"x": -200, "y": -100, "z": -500}
         self.params = {
@@ -922,7 +922,7 @@ class GoToWaypoint(Task):
             self.params["nWaypointIndx"] = to_index
 
 
-tasks_map = {
+tasks_map: Dict[str, Type[Task]] = {
     ControlledTask.Id: ControlledTask,
     EscortTaskAction.Id: EscortTaskAction,
     AttackGroup.Id: AttackGroup,
@@ -1253,7 +1253,7 @@ class StartCommand(WrappedAction):
         }
 
 
-wrappedactions = {
+wrappedactions: Dict[str, Type[WrappedAction]] = {
     EPLRS.Key: EPLRS,
     ActivateBeaconCommand.Key: ActivateBeaconCommand,
     DeActivateBeaconCommand.Key: DeActivateBeaconCommand,
@@ -1277,7 +1277,7 @@ class MainTask:
     id = None  # type: int
     name = None  # type: str
     internal_name = None  # type: str
-    sub_tasks = []
+    sub_tasks: List[Type[Task]] = []
     perform_task: List[Type[Task]] = []
     map: Dict[str, Type['MainTask']] = {}
 
@@ -1381,7 +1381,7 @@ class Reconnaissance(MainTask):
     name = "Reconnaissance"
     internal_name = "Reconnaissance"
     sub_tasks = [OrbitAction, Follow, Aerobatics]
-    perform_task = []
+    perform_task: List[Type[Task]] = []
 
 
 class Refueling(MainTask):
@@ -1397,7 +1397,7 @@ class RunwayAttack(MainTask):
     name = "Runway Attack"
     internal_name = "RunwayAttack"
     sub_tasks = [OrbitAction, Follow, Bombing, BombingRunway, AttackMapObject]
-    perform_task = []
+    perform_task: List[Type[Task]] = []
 
 
 class SEAD(MainTask):
@@ -1413,7 +1413,7 @@ class Transport(MainTask):
     name = "Transport"
     internal_name = "Transport"
     sub_tasks = [OrbitAction, Follow, Aerobatics]
-    perform_task = []
+    perform_task: List[Type[Task]] = []
 
 
 MainTask.map = {
@@ -1440,7 +1440,7 @@ MainTask.map = {
 
 class Option(Task):
     Id = "WrappedAction"
-    Key = None
+    Key: int
 
     def __init__(self, value=None):
         super(Option, self).__init__(Option.Id)
@@ -1718,7 +1718,7 @@ class OptInterceptionRange(Option):
         super(OptInterceptionRange, self).__init__(value)
 
 
-options = {
+options: Dict[int, Type[Option]] = {
     OptROE.Key: OptROE,
     OptReactOnThreat.Key: OptReactOnThreat,
     OptRadarUsing.Key: OptRadarUsing,

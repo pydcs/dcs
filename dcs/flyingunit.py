@@ -1,15 +1,15 @@
 from dcs.unit import Unit, Skill
-from dcs.unittype import FlyingType
+from dcs.unittype import AircraftRadioPresets, FlyingType
 from dcs.terrain import ParkingSlot
 from dcs.planes import PlaneType, A_10C
 from dcs.helicopters import HelicopterType, Ka_50
 
 import json
-from typing import Type
+from typing import Dict, Optional, Type
 
 
 class FlyingUnit(Unit):
-    def __init__(self, _id=None, name=None, _type: Type[FlyingType] = None, _country=None):
+    def __init__(self, _id, name, _type: Type[FlyingType], _country=None):
         super(FlyingUnit, self).__init__(_id, name, _type.id)
         self.unit_type = _type  # for loadout validation
         self.unit_type.load_payloads()
@@ -25,11 +25,11 @@ class FlyingUnit(Unit):
         self.fuel = _type.fuel_max
         self.gun = 100
         self.ammo_type = _type.ammo_type
-        self.pylons = {}
+        self.pylons: Dict[int, Dict[str, str]] = {}
         self.callsign = None
         self.callsign_dict = {1: 1, 2: 1, 3: 1, "name": ""}
         self.speed = 0
-        self.radio = None
+        self.radio: Optional[AircraftRadioPresets] = None
         self.hardpoint_racks = True
         self.addpropaircraft = _type.property_defaults if _type.property_defaults else None
 
@@ -106,6 +106,8 @@ class FlyingUnit(Unit):
 
     def num_radio_channels(self, radio_id: int) -> int:
         """Returns the number of channels available for the given radio."""
+        if self.radio is None:
+            return 0
         return len(self.radio[radio_id]["channels"])
 
     def set_radio_channel_preset(self, radio_id: int, channel: int,
@@ -177,7 +179,10 @@ class FlyingUnit(Unit):
         """
         if not self.callsign_is_western:
             return str(self.callsign)
-        return self.callsign_dict["name"]
+        name = self.callsign_dict["name"]
+        if not isinstance(name, str):
+            raise TypeError("Expected the 'name' entry of callsign_dict to be a str")
+        return name
 
     def dict(self):
         d = super(FlyingUnit, self).dict()

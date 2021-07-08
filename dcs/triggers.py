@@ -100,7 +100,7 @@ class Event(Enum):
 
 
 class TriggerRule:
-    predicate = None
+    predicate: str
 
     def __init__(self, event: Event, comment: str):
         self.comment: str = comment

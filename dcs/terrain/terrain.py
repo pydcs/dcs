@@ -9,7 +9,7 @@ import random
 import pickle
 import sys
 from datetime import datetime
-from typing import List, Dict, Optional, Tuple, Set, Type
+from typing import Any, Deque, Iterator, List, Dict, Optional, Tuple, Set, Type
 from collections import defaultdict, deque
 
 
@@ -68,12 +68,12 @@ class NoParkingSlotError(RuntimeError):
 
 
 class Airport:
-    id = None
-    name = None
-    position = None  # type: mapping.Point
+    id: int
+    name: str
+    position: mapping.Point
     tacan = None
-    frequencies = []
-    unit_zones = []  # type: List[mapping.Rectangle]
+    frequencies: List[float] = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 1
 
@@ -198,7 +198,7 @@ class Airport:
         free_slots = sorted(free_slots, key=lambda x: x.slot_name)
         return free_slots + heli_slots + large_slots
 
-    def _free_parking_slots_resolve_v2(self, aircraft_type: unittype.FlyingType) -> List[ParkingSlot]:
+    def _free_parking_slots_resolve_v2(self, aircraft_type: Type[unittype.FlyingType]) -> List[ParkingSlot]:
         free_slots = [x for x in self.parking_slots
                       if x.unit_id is None
                       and aircraft_type.width < x.width
@@ -211,7 +211,7 @@ class Airport:
         slots_sorted = sorted(free_slots, key=lambda x: (x.helicopter, x.slot_name))
         return slots_sorted
 
-    def free_parking_slots(self, aircraft_type: unittype.FlyingType) -> List[ParkingSlot]:
+    def free_parking_slots(self, aircraft_type: Type[unittype.FlyingType]) -> List[ParkingSlot]:
         if self.slot_version == 1:
             return self._free_parking_slots_resolve_v1(aircraft_type.large_parking_slot, aircraft_type.helicopter)
         else:
@@ -371,7 +371,7 @@ class Graph:
 
     def shortest_path(self, origin, destination) -> Tuple[int, List[str]]:
         visited, paths = self._dijkstra(origin)
-        full_path = deque()
+        full_path: Deque[str] = deque()
         _destination = paths[destination]
 
         while _destination != origin:
@@ -436,7 +436,7 @@ class Terrain:
 
     def __init__(self, name: str):
         self.name = name
-        self.center = {"lat": 0, "long": 0}  # WGS84 decimal
+        self.center = {"lat": 0.0, "long": 0.0}  # WGS84 decimal
         self.bullseye_blue = {"x": 0, "y": 0}
         self.bullseye_red = {"x": 0, "y": 0}
         self.airports = {}  # type: Dict[str,Airport]
@@ -457,12 +457,12 @@ class Terrain:
                 return self.airports[x]
         return None
 
-    def airport_list(self) -> List[Airport]:
+    def airport_list(self) -> Iterator[Airport]:
         for x in self.airports:
             yield self.airports[x]
 
     def nearest_airport(self, position: mapping.Point, coalition: str = None) -> Optional[Airport]:
-        airports = self.airports.values()
+        airports = list(self.airports.values())
         if coalition:
             airports = [x for x in airports if
                         x.coalition.lower() == coalition.lower()]
@@ -497,7 +497,7 @@ class Terrain:
 class Warehouses:
     def __init__(self, terrain: Terrain):
         self.terrain = terrain
-        self.warehouses = {}
+        self.warehouses: Dict[str, Any] = {}
 
     def load_dict(self, data):
         for x in data.get("airports", {}):

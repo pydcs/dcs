@@ -7,7 +7,7 @@ from dcs.weather import CloudPreset
 class Clouds(Enum):
 
     @staticmethod
-    def from_name(name: str) -> "CloudPreset":
+    def from_name(name: str) -> "Clouds":
         return CLOUD_PRESETS[name]
 
     LightScattered1 = CloudPreset(

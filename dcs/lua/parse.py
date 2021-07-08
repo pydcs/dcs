@@ -1,7 +1,7 @@
 from typing import Dict, Any, Optional, List, Union
 
 
-def loads(tablestr, _globals: Optional[Dict[str, Any]] = None):
+def loads(tablestr, _globals: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
 
     class Parser:
         def __init__(self, buffer: str, _globals: dict = None):
@@ -208,10 +208,18 @@ def loads(tablestr, _globals: Optional[Dict[str, Any]] = None):
                         raise self.eob_exception()
 
                     self.eat_ws()
+                    key: Union[int, str]
                     if self.buffer[self.pos] == '"':
                         key = self.string()
                     else:
-                        key = self.number()
+                        number = self.number()
+                        if isinstance(number, float):
+                            se = SyntaxError()
+                            se.lineno = self.lineno
+                            se.offset = self.pos
+                            se.text = f"Found illegal floating point index {number}"
+                            raise se
+                        key = number
 
                     if self.eob():
                         raise self.eob_exception()

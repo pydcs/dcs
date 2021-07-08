@@ -1,7 +1,7 @@
 import math
 import random
 import copy
-from typing import List, Tuple, Union
+from typing import List, Tuple
 
 
 def point_from_heading(_x, _y, heading, distance):
@@ -113,10 +113,8 @@ class Point:
 
 
 class Triangle:
-    def __init__(self, points: Union[Tuple[Point, Point, Point], List[Point]]):
-        if len(points) != 3:
-            raise RuntimeError("Triangle needs 3 points.")
-        self.points = copy.copy(points)  # type: List[Point]
+    def __init__(self, points: Tuple[Point, Point, Point]) -> None:
+        self.points = points
 
     def area(self):
         a = (self.points[0].x * self.points[1].y + self.points[1].x * self.points[2].y

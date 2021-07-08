@@ -1,5 +1,7 @@
+from dcs.helicopters import HelicopterType
+from dcs.planes import PlaneType
 from dcs.unitgroup import VehicleGroup, ShipGroup, PlaneGroup, StaticGroup, HelicopterGroup, FlyingGroup, Group
-from typing import List, Dict, Set
+from typing import List, Dict, Set, Type
 
 
 def find_exact(group_name, find_name):
@@ -17,9 +19,9 @@ find_map = {
 
 
 class Country:
-    callsign = {}
-    planes = []
-    helicopters = []
+    callsign: Dict[str, List[str]] = {}
+    planes: List[Type[PlaneType]] = []
+    helicopters: List[Type[HelicopterType]] = []
 
     def __init__(self, _id, name):
         self.id = _id
@@ -45,10 +47,12 @@ class Country:
     def add_helicopter_group(self, hgroup):
         self.helicopter_group.append(hgroup)
 
-    def add_aircraft_group(self, group: FlyingGroup):
+    def add_aircraft_group(self, group: FlyingGroup) -> None:
         if group.units[0].unit_type.helicopter:
+            assert isinstance(group, HelicopterGroup)
             self.helicopter_group.append(group)
         else:
+            assert isinstance(group, PlaneGroup)
             self.plane_group.append(group)
 
     def add_static_group(self, sgroup):

@@ -2,7 +2,7 @@ import math
 import random
 import copy
 from enum import Enum
-from typing import List, Union, Optional
+from typing import Generic, List, Type, TypeVar, Optional
 
 from dcs.unit import Unit, Skill, Ship, Vehicle, Static
 from dcs.flyingunit import FlyingUnit, Plane, Helicopter
@@ -20,8 +20,12 @@ import dcs.condition as condition
 import dcs.task as task
 import dcs.mapping as mapping
 
+PointT = TypeVar("PointT", bound=StaticPoint)
+UnitT = TypeVar("UnitT", bound=Unit)
+FlyingUnitT = TypeVar("FlyingUnitT", bound=FlyingUnit)
 
-class Group:
+
+class Group(Generic[UnitT, PointT]):
     class Formation(Enum):
         Line = 1
         Star = 2
@@ -36,8 +40,8 @@ class Group:
         self.hidden = False
         self.hidden_on_planner = False
         self.hidden_on_mfd = False
-        self.units: List[Union[Unit, Ship, Plane, Helicopter, Vehicle, Static]] = []
-        self.points = []  # type: List[Union[StaticPoint, MovingPoint]]
+        self.units: List[UnitT] = []
+        self.points: List[PointT] = []
         self.name: str = name if name is not None else ""
 
     def __str__(self):
@@ -48,10 +52,10 @@ class Group:
         self.hidden_on_planner = d.get("hiddenOnPlanner")
         self.hidden_on_mfd = d.get("hiddenOnMFD")
 
-    def add_unit(self, unit: Unit):
+    def add_unit(self, unit: UnitT):
         self.units.append(unit)
 
-    def add_point(self, point: StaticPoint):
+    def add_point(self, point: PointT) -> None:
         self.points.append(point)
 
     @property
@@ -218,7 +222,7 @@ class Group:
         return d
 
 
-class MovingGroup(Group):
+class MovingGroup(Generic[UnitT], Group[UnitT, MovingPoint]):
     def __init__(self, _id, name=None, start_time=0):
         super(MovingGroup, self).__init__(_id, name)
         self.task = ""
@@ -267,7 +271,7 @@ class MovingGroup(Group):
         return d
 
 
-class VehicleGroup(MovingGroup):
+class VehicleGroup(MovingGroup[Vehicle]):
     def __init__(self, _id, name=None, start_time=0):
         super(VehicleGroup, self).__init__(_id, name, start_time)
         self.task = "Ground Nothing"
@@ -318,7 +322,7 @@ class VehicleGroup(MovingGroup):
         return d
 
 
-class FlyingGroup(MovingGroup):
+class FlyingGroup(Generic[FlyingUnitT], MovingGroup[FlyingUnitT]):
 
     def __init__(self, _id, name=None, start_time=0):
         super(FlyingGroup, self).__init__(_id, name, start_time)
@@ -336,10 +340,13 @@ class FlyingGroup(MovingGroup):
     def airport_id(self) -> int:
         return self.points[0].airdrome_id if self.points else None
 
-    def flight_type(self) -> FlyingType:
-        t = planes.plane_map.get(self.units[0].type)
-        if not t:
-            t = helicopters.helicopter_map.get(self.units[0].type)
+    def flight_type(self) -> Type[FlyingType]:
+        type_id = self.units[0].type
+        t: Optional[Type[FlyingType]] = planes.plane_map.get(type_id)
+        if t is None:
+            t = helicopters.helicopter_map.get(type_id)
+        if t is None:
+            raise KeyError(f"Could not find PlaneType or HelicopterType matching {type_id}")
         return t
 
     def load_from_dict(self, d):
@@ -524,7 +531,7 @@ class FlyingGroup(MovingGroup):
         return d
 
 
-class PlaneGroup(FlyingGroup):
+class PlaneGroup(FlyingGroup[Plane]):
     def __init__(self, _id, name=None, start_time=0):
         super(PlaneGroup, self).__init__(_id, name, start_time)
 
@@ -535,7 +542,7 @@ class PlaneGroup(FlyingGroup):
         super(PlaneGroup, self).add_unit(unit)
 
 
-class HelicopterGroup(FlyingGroup):
+class HelicopterGroup(FlyingGroup[Helicopter]):
     def __init__(self, _id, name=None, start_time=0):
         super(HelicopterGroup, self).__init__(_id, name, start_time)
         self.frequency = 127.5
@@ -546,7 +553,7 @@ class HelicopterGroup(FlyingGroup):
         super(HelicopterGroup, self).add_unit(unit)
 
 
-class ShipGroup(MovingGroup):
+class ShipGroup(MovingGroup[Ship]):
     def __init__(self, _id, name=None, start_time=0):
         super(ShipGroup, self).__init__(_id, name, start_time)
         self.task = None
@@ -580,7 +587,7 @@ class ShipGroup(MovingGroup):
         return d
 
 
-class StaticGroup(Group):
+class StaticGroup(Group[Static, StaticPoint]):
     def __init__(self, _id, name=None):
         super(StaticGroup, self).__init__(_id, name)
         self.dead = False

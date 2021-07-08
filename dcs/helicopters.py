@@ -1,9 +1,10 @@
 # This file is generated from pydcs_export.lua
+from enum import Enum
+from typing import Any, Dict, List, Set
 
 from dcs.weapons_data import Weapons
 import dcs.task as task
 from dcs.unittype import FlyingType
-from enum import Enum
 
 class HelicopterType(FlyingType):
     helicopter = True
@@ -218,7 +219,7 @@ class Ka_50(HelicopterType):
         FAB_500_M_62___500kg_GP_Bomb_LD = (4, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         Fuel_tank_PTB_450 = (4, Weapons.Fuel_tank_PTB_450)
 
-    pylons = {1, 2, 3, 4}
+    pylons: Set[int] = {1, 2, 3, 4}
 
     tasks = [task.CAS, task.GroundAttack, task.Escort, task.AFAC, task.AntishipStrike]
     task_default = task.CAS
@@ -327,7 +328,7 @@ class Mi_24V(HelicopterType):
     class Pylon6:
         _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (6, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
 
-    pylons = {1, 2, 3, 4, 5, 6}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6}
 
     tasks = [task.CAS, task.GroundAttack, task.Escort, task.Transport, task.AFAC, task.AntishipStrike]
     task_default = task.CAS
@@ -389,7 +390,7 @@ class Mi_8MT(HelicopterType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "ExhaustScreen": True,
         "LeftEngineResource": 90,
         "RightEngineResource": 90,
@@ -862,7 +863,7 @@ class Mi_8MT(HelicopterType):
     class Pylon8:
         PKT_7_62 = (8, Weapons.PKT_7_62)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8}
 
     tasks = [task.CAS, task.GroundAttack, task.Transport, task.AFAC, task.AntishipStrike]
     task_default = task.Transport
@@ -1138,7 +1139,7 @@ class Mi_26(HelicopterType):
         class Thailand(Enum):
             United_Nations = "United Nations"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Transport]
     task_default = task.Transport
@@ -1166,7 +1167,7 @@ class Ka_27(HelicopterType):
         class Algeria(Enum):
             standard = "standard"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Transport]
     task_default = task.Transport
@@ -1242,7 +1243,7 @@ class UH_60A(HelicopterType):
         class Canada(Enum):
             standard = "standard"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Transport]
     task_default = task.Transport
@@ -1267,7 +1268,7 @@ class CH_53E(HelicopterType):
         class USA(Enum):
             standard = "standard"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Transport]
     task_default = task.Transport
@@ -1307,7 +1308,7 @@ class CH_47D(HelicopterType):
         class Spain(Enum):
             ch_47_green_spain = "ch-47_green spain"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Transport]
     task_default = task.Transport
@@ -1575,7 +1576,7 @@ class SH_3W(HelicopterType):
         class Thailand(Enum):
             standard = "standard"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Transport]
     task_default = task.Transport
@@ -1634,7 +1635,7 @@ class AH_64A(HelicopterType):
         AGM_114K___4 = (4, Weapons.AGM_114K___4)
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
 
-    pylons = {1, 2, 3, 4}
+    pylons: Set[int] = {1, 2, 3, 4}
 
     tasks = [task.CAS, task.GroundAttack, task.Escort, task.AFAC, task.AntishipStrike]
     task_default = task.CAS
@@ -1692,7 +1693,7 @@ class AH_64D(HelicopterType):
         AGM_114K___4 = (4, Weapons.AGM_114K___4)
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
 
-    pylons = {1, 2, 3, 4}
+    pylons: Set[int] = {1, 2, 3, 4}
 
     tasks = [task.CAS, task.GroundAttack, task.Escort, task.AFAC, task.AntishipStrike]
     task_default = task.CAS
@@ -1749,7 +1750,7 @@ class AH_1W(HelicopterType):
         M260_HYDRA = (4, Weapons.M260_HYDRA)
         _4_x_BGM_71D_TOW_ATGM = (4, Weapons._4_x_BGM_71D_TOW_ATGM)
 
-    pylons = {1, 2, 3, 4}
+    pylons: Set[int] = {1, 2, 3, 4}
 
     tasks = [task.CAS, task.GroundAttack, task.Escort, task.AFAC, task.AntishipStrike]
     task_default = task.CAS
@@ -1779,7 +1780,7 @@ class SH_60B(HelicopterType):
     class Pylon1:
         AGM_119B_Penguin_ASM = (1, Weapons.AGM_119B_Penguin_ASM)
 
-    pylons = {1}
+    pylons: Set[int] = {1}
 
     tasks = [task.AntishipStrike, task.Transport]
     task_default = task.Transport
@@ -1827,7 +1828,7 @@ class UH_1H(HelicopterType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "ExhaustScreen": True,
         "GunnersAISkill": 90,
         "EngineResource": 90,
@@ -1982,7 +1983,7 @@ class UH_1H(HelicopterType):
     class Pylon6:
         M134_R = (6, Weapons.M134_R)
 
-    pylons = {1, 2, 3, 4, 5, 6}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6}
 
     tasks = [task.CAS, task.GroundAttack, task.Transport]
     task_default = task.Transport
@@ -2069,7 +2070,7 @@ class Mi_28N(HelicopterType):
         _9M114_Shturm_V_8__AT_6_Spiral____ATGM__SACLOS = (4, Weapons._9M114_Shturm_V_8__AT_6_Spiral____ATGM__SACLOS)
         B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (4, Weapons.B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
 
-    pylons = {1, 2, 3, 4}
+    pylons: Set[int] = {1, 2, 3, 4}
 
     tasks = [task.CAS, task.GroundAttack, task.Escort, task.AFAC, task.AntishipStrike]
     task_default = task.CAS
@@ -2099,7 +2100,7 @@ class OH_58D(HelicopterType):
         M260_HYDRA = (2, Weapons.M260_HYDRA)
         AGM114x2_OH_58 = (2, Weapons.AGM114x2_OH_58)
 
-    pylons = {1, 2}
+    pylons: Set[int] = {1, 2}
 
     tasks = [task.AFAC, task.Transport, task.GroundAttack, task.Escort, task.AntishipStrike]
     task_default = task.AFAC
@@ -2160,7 +2161,7 @@ class Mi_24P(HelicopterType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "ExhaustScreen": True,
         "LeftEngineResource": 90,
         "RightEngineResource": 90,
@@ -2308,7 +2309,7 @@ class Mi_24P(HelicopterType):
         _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (6, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
         _9M114_Shturm_V_2_Rack = (6, Weapons._9M114_Shturm_V_2_Rack)
 
-    pylons = {1, 2, 3, 4, 5, 6}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6}
 
     tasks = [task.CAS, task.GroundAttack, task.Escort, task.Transport, task.AFAC, task.AntishipStrike]
     task_default = task.CAS
@@ -2345,7 +2346,7 @@ class SA342M(HelicopterType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "NS430allow": True,
     }
 
@@ -2405,7 +2406,7 @@ class SA342M(HelicopterType):
     class Pylon6:
         IR_Deflector = (6, Weapons.IR_Deflector)
 
-    pylons = {1, 2, 3, 4, 5, 6}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6}
 
     tasks = [task.CAS, task.GroundAttack, task.AFAC, task.Escort, task.Reconnaissance]
     task_default = task.CAS
@@ -2442,7 +2443,7 @@ class SA342L(HelicopterType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "NS430allow": True,
     }
 
@@ -2495,7 +2496,7 @@ class SA342L(HelicopterType):
     class Pylon6:
         IR_Deflector = (6, Weapons.IR_Deflector)
 
-    pylons = {1, 2, 5, 6}
+    pylons: Set[int] = {1, 2, 5, 6}
 
     tasks = [task.CAS, task.GroundAttack, task.AFAC, task.Escort, task.Reconnaissance]
     task_default = task.CAS
@@ -2532,7 +2533,7 @@ class SA342Mistral(HelicopterType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "NS430allow": True,
     }
 
@@ -2592,7 +2593,7 @@ class SA342Mistral(HelicopterType):
     class Pylon6:
         IR_Deflector = (6, Weapons.IR_Deflector)
 
-    pylons = {1, 2, 3, 4, 5, 6}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6}
 
     tasks = [task.AFAC, task.Escort, task.Reconnaissance]
     task_default = task.Escort
@@ -2629,7 +2630,7 @@ class SA342Minigun(HelicopterType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "NS430allow": True,
     }
 
@@ -2678,7 +2679,7 @@ class SA342Minigun(HelicopterType):
     class Pylon6:
         IR_Deflector = (6, Weapons.IR_Deflector)
 
-    pylons = {1, 5, 6}
+    pylons: Set[int] = {1, 5, 6}
 
     tasks = [task.CAS, task.GroundAttack, task.AFAC, task.Escort, task.Reconnaissance]
     task_default = task.CAS

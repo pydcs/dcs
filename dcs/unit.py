@@ -3,7 +3,7 @@ import dcs.mapping as mapping
 import copy
 import math
 from enum import Enum
-from typing import Type, Union, Optional
+from typing import Callable, Dict, Type, Union, Optional
 
 
 class Skill(Enum):
@@ -34,7 +34,7 @@ class Unit:
         self.position = mapping.Point(0, 0)
         self.heading = 0
         self.id = _id
-        self.skill = Skill.Average  # type: Skill
+        self.skill: Optional[Skill] = Skill.Average
         self.name: str = name if name else ""
 
     def load_from_dict(self, d):
@@ -111,40 +111,40 @@ class Ship(Unit):
 
 
 class Static(Unit):
-    def __init__(self, unit_id=None, name: Optional[str] = None, _type: Union[str, Type[UnitType]] = None):
+    def __init__(self, unit_id: int, name: Optional[str], _type: Union[str, Type[UnitType]]) -> None:
         from .planes import PlaneType
         from .helicopters import HelicopterType
 
-        if not isinstance(_type, str):
-            _id = _type.id
-            _class = _type
-        else:
+        if isinstance(_type, str):
             _id = _type
-            _class = str
+        else:
+            _id = _type.id
+
         super(Static, self).__init__(unit_id, name, _id)
         self.skill = None
-        self.shape_name = None
+        self.shape_name: Optional[str] = None
         self.rate = None
         self.mass = None
 
-        if issubclass(_class, StaticType):
-            self.category = _type.category
-            self.can_cargo = _type.can_cargo
-            self.shape_name = _type.shape_name
-            self.rate = _type.rate
-            self.mass = 1000 if _type.can_cargo else None
-        elif issubclass(_class, PlaneType):
-            self.category = "Planes"
-            self.can_cargo = False
-        elif issubclass(_class, HelicopterType):
-            self.category = "Helicopters"
-            self.can_cargo = False
-        elif issubclass(_class, ShipType):
-            self.category = "Ships"
-            self.can_cargo = False
-        elif issubclass(_class, VehicleType):
-            self.category = "Vehicles"
-            self.can_cargo = False
+        if not isinstance(_type, str):
+            if issubclass(_type, StaticType):
+                self.category = _type.category
+                self.can_cargo = _type.can_cargo
+                self.shape_name = _type.shape_name
+                self.rate = _type.rate
+                self.mass = 1000 if _type.can_cargo else None
+            elif issubclass(_type, PlaneType):
+                self.category = "Planes"
+                self.can_cargo = False
+            elif issubclass(_type, HelicopterType):
+                self.category = "Helicopters"
+                self.can_cargo = False
+            elif issubclass(_type, ShipType):
+                self.category = "Ships"
+                self.can_cargo = False
+            elif issubclass(_type, VehicleType):
+                self.category = "Vehicles"
+                self.can_cargo = False
 
     def load_from_dict(self, d):
         super(Static, self).load_from_dict(d)
@@ -167,15 +167,21 @@ class Static(Unit):
         return d
 
 
-class FARP(Static):
-    def __init__(self, unit_id=None, name: Optional[str] = None, frequency=127.5, modulation=0, callsign_id=1):
-        super(FARP, self).__init__(unit_id, name, "FARP")
+class BaseFARP(Static):
+    def __init__(self, unit_id, name: Optional[str], _type: Union[str, Type[UnitType]], shape_name: str, frequency: float,
+                 modulation: int, callsign_id: int) -> None:
+        super().__init__(unit_id, name, _type)
         self.category = "Heliports"
-        self.shape_name = "FARPS"
-        self.heliport_frequency: float = frequency
+        self.shape_name = shape_name
+        self.heliport_frequency = frequency
         self.heliport_modulation = modulation
-        self.heliport_callsign_id: int = callsign_id
+        self.heliport_callsign_id = callsign_id
         self.can_cargo = False
+
+
+class FARP(BaseFARP):
+    def __init__(self, unit_id=None, name: Optional[str] = None, frequency=127.5, modulation=0, callsign_id=1):
+        super().__init__(unit_id, name, "FARP", "FARPS", frequency, modulation, callsign_id)
 
     def load_from_dict(self, d):
         super(FARP, self).load_from_dict(d)
@@ -192,15 +198,9 @@ class FARP(Static):
         return d
 
 
-class SingleHeliPad(Static):
+class SingleHeliPad(BaseFARP):
     def __init__(self, unit_id=None, name: Optional[str] = None, frequency=127.5, modulation=0, callsign_id=1):
-        super(SingleHeliPad, self).__init__(unit_id, name, "SINGLE_HELIPAD")
-        self.category = "Heliports"
-        self.shape_name = "FARP"
-        self.heliport_frequency: float = frequency
-        self.heliport_modulation = modulation
-        self.heliport_callsign_id: int = callsign_id
-        self.can_cargo = False
+        super().__init__(unit_id, name, "SINGLE_HELIPAD", "FARP", frequency, modulation, callsign_id)
 
     def load_from_dict(self, d):
         super(SingleHeliPad, self).load_from_dict(d)
@@ -217,15 +217,9 @@ class SingleHeliPad(Static):
         return d
 
 
-class InvisibleFARP(Static):
+class InvisibleFARP(BaseFARP):
     def __init__(self, unit_id=None, name=None, frequency=127.5, modulation=0, callsign_id=1):
-        super(InvisibleFARP, self).__init__(unit_id, name, "Invisible FARP")
-        self.category = "Heliports"
-        self.shape_name = "invisiblefarp"
-        self.heliport_frequency: float = frequency
-        self.heliport_modulation = modulation
-        self.heliport_callsign_id: int = callsign_id
-        self.can_cargo = False
+        super().__init__(unit_id, name, "Invisible FARP", "invisiblefarp", frequency, modulation, callsign_id)
 
     def load_from_dict(self, d):
         super(InvisibleFARP, self).load_from_dict(d)
@@ -242,7 +236,7 @@ class InvisibleFARP(Static):
         return d
 
 
-farp_mapping = {
+farp_mapping: Dict[str, Callable[[Optional[int], Optional[str], float, int, int], BaseFARP]] = {
     "FARP": FARP,
     "SingleHeliPad": SingleHeliPad,
     "InvisibleFARP": InvisibleFARP,

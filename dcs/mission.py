@@ -11,7 +11,7 @@ from collections import defaultdict
 from datetime import datetime, timezone, timedelta
 from enum import Enum
 from pathlib import Path
-from typing import List, Dict, Union, Optional, Type
+from typing import Any, List, Dict, Sequence, Union, Optional, Type
 
 from dcs.coalition import Coalition
 from dcs.terrain.terrain import Warehouses
@@ -111,7 +111,7 @@ class Mission:
         self.current_unit_id = 0
         self.current_group_id = 0
         self.current_dict_id = 0
-        self.filename = None
+        self.filename: Optional[str] = None
 
         self.translation = Translation(self)
         self.map_resource = MapResource(self)
@@ -120,8 +120,8 @@ class Mission:
         self._description_bluetask = self.string("")
         self._description_redtask = self.string("")
         self._sortie = self.string("")
-        self.pictureFileNameR = []
-        self.pictureFileNameB = []
+        self.pictureFileNameR: List[Union[ResourceKey, str]] = []
+        self.pictureFileNameB: List[Union[ResourceKey, str]] = []
         self.version = Mission._CURRENT_MIZ_VERSION
         self.currentKey = 0
         self.start_time = datetime.fromtimestamp(1306886400 + 43200, timezone.utc)  # 01-06-2011 12:00:00 UTC
@@ -179,11 +179,11 @@ class Mission:
 
         self.map = self.terrain.map_view_default  # type: terrain_.MapView
 
-        self.failures = {}
+        # TODO: Unknown type. Not implemented.
+        self.failures: Dict[str, Any] = {}
         self.groundControl = GroundControl()
         self.forced_options = ForcedOptions()
-        self.resourceCounter = {}  # keep default or empty, old format
-        self.needModules = {}
+        self.needModules: Dict[str, bool] = {}
         self.weather = weather.Weather(self.terrain)
         # TODO used modules
         self.usedModules = {
@@ -240,15 +240,14 @@ class Mission:
         self.current_dict_id = 0
         status = []
 
-        def loaddict(fname, mizfile, reserved_files):
+        def loaddict(fname: str, mizfile: zipfile.ZipFile, reserved_files: List[str]) -> Dict[str, Any]:
             reserved_files.append(fname)
             with mizfile.open(fname) as mfile:
-                data = mfile.read()
-                data = data.decode()
+                data = mfile.read().decode()
                 return lua.loads(data)
 
         with zipfile.ZipFile(filename, 'r') as miz:
-            reserved_files = []
+            reserved_files: List[str] = []
             mission_dict = loaddict('mission', miz, reserved_files)
 
             if mission_dict["mission"]["version"] < 16:
@@ -509,7 +508,7 @@ class Mission:
         eplrs_map = {}
         for col in self.coalition:
             for c_name, country in self.coalition[col].countries.items():
-                search_group = []
+                search_group: Sequence[unitgroup.Group] = []
                 if group == "helicopter":
                     search_group = country.helicopter_group
                 elif group == "plane":
@@ -629,11 +628,14 @@ class Mission:
 
         from dcs.unit import farp_mapping
         if isinstance(farp_type, str):
-            farp_type = farp_mapping.get(farp_type)
-        if farp_type not in farp_mapping.values():
+            real_farp_type = farp_mapping.get(farp_type)
+        else:
+            real_farp_type = farp_type
+
+        if real_farp_type is None or real_farp_type not in farp_mapping.values():
             raise TypeError(f"'{type(farp_type)}' is not a valid FARP type.")
 
-        s = farp_type(self.next_unit_id(), name, frequency, modulation, callsign_id)
+        s = real_farp_type(self.next_unit_id(), name, frequency, modulation, callsign_id)
         s.position = copy.copy(position)
         s.heading = heading
         sg.add_unit(s)
@@ -815,10 +817,14 @@ class Mission:
         return False
 
     def clear_parking_slots(self, pgroup: unitgroup.PlaneGroup):
-        if pgroup.airport_id():
-            airport = self.terrain.airport_by_id(pgroup.airport_id())
+        airport_id = pgroup.airport_id()
+        if airport_id:
+            airport = self.terrain.airport_by_id(airport_id)
+            if airport is None:
+                raise ValueError(f"Could not find an airport with ID {airport_id}")
             for u in pgroup.units:
-                airport.clear_parking_slot(u.parking)
+                if u.parking is not None:
+                    airport.clear_parking_slot(u.parking)
             return True
 
         return False
@@ -885,7 +891,9 @@ class Mission:
             Helicopter: A new :py:class:`dcs.unit.Plane` or :py:class:`dcs.unit.Helicopter`
         """
         if _type.helicopter:
+            assert issubclass(_type, HelicopterType)
             return Helicopter(self.next_unit_id(), name, _type, country)
+        assert issubclass(_type, PlaneType)
         return Plane(self.next_unit_id(), name, _type, country)
 
     def helicopter_group(self, name: str) -> unitgroup.HelicopterGroup:
@@ -916,6 +924,7 @@ class Mission:
         i = 1
         for u in group.units:
             if category in _country.callsign:
+                assert callsign_name is not None
                 u.callsign_dict["name"] = callsign_name + str(1) + str(i)
                 u.callsign_dict[3] = i
             else:
@@ -928,7 +937,7 @@ class Mission:
             u.onboard_num = _country.next_onboard_num()
 
     @staticmethod
-    def _load_tasks(mp: MovingPoint, maintask: task.MainTask):
+    def _load_tasks(mp: MovingPoint, maintask: Type[task.MainTask]):
         for t in maintask.perform_task:
             ptask = t()
             ptask.auto = True
@@ -936,7 +945,7 @@ class Mission:
         return mp
 
     def _flying_group_from_airport(self, _country, group: unitgroup.FlyingGroup,
-                                   maintask: task.MainTask,
+                                   maintask: Type[task.MainTask],
                                    airport: terrain_.Airport,
                                    start_type: StartType = StartType.Cold,
                                    parking_slots: List[terrain_.ParkingSlot] = None) -> unitgroup.FlyingGroup:
@@ -985,7 +994,7 @@ class Mission:
         return group
 
     def _flying_group_inflight(self, _country, group: unitgroup.FlyingGroup,
-                               maintask: task.MainTask, altitude, speed) -> unitgroup.FlyingGroup:
+                               maintask: Type[task.MainTask], altitude, speed) -> unitgroup.FlyingGroup:
 
         i = 0
         for u in group.units:
@@ -1025,7 +1034,7 @@ class Mission:
                               speed=None,
                               maintask: Optional[Type[task.MainTask]] = None,
                               group_size: int = 1
-                              ) -> Union[unitgroup.PlaneGroup, unitgroup.HelicopterGroup]:
+                              ) -> unitgroup.FlyingGroup:
         """Add a new Plane/Helicopter group inflight.
 
         The type of the resulting group depends on the given aircraft_type.
@@ -1045,7 +1054,10 @@ class Mission:
         """
         if maintask is None:
             maintask = aircraft_type.task_default
+            if maintask is None:
+                raise ValueError(f"No main task was given and {aircraft_type.name} does not have a default task")
 
+        ag: unitgroup.FlyingGroup
         if aircraft_type.helicopter:
             ag = self.helicopter_group(name)
             speed = speed if speed else 200
@@ -1058,7 +1070,7 @@ class Mission:
         for i in range(1, group_size + 1):
             p = self.aircraft(name + " Pilot #{nr}".format(nr=i), aircraft_type, country)
             p.position = copy.copy(position)
-            p.fuel *= 0.9
+            p.fuel = int(p.fuel * 0.9)
             ag.add_unit(p)
 
         country.add_aircraft_group(self._flying_group_inflight(country, ag, maintask, altitude, speed))
@@ -1072,8 +1084,7 @@ class Mission:
                                   maintask: Type[task.MainTask] = None,
                                   start_type: StartType = StartType.Cold,
                                   group_size=1,
-                                  parking_slots: List[terrain_.ParkingSlot] = None) -> \
-            Union[unitgroup.PlaneGroup, unitgroup.HelicopterGroup]:
+                                  parking_slots: List[terrain_.ParkingSlot] = None) -> unitgroup.FlyingGroup:
         """Add a new Plane/Helicopter group at the given airport.
 
         Runway, warm/cold start depends on the given start_type.
@@ -1093,8 +1104,14 @@ class Mission:
         """
         if maintask is None:
             maintask = aircraft_type.task_default
+            if maintask is None:
+                raise ValueError(f"No main task was given and {aircraft_type.name} does not have a default task")
 
-        ag = self.helicopter_group(name) if aircraft_type.helicopter else self.plane_group(name)
+        ag: unitgroup.FlyingGroup
+        if aircraft_type.helicopter:
+            ag = self.helicopter_group(name)
+        else:
+            ag = self.plane_group(name)
         ag.task = maintask.name
         group_size = min(group_size, aircraft_type.group_size_max)
 
@@ -1113,7 +1130,7 @@ class Mission:
                                pad_group: Union[unitgroup.ShipGroup, unitgroup.StaticGroup],
                                maintask: Type[task.MainTask] = None,
                                start_type: StartType = StartType.Cold,
-                               group_size=1) -> Union[unitgroup.PlaneGroup, unitgroup.HelicopterGroup]:
+                               group_size=1) -> unitgroup.FlyingGroup:
         """Add a new Plane/Helicopter group at the given FARP or carrier unit.
 
         Args:
@@ -1130,8 +1147,14 @@ class Mission:
         """
         if maintask is None:
             maintask = aircraft_type.task_default
+            if maintask is None:
+                raise ValueError(f"No main task was given and {aircraft_type.name} does not have a default task")
 
-        ag = self.helicopter_group(name) if aircraft_type.helicopter else self.plane_group(name)
+        ag: unitgroup.FlyingGroup
+        if aircraft_type.helicopter:
+            ag = self.helicopter_group(name)
+        else:
+            ag = self.plane_group(name)
         ag.task = maintask.name
         group_size = min(group_size, aircraft_type.group_size_max)
 
@@ -1205,6 +1228,8 @@ class Mission:
             fg = self.flight_group_from_airport(country, name, aircraft_type,
                                                 airport, maintask, start_type, group_size)
         else:
+            if position is None:
+                raise ValueError("Groups created in flight must specify a position.")
             fg = self.flight_group_inflight(country, name, aircraft_type,
                                             position, altitude, speed, maintask, group_size)
 
@@ -1221,7 +1246,7 @@ class Mission:
                      altitude=4500,
                      speed=550,
                      start_type: StartType = StartType.Cold,
-                     frequency=140) -> unitgroup.PlaneGroup:
+                     frequency=140) -> unitgroup.FlyingGroup:
         """Add an AWACS flight group.
 
         This is simple way to add an AWACS flight group to your mission.
@@ -1244,7 +1269,7 @@ class Mission:
             frequency: VHF-AM frequencey in mhz
 
         Returns:
-            PlaneGroup: the created AWACS flight group
+            FlyingGroup: the created AWACS flight group
         """
         if airport:
             awacs = self.flight_group_from_airport(country, name, plane_type, airport, task.AWACS, start_type)
@@ -1277,7 +1302,7 @@ class Mission:
                       speed=407,
                       start_type: StartType = StartType.Cold,
                       frequency=140,
-                      tacanchannel="10X") -> unitgroup.PlaneGroup:
+                      tacanchannel="10X") -> unitgroup.FlyingGroup:
         """Add an refuel flight group.
 
         This is simple way to add an refuel flight group to your mission.
@@ -1301,7 +1326,7 @@ class Mission:
             tacanchannel: if the PlaneType supports tacan this channel will be set.
 
         Returns:
-            PlaneGroup: the created refuel flight group
+            FlyingGroup: the created refuel flight group
         """
         if airport:
             tanker = self.flight_group_from_airport(country, name, plane_type, airport,
@@ -1335,7 +1360,7 @@ class Mission:
                       airport: Optional[terrain_.Airport],
                       group_to_escort: unitgroup.FlyingGroup,
                       start_type: StartType = StartType.Cold,
-                      group_size=2) -> unitgroup.PlaneGroup:
+                      group_size=2) -> unitgroup.FlyingGroup:
         """Add an escort flight group to the mission.
 
         An escort flight is a flight group that will use the :py:class:`dcs.task.EscortTaskAction`
@@ -1353,7 +1378,7 @@ class Mission:
             group_size: how many planes should be in the escort flight
 
         Returns:
-            PlaneGroup: the created escort group
+            FlyingGroup: the created escort group
         """
         second_point_group = group_to_escort.points[1]
         if airport:
@@ -1386,7 +1411,7 @@ class Mission:
                       speed=600,
                       altitude=4000,
                       max_engage_distance=60 * 1000,
-                      group_size=2) -> unitgroup.PlaneGroup:
+                      group_size=2) -> unitgroup.FlyingGroup:
         """Add an patrol flight group to the mission.
 
         A patrol flight is a flight group that will fly a orbit between 2 given points and
@@ -1408,7 +1433,7 @@ class Mission:
             group_size: how many planes should be in the flight group
 
         Returns:
-            PlaneGroup: the created patrol group
+            FlyingGroup: the created patrol group
         """
         if airport:
             eg = self.flight_group_from_airport(
@@ -1426,12 +1451,12 @@ class Mission:
         return self.patrol_flight_to_group(eg, pos1, pos2, speed, altitude, max_engage_distance)
 
     def patrol_flight_to_group(self,
-                               pg: unitgroup.PlaneGroup,
+                               pg: unitgroup.FlyingGroup,
                                pos1,
                                pos2,
                                speed=600,
                                altitude=4000,
-                               max_engage_distance=60 * 1000) -> unitgroup.PlaneGroup:
+                               max_engage_distance=60 * 1000) -> unitgroup.FlyingGroup:
         """Add patrol waypoints to an existing flying group
 
         A patrol flight is a flight group that will fly a orbit between 2 given points and
@@ -1448,7 +1473,7 @@ class Mission:
             max_engage_distance: the distance in KM the patrol flight will respond to enemy threats
 
         Returns:
-            PlaneGroup: the created patrol group
+            FlyingGroup: the created patrol group
         """
         pg.points[0].tasks[0] = task.EngageTargets(max_engage_distance, [task.Targets.All.Air])
         wp = pg.add_waypoint(pos1, altitude, speed, "P1")
@@ -1468,7 +1493,7 @@ class Mission:
                          speed=600,
                          altitude=4000,
                          max_engage_distance=60 * 1000,
-                         group_size=2) -> unitgroup.PlaneGroup:
+                         group_size=2) -> unitgroup.FlyingGroup:
         """Add an intercept flight group to the mission.
 
         An intercept flight group will start from the given airport and will react on air threats if they
@@ -1488,7 +1513,7 @@ class Mission:
             group_size: how many planes should be in the flight group
 
         Returns:
-            PlaneGroup: the created intercept group
+            FlyingGroup: the created intercept group
         """
         eg = self.flight_group_from_airport(
             country, name, patrol_type, airport, maintask=task.CAP, start_type=start_type, group_size=group_size
@@ -1521,7 +1546,7 @@ class Mission:
                     airport: Optional[terrain_.Airport],
                     start_type: StartType = StartType.Cold,
                     max_engage_distance=20 * 1000,
-                    group_size=2) -> unitgroup.PlaneGroup:
+                    group_size=2) -> unitgroup.FlyingGroup:
         """Plans a sead mission at the given target position.
 
         Args:
@@ -1535,7 +1560,7 @@ class Mission:
             group_size: how many planes should be in the flight group
 
         Returns:
-            PlaneGroup: the created sead group
+            FlyingGroup: the created sead group
         """
         if airport:
             eg = self.flight_group_from_airport(
@@ -1558,9 +1583,9 @@ class Mission:
         return self.sead_flight_to_group(eg, target_pos, max_engage_distance)
 
     def sead_flight_to_group(self,
-                             sg: unitgroup.PlaneGroup,
+                             sg: unitgroup.FlyingGroup,
                              target_pos: mapping.Point,
-                             max_engage_distance=20 * 1000) -> unitgroup.PlaneGroup:
+                             max_engage_distance=20 * 1000) -> unitgroup.FlyingGroup:
         """Plans a sead mission at the given target position.
 
         Args:
@@ -1569,7 +1594,7 @@ class Mission:
             max_engage_distance: the distance in KM to engage
 
         Returns:
-            PlaneGroup: the created sead group
+            FlyingGroup: the created sead group
         """
 
         speed = sg.flight_type().max_speed * 0.8
@@ -1585,7 +1610,10 @@ class Mission:
         wp.name = "Fence out"
 
         if sg.starts_from_airport():
-            airport = self.terrain.airport_by_id(sg.airport_id())
+            airport_id = sg.airport_id()
+            airport = self.terrain.airport_by_id(airport_id)
+            if airport is None:
+                raise ValueError(f"Could not find an airport with ID {airport_id}")
             sg.add_runway_waypoint(airport)
             sg.land_at(airport)
 
@@ -1663,7 +1691,10 @@ class Mission:
         wp.name = "Fence out"
 
         if sf.starts_from_airport():
-            airport = self.terrain.airport_by_id(sf.airport_id())
+            airport_id = sf.airport_id()
+            airport = self.terrain.airport_by_id(airport_id)
+            if airport is None:
+                raise ValueError(f"Could not find an airport with ID {airport_id}")
             sf.add_runway_waypoint(airport)
             sf.land_at(airport)
 
@@ -1804,7 +1835,7 @@ class Mission:
         Returns:
             dict containing various group and unit counts.
         """
-        d = {
+        d: Dict[str, Any] = {
             "red": {},
             "blue": {},
             "unit_count": 0,
@@ -1940,7 +1971,6 @@ class Mission:
         m["groundControl"] = self.groundControl.dict()
         if self.usedModules is not None:
             m["usedModules"] = self.usedModules
-        m["resourceCounter"] = self.resourceCounter
         if self.bypassed_triggers:
             m["trig"] = self.bypassed_trig
             m["trigrules"] = self.bypassed_trigrules
@@ -2008,9 +2038,9 @@ class MapResource:
         mission(Mission): the mission this MapResource belongs too, needed for dictionary ids
     """
     def __init__(self, mission: Mission):
-        self.files = {}
-        self.binary_files = []
-        self.added_paths = []
+        self.files: Dict[str, Dict[str, str]] = {}
+        self.binary_files: List[Dict[str, str]] = []
+        self.added_paths: List[str] = []
         self.mission = mission
 
     def load_from_dict(self, _dict, zipf: zipfile.ZipFile, lang='DEFAULT'):
@@ -2027,7 +2057,7 @@ class MapResource:
             except KeyError as ke:
                 print(ke, file=sys.stderr)
 
-    def load_binary_files(self, zipf: zipfile.ZipFile, reserved_files: [str]):
+    def load_binary_files(self, zipf: zipfile.ZipFile, reserved_files: List[str]):
         for filepath in zipf.namelist():
             if filepath in reserved_files or filepath in self.added_paths:
                 continue

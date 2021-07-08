@@ -1,9 +1,10 @@
 # This file is generated from pydcs_export.lua
+from enum import Enum
+from typing import Any, Dict, List, Set
 
 from dcs.weapons_data import Weapons
 import dcs.task as task
 from dcs.unittype import FlyingType
-from enum import Enum
 
 class PlaneType(FlyingType):
     pass
@@ -88,7 +89,7 @@ class Tornado_GR4(PlaneType):
         BOZ_107___Countermeasure_Dispenser = (12, Weapons.BOZ_107___Countermeasure_Dispenser)
         Sky_Shadow_ECM_Pod = (12, Weapons.Sky_Shadow_ECM_Pod)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
 
     tasks = [task.PinpointStrike, task.GroundAttack, task.SEAD, task.AFAC, task.AntishipStrike, task.Reconnaissance]
     task_default = task.GroundAttack
@@ -419,7 +420,7 @@ class Tornado_IDS(PlaneType):
         BOZ_107___Countermeasure_Dispenser = (12, Weapons.BOZ_107___Countermeasure_Dispenser)
         Sky_Shadow_ECM_Pod = (12, Weapons.Sky_Shadow_ECM_Pod)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
 
     tasks = [task.PinpointStrike, task.GroundAttack, task.SEAD, task.AFAC, task.AntishipStrike, task.Reconnaissance]
     task_default = task.GroundAttack
@@ -538,7 +539,7 @@ class F_A_18A(PlaneType):
         AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.PinpointStrike, task.CAS, task.GroundAttack, task.RunwayAttack, task.SEAD, task.AFAC, task.AntishipStrike, task.Reconnaissance]
     task_default = task.CAP
@@ -803,7 +804,7 @@ class F_A_18C(PlaneType):
         AIM_120C_5_AMRAAM___Active_Rdr_AAM = (9, Weapons.AIM_120C_5_AMRAAM___Active_Rdr_AAM)
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (9, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.PinpointStrike, task.CAS, task.GroundAttack, task.RunwayAttack, task.SEAD, task.AFAC, task.AntishipStrike, task.Reconnaissance]
     task_default = task.CAP
@@ -884,7 +885,7 @@ class F_14A(PlaneType):
         AIM_9P5_Sidewinder_IR_AAM = (12, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (12, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.Reconnaissance]
     task_default = task.Intercept
@@ -931,7 +932,7 @@ class Tu_22M3(PlaneType):
         Kh_22__AS_4_Kitchen____1000kg__AShM__IN__Act_Pas_Rdr = (5, Weapons.Kh_22__AS_4_Kitchen____1000kg__AShM__IN__Act_Pas_Rdr)
         MBD3_U9M_with_9_x_FAB_250___250kg_GP_Bombs_LD = (5, Weapons.MBD3_U9M_with_9_x_FAB_250___250kg_GP_Bombs_LD)
 
-    pylons = {1, 2, 3, 4, 5}
+    pylons: Set[int] = {1, 2, 3, 4, 5}
 
     tasks = [task.AntishipStrike, task.GroundAttack, task.RunwayAttack]
     task_default = task.AntishipStrike
@@ -1043,7 +1044,7 @@ class F_4E(PlaneType):
         LAU_118a_with_AGM_45B_Shrike_ARM__Imp_ = (9, Weapons.LAU_118a_with_AGM_45B_Shrike_ARM__Imp_)
         AGM_45A_Shrike_ARM = (9, Weapons.AGM_45A_Shrike_ARM)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.GroundAttack, task.CAS, task.PinpointStrike, task.SEAD, task.AFAC, task.Reconnaissance, task.AntishipStrike]
     task_default = task.CAP
@@ -1087,7 +1088,7 @@ class B_52H(PlaneType):
         _6_x_AGM_86C_ALCM_on_MER = (3, Weapons._6_x_AGM_86C_ALCM_on_MER)
 #ERRR {HSAB*9 GBU-31}
 
-    pylons = {1, 2, 3}
+    pylons: Set[int] = {1, 2, 3}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.AntishipStrike, task.CAS]
     task_default = task.GroundAttack
@@ -1186,7 +1187,7 @@ class MiG_27K(PlaneType):
         R_60M__AA_8_Aphid____Infra_Red = (8, Weapons.R_60M__AA_8_Aphid____Infra_Red)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (8, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
 
-    pylons = {2, 3, 4, 5, 6, 7, 8}
+    pylons: Set[int] = {2, 3, 4, 5, 6, 7, 8}
 
     tasks = [task.PinpointStrike, task.CAS, task.GroundAttack, task.RunwayAttack, task.SEAD, task.AntishipStrike]
     task_default = task.GroundAttack
@@ -1689,7 +1690,7 @@ class Su_27(PlaneType):
         Smoke_Generator___yellow = (10, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (10, Weapons.Smoke_Generator___orange)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
     tasks = [task.CAP, task.Intercept, task.Escort, task.FighterSweep, task.AFAC, task.GroundAttack, task.RunwayAttack, task.AntishipStrike, task.CAS]
     task_default = task.CAP
@@ -1791,7 +1792,7 @@ class MiG_23MLD(PlaneType):
         FAB_500_M_62___500kg_GP_Bomb_LD = (6, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (6, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
 
-    pylons = {2, 3, 4, 5, 6}
+    pylons: Set[int] = {2, 3, 4, 5, 6}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.GroundAttack, task.CAS]
     task_default = task.CAP
@@ -2071,7 +2072,7 @@ class Su_25(PlaneType):
         Smoke_Generator___yellow = (10, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (10, Weapons.Smoke_Generator___orange)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.CAS, task.AFAC, task.AntishipStrike]
     task_default = task.CAS
@@ -2351,7 +2352,7 @@ class Su_25TM(PlaneType):
         Smoke_Generator___yellow = (11, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (11, Weapons.Smoke_Generator___orange)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.CAS, task.SEAD, task.AFAC, task.AntishipStrike]
     task_default = task.CAS
@@ -2644,7 +2645,7 @@ class Su_25T(PlaneType):
         Smoke_Generator___yellow = (11, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (11, Weapons.Smoke_Generator___orange)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.CAS, task.SEAD, task.AFAC, task.AntishipStrike]
     task_default = task.CAS
@@ -2937,7 +2938,7 @@ class Su_33(PlaneType):
         Smoke_Generator___yellow = (12, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (12, Weapons.Smoke_Generator___orange)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.AFAC, task.CAS, task.GroundAttack, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
@@ -2986,7 +2987,7 @@ class MiG_25PD(PlaneType):
         R_40T__AA_6_Acrid____Infra_Red = (4, Weapons.R_40T__AA_6_Acrid____Infra_Red)
         R_60M__AA_8_Aphid____Infra_Red = (4, Weapons.R_60M__AA_8_Aphid____Infra_Red)
 
-    pylons = {1, 2, 3, 4}
+    pylons: Set[int] = {1, 2, 3, 4}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept]
     task_default = task.Intercept
@@ -3061,7 +3062,7 @@ class MiG_25RBT(PlaneType):
         BetAB_500___500kg_Concrete_Piercing_Bomb_LD = (4, Weapons.BetAB_500___500kg_Concrete_Piercing_Bomb_LD)
         BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb = (4, Weapons.BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb)
 
-    pylons = {1, 2, 3, 4}
+    pylons: Set[int] = {1, 2, 3, 4}
 
     tasks = [task.Reconnaissance, task.AFAC, task.GroundAttack]
     task_default = task.Reconnaissance
@@ -3275,7 +3276,7 @@ class Su_30(PlaneType):
         Smoke_Generator___yellow = (10, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (10, Weapons.Smoke_Generator___orange)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.AFAC, task.SEAD, task.AntishipStrike, task.CAS, task.PinpointStrike, task.GroundAttack, task.RunwayAttack]
     task_default = task.CAP
@@ -3475,7 +3476,7 @@ class Su_17M4(PlaneType):
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (8, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (8, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8}
 
     tasks = [task.GroundAttack, task.CAS, task.PinpointStrike, task.SEAD, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.GroundAttack
@@ -3764,7 +3765,7 @@ class MiG_31(PlaneType):
         R_40T__AA_6_Acrid____Infra_Red = (6, Weapons.R_40T__AA_6_Acrid____Infra_Red)
         APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red_ = (6, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red_)
 
-    pylons = {1, 2, 3, 4, 5, 6}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept]
     task_default = task.Intercept
@@ -3795,7 +3796,7 @@ class Tu_95MS(PlaneType):
     class Pylon1:
         _6_x_Kh_65__AS_15B_Kent____1250kg__ASM__IN__MCC = (1, Weapons._6_x_Kh_65__AS_15B_Kent____1250kg__ASM__IN__MCC)
 
-    pylons = {1}
+    pylons: Set[int] = {1}
 
     tasks = [task.PinpointStrike]
     task_default = task.PinpointStrike
@@ -3996,7 +3997,7 @@ class Su_24M(PlaneType):
         Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided = (8, Weapons.Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (8, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8}
 
     tasks = [task.GroundAttack, task.CAS, task.AntishipStrike, task.SEAD, task.PinpointStrike, task.AFAC, task.RunwayAttack]
     task_default = task.GroundAttack
@@ -4043,7 +4044,7 @@ class Su_24MR(PlaneType):
     class Pylon8:
         ETHER = (8, Weapons.ETHER)
 
-    pylons = {1, 2, 5, 7, 8}
+    pylons: Set[int] = {1, 2, 5, 7, 8}
 
     tasks = [task.AFAC, task.Reconnaissance]
     task_default = task.Reconnaissance
@@ -4075,7 +4076,7 @@ class Tu_160(PlaneType):
     class Pylon2:
         _6_x_Kh_65__AS_15B_Kent____1250kg__ASM__IN__MCC = (2, Weapons._6_x_Kh_65__AS_15B_Kent____1250kg__ASM__IN__MCC)
 
-    pylons = {1, 2}
+    pylons: Set[int] = {1, 2}
 
     tasks = [task.PinpointStrike]
     task_default = task.PinpointStrike
@@ -4104,7 +4105,7 @@ class F_117A(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (2, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_27___2000lb_Laser_Guided_Penetrator_Bomb = (2, Weapons.GBU_27___2000lb_Laser_Guided_Penetrator_Bomb)
 
-    pylons = {1, 2}
+    pylons: Set[int] = {1, 2}
 
     tasks = [task.PinpointStrike]
     task_default = task.PinpointStrike
@@ -4160,7 +4161,7 @@ class B_1B(PlaneType):
         _4_x_AGM_154C___JSOW_Unitary_BROACH = (3, Weapons._4_x_AGM_154C___JSOW_Unitary_BROACH)
         GBU_38_16 = (3, Weapons.GBU_38_16)
 
-    pylons = {1, 2, 3}
+    pylons: Set[int] = {1, 2, 3}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.CAS]
     task_default = task.GroundAttack
@@ -4228,7 +4229,7 @@ class S_3B(PlaneType):
         LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (6, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
         Fuel_tank_S_3 = (6, Weapons.Fuel_tank_S_3)
 
-    pylons = {1, 2, 3, 4, 5, 6}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6}
 
     tasks = [task.GroundAttack, task.AntishipStrike, task.PinpointStrike]
     task_default = task.AntishipStrike
@@ -4255,7 +4256,7 @@ class S_3B_Tanker(PlaneType):
         class USA(Enum):
             usaf_standard = "usaf standard"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Refueling]
     task_default = task.Refueling
@@ -4326,7 +4327,7 @@ class Mirage_2000_5(PlaneType):
     class Pylon9:
         R_550_Magic_2 = (9, Weapons.R_550_Magic_2)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.AFAC, task.Reconnaissance]
     task_default = task.CAP
@@ -4698,7 +4699,7 @@ class F_15C(PlaneType):
         AIM_9P5_Sidewinder_IR_AAM = (11, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (11, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept]
     task_default = task.CAP
@@ -4976,7 +4977,7 @@ class F_15E(PlaneType):
         AIM_9P5_Sidewinder_IR_AAM = (19, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (19, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.PinpointStrike, task.CAS, task.GroundAttack, task.RunwayAttack, task.AFAC, task.Reconnaissance]
     task_default = task.GroundAttack
@@ -5170,7 +5171,7 @@ class MiG_29A(PlaneType):
         Smoke_Generator___orange = (7, Weapons.Smoke_Generator___orange)
 #ERRR <CLEAN>
 
-    pylons = {1, 2, 3, 4, 5, 6, 7}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.AFAC, task.GroundAttack, task.CAS, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
@@ -5338,7 +5339,7 @@ class MiG_29G(PlaneType):
         Smoke_Generator___orange = (7, Weapons.Smoke_Generator___orange)
 #ERRR <CLEAN>
 
-    pylons = {1, 2, 3, 4, 5, 6, 7}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.AFAC]
     task_default = task.CAP
@@ -5854,7 +5855,7 @@ class MiG_29S(PlaneType):
 #ERRR <CLEAN>
         R_77__AA_12_Adder____Active_Rdr = (7, Weapons.R_77__AA_12_Adder____Active_Rdr)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.AFAC, task.GroundAttack, task.CAS, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
@@ -5882,7 +5883,7 @@ class Tu_142(PlaneType):
     class Pylon1:
         _6_x_Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr = (1, Weapons._6_x_Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr)
 
-    pylons = {1}
+    pylons: Set[int] = {1}
 
     tasks = [task.AntishipStrike, task.Reconnaissance]
     task_default = task.AntishipStrike
@@ -6167,7 +6168,7 @@ class C_130(PlaneType):
         class Thailand(Enum):
             KRAF_15AL = "KRAF_15AL"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Transport]
     task_default = task.Transport
@@ -6209,7 +6210,7 @@ class An_26B(PlaneType):
             RF_Air_Force = "RF Air Force"
             RF_Navy = "RF Navy"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Transport]
     task_default = task.Transport
@@ -6240,7 +6241,7 @@ class An_30M(PlaneType):
         class Russia(Enum):
             RF_Air_Force = "RF Air Force"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Transport, task.Reconnaissance]
     task_default = task.Transport
@@ -6265,7 +6266,7 @@ class C_17A(PlaneType):
         class USA(Enum):
             usaf_standard = "usaf standard"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Transport]
     task_default = task.Transport
@@ -6292,7 +6293,7 @@ class A_50(PlaneType):
             RF_Air_Force = "RF Air Force"
             RF_Air_Force_new = "RF Air Force new"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.AWACS]
     task_default = task.AWACS
@@ -6566,7 +6567,7 @@ class E_3A(PlaneType):
         class Thailand(Enum):
             UTAF = "UTAF"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.AWACS]
     task_default = task.AWACS
@@ -6604,7 +6605,7 @@ class IL_78M(PlaneType):
         class Algeria(Enum):
             Algerian_AF_IL_78M = "Algerian AF IL-78M"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Refueling]
     task_default = task.Refueling
@@ -6876,7 +6877,7 @@ class E_2C(PlaneType):
         class Thailand(Enum):
             BP_AWACS = "BP_AWACS"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.AWACS]
     task_default = task.AWACS
@@ -7152,7 +7153,7 @@ class IL_76MD(PlaneType):
         class Thailand(Enum):
             UT_Cargo_1 = "UT_Cargo_1"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Transport]
     task_default = task.Transport
@@ -7350,7 +7351,7 @@ class F_16C_bl_50(PlaneType):
         AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.PinpointStrike, task.CAS, task.GroundAttack, task.RunwayAttack, task.AFAC, task.Reconnaissance, task.AntishipStrike]
     task_default = task.CAP
@@ -7559,7 +7560,7 @@ class F_16C_bl_52d(PlaneType):
         AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.PinpointStrike, task.CAS, task.GroundAttack, task.RunwayAttack, task.SEAD, task.AFAC, task.Reconnaissance, task.AntishipStrike]
     task_default = task.CAP
@@ -7682,7 +7683,7 @@ class F_16A(PlaneType):
         AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
-    pylons = {1, 2, 3, 4, 6, 7, 8, 9, 10}
+    pylons: Set[int] = {1, 2, 3, 4, 6, 7, 8, 9, 10}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.PinpointStrike, task.CAS, task.GroundAttack, task.RunwayAttack, task.SEAD, task.AFAC, task.Reconnaissance, task.AntishipStrike]
     task_default = task.CAP
@@ -8090,7 +8091,7 @@ class F_16A_MLU(PlaneType):
         AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.PinpointStrike, task.CAS, task.GroundAttack, task.RunwayAttack, task.AFAC, task.Reconnaissance, task.AntishipStrike]
     task_default = task.CAP
@@ -8118,7 +8119,7 @@ class RQ_1A_Predator(PlaneType):
     class Pylon2:
         AGM_114K = (2, Weapons.AGM_114K)
 
-    pylons = {1, 2}
+    pylons: Set[int] = {1, 2}
 
     tasks = [task.GroundAttack, task.AFAC, task.Reconnaissance]
     task_default = task.Reconnaissance
@@ -8153,7 +8154,7 @@ class Yak_40(PlaneType):
         class Algeria(Enum):
             Algeria_GLAM = "Algeria GLAM"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Transport]
     task_default = task.Transport
@@ -8178,7 +8179,7 @@ class KC_135(PlaneType):
         class Turkey(Enum):
             TurAF_Standard = "TurAF Standard"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Refueling]
     task_default = task.Refueling
@@ -8207,7 +8208,7 @@ class FW_190D9(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "FW_MW50TankContents": 1,
     }
 
@@ -8264,7 +8265,7 @@ class FW_190D9(PlaneType):
         _13_R4M_3_2kg_UnGd_air_to_air_rocket_ = (3, Weapons._13_R4M_3_2kg_UnGd_air_to_air_rocket_)
         Werfer_Granate_21___21_cm_UnGd_air_to_air_rocket = (3, Weapons.Werfer_Granate_21___21_cm_UnGd_air_to_air_rocket)
 
-    pylons = {1, 2, 3}
+    pylons: Set[int] = {1, 2, 3}
 
     tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
@@ -8293,7 +8294,7 @@ class FW_190A8(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "FW_MW50TankContents": 0,
     }
 
@@ -8612,7 +8613,7 @@ class FW_190A8(PlaneType):
     class Pylon3:
         Werfer_Granate_21___21_cm_UnGd_air_to_air_rocket = (3, Weapons.Werfer_Granate_21___21_cm_UnGd_air_to_air_rocket)
 
-    pylons = {1, 2, 3}
+    pylons: Set[int] = {1, 2, 3}
 
     tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike, task.Reconnaissance]
     task_default = task.CAP
@@ -8641,7 +8642,7 @@ class Bf_109K_4(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "MW50TankContents": 1,
         "Flare_Gun": 1,
     }
@@ -9123,7 +9124,7 @@ class Bf_109K_4(PlaneType):
         SC_501_SC250 = (1, Weapons.SC_501_SC250)
         BF109K_4_FUEL_TANK = (1, Weapons.BF109K_4_FUEL_TANK)
 
-    pylons = {1}
+    pylons: Set[int] = {1}
 
     tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
@@ -9196,7 +9197,7 @@ class SpitfireLFMkIX(PlaneType):
         Beer_Bomb__L__on_RH_Spitfire_Wing_Carrier = (3, Weapons.Beer_Bomb__L__on_RH_Spitfire_Wing_Carrier)
         Beer_Bomb__D__on_RH_Spitfire_Wing_Carrier = (3, Weapons.Beer_Bomb__D__on_RH_Spitfire_Wing_Carrier)
 
-    pylons = {1, 2, 3}
+    pylons: Set[int] = {1, 2, 3}
 
     tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
@@ -9267,7 +9268,7 @@ class SpitfireLFMkIXCW(PlaneType):
         Beer_Bomb__L__on_RH_Spitfire_Wing_Carrier = (3, Weapons.Beer_Bomb__L__on_RH_Spitfire_Wing_Carrier)
         Beer_Bomb__D__on_RH_Spitfire_Wing_Carrier = (3, Weapons.Beer_Bomb__D__on_RH_Spitfire_Wing_Carrier)
 
-    pylons = {1, 2, 3}
+    pylons: Set[int] = {1, 2, 3}
 
     tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
@@ -9786,7 +9787,7 @@ class P_51D(PlaneType):
         HVAR__UnGd_Rkt = (10, Weapons.HVAR__UnGd_Rkt)
         HVAR_Smoke_Generator = (10, Weapons.HVAR_Smoke_Generator)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAS
@@ -9849,7 +9850,7 @@ class P_51D_30_NA(PlaneType):
         HVAR__UnGd_Rkt = (10, Weapons.HVAR__UnGd_Rkt)
         HVAR_Smoke_Generator = (10, Weapons.HVAR_Smoke_Generator)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAS
@@ -9882,7 +9883,7 @@ class P_47D_30(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "WaterTankContents": 1,
     }
 
@@ -10446,7 +10447,7 @@ class P_47D_30(PlaneType):
         M10_Smoke_Tank___blue = (3, Weapons.M10_Smoke_Tank___blue)
         M10_Smoke_Tank___white = (3, Weapons.M10_Smoke_Tank___white)
 
-    pylons = {1, 2, 3}
+    pylons: Set[int] = {1, 2, 3}
 
     tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
@@ -10479,7 +10480,7 @@ class P_47D_30bl1(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "WaterTankContents": 1,
     }
 
@@ -10517,7 +10518,7 @@ class P_47D_30bl1(PlaneType):
         _110_US_gal__Fuel_Tank = (3, Weapons._110_US_gal__Fuel_Tank)
         _150_US_gal__Fuel_Tank = (3, Weapons._150_US_gal__Fuel_Tank)
 
-    pylons = {1, 2, 3}
+    pylons: Set[int] = {1, 2, 3}
 
     tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
@@ -10550,7 +10551,7 @@ class P_47D_40(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "WaterTankContents": 1,
     }
 
@@ -10610,7 +10611,7 @@ class P_47D_40(PlaneType):
         _5_x_HVAR__UnGd_Rkt_ = (5, Weapons._5_x_HVAR__UnGd_Rkt_)
         _3_x_4_5_inch_M8_UnGd_Rocket = (5, Weapons._3_x_4_5_inch_M8_UnGd_Rocket)
 
-    pylons = {1, 2, 3, 4, 5}
+    pylons: Set[int] = {1, 2, 3, 4, 5}
 
     tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
@@ -10624,7 +10625,7 @@ class A_20G(PlaneType):
     fuel_max = 1500
     max_speed = 619.2
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
     }
 
     class Liveries:
@@ -10643,7 +10644,7 @@ class A_20G(PlaneType):
     class Pylon1:
         _4_x_AN_M64___500lb_GP_Bomb_LD = (1, Weapons._4_x_AN_M64___500lb_GP_Bomb_LD)
 
-    pylons = {1}
+    pylons: Set[int] = {1}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.CAS]
     task_default = task.CAS
@@ -10664,7 +10665,7 @@ class A_10A(PlaneType):
     flare_charge_size = 2
     radio_frequency = 124
 
-    callnames = {
+    callnames: Dict[str, List[str]] = {
         "USA": [
             "Hawg",
             "Boar",
@@ -10673,7 +10674,7 @@ class A_10A(PlaneType):
         ]
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
     }
 
     class Liveries:
@@ -11028,7 +11029,7 @@ class A_10A(PlaneType):
         LAU_105_AIS_ASQ_T50_R = (11, Weapons.LAU_105_AIS_ASQ_T50_R)
         Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (11, Weapons.Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
 
     tasks = [task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAS
@@ -11049,7 +11050,7 @@ class A_10C(PlaneType):
     flare_charge_size = 2
     eplrs = True
 
-    callnames = {
+    callnames: Dict[str, List[str]] = {
         "USA": [
             "Hawg",
             "Boar",
@@ -11058,7 +11059,7 @@ class A_10C(PlaneType):
         ]
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
     }
 
     class Liveries:
@@ -11587,7 +11588,7 @@ class A_10C(PlaneType):
         LAU_105_2_AIM_9L = (11, Weapons.LAU_105_2_AIM_9L)
         LAU_105_1_AIM_9L_R = (11, Weapons.LAU_105_1_AIM_9L_R)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
 
     tasks = [task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAS
@@ -11608,7 +11609,7 @@ class A_10C_2(PlaneType):
     flare_charge_size = 1
     eplrs = True
 
-    callnames = {
+    callnames: Dict[str, List[str]] = {
         "USA": [
             "Hawg",
             "Boar",
@@ -11617,7 +11618,7 @@ class A_10C_2(PlaneType):
         ]
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
     }
 
     class Liveries:
@@ -12338,7 +12339,7 @@ class A_10C_2(PlaneType):
         LAU_105_2_AIM_9L = (11, Weapons.LAU_105_2_AIM_9L)
         LAU_105_1_AIM_9L_R = (11, Weapons.LAU_105_1_AIM_9L_R)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
 
     tasks = [task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAS
@@ -12374,7 +12375,7 @@ class AJS37(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "Rb04GroupTarget": 3,
         "Rb04VinkelHopp": 0,
         "WeapSafeHeight": 1,
@@ -13006,7 +13007,7 @@ class AJS37(PlaneType):
         Rb_24J__AIM_9P__Sidewinder_IR_AAM = (7, Weapons.Rb_24J__AIM_9P__Sidewinder_IR_AAM)
         Rb_24__AIM_9B__Sidewinder_IR_AAM = (7, Weapons.Rb_24__AIM_9B__Sidewinder_IR_AAM)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.CAS, task.AFAC, task.CAP, task.Escort, task.SEAD, task.FighterSweep, task.Intercept, task.AntishipStrike, task.Reconnaissance]
     task_default = task.GroundAttack
@@ -13126,7 +13127,7 @@ class AV8BNA(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "MountNVG": False,
         "ClockTime": 1,
         "RocketBurst": 1,
@@ -14930,7 +14931,7 @@ class AV8BNA(PlaneType):
         Smokewinder___yellow = (8, Weapons.Smokewinder___yellow)
         Smokewinder___orange = (8, Weapons.Smokewinder___orange)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8}
 
     tasks = [task.GroundAttack, task.PinpointStrike, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike, task.SEAD, task.Escort]
     task_default = task.CAS
@@ -14957,7 +14958,7 @@ class KC130(PlaneType):
         class USA(Enum):
             default = "default"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Refueling]
     task_default = task.Refueling
@@ -15229,7 +15230,7 @@ class KC135MPRS(PlaneType):
         class Thailand(Enum):
             BP_TANKER = "BP_TANKER"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Refueling]
     task_default = task.Refueling
@@ -15273,7 +15274,7 @@ class C_101EB(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "SoloFlight": False,
         "NetCrewControlPriority": 1,
         "MountIFRHood": False,
@@ -15544,7 +15545,7 @@ class C_101EB(PlaneType):
         Smoke_System_red_colorant = (2, Weapons.Smoke_System_red_colorant)
         Smoke_System_yellow_colorant = (2, Weapons.Smoke_System_yellow_colorant)
 
-    pylons = {1, 2}
+    pylons: Set[int] = {1, 2}
 
     tasks = [task.AFAC, task.Reconnaissance]
     task_default = task.Reconnaissance
@@ -15589,7 +15590,7 @@ class C_101CC(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "SoloFlight": False,
         "NetCrewControlPriority": 1,
         "MountIFRHood": False,
@@ -15930,7 +15931,7 @@ class C_101CC(PlaneType):
         AIM_9P_Sidewinder_IR_AAM = (7, Weapons.AIM_9P_Sidewinder_IR_AAM)
         R_550_Magic_2 = (7, Weapons.R_550_Magic_2)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
     tasks = [task.CAP, task.CAS, task.Escort, task.FighterSweep, task.GroundAttack, task.Intercept, task.AntishipStrike, task.RunwayAttack, task.AFAC, task.Reconnaissance]
     task_default = task.CAS
@@ -16158,7 +16159,7 @@ class J_11A(PlaneType):
         Smoke_Generator___yellow = (10, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (10, Weapons.Smoke_Generator___orange)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
     tasks = [task.CAP, task.Intercept, task.Escort, task.FighterSweep, task.AFAC, task.CAS, task.GroundAttack, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
@@ -16208,7 +16209,7 @@ class JF_17(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
@@ -16616,7 +16617,7 @@ class JF_17(PlaneType):
         DIS_SMOKE_GENERATOR_Y = (7, Weapons.DIS_SMOKE_GENERATOR_Y)
         DIS_SMOKE_GENERATOR_O = (7, Weapons.DIS_SMOKE_GENERATOR_O)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
     tasks = [task.Intercept, task.CAP, task.AFAC, task.Reconnaissance, task.Escort, task.FighterSweep, task.SEAD, task.AntishipStrike, task.CAS, task.GroundAttack, task.PinpointStrike, task.RunwayAttack]
     task_default = task.CAP
@@ -16638,7 +16639,7 @@ class KJ_2000(PlaneType):
             China_Air_Force_KJ_2000__Parade_93 = "China Air Force KJ-2000 (Parade 93)"
             China_Air_Force_KJ_2000 = "China Air Force KJ-2000"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.AWACS]
     task_default = task.AWACS
@@ -16687,7 +16688,7 @@ class WingLoong_I(PlaneType):
     class Pylon2:
         DIS_AKD_10 = (2, Weapons.DIS_AKD_10)
 
-    pylons = {1, 2}
+    pylons: Set[int] = {1, 2}
 
     tasks = [task.GroundAttack, task.AFAC, task.Reconnaissance]
     task_default = task.Reconnaissance
@@ -16729,7 +16730,7 @@ class Christen_Eagle_II(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "SoloFlight": False,
         "NetCrewControlPriority": 1,
         "NS430allow": True,
@@ -16755,7 +16756,7 @@ class Christen_Eagle_II(PlaneType):
     class Pylon1:
         Smoke_for_Christen_Eagle_II__white = (1, Weapons.Smoke_for_Christen_Eagle_II__white)
 
-    pylons = {1}
+    pylons: Set[int] = {1}
 
     tasks = [task.Transport, task.Reconnaissance]
     task_default = task.Nothing
@@ -16829,7 +16830,7 @@ class F_16C_50(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "LAU3ROF": 0,
         "LaserCode100": 6,
         "LaserCode10": 8,
@@ -17366,7 +17367,7 @@ class F_16C_50(PlaneType):
     class Pylon11:
         AN_AAQ_28_LITENING___Targeting_Pod = (11, Weapons.AN_AAQ_28_LITENING___Targeting_Pod)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 11}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 11}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.PinpointStrike, task.CAS, task.GroundAttack, task.RunwayAttack, task.SEAD, task.AFAC, task.AntishipStrike, task.Reconnaissance]
     task_default = task.CAP
@@ -17732,7 +17733,7 @@ class F_5E(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (7, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         CATM_9M = (7, Weapons.CATM_9M)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
     tasks = [task.CAS, task.GroundAttack, task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.AntishipStrike]
     task_default = task.CAP
@@ -17781,7 +17782,7 @@ class F_5E_3(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "LAU3ROF": 0,
         "LAU68ROF": 0,
         "LaserCode100": 6,
@@ -18301,7 +18302,7 @@ class F_5E_3(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (7, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         CATM_9M = (7, Weapons.CATM_9M)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
     tasks = [task.CAS, task.GroundAttack, task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.AntishipStrike]
     task_default = task.CAP
@@ -18634,7 +18635,7 @@ class F_86F_Sabre(PlaneType):
         _2_x_HVAR__UnGd_Rkts = (10, Weapons._2_x_HVAR__UnGd_Rkts)
         HVAR_SMOKE__UnGd_Rkt = (10, Weapons.HVAR_SMOKE__UnGd_Rkt)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
     tasks = [task.CAP, task.CAS, task.Escort, task.FighterSweep, task.GroundAttack, task.Intercept, task.AntishipStrike]
     task_default = task.CAP
@@ -18716,7 +18717,7 @@ class F_14B(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "M61BURST": 0,
         "ALE39Loadout": 0,
         "UseLAU138": True,
@@ -21124,7 +21125,7 @@ class F_14B(PlaneType):
         Smokewinder___yellow = (10, Weapons.Smokewinder___yellow)
         Smokewinder___orange = (10, Weapons.Smokewinder___orange)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.Reconnaissance, task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.AntishipStrike, task.CAS]
     task_default = task.Intercept
@@ -21206,7 +21207,7 @@ class F_14A_135_GR(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "M61BURST": 0,
         "ALE39Loadout": 0,
         "UseLAU138": True,
@@ -22138,7 +22139,7 @@ class F_14A_135_GR(PlaneType):
         Smokewinder___yellow = (10, Weapons.Smokewinder___yellow)
         Smokewinder___orange = (10, Weapons.Smokewinder___orange)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.Reconnaissance, task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.AntishipStrike, task.CAS]
     task_default = task.Intercept
@@ -22212,7 +22213,7 @@ class FA_18C_hornet(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "OuterBoard": 0,
         "InnerBoard": 0,
         "HelmetMountedDevice": 1,
@@ -23531,7 +23532,7 @@ class FA_18C_hornet(PlaneType):
         Smoke_Generator___yellow_ = (10, Weapons.Smoke_Generator___yellow_)
         Smoke_Generator___orange_ = (10, Weapons.Smoke_Generator___orange_)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.PinpointStrike, task.CAS, task.GroundAttack, task.RunwayAttack, task.SEAD, task.AFAC, task.AntishipStrike, task.Reconnaissance]
     task_default = task.CAP
@@ -23809,7 +23810,7 @@ class Hawk(PlaneType):
         Smoke_Generator___white = (6, Weapons.Smoke_Generator___white)
         Smoke_Generator___blue = (6, Weapons.Smoke_Generator___blue)
 
-    pylons = {1, 2, 3, 4, 5, 6}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6}
 
     tasks = [task.CAP, task.CAS, task.Escort, task.FighterSweep, task.GroundAttack, task.Intercept]
     task_default = task.CAP
@@ -23836,7 +23837,7 @@ class I_16(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "landingTorch": False,
     }
 
@@ -24423,7 +24424,7 @@ class I_16(PlaneType):
     class Pylon8:
         I16_RS_82 = (8, Weapons.I16_RS_82)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8}
 
     tasks = [task.CAP, task.CAS, task.Escort, task.FighterSweep, task.GroundAttack, task.Intercept, task.Reconnaissance]
     task_default = task.CAP
@@ -24471,7 +24472,7 @@ class L_39C(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "SoloFlight": False,
         "NetCrewControlPriority": 1,
         "NS430allow": True,
@@ -24575,7 +24576,7 @@ class L_39C(PlaneType):
         Smoke_Generator___yellow = (3, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (3, Weapons.Smoke_Generator___orange)
 
-    pylons = {1, 2, 3}
+    pylons: Set[int] = {1, 2, 3}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.CAS, task.AFAC, task.CAP, task.AntishipStrike]
     task_default = task.CAS
@@ -24623,7 +24624,7 @@ class L_39ZA(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "SoloFlight": False,
         "NetCrewControlPriority": 1,
         "NS430allow": True,
@@ -25054,7 +25055,7 @@ class L_39ZA(PlaneType):
         Smoke_Generator___yellow = (5, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (5, Weapons.Smoke_Generator___orange)
 
-    pylons = {1, 2, 3, 4, 5}
+    pylons: Set[int] = {1, 2, 3, 4, 5}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.CAS, task.AFAC, task.CAP, task.AntishipStrike]
     task_default = task.CAS
@@ -25126,7 +25127,7 @@ class M_2000C(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "NoDDMSensor": False,
         "RocketBurst": 6,
         "GunBurst": 1,
@@ -25305,7 +25306,7 @@ class M_2000C(PlaneType):
     class Pylon11:
         A_G_Training = (11, Weapons.A_G_Training)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.CAS, task.AFAC, task.CAP, task.Escort, task.FighterSweep, task.Intercept]
     task_default = task.CAP
@@ -25358,7 +25359,7 @@ class MQ_9_Reaper(PlaneType):
         AGM114x2_OH_58 = (4, Weapons.AGM114x2_OH_58)
         AGM_114K___4 = (4, Weapons.AGM_114K___4)
 
-    pylons = {1, 2, 3, 4}
+    pylons: Set[int] = {1, 2, 3, 4}
 
     tasks = [task.GroundAttack, task.CAS, task.AFAC, task.Reconnaissance]
     task_default = task.Reconnaissance
@@ -25732,7 +25733,7 @@ class MiG_15bis(PlaneType):
         PTB600_MIG15 = (2, Weapons.PTB600_MIG15)
         PTB300_MIG15 = (2, Weapons.PTB300_MIG15)
 
-    pylons = {1, 2}
+    pylons: Set[int] = {1, 2}
 
     tasks = [task.CAP, task.CAS, task.Escort, task.FighterSweep, task.GroundAttack, task.Intercept]
     task_default = task.CAP
@@ -25762,7 +25763,7 @@ class MiG_19P(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "MountSIRENA": False,
         "MissileToneVolume": 5,
         "NAV_Initial_Hdg": 0,
@@ -26337,7 +26338,7 @@ class MiG_19P(PlaneType):
         Smoke_Generator___yellow = (6, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (6, Weapons.Smoke_Generator___orange)
 
-    pylons = {1, 2, 3, 4, 5, 6}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6}
 
     tasks = [task.CAP, task.CAS, task.Escort, task.FighterSweep, task.GroundAttack, task.Intercept]
     task_default = task.CAP
@@ -32156,7 +32157,7 @@ class MiG_21Bis(PlaneType):
     class Pylon7:
         Smoke___white___21_ = (7, Weapons.Smoke___white___21_)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
     tasks = [task.Intercept, task.CAP, task.Escort, task.CAS, task.GroundAttack]
     task_default = task.CAP
@@ -32434,7 +32435,7 @@ class Su_34(PlaneType):
         L005_Sorbtsiya_ECM_pod__right_ = (12, Weapons.L005_Sorbtsiya_ECM_pod__right_)
         L175V_Khibiny_ECM_pod = (12, Weapons.L175V_Khibiny_ECM_pod)
 
-    pylons = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
 
     tasks = [task.AFAC, task.SEAD, task.AntishipStrike, task.CAS, task.PinpointStrike, task.GroundAttack, task.RunwayAttack]
     task_default = task.GroundAttack
@@ -32465,7 +32466,7 @@ class Yak_52(PlaneType):
         },
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
         "SoloFlight": False,
         "PropellorType": 0,
         "NetCrewControlPriority": 0,
@@ -32754,7 +32755,7 @@ class Yak_52(PlaneType):
         Smoke_Generator___yellow_ = (1, Weapons.Smoke_Generator___yellow_)
         Smoke_Generator___orange_ = (1, Weapons.Smoke_Generator___orange_)
 
-    pylons = {1}
+    pylons: Set[int] = {1}
 
     tasks = [task.CAP, task.Escort, task.AFAC]
     task_default = task.AFAC
@@ -32768,18 +32769,18 @@ class B_17G(PlaneType):
     fuel_max = 7600
     max_speed = 522
 
-    callnames = {
+    callnames: Dict[str, List[str]] = {
         "USA": [
         ]
     }
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
     }
 
     class Pylon1:
         _12_AN_M64___500lb_GP_Bomb_LD = (1, Weapons._12_AN_M64___500lb_GP_Bomb_LD)
 
-    pylons = {1}
+    pylons: Set[int] = {1}
 
     tasks = [task.GroundAttack, task.RunwayAttack]
     task_default = task.GroundAttack
@@ -32793,7 +32794,7 @@ class Ju_88A4(PlaneType):
     fuel_max = 2120
     max_speed = 540
 
-    property_defaults = {
+    property_defaults: Dict[str, Any] = {
     }
 #ERRR {LTF_5B}
 
@@ -32820,7 +32821,7 @@ class Ju_88A4(PlaneType):
         AB_250_2___17_x_SD_10A__250kg_CBU_with_10kg_Frag_HE_submunitions = (3, Weapons.AB_250_2___17_x_SD_10A__250kg_CBU_with_10kg_Frag_HE_submunitions)
         AB_500_1___34_x_SD_10A__500kg_CBU_with_10kg_Frag_HE_submunitions = (3, Weapons.AB_500_1___34_x_SD_10A__500kg_CBU_with_10kg_Frag_HE_submunitions)
 
-    pylons = {1, 3}
+    pylons: Set[int] = {1, 3}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.AntishipStrike]
     task_default = task.GroundAttack
@@ -33101,7 +33102,7 @@ class TF_51D(PlaneType):
         class Thailand(Enum):
             Bare_Metal = "Bare Metal"
 
-    pylons = {}
+    pylons: Set[int] = set()
 
     tasks = [task.Reconnaissance]
     task_default = task.Reconnaissance

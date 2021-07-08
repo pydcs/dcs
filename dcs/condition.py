@@ -1,3 +1,4 @@
+from typing import Dict, Type
 from dcs.lua.serialize import dumps
 
 
@@ -27,6 +28,10 @@ class Condition:
                     skip_logic_opr = False
             return s + " )"
         return "return(true)"
+
+    @classmethod
+    def create_from_dict(cls, d):
+        raise NotImplementedError
 
     def dict(self):
         d = {
@@ -1258,7 +1263,7 @@ class UnitVerticalSpeedWithin(Condition):
         return d
 
 
-condition_map = {
+condition_map: Dict[str, Type[Condition]] = {
     "c_all_of_coalition_in_zone": AllOfCoalitionInZone,
     "c_all_of_coalition_out_zone": AllOfCoalitionOutsideZone,
     "c_all_of_group_in_zone": AllOfGroupInZone,

@@ -1,4 +1,4 @@
-from typing import Any, Dict
+from typing import Any, Dict, List, Type
 from dcs.lua.serialize import dumps
 from dcs.translation import String, ResourceKey
 from enum import Enum, IntEnum
@@ -7,7 +7,7 @@ from enum import Enum, IntEnum
 class Action:
     def __init__(self, predicate: str) -> None:
         self.predicate = predicate
-        self.params = []
+        self.params: List[Any] = []
 
     def __repr__(self) -> str:
         s = []
@@ -19,6 +19,10 @@ class Action:
             else:
                 s.append(dumps(x))
         return self.predicate + "(" + ", ".join(s) + ")"
+
+    @classmethod
+    def create_from_dict(cls, d, mission):
+        raise NotImplementedError
 
     def dict(self) -> Dict[Any, Any]:
         d = {
@@ -1773,7 +1777,7 @@ class ZoneIncrementResize(Action):
         return d
 
 
-actions_map = {
+actions_map: Dict[str, Type[Action]] = {
     "a_activate_group": ActivateGroup,
     "a_add_radio_item": AddRadioItem,
     "a_add_radio_item_for_coalition": AddRadioItemForCoalition,

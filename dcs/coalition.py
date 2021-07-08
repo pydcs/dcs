@@ -58,7 +58,7 @@ class Coalition:
             mission: 'Mission',
             group: unitgroup.Group,
             unit: Union[Plane, Helicopter]) -> List[StatusMessage]:
-        ret = []
+        ret: List[StatusMessage] = []
         if group.points[0].airdrome_id is not None and unit.parking is not None:
             airport = mission.terrain.airport_by_id(group.points[0].airdrome_id)
             slot = airport.parking_slot(unit.parking)
@@ -120,25 +120,25 @@ class Coalition:
             if "ship" in imp_country:
                 for group_idx in imp_country["ship"]["group"]:
                     imp_group = imp_country["ship"]["group"][group_idx]
-                    vg = unitgroup.ShipGroup(imp_group["groupId"], self.get_name(mission, imp_group["name"]),
-                                             imp_group["start_time"])
-                    vg.load_from_dict(imp_group)
-                    mission.current_group_id = max(mission.current_group_id, vg.id)
+                    ship_group = unitgroup.ShipGroup(imp_group["groupId"], self.get_name(mission, imp_group["name"]),
+                                                     imp_group["start_time"])
+                    ship_group.load_from_dict(imp_group)
+                    mission.current_group_id = max(mission.current_group_id, ship_group.id)
 
-                    Coalition._import_moving_point(mission, vg, imp_group)
+                    Coalition._import_moving_point(mission, ship_group, imp_group)
 
                     # units
                     for imp_unit_idx in imp_group["units"]:
                         imp_unit = imp_group["units"][imp_unit_idx]
-                        unit = Ship(
+                        ship = Ship(
                             id=imp_unit["unitId"],
                             name=self.get_name(mission, imp_unit["name"]),
                             _type=ships.ship_map[imp_unit["type"]])
-                        unit.load_from_dict(imp_unit)
+                        ship.load_from_dict(imp_unit)
 
-                        mission.current_unit_id = max(mission.current_unit_id, unit.id)
-                        vg.add_unit(unit)
-                    _country.add_ship_group(vg)
+                        mission.current_unit_id = max(mission.current_unit_id, ship.id)
+                        ship_group.add_unit(ship)
+                    _country.add_ship_group(ship_group)
 
             if "plane" in imp_country:
                 for pgroup_idx in imp_country["plane"]["group"]:
@@ -228,6 +228,7 @@ class Coalition:
                     # units
                     for imp_unit_idx in sgroup["units"]:
                         imp_unit = sgroup["units"][imp_unit_idx]
+                        static: Static
                         if imp_unit["type"] == "FARP":
                             static = FARP(
                                 unit_id=imp_unit["unitId"],

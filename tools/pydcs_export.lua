@@ -303,11 +303,12 @@ local function export_aircraft(file, aircrafts, export_type, exportplane)
     -- generate export output
     file:write(
 [[# This file is generated from pydcs_export.lua
+from enum import Enum
+from typing import Any, Dict, List, Set
 
 from dcs.weapons_data import Weapons
 import dcs.task as task
 from dcs.unittype import FlyingType
-from enum import Enum
 
 ]])
     writeln(file, 'class '..export_type..'Type(FlyingType):')
@@ -419,7 +420,7 @@ from enum import Enum
 
         if plane.SpecificCallnames then
             writeln(file, '')
-            writeln(file, '    callnames = {')
+            writeln(file, '    callnames: Dict[str, List[str]] = {')
             for c in pairs(plane.SpecificCallnames) do
                 writeln(file, '        "'..country.by_country[c].Name..'": [')
                 for n in pairs(plane.SpecificCallnames[c]) do
@@ -433,7 +434,7 @@ from enum import Enum
         if plane.AddPropAircraft then
             writeln(file, '')
             -- default dict
-            writeln(file, '    property_defaults = {')
+            writeln(file, '    property_defaults: Dict[str, Any] = {')
             for j in pairs(plane.AddPropAircraft) do
                 local prop = plane.AddPropAircraft[j]
                 local defval = prop.defValue
@@ -523,7 +524,12 @@ from enum import Enum
                 s = s..', '
             end
         end
-        writeln(file, '    pylons = {'..s..'}')
+
+        if s == "" then
+            writeln(file, '    pylons: Set[int] = set()')
+        else
+            writeln(file, '    pylons: Set[int] = {'..s..'}')
+        end
 
         -- tasks
         writeln(file, "")
