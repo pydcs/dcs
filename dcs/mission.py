@@ -1073,10 +1073,10 @@ class Mission:
                                   name,
                                   aircraft_type: Type[unittype.FlyingType],
                                   airport: terrain_.Airport,
-                                  maintask: Type[task.MainTask] = None,
+                                  maintask: Optional[Type[task.MainTask]] = None,
                                   start_type: StartType = StartType.Cold,
                                   group_size=1,
-                                  parking_slots: List[terrain_.ParkingSlot] = None) -> unitgroup.FlyingGroup:
+                                  parking_slots: Optional[List[terrain_.ParkingSlot]] = None) -> unitgroup.FlyingGroup:
         """Add a new Plane/Helicopter group at the given airport.
 
         Runway, warm/cold start depends on the given start_type.
@@ -1120,7 +1120,7 @@ class Mission:
                                name,
                                aircraft_type: Type[unittype.FlyingType],
                                pad_group: Union[unitgroup.ShipGroup, unitgroup.StaticGroup],
-                               maintask: Type[task.MainTask] = None,
+                               maintask: Optional[Type[task.MainTask]] = None,
                                start_type: StartType = StartType.Cold,
                                group_size=1) -> unitgroup.FlyingGroup:
         """Add a new Plane/Helicopter group at the given FARP or carrier unit.
