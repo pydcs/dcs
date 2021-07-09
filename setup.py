@@ -34,7 +34,8 @@ setup(
     keywords='dcs digital combat simulator eagle dynamics mission framework',
     packages=['dcs', 'dcs/terrain', 'dcs/lua', 'dcs/scripts'],
     package_data={
-        'dcs/terrain': ['caucasus.p', 'nevada.p']
+        'dcs': ['py.typed'],
+        'dcs/terrain': ['caucasus.p', 'nevada.p'],
     },
     entry_points={
         'console_scripts': [
