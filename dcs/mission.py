@@ -14,7 +14,7 @@ from pathlib import Path
 from typing import Any, List, Dict, Sequence, Union, Optional, Type
 
 from dcs.coalition import Coalition
-from dcs.terrain.terrain import Warehouses
+from dcs.terrain.terrain import Terrain, Warehouses
 from dcs.triggers import Triggers
 import dcs.countries as countries
 import dcs.helicopters as helicopters
@@ -96,15 +96,7 @@ class Mission:
 
     _CURRENT_MIZ_VERSION: int = 19  # on save this version number will be written
 
-    def __init__(self, terrain: Union[
-            terrain_.Caucasus,
-            terrain_.Nevada,
-            terrain_.Normandy,
-            terrain_.PersianGulf,
-            terrain_.TheChannel,
-            terrain_.Syria,
-            terrain_.MarianaIslands] = None
-    ):
+    def __init__(self, terrain: Optional[Terrain] = None) -> None:
         if terrain is None:
             terrain = terrain_.Caucasus()
 
