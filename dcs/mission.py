@@ -2071,7 +2071,7 @@ class MapResource:
             except KeyError as ke:
                 print(ke, file=sys.stderr)
 
-    def add_resource_file(self, extracted_path: str, lang: str = 'DEFAULT', key=None) -> ResourceKey:
+    def add_resource_file(self, extracted_path: Union[str, Path], lang: str = 'DEFAULT', key=None) -> ResourceKey:
         """Adds a file to the mission resource depot.
 
         Args:
