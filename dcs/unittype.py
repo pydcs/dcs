@@ -15,6 +15,9 @@ class UnitType:
 
 class VehicleType(UnitType):
     eplrs = False
+    detection_range = 0
+    threat_range = 0
+    air_weapon_dist = 0
 
 
 class ShipType(UnitType):
