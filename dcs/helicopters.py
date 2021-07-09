@@ -2205,6 +2205,10 @@ class Mi_24P(HelicopterType):
 
     class Liveries:
 
+        class USSR(Enum):
+            Russian_Air_Force = "Russian Air Force"
+            AF_Standard3_Old = "AF Standard3 Old"
+
         class Georgia(Enum):
             Georgian_Air_Force = "Georgian Air Force"
             United_Nations = "United Nations"

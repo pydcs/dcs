@@ -654,7 +654,7 @@ class AirDefence:
 
     class Generator_5i57(unittype.VehicleType):
         id = "generator_5i57"
-        name = "Disel Power Station 5I57A"
+        name = "Gen Diesel Power Station 5157A"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -1109,7 +1109,7 @@ class Unarmed:
 
     class AA8(unittype.VehicleType):
         id = "AA8"
-        name = "Fire Fight Vehicle AA-7.2/60"
+        name = "Firefighter Vehicle AA-7.2/60"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
