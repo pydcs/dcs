@@ -32,7 +32,7 @@ class StaticPoint:
         self.type = ""
         self.name: str = ""
         self.position = mapping.Point(0, 0)
-        self.speed = 0
+        self.speed = 0.0
         self.formation_template = ""
         self.action = PointAction.None_  # type: PointAction
         self.landing_refuel_rearm_time: Optional[int] = None
