@@ -35,7 +35,7 @@ class StaticPoint:
         self.speed = 0
         self.formation_template = ""
         self.action = PointAction.None_  # type: PointAction
-        self.landing_refuel_rearm_time: Optional[str] = None
+        self.landing_refuel_rearm_time: Optional[int] = None
 
     def load_from_dict(self, d: Dict[str, Any], translation) -> None:
         self.alt = d["alt"]
@@ -50,7 +50,10 @@ class StaticPoint:
                 self.name = str(translation.get_string(d["name"]))
             else:
                 self.name = d["name"]
-        self.landing_refuel_rearm_time = d.get("timeReFuAr")
+        try:
+            self.landing_refuel_rearm_time = int(d["timeReFuAr"])
+        except KeyError:
+            self.landing_refuel_rearm_time = None
 
     def dict(self) -> Dict[str, Any]:
         if not isinstance(self.name, str):
@@ -66,7 +69,7 @@ class StaticPoint:
             "action": self.action.value
         }
 
-        if self.landing_refuel_rearm_time:
+        if self.landing_refuel_rearm_time is not None:
             d["timeReFuAr"] = self.landing_refuel_rearm_time
 
         return d
