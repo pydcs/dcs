@@ -435,9 +435,9 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
 
     @staticmethod
     def random_orbit(rect: dcs.mapping.Rectangle):
-        x1 = random.randrange(rect.bottom, rect.top)
+        x1 = random.randrange(int(rect.bottom), int(rect.top))
         sy = rect.left
-        y1 = random.randrange(sy, rect.right)
+        y1 = random.randrange(int(sy), int(rect.right))
         heading = 90 if y1 < (sy + (rect.right - sy) / 2) else 270
         heading = random.randrange(heading - 20, heading + 20)
         race_dist = random.randrange(80 * 1000, 120 * 1000)

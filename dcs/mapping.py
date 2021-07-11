@@ -1,10 +1,12 @@
+from __future__ import annotations
+
 import math
 import random
 import copy
-from typing import List, Tuple
+from typing import Any, List, Optional, Tuple, Union
 
 
-def point_from_heading(_x, _y, heading, distance):
+def point_from_heading(_x: float, _y: float, heading: float, distance: float) -> Tuple[float, float]:
     """Calculates a point from a given point, heading and distance.
 
     :param _x: source point x
@@ -23,7 +25,7 @@ def point_from_heading(_x, _y, heading, distance):
     return x, y
 
 
-def _distance(x1, y1, x2, y2):
+def _distance(x1: float, y1: float, x2: float, y2: float) -> float:
     """Returns the distance between 2 points
 
     :param x1: x coordinate of point 1
@@ -35,7 +37,7 @@ def _distance(x1, y1, x2, y2):
     return math.hypot(x2 - x1, y2 - y1)
 
 
-def heading_between_points(x1, y1, x2, y2):
+def heading_between_points(x1: float, y1: float, x2: float, y2: float) -> float:
     """Returns the angle between 2 points in degrees.
 
     :param x1: x coordinate of point 1
@@ -54,21 +56,21 @@ def heading_between_points(x1, y1, x2, y2):
 
 
 class Point:
-    def __init__(self, x, y):
+    def __init__(self, x: float, y: float) -> None:
         self.x = x
         self.y = y
 
-    def point_from_heading(self, heading, distance):
+    def point_from_heading(self, heading: float, distance: float) -> Point:
         x, y = point_from_heading(self.x, self.y, heading, distance)
         return Point(x, y)
 
-    def heading_between_point(self, point):
+    def heading_between_point(self, point: Point) -> float:
         return heading_between_points(self.x, self.y, point.x, point.y)
 
-    def distance_to_point(self, point):
+    def distance_to_point(self, point: Point) -> float:
         return _distance(self.x, self.y, point.x, point.y)
 
-    def random_point_within(self, distance, min_distance=0):
+    def random_point_within(self, distance: float, min_distance: float = 0) -> Point:
         """Returns a random point within the given distance.
 
         This is a shortcut for Rectangle.from_point().random_point().
@@ -83,32 +85,32 @@ class Point:
         return self.point_from_heading(random.randrange(0, 360),
                                        random.random() * (distance - min_distance) + min_distance)
 
-    def __add__(self, other):
+    def __add__(self, other: Point) -> Point:
         return Point(self.x + other.x, self.y + other.y)
 
-    def __radd__(self, other):
+    def __radd__(self, other: Union[float, Point]) -> Point:
         if isinstance(other, Point):
             return self + other
         return Point(self.x + other, self.y + other)
 
-    def __sub__(self, other):
+    def __sub__(self, other: Union[float, Point]) -> Point:
         if isinstance(other, Point):
             return Point(self.x - other.x, self.y - other.y)
         return Point(self.x - other, self.y - other)
 
-    def __mul__(self, other):
+    def __mul__(self, other: float) -> Point:
         return Point(self.x * other, self.y * other)
 
-    def __rmul__(self, other):
+    def __rmul__(self, other: float) -> Point:
         return self * other
 
     def __eq__(self, other):
         return self.x == other.x and self.y == other.y
 
-    def __ne__(self, other):
+    def __ne__(self, other: object) -> bool:
         return not self == other
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return "Point({x}, {y})".format(x=self.x, y=self.y)
 
 
@@ -116,7 +118,7 @@ class Triangle:
     def __init__(self, points: Tuple[Point, Point, Point]) -> None:
         self.points = points
 
-    def area(self):
+    def area(self) -> float:
         a = (self.points[0].x * self.points[1].y + self.points[1].x * self.points[2].y
              + self.points[2].x * self.points[0].y - self.points[0].y * self.points[1].x
              - self.points[1].y * self.points[2].x - self.points[2].y * self.points[0].x)
@@ -132,38 +134,38 @@ class Triangle:
 
         return self.points[0] + (r * (self.points[1] - self.points[0]) + s * (self.points[2] - self.points[0]))
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return "Triangle({points})".format(points=", ".join(map(repr, self.points)))
 
 
 class Rectangle:
-    def __init__(self, top, left, bottom, right):
+    def __init__(self, top: float, left: float, bottom: float, right: float) -> None:
         self.top = top
         self.left = left
         self.bottom = bottom
         self.right = right
 
     @staticmethod
-    def from_point(point: Point, side_length):
+    def from_point(point: Point, side_length: float) -> Rectangle:
         top = point.x + side_length / 2
         left = point.y - side_length / 2
         bottom = point.x - side_length / 2
         right = point.y + side_length / 2
         return Rectangle(top, left, bottom, right)
 
-    def point_in_rect(self, point: Point):
+    def point_in_rect(self, point: Point) -> bool:
         return self.bottom <= point.x <= self.top and self.left <= point.y <= self.right
 
-    def height(self):
+    def height(self) -> float:
         return self.top - self.bottom
 
-    def width(self):
+    def width(self) -> float:
         return self.right - self.left
 
     def center(self) -> Point:
         return Point(self.bottom + (self.height() / 2), self.left + (self.width() / 2))
 
-    def resize(self, percentage: float):
+    def resize(self, percentage: float) -> Rectangle:
         w = self.width()
         h = self.height()
         w *= percentage / 2
@@ -176,7 +178,7 @@ class Rectangle:
         y = self.left + random.random() * (self.right - self.left)
         return Point(x, y)
 
-    def random_distant_points(self, distance) -> Tuple[Point, Point]:
+    def random_distant_points(self, distance: float) -> Tuple[Point, Point]:
         # determine vertical/horizontal
         if self.width() > self.height():
             axis_y = self.width()
@@ -201,14 +203,14 @@ class Rectangle:
             if self.point_in_rect(p2):
                 return p1, p2
 
-    def __eq__(self, other):
+    def __eq__(self, other: Any) -> bool:
         return self.top == other.top and self.bottom == other.bottom \
             and self.left == other.left and self.right == other.right
 
-    def __ne__(self, other):
+    def __ne__(self, other: Any) -> bool:
         return not self == other
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return "Rectangle({t}, {l}, {b}, {r})".format(t=self.top, l=self.left, b=self.bottom, r=self.right)
 
 
@@ -218,7 +220,7 @@ class Polygon:
             points = []
         self.points = copy.copy(points)
 
-    def point_in_poly(self, point: Point):
+    def point_in_poly(self, point: Point) -> bool:
         """Checks if the given point is within the polygon.
 
         :param point: Point to test
@@ -236,10 +238,10 @@ class Polygon:
             if point.y > min(p1y, p2y):
                 if point.y <= max(p1y, p2y):
                     if point.x <= max(p1x, p2x):
-                        xints = 0
+                        xs = 0.0
                         if p1y != p2y:
-                            xints = (point.y - p1y) * (p2x - p1x) / (p2y - p1y) + p1x
-                        if p1x == p2x or point.x <= xints:
+                            xs = (point.y - p1y) * (p2x - p1x) / (p2y - p1y) + p1x
+                        if p1x == p2x or point.x <= xs:
                             inside = not inside
             p1x, p1y = p2x, p2y
 
@@ -269,7 +271,7 @@ class Polygon:
         return areas[i - 1][0].random_point()
 
     @staticmethod
-    def is_convex(a: Point, b: Point, c: Point):
+    def is_convex(a: Point, b: Point, c: Point) -> bool:
         # only convex if traversing anti-clockwise!
         crossp = (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x)
         if crossp >= 0:
@@ -277,8 +279,8 @@ class Polygon:
         return False
 
     @staticmethod
-    def in_triangle(a, b, c, p):
-        l_kup = [0, 0, 0]
+    def in_triangle(a: Point, b: Point, c: Point, p: Point) -> bool:
+        l_kup = [0.0, 0.0, 0.0]
         eps = 0.0000001
         # calculate barycentric coefficients for point p
         # eps is needed as error correction since for very small distances denom->0
@@ -293,7 +295,7 @@ class Polygon:
                 return False
         return True
 
-    def is_clockwise(self):
+    def is_clockwise(self) -> bool:
         poly_length = len(self.points)
         # initialize sum with last element
         sum_ = (self.points[0].x - self.points[poly_length - 1].x) * (self.points[0].y + self.points[poly_length - 1].y)
@@ -303,10 +305,10 @@ class Polygon:
         return sum_ > 0
 
     @staticmethod
-    def get_ear(poly):
+    def get_ear(poly) -> Optional[Tuple[Point, Point, Point]]:
         size = len(poly)
         if size < 3:
-            return []
+            return None
         if size == 3:
             tri = (poly[0], poly[1], poly[2])
             del poly[:]
@@ -324,14 +326,14 @@ class Polygon:
                     del poly[i % size]
                     return p1, p2, p3
         print('GetEar(): no ear found')
-        return []
+        return None
 
-    def triangulate(self):
+    def triangulate(self) -> List[Triangle]:
         tri = []
         plist = self.points[::-1] if self.is_clockwise() else self.points[:]
         while len(plist) >= 3:
             a = self.get_ear(plist)
-            if not a:
+            if a is None:
                 break
             tri.append(Triangle(a))
         return tri
@@ -343,5 +345,5 @@ class Polygon:
         left = min([x.y for x in self.points])
         return Rectangle(top, left, bot, right)
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return "Polygon([{points}])".format(points=", ".join(map(repr, self.points)))
