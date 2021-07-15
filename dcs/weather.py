@@ -79,9 +79,9 @@ class Weather:
         self.wind_at_8000 = Wind()
         self.enable_fog = False
         self.turbulence_at_ground = 0
-        self.season_temperature = 20
+        self.season_temperature = 20.0
         self.type_weather = 0
-        self.qnh = 760
+        self.qnh = 760.0
         self.cyclones = []
         self.name = "Summer, clean sky"
         self.fog_thickness = 0
