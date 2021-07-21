@@ -598,7 +598,7 @@ class AirDefence:
 
     class P_19_s_125_sr(unittype.VehicleType):
         id = "p-19 s-125 sr"
-        name = "SAM P19 \"Flat Face\" SR (SA-2/3)"
+        name = "SAM SA-2/3/5 P19 \"Flat Face\" SR "
         detection_range = 160000
         threat_range = 0
         air_weapon_dist = 0
@@ -617,6 +617,36 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
 
+    class NASAMS_Radar_MPQ64F1(unittype.VehicleType):
+        id = "NASAMS_Radar_MPQ64F1"
+        name = "SAM NASAMS SR MPQ64F1"
+        detection_range = 50000
+        threat_range = 0
+        air_weapon_dist = 0
+        eplrs = True
+
+    class NASAMS_Command_Post(unittype.VehicleType):
+        id = "NASAMS_Command_Post"
+        name = "SAM NASAMS C2"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+        eplrs = True
+
+    class NASAMS_LN_B(unittype.VehicleType):
+        id = "NASAMS_LN_B"
+        name = "SAM NASAMS LN AIM-120B"
+        detection_range = 0
+        threat_range = 15000
+        air_weapon_dist = 15000
+
+    class NASAMS_LN_C(unittype.VehicleType):
+        id = "NASAMS_LN_C"
+        name = "SAM NASAMS LN AIM-120C"
+        detection_range = 0
+        threat_range = 15000
+        air_weapon_dist = 15000
+
     class S_75M_Volhov(unittype.VehicleType):
         id = "S_75M_Volhov"
         name = "SAM SA-2 S-75 \"Guideline\" LN"
@@ -633,7 +663,7 @@ class AirDefence:
 
     class RLS_19J6(unittype.VehicleType):
         id = "RLS_19J6"
-        name = "SR 19J6"
+        name = "SAM SA-5 S-200 ST-68U \"Tin Shield\" SR"
         detection_range = 150000
         threat_range = 0
         air_weapon_dist = 0
@@ -1990,6 +2020,10 @@ vehicle_map = {
     "Coach a passenger": Carriage.Coach_a_passenger,
     "Coach a platform": Carriage.Coach_a_platform,
     "Scud_B": MissilesSS.Scud_B,
+    "NASAMS_Radar_MPQ64F1": AirDefence.NASAMS_Radar_MPQ64F1,
+    "NASAMS_Command_Post": AirDefence.NASAMS_Command_Post,
+    "NASAMS_LN_B": AirDefence.NASAMS_LN_B,
+    "NASAMS_LN_C": AirDefence.NASAMS_LN_C,
     "M4_Sherman": Armor.M4_Sherman,
     "M2A1_halftrack": Armor.M2A1_halftrack,
     "S_75M_Volhov": AirDefence.S_75M_Volhov,

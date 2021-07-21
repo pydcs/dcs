@@ -2,9 +2,9 @@
 
 
 class Weapons:
-    AB_250_2___144_x_SD_2__250kg_CBU_with_HE_submunitions = {"clsid": "{AB_250_2_SD_2}", "name": "AB 250-2 - 144 x SD-2, 250kg CBU with HE submunitions", "weight": 290}
-    AB_250_2___17_x_SD_10A__250kg_CBU_with_10kg_Frag_HE_submunitions = {"clsid": "{AB_250_2_SD_10A}", "name": "AB 250-2 - 17 x SD-10A, 250kg CBU with 10kg Frag/HE submunitions", "weight": 253}
-    AB_500_1___34_x_SD_10A__500kg_CBU_with_10kg_Frag_HE_submunitions = {"clsid": "{AB_500_1_SD_10A}", "name": "AB 500-1 - 34 x SD-10A, 500kg CBU with 10kg Frag/HE submunitions", "weight": 500}
+    AB_250_2___144_x_SD_2__250kg_CBU_with_HE_submunitions = {"clsid": "{AB_250_2_SD_2}", "name": "AB 250-2 - 144 x SD-2, 250kg CBU with HE submunitions", "weight": 280}
+    AB_250_2___17_x_SD_10A__250kg_CBU_with_10kg_Frag_HE_submunitions = {"clsid": "{AB_250_2_SD_10A}", "name": "AB 250-2 - 17 x SD-10A, 250kg CBU with 10kg Frag/HE submunitions", "weight": 220}
+    AB_500_1___34_x_SD_10A__500kg_CBU_with_10kg_Frag_HE_submunitions = {"clsid": "{AB_500_1_SD_10A}", "name": "AB 500-1 - 34 x SD-10A, 500kg CBU with 10kg Frag/HE submunitions", "weight": 470}
     ADEN_GUNPOD = {"clsid": "{ADEN_GUNPOD}", "name": "ADEN GUNPOD", "weight": 87}
     ADM_141A = {"clsid": "{BRU42_ADM141}", "name": "ADM_141A", "weight": 308}
     ADM_141A_ = {"clsid": "{BRU3242_ADM141}", "name": "ADM_141A", "weight": 365.38}
@@ -186,6 +186,7 @@ class Weapons:
     BRU_55_with_2_x_AGM_154C___JSOW_Unitary_BROACH = {"clsid": "{BRU55_2*AGM-154C}", "name": "BRU-55 with 2 x AGM-154C - JSOW Unitary BROACH", "weight": 1055.5}
     BRU_55_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb = {"clsid": "{BRU55_2*GBU-38}", "name": "BRU-55 with 2 x GBU-38 - JDAM, 500lb GPS Guided Bomb", "weight": 573}
     BRU_57_with_2_x_AGM_154A___JSOW_CEB__CBU_type_ = {"clsid": "{BRU57_2*AGM-154A}", "name": "BRU-57 with 2 x AGM-154A - JSOW CEB (CBU-type)", "weight": 1082}
+    BRU_57_with_2_x_AGM_154B___JSOW_Anti_Armour = {"clsid": "{BRU57_2*AGM-154B}", "name": "BRU-57 with 2 x AGM-154B - JSOW Anti-Armour", "weight": 1082}
     BRU_57_with_2_x_CBU_103___202_x_CEM__CBU_with_WCMD = {"clsid": "{BRU57_2*CBU-103}", "name": "BRU-57 with 2 x CBU-103 - 202 x CEM, CBU with WCMD", "weight": 951}
     BRU_57_with_2_x_CBU_105___10_x_SFW__CBU_with_WCMD = {"clsid": "{BRU57_2*CBU-105}", "name": "BRU-57 with 2 x CBU-105 - 10 x SFW, CBU with WCMD", "weight": 925}
     BRU_57_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb = {"clsid": "{BRU57_2*GBU-38}", "name": "BRU-57 with 2 x GBU-38 - JDAM, 500lb GPS Guided Bomb", "weight": 573}
@@ -392,7 +393,7 @@ class Weapons:
     Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr = {"clsid": "{D8F2C90B-887B-4B9E-9FE2-996BC9E9AF03}", "name": "Kh-31P (AS-17 Krypton) - 600kg, ARM, IN & Pas Rdr", "weight": 690}
     Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr_ = {"clsid": "{D8F2C90B-887B-4B9E-9FE2-996BC9E9AF0A}", "name": "Kh-31P (AS-17 Krypton) - 600kg, ARM, IN & Pas Rdr", "weight": 690}
     Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr__ = {"clsid": "{X-31P}", "name": "Kh-31P (AS-17 Krypton) - 600kg, ARM, IN & Pas Rdr", "weight": 690}
-    Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr = {"clsid": "{2234F529-1D57-4496-8BB0-0150F9BDBBD2}", "name": "Kh-35 (AS-20 Kayak) - 520kg, AShM, IN & Act Rdr", "weight": 480}
+    Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr = {"clsid": "{2234F529-1D57-4496-8BB0-0150F9BDBBD2}", "name": "Kh-35 (AS-20 Kayak) - 520kg, AShM, IN & Act Rdr", "weight": 520}
     Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr_ = {"clsid": "{2234F529-1D57-4496-8BB0-0150F9BDBBD3}", "name": "Kh-35 (AS-20 Kayak) - 520kg, AShM, IN & Act Rdr", "weight": 570}
     Kh_41__SS_N_22_Sunburn____4500kg__AShM__IN__Act_Rdr = {"clsid": "{3F26D9C5-5CC3-4E42-BC79-82FAA54E9F26}", "name": "Kh-41 (SS-N-22-Sunburn) - 4500kg, AShM, IN & Act Rdr", "weight": 4500}
     Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr = {"clsid": "{FE382A68-8620-4AC0-BDF5-709BFE3977D7}", "name": "Kh-58U (AS-11 Kilter) - 640kg, ARM, IN & Pas Rdr", "weight": 730}
@@ -556,8 +557,8 @@ class Weapons:
     M134_SIDE_L = {"clsid": "M134_SIDE_L", "name": "M134 - 6 x 7.62mm MiniGun left door", "weight": 270.4}
     M134_SIDE_R = {"clsid": "M134_SIDE_R", "name": "M134 - 6 x 7.62mm MiniGun right door", "weight": 270.4}
     M2000_Fuel_tank = {"clsid": "{414DA830-B61A-4F9E-B71B-C2F6832E1D7A}", "name": "M2000 Fuel tank", "weight": 1050}
-    M260_HYDRA = {"clsid": "M260_HYDRA", "name": "M260 - 7 2.75' rockets MK156", "weight": 112}
-    M260_HYDRA_WP = {"clsid": "M260_HYDRA_WP", "name": "M260 - 7 2.75' rockets MK156 WP", "weight": 112}
+    M260_HYDRA = {"clsid": "M260_HYDRA", "name": "M260 pod - 7 x 2.75\" Hydra, UnGd Rkts Mk5, HEAT", "weight": 112}
+    M260_HYDRA_WP = {"clsid": "M260_HYDRA_WP", "name": "M260 pod - 7 x 2.75\" Hydra, UnGd Rkts M156, Wht Phos", "weight": 112}
     M261_MK151 = {"clsid": "M261_MK151", "name": "M261 pod - 19 x 2.75\" Hydra, UnGd Rkts M151, HE", "weight": 234}
     M261_MK156 = {"clsid": "M261_MK156", "name": "M261 pod - 19 x 2.75\" Hydra, UnGd Rkts M156, Wht Phos", "weight": 234}
     M60_SIDE_L = {"clsid": "M60_SIDE_L", "name": "M60 - 7.62mm MG left door", "weight": 141.4}
@@ -645,23 +646,13 @@ class Weapons:
     Mk_81___250lb_GP_Bomb_LD = {"clsid": "{90321C8E-7ED1-47D4-A160-E074D5ABD902}", "name": "Mk-81 - 250lb GP Bomb LD", "weight": 118}
     Mk_82 = {"clsid": "{BRU-32 MK-82}", "name": "Mk-82", "weight": 298.38}
     Mk_82AIR = {"clsid": "{BRU-32 MK-82AIR}", "name": "Mk-82AIR", "weight": 298.38}
-    Mk_82B = {"clsid": "{Mk_82B}", "name": "Mk-82B", "weight": 228}
-    Mk_82BT = {"clsid": "{Mk_82BT}", "name": "Mk-82BT", "weight": 228}
-    Mk_82P = {"clsid": "{Mk_82P}", "name": "Mk-82P", "weight": 228}
-    Mk_82PT = {"clsid": "{Mk_82PT}", "name": "Mk-82PT", "weight": 228}
-    Mk_82SB = {"clsid": "{Mk_82SB}", "name": "Mk-82SB", "weight": 228}
-    Mk_82SP = {"clsid": "{Mk_82SP}", "name": "Mk-82SP", "weight": 228}
-    Mk_82YT = {"clsid": "{Mk_82YT}", "name": "Mk-82YT", "weight": 228}
     Mk_82Y___500lb_GP_Chute_Retarded_HD = {"clsid": "{Mk_82Y}", "name": "Mk-82Y - 500lb GP Chute Retarded HD", "weight": 232}
     Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = {"clsid": "{Mk82AIR}", "name": "Mk-82 AIR Ballute - 500lb GP Bomb HD", "weight": 242}
     Mk_82_SnakeEye = {"clsid": "{BRU-32 MK-82SE}", "name": "Mk-82 SnakeEye", "weight": 298.38}
     Mk_82_Snakeye___500lb_GP_Bomb_HD = {"clsid": "{Mk82SNAKEYE}", "name": "Mk-82 Snakeye - 500lb GP Bomb HD", "weight": 249.5}
     Mk_82___500lb_GP_Bomb_LD = {"clsid": "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}", "name": "Mk-82 - 500lb GP Bomb LD", "weight": 228}
     Mk_83 = {"clsid": "{BRU-32 MK-83}", "name": "Mk-83", "weight": 504.38}
-    Mk_83BT = {"clsid": "{Mk_83BT}", "name": "Mk-83BT", "weight": 454}
     Mk_83CT = {"clsid": "{Mk_83CT}", "name": "Mk-83CT", "weight": 454}
-    Mk_83P = {"clsid": "{Mk_83P}", "name": "Mk-83P", "weight": 454}
-    Mk_83PT = {"clsid": "{Mk_83PT}", "name": "Mk-83PT", "weight": 454}
     Mk_83_ = {"clsid": "{BRU42_MK83 RS}", "name": "Mk-83", "weight": 575}
     Mk_83__ = {"clsid": "{BRU3242_MK83 RS}", "name": "Mk-83", "weight": 632.38}
     Mk_83___ = {"clsid": "{PHXBRU3242_MK83 RS}", "name": "Mk-83", "weight": 632.38}
@@ -670,8 +661,6 @@ class Weapons:
     Mk_83_____ = {"clsid": "{BRU3242_MK83 LS}", "name": "Mk-83", "weight": 632.38}
     Mk_83______ = {"clsid": "{PHXBRU3242_MK83 LS}", "name": "Mk-83", "weight": 632.38}
     Mk_84 = {"clsid": "{BRU-32 MK-84}", "name": "Mk-84", "weight": 951.38}
-    Mk_84P = {"clsid": "{Mk_84P}", "name": "Mk-84P", "weight": 908}
-    Mk_84T = {"clsid": "{Mk_84T}", "name": "Mk-84T", "weight": 908}
     Mk_84_18 = {"clsid": "{F092B80C-BB54-477E-9408-66DEEF740008}", "name": "Mk 84*18", "weight": 16092}
     Mk_84_28 = {"clsid": "{D3ABF208-FA56-4D56-BB31-E0D931D57AE3}", "name": "Mk 84*28", "weight": 25032}
     Mk_84___2000lb_GP_Bomb_LD = {"clsid": "{AB8B8299-F1CC-4359-89B5-2172E0CF4A5A}", "name": "Mk-84 - 2000lb GP Bomb LD", "weight": 894}
@@ -1028,7 +1017,7 @@ class Weapons:
     _8_x_Kh_65__AS_15B_Kent____1250kg__ASM__IN__MCC = {"clsid": "{CD9417DF-455F-4176-A5A2-8C58D61AA00B}", "name": "8 x Kh-65 (AS-15B Kent) - 1250kg, ASM, IN & MCC", "weight": 10000}
     _9M111 = {"clsid": "_9M111", "name": "AT-4 SPIGOT", "weight": None}
     _9M114_Shturm_V_2_Rack = {"clsid": "{9M114 Shturm-V-2 Rack}", "name": "9M114 Shturm-V-2 Rack", "weight": 13}
-    _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = {"clsid": "{B919B0F4-7C25-455E-9A02-CEA51DB895E3}", "name": "9M114 Shturm-V-2 (AT-6 Spiral) - ATGM, SACLOS", "weight": 230}
+    _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = {"clsid": "{B919B0F4-7C25-455E-9A02-CEA51DB895E3}", "name": "9M114 Shturm-V-2 (AT-6 Spiral) - ATGM, SACLOS", "weight": 105}
     _9M114_Shturm_V_8__AT_6_Spiral____ATGM__SACLOS = {"clsid": "{57232979-8B0F-4db7-8D9A-55197E06B0F5}", "name": "9M114 Shturm-V-8 (AT-6 Spiral) - ATGM, SACLOS", "weight": 300}
     _9M117 = {"clsid": "_9M117", "name": "AT-10 SABBER", "weight": None}
     _9M133 = {"clsid": "9M133", "name": "AT-14 KORNET", "weight": None}
@@ -1227,6 +1216,7 @@ weapon_ids = {
     "{BRU55_2*AGM-154C}": Weapons.BRU_55_with_2_x_AGM_154C___JSOW_Unitary_BROACH,
     "{BRU55_2*GBU-38}": Weapons.BRU_55_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb,
     "{BRU57_2*AGM-154A}": Weapons.BRU_57_with_2_x_AGM_154A___JSOW_CEB__CBU_type_,
+    "{BRU57_2*AGM-154B}": Weapons.BRU_57_with_2_x_AGM_154B___JSOW_Anti_Armour,
     "{BRU57_2*CBU-103}": Weapons.BRU_57_with_2_x_CBU_103___202_x_CEM__CBU_with_WCMD,
     "{BRU57_2*CBU-105}": Weapons.BRU_57_with_2_x_CBU_105___10_x_SFW__CBU_with_WCMD,
     "{BRU57_2*GBU-38}": Weapons.BRU_57_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb,
@@ -1686,23 +1676,13 @@ weapon_ids = {
     "{90321C8E-7ED1-47D4-A160-E074D5ABD902}": Weapons.Mk_81___250lb_GP_Bomb_LD,
     "{BRU-32 MK-82}": Weapons.Mk_82,
     "{BRU-32 MK-82AIR}": Weapons.Mk_82AIR,
-    "{Mk_82B}": Weapons.Mk_82B,
-    "{Mk_82BT}": Weapons.Mk_82BT,
-    "{Mk_82P}": Weapons.Mk_82P,
-    "{Mk_82PT}": Weapons.Mk_82PT,
-    "{Mk_82SB}": Weapons.Mk_82SB,
-    "{Mk_82SP}": Weapons.Mk_82SP,
-    "{Mk_82YT}": Weapons.Mk_82YT,
     "{Mk_82Y}": Weapons.Mk_82Y___500lb_GP_Chute_Retarded_HD,
     "{Mk82AIR}": Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD,
     "{BRU-32 MK-82SE}": Weapons.Mk_82_SnakeEye,
     "{Mk82SNAKEYE}": Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD,
     "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}": Weapons.Mk_82___500lb_GP_Bomb_LD,
     "{BRU-32 MK-83}": Weapons.Mk_83,
-    "{Mk_83BT}": Weapons.Mk_83BT,
     "{Mk_83CT}": Weapons.Mk_83CT,
-    "{Mk_83P}": Weapons.Mk_83P,
-    "{Mk_83PT}": Weapons.Mk_83PT,
     "{BRU42_MK83 RS}": Weapons.Mk_83_,
     "{BRU3242_MK83 RS}": Weapons.Mk_83__,
     "{PHXBRU3242_MK83 RS}": Weapons.Mk_83___,
@@ -1711,8 +1691,6 @@ weapon_ids = {
     "{BRU3242_MK83 LS}": Weapons.Mk_83_____,
     "{PHXBRU3242_MK83 LS}": Weapons.Mk_83______,
     "{BRU-32 MK-84}": Weapons.Mk_84,
-    "{Mk_84P}": Weapons.Mk_84P,
-    "{Mk_84T}": Weapons.Mk_84T,
     "{F092B80C-BB54-477E-9408-66DEEF740008}": Weapons.Mk_84_18,
     "{D3ABF208-FA56-4D56-BB31-E0D931D57AE3}": Weapons.Mk_84_28,
     "{AB8B8299-F1CC-4359-89B5-2172E0CF4A5A}": Weapons.Mk_84___2000lb_GP_Bomb_LD,

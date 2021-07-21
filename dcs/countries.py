@@ -840,6 +840,10 @@ class USA(Country):
             Rapier_fsa_blindfire_radar = vehicles.AirDefence.Rapier_fsa_blindfire_radar
             M45_Quadmount = vehicles.AirDefence.M45_Quadmount
             M1_37mm = vehicles.AirDefence.M1_37mm
+            NASAMS_Command_Post = vehicles.AirDefence.NASAMS_Command_Post
+            NASAMS_Radar_MPQ64F1 = vehicles.AirDefence.NASAMS_Radar_MPQ64F1
+            NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
+            NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             QF_37_AA = vehicles.AirDefence.QF_37_AA
 
         class Fortification:
@@ -901,10 +905,6 @@ class USA(Country):
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
             Boxcartrinity = vehicles.Carriage.Boxcartrinity
             Tankcartrinity = vehicles.Carriage.Tankcartrinity
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
@@ -2718,6 +2718,10 @@ class USAFAggressors(Country):
             Patriot_EPP = vehicles.AirDefence.Patriot_EPP
             Patriot_cp = vehicles.AirDefence.Patriot_cp
             Patriot_str = vehicles.AirDefence.Patriot_str
+            NASAMS_Command_Post = vehicles.AirDefence.NASAMS_Command_Post
+            NASAMS_Radar_MPQ64F1 = vehicles.AirDefence.NASAMS_Radar_MPQ64F1
+            NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
+            NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             Gepard = vehicles.AirDefence.Gepard
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
@@ -2876,10 +2880,6 @@ class USAFAggressors(Country):
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
             DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
             German_covered_wagon_G10 = vehicles.Carriage.German_covered_wagon_G10
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
@@ -3640,6 +3640,10 @@ class Spain(Country):
             Patriot_EPP = vehicles.AirDefence.Patriot_EPP
             Patriot_cp = vehicles.AirDefence.Patriot_cp
             Patriot_str = vehicles.AirDefence.Patriot_str
+            NASAMS_Command_Post = vehicles.AirDefence.NASAMS_Command_Post
+            NASAMS_Radar_MPQ64F1 = vehicles.AirDefence.NASAMS_Radar_MPQ64F1
+            NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
+            NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -3675,10 +3679,6 @@ class Spain(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -3960,6 +3960,10 @@ class TheNetherlands(Country):
             Rapier_fsa_optical_tracker_unit = vehicles.AirDefence.Rapier_fsa_optical_tracker_unit
             Rapier_fsa_blindfire_radar = vehicles.AirDefence.Rapier_fsa_blindfire_radar
             Gepard = vehicles.AirDefence.Gepard
+            NASAMS_Command_Post = vehicles.AirDefence.NASAMS_Command_Post
+            NASAMS_Radar_MPQ64F1 = vehicles.AirDefence.NASAMS_Radar_MPQ64F1
+            NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
+            NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             QF_37_AA = vehicles.AirDefence.QF_37_AA
             M45_Quadmount = vehicles.AirDefence.M45_Quadmount
             M1_37mm = vehicles.AirDefence.M1_37mm
@@ -4016,10 +4020,6 @@ class TheNetherlands(Country):
         class Carriage:
             German_covered_wagon_G10 = vehicles.Carriage.German_covered_wagon_G10
             DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
@@ -4609,6 +4609,10 @@ class Norway(Country):
             Soldier_stinger = vehicles.AirDefence.Soldier_stinger
             Stinger_comm = vehicles.AirDefence.Stinger_comm
             Bofors40 = vehicles.AirDefence.Bofors40
+            NASAMS_Command_Post = vehicles.AirDefence.NASAMS_Command_Post
+            NASAMS_Radar_MPQ64F1 = vehicles.AirDefence.NASAMS_Radar_MPQ64F1
+            NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
+            NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -4641,10 +4645,6 @@ class Norway(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -5757,6 +5757,7 @@ class Georgia(Country):
         Dry_cargo_ship_1 = ships.Dry_cargo_ship_1
         Dry_cargo_ship_2 = ships.Dry_cargo_ship_2
         ZWEZDNY = ships.ZWEZDNY
+        La_Combattante_II = ships.La_Combattante_II
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -9617,6 +9618,10 @@ class Finland(Country):
             Soldier_stinger = vehicles.AirDefence.Soldier_stinger
             Stinger_comm = vehicles.AirDefence.Stinger_comm
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
+            NASAMS_Command_Post = vehicles.AirDefence.NASAMS_Command_Post
+            NASAMS_Radar_MPQ64F1 = vehicles.AirDefence.NASAMS_Radar_MPQ64F1
+            NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
+            NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             Flak18 = vehicles.AirDefence.Flak18
             Flak36 = vehicles.AirDefence.Flak36
             Flak38 = vehicles.AirDefence.Flak38
@@ -9686,10 +9691,6 @@ class Finland(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -18893,6 +18894,10 @@ class Indonesia(Country):
             Rapier_fsa_optical_tracker_unit = vehicles.AirDefence.Rapier_fsa_optical_tracker_unit
             Rapier_fsa_blindfire_radar = vehicles.AirDefence.Rapier_fsa_blindfire_radar
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
+            NASAMS_Command_Post = vehicles.AirDefence.NASAMS_Command_Post
+            NASAMS_Radar_MPQ64F1 = vehicles.AirDefence.NASAMS_Radar_MPQ64F1
+            NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
+            NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -18926,10 +18931,6 @@ class Indonesia(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -19740,6 +19741,10 @@ class Chile(Country):
             M1097_Avenger = vehicles.AirDefence.M1097_Avenger
             M48_Chaparral = vehicles.AirDefence.M48_Chaparral
             Gepard = vehicles.AirDefence.Gepard
+            NASAMS_Command_Post = vehicles.AirDefence.NASAMS_Command_Post
+            NASAMS_Radar_MPQ64F1 = vehicles.AirDefence.NASAMS_Radar_MPQ64F1
+            NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
+            NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -19773,10 +19778,6 @@ class Chile(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -22748,6 +22749,10 @@ class Oman(Country):
             Rapier_fsa_launcher = vehicles.AirDefence.Rapier_fsa_launcher
             Rapier_fsa_optical_tracker_unit = vehicles.AirDefence.Rapier_fsa_optical_tracker_unit
             Rapier_fsa_blindfire_radar = vehicles.AirDefence.Rapier_fsa_blindfire_radar
+            NASAMS_Command_Post = vehicles.AirDefence.NASAMS_Command_Post
+            NASAMS_Radar_MPQ64F1 = vehicles.AirDefence.NASAMS_Radar_MPQ64F1
+            NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
+            NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -22784,10 +22789,6 @@ class Oman(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -24955,6 +24956,10 @@ class CombinedJointTaskForcesBlue(Country):
             Patriot_EPP = vehicles.AirDefence.Patriot_EPP
             Patriot_cp = vehicles.AirDefence.Patriot_cp
             Patriot_str = vehicles.AirDefence.Patriot_str
+            NASAMS_Command_Post = vehicles.AirDefence.NASAMS_Command_Post
+            NASAMS_Radar_MPQ64F1 = vehicles.AirDefence.NASAMS_Radar_MPQ64F1
+            NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
+            NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             Gepard = vehicles.AirDefence.Gepard
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
@@ -25113,10 +25118,6 @@ class CombinedJointTaskForcesBlue(Country):
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
             DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
             German_covered_wagon_G10 = vehicles.Carriage.German_covered_wagon_G10
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
@@ -25653,6 +25654,10 @@ class CombinedJointTaskForcesRed(Country):
             Patriot_EPP = vehicles.AirDefence.Patriot_EPP
             Patriot_cp = vehicles.AirDefence.Patriot_cp
             Patriot_str = vehicles.AirDefence.Patriot_str
+            NASAMS_Command_Post = vehicles.AirDefence.NASAMS_Command_Post
+            NASAMS_Radar_MPQ64F1 = vehicles.AirDefence.NASAMS_Radar_MPQ64F1
+            NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
+            NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             Gepard = vehicles.AirDefence.Gepard
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
@@ -25811,10 +25816,6 @@ class CombinedJointTaskForcesRed(Country):
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
             DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
             German_covered_wagon_G10 = vehicles.Carriage.German_covered_wagon_G10
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
@@ -26351,6 +26352,10 @@ class UnitedNationsPeacekeepers(Country):
             Patriot_EPP = vehicles.AirDefence.Patriot_EPP
             Patriot_cp = vehicles.AirDefence.Patriot_cp
             Patriot_str = vehicles.AirDefence.Patriot_str
+            NASAMS_Command_Post = vehicles.AirDefence.NASAMS_Command_Post
+            NASAMS_Radar_MPQ64F1 = vehicles.AirDefence.NASAMS_Radar_MPQ64F1
+            NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
+            NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             Gepard = vehicles.AirDefence.Gepard
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
@@ -26509,10 +26514,6 @@ class UnitedNationsPeacekeepers(Country):
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
             DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
             German_covered_wagon_G10 = vehicles.Carriage.German_covered_wagon_G10
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon

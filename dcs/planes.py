@@ -3826,6 +3826,9 @@ class Su_24M(PlaneType):
         class Ukraine(Enum):
             Ukrainian_Air_Force_Standard = "Ukrainian Air Force Standard"
 
+        class Syria(Enum):
+            Syrian_Air_Force = "Syrian Air Force"
+
         class Kazakhstan(Enum):
             Kazakhstan_Air_Force = "Kazakhstan Air Force"
 
@@ -14752,6 +14755,7 @@ class AV8BNA(PlaneType):
         BDU_33___25lb_Practice_Bomb_LD = (2, Weapons.BDU_33___25lb_Practice_Bomb_LD)
         BRU_42_3_BDU_33 = (2, Weapons.BRU_42_3_BDU_33)
         LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = (2, Weapons.LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_)
+        LAU_117_AGM_65L = (2, Weapons.LAU_117_AGM_65L)
         LAU_117_AGM_65F = (2, Weapons.LAU_117_AGM_65F)
         LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (2, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
         LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
@@ -14798,6 +14802,7 @@ class AV8BNA(PlaneType):
         BDU_33___25lb_Practice_Bomb_LD = (3, Weapons.BDU_33___25lb_Practice_Bomb_LD)
         BRU_42_3_BDU_33 = (3, Weapons.BRU_42_3_BDU_33)
         LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = (3, Weapons.LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_)
+        LAU_117_AGM_65L = (3, Weapons.LAU_117_AGM_65L)
         LAU_117_AGM_65F = (3, Weapons.LAU_117_AGM_65F)
         LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (3, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
         LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
@@ -14844,6 +14849,7 @@ class AV8BNA(PlaneType):
         BDU_33___25lb_Practice_Bomb_LD = (6, Weapons.BDU_33___25lb_Practice_Bomb_LD)
         BRU_42_3_BDU_33 = (6, Weapons.BRU_42_3_BDU_33)
         LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = (6, Weapons.LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_)
+        LAU_117_AGM_65L = (6, Weapons.LAU_117_AGM_65L)
         LAU_117_AGM_65F = (6, Weapons.LAU_117_AGM_65F)
         LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (6, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
         LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
@@ -14890,6 +14896,7 @@ class AV8BNA(PlaneType):
         BDU_33___25lb_Practice_Bomb_LD = (7, Weapons.BDU_33___25lb_Practice_Bomb_LD)
         BRU_42_3_BDU_33 = (7, Weapons.BRU_42_3_BDU_33)
         LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = (7, Weapons.LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_)
+        LAU_117_AGM_65L = (7, Weapons.LAU_117_AGM_65L)
         LAU_117_AGM_65F = (7, Weapons.LAU_117_AGM_65F)
         LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (7, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
         LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
@@ -16515,7 +16522,6 @@ class JF_17(PlaneType):
         DIS_LAU68_MK5_DUAL_GDJ_II19_L = (2, Weapons.DIS_LAU68_MK5_DUAL_GDJ_II19_L)
         DIS_WMD7 = (2, Weapons.DIS_WMD7)
         DIS_AKG_DLPOD = (2, Weapons.DIS_AKG_DLPOD)
-        DIS_SPJ_POD = (2, Weapons.DIS_SPJ_POD)
         DIS_SMOKE_GENERATOR_R = (2, Weapons.DIS_SMOKE_GENERATOR_R)
         DIS_SMOKE_GENERATOR_G = (2, Weapons.DIS_SMOKE_GENERATOR_G)
         DIS_SMOKE_GENERATOR_B = (2, Weapons.DIS_SMOKE_GENERATOR_B)
@@ -16536,6 +16542,7 @@ class JF_17(PlaneType):
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (3, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         Mk_84___2000lb_GP_Bomb_LD = (3, Weapons.Mk_84___2000lb_GP_Bomb_LD)
+        DIS_MK_20 = (3, Weapons.DIS_MK_20)
         DIS_GBU_10 = (3, Weapons.DIS_GBU_10)
         DIS_GBU_16 = (3, Weapons.DIS_GBU_16)
         DIS_GBU_12 = (3, Weapons.DIS_GBU_12)
@@ -16570,6 +16577,7 @@ class JF_17(PlaneType):
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (5, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         Mk_84___2000lb_GP_Bomb_LD = (5, Weapons.Mk_84___2000lb_GP_Bomb_LD)
+        DIS_MK_20 = (5, Weapons.DIS_MK_20)
         DIS_GBU_10 = (5, Weapons.DIS_GBU_10)
         DIS_GBU_16 = (5, Weapons.DIS_GBU_16)
         DIS_GBU_12 = (5, Weapons.DIS_GBU_12)
@@ -16600,7 +16608,6 @@ class JF_17(PlaneType):
         DIS_LAU68_MK5_DUAL_GDJ_II19_R = (6, Weapons.DIS_LAU68_MK5_DUAL_GDJ_II19_R)
         DIS_WMD7 = (6, Weapons.DIS_WMD7)
         DIS_AKG_DLPOD = (6, Weapons.DIS_AKG_DLPOD)
-        DIS_SPJ_POD = (6, Weapons.DIS_SPJ_POD)
         DIS_SMOKE_GENERATOR_R = (6, Weapons.DIS_SMOKE_GENERATOR_R)
         DIS_SMOKE_GENERATOR_G = (6, Weapons.DIS_SMOKE_GENERATOR_G)
         DIS_SMOKE_GENERATOR_B = (6, Weapons.DIS_SMOKE_GENERATOR_B)
@@ -17135,7 +17142,13 @@ class F_16C_50(PlaneType):
             ERAF = "ERAF"
 
         class USAFAggressors(Enum):
+            _18th_AGRS_Arctic_Splinter = "18th AGRS Arctic Splinter"
+            _18th_AGRS_BDU_Splinter = "18th AGRS BDU Splinter"
+            _18th_AGRS_Splinter = "18th AGRS Splinter"
             ERAF = "ERAF"
+            USAF_64th_Aggressor_SQN___Shark = "USAF 64th Aggressor SQN - Shark"
+            USAF_64th_Aggressor_SQN_Splinter = "USAF 64th Aggressor SQN-Splinter"
+            _64th_Aggressor_Squadron_Ghost = "64th_Aggressor_Squadron_Ghost"
 
         class Brazil(Enum):
             ERAF = "ERAF"
@@ -17220,6 +17233,8 @@ class F_16C_50(PlaneType):
         GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (3, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
         GBU_38___JDAM__500lb_GPS_Guided_Bomb = (3, Weapons.GBU_38___JDAM__500lb_GPS_Guided_Bomb)
         BRU_57_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb = (3, Weapons.BRU_57_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb)
+        AGM_154A___JSOW_CEB__CBU_type_ = (3, Weapons.AGM_154A___JSOW_CEB__CBU_type_)
+        BRU_57_with_2_x_AGM_154A___JSOW_CEB__CBU_type_ = (3, Weapons.BRU_57_with_2_x_AGM_154A___JSOW_CEB__CBU_type_)
         MXU_648_TP = (3, Weapons.MXU_648_TP)
 #ERRR <CLEAN>
         TER_9A_with_2_x_Mk_82___500lb_GP_Bomb_LD = (3, Weapons.TER_9A_with_2_x_Mk_82___500lb_GP_Bomb_LD)
@@ -17334,6 +17349,8 @@ class F_16C_50(PlaneType):
         GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (7, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
         GBU_38___JDAM__500lb_GPS_Guided_Bomb = (7, Weapons.GBU_38___JDAM__500lb_GPS_Guided_Bomb)
         BRU_57_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb = (7, Weapons.BRU_57_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb)
+        AGM_154A___JSOW_CEB__CBU_type_ = (7, Weapons.AGM_154A___JSOW_CEB__CBU_type_)
+        BRU_57_with_2_x_AGM_154A___JSOW_CEB__CBU_type_ = (7, Weapons.BRU_57_with_2_x_AGM_154A___JSOW_CEB__CBU_type_)
         MXU_648_TP = (7, Weapons.MXU_648_TP)
 #ERRR <CLEAN>
         TER_9A_with_2_x_Mk_82___500lb_GP_Bomb_LD_ = (7, Weapons.TER_9A_with_2_x_Mk_82___500lb_GP_Bomb_LD_)
@@ -21283,6 +21300,7 @@ class F_14A_135_GR(PlaneType):
 
         class USSR(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21291,6 +21309,7 @@ class F_14A_135_GR(PlaneType):
 
         class Georgia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21299,6 +21318,7 @@ class F_14A_135_GR(PlaneType):
 
         class Venezuela(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21307,6 +21327,7 @@ class F_14A_135_GR(PlaneType):
 
         class Australia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21315,6 +21336,7 @@ class F_14A_135_GR(PlaneType):
 
         class Israel(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21323,6 +21345,7 @@ class F_14A_135_GR(PlaneType):
 
         class Combined_Joint_Task_Forces_Blue(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21331,6 +21354,7 @@ class F_14A_135_GR(PlaneType):
 
         class Sudan(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21339,6 +21363,7 @@ class F_14A_135_GR(PlaneType):
 
         class Norway(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21347,6 +21372,7 @@ class F_14A_135_GR(PlaneType):
 
         class Romania(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21355,6 +21381,7 @@ class F_14A_135_GR(PlaneType):
 
         class Iran(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21363,6 +21390,7 @@ class F_14A_135_GR(PlaneType):
 
         class Ukraine(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21371,6 +21399,7 @@ class F_14A_135_GR(PlaneType):
 
         class Libya(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21379,6 +21408,7 @@ class F_14A_135_GR(PlaneType):
 
         class Belgium(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21387,6 +21417,7 @@ class F_14A_135_GR(PlaneType):
 
         class Slovakia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21395,6 +21426,7 @@ class F_14A_135_GR(PlaneType):
 
         class Greece(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21403,6 +21435,7 @@ class F_14A_135_GR(PlaneType):
 
         class UK(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21411,6 +21444,7 @@ class F_14A_135_GR(PlaneType):
 
         class Third_Reich(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21419,6 +21453,7 @@ class F_14A_135_GR(PlaneType):
 
         class Hungary(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21427,6 +21462,7 @@ class F_14A_135_GR(PlaneType):
 
         class Abkhazia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21435,6 +21471,7 @@ class F_14A_135_GR(PlaneType):
 
         class Morocco(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21443,6 +21480,7 @@ class F_14A_135_GR(PlaneType):
 
         class United_Nations_Peacekeepers(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21451,6 +21489,7 @@ class F_14A_135_GR(PlaneType):
 
         class Switzerland(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21459,6 +21498,7 @@ class F_14A_135_GR(PlaneType):
 
         class SouthOssetia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21467,6 +21507,7 @@ class F_14A_135_GR(PlaneType):
 
         class Vietnam(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21475,6 +21516,7 @@ class F_14A_135_GR(PlaneType):
 
         class China(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21483,6 +21525,7 @@ class F_14A_135_GR(PlaneType):
 
         class Yemen(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21491,6 +21534,7 @@ class F_14A_135_GR(PlaneType):
 
         class Kuwait(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21499,6 +21543,7 @@ class F_14A_135_GR(PlaneType):
 
         class Serbia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21507,6 +21552,7 @@ class F_14A_135_GR(PlaneType):
 
         class Oman(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21515,6 +21561,7 @@ class F_14A_135_GR(PlaneType):
 
         class India(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21523,6 +21570,7 @@ class F_14A_135_GR(PlaneType):
 
         class Egypt(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21531,6 +21579,7 @@ class F_14A_135_GR(PlaneType):
 
         class TheNetherlands(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21539,6 +21588,7 @@ class F_14A_135_GR(PlaneType):
 
         class Poland(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21547,6 +21597,7 @@ class F_14A_135_GR(PlaneType):
 
         class Syria(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21555,6 +21606,7 @@ class F_14A_135_GR(PlaneType):
 
         class Finland(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21563,6 +21615,7 @@ class F_14A_135_GR(PlaneType):
 
         class Kazakhstan(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21571,6 +21624,7 @@ class F_14A_135_GR(PlaneType):
 
         class Denmark(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21579,6 +21633,7 @@ class F_14A_135_GR(PlaneType):
 
         class Sweden(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21587,6 +21642,7 @@ class F_14A_135_GR(PlaneType):
 
         class Croatia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21595,6 +21651,7 @@ class F_14A_135_GR(PlaneType):
 
         class CzechRepublic(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21603,6 +21660,7 @@ class F_14A_135_GR(PlaneType):
 
         class GDR(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21611,6 +21669,7 @@ class F_14A_135_GR(PlaneType):
 
         class Yugoslavia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21619,6 +21678,7 @@ class F_14A_135_GR(PlaneType):
 
         class Bulgaria(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21627,6 +21687,7 @@ class F_14A_135_GR(PlaneType):
 
         class SouthKorea(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21635,6 +21696,7 @@ class F_14A_135_GR(PlaneType):
 
         class Tunisia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21643,6 +21705,7 @@ class F_14A_135_GR(PlaneType):
 
         class Combined_Joint_Task_Forces_Red(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21651,6 +21714,7 @@ class F_14A_135_GR(PlaneType):
 
         class Lebanon(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21659,6 +21723,7 @@ class F_14A_135_GR(PlaneType):
 
         class Portugal(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21667,6 +21732,7 @@ class F_14A_135_GR(PlaneType):
 
         class Cuba(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21675,6 +21741,7 @@ class F_14A_135_GR(PlaneType):
 
         class Insurgents(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21683,6 +21750,7 @@ class F_14A_135_GR(PlaneType):
 
         class SaudiArabia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21691,6 +21759,7 @@ class F_14A_135_GR(PlaneType):
 
         class France(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21699,6 +21768,7 @@ class F_14A_135_GR(PlaneType):
 
         class USA(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21708,6 +21778,7 @@ class F_14A_135_GR(PlaneType):
 
         class Honduras(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21716,6 +21787,7 @@ class F_14A_135_GR(PlaneType):
 
         class Qatar(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21724,6 +21796,7 @@ class F_14A_135_GR(PlaneType):
 
         class Russia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21732,6 +21805,7 @@ class F_14A_135_GR(PlaneType):
 
         class United_Arab_Emirates(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21740,6 +21814,7 @@ class F_14A_135_GR(PlaneType):
 
         class Italian_Social_Republi(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21748,6 +21823,7 @@ class F_14A_135_GR(PlaneType):
 
         class Austria(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21756,6 +21832,7 @@ class F_14A_135_GR(PlaneType):
 
         class Bahrain(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21764,6 +21841,7 @@ class F_14A_135_GR(PlaneType):
 
         class Italy(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21772,6 +21850,7 @@ class F_14A_135_GR(PlaneType):
 
         class Chile(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21780,6 +21859,7 @@ class F_14A_135_GR(PlaneType):
 
         class Turkey(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21788,6 +21868,7 @@ class F_14A_135_GR(PlaneType):
 
         class Philippines(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21796,6 +21877,7 @@ class F_14A_135_GR(PlaneType):
 
         class Algeria(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21804,6 +21886,7 @@ class F_14A_135_GR(PlaneType):
 
         class Pakistan(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21812,6 +21895,7 @@ class F_14A_135_GR(PlaneType):
 
         class Malaysia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21820,6 +21904,7 @@ class F_14A_135_GR(PlaneType):
 
         class Indonesia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21828,6 +21913,7 @@ class F_14A_135_GR(PlaneType):
 
         class Iraq(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21836,6 +21922,7 @@ class F_14A_135_GR(PlaneType):
 
         class Germany(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21844,6 +21931,7 @@ class F_14A_135_GR(PlaneType):
 
         class South_Africa(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21852,6 +21940,7 @@ class F_14A_135_GR(PlaneType):
 
         class Jordan(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21860,6 +21949,7 @@ class F_14A_135_GR(PlaneType):
 
         class Mexico(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21868,6 +21958,7 @@ class F_14A_135_GR(PlaneType):
 
         class USAFAggressors(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21876,6 +21967,7 @@ class F_14A_135_GR(PlaneType):
 
         class Brazil(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21884,6 +21976,7 @@ class F_14A_135_GR(PlaneType):
 
         class Spain(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21892,6 +21985,7 @@ class F_14A_135_GR(PlaneType):
 
         class Belarus(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21900,6 +21994,7 @@ class F_14A_135_GR(PlaneType):
 
         class Canada(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21908,6 +22003,7 @@ class F_14A_135_GR(PlaneType):
 
         class NorthKorea(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21916,6 +22012,7 @@ class F_14A_135_GR(PlaneType):
 
         class Ethiopia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21924,6 +22021,7 @@ class F_14A_135_GR(PlaneType):
 
         class Japan(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -21932,6 +22030,7 @@ class F_14A_135_GR(PlaneType):
 
         class Thailand(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
@@ -32823,7 +32922,7 @@ class Ju_88A4(PlaneType):
 
     pylons: Set[int] = {1, 3}
 
-    tasks = [task.GroundAttack, task.RunwayAttack, task.AntishipStrike]
+    tasks = [task.GroundAttack, task.RunwayAttack, task.AntishipStrike, task.CAS]
     task_default = task.GroundAttack
 
 

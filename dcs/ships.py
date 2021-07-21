@@ -24,7 +24,7 @@ class VINSON(unittype.ShipType):
 
 class PERRY(unittype.ShipType):
     id = "PERRY"
-    name = "FFG Oliver Hazzard Perry"
+    name = "FFG Oliver Hazard Perry"
     helicopter_num = 2
     parking = 1
     detection_range = 150000
