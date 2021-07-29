@@ -139,22 +139,22 @@ class VehicleTemplate:
     @staticmethod
     def sa11_site(mission, country, position, heading, prefix="", skill=unit.Skill.Average):
         vg = mission.vehicle_group(country, prefix + "SA11 site",
-                                   dcs.vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_C2, position, heading)
+                                   dcs.vehicles.AirDefence.SA_11_Buk_CC_9S470M1, position, heading)
 
-        u = mission.vehicle("Operator 1", Russia.Vehicle.Infantry.Infantry_AK_74_Rus)
+        u = mission.vehicle("Operator 1", Russia.Vehicle.Infantry.Infantry_AK)
         u.position = position.point_from_heading(heading + 180, 10)
         u.heading = heading
         vg.add_unit(u)
 
         hdg = 90
         for i in range(0, 2):  # 2 launchers
-            u = mission.vehicle("launcher #" + str(i + 1), dcs.vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_Fire_Dome_TEL)
+            u = mission.vehicle("launcher #" + str(i + 1), dcs.vehicles.AirDefence.SA_11_Buk_LN_9A310M1)
             u.position = position.point_from_heading(heading + hdg, 50)
             u.heading = heading
             vg.add_unit(u)
             hdg += 90
 
-        u = mission.vehicle("radar", dcs.vehicles.AirDefence.SAM_SA_11_Buk_Gadfly_Snow_Drift_SR)
+        u = mission.vehicle("radar", dcs.vehicles.AirDefence.SA_11_Buk_SR_9S18M1)
         u.position = position.point_from_heading(heading, 80)
         u.heading = heading
         vg.add_unit(u)
@@ -192,22 +192,22 @@ class VehicleTemplate:
         vg = mission.vehicle_group(
             country,
             prefix + "SA6 site",
-            dcs.vehicles.AirDefence.SAM_SA_6_Kub_Long_Track_STR,
+            dcs.vehicles.AirDefence.Kub_1S91_str,
             position,
             heading
         )
 
-        u = mission.vehicle("Launcher 1", dcs.vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL)
+        u = mission.vehicle("Launcher 1", dcs.vehicles.AirDefence.Kub_2P25_ln)
         u.position = position.point_from_heading(heading + 140, 30)
         u.heading = heading
         vg.add_unit(u)
 
-        u = mission.vehicle("Launcher 2", dcs.vehicles.AirDefence.SAM_SA_6_Kub_Gainful_TEL)
+        u = mission.vehicle("Launcher 2", dcs.vehicles.AirDefence.Kub_2P25_ln)
         u.position = position.point_from_heading(heading + 210, 30)
         u.heading = heading
         vg.add_unit(u)
 
-        u = mission.vehicle("Rearm Truck", dcs.vehicles.Unarmed.Truck_Ural_375)
+        u = mission.vehicle("Rearm Truck", dcs.vehicles.Unarmed.Ural_375)
         u.position = position.point_from_heading(heading + 0, 40)
         u.heading = heading
         vg.add_unit(u)
