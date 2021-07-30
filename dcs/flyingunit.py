@@ -125,11 +125,11 @@ class FlyingUnit(Unit):
              frequency: The frequency to set the channel to, in megahertz.
 
         Raises:
+            TypeError: Unit type has no configurable radios, or it's unsupported.
             KeyError: No such radio or channel number.
         """
         if self.radio is None:
-            # Not all aircraft have configurable radio channels.
-            return
+            raise TypeError(f"{self.type} doesn't have configurable radio channels")
 
         radio = self.radio[radio_id]
         if channel not in radio["channels"]:
