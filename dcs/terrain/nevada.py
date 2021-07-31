@@ -2194,7 +2194,7 @@ class Nevada(Terrain):
 
         try:
             self.city_graph = Graph.from_pickle(os.path.join(os.path.dirname(__file__), 'nevada.p'))  # type: Graph
-        except:
+        except FileNotFoundError:
             pass
 
         self.airports['Creech AFB'] = Creech_AFB()

@@ -3050,7 +3050,7 @@ class Caucasus(Terrain):
 
         try:
             self.city_graph = Graph.from_pickle(os.path.join(os.path.dirname(__file__), 'caucasus.p'))  # type: Graph
-        except:
+        except FileNotFoundError:
             pass
 
         self.airports['Anapa-Vityazevo'] = Anapa_Vityazevo()
