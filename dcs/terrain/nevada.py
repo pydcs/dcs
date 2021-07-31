@@ -2168,7 +2168,7 @@ class Nevada(Terrain):
     center = {"lat": 39.81806, "long": -114.73333}
     bounds = mapping.Rectangle(-166934.953125, -329334.875000, -497177.656250, 209836.890625)
     map_view_default = MapView(mapping.Point(-340928.57142857, -55928.571428568), 1000000)
-    city_graph = Graph.from_pickle(os.path.join(os.path.dirname(__file__), 'nevada.p'))
+    city_graph = None
     temperature = [
         (0, 10),
         (2, 16),
@@ -2191,6 +2191,11 @@ class Nevada(Terrain):
         # 11SPE9400410022
         self.bullseye_blue = {"x": -409931.344, "y": -14024.097}
         self.bullseye_red = {"x": -288293.969, "y": -88022.641}
+
+        try:
+            self.city_graph = Graph.from_pickle(os.path.join(os.path.dirname(__file__), 'nevada.p'))  # type: Graph
+        except:
+            pass
 
         self.airports['Creech AFB'] = Creech_AFB()
         self.airports['Groom Lake AFB'] = Groom_Lake_AFB()

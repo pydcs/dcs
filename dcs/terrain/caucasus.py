@@ -3024,7 +3024,7 @@ class Caucasus(Terrain):
     center = {"lat": 43.69666, "long": 32.96}
     bounds = mapping.Rectangle(380 * 1000, -560 * 1000, -600 * 1000, 1130 * 1000)
     map_view_default = MapView(mapping.Point(-255714.28571428, 680571.42857143), 1000000)
-    city_graph = Graph.from_pickle(os.path.join(os.path.dirname(__file__), 'caucasus.p'))  # type: Graph
+    city_graph = None
     temperature = [
         (-4, 14),
         (-8, 14),
@@ -3047,6 +3047,11 @@ class Caucasus(Terrain):
         # 36TWQ9949898109
         self.bullseye_blue = {"x": -291014, "y": 617414}
         self.bullseye_red = {"x": 11557, "y": 371700}
+
+        try:
+            self.city_graph = Graph.from_pickle(os.path.join(os.path.dirname(__file__), 'caucasus.p'))  # type: Graph
+        except:
+            pass
 
         self.airports['Anapa-Vityazevo'] = Anapa_Vityazevo()
         self.airports['Krasnodar-Center'] = Krasnodar_Center()
