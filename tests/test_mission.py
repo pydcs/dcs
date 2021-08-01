@@ -506,7 +506,7 @@ class BasicTests(unittest.TestCase):
         unit.set_client()
         frequency = 300.0
         self.assertNotAlmostEqual(unit.radio[2]["channels"][1], frequency)
-        if unit.radio:
+        if unit.radio is not None:
             unit.set_radio_channel_preset(2, 1, frequency)
         mission_file = Path('missions/radio_channels.miz')
         m.save(mission_file)
