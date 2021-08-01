@@ -97,7 +97,8 @@ class FlyingUnit(Unit):
 
     def set_default_preset_channel(self, freq: float) -> None:
         """Sets the frequency for channel 1 of the main radio."""
-        self.set_radio_channel_preset(1, 1, freq)
+        if self.radio:
+            self.set_radio_channel_preset(1, 1, freq)
 
     def set_radio_preset(self):
         """Resets the radio channel configuration to the airframe's default."""
