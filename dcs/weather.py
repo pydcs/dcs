@@ -1,4 +1,5 @@
 from datetime import datetime
+import logging
 import random
 import math
 from enum import Enum
@@ -50,7 +51,7 @@ class CloudPreset:
 
     def validate_base(self, base: int) -> None:
         if not self.min_base <= base <= self.max_base:
-            raise ValueError(
+            logging.warn(
                 f"Cloud base {base}m is out of range for {self.name}. Must be between "
                 f"{self.min_base}m and {self.max_base}m.")
 

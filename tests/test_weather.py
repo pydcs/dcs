@@ -6,18 +6,6 @@ from dcs.cloud_presets import Clouds
 
 
 class CloudPresetTests(unittest.TestCase):
-    def test_validate_base(self) -> None:
-        preset = CloudPreset("test preset", "", "", 2, 3)
-
-        with self.assertRaises(ValueError):
-            preset.validate_base(1)
-
-        preset.validate_base(2)
-        preset.validate_base(3)
-
-        with self.assertRaises(ValueError):
-            preset.validate_base(4)
-
     def test_by_name(self) -> None:
         with self.assertRaises(KeyError):
             CloudPreset.by_name("does not exist")
@@ -51,10 +39,6 @@ class WeatherTests(unittest.TestCase):
         self.assertEqual(clouds["thickness"], 200)
         self.assertEqual(clouds["density"], 0)
         self.assertEqual(clouds["iprecptns"], 0)
-
-        weather.clouds_base = 0
-        with self.assertRaises(ValueError):
-            weather.dict()
 
         weather_dict["clouds"]["preset"] = "Preset2"
         weather.load_from_dict(weather_dict)
