@@ -515,7 +515,7 @@ class FlyingGroup(Generic[FlyingUnitT], MovingGroup[FlyingUnitT]):
         self.frequency = frequency
         self.radio_set = True
         for u in self.units:
-            if u.skill in [Skill.Client, Skill.Player]:
+            if u.skill in [Skill.Client, Skill.Player] and u.radio is not None:
                 u.set_radio_channel_preset(radio_id, 1, self.frequency)
 
     def dict(self):
