@@ -2,6 +2,7 @@
 The mission module is the entry point to all pydcs functions.
 """
 import copy
+
 import os
 import sys
 import tempfile
@@ -41,6 +42,7 @@ from dcs.flyingunit import Plane, Helicopter
 from dcs.helicopters import HelicopterType
 from dcs.planes import PlaneType
 from dcs.status_message import StatusMessage, MessageType, MessageSeverity
+from dcs.a10c_presets import A10CPresets
 
 
 class StartType(Enum):
@@ -129,6 +131,7 @@ class Mission:
         self.init_script = None
         self.options = Options()
         self.warehouses = Warehouses(self.terrain)
+        self.a10c_presets = None
         self.goals = Goals()
         blue = Coalition("blue")
         blue.add_country(countries.Australia())
@@ -253,6 +256,11 @@ class Mission:
             if 'l10n/DEFAULT/mapResource' in miz.namelist():
                 mapresource_dict = loaddict('l10n/DEFAULT/mapResource', miz, reserved_files)
                 self.map_resource.load_from_dict(mapresource_dict, miz)
+
+            if 'UHF_RADIO/SETTINGS.lua' in miz.namelist():
+                a10c_presets_dict = loaddict('UHF_RADIO/SETTINGS.lua', miz, reserved_files)
+                self.a10c_presets = A10CPresets()
+                self.a10c_presets.load_dict(a10c_presets_dict)
 
             self.map_resource.load_binary_files(miz, reserved_files)
 
@@ -460,6 +468,16 @@ class Mission:
         reskey = self.map_resource.add_resource_file(filepath)
         self.pictureFileNameB.append(reskey)
         return reskey
+
+    def set_10c_preset(self, channel: int, frequency: float):
+        if self.a10c_presets is None:
+            self.a10c_presets = A10CPresets()
+        self.a10c_presets.set_preset(channel, frequency)
+
+    def get_10c_preset(self, channel: int) -> float:
+        if self.a10c_presets:
+            return self.a10c_presets.get_preset(channel)
+        return None
 
     def next_group_id(self):
         """Get the next free group id
@@ -1923,6 +1941,7 @@ class Mission:
         options = str(self.options)
         warehouses = str(self.warehouses)
         mission = str(self)
+        a10c_presets = str(self.a10c_presets) if self.a10c_presets else None
 
         with zipfile.ZipFile(filename, 'w', compression=zipfile.ZIP_DEFLATED) as zipf:
             # options
@@ -1930,6 +1949,10 @@ class Mission:
 
             # warehouses
             zipf.writestr('warehouses', warehouses)
+
+            # a10c presets
+            if a10c_presets:
+                zipf.writestr('UHF_RADIO/SETTINGS.lua', a10c_presets)
 
             # translation files
             dicttext = lua.dumps(self.translation.dict('DEFAULT'), "dictionary", 1)
