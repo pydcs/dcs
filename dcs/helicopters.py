@@ -2170,6 +2170,8 @@ class Mi_24P(HelicopterType):
         "NS430allow": True,
         "SimplifiedAI": False,
         "HideAngleBoxes": False,
+        "PilotNVG": True,
+        "OperatorNVG": True,
     }
 
     class Properties:
@@ -2203,6 +2205,12 @@ class Mi_24P(HelicopterType):
 
         class HideAngleBoxes:
             id = "HideAngleBoxes"
+
+        class PilotNVG:
+            id = "PilotNVG"
+
+        class OperatorNVG:
+            id = "OperatorNVG"
 
     class Liveries:
 
@@ -2264,6 +2272,7 @@ class Mi_24P(HelicopterType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (3, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (3, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
+        KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         Fuel_tank_PTB_450 = (3, Weapons.Fuel_tank_PTB_450)
         APU_68___S_24B = (3, Weapons.APU_68___S_24B)
         GUV_YakB_GSHP = (3, Weapons.GUV_YakB_GSHP)
@@ -2284,6 +2293,7 @@ class Mi_24P(HelicopterType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (4, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (4, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (4, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
+        KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (4, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         Fuel_tank_PTB_450 = (4, Weapons.Fuel_tank_PTB_450)
         APU_68___S_24B = (4, Weapons.APU_68___S_24B)
         GUV_YakB_GSHP = (4, Weapons.GUV_YakB_GSHP)
