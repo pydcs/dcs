@@ -668,6 +668,20 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
 
+    class RPC_5N62V(unittype.VehicleType):
+        id = "RPC_5N62V"
+        name = "SAM SA-5 S-200 \"Square Pair\" TR"
+        detection_range = 400000
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class S_200_Launcher(unittype.VehicleType):
+        id = "S-200_Launcher"
+        name = "SAM SA-5 S-200 \"Gammon\" LN"
+        detection_range = 0
+        threat_range = 255000
+        air_weapon_dist = 255000
+
     class ZSU_57_2(unittype.VehicleType):
         id = "ZSU_57_2"
         name = "SPAAA ZSU-57-2"
@@ -684,17 +698,10 @@ class AirDefence:
 
     class Generator_5i57(unittype.VehicleType):
         id = "generator_5i57"
-        name = "Gen Diesel Power Station 5157A"
+        name = "Diesel Power Station 5I57A"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
-
-    class Bofors40(unittype.VehicleType):
-        id = "bofors40"
-        name = "AAA Bofors 40mm"
-        detection_range = 0
-        threat_range = 4000
-        air_weapon_dist = 4000
 
     class Rapier_fsa_launcher(unittype.VehicleType):
         id = "rapier_fsa_launcher"
@@ -716,6 +723,13 @@ class AirDefence:
         detection_range = 30000
         threat_range = 0
         air_weapon_dist = 0
+
+    class Bofors40(unittype.VehicleType):
+        id = "bofors40"
+        name = "AAA Bofors 40mm"
+        detection_range = 0
+        threat_range = 4000
+        air_weapon_dist = 4000
 
     class Flak18(unittype.VehicleType):
         id = "flak18"
@@ -1498,19 +1512,19 @@ class Armor:
         threat_range = 4000
         air_weapon_dist = 3500
 
-    class BTR_82A(unittype.VehicleType):
-        id = "BTR-82A"
-        name = "IFV BTR-82A"
-        detection_range = 0
-        threat_range = 2000
-        air_weapon_dist = 2000
-
     class PT_76(unittype.VehicleType):
         id = "PT_76"
         name = "LT PT-76"
         detection_range = 0
         threat_range = 2000
         air_weapon_dist = 1000
+
+    class BTR_82A(unittype.VehicleType):
+        id = "BTR-82A"
+        name = "IFV BTR-82A"
+        detection_range = 0
+        threat_range = 2000
+        air_weapon_dist = 2000
 
     class Chieftain_mk3(unittype.VehicleType):
         id = "Chieftain_mk3"
@@ -1524,13 +1538,6 @@ class Armor:
         name = "Tk PzIV H"
         detection_range = 0
         threat_range = 3000
-        air_weapon_dist = 0
-
-    class Sd_Kfz_251(unittype.VehicleType):
-        id = "Sd_Kfz_251"
-        name = "APC Sd.Kfz.251 Halftrack"
-        detection_range = 0
-        threat_range = 1100
         air_weapon_dist = 0
 
     class Leopard_2A5(unittype.VehicleType):
@@ -1560,6 +1567,13 @@ class Armor:
         detection_range = 0
         threat_range = 3500
         air_weapon_dist = 1500
+
+    class Sd_Kfz_251(unittype.VehicleType):
+        id = "Sd_Kfz_251"
+        name = "APC Sd.Kfz.251 Halftrack"
+        detection_range = 0
+        threat_range = 1100
+        air_weapon_dist = 0
 
     class VAB_Mephisto(unittype.VehicleType):
         id = "VAB_Mephisto"
@@ -2029,39 +2043,41 @@ vehicle_map = {
     "S_75M_Volhov": AirDefence.S_75M_Volhov,
     "SNR_75V": AirDefence.SNR_75V,
     "RLS_19J6": AirDefence.RLS_19J6,
+    "RPC_5N62V": AirDefence.RPC_5N62V,
+    "S-200_Launcher": AirDefence.S_200_Launcher,
     "ZSU_57_2": AirDefence.ZSU_57_2,
-    "T-72B3": Armor.T_72B3,
-    "BTR-82A": Armor.BTR_82A,
     "S-60_Type59_Artillery": AirDefence.S_60_Type59_Artillery,
     "generator_5i57": AirDefence.Generator_5i57,
+    "T-72B3": Armor.T_72B3,
+    "PT_76": Armor.PT_76,
+    "BTR-82A": Armor.BTR_82A,
     "ATZ-5": Unarmed.ATZ_5,
     "AA8": Unarmed.AA8,
-    "PT_76": Armor.PT_76,
     "ATZ-60_Maz": Unarmed.ATZ_60_Maz,
     "ZIL-135": Unarmed.ZIL_135,
     "TZ-22_KrAZ": Unarmed.TZ_22_KrAZ,
-    "Bedford_MWD": Unarmed.Bedford_MWD,
-    "bofors40": AirDefence.Bofors40,
     "rapier_fsa_launcher": AirDefence.Rapier_fsa_launcher,
     "rapier_fsa_optical_tracker_unit": AirDefence.Rapier_fsa_optical_tracker_unit,
     "rapier_fsa_blindfire_radar": AirDefence.Rapier_fsa_blindfire_radar,
+    "bofors40": AirDefence.Bofors40,
+    "Chieftain_mk3": Armor.Chieftain_mk3,
+    "Bedford_MWD": Unarmed.Bedford_MWD,
     "Land_Rover_101_FC": Unarmed.Land_Rover_101_FC,
     "Land_Rover_109_S3": Unarmed.Land_Rover_109_S3,
-    "Chieftain_mk3": Armor.Chieftain_mk3,
     "hy_launcher": MissilesSS.Hy_launcher,
     "Silkworm_SR": MissilesSS.Silkworm_SR,
     "ES44AH": Locomotive.ES44AH,
     "Boxcartrinity": Carriage.Boxcartrinity,
     "Tankcartrinity": Carriage.Tankcartrinity,
     "Wellcarnsc": Carriage.Wellcarnsc,
-    "Pz_IV_H": Armor.Pz_IV_H,
-    "Sd_Kfz_251": Armor.Sd_Kfz_251,
     "flak18": AirDefence.Flak18,
-    "Blitz_36-6700A": Unarmed.Blitz_36_6700A,
+    "Pz_IV_H": Armor.Pz_IV_H,
     "Leopard-2A5": Armor.Leopard_2A5,
     "Leopard-2": Armor.Leopard_2,
     "leopard-2A4": Armor.Leopard_2A4,
     "leopard-2A4_trs": Armor.Leopard_2A4_trs,
+    "Sd_Kfz_251": Armor.Sd_Kfz_251,
+    "Blitz_36-6700A": Unarmed.Blitz_36_6700A,
     "T155_Firtina": Artillery.T155_Firtina,
     "VAB_Mephisto": Armor.VAB_Mephisto,
     "ZTZ96B": Armor.ZTZ96B,

@@ -458,7 +458,7 @@ class Fortification:
 
     class Beer_Bomb(unittype.StaticType):
         id = "Beer Bomb"
-        name = "\"Beer Bomb\""
+        name = "Barrel"
         shape_name = "barrelofbeer_support"
         rate = 5
 

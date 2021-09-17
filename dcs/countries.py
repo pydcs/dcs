@@ -63,6 +63,8 @@ class Russia(Country):
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
             SA_18_Igla_manpad = vehicles.AirDefence.SA_18_Igla_manpad
             SA_18_Igla_comm = vehicles.AirDefence.SA_18_Igla_comm
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
@@ -148,8 +150,6 @@ class Russia(Country):
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Boxcartrinity = vehicles.Carriage.Boxcartrinity
             Tankcartrinity = vehicles.Carriage.Tankcartrinity
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
@@ -199,6 +199,7 @@ class Russia(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -265,6 +266,7 @@ class Russia(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -513,6 +515,8 @@ class Ukraine(Country):
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             SA_18_Igla_manpad = vehicles.AirDefence.SA_18_Igla_manpad
             SA_18_Igla_comm = vehicles.AirDefence.SA_18_Igla_comm
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
@@ -594,8 +598,6 @@ class Ukraine(Country):
             Coach_a_passenger = vehicles.Carriage.Coach_a_passenger
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Boxcartrinity = vehicles.Carriage.Boxcartrinity
             Tankcartrinity = vehicles.Carriage.Tankcartrinity
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
@@ -637,6 +639,7 @@ class Ukraine(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -695,6 +698,7 @@ class Ukraine(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -970,6 +974,7 @@ class USA(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190D9 = planes.FW_190D9
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
@@ -1035,6 +1040,7 @@ class USA(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190D9,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
@@ -1322,6 +1328,7 @@ class Turkey(Country):
         F_86F_Sabre = planes.F_86F_Sabre
         KC135MPRS = planes.KC135MPRS
         RQ_1A_Predator = planes.RQ_1A_Predator
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -1368,6 +1375,7 @@ class Turkey(Country):
         Plane.F_86F_Sabre,
         Plane.KC135MPRS,
         Plane.RQ_1A_Predator,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -1658,6 +1666,7 @@ class UK(Country):
         MQ_9_Reaper = planes.MQ_9_Reaper
         AV8BNA = planes.AV8BNA
         Hawk = planes.Hawk
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190D9 = planes.FW_190D9
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
@@ -1702,6 +1711,7 @@ class UK(Country):
         Plane.MQ_9_Reaper,
         Plane.AV8BNA,
         Plane.Hawk,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190D9,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
@@ -1984,6 +1994,7 @@ class France(Country):
         MQ_9_Reaper = planes.MQ_9_Reaper
         M_2000C = planes.M_2000C
         KC130 = planes.KC130
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         P_51D_30_NA = planes.P_51D_30_NA
@@ -2028,6 +2039,7 @@ class France(Country):
         Plane.MQ_9_Reaper,
         Plane.M_2000C,
         Plane.KC130,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.P_51D_30_NA,
@@ -2259,6 +2271,8 @@ class Germany(Country):
             Rapier_fsa_optical_tracker_unit = vehicles.AirDefence.Rapier_fsa_optical_tracker_unit
             Rapier_fsa_blindfire_radar = vehicles.AirDefence.Rapier_fsa_blindfire_radar
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
             Flak18 = vehicles.AirDefence.Flak18
             Flak30 = vehicles.AirDefence.Flak30
             Flak36 = vehicles.AirDefence.Flak36
@@ -2381,6 +2395,7 @@ class Germany(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -2428,6 +2443,7 @@ class Germany(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -2684,6 +2700,8 @@ class USAFAggressors(Country):
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
             Bofors40 = vehicles.AirDefence.Bofors40
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
@@ -2894,8 +2912,6 @@ class USAFAggressors(Country):
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
 
     class Plane:
         A_10C = planes.A_10C
@@ -2906,6 +2922,7 @@ class USAFAggressors(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -2985,6 +3002,7 @@ class USAFAggressors(Country):
         MiG_29G = planes.MiG_29G
         F_A_18A = planes.F_A_18A
         KJ_2000 = planes.KJ_2000
+        H_6J = planes.H_6J
         B_1B = planes.B_1B
         B_52H = planes.B_52H
         F_117A = planes.F_117A
@@ -3004,6 +3022,7 @@ class USAFAggressors(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -3083,6 +3102,7 @@ class USAFAggressors(Country):
         Plane.MiG_29G,
         Plane.F_A_18A,
         Plane.KJ_2000,
+        Plane.H_6J,
         Plane.B_1B,
         Plane.B_52H,
         Plane.F_117A,
@@ -3390,6 +3410,7 @@ class Canada(Country):
         F_86F_Sabre = planes.F_86F_Sabre
         Hawk = planes.Hawk
         KC130 = planes.KC130
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -3431,6 +3452,7 @@ class Canada(Country):
         Plane.F_86F_Sabre,
         Plane.Hawk,
         Plane.KC130,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -3715,6 +3737,7 @@ class Spain(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -3758,6 +3781,7 @@ class Spain(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -4050,6 +4074,7 @@ class TheNetherlands(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -4094,6 +4119,7 @@ class TheNetherlands(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -4363,6 +4389,7 @@ class Belgium(Country):
         C_17A = planes.C_17A
         E_3A = planes.E_3A
         F_16A = planes.F_16A
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -4405,6 +4432,7 @@ class Belgium(Country):
         Plane.C_17A,
         Plane.E_3A,
         Plane.F_16A,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -4667,6 +4695,7 @@ class Norway(Country):
         E_3A = planes.E_3A
         F_16A = planes.F_16A
         F_86F_Sabre = planes.F_86F_Sabre
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -4709,6 +4738,7 @@ class Norway(Country):
         Plane.E_3A,
         Plane.F_16A,
         Plane.F_86F_Sabre,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -4974,6 +5004,7 @@ class Denmark(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -5016,6 +5047,7 @@ class Denmark(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -5290,6 +5322,7 @@ class Israel(Country):
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         KC130 = planes.KC130
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         P_47D_30 = planes.P_47D_30
@@ -5336,6 +5369,7 @@ class Israel(Country):
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.KC130,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.P_47D_30,
@@ -5562,6 +5596,8 @@ class Georgia(Country):
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
 
@@ -5634,8 +5670,6 @@ class Georgia(Country):
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Boxcartrinity = vehicles.Carriage.Boxcartrinity
             Tankcartrinity = vehicles.Carriage.Tankcartrinity
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
@@ -5661,6 +5695,7 @@ class Georgia(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -5703,6 +5738,7 @@ class Georgia(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -5979,6 +6015,7 @@ class Insurgents(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C = planes.A_10C
@@ -6014,6 +6051,7 @@ class Insurgents(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C,
@@ -6223,6 +6261,7 @@ class Abkhazia(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C = planes.A_10C
@@ -6263,6 +6302,7 @@ class Abkhazia(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C,
@@ -6459,6 +6499,7 @@ class SouthOssetia(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C = planes.A_10C
@@ -6493,6 +6534,7 @@ class SouthOssetia(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C,
@@ -6672,6 +6714,7 @@ class Italy(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -6718,6 +6761,7 @@ class Italy(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -6980,6 +7024,7 @@ class Australia(Country):
         F_A_18A = planes.F_A_18A
         MQ_9_Reaper = planes.MQ_9_Reaper
         Hawk = planes.Hawk
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -7023,6 +7068,7 @@ class Australia(Country):
         Plane.F_A_18A,
         Plane.MQ_9_Reaper,
         Plane.Hawk,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -7275,6 +7321,7 @@ class Switzerland(Country):
         TF_51D = planes.TF_51D
         F_5E_3 = planes.F_5E_3
         Hawk = planes.Hawk
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -7313,6 +7360,7 @@ class Switzerland(Country):
         Plane.TF_51D,
         Plane.F_5E_3,
         Plane.Hawk,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -7547,6 +7595,7 @@ class Austria(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -7582,6 +7631,7 @@ class Austria(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -7801,6 +7851,8 @@ class Belarus(Country):
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
@@ -7877,8 +7929,6 @@ class Belarus(Country):
             Coach_a_passenger = vehicles.Carriage.Coach_a_passenger
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Boxcartrinity = vehicles.Carriage.Boxcartrinity
             Tankcartrinity = vehicles.Carriage.Tankcartrinity
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
@@ -7909,6 +7959,7 @@ class Belarus(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -7955,6 +8006,7 @@ class Belarus(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -8077,6 +8129,8 @@ class Bulgaria(Country):
             SA_18_Igla_manpad = vehicles.AirDefence.SA_18_Igla_manpad
             SA_18_Igla_comm = vehicles.AirDefence.SA_18_Igla_comm
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
@@ -8155,8 +8209,6 @@ class Bulgaria(Country):
         class Carriage:
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -8192,6 +8244,7 @@ class Bulgaria(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -8235,6 +8288,7 @@ class Bulgaria(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -8423,6 +8477,8 @@ class CzechRepublic(Country):
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
             Osa_9A33_ln = vehicles.AirDefence.Osa_9A33_ln
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
             SNR_75V = vehicles.AirDefence.SNR_75V
@@ -8481,8 +8537,6 @@ class CzechRepublic(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -8512,6 +8566,7 @@ class CzechRepublic(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -8552,6 +8607,7 @@ class CzechRepublic(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -8820,6 +8876,7 @@ class China(Country):
         J_11A = planes.J_11A
         KJ_2000 = planes.KJ_2000
         MiG_19P = planes.MiG_19P
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -8838,6 +8895,7 @@ class China(Country):
         C_101CC = planes.C_101CC
         JF_17 = planes.JF_17
         WingLoong_I = planes.WingLoong_I
+        H_6J = planes.H_6J
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
@@ -8866,6 +8924,7 @@ class China(Country):
         Plane.J_11A,
         Plane.KJ_2000,
         Plane.MiG_19P,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -8884,6 +8943,7 @@ class China(Country):
         Plane.C_101CC,
         Plane.JF_17,
         Plane.WingLoong_I,
+        Plane.H_6J,
         Plane.Christen_Eagle_II,
         Plane.F_5E,
         Plane.F_5E_3,
@@ -9032,6 +9092,7 @@ class Croatia(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -9067,6 +9128,7 @@ class Croatia(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -9370,6 +9432,7 @@ class Egypt(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -9409,6 +9472,7 @@ class Egypt(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -9717,6 +9781,7 @@ class Finland(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -9752,6 +9817,7 @@ class Finland(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -10033,6 +10099,7 @@ class Greece(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -10075,6 +10142,7 @@ class Greece(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -10284,6 +10352,8 @@ class Hungary(Country):
             SA_18_Igla_manpad = vehicles.AirDefence.SA_18_Igla_manpad
             SA_18_Igla_comm = vehicles.AirDefence.SA_18_Igla_comm
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
             Flak18 = vehicles.AirDefence.Flak18
@@ -10357,8 +10427,6 @@ class Hungary(Country):
 
         class Carriage:
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -10389,6 +10457,7 @@ class Hungary(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -10428,6 +10497,7 @@ class Hungary(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -10630,6 +10700,8 @@ class India(Country):
             SA_18_Igla_S_comm = vehicles.AirDefence.SA_18_Igla_S_comm
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             QF_37_AA = vehicles.AirDefence.QF_37_AA
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
 
@@ -10667,8 +10739,6 @@ class India(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -10703,6 +10773,7 @@ class India(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -10746,6 +10817,7 @@ class India(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -10969,6 +11041,8 @@ class Iran(Country):
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
 
@@ -11015,8 +11089,6 @@ class Iran(Country):
 
         class Carriage:
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -11052,6 +11124,7 @@ class Iran(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -11097,6 +11170,7 @@ class Iran(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -11398,6 +11472,7 @@ class Iraq(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -11440,6 +11515,7 @@ class Iraq(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -11719,6 +11795,7 @@ class Japan(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -11756,6 +11833,7 @@ class Japan(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -11987,6 +12065,8 @@ class Kazakhstan(Country):
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             SA_18_Igla_manpad = vehicles.AirDefence.SA_18_Igla_manpad
             SA_18_Igla_comm = vehicles.AirDefence.SA_18_Igla_comm
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
             SNR_75V = vehicles.AirDefence.SNR_75V
@@ -12068,8 +12148,6 @@ class Kazakhstan(Country):
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
             German_covered_wagon_G10 = vehicles.Carriage.German_covered_wagon_G10
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
@@ -12097,6 +12175,7 @@ class Kazakhstan(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -12144,6 +12223,7 @@ class Kazakhstan(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -12336,6 +12416,8 @@ class NorthKorea(Country):
             SA_18_Igla_manpad = vehicles.AirDefence.SA_18_Igla_manpad
             SA_18_Igla_comm = vehicles.AirDefence.SA_18_Igla_comm
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
 
@@ -12375,8 +12457,6 @@ class NorthKorea(Country):
 
         class Carriage:
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -12404,6 +12484,7 @@ class NorthKorea(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -12441,6 +12522,7 @@ class NorthKorea(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -12698,6 +12780,7 @@ class Pakistan(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -12740,6 +12823,7 @@ class Pakistan(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -12937,6 +13021,8 @@ class Poland(Country):
             Strela_1_9P31 = vehicles.AirDefence.Strela_1_9P31
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             QF_37_AA = vehicles.AirDefence.QF_37_AA
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             M45_Quadmount = vehicles.AirDefence.M45_Quadmount
             M1_37mm = vehicles.AirDefence.M1_37mm
@@ -13005,8 +13091,6 @@ class Poland(Country):
             DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -13035,6 +13119,7 @@ class Poland(Country):
         Yak_40 = planes.Yak_40
         I_16 = planes.I_16
         MiG_19P = planes.MiG_19P
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -13081,6 +13166,7 @@ class Poland(Country):
         Plane.Yak_40,
         Plane.I_16,
         Plane.MiG_19P,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -13389,6 +13475,7 @@ class Romania(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -13429,6 +13516,7 @@ class Romania(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -13698,6 +13786,7 @@ class SaudiArabia(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -13739,6 +13828,7 @@ class SaudiArabia(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -14024,6 +14114,7 @@ class Serbia(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -14063,6 +14154,7 @@ class Serbia(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -14330,6 +14422,7 @@ class Slovakia(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -14369,6 +14462,7 @@ class Slovakia(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -14630,6 +14724,7 @@ class SouthKorea(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -14672,6 +14767,7 @@ class SouthKorea(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -14904,6 +15000,7 @@ class Sweden(Country):
         C_130 = planes.C_130
         AJS37 = planes.AJS37
         KC130 = planes.KC130
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -14943,6 +15040,7 @@ class Sweden(Country):
         Plane.C_130,
         Plane.AJS37,
         Plane.KC130,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -15151,6 +15249,8 @@ class Syria(Country):
             SA_18_Igla_S_manpad = vehicles.AirDefence.SA_18_Igla_S_manpad
             SA_18_Igla_S_comm = vehicles.AirDefence.SA_18_Igla_S_comm
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
             ZSU_57_2 = vehicles.AirDefence.ZSU_57_2
@@ -15197,8 +15297,6 @@ class Syria(Country):
 
         class Carriage:
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -15229,6 +15327,7 @@ class Syria(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -15269,6 +15368,7 @@ class Syria(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -15529,6 +15629,7 @@ class Yemen(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -15567,6 +15668,7 @@ class Yemen(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -15844,6 +15946,7 @@ class Vietnam(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -15884,6 +15987,7 @@ class Vietnam(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -16134,6 +16238,7 @@ class Venezuela(Country):
         F_16A = planes.F_16A
         F_86F_Sabre = planes.F_86F_Sabre
         Su_30 = planes.Su_30
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -16171,6 +16276,7 @@ class Venezuela(Country):
         Plane.F_16A,
         Plane.F_86F_Sabre,
         Plane.Su_30,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -16409,6 +16515,7 @@ class Tunisia(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -16444,6 +16551,7 @@ class Tunisia(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -16680,6 +16788,7 @@ class Thailand(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -16718,6 +16827,7 @@ class Thailand(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -16970,6 +17080,7 @@ class Sudan(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -17009,6 +17120,7 @@ class Sudan(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -17242,6 +17354,7 @@ class Philippines(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -17280,6 +17393,7 @@ class Philippines(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -17535,6 +17649,7 @@ class Morocco(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -17572,6 +17687,7 @@ class Morocco(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -17804,6 +17920,7 @@ class Mexico(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -17840,6 +17957,7 @@ class Mexico(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -18080,6 +18198,7 @@ class Malaysia(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -18116,6 +18235,7 @@ class Malaysia(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -18313,6 +18433,8 @@ class Libya(Country):
             SA_18_Igla_S_manpad = vehicles.AirDefence.SA_18_Igla_S_manpad
             SA_18_Igla_S_comm = vehicles.AirDefence.SA_18_Igla_S_comm
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Rapier_fsa_launcher = vehicles.AirDefence.Rapier_fsa_launcher
             Rapier_fsa_optical_tracker_unit = vehicles.AirDefence.Rapier_fsa_optical_tracker_unit
@@ -18350,8 +18472,6 @@ class Libya(Country):
 
         class Carriage:
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -18379,6 +18499,7 @@ class Libya(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -18416,6 +18537,7 @@ class Libya(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -18666,6 +18788,7 @@ class Jordan(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -18703,6 +18826,7 @@ class Jordan(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -18966,6 +19090,7 @@ class Indonesia(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -19009,6 +19134,7 @@ class Indonesia(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -19232,6 +19358,7 @@ class Honduras(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -19267,6 +19394,7 @@ class Honduras(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -19522,6 +19650,7 @@ class Ethiopia(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -19560,6 +19689,7 @@ class Ethiopia(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -19812,6 +19942,7 @@ class Chile(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -19853,6 +19984,7 @@ class Chile(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -20107,6 +20239,7 @@ class Brazil(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -20143,6 +20276,7 @@ class Brazil(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -20391,6 +20525,7 @@ class Bahrain(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -20425,6 +20560,7 @@ class Bahrain(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -20680,6 +20816,7 @@ class ThirdReich(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -20715,6 +20852,7 @@ class ThirdReich(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -20974,6 +21112,7 @@ class Yugoslavia(Country):
         MiG_21Bis = planes.MiG_21Bis
         MiG_29A = planes.MiG_29A
         Yak_40 = planes.Yak_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -21011,6 +21150,7 @@ class Yugoslavia(Country):
         Plane.MiG_21Bis,
         Plane.MiG_29A,
         Plane.Yak_40,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -21163,6 +21303,8 @@ class USSR(Country):
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
             Bofors40 = vehicles.AirDefence.Bofors40
             Flak36 = vehicles.AirDefence.Flak36
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
@@ -21263,8 +21405,6 @@ class USSR(Country):
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Boxcartrinity = vehicles.Carriage.Boxcartrinity
             Tankcartrinity = vehicles.Carriage.Tankcartrinity
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
@@ -21310,6 +21450,7 @@ class USSR(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -21370,6 +21511,7 @@ class USSR(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -21557,6 +21699,7 @@ class ItalianSocialRepublic(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -21591,6 +21734,7 @@ class ItalianSocialRepublic(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -21810,6 +21954,8 @@ class Algeria(Country):
             Bofors40 = vehicles.AirDefence.Bofors40
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
@@ -21875,8 +22021,6 @@ class Algeria(Country):
         class Carriage:
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -21919,6 +22063,7 @@ class Algeria(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -21970,6 +22115,7 @@ class Algeria(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -22241,6 +22387,7 @@ class Kuwait(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -22278,6 +22425,7 @@ class Kuwait(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -22519,6 +22667,7 @@ class Qatar(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -22555,6 +22704,7 @@ class Qatar(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -22815,6 +22965,7 @@ class Oman(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -22852,6 +23003,7 @@ class Oman(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -23116,6 +23268,7 @@ class UnitedArabEmirates(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -23155,6 +23308,7 @@ class UnitedArabEmirates(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -23389,6 +23543,7 @@ class SouthAfrica(Country):
         TF_51D = planes.TF_51D
         F_86F_Sabre = planes.F_86F_Sabre
         Hawk = planes.Hawk
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -23427,6 +23582,7 @@ class SouthAfrica(Country):
         Plane.TF_51D,
         Plane.F_86F_Sabre,
         Plane.Hawk,
+        Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -23725,6 +23881,7 @@ class Cuba(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -23771,6 +23928,7 @@ class Cuba(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -24019,6 +24177,7 @@ class Portugal(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -24059,6 +24218,7 @@ class Portugal(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -24261,6 +24421,8 @@ class GDR(Country):
             Strela_1_9P31 = vehicles.AirDefence.Strela_1_9P31
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             ZSU_57_2 = vehicles.AirDefence.ZSU_57_2
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
 
@@ -24313,8 +24475,6 @@ class GDR(Country):
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -24343,6 +24503,7 @@ class GDR(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -24381,6 +24542,7 @@ class GDR(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -24634,6 +24796,7 @@ class Lebanon(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -24670,6 +24833,7 @@ class Lebanon(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -24922,6 +25086,8 @@ class CombinedJointTaskForcesBlue(Country):
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
             Bofors40 = vehicles.AirDefence.Bofors40
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
@@ -25132,8 +25298,6 @@ class CombinedJointTaskForcesBlue(Country):
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
 
     class Plane:
         A_10C = planes.A_10C
@@ -25144,6 +25308,7 @@ class CombinedJointTaskForcesBlue(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -25223,6 +25388,7 @@ class CombinedJointTaskForcesBlue(Country):
         F_A_18A = planes.F_A_18A
         J_11A = planes.J_11A
         KJ_2000 = planes.KJ_2000
+        H_6J = planes.H_6J
         B_1B = planes.B_1B
         B_52H = planes.B_52H
         F_117A = planes.F_117A
@@ -25242,6 +25408,7 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -25321,6 +25488,7 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.F_A_18A,
         Plane.J_11A,
         Plane.KJ_2000,
+        Plane.H_6J,
         Plane.B_1B,
         Plane.B_52H,
         Plane.F_117A,
@@ -25620,6 +25788,8 @@ class CombinedJointTaskForcesRed(Country):
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
             Bofors40 = vehicles.AirDefence.Bofors40
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
@@ -25830,8 +26000,6 @@ class CombinedJointTaskForcesRed(Country):
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
 
     class Plane:
         A_10C = planes.A_10C
@@ -25842,6 +26010,7 @@ class CombinedJointTaskForcesRed(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -25921,6 +26090,7 @@ class CombinedJointTaskForcesRed(Country):
         F_A_18A = planes.F_A_18A
         J_11A = planes.J_11A
         KJ_2000 = planes.KJ_2000
+        H_6J = planes.H_6J
         B_1B = planes.B_1B
         B_52H = planes.B_52H
         F_117A = planes.F_117A
@@ -25940,6 +26110,7 @@ class CombinedJointTaskForcesRed(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -26019,6 +26190,7 @@ class CombinedJointTaskForcesRed(Country):
         Plane.F_A_18A,
         Plane.J_11A,
         Plane.KJ_2000,
+        Plane.H_6J,
         Plane.B_1B,
         Plane.B_52H,
         Plane.F_117A,
@@ -26318,6 +26490,8 @@ class UnitedNationsPeacekeepers(Country):
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
             Bofors40 = vehicles.AirDefence.Bofors40
+            S_200_Launcher = vehicles.AirDefence.S_200_Launcher
+            RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
@@ -26528,8 +26702,6 @@ class UnitedNationsPeacekeepers(Country):
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
 
     class Plane:
         A_10C = planes.A_10C
@@ -26540,6 +26712,7 @@ class UnitedNationsPeacekeepers(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -26619,6 +26792,7 @@ class UnitedNationsPeacekeepers(Country):
         F_A_18A = planes.F_A_18A
         J_11A = planes.J_11A
         KJ_2000 = planes.KJ_2000
+        H_6J = planes.H_6J
         B_1B = planes.B_1B
         B_52H = planes.B_52H
         F_117A = planes.F_117A
@@ -26638,6 +26812,7 @@ class UnitedNationsPeacekeepers(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -26717,6 +26892,7 @@ class UnitedNationsPeacekeepers(Country):
         Plane.F_A_18A,
         Plane.J_11A,
         Plane.KJ_2000,
+        Plane.H_6J,
         Plane.B_1B,
         Plane.B_52H,
         Plane.F_117A,
@@ -27002,6 +27178,7 @@ class Argentina(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -27038,6 +27215,7 @@ class Argentina(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -27292,6 +27470,7 @@ class Cyprus(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -27327,6 +27506,7 @@ class Cyprus(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
@@ -27572,6 +27752,7 @@ class Slovenia(Country):
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
         A_20G = planes.A_20G
         A_10A = planes.A_10A
         A_10C_2 = planes.A_10C_2
@@ -27608,6 +27789,7 @@ class Slovenia(Country):
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
+        Plane.MosquitoFBMkVI,
         Plane.A_20G,
         Plane.A_10A,
         Plane.A_10C_2,
