@@ -8658,6 +8658,7 @@ class P_47D_40(PlaneType):
 
 class MosquitoFBMkVI(PlaneType):
     id = "MosquitoFBMkVI"
+    flyable = True
     height = 3.81
     width = 16.3
     length = 12.34

@@ -297,6 +297,7 @@ flyable["P-47D-30bl1"] = true
 flyable["P-47D-40"] = true
 flyable["JF-17"] = true
 flyable["MiG-19P"] = true
+flyable["MosquitoFBMkVI"] = true
 
 
 local function export_aircraft(file, aircrafts, export_type, exportplane)
