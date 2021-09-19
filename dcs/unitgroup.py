@@ -181,6 +181,9 @@ class Group(Generic[UnitT, PointT]):
         for u in self.units:
             u.skill = skill
 
+    def is_ground_spawned(self) -> bool:
+        return False
+
     def dict(self):
         if not isinstance(self.name, str):
             raise TypeError("Point name expected to be `str`")
@@ -203,7 +206,7 @@ class Group(Generic[UnitT, PointT]):
                 d["units"][i] = unit.dict()
                 dunit = d["units"][i]
                 if len(self.points) > 1:
-                    use_manual_heading = getattr(self, "manualHeading", False)
+                    use_manual_heading = getattr(self, "manualHeading", False) or self.is_ground_spawned()
                     if not use_manual_heading:
                         hdg = self.points[0].position.heading_between_point(self.points[1].position)
                     else:
@@ -348,6 +351,12 @@ class FlyingGroup(Generic[FlyingUnitT], MovingGroup[FlyingUnitT]):
         if t is None:
             raise KeyError(f"Could not find PlaneType or HelicopterType matching {type_id}")
         return t
+
+    def is_ground_spawned(self) -> bool:
+        if len(self.points) > 0:
+            if self.points[0].type in ["TakeOffGround", "TakeOffGroundHot"]:
+                return True
+        return False
 
     def load_from_dict(self, d):
         super(FlyingGroup, self).load_from_dict(d)
