@@ -333,7 +333,7 @@ class Mission:
         self.goals.load_from_dict(imp_mission["goals"])
 
         self.drawings = Drawings()
-        self.goals.load_from_dict(imp_mission["drawings"])
+        self.drawings.load_from_dict(imp_mission["drawings"])
 
         self.init_script_file = imp_mission.get("initScriptFile")
         self.init_script = imp_mission.get("initScript")
