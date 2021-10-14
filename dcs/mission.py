@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Any, List, Dict, Sequence, Union, Optional, Type
 
 from dcs.coalition import Coalition
+from dcs.drawing.drawings import Drawings
 from dcs.terrain.terrain import Terrain, Warehouses
 from dcs.triggers import Triggers
 import dcs.countries as countries
@@ -130,6 +131,7 @@ class Mission:
         self.options = Options()
         self.warehouses = Warehouses(self.terrain)
         self.goals = Goals()
+        self.drawings = Drawings()
         blue = Coalition("blue")
         blue.add_country(countries.Australia())
         blue.add_country(countries.Belgium())
@@ -329,6 +331,9 @@ class Mission:
         # goals
         self.goals = Goals()
         self.goals.load_from_dict(imp_mission["goals"])
+
+        self.drawings = Drawings()
+        self.goals.load_from_dict(imp_mission["drawings"])
 
         self.init_script_file = imp_mission.get("initScriptFile")
         self.init_script = imp_mission.get("initScript")
@@ -2005,6 +2010,7 @@ class Mission:
         m["sortie"] = self._sortie.id
         m["version"] = Mission._CURRENT_MIZ_VERSION
         m["goals"] = self.goals.dict()
+        m["drawings"] = self.drawings.dict()
         m["result"] = self.goals.generate_result()
         m["currentKey"] = self.currentKey
         m["maxDictId"] = self.current_dict_id
