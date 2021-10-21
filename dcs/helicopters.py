@@ -75,6 +75,61 @@ class Ka_50(HelicopterType):
             Israel_IAF_camo_2 = "Israel IAF camo 2"
             Israel_IAF_camo_3 = "Israel IAF camo 3"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Italy_Aeronautica_Militare = "Italy Aeronautica Militare"
+            Algerian_AF_Desert = "Algerian AF Desert"
+            France_Armee_de_Terre_1 = "France Armee de Terre 1"
+            France_Armee_de_Terre_2 = "France Armee de Terre 2"
+            France_Armee_de_Terre_Desert = "France Armee de Terre Desert"
+            Russia_Standard_Army = "Russia Standard Army"
+            belgium_sar = "belgium sar"
+            belgium_camo = "belgium camo"
+            belgium_olive = "belgium olive"
+            Russia_DOSAAF = "Russia DOSAAF"
+            Russia_Demo__024 = "Russia Demo #024"
+            Russia_Demo__22__Black_Shark = "Russia Demo #22 `Black Shark`"
+            Russia_Demo__Werewolf = "Russia Demo `Werewolf`"
+            denmark_camo = "denmark camo"
+            Italy_Esercito_Italiano = "Italy Esercito Italiano"
+            Abkhazia_1 = "Abkhazia 1"
+            Turkey_Fictional_Light_Gray = "Turkey Fictional Light Gray"
+            South_Ossetia_1 = "South Ossetia 1"
+            Russia_Fictional_Swedish = "Russia Fictional Swedish"
+            Turkey_Fictional_1 = "Turkey Fictional 1"
+            Turkey_Fictional = "Turkey Fictional"
+            Ukraine_Demo = "Ukraine Demo"
+            Turkey_fictional_desert_scheme = "Turkey fictional desert scheme"
+            Russia_fictional_desert_scheme = "Russia fictional desert scheme"
+            Russia_Fictional_Olive_Grey = "Russia Fictional Olive Grey"
+            Russia_Fictional_Snow_Splatter = "Russia Fictional Snow Splatter"
+            Russia_Fictional_Tropic_Green = "Russia Fictional Tropic Green"
+            georgia_camo = "georgia camo"
+            german_8320 = "german 8320"
+            german_8332 = "german 8332"
+            Greek_Army_Aviation = "Greek Army Aviation"
+            Hellenic_Navy_Aviation = "Hellenic Navy Aviation"
+            Hellenic_Navy_Aviation_2 = "Hellenic Navy Aviation 2"
+            Israel_IAF_camo_1 = "Israel IAF camo 1"
+            Israel_IAF_camo_2 = "Israel IAF camo 2"
+            Israel_IAF_camo_3 = "Israel IAF camo 3"
+            Denmark_navy_trainer = "Denmark navy trainer"
+            Russia_New_Year = "Russia New Year"
+            norway_camo = "norway camo"
+            Netherlands_RNAF = "Netherlands RNAF"
+            Netherlands_RNAF_wooded = "Netherlands RNAF wooded"
+            Spain_SAA_Arido = "Spain SAA Arido"
+            Spain_SAA_Boscoso = "Spain SAA Boscoso"
+            Spain_SAA_Standard = "Spain SAA Standard"
+            Russia_Standard_Army__Worn = "Russia Standard Army (Worn)"
+            uk_camo = "uk camo"
+            us_army = "us army"
+            us_marines_1 = "us marines 1"
+            us_marines_2 = "us marines 2"
+            ukraine_camo_1 = "ukraine camo 1"
+            ukraine_camo_1_dirt = "ukraine camo 1 dirt"
+            Russia_Worn_Black = "Russia Worn Black"
+            canadian_forces = "canadian forces"
+
         class Norway(Enum):
             norway_camo = "norway camo"
 
@@ -112,6 +167,61 @@ class Ka_50(HelicopterType):
 
         class Sweden(Enum):
             Russia_Fictional_Swedish = "Russia Fictional Swedish"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Italy_Aeronautica_Militare = "Italy Aeronautica Militare"
+            Algerian_AF_Desert = "Algerian AF Desert"
+            France_Armee_de_Terre_1 = "France Armee de Terre 1"
+            France_Armee_de_Terre_2 = "France Armee de Terre 2"
+            France_Armee_de_Terre_Desert = "France Armee de Terre Desert"
+            Russia_Standard_Army = "Russia Standard Army"
+            belgium_sar = "belgium sar"
+            belgium_camo = "belgium camo"
+            belgium_olive = "belgium olive"
+            Russia_DOSAAF = "Russia DOSAAF"
+            Russia_Demo__024 = "Russia Demo #024"
+            Russia_Demo__22__Black_Shark = "Russia Demo #22 `Black Shark`"
+            Russia_Demo__Werewolf = "Russia Demo `Werewolf`"
+            denmark_camo = "denmark camo"
+            Italy_Esercito_Italiano = "Italy Esercito Italiano"
+            Abkhazia_1 = "Abkhazia 1"
+            Turkey_Fictional_Light_Gray = "Turkey Fictional Light Gray"
+            South_Ossetia_1 = "South Ossetia 1"
+            Russia_Fictional_Swedish = "Russia Fictional Swedish"
+            Turkey_Fictional_1 = "Turkey Fictional 1"
+            Turkey_Fictional = "Turkey Fictional"
+            Ukraine_Demo = "Ukraine Demo"
+            Turkey_fictional_desert_scheme = "Turkey fictional desert scheme"
+            Russia_fictional_desert_scheme = "Russia fictional desert scheme"
+            Russia_Fictional_Olive_Grey = "Russia Fictional Olive Grey"
+            Russia_Fictional_Snow_Splatter = "Russia Fictional Snow Splatter"
+            Russia_Fictional_Tropic_Green = "Russia Fictional Tropic Green"
+            georgia_camo = "georgia camo"
+            german_8320 = "german 8320"
+            german_8332 = "german 8332"
+            Greek_Army_Aviation = "Greek Army Aviation"
+            Hellenic_Navy_Aviation = "Hellenic Navy Aviation"
+            Hellenic_Navy_Aviation_2 = "Hellenic Navy Aviation 2"
+            Israel_IAF_camo_1 = "Israel IAF camo 1"
+            Israel_IAF_camo_2 = "Israel IAF camo 2"
+            Israel_IAF_camo_3 = "Israel IAF camo 3"
+            Denmark_navy_trainer = "Denmark navy trainer"
+            Russia_New_Year = "Russia New Year"
+            norway_camo = "norway camo"
+            Netherlands_RNAF = "Netherlands RNAF"
+            Netherlands_RNAF_wooded = "Netherlands RNAF wooded"
+            Spain_SAA_Arido = "Spain SAA Arido"
+            Spain_SAA_Boscoso = "Spain SAA Boscoso"
+            Spain_SAA_Standard = "Spain SAA Standard"
+            Russia_Standard_Army__Worn = "Russia Standard Army (Worn)"
+            uk_camo = "uk camo"
+            us_army = "us army"
+            us_marines_1 = "us marines 1"
+            us_marines_2 = "us marines 2"
+            ukraine_camo_1 = "ukraine camo 1"
+            ukraine_camo_1_dirt = "ukraine camo 1 dirt"
+            Russia_Worn_Black = "Russia Worn Black"
+            canadian_forces = "canadian forces"
 
         class France(Enum):
             France_Armee_de_Terre_1 = "France Armee de Terre 1"
@@ -243,6 +353,20 @@ class Mi_24V(HelicopterType):
         class Georgia(Enum):
             standard = "standard"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Abkhazia = "Abkhazia"
+            Algerian_AF_Black = "Algerian AF Black"
+            Algerian_AF_New_Desert = "Algerian AF New Desert"
+            Algerian_AF_Old_Desert = "Algerian AF Old Desert"
+            South_Ossetia = "South Ossetia"
+            standard_1 = "standard 1"
+            standard_2__faded_and_sun_bleached = "standard 2 (faded and sun-bleached)"
+            Russia_FSB = "Russia_FSB"
+            Russia_MVD = "Russia_MVD"
+            ukraine = "ukraine"
+            Ukraine_UN = "Ukraine UN"
+            standard = "standard"
+
         class Ukraine(Enum):
             ukraine = "ukraine"
             Ukraine_UN = "Ukraine UN"
@@ -250,8 +374,25 @@ class Mi_24V(HelicopterType):
         class Abkhazia(Enum):
             Abkhazia = "Abkhazia"
 
+        class United_Nations_Peacekeepers(Enum):
+            Ukraine_UN = "Ukraine UN"
+
         class SouthOssetia(Enum):
             South_Ossetia = "South Ossetia"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Abkhazia = "Abkhazia"
+            Algerian_AF_Black = "Algerian AF Black"
+            Algerian_AF_New_Desert = "Algerian AF New Desert"
+            Algerian_AF_Old_Desert = "Algerian AF Old Desert"
+            South_Ossetia = "South Ossetia"
+            standard_1 = "standard 1"
+            standard_2__faded_and_sun_bleached = "standard 2 (faded and sun-bleached)"
+            Russia_FSB = "Russia_FSB"
+            Russia_MVD = "Russia_MVD"
+            ukraine = "ukraine"
+            Ukraine_UN = "Ukraine UN"
+            standard = "standard"
 
         class Russia(Enum):
             standard_1 = "standard 1"
@@ -436,76 +577,321 @@ class Mi_8MT(HelicopterType):
     class Liveries:
 
         class USSR(Enum):
+            BP_RS01 = "BP_RS01"
             Russia_Aeroflot = "Russia_Aeroflot"
             Russia_Army_Weather = "Russia_Army_Weather"
 
         class Georgia(Enum):
+            BP_RS01 = "BP_RS01"
             Georgia = "Georgia"
 
+        class Venezuela(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Australia(Enum):
+            BP_RS01 = "BP_RS01"
             Australia = "Australia"
             Standard = "Standard"
 
         class Israel(Enum):
+            BP_RS01 = "BP_RS01"
             Israel = "Israel"
             Standard = "Standard"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            BP_RS01 = "BP_RS01"
+            Russia_VVS_Standard = "Russia_VVS_Standard"
+            USA_AFG = "USA_AFG"
+            IR_AFAGIR_Blue = "IR AFAGIR Blue"
+            IR_AFAGIR_Sand = "IR AFAGIR Sand"
+            Abkhazia = "Abkhazia"
+            Algerian_AF_Green = "Algerian AF Green"
+            Algerian_AF_Green_EVSAN = "Algerian AF Green EVSAN"
+            Algerian_AF_New_Desert = "Algerian AF New Desert"
+            Algerian_AF_Old_Desert = "Algerian AF Old Desert"
+            Algerian_AF_VIP = "Algerian AF VIP"
+            Canada = "Canada"
+            Russia_Aeroflot = "Russia_Aeroflot"
+            Russia_Gazprom = "Russia_Gazprom"
+            Russia_KazanVZ = "Russia_KazanVZ"
+            Russia_LII_Gromov_RA_25546 = "Russia_LII_Gromov RA-25546"
+            Russia_Police = "Russia_Police"
+            Russia_UTair = "Russia_UTair"
+            Russia_Vertolety_Russia = "Russia_Vertolety_Russia"
+            Russia_Vertolety_Russia_2 = "Russia_Vertolety_Russia_2"
+            Russia_Naryan_Mar = "Russia_Naryan-Mar"
+            Australia = "Australia"
+            France_ARMY = "France ARMY"
+            Israel = "Israel"
+            Italy_ARMY = "Italy ARMY"
+            Netherlands_ARMY = "Netherlands ARMY"
+            France_NAVY = "France NAVY"
+            Italy_NAVY = "Italy NAVY"
+            Netherlands_NAVY = "Netherlands NAVY"
+            Norway = "Norway"
+            Belgium = "Belgium"
+            Denmark = "Denmark"
+            South_Ossetia = "South Ossetia"
+            Spain = "Spain"
+            Georgia = "Georgia"
+            Germany = "Germany"
+            Hellenic_Airforce_SAR = "Hellenic Airforce SAR"
+            Hellenic_Army_Aviation = "Hellenic Army Aviation"
+            Turkey = "Turkey"
+            IR_Iranian_Special_Police_Forces = "IR Iranian Special Police Forces"
+            China_PLAAA_Camo = "China PLAAA Camo"
+            China_UN = "China UN"
+            China_PLAAA_White = "China PLAAA White"
+            United_Kingdom = "United Kingdom"
+            Russia_VVS_Grey = "Russia_VVS_Grey"
+            Russia_VVS_Grey_2 = "Russia_VVS_Grey_2"
+            Russia_VVS_Standard_2 = "Russia_VVS_Standard_2"
+            Russia_FSB = "Russia_FSB"
+            Russia_MVD_Mozdok = "Russia_MVD_Mozdok"
+            Russia_MVD_Standard = "Russia_MVD_Standard"
+            Russia_VVS_MA = "Russia_VVS_MA"
+            Russia_UN = "Russia_UN"
+            Russia_PF_Ambulance = "Russia_PF_Ambulance"
+            Russia_Army_Weather = "Russia_Army_Weather"
+            Insurgents = "Insurgents"
+            Ukraine = "Ukraine"
+            placeholder = "placeholder"
+            Standard = "Standard"
+
+        class Sudan(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Norway(Enum):
+            BP_RS01 = "BP_RS01"
             Norway = "Norway"
             Standard = "Standard"
 
+        class Romania(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Iran(Enum):
+            BP_RS01 = "BP_RS01"
             IR_AFAGIR_Blue = "IR AFAGIR Blue"
             IR_AFAGIR_Sand = "IR AFAGIR Sand"
             IR_Iranian_Special_Police_Forces = "IR Iranian Special Police Forces"
 
         class Ukraine(Enum):
+            BP_RS01 = "BP_RS01"
             Ukraine = "Ukraine"
 
+        class Libya(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Belgium(Enum):
+            BP_RS01 = "BP_RS01"
             Belgium = "Belgium"
 
+        class Slovakia(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Greece(Enum):
+            BP_RS01 = "BP_RS01"
             Hellenic_Airforce_SAR = "Hellenic Airforce SAR"
             Hellenic_Army_Aviation = "Hellenic Army Aviation"
 
         class UK(Enum):
+            BP_RS01 = "BP_RS01"
             United_Kingdom = "United Kingdom"
             Standard = "Standard"
 
+        class Third_Reich(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Hungary(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Abkhazia(Enum):
+            BP_RS01 = "BP_RS01"
             Abkhazia = "Abkhazia"
 
+        class Morocco(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class United_Nations_Peacekeepers(Enum):
+            BP_RS01 = "BP_RS01"
+            Russia_UN = "Russia_UN"
+
+        class Switzerland(Enum):
+            BP_RS01 = "BP_RS01"
+
         class SouthOssetia(Enum):
+            BP_RS01 = "BP_RS01"
             South_Ossetia = "South Ossetia"
 
+        class Vietnam(Enum):
+            BP_RS01 = "BP_RS01"
+
         class China(Enum):
+            BP_RS01 = "BP_RS01"
             China_PLAAA_Camo = "China PLAAA Camo"
             China_UN = "China UN"
             China_PLAAA_White = "China PLAAA White"
 
+        class Yemen(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Kuwait(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Serbia(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Oman(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class India(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Egypt(Enum):
+            BP_RS01 = "BP_RS01"
+
         class TheNetherlands(Enum):
+            BP_RS01 = "BP_RS01"
             Netherlands_ARMY = "Netherlands ARMY"
             Netherlands_NAVY = "Netherlands NAVY"
             Standard = "Standard"
 
+        class Poland(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Syria(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Finland(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Kazakhstan(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Denmark(Enum):
+            BP_RS01 = "BP_RS01"
             Denmark = "Denmark"
 
+        class Sweden(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Croatia(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class CzechRepublic(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class GDR(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Yugoslavia(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Bulgaria(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class SouthKorea(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Tunisia(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            BP_RS01 = "BP_RS01"
+            Russia_VVS_Standard = "Russia_VVS_Standard"
+            USA_AFG = "USA_AFG"
+            IR_AFAGIR_Blue = "IR AFAGIR Blue"
+            IR_AFAGIR_Sand = "IR AFAGIR Sand"
+            Abkhazia = "Abkhazia"
+            Algerian_AF_Green = "Algerian AF Green"
+            Algerian_AF_Green_EVSAN = "Algerian AF Green EVSAN"
+            Algerian_AF_New_Desert = "Algerian AF New Desert"
+            Algerian_AF_Old_Desert = "Algerian AF Old Desert"
+            Algerian_AF_VIP = "Algerian AF VIP"
+            Canada = "Canada"
+            Russia_Aeroflot = "Russia_Aeroflot"
+            Russia_Gazprom = "Russia_Gazprom"
+            Russia_KazanVZ = "Russia_KazanVZ"
+            Russia_LII_Gromov_RA_25546 = "Russia_LII_Gromov RA-25546"
+            Russia_Police = "Russia_Police"
+            Russia_UTair = "Russia_UTair"
+            Russia_Vertolety_Russia = "Russia_Vertolety_Russia"
+            Russia_Vertolety_Russia_2 = "Russia_Vertolety_Russia_2"
+            Russia_Naryan_Mar = "Russia_Naryan-Mar"
+            Australia = "Australia"
+            France_ARMY = "France ARMY"
+            Israel = "Israel"
+            Italy_ARMY = "Italy ARMY"
+            Netherlands_ARMY = "Netherlands ARMY"
+            France_NAVY = "France NAVY"
+            Italy_NAVY = "Italy NAVY"
+            Netherlands_NAVY = "Netherlands NAVY"
+            Norway = "Norway"
+            Belgium = "Belgium"
+            Denmark = "Denmark"
+            South_Ossetia = "South Ossetia"
+            Spain = "Spain"
+            Georgia = "Georgia"
+            Germany = "Germany"
+            Hellenic_Airforce_SAR = "Hellenic Airforce SAR"
+            Hellenic_Army_Aviation = "Hellenic Army Aviation"
+            Turkey = "Turkey"
+            IR_Iranian_Special_Police_Forces = "IR Iranian Special Police Forces"
+            China_PLAAA_Camo = "China PLAAA Camo"
+            China_UN = "China UN"
+            China_PLAAA_White = "China PLAAA White"
+            United_Kingdom = "United Kingdom"
+            Russia_VVS_Grey = "Russia_VVS_Grey"
+            Russia_VVS_Grey_2 = "Russia_VVS_Grey_2"
+            Russia_VVS_Standard_2 = "Russia_VVS_Standard_2"
+            Russia_FSB = "Russia_FSB"
+            Russia_MVD_Mozdok = "Russia_MVD_Mozdok"
+            Russia_MVD_Standard = "Russia_MVD_Standard"
+            Russia_VVS_MA = "Russia_VVS_MA"
+            Russia_UN = "Russia_UN"
+            Russia_PF_Ambulance = "Russia_PF_Ambulance"
+            Russia_Army_Weather = "Russia_Army_Weather"
+            Insurgents = "Insurgents"
+            Ukraine = "Ukraine"
+            placeholder = "placeholder"
+            Standard = "Standard"
+
+        class Lebanon(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Portugal(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Cuba(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Insurgents(Enum):
+            BP_RS01 = "BP_RS01"
             Insurgents = "Insurgents"
             Standard = "Standard"
 
+        class SaudiArabia(Enum):
+            BP_RS01 = "BP_RS01"
+
         class France(Enum):
+            BP_RS01 = "BP_RS01"
             France_ARMY = "France ARMY"
             France_NAVY = "France NAVY"
             Standard = "Standard"
 
         class USA(Enum):
+            BP_RS01 = "BP_RS01"
             USA_AFG = "USA_AFG"
             Standard = "Standard"
 
+        class Honduras(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Qatar(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Russia(Enum):
+            BP_RS01 = "BP_RS01"
             Russia_VVS_Standard = "Russia_VVS_Standard"
             Russia_Aeroflot = "Russia_Aeroflot"
             Russia_Gazprom = "Russia_Gazprom"
@@ -527,33 +913,99 @@ class Mi_8MT(HelicopterType):
             Russia_PF_Ambulance = "Russia_PF_Ambulance"
             Russia_Army_Weather = "Russia_Army_Weather"
 
+        class United_Arab_Emirates(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Italian_Social_Republi(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Austria(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Bahrain(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Italy(Enum):
+            BP_RS01 = "BP_RS01"
             Italy_ARMY = "Italy ARMY"
             Italy_NAVY = "Italy NAVY"
             Standard = "Standard"
 
+        class Chile(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Turkey(Enum):
+            BP_RS01 = "BP_RS01"
             Turkey = "Turkey"
             Standard = "Standard"
 
+        class Philippines(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Algeria(Enum):
+            BP_RS01 = "BP_RS01"
             Algerian_AF_Green = "Algerian AF Green"
             Algerian_AF_Green_EVSAN = "Algerian AF Green EVSAN"
             Algerian_AF_New_Desert = "Algerian AF New Desert"
             Algerian_AF_Old_Desert = "Algerian AF Old Desert"
             Algerian_AF_VIP = "Algerian AF VIP"
 
+        class Pakistan(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Malaysia(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Indonesia(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Iraq(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Germany(Enum):
+            BP_RS01 = "BP_RS01"
             Germany = "Germany"
             Standard = "Standard"
 
+        class South_Africa(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Jordan(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Mexico(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class USAFAggressors(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Brazil(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Spain(Enum):
+            BP_RS01 = "BP_RS01"
             Spain = "Spain"
             Standard = "Standard"
 
+        class Belarus(Enum):
+            BP_RS01 = "BP_RS01"
+
         class Canada(Enum):
+            BP_RS01 = "BP_RS01"
             Canada = "Canada"
             Standard = "Standard"
+
+        class NorthKorea(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Ethiopia(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Japan(Enum):
+            BP_RS01 = "BP_RS01"
+
+        class Thailand(Enum):
+            BP_RS01 = "BP_RS01"
 
     class Pylon1:
         B_8V20A_CM = (1, Weapons.B_8V20A_CM)
@@ -707,6 +1159,12 @@ class Mi_26(HelicopterType):
             United_Nations = "United Nations"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
+            _7th_Separate_Brigade_of_AA__Kalinov = "7th Separate Brigade of AA (Kalinov)"
+            Algerian_Air_Force_SL_22 = "Algerian Air Force SL-22"
+            China_Flying_Dragon_Aviation = "China Flying Dragon Aviation"
+            RF_Air_Force = "RF Air Force"
+            Russia_FSB = "Russia_FSB"
+            Russia_MVD = "Russia_MVD"
             United_Nations = "United Nations"
 
         class Sudan(Enum):
@@ -829,6 +1287,12 @@ class Mi_26(HelicopterType):
             United_Nations = "United Nations"
 
         class Combined_Joint_Task_Forces_Red(Enum):
+            _7th_Separate_Brigade_of_AA__Kalinov = "7th Separate Brigade of AA (Kalinov)"
+            Algerian_Air_Force_SL_22 = "Algerian Air Force SL-22"
+            China_Flying_Dragon_Aviation = "China Flying Dragon Aviation"
+            RF_Air_Force = "RF Air Force"
+            Russia_FSB = "Russia_FSB"
+            Russia_MVD = "Russia_MVD"
             United_Nations = "United Nations"
 
         class Lebanon(Enum):
@@ -959,11 +1423,21 @@ class Ka_27(HelicopterType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            China_PLANAF = "China PLANAF"
+            ukraine_camo_1 = "ukraine camo 1"
+            standard = "standard"
+
         class Ukraine(Enum):
             ukraine_camo_1 = "ukraine camo 1"
 
         class China(Enum):
             China_PLANAF = "China PLANAF"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            China_PLANAF = "China PLANAF"
+            ukraine_camo_1 = "ukraine camo 1"
+            standard = "standard"
 
         class Russia(Enum):
             standard = "standard"
@@ -999,6 +1473,10 @@ class UH_60A(HelicopterType):
             ISRAIL_UN = "ISRAIL_UN"
             standard = "standard"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            ISRAIL_UN = "ISRAIL_UN"
+            standard = "standard"
+
         class Norway(Enum):
             standard = "standard"
 
@@ -1014,6 +1492,9 @@ class UH_60A(HelicopterType):
         class Abkhazia(Enum):
             standard = "standard"
 
+        class United_Nations_Peacekeepers(Enum):
+            ISRAIL_UN = "ISRAIL_UN"
+
         class SouthOssetia(Enum):
             standard = "standard"
 
@@ -1021,6 +1502,10 @@ class UH_60A(HelicopterType):
             standard = "standard"
 
         class Denmark(Enum):
+            standard = "standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            ISRAIL_UN = "ISRAIL_UN"
             standard = "standard"
 
         class France(Enum):
@@ -1069,6 +1554,12 @@ class CH_53E(HelicopterType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            standard = "standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            standard = "standard"
+
         class USA(Enum):
             standard = "standard"
 
@@ -1097,6 +1588,14 @@ class CH_47D(HelicopterType):
         class Australia(Enum):
             Australia_RAAF = "Australia RAAF"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Greek_Army = "Greek Army"
+            Australia_RAAF = "Australia RAAF"
+            ch_47_green_neth = "ch-47_green neth"
+            ch_47_green_spain = "ch-47_green spain"
+            ch_47_green_uk = "ch-47_green uk"
+            standard = "standard"
+
         class Greece(Enum):
             Greek_Army = "Greek Army"
 
@@ -1105,6 +1604,14 @@ class CH_47D(HelicopterType):
 
         class TheNetherlands(Enum):
             ch_47_green_neth = "ch-47_green neth"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Greek_Army = "Greek Army"
+            Australia_RAAF = "Australia RAAF"
+            ch_47_green_neth = "ch-47_green neth"
+            ch_47_green_spain = "ch-47_green spain"
+            ch_47_green_uk = "ch-47_green uk"
+            standard = "standard"
 
         class USA(Enum):
             standard = "standard"
@@ -1404,6 +1911,14 @@ class AH_64A(HelicopterType):
         class Israel(Enum):
             ah_64_a_green_isr = "ah-64_a_green isr"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            ah_64_a_green_isr = "ah-64_a_green isr"
+            ah_64_a_green_neth = "ah-64_a_green neth"
+            ah_64_a_green_uk = "ah-64_a_green uk"
+            greek_army = "greek army"
+            standard = "standard"
+            standard_dirty = "standard dirty"
+
         class Greece(Enum):
             greek_army = "greek army"
 
@@ -1412,6 +1927,14 @@ class AH_64A(HelicopterType):
 
         class TheNetherlands(Enum):
             ah_64_a_green_neth = "ah-64_a_green neth"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            ah_64_a_green_isr = "ah-64_a_green isr"
+            ah_64_a_green_neth = "ah-64_a_green neth"
+            ah_64_a_green_uk = "ah-64_a_green uk"
+            greek_army = "greek army"
+            standard = "standard"
+            standard_dirty = "standard dirty"
 
         class USA(Enum):
             standard = "standard"
@@ -1463,6 +1986,13 @@ class AH_64D(HelicopterType):
         class Israel(Enum):
             ah_64_d_isr = "ah-64_d_isr"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            ah_64_d_green_neth = "ah-64_d_green neth"
+            ah_64_d_green_uk = "ah-64_d_green uk"
+            ah_64_d_isr = "ah-64_d_isr"
+            greek_army = "greek army"
+            standard = "standard"
+
         class Greece(Enum):
             greek_army = "greek army"
 
@@ -1471,6 +2001,13 @@ class AH_64D(HelicopterType):
 
         class TheNetherlands(Enum):
             ah_64_d_green_neth = "ah-64_d_green neth"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            ah_64_d_green_neth = "ah-64_d_green neth"
+            ah_64_d_green_uk = "ah-64_d_green uk"
+            ah_64_d_isr = "ah-64_d_isr"
+            greek_army = "greek army"
+            standard = "standard"
 
         class USA(Enum):
             standard = "standard"
@@ -1520,6 +2057,20 @@ class AH_1W(HelicopterType):
 
         class Israel(Enum):
             standard = "standard"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            USA_X_Black = "USA X Black"
+            USA_Marines = "USA Marines"
+            standard = "standard"
+            Turkey_1 = "Turkey 1"
+            Turkey_2 = "Turkey 2"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            USA_X_Black = "USA X Black"
+            USA_Marines = "USA Marines"
+            standard = "standard"
+            Turkey_1 = "Turkey 1"
+            Turkey_2 = "Turkey 2"
 
         class USA(Enum):
             USA_X_Black = "USA X Black"
@@ -1575,8 +2126,16 @@ class SH_60B(HelicopterType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Hellenic_Navy = "Hellenic Navy"
+            standard = "standard"
+
         class Greece(Enum):
             Hellenic_Navy = "Hellenic Navy"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Hellenic_Navy = "Hellenic Navy"
+            standard = "standard"
 
         class USA(Enum):
             standard = "standard"
@@ -1677,6 +2236,45 @@ class UH_1H(HelicopterType):
         class Israel(Enum):
             Israel_Army = "Israel Army"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Italy_15B_Stormo_S_A_R__Soccorso = "Italy 15B Stormo S.A.R -Soccorso"
+            Algerian_AF_BV_32 = "Algerian AF BV-32"
+            Army_Standard = "Army Standard"
+            Canadian_Force = "Canadian Force"
+            Italy_E_I__4B_Regg__ALTAIR = "Italy E.I. 4B Regg. ALTAIR"
+            French_Army = "French Army"
+            Georgian_AF_Camo = "Georgian AF Camo"
+            Georgian_Air_Force = "Georgian Air Force"
+            Greek_Army_Aviation = "Greek Army Aviation"
+            Greek_Army_Aviation_Medic = "Greek Army Aviation Medic"
+            Hellenic_Airforce_SAR = "Hellenic Airforce SAR"
+            Israel_Army = "Israel Army"
+            Luftwaffe = "Luftwaffe"
+            Italy_Marina_Militare_s_n__80951_7_20 = "Italy Marina Militare s.n. 80951 7-20"
+            Norwegian_Coast_Guard__235 = "Norwegian Coast Guard (235)"
+            Norwegian_UN = "Norwegian UN"
+            _Civilian__Standard = "[Civilian] Standard"
+            Australia_RAAF_171_Sqn = "Australia RAAF 171 Sqn"
+            Australia_RAAF_1968 = "Australia RAAF 1968"
+            RF_Air_Force_Broken = "RF Air Force Broken"
+            RF_Air_Force_Grey = "RF Air Force Grey"
+            Australia_Royal_Navy = "Australia Royal Navy"
+            Royal_Netherlands_AF = "Royal Netherlands AF"
+            Spanish_Army = "Spanish Army"
+            Spanish_UN = "Spanish UN"
+            Turkish_Air_Force = "Turkish Air Force"
+            US_ARMY_1972 = "US ARMY 1972"
+            US_DOS = "US DOS"
+            US_Ft__Rucker = "US Ft. Rucker"
+            US_NAVY = "US NAVY"
+            USA_Red_Flag = "USA Red Flag"
+            USA_UN = "USA UN"
+            Ukrainian_Army = "Ukrainian Army"
+            XW_PFJ_Air_America = "XW-PFJ Air America"
+            _Civilian__Medical = "[Civilian] Medical"
+            _Civilian__NASA = "[Civilian] NASA"
+            _Civilian__VIP = "[Civilian] VIP"
+
         class Norway(Enum):
             Norwegian_Coast_Guard__235 = "Norwegian Coast Guard (235)"
             Norwegian_UN = "Norwegian UN"
@@ -1699,6 +2297,11 @@ class UH_1H(HelicopterType):
         class Abkhazia(Enum):
             _Civilian__Standard = "[Civilian] Standard"
 
+        class United_Nations_Peacekeepers(Enum):
+            Norwegian_UN = "Norwegian UN"
+            Spanish_UN = "Spanish UN"
+            USA_UN = "USA UN"
+
         class SouthOssetia(Enum):
             _Civilian__Standard = "[Civilian] Standard"
 
@@ -1707,6 +2310,45 @@ class UH_1H(HelicopterType):
 
         class Denmark(Enum):
             _Civilian__Standard = "[Civilian] Standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Italy_15B_Stormo_S_A_R__Soccorso = "Italy 15B Stormo S.A.R -Soccorso"
+            Algerian_AF_BV_32 = "Algerian AF BV-32"
+            Army_Standard = "Army Standard"
+            Canadian_Force = "Canadian Force"
+            Italy_E_I__4B_Regg__ALTAIR = "Italy E.I. 4B Regg. ALTAIR"
+            French_Army = "French Army"
+            Georgian_AF_Camo = "Georgian AF Camo"
+            Georgian_Air_Force = "Georgian Air Force"
+            Greek_Army_Aviation = "Greek Army Aviation"
+            Greek_Army_Aviation_Medic = "Greek Army Aviation Medic"
+            Hellenic_Airforce_SAR = "Hellenic Airforce SAR"
+            Israel_Army = "Israel Army"
+            Luftwaffe = "Luftwaffe"
+            Italy_Marina_Militare_s_n__80951_7_20 = "Italy Marina Militare s.n. 80951 7-20"
+            Norwegian_Coast_Guard__235 = "Norwegian Coast Guard (235)"
+            Norwegian_UN = "Norwegian UN"
+            _Civilian__Standard = "[Civilian] Standard"
+            Australia_RAAF_171_Sqn = "Australia RAAF 171 Sqn"
+            Australia_RAAF_1968 = "Australia RAAF 1968"
+            RF_Air_Force_Broken = "RF Air Force Broken"
+            RF_Air_Force_Grey = "RF Air Force Grey"
+            Australia_Royal_Navy = "Australia Royal Navy"
+            Royal_Netherlands_AF = "Royal Netherlands AF"
+            Spanish_Army = "Spanish Army"
+            Spanish_UN = "Spanish UN"
+            Turkish_Air_Force = "Turkish Air Force"
+            US_ARMY_1972 = "US ARMY 1972"
+            US_DOS = "US DOS"
+            US_Ft__Rucker = "US Ft. Rucker"
+            US_NAVY = "US NAVY"
+            USA_Red_Flag = "USA Red Flag"
+            USA_UN = "USA UN"
+            Ukrainian_Army = "Ukrainian Army"
+            XW_PFJ_Air_America = "XW-PFJ Air America"
+            _Civilian__Medical = "[Civilian] Medical"
+            _Civilian__NASA = "[Civilian] NASA"
+            _Civilian__VIP = "[Civilian] VIP"
 
         class Insurgents(Enum):
             _Civilian__Standard = "[Civilian] Standard"
@@ -1807,6 +2449,18 @@ class Mi_28N(HelicopterType):
     flare_charge_size = 1
 
     class Liveries:
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            AAF_SC_11 = "AAF SC-11"
+            AAF_SC_12 = "AAF SC-12"
+            night = "night"
+            standard = "standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            AAF_SC_11 = "AAF SC-11"
+            AAF_SC_12 = "AAF SC-12"
+            night = "night"
+            standard = "standard"
 
         class Russia(Enum):
             night = "night"
@@ -1974,6 +2628,7 @@ class Mi_24P(HelicopterType):
         "NS430allow": True,
         "SimplifiedAI": False,
         "HideAngleBoxes": False,
+        "TrackAirTargets": True,
         "PilotNVG": True,
         "OperatorNVG": True,
     }
@@ -2010,6 +2665,9 @@ class Mi_24P(HelicopterType):
         class HideAngleBoxes:
             id = "HideAngleBoxes"
 
+        class TrackAirTargets:
+            id = "TrackAirTargets"
+
         class PilotNVG:
             id = "PilotNVG"
 
@@ -2026,12 +2684,33 @@ class Mi_24P(HelicopterType):
             Georgian_Air_Force = "Georgian Air Force"
             United_Nations = "United Nations"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Georgian_Air_Force = "Georgian Air Force"
+            IQAF = "IQAF"
+            Russian_Air_Force = "Russian Air Force"
+            SyAAF = "SyAAF"
+            Ukrainian_Army_Aviation = "Ukrainian Army Aviation"
+            United_Nations = "United Nations"
+            AF_Standard3_Old = "AF Standard3 Old"
+
         class Ukraine(Enum):
             Ukrainian_Army_Aviation = "Ukrainian Army Aviation"
             United_Nations = "United Nations"
 
+        class United_Nations_Peacekeepers(Enum):
+            United_Nations = "United Nations"
+
         class Syria(Enum):
             SyAAF = "SyAAF"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Georgian_Air_Force = "Georgian Air Force"
+            IQAF = "IQAF"
+            Russian_Air_Force = "Russian Air Force"
+            SyAAF = "SyAAF"
+            Ukrainian_Army_Aviation = "Ukrainian Army Aviation"
+            United_Nations = "United Nations"
+            AF_Standard3_Old = "AF Standard3 Old"
 
         class Russia(Enum):
             Russian_Air_Force = "Russian Air Force"
@@ -2043,6 +2722,9 @@ class Mi_24P(HelicopterType):
 
     class Pylon1:
         _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (1, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT = (1, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT)
+        _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE = (1, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE)
+        _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag = (1, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag)
         _9M114_Shturm_V_2_Rack = (1, Weapons._9M114_Shturm_V_2_Rack)
 
     class Pylon2:
@@ -2051,6 +2733,9 @@ class Mi_24P(HelicopterType):
         B_8V20A_OM = (2, Weapons.B_8V20A_OM)
         UB_32A_24_pod___32_x_S_5KO = (2, Weapons.UB_32A_24_pod___32_x_S_5KO)
         _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (2, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT = (2, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT)
+        _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE = (2, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE)
+        _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag = (2, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         Fuel_tank_PTB_450_ = (2, Weapons.Fuel_tank_PTB_450_)
         B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (2, Weapons.B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
@@ -2109,6 +2794,9 @@ class Mi_24P(HelicopterType):
         B_8V20A_OM = (5, Weapons.B_8V20A_OM)
         UB_32A_24_pod___32_x_S_5KO = (5, Weapons.UB_32A_24_pod___32_x_S_5KO)
         _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (5, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT = (5, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT)
+        _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE = (5, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE)
+        _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag = (5, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (5, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         Fuel_tank_PTB_450_ = (5, Weapons.Fuel_tank_PTB_450_)
         B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (5, Weapons.B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
@@ -2121,6 +2809,9 @@ class Mi_24P(HelicopterType):
 
     class Pylon6:
         _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (6, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT = (6, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT)
+        _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE = (6, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE)
+        _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag = (6, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag)
         _9M114_Shturm_V_2_Rack = (6, Weapons._9M114_Shturm_V_2_Rack)
 
     pylons: Set[int] = {1, 2, 3, 4, 5, 6}
@@ -2174,6 +2865,21 @@ class SA342M(HelicopterType):
         class Israel(Enum):
             Israel_Fictional = "Israel Fictional"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Combat = "Combat"
+            Germany_Fictional = "Germany Fictional"
+            Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
+            Israel_Fictional = "Israel Fictional"
+            Russia_Fictional = "Russia Fictional"
+            Serbia_Fictional = "Serbia Fictional"
+            Syria_Fictional = "Syria Fictional"
+            Tiger_Meet = "Tiger Meet"
+            Tiger_Meet_2 = "Tiger Meet 2"
+            Training = "Training"
+            UK_Fictional = "UK Fictional"
+            US_Marines_Fictional = "US Marines Fictional"
+            Yugoslav_Fictional = "Yugoslav Fictional"
+
         class Greece(Enum):
             Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
 
@@ -2186,6 +2892,21 @@ class SA342M(HelicopterType):
 
         class Syria(Enum):
             Syria_Fictional = "Syria Fictional"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Combat = "Combat"
+            Germany_Fictional = "Germany Fictional"
+            Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
+            Israel_Fictional = "Israel Fictional"
+            Russia_Fictional = "Russia Fictional"
+            Serbia_Fictional = "Serbia Fictional"
+            Syria_Fictional = "Syria Fictional"
+            Tiger_Meet = "Tiger Meet"
+            Tiger_Meet_2 = "Tiger Meet 2"
+            Training = "Training"
+            UK_Fictional = "UK Fictional"
+            US_Marines_Fictional = "US Marines Fictional"
+            Yugoslav_Fictional = "Yugoslav Fictional"
 
         class France(Enum):
             Combat = "Combat"
@@ -2271,6 +2992,21 @@ class SA342L(HelicopterType):
         class Israel(Enum):
             Israel_Fictional = "Israel Fictional"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Combat = "Combat"
+            Germany_Fictional = "Germany Fictional"
+            Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
+            Israel_Fictional = "Israel Fictional"
+            Russia_Fictional = "Russia Fictional"
+            Serbia_Fictional = "Serbia Fictional"
+            Syria_Fictional = "Syria Fictional"
+            Tiger_Meet = "Tiger Meet"
+            Tiger_Meet_2 = "Tiger Meet 2"
+            Training = "Training"
+            UK_Fictional = "UK Fictional"
+            US_Marines_Fictional = "US Marines Fictional"
+            Yugoslav_Fictional = "Yugoslav Fictional"
+
         class Greece(Enum):
             Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
 
@@ -2283,6 +3019,21 @@ class SA342L(HelicopterType):
 
         class Syria(Enum):
             Syria_Fictional = "Syria Fictional"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Combat = "Combat"
+            Germany_Fictional = "Germany Fictional"
+            Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
+            Israel_Fictional = "Israel Fictional"
+            Russia_Fictional = "Russia Fictional"
+            Serbia_Fictional = "Serbia Fictional"
+            Syria_Fictional = "Syria Fictional"
+            Tiger_Meet = "Tiger Meet"
+            Tiger_Meet_2 = "Tiger Meet 2"
+            Training = "Training"
+            UK_Fictional = "UK Fictional"
+            US_Marines_Fictional = "US Marines Fictional"
+            Yugoslav_Fictional = "Yugoslav Fictional"
 
         class France(Enum):
             Combat = "Combat"
@@ -2361,6 +3112,21 @@ class SA342Mistral(HelicopterType):
         class Israel(Enum):
             Israel_Fictional = "Israel Fictional"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Combat = "Combat"
+            Germany_Fictional = "Germany Fictional"
+            Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
+            Israel_Fictional = "Israel Fictional"
+            Russia_Fictional = "Russia Fictional"
+            Serbia_Fictional = "Serbia Fictional"
+            Syria_Fictional = "Syria Fictional"
+            Tiger_Meet = "Tiger Meet"
+            Tiger_Meet_2 = "Tiger Meet 2"
+            Training = "Training"
+            UK_Fictional = "UK Fictional"
+            US_Marines_Fictional = "US Marines Fictional"
+            Yugoslav_Fictional = "Yugoslav Fictional"
+
         class Greece(Enum):
             Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
 
@@ -2373,6 +3139,21 @@ class SA342Mistral(HelicopterType):
 
         class Syria(Enum):
             Syria_Fictional = "Syria Fictional"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Combat = "Combat"
+            Germany_Fictional = "Germany Fictional"
+            Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
+            Israel_Fictional = "Israel Fictional"
+            Russia_Fictional = "Russia Fictional"
+            Serbia_Fictional = "Serbia Fictional"
+            Syria_Fictional = "Syria Fictional"
+            Tiger_Meet = "Tiger Meet"
+            Tiger_Meet_2 = "Tiger Meet 2"
+            Training = "Training"
+            UK_Fictional = "UK Fictional"
+            US_Marines_Fictional = "US Marines Fictional"
+            Yugoslav_Fictional = "Yugoslav Fictional"
 
         class France(Enum):
             Combat = "Combat"
@@ -2458,6 +3239,21 @@ class SA342Minigun(HelicopterType):
         class Israel(Enum):
             Israel_Fictional = "Israel Fictional"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Combat = "Combat"
+            Germany_Fictional = "Germany Fictional"
+            Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
+            Israel_Fictional = "Israel Fictional"
+            Russia_Fictional = "Russia Fictional"
+            Serbia_Fictional = "Serbia Fictional"
+            Syria_Fictional = "Syria Fictional"
+            Tiger_Meet = "Tiger Meet"
+            Tiger_Meet_2 = "Tiger Meet 2"
+            Training = "Training"
+            UK_Fictional = "UK Fictional"
+            US_Marines_Fictional = "US Marines Fictional"
+            Yugoslav_Fictional = "Yugoslav Fictional"
+
         class Greece(Enum):
             Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
 
@@ -2470,6 +3266,21 @@ class SA342Minigun(HelicopterType):
 
         class Syria(Enum):
             Syria_Fictional = "Syria Fictional"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Combat = "Combat"
+            Germany_Fictional = "Germany Fictional"
+            Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
+            Israel_Fictional = "Israel Fictional"
+            Russia_Fictional = "Russia Fictional"
+            Serbia_Fictional = "Serbia Fictional"
+            Syria_Fictional = "Syria Fictional"
+            Tiger_Meet = "Tiger Meet"
+            Tiger_Meet_2 = "Tiger Meet 2"
+            Training = "Training"
+            UK_Fictional = "UK Fictional"
+            US_Marines_Fictional = "US Marines Fictional"
+            Yugoslav_Fictional = "Yugoslav Fictional"
 
         class France(Enum):
             Combat = "Combat"
