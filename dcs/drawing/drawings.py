@@ -27,9 +27,8 @@ class Drawings:
 
     def load_from_dict(self, data):
         self.options.load_from_dict(data["options"])
-        for layer_index in data["layers"]:
+        for layer_index in sorted(data["layers"].keys()):
             layer_data = data["layers"][layer_index]
-            print("layer data", layer_data)
             layer = Layer(True, "", [])
             layer.load_from_dict(layer_data)
             self.layers.append(layer)
