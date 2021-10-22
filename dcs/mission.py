@@ -95,7 +95,7 @@ class Mission:
     """
     _COUNTRY_IDS = {x for x in range(0, 13)} | {x for x in range(15, 47)}
 
-    _CURRENT_MIZ_VERSION: int = 19  # on save this version number will be written
+    _CURRENT_MIZ_VERSION: int = 20  # on save this version number will be written
 
     def __init__(self, terrain: Optional[Terrain] = None) -> None:
         if terrain is None:
