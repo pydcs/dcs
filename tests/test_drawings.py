@@ -29,6 +29,7 @@ class DrawingTests(unittest.TestCase):
         line = m.drawings.layers[1].objects[0]
         self.assertEqual("Line 2 segments closed", line.name)
         
+        self.assertEqual(Rgba(255, 255, 0, 131), line.color)
         self.assertEqual(-260885.56415634, line.position.x)
         self.assertEqual(671996.90379981, line.position.y)
         self.assertEqual(0, line.points[0].x)

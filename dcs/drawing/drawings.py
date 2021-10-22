@@ -22,6 +22,7 @@ class Drawings:
     layers: List[Layer]
 
     def __init__(self):
+        # TODO: Default structures for options and layers
         self.options = Options({})
         self.layers = []
 
