@@ -1,20 +1,7 @@
-from dataclasses import dataclass
 from typing import List
 
 from dcs.drawing.layer import Layer
-
-@dataclass()
-class Options:
-    # TODO: Implement an API to generate defaults
-    hiddenOnF10Map: dict[str, dict[str, bool]]
-
-    def load_from_dict(self, data):
-        self.hiddenOnF10Map = data["hiddenOnF10Map"]
-
-    def dict(self):
-        d = {}
-        d["hiddenOnF10Map"] = self.hiddenOnF10Map
-        return d
+from dcs.drawing.options import Options
 
 
 class Drawings:
@@ -22,12 +9,18 @@ class Drawings:
     layers: List[Layer]
 
     def __init__(self):
-        # TODO: Default structures for options and layers
-        self.options = Options({})
-        self.layers = []
+        self.options = Options()
+        self.layers = [
+            Layer(True, "Red", []),
+            Layer(True, "Blue", []),
+            Layer(True, "Neutral", []),
+            Layer(True, "Common", []),
+            Layer(True, "Author", []),
+        ]
 
     def load_from_dict(self, data):
         self.options.load_from_dict(data["options"])
+        self.layers = []
         for layer_index in sorted(data["layers"].keys()):
             layer_data = data["layers"][layer_index]
             layer = Layer(True, "", [])

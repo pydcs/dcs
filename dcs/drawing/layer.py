@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 from typing import List
-from dcs.drawing import polygon
 
 from dcs.drawing.drawing import Drawing, LineStyle, Rgba
 from dcs.drawing.icon import Icon

@@ -1,9 +1,6 @@
 from enum import Enum
 from dataclasses import dataclass
-from pathlib import PosixPath
-from dcs import drawing
 import dcs.mapping as mapping
-
 
 @dataclass()
 class Rgba:

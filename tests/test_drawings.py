@@ -38,7 +38,7 @@ class DrawingTests(unittest.TestCase):
         self.assertEqual(3038.260694667, line.points[2].y)
 
 
-    def test_add_drawings(self) -> None:
+    def test_add_drawings_to_loaded_mission(self) -> None:
         m: Mission = dcs.mission.Mission()
         self.assertEqual(0, len(m.load_file('tests/missions/Draw_tool_test.miz')))
         
@@ -54,3 +54,17 @@ class DrawingTests(unittest.TestCase):
         self.assert_expected_stuff(m2)
         self.assertEqual("TEST CIRCLE", m.drawings.layers[0].objects[1].name)
         
+
+    def test_add_drawings_to_new_mission(self) -> None:
+        m: Mission = dcs.mission.Mission()
+        
+        circle = Circle(True, Point(10, 10), "TEST CIRCLE", Rgba(20, 30, 40, 200), ":S", Rgba(50, 60, 70, 150), 10, LineStyle.Solid, 100)
+        m.drawings.layers[0].add_drawing(circle)
+        self.assertEqual("TEST CIRCLE", m.drawings.layers[0].objects[0].name)
+
+        mission_path = 'missions/New_mission_w_added_drawings.miz'
+        m.save(mission_path)
+
+        m2 = dcs.mission.Mission()
+        self.assertEqual(0, len(m2.load_file(mission_path)))
+        self.assertEqual("TEST CIRCLE", m.drawings.layers[0].objects[0].name)
