@@ -1,4 +1,3 @@
-from dataclasses import dataclass
 
 class Options:
     hiddenOnF10Map: dict[str, dict[str, bool]]
@@ -35,7 +34,7 @@ class Options:
             "Blue": False,
             "Red": False,
         }
-        d["Spectrator"] = { 
+        d["Spectrator"] = { # Seems to be misspelled by DCS
             "Neutral": False,
             "Blue": False,
             "Red": False,

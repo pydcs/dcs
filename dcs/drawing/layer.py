@@ -108,7 +108,11 @@ class Layer():
 
 
     def add_drawing(self, drawing: Drawing):
+        drawing.layer_name = self.name
         self.objects.append(drawing)
 
-    def remove_drawing(name: str):
+    def remove_drawing_by_name(self, name: str):
         raise NotImplementedError()
+
+    def remove_drawing(self, drawing: Drawing):
+        self.objects.remove(drawing)

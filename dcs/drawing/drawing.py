@@ -12,11 +12,11 @@ class Rgba:
     def to_color_string(self) -> str:
         return f'#{int(self.r):02x}{int(self.g):02x}{int(self.b):02x}{int(self.a):02x}'
 
-    @staticmethod
-    def from_color_string(s: str):
+    @classmethod
+    def from_color_string(cls, s: str):
         s = s.replace('#', '').replace('0x', '')
         rgba = tuple(int(s[i:i+2], 16) for i in (0, 2, 4, 6))
-        return Rgba(rgba[0], rgba[1], rgba[2], rgba[3])
+        return cls(rgba[0], rgba[1], rgba[2], rgba[3])
 
 
 class LineStyle(Enum):

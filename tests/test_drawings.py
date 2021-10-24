@@ -1,6 +1,7 @@
 import unittest
 import dcs
 from dcs.drawing.drawing import LineStyle, Rgba
+from dcs.drawing.line import LineDrawing, LineMode
 from dcs.drawing.polygon import Circle
 from dcs.mapping import Point
 from dcs.mission import Mission
@@ -60,7 +61,7 @@ class DrawingTests(unittest.TestCase):
         
         circle = Circle(True, Point(10, 10), "TEST CIRCLE", Rgba(20, 30, 40, 200), ":S", Rgba(50, 60, 70, 150), 10, LineStyle.Solid, 100)
         m.drawings.layers[0].add_drawing(circle)
-        self.assertEqual("TEST CIRCLE", m.drawings.layers[0].objects[0].name)
+        m.drawings.layers[0].add_drawing(LineDrawing.create(Point(1, 1), [Point(6,6), Point(7,7)], line_mode=LineMode.Segments))
 
         mission_path = 'missions/New_mission_w_added_drawings.miz'
         m.save(mission_path)
@@ -68,3 +69,6 @@ class DrawingTests(unittest.TestCase):
         m2 = dcs.mission.Mission()
         self.assertEqual(0, len(m2.load_file(mission_path)))
         self.assertEqual("TEST CIRCLE", m.drawings.layers[0].objects[0].name)
+        self.assertEqual("A line", m.drawings.layers[0].objects[1].name)
+        self.assertEqual("Red", m.drawings.layers[0].objects[0].layer_name)
+        self.assertEqual("Red", m.drawings.layers[0].objects[1].layer_name)
