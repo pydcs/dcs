@@ -63,6 +63,10 @@ class DrawingTests(unittest.TestCase):
         m.drawings.layers[0].add_drawing(circle)
         m.drawings.layers[0].add_drawing(LineDrawing.create(Point(1, 1), [Point(6,6), Point(7,7)], line_mode=LineMode.Segments))
 
+        m.drawings.options.hiddenOnF10Map["Pilot"]["Red"] = True
+        m.drawings.options.hiddenOnF10Map["Instructor"]["Blue"] = True
+        m.drawings.options.hiddenOnF10Map["Observer"]["Neutral"] = True
+
         mission_path = 'missions/New_mission_w_added_drawings.miz'
         m.save(mission_path)
 

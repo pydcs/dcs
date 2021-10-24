@@ -10,7 +10,7 @@ class Rgba:
     a: int
 
     def to_color_string(self) -> str:
-        return f'#{int(self.r):02x}{int(self.g):02x}{int(self.b):02x}{int(self.a):02x}'
+        return f'0x{int(self.r):02x}{int(self.g):02x}{int(self.b):02x}{int(self.a):02x}'
 
     @classmethod
     def from_color_string(cls, s: str):
