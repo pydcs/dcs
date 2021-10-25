@@ -2,7 +2,8 @@ from enum import Enum
 from dataclasses import dataclass
 import dcs.mapping as mapping
 
-@dataclass()
+
+@dataclass
 class Rgba:
     r: int
     g: int
@@ -10,12 +11,12 @@ class Rgba:
     a: int
 
     def to_color_string(self) -> str:
-        return f'0x{int(self.r):02x}{int(self.g):02x}{int(self.b):02x}{int(self.a):02x}'
+        return f"0x{int(self.r):02x}{int(self.g):02x}{int(self.b):02x}{int(self.a):02x}"
 
     @classmethod
     def from_color_string(cls, s: str):
-        s = s.replace('#', '').replace('0x', '')
-        rgba = tuple(int(s[i:i+2], 16) for i in (0, 2, 4, 6))
+        s = s.replace("#", "").replace("0x", "")
+        rgba = tuple(int(s[i:i + 2], 16) for i in (0, 2, 4, 6))
         return cls(rgba[0], rgba[1], rgba[2], rgba[3])
 
 
@@ -28,7 +29,7 @@ class LineStyle(Enum):
     Triangle = "triangle"
 
 
-@dataclass()
+@dataclass
 class Drawing:
     visible: bool
     position: mapping.Point
@@ -50,6 +51,6 @@ class Drawing:
         d = {}
         i = 1
         for point in points:
-            d[i] = { "x": point.x, "y": point.y }
+            d[i] = {"x": point.x, "y": point.y}
             i += 1
         return d

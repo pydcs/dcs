@@ -1,8 +1,8 @@
 from enum import Enum
-from typing import List, Union
-
+from typing import List
 from dcs.drawing.layer import Layer
 from dcs.drawing.options import Options
+
 
 class StandardLayer(Enum):
     Red = "Red"
@@ -34,7 +34,6 @@ class Drawings:
             layer = Layer(True, "", [])
             layer.load_from_dict(layer_data)
             self.layers.append(layer)
-
 
     def dict(self):
         d = {}

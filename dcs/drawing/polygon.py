@@ -5,6 +5,7 @@ from typing import List
 from dcs.drawing.drawing import Drawing, LineStyle, Rgba
 from dcs.mapping import Point
 
+
 class PolygonMode(Enum):
     Circle = "circle"
     Oval = "oval"
@@ -12,7 +13,8 @@ class PolygonMode(Enum):
     Free = "free"
     Arrow = "arrow"
 
-@dataclass()
+
+@dataclass
 class PolygonDrawing(Drawing):
     fill: Rgba
     line_thickness: float
@@ -27,7 +29,7 @@ class PolygonDrawing(Drawing):
         return d
 
 
-@dataclass()
+@dataclass
 class Circle(PolygonDrawing):
     radius: float
 
@@ -38,7 +40,7 @@ class Circle(PolygonDrawing):
         return d
 
 
-@dataclass()
+@dataclass
 class Oval(PolygonDrawing):
     radius1: float
     radius2: float
@@ -53,7 +55,7 @@ class Oval(PolygonDrawing):
         return d
 
 
-@dataclass()
+@dataclass
 class Rectangle(PolygonDrawing):
     width: float
     height: float
@@ -68,10 +70,10 @@ class Rectangle(PolygonDrawing):
         return d
 
 
-@dataclass()
+@dataclass
 class FreeFormPolygon(PolygonDrawing):
     points: List[Point]
-    
+
     def dict(self):
         d = super().dict()
         d["polygonMode"] = PolygonMode.Free.value
@@ -79,12 +81,12 @@ class FreeFormPolygon(PolygonDrawing):
         return d
 
 
-@dataclass()
+@dataclass
 class Arrow(PolygonDrawing):
     length: float
     angle: float
     points: List[Point]
-    
+
     def dict(self):
         d = super().dict()
         d["polygonMode"] = PolygonMode.Arrow.value

@@ -3,6 +3,7 @@ from dcs.drawing.drawing import Drawing, Rgba
 
 # TODO: Research and define std fonts
 
+
 @dataclass()
 class TextBox(Drawing):
     text: str

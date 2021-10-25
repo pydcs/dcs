@@ -1,10 +1,9 @@
-
 class Options:
     hiddenOnF10Map: dict[str, dict[str, bool]]
 
     def __init__(self):
         self.hiddenOnF10Map = Options.get_default_hidden()
-    
+
     def load_from_dict(self, data):
         self.hiddenOnF10Map = data["hiddenOnF10Map"]
 
@@ -12,7 +11,9 @@ class Options:
         d = {}
         d["hiddenOnF10Map"] = {}
         for option_group_name in self.hiddenOnF10Map.keys():
-            d["hiddenOnF10Map"][option_group_name] = self.hiddenOnF10Map[option_group_name]
+            d["hiddenOnF10Map"][option_group_name] = self.hiddenOnF10Map[
+                option_group_name
+            ]
 
         return d
 
@@ -34,7 +35,7 @@ class Options:
             "Blue": False,
             "Red": False,
         }
-        d["Spectrator"] = { # Seems to be misspelled by DCS
+        d["Spectrator"] = {  # Seems to be misspelled by DCS
             "Neutral": False,
             "Blue": False,
             "Red": False,

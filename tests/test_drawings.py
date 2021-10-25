@@ -64,7 +64,7 @@ class DrawingTests(unittest.TestCase):
         circle = Circle(True, Point(10, 10), "TEST CIRCLE", Rgba(20, 30, 40, 200), ":S", Rgba(50, 60, 70, 150), 10, LineStyle.Solid, 100)
         red_layer = m.drawings.get_layer(StandardLayer.Red)
         red_layer.add_drawing(circle)
-        red_layer.add_drawing(LineDrawing.create(Point(1, 1), [Point(6,6), Point(7,7)], line_mode=LineMode.Segments))
+        red_layer.add_line_segments(Point(1, 1), [Point(6,6), Point(7,7)], closed=True)
 
         m.drawings.options.hiddenOnF10Map["Pilot"]["Red"] = True
         m.drawings.options.hiddenOnF10Map["Instructor"]["Blue"] = True
@@ -78,6 +78,7 @@ class DrawingTests(unittest.TestCase):
         red_layer2 = m2.drawings.get_layer(StandardLayer.Red)
         self.assertEqual("TEST CIRCLE", red_layer2.objects[0].name)
         self.assertEqual("A line", red_layer2.objects[1].name)
+        self.assertEqual(True, red_layer2.objects[1].closed)
         self.assertEqual("Red", red_layer2.objects[0].layer_name)
         self.assertEqual("Red", red_layer2.objects[1].layer_name)
 

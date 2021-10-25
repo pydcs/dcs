@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import List
 
-from dcs.drawing.drawing import Drawing, LineStyle, Rgba
+from dcs.drawing.drawing import Drawing, LineStyle
 from dcs.mapping import Point
 
 
@@ -11,7 +11,8 @@ class LineMode(Enum):
     Segments = "segments"
     Free = "free"
 
-@dataclass()
+
+@dataclass
 class LineDrawing(Drawing):
     closed: bool
     line_thickness: float

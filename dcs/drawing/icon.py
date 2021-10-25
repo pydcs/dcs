@@ -1,12 +1,10 @@
 from dataclasses import dataclass
-from typing import List
-
-from dcs.drawing.drawing import Drawing, Rgba
-from dcs.mapping import Point
+from dcs.drawing.drawing import Drawing
 
 # TODO: Research and define std icons
 
-@dataclass()
+
+@dataclass
 class Icon(Drawing):
     file: str
     scale: float
