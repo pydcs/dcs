@@ -108,7 +108,7 @@ class Layer():
 
 
     def add_drawing(self, drawing: Drawing):
-        drawing.layer_name = self.name
+        drawing.layer_name = self.name # Should we do this?
         self.objects.append(drawing)
 
     def remove_drawing_by_name(self, name: str):
@@ -116,3 +116,52 @@ class Layer():
 
     def remove_drawing(self, drawing: Drawing):
         self.objects.remove(drawing)
+
+    def add_line_segment(self, position: Point, end_point: Point, color=Rgba(255, 0, 0, 255), line_thickness=8, line_style=LineStyle.Solid) -> LineDrawing:
+        points = [Point(0, 0), end_point]
+        drawing = LineDrawing(True, position, "A line", color, self.name, False, line_thickness, line_style, LineMode.Segment, points)
+        self.add_drawing(drawing)
+        return drawing
+
+    def add_line_segments(self, position: Point, points: List[Point], color=Rgba(255, 0, 0, 255), line_thickness=8, line_style=LineStyle.Solid) -> LineDrawing:
+        drawing = LineDrawing(True, position, "A line", color, self.name, False, line_thickness, line_style, LineMode.Segments, points)
+        self.add_drawing(drawing)
+        return drawing
+
+    def add_line_freeform(self, position: Point, points: List[Point], color=Rgba(255, 0, 0, 255), line_thickness=8, line_style=LineStyle.Solid) -> LineDrawing:
+        drawing = LineDrawing(True, position, "A line", color, self.name, False, line_thickness, line_style, LineMode.Free, points)
+        self.add_drawing(drawing)
+        return drawing
+    
+    def add_icon(self, position: Point, file: str, scale=1.0, color=Rgba(255, 0, 0, 255)) -> Icon:
+        drawing = Icon(True, position, "An icon", color, self.name, file, scale, 0)
+        self.add_drawing(drawing)
+        return drawing
+    
+    def add_text_box(self, position: Point, text: str, color=Rgba(255, 0, 0, 255), fill=Rgba(255, 0, 0, 60), font_size=20, font="DejaVuLGCSansCondensed.ttf", border_thickness=2, angle=0) -> TextBox:
+        drawing = TextBox(True, position, "A text box", color, self.name, text, font_size, font, border_thickness, fill, angle)
+        self.add_drawing(drawing)
+        return drawing
+    
+    def add_circle(self, position: Point, radius: float, color=Rgba(255, 0, 0, 255), fill=Rgba(255, 0, 0, 255), line_thickness=8, line_style=LineStyle.Solid) -> Circle:
+        drawing = Circle(True, position, "A circle", color, self.name, fill, line_thickness, line_style, radius)
+        self.add_drawing(drawing)
+        return drawing
+
+    def add_oval(self, position: Point, radius1: float, radius2: float, color=Rgba(255, 0, 0, 255), fill=Rgba(255, 0, 0, 255), line_thickness=8, line_style=LineStyle.Solid, angle=0) -> Oval:
+        drawing = Oval(True, position, "An oval", color, self.name, fill, line_thickness, line_style, radius1, radius2, angle)
+        self.add_drawing(drawing)
+        return drawing
+    
+    def add_rectangle(self, position: Point, width: float, height: float, color=Rgba(255, 0, 0, 255), fill=Rgba(255, 0, 0, 255), line_thickness=8, line_style=LineStyle.Solid, angle=0) -> Rectangle:
+        drawing = Rectangle(True, position, "A rectangle", color, self.name, fill, line_thickness, line_style, width, height, angle)
+        self.add_drawing(drawing)
+        return drawing
+    
+    def add_freeform_polygon(self, position: Point, points: List[Point], color=Rgba(255, 0, 0, 255), fill=Rgba(255, 0, 0, 255), line_thickness=8, line_style=LineStyle.Solid) -> FreeFormPolygon:
+        drawing = FreeFormPolygon(True, position, "A freeform polygon", color, self.name, fill, line_thickness, line_style, points)
+        self.add_drawing(drawing)
+        return drawing
+
+    def add_arrow(self, position: Point, points: List[Point], color=Rgba(255, 0, 0, 255), fill=Rgba(255, 0, 0, 255), line_thickness=8, line_style=LineStyle.Solid) -> Arrow:
+        raise NotImplementedError("Arrow requires a weird points array")

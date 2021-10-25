@@ -28,7 +28,3 @@ class LineDrawing(Drawing):
         d["lineMode"] = self.line_mode.value
         d["points"] = super().points_to_dict(self.points)
         return d
-
-    @classmethod
-    def create(cls, position: Point, points: List[Point], line_mode=LineMode.Segment, color=Rgba(255, 0, 0, 255), line_thickness=8, line_style=LineStyle.Solid, closed=False):
-        return cls(True, position, "A line", color, "", closed, line_thickness, line_style, line_mode, points)
