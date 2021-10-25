@@ -1,7 +1,15 @@
-from typing import List
+from enum import Enum
+from typing import List, Union
 
 from dcs.drawing.layer import Layer
 from dcs.drawing.options import Options
+
+class StandardLayer(Enum):
+    Red = "Red"
+    Blue = "Blue"
+    Neutral = "Neutral"
+    Common = "Common"
+    Author = "Author"
 
 
 class Drawings:
@@ -11,11 +19,11 @@ class Drawings:
     def __init__(self):
         self.options = Options()
         self.layers = [
-            Layer(True, "Red", []),
-            Layer(True, "Blue", []),
-            Layer(True, "Neutral", []),
-            Layer(True, "Common", []),
-            Layer(True, "Author", []),
+            Layer(True, StandardLayer.Red.value, []),
+            Layer(True, StandardLayer.Blue.value, []),
+            Layer(True, StandardLayer.Neutral.value, []),
+            Layer(True, StandardLayer.Common.value, []),
+            Layer(True, StandardLayer.Author.value, []),
         ]
 
     def load_from_dict(self, data):
@@ -39,3 +47,11 @@ class Drawings:
             i += 1
 
         return d
+
+    def get_layer_by_name(self, layer_name: str):
+        for layer in self.layers:
+            if layer.name == layer_name:
+                return layer
+
+    def get_layer(self, layer: StandardLayer):
+        return self.get_layer_by_name(layer.value)
