@@ -329,6 +329,17 @@ class Type_071(unittype.ShipType):
     air_weapon_dist = 150000
 
 
+class Forrestal(unittype.ShipType):
+    id = "Forrestal"
+    name = "CV-59 Forrestal"
+    plane_num = 72
+    helicopter_num = 6
+    parking = 4
+    detection_range = 50000
+    threat_range = 25000
+    air_weapon_dist = 25000
+
+
 class LST_Mk2(unittype.ShipType):
     id = "LST_Mk2"
     name = "LST Mk.II"
@@ -403,6 +414,7 @@ ship_map = {
     "Type_052C": Type_052C,
     "Type_093": Type_093,
     "Type_071": Type_071,
+    "Forrestal": Forrestal,
     "LST_Mk2": LST_Mk2,
     "USS_Samuel_Chase": USS_Samuel_Chase,
     "Higgins_boat": Higgins_boat,

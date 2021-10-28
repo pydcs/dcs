@@ -838,8 +838,20 @@ writeln(file, 'import dcs.vehicles as vehicles')
 writeln(file, 'import dcs.planes as planes')
 writeln(file, 'import dcs.helicopters as helicopters')
 writeln(file, 'import dcs.ships as ships')
-local countryPlaneIgnore = { "Su_30MK", "F_86F", "F_16C_50", "F_5E_MAC", "F_86F_MAC", "TF_51", "MiG_15bis_MAC",
-    "L_39_MAC", "F_4E_new", "F_14A_95_GR" }
+local countryPlaneIgnore = {
+    "F_14A_95_GR",
+    "F_16C_50",
+    "F_4E_new",
+    "F_5E_MAC",
+    "F_86F_MAC",
+    "F_86F",
+    "L_39_MAC",
+    "MB_339A",
+    "MB_339A_PAN",
+    "MiG_15bis_MAC",
+    "Su_30MK",
+    "TF_51",
+}
 local countryHeliIgnore = { "Mi_24P" }
 local i = 0
 while i <= country.maxIndex do

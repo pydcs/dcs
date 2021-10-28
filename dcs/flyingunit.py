@@ -1,3 +1,5 @@
+import copy
+
 from dcs.unit import Unit, Skill
 from dcs.unittype import AircraftRadioPresets, FlyingType
 from dcs.terrain import ParkingSlot
@@ -102,7 +104,7 @@ class FlyingUnit(Unit):
     def set_radio_preset(self):
         """Resets the radio channel configuration to the airframe's default."""
         if self.unit_type.panel_radio:
-            self.radio = self.unit_type.panel_radio
+            self.radio = copy.deepcopy(self.unit_type.panel_radio)
 
     def num_radio_channels(self, radio_id: int) -> int:
         """Returns the number of channels available for the given radio."""

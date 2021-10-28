@@ -26,7 +26,23 @@ class Tornado_GR4(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            bb_of_14_squadron_raf_lossiemouth = "bb of 14 squadron raf lossiemouth"
+            no__12_squadron_raf_lossiemouth_ab__morayshire = "no. 12 squadron raf lossiemouth ab (morayshire)"
+            no__14_squadron_raf_lossiemouth_ab__morayshire = "no. 14 squadron raf lossiemouth ab (morayshire)"
+            no__617_squadron_raf_lossiemouth_ab__morayshire = "no. 617 squadron raf lossiemouth ab (morayshire)"
+            no__9_squadron_raf_marham_ab__norfolk = "no. 9 squadron raf marham ab (norfolk)"
+            o_of_ii__ac__squadron_raf_marham = "o of ii (ac) squadron raf marham"
+
         class UK(Enum):
+            bb_of_14_squadron_raf_lossiemouth = "bb of 14 squadron raf lossiemouth"
+            no__12_squadron_raf_lossiemouth_ab__morayshire = "no. 12 squadron raf lossiemouth ab (morayshire)"
+            no__14_squadron_raf_lossiemouth_ab__morayshire = "no. 14 squadron raf lossiemouth ab (morayshire)"
+            no__617_squadron_raf_lossiemouth_ab__morayshire = "no. 617 squadron raf lossiemouth ab (morayshire)"
+            no__9_squadron_raf_marham_ab__norfolk = "no. 9 squadron raf marham ab (norfolk)"
+            o_of_ii__ac__squadron_raf_marham = "o of ii (ac) squadron raf marham"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
             bb_of_14_squadron_raf_lossiemouth = "bb of 14 squadron raf lossiemouth"
             no__12_squadron_raf_lossiemouth_ab__morayshire = "no. 12 squadron raf lossiemouth ab (morayshire)"
             no__14_squadron_raf_lossiemouth_ab__morayshire = "no. 14 squadron raf lossiemouth ab (morayshire)"
@@ -111,18 +127,278 @@ class Tornado_IDS(PlaneType):
 
     class Liveries:
 
-        class Italy(Enum):
+        class USSR(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Georgia(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Venezuela(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Australia(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Israel(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            TAIFENG = "TAIFENG"
             ITA_Tornado__Sesto_Stormo_Diavoli_Rossi = "ITA Tornado (Sesto Stormo Diavoli Rossi)"
             ITA_Tornado_Black = "ITA Tornado Black"
             ITA_Tornado_MM55004 = "ITA Tornado MM55004"
             ITA_Tornado_MM7042 = "ITA Tornado MM7042"
-
-        class Germany(Enum):
             aufklarungsgeschwader_51__immelmann__jagel_ab_luftwaffe = "aufklarungsgeschwader 51 `immelmann` jagel ab luftwaffe"
             jagdbombergeschwader_31__boelcke__norvenich_ab_luftwaffe = "jagdbombergeschwader 31 `boelcke` norvenich ab luftwaffe"
             jagdbombergeschwader_32_lechfeld_ab_luftwaffe = "jagdbombergeschwader 32 lechfeld ab luftwaffe"
             jagdbombergeschwader_33_buchel_ab_no__43_19_experimental_scheme = "jagdbombergeschwader 33 buchel ab no. 43+19 experimental scheme"
             marinefliegergeschwader_2_eggebek_ab_marineflieger = "marinefliegergeschwader 2 eggebek ab marineflieger"
+
+        class Sudan(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Norway(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Romania(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Iran(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Ukraine(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Libya(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Belgium(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Slovakia(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Greece(Enum):
+            TAIFENG = "TAIFENG"
+
+        class UK(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Third_Reich(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Hungary(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Abkhazia(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Morocco(Enum):
+            TAIFENG = "TAIFENG"
+
+        class United_Nations_Peacekeepers(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Switzerland(Enum):
+            TAIFENG = "TAIFENG"
+
+        class SouthOssetia(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Vietnam(Enum):
+            TAIFENG = "TAIFENG"
+
+        class China(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Yemen(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Kuwait(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Serbia(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Oman(Enum):
+            TAIFENG = "TAIFENG"
+
+        class India(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Egypt(Enum):
+            TAIFENG = "TAIFENG"
+
+        class TheNetherlands(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Poland(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Syria(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Finland(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Kazakhstan(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Denmark(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Sweden(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Croatia(Enum):
+            TAIFENG = "TAIFENG"
+
+        class CzechRepublic(Enum):
+            TAIFENG = "TAIFENG"
+
+        class GDR(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Yugoslavia(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Bulgaria(Enum):
+            TAIFENG = "TAIFENG"
+
+        class SouthKorea(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Tunisia(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            TAIFENG = "TAIFENG"
+            ITA_Tornado__Sesto_Stormo_Diavoli_Rossi = "ITA Tornado (Sesto Stormo Diavoli Rossi)"
+            ITA_Tornado_Black = "ITA Tornado Black"
+            ITA_Tornado_MM55004 = "ITA Tornado MM55004"
+            ITA_Tornado_MM7042 = "ITA Tornado MM7042"
+            aufklarungsgeschwader_51__immelmann__jagel_ab_luftwaffe = "aufklarungsgeschwader 51 `immelmann` jagel ab luftwaffe"
+            jagdbombergeschwader_31__boelcke__norvenich_ab_luftwaffe = "jagdbombergeschwader 31 `boelcke` norvenich ab luftwaffe"
+            jagdbombergeschwader_32_lechfeld_ab_luftwaffe = "jagdbombergeschwader 32 lechfeld ab luftwaffe"
+            jagdbombergeschwader_33_buchel_ab_no__43_19_experimental_scheme = "jagdbombergeschwader 33 buchel ab no. 43+19 experimental scheme"
+            marinefliegergeschwader_2_eggebek_ab_marineflieger = "marinefliegergeschwader 2 eggebek ab marineflieger"
+
+        class Lebanon(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Portugal(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Cuba(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Insurgents(Enum):
+            TAIFENG = "TAIFENG"
+
+        class SaudiArabia(Enum):
+            TAIFENG = "TAIFENG"
+
+        class France(Enum):
+            TAIFENG = "TAIFENG"
+
+        class USA(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Honduras(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Qatar(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Russia(Enum):
+            TAIFENG = "TAIFENG"
+
+        class United_Arab_Emirates(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Italian_Social_Republi(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Austria(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Bahrain(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Italy(Enum):
+            TAIFENG = "TAIFENG"
+            ITA_Tornado__Sesto_Stormo_Diavoli_Rossi = "ITA Tornado (Sesto Stormo Diavoli Rossi)"
+            ITA_Tornado_Black = "ITA Tornado Black"
+            ITA_Tornado_MM55004 = "ITA Tornado MM55004"
+            ITA_Tornado_MM7042 = "ITA Tornado MM7042"
+
+        class Chile(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Turkey(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Philippines(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Algeria(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Pakistan(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Malaysia(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Indonesia(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Iraq(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Germany(Enum):
+            TAIFENG = "TAIFENG"
+            aufklarungsgeschwader_51__immelmann__jagel_ab_luftwaffe = "aufklarungsgeschwader 51 `immelmann` jagel ab luftwaffe"
+            jagdbombergeschwader_31__boelcke__norvenich_ab_luftwaffe = "jagdbombergeschwader 31 `boelcke` norvenich ab luftwaffe"
+            jagdbombergeschwader_32_lechfeld_ab_luftwaffe = "jagdbombergeschwader 32 lechfeld ab luftwaffe"
+            jagdbombergeschwader_33_buchel_ab_no__43_19_experimental_scheme = "jagdbombergeschwader 33 buchel ab no. 43+19 experimental scheme"
+            marinefliegergeschwader_2_eggebek_ab_marineflieger = "marinefliegergeschwader 2 eggebek ab marineflieger"
+
+        class South_Africa(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Jordan(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Mexico(Enum):
+            TAIFENG = "TAIFENG"
+
+        class USAFAggressors(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Brazil(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Spain(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Belarus(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Canada(Enum):
+            TAIFENG = "TAIFENG"
+
+        class NorthKorea(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Ethiopia(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Japan(Enum):
+            TAIFENG = "TAIFENG"
+
+        class Thailand(Enum):
+            TAIFENG = "TAIFENG"
 
     class Pylon1:
         BOZ_107___Countermeasure_Dispenser = (1, Weapons.BOZ_107___Countermeasure_Dispenser)
@@ -199,6 +475,40 @@ class F_A_18A(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
 
     class Liveries:
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            _3th_wing_425th_tfs_rcaf__Bagotville_ab = "3th wing 425th tfs rcaf (Bagotville ab)"
+            _3th_wing_433th_tfs_rcaf__Bagotville_ab = "3th wing 433th tfs rcaf (Bagotville ab)"
+            _4th_wing_410th_tfs_rcaf__cold_lake_ab = "4th wing 410th tfs rcaf (cold lake ab)"
+            _4th_wing_416th_tfs_rcaf__cold_lake_ab = "4th wing 416th tfs rcaf (cold lake ab)"
+            _4th_wing_441th_tfs_rcaf__cold_lake_ab = "4th wing 441th tfs rcaf (cold lake ab)"
+            grupo_12_eaf_torrejon_ab = "grupo 12 eaf torrejon ab"
+            grupo_15_eaf_zaragoza_ab = "grupo 15 eaf zaragoza ab"
+            vfa_125__rough_riders__mc__lemoore = "vfa-125 `rough riders` mc (lemoore)"
+            vfa_131__wildcats__navy__cecil_field = "vfa-131 `wildcats` navy (cecil field)"
+            vfa_132__privateers__navy__lemoore = "vfa-132 `privateers` navy (lemoore)"
+            vfa_15__valions__navy__cecil_field = "vfa-15 `valions` navy (cecil field)"
+            vfa_151__vigilantes__navy__lemoore = "vfa-151 `vigilantes` navy (lemoore)"
+            vmfa_251__thunderbolts__mc__beaufort = "vmfa-251 `thunderbolts` mc (beaufort)"
+            vmfa_314__black_knights__mc__el_toro = "vmfa-314 `black knights` mc (el toro)"
+            vmfa_323__death_rattlers__mc__el_toro = "vmfa-323 `death rattlers` mc (el toro)"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            _3th_wing_425th_tfs_rcaf__Bagotville_ab = "3th wing 425th tfs rcaf (Bagotville ab)"
+            _3th_wing_433th_tfs_rcaf__Bagotville_ab = "3th wing 433th tfs rcaf (Bagotville ab)"
+            _4th_wing_410th_tfs_rcaf__cold_lake_ab = "4th wing 410th tfs rcaf (cold lake ab)"
+            _4th_wing_416th_tfs_rcaf__cold_lake_ab = "4th wing 416th tfs rcaf (cold lake ab)"
+            _4th_wing_441th_tfs_rcaf__cold_lake_ab = "4th wing 441th tfs rcaf (cold lake ab)"
+            grupo_12_eaf_torrejon_ab = "grupo 12 eaf torrejon ab"
+            grupo_15_eaf_zaragoza_ab = "grupo 15 eaf zaragoza ab"
+            vfa_125__rough_riders__mc__lemoore = "vfa-125 `rough riders` mc (lemoore)"
+            vfa_131__wildcats__navy__cecil_field = "vfa-131 `wildcats` navy (cecil field)"
+            vfa_132__privateers__navy__lemoore = "vfa-132 `privateers` navy (lemoore)"
+            vfa_15__valions__navy__cecil_field = "vfa-15 `valions` navy (cecil field)"
+            vfa_151__vigilantes__navy__lemoore = "vfa-151 `vigilantes` navy (lemoore)"
+            vmfa_251__thunderbolts__mc__beaufort = "vmfa-251 `thunderbolts` mc (beaufort)"
+            vmfa_314__black_knights__mc__el_toro = "vmfa-314 `black knights` mc (el toro)"
+            vmfa_323__death_rattlers__mc__el_toro = "vmfa-323 `death rattlers` mc (el toro)"
 
         class USA(Enum):
             vfa_125__rough_riders__mc__lemoore = "vfa-125 `rough riders` mc (lemoore)"
@@ -375,6 +685,20 @@ class F_A_18C(PlaneType):
 
         class Australia(Enum):
             Australia_75_Sqn_RAAF = "Australia 75 Sqn RAAF"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Australia_75_Sqn_RAAF = "Australia 75 Sqn RAAF"
+            NSAWC_25 = "NSAWC_25"
+            NSAWC_44 = "NSAWC_44"
+            VFA_94 = "VFA-94"
+            VFC_12 = "VFC-12"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Australia_75_Sqn_RAAF = "Australia 75 Sqn RAAF"
+            NSAWC_25 = "NSAWC_25"
+            NSAWC_44 = "NSAWC_44"
+            VFA_94 = "VFA-94"
+            VFC_12 = "VFC-12"
 
         class USA(Enum):
             NSAWC_25 = "NSAWC_25"
@@ -585,6 +909,30 @@ class F_14A(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            black_demo_scheme = "black demo scheme"
+            vf_1__wolfpack = "vf-1 `wolfpack`"
+            vf_111__sundowners___1 = "vf-111 `sundowners`- 1"
+            vf_111__sundowners___2 = "vf-111 `sundowners`- 2"
+            vf_142__ghost_riders = "vf-142 `ghost riders`"
+            vf_143__pukin_s_dogs = "vf-143 `pukin's dogs`"
+            vf_33__starfighters = "vf-33 `starfighters`"
+            vf_41__black_aces = "vf-41 `black aces`"
+            vf_84__jolly_rogers = "vf-84 `jolly rogers`"
+            vf_xxx__aardvarks = "vf-xxx `aardvarks`"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            black_demo_scheme = "black demo scheme"
+            vf_1__wolfpack = "vf-1 `wolfpack`"
+            vf_111__sundowners___1 = "vf-111 `sundowners`- 1"
+            vf_111__sundowners___2 = "vf-111 `sundowners`- 2"
+            vf_142__ghost_riders = "vf-142 `ghost riders`"
+            vf_143__pukin_s_dogs = "vf-143 `pukin's dogs`"
+            vf_33__starfighters = "vf-33 `starfighters`"
+            vf_41__black_aces = "vf-41 `black aces`"
+            vf_84__jolly_rogers = "vf-84 `jolly rogers`"
+            vf_xxx__aardvarks = "vf-xxx `aardvarks`"
+
         class USA(Enum):
             black_demo_scheme = "black demo scheme"
             vf_1__wolfpack = "vf-1 `wolfpack`"
@@ -665,7 +1013,13 @@ class Tu_22M3(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            af_standard = "af standard"
+
         class Ukraine(Enum):
+            af_standard = "af standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
             af_standard = "af standard"
 
         class Russia(Enum):
@@ -712,11 +1066,21 @@ class F_4E(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            HAF_Aegean_Ghost = "HAF Aegean Ghost"
+            IRIAF_Asia_Minor = "IRIAF Asia Minor"
+            af_standard = "af standard"
+
         class Iran(Enum):
             IRIAF_Asia_Minor = "IRIAF Asia Minor"
 
         class Greece(Enum):
             HAF_Aegean_Ghost = "HAF Aegean Ghost"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            HAF_Aegean_Ghost = "HAF Aegean Ghost"
+            IRIAF_Asia_Minor = "IRIAF Asia Minor"
+            af_standard = "af standard"
 
         class Germany(Enum):
             af_standard = "af standard"
@@ -825,6 +1189,12 @@ class B_52H(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            usaf_standard = "usaf standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            usaf_standard = "usaf standard"
+
         class USA(Enum):
             usaf_standard = "usaf standard"
 
@@ -868,6 +1238,14 @@ class MiG_27K(PlaneType):
     class Liveries:
 
         class USSR(Enum):
+            af_standard = "af standard"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Algerian_Air_Force = "Algerian Air Force"
+            af_standard = "af standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Algerian_Air_Force = "Algerian Air Force"
             af_standard = "af standard"
 
         class Russia(Enum):
@@ -970,21 +1348,119 @@ class Su_27(PlaneType):
     class Liveries:
 
         class USSR(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
             Air_Force_Standard = "Air Force Standard"
             Air_Force_Standard_Early = "Air Force Standard Early"
             Air_Force_Standard_old = "Air Force Standard old"
 
+        class Georgia(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Venezuela(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Australia(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Israel(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+            Air_Force_Standard = "Air Force Standard"
+            Air_Force_Standard_Early = "Air Force Standard Early"
+            Air_Force_Standard_old = "Air Force Standard old"
+            Air_Force_Ukraine_Standard = "Air Force Ukraine Standard"
+            Air_Force_Ukraine_Standard_Early = "Air Force Ukraine Standard Early"
+            Algerian_AF_BLUE_02 = "Algerian AF BLUE 02"
+            Algerian_AF_GREY_04 = "Algerian AF GREY 04"
+            Besovets_AFB = "Besovets AFB"
+            Besovets_AFB_2_squadron = "Besovets AFB 2 squadron"
+            Chkalovsk_AFB__689_GvIAP = "Chkalovsk AFB (689 GvIAP)"
+            HAF_AEGEAN_GHOST = "HAF AEGEAN GHOST"
+            Hotilovo_AFB = "Hotilovo AFB"
+            Kazakhstan_Air_Defense_Forces = "Kazakhstan Air Defense Forces"
+            Kilpyavr_AFB__Maresyev = "Kilpyavr AFB (Maresyev)"
+            Kubinka_AFB__Russian_Knights_Old = "Kubinka AFB (Russian Knights Old)"
+            Kubinka_AFB__Russian_Knights = "Kubinka AFB (Russian Knights)"
+            Lodeynoye_pole_AFB__177_IAP = "Lodeynoye pole AFB (177 IAP)"
+            Lypetsk_AFB__Falcons_of_Russia = "Lypetsk AFB (Falcons of Russia)"
+            Lypetsk_AFB__Shark = "Lypetsk AFB (Shark)"
+            M_Gromov_FRI = "M Gromov FRI"
+            Mirgorod_AFB__831th_brigade = "Mirgorod AFB (831th brigade)"
+            Mirgorod_AFB__Digital_camo = "Mirgorod AFB (Digital camo)"
+            Ozerne_AFB__9th_brigade = "Ozerne AFB (9th brigade)"
+            PLAAF_K1S_old = "PLAAF K1S old"
+            PLAAF_K2S_new = "PLAAF K2S new"
+            PLAAF_K2S_new_parade = "PLAAF K2S new parade"
+            PLAAF_K2S_old = "PLAAF K2S old"
+            PLAAF_K33S = "PLAAF K33S"
+            PLAAF_Standard = "PLAAF Standard"
+            PLANAF_HH8S = "PLANAF HH8S"
+            placeholder = "placeholder"
+
+        class Sudan(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Norway(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Romania(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Iran(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
         class Ukraine(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
             Air_Force_Ukraine_Standard = "Air Force Ukraine Standard"
             Air_Force_Ukraine_Standard_Early = "Air Force Ukraine Standard Early"
             Mirgorod_AFB__831th_brigade = "Mirgorod AFB (831th brigade)"
             Mirgorod_AFB__Digital_camo = "Mirgorod AFB (Digital camo)"
             Ozerne_AFB__9th_brigade = "Ozerne AFB (9th brigade)"
 
+        class Libya(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Belgium(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Slovakia(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
         class Greece(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
             HAF_AEGEAN_GHOST = "HAF AEGEAN GHOST"
 
+        class UK(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Third_Reich(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Hungary(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Abkhazia(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Morocco(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class United_Nations_Peacekeepers(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Switzerland(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class SouthOssetia(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Vietnam(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
         class China(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
             PLAAF_K1S_old = "PLAAF K1S old"
             PLAAF_K2S_new = "PLAAF K2S new"
             PLAAF_K2S_new_parade = "PLAAF K2S new parade"
@@ -993,10 +1469,130 @@ class Su_27(PlaneType):
             PLAAF_Standard = "PLAAF Standard"
             PLANAF_HH8S = "PLANAF HH8S"
 
+        class Yemen(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Kuwait(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Serbia(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Oman(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class India(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Egypt(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class TheNetherlands(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Poland(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Syria(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Finland(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
         class Kazakhstan(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
             Kazakhstan_Air_Defense_Forces = "Kazakhstan Air Defense Forces"
 
+        class Denmark(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Sweden(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Croatia(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class CzechRepublic(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class GDR(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Yugoslavia(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Bulgaria(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class SouthKorea(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Tunisia(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+            Air_Force_Standard = "Air Force Standard"
+            Air_Force_Standard_Early = "Air Force Standard Early"
+            Air_Force_Standard_old = "Air Force Standard old"
+            Air_Force_Ukraine_Standard = "Air Force Ukraine Standard"
+            Air_Force_Ukraine_Standard_Early = "Air Force Ukraine Standard Early"
+            Algerian_AF_BLUE_02 = "Algerian AF BLUE 02"
+            Algerian_AF_GREY_04 = "Algerian AF GREY 04"
+            Besovets_AFB = "Besovets AFB"
+            Besovets_AFB_2_squadron = "Besovets AFB 2 squadron"
+            Chkalovsk_AFB__689_GvIAP = "Chkalovsk AFB (689 GvIAP)"
+            HAF_AEGEAN_GHOST = "HAF AEGEAN GHOST"
+            Hotilovo_AFB = "Hotilovo AFB"
+            Kazakhstan_Air_Defense_Forces = "Kazakhstan Air Defense Forces"
+            Kilpyavr_AFB__Maresyev = "Kilpyavr AFB (Maresyev)"
+            Kubinka_AFB__Russian_Knights_Old = "Kubinka AFB (Russian Knights Old)"
+            Kubinka_AFB__Russian_Knights = "Kubinka AFB (Russian Knights)"
+            Lodeynoye_pole_AFB__177_IAP = "Lodeynoye pole AFB (177 IAP)"
+            Lypetsk_AFB__Falcons_of_Russia = "Lypetsk AFB (Falcons of Russia)"
+            Lypetsk_AFB__Shark = "Lypetsk AFB (Shark)"
+            M_Gromov_FRI = "M Gromov FRI"
+            Mirgorod_AFB__831th_brigade = "Mirgorod AFB (831th brigade)"
+            Mirgorod_AFB__Digital_camo = "Mirgorod AFB (Digital camo)"
+            Ozerne_AFB__9th_brigade = "Ozerne AFB (9th brigade)"
+            PLAAF_K1S_old = "PLAAF K1S old"
+            PLAAF_K2S_new = "PLAAF K2S new"
+            PLAAF_K2S_new_parade = "PLAAF K2S new parade"
+            PLAAF_K2S_old = "PLAAF K2S old"
+            PLAAF_K33S = "PLAAF K33S"
+            PLAAF_Standard = "PLAAF Standard"
+            PLANAF_HH8S = "PLANAF HH8S"
+            placeholder = "placeholder"
+
+        class Lebanon(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Portugal(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Cuba(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Insurgents(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class SaudiArabia(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class France(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class USA(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Honduras(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Qatar(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
         class Russia(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
             Air_Force_Standard = "Air Force Standard"
             Air_Force_Standard_Early = "Air Force Standard Early"
             Air_Force_Standard_old = "Air Force Standard old"
@@ -1012,9 +1608,85 @@ class Su_27(PlaneType):
             Lypetsk_AFB__Shark = "Lypetsk AFB (Shark)"
             M_Gromov_FRI = "M Gromov FRI"
 
+        class United_Arab_Emirates(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Italian_Social_Republi(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Austria(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Bahrain(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Italy(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Chile(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Turkey(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Philippines(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
         class Algeria(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
             Algerian_AF_BLUE_02 = "Algerian AF BLUE 02"
             Algerian_AF_GREY_04 = "Algerian AF GREY 04"
+
+        class Pakistan(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Malaysia(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Indonesia(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Iraq(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Germany(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class South_Africa(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Jordan(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Mexico(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class USAFAggressors(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Brazil(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Spain(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Belarus(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Canada(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class NorthKorea(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Ethiopia(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Japan(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
+
+        class Thailand(Enum):
+            Su_27_UTAF = "Su-27_UTAF"
 
     class Pylon1:
         R_73__AA_11_Archer____Infra_Red = (1, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -1244,6 +1916,20 @@ class MiG_23MLD(PlaneType):
             af_standard_2 = "af standard-2"
             af_standard_3__worn_out = "af standard-3 (worn-out)"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Algerian_Air_Force = "Algerian Air Force"
+            af_standard = "af standard"
+            af_standard_1 = "af standard-1"
+            af_standard_2 = "af standard-2"
+            af_standard_3__worn_out = "af standard-3 (worn-out)"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Algerian_Air_Force = "Algerian Air Force"
+            af_standard = "af standard"
+            af_standard_1 = "af standard-1"
+            af_standard_2 = "af standard-2"
+            af_standard_3__worn_out = "af standard-3 (worn-out)"
+
         class Russia(Enum):
             af_standard = "af standard"
             af_standard_1 = "af standard-1"
@@ -1348,6 +2034,23 @@ class Su_25(PlaneType):
             _scorpion__demo_scheme__native = "`scorpion` demo scheme (native)"
             field_camo_scheme__1__native_01 = "field camo scheme #1 (native)01"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Abkhazian_Air_Force = "Abkhazian Air Force"
+            Algerian_AF_Desert_Fictional = "Algerian AF Desert Fictional"
+            HAF_Aegean_Ghost = "HAF Aegean Ghost"
+            HAF_Camo = "HAF Camo"
+            IRGC_54 = "IRGC 54"
+            _scorpion__demo_scheme__native = "`scorpion` demo scheme (native)"
+            broken_camo_scheme__1__native___299th_oshap = "broken camo scheme #1 (native). 299th oshap"
+            broken_camo_scheme__2__native___452th_shap = "broken camo scheme #2 (native). 452th shap"
+            field_camo_scheme__1__native = "field camo scheme #1 (native)"
+            field_camo_scheme__1__native_01 = "field camo scheme #1 (native)01"
+            field_camo_scheme__2__native___960th_shap = "field camo scheme #2 (native). 960th shap"
+            field_camo_scheme__3__worn_out___960th_shap = "field camo scheme #3 (worn-out). 960th shap"
+            forest_camo_scheme__1__native = "forest camo scheme #1 (native)"
+            petal_camo_scheme__1__native___299th_brigade = "petal camo scheme #1 (native). 299th brigade"
+            petal_camo_scheme__2__native___299th_brigade = "petal camo scheme #2 (native). 299th brigade"
+
         class Iran(Enum):
             IRGC_54 = "IRGC 54"
 
@@ -1363,6 +2066,23 @@ class Su_25(PlaneType):
 
         class Abkhazia(Enum):
             Abkhazian_Air_Force = "Abkhazian Air Force"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Abkhazian_Air_Force = "Abkhazian Air Force"
+            Algerian_AF_Desert_Fictional = "Algerian AF Desert Fictional"
+            HAF_Aegean_Ghost = "HAF Aegean Ghost"
+            HAF_Camo = "HAF Camo"
+            IRGC_54 = "IRGC 54"
+            _scorpion__demo_scheme__native = "`scorpion` demo scheme (native)"
+            broken_camo_scheme__1__native___299th_oshap = "broken camo scheme #1 (native). 299th oshap"
+            broken_camo_scheme__2__native___452th_shap = "broken camo scheme #2 (native). 452th shap"
+            field_camo_scheme__1__native = "field camo scheme #1 (native)"
+            field_camo_scheme__1__native_01 = "field camo scheme #1 (native)01"
+            field_camo_scheme__2__native___960th_shap = "field camo scheme #2 (native). 960th shap"
+            field_camo_scheme__3__worn_out___960th_shap = "field camo scheme #3 (worn-out). 960th shap"
+            forest_camo_scheme__1__native = "forest camo scheme #1 (native)"
+            petal_camo_scheme__1__native___299th_brigade = "petal camo scheme #1 (native). 299th brigade"
+            petal_camo_scheme__2__native___299th_brigade = "petal camo scheme #2 (native). 299th brigade"
 
         class Russia(Enum):
             field_camo_scheme__1__native = "field camo scheme #1 (native)"
@@ -1618,6 +2338,12 @@ class Su_25TM(PlaneType):
     flare_charge_size = 1
 
     class Liveries:
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Flight_Research_Institute__VVS = "Flight Research Institute  VVS"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Flight_Research_Institute__VVS = "Flight Research Institute  VVS"
 
         class Russia(Enum):
             Flight_Research_Institute__VVS = "Flight Research Institute  VVS"
@@ -1909,8 +2635,32 @@ class Su_25T(PlaneType):
             af_standard = "af standard"
             af_standard_101 = "af standard 101"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Algerian_AF_Desert_KU_03 = "Algerian AF Desert KU-03"
+            Algerian_AF_Grey_KU_01 = "Algerian AF Grey KU-01"
+            Algerian_AF_Grey_KU_02 = "Algerian AF Grey KU-02"
+            Algerian_AF_Trainer_KU_04 = "Algerian AF Trainer KU-04"
+            HAF___Fictional = "HAF - Fictional"
+            af_standard = "af standard"
+            af_standard_1 = "af standard 1"
+            af_standard_101 = "af standard 101"
+            af_standard_2 = "af standard 2"
+            su_25t_test_scheme = "su-25t test scheme"
+
         class Greece(Enum):
             HAF___Fictional = "HAF - Fictional"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Algerian_AF_Desert_KU_03 = "Algerian AF Desert KU-03"
+            Algerian_AF_Grey_KU_01 = "Algerian AF Grey KU-01"
+            Algerian_AF_Grey_KU_02 = "Algerian AF Grey KU-02"
+            Algerian_AF_Trainer_KU_04 = "Algerian AF Trainer KU-04"
+            HAF___Fictional = "HAF - Fictional"
+            af_standard = "af standard"
+            af_standard_1 = "af standard 1"
+            af_standard_101 = "af standard 101"
+            af_standard_2 = "af standard 2"
+            su_25t_test_scheme = "su-25t test scheme"
 
         class Russia(Enum):
             af_standard_1 = "af standard 1"
@@ -2212,7 +2962,17 @@ class Su_33(PlaneType):
             PLAN_Carrier_Air_Wings_J_15 = "PLAN Carrier Air Wings J-15"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
+            AAF_BLUE_68 = "AAF BLUE 68"
+            AAF_GREY_12 = "AAF GREY 12"
+            HAF___Aegean_Ghost = "HAF - Aegean Ghost"
+            _279th_kiap_1st_squad_navy = "279th kiap 1st squad navy"
+            _279th_kiap_2nd_squad_navy = "279th kiap 2nd squad navy"
             PLAN_Carrier_Air_Wings_J_15 = "PLAN Carrier Air Wings J-15"
+            _279th_kiap_1st_squad_Syria_2017 = "279th kiap 1st squad Syria 2017"
+            _279th_kiap_2nd_squad_Syria_2017 = "279th kiap 2nd squad Syria 2017"
+            t_10k_1_test_paint_scheme = "t-10k-1 test paint scheme"
+            t_10k_5_test_paint_scheme = "t-10k-5 test paint scheme"
+            t_10k_9_test_paint_scheme = "t-10k-9 test paint scheme"
 
         class Sudan(Enum):
             PLAN_Carrier_Air_Wings_J_15 = "PLAN Carrier Air Wings J-15"
@@ -2333,7 +3093,17 @@ class Su_33(PlaneType):
             PLAN_Carrier_Air_Wings_J_15 = "PLAN Carrier Air Wings J-15"
 
         class Combined_Joint_Task_Forces_Red(Enum):
+            AAF_BLUE_68 = "AAF BLUE 68"
+            AAF_GREY_12 = "AAF GREY 12"
+            HAF___Aegean_Ghost = "HAF - Aegean Ghost"
+            _279th_kiap_1st_squad_navy = "279th kiap 1st squad navy"
+            _279th_kiap_2nd_squad_navy = "279th kiap 2nd squad navy"
             PLAN_Carrier_Air_Wings_J_15 = "PLAN Carrier Air Wings J-15"
+            _279th_kiap_1st_squad_Syria_2017 = "279th kiap 1st squad Syria 2017"
+            _279th_kiap_2nd_squad_Syria_2017 = "279th kiap 2nd squad Syria 2017"
+            t_10k_1_test_paint_scheme = "t-10k-1 test paint scheme"
+            t_10k_5_test_paint_scheme = "t-10k-5 test paint scheme"
+            t_10k_9_test_paint_scheme = "t-10k-9 test paint scheme"
 
         class Lebanon(Enum):
             PLAN_Carrier_Air_Wings_J_15 = "PLAN Carrier Air Wings J-15"
@@ -2727,6 +3497,14 @@ class MiG_25PD(PlaneType):
         class USSR(Enum):
             af_standard = "af standard"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Algerian_Air_Force = "Algerian Air Force"
+            af_standard = "af standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Algerian_Air_Force = "Algerian Air Force"
+            af_standard = "af standard"
+
         class Russia(Enum):
             af_standard = "af standard"
 
@@ -2768,6 +3546,14 @@ class MiG_25RBT(PlaneType):
     class Liveries:
 
         class USSR(Enum):
+            af_standard = "af standard"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Algerian_Air_Force = "Algerian Air Force"
+            af_standard = "af standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Algerian_Air_Force = "Algerian Air Force"
             af_standard = "af standard"
 
         class Russia(Enum):
@@ -2850,6 +3636,30 @@ class Su_30(PlaneType):
 
         class USSR(Enum):
             af_standard_early = "af standard early"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            _desert__test_paint_scheme = "`desert` test paint scheme"
+            _russian_knights__team__25 = "`russian knights` team #25"
+            _snow__test_paint_scheme = "`snow` test paint scheme"
+            _test_pilots__team__597 = "`test-pilots` team #597"
+            adf_148th_ctc_savasleyka_ab = "adf 148th ctc savasleyka ab"
+            af_standard = "af standard"
+            af_standard_early = "af standard early"
+            af_standard_early__worn_out = "af standard early (worn-out)"
+            af_standard_last = "af standard last"
+            af_standard_last__worn_out = "af standard last (worn-out)"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            _desert__test_paint_scheme = "`desert` test paint scheme"
+            _russian_knights__team__25 = "`russian knights` team #25"
+            _snow__test_paint_scheme = "`snow` test paint scheme"
+            _test_pilots__team__597 = "`test-pilots` team #597"
+            adf_148th_ctc_savasleyka_ab = "adf 148th ctc savasleyka ab"
+            af_standard = "af standard"
+            af_standard_early = "af standard early"
+            af_standard_early__worn_out = "af standard early (worn-out)"
+            af_standard_last = "af standard last"
+            af_standard_last__worn_out = "af standard last (worn-out)"
 
         class Russia(Enum):
             _desert__test_paint_scheme = "`desert` test paint scheme"
@@ -3064,9 +3874,23 @@ class Su_17M4(PlaneType):
         class USSR(Enum):
             af_standard__RUS = "af standard (RUS)"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            af_standard = "af standard"
+            af_standard__RUS = "af standard (RUS)"
+            af_standard__worn_out = "af standard (worn-out)"
+            af_standard__worn_out___RUS = "af standard (worn-out) (RUS)"
+            shap_limanskoye_ab = "shap limanskoye ab"
+
         class Ukraine(Enum):
             af_standard = "af standard"
             af_standard__worn_out = "af standard (worn-out)"
+            shap_limanskoye_ab = "shap limanskoye ab"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            af_standard = "af standard"
+            af_standard__RUS = "af standard (RUS)"
+            af_standard__worn_out = "af standard (worn-out)"
+            af_standard__worn_out___RUS = "af standard (worn-out) (RUS)"
             shap_limanskoye_ab = "shap limanskoye ab"
 
         class Russia(Enum):
@@ -3258,12 +4082,260 @@ class MiG_31(PlaneType):
     class Liveries:
 
         class USSR(Enum):
+            MIG31_AI = "MIG31-AI"
             af_standard = "af standard"
+
+        class Georgia(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Venezuela(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Australia(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Israel(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            _174_GvIAP_Boris_Safonov = "174 GvIAP_Boris Safonov"
+            _903_White = "903_White"
+            MIG31_AI = "MIG31-AI"
+            af_standard = "af standard"
+
+        class Sudan(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Norway(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Romania(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Iran(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Ukraine(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Libya(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Belgium(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Slovakia(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Greece(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class UK(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Third_Reich(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Hungary(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Abkhazia(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Morocco(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class United_Nations_Peacekeepers(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Switzerland(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class SouthOssetia(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Vietnam(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class China(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Yemen(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Kuwait(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Serbia(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Oman(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class India(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Egypt(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class TheNetherlands(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Poland(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Syria(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Finland(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Kazakhstan(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Denmark(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Sweden(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Croatia(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class CzechRepublic(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class GDR(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Yugoslavia(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Bulgaria(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class SouthKorea(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Tunisia(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            _174_GvIAP_Boris_Safonov = "174 GvIAP_Boris Safonov"
+            _903_White = "903_White"
+            MIG31_AI = "MIG31-AI"
+            af_standard = "af standard"
+
+        class Lebanon(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Portugal(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Cuba(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Insurgents(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class SaudiArabia(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class France(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class USA(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Honduras(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Qatar(Enum):
+            MIG31_AI = "MIG31-AI"
 
         class Russia(Enum):
             _174_GvIAP_Boris_Safonov = "174 GvIAP_Boris Safonov"
             _903_White = "903_White"
+            MIG31_AI = "MIG31-AI"
             af_standard = "af standard"
+
+        class United_Arab_Emirates(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Italian_Social_Republi(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Austria(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Bahrain(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Italy(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Chile(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Turkey(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Philippines(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Algeria(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Pakistan(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Malaysia(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Indonesia(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Iraq(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Germany(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class South_Africa(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Jordan(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Mexico(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class USAFAggressors(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Brazil(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Spain(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Belarus(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Canada(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class NorthKorea(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Ethiopia(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Japan(Enum):
+            MIG31_AI = "MIG31-AI"
+
+        class Thailand(Enum):
+            MIG31_AI = "MIG31-AI"
 
     class Pylon1:
         R_40R__AA_6_Acrid____Semi_Act_Rdr = (1, Weapons.R_40R__AA_6_Acrid____Semi_Act_Rdr)
@@ -3309,7 +4381,13 @@ class Tu_95MS(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            af_standard = "af standard"
+
         class Ukraine(Enum):
+            af_standard = "af standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
             af_standard = "af standard"
 
         class Russia(Enum):
@@ -3342,6 +4420,14 @@ class Su_24M(PlaneType):
         class USSR(Enum):
             af_standard = "af standard"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Kazakhstan_Air_Force = "Kazakhstan Air Force"
+            Algerian_AF_KX_12 = "Algerian AF KX-12"
+            Iran_Air_Force = "Iran Air Force"
+            Syrian_Air_Force = "Syrian Air Force"
+            Ukrainian_Air_Force_Standard = "Ukrainian Air Force Standard"
+            af_standard = "af standard"
+
         class Iran(Enum):
             Iran_Air_Force = "Iran Air Force"
 
@@ -3353,6 +4439,14 @@ class Su_24M(PlaneType):
 
         class Kazakhstan(Enum):
             Kazakhstan_Air_Force = "Kazakhstan Air Force"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Kazakhstan_Air_Force = "Kazakhstan Air Force"
+            Algerian_AF_KX_12 = "Algerian AF KX-12"
+            Iran_Air_Force = "Iran Air Force"
+            Syrian_Air_Force = "Syrian Air Force"
+            Ukrainian_Air_Force_Standard = "Ukrainian Air Force Standard"
+            af_standard = "af standard"
 
         class Russia(Enum):
             af_standard = "af standard"
@@ -3546,6 +4640,14 @@ class Su_24MR(PlaneType):
         class USSR(Enum):
             af_standard = "af standard"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Algerian_AF_KG_93 = "Algerian AF KG-93"
+            af_standard = "af standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Algerian_AF_KG_93 = "Algerian AF KG-93"
+            af_standard = "af standard"
+
         class Russia(Enum):
             af_standard = "af standard"
 
@@ -3592,6 +4694,12 @@ class Tu_160(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            af_standard = "af standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            af_standard = "af standard"
+
         class Russia(Enum):
             af_standard = "af standard"
 
@@ -3616,6 +4724,12 @@ class F_117A(PlaneType):
     max_speed = 1000
 
     class Liveries:
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            usaf_standard = "usaf standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            usaf_standard = "usaf standard"
 
         class USA(Enum):
             usaf_standard = "usaf standard"
@@ -3652,6 +4766,12 @@ class B_1B(PlaneType):
     eplrs = True
 
     class Liveries:
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            usaf_standard = "usaf standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            usaf_standard = "usaf standard"
 
         class USA(Enum):
             usaf_standard = "usaf standard"
@@ -3708,6 +4828,12 @@ class S_3B(PlaneType):
     category = "Tankers"  #{8A302789-A55D-4897-B647-66493FA6826F}
 
     class Liveries:
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            usaf_standard = "usaf standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            usaf_standard = "usaf standard"
 
         class USA(Enum):
             usaf_standard = "usaf standard"
@@ -3778,6 +4904,12 @@ class S_3B_Tanker(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            usaf_standard = "usaf standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            usaf_standard = "usaf standard"
+
         class USA(Enum):
             usaf_standard = "usaf standard"
 
@@ -3804,8 +4936,26 @@ class Mirage_2000_5(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Hellenic_Airforce = "Hellenic Airforce"
+            ec1_2__spa103__cigogne_de_fonck = "ec1_2  spa103 `cigogne de fonck`"
+            ec1_2__spa12__cigogne_a_ailes_ouvertes = "ec1_2  spa12 `cigogne a ailes ouvertes`"
+            ec1_2_spa3__cigogne_de_guynemer = "ec1_2 spa3 `cigogne de guynemer`"
+            ec2_2__cote_d_or__spa57__mouette = "ec2_2 `cote d'or` spa57 `mouette`"
+            ec2_2__cote_d_or__spa65__chimere = "ec2_2 `cote d'or` spa65 `chimere`"
+            ec2_2_spa94__lamort_qui_fauche = "ec2_2 spa94 `lamort qui fauche`"
+
         class Greece(Enum):
             Hellenic_Airforce = "Hellenic Airforce"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Hellenic_Airforce = "Hellenic Airforce"
+            ec1_2__spa103__cigogne_de_fonck = "ec1_2  spa103 `cigogne de fonck`"
+            ec1_2__spa12__cigogne_a_ailes_ouvertes = "ec1_2  spa12 `cigogne a ailes ouvertes`"
+            ec1_2_spa3__cigogne_de_guynemer = "ec1_2 spa3 `cigogne de guynemer`"
+            ec2_2__cote_d_or__spa57__mouette = "ec2_2 `cote d'or` spa57 `mouette`"
+            ec2_2__cote_d_or__spa65__chimere = "ec2_2 `cote d'or` spa65 `chimere`"
+            ec2_2_spa94__lamort_qui_fauche = "ec2_2 spa94 `lamort qui fauche`"
 
         class France(Enum):
             ec1_2__spa103__cigogne_de_fonck = "ec1_2  spa103 `cigogne de fonck`"
@@ -3877,13 +5027,188 @@ class F_15C(PlaneType):
 
     class Liveries:
 
+        class USSR(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Georgia(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Venezuela(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Australia(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
         class Israel(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
             _106th_SQN__8th_Airbase = "106th SQN (8th Airbase)"
 
-        class Greece(Enum):
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+            _106th_SQN__8th_Airbase = "106th SQN (8th Airbase)"
+            _12th_Fighter_SQN__AK = "12th Fighter SQN (AK)"
+            _390th_Fighter_SQN = "390th Fighter SQN"
+            _433rd_Weapons_SQN__WA = "433rd Weapons SQN (WA)"
+            _493rd_Fighter_SQN__LN = "493rd Fighter SQN (LN)"
+            _58th_Fighter_SQN__EG = "58th Fighter SQN (EG)"
+            _65th_Aggressor_SQN__WA__Flanker = "65th Aggressor SQN (WA) Flanker"
+            _65th_Aggressor_SQN__WA__MiG = "65th Aggressor SQN (WA) MiG"
+            _65th_Aggressor_SQN__WA__SUPER_Flanker = "65th Aggressor SQN (WA) SUPER_Flanker"
+            Ferris_Scheme = "Ferris Scheme"
             HAF_AEGEAN_GHOST = "HAF AEGEAN GHOST"
 
+        class Sudan(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Norway(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Romania(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Iran(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Ukraine(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Libya(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Belgium(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Slovakia(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Greece(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+            HAF_AEGEAN_GHOST = "HAF AEGEAN GHOST"
+
+        class UK(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Third_Reich(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Hungary(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Abkhazia(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Morocco(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class United_Nations_Peacekeepers(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Switzerland(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class SouthOssetia(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Vietnam(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class China(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Yemen(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Kuwait(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Serbia(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Oman(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class India(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Egypt(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class TheNetherlands(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Poland(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Syria(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Finland(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Kazakhstan(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Denmark(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Sweden(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Croatia(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class CzechRepublic(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class GDR(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Yugoslavia(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Bulgaria(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class SouthKorea(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Tunisia(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+            _106th_SQN__8th_Airbase = "106th SQN (8th Airbase)"
+            _12th_Fighter_SQN__AK = "12th Fighter SQN (AK)"
+            _390th_Fighter_SQN = "390th Fighter SQN"
+            _433rd_Weapons_SQN__WA = "433rd Weapons SQN (WA)"
+            _493rd_Fighter_SQN__LN = "493rd Fighter SQN (LN)"
+            _58th_Fighter_SQN__EG = "58th Fighter SQN (EG)"
+            _65th_Aggressor_SQN__WA__Flanker = "65th Aggressor SQN (WA) Flanker"
+            _65th_Aggressor_SQN__WA__MiG = "65th Aggressor SQN (WA) MiG"
+            _65th_Aggressor_SQN__WA__SUPER_Flanker = "65th Aggressor SQN (WA) SUPER_Flanker"
+            Ferris_Scheme = "Ferris Scheme"
+            HAF_AEGEAN_GHOST = "HAF AEGEAN GHOST"
+
+        class Lebanon(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Portugal(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Cuba(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Insurgents(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class SaudiArabia(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class France(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
         class USA(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
             _12th_Fighter_SQN__AK = "12th Fighter SQN (AK)"
             _390th_Fighter_SQN = "390th Fighter SQN"
             _433rd_Weapons_SQN__WA = "433rd Weapons SQN (WA)"
@@ -3894,10 +5219,95 @@ class F_15C(PlaneType):
             _65th_Aggressor_SQN__WA__SUPER_Flanker = "65th Aggressor SQN (WA) SUPER_Flanker"
             Ferris_Scheme = "Ferris Scheme"
 
+        class Honduras(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Qatar(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Russia(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class United_Arab_Emirates(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Italian_Social_Republi(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Austria(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Bahrain(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Italy(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Chile(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Turkey(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Philippines(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Algeria(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Pakistan(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Malaysia(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Indonesia(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Iraq(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Germany(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class South_Africa(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Jordan(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Mexico(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
         class USAFAggressors(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
             _65th_Aggressor_SQN__WA__Flanker = "65th Aggressor SQN (WA) Flanker"
             _65th_Aggressor_SQN__WA__MiG = "65th Aggressor SQN (WA) MiG"
             _65th_Aggressor_SQN__WA__SUPER_Flanker = "65th Aggressor SQN (WA) SUPER_Flanker"
+
+        class Brazil(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Spain(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Belarus(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Canada(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class NorthKorea(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Ethiopia(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Japan(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
+
+        class Thailand(Enum):
+            EAF_77SQ_ROMOR = "EAF_77SQ_ROMOR"
 
     class Pylon1:
         AIM_120B_AMRAAM___Active_Rdr_AAM = (1, Weapons.AIM_120B_AMRAAM___Active_Rdr_AAM)
@@ -4010,6 +5420,16 @@ class F_15E(PlaneType):
     class Liveries:
 
         class Israel(Enum):
+            IDF_No_69_Hammers_Squadron = "IDF No 69 Hammers Squadron"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            _335th_Fighter_SQN__SJ = "335th Fighter SQN (SJ)"
+            _492d_Fighter_SQN__LN = "492d Fighter SQN (LN)"
+            IDF_No_69_Hammers_Squadron = "IDF No 69 Hammers Squadron"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            _335th_Fighter_SQN__SJ = "335th Fighter SQN (SJ)"
+            _492d_Fighter_SQN__LN = "492d Fighter SQN (LN)"
             IDF_No_69_Hammers_Squadron = "IDF No 69 Hammers Squadron"
 
         class USA(Enum):
@@ -4291,6 +5711,22 @@ class MiG_29A(PlaneType):
         class USSR(Enum):
             Air_Force_Standard = "Air Force Standard"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Air_Force_Standard = "Air Force Standard"
+            Polish_41st_Sqn_Standard1 = "Polish 41st Sqn Standard1"
+            Polish_41st_Sqn_Standard2 = "Polish 41st Sqn Standard2"
+            Air_Force_Ukraine_Standard = "Air Force Ukraine Standard"
+            Domna_120th_AR = "Domna 120th AR"
+            IRIAF_Blue_Grey = "IRIAF Blue-Grey"
+            IRIAF_Sand_Blue = "IRIAF Sand-Blue"
+            Kazakhstan_KazAADF_2008 = "Kazakhstan KazAADF 2008"
+            Kazakhstan_Air_Defense_Forces = "Kazakhstan Air Defense Forces"
+            Mary_1_Agressors = "Mary-1 Agressors"
+            Strizhi = "Strizhi"
+            Strizhi__W = "Strizhi (W)"
+            SyAAF = "SyAAF"
+            Vasylkiv_40th_BrTA = "Vasylkiv 40th BrTA"
+
         class Iran(Enum):
             IRIAF_Blue_Grey = "IRIAF Blue-Grey"
             IRIAF_Sand_Blue = "IRIAF Sand-Blue"
@@ -4309,6 +5745,22 @@ class MiG_29A(PlaneType):
         class Kazakhstan(Enum):
             Kazakhstan_KazAADF_2008 = "Kazakhstan KazAADF 2008"
             Kazakhstan_Air_Defense_Forces = "Kazakhstan Air Defense Forces"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Air_Force_Standard = "Air Force Standard"
+            Polish_41st_Sqn_Standard1 = "Polish 41st Sqn Standard1"
+            Polish_41st_Sqn_Standard2 = "Polish 41st Sqn Standard2"
+            Air_Force_Ukraine_Standard = "Air Force Ukraine Standard"
+            Domna_120th_AR = "Domna 120th AR"
+            IRIAF_Blue_Grey = "IRIAF Blue-Grey"
+            IRIAF_Sand_Blue = "IRIAF Sand-Blue"
+            Kazakhstan_KazAADF_2008 = "Kazakhstan KazAADF 2008"
+            Kazakhstan_Air_Defense_Forces = "Kazakhstan Air Defense Forces"
+            Mary_1_Agressors = "Mary-1 Agressors"
+            Strizhi = "Strizhi"
+            Strizhi__W = "Strizhi (W)"
+            SyAAF = "SyAAF"
+            Vasylkiv_40th_BrTA = "Vasylkiv 40th BrTA"
 
         class Russia(Enum):
             Air_Force_Standard = "Air Force Standard"
@@ -4482,6 +5934,12 @@ class MiG_29G(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            luftwaffe_gray_1 = "luftwaffe gray-1"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            luftwaffe_gray_1 = "luftwaffe gray-1"
+
         class Germany(Enum):
             luftwaffe_gray_1 = "luftwaffe gray-1"
 
@@ -4650,17 +6108,269 @@ class MiG_29S(PlaneType):
 
     class Liveries:
 
+        class USSR(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Georgia(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Venezuela(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Australia(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Israel(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Air_Force_Standard = "Air Force Standard"
+            ERAF = "ERAF"
+            XX = "XX"
+            Air_Force_Ukraine_Standard = "Air Force Ukraine Standard"
+            Algerian_AF_FC_16 = "Algerian AF FC-16"
+            _28_GvIAP_Andreapol = "28 GvIAP_Andreapol"
+            Belarusian_Air_Force = "Belarusian Air Force"
+            _773_IAP_Damgarten = "773 IAP_Damgarten"
+            _426th_Air_Group_Erebuni = "426th Air Group_Erebuni"
+            KazAADF_new__fictional = "KazAADF new (fictional)"
+            KazAADF_new__fictional_digital = "KazAADF new (fictional digital)"
+            KazAADF_new_faded__fictional = "KazAADF new faded (fictional)"
+            KazAADF_old__fictional = "KazAADF old (fictional)"
+            Falcons_of_Russia = "Falcons of Russia"
+            _1521th_Air_base_Mary_1 = "1521th Air base_Mary-1"
+            Strizhi = "Strizhi"
+            Swifts = "Swifts"
+            _115_GvIAP_Termez = "115 GvIAP_Termez"
+            _31_GvIAP_Zernograd = "31 GvIAP_Zernograd"
+
+        class Sudan(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Norway(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Romania(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Iran(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
         class Ukraine(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
             Air_Force_Ukraine_Standard = "Air Force Ukraine Standard"
 
+        class Libya(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Belgium(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Slovakia(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Greece(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class UK(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Third_Reich(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Hungary(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Abkhazia(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Morocco(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class United_Nations_Peacekeepers(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Switzerland(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class SouthOssetia(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Vietnam(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class China(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Yemen(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Kuwait(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Serbia(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Oman(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class India(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Egypt(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class TheNetherlands(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Poland(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Syria(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Finland(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
         class Kazakhstan(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
             KazAADF_new__fictional = "KazAADF new (fictional)"
             KazAADF_new__fictional_digital = "KazAADF new (fictional digital)"
             KazAADF_new_faded__fictional = "KazAADF new faded (fictional)"
             KazAADF_old__fictional = "KazAADF old (fictional)"
 
+        class Denmark(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Sweden(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Croatia(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class CzechRepublic(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class GDR(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Yugoslavia(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Bulgaria(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class SouthKorea(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Tunisia(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Air_Force_Standard = "Air Force Standard"
+            ERAF = "ERAF"
+            XX = "XX"
+            Air_Force_Ukraine_Standard = "Air Force Ukraine Standard"
+            Algerian_AF_FC_16 = "Algerian AF FC-16"
+            _28_GvIAP_Andreapol = "28 GvIAP_Andreapol"
+            Belarusian_Air_Force = "Belarusian Air Force"
+            _773_IAP_Damgarten = "773 IAP_Damgarten"
+            _426th_Air_Group_Erebuni = "426th Air Group_Erebuni"
+            KazAADF_new__fictional = "KazAADF new (fictional)"
+            KazAADF_new__fictional_digital = "KazAADF new (fictional digital)"
+            KazAADF_new_faded__fictional = "KazAADF new faded (fictional)"
+            KazAADF_old__fictional = "KazAADF old (fictional)"
+            Falcons_of_Russia = "Falcons of Russia"
+            _1521th_Air_base_Mary_1 = "1521th Air base_Mary-1"
+            Strizhi = "Strizhi"
+            Swifts = "Swifts"
+            _115_GvIAP_Termez = "115 GvIAP_Termez"
+            _31_GvIAP_Zernograd = "31 GvIAP_Zernograd"
+
+        class Lebanon(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Portugal(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Cuba(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Insurgents(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class SaudiArabia(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class France(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class USA(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Honduras(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Qatar(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
         class Russia(Enum):
             Air_Force_Standard = "Air Force Standard"
+            ERAF = "ERAF"
+            XX = "XX"
             _28_GvIAP_Andreapol = "28 GvIAP_Andreapol"
             _773_IAP_Damgarten = "773 IAP_Damgarten"
             _426th_Air_Group_Erebuni = "426th Air Group_Erebuni"
@@ -4671,11 +6381,111 @@ class MiG_29S(PlaneType):
             _115_GvIAP_Termez = "115 GvIAP_Termez"
             _31_GvIAP_Zernograd = "31 GvIAP_Zernograd"
 
+        class United_Arab_Emirates(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Italian_Social_Republi(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Austria(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Bahrain(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Italy(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Chile(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Turkey(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Philippines(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
         class Algeria(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
             Algerian_AF_FC_16 = "Algerian AF FC-16"
 
+        class Pakistan(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Malaysia(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Indonesia(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Iraq(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Germany(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class South_Africa(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Jordan(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Mexico(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class USAFAggressors(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Brazil(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Spain(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
         class Belarus(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
             Belarusian_Air_Force = "Belarusian Air Force"
+
+        class Canada(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class NorthKorea(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Ethiopia(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Japan(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
+
+        class Thailand(Enum):
+            ERAF = "ERAF"
+            XX = "XX"
 
     class Pylon1:
         R_60M__AA_8_Aphid____Infra_Red = (1, Weapons.R_60M__AA_8_Aphid____Infra_Red)
@@ -4846,6 +6656,12 @@ class Tu_142(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            af_standard = "af standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            af_standard = "af standard"
+
         class Russia(Enum):
             af_standard = "af standard"
 
@@ -4874,50 +6690,302 @@ class C_130(PlaneType):
 
     class Liveries:
 
+        class USSR(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Georgia(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Venezuela(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Australia(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
         class Israel(Enum):
+            KRAF_15AL = "KRAF_15AL"
             Israel_Defence_Force = "Israel Defence Force"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            KRAF_15AL = "KRAF_15AL"
+            Air_Algerie_L_382_White = "Air Algerie L-382 White"
+            Algerian_AF_Green = "Algerian AF Green"
+            Algerian_AF_H30_White = "Algerian AF H30 White"
+            Belgian_Air_Force = "Belgian Air Force"
+            Canada_s_Air_Force = "Canada's Air Force"
+            French_Air_Force = "French Air Force"
+            HAF_gray = "HAF gray"
+            IRIAF_5_8503 = "IRIAF 5-8503"
+            IRIAF_5_8518 = "IRIAF 5-8518"
+            Israel_Defence_Force = "Israel Defence Force"
+            Royal_Air_Force = "Royal Air Force"
+            Royal_Danish_Air_Force = "Royal Danish Air Force"
+            Royal_Netherlands_Air_Force = "Royal Netherlands Air Force"
+            Royal_Norwegian_Air_Force = "Royal Norwegian Air Force"
+            Spanish_Air_Force = "Spanish Air Force"
+            Turkish_Air_Force = "Turkish Air Force"
+            US_Air_Force = "US Air Force"
+
+        class Sudan(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
         class Norway(Enum):
+            KRAF_15AL = "KRAF_15AL"
             Royal_Norwegian_Air_Force = "Royal Norwegian Air Force"
 
+        class Romania(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
         class Iran(Enum):
+            KRAF_15AL = "KRAF_15AL"
             IRIAF_5_8503 = "IRIAF 5-8503"
             IRIAF_5_8518 = "IRIAF 5-8518"
 
+        class Ukraine(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Libya(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
         class Belgium(Enum):
+            KRAF_15AL = "KRAF_15AL"
             Belgian_Air_Force = "Belgian Air Force"
 
+        class Slovakia(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
         class Greece(Enum):
+            KRAF_15AL = "KRAF_15AL"
             HAF_gray = "HAF gray"
 
         class UK(Enum):
+            KRAF_15AL = "KRAF_15AL"
             Royal_Air_Force = "Royal Air Force"
 
+        class Third_Reich(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Hungary(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Abkhazia(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Morocco(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class United_Nations_Peacekeepers(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Switzerland(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class SouthOssetia(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Vietnam(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class China(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Yemen(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Kuwait(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Serbia(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Oman(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class India(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Egypt(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
         class TheNetherlands(Enum):
+            KRAF_15AL = "KRAF_15AL"
             Royal_Netherlands_Air_Force = "Royal Netherlands Air Force"
 
+        class Poland(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Syria(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Finland(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Kazakhstan(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
         class Denmark(Enum):
+            KRAF_15AL = "KRAF_15AL"
             Royal_Danish_Air_Force = "Royal Danish Air Force"
 
+        class Sweden(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Croatia(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class CzechRepublic(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class GDR(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Yugoslavia(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Bulgaria(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class SouthKorea(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Tunisia(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            KRAF_15AL = "KRAF_15AL"
+            Air_Algerie_L_382_White = "Air Algerie L-382 White"
+            Algerian_AF_Green = "Algerian AF Green"
+            Algerian_AF_H30_White = "Algerian AF H30 White"
+            Belgian_Air_Force = "Belgian Air Force"
+            Canada_s_Air_Force = "Canada's Air Force"
+            French_Air_Force = "French Air Force"
+            HAF_gray = "HAF gray"
+            IRIAF_5_8503 = "IRIAF 5-8503"
+            IRIAF_5_8518 = "IRIAF 5-8518"
+            Israel_Defence_Force = "Israel Defence Force"
+            Royal_Air_Force = "Royal Air Force"
+            Royal_Danish_Air_Force = "Royal Danish Air Force"
+            Royal_Netherlands_Air_Force = "Royal Netherlands Air Force"
+            Royal_Norwegian_Air_Force = "Royal Norwegian Air Force"
+            Spanish_Air_Force = "Spanish Air Force"
+            Turkish_Air_Force = "Turkish Air Force"
+            US_Air_Force = "US Air Force"
+
+        class Lebanon(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Portugal(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Cuba(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Insurgents(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class SaudiArabia(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
         class France(Enum):
+            KRAF_15AL = "KRAF_15AL"
             French_Air_Force = "French Air Force"
 
         class USA(Enum):
+            KRAF_15AL = "KRAF_15AL"
             US_Air_Force = "US Air Force"
 
+        class Honduras(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Qatar(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Russia(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class United_Arab_Emirates(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Italian_Social_Republi(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Austria(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Bahrain(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Italy(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Chile(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
         class Turkey(Enum):
+            KRAF_15AL = "KRAF_15AL"
             Turkish_Air_Force = "Turkish Air Force"
 
+        class Philippines(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
         class Algeria(Enum):
+            KRAF_15AL = "KRAF_15AL"
             Air_Algerie_L_382_White = "Air Algerie L-382 White"
             Algerian_AF_Green = "Algerian AF Green"
             Algerian_AF_H30_White = "Algerian AF H30 White"
 
+        class Pakistan(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Malaysia(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Indonesia(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Iraq(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Germany(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class South_Africa(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Jordan(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Mexico(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class USAFAggressors(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Brazil(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
         class Spain(Enum):
+            KRAF_15AL = "KRAF_15AL"
             Spanish_Air_Force = "Spanish Air Force"
 
+        class Belarus(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
         class Canada(Enum):
+            KRAF_15AL = "KRAF_15AL"
             Canada_s_Air_Force = "Canada's Air Force"
+
+        class NorthKorea(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Ethiopia(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Japan(Enum):
+            KRAF_15AL = "KRAF_15AL"
+
+        class Thailand(Enum):
+            KRAF_15AL = "KRAF_15AL"
 
     pylons: Set[int] = set()
 
@@ -4947,6 +7015,15 @@ class An_26B(PlaneType):
         class Georgia(Enum):
             Georgian_AF = "Georgian AF"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Abkhazian_AF = "Abkhazian AF"
+            Aeroflot = "Aeroflot"
+            China_PLAAF = "China PLAAF"
+            Georgian_AF = "Georgian AF"
+            RF_Air_Force = "RF Air Force"
+            RF_Navy = "RF Navy"
+            Ukraine_AF = "Ukraine AF"
+
         class Ukraine(Enum):
             Ukraine_AF = "Ukraine AF"
 
@@ -4955,6 +7032,15 @@ class An_26B(PlaneType):
 
         class China(Enum):
             China_PLAAF = "China PLAAF"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Abkhazian_AF = "Abkhazian AF"
+            Aeroflot = "Aeroflot"
+            China_PLAAF = "China PLAAF"
+            Georgian_AF = "Georgian AF"
+            RF_Air_Force = "RF Air Force"
+            RF_Navy = "RF Navy"
+            Ukraine_AF = "Ukraine AF"
 
         class Russia(Enum):
             Aeroflot = "Aeroflot"
@@ -4983,11 +7069,21 @@ class An_30M(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            _15th_Transport_AB = "15th Transport AB"
+            China_CAAC = "China CAAC"
+            RF_Air_Force = "RF Air Force"
+
         class Ukraine(Enum):
             _15th_Transport_AB = "15th Transport AB"
 
         class China(Enum):
             China_CAAC = "China CAAC"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            _15th_Transport_AB = "15th Transport AB"
+            China_CAAC = "China CAAC"
+            RF_Air_Force = "RF Air Force"
 
         class Russia(Enum):
             RF_Air_Force = "RF Air Force"
@@ -5014,6 +7110,12 @@ class C_17A(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            usaf_standard = "usaf standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            usaf_standard = "usaf standard"
+
         class USA(Enum):
             usaf_standard = "usaf standard"
 
@@ -5039,6 +7141,14 @@ class A_50(PlaneType):
     category = "AWACS"  #{D2BC159C-5B7D-40cf-92CD-44DF3E99FAA9}
 
     class Liveries:
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            RF_Air_Force = "RF Air Force"
+            RF_Air_Force_new = "RF Air Force new"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            RF_Air_Force = "RF Air Force"
+            RF_Air_Force_new = "RF Air Force new"
 
         class Russia(Enum):
             RF_Air_Force = "RF Air Force"
@@ -5068,15 +7178,259 @@ class E_3A(PlaneType):
 
     class Liveries:
 
+        class USSR(Enum):
+            UTAF = "UTAF"
+
+        class Georgia(Enum):
+            UTAF = "UTAF"
+
+        class Venezuela(Enum):
+            UTAF = "UTAF"
+
+        class Australia(Enum):
+            UTAF = "UTAF"
+
+        class Israel(Enum):
+            UTAF = "UTAF"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            UTAF = "UTAF"
+            nato = "nato"
+            usaf_standard = "usaf standard"
+
+        class Sudan(Enum):
+            UTAF = "UTAF"
+
+        class Norway(Enum):
+            UTAF = "UTAF"
+
+        class Romania(Enum):
+            UTAF = "UTAF"
+
+        class Iran(Enum):
+            UTAF = "UTAF"
+
+        class Ukraine(Enum):
+            UTAF = "UTAF"
+
+        class Libya(Enum):
+            UTAF = "UTAF"
+
+        class Belgium(Enum):
+            UTAF = "UTAF"
+
+        class Slovakia(Enum):
+            UTAF = "UTAF"
+
+        class Greece(Enum):
+            UTAF = "UTAF"
+
         class UK(Enum):
+            UTAF = "UTAF"
             nato = "nato"
 
+        class Third_Reich(Enum):
+            UTAF = "UTAF"
+
+        class Hungary(Enum):
+            UTAF = "UTAF"
+
+        class Abkhazia(Enum):
+            UTAF = "UTAF"
+
+        class Morocco(Enum):
+            UTAF = "UTAF"
+
+        class United_Nations_Peacekeepers(Enum):
+            UTAF = "UTAF"
+
+        class Switzerland(Enum):
+            UTAF = "UTAF"
+
+        class SouthOssetia(Enum):
+            UTAF = "UTAF"
+
+        class Vietnam(Enum):
+            UTAF = "UTAF"
+
+        class China(Enum):
+            UTAF = "UTAF"
+
+        class Yemen(Enum):
+            UTAF = "UTAF"
+
+        class Kuwait(Enum):
+            UTAF = "UTAF"
+
+        class Serbia(Enum):
+            UTAF = "UTAF"
+
+        class Oman(Enum):
+            UTAF = "UTAF"
+
+        class India(Enum):
+            UTAF = "UTAF"
+
+        class Egypt(Enum):
+            UTAF = "UTAF"
+
+        class TheNetherlands(Enum):
+            UTAF = "UTAF"
+
+        class Poland(Enum):
+            UTAF = "UTAF"
+
+        class Syria(Enum):
+            UTAF = "UTAF"
+
+        class Finland(Enum):
+            UTAF = "UTAF"
+
+        class Kazakhstan(Enum):
+            UTAF = "UTAF"
+
+        class Denmark(Enum):
+            UTAF = "UTAF"
+
+        class Sweden(Enum):
+            UTAF = "UTAF"
+
+        class Croatia(Enum):
+            UTAF = "UTAF"
+
+        class CzechRepublic(Enum):
+            UTAF = "UTAF"
+
+        class GDR(Enum):
+            UTAF = "UTAF"
+
+        class Yugoslavia(Enum):
+            UTAF = "UTAF"
+
+        class Bulgaria(Enum):
+            UTAF = "UTAF"
+
+        class SouthKorea(Enum):
+            UTAF = "UTAF"
+
+        class Tunisia(Enum):
+            UTAF = "UTAF"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            UTAF = "UTAF"
+            nato = "nato"
+            usaf_standard = "usaf standard"
+
+        class Lebanon(Enum):
+            UTAF = "UTAF"
+
+        class Portugal(Enum):
+            UTAF = "UTAF"
+
+        class Cuba(Enum):
+            UTAF = "UTAF"
+
+        class Insurgents(Enum):
+            UTAF = "UTAF"
+
+        class SaudiArabia(Enum):
+            UTAF = "UTAF"
+
         class France(Enum):
+            UTAF = "UTAF"
             nato = "nato"
 
         class USA(Enum):
+            UTAF = "UTAF"
             nato = "nato"
             usaf_standard = "usaf standard"
+
+        class Honduras(Enum):
+            UTAF = "UTAF"
+
+        class Qatar(Enum):
+            UTAF = "UTAF"
+
+        class Russia(Enum):
+            UTAF = "UTAF"
+
+        class United_Arab_Emirates(Enum):
+            UTAF = "UTAF"
+
+        class Italian_Social_Republi(Enum):
+            UTAF = "UTAF"
+
+        class Austria(Enum):
+            UTAF = "UTAF"
+
+        class Bahrain(Enum):
+            UTAF = "UTAF"
+
+        class Italy(Enum):
+            UTAF = "UTAF"
+
+        class Chile(Enum):
+            UTAF = "UTAF"
+
+        class Turkey(Enum):
+            UTAF = "UTAF"
+
+        class Philippines(Enum):
+            UTAF = "UTAF"
+
+        class Algeria(Enum):
+            UTAF = "UTAF"
+
+        class Pakistan(Enum):
+            UTAF = "UTAF"
+
+        class Malaysia(Enum):
+            UTAF = "UTAF"
+
+        class Indonesia(Enum):
+            UTAF = "UTAF"
+
+        class Iraq(Enum):
+            UTAF = "UTAF"
+
+        class Germany(Enum):
+            UTAF = "UTAF"
+
+        class South_Africa(Enum):
+            UTAF = "UTAF"
+
+        class Jordan(Enum):
+            UTAF = "UTAF"
+
+        class Mexico(Enum):
+            UTAF = "UTAF"
+
+        class USAFAggressors(Enum):
+            UTAF = "UTAF"
+
+        class Brazil(Enum):
+            UTAF = "UTAF"
+
+        class Spain(Enum):
+            UTAF = "UTAF"
+
+        class Belarus(Enum):
+            UTAF = "UTAF"
+
+        class Canada(Enum):
+            UTAF = "UTAF"
+
+        class NorthKorea(Enum):
+            UTAF = "UTAF"
+
+        class Ethiopia(Enum):
+            UTAF = "UTAF"
+
+        class Japan(Enum):
+            UTAF = "UTAF"
+
+        class Thailand(Enum):
+            UTAF = "UTAF"
 
     pylons: Set[int] = set()
 
@@ -5105,8 +7459,22 @@ class IL_78M(PlaneType):
             RF_Air_Force = "RF Air Force"
             RF_Air_Force_aeroflot = "RF Air Force aeroflot"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Algerian_AF_IL_78M = "Algerian AF IL-78M"
+            China_Air_Force = "China Air Force"
+            RF_Air_Force = "RF Air Force"
+            RF_Air_Force_aeroflot = "RF Air Force aeroflot"
+            RF_Air_Force_new = "RF Air Force new"
+
         class China(Enum):
             China_Air_Force = "China Air Force"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Algerian_AF_IL_78M = "Algerian AF IL-78M"
+            China_Air_Force = "China Air Force"
+            RF_Air_Force = "RF Air Force"
+            RF_Air_Force_aeroflot = "RF Air Force aeroflot"
+            RF_Air_Force_new = "RF Air Force new"
 
         class Russia(Enum):
             RF_Air_Force = "RF Air Force"
@@ -5140,9 +7508,257 @@ class E_2C(PlaneType):
 
     class Liveries:
 
-        class USA(Enum):
+        class USSR(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Georgia(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Venezuela(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Australia(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Israel(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            BP_AWACS = "BP_AWACS"
             E_2D_Demo = "E-2D Demo"
             VAW_125_Tigertails = "VAW-125 Tigertails"
+
+        class Sudan(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Norway(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Romania(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Iran(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Ukraine(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Libya(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Belgium(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Slovakia(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Greece(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class UK(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Third_Reich(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Hungary(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Abkhazia(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Morocco(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class United_Nations_Peacekeepers(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Switzerland(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class SouthOssetia(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Vietnam(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class China(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Yemen(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Kuwait(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Serbia(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Oman(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class India(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Egypt(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class TheNetherlands(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Poland(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Syria(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Finland(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Kazakhstan(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Denmark(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Sweden(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Croatia(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class CzechRepublic(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class GDR(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Yugoslavia(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Bulgaria(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class SouthKorea(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Tunisia(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            BP_AWACS = "BP_AWACS"
+            E_2D_Demo = "E-2D Demo"
+            VAW_125_Tigertails = "VAW-125 Tigertails"
+
+        class Lebanon(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Portugal(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Cuba(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Insurgents(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class SaudiArabia(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class France(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class USA(Enum):
+            BP_AWACS = "BP_AWACS"
+            E_2D_Demo = "E-2D Demo"
+            VAW_125_Tigertails = "VAW-125 Tigertails"
+
+        class Honduras(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Qatar(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Russia(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class United_Arab_Emirates(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Italian_Social_Republi(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Austria(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Bahrain(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Italy(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Chile(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Turkey(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Philippines(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Algeria(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Pakistan(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Malaysia(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Indonesia(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Iraq(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Germany(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class South_Africa(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Jordan(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Mexico(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class USAFAggressors(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Brazil(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Spain(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Belarus(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Canada(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class NorthKorea(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Ethiopia(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Japan(Enum):
+            BP_AWACS = "BP_AWACS"
+
+        class Thailand(Enum):
+            BP_AWACS = "BP_AWACS"
 
     pylons: Set[int] = set()
 
@@ -5166,21 +7782,275 @@ class IL_76MD(PlaneType):
 
     class Liveries:
 
-        class Ukraine(Enum):
+        class USSR(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Georgia(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Venezuela(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Australia(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Israel(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Algerian_AF_IL_76MD = "Algerian AF IL-76MD"
+            China_Air_Force_New = "China Air Force New"
+            China_Air_Force_Old = "China Air Force Old"
+            FSB_aeroflot = "FSB aeroflot"
+            MVD_aeroflot = "MVD aeroflot"
+            RF_Air_Force = "RF Air Force"
+            UT_Cargo_1 = "UT_Cargo_1"
             Ukrainian_AF = "Ukrainian AF"
             Ukrainian_AF_aeroflot = "Ukrainian AF aeroflot"
+
+        class Sudan(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Norway(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Romania(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Iran(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Ukraine(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+            Ukrainian_AF = "Ukrainian AF"
+            Ukrainian_AF_aeroflot = "Ukrainian AF aeroflot"
+
+        class Libya(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Belgium(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Slovakia(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Greece(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class UK(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Third_Reich(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Hungary(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Abkhazia(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Morocco(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class United_Nations_Peacekeepers(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Switzerland(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class SouthOssetia(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Vietnam(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
 
         class China(Enum):
             China_Air_Force_New = "China Air Force New"
             China_Air_Force_Old = "China Air Force Old"
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Yemen(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Kuwait(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Serbia(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Oman(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class India(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Egypt(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class TheNetherlands(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Poland(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Syria(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Finland(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Kazakhstan(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Denmark(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Sweden(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Croatia(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class CzechRepublic(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class GDR(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Yugoslavia(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Bulgaria(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class SouthKorea(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Tunisia(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Algerian_AF_IL_76MD = "Algerian AF IL-76MD"
+            China_Air_Force_New = "China Air Force New"
+            China_Air_Force_Old = "China Air Force Old"
+            FSB_aeroflot = "FSB aeroflot"
+            MVD_aeroflot = "MVD aeroflot"
+            RF_Air_Force = "RF Air Force"
+            UT_Cargo_1 = "UT_Cargo_1"
+            Ukrainian_AF = "Ukrainian AF"
+            Ukrainian_AF_aeroflot = "Ukrainian AF aeroflot"
+
+        class Lebanon(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Portugal(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Cuba(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Insurgents(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class SaudiArabia(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class France(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class USA(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Honduras(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Qatar(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
 
         class Russia(Enum):
             FSB_aeroflot = "FSB aeroflot"
             MVD_aeroflot = "MVD aeroflot"
             RF_Air_Force = "RF Air Force"
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class United_Arab_Emirates(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Italian_Social_Republi(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Austria(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Bahrain(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Italy(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Chile(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Turkey(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Philippines(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
 
         class Algeria(Enum):
             Algerian_AF_IL_76MD = "Algerian AF IL-76MD"
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Pakistan(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Malaysia(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Indonesia(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Iraq(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Germany(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class South_Africa(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Jordan(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Mexico(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class USAFAggressors(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Brazil(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Spain(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Belarus(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Canada(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class NorthKorea(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Ethiopia(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Japan(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
+
+        class Thailand(Enum):
+            UT_Cargo_1 = "UT_Cargo_1"
 
     pylons: Set[int] = set()
 
@@ -5205,6 +8075,18 @@ class F_16C_bl_50(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Polish_6th_sqn_4063 = "Polish 6th sqn 4063"
+            Polish_6th_sqn_4064 = "Polish 6th sqn 4064"
+            Polish_6th_sqn_4066 = "Polish 6th sqn 4066"
+            Polish_6th_sqn_4085 = "Polish 6th sqn 4085"
+            HAF___330sqn = "HAF - 330sqn"
+            HAF___341sqn = "HAF - 341sqn"
+            HAF___347sqn = "HAF - 347sqn"
+            HAF___Aegean_Ghost = "HAF - Aegean Ghost"
+            Polish_Air_Force_Standard = "Polish Air Force Standard"
+            af_f16_standard = "af f16 standard"
+
         class Greece(Enum):
             HAF___330sqn = "HAF - 330sqn"
             HAF___341sqn = "HAF - 341sqn"
@@ -5217,6 +8099,18 @@ class F_16C_bl_50(PlaneType):
             Polish_6th_sqn_4066 = "Polish 6th sqn 4066"
             Polish_6th_sqn_4085 = "Polish 6th sqn 4085"
             Polish_Air_Force_Standard = "Polish Air Force Standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Polish_6th_sqn_4063 = "Polish 6th sqn 4063"
+            Polish_6th_sqn_4064 = "Polish 6th sqn 4064"
+            Polish_6th_sqn_4066 = "Polish 6th sqn 4066"
+            Polish_6th_sqn_4085 = "Polish 6th sqn 4085"
+            HAF___330sqn = "HAF - 330sqn"
+            HAF___341sqn = "HAF - 341sqn"
+            HAF___347sqn = "HAF - 347sqn"
+            HAF___Aegean_Ghost = "HAF - Aegean Ghost"
+            Polish_Air_Force_Standard = "Polish Air Force Standard"
+            af_f16_standard = "af f16 standard"
 
         class Turkey(Enum):
             af_f16_standard = "af f16 standard"
@@ -5406,10 +8300,38 @@ class F_16C_bl_52d(PlaneType):
         class Israel(Enum):
             idf_af_f16c_standard = "idf_af f16c standard"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            HAF___340sqn = "HAF - 340sqn"
+            HAF___343sqn = "HAF - 343sqn"
+            HAF___Aegean_Ghost = "HAF - Aegean Ghost"
+            idf_af_f16c_standard = "idf_af f16c standard"
+            pacaf_14th_fs__mj__misawa_afb = "pacaf 14th fs (mj) misawa afb"
+            pacaf_35th_fw__ww__misawa_afb = "pacaf 35th fw (ww) misawa afb"
+            usaf_147th_fig__ef__ellington_afb = "usaf 147th fig (ef) ellington afb"
+            usaf_412th_tw__ed__edwards_afb = "usaf 412th tw (ed) edwards afb"
+            usaf_414th_cts__wa__nellis_afb = "usaf 414th cts (wa) nellis afb"
+            usaf_77th_fs__sw__shaw_afb = "usaf 77th fs (sw) shaw afb"
+            usafe_22nd_fs__sp__spangdahlem_afb = "usafe 22nd fs (sp) spangdahlem afb"
+            usafe_555th_fs__av__aviano_afb = "usafe 555th fs (av) aviano afb"
+
         class Greece(Enum):
             HAF___340sqn = "HAF - 340sqn"
             HAF___343sqn = "HAF - 343sqn"
             HAF___Aegean_Ghost = "HAF - Aegean Ghost"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            HAF___340sqn = "HAF - 340sqn"
+            HAF___343sqn = "HAF - 343sqn"
+            HAF___Aegean_Ghost = "HAF - Aegean Ghost"
+            idf_af_f16c_standard = "idf_af f16c standard"
+            pacaf_14th_fs__mj__misawa_afb = "pacaf 14th fs (mj) misawa afb"
+            pacaf_35th_fw__ww__misawa_afb = "pacaf 35th fw (ww) misawa afb"
+            usaf_147th_fig__ef__ellington_afb = "usaf 147th fig (ef) ellington afb"
+            usaf_412th_tw__ed__edwards_afb = "usaf 412th tw (ed) edwards afb"
+            usaf_414th_cts__wa__nellis_afb = "usaf 414th cts (wa) nellis afb"
+            usaf_77th_fs__sw__shaw_afb = "usaf 77th fs (sw) shaw afb"
+            usafe_22nd_fs__sp__spangdahlem_afb = "usafe 22nd fs (sp) spangdahlem afb"
+            usafe_555th_fs__av__aviano_afb = "usafe 555th fs (av) aviano afb"
 
         class USA(Enum):
             pacaf_14th_fs__mj__misawa_afb = "pacaf 14th fs (mj) misawa afb"
@@ -5611,8 +8533,16 @@ class F_16A(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            standard_denmark = "standard_denmark"
+            usaf_f16_standard_1 = "usaf f16 standard-1"
+
         class Denmark(Enum):
             standard_denmark = "standard_denmark"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            standard_denmark = "standard_denmark"
+            usaf_f16_standard_1 = "usaf f16 standard-1"
 
         class USA(Enum):
             usaf_f16_standard_1 = "usaf f16 standard-1"
@@ -5751,7 +8681,13 @@ class F_16A_MLU(PlaneType):
             CMD_extended_skins = "CMD extended skins"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
+            _2nd_squadron__comet__florennes_ab = "2nd squadron `comet` florennes ab"
+            rdaf_f16_standard_1 = "rdaf f16 standard-1"
             CMD_extended_skins = "CMD extended skins"
+            norway_338_skvadron = "norway 338 skvadron"
+            norway_skv338 = "norway skv338"
+            the_netherlands__313th_squadron____twenthe_ab = "the netherlands (313th squadron `` twenthe ab)"
+            the_netherlands_313th__tigers__squadron = "the netherlands 313th `tigers` squadron"
 
         class Sudan(Enum):
             CMD_extended_skins = "CMD extended skins"
@@ -5877,7 +8813,13 @@ class F_16A_MLU(PlaneType):
             CMD_extended_skins = "CMD extended skins"
 
         class Combined_Joint_Task_Forces_Red(Enum):
+            _2nd_squadron__comet__florennes_ab = "2nd squadron `comet` florennes ab"
+            rdaf_f16_standard_1 = "rdaf f16 standard-1"
             CMD_extended_skins = "CMD extended skins"
+            norway_338_skvadron = "norway 338 skvadron"
+            norway_skv338 = "norway skv338"
+            the_netherlands__313th_squadron____twenthe_ab = "the netherlands (313th squadron `` twenthe ab)"
+            the_netherlands_313th__tigers__squadron = "the netherlands 313th `tigers` squadron"
 
         class Lebanon(Enum):
             CMD_extended_skins = "CMD extended skins"
@@ -6139,6 +9081,12 @@ class RQ_1A_Predator(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            USAF_Standard = "USAF Standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            USAF_Standard = "USAF Standard"
+
         class USA(Enum):
             USAF_Standard = "USAF Standard"
 
@@ -6171,11 +9119,25 @@ class Yak_40(PlaneType):
         class Georgia(Enum):
             Georgian_Airlines = "Georgian Airlines"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Aeroflot = "Aeroflot"
+            Algeria_GLAM = "Algeria GLAM"
+            Georgian_Airlines = "Georgian Airlines"
+            Olympic_Airways = "Olympic Airways"
+            Ukranian = "Ukranian"
+
         class Ukraine(Enum):
             Ukranian = "Ukranian"
 
         class Greece(Enum):
             Olympic_Airways = "Olympic Airways"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Aeroflot = "Aeroflot"
+            Algeria_GLAM = "Algeria GLAM"
+            Georgian_Airlines = "Georgian Airlines"
+            Olympic_Airways = "Olympic Airways"
+            Ukranian = "Ukranian"
 
         class Russia(Enum):
             Aeroflot = "Aeroflot"
@@ -6201,6 +9163,14 @@ class KC_135(PlaneType):
     category = "Tankers"  #{8A302789-A55D-4897-B647-66493FA6826F}
 
     class Liveries:
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            TurAF_Standard = "TurAF Standard"
+            Standard_USAF = "Standard USAF"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            TurAF_Standard = "TurAF Standard"
+            Standard_USAF = "Standard USAF"
 
         class USA(Enum):
             Standard_USAF = "Standard USAF"
@@ -6256,6 +9226,17 @@ class FW_190D9(PlaneType):
         class USSR(Enum):
             FW_190D9_USSR = "FW-190D9_USSR"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            FW_190D9_13_JG_51_Heinz_Marquardt = "FW-190D9_13.JG 51_Heinz Marquardt"
+            FW_190D9_IV_JG_26_Hans_Dortenmann = "FW-190D9_IV.JG 26_Hans Dortenmann"
+            FW_190D9_USSR = "FW-190D9_USSR"
+            FW_190D9_Black_4_of_Stab_IIJG_6 = "FW-190D9_Black 4 of Stab IIJG 6"
+            FW_190D9_JG54 = "FW-190D9_JG54"
+            FW_190D9_5JG301 = "FW-190D9_5JG301"
+            FW_190D9_GB = "FW-190D9_GB"
+            FW_190D9_USA = "FW-190D9_USA"
+            FW_190D9_Red = "FW-190D9_Red"
+
         class UK(Enum):
             FW_190D9_GB = "FW-190D9_GB"
 
@@ -6265,6 +9246,17 @@ class FW_190D9(PlaneType):
             FW_190D9_Black_4_of_Stab_IIJG_6 = "FW-190D9_Black 4 of Stab IIJG 6"
             FW_190D9_JG54 = "FW-190D9_JG54"
             FW_190D9_5JG301 = "FW-190D9_5JG301"
+            FW_190D9_Red = "FW-190D9_Red"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            FW_190D9_13_JG_51_Heinz_Marquardt = "FW-190D9_13.JG 51_Heinz Marquardt"
+            FW_190D9_IV_JG_26_Hans_Dortenmann = "FW-190D9_IV.JG 26_Hans Dortenmann"
+            FW_190D9_USSR = "FW-190D9_USSR"
+            FW_190D9_Black_4_of_Stab_IIJG_6 = "FW-190D9_Black 4 of Stab IIJG 6"
+            FW_190D9_JG54 = "FW-190D9_JG54"
+            FW_190D9_5JG301 = "FW-190D9_5JG301"
+            FW_190D9_GB = "FW-190D9_GB"
+            FW_190D9_USA = "FW-190D9_USA"
             FW_190D9_Red = "FW-190D9_Red"
 
         class USA(Enum):
@@ -6355,7 +9347,30 @@ class FW_190A8(PlaneType):
             FW_190A8 = "FW-190A8"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
+            FW_190A8_2_JG_54 = "FW-190A8_2.JG 54"
+            FW_190A8_2_JG_54_Hans_Dortenmann = "FW-190A8_2.JG 54_Hans Dortenmann"
+            Fw190_Alfred_Bindseil = "Fw190_Alfred_Bindseil"
+            Fw190_Ewald_Preisz = "Fw190_Ewald_Preisz"
+            Captured_RA = "Captured_RA"
             FW_190A8 = "FW-190A8"
+            Factory_skin = "Factory skin"
+            FW_190A8_Yellow_4 = "FW-190A8 Yellow 4"
+            FW_190A8_RAF = "FW-190A8_RAF"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
+            Fw_190_A_8_Czech_Avia_S_90 = "Fw 190 A-8 Czech Avia S.90"
+            FW_190A8_JG26_Priller = "FW-190A8 JG26 Priller"
+            FW_190A8_JG3_Maximowitz = "FW-190A8 JG3 Maximowitz"
+            FW_190A8_RHAF = "FW-190A8 RHAF"
+            JG3_White_nose_Wulf = "JG3 White nose Wulf"
+            Inspired_by_JG2_skin_of_early_Fw_190A = "Inspired by JG2 skin of early Fw 190A"
+            Black_13_Schwarze_Katze_from_JG1 = "Black 13 Schwarze Katze from JG1"
+            Fw190_Fuselage_D_JG301 = "Fw190_Fuselage_D_JG301"
+            RoAF_Grupul7 = "RoAF-Grupul7"
+            Turkish_Air_Force__5th_FR__1942 = "Turkish Air Force, 5th FR (1942)"
 
         class Sudan(Enum):
             FW_190A8 = "FW-190A8"
@@ -6493,7 +9508,30 @@ class FW_190A8(PlaneType):
             FW_190A8 = "FW-190A8"
 
         class Combined_Joint_Task_Forces_Red(Enum):
+            FW_190A8_2_JG_54 = "FW-190A8_2.JG 54"
+            FW_190A8_2_JG_54_Hans_Dortenmann = "FW-190A8_2.JG 54_Hans Dortenmann"
+            Fw190_Alfred_Bindseil = "Fw190_Alfred_Bindseil"
+            Fw190_Ewald_Preisz = "Fw190_Ewald_Preisz"
+            Captured_RA = "Captured_RA"
             FW_190A8 = "FW-190A8"
+            Factory_skin = "Factory skin"
+            FW_190A8_Yellow_4 = "FW-190A8 Yellow 4"
+            FW_190A8_RAF = "FW-190A8_RAF"
+            Fictional_IJN_256th_Kokutai_Rai_153 = "Fictional IJN 256th Kokutai Rai-153"
+            Fictional_IJN_Carrier_Akagi_AI_103 = "Fictional IJN Carrier Akagi AI-103"
+            Fictional_IJN_Carrier_Akagi_AI_151 = "Fictional IJN Carrier Akagi AI-151"
+            Fictional_IJN_Carrier_Soryu_BI_112 = "Fictional IJN Carrier Soryu BI-112"
+            Fictional_IJN_OTU_Tsukuba_Tsu_102 = "Fictional IJN OTU Tsukuba Tsu-102"
+            Fw_190_A_8_Czech_Avia_S_90 = "Fw 190 A-8 Czech Avia S.90"
+            FW_190A8_JG26_Priller = "FW-190A8 JG26 Priller"
+            FW_190A8_JG3_Maximowitz = "FW-190A8 JG3 Maximowitz"
+            FW_190A8_RHAF = "FW-190A8 RHAF"
+            JG3_White_nose_Wulf = "JG3 White nose Wulf"
+            Inspired_by_JG2_skin_of_early_Fw_190A = "Inspired by JG2 skin of early Fw 190A"
+            Black_13_Schwarze_Katze_from_JG1 = "Black 13 Schwarze Katze from JG1"
+            Fw190_Fuselage_D_JG301 = "Fw190_Fuselage_D_JG301"
+            RoAF_Grupul7 = "RoAF-Grupul7"
+            Turkish_Air_Force__5th_FR__1942 = "Turkish Air Force, 5th FR (1942)"
 
         class Lebanon(Enum):
             FW_190A8 = "FW-190A8"
@@ -6723,9 +9761,33 @@ class Bf_109K_4(PlaneType):
             Bf_109_K4_IAF_S_199 = "Bf-109 K4 IAF S-199"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
+            Bf_109_K4_Jagdgeschwader_53 = "Bf-109 K4 Jagdgeschwader 53"
+            Bf_109_K4_1_NJG__11__White_5 = "Bf-109 K4 1.NJG  11 (White 5)"
+            Bf_109_K4_330xxx_batch = "Bf-109 K4 330xxx batch"
+            Bf_109_K4_334xxx_batch = "Bf-109 K4 334xxx batch"
+            Bf_109_K4_335xxx_batch = "Bf-109 K4 335xxx batch"
+            Bf_109_K4_Legion_Condor_Spain_1939 = "Bf-109 K4 Legion Condor Spain 1939"
+            Bf_109_K4_9_JG27__W10_I = "Bf-109 K4 9.JG27 (W10+I)"
+            Bf_109_K4_9_JG77 = "Bf-109 K4 9.JG77"
+            Bf_109_K4_G10_of_Tibor_Tobak_RHAF = "Bf-109 K4 G10 of Tibor Tobak RHAF"
+            Bf_109_K4_red7_EADS = "Bf-109 K4 red7 EADS"
             Bf_109_K4_Dogfight_BLUE = "Bf-109 K4 Dogfight BLUE"
+            Bf_109_K4_Irmgard = "Bf-109 K4 Irmgard"
+            Bf_109_K4_Croatia = "Bf-109 K4 Croatia"
             Green = "Green"
+            Bf_109_K4_USSR_Green = "Bf-109 K4 USSR Green"
+            Bf_109_K4_IIJG52 = "Bf-109 K4 IIJG52"
+            Bf_109_K4_IIIJG27 = "Bf-109 K4 IIIJG27"
+            Germany_standard = "Germany_standard"
+            Bf_109_K4_Jagdgeschwader_77 = "Bf-109 K4 Jagdgeschwader 77"
+            Bf_109_K4_1_NJG__11 = "Bf-109 K4 1.NJG  11"
+            Bf_109_K4_RAF_VD_358_E_2 = "Bf-109 K4 RAF VD 358 E-2"
             Bf_109_K4_Dogfight_RED = "Bf-109 K4 Dogfight RED"
+            Bf_109_K4_IAF_S_199 = "Bf-109 K4 IAF S-199"
+            Bf_109_K4_Stab_JG52 = "Bf-109 K4 Stab JG52"
+            Bf_109_K4_Swiss_E_3a_J_374_1940 = "Bf-109 K4 Swiss E-3a J-374 1940"
+            Bf_109_K4_US_captured = "Bf-109 K4 US captured"
+            Bf_109_K4_White_6__JG_4 = "Bf-109 K4 White 6, JG 4"
 
         class Sudan(Enum):
             Bf_109_K4_Dogfight_BLUE = "Bf-109 K4 Dogfight BLUE"
@@ -6943,9 +10005,33 @@ class Bf_109K_4(PlaneType):
             Bf_109_K4_Dogfight_RED = "Bf-109 K4 Dogfight RED"
 
         class Combined_Joint_Task_Forces_Red(Enum):
+            Bf_109_K4_Jagdgeschwader_53 = "Bf-109 K4 Jagdgeschwader 53"
+            Bf_109_K4_1_NJG__11__White_5 = "Bf-109 K4 1.NJG  11 (White 5)"
+            Bf_109_K4_330xxx_batch = "Bf-109 K4 330xxx batch"
+            Bf_109_K4_334xxx_batch = "Bf-109 K4 334xxx batch"
+            Bf_109_K4_335xxx_batch = "Bf-109 K4 335xxx batch"
+            Bf_109_K4_Legion_Condor_Spain_1939 = "Bf-109 K4 Legion Condor Spain 1939"
+            Bf_109_K4_9_JG27__W10_I = "Bf-109 K4 9.JG27 (W10+I)"
+            Bf_109_K4_9_JG77 = "Bf-109 K4 9.JG77"
+            Bf_109_K4_G10_of_Tibor_Tobak_RHAF = "Bf-109 K4 G10 of Tibor Tobak RHAF"
+            Bf_109_K4_red7_EADS = "Bf-109 K4 red7 EADS"
             Bf_109_K4_Dogfight_BLUE = "Bf-109 K4 Dogfight BLUE"
+            Bf_109_K4_Irmgard = "Bf-109 K4 Irmgard"
+            Bf_109_K4_Croatia = "Bf-109 K4 Croatia"
             Green = "Green"
+            Bf_109_K4_USSR_Green = "Bf-109 K4 USSR Green"
+            Bf_109_K4_IIJG52 = "Bf-109 K4 IIJG52"
+            Bf_109_K4_IIIJG27 = "Bf-109 K4 IIIJG27"
+            Germany_standard = "Germany_standard"
+            Bf_109_K4_Jagdgeschwader_77 = "Bf-109 K4 Jagdgeschwader 77"
+            Bf_109_K4_1_NJG__11 = "Bf-109 K4 1.NJG  11"
+            Bf_109_K4_RAF_VD_358_E_2 = "Bf-109 K4 RAF VD 358 E-2"
             Bf_109_K4_Dogfight_RED = "Bf-109 K4 Dogfight RED"
+            Bf_109_K4_IAF_S_199 = "Bf-109 K4 IAF S-199"
+            Bf_109_K4_Stab_JG52 = "Bf-109 K4 Stab JG52"
+            Bf_109_K4_Swiss_E_3a_J_374_1940 = "Bf-109 K4 Swiss E-3a J-374 1940"
+            Bf_109_K4_US_captured = "Bf-109 K4 US captured"
+            Bf_109_K4_White_6__JG_4 = "Bf-109 K4 White 6, JG 4"
 
         class Lebanon(Enum):
             Bf_109_K4_Dogfight_BLUE = "Bf-109 K4 Dogfight BLUE"
@@ -7190,6 +10276,21 @@ class SpitfireLFMkIX(PlaneType):
             USSR_Spitfire_57th_GvIAP = "USSR Spitfire 57th GvIAP"
             USSR_pilot_Lt__Col__V__A__Matsiyevitch__26th_GvIAP = "USSR pilot Lt. Col. V. A. Matsiyevitch, 26th GvIAP"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            _403_RCAF_Beurling = "403 RCAF Beurling"
+            _441_9G_Q = "441 9G-Q"
+            RAF_Standard = "RAF Standard"
+            RAF_2_TAF__July_1944 = "RAF 2 TAF, July 1944"
+            RAF_2_TAF__June_1944 = "RAF 2 TAF, June 1944"
+            RAF_2_TAF__Sept_1944 = "RAF 2 TAF, Sept 1944"
+            RAF__No__126_Squadron__Harrowbeer = "RAF, No. 126 Squadron, Harrowbeer"
+            RAF__No__145_Squadron = "RAF, No. 145 Squadron"
+            RAF__No__16_Squadron = "RAF, No. 16 Squadron"
+            USSR_26th_GvIAP__PVO = "USSR 26th GvIAP, PVO"
+            USSR_3rd_AE_57th_GvIAP = "USSR_3rd_AE_57th_GvIAP"
+            USSR_Spitfire_57th_GvIAP = "USSR Spitfire 57th GvIAP"
+            USSR_pilot_Lt__Col__V__A__Matsiyevitch__26th_GvIAP = "USSR pilot Lt. Col. V. A. Matsiyevitch, 26th GvIAP"
+
         class UK(Enum):
             _403_RCAF_Beurling = "403 RCAF Beurling"
             _441_9G_Q = "441 9G-Q"
@@ -7200,6 +10301,21 @@ class SpitfireLFMkIX(PlaneType):
             RAF__No__126_Squadron__Harrowbeer = "RAF, No. 126 Squadron, Harrowbeer"
             RAF__No__145_Squadron = "RAF, No. 145 Squadron"
             RAF__No__16_Squadron = "RAF, No. 16 Squadron"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            _403_RCAF_Beurling = "403 RCAF Beurling"
+            _441_9G_Q = "441 9G-Q"
+            RAF_Standard = "RAF Standard"
+            RAF_2_TAF__July_1944 = "RAF 2 TAF, July 1944"
+            RAF_2_TAF__June_1944 = "RAF 2 TAF, June 1944"
+            RAF_2_TAF__Sept_1944 = "RAF 2 TAF, Sept 1944"
+            RAF__No__126_Squadron__Harrowbeer = "RAF, No. 126 Squadron, Harrowbeer"
+            RAF__No__145_Squadron = "RAF, No. 145 Squadron"
+            RAF__No__16_Squadron = "RAF, No. 16 Squadron"
+            USSR_26th_GvIAP__PVO = "USSR 26th GvIAP, PVO"
+            USSR_3rd_AE_57th_GvIAP = "USSR_3rd_AE_57th_GvIAP"
+            USSR_Spitfire_57th_GvIAP = "USSR Spitfire 57th GvIAP"
+            USSR_pilot_Lt__Col__V__A__Matsiyevitch__26th_GvIAP = "USSR pilot Lt. Col. V. A. Matsiyevitch, 26th GvIAP"
 
         class Russia(Enum):
             USSR_26th_GvIAP__PVO = "USSR 26th GvIAP, PVO"
@@ -7263,6 +10379,20 @@ class SpitfireLFMkIXCW(PlaneType):
             USSR_Spitfire_57th_GvIAP = "USSR Spitfire 57th GvIAP"
             USSR_pilot_Lt__Col__V__A__Matsiyevitch__26th_GvIAP = "USSR pilot Lt. Col. V. A. Matsiyevitch, 26th GvIAP"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            _421_RCAF_AU_H = "421 RCAF AU-H"
+            RAF_Standard = "RAF Standard"
+            RAF_2_TAF__July_1944 = "RAF 2 TAF, July 1944"
+            RAF_2_TAF__June_1944 = "RAF 2 TAF, June 1944"
+            RAF_2_TAF__Sept_1944 = "RAF 2 TAF, Sept 1944"
+            RAF__No__126_Squadron__Harrowbeer = "RAF, No. 126 Squadron, Harrowbeer"
+            RAF__No__145_Squadron = "RAF, No. 145 Squadron"
+            RAF__No__16_Squadron = "RAF, No. 16 Squadron"
+            USSR_26th_GvIAP__PVO = "USSR 26th GvIAP, PVO"
+            USSR_3rd_AE_57th_GvIAP = "USSR_3rd_AE_57th_GvIAP"
+            USSR_Spitfire_57th_GvIAP = "USSR Spitfire 57th GvIAP"
+            USSR_pilot_Lt__Col__V__A__Matsiyevitch__26th_GvIAP = "USSR pilot Lt. Col. V. A. Matsiyevitch, 26th GvIAP"
+
         class UK(Enum):
             _421_RCAF_AU_H = "421 RCAF AU-H"
             RAF_Standard = "RAF Standard"
@@ -7272,6 +10402,20 @@ class SpitfireLFMkIXCW(PlaneType):
             RAF__No__126_Squadron__Harrowbeer = "RAF, No. 126 Squadron, Harrowbeer"
             RAF__No__145_Squadron = "RAF, No. 145 Squadron"
             RAF__No__16_Squadron = "RAF, No. 16 Squadron"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            _421_RCAF_AU_H = "421 RCAF AU-H"
+            RAF_Standard = "RAF Standard"
+            RAF_2_TAF__July_1944 = "RAF 2 TAF, July 1944"
+            RAF_2_TAF__June_1944 = "RAF 2 TAF, June 1944"
+            RAF_2_TAF__Sept_1944 = "RAF 2 TAF, Sept 1944"
+            RAF__No__126_Squadron__Harrowbeer = "RAF, No. 126 Squadron, Harrowbeer"
+            RAF__No__145_Squadron = "RAF, No. 145 Squadron"
+            RAF__No__16_Squadron = "RAF, No. 16 Squadron"
+            USSR_26th_GvIAP__PVO = "USSR 26th GvIAP, PVO"
+            USSR_3rd_AE_57th_GvIAP = "USSR_3rd_AE_57th_GvIAP"
+            USSR_Spitfire_57th_GvIAP = "USSR Spitfire 57th GvIAP"
+            USSR_pilot_Lt__Col__V__A__Matsiyevitch__26th_GvIAP = "USSR pilot Lt. Col. V. A. Matsiyevitch, 26th GvIAP"
 
         class Russia(Enum):
             USSR_26th_GvIAP__PVO = "USSR 26th GvIAP, PVO"
@@ -7361,9 +10505,48 @@ class P_51D(PlaneType):
             Israeli_Air_Force = "Israeli Air Force"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
+            USAF_363rd_FS__357th_FG_DESERT_RAT = "USAF 363rd FS, 357th FG DESERT RAT"
+            USAF_364th_FS__HURRY_HOME_HONEY = "USAF 364th FS, HURRY HOME HONEY"
+            USAF_344th_FS__IRON_ASS = "USAF 344th FS, IRON ASS"
+            USAF_485th_FS__MOONBEAM_McSWINE = "USAF 485th FS, MOONBEAM McSWINE"
+            USAF_302nd_FS__RED_TAILS = "USAF 302nd FS, RED TAILS"
+            RAF_112_Sqdn = "RAF 112 Sqdn"
+            RAF_122_Sqdn_Jun_44 = "RAF 122 Sqdn Jun 44"
+            RAF_129_Sqdn_Jun_44 = "RAF 129 Sqdn Jun 44"
+            RAF_19_Sqdn_Jun_44 = "RAF 19 Sqdn Jun 44"
+            RAF_306_Sqdn_Jun_44 = "RAF 306 Sqdn Jun 44"
+            RAF_315_Sqdn_Jun_44 = "RAF 315 Sqdn Jun 44"
+            USAF_363rd_FS = "USAF 363rd FS"
+            USAF_364th_FS = "USAF 364th FS"
+            USAF_375th_FS = "USAF 375th FS"
+            Canada_RAF_442_Sqdn = "Canada RAF 442 Sqdn"
+            USAF_485th_FS = "USAF 485th FS"
+            RAF_65_Sqdn_Jun_44 = "RAF 65 Sqdn Jun 44"
+            USAF_84th_FS = "USAF 84th FS"
             Bare_Metal = "Bare Metal"
+            USAF_Big_Beautiful_Doll = "USAF Big Beautiful Doll"
+            Russia_Blueback = "Russia Blueback"
+            USAF_DEE = "USAF DEE"
+            Russia_DOSAAF = "Russia DOSAAF"
             Dogfight_Blue = "Dogfight Blue"
             Dogfight_Red = "Dogfight Red"
+            USAF_Ferocious_Frankie = "USAF Ferocious Frankie"
+            USAF_Gentleman_Jim = "USAF Gentleman Jim"
+            Hellenic_Airforce_Green = "Hellenic Airforce Green"
+            Israeli_Air_Force = "Israeli Air Force"
+            Italia_Air_Force = "Italia Air Force"
+            USAF_Miss_Velma = "USAF Miss Velma"
+            PLAAF_P_51D_Late_1940s = "PLAAF P-51D Late 1940s"
+            PLAAF_P_51K_Oct_1_1949 = "PLAAF P-51K Oct.1.1949"
+            SPAIN_Roberto = "SPAIN Roberto"
+            Russia_SRI_VVS_USSR_1942 = "Russia SRI VVS USSR 1942"
+            Germany_Training_Staffel = "Germany Training Staffel"
+            USSR_Modern = "USSR Modern"
+            USSR_Old = "USSR Old"
+            Ukraine_Old = "Ukraine Old"
+            USAF_Voodoo_AirRace = "USAF Voodoo AirRace"
+            Ukraine_Modern = "Ukraine Modern"
+            Russia_Green_Black = "Russia Green Black"
 
         class Sudan(Enum):
             Bare_Metal = "Bare Metal"
@@ -7574,9 +10757,48 @@ class P_51D(PlaneType):
             Dogfight_Red = "Dogfight Red"
 
         class Combined_Joint_Task_Forces_Red(Enum):
+            USAF_363rd_FS__357th_FG_DESERT_RAT = "USAF 363rd FS, 357th FG DESERT RAT"
+            USAF_364th_FS__HURRY_HOME_HONEY = "USAF 364th FS, HURRY HOME HONEY"
+            USAF_344th_FS__IRON_ASS = "USAF 344th FS, IRON ASS"
+            USAF_485th_FS__MOONBEAM_McSWINE = "USAF 485th FS, MOONBEAM McSWINE"
+            USAF_302nd_FS__RED_TAILS = "USAF 302nd FS, RED TAILS"
+            RAF_112_Sqdn = "RAF 112 Sqdn"
+            RAF_122_Sqdn_Jun_44 = "RAF 122 Sqdn Jun 44"
+            RAF_129_Sqdn_Jun_44 = "RAF 129 Sqdn Jun 44"
+            RAF_19_Sqdn_Jun_44 = "RAF 19 Sqdn Jun 44"
+            RAF_306_Sqdn_Jun_44 = "RAF 306 Sqdn Jun 44"
+            RAF_315_Sqdn_Jun_44 = "RAF 315 Sqdn Jun 44"
+            USAF_363rd_FS = "USAF 363rd FS"
+            USAF_364th_FS = "USAF 364th FS"
+            USAF_375th_FS = "USAF 375th FS"
+            Canada_RAF_442_Sqdn = "Canada RAF 442 Sqdn"
+            USAF_485th_FS = "USAF 485th FS"
+            RAF_65_Sqdn_Jun_44 = "RAF 65 Sqdn Jun 44"
+            USAF_84th_FS = "USAF 84th FS"
             Bare_Metal = "Bare Metal"
+            USAF_Big_Beautiful_Doll = "USAF Big Beautiful Doll"
+            Russia_Blueback = "Russia Blueback"
+            USAF_DEE = "USAF DEE"
+            Russia_DOSAAF = "Russia DOSAAF"
             Dogfight_Blue = "Dogfight Blue"
             Dogfight_Red = "Dogfight Red"
+            USAF_Ferocious_Frankie = "USAF Ferocious Frankie"
+            USAF_Gentleman_Jim = "USAF Gentleman Jim"
+            Hellenic_Airforce_Green = "Hellenic Airforce Green"
+            Israeli_Air_Force = "Israeli Air Force"
+            Italia_Air_Force = "Italia Air Force"
+            USAF_Miss_Velma = "USAF Miss Velma"
+            PLAAF_P_51D_Late_1940s = "PLAAF P-51D Late 1940s"
+            PLAAF_P_51K_Oct_1_1949 = "PLAAF P-51K Oct.1.1949"
+            SPAIN_Roberto = "SPAIN Roberto"
+            Russia_SRI_VVS_USSR_1942 = "Russia SRI VVS USSR 1942"
+            Germany_Training_Staffel = "Germany Training Staffel"
+            USSR_Modern = "USSR Modern"
+            USSR_Old = "USSR Old"
+            Ukraine_Old = "Ukraine Old"
+            USAF_Voodoo_AirRace = "USAF Voodoo AirRace"
+            Ukraine_Modern = "Ukraine Modern"
+            Russia_Green_Black = "Russia Green Black"
 
         class Lebanon(Enum):
             Bare_Metal = "Bare Metal"
@@ -7970,10 +11192,25 @@ class P_47D_30(PlaneType):
             RAF_Thunderbolt = "RAF Thunderbolt"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
+            USAF_Standard = "USAF Standard"
             _1st_Brazilian_Ftr_Sq_Jambock_A1_Menezes = "1st Brazilian Ftr Sq-Jambock A1-Menezes"
             USAAF_509th_FS__405th_FG__ETO_1944__Chief_Ski_U_Mah_D40 = "USAAF 509th FS, 405th FG, ETO 1944, Chief Ski-U-Mah D40"
             USAAF_509th_FS__405th_FG__ETO_1944__Chief_Ski_U_Mah_D28 = "USAAF 509th FS, 405th FG, ETO 1944, Chief Ski-U-Mah D28"
+            _53rd_FS_9th_Air_Force = "53rd_FS_9th_Air_Force"
+            _61st_FS_8th_AF_HVZ = "61st_FS_8th_AF_HVZ"
+            _61st_FS_D_day = "61st_FS_D_day"
+            _61st_FS_1944 = "61st_FS_1944"
+            _79thFG_86thFS_The_Trojan_Warhorse = "79thFG 86thFS The Trojan Warhorse"
+            Eagle_Dynamics_Commemorative = "Eagle Dynamics Commemorative"
+            Lend_Lease = "Lend-Lease"
+            Lt_Col_Benjamin_Mayo = "Lt_Col_Benjamin_Mayo"
+            Lt_Col_Gabreski_D_day = "Lt_Col_Gabreski_D_day"
+            Lt_Col_Gabreski_1944 = "Lt_Col_Gabreski_1944"
+            Maj_Howard_Park_1945 = "Maj_Howard_Park_1945"
             RAF_Thunderbolt = "RAF Thunderbolt"
+            TONY_5th_Emergency_Rescue_Squadron = "TONY 5th Emergency Rescue Squadron"
+            USSR_Blue_scheme = "USSR-Blue-scheme"
+            WarChief = "WarChief"
 
         class Sudan(Enum):
             _1st_Brazilian_Ftr_Sq_Jambock_A1_Menezes = "1st Brazilian Ftr Sq-Jambock A1-Menezes"
@@ -8211,10 +11448,25 @@ class P_47D_30(PlaneType):
             RAF_Thunderbolt = "RAF Thunderbolt"
 
         class Combined_Joint_Task_Forces_Red(Enum):
+            USAF_Standard = "USAF Standard"
             _1st_Brazilian_Ftr_Sq_Jambock_A1_Menezes = "1st Brazilian Ftr Sq-Jambock A1-Menezes"
             USAAF_509th_FS__405th_FG__ETO_1944__Chief_Ski_U_Mah_D40 = "USAAF 509th FS, 405th FG, ETO 1944, Chief Ski-U-Mah D40"
             USAAF_509th_FS__405th_FG__ETO_1944__Chief_Ski_U_Mah_D28 = "USAAF 509th FS, 405th FG, ETO 1944, Chief Ski-U-Mah D28"
+            _53rd_FS_9th_Air_Force = "53rd_FS_9th_Air_Force"
+            _61st_FS_8th_AF_HVZ = "61st_FS_8th_AF_HVZ"
+            _61st_FS_D_day = "61st_FS_D_day"
+            _61st_FS_1944 = "61st_FS_1944"
+            _79thFG_86thFS_The_Trojan_Warhorse = "79thFG 86thFS The Trojan Warhorse"
+            Eagle_Dynamics_Commemorative = "Eagle Dynamics Commemorative"
+            Lend_Lease = "Lend-Lease"
+            Lt_Col_Benjamin_Mayo = "Lt_Col_Benjamin_Mayo"
+            Lt_Col_Gabreski_D_day = "Lt_Col_Gabreski_D_day"
+            Lt_Col_Gabreski_1944 = "Lt_Col_Gabreski_1944"
+            Maj_Howard_Park_1945 = "Maj_Howard_Park_1945"
             RAF_Thunderbolt = "RAF Thunderbolt"
+            TONY_5th_Emergency_Rescue_Squadron = "TONY 5th Emergency Rescue Squadron"
+            USSR_Blue_scheme = "USSR-Blue-scheme"
+            WarChief = "WarChief"
 
         class Lebanon(Enum):
             _1st_Brazilian_Ftr_Sq_Jambock_A1_Menezes = "1st Brazilian Ftr Sq-Jambock A1-Menezes"
@@ -8718,7 +11970,7 @@ class MosquitoFBMkVI(PlaneType):
     property_defaults: Dict[str, Any] = {
         "SoloFlight": False,
         "Flare_Gun": 1,
-        "ResinLights": 0,
+        "ResinLights": 0.15,
     }
 
     class Properties:
@@ -9146,8 +12398,22 @@ class A_20G(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            _107_Sqn = "107 Sqn"
+            USSR_1st_GMTAP = "USSR 1st GMTAP"
+            USSR_27_APE_DD = "USSR 27 APE DD"
+            USAF_645th_BS = "USAF 645th BS"
+            USAF_668th_BS = "USAF 668th BS"
+
         class UK(Enum):
             _107_Sqn = "107 Sqn"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            _107_Sqn = "107 Sqn"
+            USSR_1st_GMTAP = "USSR 1st GMTAP"
+            USSR_27_APE_DD = "USSR 27 APE DD"
+            USAF_645th_BS = "USAF 645th BS"
+            USAF_668th_BS = "USAF 668th BS"
 
         class USA(Enum):
             USAF_645th_BS = "USAF 645th BS"
@@ -9205,6 +12471,48 @@ class A_10A(PlaneType):
         class Israel(Enum):
             Fictional_Israel_115_Sqn_Flying_Dragon = "Fictional Israel 115 Sqn Flying Dragon"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            _104th_FS_Maryland_ANG__Baltimore__MD = "104th FS Maryland ANG, Baltimore (MD)"
+            _118th_FS_Bradley_ANGB__Connecticut__CT = "118th FS Bradley ANGB, Connecticut (CT)"
+            _118th_FS_Bradley_ANGB__Connecticut__CT__N621 = "118th FS Bradley ANGB, Connecticut (CT) N621"
+            _172nd_FS_Battle_Creek_ANGB__Michigan__BC = "172nd FS Battle Creek ANGB, Michigan (BC)"
+            _184th_FS_Arkansas_ANG__Fort_Smith__FS = "184th FS Arkansas ANG, Fort Smith (FS)"
+            _190th_FS_Boise_ANGB__Idaho__ID = "190th FS Boise ANGB, Idaho (ID)"
+            _23rd_TFW_England_AFB__EL = "23rd TFW England AFB (EL)"
+            _25th_FS_Osan_AB__Korea__OS = "25th FS Osan AB, Korea (OS)"
+            _354th_FS_Davis_Monthan_AFB__Arizona__DM = "354th FS Davis Monthan AFB, Arizona (DM)"
+            _355th_FS_Eielson_AFB__Alaska__AK = "355th FS Eielson AFB, Alaska (AK)"
+            _357th_FS_Davis_Monthan_AFB__Arizona__DM = "357th FS Davis Monthan AFB, Arizona (DM)"
+            _358th_FS_Davis_Monthan_AFB__Arizona__DM = "358th FS Davis Monthan AFB, Arizona (DM)"
+            _422nd_TES_Nellis_AFB__Nevada__OT = "422nd TES Nellis AFB, Nevada (OT)"
+            _47th_FS_Barksdale_AFB__Louisiana__BD = "47th FS Barksdale AFB, Louisiana (BD)"
+            _66th_WS_Nellis_AFB__Nevada__WA = "66th WS Nellis AFB, Nevada (WA)"
+            _74th_FS_Moody_AFB__Georgia__FT = "74th FS Moody AFB, Georgia (FT)"
+            _81st_FS_Spangdahlem_AB__Germany__SP__1 = "81st FS Spangdahlem AB, Germany (SP) 1"
+            _81st_FS_Spangdahlem_AB__Germany__SP__2 = "81st FS Spangdahlem AB, Germany (SP) 2"
+            A_10_Grey = "A-10 Grey"
+            Fictional_Italian_AM__23Gruppo = "Fictional Italian AM (23Gruppo)"
+            Algerian_AF_Fictional_Desert = "Algerian AF Fictional Desert"
+            Algerian_AF_Fictional_Grey = "Algerian AF Fictional Grey"
+            Australia_Notional_RAAF = "Australia Notional RAAF"
+            Fictional_Canadian_Air_Force_Pixel_Camo = "Fictional Canadian Air Force Pixel Camo"
+            Fictional_France_Escadron_de_Chasse_03_003_ARDENNES = "Fictional France Escadron de Chasse 03.003 ARDENNES"
+            Fictional_Georgian_Grey = "Fictional Georgian Grey"
+            Fictional_Georgian_Olive = "Fictional Georgian Olive"
+            Fictional_German_3322 = "Fictional German 3322"
+            Fictional_German_3323 = "Fictional German 3323"
+            Fictional_Israel_115_Sqn_Flying_Dragon = "Fictional Israel 115 Sqn Flying Dragon"
+            Canada_RCAF_409_Squadron = "Canada RCAF 409 Squadron"
+            Canada_RCAF_442_Snow_Scheme = "Canada RCAF 442 Snow Scheme"
+            Fictional_Royal_Norwegian_Air_Force = "Fictional Royal Norwegian Air Force"
+            Fictional_Russian_Air_Force_1 = "Fictional Russian Air Force 1"
+            Fictional_Russian_Air_Force_2 = "Fictional Russian Air Force 2"
+            Fictional_Spanish_12nd_Wing = "Fictional Spanish 12nd Wing"
+            Fictional_Spanish_AGA = "Fictional Spanish AGA"
+            Fictional_Spanish_Tritonal = "Fictional Spanish Tritonal"
+            Fictional_Ukraine_Air_Force_1 = "Fictional Ukraine Air Force 1"
+            HAF_Fictional = "HAF Fictional"
+
         class Norway(Enum):
             Fictional_Royal_Norwegian_Air_Force = "Fictional Royal Norwegian Air Force"
 
@@ -9225,6 +12533,48 @@ class A_10A(PlaneType):
 
         class Denmark(Enum):
             A_10_Grey = "A-10 Grey"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            _104th_FS_Maryland_ANG__Baltimore__MD = "104th FS Maryland ANG, Baltimore (MD)"
+            _118th_FS_Bradley_ANGB__Connecticut__CT = "118th FS Bradley ANGB, Connecticut (CT)"
+            _118th_FS_Bradley_ANGB__Connecticut__CT__N621 = "118th FS Bradley ANGB, Connecticut (CT) N621"
+            _172nd_FS_Battle_Creek_ANGB__Michigan__BC = "172nd FS Battle Creek ANGB, Michigan (BC)"
+            _184th_FS_Arkansas_ANG__Fort_Smith__FS = "184th FS Arkansas ANG, Fort Smith (FS)"
+            _190th_FS_Boise_ANGB__Idaho__ID = "190th FS Boise ANGB, Idaho (ID)"
+            _23rd_TFW_England_AFB__EL = "23rd TFW England AFB (EL)"
+            _25th_FS_Osan_AB__Korea__OS = "25th FS Osan AB, Korea (OS)"
+            _354th_FS_Davis_Monthan_AFB__Arizona__DM = "354th FS Davis Monthan AFB, Arizona (DM)"
+            _355th_FS_Eielson_AFB__Alaska__AK = "355th FS Eielson AFB, Alaska (AK)"
+            _357th_FS_Davis_Monthan_AFB__Arizona__DM = "357th FS Davis Monthan AFB, Arizona (DM)"
+            _358th_FS_Davis_Monthan_AFB__Arizona__DM = "358th FS Davis Monthan AFB, Arizona (DM)"
+            _422nd_TES_Nellis_AFB__Nevada__OT = "422nd TES Nellis AFB, Nevada (OT)"
+            _47th_FS_Barksdale_AFB__Louisiana__BD = "47th FS Barksdale AFB, Louisiana (BD)"
+            _66th_WS_Nellis_AFB__Nevada__WA = "66th WS Nellis AFB, Nevada (WA)"
+            _74th_FS_Moody_AFB__Georgia__FT = "74th FS Moody AFB, Georgia (FT)"
+            _81st_FS_Spangdahlem_AB__Germany__SP__1 = "81st FS Spangdahlem AB, Germany (SP) 1"
+            _81st_FS_Spangdahlem_AB__Germany__SP__2 = "81st FS Spangdahlem AB, Germany (SP) 2"
+            A_10_Grey = "A-10 Grey"
+            Fictional_Italian_AM__23Gruppo = "Fictional Italian AM (23Gruppo)"
+            Algerian_AF_Fictional_Desert = "Algerian AF Fictional Desert"
+            Algerian_AF_Fictional_Grey = "Algerian AF Fictional Grey"
+            Australia_Notional_RAAF = "Australia Notional RAAF"
+            Fictional_Canadian_Air_Force_Pixel_Camo = "Fictional Canadian Air Force Pixel Camo"
+            Fictional_France_Escadron_de_Chasse_03_003_ARDENNES = "Fictional France Escadron de Chasse 03.003 ARDENNES"
+            Fictional_Georgian_Grey = "Fictional Georgian Grey"
+            Fictional_Georgian_Olive = "Fictional Georgian Olive"
+            Fictional_German_3322 = "Fictional German 3322"
+            Fictional_German_3323 = "Fictional German 3323"
+            Fictional_Israel_115_Sqn_Flying_Dragon = "Fictional Israel 115 Sqn Flying Dragon"
+            Canada_RCAF_409_Squadron = "Canada RCAF 409 Squadron"
+            Canada_RCAF_442_Snow_Scheme = "Canada RCAF 442 Snow Scheme"
+            Fictional_Royal_Norwegian_Air_Force = "Fictional Royal Norwegian Air Force"
+            Fictional_Russian_Air_Force_1 = "Fictional Russian Air Force 1"
+            Fictional_Russian_Air_Force_2 = "Fictional Russian Air Force 2"
+            Fictional_Spanish_12nd_Wing = "Fictional Spanish 12nd Wing"
+            Fictional_Spanish_AGA = "Fictional Spanish AGA"
+            Fictional_Spanish_Tritonal = "Fictional Spanish Tritonal"
+            Fictional_Ukraine_Air_Force_1 = "Fictional Ukraine Air Force 1"
+            HAF_Fictional = "HAF Fictional"
 
         class France(Enum):
             Fictional_France_Escadron_de_Chasse_03_003_ARDENNES = "Fictional France Escadron de Chasse 03.003 ARDENNES"
@@ -9590,6 +12940,48 @@ class A_10C(PlaneType):
         class Israel(Enum):
             Fictional_Israel_115_Sqn_Flying_Dragon = "Fictional Israel 115 Sqn Flying Dragon"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            _104th_FS_Maryland_ANG__Baltimore__MD = "104th FS Maryland ANG, Baltimore (MD)"
+            _118th_FS_Bradley_ANGB__Connecticut__CT = "118th FS Bradley ANGB, Connecticut (CT)"
+            _118th_FS_Bradley_ANGB__Connecticut__CT__N621 = "118th FS Bradley ANGB, Connecticut (CT) N621"
+            _172nd_FS_Battle_Creek_ANGB__Michigan__BC = "172nd FS Battle Creek ANGB, Michigan (BC)"
+            _184th_FS_Arkansas_ANG__Fort_Smith__FS = "184th FS Arkansas ANG, Fort Smith (FS)"
+            _190th_FS_Boise_ANGB__Idaho__ID = "190th FS Boise ANGB, Idaho (ID)"
+            _23rd_TFW_England_AFB__EL = "23rd TFW England AFB (EL)"
+            _25th_FS_Osan_AB__Korea__OS = "25th FS Osan AB, Korea (OS)"
+            _354th_FS_Davis_Monthan_AFB__Arizona__DM = "354th FS Davis Monthan AFB, Arizona (DM)"
+            _355th_FS_Eielson_AFB__Alaska__AK = "355th FS Eielson AFB, Alaska (AK)"
+            _357th_FS_Davis_Monthan_AFB__Arizona__DM = "357th FS Davis Monthan AFB, Arizona (DM)"
+            _358th_FS_Davis_Monthan_AFB__Arizona__DM = "358th FS Davis Monthan AFB, Arizona (DM)"
+            _422nd_TES_Nellis_AFB__Nevada__OT = "422nd TES Nellis AFB, Nevada (OT)"
+            _47th_FS_Barksdale_AFB__Louisiana__BD = "47th FS Barksdale AFB, Louisiana (BD)"
+            _66th_WS_Nellis_AFB__Nevada__WA = "66th WS Nellis AFB, Nevada (WA)"
+            _74th_FS_Moody_AFB__Georgia__FT = "74th FS Moody AFB, Georgia (FT)"
+            _81st_FS_Spangdahlem_AB__Germany__SP__1 = "81st FS Spangdahlem AB, Germany (SP) 1"
+            _81st_FS_Spangdahlem_AB__Germany__SP__2 = "81st FS Spangdahlem AB, Germany (SP) 2"
+            A_10_Grey = "A-10 Grey"
+            Fictional_Italian_AM__23Gruppo = "Fictional Italian AM (23Gruppo)"
+            Algerian_AF_Fictional_Desert = "Algerian AF Fictional Desert"
+            Algerian_AF_Fictional_Grey = "Algerian AF Fictional Grey"
+            Australia_Notional_RAAF = "Australia Notional RAAF"
+            Fictional_Canadian_Air_Force_Pixel_Camo = "Fictional Canadian Air Force Pixel Camo"
+            Fictional_France_Escadron_de_Chasse_03_003_ARDENNES = "Fictional France Escadron de Chasse 03.003 ARDENNES"
+            Fictional_Georgian_Grey = "Fictional Georgian Grey"
+            Fictional_Georgian_Olive = "Fictional Georgian Olive"
+            Fictional_German_3322 = "Fictional German 3322"
+            Fictional_German_3323 = "Fictional German 3323"
+            Fictional_Israel_115_Sqn_Flying_Dragon = "Fictional Israel 115 Sqn Flying Dragon"
+            Canada_RCAF_409_Squadron = "Canada RCAF 409 Squadron"
+            Canada_RCAF_442_Snow_Scheme = "Canada RCAF 442 Snow Scheme"
+            Fictional_Royal_Norwegian_Air_Force = "Fictional Royal Norwegian Air Force"
+            Fictional_Russian_Air_Force_1 = "Fictional Russian Air Force 1"
+            Fictional_Russian_Air_Force_2 = "Fictional Russian Air Force 2"
+            Fictional_Spanish_12nd_Wing = "Fictional Spanish 12nd Wing"
+            Fictional_Spanish_AGA = "Fictional Spanish AGA"
+            Fictional_Spanish_Tritonal = "Fictional Spanish Tritonal"
+            Fictional_Ukraine_Air_Force_1 = "Fictional Ukraine Air Force 1"
+            HAF_Fictional = "HAF Fictional"
+
         class Norway(Enum):
             Fictional_Royal_Norwegian_Air_Force = "Fictional Royal Norwegian Air Force"
 
@@ -9610,6 +13002,48 @@ class A_10C(PlaneType):
 
         class Denmark(Enum):
             A_10_Grey = "A-10 Grey"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            _104th_FS_Maryland_ANG__Baltimore__MD = "104th FS Maryland ANG, Baltimore (MD)"
+            _118th_FS_Bradley_ANGB__Connecticut__CT = "118th FS Bradley ANGB, Connecticut (CT)"
+            _118th_FS_Bradley_ANGB__Connecticut__CT__N621 = "118th FS Bradley ANGB, Connecticut (CT) N621"
+            _172nd_FS_Battle_Creek_ANGB__Michigan__BC = "172nd FS Battle Creek ANGB, Michigan (BC)"
+            _184th_FS_Arkansas_ANG__Fort_Smith__FS = "184th FS Arkansas ANG, Fort Smith (FS)"
+            _190th_FS_Boise_ANGB__Idaho__ID = "190th FS Boise ANGB, Idaho (ID)"
+            _23rd_TFW_England_AFB__EL = "23rd TFW England AFB (EL)"
+            _25th_FS_Osan_AB__Korea__OS = "25th FS Osan AB, Korea (OS)"
+            _354th_FS_Davis_Monthan_AFB__Arizona__DM = "354th FS Davis Monthan AFB, Arizona (DM)"
+            _355th_FS_Eielson_AFB__Alaska__AK = "355th FS Eielson AFB, Alaska (AK)"
+            _357th_FS_Davis_Monthan_AFB__Arizona__DM = "357th FS Davis Monthan AFB, Arizona (DM)"
+            _358th_FS_Davis_Monthan_AFB__Arizona__DM = "358th FS Davis Monthan AFB, Arizona (DM)"
+            _422nd_TES_Nellis_AFB__Nevada__OT = "422nd TES Nellis AFB, Nevada (OT)"
+            _47th_FS_Barksdale_AFB__Louisiana__BD = "47th FS Barksdale AFB, Louisiana (BD)"
+            _66th_WS_Nellis_AFB__Nevada__WA = "66th WS Nellis AFB, Nevada (WA)"
+            _74th_FS_Moody_AFB__Georgia__FT = "74th FS Moody AFB, Georgia (FT)"
+            _81st_FS_Spangdahlem_AB__Germany__SP__1 = "81st FS Spangdahlem AB, Germany (SP) 1"
+            _81st_FS_Spangdahlem_AB__Germany__SP__2 = "81st FS Spangdahlem AB, Germany (SP) 2"
+            A_10_Grey = "A-10 Grey"
+            Fictional_Italian_AM__23Gruppo = "Fictional Italian AM (23Gruppo)"
+            Algerian_AF_Fictional_Desert = "Algerian AF Fictional Desert"
+            Algerian_AF_Fictional_Grey = "Algerian AF Fictional Grey"
+            Australia_Notional_RAAF = "Australia Notional RAAF"
+            Fictional_Canadian_Air_Force_Pixel_Camo = "Fictional Canadian Air Force Pixel Camo"
+            Fictional_France_Escadron_de_Chasse_03_003_ARDENNES = "Fictional France Escadron de Chasse 03.003 ARDENNES"
+            Fictional_Georgian_Grey = "Fictional Georgian Grey"
+            Fictional_Georgian_Olive = "Fictional Georgian Olive"
+            Fictional_German_3322 = "Fictional German 3322"
+            Fictional_German_3323 = "Fictional German 3323"
+            Fictional_Israel_115_Sqn_Flying_Dragon = "Fictional Israel 115 Sqn Flying Dragon"
+            Canada_RCAF_409_Squadron = "Canada RCAF 409 Squadron"
+            Canada_RCAF_442_Snow_Scheme = "Canada RCAF 442 Snow Scheme"
+            Fictional_Royal_Norwegian_Air_Force = "Fictional Royal Norwegian Air Force"
+            Fictional_Russian_Air_Force_1 = "Fictional Russian Air Force 1"
+            Fictional_Russian_Air_Force_2 = "Fictional Russian Air Force 2"
+            Fictional_Spanish_12nd_Wing = "Fictional Spanish 12nd Wing"
+            Fictional_Spanish_AGA = "Fictional Spanish AGA"
+            Fictional_Spanish_Tritonal = "Fictional Spanish Tritonal"
+            Fictional_Ukraine_Air_Force_1 = "Fictional Ukraine Air Force 1"
+            HAF_Fictional = "HAF Fictional"
 
         class France(Enum):
             Fictional_France_Escadron_de_Chasse_03_003_ARDENNES = "Fictional France Escadron de Chasse 03.003 ARDENNES"
@@ -10136,6 +13570,254 @@ class A_10C_2(PlaneType):
 
     property_defaults: Dict[str, Any] = {
     }
+
+    class Liveries:
+
+        class USSR(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Georgia(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Venezuela(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Australia(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Israel(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Sudan(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Norway(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Romania(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Iran(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Ukraine(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Libya(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Belgium(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Slovakia(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Greece(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class UK(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Third_Reich(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Hungary(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Abkhazia(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Morocco(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class United_Nations_Peacekeepers(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Switzerland(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class SouthOssetia(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Vietnam(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class China(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Yemen(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Kuwait(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Serbia(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Oman(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class India(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Egypt(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class TheNetherlands(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Poland(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Syria(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Finland(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Kazakhstan(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Denmark(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Sweden(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Croatia(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class CzechRepublic(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class GDR(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Yugoslavia(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Bulgaria(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class SouthKorea(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Tunisia(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Lebanon(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Portugal(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Cuba(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Insurgents(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class SaudiArabia(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class France(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class USA(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Honduras(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Qatar(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Russia(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class United_Arab_Emirates(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Italian_Social_Republi(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Austria(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Bahrain(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Italy(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Chile(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Turkey(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Philippines(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Algeria(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Pakistan(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Malaysia(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Indonesia(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Iraq(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Germany(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class South_Africa(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Jordan(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Mexico(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class USAFAggressors(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Brazil(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Spain(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Belarus(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Canada(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class NorthKorea(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Ethiopia(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Japan(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
+
+        class Thailand(Enum):
+            The_Baltic_Dragon = "The Baltic Dragon"
 
     class Pylon1:
         LAU_105_with_2_x_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105_with_2_x_AIM_9M_Sidewinder_IR_AAM)
@@ -13060,6 +16742,7 @@ class AV8BNA(PlaneType):
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (1, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
         Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = (1, Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD)
         Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (1, Weapons.Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
+        CBU_99___490lbs__247_x_HEAT_Bomblets = (1, Weapons.CBU_99___490lbs__247_x_HEAT_Bomblets)
         GBU_12___500lb_Laser_Guided_Bomb = (1, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         CATM_9M = (1, Weapons.CATM_9M)
@@ -13080,6 +16763,7 @@ class AV8BNA(PlaneType):
         Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = (2, Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (2, Weapons.Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
+        CBU_99___490lbs__247_x_HEAT_Bomblets = (2, Weapons.CBU_99___490lbs__247_x_HEAT_Bomblets)
         GBU_12___500lb_Laser_Guided_Bomb = (2, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (2, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
         GBU_38___JDAM__500lb_GPS_Guided_Bomb = (2, Weapons.GBU_38___JDAM__500lb_GPS_Guided_Bomb)
@@ -13087,6 +16771,7 @@ class AV8BNA(PlaneType):
         GBU_54B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = (2, Weapons.GBU_54B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD)
         _2_Mk_82 = (2, Weapons._2_Mk_82)
         _2_Mk_20_Rockeye = (2, Weapons._2_Mk_20_Rockeye)
+        _2_CBU_99 = (2, Weapons._2_CBU_99)
         _2_GBU_12 = (2, Weapons._2_GBU_12)
         _2_Mk_82_AIR = (2, Weapons._2_Mk_82_AIR)
         _2_Mk_82_Snakeye = (2, Weapons._2_Mk_82_Snakeye)
@@ -13132,6 +16817,7 @@ class AV8BNA(PlaneType):
         Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = (3, Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD)
         Mk_83___1000lb_GP_Bomb_LD = (3, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (3, Weapons.Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
+        CBU_99___490lbs__247_x_HEAT_Bomblets = (3, Weapons.CBU_99___490lbs__247_x_HEAT_Bomblets)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (3, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
         GBU_38___JDAM__500lb_GPS_Guided_Bomb = (3, Weapons.GBU_38___JDAM__500lb_GPS_Guided_Bomb)
@@ -13141,6 +16827,7 @@ class AV8BNA(PlaneType):
         _2_Mk_82 = (3, Weapons._2_Mk_82)
         _2_Mk_83 = (3, Weapons._2_Mk_83)
         _2_Mk_20_Rockeye = (3, Weapons._2_Mk_20_Rockeye)
+        _2_CBU_99 = (3, Weapons._2_CBU_99)
         _2_GBU_12 = (3, Weapons._2_GBU_12)
         _2_Mk_82_AIR = (3, Weapons._2_Mk_82_AIR)
         _2_Mk_82_Snakeye = (3, Weapons._2_Mk_82_Snakeye)
@@ -13166,7 +16853,9 @@ class AV8BNA(PlaneType):
         AERO_1D_300_Gallons_Fuel_Tank__Empty_ = (3, Weapons.AERO_1D_300_Gallons_Fuel_Tank__Empty_)
 
     class Pylon4:
-        GAU_12_Gunpod = (4, Weapons.GAU_12_Gunpod)
+        GAU_12_Gunpod_w_SAPHEI_T = (4, Weapons.GAU_12_Gunpod_w_SAPHEI_T)
+        GAU_12_Gunpod_w_AP_M79 = (4, Weapons.GAU_12_Gunpod_w_AP_M79)
+        GAU_12_Gunpod_w_HE_M792 = (4, Weapons.GAU_12_Gunpod_w_HE_M792)
 
     class Pylon5:
         AN_ALQ_164_DECM_Pod = (5, Weapons.AN_ALQ_164_DECM_Pod)
@@ -13179,6 +16868,7 @@ class AV8BNA(PlaneType):
         Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = (6, Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (6, Weapons.Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
+        CBU_99___490lbs__247_x_HEAT_Bomblets = (6, Weapons.CBU_99___490lbs__247_x_HEAT_Bomblets)
         GBU_12___500lb_Laser_Guided_Bomb = (6, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (6, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
         GBU_38___JDAM__500lb_GPS_Guided_Bomb = (6, Weapons.GBU_38___JDAM__500lb_GPS_Guided_Bomb)
@@ -13188,6 +16878,7 @@ class AV8BNA(PlaneType):
         _2_Mk_82_ = (6, Weapons._2_Mk_82_)
         _2_Mk_83_ = (6, Weapons._2_Mk_83_)
         _2_Mk_20_Rockeye_ = (6, Weapons._2_Mk_20_Rockeye_)
+        _2_CBU_99_ = (6, Weapons._2_CBU_99_)
         _2_GBU_12_ = (6, Weapons._2_GBU_12_)
         _2_Mk_82_AIR_ = (6, Weapons._2_Mk_82_AIR_)
         _2_Mk_82_Snakeye_ = (6, Weapons._2_Mk_82_Snakeye_)
@@ -13221,6 +16912,7 @@ class AV8BNA(PlaneType):
         Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = (7, Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD)
         Mk_83___1000lb_GP_Bomb_LD = (7, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (7, Weapons.Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
+        CBU_99___490lbs__247_x_HEAT_Bomblets = (7, Weapons.CBU_99___490lbs__247_x_HEAT_Bomblets)
         GBU_12___500lb_Laser_Guided_Bomb = (7, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (7, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
         GBU_38___JDAM__500lb_GPS_Guided_Bomb = (7, Weapons.GBU_38___JDAM__500lb_GPS_Guided_Bomb)
@@ -13228,6 +16920,7 @@ class AV8BNA(PlaneType):
         GBU_54B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = (7, Weapons.GBU_54B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD)
         _2_Mk_82_ = (7, Weapons._2_Mk_82_)
         _2_Mk_20_Rockeye_ = (7, Weapons._2_Mk_20_Rockeye_)
+        _2_CBU_99_ = (7, Weapons._2_CBU_99_)
         _2_GBU_12_ = (7, Weapons._2_GBU_12_)
         _2_Mk_82_AIR_ = (7, Weapons._2_Mk_82_AIR_)
         _2_Mk_82_Snakeye_ = (7, Weapons._2_Mk_82_Snakeye_)
@@ -13274,6 +16967,7 @@ class AV8BNA(PlaneType):
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (8, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
         Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = (8, Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD)
         Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (8, Weapons.Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
+        CBU_99___490lbs__247_x_HEAT_Bomblets = (8, Weapons.CBU_99___490lbs__247_x_HEAT_Bomblets)
         GBU_12___500lb_Laser_Guided_Bomb = (8, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (8, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         CATM_9M = (8, Weapons.CATM_9M)
@@ -13309,6 +17003,12 @@ class KC130(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            default = "default"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            default = "default"
+
         class USA(Enum):
             default = "default"
 
@@ -13336,9 +17036,257 @@ class KC135MPRS(PlaneType):
 
     class Liveries:
 
+        class USSR(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Georgia(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Venezuela(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Australia(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Israel(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            _100th_ARW = "100th ARW"
+            _22nd_ARW = "22nd ARW"
+            BP_TANKER = "BP_TANKER"
+
+        class Sudan(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Norway(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Romania(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Iran(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Ukraine(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Libya(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Belgium(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Slovakia(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Greece(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class UK(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Third_Reich(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Hungary(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Abkhazia(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Morocco(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class United_Nations_Peacekeepers(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Switzerland(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class SouthOssetia(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Vietnam(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class China(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Yemen(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Kuwait(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Serbia(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Oman(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class India(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Egypt(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class TheNetherlands(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Poland(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Syria(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Finland(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Kazakhstan(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Denmark(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Sweden(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Croatia(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class CzechRepublic(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class GDR(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Yugoslavia(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Bulgaria(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class SouthKorea(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Tunisia(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            _100th_ARW = "100th ARW"
+            _22nd_ARW = "22nd ARW"
+            BP_TANKER = "BP_TANKER"
+
+        class Lebanon(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Portugal(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Cuba(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Insurgents(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class SaudiArabia(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class France(Enum):
+            BP_TANKER = "BP_TANKER"
+
         class USA(Enum):
             _100th_ARW = "100th ARW"
             _22nd_ARW = "22nd ARW"
+            BP_TANKER = "BP_TANKER"
+
+        class Honduras(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Qatar(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Russia(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class United_Arab_Emirates(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Italian_Social_Republi(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Austria(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Bahrain(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Italy(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Chile(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Turkey(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Philippines(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Algeria(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Pakistan(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Malaysia(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Indonesia(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Iraq(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Germany(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class South_Africa(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Jordan(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Mexico(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class USAFAggressors(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Brazil(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Spain(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Belarus(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Canada(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class NorthKorea(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Ethiopia(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Japan(Enum):
+            BP_TANKER = "BP_TANKER"
+
+        class Thailand(Enum):
+            BP_TANKER = "BP_TANKER"
 
     pylons: Set[int] = set()
 
@@ -13441,9 +17389,25 @@ class C_101EB(PlaneType):
 
         class Combined_Joint_Task_Forces_Blue(Enum):
             default = "default"
+            AGA__Spanish_Air_School = "AGA (Spanish Air School)"
+            AGA__Spanish_Air_School__1980 = "AGA (Spanish Air School) 1980"
+            AGA__Spanish_Air_School__1985 = "AGA (Spanish Air School) 1985"
+            CLAEX___Centro_Logístico_de_Armamento_y_Experimentación = "CLAEX - Centro Logístico de Armamento y Experimentación"
+            France_Trainer_Fictional = "France Trainer Fictional"
+            Georgia_Trainer_Fictional = "Georgia Trainer Fictional"
+            _74_squadron_Matacan = "74 squadron Matacan"
+            Patrulla_Aguila_25_Aniversario = "Patrulla Aguila 25 Aniversario"
+            Patrulla_Aguila_30_Aniversario = "Patrulla Aguila 30 Aniversario"
+            Patrulla_Aguila_Spanish_AGA = "Patrulla Aguila Spanish AGA"
+            RAAF_Roulettes__Fictional = "RAAF Roulettes (Fictional)"
+            Russia_Trainer_Fictional = "Russia Trainer Fictional"
+            UK_Trainer_Fictional = "UK Trainer Fictional"
             USAF_Trainer_Fictional = "USAF Trainer Fictional"
+            XE_25_01_Prototype = "XE-25 01 Prototype"
+            XE_25_01_Prototype_1978_Farnborough_Airshow = "XE-25 01 Prototype 1978 Farnborough Airshow"
             XE25_02_Prototype = "XE25-02 Prototype"
             XE25_02_Prototype_1989_TV_Commercial = "XE25-02 Prototype 1989 TV Commercial"
+            XE25_03_Prototype = "XE25-03 Prototype"
 
         class Sudan(Enum):
             default = "default"
@@ -13565,9 +17529,23 @@ class C_101EB(PlaneType):
 
         class Combined_Joint_Task_Forces_Red(Enum):
             default = "default"
+            AGA__Spanish_Air_School = "AGA (Spanish Air School)"
+            AGA__Spanish_Air_School__1980 = "AGA (Spanish Air School) 1980"
+            AGA__Spanish_Air_School__1985 = "AGA (Spanish Air School) 1985"
+            CLAEX___Centro_Logístico_de_Armamento_y_Experimentación = "CLAEX - Centro Logístico de Armamento y Experimentación"
+            France_Trainer_Fictional = "France Trainer Fictional"
+            Georgia_Trainer_Fictional = "Georgia Trainer Fictional"
+            _74_squadron_Matacan = "74 squadron Matacan"
+            Patrulla_Aguila_25_Aniversario = "Patrulla Aguila 25 Aniversario"
+            Patrulla_Aguila_30_Aniversario = "Patrulla Aguila 30 Aniversario"
+            Patrulla_Aguila_Spanish_AGA = "Patrulla Aguila Spanish AGA"
+            RAAF_Roulettes__Fictional = "RAAF Roulettes (Fictional)"
             Russia_Trainer_Fictional = "Russia Trainer Fictional"
+            UK_Trainer_Fictional = "UK Trainer Fictional"
+            USAF_Trainer_Fictional = "USAF Trainer Fictional"
             XE_25_01_Prototype = "XE-25 01 Prototype"
             XE_25_01_Prototype_1978_Farnborough_Airshow = "XE-25 01 Prototype 1978 Farnborough Airshow"
+            XE25_02_Prototype = "XE25-02 Prototype"
             XE25_02_Prototype_1989_TV_Commercial = "XE25-02 Prototype 1989 TV Commercial"
             XE25_03_Prototype = "XE25-03 Prototype"
 
@@ -13811,6 +17789,20 @@ class C_101CC(PlaneType):
             AVIODEV_Skin = "AVIODEV Skin"
             CLAEX_Desert_Camu_Skin___Centro_Logistico_de_Armamento_y_Experimentacion = "CLAEX Desert Camu Skin - Centro Logistico de Armamento y Experimentacion"
             CLAEX_Green_Camu_Skin___Centro_Logistico_de_Armamento_y_Experimentacion = "CLAEX Green Camu Skin - Centro Logistico de Armamento y Experimentacion"
+            Georgia_Combat_Fictional_Green = "Georgia Combat Fictional Green"
+            Georgia_Combat_Fictional_Spots = "Georgia Combat Fictional Spots"
+            Georgia_Combat_Fictional_Wolf = "Georgia Combat Fictional Wolf"
+            Honduras___Air_Force_Comayagua_Coronel_Jose_Enrique_Soto_Cano_Air_Base_Skin_1 = "Honduras - Air Force Comayagua Coronel Jose Enrique Soto Cano Air Base Skin 1"
+            Honduras___Air_Force_Comayagua_Coronel_Jose_Enrique_Soto_Cano_Air_Base_Skin_2 = "Honduras - Air Force Comayagua Coronel Jose Enrique Soto Cano Air Base Skin 2"
+            I_Brigada_Aerea___Chile_Early_Agressor_Nº410_N_1_A_36_HALCON = "I Brigada Aerea - Chile Early Agressor Nº410 N.1 A-36 HALCON"
+            I_Brigada_Aerea___Chile_Early_Agressor_Nº411_N_1_A_36_HALCON = "I Brigada Aerea - Chile Early Agressor Nº411 N.1 A-36 HALCON"
+            I_Brigada_Aerea___Chile_Early_Green_N_1_A_36_HALCON = "I Brigada Aerea - Chile Early Green N.1 A-36 HALCON"
+            I_Brigada_Aerea___Chile_Early_Grey_N_1_A_36_HALCON = "I Brigada Aerea - Chile Early Grey N.1 A-36 HALCON"
+            I_Brigada_Aerea___Grupo_de_Aviacion_N_1_A_36_HALCON_Desert_SKin = "I Brigada Aerea - Grupo de Aviacion N.1 A-36 HALCON Desert SKin"
+            I_Brigada_Aerea___Grupo_de_Aviacion_N_1_A_36_HALCON = "I Brigada Aerea - Grupo de Aviacion N.1 A-36 HALCON"
+            I_Brigada_Aerea___Grupo_de_Aviacion_N_3__A_36_HALCON = "I Brigada Aerea - Grupo de Aviacion N.3  A-36 HALCON"
+            Royal_jordanian_Air_Force = "Royal jordanian Air Force"
+            Russia_Combat_Fictional = "Russia Combat Fictional"
             USAF_Agressor_Fictional = "USAF Agressor Fictional"
 
         class Sudan(Enum):
@@ -13934,7 +17926,21 @@ class C_101CC(PlaneType):
             AVIODEV_Skin = "AVIODEV Skin"
             CLAEX_Desert_Camu_Skin___Centro_Logistico_de_Armamento_y_Experimentacion = "CLAEX Desert Camu Skin - Centro Logistico de Armamento y Experimentacion"
             CLAEX_Green_Camu_Skin___Centro_Logistico_de_Armamento_y_Experimentacion = "CLAEX Green Camu Skin - Centro Logistico de Armamento y Experimentacion"
+            Georgia_Combat_Fictional_Green = "Georgia Combat Fictional Green"
+            Georgia_Combat_Fictional_Spots = "Georgia Combat Fictional Spots"
+            Georgia_Combat_Fictional_Wolf = "Georgia Combat Fictional Wolf"
+            Honduras___Air_Force_Comayagua_Coronel_Jose_Enrique_Soto_Cano_Air_Base_Skin_1 = "Honduras - Air Force Comayagua Coronel Jose Enrique Soto Cano Air Base Skin 1"
+            Honduras___Air_Force_Comayagua_Coronel_Jose_Enrique_Soto_Cano_Air_Base_Skin_2 = "Honduras - Air Force Comayagua Coronel Jose Enrique Soto Cano Air Base Skin 2"
+            I_Brigada_Aerea___Chile_Early_Agressor_Nº410_N_1_A_36_HALCON = "I Brigada Aerea - Chile Early Agressor Nº410 N.1 A-36 HALCON"
+            I_Brigada_Aerea___Chile_Early_Agressor_Nº411_N_1_A_36_HALCON = "I Brigada Aerea - Chile Early Agressor Nº411 N.1 A-36 HALCON"
+            I_Brigada_Aerea___Chile_Early_Green_N_1_A_36_HALCON = "I Brigada Aerea - Chile Early Green N.1 A-36 HALCON"
+            I_Brigada_Aerea___Chile_Early_Grey_N_1_A_36_HALCON = "I Brigada Aerea - Chile Early Grey N.1 A-36 HALCON"
+            I_Brigada_Aerea___Grupo_de_Aviacion_N_1_A_36_HALCON_Desert_SKin = "I Brigada Aerea - Grupo de Aviacion N.1 A-36 HALCON Desert SKin"
+            I_Brigada_Aerea___Grupo_de_Aviacion_N_1_A_36_HALCON = "I Brigada Aerea - Grupo de Aviacion N.1 A-36 HALCON"
+            I_Brigada_Aerea___Grupo_de_Aviacion_N_3__A_36_HALCON = "I Brigada Aerea - Grupo de Aviacion N.3  A-36 HALCON"
+            Royal_jordanian_Air_Force = "Royal jordanian Air Force"
             Russia_Combat_Fictional = "Russia Combat Fictional"
+            USAF_Agressor_Fictional = "USAF Agressor Fictional"
 
         class Lebanon(Enum):
             AVIODEV_Skin = "AVIODEV Skin"
@@ -14095,8 +18101,8 @@ class C_101CC(PlaneType):
         CBLS_200 = (3, Weapons.CBLS_200)
 
     class Pylon4:
-        DEFA_553 = (4, Weapons.DEFA_553)
-        AN_M3 = (4, Weapons.AN_M3)
+        DEFA_553___30mm_Revolver_Cannon = (4, Weapons.DEFA_553___30mm_Revolver_Cannon)
+        AN_M3___2_Browning_Machine_Guns_12_7mm = (4, Weapons.AN_M3___2_Browning_Machine_Guns_12_7mm)
 
     class Pylon5:
         LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
@@ -14157,7 +18163,53 @@ class J_11A(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            USAF_65th_Aggressor_SQN__Desert___Fictional = "USAF 65th Aggressor SQN 'Desert' (Fictional)"
+            USAF_65th_Aggressor_SQN__Gray___Fictional = "USAF 65th Aggressor SQN 'Gray' (Fictional)"
+            USN_Aggressor_VFC_13__Ferris___Fictional = "USN Aggressor VFC-13 'Ferris' (Fictional)"
+            PLAAF_14th_AD = "PLAAF 14th AD"
+            PLAAF_14th_AD__Reworked = "PLAAF 14th AD (Reworked)"
+            PLAAF_17th_AB = "PLAAF 17th AB"
+            PLAAF_18th_AD__Thunderclap_Wing___Fictional = "PLAAF 18th AD 'Thunderclap Wing' (Fictional)"
+            PLAAF_19th_AD = "PLAAF 19th AD"
+            PLAAF_19th_AD__Reworked = "PLAAF 19th AD (Reworked)"
+            PLAAF_2nd_AD = "PLAAF 2nd AD"
+            PLAAF_2nd_AD__Parade = "PLAAF 2nd AD (Parade)"
+            PLAAF_2nd_AD__Reworked = "PLAAF 2nd AD (Reworked)"
+            PLAAF_33th_AD = "PLAAF 33th AD"
+            PLAAF_33th_AD__Reworked = "PLAAF 33th AD (Reworked)"
+            PLAAF_6th_AD = "PLAAF 6th AD"
+            PLAAF_7th_AD = "PLAAF 7th AD"
+            PLAAF_7th_AD__Reworked = "PLAAF 7th AD (Reworked)"
+            PLAAF_Ghost_Gray__Fictional = "PLAAF Ghost Gray (Fictional)"
+            PLAAF_OPFOR__Desert___Fictional = "PLAAF OPFOR 'Desert' (Fictional)"
+            PLAAF_OPFOR__Jungle___Fictional = "PLAAF OPFOR 'Jungle' (Fictional)"
+            Sky_Hunter = "Sky Hunter"
+
         class China(Enum):
+            PLAAF_14th_AD = "PLAAF 14th AD"
+            PLAAF_14th_AD__Reworked = "PLAAF 14th AD (Reworked)"
+            PLAAF_17th_AB = "PLAAF 17th AB"
+            PLAAF_18th_AD__Thunderclap_Wing___Fictional = "PLAAF 18th AD 'Thunderclap Wing' (Fictional)"
+            PLAAF_19th_AD = "PLAAF 19th AD"
+            PLAAF_19th_AD__Reworked = "PLAAF 19th AD (Reworked)"
+            PLAAF_2nd_AD = "PLAAF 2nd AD"
+            PLAAF_2nd_AD__Parade = "PLAAF 2nd AD (Parade)"
+            PLAAF_2nd_AD__Reworked = "PLAAF 2nd AD (Reworked)"
+            PLAAF_33th_AD = "PLAAF 33th AD"
+            PLAAF_33th_AD__Reworked = "PLAAF 33th AD (Reworked)"
+            PLAAF_6th_AD = "PLAAF 6th AD"
+            PLAAF_7th_AD = "PLAAF 7th AD"
+            PLAAF_7th_AD__Reworked = "PLAAF 7th AD (Reworked)"
+            PLAAF_Ghost_Gray__Fictional = "PLAAF Ghost Gray (Fictional)"
+            PLAAF_OPFOR__Desert___Fictional = "PLAAF OPFOR 'Desert' (Fictional)"
+            PLAAF_OPFOR__Jungle___Fictional = "PLAAF OPFOR 'Jungle' (Fictional)"
+            Sky_Hunter = "Sky Hunter"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            USAF_65th_Aggressor_SQN__Desert___Fictional = "USAF 65th Aggressor SQN 'Desert' (Fictional)"
+            USAF_65th_Aggressor_SQN__Gray___Fictional = "USAF 65th Aggressor SQN 'Gray' (Fictional)"
+            USN_Aggressor_VFC_13__Ferris___Fictional = "USN Aggressor VFC-13 'Ferris' (Fictional)"
             PLAAF_14th_AD = "PLAAF 14th AD"
             PLAAF_14th_AD__Reworked = "PLAAF 14th AD (Reworked)"
             PLAAF_17th_AB = "PLAAF 17th AB"
@@ -14451,6 +18503,9 @@ class JF_17(PlaneType):
 
         class Combined_Joint_Task_Forces_Blue(Enum):
             _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            Proto_06 = "Proto 06"
+            PAKAF_Black_Spider__default = "PAKAF Black Spider (default)"
+            PLAAF_125th_AB__Fictional = "PLAAF 125th AB (Fictional)"
 
         class Sudan(Enum):
             _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
@@ -14573,6 +18628,9 @@ class JF_17(PlaneType):
 
         class Combined_Joint_Task_Forces_Red(Enum):
             _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
+            Proto_06 = "Proto 06"
+            PAKAF_Black_Spider__default = "PAKAF Black Spider (default)"
+            PLAAF_125th_AB__Fictional = "PLAAF 125th AB (Fictional)"
 
         class Lebanon(Enum):
             _Splinter__Camo_for_Blue_Side__Fictional = "'Splinter' Camo for Blue Side (Fictional)"
@@ -14837,7 +18895,15 @@ class KJ_2000(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            China_Air_Force_KJ_2000__Parade_93 = "China Air Force KJ-2000 (Parade 93)"
+            China_Air_Force_KJ_2000 = "China Air Force KJ-2000"
+
         class China(Enum):
+            China_Air_Force_KJ_2000__Parade_93 = "China Air Force KJ-2000 (Parade 93)"
+            China_Air_Force_KJ_2000 = "China Air Force KJ-2000"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
             China_Air_Force_KJ_2000__Parade_93 = "China Air Force KJ-2000 (Parade 93)"
             China_Air_Force_KJ_2000 = "China Air Force KJ-2000"
 
@@ -14860,6 +18926,11 @@ class WingLoong_I(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            default = "default"
+            Kazakh_Armed_Forces = "Kazakh Armed Forces"
+            PLAAF = "PLAAF"
+
         class China(Enum):
             PLAAF = "PLAAF"
 
@@ -14871,6 +18942,11 @@ class WingLoong_I(PlaneType):
 
         class Kazakhstan(Enum):
             Kazakh_Armed_Forces = "Kazakh Armed Forces"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            default = "default"
+            Kazakh_Armed_Forces = "Kazakh Armed Forces"
+            PLAAF = "PLAAF"
 
         class SaudiArabia(Enum):
             default = "default"
@@ -14892,8 +18968,8 @@ class WingLoong_I(PlaneType):
 
     pylons: Set[int] = {1, 2}
 
-    tasks = [task.GroundAttack, task.AFAC, task.Reconnaissance]
-    task_default = task.Reconnaissance
+    tasks = [task.CAS, task.GroundAttack, task.AFAC, task.Reconnaissance]
+    task_default = task.CAS
 
 
 class H_6J(PlaneType):
@@ -14902,16 +18978,16 @@ class H_6J(PlaneType):
     width = 33
     length = 34.8
     fuel_max = 25000
-    max_speed = 964.8
-    chaff = 24
-    flare = 36
-    charge_total = 60
+    max_speed = 1044
+    chaff = 120
+    flare = 120
+    charge_total = 240
     chaff_charge_size = 1
     flare_charge_size = 1
     eplrs = True
 
     property_defaults: Dict[str, Any] = {
-        "Belly_Bay_Door": True,
+        "Belly_Bay_Door": False,
     }
 
     class Properties:
@@ -14921,7 +18997,13 @@ class H_6J(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            PLANAF_Standard = "PLANAF Standard"
+
         class China(Enum):
+            PLANAF_Standard = "PLANAF Standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
             PLANAF_Standard = "PLANAF Standard"
 
     class Pylon1:
@@ -17531,13 +21613,105 @@ class F_16C_50(PlaneType):
 
     class Liveries:
 
+        class USSR(Enum):
+            ERAF = "ERAF"
+
+        class Georgia(Enum):
+            ERAF = "ERAF"
+
+        class Venezuela(Enum):
+            ERAF = "ERAF"
+
+        class Australia(Enum):
+            ERAF = "ERAF"
+
         class Israel(Enum):
+            ERAF = "ERAF"
             IAF_101st_squadron = "IAF_101st_squadron"
             IAF_110th_Squadron = "IAF_110th_Squadron"
             IAF_115th_Aggressors_Squadron = "IAF_115th_Aggressors_Squadron"
             IAF_117th_Squadron = "IAF_117th_Squadron"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            default = "default"
+            _18th_AGRS_Arctic_Splinter = "18th AGRS Arctic Splinter"
+            _18th_AGRS_BDU_Splinter = "18th AGRS BDU Splinter"
+            _18th_AGRS_Splinter = "18th AGRS Splinter"
+            ERAF = "ERAF"
+            Polish_AF_standard = "Polish AF standard"
+            USAF_64th_Aggressor_SQN___Shark = "USAF 64th Aggressor SQN - Shark"
+            USAF_64th_Aggressor_SQN_Splinter = "USAF 64th Aggressor SQN-Splinter"
+            _132nd_Wing__Iowa_ANG = "132nd_Wing _Iowa_ANG"
+            _13th_Fighter_Squadron = "13th_Fighter_Squadron"
+            _14th_Fighter_Squadron = "14th_Fighter_Squadron"
+            _152nd_Fighter_Squadron = "152nd_Fighter_Squadron"
+            _174th_Fighter_Squadron = "174th_Fighter_Squadron"
+            _179th_Fighter_Squadron = "179th_Fighter_Squadron"
+            _22nd_Fighter_Squadron = "22nd_Fighter_Squadron"
+            _23rd_Fighter_Squadron = "23rd_Fighter_Squadron"
+            _36th_Fighter_Squadron = "36th_Fighter_Squadron"
+            _480th_Fighter_Squadron = "480th_Fighter_Squadron"
+            _522nd_Fighter_Squadron = "522nd_Fighter_Squadron"
+            _55th_Fighter_Squadron = "55th_Fighter_Squadron"
+            _64th_Aggressor_Squadron_Ghost = "64th_Aggressor_Squadron_Ghost"
+            _77th_Fighter_Squadron = "77th_Fighter_Squadron"
+            _79th_Fighter_Squadron = "79th_Fighter_Squadron"
+            _80th_Fighter_Squadron = "80th_Fighter_Squadron"
+            Chile_Air_Force_732 = "Chile Air Force 732"
+            Chile_Air_Force_746 = "Chile Air Force 746"
+            Chile_Air_Force_851 = "Chile Air Force 851"
+            Dark_Viper = "Dark_Viper"
+            HAF__330_Thunder = "HAF_ 330_Thunder"
+            HAF_335_Tiger = "HAF_335_Tiger"
+            HAF_336_Olympus = "HAF_336_Olympus"
+            HAF_337_Ghost = "HAF_337_Ghost"
+            HAF_340_Fox = "HAF_340_Fox"
+            HAF_341_Arrow = "HAF_341_Arrow"
+            HAF_343_Star = "HAF_343_Star"
+            HAF_346_Jason = "HAF_346_Jason"
+            HAF_347_Perseus = "HAF_347_Perseus"
+            IAF_101st_squadron = "IAF_101st_squadron"
+            IAF_110th_Squadron = "IAF_110th_Squadron"
+            IAF_115th_Aggressors_Squadron = "IAF_115th_Aggressors_Squadron"
+            IAF_117th_Squadron = "IAF_117th_Squadron"
+            AMI__5_Stormo_23_Gruppo = "AMI, 5 Stormo 23 Gruppo"
+            JASDF_6th_TFS = "JASDF 6th TFS"
+            JASDF_8th_TFS = "JASDF 8th TFS"
+            PAF_No_11_Arrows = "PAF_No.11_Arrows"
+            PAF_No_19_Sherdils = "PAF_No.19_Sherdils"
+            PAF_No_29_Aggressors = "PAF_No.29_Aggressors"
+            PAF_No_5_Falcons = "PAF_No.5_Falcons"
+            PAF_No_9_Griffins_2 = "PAF_No.9 Griffins_2"
+            PAF_No_9_Griffins_1 = "PAF_No.9_Griffins_1"
+            Polish_AF_31Blt6th_Tactical_Sqn = "Polish_AF_31Blt6th_Tactical_Sqn"
+            THK_191_Filo = "THK_191_Filo"
+
+        class Sudan(Enum):
+            ERAF = "ERAF"
+
+        class Norway(Enum):
+            ERAF = "ERAF"
+
+        class Romania(Enum):
+            ERAF = "ERAF"
+
+        class Iran(Enum):
+            ERAF = "ERAF"
+
+        class Ukraine(Enum):
+            ERAF = "ERAF"
+
+        class Libya(Enum):
+            ERAF = "ERAF"
+
+        class Belgium(Enum):
+            ERAF = "ERAF"
+
+        class Slovakia(Enum):
+            ERAF = "ERAF"
+
         class Greece(Enum):
+            ERAF = "ERAF"
             HAF__330_Thunder = "HAF_ 330_Thunder"
             HAF_335_Tiger = "HAF_335_Tiger"
             HAF_336_Olympus = "HAF_336_Olympus"
@@ -17548,15 +21722,176 @@ class F_16C_50(PlaneType):
             HAF_346_Jason = "HAF_346_Jason"
             HAF_347_Perseus = "HAF_347_Perseus"
 
+        class UK(Enum):
+            ERAF = "ERAF"
+
+        class Third_Reich(Enum):
+            ERAF = "ERAF"
+
+        class Hungary(Enum):
+            ERAF = "ERAF"
+
+        class Abkhazia(Enum):
+            ERAF = "ERAF"
+
+        class Morocco(Enum):
+            ERAF = "ERAF"
+
+        class United_Nations_Peacekeepers(Enum):
+            ERAF = "ERAF"
+
+        class Switzerland(Enum):
+            ERAF = "ERAF"
+
+        class SouthOssetia(Enum):
+            ERAF = "ERAF"
+
+        class Vietnam(Enum):
+            ERAF = "ERAF"
+
+        class China(Enum):
+            ERAF = "ERAF"
+
+        class Yemen(Enum):
+            ERAF = "ERAF"
+
+        class Kuwait(Enum):
+            ERAF = "ERAF"
+
+        class Serbia(Enum):
+            ERAF = "ERAF"
+
+        class Oman(Enum):
+            ERAF = "ERAF"
+
+        class India(Enum):
+            ERAF = "ERAF"
+
+        class Egypt(Enum):
+            ERAF = "ERAF"
+
+        class TheNetherlands(Enum):
+            ERAF = "ERAF"
+
         class Poland(Enum):
+            ERAF = "ERAF"
             Polish_AF_standard = "Polish AF standard"
             Polish_AF_31Blt6th_Tactical_Sqn = "Polish_AF_31Blt6th_Tactical_Sqn"
+
+        class Syria(Enum):
+            ERAF = "ERAF"
+
+        class Finland(Enum):
+            ERAF = "ERAF"
+
+        class Kazakhstan(Enum):
+            ERAF = "ERAF"
+
+        class Denmark(Enum):
+            ERAF = "ERAF"
+
+        class Sweden(Enum):
+            ERAF = "ERAF"
+
+        class Croatia(Enum):
+            ERAF = "ERAF"
+
+        class CzechRepublic(Enum):
+            ERAF = "ERAF"
+
+        class GDR(Enum):
+            ERAF = "ERAF"
+
+        class Yugoslavia(Enum):
+            ERAF = "ERAF"
+
+        class Bulgaria(Enum):
+            ERAF = "ERAF"
+
+        class SouthKorea(Enum):
+            ERAF = "ERAF"
+
+        class Tunisia(Enum):
+            ERAF = "ERAF"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            default = "default"
+            _18th_AGRS_Arctic_Splinter = "18th AGRS Arctic Splinter"
+            _18th_AGRS_BDU_Splinter = "18th AGRS BDU Splinter"
+            _18th_AGRS_Splinter = "18th AGRS Splinter"
+            ERAF = "ERAF"
+            Polish_AF_standard = "Polish AF standard"
+            USAF_64th_Aggressor_SQN___Shark = "USAF 64th Aggressor SQN - Shark"
+            USAF_64th_Aggressor_SQN_Splinter = "USAF 64th Aggressor SQN-Splinter"
+            _132nd_Wing__Iowa_ANG = "132nd_Wing _Iowa_ANG"
+            _13th_Fighter_Squadron = "13th_Fighter_Squadron"
+            _14th_Fighter_Squadron = "14th_Fighter_Squadron"
+            _152nd_Fighter_Squadron = "152nd_Fighter_Squadron"
+            _174th_Fighter_Squadron = "174th_Fighter_Squadron"
+            _179th_Fighter_Squadron = "179th_Fighter_Squadron"
+            _22nd_Fighter_Squadron = "22nd_Fighter_Squadron"
+            _23rd_Fighter_Squadron = "23rd_Fighter_Squadron"
+            _36th_Fighter_Squadron = "36th_Fighter_Squadron"
+            _480th_Fighter_Squadron = "480th_Fighter_Squadron"
+            _522nd_Fighter_Squadron = "522nd_Fighter_Squadron"
+            _55th_Fighter_Squadron = "55th_Fighter_Squadron"
+            _64th_Aggressor_Squadron_Ghost = "64th_Aggressor_Squadron_Ghost"
+            _77th_Fighter_Squadron = "77th_Fighter_Squadron"
+            _79th_Fighter_Squadron = "79th_Fighter_Squadron"
+            _80th_Fighter_Squadron = "80th_Fighter_Squadron"
+            Chile_Air_Force_732 = "Chile Air Force 732"
+            Chile_Air_Force_746 = "Chile Air Force 746"
+            Chile_Air_Force_851 = "Chile Air Force 851"
+            Dark_Viper = "Dark_Viper"
+            HAF__330_Thunder = "HAF_ 330_Thunder"
+            HAF_335_Tiger = "HAF_335_Tiger"
+            HAF_336_Olympus = "HAF_336_Olympus"
+            HAF_337_Ghost = "HAF_337_Ghost"
+            HAF_340_Fox = "HAF_340_Fox"
+            HAF_341_Arrow = "HAF_341_Arrow"
+            HAF_343_Star = "HAF_343_Star"
+            HAF_346_Jason = "HAF_346_Jason"
+            HAF_347_Perseus = "HAF_347_Perseus"
+            IAF_101st_squadron = "IAF_101st_squadron"
+            IAF_110th_Squadron = "IAF_110th_Squadron"
+            IAF_115th_Aggressors_Squadron = "IAF_115th_Aggressors_Squadron"
+            IAF_117th_Squadron = "IAF_117th_Squadron"
+            AMI__5_Stormo_23_Gruppo = "AMI, 5 Stormo 23 Gruppo"
+            JASDF_6th_TFS = "JASDF 6th TFS"
+            JASDF_8th_TFS = "JASDF 8th TFS"
+            PAF_No_11_Arrows = "PAF_No.11_Arrows"
+            PAF_No_19_Sherdils = "PAF_No.19_Sherdils"
+            PAF_No_29_Aggressors = "PAF_No.29_Aggressors"
+            PAF_No_5_Falcons = "PAF_No.5_Falcons"
+            PAF_No_9_Griffins_2 = "PAF_No.9 Griffins_2"
+            PAF_No_9_Griffins_1 = "PAF_No.9_Griffins_1"
+            Polish_AF_31Blt6th_Tactical_Sqn = "Polish_AF_31Blt6th_Tactical_Sqn"
+            THK_191_Filo = "THK_191_Filo"
+
+        class Lebanon(Enum):
+            ERAF = "ERAF"
+
+        class Portugal(Enum):
+            ERAF = "ERAF"
+
+        class Cuba(Enum):
+            ERAF = "ERAF"
+
+        class Insurgents(Enum):
+            ERAF = "ERAF"
+
+        class SaudiArabia(Enum):
+            ERAF = "ERAF"
+
+        class France(Enum):
+            ERAF = "ERAF"
 
         class USA(Enum):
             default = "default"
             _18th_AGRS_Arctic_Splinter = "18th AGRS Arctic Splinter"
             _18th_AGRS_BDU_Splinter = "18th AGRS BDU Splinter"
             _18th_AGRS_Splinter = "18th AGRS Splinter"
+            ERAF = "ERAF"
             USAF_64th_Aggressor_SQN___Shark = "USAF 64th Aggressor SQN - Shark"
             USAF_64th_Aggressor_SQN_Splinter = "USAF 64th Aggressor SQN-Splinter"
             _132nd_Wing__Iowa_ANG = "132nd_Wing _Iowa_ANG"
@@ -17577,18 +21912,49 @@ class F_16C_50(PlaneType):
             _80th_Fighter_Squadron = "80th_Fighter_Squadron"
             Dark_Viper = "Dark_Viper"
 
+        class Honduras(Enum):
+            ERAF = "ERAF"
+
+        class Qatar(Enum):
+            ERAF = "ERAF"
+
+        class Russia(Enum):
+            ERAF = "ERAF"
+
+        class United_Arab_Emirates(Enum):
+            ERAF = "ERAF"
+
+        class Italian_Social_Republi(Enum):
+            ERAF = "ERAF"
+
+        class Austria(Enum):
+            ERAF = "ERAF"
+
+        class Bahrain(Enum):
+            ERAF = "ERAF"
+
         class Italy(Enum):
+            ERAF = "ERAF"
             AMI__5_Stormo_23_Gruppo = "AMI, 5 Stormo 23 Gruppo"
 
         class Chile(Enum):
+            ERAF = "ERAF"
             Chile_Air_Force_732 = "Chile Air Force 732"
             Chile_Air_Force_746 = "Chile Air Force 746"
             Chile_Air_Force_851 = "Chile Air Force 851"
 
         class Turkey(Enum):
+            ERAF = "ERAF"
             THK_191_Filo = "THK_191_Filo"
 
+        class Philippines(Enum):
+            ERAF = "ERAF"
+
+        class Algeria(Enum):
+            ERAF = "ERAF"
+
         class Pakistan(Enum):
+            ERAF = "ERAF"
             PAF_No_11_Arrows = "PAF_No.11_Arrows"
             PAF_No_19_Sherdils = "PAF_No.19_Sherdils"
             PAF_No_29_Aggressors = "PAF_No.29_Aggressors"
@@ -17596,17 +21962,61 @@ class F_16C_50(PlaneType):
             PAF_No_9_Griffins_2 = "PAF_No.9 Griffins_2"
             PAF_No_9_Griffins_1 = "PAF_No.9_Griffins_1"
 
+        class Malaysia(Enum):
+            ERAF = "ERAF"
+
+        class Indonesia(Enum):
+            ERAF = "ERAF"
+
+        class Iraq(Enum):
+            ERAF = "ERAF"
+
+        class Germany(Enum):
+            ERAF = "ERAF"
+
+        class South_Africa(Enum):
+            ERAF = "ERAF"
+
+        class Jordan(Enum):
+            ERAF = "ERAF"
+
+        class Mexico(Enum):
+            ERAF = "ERAF"
+
         class USAFAggressors(Enum):
             _18th_AGRS_Arctic_Splinter = "18th AGRS Arctic Splinter"
             _18th_AGRS_BDU_Splinter = "18th AGRS BDU Splinter"
             _18th_AGRS_Splinter = "18th AGRS Splinter"
+            ERAF = "ERAF"
             USAF_64th_Aggressor_SQN___Shark = "USAF 64th Aggressor SQN - Shark"
             USAF_64th_Aggressor_SQN_Splinter = "USAF 64th Aggressor SQN-Splinter"
             _64th_Aggressor_Squadron_Ghost = "64th_Aggressor_Squadron_Ghost"
 
+        class Brazil(Enum):
+            ERAF = "ERAF"
+
+        class Spain(Enum):
+            ERAF = "ERAF"
+
+        class Belarus(Enum):
+            ERAF = "ERAF"
+
+        class Canada(Enum):
+            ERAF = "ERAF"
+
+        class NorthKorea(Enum):
+            ERAF = "ERAF"
+
+        class Ethiopia(Enum):
+            ERAF = "ERAF"
+
         class Japan(Enum):
+            ERAF = "ERAF"
             JASDF_6th_TFS = "JASDF 6th TFS"
             JASDF_8th_TFS = "JASDF 8th TFS"
+
+        class Thailand(Enum):
+            ERAF = "ERAF"
 
     class Pylon1:
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
@@ -17669,6 +22079,8 @@ class F_16C_50(PlaneType):
         BRU_57_with_2_x_AGM_154A___JSOW_CEB__CBU_type_ = (3, Weapons.BRU_57_with_2_x_AGM_154A___JSOW_CEB__CBU_type_)
         CBU_105___10_x_SFW__CBU_with_WCMD = (3, Weapons.CBU_105___10_x_SFW__CBU_with_WCMD)
         BRU_57_with_2_x_CBU_105___10_x_SFW__CBU_with_WCMD = (3, Weapons.BRU_57_with_2_x_CBU_105___10_x_SFW__CBU_with_WCMD)
+        CBU_103___202_x_CEM__CBU_with_WCMD = (3, Weapons.CBU_103___202_x_CEM__CBU_with_WCMD)
+        BRU_57_with_2_x_CBU_103___202_x_CEM__CBU_with_WCMD = (3, Weapons.BRU_57_with_2_x_CBU_103___202_x_CEM__CBU_with_WCMD)
         MXU_648_TP = (3, Weapons.MXU_648_TP)
 #ERRR <CLEAN>
         TER_9A_with_2_x_Mk_82___500lb_GP_Bomb_LD = (3, Weapons.TER_9A_with_2_x_Mk_82___500lb_GP_Bomb_LD)
@@ -17787,6 +22199,8 @@ class F_16C_50(PlaneType):
         BRU_57_with_2_x_AGM_154A___JSOW_CEB__CBU_type_ = (7, Weapons.BRU_57_with_2_x_AGM_154A___JSOW_CEB__CBU_type_)
         CBU_105___10_x_SFW__CBU_with_WCMD = (7, Weapons.CBU_105___10_x_SFW__CBU_with_WCMD)
         BRU_57_with_2_x_CBU_105___10_x_SFW__CBU_with_WCMD = (7, Weapons.BRU_57_with_2_x_CBU_105___10_x_SFW__CBU_with_WCMD)
+        CBU_103___202_x_CEM__CBU_with_WCMD = (7, Weapons.CBU_103___202_x_CEM__CBU_with_WCMD)
+        BRU_57_with_2_x_CBU_103___202_x_CEM__CBU_with_WCMD = (7, Weapons.BRU_57_with_2_x_CBU_103___202_x_CEM__CBU_with_WCMD)
         MXU_648_TP = (7, Weapons.MXU_648_TP)
 #ERRR <CLEAN>
         TER_9A_with_2_x_Mk_82___500lb_GP_Bomb_LD_ = (7, Weapons.TER_9A_with_2_x_Mk_82___500lb_GP_Bomb_LD_)
@@ -17850,6 +22264,12 @@ class F_5E(PlaneType):
             USA_standard = "USA standard"
 
         class Israel(Enum):
+            USA_standard = "USA standard"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Aggressor_Desert_Scheme = "Aggressor Desert Scheme"
+            Aggressor_Marine_Scheme = "Aggressor Marine Scheme"
+            Aggressor_Snake_Scheme = "Aggressor Snake Scheme"
             USA_standard = "USA standard"
 
         class Sudan(Enum):
@@ -17937,6 +22357,12 @@ class F_5E(PlaneType):
             USA_standard = "USA standard"
 
         class Tunisia(Enum):
+            USA_standard = "USA standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Aggressor_Desert_Scheme = "Aggressor Desert Scheme"
+            Aggressor_Marine_Scheme = "Aggressor Marine Scheme"
+            Aggressor_Snake_Scheme = "Aggressor Snake Scheme"
             USA_standard = "USA standard"
 
         class Insurgents(Enum):
@@ -18349,6 +22775,68 @@ class F_5E_3(PlaneType):
         class Israel(Enum):
             USA_standard = "USA standard"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            BR_FAB_4834 = "BR FAB 4834"
+            _3rd_Main_Jet_Base_Group_Command__Turkey = "3rd Main Jet Base Group Command, Turkey"
+            BR_FAB_4828 = "BR FAB 4828"
+            NO_336_sq = "NO 336 sq"
+            _5th_fs_Merzifon_air_base__Turkey = "5th fs Merzifon air base, Turkey"
+            IT_Aereonautica_Militare_Italiana = "IT Aereonautica Militare Italiana"
+            Aggressor_Desert_Scheme = "Aggressor Desert Scheme"
+            Aggressor_Marine_Scheme = "Aggressor Marine Scheme"
+            Aggressor_Snake_Scheme = "Aggressor Snake Scheme"
+            US_Aggressor_VFC_13_01 = "US Aggressor VFC-13 01"
+            Aggressor_VFC_13_11 = "Aggressor VFC-13 11"
+            Aggressor_VFC_13_21 = "Aggressor VFC-13 21"
+            US_Aggressor_VFC_13_25 = "US Aggressor VFC-13 25"
+            US_Aggressor_VFC_13_28_Fict_Splinter = "US Aggressor VFC-13 28 Fict Splinter"
+            US_Aggressor_VFC_13_40 = "US Aggressor VFC-13 40"
+            US_Aggressor_VMFT_401_02_2011 = "US Aggressor VMFT-401 02 2011"
+            SP_Spanish_Air_Force_464_48 = "SP Spanish Air Force 464-48"
+            SP_Spanish_Air_Force_21_51 = "SP Spanish Air Force 21-51"
+            BR_FAB_4841 = "BR FAB 4841"
+            BR_FAB_4846 = "BR FAB 4846"
+            Fi_11th_FS_Lapland_Air_Command = "Fi 11th FS Lapland Air Command"
+            GR_HAF_F_5E_Grey = "GR HAF F-5E Grey"
+            IR_IRIAF_Azarakhsh = "IR IRIAF Azarakhsh"
+            IR_IRIAF_43rd_TFS = "IR IRIAF 43rd TFS"
+            IR_IRIAF_Camo = "IR IRIAF Camo"
+            CH_J_3001_Variante_2000 = "CH J-3001 Variante 2000"
+            CH_J_3001_Variante_1986 = "CH J-3001 Variante 1986"
+            CH_J_3001_Variante_1996 = "CH J-3001 Variante 1996"
+            CH_J_3008 = "CH J-3008"
+            CH_J_3025 = "CH J-3025"
+            CH_J_3026 = "CH J-3026"
+            CH_J_3033_2017 = "CH J-3033_2017"
+            CH_J_3036 = "CH J-3036"
+            CH_J_3036_2017 = "CH J-3036 2017"
+            CH_J_3038 = "CH J-3038"
+            CH_J_3073_2017 = "CH J-3073 2017"
+            CH_J_3074 = "CH J-3074"
+            CH_J_3079 = "CH J-3079"
+            CH_J_3098 = "CH J-3098"
+            TW_NGRC_5315 = "TW NGRC 5315"
+            GB_No_29_Squadron_RAF = "GB No.29 Squadron RAF"
+            CH_Patrouille_Suisse_J_3088 = "CH Patrouille Suisse J-3088"
+            NO_332_sqn_AH_P = "NO 332 sqn AH-P"
+            NO_334_sqn_373 = "NO 334 sqn 373"
+            NO_334_sqn_RI_H = "NO 334 sqn RI-H"
+            NO_338_sqn_215 = "NO 338 sqn 215"
+            ROCAF_7th_Fighter_Group = "ROCAF 7th Fighter Group"
+            TW_ROCAF_7thFG_M = "TW ROCAF 7thFG(M)"
+            KR_ROKAF_10th_Fighter_Wing = "KR ROKAF 10th Fighter Wing"
+            SA_Royal_Saudi_Air_Force = "SA Royal Saudi Air Force"
+            USA_standard = "USA standard"
+            US_Aggressor_VFC_111_01 = "US Aggressor VFC-111 01"
+            US_Aggressor_VFC_111_105_WWII_B = "US Aggressor VFC-111 105 WWII B"
+            US_Aggressor_VFC_111_115 = "US Aggressor VFC-111 115"
+            US_Aggressor_VFC_111_116 = "US Aggressor VFC-111 116"
+            CH_Swiss_Generic = "CH Swiss Generic"
+            TR_Turkish_Stars = "TR Turkish Stars"
+            USAF__Southeast_Asia = "USAF 'Southeast Asia'"
+            US_USAF_Grape_31 = "US USAF Grape 31"
+            black__Mig_28 = "black 'Mig-28'"
+
         class Sudan(Enum):
             USA_standard = "USA standard"
 
@@ -18463,6 +22951,68 @@ class F_5E_3(PlaneType):
 
         class Tunisia(Enum):
             USA_standard = "USA standard"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            BR_FAB_4834 = "BR FAB 4834"
+            _3rd_Main_Jet_Base_Group_Command__Turkey = "3rd Main Jet Base Group Command, Turkey"
+            BR_FAB_4828 = "BR FAB 4828"
+            NO_336_sq = "NO 336 sq"
+            _5th_fs_Merzifon_air_base__Turkey = "5th fs Merzifon air base, Turkey"
+            IT_Aereonautica_Militare_Italiana = "IT Aereonautica Militare Italiana"
+            Aggressor_Desert_Scheme = "Aggressor Desert Scheme"
+            Aggressor_Marine_Scheme = "Aggressor Marine Scheme"
+            Aggressor_Snake_Scheme = "Aggressor Snake Scheme"
+            US_Aggressor_VFC_13_01 = "US Aggressor VFC-13 01"
+            Aggressor_VFC_13_11 = "Aggressor VFC-13 11"
+            Aggressor_VFC_13_21 = "Aggressor VFC-13 21"
+            US_Aggressor_VFC_13_25 = "US Aggressor VFC-13 25"
+            US_Aggressor_VFC_13_28_Fict_Splinter = "US Aggressor VFC-13 28 Fict Splinter"
+            US_Aggressor_VFC_13_40 = "US Aggressor VFC-13 40"
+            US_Aggressor_VMFT_401_02_2011 = "US Aggressor VMFT-401 02 2011"
+            SP_Spanish_Air_Force_464_48 = "SP Spanish Air Force 464-48"
+            SP_Spanish_Air_Force_21_51 = "SP Spanish Air Force 21-51"
+            BR_FAB_4841 = "BR FAB 4841"
+            BR_FAB_4846 = "BR FAB 4846"
+            Fi_11th_FS_Lapland_Air_Command = "Fi 11th FS Lapland Air Command"
+            GR_HAF_F_5E_Grey = "GR HAF F-5E Grey"
+            IR_IRIAF_Azarakhsh = "IR IRIAF Azarakhsh"
+            IR_IRIAF_43rd_TFS = "IR IRIAF 43rd TFS"
+            IR_IRIAF_Camo = "IR IRIAF Camo"
+            CH_J_3001_Variante_2000 = "CH J-3001 Variante 2000"
+            CH_J_3001_Variante_1986 = "CH J-3001 Variante 1986"
+            CH_J_3001_Variante_1996 = "CH J-3001 Variante 1996"
+            CH_J_3008 = "CH J-3008"
+            CH_J_3025 = "CH J-3025"
+            CH_J_3026 = "CH J-3026"
+            CH_J_3033_2017 = "CH J-3033_2017"
+            CH_J_3036 = "CH J-3036"
+            CH_J_3036_2017 = "CH J-3036 2017"
+            CH_J_3038 = "CH J-3038"
+            CH_J_3073_2017 = "CH J-3073 2017"
+            CH_J_3074 = "CH J-3074"
+            CH_J_3079 = "CH J-3079"
+            CH_J_3098 = "CH J-3098"
+            TW_NGRC_5315 = "TW NGRC 5315"
+            GB_No_29_Squadron_RAF = "GB No.29 Squadron RAF"
+            CH_Patrouille_Suisse_J_3088 = "CH Patrouille Suisse J-3088"
+            NO_332_sqn_AH_P = "NO 332 sqn AH-P"
+            NO_334_sqn_373 = "NO 334 sqn 373"
+            NO_334_sqn_RI_H = "NO 334 sqn RI-H"
+            NO_338_sqn_215 = "NO 338 sqn 215"
+            ROCAF_7th_Fighter_Group = "ROCAF 7th Fighter Group"
+            TW_ROCAF_7thFG_M = "TW ROCAF 7thFG(M)"
+            KR_ROKAF_10th_Fighter_Wing = "KR ROKAF 10th Fighter Wing"
+            SA_Royal_Saudi_Air_Force = "SA Royal Saudi Air Force"
+            USA_standard = "USA standard"
+            US_Aggressor_VFC_111_01 = "US Aggressor VFC-111 01"
+            US_Aggressor_VFC_111_105_WWII_B = "US Aggressor VFC-111 105 WWII B"
+            US_Aggressor_VFC_111_115 = "US Aggressor VFC-111 115"
+            US_Aggressor_VFC_111_116 = "US Aggressor VFC-111 116"
+            CH_Swiss_Generic = "CH Swiss Generic"
+            TR_Turkish_Stars = "TR Turkish Stars"
+            USAF__Southeast_Asia = "USAF 'Southeast Asia'"
+            US_USAF_Grape_31 = "US USAF Grape 31"
+            black__Mig_28 = "black 'Mig-28'"
 
         class Insurgents(Enum):
             USA_standard = "USA standard"
@@ -18814,6 +23364,22 @@ class F_86F_Sabre(PlaneType):
         class Israel(Enum):
             default_livery = "default livery"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Canada_Air_Force = "Canada Air Force"
+            HAF_341sqn = "HAF 341sqn"
+            HAF_342sqn = "HAF 342sqn"
+            IIAF_Bare_Metall = "IIAF Bare Metall"
+            Japan_Air_Force = "Japan Air Force"
+            Matova = "Matova"
+            Royal_Saudi_Air_Force = "Royal Saudi Air Force"
+            US_Air_Force = "US Air Force"
+            US_Air_Force__Green = "US Air Force (Green)"
+            US_Air_Force__Squadron_39 = "US Air Force (Squadron 39)"
+            US_Air_Force__code_FU_178 = "US Air Force (code FU-178)"
+            US_Air_Force__Skyblazers = "US Air Force (Skyblazers)"
+            US_Air_Force__ex_USAF_F_86A_Sabre = "US Air Force (ex-USAF F-86A Sabre)"
+            default_livery = "default livery"
+
         class Sudan(Enum):
             default_livery = "default livery"
 
@@ -18928,6 +23494,22 @@ class F_86F_Sabre(PlaneType):
         class Tunisia(Enum):
             default_livery = "default livery"
 
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Canada_Air_Force = "Canada Air Force"
+            HAF_341sqn = "HAF 341sqn"
+            HAF_342sqn = "HAF 342sqn"
+            IIAF_Bare_Metall = "IIAF Bare Metall"
+            Japan_Air_Force = "Japan Air Force"
+            Matova = "Matova"
+            Royal_Saudi_Air_Force = "Royal Saudi Air Force"
+            US_Air_Force = "US Air Force"
+            US_Air_Force__Green = "US Air Force (Green)"
+            US_Air_Force__Squadron_39 = "US Air Force (Squadron 39)"
+            US_Air_Force__code_FU_178 = "US Air Force (code FU-178)"
+            US_Air_Force__Skyblazers = "US Air Force (Skyblazers)"
+            US_Air_Force__ex_USAF_F_86A_Sabre = "US Air Force (ex-USAF F-86A Sabre)"
+            default_livery = "default livery"
+
         class Cuba(Enum):
             default_livery = "default livery"
 
@@ -18942,6 +23524,7 @@ class F_86F_Sabre(PlaneType):
             default_livery = "default livery"
 
         class USA(Enum):
+            Matova = "Matova"
             US_Air_Force = "US Air Force"
             US_Air_Force__Green = "US Air Force (Green)"
             US_Air_Force__Squadron_39 = "US Air Force (Squadron 39)"
@@ -19247,6 +23830,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19273,6 +23857,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19299,6 +23884,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19325,6 +23911,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19351,6 +23938,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19377,6 +23965,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19393,6 +23982,7 @@ class F_14B(PlaneType):
             VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
             VF_24_Renegades = "VF-24 Renegades"
             VF_31_Tomcatters_NK101__2004 = "VF-31 Tomcatters NK101 (2004)"
+            VF_32_Fighting_Swordsmen_100__2000 = "VF-32 Fighting Swordsmen 100 (2000)"
             VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
             VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
             VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
@@ -19403,6 +23993,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19429,6 +24020,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19455,6 +24047,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19481,6 +24074,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19507,6 +24101,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19533,6 +24128,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19559,6 +24155,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19585,6 +24182,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19611,6 +24209,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19637,6 +24236,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19663,6 +24263,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19689,6 +24290,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19715,6 +24317,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19741,6 +24344,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19767,6 +24371,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19793,6 +24398,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19819,6 +24425,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19845,6 +24452,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19871,6 +24479,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19897,6 +24506,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19923,6 +24533,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19949,6 +24560,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -19975,6 +24587,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20001,6 +24614,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20027,6 +24641,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20053,6 +24668,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20079,6 +24695,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20105,6 +24722,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20131,6 +24749,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20157,6 +24776,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20183,6 +24803,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20209,6 +24830,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20235,6 +24857,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20261,6 +24884,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20287,6 +24911,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20313,6 +24938,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20339,6 +24965,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20365,6 +24992,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20391,6 +25019,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20417,6 +25046,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20433,6 +25063,7 @@ class F_14B(PlaneType):
             VF_211_Fighting_Checkmates = "VF-211 Fighting Checkmates"
             VF_24_Renegades = "VF-24 Renegades"
             VF_31_Tomcatters_NK101__2004 = "VF-31 Tomcatters NK101 (2004)"
+            VF_32_Fighting_Swordsmen_100__2000 = "VF-32 Fighting Swordsmen 100 (2000)"
             VF_32_Fighting_Swordsmen_101 = "VF-32 Fighting Swordsmen 101"
             VF_32_Fighting_Swordsmen_102 = "VF-32 Fighting Swordsmen 102"
             VF_32_Fighting_Swordsmen_103 = "VF-32 Fighting Swordsmen 103"
@@ -20443,6 +25074,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20469,6 +25101,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20495,6 +25128,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20521,6 +25155,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20547,6 +25182,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20573,6 +25209,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20599,6 +25236,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20626,6 +25264,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20652,6 +25291,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20678,6 +25318,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20704,6 +25345,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20730,6 +25372,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20756,6 +25399,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20782,6 +25426,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20808,6 +25453,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20834,6 +25480,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20860,6 +25507,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20886,6 +25534,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20912,6 +25561,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20938,6 +25588,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20964,6 +25615,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -20990,6 +25642,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21016,6 +25669,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21042,6 +25696,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21068,6 +25723,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21094,6 +25750,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21120,6 +25777,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21146,6 +25804,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21172,6 +25831,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21198,6 +25858,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21224,6 +25885,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21250,6 +25912,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21276,6 +25939,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21302,6 +25966,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21328,6 +25993,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21354,6 +26020,7 @@ class F_14B(PlaneType):
             VF_102_Diamondbacks = "VF-102 Diamondbacks"
             Santa = "Santa"
             ChromeCat = "ChromeCat"
+            ROKI = "ROKI"
             VF_101_Dark = "VF-101 Dark"
             VF_101_Grim_Reapers_Low_Vis = "VF-101 Grim Reapers Low Vis"
             VF_101_Red = "VF-101 Red"
@@ -21736,740 +26403,1152 @@ class F_14A_135_GR(PlaneType):
         class USSR(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Georgia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Venezuela(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Australia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Israel(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Sudan(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Norway(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Romania(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Iran(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Ukraine(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Libya(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Belgium(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Slovakia(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Greece(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class UK(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Third_Reich(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Hungary(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Abkhazia(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Morocco(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class United_Nations_Peacekeepers(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Switzerland(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class SouthOssetia(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Vietnam(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class China(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Yemen(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Kuwait(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Serbia(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Oman(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class India(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Egypt(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class TheNetherlands(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Poland(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Syria(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Finland(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Kazakhstan(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Denmark(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Sweden(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Croatia(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class CzechRepublic(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class GDR(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Yugoslavia(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Bulgaria(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class SouthKorea(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Tunisia(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Combined_Joint_Task_Forces_Red(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Lebanon(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Portugal(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Cuba(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class Insurgents(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class SaudiArabia(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class France(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
-            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
-            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
-            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
-            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
-            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
-
-        class USA(Enum):
-            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
-            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_100__2001 = "VF-211 Fighting Checkmates 100 (2001)"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Sudan(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Norway(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Romania(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Iran(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Ukraine(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Libya(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Belgium(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Slovakia(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Greece(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class UK(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Third_Reich(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Hungary(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Abkhazia(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Morocco(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class United_Nations_Peacekeepers(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Switzerland(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class SouthOssetia(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Vietnam(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class China(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Yemen(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Kuwait(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Serbia(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Oman(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class India(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Egypt(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class TheNetherlands(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Poland(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Syria(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Finland(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Kazakhstan(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Denmark(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Sweden(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Croatia(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class CzechRepublic(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class GDR(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Yugoslavia(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Bulgaria(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class SouthKorea(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Tunisia(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_100__2001 = "VF-211 Fighting Checkmates 100 (2001)"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Lebanon(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Portugal(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Cuba(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class Insurgents(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class SaudiArabia(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class France(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
+            VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
+
+        class USA(Enum):
+            VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
+            VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
+            VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
+            VF_111_Sundowners_200 = "VF-111 Sundowners 200"
+            VF_21_Freelancers_200 = "VF-21 Freelancers 200"
+            VF_211_Fighting_Checkmates_100__2001 = "VF-211 Fighting Checkmates 100 (2001)"
+            VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Honduras(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Qatar(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Russia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class United_Arab_Emirates(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Italian_Social_Republi(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Austria(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Bahrain(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Italy(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Chile(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Turkey(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Philippines(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Algeria(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Pakistan(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Malaysia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Indonesia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Iraq(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Germany(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class South_Africa(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Jordan(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Mexico(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class USAFAggressors(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Brazil(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Spain(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Belarus(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Canada(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class NorthKorea(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Ethiopia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Japan(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
         class Thailand(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_11_AE101_1988 = "VF-11 AE101 1988"
+            VF_11_AE103_1988 = "VF-11 AE103 1988"
+            VF_11_AE106_1988 = "VF-11 AE106 1988"
             VF_11_Red_Rippers_106 = "VF-11 Red Rippers 106"
             VF_111_Sundowners_200 = "VF-111 Sundowners 200"
             VF_21_Freelancers_200 = "VF-21 Freelancers 200"
             VF_211_Fighting_Checkmates_105 = "VF-211 Fighting Checkmates 105"
+            VF_31_AE200_1988 = "VF-31 AE200 1988"
+            VF_31_AE204_1988 = "VF-31 AE204 1988"
             VF_33_Starfighters_AB201__1988 = "VF-33 Starfighters AB201 (1988)"
 
     class Pylon1:
@@ -22780,155 +27859,729 @@ class FA_18C_hornet(PlaneType):
     class Liveries:
 
         class USSR(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Georgia(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Venezuela(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Australia(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
             Australian_75th_Squadron = "Australian 75th Squadron"
             Australian_77th_Squadron = "Australian 77th Squadron"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Israel(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             Fictional_Israel_Air_Force = "Fictional Israel Air Force"
             default_livery = "default livery"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            VFA_37 = "VFA-37"
+            Fictional_Turkey_162nd_Sq = "Fictional Turkey 162nd Sq"
+            Kuwait_25th_Squadron = "Kuwait 25th Squadron"
+            Kuwait_9th_Squadron = "Kuwait 9th Squadron"
+            Australian_75th_Squadron = "Australian 75th Squadron"
+            Australian_77th_Squadron = "Australian 77th Squadron"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
+            Canada_150_Demo_Jet = "Canada 150 Demo Jet"
+            Canada_409th_Squadron = "Canada 409th Squadron"
+            Canada_425th_Squadron = "Canada 425th Squadron"
+            Canada_NORAD_60_Demo_Jet = "Canada NORAD 60 Demo Jet"
+            Fictional_Israel_Air_Force = "Fictional Israel Air Force"
+            Fictional_Russia_Air_Force = "Fictional Russia Air Force"
+            Fictional_UK_Air_Force = "Fictional UK Air Force"
+            Fictional_Ukraine_Air_Force = "Fictional Ukraine Air Force"
+            Finland_21 = "Finland 21"
+            Finland_31 = "Finland 31"
+            Spain_111th_Escuadron_C_15_73 = "Spain 111th Escuadron C.15-73"
+            Spain_111th_Escuadron_C_15_88 = "Spain 111th Escuadron C.15-88"
+            Spain_121th_Escuadron_C_15_45 = "Spain 121th Escuadron C.15-45"
+            Spain_121th_Escuadron_C_15_50 = "Spain 121th Escuadron C.15-50"
+            Spain_121th_Escuadron_C_15_60 = "Spain 121th Escuadron C.15-60"
+            Spain_121th_Escuadron_C_15_34_50th_Anniversary = "Spain 121th Escuadron C.15-34 50th Anniversary"
+            Spain_151th_Escuadron_C_15_14 = "Spain 151th Escuadron C.15-14"
+            Spain_151th_Escuadron_C_15_18 = "Spain 151th Escuadron C.15-18"
+            Spain_151th_Escuadron_C_15_23 = "Spain 151th Escuadron C.15-23"
+            Spain_151th_Escuadron_C_15_24 = "Spain 151th Escuadron C.15-24"
+            Spain_151th_Escuadron_C_15_14_Tiger_Meet = "Spain 151th Escuadron C.15-14 Tiger Meet"
+            Spain_211th_Escuadron_C_15_76 = "Spain 211th Escuadron C.15-76"
+            Spain_211th_Escuadron_C_15_77 = "Spain 211th Escuadron C.15-77"
+            Spain_462th_Escuadron_C_15_79 = "Spain 462th Escuadron C.15-79"
+            Spain_462th_Escuadron_C_15_90 = "Spain 462th Escuadron C.15-90"
+            Switzerland = "Switzerland"
+            VFA_106 = "VFA-106"
+            VFA_106_high_visibility = "VFA-106 high visibility"
+            VFA_113 = "VFA-113"
+            VFA_122 = "VFA-122"
+            VFA_131 = "VFA-131"
+            VFA_192 = "VFA-192"
+            VFA_34 = "VFA-34"
+            VFA_83 = "VFA-83"
+            VFA_87 = "VFA-87"
+            VFA_97 = "VFA-97"
+            VFC_12 = "VFC-12"
+            VMFA_122 = "VMFA-122"
+            VMFA_122_high_visibility = "VMFA-122 high visibility"
+            VMFA_232 = "VMFA-232"
+            VMFA_232_high_visibility = "VMFA-232 high visibility"
+            VMFA_251 = "VMFA-251"
+            VMFA_251_high_visibility = "VMFA-251 high visibility"
+            VMFA_312 = "VMFA-312"
+            VMFA_312_high_visibility = "VMFA-312 high visibility"
+            VMFA_314 = "VMFA-314"
+            VMFA_323 = "VMFA-323"
+            VMFA_323_high_visibility = "VMFA-323 high visibility"
+            VMFA_531 = "VMFA-531"
+            VMFAT_101 = "VMFAT-101"
+            VMFAT_101_high_visibility = "VMFAT-101 high visibility"
+            VMFAT_101_high_visibility_2005 = "VMFAT-101 high visibility 2005"
+            VX_23 = "VX-23"
+            VX_31_CoNA = "VX-31 CoNA"
+            VX_9 = "VX-9"
+            NAWDC_blue = "NAWDC blue"
+            NAWDC_black = "NAWDC black"
+            NAWDC_brown = "NAWDC brown"
+            NSAWC_brown_splinter = "NSAWC brown splinter"
+            NSAWC_blue = "NSAWC blue"
+            NSAWC_gray = "NSAWC gray"
+            default_livery = "default livery"
+            Blue_Angels_Jet_Team = "Blue Angels Jet Team"
+
         class Sudan(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Norway(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Romania(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Iran(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Ukraine(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             Fictional_Ukraine_Air_Force = "Fictional Ukraine Air Force"
             default_livery = "default livery"
 
         class Libya(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Belgium(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Slovakia(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Greece(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class UK(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             Fictional_UK_Air_Force = "Fictional UK Air Force"
             default_livery = "default livery"
 
         class Third_Reich(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Hungary(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Abkhazia(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Morocco(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
+        class United_Nations_Peacekeepers(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
+
         class Switzerland(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             Switzerland = "Switzerland"
             default_livery = "default livery"
 
         class SouthOssetia(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Vietnam(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class China(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Yemen(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Kuwait(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
             Kuwait_25th_Squadron = "Kuwait 25th Squadron"
             Kuwait_9th_Squadron = "Kuwait 9th Squadron"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Serbia(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Oman(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class India(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Egypt(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class TheNetherlands(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Poland(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Syria(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Finland(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             Finland_21 = "Finland 21"
             Finland_31 = "Finland 31"
             default_livery = "default livery"
 
         class Kazakhstan(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Denmark(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Sweden(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Croatia(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class CzechRepublic(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
+        class GDR(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
+
         class Yugoslavia(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Bulgaria(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class SouthKorea(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Tunisia(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
+        class Combined_Joint_Task_Forces_Red(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            VFA_37 = "VFA-37"
+            Fictional_Turkey_162nd_Sq = "Fictional Turkey 162nd Sq"
+            Kuwait_25th_Squadron = "Kuwait 25th Squadron"
+            Kuwait_9th_Squadron = "Kuwait 9th Squadron"
+            Australian_75th_Squadron = "Australian 75th Squadron"
+            Australian_77th_Squadron = "Australian 77th Squadron"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
+            Canada_150_Demo_Jet = "Canada 150 Demo Jet"
+            Canada_409th_Squadron = "Canada 409th Squadron"
+            Canada_425th_Squadron = "Canada 425th Squadron"
+            Canada_NORAD_60_Demo_Jet = "Canada NORAD 60 Demo Jet"
+            Fictional_Israel_Air_Force = "Fictional Israel Air Force"
+            Fictional_Russia_Air_Force = "Fictional Russia Air Force"
+            Fictional_UK_Air_Force = "Fictional UK Air Force"
+            Fictional_Ukraine_Air_Force = "Fictional Ukraine Air Force"
+            Finland_21 = "Finland 21"
+            Finland_31 = "Finland 31"
+            Spain_111th_Escuadron_C_15_73 = "Spain 111th Escuadron C.15-73"
+            Spain_111th_Escuadron_C_15_88 = "Spain 111th Escuadron C.15-88"
+            Spain_121th_Escuadron_C_15_45 = "Spain 121th Escuadron C.15-45"
+            Spain_121th_Escuadron_C_15_50 = "Spain 121th Escuadron C.15-50"
+            Spain_121th_Escuadron_C_15_60 = "Spain 121th Escuadron C.15-60"
+            Spain_121th_Escuadron_C_15_34_50th_Anniversary = "Spain 121th Escuadron C.15-34 50th Anniversary"
+            Spain_151th_Escuadron_C_15_14 = "Spain 151th Escuadron C.15-14"
+            Spain_151th_Escuadron_C_15_18 = "Spain 151th Escuadron C.15-18"
+            Spain_151th_Escuadron_C_15_23 = "Spain 151th Escuadron C.15-23"
+            Spain_151th_Escuadron_C_15_24 = "Spain 151th Escuadron C.15-24"
+            Spain_151th_Escuadron_C_15_14_Tiger_Meet = "Spain 151th Escuadron C.15-14 Tiger Meet"
+            Spain_211th_Escuadron_C_15_76 = "Spain 211th Escuadron C.15-76"
+            Spain_211th_Escuadron_C_15_77 = "Spain 211th Escuadron C.15-77"
+            Spain_462th_Escuadron_C_15_79 = "Spain 462th Escuadron C.15-79"
+            Spain_462th_Escuadron_C_15_90 = "Spain 462th Escuadron C.15-90"
+            Switzerland = "Switzerland"
+            VFA_106 = "VFA-106"
+            VFA_106_high_visibility = "VFA-106 high visibility"
+            VFA_113 = "VFA-113"
+            VFA_122 = "VFA-122"
+            VFA_131 = "VFA-131"
+            VFA_192 = "VFA-192"
+            VFA_34 = "VFA-34"
+            VFA_83 = "VFA-83"
+            VFA_87 = "VFA-87"
+            VFA_97 = "VFA-97"
+            VFC_12 = "VFC-12"
+            VMFA_122 = "VMFA-122"
+            VMFA_122_high_visibility = "VMFA-122 high visibility"
+            VMFA_232 = "VMFA-232"
+            VMFA_232_high_visibility = "VMFA-232 high visibility"
+            VMFA_251 = "VMFA-251"
+            VMFA_251_high_visibility = "VMFA-251 high visibility"
+            VMFA_312 = "VMFA-312"
+            VMFA_312_high_visibility = "VMFA-312 high visibility"
+            VMFA_314 = "VMFA-314"
+            VMFA_323 = "VMFA-323"
+            VMFA_323_high_visibility = "VMFA-323 high visibility"
+            VMFA_531 = "VMFA-531"
+            VMFAT_101 = "VMFAT-101"
+            VMFAT_101_high_visibility = "VMFAT-101 high visibility"
+            VMFAT_101_high_visibility_2005 = "VMFAT-101 high visibility 2005"
+            VX_23 = "VX-23"
+            VX_31_CoNA = "VX-31 CoNA"
+            VX_9 = "VX-9"
+            NAWDC_blue = "NAWDC blue"
+            NAWDC_black = "NAWDC black"
+            NAWDC_brown = "NAWDC brown"
+            NSAWC_brown_splinter = "NSAWC brown splinter"
+            NSAWC_blue = "NSAWC blue"
+            NSAWC_gray = "NSAWC gray"
+            default_livery = "default livery"
+            Blue_Angels_Jet_Team = "Blue Angels Jet Team"
+
+        class Lebanon(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
+
+        class Portugal(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
+
         class Cuba(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Insurgents(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class SaudiArabia(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class France(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class USA(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
             VFA_37 = "VFA-37"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             VFA_106 = "VFA-106"
             VFA_106_high_visibility = "VFA-106 high visibility"
             VFA_113 = "VFA-113"
@@ -22968,68 +28621,236 @@ class FA_18C_hornet(PlaneType):
             Blue_Angels_Jet_Team = "Blue Angels Jet Team"
 
         class Honduras(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Qatar(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Russia(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             Fictional_Russia_Air_Force = "Fictional Russia Air Force"
             default_livery = "default livery"
 
         class United_Arab_Emirates(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Italian_Social_Republi(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Austria(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Bahrain(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Italy(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Chile(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Turkey(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
             Fictional_Turkey_162nd_Sq = "Fictional Turkey 162nd Sq"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Philippines(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Algeria(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Pakistan(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Malaysia(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Indonesia(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Iraq(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Germany(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class South_Africa(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Jordan(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Mexico(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class USAFAggressors(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             Fictional_Russia_Air_Force = "Fictional Russia Air Force"
             VFC_12 = "VFC-12"
             NAWDC_blue = "NAWDC blue"
@@ -23040,9 +28861,25 @@ class FA_18C_hornet(PlaneType):
             default_livery = "default livery"
 
         class Brazil(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Spain(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             Spain_111th_Escuadron_C_15_73 = "Spain 111th Escuadron C.15-73"
             Spain_111th_Escuadron_C_15_88 = "Spain 111th Escuadron C.15-88"
             Spain_121th_Escuadron_C_15_45 = "Spain 121th Escuadron C.15-45"
@@ -23061,9 +28898,25 @@ class FA_18C_hornet(PlaneType):
             default_livery = "default livery"
 
         class Belarus(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Canada(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             Canada_150_Demo_Jet = "Canada 150 Demo Jet"
             Canada_409th_Squadron = "Canada 409th Squadron"
             Canada_425th_Squadron = "Canada 425th Squadron"
@@ -23071,15 +28924,47 @@ class FA_18C_hornet(PlaneType):
             default_livery = "default livery"
 
         class NorthKorea(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Ethiopia(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Japan(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
         class Thailand(Enum):
+            BP_AP141_BOLIVAR = "BP_AP141_BOLIVAR"
+            BP_AP141_MING = "BP_AP141_MING"
+            BP_AP141_MING_MK2 = "BP_AP141_MING_MK2"
+            BP_AP141_NEIL = "BP_AP141_NEIL"
+            BP_AP141_TAKEO = "BP_AP141_TAKEO"
+            BP_AP38 = "BP_AP38"
+            BP_CO = "BP_CO"
+            BP_AP141_DIVIT = "BP_AP141_DIVIT"
             default_livery = "default livery"
 
     class Pylon1:
@@ -23476,6 +29361,39 @@ class Hawk(PlaneType):
             XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
             XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            XX189___100Sqn = "XX189 - 100Sqn"
+            _12th_FTW__Randolph_AFB__Texas__RA = "12th FTW, Randolph AFB, Texas (RA)"
+            _1st_RS__Beale_AFB__California__BB = "1st RS, Beale AFB, California (BB)"
+            XX218___208Sqn = "XX218 - 208Sqn"
+            _25th_FTS__Vance_AFB__Oklahoma__VN = "25th FTS, Vance AFB, Oklahoma (VN)"
+            _509th_BS__Whitman_AFB__Missouri__WM = "509th BS, Whitman AFB, Missouri (WM)"
+            XX226___74Sqn_1992_2000 = "XX226 - 74Sqn 1992-2000"
+            XX316___74Sqn_1998_2000 = "XX316 - 74Sqn 1998-2000"
+            _88th_FTS__Sheppard_AFB__Texas__EN = "88th FTS, Sheppard AFB, Texas (EN)"
+            Finland_HW_329_Green_Brown = "Finland HW-329 Green Brown"
+            Finland_HW_341_Grey = "Finland HW-341 Grey"
+            Finland_HW_373_Ex_Swiss_Air_Force = "Finland HW-373 Ex-Swiss Air Force"
+            NAS_Meridian__Mississippi_Seven__VT_7 = "NAS Meridian, Mississippi Seven (VT-7)"
+            XX179___Red_Arrows_1979_2007 = "XX179 - Red Arrows 1979-2007"
+            XX179___Red_Arrows_2008_2012 = "XX179 - Red Arrows 2008-2012"
+            XX159___FRADU_Royal_Navy_Anniversary = "XX159 - FRADU Royal Navy Anniversary"
+            XX175___FRADU_Royal_Navy = "XX175 - FRADU Royal Navy"
+            XX316___FRADU_Royal_Navy = "XX316 - FRADU Royal Navy"
+            XX100___TFC = "XX100 - TFC"
+            Swiss_U_1251___White = "Swiss U-1251 - White"
+            Swiss_U_1252___Normal = "Swiss U-1252 - Normal"
+            Swiss_U_1268___ByeByeHawk = "Swiss U-1268 - ByeByeHawk"
+            Swiss_U_1270___Wallis = "Swiss U-1270 - Wallis"
+            USAF_Aggressor_269 = "USAF Aggressor 269"
+            _1018___United_Arab_Emirates = "1018 - United Arab Emirates"
+            XX228___VEAO = "XX228 - VEAO"
+            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
+            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
+            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
+            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
+            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+
         class Norway(Enum):
             XX189___100Sqn = "XX189 - 100Sqn"
             USAF_Aggressor_269 = "USAF Aggressor 269"
@@ -23563,6 +29481,39 @@ class Hawk(PlaneType):
         class Denmark(Enum):
             XX189___100Sqn = "XX189 - 100Sqn"
             USAF_Aggressor_269 = "USAF Aggressor 269"
+            XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
+            XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
+            XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
+            XX245___2009_RAF_Hawk_Display = "XX245 - 2009 RAF Hawk Display"
+            XX337___92_Sqn_Blue_Tail = "XX337 - 92 Sqn Blue Tail"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            XX189___100Sqn = "XX189 - 100Sqn"
+            _12th_FTW__Randolph_AFB__Texas__RA = "12th FTW, Randolph AFB, Texas (RA)"
+            _1st_RS__Beale_AFB__California__BB = "1st RS, Beale AFB, California (BB)"
+            XX218___208Sqn = "XX218 - 208Sqn"
+            _25th_FTS__Vance_AFB__Oklahoma__VN = "25th FTS, Vance AFB, Oklahoma (VN)"
+            _509th_BS__Whitman_AFB__Missouri__WM = "509th BS, Whitman AFB, Missouri (WM)"
+            XX226___74Sqn_1992_2000 = "XX226 - 74Sqn 1992-2000"
+            XX316___74Sqn_1998_2000 = "XX316 - 74Sqn 1998-2000"
+            _88th_FTS__Sheppard_AFB__Texas__EN = "88th FTS, Sheppard AFB, Texas (EN)"
+            Finland_HW_329_Green_Brown = "Finland HW-329 Green Brown"
+            Finland_HW_341_Grey = "Finland HW-341 Grey"
+            Finland_HW_373_Ex_Swiss_Air_Force = "Finland HW-373 Ex-Swiss Air Force"
+            NAS_Meridian__Mississippi_Seven__VT_7 = "NAS Meridian, Mississippi Seven (VT-7)"
+            XX179___Red_Arrows_1979_2007 = "XX179 - Red Arrows 1979-2007"
+            XX179___Red_Arrows_2008_2012 = "XX179 - Red Arrows 2008-2012"
+            XX159___FRADU_Royal_Navy_Anniversary = "XX159 - FRADU Royal Navy Anniversary"
+            XX175___FRADU_Royal_Navy = "XX175 - FRADU Royal Navy"
+            XX316___FRADU_Royal_Navy = "XX316 - FRADU Royal Navy"
+            XX100___TFC = "XX100 - TFC"
+            Swiss_U_1251___White = "Swiss U-1251 - White"
+            Swiss_U_1252___Normal = "Swiss U-1252 - Normal"
+            Swiss_U_1268___ByeByeHawk = "Swiss U-1268 - ByeByeHawk"
+            Swiss_U_1270___Wallis = "Swiss U-1270 - Wallis"
+            USAF_Aggressor_269 = "USAF Aggressor 269"
+            _1018___United_Arab_Emirates = "1018 - United Arab Emirates"
+            XX228___VEAO = "XX228 - VEAO"
             XX159___2004_RAF_Hawk_Display = "XX159 - 2004 RAF Hawk Display"
             XX178___1994_RAF_Hawk_Display = "XX178 - 1994 RAF Hawk Display"
             XX201___2010_RAF_Hawk_Display = "XX201 - 2010 RAF Hawk Display"
@@ -23743,6 +29694,16 @@ class I_16(PlaneType):
             Spain_Republicans = "Spain Republicans"
 
         class Israel(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
             Red_Army_Standard = "Red Army Standard"
             Finnish_AF = "Finnish AF"
             Clear = "Clear"
@@ -24033,6 +29994,16 @@ class I_16(PlaneType):
             Spain_Republicans = "Spain Republicans"
 
         class Tunisia(Enum):
+            Red_Army_Standard = "Red Army Standard"
+            Finnish_AF = "Finnish AF"
+            Clear = "Clear"
+            Japan = "Japan"
+            Red_Army_Camo = "Red Army Camo"
+            Red_Army_Winter = "Red Army Winter"
+            Spain_Nationalists = "Spain Nationalists"
+            Spain_Republicans = "Spain Republicans"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
             Red_Army_Standard = "Red Army Standard"
             Finnish_AF = "Finnish AF"
             Clear = "Clear"
@@ -24379,6 +30350,23 @@ class L_39C(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Russian_Air_Force = "Russian Air Force"
+            Ukraine_Air_Force_UKHW = "Ukraine Air Force UKHW"
+            Slovak_Air_Force = "Slovak Air Force"
+            Russian_Air_Force_Navy = "Russian Air Force Navy"
+            Algerian_AF__NL_29 = "Algerian AF  NL-29"
+            Black_Diamond_Jet_Team = "Black Diamond Jet Team"
+            Czech_Air_Force = "Czech Air Force"
+            Czech_Air_Force_CLV = "Czech Air Force CLV"
+            Czechoslovakia_Air_Force = "Czechoslovakia Air Force"
+            France_EC24_Fictional = "France EC24 Fictional"
+            German_Bundeswehr_28_53 = "German Bundeswehr 28+53"
+            DDR_Luftwaffe = "DDR Luftwaffe"
+            DDR_Luftwaffe_Early = "DDR Luftwaffe Early"
+            Russ_Jet_Team = "Russ Jet Team"
+            Russian_Air_Force_Old = "Russian Air Force Old"
+
         class Ukraine(Enum):
             Ukraine_Air_Force_UKHW = "Ukraine Air Force UKHW"
 
@@ -24393,6 +30381,23 @@ class L_39C(PlaneType):
         class GDR(Enum):
             DDR_Luftwaffe = "DDR Luftwaffe"
             DDR_Luftwaffe_Early = "DDR Luftwaffe Early"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Russian_Air_Force = "Russian Air Force"
+            Ukraine_Air_Force_UKHW = "Ukraine Air Force UKHW"
+            Slovak_Air_Force = "Slovak Air Force"
+            Russian_Air_Force_Navy = "Russian Air Force Navy"
+            Algerian_AF__NL_29 = "Algerian AF  NL-29"
+            Black_Diamond_Jet_Team = "Black Diamond Jet Team"
+            Czech_Air_Force = "Czech Air Force"
+            Czech_Air_Force_CLV = "Czech Air Force CLV"
+            Czechoslovakia_Air_Force = "Czechoslovakia Air Force"
+            France_EC24_Fictional = "France EC24 Fictional"
+            German_Bundeswehr_28_53 = "German Bundeswehr 28+53"
+            DDR_Luftwaffe = "DDR Luftwaffe"
+            DDR_Luftwaffe_Early = "DDR Luftwaffe Early"
+            Russ_Jet_Team = "Russ Jet Team"
+            Russian_Air_Force_Old = "Russian Air Force Old"
 
         class France(Enum):
             France_EC24_Fictional = "France EC24 Fictional"
@@ -24420,7 +30425,7 @@ class L_39C(PlaneType):
         UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (1, Weapons.UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
         P_50T___50kg_Practice_Bomb_LD = (1, Weapons.P_50T___50kg_Practice_Bomb_LD)
         Fuel_Tank_150_liters = (1, Weapons.Fuel_Tank_150_liters)
-        R_3S = (1, Weapons.R_3S)
+        R_3S___AAM__IR_guided = (1, Weapons.R_3S___AAM__IR_guided)
         Smoke_Generator___red = (1, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (1, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (1, Weapons.Smoke_Generator___blue)
@@ -24442,7 +30447,7 @@ class L_39C(PlaneType):
         UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
         P_50T___50kg_Practice_Bomb_LD = (3, Weapons.P_50T___50kg_Practice_Bomb_LD)
         Fuel_Tank_150_liters = (3, Weapons.Fuel_Tank_150_liters)
-        R_3S = (3, Weapons.R_3S)
+        R_3S___AAM__IR_guided = (3, Weapons.R_3S___AAM__IR_guided)
         Smoke_Generator___red = (3, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (3, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (3, Weapons.Smoke_Generator___blue)
@@ -24548,6 +30553,12 @@ class L_39ZA(PlaneType):
             Splinter_camo_woodland = "Splinter camo woodland"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
+            Russian_Air_Force = "Russian Air Force"
+            Slovak_Air_Force = "Slovak Air Force"
+            Algerian_AF_NL_44 = "Algerian AF NL-44"
+            Algerian_AF_Tiger_NL_36 = "Algerian AF Tiger NL-36"
+            Czech_Air_Force = "Czech Air Force"
+            Czechoslovakia_Air_Force = "Czechoslovakia Air Force"
             Splinter_camo_desert = "Splinter camo desert"
             Splinter_camo_woodland = "Splinter camo woodland"
 
@@ -24711,6 +30722,12 @@ class L_39ZA(PlaneType):
             Splinter_camo_woodland = "Splinter camo woodland"
 
         class Combined_Joint_Task_Forces_Red(Enum):
+            Russian_Air_Force = "Russian Air Force"
+            Slovak_Air_Force = "Slovak Air Force"
+            Algerian_AF_NL_44 = "Algerian AF NL-44"
+            Algerian_AF_Tiger_NL_36 = "Algerian AF Tiger NL-36"
+            Czech_Air_Force = "Czech Air Force"
+            Czechoslovakia_Air_Force = "Czechoslovakia Air Force"
             Splinter_camo_desert = "Splinter camo desert"
             Splinter_camo_woodland = "Splinter camo woodland"
 
@@ -24870,7 +30887,7 @@ class L_39ZA(PlaneType):
         _2_x_OFAB_100_Jupiter___100kg_GP_Bombs_LD = (1, Weapons._2_x_OFAB_100_Jupiter___100kg_GP_Bombs_LD)
         UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (1, Weapons.UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
         PK_3___7_62mm_GPMG = (1, Weapons.PK_3___7_62mm_GPMG)
-        R_3S = (1, Weapons.R_3S)
+        R_3S___AAM__IR_guided = (1, Weapons.R_3S___AAM__IR_guided)
         APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red = (1, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red)
         Smoke_Generator___red = (1, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (1, Weapons.Smoke_Generator___green)
@@ -24920,7 +30937,7 @@ class L_39ZA(PlaneType):
         _2_x_OFAB_100_Jupiter___100kg_GP_Bombs_LD = (5, Weapons._2_x_OFAB_100_Jupiter___100kg_GP_Bombs_LD)
         UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (5, Weapons.UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
         PK_3___7_62mm_GPMG = (5, Weapons.PK_3___7_62mm_GPMG)
-        R_3S = (5, Weapons.R_3S)
+        R_3S___AAM__IR_guided = (5, Weapons.R_3S___AAM__IR_guided)
         APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red = (5, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red)
         Smoke_Generator___red = (5, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (5, Weapons.Smoke_Generator___green)
@@ -25058,8 +31075,34 @@ class M_2000C(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            _2003_Tigermeet = "2003 Tigermeet"
+            _2004_Tigermeet = "2004 Tigermeet"
+            _2010_Tigermeet = "2010 Tigermeet"
+            Cambresis = "Cambresis"
+            AdA_Chasse_2_5 = "AdA Chasse 2-5"
+            AdA_Alsace_LF_2 = "AdA Alsace LF-2"
+            Brasilian_Air_Force = "Brasilian Air Force"
+            Peru052 = "Peru052"
+            Peru064 = "Peru064"
+            Greek_Air_Force = "Greek Air Force"
+            UAE_Air_Force = "UAE Air Force"
+
         class Greece(Enum):
             Greek_Air_Force = "Greek Air Force"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            _2003_Tigermeet = "2003 Tigermeet"
+            _2004_Tigermeet = "2004 Tigermeet"
+            _2010_Tigermeet = "2010 Tigermeet"
+            Cambresis = "Cambresis"
+            AdA_Chasse_2_5 = "AdA Chasse 2-5"
+            AdA_Alsace_LF_2 = "AdA Alsace LF-2"
+            Brasilian_Air_Force = "Brasilian Air Force"
+            Peru052 = "Peru052"
+            Peru064 = "Peru064"
+            Greek_Air_Force = "Greek Air Force"
+            UAE_Air_Force = "UAE Air Force"
 
         class France(Enum):
             _2003_Tigermeet = "2003 Tigermeet"
@@ -25198,7 +31241,21 @@ class MQ_9_Reaper(PlaneType):
 
     class Liveries:
 
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            _camo__scheme = "'camo' scheme"
+            standard = "standard"
+            standard_France = "standard France"
+            standard_Italy = "standard Italy"
+            standard_UK = "standard UK"
+
         class UK(Enum):
+            standard_UK = "standard UK"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            _camo__scheme = "'camo' scheme"
+            standard = "standard"
+            standard_France = "standard France"
+            standard_Italy = "standard Italy"
             standard_UK = "standard UK"
 
         class France(Enum):
@@ -25255,248 +31312,370 @@ class MiG_15bis(PlaneType):
         class USSR(Enum):
             USSR_Air_Forces_Old = "USSR_Air Forces Old"
             USSR_Air_Forces = "USSR_Air Forces"
+            Matova = "Matova"
             USSR_Pepelyaev = "USSR_Pepelyaev"
             USSR_Red = "USSR_Red"
             default_livery = "default livery"
 
         class Georgia(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Venezuela(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Australia(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Israel(Enum):
+            Matova = "Matova"
+            default_livery = "default livery"
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            USSR_Air_Forces_Old = "USSR_Air Forces Old"
+            USSR_Air_Forces = "USSR_Air Forces"
+            GDR_Air_Force = "GDR_Air Force"
+            Algerian_AF__1962 = "Algerian AF  1962"
+            Czechoslovakia_Air_Force = "Czechoslovakia_Air Force"
+            HAF_Fictional = "HAF Fictional"
+            North_Korea_Air_Force = "North_Korea_Air Force"
+            Matova = "Matova"
+            North_Korea_Air_Force_Major__Arkady__Boitsow = "North_Korea_Air Force_Major_ Arkady_ Boitsow"
+            China_Air_Force = "China_Air Force"
+            China_Volunteer_Air_Force = "China Volunteer Air Force"
+            Polish_Air_Force = "Polish_Air Force"
+            USSR_Pepelyaev = "USSR_Pepelyaev"
+            USSR_Red = "USSR_Red"
             default_livery = "default livery"
 
         class Sudan(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Norway(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Romania(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Iran(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Ukraine(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Libya(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Belgium(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Slovakia(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Greece(Enum):
             HAF_Fictional = "HAF Fictional"
+            Matova = "Matova"
             default_livery = "default livery"
 
         class UK(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Third_Reich(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Hungary(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Abkhazia(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Morocco(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
+        class United_Nations_Peacekeepers(Enum):
+            Matova = "Matova"
+
         class Switzerland(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class SouthOssetia(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Vietnam(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class China(Enum):
+            Matova = "Matova"
             China_Air_Force = "China_Air Force"
             China_Volunteer_Air_Force = "China Volunteer Air Force"
             default_livery = "default livery"
 
         class Yemen(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Kuwait(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Serbia(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Oman(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class India(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Egypt(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class TheNetherlands(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Poland(Enum):
+            Matova = "Matova"
             Polish_Air_Force = "Polish_Air Force"
             default_livery = "default livery"
 
         class Syria(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Finland(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Kazakhstan(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Denmark(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Sweden(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Croatia(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class CzechRepublic(Enum):
             Czechoslovakia_Air_Force = "Czechoslovakia_Air Force"
+            Matova = "Matova"
             default_livery = "default livery"
 
+        class GDR(Enum):
+            Matova = "Matova"
+
         class Yugoslavia(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Bulgaria(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class SouthKorea(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Tunisia(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
+        class Combined_Joint_Task_Forces_Red(Enum):
+            USSR_Air_Forces_Old = "USSR_Air Forces Old"
+            USSR_Air_Forces = "USSR_Air Forces"
+            GDR_Air_Force = "GDR_Air Force"
+            Algerian_AF__1962 = "Algerian AF  1962"
+            Czechoslovakia_Air_Force = "Czechoslovakia_Air Force"
+            HAF_Fictional = "HAF Fictional"
+            North_Korea_Air_Force = "North_Korea_Air Force"
+            Matova = "Matova"
+            North_Korea_Air_Force_Major__Arkady__Boitsow = "North_Korea_Air Force_Major_ Arkady_ Boitsow"
+            China_Air_Force = "China_Air Force"
+            China_Volunteer_Air_Force = "China Volunteer Air Force"
+            Polish_Air_Force = "Polish_Air Force"
+            USSR_Pepelyaev = "USSR_Pepelyaev"
+            USSR_Red = "USSR_Red"
+            default_livery = "default livery"
+
+        class Lebanon(Enum):
+            Matova = "Matova"
+
+        class Portugal(Enum):
+            Matova = "Matova"
+
         class Cuba(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Insurgents(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class SaudiArabia(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class France(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class USA(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Honduras(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Qatar(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Russia(Enum):
             USSR_Air_Forces_Old = "USSR_Air Forces Old"
             USSR_Air_Forces = "USSR_Air Forces"
+            Matova = "Matova"
             North_Korea_Air_Force_Major__Arkady__Boitsow = "North_Korea_Air Force_Major_ Arkady_ Boitsow"
             USSR_Pepelyaev = "USSR_Pepelyaev"
             USSR_Red = "USSR_Red"
             default_livery = "default livery"
 
         class United_Arab_Emirates(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Italian_Social_Republi(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Austria(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Bahrain(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Italy(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Chile(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Turkey(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Philippines(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Algeria(Enum):
             Algerian_AF__1962 = "Algerian AF  1962"
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Pakistan(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Malaysia(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Indonesia(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Iraq(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Germany(Enum):
             GDR_Air_Force = "GDR_Air Force"
+            Matova = "Matova"
             default_livery = "default livery"
 
         class South_Africa(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Jordan(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Mexico(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class USAFAggressors(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Brazil(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Spain(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Belarus(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Canada(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class NorthKorea(Enum):
             North_Korea_Air_Force = "North_Korea_Air Force"
+            Matova = "Matova"
             North_Korea_Air_Force_Major__Arkady__Boitsow = "North_Korea_Air Force_Major_ Arkady_ Boitsow"
             USSR_Pepelyaev = "USSR_Pepelyaev"
             default_livery = "default livery"
 
         class Ethiopia(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Japan(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
         class Thailand(Enum):
+            Matova = "Matova"
             default_livery = "default livery"
 
     class Pylon1:
@@ -25611,8 +31790,17 @@ class MiG_19P(PlaneType):
 
         class Combined_Joint_Task_Forces_Blue(Enum):
             default = "default"
+            Cuba = "Cuba"
+            PLAAF = "PLAAF"
+            Bulgaria = "Bulgaria"
             IAP = "IAP"
+            CZechoslovakia = "CZechoslovakia"
+            Poland_39_PLM = "Poland 39 PLM"
+            Poland_62_PLM = "Poland 62 PLM"
+            USSR_2 = "USSR_2"
+            Romania___66th_Fighter_Division = "Romania - 66th Fighter Division"
             DDR___Fictional = "DDR - Fictional"
+            PLAAF_CAMO = "PLAAF CAMO"
             Snow___Fictional = "Snow - Fictional"
 
         class Sudan(Enum):
@@ -25858,8 +32046,17 @@ class MiG_19P(PlaneType):
 
         class Combined_Joint_Task_Forces_Red(Enum):
             default = "default"
+            Cuba = "Cuba"
+            PLAAF = "PLAAF"
+            Bulgaria = "Bulgaria"
             IAP = "IAP"
+            CZechoslovakia = "CZechoslovakia"
+            Poland_39_PLM = "Poland 39 PLM"
+            Poland_62_PLM = "Poland 62 PLM"
+            USSR_2 = "USSR_2"
+            Romania___66th_Fighter_Division = "Romania - 66th Fighter Division"
             DDR___Fictional = "DDR - Fictional"
+            PLAAF_CAMO = "PLAAF CAMO"
             Snow___Fictional = "Snow - Fictional"
 
         class Lebanon(Enum):
@@ -32484,18 +38681,18 @@ class MiG_21Bis(PlaneType):
 
     class Pylon1:
         UB_16UM___16_S_5M = (1, Weapons.UB_16UM___16_S_5M)
-        S_24B__21_ = (1, Weapons.S_24B__21_)
-        S_24A__21_ = (1, Weapons.S_24A__21_)
+        S_24B__21____180_kg__fragmented_unguided_rocket = (1, Weapons.S_24B__21____180_kg__fragmented_unguided_rocket)
+        S_24A__21____180_kg__cumulative_unguided_rocket = (1, Weapons.S_24A__21____180_kg__cumulative_unguided_rocket)
         FAB_100___100kg_GP_Bomb_LD = (1, Weapons.FAB_100___100kg_GP_Bomb_LD)
         FAB_250___250kg_GP_Bomb_LD = (1, Weapons.FAB_250___250kg_GP_Bomb_LD)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (1, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
-        FAB_250_M54_TU = (1, Weapons.FAB_250_M54_TU)
+        FAB_250_M54_TU___235_kg__bomb__parachute = (1, Weapons.FAB_250_M54_TU___235_kg__bomb__parachute)
         SAB_100___100kg_flare_illumination_Bomb = (1, Weapons.SAB_100___100kg_flare_illumination_Bomb)
-        R_13M = (1, Weapons.R_13M)
-        R_13M1 = (1, Weapons.R_13M1)
-        R_3R = (1, Weapons.R_3R)
-        R_3S = (1, Weapons.R_3S)
-        RS2US = (1, Weapons.RS2US)
+        R_13M___AAM__IR_guided = (1, Weapons.R_13M___AAM__IR_guided)
+        R_13M1___AAM__IR_guided = (1, Weapons.R_13M1___AAM__IR_guided)
+        R_3R___AAM__radar_guided = (1, Weapons.R_3R___AAM__radar_guided)
+        R_3S___AAM__IR_guided = (1, Weapons.R_3S___AAM__IR_guided)
+        RS2US___AAM__beam_rider = (1, Weapons.RS2US___AAM__beam_rider)
         R_60 = (1, Weapons.R_60)
         R_60M = (1, Weapons.R_60M)
         R_60M_x_2 = (1, Weapons.R_60M_x_2)
@@ -32505,8 +38702,8 @@ class MiG_21Bis(PlaneType):
     class Pylon2:
         UB_16UM___16_S_5M = (2, Weapons.UB_16UM___16_S_5M)
         UB_32M___32_S_5M = (2, Weapons.UB_32M___32_S_5M)
-        S_24B__21_ = (2, Weapons.S_24B__21_)
-        S_24A__21_ = (2, Weapons.S_24A__21_)
+        S_24B__21____180_kg__fragmented_unguided_rocket = (2, Weapons.S_24B__21____180_kg__fragmented_unguided_rocket)
+        S_24A__21____180_kg__cumulative_unguided_rocket = (2, Weapons.S_24A__21____180_kg__cumulative_unguided_rocket)
         FAB_100_x_4 = (2, Weapons.FAB_100_x_4)
         FAB_100___100kg_GP_Bomb_LD = (2, Weapons.FAB_100___100kg_GP_Bomb_LD)
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
@@ -32517,31 +38714,31 @@ class MiG_21Bis(PlaneType):
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (2, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         BL_755_CBU___450kg__147_Frag_Pen_bomblets = (2, Weapons.BL_755_CBU___450kg__147_Frag_Pen_bomblets)
         SAB_100___100kg_flare_illumination_Bomb = (2, Weapons.SAB_100___100kg_flare_illumination_Bomb)
-        Kh_66_Grom__21__APU_68 = (2, Weapons.Kh_66_Grom__21__APU_68)
-        R_13M = (2, Weapons.R_13M)
-        R_13M1 = (2, Weapons.R_13M1)
-        R_3R = (2, Weapons.R_3R)
-        R_3S = (2, Weapons.R_3S)
-        RS2US = (2, Weapons.RS2US)
-        R_55 = (2, Weapons.R_55)
+        Kh_66_Grom__21____AGM__radar_guided_APU_68 = (2, Weapons.Kh_66_Grom__21____AGM__radar_guided_APU_68)
+        R_13M___AAM__IR_guided = (2, Weapons.R_13M___AAM__IR_guided)
+        R_13M1___AAM__IR_guided = (2, Weapons.R_13M1___AAM__IR_guided)
+        R_3R___AAM__radar_guided = (2, Weapons.R_3R___AAM__radar_guided)
+        R_3S___AAM__IR_guided = (2, Weapons.R_3S___AAM__IR_guided)
+        RS2US___AAM__beam_rider = (2, Weapons.RS2US___AAM__beam_rider)
+        R_55___AAM__IR_guided = (2, Weapons.R_55___AAM__IR_guided)
         R_60 = (2, Weapons.R_60)
         R_60M = (2, Weapons.R_60M)
         R_60M_x_2 = (2, Weapons.R_60M_x_2)
         R_60_x_2 = (2, Weapons.R_60_x_2)
-        UPK_23_250 = (2, Weapons.UPK_23_250)
+        UPK_23_250___gun_pod = (2, Weapons.UPK_23_250___gun_pod)
 
     class Pylon3:
-        RN_24 = (3, Weapons.RN_24)
-        RN_28 = (3, Weapons.RN_28)
-        SPS_141_100__21_ = (3, Weapons.SPS_141_100__21_)
+        RN_24___470kg__nuclear_bomb__free_fall = (3, Weapons.RN_24___470kg__nuclear_bomb__free_fall)
+        RN_28___260_kg__nuclear_bomb__free_fall = (3, Weapons.RN_28___260_kg__nuclear_bomb__free_fall)
+        SPS_141_100__21____jamming_and_countermeasures_pod = (3, Weapons.SPS_141_100__21____jamming_and_countermeasures_pod)
         Fuel_Tank_490_L_Central__21_ = (3, Weapons.Fuel_Tank_490_L_Central__21_)
         Fuel_Tank_800_L__21_ = (3, Weapons.Fuel_Tank_800_L__21_)
 
     class Pylon4:
         UB_16UM___16_S_5M = (4, Weapons.UB_16UM___16_S_5M)
         UB_32M___32_S_5M = (4, Weapons.UB_32M___32_S_5M)
-        S_24B__21_ = (4, Weapons.S_24B__21_)
-        S_24A__21_ = (4, Weapons.S_24A__21_)
+        S_24B__21____180_kg__fragmented_unguided_rocket = (4, Weapons.S_24B__21____180_kg__fragmented_unguided_rocket)
+        S_24A__21____180_kg__cumulative_unguided_rocket = (4, Weapons.S_24A__21____180_kg__cumulative_unguided_rocket)
         FAB_100_x_4 = (4, Weapons.FAB_100_x_4)
         FAB_100___100kg_GP_Bomb_LD = (4, Weapons.FAB_100___100kg_GP_Bomb_LD)
         FAB_250___250kg_GP_Bomb_LD = (4, Weapons.FAB_250___250kg_GP_Bomb_LD)
@@ -32552,34 +38749,34 @@ class MiG_21Bis(PlaneType):
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (4, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         BL_755_CBU___450kg__147_Frag_Pen_bomblets = (4, Weapons.BL_755_CBU___450kg__147_Frag_Pen_bomblets)
         SAB_100___100kg_flare_illumination_Bomb = (4, Weapons.SAB_100___100kg_flare_illumination_Bomb)
-        Kh_66_Grom__21__APU_68 = (4, Weapons.Kh_66_Grom__21__APU_68)
-        R_13M = (4, Weapons.R_13M)
-        R_13M1 = (4, Weapons.R_13M1)
-        R_3R = (4, Weapons.R_3R)
-        R_3S = (4, Weapons.R_3S)
-        RS2US = (4, Weapons.RS2US)
-        R_55 = (4, Weapons.R_55)
+        Kh_66_Grom__21____AGM__radar_guided_APU_68 = (4, Weapons.Kh_66_Grom__21____AGM__radar_guided_APU_68)
+        R_13M___AAM__IR_guided = (4, Weapons.R_13M___AAM__IR_guided)
+        R_13M1___AAM__IR_guided = (4, Weapons.R_13M1___AAM__IR_guided)
+        R_3R___AAM__radar_guided = (4, Weapons.R_3R___AAM__radar_guided)
+        R_3S___AAM__IR_guided = (4, Weapons.R_3S___AAM__IR_guided)
+        RS2US___AAM__beam_rider = (4, Weapons.RS2US___AAM__beam_rider)
+        R_55___AAM__IR_guided = (4, Weapons.R_55___AAM__IR_guided)
         R_60 = (4, Weapons.R_60)
         R_60M = (4, Weapons.R_60M)
         R_60M_x_2_ = (4, Weapons.R_60M_x_2_)
         R_60_x_2_ = (4, Weapons.R_60_x_2_)
-        UPK_23_250 = (4, Weapons.UPK_23_250)
+        UPK_23_250___gun_pod = (4, Weapons.UPK_23_250___gun_pod)
 
     class Pylon5:
         UB_16UM___16_S_5M = (5, Weapons.UB_16UM___16_S_5M)
-        S_24B__21_ = (5, Weapons.S_24B__21_)
-        S_24A__21_ = (5, Weapons.S_24A__21_)
+        S_24B__21____180_kg__fragmented_unguided_rocket = (5, Weapons.S_24B__21____180_kg__fragmented_unguided_rocket)
+        S_24A__21____180_kg__cumulative_unguided_rocket = (5, Weapons.S_24A__21____180_kg__cumulative_unguided_rocket)
         FAB_100___100kg_GP_Bomb_LD = (5, Weapons.FAB_100___100kg_GP_Bomb_LD)
         FAB_250___250kg_GP_Bomb_LD = (5, Weapons.FAB_250___250kg_GP_Bomb_LD)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (5, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
 #ERRR {40A24F07-CD7D-4F83-89A2-39B2258B62C6}
-        FAB_250_M54_TU = (5, Weapons.FAB_250_M54_TU)
+        FAB_250_M54_TU___235_kg__bomb__parachute = (5, Weapons.FAB_250_M54_TU___235_kg__bomb__parachute)
         SAB_100___100kg_flare_illumination_Bomb = (5, Weapons.SAB_100___100kg_flare_illumination_Bomb)
-        R_13M = (5, Weapons.R_13M)
-        R_13M1 = (5, Weapons.R_13M1)
-        R_3R = (5, Weapons.R_3R)
-        R_3S = (5, Weapons.R_3S)
-        RS2US = (5, Weapons.RS2US)
+        R_13M___AAM__IR_guided = (5, Weapons.R_13M___AAM__IR_guided)
+        R_13M1___AAM__IR_guided = (5, Weapons.R_13M1___AAM__IR_guided)
+        R_3R___AAM__radar_guided = (5, Weapons.R_3R___AAM__radar_guided)
+        R_3S___AAM__IR_guided = (5, Weapons.R_3S___AAM__IR_guided)
+        RS2US___AAM__beam_rider = (5, Weapons.RS2US___AAM__beam_rider)
         R_60 = (5, Weapons.R_60)
         R_60M = (5, Weapons.R_60M)
         R_60M_x_2_ = (5, Weapons.R_60M_x_2_)
@@ -32587,8 +38784,8 @@ class MiG_21Bis(PlaneType):
         Fuel_Tank_490_L__21_ = (5, Weapons.Fuel_Tank_490_L__21_)
 
     class Pylon6:
-        ASO_2 = (6, Weapons.ASO_2)
-        SPRD_99 = (6, Weapons.SPRD_99)
+        ASO_2___countermeasures_pod = (6, Weapons.ASO_2___countermeasures_pod)
+        SPRD_99_takeoff_rocket = (6, Weapons.SPRD_99_takeoff_rocket)
 
     class Pylon7:
         Smoke___white___21_ = (7, Weapons.Smoke___white___21_)
@@ -32613,6 +38810,14 @@ class Su_34(PlaneType):
     flare_charge_size = 1
 
     class Liveries:
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            Russian_Air_Force = "Russian Air Force"
+            Russian_Air_Force_Old = "Russian Air Force Old"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            Russian_Air_Force = "Russian Air Force"
+            Russian_Air_Force_Old = "Russian Air Force Old"
 
         class Russia(Enum):
             Russian_Air_Force = "Russian Air Force"
@@ -32955,6 +39160,11 @@ class Yak_52(PlaneType):
 
         class Combined_Joint_Task_Forces_Blue(Enum):
             Bare_Metall = "Bare_Metall"
+            DOSAAF_USSR = "DOSAAF_USSR"
+            DOSAAF_RF = "DOSAAF_RF"
+            Pobeda = "Pobeda"
+            The_First_Flight = "The First Flight"
+            The_Yakovlevs = "The Yakovlevs"
 
         class Sudan(Enum):
             Bare_Metall = "Bare_Metall"
@@ -33075,6 +39285,11 @@ class Yak_52(PlaneType):
 
         class Combined_Joint_Task_Forces_Red(Enum):
             Bare_Metall = "Bare_Metall"
+            DOSAAF_USSR = "DOSAAF_USSR"
+            DOSAAF_RF = "DOSAAF_RF"
+            Pobeda = "Pobeda"
+            The_First_Flight = "The First Flight"
+            The_Yakovlevs = "The Yakovlevs"
 
         class Lebanon(Enum):
             Bare_Metall = "Bare_Metall"
@@ -33236,6 +39451,11 @@ class Ju_88A4(PlaneType):
     fuel_max = 2120
     max_speed = 540
 
+    callnames: Dict[str, List[str]] = {
+        "USA": [
+        ]
+    }
+
     property_defaults: Dict[str, Any] = {
     }
 #ERRR {LTF_5B}
@@ -33313,7 +39533,13 @@ class TF_51D(PlaneType):
             Bare_Metal = "Bare Metal"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
+            USAF_364th_FS = "USAF 364th FS"
             Bare_Metal = "Bare Metal"
+            Hellenic_Airforce_Trainer = "Hellenic Airforce Trainer"
+            TF_51_Gentleman_Jim = "TF-51 Gentleman Jim"
+            TF_51_Glamorous_Glen_III = "TF-51 Glamorous Glen III"
+            TF_51_Gunfighter = "TF-51 Gunfighter"
+            TF_51_Miss_Velma = "TF-51 Miss Velma"
 
         class Sudan(Enum):
             Bare_Metal = "Bare Metal"
@@ -33434,7 +39660,13 @@ class TF_51D(PlaneType):
             Bare_Metal = "Bare Metal"
 
         class Combined_Joint_Task_Forces_Red(Enum):
+            USAF_364th_FS = "USAF 364th FS"
             Bare_Metal = "Bare Metal"
+            Hellenic_Airforce_Trainer = "Hellenic Airforce Trainer"
+            TF_51_Gentleman_Jim = "TF-51 Gentleman Jim"
+            TF_51_Glamorous_Glen_III = "TF-51 Glamorous Glen III"
+            TF_51_Gunfighter = "TF-51 Gunfighter"
+            TF_51_Miss_Velma = "TF-51 Miss Velma"
 
         class Lebanon(Enum):
             Bare_Metal = "Bare Metal"
