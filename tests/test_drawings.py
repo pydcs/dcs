@@ -1,14 +1,18 @@
+import os
 import unittest
 import dcs
 from dcs.drawing.drawing import LineStyle, Rgba
 from dcs.drawing.drawings import StandardLayer
-from dcs.drawing.line import LineDrawing, LineMode
+from dcs.drawing.icon import StandardIcon
 from dcs.drawing.polygon import Circle
 from dcs.mapping import Point
 from dcs.mission import Mission
 
 
 class DrawingTests(unittest.TestCase):
+    def setUp(self):
+        os.makedirs('missions', exist_ok=True)
+
     def test_load_save_load(self) -> None:
         m: Mission = dcs.mission.Mission()
         self.assertEqual(0, len(m.load_file('tests/missions/Draw_tool_test.miz')))
@@ -83,7 +87,7 @@ class DrawingTests(unittest.TestCase):
         self.assertEqual("Red", red_layer2.objects[1].layer_name)
 
 
-def test_set_options_hidden_f10(self) -> None:
+    def test_set_options_hidden_f10(self) -> None:
         m: Mission = dcs.mission.Mission()
         
         m.drawings.options.hiddenOnF10Map["Pilot"]["Red"] = True
@@ -98,3 +102,17 @@ def test_set_options_hidden_f10(self) -> None:
         self.assertEqual(True, m2.drawings.options.hiddenOnF10Map["Pilot"]["Red"])
         self.assertEqual(True, m2.drawings.options.hiddenOnF10Map["Instructor"]["Blue"])
         self.assertEqual(True, m2.drawings.options.hiddenOnF10Map["Observer"]["Neutral"])
+
+    def test_add_std_icon(self) -> None:
+        m: Mission = dcs.mission.Mission()
+
+        red_layer = m.drawings.get_layer(StandardLayer.Red)
+        red_layer.add_icon(Point(1000, 1000), StandardIcon.MechanizedArtillery)
+        mission_path = 'missions/New_mission_w_added_std_icon.miz'
+        m.save(mission_path)
+
+        m2 = dcs.mission.Mission()
+        self.assertEqual(0, len(m2.load_file(mission_path)))
+        red_layer = m.drawings.get_layer(StandardLayer.Red)
+        
+        self.assertEqual(StandardIcon.MechanizedArtillery.value, red_layer.objects[0].file)

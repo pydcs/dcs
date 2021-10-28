@@ -1,8 +1,6 @@
 class Options:
-    hiddenOnF10Map: dict[str, dict[str, bool]]
-
     def __init__(self):
-        self.hiddenOnF10Map = Options.get_default_hidden()
+        self.hiddenOnF10Map = self.get_default_hidden()
 
     def load_from_dict(self, data):
         self.hiddenOnF10Map = data["hiddenOnF10Map"]
@@ -18,7 +16,7 @@ class Options:
         return d
 
     @staticmethod
-    def get_default_hidden():
+    def get_default_hidden() -> dict:
         d = {}
         d["Observer"] = {
             "Neutral": False,

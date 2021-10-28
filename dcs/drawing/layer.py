@@ -1,8 +1,8 @@
 from dataclasses import dataclass
-from typing import List
+from typing import List, Union
 
 from dcs.drawing.drawing import Drawing, LineStyle, Rgba
-from dcs.drawing.icon import Icon
+from dcs.drawing.icon import Icon, StandardIcon
 from dcs.drawing.line import LineDrawing, LineMode
 from dcs.drawing.polygon import (
     PolygonMode,
@@ -28,9 +28,7 @@ class Layer:
 
         for object_index in sorted(data["objects"].keys()):
             object_data = data["objects"][object_index]
-            # print("drawing data", object_data)
             object = self.load_drawing_from_data(object_data)
-            # print("OBJECT IS", object)
             self.objects.append(object)
 
     def dict(self):
@@ -276,9 +274,14 @@ class Layer:
         return drawing
 
     def add_icon(
-        self, position: Point, file: str, scale=1.0, color=Rgba(255, 0, 0, 255)
+        self, position: Point, file: Union[str, StandardIcon], scale=1.0, color=Rgba(255, 0, 0, 255)
     ) -> Icon:
-        drawing = Icon(True, position, "An icon", color, self.name, file, scale, 0)
+        if type(file) is StandardIcon:
+            file_str = file.value
+        else:
+            file_str = file
+
+        drawing = Icon(True, position, "An icon", color, self.name, file_str, scale, 0)
         self.add_drawing(drawing)
         return drawing
 

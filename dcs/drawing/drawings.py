@@ -1,5 +1,4 @@
 from enum import Enum
-from typing import List
 from dcs.drawing.layer import Layer
 from dcs.drawing.options import Options
 
@@ -13,9 +12,6 @@ class StandardLayer(Enum):
 
 
 class Drawings:
-    options: Options
-    layers: List[Layer]
-
     def __init__(self):
         self.options = Options()
         self.layers = [
