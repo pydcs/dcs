@@ -415,10 +415,25 @@ class Layer:
     def add_arrow(
         self,
         position: Point,
-        points: List[Point],
+        angle: float,
+        length: float,
         color=Rgba(255, 0, 0, 255),
         fill=Rgba(255, 0, 0, 255),
         line_thickness=8,
         line_style=LineStyle.Solid,
     ) -> Arrow:
-        raise NotImplementedError("Arrow requires a weird points array")
+        drawing = Arrow(
+            True,
+            position,
+            "An arrow",
+            color,
+            self.name,
+            fill,
+            line_thickness,
+            line_style,
+            length,
+            angle,
+            Arrow.get_default_arrow_points(),
+        )
+        self.add_drawing(drawing)
+        return drawing

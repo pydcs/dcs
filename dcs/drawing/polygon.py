@@ -94,3 +94,16 @@ class Arrow(PolygonDrawing):
         d["angle"] = self.angle
         d["points"] = super().points_to_dict(self.points)
         return d
+
+    @staticmethod
+    def get_default_arrow_points() -> List[Point]:
+        return [
+            Point(976.01054900139, 0),
+            Point(976.01054900139, 5205.3895946741),
+            Point(2602.694797337, 5205.3895946741),
+            Point(0, 7808.0843920111),
+            Point(-2602.694797337, 5205.3895946741),
+            Point(-976.01054900139, 5205.3895946741),
+            Point(-976.01054900139, 0),
+            Point(976.01054900139, 0),
+        ]
