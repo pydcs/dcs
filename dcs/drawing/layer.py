@@ -437,3 +437,44 @@ class Layer:
         )
         self.add_drawing(drawing)
         return drawing
+
+    def add_oblong(
+        self,
+        p1: Point,
+        p2: Point,
+        radius: float,
+        color=Rgba(255, 0, 0, 255),
+        fill=Rgba(255, 0, 0, 60),
+        line_thickness=4,
+        line_style=LineStyle.Solid,
+        resolution=20,
+    ) -> FreeFormPolygon:
+        hdg_p1_p2 = p1.heading_between_point(p2)
+        points: List[Point] = []
+
+        for i in range(0, resolution + 1):
+            hdg = hdg_p1_p2 - 90 + i * (180 / resolution)
+            points.append(p2.point_from_heading(hdg, radius))
+
+        for i in range(0, resolution + 1):
+            hdg = hdg_p1_p2 + 90 + i * (180 / resolution)
+            points.append(p1.point_from_heading(hdg, radius))
+
+        # Copy first point and insert last to close the polygon
+        points.append(points[0] * 1)
+
+        # Transform points to local coordinates
+        startPoint = points[0] * 1  # Copy
+        for point in points:
+            point.x -= startPoint.x
+            point.y -= startPoint.y
+
+        polygon = self.add_freeform_polygon(
+            startPoint,
+            points,
+            color=color,
+            fill=fill,
+            line_thickness=line_thickness,
+            line_style=line_style,
+        )
+        return polygon

@@ -116,3 +116,14 @@ class DrawingTests(unittest.TestCase):
         red_layer = m.drawings.get_layer(StandardLayer.Red)
         
         self.assertEqual(StandardIcon.MechanizedArtillery.value, red_layer.objects[0].file)
+
+    def test_add_oblong(self) -> None:
+        m: Mission = dcs.mission.Mission()
+
+        layer = m.drawings.get_layer(StandardLayer.Common)
+        self.assertEqual(0, len(layer.objects))
+        oblong = layer.add_oblong(Point(1000, 1000), Point(4000, 1000), 1000, resolution=20)
+        self.assertEqual(1, len(layer.objects))
+        # Resolution 20 should give 43 points
+        # (21 in each end and one extra to close polygon)
+        self.assertEqual(43, len(oblong.points))
