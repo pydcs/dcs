@@ -843,6 +843,7 @@ class Embarking(Task):
             "distribution": {x: {y: y for y in distribution[x]} for x in distribution}
         }
 
+
 class Disembarking(Task):
     """Unload task for helicopters.
 
