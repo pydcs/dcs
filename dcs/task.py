@@ -854,7 +854,7 @@ class Disembarking(Task):
     """
     Id = "Disembarking"
 
-    def __init__(self, position: Point = Point(0, 0), groupids: List[int] = None):
+    def __init__(self, position: Point = Point(0, 0), groupids: Optional[List[int]] = None):
         super(Disembarking, self).__init__(self.Id)
 
         groupids = [] if groupids is None else groupids
