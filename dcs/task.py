@@ -986,7 +986,6 @@ tasks_map: Dict[str, Type[Task]] = {
     FireAtPoint.Id: FireAtPoint,
     AttackUnit.Id: AttackUnit,
     AttackMapObject.Id: AttackMapObject,
-    Expend.Id: Expend,
     EngageTargets.Id: EngageTargets
 }
 
