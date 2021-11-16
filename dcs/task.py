@@ -324,6 +324,15 @@ class AttackGroup(Task):
         }
 
 
+class Expend(Enum):
+    Auto = "Auto"
+    One = "One"
+    Two = "Two"
+    Four = "Four"
+    Quarter = "Quarter"
+    Half = "Half"
+
+
 class AttackUnit(Task):
     """Attack unit task action
 
@@ -331,18 +340,30 @@ class AttackUnit(Task):
     :param attack_limit: how much attack runs
     :param weapon_type: :py:class:`WeaponType` to use for the attack
     :param group_attack: indicate if the unit must be attacked by all aircrafts in the group.
+    :param altitude_enabled: use altitude for attack
+    :param altitude: altitude used for attack
+    :param direction_enabled: use direction for attack
+    :param direction: direction of attack
+    :param expend: how many ammunition to expend
     """
     Id = "AttackUnit"
 
     def __init__(self, unit_id=0, attack_limit: Optional[int] = None,
-                 weapon_type: WeaponType = WeaponType.Auto, group_attack=False):
+                 weapon_type: WeaponType = WeaponType.Auto, group_attack=False,
+                 altitude_enabled=False, altitude=0, direction_enabled=False,
+                 direction=0, expend: Expend = Expend.Auto):
         super(AttackUnit, self).__init__(self.Id)
         self.params = {
-            "groupId": unit_id,
+            "unitId": unit_id,
             "weaponType": weapon_type.value,
             "groupAttack": group_attack,
             "attackQty": attack_limit,
-            "attackQtyLimit": attack_limit is not None
+            "attackQtyLimit": attack_limit is not None,
+            "altitudeEnabled": altitude_enabled,
+            "altitude": altitude if altitude_enabled else None,
+            "directionEnabled": direction_enabled,
+            "direction": direction if direction_enabled else None,
+            "expend": expend.value
         }
 
 
@@ -498,15 +519,6 @@ class EscortTaskAction(Task):
             self.params["lastWptIndexFlagChangedManually"] = True
             self.params["lastWptIndexFlag"] = True
             self.params["lastWptIndex"] = lastwpt
-
-
-class Expend(Enum):
-    Auto = "Auto"
-    One = "One"
-    Two = "Two"
-    Four = "Four"
-    Quarter = "Quarter"
-    Half = "Half"
 
 
 class Bombing(Task):
@@ -971,7 +983,11 @@ tasks_map: Dict[str, Type[Task]] = {
     CargoTransportation.Id: CargoTransportation,
     EWR.Id: EWR,
     GoToWaypoint.Id: GoToWaypoint,
-    FireAtPoint.Id: FireAtPoint
+    FireAtPoint.Id: FireAtPoint,
+    AttackUnit.Id: AttackUnit,
+    AttackMapObject.Id: AttackMapObject,
+    Expend.Id: Expend,
+    EngageTargets.Id: EngageTargets
 }
 
 
