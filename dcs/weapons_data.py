@@ -224,6 +224,8 @@ class Weapons:
     CBU_87___202_x_CEM_Cluster_Bomb = {"clsid": "{CBU-87}", "name": "CBU-87 - 202 x CEM Cluster Bomb", "weight": 430}
     CBU_97___10_x_SFW_Cluster_Bomb = {"clsid": "{5335D97A-35A5-4643-9D9B-026C75961E52}", "name": "CBU-97 - 10 x SFW Cluster Bomb", "weight": 417}
     CBU_99___490lbs__247_x_HEAT_Bomblets = {"clsid": "{CBU_99}", "name": "CBU-99 - 490lbs, 247 x HEAT Bomblets", "weight": 222}
+    CM_802AKG = {"clsid": "{CM_802AKG}", "name": "CM-802AKG", "weight": None}
+    C_802AK = {"clsid": "{C_802AK}", "name": "C-802AK", "weight": 600}
     DEFA_553___30mm_Revolver_Cannon = {"clsid": "{C-101-DEFA553}", "name": "DEFA-553 - 30mm Revolver Cannon", "weight": 218}
     DIS_AKD_10 = {"clsid": "DIS_AKD-10", "name": "AKD-10", "weight": 58}
     DIS_AKG_DLPOD = {"clsid": "DIS_AKG_DLPOD", "name": "DATA-LINK POD", "weight": 295}
@@ -302,6 +304,7 @@ class Weapons:
     FAB_1500_M_54___1500kg_GP_Bomb_LD = {"clsid": "{40AA4ABE-D6EB-4CD6-AEFE-A1A0477B24AB}", "name": "FAB-1500 M-54 - 1500kg GP Bomb LD", "weight": 1392}
     FAB_250_M54_TU___235_kg__bomb__parachute = {"clsid": "{FAB-250-M54-TU}", "name": "FAB-250 M54 TU - 235 kg, bomb, parachute", "weight": 235}
     FAB_250_M54___235_kg__bomb__parachute = {"clsid": "{FAB-250-M54}", "name": "FAB-250 M54 - 235 kg, bomb, parachute", "weight": 235}
+    FAB_250_M62___250kg_GP_Bomb_LD = {"clsid": "{FAB_250_M62}", "name": "FAB-250-M62 - 250kg GP Bomb LD", "weight": 227}
     FAB_250___250kg_GP_Bomb_LD = {"clsid": "{3C612111-C7AD-476E-8A8E-2485812F4E5C}", "name": "FAB-250 - 250kg GP Bomb LD", "weight": 250}
     FAB_50 = {"clsid": "FAB_50", "name": "FAB-50 - 50kg GP Bomb LD", "weight": 50}
     FAB_500_M54_TU___480_kg__bomb__parachute = {"clsid": "{FAB-500-M54-TU}", "name": "FAB-500 M54 TU - 480 kg, bomb, parachute", "weight": 480}
@@ -564,6 +567,9 @@ class Weapons:
     LAU_SNEB68G___8xSNEB68_WP = {"clsid": "{LAU_SNEB68_WP}", "name": "LAU_SNEB68G - 8xSNEB68_WP", "weight": 50.08}
     Lantirn_F_16 = {"clsid": "{CAAC1CFD-6745-416B-AFA4-CB57414856D0}", "name": "Lantirn F-16", "weight": 445}
     Lantirn_Target_Pod = {"clsid": "{D1744B93-2A8A-4C4D-B004-7A09CD8C8F3F}", "name": "Lantirn Target Pod", "weight": 200}
+    LR_25___25_x_ARF_8_M3_API = {"clsid": "{LR25_ARF8M3_API}", "name": "LR-25 - 25 x ARF-8/M3 API", "weight": 141}
+    LR_25___25_x_ARF_8_M3_HEI = {"clsid": "{LR25_ARF8M3_HEI}", "name": "LR-25 - 25 x ARF-8/M3 HEI", "weight": 161}
+    LR_25___25_x_ARF_8_M3_TP_SM = {"clsid": "{LR25_ARF8M3_TPSM}", "name": "LR-25 - 25 x ARF-8/M3 TP-SM", "weight": 141}
     L_081_Fantasmagoria_ELINT_pod = {"clsid": "{0519A264-0AB6-11d6-9193-00A0249B6F00}", "name": "L-081 Fantasmagoria ELINT pod", "weight": 300}
     M10_Smoke_Tank___blue = {"clsid": "{US_M10_SMOKE_TANK_BLUE}", "name": "M10 Smoke Tank - blue", "weight": 266.7}
     M10_Smoke_Tank___green = {"clsid": "{US_M10_SMOKE_TANK_GREEN}", "name": "M10 Smoke Tank - green", "weight": 266.7}
@@ -815,6 +821,7 @@ class Weapons:
     S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = {"clsid": "{3858707D-F5D5-4bbb-BDD8-ABB0530EBC7C}", "name": "S-24B - 240mm UnGd Rkt, 235kg, HE/Frag, (Low Smk)", "weight": 295}
     S_25L___320Kg__340mm_Laser_Guided_Rkt = {"clsid": "{0180F983-C14A-11d8-9897-000476191836}", "name": "S-25L - 320Kg, 340mm Laser Guided Rkt", "weight": 500}
     S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = {"clsid": "{A0648264-4BC0-4EE8-A543-D119F6BA4257}", "name": "S-25-OFM - 340mm UnGd Rkt, 480kg Penetrator", "weight": 495}
+    S_25_O___420mm_UnGd_Rkt__380kg_Frag = {"clsid": "{S_25_O}", "name": "S-25-O - 420mm UnGd Rkt, 380kg Frag", "weight": 445}
     Tangazh_ELINT_pod = {"clsid": "{0519A262-0AB6-11d6-9193-00A0249B6F00}", "name": "Tangazh ELINT pod", "weight": 200}
     TER_9A_with_2_x_CBU_87___202_x_CEM_Cluster_Bomb = {"clsid": "{TER_9A_2L*CBU-87}", "name": "TER-9A with 2 x CBU-87 - 202 x CEM Cluster Bomb", "weight": 913}
     TER_9A_with_2_x_CBU_87___202_x_CEM_Cluster_Bomb_ = {"clsid": "{TER_9A_2R*CBU-87}", "name": "TER-9A with 2 x CBU-87 - 202 x CEM Cluster Bomb", "weight": 913}
@@ -991,6 +998,7 @@ class Weapons:
     _2_x_S_25 = {"clsid": "{S25_DUAL_L}", "name": "2 x S-25", "weight": 902}
     _2_x_S_25_ = {"clsid": "{S25_DUAL_R}", "name": "2 x S-25", "weight": 902}
     _2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator = {"clsid": "{TWIN_S25}", "name": "2 x S-25-OFM - 340mm UnGdrocket, 480kg Penetrator", "weight": 902}
+    _2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag = {"clsid": "{TWIN_S25_O}", "name": "2 x S-25-O - 420mm UnGd Rkt, 380kg Frag", "weight": 922}
     _33_x_FAB_250___250kg_GP_Bombs_LD = {"clsid": "{BDAD04AA-4D4A-4E51-B958-180A89F963CF}", "name": "33 x FAB-250 - 250kg GP Bombs LD", "weight": 8250}
     _33_x_FAB_500_M_62___500kg_GP_Bombs_LD = {"clsid": "{AD5E5863-08FC-4283-B92C-162E2B2BD3FF}", "name": "33 x FAB-500 M-62 - 500kg GP Bombs LD", "weight": 16500}
     _3M45 = {"clsid": "3M45", "name": "SS-N-19 SHIPWRECK", "weight": None}
@@ -1288,6 +1296,8 @@ weapon_ids = {
     "{CBU-87}": Weapons.CBU_87___202_x_CEM_Cluster_Bomb,
     "{5335D97A-35A5-4643-9D9B-026C75961E52}": Weapons.CBU_97___10_x_SFW_Cluster_Bomb,
     "{CBU_99}": Weapons.CBU_99___490lbs__247_x_HEAT_Bomblets,
+    "{CM_802AKG}": Weapons.CM_802AKG,
+    "{C_802AK}": Weapons.C_802AK,
     "{C-101-DEFA553}": Weapons.DEFA_553___30mm_Revolver_Cannon,
     "DIS_AKD-10": Weapons.DIS_AKD_10,
     "DIS_AKG_DLPOD": Weapons.DIS_AKG_DLPOD,
@@ -1366,6 +1376,7 @@ weapon_ids = {
     "{40AA4ABE-D6EB-4CD6-AEFE-A1A0477B24AB}": Weapons.FAB_1500_M_54___1500kg_GP_Bomb_LD,
     "{FAB-250-M54-TU}": Weapons.FAB_250_M54_TU___235_kg__bomb__parachute,
     "{FAB-250-M54}": Weapons.FAB_250_M54___235_kg__bomb__parachute,
+    "{FAB_250_M62}": Weapons.FAB_250_M62___250kg_GP_Bomb_LD,
     "{3C612111-C7AD-476E-8A8E-2485812F4E5C}": Weapons.FAB_250___250kg_GP_Bomb_LD,
     "FAB_50": Weapons.FAB_50,
     "{FAB-500-M54-TU}": Weapons.FAB_500_M54_TU___480_kg__bomb__parachute,
@@ -1628,6 +1639,9 @@ weapon_ids = {
     "{LAU_SNEB68_WP}": Weapons.LAU_SNEB68G___8xSNEB68_WP,
     "{CAAC1CFD-6745-416B-AFA4-CB57414856D0}": Weapons.Lantirn_F_16,
     "{D1744B93-2A8A-4C4D-B004-7A09CD8C8F3F}": Weapons.Lantirn_Target_Pod,
+    "{LR25_ARF8M3_API}": Weapons.LR_25___25_x_ARF_8_M3_API,
+    "{LR25_ARF8M3_HEI}": Weapons.LR_25___25_x_ARF_8_M3_HEI,
+    "{LR25_ARF8M3_TPSM}": Weapons.LR_25___25_x_ARF_8_M3_TP_SM,
     "{0519A264-0AB6-11d6-9193-00A0249B6F00}": Weapons.L_081_Fantasmagoria_ELINT_pod,
     "{US_M10_SMOKE_TANK_BLUE}": Weapons.M10_Smoke_Tank___blue,
     "{US_M10_SMOKE_TANK_GREEN}": Weapons.M10_Smoke_Tank___green,
@@ -1879,6 +1893,7 @@ weapon_ids = {
     "{3858707D-F5D5-4bbb-BDD8-ABB0530EBC7C}": Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__,
     "{0180F983-C14A-11d8-9897-000476191836}": Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt,
     "{A0648264-4BC0-4EE8-A543-D119F6BA4257}": Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator,
+    "{S_25_O}": Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag,
     "{0519A262-0AB6-11d6-9193-00A0249B6F00}": Weapons.Tangazh_ELINT_pod,
     "{TER_9A_2L*CBU-87}": Weapons.TER_9A_with_2_x_CBU_87___202_x_CEM_Cluster_Bomb,
     "{TER_9A_2R*CBU-87}": Weapons.TER_9A_with_2_x_CBU_87___202_x_CEM_Cluster_Bomb_,
@@ -2055,6 +2070,7 @@ weapon_ids = {
     "{S25_DUAL_L}": Weapons._2_x_S_25,
     "{S25_DUAL_R}": Weapons._2_x_S_25_,
     "{TWIN_S25}": Weapons._2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator,
+    "{TWIN_S25_O}": Weapons._2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag,
     "{BDAD04AA-4D4A-4E51-B958-180A89F963CF}": Weapons._33_x_FAB_250___250kg_GP_Bombs_LD,
     "{AD5E5863-08FC-4283-B92C-162E2B2BD3FF}": Weapons._33_x_FAB_500_M_62___500kg_GP_Bombs_LD,
     "3M45": Weapons._3M45,

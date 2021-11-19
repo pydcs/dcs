@@ -27,6 +27,8 @@ class Russia(Country):
 
         class Infantry:
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
             Paratrooper_AKS_74 = vehicles.Infantry.Paratrooper_AKS_74
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
 
@@ -837,7 +839,6 @@ class USA(Country):
             Stinger_comm = vehicles.AirDefence.Stinger_comm
             Vulcan = vehicles.AirDefence.Vulcan
             Bofors40 = vehicles.AirDefence.Bofors40
-            Flak36 = vehicles.AirDefence.Flak36
             Roland_ADS = vehicles.AirDefence.Roland_ADS
             Roland_Radar = vehicles.AirDefence.Roland_Radar
             Rapier_fsa_launcher = vehicles.AirDefence.Rapier_fsa_launcher
@@ -888,12 +889,11 @@ class USA(Country):
             M1134_Stryker_ATGM = vehicles.Armor.M1134_Stryker_ATGM
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
             TPZ = vehicles.Armor.TPZ
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             M10_GMC = vehicles.Armor.M10_GMC
             M8_Greyhound = vehicles.Armor.M8_Greyhound
+            M4_Sherman = vehicles.Armor.M4_Sherman
             Cromwell_IV = vehicles.Armor.Cromwell_IV
+            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Centaur_IV = vehicles.Armor.Centaur_IV
             Churchill_VII = vehicles.Armor.Churchill_VII
             Daimler_AC = vehicles.Armor.Daimler_AC
@@ -1293,8 +1293,6 @@ class Turkey(Country):
             BTR_80 = vehicles.Armor.BTR_80
             Leopard1A3 = vehicles.Armor.Leopard1A3
             Leopard_2 = vehicles.Armor.Leopard_2
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Leopard_2A4_trs = vehicles.Armor.Leopard_2A4_trs
 
         class Locomotive:
@@ -1623,15 +1621,14 @@ class UK(Country):
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
             Cromwell_IV = vehicles.Armor.Cromwell_IV
             Centaur_IV = vehicles.Armor.Centaur_IV
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             M10_GMC = vehicles.Armor.M10_GMC
             M1043_HMMWV_Armament = vehicles.Armor.M1043_HMMWV_Armament
             M1045_HMMWV_TOW = vehicles.Armor.M1045_HMMWV_TOW
             Tetrarch = vehicles.Armor.Tetrarch
             Daimler_AC = vehicles.Armor.Daimler_AC
             Chieftain_mk3 = vehicles.Armor.Chieftain_mk3
+            M4_Sherman = vehicles.Armor.M4_Sherman
+            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Churchill_VII = vehicles.Armor.Churchill_VII
             M8_Greyhound = vehicles.Armor.M8_Greyhound
 
@@ -1950,10 +1947,9 @@ class France(Country):
         class Armor:
             Leclerc = vehicles.Armor.Leclerc
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             M10_GMC = vehicles.Armor.M10_GMC
             VAB_Mephisto = vehicles.Armor.VAB_Mephisto
+            M4_Sherman = vehicles.Armor.M4_Sherman
             Cromwell_IV = vehicles.Armor.Cromwell_IV
             M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Centaur_IV = vehicles.Armor.Centaur_IV
@@ -2317,7 +2313,6 @@ class Germany(Country):
             GAZ_66 = vehicles.Unarmed.GAZ_66
             Horch_901_typ_40_kfz_21 = vehicles.Unarmed.Horch_901_typ_40_kfz_21
             KAMAZ_Truck = vehicles.Unarmed.KAMAZ_Truck
-            Sd_Kfz_2 = vehicles.Unarmed.Sd_Kfz_2
             UAZ_469 = vehicles.Unarmed.UAZ_469
             Ural_ATsP_6 = vehicles.Unarmed.Ural_ATsP_6
             Ural_375 = vehicles.Unarmed.Ural_375
@@ -2326,6 +2321,7 @@ class Germany(Country):
             ZIL_131_KUNG = vehicles.Unarmed.ZIL_131_KUNG
             ATZ_5 = vehicles.Unarmed.ATZ_5
             Kubelwagen_82 = vehicles.Unarmed.Kubelwagen_82
+            Sd_Kfz_2 = vehicles.Unarmed.Sd_Kfz_2
             Sd_Kfz_7 = vehicles.Unarmed.Sd_Kfz_7
 
         class Armor:
@@ -2657,6 +2653,8 @@ class USAFAggressors(Country):
         class Infantry:
             Soldier_mauser98 = vehicles.Infantry.Soldier_mauser98
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
             Paratrooper_AKS_74 = vehicles.Infantry.Paratrooper_AKS_74
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
             Infantry_AK_Ins = vehicles.Infantry.Infantry_AK_Ins
@@ -2846,10 +2844,10 @@ class USAFAggressors(Country):
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
             Cromwell_IV = vehicles.Armor.Cromwell_IV
             Centaur_IV = vehicles.Armor.Centaur_IV
-            M4_Sherman = vehicles.Armor.M4_Sherman
             M10_GMC = vehicles.Armor.M10_GMC
             Tetrarch = vehicles.Armor.Tetrarch
             PT_76 = vehicles.Armor.PT_76
+            M4_Sherman = vehicles.Armor.M4_Sherman
             M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Churchill_VII = vehicles.Armor.Churchill_VII
             Daimler_AC = vehicles.Armor.Daimler_AC
@@ -3379,12 +3377,12 @@ class Canada(Country):
             Leopard_2 = vehicles.Armor.Leopard_2
             M1043_HMMWV_Armament = vehicles.Armor.M1043_HMMWV_Armament
             M1045_HMMWV_TOW = vehicles.Armor.M1045_HMMWV_TOW
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Daimler_AC = vehicles.Armor.Daimler_AC
             Leopard_2A4 = vehicles.Armor.Leopard_2A4
+            M4_Sherman = vehicles.Armor.M4_Sherman
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
             Cromwell_IV = vehicles.Armor.Cromwell_IV
+            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Centaur_IV = vehicles.Armor.Centaur_IV
             Churchill_VII = vehicles.Armor.Churchill_VII
             Tetrarch = vehicles.Armor.Tetrarch
@@ -3668,7 +3666,6 @@ class Spain(Country):
             Roland_ADS = vehicles.AirDefence.Roland_ADS
             Roland_Radar = vehicles.AirDefence.Roland_Radar
             Bofors40 = vehicles.AirDefence.Bofors40
-            Flak18 = vehicles.AirDefence.Flak18
             Patriot_AMG = vehicles.AirDefence.Patriot_AMG
             Patriot_ECS = vehicles.AirDefence.Patriot_ECS
             Patriot_ln = vehicles.AirDefence.Patriot_ln
@@ -3704,7 +3701,6 @@ class Spain(Country):
             AAV7 = vehicles.Armor.AAV7
             M1043_HMMWV_Armament = vehicles.Armor.M1043_HMMWV_Armament
             M1045_HMMWV_TOW = vehicles.Armor.M1045_HMMWV_TOW
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Leopard_2A4 = vehicles.Armor.Leopard_2A4
 
         class Locomotive:
@@ -4035,13 +4031,13 @@ class TheNetherlands(Country):
             TPZ = vehicles.Armor.TPZ
             M_113 = vehicles.Armor.M_113
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             M1043_HMMWV_Armament = vehicles.Armor.M1043_HMMWV_Armament
             M1045_HMMWV_TOW = vehicles.Armor.M1045_HMMWV_TOW
             Leopard_2A5 = vehicles.Armor.Leopard_2A5
             Leopard_2A4 = vehicles.Armor.Leopard_2A4
+            M4_Sherman = vehicles.Armor.M4_Sherman
             Cromwell_IV = vehicles.Armor.Cromwell_IV
+            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Centaur_IV = vehicles.Armor.Centaur_IV
             Churchill_VII = vehicles.Armor.Churchill_VII
             Daimler_AC = vehicles.Armor.Daimler_AC
@@ -4366,10 +4362,10 @@ class Belgium(Country):
             M_113 = vehicles.Armor.M_113
             Leopard1A3 = vehicles.Armor.Leopard1A3
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Daimler_AC = vehicles.Armor.Daimler_AC
+            M4_Sherman = vehicles.Armor.M4_Sherman
             Cromwell_IV = vehicles.Armor.Cromwell_IV
+            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Centaur_IV = vehicles.Armor.Centaur_IV
             Churchill_VII = vehicles.Armor.Churchill_VII
             Tetrarch = vehicles.Armor.Tetrarch
@@ -4979,7 +4975,6 @@ class Denmark(Country):
             Leopard_2 = vehicles.Armor.Leopard_2
             M1043_HMMWV_Armament = vehicles.Armor.M1043_HMMWV_Armament
             M1045_HMMWV_TOW = vehicles.Armor.M1045_HMMWV_TOW
-            M4_Sherman = vehicles.Armor.M4_Sherman
             Leopard_2A5 = vehicles.Armor.Leopard_2A5
 
         class Locomotive:
@@ -5294,8 +5289,6 @@ class Israel(Country):
             BRDM_2 = vehicles.Armor.BRDM_2
             Cromwell_IV = vehicles.Armor.Cromwell_IV
             Centaur_IV = vehicles.Armor.Centaur_IV
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             M10_GMC = vehicles.Armor.M10_GMC
             Daimler_AC = vehicles.Armor.Daimler_AC
 
@@ -6682,8 +6675,6 @@ class Italy(Country):
             M_113 = vehicles.Armor.M_113
             AAV7 = vehicles.Armor.AAV7
             Leopard1A3 = vehicles.Armor.Leopard1A3
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             M1043_HMMWV_Armament = vehicles.Armor.M1043_HMMWV_Armament
 
         class Locomotive:
@@ -7835,6 +7826,8 @@ class Belarus(Country):
 
         class Infantry:
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
             Paratrooper_AKS_74 = vehicles.Infantry.Paratrooper_AKS_74
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
 
@@ -8130,7 +8123,6 @@ class Bulgaria(Country):
 
         class AirDefence:
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
-            Flak30 = vehicles.AirDefence.Flak30
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
             _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
@@ -8154,6 +8146,7 @@ class Bulgaria(Country):
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
             Flak18 = vehicles.AirDefence.Flak18
+            Flak30 = vehicles.AirDefence.Flak30
             Flak36 = vehicles.AirDefence.Flak36
             Flak37 = vehicles.AirDefence.Flak37
             Flak38 = vehicles.AirDefence.Flak38
@@ -8201,8 +8194,8 @@ class Bulgaria(Country):
             BRDM_2 = vehicles.Armor.BRDM_2
             BMP_1 = vehicles.Armor.BMP_1
             T_55 = vehicles.Armor.T_55
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             PT_76 = vehicles.Armor.PT_76
+            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
             Tiger_I = vehicles.Armor.Tiger_I
             Tiger_II_H = vehicles.Armor.Tiger_II_H
@@ -8821,7 +8814,6 @@ class China(Country):
             S_300PS_54K6_cp = vehicles.AirDefence.S_300PS_54K6_cp
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             Bofors40 = vehicles.AirDefence.Bofors40
-            Flak18 = vehicles.AirDefence.Flak18
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
@@ -8851,7 +8843,6 @@ class China(Country):
         class Armor:
             BMP_1 = vehicles.Armor.BMP_1
             T_55 = vehicles.Armor.T_55
-            M4_Sherman = vehicles.Armor.M4_Sherman
             ZBD04A = vehicles.Armor.ZBD04A
             ZTZ96B = vehicles.Armor.ZTZ96B
 
@@ -9077,7 +9068,6 @@ class Croatia(Country):
             M4_Tractor = vehicles.Unarmed.M4_Tractor
 
         class Armor:
-            Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
             BRDM_2 = vehicles.Armor.BRDM_2
             T_55 = vehicles.Armor.T_55
 
@@ -9404,8 +9394,6 @@ class Egypt(Country):
             M_60 = vehicles.Armor.M_60
             T_55 = vehicles.Armor.T_55
             T_80UD = vehicles.Armor.T_80UD
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             M10_GMC = vehicles.Armor.M10_GMC
             PT_76 = vehicles.Armor.PT_76
 
@@ -9689,8 +9677,6 @@ class Finland(Country):
 
         class AirDefence:
             Bofors40 = vehicles.AirDefence.Bofors40
-            Flak37 = vehicles.AirDefence.Flak37
-            Flak30 = vehicles.AirDefence.Flak30
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
@@ -9710,7 +9696,9 @@ class Finland(Country):
             NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
             NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             Flak18 = vehicles.AirDefence.Flak18
+            Flak30 = vehicles.AirDefence.Flak30
             Flak36 = vehicles.AirDefence.Flak36
+            Flak37 = vehicles.AirDefence.Flak37
             Flak38 = vehicles.AirDefence.Flak38
             KDO_Mod40 = vehicles.AirDefence.KDO_Mod40
             Flakscheinwerfer_37 = vehicles.AirDefence.Flakscheinwerfer_37
@@ -10048,7 +10036,6 @@ class Greece(Country):
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_54K6_cp = vehicles.AirDefence.S_300PS_54K6_cp
             Bofors40 = vehicles.AirDefence.Bofors40
-            Flak18 = vehicles.AirDefence.Flak18
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
 
@@ -10424,12 +10411,12 @@ class Hungary(Country):
             M1043_HMMWV_Armament = vehicles.Armor.M1043_HMMWV_Armament
             M1045_HMMWV_TOW = vehicles.Armor.M1045_HMMWV_TOW
             MTLB = vehicles.Armor.MTLB
-            Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
             BRDM_2 = vehicles.Armor.BRDM_2
             BMP_1 = vehicles.Armor.BMP_1
             T_55 = vehicles.Armor.T_55
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Leopard_2A4 = vehicles.Armor.Leopard_2A4
+            Pz_IV_H = vehicles.Armor.Pz_IV_H
+            Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
             Tiger_I = vehicles.Armor.Tiger_I
             Tiger_II_H = vehicles.Armor.Tiger_II_H
             Pz_V_Panther_G = vehicles.Armor.Pz_V_Panther_G
@@ -10754,7 +10741,6 @@ class India(Country):
             BMP_2 = vehicles.Armor.BMP_2
             T_55 = vehicles.Armor.T_55
             T_90 = vehicles.Armor.T_90
-            M4_Sherman = vehicles.Armor.M4_Sherman
             Daimler_AC = vehicles.Armor.Daimler_AC
             PT_76 = vehicles.Armor.PT_76
 
@@ -11098,8 +11084,6 @@ class Iran(Country):
             M_113 = vehicles.Armor.M_113
             M_60 = vehicles.Armor.M_60
             BMD_1 = vehicles.Armor.BMD_1
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Chieftain_mk3 = vehicles.Armor.Chieftain_mk3
 
         class MissilesSS:
@@ -11448,7 +11432,6 @@ class Iraq(Country):
             BMP_3 = vehicles.Armor.BMP_3
             T_55 = vehicles.Armor.T_55
             T_90 = vehicles.Armor.T_90
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             PT_76 = vehicles.Armor.PT_76
             Chieftain_mk3 = vehicles.Armor.Chieftain_mk3
 
@@ -11773,7 +11756,6 @@ class Japan(Country):
             Horch_901_typ_40_kfz_21 = vehicles.Unarmed.Horch_901_typ_40_kfz_21
 
         class Armor:
-            M4_Sherman = vehicles.Armor.M4_Sherman
             Pz_IV_H = vehicles.Armor.Pz_IV_H
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
             Tiger_I = vehicles.Armor.Tiger_I
@@ -12062,6 +12044,8 @@ class Kazakhstan(Country):
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
             Paratrooper_AKS_74 = vehicles.Infantry.Paratrooper_AKS_74
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
 
         class AirDefence:
             _1L13_EWR = vehicles.AirDefence._1L13_EWR
@@ -12763,7 +12747,6 @@ class Pakistan(Country):
             M_113 = vehicles.Armor.M_113
             BRDM_2 = vehicles.Armor.BRDM_2
             T_55 = vehicles.Armor.T_55
-            M4_Sherman = vehicles.Armor.M4_Sherman
             PT_76 = vehicles.Armor.PT_76
 
         class MissilesSS:
@@ -13096,12 +13079,12 @@ class Poland(Country):
             BMP_2 = vehicles.Armor.BMP_2
             Leopard_2 = vehicles.Armor.Leopard_2
             T_55 = vehicles.Armor.T_55
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Daimler_AC = vehicles.Armor.Daimler_AC
             PT_76 = vehicles.Armor.PT_76
             Leopard_2A5 = vehicles.Armor.Leopard_2A5
             Leopard_2A4 = vehicles.Armor.Leopard_2A4
+            M4_Sherman = vehicles.Armor.M4_Sherman
+            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Churchill_VII = vehicles.Armor.Churchill_VII
             Tetrarch = vehicles.Armor.Tetrarch
             M10_GMC = vehicles.Armor.M10_GMC
@@ -13447,12 +13430,12 @@ class Romania(Country):
         class Armor:
             BTR_80 = vehicles.Armor.BTR_80
             M1043_HMMWV_Armament = vehicles.Armor.M1043_HMMWV_Armament
-            Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
             BRDM_2 = vehicles.Armor.BRDM_2
             BMP_1 = vehicles.Armor.BMP_1
             T_55 = vehicles.Armor.T_55
             Chieftain_mk3 = vehicles.Armor.Chieftain_mk3
             Pz_IV_H = vehicles.Armor.Pz_IV_H
+            Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
             Tiger_I = vehicles.Armor.Tiger_I
             Tiger_II_H = vehicles.Armor.Tiger_II_H
             Pz_V_Panther_G = vehicles.Armor.Pz_V_Panther_G
@@ -14053,6 +14036,8 @@ class Serbia(Country):
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
             Paratrooper_AKS_74 = vehicles.Infantry.Paratrooper_AKS_74
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
 
         class AirDefence:
             _1L13_EWR = vehicles.AirDefence._1L13_EWR
@@ -14714,7 +14699,6 @@ class SouthKorea(Country):
             M_113 = vehicles.Armor.M_113
             BMP_3 = vehicles.Armor.BMP_3
             T_80UD = vehicles.Armor.T_80UD
-            M4_Sherman = vehicles.Armor.M4_Sherman
 
         class Locomotive:
             Electric_locomotive = vehicles.Locomotive.Electric_locomotive
@@ -15312,8 +15296,6 @@ class Syria(Country):
             BMP_2 = vehicles.Armor.BMP_2
             T_55 = vehicles.Armor.T_55
             T_90 = vehicles.Armor.T_90
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             T_72B3 = vehicles.Armor.T_72B3
             BTR_82A = vehicles.Armor.BTR_82A
             PT_76 = vehicles.Armor.PT_76
@@ -17349,7 +17331,6 @@ class Philippines(Country):
             M1045_HMMWV_TOW = vehicles.Armor.M1045_HMMWV_TOW
             M_113 = vehicles.Armor.M_113
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
-            M4_Sherman = vehicles.Armor.M4_Sherman
 
         class Locomotive:
             Electric_locomotive = vehicles.Locomotive.Electric_locomotive
@@ -17918,7 +17899,6 @@ class Mexico(Country):
             M1043_HMMWV_Armament = vehicles.Armor.M1043_HMMWV_Armament
             M1045_HMMWV_TOW = vehicles.Armor.M1045_HMMWV_TOW
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
-            M4_Sherman = vehicles.Armor.M4_Sherman
 
         class Locomotive:
             Electric_locomotive = vehicles.Locomotive.Electric_locomotive
@@ -19090,7 +19070,6 @@ class Indonesia(Country):
             BMP_2 = vehicles.Armor.BMP_2
             BMP_3 = vehicles.Armor.BMP_3
             Marder = vehicles.Armor.Marder
-            M4_Sherman = vehicles.Armor.M4_Sherman
             PT_76 = vehicles.Armor.PT_76
             Leopard_2A4 = vehicles.Armor.Leopard_2A4
             Cobra = vehicles.Armor.Cobra
@@ -19665,7 +19644,6 @@ class Ethiopia(Country):
             BMP_1 = vehicles.Armor.BMP_1
             T_55 = vehicles.Armor.T_55
             T_72B = vehicles.Armor.T_72B
-            M4_Sherman = vehicles.Armor.M4_Sherman
 
         class Locomotive:
             Electric_locomotive = vehicles.Locomotive.Electric_locomotive
@@ -19952,7 +19930,6 @@ class Chile(Country):
             Leopard_2 = vehicles.Armor.Leopard_2
             Marder = vehicles.Armor.Marder
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
-            M4_Sherman = vehicles.Armor.M4_Sherman
             Leopard_2A5 = vehicles.Armor.Leopard_2A5
             Leopard_2A4 = vehicles.Armor.Leopard_2A4
 
@@ -20257,7 +20234,6 @@ class Brazil(Country):
             M_60 = vehicles.Armor.M_60
             Leopard1A3 = vehicles.Armor.Leopard1A3
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
-            M4_Sherman = vehicles.Armor.M4_Sherman
 
         class Locomotive:
             ES44AH = vehicles.Locomotive.ES44AH
@@ -21132,8 +21108,8 @@ class Yugoslavia(Country):
         class Armor:
             BRDM_2 = vehicles.Armor.BRDM_2
             T_55 = vehicles.Armor.T_55
-            M4_Sherman = vehicles.Armor.M4_Sherman
             PT_76 = vehicles.Armor.PT_76
+            M4_Sherman = vehicles.Armor.M4_Sherman
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
             Cromwell_IV = vehicles.Armor.Cromwell_IV
             M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
@@ -21329,6 +21305,8 @@ class USSR(Country):
 
         class Infantry:
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
             Paratrooper_AKS_74 = vehicles.Infantry.Paratrooper_AKS_74
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
 
@@ -21364,7 +21342,6 @@ class USSR(Country):
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
             Bofors40 = vehicles.AirDefence.Bofors40
-            Flak36 = vehicles.AirDefence.Flak36
             S_200_Launcher = vehicles.AirDefence.S_200_Launcher
             RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
@@ -21433,11 +21410,10 @@ class USSR(Country):
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
             Cromwell_IV = vehicles.Armor.Cromwell_IV
             Centaur_IV = vehicles.Armor.Centaur_IV
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             M10_GMC = vehicles.Armor.M10_GMC
             Tetrarch = vehicles.Armor.Tetrarch
             PT_76 = vehicles.Armor.PT_76
+            M4_Sherman = vehicles.Armor.M4_Sherman
             M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Churchill_VII = vehicles.Armor.Churchill_VII
             Daimler_AC = vehicles.Armor.Daimler_AC
@@ -21988,6 +21964,8 @@ class Algeria(Country):
 
         class Infantry:
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
             Paratrooper_AKS_74 = vehicles.Infantry.Paratrooper_AKS_74
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
 
@@ -23578,10 +23556,6 @@ class SouthAfrica(Country):
             M_818 = vehicles.Unarmed.M_818
             Land_Rover_109_S3 = vehicles.Unarmed.Land_Rover_109_S3
 
-        class Armor:
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
-
         class Locomotive:
             Electric_locomotive = vehicles.Locomotive.Electric_locomotive
             Locomotive = vehicles.Locomotive.Locomotive
@@ -23842,6 +23816,8 @@ class Cuba(Country):
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
             Paratrooper_AKS_74 = vehicles.Infantry.Paratrooper_AKS_74
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
 
         class AirDefence:
             Strela_10M3 = vehicles.AirDefence.Strela_10M3
@@ -23896,7 +23872,6 @@ class Cuba(Country):
             MTLB = vehicles.Armor.MTLB
             T_55 = vehicles.Armor.T_55
             BMD_1 = vehicles.Armor.BMD_1
-            M4_Sherman = vehicles.Armor.M4_Sherman
             PT_76 = vehicles.Armor.PT_76
 
         class MissilesSS:
@@ -24466,6 +24441,8 @@ class GDR(Country):
 
         class Infantry:
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
 
         class AirDefence:
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
@@ -24787,6 +24764,8 @@ class Lebanon(Country):
 
         class Infantry:
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
             Paratrooper_AKS_74 = vehicles.Infantry.Paratrooper_AKS_74
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
             Soldier_M249 = vehicles.Infantry.Soldier_M249
@@ -24826,8 +24805,6 @@ class Lebanon(Country):
             M_60 = vehicles.Armor.M_60
             M1043_HMMWV_Armament = vehicles.Armor.M1043_HMMWV_Armament
             M1045_HMMWV_TOW = vehicles.Armor.M1045_HMMWV_TOW
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             T_55 = vehicles.Armor.T_55
             VAB_Mephisto = vehicles.Armor.VAB_Mephisto
 
@@ -25103,6 +25080,8 @@ class CombinedJointTaskForcesBlue(Country):
         class Infantry:
             Soldier_mauser98 = vehicles.Infantry.Soldier_mauser98
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
             Paratrooper_AKS_74 = vehicles.Infantry.Paratrooper_AKS_74
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
             Infantry_AK_Ins = vehicles.Infantry.Infantry_AK_Ins
@@ -25292,10 +25271,10 @@ class CombinedJointTaskForcesBlue(Country):
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
             Cromwell_IV = vehicles.Armor.Cromwell_IV
             Centaur_IV = vehicles.Armor.Centaur_IV
-            M4_Sherman = vehicles.Armor.M4_Sherman
             M10_GMC = vehicles.Armor.M10_GMC
             Tetrarch = vehicles.Armor.Tetrarch
             PT_76 = vehicles.Armor.PT_76
+            M4_Sherman = vehicles.Armor.M4_Sherman
             M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Churchill_VII = vehicles.Armor.Churchill_VII
             Daimler_AC = vehicles.Armor.Daimler_AC
@@ -25810,6 +25789,8 @@ class CombinedJointTaskForcesRed(Country):
         class Infantry:
             Soldier_mauser98 = vehicles.Infantry.Soldier_mauser98
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
             Paratrooper_AKS_74 = vehicles.Infantry.Paratrooper_AKS_74
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
             Infantry_AK_Ins = vehicles.Infantry.Infantry_AK_Ins
@@ -25999,10 +25980,10 @@ class CombinedJointTaskForcesRed(Country):
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
             Cromwell_IV = vehicles.Armor.Cromwell_IV
             Centaur_IV = vehicles.Armor.Centaur_IV
-            M4_Sherman = vehicles.Armor.M4_Sherman
             M10_GMC = vehicles.Armor.M10_GMC
             Tetrarch = vehicles.Armor.Tetrarch
             PT_76 = vehicles.Armor.PT_76
+            M4_Sherman = vehicles.Armor.M4_Sherman
             M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Churchill_VII = vehicles.Armor.Churchill_VII
             Daimler_AC = vehicles.Armor.Daimler_AC
@@ -26517,6 +26498,8 @@ class UnitedNationsPeacekeepers(Country):
         class Infantry:
             Soldier_mauser98 = vehicles.Infantry.Soldier_mauser98
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
             Paratrooper_AKS_74 = vehicles.Infantry.Paratrooper_AKS_74
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
             Infantry_AK_Ins = vehicles.Infantry.Infantry_AK_Ins
@@ -26706,10 +26689,10 @@ class UnitedNationsPeacekeepers(Country):
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
             Cromwell_IV = vehicles.Armor.Cromwell_IV
             Centaur_IV = vehicles.Armor.Centaur_IV
-            M4_Sherman = vehicles.Armor.M4_Sherman
             M10_GMC = vehicles.Armor.M10_GMC
             Tetrarch = vehicles.Armor.Tetrarch
             PT_76 = vehicles.Armor.PT_76
+            M4_Sherman = vehicles.Armor.M4_Sherman
             M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Churchill_VII = vehicles.Armor.Churchill_VII
             Daimler_AC = vehicles.Armor.Daimler_AC
@@ -27224,8 +27207,6 @@ class Argentina(Country):
             M1045_HMMWV_TOW = vehicles.Armor.M1045_HMMWV_TOW
             M_113 = vehicles.Armor.M_113
             M2A1_halftrack = vehicles.Armor.M2A1_halftrack
-            M4_Sherman = vehicles.Armor.M4_Sherman
-            M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
 
         class Locomotive:
             Electric_locomotive = vehicles.Locomotive.Electric_locomotive
@@ -28340,6 +28321,8 @@ class Ghana(Country):
 
         class Infantry:
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
 
         class AirDefence:
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
@@ -28604,6 +28587,8 @@ class Nigeria(Country):
 
         class Infantry:
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
 
         class AirDefence:
             Roland_ADS = vehicles.AirDefence.Roland_ADS
@@ -28887,6 +28872,8 @@ class Peru(Country):
 
         class Infantry:
             Infantry_AK = vehicles.Infantry.Infantry_AK
+            Infantry_AK_ver2 = vehicles.Infantry.Infantry_AK_ver2
+            Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
 
         class AirDefence:
             Bofors40 = vehicles.AirDefence.Bofors40

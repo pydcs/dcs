@@ -189,7 +189,7 @@ class Infantry:
 
     class Infantry_AK(unittype.VehicleType):
         id = "Infantry AK"
-        name = "Infantry AK-74 Rus"
+        name = "Infantry AK-74 Rus ver1"
         detection_range = 0
         threat_range = 500
         air_weapon_dist = 500
@@ -218,6 +218,20 @@ class Infantry:
     class Soldier_RPG(unittype.VehicleType):
         id = "Soldier RPG"
         name = "Infantry RPG"
+        detection_range = 0
+        threat_range = 500
+        air_weapon_dist = 500
+
+    class Infantry_AK_ver2(unittype.VehicleType):
+        id = "Infantry AK ver2"
+        name = "Infantry AK-74 Rus ver2"
+        detection_range = 0
+        threat_range = 500
+        air_weapon_dist = 500
+
+    class Infantry_AK_ver3(unittype.VehicleType):
+        id = "Infantry AK ver3"
+        name = "Infantry AK-74 Rus ver3"
         detection_range = 0
         threat_range = 500
         air_weapon_dist = 500
@@ -763,8 +777,8 @@ class AirDefence:
         id = "flak18"
         name = "AAA 8,8cm Flak 18"
         detection_range = 0
-        threat_range = 11000
-        air_weapon_dist = 11000
+        threat_range = 5000
+        air_weapon_dist = 5000
 
     class HQ_7_LN_SP(unittype.VehicleType):
         id = "HQ-7_LN_SP"
@@ -833,8 +847,8 @@ class AirDefence:
         id = "flak41"
         name = "AAA 8,8cm Flak 41"
         detection_range = 0
-        threat_range = 12500
-        air_weapon_dist = 12500
+        threat_range = 5000
+        air_weapon_dist = 5000
 
     class FuMG_401(unittype.VehicleType):
         id = "FuMG-401"
@@ -1943,6 +1957,8 @@ vehicle_map = {
     "Soldier M4 GRG": Infantry.Soldier_M4_GRG,
     "Soldier RPG": Infantry.Soldier_RPG,
     "MLRS FDDM": Artillery.MLRS_FDDM,
+    "Infantry AK ver2": Infantry.Infantry_AK_ver2,
+    "Infantry AK ver3": Infantry.Infantry_AK_ver3,
     "Grad-URAL": Artillery.Grad_URAL,
     "Uragan_BM-27": Artillery.Uragan_BM_27,
     "Smerch": Artillery.Smerch,
