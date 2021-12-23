@@ -284,7 +284,9 @@ class Weapons:
     DIS_SMOKE_GENERATOR_Y = {"clsid": "DIS_SMOKE_GENERATOR_Y", "name": "Smoke Generator - yellow", "weight": 0}
     DIS_SPJ_POD = {"clsid": "DIS_SPJ_POD", "name": "KG-600", "weight": 270}
     DIS_TANK1100 = {"clsid": "DIS_TANK1100", "name": "1100L Tank", "weight": 1064}
+    DIS_TANK1100_EMPTY = {"clsid": "DIS_TANK1100_EMPTY", "name": "1100L Tank Empty", "weight": 75}
     DIS_TANK800 = {"clsid": "DIS_TANK800", "name": "800L Tank", "weight": 730}
+    DIS_TANK800_EMPTY = {"clsid": "DIS_TANK800_EMPTY", "name": "800L Tank Empty", "weight": 45}
     DIS_TYPE200 = {"clsid": "DIS_TYPE200", "name": "TYPE-200A", "weight": 200}
     DIS_TYPE200_DUAL_L = {"clsid": "DIS_TYPE200_DUAL_L", "name": "TYPE-200A Dual", "weight": 400}
     DIS_TYPE200_DUAL_R = {"clsid": "DIS_TYPE200_DUAL_R", "name": "TYPE-200A Dual", "weight": 400}
@@ -619,7 +621,7 @@ class Weapons:
     MAK79_Mk_83 = {"clsid": "{MAK79_MK83 1R}", "name": "MAK79 Mk-83", "weight": 457}
     MAK79_Mk_83_ = {"clsid": "{MAK79_MK83 1L}", "name": "MAK79 Mk-83", "weight": 457}
     Matra_Magic_II = {"clsid": "{MMagicII}", "name": "Matra Magic II", "weight": 85}
-    Matra_Super_530D = {"clsid": "{Matra_S530D}", "name": "Matra Super 530D", "weight": 275}
+    Matra_Super_530D = {"clsid": "{Matra_S530D}", "name": "Matra Super 530D", "weight": 350}
     Matra_Type_155_Rocket_Pod = {"clsid": "{Matra155RocketPod}", "name": "Matra Type 155 Rocket Pod", "weight": 190}
     MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD = {"clsid": "{5A1AC2B4-CA4B-4D09-A1AF-AC52FBC4B60B}", "name": "MBD2-67U with 4 x FAB-100 - 100kg GP Bombs LD", "weight": 465}
     MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = {"clsid": "{29A828E2-C6BB-11d8-9897-000476191836}", "name": "MBD2-67U with 4 x FAB-100 - 100kg GP Bombs LD", "weight": 465}
@@ -719,9 +721,9 @@ class Weapons:
     Rb_04E_Anti_ship_Missile = {"clsid": "{Rb04}", "name": "Rb-04E Anti-ship Missile", "weight": 661}
     Rb_05A_MCLOS_ASM_AShM_AAM = {"clsid": "{Robot05}", "name": "Rb-05A MCLOS ASM/AShM/AAM", "weight": 341}
     Rb_15F_Programmable_Anti_ship_Missile = {"clsid": "{Rb15}", "name": "Rb-15F Programmable Anti-ship Missile", "weight": 610}
-    Rb_24J__AIM_9P__Sidewinder_IR_AAM = {"clsid": "{Robot24J}", "name": "Rb-24J (AIM-9P) Sidewinder IR AAM", "weight": 90}
-    Rb_24__AIM_9B__Sidewinder_IR_AAM = {"clsid": "{Robot24}", "name": "Rb-24 (AIM-9B) Sidewinder IR AAM", "weight": 90}
-    Rb_74__AIM_9L__Sidewinder_IR_AAM = {"clsid": "{Robot74}", "name": "Rb-74 (AIM-9L) Sidewinder IR AAM", "weight": 90}
+    Rb_24J__AIM_9P__Sidewinder_IR_AAM = {"clsid": "{Robot24J}", "name": "Rb-24J (AIM-9P) Sidewinder IR AAM", "weight": 140}
+    Rb_24__AIM_9B__Sidewinder_IR_AAM = {"clsid": "{Robot24}", "name": "Rb-24 (AIM-9B) Sidewinder IR AAM", "weight": 132}
+    Rb_74__AIM_9L__Sidewinder_IR_AAM = {"clsid": "{Robot74}", "name": "Rb-74 (AIM-9L) Sidewinder IR AAM", "weight": 144}
     Rb_75A__AGM_65A_Maverick___TV_ASM_ = {"clsid": "{RB75}", "name": "Rb-75A (AGM-65A Maverick) (TV ASM)", "weight": 269.5}
     Rb_75B__AGM_65B_Maverick___TV_ASM_ = {"clsid": "{RB75B}", "name": "Rb-75B (AGM-65B Maverick) (TV ASM)", "weight": 269.5}
     Rb_75T__AGM_65A_Maverick___TV_ASM_Lg_HE_Whd_ = {"clsid": "{RB75T}", "name": "Rb-75T (AGM-65A Maverick) (TV ASM Lg HE Whd)", "weight": 354}
@@ -737,6 +739,9 @@ class Weapons:
     RPL_541_2000_liters_Fuel_Tank__ = {"clsid": "{M2KC_08_RPL541}", "name": "RPL 541 2000 liters Fuel Tank ", "weight": 1837}
     RPL_541_2000_liters_Fuel_Tank__Empty_ = {"clsid": "{M2KC_02_RPL541_EMPTY}", "name": "RPL 541 2000 liters Fuel Tank (Empty)", "weight": 257}
     RPL_541_2000_liters_Fuel_Tank__Empty__ = {"clsid": "{M2KC_08_RPL541_EMPTY}", "name": "RPL 541 2000 liters Fuel Tank (Empty)", "weight": 257}
+    RP_3_25lb_AP_Mk_I = {"clsid": "{British_AP_25LBNo1_3INCHNo1}", "name": "RP-3 25lb AP Mk.I", "weight": 22}
+    RP_3_60lb_F_No1_Mk_I = {"clsid": "{British_HE_60LBFNo1_3INCHNo1}", "name": "RP-3 60lb F No1 Mk.I", "weight": 31.6}
+    RP_3_60lb_SAP_No2_Mk_I = {"clsid": "{British_HE_60LBSAPNo2_3INCHNo1}", "name": "RP-3 60lb SAP No2 Mk.I", "weight": 38.1}
     RS2US___AAM__beam_rider = {"clsid": "{RS-2US}", "name": "RS2US - AAM, beam-rider", "weight": 105.2}
     R_13M1___AAM__IR_guided = {"clsid": "{R-13M1}", "name": "R-13M1 - AAM, IR guided", "weight": 122.4}
     R_13M___AAM__IR_guided = {"clsid": "{R-13M}", "name": "R-13M - AAM, IR guided", "weight": 119.7}
@@ -995,6 +1000,12 @@ class Weapons:
     _2_x_RBK_250_PTAB_2_5M_ = {"clsid": "{RBK_250_PTAB25M_DUAL_R}", "name": "2 x RBK-250 PTAB-2.5M", "weight": 578}
     _2_x_RBK_500_255_PTAB_10_5 = {"clsid": "{RBK_500_PTAB105_DUAL_L}", "name": "2 x RBK-500-255 PTAB-10-5", "weight": 538}
     _2_x_RBK_500_255_PTAB_10_5_ = {"clsid": "{RBK_500_PTAB105_DUAL_R}", "name": "2 x RBK-500-255 PTAB-10-5", "weight": 538}
+    _2_x_RP_3_25lb_AP_Mk_I = {"clsid": "{MOSSIE_2_British_AP_25LBNo1_3INCHNo1_ON_LEFT_WING_RAILS}", "name": "2 x RP-3 25lb AP Mk.I", "weight": 174}
+    _2_x_RP_3_25lb_AP_Mk_I_ = {"clsid": "{MOSSIE_2_British_AP_25LBNo1_3INCHNo1_ON_RIGHT_WING_RAILS}", "name": "2 x RP-3 25lb AP Mk.I", "weight": 174}
+    _2_x_RP_3_60lb_F_No1_Mk_I = {"clsid": "{MOSSIE_2_British_HE_60LBFNo1_3INCHNo1_ON_LEFT_WING_RAILS}", "name": "2 x RP-3 60lb F No1 Mk.I", "weight": 193.2}
+    _2_x_RP_3_60lb_F_No1_Mk_I_ = {"clsid": "{MOSSIE_2_British_HE_60LBFNo1_3INCHNo1_ON_RIGHT_WING_RAILS}", "name": "2 x RP-3 60lb F No1 Mk.I", "weight": 193.2}
+    _2_x_RP_3_60lb_SAP_No2_Mk_I = {"clsid": "{MOSSIE_2_British_HE_60LBSAPNo2_3INCHNo1_ON_LEFT_WING_RAILS}", "name": "2 x RP-3 60lb SAP No2 Mk.I", "weight": 206.2}
+    _2_x_RP_3_60lb_SAP_No2_Mk_I_ = {"clsid": "{MOSSIE_2_British_HE_60LBSAPNo2_3INCHNo1_ON_RIGHT_WING_RAILS}", "name": "2 x RP-3 60lb SAP No2 Mk.I", "weight": 206.2}
     _2_x_S_25 = {"clsid": "{S25_DUAL_L}", "name": "2 x S-25", "weight": 902}
     _2_x_S_25_ = {"clsid": "{S25_DUAL_R}", "name": "2 x S-25", "weight": 902}
     _2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator = {"clsid": "{TWIN_S25}", "name": "2 x S-25-OFM - 340mm UnGdrocket, 480kg Penetrator", "weight": 902}
@@ -1027,6 +1038,12 @@ class Weapons:
     _4_x_AN_M64___500lb_GP_Bomb_LD = {"clsid": "{4xAN-M64_on_InvCountedAttachmentPoints}", "name": "4 x AN-M64 - 500lb GP Bomb LD", "weight": 908}
     _4_x_BGM_71D_TOW_ATGM = {"clsid": "{3EA17AB0-A805-4D9E-8732-4CE00CB00F17}", "name": "4 x BGM-71D TOW ATGM", "weight": 250}
     _4_x_GBU_27___2000lb_Laser_Guided_Penetrator_Bombs = {"clsid": "{B8C99F40-E486-4040-B547-6639172A5D57}", "name": "4 x GBU-27 - 2000lb Laser Guided Penetrator Bombs", "weight": 3936}
+    _4_x_RP_3_25lb_AP_Mk_I = {"clsid": "{MOSSIE_4_British_AP_25LBNo1_3INCHNo1_ON_LEFT_WING_RAILS}", "name": "4 x RP-3 25lb AP Mk.I", "weight": 218}
+    _4_x_RP_3_25lb_AP_Mk_I_ = {"clsid": "{MOSSIE_4_British_AP_25LBNo1_3INCHNo1_ON_RIGHT_WING_RAILS}", "name": "4 x RP-3 25lb AP Mk.I", "weight": 218}
+    _4_x_RP_3_60lb_F_No1_Mk_I = {"clsid": "{MOSSIE_4_British_HE_60LBFNo1_3INCHNo1_ON_LEFT_WING_RAILS}", "name": "4 x RP-3 60lb F No1 Mk.I", "weight": 256.4}
+    _4_x_RP_3_60lb_F_No1_Mk_I_ = {"clsid": "{MOSSIE_4_British_HE_60LBFNo1_3INCHNo1_ON_RIGHT_WING_RAILS}", "name": "4 x RP-3 60lb F No1 Mk.I", "weight": 256.4}
+    _4_x_RP_3_60lb_SAP_No2_Mk_I = {"clsid": "{MOSSIE_4_British_HE_60LBSAPNo2_3INCHNo1_ON_LEFT_WING_RAILS}", "name": "4 x RP-3 60lb SAP No2 Mk.I", "weight": 282.4}
+    _4_x_RP_3_60lb_SAP_No2_Mk_I_ = {"clsid": "{MOSSIE_4_British_HE_60LBSAPNo2_3INCHNo1_ON_RIGHT_WING_RAILS}", "name": "4 x RP-3 60lb SAP No2 Mk.I", "weight": 282.4}
     _500_lb_GP_Mk_I = {"clsid": "{British_GP_500LB_Bomb_Mk1}", "name": "500 lb GP Mk.I", "weight": 213.188}
     _500_lb_GP_Mk_IV = {"clsid": "{British_GP_500LB_Bomb_Mk4}", "name": "500 lb GP Mk.IV", "weight": 213.188}
     _500_lb_GP_Mk_V = {"clsid": "{British_GP_500LB_Bomb_Mk5}", "name": "500 lb GP Mk.V", "weight": 213.188}
@@ -1356,7 +1373,9 @@ weapon_ids = {
     "DIS_SMOKE_GENERATOR_Y": Weapons.DIS_SMOKE_GENERATOR_Y,
     "DIS_SPJ_POD": Weapons.DIS_SPJ_POD,
     "DIS_TANK1100": Weapons.DIS_TANK1100,
+    "DIS_TANK1100_EMPTY": Weapons.DIS_TANK1100_EMPTY,
     "DIS_TANK800": Weapons.DIS_TANK800,
+    "DIS_TANK800_EMPTY": Weapons.DIS_TANK800_EMPTY,
     "DIS_TYPE200": Weapons.DIS_TYPE200,
     "DIS_TYPE200_DUAL_L": Weapons.DIS_TYPE200_DUAL_L,
     "DIS_TYPE200_DUAL_R": Weapons.DIS_TYPE200_DUAL_R,
@@ -1809,6 +1828,9 @@ weapon_ids = {
     "{M2KC_08_RPL541}": Weapons.RPL_541_2000_liters_Fuel_Tank__,
     "{M2KC_02_RPL541_EMPTY}": Weapons.RPL_541_2000_liters_Fuel_Tank__Empty_,
     "{M2KC_08_RPL541_EMPTY}": Weapons.RPL_541_2000_liters_Fuel_Tank__Empty__,
+    "{British_AP_25LBNo1_3INCHNo1}": Weapons.RP_3_25lb_AP_Mk_I,
+    "{British_HE_60LBFNo1_3INCHNo1}": Weapons.RP_3_60lb_F_No1_Mk_I,
+    "{British_HE_60LBSAPNo2_3INCHNo1}": Weapons.RP_3_60lb_SAP_No2_Mk_I,
     "{RS-2US}": Weapons.RS2US___AAM__beam_rider,
     "{R-13M1}": Weapons.R_13M1___AAM__IR_guided,
     "{R-13M}": Weapons.R_13M___AAM__IR_guided,
@@ -2067,6 +2089,12 @@ weapon_ids = {
     "{RBK_250_PTAB25M_DUAL_R}": Weapons._2_x_RBK_250_PTAB_2_5M_,
     "{RBK_500_PTAB105_DUAL_L}": Weapons._2_x_RBK_500_255_PTAB_10_5,
     "{RBK_500_PTAB105_DUAL_R}": Weapons._2_x_RBK_500_255_PTAB_10_5_,
+    "{MOSSIE_2_British_AP_25LBNo1_3INCHNo1_ON_LEFT_WING_RAILS}": Weapons._2_x_RP_3_25lb_AP_Mk_I,
+    "{MOSSIE_2_British_AP_25LBNo1_3INCHNo1_ON_RIGHT_WING_RAILS}": Weapons._2_x_RP_3_25lb_AP_Mk_I_,
+    "{MOSSIE_2_British_HE_60LBFNo1_3INCHNo1_ON_LEFT_WING_RAILS}": Weapons._2_x_RP_3_60lb_F_No1_Mk_I,
+    "{MOSSIE_2_British_HE_60LBFNo1_3INCHNo1_ON_RIGHT_WING_RAILS}": Weapons._2_x_RP_3_60lb_F_No1_Mk_I_,
+    "{MOSSIE_2_British_HE_60LBSAPNo2_3INCHNo1_ON_LEFT_WING_RAILS}": Weapons._2_x_RP_3_60lb_SAP_No2_Mk_I,
+    "{MOSSIE_2_British_HE_60LBSAPNo2_3INCHNo1_ON_RIGHT_WING_RAILS}": Weapons._2_x_RP_3_60lb_SAP_No2_Mk_I_,
     "{S25_DUAL_L}": Weapons._2_x_S_25,
     "{S25_DUAL_R}": Weapons._2_x_S_25_,
     "{TWIN_S25}": Weapons._2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator,
@@ -2099,6 +2127,12 @@ weapon_ids = {
     "{4xAN-M64_on_InvCountedAttachmentPoints}": Weapons._4_x_AN_M64___500lb_GP_Bomb_LD,
     "{3EA17AB0-A805-4D9E-8732-4CE00CB00F17}": Weapons._4_x_BGM_71D_TOW_ATGM,
     "{B8C99F40-E486-4040-B547-6639172A5D57}": Weapons._4_x_GBU_27___2000lb_Laser_Guided_Penetrator_Bombs,
+    "{MOSSIE_4_British_AP_25LBNo1_3INCHNo1_ON_LEFT_WING_RAILS}": Weapons._4_x_RP_3_25lb_AP_Mk_I,
+    "{MOSSIE_4_British_AP_25LBNo1_3INCHNo1_ON_RIGHT_WING_RAILS}": Weapons._4_x_RP_3_25lb_AP_Mk_I_,
+    "{MOSSIE_4_British_HE_60LBFNo1_3INCHNo1_ON_LEFT_WING_RAILS}": Weapons._4_x_RP_3_60lb_F_No1_Mk_I,
+    "{MOSSIE_4_British_HE_60LBFNo1_3INCHNo1_ON_RIGHT_WING_RAILS}": Weapons._4_x_RP_3_60lb_F_No1_Mk_I_,
+    "{MOSSIE_4_British_HE_60LBSAPNo2_3INCHNo1_ON_LEFT_WING_RAILS}": Weapons._4_x_RP_3_60lb_SAP_No2_Mk_I,
+    "{MOSSIE_4_British_HE_60LBSAPNo2_3INCHNo1_ON_RIGHT_WING_RAILS}": Weapons._4_x_RP_3_60lb_SAP_No2_Mk_I_,
     "{British_GP_500LB_Bomb_Mk1}": Weapons._500_lb_GP_Mk_I,
     "{British_GP_500LB_Bomb_Mk4}": Weapons._500_lb_GP_Mk_IV,
     "{British_GP_500LB_Bomb_Mk5}": Weapons._500_lb_GP_Mk_V,

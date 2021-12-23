@@ -681,6 +681,23 @@ class F_A_18C(PlaneType):
         },
     }
 
+    callnames: Dict[str, List[str]] = {
+        "USA": [
+            "Hornet",
+            "Squid",
+            "Ragin",
+            "Roman",
+            "Sting",
+            "Jury",
+            "Joker",
+            "Ram",
+            "Hawk",
+            "Devil",
+            "Check",
+            "Snake",
+        ]
+    }
+
     class Liveries:
 
         class Australia(Enum):
@@ -1186,6 +1203,14 @@ class B_52H(PlaneType):
     chaff_charge_size = 1
     flare_charge_size = 1
     eplrs = True
+
+    callnames: Dict[str, List[str]] = {
+        "USA": [
+            "Buff",
+            "Dump",
+            "Kenworth",
+        ]
+    }
 
     class Liveries:
 
@@ -4873,6 +4898,14 @@ class B_1B(PlaneType):
     flare_charge_size = 2
     eplrs = True
 
+    callnames: Dict[str, List[str]] = {
+        "USA": [
+            "Bone",
+            "Dark",
+            "Vader",
+        ]
+    }
+
     class Liveries:
 
         class Combined_Joint_Task_Forces_Blue(Enum):
@@ -5524,6 +5557,22 @@ class F_15E(PlaneType):
     flare_charge_size = 2
     eplrs = True
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+
+    callnames: Dict[str, List[str]] = {
+        "USA": [
+            "Dude",
+            "Thud",
+            "Gunny",
+            "Mad",
+            "Trek",
+            "Sniper",
+            "Sled",
+            "Best",
+            "Jazz",
+            "Rage",
+            "Tahoe",
+        ]
+    }
 
     class Liveries:
 
@@ -8193,6 +8242,23 @@ class F_16C_bl_50(PlaneType):
     eplrs = True
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
 
+    callnames: Dict[str, List[str]] = {
+        "USA": [
+            "Viper",
+            "Venom",
+            "Lobo",
+            "Cowboy",
+            "Python",
+            "Rattler",
+            "Panther",
+            "Wolf",
+            "Weasel",
+            "Wild",
+            "Ninja",
+            "Jedi",
+        ]
+    }
+
     class Liveries:
 
         class Combined_Joint_Task_Forces_Blue(Enum):
@@ -8414,6 +8480,23 @@ class F_16C_bl_52d(PlaneType):
     flare_charge_size = 2
     eplrs = True
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+
+    callnames: Dict[str, List[str]] = {
+        "USA": [
+            "Viper",
+            "Venom",
+            "Lobo",
+            "Cowboy",
+            "Python",
+            "Rattler",
+            "Panther",
+            "Wolf",
+            "Weasel",
+            "Wild",
+            "Ninja",
+            "Jedi",
+        ]
+    }
 
     class Liveries:
 
@@ -12122,330 +12205,412 @@ class MosquitoFBMkVI(PlaneType):
 
         class USSR(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Georgia(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Venezuela(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Australia(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Israel(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Sudan(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Norway(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Romania(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Iran(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Ukraine(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Libya(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Belgium(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Slovakia(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Greece(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class UK(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Third_Reich(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Hungary(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Abkhazia(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Morocco(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class United_Nations_Peacekeepers(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Switzerland(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class SouthOssetia(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Vietnam(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class China(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Yemen(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Kuwait(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Serbia(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Oman(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class India(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Egypt(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class TheNetherlands(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Poland(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Syria(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Finland(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Kazakhstan(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Denmark(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Sweden(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Croatia(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class CzechRepublic(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class GDR(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Yugoslavia(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Bulgaria(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class SouthKorea(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Tunisia(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Combined_Joint_Task_Forces_Red(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Lebanon(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Portugal(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Cuba(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Insurgents(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class SaudiArabia(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class France(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class USA(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Honduras(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Qatar(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Russia(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class United_Arab_Emirates(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Italian_Social_Republi(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Austria(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Bahrain(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Italy(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Chile(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Turkey(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Philippines(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Algeria(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Pakistan(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Malaysia(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Indonesia(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Iraq(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Germany(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class South_Africa(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Jordan(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Mexico(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class USAFAggressors(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Brazil(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Spain(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Belarus(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Canada(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class NorthKorea(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Ethiopia(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Japan(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
         class Thailand(Enum):
             L_3_PZ474_1945 = "L-3 PZ474 1945"
+            No__235_Squadron_RAF_1944 = "No. 235 Squadron RAF 1944"
             RAF = "RAF"
 
     class Pylon1:
@@ -12494,7 +12659,23 @@ class MosquitoFBMkVI(PlaneType):
         _500_lb_MC_Short_tail_ = (4, Weapons._500_lb_MC_Short_tail_)
         _250_lb_S_A_P__ = (4, Weapons._250_lb_S_A_P__)
 
-    pylons: Set[int] = {1, 2, 3, 4}
+    class Pylon5:
+        _4_x_RP_3_60lb_F_No1_Mk_I = (5, Weapons._4_x_RP_3_60lb_F_No1_Mk_I)
+        _2_x_RP_3_60lb_F_No1_Mk_I = (5, Weapons._2_x_RP_3_60lb_F_No1_Mk_I)
+        _4_x_RP_3_60lb_SAP_No2_Mk_I = (5, Weapons._4_x_RP_3_60lb_SAP_No2_Mk_I)
+        _2_x_RP_3_60lb_SAP_No2_Mk_I = (5, Weapons._2_x_RP_3_60lb_SAP_No2_Mk_I)
+        _4_x_RP_3_25lb_AP_Mk_I = (5, Weapons._4_x_RP_3_25lb_AP_Mk_I)
+        _2_x_RP_3_25lb_AP_Mk_I = (5, Weapons._2_x_RP_3_25lb_AP_Mk_I)
+
+    class Pylon6:
+        _4_x_RP_3_60lb_F_No1_Mk_I_ = (6, Weapons._4_x_RP_3_60lb_F_No1_Mk_I_)
+        _2_x_RP_3_60lb_F_No1_Mk_I_ = (6, Weapons._2_x_RP_3_60lb_F_No1_Mk_I_)
+        _4_x_RP_3_60lb_SAP_No2_Mk_I_ = (6, Weapons._4_x_RP_3_60lb_SAP_No2_Mk_I_)
+        _2_x_RP_3_60lb_SAP_No2_Mk_I_ = (6, Weapons._2_x_RP_3_60lb_SAP_No2_Mk_I_)
+        _4_x_RP_3_25lb_AP_Mk_I_ = (6, Weapons._4_x_RP_3_25lb_AP_Mk_I_)
+        _2_x_RP_3_25lb_AP_Mk_I_ = (6, Weapons._2_x_RP_3_25lb_AP_Mk_I_)
+
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6}
 
     tasks = [task.CAP, task.Escort, task.Intercept, task.FighterSweep, task.GroundAttack, task.CAS, task.AFAC, task.RunwayAttack, task.AntishipStrike]
     task_default = task.CAP
@@ -14438,13 +14619,53 @@ class AJS37(PlaneType):
     panel_radio = {
         1: {
             "channels": {
-                6: 141,
+                27: 270,
                 2: 264,
+                38: 251,
                 3: 265,
+                4: 256,
+                5: 254,
+                6: 250,
+                7: 270,
+                8: 257,
+                10: 262,
+                12: 268,
+                14: 260,
+                16: 261,
+                20: 266,
+                24: 256,
+                28: 257,
+                32: 268,
+                40: 266,
+                33: 269,
+                41: 305,
+                17: 267,
+                21: 305,
+                25: 254,
+                29: 255,
+                34: 260,
+                42: 264,
+                9: 255,
+                11: 259,
+                13: 269,
+                15: 263,
+                18: 251,
+                22: 264,
+                26: 250,
+                30: 262,
+                36: 261,
+                44: 125,
+                47: 121.5,
+                46: 141,
+                39: 253,
+                43: 265,
+                37: 267,
+                45: 121,
+                35: 263,
                 1: 305,
-                4: 125,
-                5: 121,
-                7: 121.5
+                19: 253,
+                23: 265,
+                31: 259
             },
         },
     }
@@ -14499,6 +14720,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Georgia(Enum):
@@ -14506,6 +14728,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Venezuela(Enum):
@@ -14513,6 +14736,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Australia(Enum):
@@ -14520,6 +14744,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Israel(Enum):
@@ -14527,6 +14752,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
@@ -14534,6 +14760,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Sudan(Enum):
@@ -14541,6 +14768,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Norway(Enum):
@@ -14548,6 +14776,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Romania(Enum):
@@ -14555,6 +14784,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Iran(Enum):
@@ -14562,6 +14792,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Ukraine(Enum):
@@ -14569,6 +14800,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Libya(Enum):
@@ -14576,6 +14808,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Belgium(Enum):
@@ -14583,6 +14816,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Slovakia(Enum):
@@ -14590,6 +14824,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Greece(Enum):
@@ -14597,6 +14832,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class UK(Enum):
@@ -14604,6 +14840,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Third_Reich(Enum):
@@ -14611,6 +14848,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Hungary(Enum):
@@ -14618,6 +14856,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Abkhazia(Enum):
@@ -14625,6 +14864,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Morocco(Enum):
@@ -14632,6 +14872,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class United_Nations_Peacekeepers(Enum):
@@ -14639,6 +14880,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Switzerland(Enum):
@@ -14646,6 +14888,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class SouthOssetia(Enum):
@@ -14653,6 +14896,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Vietnam(Enum):
@@ -14660,6 +14904,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class China(Enum):
@@ -14667,6 +14912,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Yemen(Enum):
@@ -14674,6 +14920,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Kuwait(Enum):
@@ -14681,6 +14928,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Serbia(Enum):
@@ -14688,6 +14936,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Oman(Enum):
@@ -14695,6 +14944,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class India(Enum):
@@ -14702,6 +14952,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Egypt(Enum):
@@ -14709,6 +14960,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class TheNetherlands(Enum):
@@ -14716,6 +14968,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Poland(Enum):
@@ -14723,6 +14976,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Syria(Enum):
@@ -14730,6 +14984,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Finland(Enum):
@@ -14737,6 +14992,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Kazakhstan(Enum):
@@ -14744,6 +15000,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Denmark(Enum):
@@ -14751,6 +15008,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Sweden(Enum):
@@ -14758,6 +15016,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Croatia(Enum):
@@ -14765,6 +15024,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class CzechRepublic(Enum):
@@ -14772,6 +15032,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class GDR(Enum):
@@ -14779,6 +15040,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Yugoslavia(Enum):
@@ -14786,6 +15048,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Bulgaria(Enum):
@@ -14793,6 +15056,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class SouthKorea(Enum):
@@ -14800,6 +15064,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Tunisia(Enum):
@@ -14807,6 +15072,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Combined_Joint_Task_Forces_Red(Enum):
@@ -14814,6 +15080,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Lebanon(Enum):
@@ -14821,6 +15088,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Portugal(Enum):
@@ -14828,6 +15096,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Cuba(Enum):
@@ -14835,6 +15104,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Insurgents(Enum):
@@ -14842,6 +15112,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class SaudiArabia(Enum):
@@ -14849,6 +15120,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class France(Enum):
@@ -14856,6 +15128,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class USA(Enum):
@@ -14863,6 +15136,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Honduras(Enum):
@@ -14870,6 +15144,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Qatar(Enum):
@@ -14877,6 +15152,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Russia(Enum):
@@ -14884,6 +15160,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class United_Arab_Emirates(Enum):
@@ -14891,6 +15168,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Italian_Social_Republi(Enum):
@@ -14898,6 +15176,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Austria(Enum):
@@ -14905,6 +15184,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Bahrain(Enum):
@@ -14912,6 +15192,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Italy(Enum):
@@ -14919,6 +15200,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Chile(Enum):
@@ -14926,6 +15208,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Turkey(Enum):
@@ -14933,6 +15216,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Philippines(Enum):
@@ -14940,6 +15224,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Algeria(Enum):
@@ -14947,6 +15232,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Pakistan(Enum):
@@ -14954,6 +15240,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Malaysia(Enum):
@@ -14961,6 +15248,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Indonesia(Enum):
@@ -14968,6 +15256,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Iraq(Enum):
@@ -14975,6 +15264,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Germany(Enum):
@@ -14982,6 +15272,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class South_Africa(Enum):
@@ -14989,6 +15280,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Jordan(Enum):
@@ -14996,6 +15288,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Mexico(Enum):
@@ -15003,6 +15296,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class USAFAggressors(Enum):
@@ -15010,6 +15304,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Brazil(Enum):
@@ -15017,6 +15312,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Spain(Enum):
@@ -15024,6 +15320,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Belarus(Enum):
@@ -15031,6 +15328,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Canada(Enum):
@@ -15038,6 +15336,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class NorthKorea(Enum):
@@ -15045,6 +15344,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Ethiopia(Enum):
@@ -15052,6 +15352,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Japan(Enum):
@@ -15059,6 +15360,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
         class Thailand(Enum):
@@ -15066,6 +15368,7 @@ class AJS37(PlaneType):
             BareMetal = "BareMetal"
             _37402 = "37402"
             F7_Skaraborg = "F7 Skaraborg"
+            SE_DXN_v3 = "SE-DXN_v3"
             SF_37_Akktu_Stakki___F21 = "SF-37 Akktu Stakki - F21"
 
     class Pylon1:
@@ -18917,6 +19220,8 @@ class JF_17(PlaneType):
         DIS_GB6_HE = (3, Weapons.DIS_GB6_HE)
         DIS_TANK800 = (3, Weapons.DIS_TANK800)
         DIS_TANK1100 = (3, Weapons.DIS_TANK1100)
+        DIS_TANK800_EMPTY = (3, Weapons.DIS_TANK800_EMPTY)
+        DIS_TANK1100_EMPTY = (3, Weapons.DIS_TANK1100_EMPTY)
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (3, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (3, Weapons.Mk_83___1000lb_GP_Bomb_LD)
@@ -18929,6 +19234,7 @@ class JF_17(PlaneType):
 
     class Pylon4:
         DIS_TANK800 = (4, Weapons.DIS_TANK800)
+        DIS_TANK800_EMPTY = (4, Weapons.DIS_TANK800_EMPTY)
         Mk_83___1000lb_GP_Bomb_LD = (4, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         Mk_84___2000lb_GP_Bomb_LD = (4, Weapons.Mk_84___2000lb_GP_Bomb_LD)
         DIS_GBU_10 = (4, Weapons.DIS_GBU_10)
@@ -18952,6 +19258,8 @@ class JF_17(PlaneType):
         DIS_GB6_HE = (5, Weapons.DIS_GB6_HE)
         DIS_TANK800 = (5, Weapons.DIS_TANK800)
         DIS_TANK1100 = (5, Weapons.DIS_TANK1100)
+        DIS_TANK800_EMPTY = (5, Weapons.DIS_TANK800_EMPTY)
+        DIS_TANK1100_EMPTY = (5, Weapons.DIS_TANK1100_EMPTY)
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (5, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (5, Weapons.Mk_83___1000lb_GP_Bomb_LD)
@@ -21703,6 +22011,23 @@ class F_16C_50(PlaneType):
         },
     }
 
+    callnames: Dict[str, List[str]] = {
+        "USA": [
+            "Viper",
+            "Venom",
+            "Lobo",
+            "Cowboy",
+            "Python",
+            "Rattler",
+            "Panther",
+            "Wolf",
+            "Weasel",
+            "Wild",
+            "Ninja",
+            "Jedi",
+        ]
+    }
+
     property_defaults: Dict[str, Any] = {
         "LAU3ROF": 0,
         "LaserCode100": 6,
@@ -22208,6 +22533,7 @@ class F_16C_50(PlaneType):
         CBU_103___202_x_CEM__CBU_with_WCMD = (3, Weapons.CBU_103___202_x_CEM__CBU_with_WCMD)
         BRU_57_with_2_x_CBU_103___202_x_CEM__CBU_with_WCMD = (3, Weapons.BRU_57_with_2_x_CBU_103___202_x_CEM__CBU_with_WCMD)
         MXU_648_TP = (3, Weapons.MXU_648_TP)
+        ALQ_184 = (3, Weapons.ALQ_184)
 #ERRR <CLEAN>
         TER_9A_with_2_x_Mk_82___500lb_GP_Bomb_LD = (3, Weapons.TER_9A_with_2_x_Mk_82___500lb_GP_Bomb_LD)
         TER_9A_with_2_x_Mk_82_Snakeye___500lb_GP_Bomb_HD = (3, Weapons.TER_9A_with_2_x_Mk_82_Snakeye___500lb_GP_Bomb_HD)
@@ -22251,6 +22577,7 @@ class F_16C_50(PlaneType):
     class Pylon5:
         Fuel_tank_300_gal = (5, Weapons.Fuel_tank_300_gal)
         MXU_648_TP = (5, Weapons.MXU_648_TP)
+        ALQ_184 = (5, Weapons.ALQ_184)
 #ERRR <CLEAN>
 
     class Pylon6:
@@ -22328,6 +22655,7 @@ class F_16C_50(PlaneType):
         CBU_103___202_x_CEM__CBU_with_WCMD = (7, Weapons.CBU_103___202_x_CEM__CBU_with_WCMD)
         BRU_57_with_2_x_CBU_103___202_x_CEM__CBU_with_WCMD = (7, Weapons.BRU_57_with_2_x_CBU_103___202_x_CEM__CBU_with_WCMD)
         MXU_648_TP = (7, Weapons.MXU_648_TP)
+        ALQ_184 = (7, Weapons.ALQ_184)
 #ERRR <CLEAN>
         TER_9A_with_2_x_Mk_82___500lb_GP_Bomb_LD_ = (7, Weapons.TER_9A_with_2_x_Mk_82___500lb_GP_Bomb_LD_)
         TER_9A_with_2_x_Mk_82_Snakeye___500lb_GP_Bomb_HD_ = (7, Weapons.TER_9A_with_2_x_Mk_82_Snakeye___500lb_GP_Bomb_HD_)
@@ -26532,6 +26860,10 @@ class F_14A_135_GR(PlaneType):
         class USSR(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26546,6 +26878,10 @@ class F_14A_135_GR(PlaneType):
         class Georgia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26560,6 +26896,10 @@ class F_14A_135_GR(PlaneType):
         class Venezuela(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26574,6 +26914,10 @@ class F_14A_135_GR(PlaneType):
         class Australia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26588,6 +26932,10 @@ class F_14A_135_GR(PlaneType):
         class Israel(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26602,6 +26950,10 @@ class F_14A_135_GR(PlaneType):
         class Combined_Joint_Task_Forces_Blue(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26617,6 +26969,10 @@ class F_14A_135_GR(PlaneType):
         class Sudan(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26631,6 +26987,10 @@ class F_14A_135_GR(PlaneType):
         class Norway(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26645,6 +27005,10 @@ class F_14A_135_GR(PlaneType):
         class Romania(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26659,6 +27023,10 @@ class F_14A_135_GR(PlaneType):
         class Iran(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26673,6 +27041,10 @@ class F_14A_135_GR(PlaneType):
         class Ukraine(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26687,6 +27059,10 @@ class F_14A_135_GR(PlaneType):
         class Libya(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26701,6 +27077,10 @@ class F_14A_135_GR(PlaneType):
         class Belgium(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26715,6 +27095,10 @@ class F_14A_135_GR(PlaneType):
         class Slovakia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26729,6 +27113,10 @@ class F_14A_135_GR(PlaneType):
         class Greece(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26743,6 +27131,10 @@ class F_14A_135_GR(PlaneType):
         class UK(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26757,6 +27149,10 @@ class F_14A_135_GR(PlaneType):
         class Third_Reich(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26771,6 +27167,10 @@ class F_14A_135_GR(PlaneType):
         class Hungary(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26785,6 +27185,10 @@ class F_14A_135_GR(PlaneType):
         class Abkhazia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26799,6 +27203,10 @@ class F_14A_135_GR(PlaneType):
         class Morocco(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26813,6 +27221,10 @@ class F_14A_135_GR(PlaneType):
         class United_Nations_Peacekeepers(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26827,6 +27239,10 @@ class F_14A_135_GR(PlaneType):
         class Switzerland(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26841,6 +27257,10 @@ class F_14A_135_GR(PlaneType):
         class SouthOssetia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26855,6 +27275,10 @@ class F_14A_135_GR(PlaneType):
         class Vietnam(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26869,6 +27293,10 @@ class F_14A_135_GR(PlaneType):
         class China(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26883,6 +27311,10 @@ class F_14A_135_GR(PlaneType):
         class Yemen(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26897,6 +27329,10 @@ class F_14A_135_GR(PlaneType):
         class Kuwait(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26911,6 +27347,10 @@ class F_14A_135_GR(PlaneType):
         class Serbia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26925,6 +27365,10 @@ class F_14A_135_GR(PlaneType):
         class Oman(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26939,6 +27383,10 @@ class F_14A_135_GR(PlaneType):
         class India(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26953,6 +27401,10 @@ class F_14A_135_GR(PlaneType):
         class Egypt(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26967,6 +27419,10 @@ class F_14A_135_GR(PlaneType):
         class TheNetherlands(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26981,6 +27437,10 @@ class F_14A_135_GR(PlaneType):
         class Poland(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -26995,6 +27455,10 @@ class F_14A_135_GR(PlaneType):
         class Syria(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27009,6 +27473,10 @@ class F_14A_135_GR(PlaneType):
         class Finland(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27023,6 +27491,10 @@ class F_14A_135_GR(PlaneType):
         class Kazakhstan(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27037,6 +27509,10 @@ class F_14A_135_GR(PlaneType):
         class Denmark(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27051,6 +27527,10 @@ class F_14A_135_GR(PlaneType):
         class Sweden(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27065,6 +27545,10 @@ class F_14A_135_GR(PlaneType):
         class Croatia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27079,6 +27563,10 @@ class F_14A_135_GR(PlaneType):
         class CzechRepublic(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27093,6 +27581,10 @@ class F_14A_135_GR(PlaneType):
         class GDR(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27107,6 +27599,10 @@ class F_14A_135_GR(PlaneType):
         class Yugoslavia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27121,6 +27617,10 @@ class F_14A_135_GR(PlaneType):
         class Bulgaria(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27135,6 +27635,10 @@ class F_14A_135_GR(PlaneType):
         class SouthKorea(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27149,6 +27653,10 @@ class F_14A_135_GR(PlaneType):
         class Tunisia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27163,6 +27671,10 @@ class F_14A_135_GR(PlaneType):
         class Combined_Joint_Task_Forces_Red(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27178,6 +27690,10 @@ class F_14A_135_GR(PlaneType):
         class Lebanon(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27192,6 +27708,10 @@ class F_14A_135_GR(PlaneType):
         class Portugal(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27206,6 +27726,10 @@ class F_14A_135_GR(PlaneType):
         class Cuba(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27220,6 +27744,10 @@ class F_14A_135_GR(PlaneType):
         class Insurgents(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27234,6 +27762,10 @@ class F_14A_135_GR(PlaneType):
         class SaudiArabia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27248,6 +27780,10 @@ class F_14A_135_GR(PlaneType):
         class France(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27262,6 +27798,10 @@ class F_14A_135_GR(PlaneType):
         class USA(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27277,6 +27817,10 @@ class F_14A_135_GR(PlaneType):
         class Honduras(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27291,6 +27835,10 @@ class F_14A_135_GR(PlaneType):
         class Qatar(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27305,6 +27853,10 @@ class F_14A_135_GR(PlaneType):
         class Russia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27319,6 +27871,10 @@ class F_14A_135_GR(PlaneType):
         class United_Arab_Emirates(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27333,6 +27889,10 @@ class F_14A_135_GR(PlaneType):
         class Italian_Social_Republi(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27347,6 +27907,10 @@ class F_14A_135_GR(PlaneType):
         class Austria(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27361,6 +27925,10 @@ class F_14A_135_GR(PlaneType):
         class Bahrain(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27375,6 +27943,10 @@ class F_14A_135_GR(PlaneType):
         class Italy(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27389,6 +27961,10 @@ class F_14A_135_GR(PlaneType):
         class Chile(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27403,6 +27979,10 @@ class F_14A_135_GR(PlaneType):
         class Turkey(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27417,6 +27997,10 @@ class F_14A_135_GR(PlaneType):
         class Philippines(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27431,6 +28015,10 @@ class F_14A_135_GR(PlaneType):
         class Algeria(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27445,6 +28033,10 @@ class F_14A_135_GR(PlaneType):
         class Pakistan(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27459,6 +28051,10 @@ class F_14A_135_GR(PlaneType):
         class Malaysia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27473,6 +28069,10 @@ class F_14A_135_GR(PlaneType):
         class Indonesia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27487,6 +28087,10 @@ class F_14A_135_GR(PlaneType):
         class Iraq(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27501,6 +28105,10 @@ class F_14A_135_GR(PlaneType):
         class Germany(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27515,6 +28123,10 @@ class F_14A_135_GR(PlaneType):
         class South_Africa(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27529,6 +28141,10 @@ class F_14A_135_GR(PlaneType):
         class Jordan(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27543,6 +28159,10 @@ class F_14A_135_GR(PlaneType):
         class Mexico(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27557,6 +28177,10 @@ class F_14A_135_GR(PlaneType):
         class USAFAggressors(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27571,6 +28195,10 @@ class F_14A_135_GR(PlaneType):
         class Brazil(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27585,6 +28213,10 @@ class F_14A_135_GR(PlaneType):
         class Spain(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27599,6 +28231,10 @@ class F_14A_135_GR(PlaneType):
         class Belarus(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27613,6 +28249,10 @@ class F_14A_135_GR(PlaneType):
         class Canada(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27627,6 +28267,10 @@ class F_14A_135_GR(PlaneType):
         class NorthKorea(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27641,6 +28285,10 @@ class F_14A_135_GR(PlaneType):
         class Ethiopia(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27655,6 +28303,10 @@ class F_14A_135_GR(PlaneType):
         class Japan(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27669,6 +28321,10 @@ class F_14A_135_GR(PlaneType):
         class Thailand(Enum):
             VF_154_Black_Knights_101 = "VF-154 Black Knights 101"
             VF_32_Swordsmen_AB200__1976 = "VF-32 Swordsmen AB200 (1976)"
+            VF_1_Wolfpack_NK100__1974 = "VF-1 Wolfpack NK100 (1974)"
+            VF_1_Wolfpack_NK101__1974 = "VF-1 Wolfpack NK101 (1974)"
+            VF_1_Wolfpack_NK102__1974 = "VF-1 Wolfpack NK102 (1974)"
+            VF_1_Wolfpack_NK103__1974 = "VF-1 Wolfpack NK103 (1974)"
             VF_11_AE101_1988 = "VF-11 AE101 1988"
             VF_11_AE103_1988 = "VF-11 AE103 1988"
             VF_11_AE106_1988 = "VF-11 AE106 1988"
@@ -27953,6 +28609,23 @@ class FA_18C_hornet(PlaneType):
                 15: 263
             },
         },
+    }
+
+    callnames: Dict[str, List[str]] = {
+        "USA": [
+            "Hornet",
+            "Squid",
+            "Ragin",
+            "Roman",
+            "Sting",
+            "Jury",
+            "Joker",
+            "Ram",
+            "Hawk",
+            "Devil",
+            "Check",
+            "Snake",
+        ]
     }
 
     property_defaults: Dict[str, Any] = {
@@ -31164,6 +31837,7 @@ class M_2000C(PlaneType):
         "LoadNVGCase": False,
         "InitHotDrift": 0,
         "EnableTAF": True,
+        "DisableVTBExport": False,
     }
 
     class Properties:
@@ -31213,6 +31887,9 @@ class M_2000C(PlaneType):
 
         class EnableTAF:
             id = "EnableTAF"
+
+        class DisableVTBExport:
+            id = "DisableVTBExport"
 
     class Liveries:
 
@@ -39645,6 +40322,28 @@ class Ju_88A4(PlaneType):
     task_default = task.GroundAttack
 
 
+class C_47(PlaneType):
+    id = "C-47"
+    height = 5.16
+    width = 29.11
+    length = 19.43
+    fuel_max = 1470
+    max_speed = 369
+
+    callnames: Dict[str, List[str]] = {
+        "USA": [
+        ]
+    }
+
+    property_defaults: Dict[str, Any] = {
+    }
+
+    pylons: Set[int] = set()
+
+    tasks = [task.Transport, task.Escort, task.AFAC]
+    task_default = task.Transport
+
+
 class TF_51D(PlaneType):
     id = "TF-51D"
     flyable = True
@@ -40042,5 +40741,6 @@ plane_map = {
     "Yak-52": Yak_52,
     "B-17G": B_17G,
     "Ju-88A4": Ju_88A4,
+    "C-47": C_47,
     "TF-51D": TF_51D,
 }

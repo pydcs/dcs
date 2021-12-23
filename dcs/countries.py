@@ -224,6 +224,7 @@ class Russia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
         TF_51D = planes.TF_51D
 
     planes = [
@@ -291,6 +292,7 @@ class Russia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Ju_88A4,
+        Plane.C_47,
         Plane.TF_51D,
     ]
 
@@ -664,6 +666,7 @@ class Ukraine(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
         TF_51D = planes.TF_51D
 
     planes = [
@@ -723,6 +726,7 @@ class Ukraine(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Ju_88A4,
+        Plane.C_47,
         Plane.TF_51D,
     ]
 
@@ -991,6 +995,7 @@ class USA(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -1057,6 +1062,7 @@ class USA(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -1360,6 +1366,7 @@ class Turkey(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
         TF_51D = planes.TF_51D
 
     planes = [
@@ -1407,6 +1414,7 @@ class Turkey(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
         Plane.TF_51D,
     ]
 
@@ -1696,6 +1704,7 @@ class UK(Country):
         Yak_52 = planes.Yak_52
         B_17G = planes.B_17G
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -1741,6 +1750,7 @@ class UK(Country):
         Plane.Yak_52,
         Plane.B_17G,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -2021,6 +2031,7 @@ class France(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
         TF_51D = planes.TF_51D
 
     planes = [
@@ -2066,6 +2077,7 @@ class France(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
         Plane.TF_51D,
     ]
 
@@ -2420,6 +2432,7 @@ class Germany(Country):
         M_2000C = planes.M_2000C
         MiG_19P = planes.MiG_19P
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
         TF_51D = planes.TF_51D
 
     planes = [
@@ -2468,6 +2481,7 @@ class Germany(Country):
         Plane.M_2000C,
         Plane.MiG_19P,
         Plane.Ju_88A4,
+        Plane.C_47,
         Plane.TF_51D,
     ]
 
@@ -2957,6 +2971,7 @@ class USAFAggressors(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
         A_50 = planes.A_50
         An_26B = planes.An_26B
         An_30M = planes.An_30M
@@ -3057,6 +3072,7 @@ class USAFAggressors(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
         Plane.A_50,
         Plane.An_26B,
         Plane.An_30M,
@@ -3450,6 +3466,7 @@ class Canada(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -3492,6 +3509,7 @@ class Canada(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -3765,6 +3783,7 @@ class Spain(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
         TF_51D = planes.TF_51D
 
     planes = [
@@ -3809,6 +3828,7 @@ class Spain(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
         Plane.TF_51D,
     ]
 
@@ -4109,6 +4129,7 @@ class TheNetherlands(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -4154,6 +4175,7 @@ class TheNetherlands(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -4433,6 +4455,7 @@ class Belgium(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
         TF_51D = planes.TF_51D
 
     planes = [
@@ -4476,6 +4499,7 @@ class Belgium(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
         Plane.TF_51D,
     ]
 
@@ -4738,6 +4762,7 @@ class Norway(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
         TF_51D = planes.TF_51D
 
     planes = [
@@ -4781,6 +4806,7 @@ class Norway(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
         Plane.TF_51D,
     ]
 
@@ -5038,6 +5064,7 @@ class Denmark(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
         TF_51D = planes.TF_51D
 
     planes = [
@@ -5081,6 +5108,7 @@ class Denmark(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
         Plane.TF_51D,
     ]
 
@@ -5358,6 +5386,7 @@ class Israel(Country):
         MiG_19P = planes.MiG_19P
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -5405,6 +5434,7 @@ class Israel(Country):
         Plane.MiG_19P,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -5726,6 +5756,7 @@ class Georgia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
         TF_51D = planes.TF_51D
 
     planes = [
@@ -5769,6 +5800,7 @@ class Georgia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Ju_88A4,
+        Plane.C_47,
         Plane.TF_51D,
     ]
 
@@ -6049,6 +6081,7 @@ class Insurgents(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.P_51D,
@@ -6085,6 +6118,7 @@ class Insurgents(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -6293,6 +6327,7 @@ class Abkhazia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.Su_25,
@@ -6334,6 +6369,7 @@ class Abkhazia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -6533,6 +6569,7 @@ class SouthOssetia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.FW_190A8,
@@ -6568,6 +6605,7 @@ class SouthOssetia(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -6743,6 +6781,7 @@ class Italy(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -6790,6 +6829,7 @@ class Italy(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -7062,6 +7102,7 @@ class Australia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -7106,6 +7147,7 @@ class Australia(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -7358,6 +7400,7 @@ class Switzerland(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -7397,6 +7440,7 @@ class Switzerland(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -7625,6 +7669,7 @@ class Austria(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -7661,6 +7706,7 @@ class Austria(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -7991,6 +8037,7 @@ class Belarus(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -8038,6 +8085,7 @@ class Belarus(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -8277,6 +8325,7 @@ class Bulgaria(Country):
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -8321,6 +8370,7 @@ class Bulgaria(Country):
         Plane.L_39C,
         Plane.M_2000C,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -8603,6 +8653,7 @@ class CzechRepublic(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -8644,6 +8695,7 @@ class CzechRepublic(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -8918,6 +8970,7 @@ class China(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -8966,6 +9019,7 @@ class China(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -9126,6 +9180,7 @@ class Croatia(Country):
         MiG_19P = planes.MiG_19P
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -9162,6 +9217,7 @@ class Croatia(Country):
         Plane.MiG_19P,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -9463,6 +9519,7 @@ class Egypt(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -9503,6 +9560,7 @@ class Egypt(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -9814,6 +9872,7 @@ class Finland(Country):
         MiG_19P = planes.MiG_19P
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -9850,6 +9909,7 @@ class Finland(Country):
         Plane.MiG_19P,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -10133,6 +10193,7 @@ class Greece(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -10176,6 +10237,7 @@ class Greece(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -10492,6 +10554,7 @@ class Hungary(Country):
         M_2000C = planes.M_2000C
         MiG_19P = planes.MiG_19P
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -10532,6 +10595,7 @@ class Hungary(Country):
         Plane.M_2000C,
         Plane.MiG_19P,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -10807,6 +10871,7 @@ class India(Country):
         MiG_19P = planes.MiG_19P
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -10851,6 +10916,7 @@ class India(Country):
         Plane.MiG_19P,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -11157,6 +11223,7 @@ class Iran(Country):
         MiG_19P = planes.MiG_19P
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -11203,6 +11270,7 @@ class Iran(Country):
         Plane.MiG_19P,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -11503,6 +11571,7 @@ class Iraq(Country):
         MiG_19P = planes.MiG_19P
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -11546,6 +11615,7 @@ class Iraq(Country):
         Plane.MiG_19P,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -11829,6 +11899,7 @@ class Japan(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -11867,6 +11938,7 @@ class Japan(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -12212,6 +12284,7 @@ class Kazakhstan(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -12260,6 +12333,7 @@ class Kazakhstan(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -12520,6 +12594,7 @@ class NorthKorea(Country):
         MiG_19P = planes.MiG_19P
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -12558,6 +12633,7 @@ class NorthKorea(Country):
         Plane.MiG_19P,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -12815,6 +12891,7 @@ class Pakistan(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -12858,6 +12935,7 @@ class Pakistan(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -13160,6 +13238,7 @@ class Poland(Country):
         M_2000C = planes.M_2000C
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -13207,6 +13286,7 @@ class Poland(Country):
         Plane.M_2000C,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -13512,6 +13592,7 @@ class Romania(Country):
         M_2000C = planes.M_2000C
         MiG_21Bis = planes.MiG_21Bis
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -13553,6 +13634,7 @@ class Romania(Country):
         Plane.M_2000C,
         Plane.MiG_21Bis,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -13822,6 +13904,7 @@ class SaudiArabia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -13864,6 +13947,7 @@ class SaudiArabia(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -14157,6 +14241,7 @@ class Serbia(Country):
         MiG_19P = planes.MiG_19P
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -14197,6 +14282,7 @@ class Serbia(Country):
         Plane.MiG_19P,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -14464,6 +14550,7 @@ class Slovakia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -14504,6 +14591,7 @@ class Slovakia(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -14762,6 +14850,7 @@ class SouthKorea(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -14805,6 +14894,7 @@ class SouthKorea(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -15047,6 +15137,7 @@ class Sweden(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -15087,6 +15178,7 @@ class Sweden(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -15365,6 +15457,7 @@ class Syria(Country):
         MiG_19P = planes.MiG_19P
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -15406,6 +15499,7 @@ class Syria(Country):
         Plane.MiG_19P,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -15666,6 +15760,7 @@ class Yemen(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -15705,6 +15800,7 @@ class Yemen(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -15981,6 +16077,7 @@ class Vietnam(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -16022,6 +16119,7 @@ class Vietnam(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -16284,6 +16382,7 @@ class Venezuela(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -16322,6 +16421,7 @@ class Venezuela(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -16552,6 +16652,7 @@ class Tunisia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -16588,6 +16689,7 @@ class Tunisia(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -16825,6 +16927,7 @@ class Thailand(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -16864,6 +16967,7 @@ class Thailand(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -17118,6 +17222,7 @@ class Sudan(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -17158,6 +17263,7 @@ class Sudan(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -17390,6 +17496,7 @@ class Philippines(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -17429,6 +17536,7 @@ class Philippines(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -17685,6 +17793,7 @@ class Morocco(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -17723,6 +17832,7 @@ class Morocco(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -17956,6 +18066,7 @@ class Mexico(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -17993,6 +18104,7 @@ class Mexico(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -18232,6 +18344,7 @@ class Malaysia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -18269,6 +18382,7 @@ class Malaysia(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -18535,6 +18649,7 @@ class Libya(Country):
         MiG_19P = planes.MiG_19P
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -18573,6 +18688,7 @@ class Libya(Country):
         Plane.MiG_19P,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -18821,6 +18937,7 @@ class Jordan(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -18859,6 +18976,7 @@ class Jordan(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -19138,6 +19256,7 @@ class Indonesia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -19182,6 +19301,7 @@ class Indonesia(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -19413,6 +19533,7 @@ class Honduras(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -19449,6 +19570,7 @@ class Honduras(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -19703,6 +19825,7 @@ class Ethiopia(Country):
         MiG_19P = planes.MiG_19P
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -19742,6 +19865,7 @@ class Ethiopia(Country):
         Plane.MiG_19P,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -19994,6 +20118,7 @@ class Chile(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -20036,6 +20161,7 @@ class Chile(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -20291,6 +20417,7 @@ class Brazil(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -20328,6 +20455,7 @@ class Brazil(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -20578,6 +20706,7 @@ class Bahrain(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -20613,6 +20742,7 @@ class Bahrain(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -20877,6 +21007,7 @@ class ThirdReich(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -20913,6 +21044,7 @@ class ThirdReich(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -21180,6 +21312,7 @@ class Yugoslavia(Country):
         MiG_19P = planes.MiG_19P
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -21218,6 +21351,7 @@ class Yugoslavia(Country):
         Plane.MiG_19P,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -21507,6 +21641,7 @@ class USSR(Country):
         Hawk = planes.Hawk
         M_2000C = planes.M_2000C
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -21568,6 +21703,7 @@ class USSR(Country):
         Plane.Hawk,
         Plane.M_2000C,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -21767,6 +21903,7 @@ class ItalianSocialRepublic(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -21802,6 +21939,7 @@ class ItalianSocialRepublic(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -22130,6 +22268,7 @@ class Algeria(Country):
         MiG_19P = planes.MiG_19P
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -22182,6 +22321,7 @@ class Algeria(Country):
         Plane.MiG_19P,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -22455,6 +22595,7 @@ class Kuwait(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -22493,6 +22634,7 @@ class Kuwait(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -22736,6 +22878,7 @@ class Qatar(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -22773,6 +22916,7 @@ class Qatar(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -23034,6 +23178,7 @@ class Oman(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -23072,6 +23217,7 @@ class Oman(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -23336,6 +23482,7 @@ class UnitedArabEmirates(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -23376,6 +23523,7 @@ class UnitedArabEmirates(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -23614,6 +23762,7 @@ class SouthAfrica(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -23653,6 +23802,7 @@ class SouthAfrica(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -23944,6 +24094,7 @@ class Cuba(Country):
         M_2000C = planes.M_2000C
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -23991,6 +24142,7 @@ class Cuba(Country):
         Plane.M_2000C,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -24243,6 +24395,7 @@ class Portugal(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -24284,6 +24437,7 @@ class Portugal(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -24570,6 +24724,7 @@ class GDR(Country):
         MiG_19P = planes.MiG_19P
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -24609,6 +24764,7 @@ class GDR(Country):
         Plane.MiG_19P,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -24864,6 +25020,7 @@ class Lebanon(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -24901,6 +25058,7 @@ class Lebanon(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -25383,6 +25541,7 @@ class CombinedJointTaskForcesBlue(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
         A_50 = planes.A_50
         An_26B = planes.An_26B
         An_30M = planes.An_30M
@@ -25483,6 +25642,7 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
         Plane.A_50,
         Plane.An_26B,
         Plane.An_30M,
@@ -26092,6 +26252,7 @@ class CombinedJointTaskForcesRed(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
         A_50 = planes.A_50
         An_26B = planes.An_26B
         An_30M = planes.An_30M
@@ -26192,6 +26353,7 @@ class CombinedJointTaskForcesRed(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
         Plane.A_50,
         Plane.An_26B,
         Plane.An_30M,
@@ -26801,6 +26963,7 @@ class UnitedNationsPeacekeepers(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
         A_50 = planes.A_50
         An_26B = planes.An_26B
         An_30M = planes.An_30M
@@ -26901,6 +27064,7 @@ class UnitedNationsPeacekeepers(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
         Plane.A_50,
         Plane.An_26B,
         Plane.An_30M,
@@ -27264,6 +27428,7 @@ class Argentina(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -27301,6 +27466,7 @@ class Argentina(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -27558,6 +27724,7 @@ class Cyprus(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -27594,6 +27761,7 @@ class Cyprus(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -27840,6 +28008,7 @@ class Slovenia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -27877,6 +28046,7 @@ class Slovenia(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -28126,6 +28296,7 @@ class Bolivia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -28168,6 +28339,7 @@ class Bolivia(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -28396,6 +28568,7 @@ class Ghana(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -28432,6 +28605,7 @@ class Ghana(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -28674,6 +28848,7 @@ class Nigeria(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -28711,6 +28886,7 @@ class Nigeria(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
@@ -28963,6 +29139,7 @@ class Peru(Country):
         MiG_21Bis = planes.MiG_21Bis
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
 
     planes = [
         Plane.A_10C,
@@ -29005,6 +29182,7 @@ class Peru(Country):
         Plane.MiG_21Bis,
         Plane.Yak_52,
         Plane.Ju_88A4,
+        Plane.C_47,
     ]
 
     class Helicopter:
