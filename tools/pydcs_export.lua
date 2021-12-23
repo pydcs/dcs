@@ -534,17 +534,15 @@ from dcs.unittype import FlyingType
 
         -- tasks
         writeln(file, "")
-        s = ''
-        j = 1
-        while j <= #plane.Tasks do
-            local objname = string.gsub(plane.Tasks[j].Name, "[-()/., *']", "")
-            s = s..'task.'..objname..''
-            j = j + 1
-            if j <= #plane.Tasks then
-                s = s..', '
+        tasks = {}
+        for j in pairs(plane.Tasks) do
+            -- For some reason some entries in this list are null. Skip those.
+            if plane.Tasks[j] ~= nil then
+                local objname = string.gsub(plane.Tasks[j].Name, "[-()/., *']", "")
+                table.insert(tasks, 'task.'..objname..'')
             end
         end
-        writeln(file, '    tasks = ['..s..']')
+        writeln(file, '    tasks = ['..table.concat(tasks, ', ')..']')
         local objname = string.gsub(plane.DefaultTask.Name, "[-()/., *']", "")
         writeln(file, '    task_default = task.'..objname..'')
         -- writeln(file, safename..'.load_payloads()')
