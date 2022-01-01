@@ -541,6 +541,27 @@ class IndicationTextEqual(Condition):
         return d
 
 
+class MapObjectIsDead(Condition):
+    predicate = "c_dead_zone"
+
+    def __init__(self, zone, altitude=1):
+        super(MapObjectIsDead, self).__init__(MapObjectIsDead.predicate)
+        self.zone = zone
+        self.params.append(self.zone)
+        self.altitude = altitude
+        self.params.append(self.altitude)
+
+    @classmethod
+    def create_from_dict(cls, d):
+        return cls(d["zone"], d["altitude"])
+
+    def dict(self):
+        d = super(MapObjectIsDead, self).dict()
+        d["altitude"] = self.altitude
+        d["zone"] = self.zone
+        return d
+
+
 class MissileInZone(Condition):
     predicate = "c_missile_in_zone"
 
@@ -1288,6 +1309,7 @@ condition_map: Dict[str, Type[Condition]] = {
     "c_group_dead": GroupDead,
     "c_group_life_less": GroupLifeLess,
     "c_indication_txt_equal_to": IndicationTextEqual,
+    "c_dead_zone": MapObjectIsDead,
     "c_missile_in_zone": MissileInZone,
     "c_mission_score_higher": MissionScoreHigher,
     "c_mission_score_lower": MissionScoreLower,
