@@ -59,23 +59,23 @@ class NevadaTest(unittest.TestCase):
 
     def test_parking_slots(self):
         m = dcs.mission.Mission(terrain=dcs.terrain.Nevada())
-        slots = m.terrain.nellis_afb().free_parking_slots(dcs.planes.A_10C)
+        slots = m.terrain.nellis().free_parking_slots(dcs.planes.A_10C)
         self.assertEqual(len(slots), 118)
 
-        slot = m.terrain.nellis_afb().free_parking_slot(dcs.planes.A_10C)
+        slot = m.terrain.nellis().free_parking_slot(dcs.planes.A_10C)
         slot.unit_id = 1
 
-        slots = m.terrain.nellis_afb().free_parking_slots(dcs.planes.A_10C)
+        slots = m.terrain.nellis().free_parking_slots(dcs.planes.A_10C)
         self.assertEqual(len(slots), 117)
 
         slot.unit_id = None
-        slots = m.terrain.nellis_afb().free_parking_slots(dcs.planes.A_10C)
+        slots = m.terrain.nellis().free_parking_slots(dcs.planes.A_10C)
         self.assertEqual(len(slots), 118)
 
-        hslots = m.terrain.nellis_afb().free_parking_slots(dcs.helicopters.UH_1H)
+        hslots = m.terrain.nellis().free_parking_slots(dcs.helicopters.UH_1H)
         self.assertEqual(len(hslots), 51)
 
-        slots = m.terrain.nellis_afb().free_parking_slots(dcs.planes.KC_135)
+        slots = m.terrain.nellis().free_parking_slots(dcs.planes.KC_135)
 
 
 class NormandyTest(unittest.TestCase):
