@@ -15,6 +15,7 @@ class FlyingUnit(Unit):
         super(FlyingUnit, self).__init__(_id, name, _type.id)
         self.unit_type = _type  # for loadout validation
         self.unit_type.load_payloads()
+        self.livery_id = self.unit_type.default_livery(_country.name)
         self.parking = None  # crossroad idx
         self.parking_id = None  # parking slot name (01, 02, ..)
         self.psi = 0
