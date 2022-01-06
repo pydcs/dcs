@@ -4309,9 +4309,6 @@ class Liwa_AFB(Airport):
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=66, position=mapping.Point(-277416.90625, -247214.046875), large=False, heli=False,
                 airplanes=True, slot_name='65', length=20.5, width=14.5, height=11.0, shelter=False))
-        self.parking_slots.append(ParkingSlot(
-                crossroad_idx=66, position=mapping.Point(-277416.90625, -247214.046875), large=False, heli=False,
-                airplanes=True, slot_name='65', length=20.5, width=14.5, height=11.0, shelter=False))
 
 
 class PersianGulf(Terrain):
