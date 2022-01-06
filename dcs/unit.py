@@ -36,7 +36,7 @@ class Unit:
         self.id = _id
         self.skill: Optional[Skill] = Skill.Average
         self.name: str = name if name else ""
-        self.livery_id: Optional[str]
+        self.livery_id: Optional[str] = None
 
     def load_from_dict(self, d):
         self.position = mapping.Point(d["x"], d["y"])
