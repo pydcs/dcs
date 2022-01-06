@@ -36,11 +36,13 @@ class Unit:
         self.id = _id
         self.skill: Optional[Skill] = Skill.Average
         self.name: str = name if name else ""
+        self.livery_id = self.unit_type.default_livery(_country.name)
 
     def load_from_dict(self, d):
         self.position = mapping.Point(d["x"], d["y"])
         self.heading = math.degrees(d["heading"])
         self.skill = Skill(d.get("skill")) if d.get("skill") else None
+        self.livery_id = d.get("livery_id")
 
     def clone(self, _id):
         new = copy.copy(self)
@@ -58,6 +60,8 @@ class Unit:
             "unitId": self.id,
             "name": self.name
         }
+        if self.livery_id:
+            d["livery_id"] = self.livery_id
         if self.skill is not None:
             d["skill"] = self.skill.value
         return d

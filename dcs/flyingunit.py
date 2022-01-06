@@ -15,7 +15,6 @@ class FlyingUnit(Unit):
         super(FlyingUnit, self).__init__(_id, name, _type.id)
         self.unit_type = _type  # for loadout validation
         self.unit_type.load_payloads()
-        self.livery_id = self.unit_type.default_livery(_country.name)
         self.parking = None  # crossroad idx
         self.parking_id = None  # parking slot name (01, 02, ..)
         self.psi = 0
@@ -37,7 +36,6 @@ class FlyingUnit(Unit):
 
     def load_from_dict(self, d):
         super(FlyingUnit, self).load_from_dict(d)
-        self.livery_id = d.get("livery_id")
         self.alt_type = d["alt_type"]
         self.alt = d["alt"]
         self.psi = d["psi"]
@@ -194,8 +192,6 @@ class FlyingUnit(Unit):
             d["parking"] = self.parking
         if self.parking_id is not None:
             d["parking_id"] = self.parking_id
-        if self.livery_id:
-            d["livery_id"] = self.livery_id
         d["psi"] = self.psi
         d["onboard_num"] = self.onboard_num
         d["speed"] = round(self.speed, 13)
