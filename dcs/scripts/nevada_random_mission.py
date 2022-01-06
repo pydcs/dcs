@@ -22,15 +22,15 @@ class TrainingScenario:
 
         self.add_civil_airtraffic(hidden=not unhide,
                                   airports_to_use=[
-                                      nevada.mccarran_international_airport(),
-                                      nevada.henderson_executive_airport(),
-                                      nevada.boulder_city_airport()])
+                                      nevada.mccarran_international(),
+                                      nevada.henderson_executive(),
+                                      nevada.boulder_city()])
 
         usa = self.m.country(dcs.countries.USA.name)
 
-        nellis = nevada.nellis_afb()
-        creech = nevada.creech_afb()
-        groom = nevada.groom_lake_afb()
+        nellis = nevada.nellis()
+        creech = nevada.creech()
+        groom = nevada.groom_lake()
 
         blue_military = [nellis, creech, groom]
 
@@ -151,7 +151,7 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
     def setup_airports(self):
         nevada = self.m.terrain  # type: dcs.terrain.Nevada
         self.blue_airports = nevada.default_blue_airports()
-        self.red_airports = [nevada.tonopah_airport(), nevada.mina_airport_3q0(), nevada.tonopah_test_range_airfield()]
+        self.red_airports = [nevada.tonopah(), nevada.mina(), nevada.tonopah_test_range()]
         for a in self.blue_airports:
             self.setup_airport(a, "blue", [])
         for a in self.red_airports:
@@ -185,8 +185,8 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
 
             slots = airport.free_parking_slot(ptype)
 
-            beatty = self.m.terrain.beatty_airport()
-            groom = self.m.terrain.groom_lake_afb()
+            beatty = self.m.terrain.beatty()
+            groom = self.m.terrain.groom_lake()
             x = random.randrange(int(dcs.terrain.Nevada.bounds.bottom) + 100 * 1000,
                                  int(groom.position.x))
             y = random.randrange(int(beatty.position.y),
@@ -351,15 +351,15 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
 
     def add_ground_targets(self):
         russia = self.m.country(dcs.countries.Russia.name)
-        pos1 = self.m.terrain.groom_lake_afb().position.point_from_heading(5, 60 * 1000)
+        pos1 = self.m.terrain.groom_lake().position.point_from_heading(5, 60 * 1000)
         rus_vehicles = dcs.countries.Russia.Vehicle
         vtypes = [
-            rus_vehicles.Armor.MBT_T_72B,
+            rus_vehicles.Armor.T_72B,
             rus_vehicles.Armor.BMP_3,
-            rus_vehicles.Artillery.SPH_2S3_Akatsia,
-            rus_vehicles.Unarmed.Transport_GAZ_3308,
-            rus_vehicles.Armor.MBT_T_80U]
-        self.m.vehicle_group(russia, "ref", dcs.countries.Russia.Vehicle.Infantry.Infantry_Soldier_Rus, pos1)
+            rus_vehicles.Artillery.SAU_Akatsia,
+            rus_vehicles.Unarmed.GAZ_3308,
+            rus_vehicles.Armor.T_80UD]
+        self.m.vehicle_group(russia, "ref", dcs.countries.Russia.Vehicle.Infantry.Infantry_AK, pos1)
         for i in range(1, 9):
             self.m.vehicle_group(
                 russia,
@@ -384,19 +384,19 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
         jtac1 = self.m.vehicle_group(
             self.m.country(dcs.countries.USA.name),
             "jtac1",
-            dcs.countries.USA.Vehicle.Unarmed.APC_M1025_HMMWV,
+            dcs.countries.USA.Vehicle.Unarmed.Hummer,
             pos1.point_from_heading(45, 5.5 * 1000),
             200
         )
         jtac1.units[0].player_can_drive = True
 
         # these are targets with light air defense in sector 74C
-        pos = self.m.terrain.groom_lake_afb().position.point_from_heading(320, 53 * 1000)
-        self.m.vehicle_group(russia, "ref 2", rus_vehicles.Infantry.Infantry_Soldier_Rus, pos)
+        pos = self.m.terrain.groom_lake().position.point_from_heading(320, 53 * 1000)
+        self.m.vehicle_group(russia, "ref 2", rus_vehicles.Infantry.Infantry_AK, pos)
         vtypes_light = [
-            rus_vehicles.AirDefence.AAA_ZU_23_on_Ural_375,
-            rus_vehicles.AirDefence.SPAAA_ZSU_23_4_Shilka,
-            rus_vehicles.AirDefence.AAA_ZU_23_on_Ural_375
+            rus_vehicles.AirDefence.Ural_375_ZU_23,
+            rus_vehicles.AirDefence.ZSU_23_4_Shilka,
+            rus_vehicles.AirDefence.Ural_375_ZU_23
         ]
 
         for i in range(1, 6):
@@ -419,7 +419,7 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
         jtac1 = self.m.vehicle_group(
             self.m.country(dcs.countries.USA.name),
             "jtac2",
-            dcs.countries.USA.Vehicle.Unarmed.APC_M1025_HMMWV,
+            dcs.countries.USA.Vehicle.Unarmed.Hummer,
             pos.point_from_heading(45, 8 * 1000),
             200
         )
