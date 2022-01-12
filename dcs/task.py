@@ -1680,11 +1680,11 @@ class OptFormation(Option):
     ):
 
         super(OptFormation, self).__init__(value.value)
-        self.params["action"]["params"]["formationIndex"] = formationIndex
+        self.params["action"]["params"]["formationIndex"] = formationIndex.value
         if variantIndex:
-            self.params["action"]["params"]["variantIndex"] = variantIndex
+            self.params["action"]["params"]["variantIndex"] = variantIndex.value
         if zInverse:
-            self.params["action"]["params"]["zInverse"] = zInverse
+            self.params["action"]["params"]["zInverse"] = zInverse.value
 
     @property
     def formation_index(self) -> Union[str, int, bool]:
