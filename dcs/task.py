@@ -1691,15 +1691,21 @@ class OptFormation(Option):
         return self.params["action"]["params"]["formationIndex"]
 
     @property
-    def variant_index(self) -> Union[str, int, bool]:
+    def variant_index(self) -> Optional[Union[str, int, bool]]:
         return self.params["action"]["params"]["variantIndex"]
+
+    @property
+    def z_inverse(self) -> Optional[Union[str, int, bool]]:
+        return self.params["action"]["params"]["zInverse"]
 
     # Rotary formation constructors:
     @staticmethod
     def rotary_wedge():
         return OptFormation(
             value=OptFormation.Values.RotaryWedge,
-            formationIndex=OptFormation.FormationIndex.RotaryWedge
+            formationIndex=OptFormation.FormationIndex.RotaryWedge,
+            zInverse=None,
+            variantIndex=None
         )
 
     @staticmethod
@@ -1796,7 +1802,9 @@ class OptFormation(Option):
     def rotary_column():
         return OptFormation(
             value=OptFormation.Values.RotaryColumn,
-            formationIndex=OptFormation.FormationIndex.RotaryColumn
+            formationIndex=OptFormation.FormationIndex.RotaryColumn,
+            zInverse=None,
+            variantIndex=None
         )
 
     # Aircraft formation constructors:
@@ -1805,7 +1813,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.LineAbreastClose,
             formationIndex=OptFormation.FormationIndex.LineAbreast,
-            variant_index=OptFormation.VariantIndex.Close
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Close
         )
 
     @staticmethod
@@ -1813,7 +1822,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.LineAbreastOpen,
             formationIndex=OptFormation.FormationIndex.LineAbreast,
-            variant_index=OptFormation.VariantIndex.Open
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Open
         )
 
     @staticmethod
@@ -1821,7 +1831,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.LineAbreastClose,
             formationIndex=OptFormation.FormationIndex.LineAbreast,
-            variant_index=OptFormation.VariantIndex.GroupClose
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.GroupClose
         )
 
     @staticmethod
@@ -1829,7 +1840,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.TrailClose,
             formationIndex=OptFormation.FormationIndex.Trail,
-            variant_index=OptFormation.VariantIndex.Close
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Close
         )
 
     @staticmethod
@@ -1837,7 +1849,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.TrailOpen,
             formationIndex=OptFormation.FormationIndex.Trail,
-            variant_index=OptFormation.VariantIndex.Open
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Open
         )
 
     @staticmethod
@@ -1845,7 +1858,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.TrailGroupClose,
             formationIndex=OptFormation.FormationIndex.Trail,
-            variant_index=OptFormation.VariantIndex.GroupClose
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.GroupClose
         )
 
     @staticmethod
@@ -1853,7 +1867,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.WedgeClose,
             formationIndex=OptFormation.FormationIndex.Wedge,
-            variant_index=OptFormation.VariantIndex.Close
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Close
         )
 
     @staticmethod
@@ -1861,7 +1876,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.WedgeOpen,
             formationIndex=OptFormation.FormationIndex.Wedge,
-            variant_index=OptFormation.VariantIndex.Open
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Open
         )
 
     @staticmethod
@@ -1869,7 +1885,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.WedgeGroupClose,
             formationIndex=OptFormation.FormationIndex.Wedge,
-            variant_index=OptFormation.VariantIndex.GroupClose
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.GroupClose
         )
 
     @staticmethod
@@ -1877,7 +1894,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.EchelonRightClose,
             formationIndex=OptFormation.FormationIndex.EchelonRight,
-            variant_index=OptFormation.VariantIndex.Close
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Close
         )
 
     @staticmethod
@@ -1885,7 +1903,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.EchelonRightOpen,
             formationIndex=OptFormation.FormationIndex.EchelonRight,
-            variant_index=OptFormation.VariantIndex.Open
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Open
         )
 
     @staticmethod
@@ -1893,7 +1912,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.EchelonRightGroupClose,
             formationIndex=OptFormation.FormationIndex.EchelonRight,
-            variant_index=OptFormation.VariantIndex.GroupClose
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.GroupClose
         )
 
     @staticmethod
@@ -1901,7 +1921,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.EchelonLeftClose,
             formationIndex=OptFormation.FormationIndex.EchelonLeft,
-            variant_index=OptFormation.VariantIndex.Close
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Close
         )
 
     @staticmethod
@@ -1909,7 +1930,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.EchelonLeftOpen,
             formationIndex=OptFormation.FormationIndex.EchelonLeft,
-            variant_index=OptFormation.VariantIndex.Open
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Open
         )
 
     @staticmethod
@@ -1917,7 +1939,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.EchelonLeftGroupClose,
             formationIndex=OptFormation.FormationIndex.EchelonLeft,
-            variant_index=OptFormation.VariantIndex.GroupClose
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.GroupClose
         )
 
     @staticmethod
@@ -1925,7 +1948,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.FingerFourClose,
             formationIndex=OptFormation.FormationIndex.FingerFour,
-            variant_index=OptFormation.VariantIndex.Close
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Close
         )
 
     @staticmethod
@@ -1933,7 +1957,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.FingerFourOpen,
             formationIndex=OptFormation.FormationIndex.FingerFour,
-            variant_index=OptFormation.VariantIndex.Open
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Open
         )
 
     @staticmethod
@@ -1941,7 +1966,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.FingerFourGroupClose,
             formationIndex=OptFormation.FormationIndex.FingerFour,
-            variant_index=OptFormation.VariantIndex.GroupClose
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.GroupClose
         )
 
     @staticmethod
@@ -1949,7 +1975,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.SpreadFourClose,
             formationIndex=OptFormation.FormationIndex.SpreadFour,
-            variant_index=OptFormation.VariantIndex.Close
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Close
         )
 
     @staticmethod
@@ -1957,7 +1984,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.SpreadFourOpen,
             formationIndex=OptFormation.FormationIndex.SpreadFour,
-            variant_index=OptFormation.VariantIndex.Open
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Open
         )
 
     @staticmethod
@@ -1965,7 +1993,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.SpreadFourGroupClose,
             formationIndex=OptFormation.FormationIndex.SpreadFour,
-            variant_index=OptFormation.VariantIndex.GroupClose
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.GroupClose
         )
 
     @staticmethod
@@ -1973,7 +2002,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.WW2_BomberElementClose,
             formationIndex=OptFormation.FormationIndex.WW2_BomberElement,
-            variant_index=OptFormation.VariantIndex.Close
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Close
         )
 
     @staticmethod
@@ -1981,14 +2011,17 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.WW2_BomberElementOpen,
             formationIndex=OptFormation.FormationIndex.WW2_BomberElement,
-            variant_index=OptFormation.VariantIndex.Open
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Open
         )
 
     @staticmethod
     def ww2_bomber_element_height_seperation():
         return OptFormation(
             value=OptFormation.Values.WW2_BomberElementHeightSeperation,
-            formationIndex=OptFormation.FormationIndex.WW2_BomberElementHeightSeperation
+            formationIndex=OptFormation.FormationIndex.WW2_BomberElementHeightSeperation,
+            zInverse=None,
+            variantIndex=None
         )
 
     @staticmethod
@@ -1996,7 +2029,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.WW2_FighterVicClose,
             formationIndex=OptFormation.FormationIndex.WW2_FighterVic,
-            variant_index=OptFormation.VariantIndex.Close
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Close
         )
 
     @staticmethod
@@ -2004,7 +2038,8 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.WW2_FighterVicOpen,
             formationIndex=OptFormation.FormationIndex.WW2_FighterVic,
-            variant_index=OptFormation.VariantIndex.Open
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Open
         )
 
 
