@@ -1673,10 +1673,10 @@ class OptFormation(Option):
 
     def __init__(
         self,
-        value: Values = Values.value,
-        formationIndex: FormationIndex = FormationIndex.value,
-        variantIndex: VariantIndex = VariantIndex.value,
-        zInverse: ZInverse = ZInverse.value
+        value: Values,
+        formationIndex: FormationIndex,
+        variantIndex: Optional[VariantIndex],
+        zInverse: Optional[ZInverse]
     ):
 
         super(OptFormation, self).__init__(value.value)
