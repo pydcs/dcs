@@ -1680,9 +1680,9 @@ class OptFormation(Option):
 
         super(OptFormation, self).__init__(value.value)
         self.params["action"]["params"]["formationIndex"] = formationIndex.value
-        if variantIndex:
+        if variantIndex is not None:
             self.params["action"]["params"]["variantIndex"] = variantIndex.value
-        if zInverse:
+        if zInverse is not None:
             self.params["action"]["params"]["zInverse"] = zInverse.value
 
     @property
