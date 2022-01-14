@@ -1485,7 +1485,7 @@ class Option(Task):
         self.params = {
             "action": {"id": "Option", "params": {"name": self.Key}}
         }
-        if value:
+        if value is not None:
             self.params["action"]["params"]["value"] = value
 
     @property
