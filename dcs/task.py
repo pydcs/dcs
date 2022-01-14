@@ -1592,10 +1592,6 @@ class OptFormation(Option):
 
     Key = 5
 
-    formationIndex: int
-    variantIndex: int
-    zInverse: int
-
     class Values(IntEnum):
         """Values are for Rotary or Fixed Wing only.  Rotary values are preceded by Rotary."""
         # RotaryWedge has no VariantIndex or zInverse field.
@@ -1661,7 +1657,7 @@ class OptFormation(Option):
 
     class VariantIndex(IntEnum):
         """The distance that the formation is spread apart is dependent on the formation index.
-        Ignore text for rotaries, its always small-medium-large."""
+        Ignore text for rotaries, its always small(1)-medium(2)-large(3)."""
         Close = 1
         Open = 2
         GroupClose = 3
@@ -1673,10 +1669,10 @@ class OptFormation(Option):
 
     def __init__(
         self,
-        value: Values,
-        formationIndex: FormationIndex,
-        variantIndex: Optional[VariantIndex],
-        zInverse: Optional[ZInverse]
+        value: Values = Values.EchelonRightOpen,
+        formationIndex: FormationIndex = FormationIndex.EchelonRight,
+        variantIndex: Optional[VariantIndex] = VariantIndex.Open,
+        zInverse: Optional[ZInverse] = None
     ):
 
         super(OptFormation, self).__init__(value.value)
