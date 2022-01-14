@@ -1637,6 +1637,8 @@ class OptFormation(Option):
         WW2_BomberElementHeightSeperation = 851968
         WW2_FighterVicClose = 917505
         WW2_FighterVicOpen = 917506
+        ModernBomberFormationClose = 1114113
+        ModernBomberFormationOpen = 1114114
 
     class FormationIndex(IntEnum):
         """Formations are for Aircraft only (not helicopters) unless explicitly stated otherwise."""
@@ -1654,6 +1656,7 @@ class OptFormation(Option):
         WW2_BomberElement = 12
         WW2_BomberElementHeightSeperation = 13
         WW2_FighterVic = 14
+        ModernBomberFormation = 17
 
     class VariantIndex(IntEnum):
         """The distance that the formation is spread apart is dependent on the formation index.
@@ -2034,6 +2037,24 @@ class OptFormation(Option):
         return OptFormation(
             value=OptFormation.Values.WW2_FighterVicOpen,
             formationIndex=OptFormation.FormationIndex.WW2_FighterVic,
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Open
+        )
+
+    @staticmethod
+    def modern_bomber_formation_close():
+        return OptFormation(
+            value=OptFormation.Values.ModernBomberFormationClose,
+            formationIndex=OptFormation.FormationIndex.ModernBomberFormation,
+            zInverse=None,
+            variantIndex=OptFormation.VariantIndex.Close
+        )
+
+    @staticmethod
+    def modern_bomber_formation_open():
+        return OptFormation(
+            value=OptFormation.Values.ModernBomberFormationOpen,
+            formationIndex=OptFormation.FormationIndex.ModernBomberFormation,
             zInverse=None,
             variantIndex=OptFormation.VariantIndex.Open
         )
