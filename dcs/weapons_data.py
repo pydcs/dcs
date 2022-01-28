@@ -70,6 +70,7 @@ class Weapons:
     ALARM = {"clsid": "{E6747967-B1F0-4C77-977B-AB2E6EB0C102}", "name": "ALARM", "weight": 268}
     ALQ_131___ECM_Pod = {"clsid": "{6D21ECEA-F85B-4E8D-9D51-31DC9B8AA4EF}", "name": "ALQ-131 - ECM Pod", "weight": 305}
     ALQ_184 = {"clsid": "ALQ_184", "name": "ALQ-184 - ECM Pod", "weight": 215}
+    ALQ_184_Long = {"clsid": "ALQ_184_Long", "name": "ALQ-184 Long - ECM Pod", "weight": 286}
     AN_AAQ_28_LITENING___Targeting_Pod = {"clsid": "{A111396E-D3E8-4b9c-8AC9-2432489304D5}", "name": "AN/AAQ-28 LITENING - Targeting Pod", "weight": 208}
     AN_AAQ_28_LITENING___Targeting_Pod_ = {"clsid": "{AAQ-28_LEFT}", "name": "AN/AAQ-28 LITENING - Targeting Pod", "weight": 208}
     AN_ALQ_164_DECM_Pod = {"clsid": "{ALQ_164_RF_Jammer}", "name": "AN/ALQ-164 DECM Pod", "weight": 143.789}
@@ -1159,6 +1160,7 @@ weapon_ids = {
     "{E6747967-B1F0-4C77-977B-AB2E6EB0C102}": Weapons.ALARM,
     "{6D21ECEA-F85B-4E8D-9D51-31DC9B8AA4EF}": Weapons.ALQ_131___ECM_Pod,
     "ALQ_184": Weapons.ALQ_184,
+    "ALQ_184_Long": Weapons.ALQ_184_Long,
     "{A111396E-D3E8-4b9c-8AC9-2432489304D5}": Weapons.AN_AAQ_28_LITENING___Targeting_Pod,
     "{AAQ-28_LEFT}": Weapons.AN_AAQ_28_LITENING___Targeting_Pod_,
     "{ALQ_164_RF_Jammer}": Weapons.AN_ALQ_164_DECM_Pod,
