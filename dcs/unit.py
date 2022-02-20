@@ -1,9 +1,15 @@
+from __future__ import annotations
+
+import copy
+from enum import Enum
+import math
+from typing import TYPE_CHECKING, Any, Callable, Dict, Type, Union, Optional
+
 from dcs.unittype import UnitType, StaticType, ShipType, VehicleType
 import dcs.mapping as mapping
-import copy
-import math
-from enum import Enum
-from typing import Callable, Dict, Type, Union, Optional
+
+if TYPE_CHECKING:
+    from dcs.terrain.terrain import Terrain
 
 
 class Skill(Enum):
@@ -29,16 +35,19 @@ class Skill(Enum):
 
 
 class Unit:
-    def __init__(self, _id, name: Optional[str] = None, type=""):
+    def __init__(self, _id, terrain: Terrain, name: Optional[str] = None, type="") -> None:
+        if type == "":
+            breakpoint()
         self.type = type
-        self.position = mapping.Point(0, 0)
-        self.heading = 0
+        self._terrain = terrain
+        self.position = mapping.Point(0, 0, self._terrain)
+        self.heading = 0.0
         self.id = _id
         self.skill: Optional[Skill] = Skill.Average
         self.name: str = name if name else ""
 
-    def load_from_dict(self, d):
-        self.position = mapping.Point(d["x"], d["y"])
+    def load_from_dict(self, d: Dict[str, Any]) -> None:
+        self.position = mapping.Point(d["x"], d["y"], self._terrain)
         self.heading = math.degrees(d["heading"])
         self.skill = Skill(d.get("skill")) if d.get("skill") else None
 
@@ -67,13 +76,13 @@ class Unit:
 
 
 class Vehicle(Unit):
-    def __init__(self, id=None, name: Optional[str] = None, _type="Sandbox"):
-        super(Vehicle, self).__init__(id, name, _type)
+    def __init__(self, terrain: Terrain, id: Optional[int] = None, name: Optional[str] = None, _type="Sandbox"):
+        super().__init__(id, terrain, name, _type)
         self.player_can_drive = False
         self.transportable = {"randomTransportable": False}
 
-    def load_from_dict(self, d):
-        super(Vehicle, self).load_from_dict(d)
+    def load_from_dict(self, d: Dict[str, Any]) -> None:
+        super().load_from_dict(d)
         self.player_can_drive = d["playerCanDrive"]
         self.transportable = d["transportable"]
 
@@ -85,8 +94,8 @@ class Vehicle(Unit):
 
 
 class Ship(Unit):
-    def __init__(self, id=None, name: Optional[str] = None, _type=None):
-        super(Ship, self).__init__(id, name, _type.id)
+    def __init__(self, terrain: Terrain, id=None, name: Optional[str] = None, _type=None):
+        super().__init__(id, terrain, name, _type.id)
         self.transportable = {"randomTransportable": False}
         self.frequency = 127500000
 
@@ -98,8 +107,8 @@ class Ship(Unit):
         """
         self.frequency = frequency
 
-    def load_from_dict(self, d):
-        super(Ship, self).load_from_dict(d)
+    def load_from_dict(self, d: Dict[str, Any]) -> None:
+        super().load_from_dict(d)
         self.frequency = d.get("frequency", self.frequency)
         self.transportable = d["transportable"]
 
@@ -111,7 +120,7 @@ class Ship(Unit):
 
 
 class Static(Unit):
-    def __init__(self, unit_id: int, name: Optional[str], _type: Union[str, Type[UnitType]]) -> None:
+    def __init__(self, unit_id: int, name: Optional[str], _type: Union[str, Type[UnitType]], terrain: Terrain) -> None:
         from .planes import PlaneType
         from .helicopters import HelicopterType
 
@@ -120,7 +129,7 @@ class Static(Unit):
         else:
             _id = _type.id
 
-        super(Static, self).__init__(unit_id, name, _id)
+        super().__init__(unit_id, terrain, name, _id)
         self.skill = None
         self.shape_name: Optional[str] = None
         self.rate = None
@@ -146,8 +155,8 @@ class Static(Unit):
                 self.category = "Vehicles"
                 self.can_cargo = False
 
-    def load_from_dict(self, d):
-        super(Static, self).load_from_dict(d)
+    def load_from_dict(self, d: Dict[str, Any]) -> None:
+        super().load_from_dict(d)
         self.can_cargo = d.get("canCargo", False)
         self.category = d["category"]
         self.shape_name = d.get("shape_name", None)
@@ -169,8 +178,8 @@ class Static(Unit):
 
 class BaseFARP(Static):
     def __init__(self, unit_id, name: Optional[str], _type: Union[str, Type[UnitType]], shape_name: str, frequency: float,
-                 modulation: int, callsign_id: int) -> None:
-        super().__init__(unit_id, name, _type)
+                 modulation: int, callsign_id: int, terrain: Terrain) -> None:
+        super().__init__(unit_id, name, _type, terrain)
         self.category = "Heliports"
         self.shape_name = shape_name
         self.heliport_frequency = frequency
@@ -180,8 +189,16 @@ class BaseFARP(Static):
 
 
 class FARP(BaseFARP):
-    def __init__(self, unit_id=None, name: Optional[str] = None, frequency=127.5, modulation=0, callsign_id=1):
-        super().__init__(unit_id, name, "FARP", "FARPS", frequency, modulation, callsign_id)
+    def __init__(
+        self,
+        terrain: Terrain,
+        unit_id=None,
+        name: Optional[str] = None,
+        frequency=127.5,
+        modulation=0,
+        callsign_id=1
+    ) -> None:
+        super().__init__(unit_id, name, "FARP", "FARPS", frequency, modulation, callsign_id, terrain)
 
     def load_from_dict(self, d):
         super(FARP, self).load_from_dict(d)
@@ -199,8 +216,16 @@ class FARP(BaseFARP):
 
 
 class SingleHeliPad(BaseFARP):
-    def __init__(self, unit_id=None, name: Optional[str] = None, frequency=127.5, modulation=0, callsign_id=1):
-        super().__init__(unit_id, name, "SINGLE_HELIPAD", "FARP", frequency, modulation, callsign_id)
+    def __init__(
+        self,
+        terrain: Terrain,
+        unit_id=None,
+        name: Optional[str] = None,
+        frequency=127.5,
+        modulation=0,
+        callsign_id=1
+    ) -> None:
+        super().__init__(unit_id, name, "SINGLE_HELIPAD", "FARP", frequency, modulation, callsign_id, terrain)
 
     def load_from_dict(self, d):
         super(SingleHeliPad, self).load_from_dict(d)
@@ -218,8 +243,8 @@ class SingleHeliPad(BaseFARP):
 
 
 class InvisibleFARP(BaseFARP):
-    def __init__(self, unit_id=None, name=None, frequency=127.5, modulation=0, callsign_id=1):
-        super().__init__(unit_id, name, "Invisible FARP", "invisiblefarp", frequency, modulation, callsign_id)
+    def __init__(self, terrain: Terrain, unit_id=None, name=None, frequency=127.5, modulation=0, callsign_id=1):
+        super().__init__(unit_id, name, "Invisible FARP", "invisiblefarp", frequency, modulation, callsign_id, terrain)
 
     def load_from_dict(self, d):
         super(InvisibleFARP, self).load_from_dict(d)
@@ -236,7 +261,7 @@ class InvisibleFARP(BaseFARP):
         return d
 
 
-farp_mapping: Dict[str, Callable[[Optional[int], Optional[str], float, int, int], BaseFARP]] = {
+farp_mapping: Dict[str, Callable[[Terrain, Optional[int], Optional[str], float, int, int], BaseFARP]] = {
     "FARP": FARP,
     "SingleHeliPad": SingleHeliPad,
     "InvisibleFARP": InvisibleFARP,

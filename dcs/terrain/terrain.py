@@ -1,4 +1,6 @@
 # terrain module
+from __future__ import annotations
+
 import dcs.mapping as mapping
 import dcs.lua as lua
 import dcs.point as point
@@ -140,10 +142,10 @@ class Airport:
     def is_blue(self):
         return self.coalition == "BLUE"
 
-    def random_unit_zone(self) -> mapping.Rectangle:
+    def random_unit_zone(self, terrain: Terrain) -> mapping.Rectangle:
         if self.unit_zones:
             return self.unit_zones[random.randrange(0, len(self.unit_zones))]
-        return mapping.Rectangle.from_point(mapping.Point(self.position.x + 500, self.position.y), 200)
+        return mapping.Rectangle.from_point(mapping.Point(self.position.x + 500, self.position.y, terrain), 200)
 
     def occupy_runway(self, group):
         # if self.runway_used is not None:
@@ -383,13 +385,13 @@ class Graph:
 
         return visited[destination], list(full_path)
 
-    def travel(self, vehicle_group, from_node: Node, to_node: Node, speed=32):
+    def travel(self, vehicle_group, from_node: Node, to_node: Node, terrain: Terrain, speed=32):
         distance, path = self.shortest_path(from_node.name, to_node.name)
         last = path[0]
         for p in path[1:]:
             current_node = self.node(p)
             if not self.edge_properties[(last, p)][1]:
-                vehicle_group.add_waypoint(current_node.position + mapping.Point(1, 0),
+                vehicle_group.add_waypoint(current_node.position + mapping.Point(1, 0, terrain),
                                            speed=speed,
                                            move_formation=point.PointAction.OffRoad)
                 vehicle_group.add_waypoint(current_node.position,

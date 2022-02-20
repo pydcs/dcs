@@ -1,6 +1,7 @@
 import sys
 from typing import Dict, Union, List, TYPE_CHECKING
 import dcs.countries as countries
+from dcs.mapping import Point
 import dcs.unitgroup as unitgroup
 import dcs.planes as planes
 import dcs.helicopters as helicopters
@@ -37,7 +38,7 @@ class Coalition:
 
         for imp_point_idx in keys:
             imp_point = imp_group["route"]["points"][imp_point_idx]
-            point = MovingPoint()
+            point = MovingPoint(Point(0, 0, mission.terrain))
             point.load_from_dict(imp_point, mission.translation)
             group.add_point(point)
         return group
@@ -48,7 +49,7 @@ class Coalition:
 
         for imp_point_idx in keys:
             imp_point = imp_group["route"]["points"][imp_point_idx]
-            point = StaticPoint()
+            point = StaticPoint(Point(0, 0, mission.terrain))
             point.load_from_dict(imp_point, mission.translation)
             group.add_point(point)
         return group
@@ -99,7 +100,7 @@ class Coalition:
                     vgroup = imp_country["vehicle"]["group"][vgroup_idx]
                     vg = unitgroup.VehicleGroup(vgroup["groupId"], self.get_name(mission, vgroup["name"]),
                                                 vgroup["start_time"])
-                    vg.load_from_dict(vgroup)
+                    vg.load_from_dict(vgroup, mission.terrain)
                     mission.current_group_id = max(mission.current_group_id, vg.id)
 
                     Coalition._import_moving_point(mission, vg, vgroup)
@@ -108,6 +109,7 @@ class Coalition:
                     for imp_unit_idx in vgroup["units"]:
                         imp_unit = vgroup["units"][imp_unit_idx]
                         unit = Vehicle(
+                            mission.terrain,
                             id=imp_unit["unitId"],
                             name=self.get_name(mission, imp_unit["name"]),
                             _type=imp_unit["type"])
@@ -122,7 +124,7 @@ class Coalition:
                     imp_group = imp_country["ship"]["group"][group_idx]
                     ship_group = unitgroup.ShipGroup(imp_group["groupId"], self.get_name(mission, imp_group["name"]),
                                                      imp_group["start_time"])
-                    ship_group.load_from_dict(imp_group)
+                    ship_group.load_from_dict(imp_group, mission.terrain)
                     mission.current_group_id = max(mission.current_group_id, ship_group.id)
 
                     Coalition._import_moving_point(mission, ship_group, imp_group)
@@ -131,6 +133,7 @@ class Coalition:
                     for imp_unit_idx in imp_group["units"]:
                         imp_unit = imp_group["units"][imp_unit_idx]
                         ship = Ship(
+                            mission.terrain,
                             id=imp_unit["unitId"],
                             name=self.get_name(mission, imp_unit["name"]),
                             _type=ships.ship_map[imp_unit["type"]])
@@ -146,7 +149,7 @@ class Coalition:
                     plane_group = unitgroup.PlaneGroup(pgroup["groupId"],
                                                        self.get_name(mission, pgroup["name"]),
                                                        pgroup["start_time"])
-                    plane_group.load_from_dict(pgroup)
+                    plane_group.load_from_dict(pgroup, mission.terrain)
                     mission.current_group_id = max(mission.current_group_id, plane_group.id)
 
                     Coalition._import_moving_point(mission, plane_group, pgroup)
@@ -155,6 +158,7 @@ class Coalition:
                     for imp_unit_idx in pgroup["units"]:
                         imp_unit = pgroup["units"][imp_unit_idx]
                         plane = Plane(
+                            mission.terrain,
                             _id=imp_unit["unitId"],
                             name=self.get_name(mission, imp_unit["name"]),
                             _type=planes.plane_map[imp_unit["type"]],
@@ -184,7 +188,7 @@ class Coalition:
                         pgroup["groupId"],
                         self.get_name(mission, pgroup["name"]),
                         pgroup["start_time"])
-                    helicopter_group.load_from_dict(pgroup)
+                    helicopter_group.load_from_dict(pgroup, mission.terrain)
                     mission.current_group_id = max(mission.current_group_id, helicopter_group.id)
 
                     Coalition._import_moving_point(mission, helicopter_group, pgroup)
@@ -193,6 +197,7 @@ class Coalition:
                     for imp_unit_idx in pgroup["units"]:
                         imp_unit = pgroup["units"][imp_unit_idx]
                         heli = Helicopter(
+                            mission.terrain,
                             _id=imp_unit["unitId"],
                             name=self.get_name(mission, imp_unit["name"]),
                             _type=helicopters.helicopter_map[imp_unit["type"]],
@@ -220,7 +225,7 @@ class Coalition:
                     sgroup = imp_country["static"]["group"][sgroup_idx]
                     static_group = unitgroup.StaticGroup(sgroup["groupId"],
                                                          self.get_name(mission, sgroup["name"]))
-                    static_group.load_from_dict(sgroup)
+                    static_group.load_from_dict(sgroup, mission.terrain)
                     mission.current_group_id = max(mission.current_group_id, static_group.id)
 
                     Coalition._import_static_point(mission, static_group, sgroup)
@@ -231,17 +236,20 @@ class Coalition:
                         static: Static
                         if imp_unit["type"] == "FARP":
                             static = FARP(
+                                mission.terrain,
                                 unit_id=imp_unit["unitId"],
                                 name=self.get_name(mission, imp_unit["name"]))
                         elif imp_unit["type"] == "SINGLE_HELIPAD":
                             static = SingleHeliPad(
+                                mission.terrain,
                                 unit_id=imp_unit["unitId"],
                                 name=self.get_name(mission, imp_unit["name"]))
                         else:
                             static = Static(
                                 unit_id=imp_unit["unitId"],
                                 name=self.get_name(mission, imp_unit["name"]),
-                                _type=imp_unit["type"])
+                                _type=imp_unit["type"],
+                                terrain=mission.terrain)
                         static.load_from_dict(imp_unit)
 
                         mission.current_unit_id = max(mission.current_unit_id, static.id)

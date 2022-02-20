@@ -1,3 +1,5 @@
+import copy
+
 import dcs.task as task
 import dcs.mapping as mapping
 from typing import Any, Dict, List, Optional
@@ -27,11 +29,11 @@ class PointAction(Enum):
 
 
 class StaticPoint:
-    def __init__(self):
+    def __init__(self, position: mapping.Point) -> None:
+        self.position = copy.copy(position)
         self.alt = 0
         self.type = ""
         self.name: str = ""
-        self.position = mapping.Point(0, 0)
         self.speed = 0.0
         self.formation_template = ""
         self.action = PointAction.None_  # type: PointAction
@@ -126,8 +128,8 @@ class PointProperties:
 
 
 class MovingPoint(StaticPoint):
-    def __init__(self):
-        super(MovingPoint, self).__init__()
+    def __init__(self, position: mapping.Point) -> None:
+        super().__init__(position)
         self.type = "Turning Point"
         self.action: PointAction = PointAction.TurningPoint
         self.alt_type = "BARO"
@@ -136,7 +138,7 @@ class MovingPoint(StaticPoint):
         self.speed_locked = True
         self.tasks: List[task.Task] = []
         self.properties: Optional[PointProperties] = None
-        self.airdrome_id = None
+        self.airdrome_id: Optional[int] = None
         self.helipad_id = None
         self.link_unit = None
 

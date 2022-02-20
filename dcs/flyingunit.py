@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import copy
 
 from dcs.unit import Unit, Skill
@@ -7,12 +9,22 @@ from dcs.planes import PlaneType, A_10C
 from dcs.helicopters import HelicopterType, Ka_50
 
 import json
-from typing import Dict, Optional, Type
+from typing import TYPE_CHECKING, Dict, Optional, Type
+
+if TYPE_CHECKING:
+    from dcs.terrain import Terrain
 
 
 class FlyingUnit(Unit):
-    def __init__(self, _id, name, _type: Type[FlyingType], _country=None):
-        super(FlyingUnit, self).__init__(_id, name, _type.id)
+    def __init__(
+        self,
+        _id,
+        name: Optional[str],
+        _type: Type[FlyingType],
+        terrain: Terrain,
+        _country=None
+    ) -> None:
+        super().__init__(_id, terrain, name, _type.id)
         self.unit_type = _type  # for loadout validation
         self.unit_type.load_payloads()
         self.livery_id = self.unit_type.default_livery(_country.name)
@@ -222,13 +234,13 @@ class FlyingUnit(Unit):
 
 
 class Plane(FlyingUnit):
-    def __init__(self, _id=None, name=None, _type: Type[PlaneType] = A_10C, _country=None):
-        super(Plane, self).__init__(_id, name, _type, _country)
+    def __init__(self, terrain: Terrain, _id=None, name=None, _type: Type[PlaneType] = A_10C, _country=None):
+        super().__init__(_id, name, _type, terrain, _country)
 
 
 class Helicopter(FlyingUnit):
-    def __init__(self, _id=None, name=None, _type: Type[HelicopterType] = Ka_50, _country=None):
-        super(Helicopter, self).__init__(_id, name, _type, _country)
+    def __init__(self, terrain: Terrain, _id=None, name=None, _type: Type[HelicopterType] = Ka_50, _country=None):
+        super().__init__(_id, name, _type, terrain, _country)
         self.rope_length = 15
 
     def load_from_dict(self, d):

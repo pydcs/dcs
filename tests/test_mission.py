@@ -5,6 +5,7 @@ from pathlib import Path
 import zipfile
 
 import dcs
+from dcs.terrain.caucasus import Caucasus
 from dcs.translation import String
 from dcs.status_message import MessageSeverity, MessageType
 from dcs.flyingunit import FlyingUnit
@@ -30,12 +31,14 @@ class BasicTests(unittest.TestCase):
         caucasus = m.terrain  # type: dcs.terrain.Caucasus
         batumi = caucasus.batumi()
         self.assertIsNotNone(usa)
-        pos = batumi.random_unit_zone().center()
+        pos = batumi.random_unit_zone(caucasus).center()
         vg = m.vehicle_group(usa, "Tanks", dcs.countries.USA.Vehicle.Armor.M_1_Abrams, pos)
         self.assertIsInstance(vg, dcs.unitgroup.VehicleGroup)
-        pg = m.flight_group_inflight(usa, "Airgroup 1", dcs.planes.A_10C, dcs.Point(pos.x + 200, pos.y + 200), 2000)
+        pg = m.flight_group_inflight(
+            usa, "Airgroup 1", dcs.planes.A_10C, dcs.Point(pos.x + 200, pos.y + 200, caucasus), 2000)
         self.assertIsInstance(pg, dcs.unitgroup.PlaneGroup)
-        pg = m.flight_group_inflight(usa, "Airgroup 2", dcs.planes.M_2000C, dcs.Point(pos.x + 200, pos.y + 200), 2000)
+        pg = m.flight_group_inflight(
+            usa, "Airgroup 2", dcs.planes.M_2000C, dcs.Point(pos.x + 200, pos.y + 200, caucasus), 2000)
         self.assertIsInstance(pg, dcs.unitgroup.PlaneGroup)
         found_g = m.find_group("Tanks", "exact")
         self.assertIsInstance(found_g, dcs.unitgroup.VehicleGroup)
@@ -56,8 +59,9 @@ class BasicTests(unittest.TestCase):
         self.assertIsInstance(found_g, dcs.unitgroup.PlaneGroup)
         self.assertEqual(found_g.units[0].unit_type, dcs.planes.A_10C)
 
-    def test_basic_mission(self):
+    def test_basic_mission(self) -> None:
         m = dcs.mission.Mission()
+        assert isinstance(m.terrain, Caucasus)
         kobuleti = m.terrain.airports["Kobuleti"]
         kobuleti.set_blue()
         batumi = m.terrain.airports["Batumi"]
@@ -92,15 +96,16 @@ class BasicTests(unittest.TestCase):
         self.assertIsNotNone(tanker.points[0].find_task(dcs.task.Tanker))
 
         ustanks = m.vehicle_group(usa, "DefTanks", dcs.countries.USA.Vehicle.Armor.M_1_Abrams,
-                                  dcs.mapping.Point(-283177.42857144, 659188), 300, 3)
+                                  dcs.mapping.Point(-283177.42857144, 659188, m.terrain), 300, 3)
         ustanks.add_unit(m.vehicle("airdef", dcs.countries.USA.Vehicle.AirDefence.M1097_Avenger))
         ustanks.add_unit(m.vehicle("aaa", dcs.countries.USA.Vehicle.AirDefence.Vulcan))
         ustanks.units[-1].skill = dcs.unit.Skill.High
         ustanks.formation(heading=310)
 
-        heli = m.flight_group_inflight(usa, "heli", dcs.helicopters.UH_60A,
-                                       dcs.mapping.Point(batumi.position.x + 1000 * 5, batumi.position.y),
-                                       300, speed=150)
+        heli = m.flight_group_inflight(
+            usa, "heli", dcs.helicopters.UH_60A,
+            dcs.mapping.Point(batumi.position.x + 1000 * 5, batumi.position.y, m.terrain),
+            300, speed=150)
         heli.add_runway_waypoint(kobuleti)
         heli.land_at(kobuleti)
 
@@ -112,17 +117,21 @@ class BasicTests(unittest.TestCase):
         senaki = m.terrain.senaki_kolkhi()
         senaki.set_red()
         russia = m.coalition["red"].country("Russia")
-        bg = m.vehicle_group(russia, "Tanks", dcs.countries.Russia.Vehicle.Armor.T_90,
-                             dcs.mapping.Point(-281599.97853068, 645570.27528559), 180, 4,
-                             move_formation=dcs.point.PointAction.OnRoad)
-        bg.add_waypoint(dcs.mapping.Point(-317423.36510278, 636737.32119577), dcs.point.PointAction.OnRoad, 50)
+        bg = m.vehicle_group(
+            russia, "Tanks", dcs.countries.Russia.Vehicle.Armor.T_90,
+            dcs.mapping.Point(-281599.97853068, 645570.27528559, m.terrain), 180, 4,
+            move_formation=dcs.point.PointAction.OnRoad)
+        bg.add_waypoint(
+            dcs.mapping.Point(-317423.36510278, 636737.32119577, m.terrain),
+            dcs.point.PointAction.OnRoad, 50)
 
         mozdok = m.terrain.airports["Mozdok"]
         mozdok.set_red()
         rfighter = m.flight_group_from_airport(russia, "Migs", dcs.planes.MiG_29A, mozdok, group_size=2)
         last_wp = rfighter.add_runway_waypoint(mozdok)
-        rfighter.add_waypoint(dcs.mapping.Point(last_wp.position.x - 1000 * 80, last_wp.position.y - 1000 * 150), 6000,
-                              800)
+        rfighter.add_waypoint(
+            dcs.mapping.Point(last_wp.position.x - 1000 * 80, last_wp.position.y - 1000 * 150, m.terrain),
+            6000, 800)
 
         sukhumi = m.terrain.sukhumi_babushara()
         sukhumi.set_red()
@@ -136,13 +145,14 @@ class BasicTests(unittest.TestCase):
         p = last_wp.position.point_from_heading(heading, distance - 1000)
         last_wp = su25.add_waypoint(p, 3000)
         last_wp.tasks.append(dcs.task.CAS.EnrouteTasks.EngageGroup(ustanks.id))
-        su25.add_waypoint(dcs.mapping.Point(last_wp.position.x + 1000 * 10, last_wp.position.y), 3000)
+        su25.add_waypoint(
+            dcs.mapping.Point(last_wp.position.x + 1000 * 10, last_wp.position.y, m.terrain), 3000)
         su25.add_runway_waypoint(sukhumi)
         su25.land_at(sukhumi)
 
         sg = m.ship_group(russia, "TaskForce", dcs.ships.MOSCOW,
-                          dcs.mapping.Point(-209571.42857143, 500728.57142858), 0)
-        sg.add_waypoint(dcs.mapping.Point(sg.x - 1000 * 60, sg.y + 1000 * 10))
+                          dcs.mapping.Point(-209571.42857143, 500728.57142858, m.terrain), 0)
+        sg.add_waypoint(dcs.mapping.Point(sg.x - 1000 * 60, sg.y + 1000 * 10, m.terrain))
 
         seapoint = batumi.unit_zones[0].random_point()
         seapoint.y -= 10 * 1000
@@ -562,7 +572,7 @@ class BasicTests(unittest.TestCase):
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
 
         usa = m.country("USA")
-        point = dcs.Point(-217283, 564863)  # This is a compound north of sukhmi, with buildings and trees
+        point = dcs.Point(-217283, 564863, m.terrain)  # This is a compound north of sukhmi, with buildings and trees
         m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.Vulcan, position=point)
 
         # Create trigger zone
@@ -588,7 +598,7 @@ class BasicTests(unittest.TestCase):
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
 
         usa = m.country("USA")
-        point = dcs.Point(-217283, 564863)  # This is a compound north of sukhmi, with buildings and trees
+        point = dcs.Point(-217283, 564863, m.terrain)  # This is a compound north of sukhmi, with buildings and trees
         m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.Vulcan, position=point)
 
         # Create trigger zone
@@ -615,7 +625,7 @@ class BasicTests(unittest.TestCase):
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
 
         usa = m.country("USA")
-        point = dcs.Point(-217283, 564863)  # This is a compound north of sukhmi, with buildings and trees
+        point = dcs.Point(-217283, 564863, m.terrain)  # This is a compound north of sukhmi, with buildings and trees
         m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.Vulcan, position=point)
 
         # Create trigger zone
@@ -642,7 +652,7 @@ class BasicTests(unittest.TestCase):
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
 
         usa = m.country("USA")
-        point = dcs.Point(-217283, 564863)  # This is a compound north of sukhmi, with buildings and trees
+        point = dcs.Point(-217283, 564863, m.terrain)  # This is a compound north of sukhmi, with buildings and trees
         m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.Vulcan, position=point)
 
         # Create trigger zone
@@ -686,7 +696,7 @@ class BasicTests(unittest.TestCase):
         caucasus = m.terrain
         batumi = caucasus.batumi()
         m.vehicle_group(usa, "qf17", dcs.countries.USA.Vehicle.AirDefence.QF_37_AA,
-                        position=batumi.random_unit_zone().center())
+                        position=batumi.random_unit_zone(caucasus).center())
 
         m.save('missions/test_mission_qf17.miz')
 
@@ -698,7 +708,7 @@ class BasicTests(unittest.TestCase):
 
     def test_mission_neutral(self):
         m = dcs.mission.Mission()
-        self.assertEqual(0, len(m.load_file('tests/loadtest.miz')))
+        self.assertEqual([], m.load_file('tests/loadtest.miz'))
 
         neutral_country_name = "Sweden"
         sweden = m.country(neutral_country_name)

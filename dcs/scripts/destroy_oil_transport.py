@@ -4,11 +4,6 @@ import os
 import random
 import argparse
 
-zone_abkhazia = dcs.Polygon([dcs.Point(-187092.85714285, 460857.14285714), dcs.Point(-149378.57142856, 476285.71428571),
-                             dcs.Point(-147664.28571428, 520000), dcs.Point(-175378.57142856, 599714.28571429),
-                             dcs.Point(-174521.42857142, 644000), dcs.Point(-199664.28571428, 624000),
-                             dcs.Point(-233949.99999999, 632857.14285714), dcs.Point(-271092.85714285, 596000)])
-
 
 def main():
     aircrafts = [x for x in dcs.planes.plane_map.values() if x.flyable]
@@ -39,6 +34,19 @@ def main():
     }
     difficulty = difficulty_map[args.difficulty]
 
+    terrain = terrain_map[args.terrain]()
+
+    zone_abkhazia = dcs.Polygon([
+        dcs.Point(-187092.85714285, 460857.14285714, terrain),
+        dcs.Point(-149378.57142856, 476285.71428571, terrain),
+        dcs.Point(-147664.28571428, 520000, terrain),
+        dcs.Point(-175378.57142856, 599714.28571429, terrain),
+        dcs.Point(-174521.42857142, 644000, terrain),
+        dcs.Point(-199664.28571428, 624000, terrain),
+        dcs.Point(-233949.99999999, 632857.14285714, terrain),
+        dcs.Point(-271092.85714285, 596000, terrain)
+    ])
+
     destination_city = 'Adler'
     zone_enemy = zone_abkhazia
 
@@ -47,8 +55,7 @@ def main():
         if args.terrain == "caucasus":
             zone_enemy = zone_abkhazia
             destination_city = 'Adler'
-
-    m = dcs.Mission(terrain_map[args.terrain]())
+    m = dcs.Mission(terrain)
     m.random_weather = True
     m.random_date()
     m.random_daytime('day')

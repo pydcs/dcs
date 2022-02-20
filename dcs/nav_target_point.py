@@ -25,19 +25,25 @@ See http://www.heatblur.se/F-14Manual/dcs.html#f-14-waypoints-in-the-mission-edi
 
 """
 
+from __future__ import annotations
+import copy
+
+from typing import TYPE_CHECKING, Any, Dict
 from dcs import mapping
+
+if TYPE_CHECKING:
+    from dcs.terrain.terrain import Terrain
 
 
 class NavTargetPoint:
-    def __init__(self):
-        self.position = mapping.Point(0, 0)
+    def __init__(self, position: mapping.Point) -> None:
+        self.position = copy.copy(position)
         self.text_comment = ""
         self.index = 0
 
     @classmethod
-    def create_from_dict(cls, d):
-        t = cls()
-        t.position = mapping.Point(d["x"], d["y"])
+    def create_from_dict(cls, d: Dict[str, Any], terrain: Terrain) -> NavTargetPoint:
+        t = cls(mapping.Point(d["x"], d["y"], terrain))
         t.text_comment = d["text_comment"]
         t.index = d["index"]
         return t

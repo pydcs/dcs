@@ -9,7 +9,7 @@ Also options and commands are task actions.
 """
 from typing import List, Dict, Optional, Type, Any, Union
 from enum import Enum, IntEnum
-from dcs.mapping import Point
+from dcs.mapping import Vector2
 from dcs.unit import Unit
 
 
@@ -370,7 +370,7 @@ class AttackUnit(Task):
 class AttackMapObject(Task):
     Id = "AttackMapObject"
 
-    def __init__(self, position: Point = Point(0, 0), attack_limit: Optional[int] = None,
+    def __init__(self, position: Vector2 = Vector2(0, 0), attack_limit: Optional[int] = None,
                  weapon_type: WeaponType = WeaponType.Auto, group_attack=False):
         super(AttackMapObject, self).__init__(self.Id)
         self.params = {
@@ -524,7 +524,7 @@ class EscortTaskAction(Task):
 class Bombing(Task):
     Id = "Bombing"
 
-    def __init__(self, position: Point = Point(0, 0), weapon_type: WeaponType = WeaponType.Auto,
+    def __init__(self, position: Vector2 = Vector2(0, 0), weapon_type: WeaponType = WeaponType.Auto,
                  expend: Expend = Expend.Auto, attack_qty=1, group_attack=False,
                  direction: Optional[int] = None, altitude: Optional[int] = None):
         super(Bombing, self).__init__(Bombing.Id)
@@ -584,7 +584,7 @@ class EngageTargets(Task):
 class EngageTargetsInZone(Task):
     Id = "EngageTargetsInZone"
 
-    def __init__(self, position: Point = Point(0, 0), radius: int = 5000,
+    def __init__(self, position: Vector2 = Vector2(0, 0), radius: int = 5000,
                  targets: Optional[List[Type[TargetType]]] = None) -> None:
         super(EngageTargetsInZone, self).__init__(EngageTargetsInZone.Id)
         if targets is None:
@@ -636,7 +636,7 @@ class EngageUnit(Task):
 class FireAtPoint(Task):
     Id = "FireAtPoint"
 
-    def __init__(self, position: Point = Point(0, 0), rounds: Optional[int] = None, radius: int = 0):
+    def __init__(self, position: Vector2 = Vector2(0, 0), rounds: Optional[int] = None, radius: int = 0):
         super(FireAtPoint, self).__init__(FireAtPoint.Id)
         self.auto = False
         self.params = {
@@ -705,11 +705,11 @@ class OrbitAction(Task):
 class Follow(Task):
     Id = "Follow"
 
-    def __init__(self, groupid=None, position: Point = Point(-200, 0), altitude_difference=-200, last_wpt=None):
+    def __init__(self, groupid=None, group_offset: Vector2 = Vector2(-200, 0), altitude_difference=-200, last_wpt=None):
         super(Follow, self).__init__(self.Id)
 
         self.params = {
-            "pos": {"x": position.x, "z": position.y, "y": altitude_difference}
+            "pos": {"x": group_offset.x, "z": group_offset.y, "y": altitude_difference}
         }
         if groupid is not None:
             self.params["groupId"] = groupid
@@ -759,7 +759,7 @@ class FAC(Task):
 class FACAttackGroup(Task):
     Id = "FAC_AttackGroup"
 
-    def __init__(self, group_id: int = 0, groupName: str = "", position: Point = Point(0, 0),
+    def __init__(self, group_id: int, groupName: str, position: Vector2 = Vector2(0, 0),
                  weapon_type: WeaponType = WeaponType.Auto, callsign: int = 1,
                  designation: Designation = Designation.Auto, frequency: int = 30,
                  modulation: Modulation = Modulation.FM,
@@ -815,7 +815,7 @@ class Land(Task):
     """
     Id = "Land"
 
-    def __init__(self, position: Point = Point(0, 0), duration: int = None):
+    def __init__(self, position: Vector2 = Vector2(0, 0), duration: int = None):
         super(Land, self).__init__(self.Id)
 
         self.params = {
@@ -838,7 +838,7 @@ class Embarking(Task):
     """
     Id = "Embarking"
 
-    def __init__(self, position: Point = Point(0, 0), groupids: List[int] = None,
+    def __init__(self, position: Vector2 = Vector2(0, 0), groupids: List[int] = None,
                  distribution: Dict[int, List[int]] = None, duration: int = None):
         super(Embarking, self).__init__(self.Id)
 
@@ -866,7 +866,7 @@ class Disembarking(Task):
     """
     Id = "Disembarking"
 
-    def __init__(self, position: Point = Point(0, 0), groupids: Optional[List[int]] = None):
+    def __init__(self, position: Vector2 = Vector2(0, 0), groupids: Optional[List[int]] = None):
         super(Disembarking, self).__init__(self.Id)
 
         groupids = [] if groupids is None else groupids
@@ -887,7 +887,7 @@ class EmbarkToTransport(Task):
     """
     Id = "EmbarkToTransport"
 
-    def __init__(self, position: Point = Point(0, 0), zone_radius=200, concrete_unitid=None):
+    def __init__(self, position: Vector2 = Vector2(0, 0), zone_radius=200, concrete_unitid=None):
         super(EmbarkToTransport, self).__init__(self.Id)
 
         self.params = {
@@ -907,7 +907,7 @@ class DisembarkFromTransport(Task):
     """
     Id = "DisembarkFromTransport"
 
-    def __init__(self, position: Point = Point(0, 0), zone_radius=200):
+    def __init__(self, position: Vector2 = Vector2(0, 0), zone_radius=200):
         super(DisembarkFromTransport, self).__init__(self.Id)
 
         self.params = {

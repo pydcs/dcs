@@ -122,7 +122,7 @@ class Mission:
         """If set to True a random weather will be generated"""
         self.terrain = terrain
         self.triggerrules = triggers.Rules()
-        self.triggers = Triggers()
+        self.triggers = Triggers(self.terrain)
         self.bypassed_triggers = None
         self.bypassed_trigrules = None
         self.bypassed_trig = None
@@ -131,7 +131,7 @@ class Mission:
         self.options = Options()
         self.warehouses = Warehouses(self.terrain)
         self.goals = Goals()
-        self.drawings = Drawings()
+        self.drawings = Drawings(self.terrain)
         blue = Coalition("blue")
         blue.add_country(countries.Australia())
         blue.add_country(countries.Belgium())
@@ -332,7 +332,7 @@ class Mission:
         self.goals = Goals()
         self.goals.load_from_dict(imp_mission["goals"])
 
-        self.drawings = Drawings()
+        self.drawings = Drawings(self.terrain)
         if imp_mission.get("drawings") is not None:
             self.drawings.load_from_dict(imp_mission["drawings"])
 
@@ -343,7 +343,7 @@ class Mission:
         self.bypassed_triggers = None
         self.bypassed_trigrules = None
         self.bypassed_trig = None
-        self.triggers = Triggers()
+        self.triggers = Triggers(self.terrain)
         self.triggerrules = triggers.Rules()
         if bypass_triggers:
             self.bypassed_triggers = imp_mission["triggers"]
@@ -476,7 +476,7 @@ class Mission:
         self.current_group_id += 1
         return self.current_group_id
 
-    def next_unit_id(self):
+    def next_unit_id(self) -> int:
         """Get the next free unit id
 
         Returns:
@@ -559,7 +559,7 @@ class Mission:
         Returns:
             Static: a new static object
         """
-        return Static(self.next_unit_id(), name, _type)
+        return Static(self.next_unit_id(), name, _type, self.terrain)
 
     def static_group(self, country, name: str, _type: Type[unittype.UnitType], position: mapping.Point,
                      heading=0, hidden=False, dead=False):
@@ -587,8 +587,7 @@ class Mission:
         sg.hidden = hidden
         sg.dead = dead
 
-        sp = StaticPoint()
-        sp.position = s.position
+        sp = StaticPoint(s.position)
         sg.add_point(sp)
 
         country.add_static_group(sg)
@@ -633,7 +632,7 @@ class Mission:
         if real_farp_type is None or real_farp_type not in farp_mapping.values():
             raise TypeError(f"'{type(farp_type)}' is not a valid FARP type.")
 
-        s = real_farp_type(self.next_unit_id(), name, frequency, modulation, callsign_id)
+        s = real_farp_type(self.terrain, self.next_unit_id(), name, frequency, modulation, callsign_id)
         s.position = copy.copy(position)
         s.heading = heading
         sg.add_unit(s)
@@ -641,8 +640,7 @@ class Mission:
         sg.hidden = hidden
         sg.dead = dead
 
-        sp = StaticPoint()
-        sp.position = s.position
+        sp = StaticPoint(s.position)
         sg.add_point(sp)
 
         country.add_static_group(sg)
@@ -660,7 +658,7 @@ class Mission:
         """
         if not issubclass(_type, unittype.VehicleType):
             raise TypeError("_type not a unittype.VehicleType class: " + repr(_type))
-        return Vehicle(self.next_unit_id(), name, _type.id)
+        return Vehicle(self.terrain, self.next_unit_id(), name, _type.id)
 
     def vehicle_group(self, country, name: str, _type: Type[unittype.VehicleType], position: mapping.Point,
                       heading=0, group_size=1,
@@ -753,7 +751,7 @@ class Mission:
         Returns:
             Ship: a new ship unit.
         """
-        return Ship(self.next_unit_id(), name, _type)
+        return Ship(self.terrain, self.next_unit_id(), name, _type)
 
     def ship_group(self, country, name: str, _type: Type[unittype.ShipType],
                    position: mapping.Point, heading=0, group_size=1) -> unitgroup.ShipGroup:
@@ -845,7 +843,7 @@ class Mission:
         Return:
             Plane: A new :py:class:`dcs.unit.Plane`
         """
-        return Plane(self.next_unit_id(), name, _type, country)
+        return Plane(self.terrain, self.next_unit_id(), name, _type, country)
 
     def helicopter(self, name: str, _type: Type[helicopters.HelicopterType], country: Country):
         """Creates a new helicopter unit.
@@ -865,7 +863,7 @@ class Mission:
         Returns:
             Helicopter: A new :py:class:`dcs.unit.Helicopter`
         """
-        return Helicopter(self.next_unit_id(), name, _type, country)
+        return Helicopter(self.terrain, self.next_unit_id(), name, _type, country)
 
     def aircraft(self,
                  name: str,
@@ -890,9 +888,9 @@ class Mission:
         """
         if _type.helicopter:
             assert issubclass(_type, HelicopterType)
-            return Helicopter(self.next_unit_id(), name, _type, country)
+            return Helicopter(self.terrain, self.next_unit_id(), name, _type, country)
         assert issubclass(_type, PlaneType)
-        return Plane(self.next_unit_id(), name, _type, country)
+        return Plane(self.terrain, self.next_unit_id(), name, _type, country)
 
     def helicopter_group(self, name: str) -> unitgroup.HelicopterGroup:
         """Creates a plain helicopter group without any units or starting points.
@@ -975,10 +973,9 @@ class Mission:
             StartType.Warm: ("TakeOffParkingHot", PointAction.FromParkingAreaHot),
             StartType.Runway: ("TakeOff", PointAction.FromRunway)
         }
-        mp = MovingPoint()
+        mp = MovingPoint(group.units[0].position)
         mp.type = point_start_type_map[start_type][0]
         mp.action = point_start_type_map[start_type][1]
-        mp.position = copy.copy(group.units[0].position)
         mp.airdrome_id = airport.id
         mp.alt = group.units[0].alt
         mp.properties = PointProperties()
@@ -1006,10 +1003,9 @@ class Mission:
 
         group.load_task_default_loadout(maintask)
 
-        mp = MovingPoint()
+        mp = MovingPoint(group.units[0].position)
         mp.type = "Turning Point"
         mp.action = PointAction.TurningPoint
-        mp.position = copy.copy(group.units[0].position)
         mp.alt = altitude
         mp.speed = speed / 3.6
         mp.properties = PointProperties()
@@ -1173,10 +1169,9 @@ class Mission:
             StartType.Warm: ("TakeOffParkingHot", PointAction.FromParkingAreaHot),
             StartType.Runway: ("TakeOff", PointAction.FromRunway)
         }
-        mp = MovingPoint()
+        mp = MovingPoint(ag.units[0].position)
         mp.type = point_start_type_map[start_type][0]
         mp.action = point_start_type_map[start_type][1]
-        mp.position = copy.copy(ag.units[0].position)
         mp.helipad_id = pad_group.units[0].id
         mp.link_unit = pad_group.units[0].id
         mp.alt = ag.units[0].alt
@@ -1387,7 +1382,11 @@ class Mission:
         else:
             eg = self.flight_group_inflight(
                 country, name, escort_type,
-                mapping.Point(group_to_escort.points[0].position.x - 10 * 1000, group_to_escort.points[0].position.y),
+                mapping.Point(
+                    group_to_escort.points[0].position.x - 10 * 1000,
+                    group_to_escort.points[0].position.y,
+                    self.terrain
+                ),
                 second_point_group.alt + 200,
                 maintask=task.Escort,
                 group_size=group_size
@@ -1441,7 +1440,7 @@ class Mission:
         else:
             eg = self.flight_group_inflight(
                 country, name, patrol_type,
-                mapping.Point(pos1.x - 10 * 1000, pos1.y),
+                mapping.Point(pos1.x - 10 * 1000, pos1.y, self.terrain),
                 altitude,
                 maintask=task.CAP,
                 group_size=group_size
@@ -1572,7 +1571,7 @@ class Mission:
         else:
             eg = self.flight_group_inflight(
                 country, name, plane_type,
-                mapping.Point(target_pos.x - 10 * 1000, target_pos.y),
+                mapping.Point(target_pos.x - 10 * 1000, target_pos.y, self.terrain),
                 5000,
                 maintask=task.SEAD,
                 group_size=group_size
@@ -1609,6 +1608,7 @@ class Mission:
 
         if sg.starts_from_airport():
             airport_id = sg.airport_id()
+            assert airport_id is not None
             airport = self.terrain.airport_by_id(airport_id)
             if airport is None:
                 raise ValueError(f"Could not find an airport with ID {airport_id}")
@@ -1652,7 +1652,7 @@ class Mission:
         else:
             eg = self.flight_group_inflight(
                 country, name, _type,
-                mapping.Point(target.position.x - 10 * 1000, target.position.y),
+                mapping.Point(target.position.x - 10 * 1000, target.position.y, self.terrain),
                 int(altitude / 2),
                 maintask=task.GroundAttack,
                 group_size=group_size
@@ -1690,6 +1690,7 @@ class Mission:
 
         if sf.starts_from_airport():
             airport_id = sf.airport_id()
+            assert airport_id is not None
             airport = self.terrain.airport_by_id(airport_id)
             if airport is None:
                 raise ValueError(f"Could not find an airport with ID {airport_id}")

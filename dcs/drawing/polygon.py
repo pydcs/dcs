@@ -4,6 +4,7 @@ from typing import List
 
 from dcs.drawing.drawing import Drawing, LineStyle, Rgba
 from dcs.mapping import Point
+from dcs.terrain import Terrain
 
 
 class PolygonMode(Enum):
@@ -96,14 +97,14 @@ class Arrow(PolygonDrawing):
         return d
 
     @staticmethod
-    def get_default_arrow_points() -> List[Point]:
+    def get_default_arrow_points(terrain: Terrain) -> List[Point]:
         return [
-            Point(976.01054900139, 0),
-            Point(976.01054900139, 5205.3895946741),
-            Point(2602.694797337, 5205.3895946741),
-            Point(0, 7808.0843920111),
-            Point(-2602.694797337, 5205.3895946741),
-            Point(-976.01054900139, 5205.3895946741),
-            Point(-976.01054900139, 0),
-            Point(976.01054900139, 0),
+            Point(976.01054900139, 0, terrain),
+            Point(976.01054900139, 5205.3895946741, terrain),
+            Point(2602.694797337, 5205.3895946741, terrain),
+            Point(0, 7808.0843920111, terrain),
+            Point(-2602.694797337, 5205.3895946741, terrain),
+            Point(-976.01054900139, 5205.3895946741, terrain),
+            Point(-976.01054900139, 0, terrain),
+            Point(976.01054900139, 0, terrain),
         ]

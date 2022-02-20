@@ -2,7 +2,8 @@ import math
 import random
 import copy
 from enum import Enum
-from typing import Generic, List, Type, TypeVar, Optional
+from typing import Any, Dict, Generic, List, Type, TypeVar, Optional
+from dcs.terrain.terrain import Terrain
 
 from dcs.unit import Unit, Skill, Ship, Vehicle, Static
 from dcs.flyingunit import FlyingUnit, Plane, Helicopter
@@ -47,10 +48,10 @@ class Group(Generic[UnitT, PointT]):
     def __str__(self):
         return "Group: " + self.name
 
-    def load_from_dict(self, d):
-        self.hidden = d.get("hidden")
-        self.hidden_on_planner = d.get("hiddenOnPlanner")
-        self.hidden_on_mfd = d.get("hiddenOnMFD")
+    def load_from_dict(self, d: Dict[str, Any], terrain: Terrain) -> None:
+        self.hidden = d.get("hidden", False)
+        self.hidden_on_planner = d.get("hiddenOnPlanner", False)
+        self.hidden_on_mfd = d.get("hiddenOnMFD", False)
 
     def add_unit(self, unit: UnitT):
         self.units.append(unit)
@@ -236,8 +237,8 @@ class MovingGroup(Generic[UnitT], Group[UnitT, MovingPoint]):
         self.spawn_probability = 1.0
         self.late_activation = False
 
-    def load_from_dict(self, d):
-        super(MovingGroup, self).load_from_dict(d)
+    def load_from_dict(self, d: Dict[str, Any], terrain: Terrain) -> None:
+        super().load_from_dict(d, terrain)
         self.frequency = d.get("frequency")
         self.task = d.get("task")  # ships don't have a task
         self.spawn_probability = d.get("probability", 1.0)
@@ -285,8 +286,8 @@ class VehicleGroup(MovingGroup[Vehicle]):
         self.spans = []
         self.manualHeading = False
 
-    def load_from_dict(self, d):
-        super(VehicleGroup, self).load_from_dict(d)
+    def load_from_dict(self, d: Dict[str, Any], terrain: Terrain) -> None:
+        super().load_from_dict(d, terrain)
         self.modulation = d.get("modulation")
         self.communication = d.get("communication", False)
         self.visible = d.get("visible", False)
@@ -297,10 +298,9 @@ class VehicleGroup(MovingGroup[Vehicle]):
 
     def add_waypoint(self, position: mapping.Point,
                      move_formation: PointAction = PointAction.OffRoad, speed=32) -> MovingPoint:
-        mp = MovingPoint()
+        mp = MovingPoint(position)
         mp.type = "Turning Point"
         mp.action = move_formation
-        mp.position = copy.copy(position)
         mp.speed = speed / 3.6
         mp.ETA_locked = False
 
@@ -338,9 +338,9 @@ class FlyingGroup(Generic[FlyingUnitT], MovingGroup[FlyingUnitT]):
         self.nav_target_points = []  # type: List[NavTargetPoint]
 
     def starts_from_airport(self) -> bool:
-        return self.points[0].airdrome_id if self.points else False
+        return bool(self.points[0].airdrome_id) if self.points else False
 
-    def airport_id(self) -> int:
+    def airport_id(self) -> Optional[int]:
         return self.points[0].airdrome_id if self.points else None
 
     def flight_type(self) -> Type[FlyingType]:
@@ -358,8 +358,8 @@ class FlyingGroup(Generic[FlyingUnitT], MovingGroup[FlyingUnitT]):
                 return True
         return False
 
-    def load_from_dict(self, d):
-        super(FlyingGroup, self).load_from_dict(d)
+    def load_from_dict(self, d: Dict[str, Any], terrain: Terrain) -> None:
+        super().load_from_dict(d, terrain)
         self.modulation = d.get("modulation")
         self.communication = d.get("communication", False)
         self.uncontrolled = d["uncontrolled"]
@@ -367,11 +367,10 @@ class FlyingGroup(Generic[FlyingUnitT], MovingGroup[FlyingUnitT]):
         self.nav_target_points = []
         for n in d.get("NavTargetPoints", []):
             nav_target_point_dict = d["NavTargetPoints"][n]
-            self.nav_target_points.append(NavTargetPoint.create_from_dict(nav_target_point_dict))
+            self.nav_target_points.append(NavTargetPoint.create_from_dict(nav_target_point_dict, terrain))
 
     def add_nav_target_point(self, pos: mapping.Point, text_comment: str):
-        nt = NavTargetPoint()
-        nt.position = mapping.Point(pos.x, pos.y)
+        nt = NavTargetPoint(pos)
         nt.text_comment = text_comment
         nt.index = len(self.nav_target_points) + 1
 
@@ -379,11 +378,10 @@ class FlyingGroup(Generic[FlyingUnitT], MovingGroup[FlyingUnitT]):
         return nt
 
     def add_waypoint(self, pos: mapping.Point, altitude, speed=600, name: Optional[str] = None) -> MovingPoint:
-        mp = MovingPoint()
+        mp = MovingPoint(pos)
         mp.type = "Turning Point"
         mp.action = PointAction.TurningPoint
         mp.name = name if name else ""
-        mp.position = mapping.Point(pos.x, pos.y)
         mp.alt = altitude
         mp.speed = speed / 3.6
         mp.ETA_locked = False
@@ -403,11 +401,10 @@ class FlyingGroup(Generic[FlyingUnitT], MovingGroup[FlyingUnitT]):
         """
         runway = runway if runway else airport.runways[0]
 
-        mp = MovingPoint()
+        mp = MovingPoint(airport.position.point_from_heading(runway.heading, distance))
         mp.type = "Turning Point"
         mp.action = PointAction.TurningPoint
         mp.alt_type = "RADIO"
-        mp.position = airport.position.point_from_heading(runway.heading, distance)
         mp.alt = 300
         mp.speed = 200 / 3.6
         mp.ETA_locked = False
@@ -417,10 +414,9 @@ class FlyingGroup(Generic[FlyingUnitT], MovingGroup[FlyingUnitT]):
         return mp
 
     def land_at(self, airport: Airport) -> MovingPoint:
-        mp = MovingPoint()
+        mp = MovingPoint(airport.position)
         mp.type = "Land"
         mp.action = PointAction.Landing
-        mp.position = copy.copy(airport.position)
         mp.airdrome_id = airport.id
         mp.alt = 0
         mp.speed = 0
@@ -571,10 +567,9 @@ class ShipGroup(MovingGroup[Ship]):
         self.visible = False  # visible before start flag
 
     def add_waypoint(self, position: mapping.Point, speed=20) -> MovingPoint:
-        mp = MovingPoint()
+        mp = MovingPoint(position)
         mp.type = "Turning Point"
         mp.action = PointAction.TurningPoint
-        mp.position = copy.copy(position)
         mp.speed = speed / 3.6
         mp.ETA_locked = False
 
@@ -603,8 +598,8 @@ class StaticGroup(Group[Static, StaticPoint]):
         self.heading = 0
         self.link_offset: Optional[bool] = False
 
-    def load_from_dict(self, d):
-        super(StaticGroup, self).load_from_dict(d)
+    def load_from_dict(self, d: Dict[str, Any], terrain: Terrain) -> None:
+        super().load_from_dict(d, terrain)
         self.heading = math.degrees(d["heading"])
         self.dead = d["dead"]
         self.link_offset = d.get("linkOffset")

@@ -1,9 +1,14 @@
 from __future__ import annotations
 
+from dataclasses import dataclass
+
 import math
 import random
 import copy
-from typing import Any, List, Optional, Tuple, Union
+from typing import TYPE_CHECKING, Any, List, Optional, Tuple, Union
+
+if TYPE_CHECKING:
+    from dcs.terrain.terrain import Terrain
 
 
 def point_from_heading(_x: float, _y: float, heading: float, distance: float) -> Tuple[float, float]:
@@ -55,16 +60,22 @@ def heading_between_points(x1: float, y1: float, x2: float, y2: float) -> float:
     return math.degrees(angle_trunc(math.atan2(deltay, deltax)))
 
 
-class Point:
-    def __init__(self, x: float, y: float) -> None:
-        self.x = x
-        self.y = y
+@dataclass
+class Vector2:
+    x: float
+    y: float
+
+
+class Point(Vector2):
+    def __init__(self, x: float, y: float, terrain: Terrain) -> None:
+        super().__init__(x, y)
+        self._terrain = terrain
 
     def point_from_heading(self, heading: float, distance: float) -> Point:
         x, y = point_from_heading(self.x, self.y, heading, distance)
-        return Point(x, y)
+        return Point(x, y, self._terrain)
 
-    def heading_between_point(self, point: Point) -> float:
+    def heading_between_point(self, point: Vector2) -> float:
         return heading_between_points(self.x, self.y, point.x, point.y)
 
     def distance_to_point(self, point: Point) -> float:
@@ -85,21 +96,21 @@ class Point:
         return self.point_from_heading(random.randrange(0, 360),
                                        random.random() * (distance - min_distance) + min_distance)
 
-    def __add__(self, other: Point) -> Point:
-        return Point(self.x + other.x, self.y + other.y)
+    def __add__(self, other: Vector2) -> Point:
+        return Point(self.x + other.x, self.y + other.y, self._terrain)
 
-    def __radd__(self, other: Union[float, Point]) -> Point:
-        if isinstance(other, Point):
+    def __radd__(self, other: Union[float, Vector2]) -> Point:
+        if isinstance(other, Vector2):
             return self + other
-        return Point(self.x + other, self.y + other)
+        return Point(self.x + other, self.y + other, self._terrain)
 
-    def __sub__(self, other: Union[float, Point]) -> Point:
-        if isinstance(other, Point):
-            return Point(self.x - other.x, self.y - other.y)
-        return Point(self.x - other, self.y - other)
+    def __sub__(self, other: Union[float, Vector2]) -> Point:
+        if isinstance(other, Vector2):
+            return Point(self.x - other.x, self.y - other.y, self._terrain)
+        return Point(self.x - other, self.y - other, self._terrain)
 
     def __mul__(self, other: float) -> Point:
-        return Point(self.x * other, self.y * other)
+        return Point(self.x * other, self.y * other, self._terrain)
 
     def __rmul__(self, other: float) -> Point:
         return self * other
@@ -111,7 +122,7 @@ class Point:
         return not self == other
 
     def __repr__(self) -> str:
-        return "Point({x}, {y})".format(x=self.x, y=self.y)
+        return f"Point({self.x!r}, {self.y!r}, {self._terrain!r})"
 
 
 class Triangle:
@@ -139,11 +150,12 @@ class Triangle:
 
 
 class Rectangle:
-    def __init__(self, top: float, left: float, bottom: float, right: float) -> None:
+    def __init__(self, top: float, left: float, bottom: float, right: float, terrain: Terrain) -> None:
         self.top = top
         self.left = left
         self.bottom = bottom
         self.right = right
+        self._terrain = terrain
 
     @staticmethod
     def from_point(point: Point, side_length: float) -> Rectangle:
@@ -151,7 +163,7 @@ class Rectangle:
         left = point.y - side_length / 2
         bottom = point.x - side_length / 2
         right = point.y + side_length / 2
-        return Rectangle(top, left, bottom, right)
+        return Rectangle(top, left, bottom, right, point._terrain)
 
     def point_in_rect(self, point: Point) -> bool:
         return self.bottom <= point.x <= self.top and self.left <= point.y <= self.right
@@ -163,7 +175,7 @@ class Rectangle:
         return self.right - self.left
 
     def center(self) -> Point:
-        return Point(self.bottom + (self.height() / 2), self.left + (self.width() / 2))
+        return Point(self.bottom + (self.height() / 2), self.left + (self.width() / 2), self._terrain)
 
     def resize(self, percentage: float) -> Rectangle:
         w = self.width()
@@ -171,12 +183,12 @@ class Rectangle:
         w *= percentage / 2
         h *= percentage / 2
         c = self.center()
-        return Rectangle(c.x + h, c.y - w, c.x - h, c.y + w)
+        return Rectangle(c.x + h, c.y - w, c.x - h, c.y + w, self._terrain)
 
     def random_point(self) -> Point:
         x = self.bottom + random.random() * (self.top - self.bottom)
         y = self.left + random.random() * (self.right - self.left)
-        return Point(x, y)
+        return Point(x, y, self._terrain)
 
     def random_distant_points(self, distance: float) -> Tuple[Point, Point]:
         # determine vertical/horizontal
@@ -196,7 +208,7 @@ class Rectangle:
         d = distance if distance < axis_y else axis_y * 0.2
         sy += random.random() * (axis_y - d)
         sx += random.random() * axis_x
-        p1 = Point(sx, sy)
+        p1 = Point(sx, sy, self._terrain)
         while True:
             hdg = random.random() * 60
             p2 = p1.point_from_heading(hdg_start + hdg, d)
@@ -211,11 +223,18 @@ class Rectangle:
         return not self == other
 
     def __repr__(self) -> str:
-        return "Rectangle({t}, {l}, {b}, {r})".format(t=self.top, l=self.left, b=self.bottom, r=self.right)
+        t, l, b, r = (
+            self.top,
+            self.left,
+            self.bottom,
+            self.right,
+        )
+        return f"Rectangle({t!r}, {l!r}, {b!r}, {r!r}, {self._terrain!r})"
 
 
 class Polygon:
-    def __init__(self, points: List[Point] = None):
+    def __init__(self, terrain: Terrain, points: List[Point] = None):
+        self._terrain = terrain
         if points is None:
             points = []
         self.points = copy.copy(points)
@@ -343,7 +362,7 @@ class Polygon:
         bot = min([x.x for x in self.points])
         right = max([x.y for x in self.points])
         left = min([x.y for x in self.points])
-        return Rectangle(top, left, bot, right)
+        return Rectangle(top, left, bot, right, self._terrain)
 
     def __repr__(self) -> str:
-        return "Polygon([{points}])".format(points=", ".join(map(repr, self.points)))
+        return f"Polygon([{self._terrain!r}, {self.points!r}])"

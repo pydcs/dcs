@@ -12,6 +12,7 @@ from dcs.unitgroup import FlyingGroup
 class TrainingScenario:
     def __init__(self, aircraft_types: List[Tuple[str, str]], playercount: int, start: str, unhide):
         nevada = dcs.terrain.Nevada()
+        self.terrain = nevada
         self.m = dcs.Mission(terrain=nevada)
         self.m.groundControl.pilot_can_control_vehicles = True
         self.m.groundControl.blue_jtac = 1
@@ -48,10 +49,14 @@ class TrainingScenario:
         awacs_frequency = 130
         tanker_frequency = 140
         orbit_rect = dcs.mapping.Rectangle(
-            int(creech.position.x), int(creech.position.y - 100 * 1000), int(creech.position.x - 100 * 1000),
-            int(creech.position.y))
+            int(creech.position.x),
+            int(creech.position.y - 100 * 1000),
+            int(creech.position.x - 100 * 1000),
+            int(creech.position.y),
+            nevada
+        )
 
-        pos, heading, race_dist = TrainingScenario.random_orbit(orbit_rect)
+        pos, heading, race_dist = self.random_orbit(orbit_rect)
         awacs = self.m.awacs_flight(
             usa,
             "AWACS",
@@ -63,7 +68,7 @@ class TrainingScenario:
 
         self.m.escort_flight(usa, "AWACS Escort", dcs.countries.USA.Plane.F_15E, None, awacs, group_size=2)
 
-        pos, heading, race_dist = TrainingScenario.random_orbit(orbit_rect)
+        pos, heading, race_dist = self.random_orbit(orbit_rect)
         refuel_net = self.m.refuel_flight(
             usa,
             "Tanker KC_130",
@@ -73,7 +78,7 @@ class TrainingScenario:
             race_distance=race_dist, heading=heading,
             altitude=random.randrange(4000, 5500, 100), speed=750, frequency=tanker_frequency)
 
-        pos, heading, race_dist = TrainingScenario.random_orbit(orbit_rect)
+        pos, heading, race_dist = self.random_orbit(orbit_rect)
         refuel_rod = self.m.refuel_flight(
             usa,
             "Tanker KC_135",
@@ -96,6 +101,7 @@ class TrainingScenario:
         pg: Optional[FlyingGroup] = None
 
         for pg in player_groups:
+            assert pg.points[0].airdrome_id is not None
             airport = self.m.terrain.airport_by_id(pg.points[0].airdrome_id)
             if not airport:
                 airport = random.choice(blue_military)
@@ -433,15 +439,14 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
         if stats:
             self.m.print_stats(self.m.stats())
 
-    @staticmethod
-    def random_orbit(rect: dcs.mapping.Rectangle):
+    def random_orbit(self, rect: dcs.mapping.Rectangle):
         x1 = random.randrange(int(rect.bottom), int(rect.top))
         sy = rect.left
         y1 = random.randrange(int(sy), int(rect.right))
         heading = 90 if y1 < (sy + (rect.right - sy) / 2) else 270
         heading = random.randrange(heading - 20, heading + 20)
         race_dist = random.randrange(80 * 1000, 120 * 1000)
-        return dcs.mapping.Point(x1, y1), heading, race_dist
+        return dcs.mapping.Point(x1, y1, self.terrain), heading, race_dist
 
 
 def main():

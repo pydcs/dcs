@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from typing import List, Union
 
+from dcs.terrain import Terrain
 from dcs.drawing.drawing import Drawing, LineStyle, Rgba
 from dcs.drawing.icon import Icon, StandardIcon
 from dcs.drawing.line import LineDrawing, LineMode
@@ -21,6 +22,7 @@ class Layer:
     visible: bool
     name: str
     objects: List[Drawing]
+    _terrain: Terrain
 
     def load_from_dict(self, data):
         self.visible = data["visible"]
@@ -54,7 +56,7 @@ class Layer:
         name = object_data["name"]
         mapX: float = object_data["mapX"]
         mapY: float = object_data["mapY"]
-        position = Point(mapX, mapY)
+        position = Point(mapX, mapY, self._terrain)
 
         if prim_type == "Line":
             closed = object_data["closed"]
@@ -188,7 +190,7 @@ class Layer:
         for point_index in sorted(points_data.keys()):
             x = points_data[point_index]["x"]
             y = points_data[point_index]["y"]
-            points.append(Point(x, y))
+            points.append(Point(x, y, self._terrain))
         return points
 
     def add_drawing(self, drawing: Drawing):
@@ -209,7 +211,7 @@ class Layer:
         line_thickness=8,
         line_style=LineStyle.Solid,
     ) -> LineDrawing:
-        points = [Point(0, 0), end_point]
+        points = [Point(0, 0, self._terrain), end_point]
         drawing = LineDrawing(
             True,
             position,
@@ -433,7 +435,7 @@ class Layer:
             line_style,
             length,
             angle,
-            Arrow.get_default_arrow_points(),
+            Arrow.get_default_arrow_points(self._terrain),
         )
         self.add_drawing(drawing)
         return drawing

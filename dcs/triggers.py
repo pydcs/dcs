@@ -1,10 +1,15 @@
+from __future__ import annotations
+
 import copy
-from typing import List, Dict, Any
+from typing import TYPE_CHECKING, List, Dict, Any
 from enum import Enum
 
 from dcs import mapping
 from dcs import action
 from dcs import condition
+
+if TYPE_CHECKING:
+    from dcs.terrain import Terrain
 
 
 class TriggerZone:
@@ -36,18 +41,19 @@ class TriggerZone:
 
 
 class Triggers:
-    def __init__(self):
+    def __init__(self, terrain: Terrain) -> None:
+        self._terrain = terrain
         self.current_zone_id = 0
         self._zones = []  # type: List[TriggerZone]
 
-    def load_from_dict(self, data):
+    def load_from_dict(self, data: Dict[str, Any]) -> None:
         self.current_zone_id = 0
         self._zones = []
         for x in data["zones"]:
             imp_zone = data["zones"][x]
             tz = TriggerZone(
                 imp_zone["zoneId"],
-                mapping.Point(imp_zone["x"], imp_zone["y"]),
+                mapping.Point(imp_zone["x"], imp_zone["y"], self._terrain),
                 imp_zone["radius"],
                 imp_zone["hidden"],
                 imp_zone["name"],

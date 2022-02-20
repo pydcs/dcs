@@ -49,7 +49,17 @@ class DrawingTests(unittest.TestCase):
         m: Mission = dcs.mission.Mission()
         self.assertEqual(0, len(m.load_file('tests/missions/Draw_tool_test.miz')))
         
-        circle = Circle(True, Point(10, 10), "TEST CIRCLE", Rgba(20, 30, 40, 200), ":S", Rgba(50, 60, 70, 150), 10, LineStyle.Solid, 100)
+        circle = Circle(
+            True,
+            Point(10, 10, m.terrain),
+            "TEST CIRCLE",
+            Rgba(20, 30, 40, 200),
+            ":S",
+            Rgba(50, 60, 70, 150),
+            10,
+            LineStyle.Solid,
+            100
+        )
         m.drawings.layers[0].add_drawing(circle)
         self.assertEqual("TEST CIRCLE", m.drawings.layers[0].objects[1].name)
 
@@ -65,10 +75,24 @@ class DrawingTests(unittest.TestCase):
     def test_add_drawings_to_new_mission(self) -> None:
         m: Mission = dcs.mission.Mission()
         
-        circle = Circle(True, Point(10, 10), "TEST CIRCLE", Rgba(20, 30, 40, 200), ":S", Rgba(50, 60, 70, 150), 10, LineStyle.Solid, 100)
+        circle = Circle(
+            True,
+            Point(10, 10, m.terrain),
+            "TEST CIRCLE",
+            Rgba(20, 30, 40, 200),
+            ":S",
+            Rgba(50, 60, 70, 150),
+            10,
+            LineStyle.Solid,
+            100
+        )
         red_layer = m.drawings.get_layer(StandardLayer.Red)
         red_layer.add_drawing(circle)
-        red_layer.add_line_segments(Point(1, 1), [Point(6,6), Point(7,7)], closed=True)
+        red_layer.add_line_segments(
+            Point(1, 1, m.terrain),
+            [Point(6, 6, m.terrain), Point(7, 7, m.terrain)],
+            closed=True,
+        )
 
         m.drawings.options.hiddenOnF10Map["Pilot"]["Red"] = True
         m.drawings.options.hiddenOnF10Map["Instructor"]["Blue"] = True
@@ -107,7 +131,10 @@ class DrawingTests(unittest.TestCase):
         m: Mission = dcs.mission.Mission()
 
         red_layer = m.drawings.get_layer(StandardLayer.Red)
-        red_layer.add_icon(Point(1000, 1000), StandardIcon.MechanizedArtillery)
+        red_layer.add_icon(
+            Point(1000, 1000, m.terrain),
+            StandardIcon.MechanizedArtillery,
+        )
         mission_path = 'missions/New_mission_w_added_std_icon.miz'
         m.save(mission_path)
 
@@ -122,7 +149,12 @@ class DrawingTests(unittest.TestCase):
 
         layer = m.drawings.get_layer(StandardLayer.Common)
         self.assertEqual(0, len(layer.objects))
-        oblong = layer.add_oblong(Point(1000, 1000), Point(4000, 1000), 1000, resolution=20)
+        oblong = layer.add_oblong(
+            Point(1000, 1000, m.terrain),
+            Point(4000, 1000, m.terrain),
+            1000,
+            resolution=20,
+        )
         self.assertEqual(1, len(layer.objects))
         # Resolution 20 should give 43 points
         # (21 in each end and one extra to close polygon)
