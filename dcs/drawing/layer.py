@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import List, Union
+from typing import Any, Dict, List, Union
 
 from dcs.drawing.drawing import Drawing, LineStyle, Rgba
 from dcs.drawing.icon import Icon, StandardIcon
@@ -44,7 +44,7 @@ class Layer:
 
         return d
 
-    def load_drawing_from_data(self, object_data: dict) -> Drawing:
+    def load_drawing_from_data(self, object_data: Dict[str, Any]) -> Drawing:
         # TODO: Maybe move this stuff into the classes and load_from_dict?
 
         prim_type = object_data["primitiveType"]
@@ -182,6 +182,7 @@ class Layer:
                 fill,
                 angle,
             )
+        raise RuntimeError(f"Unknown primitive type for layer: {prim_type}")
 
     def load_points_from_data(self, points_data) -> List[Point]:
         points: List[Point] = []
@@ -276,7 +277,7 @@ class Layer:
     def add_icon(
         self, position: Point, file: Union[str, StandardIcon], scale=1.0, color=Rgba(255, 0, 0, 255)
     ) -> Icon:
-        if type(file) is StandardIcon:
+        if isinstance(file, StandardIcon):
             file_str = file.value
         else:
             file_str = file

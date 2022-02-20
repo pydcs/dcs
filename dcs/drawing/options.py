@@ -1,3 +1,6 @@
+from typing import Any, Dict
+
+
 class Options:
     def __init__(self):
         self.hiddenOnF10Map = self.get_default_hidden()
@@ -16,7 +19,7 @@ class Options:
         return d
 
     @staticmethod
-    def get_default_hidden() -> dict:
+    def get_default_hidden() -> Dict[str, Any]:
         d = {}
         d["Observer"] = {
             "Neutral": False,
