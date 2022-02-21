@@ -4,6 +4,7 @@ from typing import List
 
 from dcs.terrain.terrain import Terrain, Airport, Runway, ParkingSlot, MapView, Graph
 import dcs.mapping as mapping
+from .projections.caucasus import PARAMETERS
 
 
 class Anapa_Vityazevo(Airport):
@@ -3022,6 +3023,7 @@ class Caucasus(Terrain):
     def __init__(self):
         super().__init__(
             "Caucasus",
+            PARAMETERS,
             bounds=mapping.Rectangle(380 * 1000, -560 * 1000, -600 * 1000, 1130 * 1000, self),
             map_view_default=MapView(mapping.Point(-255714.28571428, 680571.42857143, self), self, 1000000)
         )

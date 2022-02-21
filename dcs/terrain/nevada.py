@@ -4,6 +4,8 @@ import dcs.mapping as mapping
 import os
 from typing import List
 
+from .projections.nevada import PARAMETERS
+
 
 class Creech(Airport):
     id = 1
@@ -2170,6 +2172,7 @@ class Nevada(Terrain):
     def __init__(self):
         super().__init__(
             "Nevada",
+            PARAMETERS,
             bounds=mapping.Rectangle(-166934.953125, -329334.875000, -497177.656250, 209836.890625, self),
             map_view_default=MapView(mapping.Point(-340928.57142857, -55928.571428568, self), self, 1000000)
         )

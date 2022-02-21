@@ -1,6 +1,7 @@
 # flake8: noqa
 from dcs.terrain.terrain import Terrain, Airport, Runway, ParkingSlot, MapView
 import dcs.mapping as mapping
+from .projections.marianaislands import PARAMETERS
 
 
 class Saint_Pierre_du_Mont(Airport):
@@ -5924,6 +5925,7 @@ class Normandy(Terrain):
         bounds = mapping.Rectangle(-132707.843750, -389942.906250, 185756.156250, 165065.078125, self)
         super().__init__(
             "Normandy",
+            PARAMETERS,
             bounds,
             map_view_default=MapView(bounds.center(), self, 1000000)
         )

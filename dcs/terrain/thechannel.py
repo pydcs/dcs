@@ -1,6 +1,7 @@
 # flake8: noqa
 import dcs.mapping as mapping
 from dcs.terrain.terrain import Airport, Runway, ParkingSlot, Terrain, MapView
+from .projections.thechannel import PARAMETERS
 
 
 class Abbeville_Drucat(Airport):
@@ -1919,6 +1920,7 @@ class TheChannel(Terrain):
     def __init__(self):
         super().__init__(
             "TheChannel",
+            PARAMETERS,
             bounds=mapping.Rectangle(74967, -114995, -129982, 129991, self),
             map_view_default=MapView(mapping.Point(0, 0, self), self, 1000000)
         )

@@ -1,9 +1,12 @@
 # terrain module
 from __future__ import annotations
 
+from pyproj import CRS, Transformer
+
 import dcs.mapping as mapping
 import dcs.lua as lua
 import dcs.point as point
+from dcs.terrain.projections.transversemercator import TransverseMercator
 import dcs.unittype as unittype
 import dcs.weather as weather
 
@@ -436,7 +439,12 @@ class Terrain:
     ]
     assert(len(temperature) == 12)
 
-    def __init__(self, name: str, bounds: mapping.Rectangle, map_view_default: MapView) -> None:
+    def __init__(
+        self, name: str,
+        projection_parameters: TransverseMercator,
+        bounds: mapping.Rectangle,
+        map_view_default: MapView,
+    ) -> None:
         self.name = name
         self.bounds = bounds
         self.map_view_default = map_view_default
@@ -444,6 +452,13 @@ class Terrain:
         self.bullseye_blue = {"x": 0, "y": 0}
         self.bullseye_red = {"x": 0, "y": 0}
         self.airports = {}  # type: Dict[str,Airport]
+
+        self._point_to_ll_transformer = Transformer.from_crs(
+            projection_parameters.to_crs(), CRS("WGS84")
+        )
+        self._ll_to_point_transformer = Transformer.from_crs(
+            CRS("WGS84"), projection_parameters.to_crs()
+        )
 
     def weather(self, dt: datetime, weather_: weather.Weather):
         # check if there might be the season for thunderstorms

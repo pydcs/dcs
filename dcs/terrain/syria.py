@@ -1,6 +1,7 @@
 # flake8: noqa
 import dcs.mapping as mapping
 from dcs.terrain.terrain import Airport, Runway, ParkingSlot, Terrain, MapView
+from .projections.syria import PARAMETERS
 
 
 class Abu_al_Duhur(Airport):
@@ -5263,6 +5264,7 @@ class Syria(Terrain):
         bounds = mapping.Rectangle(-320000, -579986, 300000, 579998, self)
         super().__init__(
             "Syria",
+            PARAMETERS,
             bounds,
             map_view_default=MapView(bounds.center(), self, 1000000)
         )

@@ -1,6 +1,7 @@
 # flake8: noqa
 from dcs import mapping
 from dcs.terrain import Airport, Runway, ParkingSlot, Terrain, MapView
+from .projections.marianaislands import PARAMETERS
 
 
 class Rota_Intl(Airport):
@@ -846,6 +847,7 @@ class MarianaIslands(Terrain):
     def __init__(self):
         super().__init__(
             "MarianaIslands",
+            PARAMETERS,
             bounds=mapping.Rectangle(1000 * 10000, -1000 * 1000, -300 * 1000, 500 * 1000, self),
             map_view_default=MapView(mapping.Point(76432, 48051, self), self, 1000000)
         )

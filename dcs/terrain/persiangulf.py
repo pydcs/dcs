@@ -1,6 +1,7 @@
 # flake8: noqa
 from dcs.terrain.terrain import Terrain, Airport, Runway, ParkingSlot, MapView
 import dcs.mapping as mapping
+from .projections.persiangulf import PARAMETERS
 
 
 class Abu_Musa_Island(Airport):
@@ -4306,6 +4307,7 @@ class PersianGulf(Terrain):
         bounds = mapping.Rectangle(-218768.750000, -392081.937500, 197357.906250, 333129.125000, self)
         super().__init__(
             "PersianGulf",
+            PARAMETERS,
             bounds,
             map_view_default=MapView(bounds.center(), self, 1000000)
         )
