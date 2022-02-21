@@ -116,6 +116,14 @@ class Point(Vector2):
         x, y = point_from_heading(self.x, self.y, heading, distance)
         return Point(x, y, self._terrain)
 
+    def midpoint(self, other: Vector2) -> Point:
+        return (self + other) / 2
+
+    def lerp(self, other: Vector2, t: float) -> Point:
+        def _lerp(v0: float, v1: float, t: float) -> float:
+            return (1 - t) * v0 + t * v1
+        return Point(_lerp(self.x, other.x, t), _lerp(self.y, other.y, t), self._terrain)
+
     def heading_between_point(self, point: Vector2) -> float:
         return heading_between_points(self.x, self.y, point.x, point.y)
 
@@ -155,6 +163,9 @@ class Point(Vector2):
 
     def __rmul__(self, other: float) -> Point:
         return self * other
+
+    def __truediv__(self, other: float) -> Point:
+        return self * (1 / other)
 
     def __eq__(self, other):
         return self.x == other.x and self.y == other.y
