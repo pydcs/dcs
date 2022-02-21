@@ -3,7 +3,6 @@ import dcs
 
 
 class CaucasusTest(unittest.TestCase):
-
     def test_parking_slots(self):
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
         large_slots = m.terrain.batumi().free_parking_slots(dcs.planes.KC_135)

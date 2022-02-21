@@ -32,6 +32,17 @@ class PointTests(unittest.TestCase):
         self.assertEqual(p2.x, 1)
         self.assertEqual(p2.y, 1)
 
+    def test_latlng(self) -> None:
+        terrain = Caucasus()
+        p = Point(0, 0, terrain)
+        ll = p.latlng()
+        self.assertAlmostEqual(ll.lat, 45.129497060328966)
+        self.assertAlmostEqual(ll.lng, 34.265515188456)
+
+        p2 = Point.from_latlng(ll, terrain)
+        self.assertAlmostEqual(p2.x, 0)
+        self.assertAlmostEqual(p2.y, 0)
+
 
 class RectangleTests(unittest.TestCase):
     def test_rectangle(self) -> None:

@@ -60,6 +60,38 @@ def heading_between_points(x1: float, y1: float, x2: float, y2: float) -> float:
     return math.degrees(angle_trunc(math.atan2(deltay, deltax)))
 
 
+@dataclass(frozen=True)
+class LatLng:
+    lat: float
+    lng: float
+
+    def as_list(self) -> List[float]:
+        return [self.lat, self.lng]
+
+    @staticmethod
+    def _components(dimension: float) -> Tuple[int, int, float]:
+        degrees = int(dimension)
+        minutes = int(dimension * 60 % 60)
+        seconds = dimension * 3600 % 60
+        return degrees, minutes, seconds
+
+    def _format_component(
+        self, dimension: float, hemispheres: Tuple[str, str], seconds_precision: int
+    ) -> str:
+        hemisphere = hemispheres[0] if dimension >= 0 else hemispheres[1]
+        degrees, minutes, seconds = self._components(dimension)
+        return f"{degrees}°{minutes:02}'{seconds:02.{seconds_precision}f}\"{hemisphere}"
+
+    def format_dms(self, include_decimal_seconds: bool = False) -> str:
+        precision = 2 if include_decimal_seconds else 0
+        return " ".join(
+            [
+                self._format_component(self.lat, ("N", "S"), precision),
+                self._format_component(self.lng, ("E", "W"), precision),
+            ]
+        )
+
+
 @dataclass
 class Vector2:
     x: float
@@ -70,6 +102,15 @@ class Point(Vector2):
     def __init__(self, x: float, y: float, terrain: Terrain) -> None:
         super().__init__(x, y)
         self._terrain = terrain
+
+    def latlng(self) -> LatLng:
+        lat, lon = self._terrain._point_to_ll_transformer.transform(self.x, self.y)
+        return LatLng(lat, lon)
+
+    @staticmethod
+    def from_latlng(latlng: LatLng, terrain: Terrain) -> Point:
+        x, y = terrain._ll_to_point_transformer.transform(latlng.lat, latlng.lng)
+        return Point(x, y, terrain)
 
     def point_from_heading(self, heading: float, distance: float) -> Point:
         x, y = point_from_heading(self.x, self.y, heading, distance)
