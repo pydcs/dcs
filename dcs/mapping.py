@@ -112,6 +112,9 @@ class Point(Vector2):
         x, y = terrain._ll_to_point_transformer.transform(latlng.lat, latlng.lng)
         return Point(x, y, terrain)
 
+    def new_in_same_map(self, x: float, y: float) -> Point:
+        return Point(x, y, self._terrain)
+
     def point_from_heading(self, heading: float, distance: float) -> Point:
         x, y = point_from_heading(self.x, self.y, heading, distance)
         return Point(x, y, self._terrain)
