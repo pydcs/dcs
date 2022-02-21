@@ -60,14 +60,13 @@ def main():
 class {sname}(Airport):
     id = {id}
     name = "{name}"
-    position = mapping.Point({x}, {y})
     tacan = {tacan}
     unit_zones = []
     civilian = {civ}
     slot_version = {slot_version}
 
-    def __init__(self):
-        super({sname}, self).__init__()
+    def __init__(self, terrain: Terrain) -> None:
+        super().__init__(mapping.Point({x}, {y}, terrain), terrain)
 """
                   .format(sname=safename(airport['airport']['display_name']),
                           name=airport['airport']['display_name'],
@@ -94,7 +93,7 @@ class {sname}(Airport):
                 large = slot["flag"] & large_bit == large_bit
                 height = float(slot["params"]["HEIGHT"]) if slot["params"]["HEIGHT"] else None
                 print("""        self.parking_slots.append(ParkingSlot(
-                crossroad_idx={crossidx}, position=mapping.Point({x}, {y}), large={large}, heli={heli},
+                crossroad_idx={crossidx}, position=mapping.Point({x}, {y}, self._terrain), large={large}, heli={heli},
                 airplanes={airplanes}, slot_name='{name}', length={length}, width={width}, height={height}, shelter={shelter}))""".format(
                     crossidx=slot["crossroad_index"], x=slot["x"], y=slot["y"],
                     large=large,
@@ -105,11 +104,15 @@ class {sname}(Airport):
                     shelter=slot["params"]["SHELTER"] == "1"
                 ))
 
+        print()
+        print("# The following section belongs in the Terrain subclass, not in the Airport")
+        print()
+
         for id_ in sorted(data["airports"]):
             airport = data["airports"][id_]
             sname = safename(airport['airport']['display_name'])
             keyname = airport['airport']['display_name']
-            print("self.airports['{keyname}'] = {name}()".format(keyname=keyname, name=sname))
+            print("        self.airports['{keyname}'] = {name}(self)".format(keyname=keyname, name=sname))
 
         for id_ in sorted(data["airports"]):
             airport = data["airports"][id_]

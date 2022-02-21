@@ -72,14 +72,15 @@ class NoParkingSlotError(RuntimeError):
 class Airport:
     id: int
     name: str
-    position: mapping.Point
     tacan = None
     frequencies: List[float] = []
     unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 1
 
-    def __init__(self):
+    def __init__(self, position: mapping.Point, terrain: Terrain) -> None:
+        self.position = position
+        self._terrain = terrain
         self.runway_used = None
         self.runways = []  # type: List[Runway]
         self.parking_slots = []  # type: List[ParkingSlot]
@@ -95,9 +96,9 @@ class Airport:
         self.operating_level_air = 10
         self.operating_level_fuel = 10
         self.operating_level_equipment = 10
-        self.aircrafts = {}
-        self.weapons = {}
-        self.suppliers = {}
+        self.aircrafts: Dict[str, Any] = {}
+        self.weapons: Dict[str, Any] = {}
+        self.suppliers: Dict[str, Any] = {}
         self.gasoline_init = 100
         self.methanol_mixture_init = 100
         self.diesel_init = 100
@@ -252,12 +253,13 @@ class Airport:
 
 
 class MapView:
-    def __init__(self, center: mapping.Point, zoom=1000000):
+    def __init__(self, center: mapping.Point, terrain: Terrain, zoom=1000000) -> None:
         self.position = center
         self.zoom = zoom
+        self._terrain = terrain
 
     def load_from_dict(self, d):
-        self.position = mapping.Point(d["centerX"], d["centerY"])
+        self.position = mapping.Point(d["centerX"], d["centerY"], self._terrain)
         self.zoom = d["zoom"]
 
     def dict(self):
@@ -417,8 +419,6 @@ class Graph:
 
 
 class Terrain:
-    bounds = None  # type: mapping.Rectangle
-    map_view_default = None  # type: MapView
     city_graph = Graph()  # type: Graph
     temperature = [
         (-4, 14),
@@ -436,8 +436,10 @@ class Terrain:
     ]
     assert(len(temperature) == 12)
 
-    def __init__(self, name: str):
+    def __init__(self, name: str, bounds: mapping.Rectangle, map_view_default: MapView) -> None:
         self.name = name
+        self.bounds = bounds
+        self.map_view_default = map_view_default
         self.center = {"lat": 0.0, "long": 0.0}  # WGS84 decimal
         self.bullseye_blue = {"x": 0, "y": 0}
         self.bullseye_red = {"x": 0, "y": 0}
