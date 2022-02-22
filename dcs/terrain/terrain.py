@@ -446,6 +446,7 @@ class Terrain:
         map_view_default: MapView,
     ) -> None:
         self.name = name
+        self.projection_parameters = projection_parameters
         self.bounds = bounds
         self.map_view_default = map_view_default
         self.center = {"lat": 0.0, "long": 0.0}  # WGS84 decimal
@@ -454,10 +455,28 @@ class Terrain:
         self.airports = {}  # type: Dict[str,Airport]
 
         self._point_to_ll_transformer = Transformer.from_crs(
-            projection_parameters.to_crs(), CRS("WGS84")
+            self.projection_parameters.to_crs(), CRS("WGS84")
         )
         self._ll_to_point_transformer = Transformer.from_crs(
-            CRS("WGS84"), projection_parameters.to_crs()
+            CRS("WGS84"), self.projection_parameters.to_crs()
+        )
+
+    def __getstate__(self) -> Dict[str, Any]:
+        state = self.__dict__.copy()
+        # Transformers are not pickleable. Remove them from the serialized data and
+        # recreate on load.
+        del state["_point_to_ll_transformer"]
+        del state["_ll_to_point_transformer"]
+        return state
+
+    def __setstate__(self, state: Dict[str, Any]) -> None:
+        self.__dict__.update(state)
+        # Regenerate any state that was not persisted.
+        self._point_to_ll_transformer = Transformer.from_crs(
+            self.projection_parameters.to_crs(), CRS("WGS84")
+        )
+        self._ll_to_point_transformer = Transformer.from_crs(
+            CRS("WGS84"), self.projection_parameters.to_crs()
         )
 
     def weather(self, dt: datetime, weather_: weather.Weather):
