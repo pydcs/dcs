@@ -27,6 +27,7 @@ class LineStyle(Enum):
     Cross = "cross"
     Square = "square"
     Triangle = "triangle"
+    Wirefence = "wirefence"
 
 
 @dataclass
