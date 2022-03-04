@@ -1,7 +1,7 @@
 # flake8: noqa
 from dcs.terrain.terrain import Terrain, Airport, Runway, ParkingSlot, MapView
 import dcs.mapping as mapping
-from .projections.marianaislands import PARAMETERS
+from .projections.normandy import PARAMETERS
 
 
 class Saint_Pierre_du_Mont(Airport):
