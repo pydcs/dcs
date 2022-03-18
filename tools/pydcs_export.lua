@@ -138,6 +138,75 @@ countries["Combined Joint Task Forces Blue"] = "BLUE"
 countries["Combined Joint Task Forces Red"] = "RED"
 countries["United Nations Peacekeepers"] = "UN"
 
+local function handle_weapon(weapon, weaponKeys, weaponTable)
+    if weapon.displayName == nil then
+        -- There appears to be some garbage data in the weapon table where there are weapons without display names. Based on
+        -- the CLSIDs, these are some duplicate copies of Hydras. Since they don't appear to be needed, and we have no names to
+        -- display for them, just skip them.
+        return
+    end
+
+    local pyName = weapon.displayName
+    local myclsid = weapon.CLSID
+    if string.sub(weapon.CLSID, 0, 1) ~= "{" then
+        pyName = weapon.CLSID
+    end
+
+    -- this is all special code because, ED has for no reason some non utf8/ascii chars in their ids
+    if weapon.displayName == "AT-4 SPIGOT" then
+        pyName = "_9M111"
+        myclsid = pyName
+    elseif weapon.displayName == "AT-10 SABBER" then
+        pyName = "_9M117"
+        myclsid = pyName
+    elseif weapon.displayName == "AT-11 SNIPER (Reflex)" then
+        pyName = "REFLEX_9M119"
+        myclsid = pyName
+    elseif weapon.displayName == "AT-11 SNIPER (Svir')" then
+        pyName = "SVIR_9M119"
+        myclsid = pyName
+    elseif weapon.displayName == "SA-13 GOPHER" then
+        pyName = "_9M37"
+        myclsid = pyName
+    elseif weapon.displayName == "SA-15 GAUNTLET" then
+        pyName = "_9M331"
+        myclsid = pyName
+    elseif weapon.displayName == "SA-11 GADFLY" then
+        pyName = "_9M38"
+        myclsid = pyName
+    elseif weapon.displayName == "SA-18 GROUSE" then
+        pyName = "_9M39"
+        myclsid = pyName
+    elseif weapon.displayName == "SS-N-12 SANDBOX" then
+        pyName = "_4M80"
+        myclsid = pyName
+    elseif weapon.displayName == 'AN/AAS-38 "Nite hawk" FLIR, Laser designator & Laser spot tracker pod' then
+        pyName = "_NiteHawk_FLIR"
+        myclsid = pyName
+    else
+        pyName = string.gsub(pyName, "[-()/., *']", "_")
+        pyName = string.gsub(pyName,"^([0-9])", "_%1")
+        pyName = string.gsub(pyName,"%&", "")
+        pyName = string.gsub(pyName,'%"', "")
+        pyName = string.gsub(pyName,'%+', "")
+        pyName = string.gsub(pyName,'%:', "")
+    end
+
+    key = pyName
+    if weaponTable[key] ~= nil then
+        key = pyName .. "_"
+    end
+    local w = "None"
+    if weapon["Weight"] ~= nil then
+        w = weapon["Weight"]
+    end
+    while weaponTable[key] ~= nil do
+        key = key..'_'
+    end
+    weaponTable[key] = {clsid = myclsid, displayName = safe_display_name(weapon.displayName), weight = w}
+    table.insert(weaponKeys, key)
+    -- print("    " .. key .. " = {\"clsid\": \"" .. weapon.CLSID .. "\", \"name\": \"" .. weapon.displayName .. "\"}")
+end
 
 -------------------------------------------------------------------------------
 -- prepare and export weapons data
@@ -146,66 +215,7 @@ local weapons = {}
 local keys = {}
 for j in pairs({CAT_BOMBS,CAT_MISSILES,CAT_ROCKETS,CAT_AIR_TO_AIR,CAT_FUEL_TANKS,CAT_PODS}) do
     for i, v in ipairs(db.Weapons.Categories[j].Launchers) do
-        local pyName = v.displayName
-        local myclsid = v.CLSID
-        if string.sub(v.CLSID, 0, 1) ~= "{" then
-            pyName = v.CLSID
-        end
-
-        -- this is all special code because, ED has for no reason some non utf8/ascii chars in their ids
-        if v.displayName == "AT-4 SPIGOT" then
-            pyName = "_9M111"
-            myclsid = pyName
-        elseif v.displayName == "AT-10 SABBER" then
-            pyName = "_9M117"
-            myclsid = pyName
-        elseif v.displayName == "AT-11 SNIPER (Reflex)" then
-            pyName = "REFLEX_9M119"
-            myclsid = pyName
-        elseif v.displayName == "AT-11 SNIPER (Svir')" then
-            pyName = "SVIR_9M119"
-            myclsid = pyName
-        elseif v.displayName == "SA-13 GOPHER" then
-            pyName = "_9M37"
-            myclsid = pyName
-        elseif v.displayName == "SA-15 GAUNTLET" then
-            pyName = "_9M331"
-            myclsid = pyName
-        elseif v.displayName == "SA-11 GADFLY" then
-            pyName = "_9M38"
-            myclsid = pyName
-        elseif v.displayName == "SA-18 GROUSE" then
-            pyName = "_9M39"
-            myclsid = pyName
-        elseif v.displayName == "SS-N-12 SANDBOX" then
-            pyName = "_4M80"
-            myclsid = pyName
-        elseif v.displayName == 'AN/AAS-38 "Nite hawk" FLIR, Laser designator & Laser spot tracker pod' then
-            pyName = "_NiteHawk_FLIR"
-            myclsid = pyName
-        else
-            pyName = string.gsub(pyName, "[-()/., *']", "_")
-            pyName = string.gsub(pyName,"^([0-9])", "_%1")
-            pyName = string.gsub(pyName,"%&", "")
-            pyName = string.gsub(pyName,'%"', "")
-            pyName = string.gsub(pyName,'%+', "")
-            pyName = string.gsub(pyName,'%:', "")
-        end
-
-		key = pyName
-		if weapons[key] ~= nil then
-			key = pyName .. "_"
-		end
-		local w = "None"
-		if v["Weight"] ~= nil then
-			w = v["Weight"]
-		end
-		while weapons[key] ~= nil do
-			key = key..'_'
-		end
-		weapons[key] = {clsid = myclsid, displayName = safe_display_name(v.displayName), weight = w}
-		table.insert(keys, key)
-		-- print("    " .. key .. " = {\"clsid\": \"" .. v.CLSID .. "\", \"name\": \"" .. v.displayName .. "\"}")
+        handle_weapon(v, keys, weapons)
 	end
 end
 
