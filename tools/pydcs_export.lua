@@ -189,6 +189,7 @@ for j in pairs({CAT_BOMBS,CAT_MISSILES,CAT_ROCKETS,CAT_AIR_TO_AIR,CAT_FUEL_TANKS
             pyName = string.gsub(pyName,"%&", "")
             pyName = string.gsub(pyName,'%"', "")
             pyName = string.gsub(pyName,'%+', "")
+            pyName = string.gsub(pyName,'%:', "")
         end
 
 		key = pyName
