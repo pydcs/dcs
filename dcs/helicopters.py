@@ -286,7 +286,7 @@ class Ka_50(HelicopterType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (1, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (1, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (1, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
-        Fuel_tank_PTB_450 = (1, Weapons.Fuel_tank_PTB_450)
+        Fuel_tank_PTB_450_ = (1, Weapons.Fuel_tank_PTB_450_)
 
     class Pylon2:
         B_8V20A_CM = (2, Weapons.B_8V20A_CM)
@@ -299,7 +299,7 @@ class Ka_50(HelicopterType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (2, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
-        Fuel_tank_PTB_450 = (2, Weapons.Fuel_tank_PTB_450)
+        Fuel_tank_PTB_450_ = (2, Weapons.Fuel_tank_PTB_450_)
 
     class Pylon3:
         B_8V20A_CM = (3, Weapons.B_8V20A_CM)
@@ -312,7 +312,7 @@ class Ka_50(HelicopterType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (3, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (3, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
-        Fuel_tank_PTB_450 = (3, Weapons.Fuel_tank_PTB_450)
+        Fuel_tank_PTB_450_ = (3, Weapons.Fuel_tank_PTB_450_)
 
     class Pylon4:
         B_8V20A_CM = (4, Weapons.B_8V20A_CM)
@@ -327,7 +327,7 @@ class Ka_50(HelicopterType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (4, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (4, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (4, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
-        Fuel_tank_PTB_450 = (4, Weapons.Fuel_tank_PTB_450)
+        Fuel_tank_PTB_450_ = (4, Weapons.Fuel_tank_PTB_450_)
 
     pylons: Set[int] = {1, 2, 3, 4}
 
@@ -1950,25 +1950,21 @@ class AH_64A(HelicopterType):
 
     class Pylon1:
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        AGM_114K___4 = (1, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        M299___4_x_AGM_114K_Hellfire = (1, Weapons.M299___4_x_AGM_114K_Hellfire)
 
     class Pylon2:
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        AGM_114K___4 = (2, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        M299___4_x_AGM_114K_Hellfire = (2, Weapons.M299___4_x_AGM_114K_Hellfire)
 
     class Pylon3:
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        AGM_114K___4 = (3, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        M299___4_x_AGM_114K_Hellfire = (3, Weapons.M299___4_x_AGM_114K_Hellfire)
 
     class Pylon4:
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        AGM_114K___4 = (4, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        M299___4_x_AGM_114K_Hellfire = (4, Weapons.M299___4_x_AGM_114K_Hellfire)
 
     pylons: Set[int] = {1, 2, 3, 4}
 
@@ -2021,26 +2017,46 @@ class AH_64D(HelicopterType):
             standard = "standard"
 
     class Pylon1:
-        AGM_114K___4 = (1, Weapons.AGM_114K___4)
+        M299___4_x_AGM_114K_Hellfire = (1, Weapons.M299___4_x_AGM_114K_Hellfire)
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        M299___3_x_AGM_114K_Hellfire__Port = (1, Weapons.M299___3_x_AGM_114K_Hellfire__Port)
+        M299___3_x_AGM_114K_Hellfire__Starboard = (1, Weapons.M299___3_x_AGM_114K_Hellfire__Starboard)
+        M299___2_x_AGM_114K_Hellfire = (1, Weapons.M299___2_x_AGM_114K_Hellfire)
+        M299___1_x_AGM_114K_Hellfire__Port = (1, Weapons.M299___1_x_AGM_114K_Hellfire__Port)
+        M299___1_x_AGM_114K_Hellfire__Starboard = (1, Weapons.M299___1_x_AGM_114K_Hellfire__Starboard)
+        M299___Empty_Launcher = (1, Weapons.M299___Empty_Launcher)
 
     class Pylon2:
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        AGM_114K___4 = (2, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        M299___4_x_AGM_114K_Hellfire = (2, Weapons.M299___4_x_AGM_114K_Hellfire)
+        M299___3_x_AGM_114K_Hellfire__Port = (2, Weapons.M299___3_x_AGM_114K_Hellfire__Port)
+        M299___3_x_AGM_114K_Hellfire__Starboard = (2, Weapons.M299___3_x_AGM_114K_Hellfire__Starboard)
+        M299___2_x_AGM_114K_Hellfire = (2, Weapons.M299___2_x_AGM_114K_Hellfire)
+        M299___1_x_AGM_114K_Hellfire__Port = (2, Weapons.M299___1_x_AGM_114K_Hellfire__Port)
+        M299___1_x_AGM_114K_Hellfire__Starboard = (2, Weapons.M299___1_x_AGM_114K_Hellfire__Starboard)
+        M299___Empty_Launcher = (2, Weapons.M299___Empty_Launcher)
 
     class Pylon3:
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        AGM_114K___4 = (3, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        M299___4_x_AGM_114K_Hellfire = (3, Weapons.M299___4_x_AGM_114K_Hellfire)
+        M299___3_x_AGM_114K_Hellfire__Port = (3, Weapons.M299___3_x_AGM_114K_Hellfire__Port)
+        M299___3_x_AGM_114K_Hellfire__Starboard = (3, Weapons.M299___3_x_AGM_114K_Hellfire__Starboard)
+        M299___2_x_AGM_114K_Hellfire = (3, Weapons.M299___2_x_AGM_114K_Hellfire)
+        M299___1_x_AGM_114K_Hellfire__Port = (3, Weapons.M299___1_x_AGM_114K_Hellfire__Port)
+        M299___1_x_AGM_114K_Hellfire__Starboard = (3, Weapons.M299___1_x_AGM_114K_Hellfire__Starboard)
+        M299___Empty_Launcher = (3, Weapons.M299___Empty_Launcher)
 
     class Pylon4:
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        AGM_114K___4 = (4, Weapons.AGM_114K___4)
-        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        M299___4_x_AGM_114K_Hellfire = (4, Weapons.M299___4_x_AGM_114K_Hellfire)
+        M299___3_x_AGM_114K_Hellfire__Port = (4, Weapons.M299___3_x_AGM_114K_Hellfire__Port)
+        M299___3_x_AGM_114K_Hellfire__Starboard = (4, Weapons.M299___3_x_AGM_114K_Hellfire__Starboard)
+        M299___2_x_AGM_114K_Hellfire = (4, Weapons.M299___2_x_AGM_114K_Hellfire)
+        M299___1_x_AGM_114K_Hellfire__Port = (4, Weapons.M299___1_x_AGM_114K_Hellfire__Port)
+        M299___1_x_AGM_114K_Hellfire__Starboard = (4, Weapons.M299___1_x_AGM_114K_Hellfire__Starboard)
+        M299___Empty_Launcher = (4, Weapons.M299___Empty_Launcher)
 
     pylons: Set[int] = {1, 2, 3, 4}
 
@@ -2090,7 +2106,7 @@ class AH_1W(HelicopterType):
             Turkey_2 = "Turkey 2"
 
     class Pylon1:
-        AGM_114K___4 = (1, Weapons.AGM_114K___4)
+        M299___4_x_AGM_114K_Hellfire = (1, Weapons.M299___4_x_AGM_114K_Hellfire)
         _4_x_BGM_71D_TOW_ATGM = (1, Weapons._4_x_BGM_71D_TOW_ATGM)
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
         M260_HYDRA = (1, Weapons.M260_HYDRA)
@@ -2108,7 +2124,7 @@ class AH_1W(HelicopterType):
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
 
     class Pylon4:
-        AGM_114K___4 = (4, Weapons.AGM_114K___4)
+        M299___4_x_AGM_114K_Hellfire = (4, Weapons.M299___4_x_AGM_114K_Hellfire)
         LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
         M260_HYDRA = (4, Weapons.M260_HYDRA)
         _4_x_BGM_71D_TOW_ATGM = (4, Weapons._4_x_BGM_71D_TOW_ATGM)
@@ -2576,6 +2592,306 @@ class OH_58D(HelicopterType):
     task_default = task.AFAC
 
 
+class AH_64D_BLK_II(HelicopterType):
+    id = "AH-64D_BLK_II"
+    flyable = True
+    height = 4.15
+    width = 14.63
+    length = 17.87
+    fuel_max = 1438
+    max_speed = 365
+    chaff = 30
+    flare = 60
+    charge_total = 90
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    eplrs = True
+
+    panel_radio = {
+        1: {
+            "channels": {
+                7: 141,
+                1: 127.5,
+                2: 135,
+                4: 127,
+                8: 128,
+                9: 126,
+                5: 125,
+                10: 137,
+                3: 136,
+                6: 121
+            },
+        },
+        2: {
+            "channels": {
+                7: 325,
+                1: 225,
+                2: 240,
+                4: 270,
+                8: 350,
+                9: 375,
+                5: 285,
+                10: 390,
+                3: 255,
+                6: 300
+            },
+        },
+        4: {
+            "channels": {
+                7: 30.035,
+                1: 30,
+                2: 30.01,
+                4: 30.02,
+                8: 30.04,
+                9: 30.045,
+                5: 30.025,
+                10: 30.05,
+                3: 30.015,
+                6: 30.03
+            },
+        },
+        3: {
+            "channels": {
+                7: 30.035,
+                1: 30,
+                2: 30.01,
+                4: 30.02,
+                8: 30.04,
+                9: 30.045,
+                5: 30.025,
+                10: 30.05,
+                3: 30.015,
+                6: 30.03
+            },
+        },
+    }
+
+    callnames: Dict[str, List[str]] = {
+        "USA": [
+            "ArmyAir",
+            "Apache",
+            "Crow",
+            "Chaos",
+            "Sioux",
+            "Gatling",
+            "Gunslinger",
+            "Hammerhead",
+            "Bootleg",
+            "Palehorse",
+            "Carnivore",
+            "Saber",
+        ]
+    }
+
+    property_defaults: Dict[str, Any] = {
+        "FCR_RFI_removed": True,
+        "NetCrewControlPriority": 0,
+        "AIDisabled": False,
+        "FlareBurstCount": 0,
+        "FlareBurstInterval": 0,
+        "FlareSalvoCount": 0,
+        "FlareSalvoInterval": 0,
+        "FlareProgramDelay": 0,
+        "PltNVG": True,
+        "CpgNVG": True,
+    }
+
+    class Properties:
+
+        class FCR_RFI_removed:
+            id = "FCR_RFI_removed"
+
+        class NetCrewControlPriority:
+            id = "NetCrewControlPriority"
+
+            class Values:
+                Pilot = 0
+                CPG = 1
+                Ask_Always = -1
+                Equally_Responsible = -2
+
+        class AIDisabled:
+            id = "AIDisabled"
+
+        class FlareBurstCount:
+            id = "FlareBurstCount"
+
+            class Values:
+                _1 = 0
+                _2 = 1
+                _3 = 2
+                _4 = 3
+                _6 = 4
+                _8 = 5
+
+        class FlareBurstInterval:
+            id = "FlareBurstInterval"
+
+            class Values:
+                _0_1 = 0
+                _0_2 = 1
+                _0_3 = 2
+                _0_4 = 3
+
+        class FlareSalvoCount:
+            id = "FlareSalvoCount"
+
+            class Values:
+                _1 = 0
+                _2 = 1
+                _4 = 2
+                _8 = 3
+                Continuous = 4
+
+        class FlareSalvoInterval:
+            id = "FlareSalvoInterval"
+
+            class Values:
+                _1 = 0
+                _2 = 1
+                _3 = 2
+                _4 = 3
+                _5 = 4
+                _8 = 5
+                Random = 6
+
+        class FlareProgramDelay:
+            id = "FlareProgramDelay"
+
+            class Values:
+                _1 = 0
+                _2 = 1
+                _3 = 2
+                _4 = 3
+
+        class PltNVG:
+            id = "PltNVG"
+
+        class CpgNVG:
+            id = "CpgNVG"
+
+    class Liveries:
+
+        class Combined_Joint_Task_Forces_Blue(Enum):
+            default = "default"
+            _1st_Attack_Helicopter_Battalion_Greece = "1st Attack Helicopter Battalion Greece"
+            _301_Squadron_Redskins_Netherlands = "301 Squadron Redskins Netherlands"
+            _664_Squadron_9_Regiment_UK = "664 Squadron 9 Regiment UK"
+            Archangel_4_2_ARB = "Archangel 4-2 ARB"
+            Avengers_1_227th_ARB = "Avengers 1-227th ARB"
+            Devils_1_1_ARB = "Devils 1-1 ARB"
+            The_Air_Pirates_1_211th_ARB = "The Air Pirates 1-211th ARB"
+            Silver_Spurs_3_17_CAV = "Silver Spurs 3-17 CAV"
+            Grim_Reapers_4_2_ARB = "Grim Reapers 4-2 ARB"
+            Killer_Bees_1_130th_ARB_NCNG = "Killer Bees 1-130th ARB NCNG"
+            Gunslingers_2_159th_ARB = "Gunslingers 2-159th ARB"
+            Slayers_4_2_ARB = "Slayers 4-2 ARB"
+            General_Attack_Recon_Battalion = "General Attack Recon Battalion"
+            Wolfpack_1_82_ARB = "Wolfpack 1-82 ARB"
+
+        class UK(Enum):
+            _664_Squadron_9_Regiment_UK = "664 Squadron 9 Regiment UK"
+
+        class TheNetherlands(Enum):
+            _301_Squadron_Redskins_Netherlands = "301 Squadron Redskins Netherlands"
+
+        class Combined_Joint_Task_Forces_Red(Enum):
+            default = "default"
+            _1st_Attack_Helicopter_Battalion_Greece = "1st Attack Helicopter Battalion Greece"
+            _301_Squadron_Redskins_Netherlands = "301 Squadron Redskins Netherlands"
+            _664_Squadron_9_Regiment_UK = "664 Squadron 9 Regiment UK"
+            Archangel_4_2_ARB = "Archangel 4-2 ARB"
+            Avengers_1_227th_ARB = "Avengers 1-227th ARB"
+            Devils_1_1_ARB = "Devils 1-1 ARB"
+            The_Air_Pirates_1_211th_ARB = "The Air Pirates 1-211th ARB"
+            Silver_Spurs_3_17_CAV = "Silver Spurs 3-17 CAV"
+            Grim_Reapers_4_2_ARB = "Grim Reapers 4-2 ARB"
+            Killer_Bees_1_130th_ARB_NCNG = "Killer Bees 1-130th ARB NCNG"
+            Gunslingers_2_159th_ARB = "Gunslingers 2-159th ARB"
+            Slayers_4_2_ARB = "Slayers 4-2 ARB"
+            General_Attack_Recon_Battalion = "General Attack Recon Battalion"
+            Wolfpack_1_82_ARB = "Wolfpack 1-82 ARB"
+
+        class USA(Enum):
+            default = "default"
+            Archangel_4_2_ARB = "Archangel 4-2 ARB"
+            Avengers_1_227th_ARB = "Avengers 1-227th ARB"
+            Devils_1_1_ARB = "Devils 1-1 ARB"
+            The_Air_Pirates_1_211th_ARB = "The Air Pirates 1-211th ARB"
+            Silver_Spurs_3_17_CAV = "Silver Spurs 3-17 CAV"
+            Grim_Reapers_4_2_ARB = "Grim Reapers 4-2 ARB"
+            Killer_Bees_1_130th_ARB_NCNG = "Killer Bees 1-130th ARB NCNG"
+            Gunslingers_2_159th_ARB = "Gunslingers 2-159th ARB"
+            Slayers_4_2_ARB = "Slayers 4-2 ARB"
+            General_Attack_Recon_Battalion = "General Attack Recon Battalion"
+            Wolfpack_1_82_ARB = "Wolfpack 1-82 ARB"
+
+    class Pylon1:
+        M261_MK151 = (1, Weapons.M261_MK151)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_ = (1, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk = (1, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP = (1, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP = (1, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP)
+        M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M274_Hydra__6SK_ = (1, Weapons.M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M274_Hydra__6SK_)
+        M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M257_Hydra__6IL_ = (1, Weapons.M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M257_Hydra__6IL_)
+        M299___4_x_AGM_114K_Hellfire = (1, Weapons.M299___4_x_AGM_114K_Hellfire)
+        M299___3_x_AGM_114K_Hellfire__Port = (1, Weapons.M299___3_x_AGM_114K_Hellfire__Port)
+        M299___2_x_AGM_114K_Hellfire = (1, Weapons.M299___2_x_AGM_114K_Hellfire)
+        M299___1_x_AGM_114K_Hellfire__Port = (1, Weapons.M299___1_x_AGM_114K_Hellfire__Port)
+        M299___Empty_Launcher = (1, Weapons.M299___Empty_Launcher)
+        Fuel_tank_230_gal = (1, Weapons.Fuel_tank_230_gal)
+
+    class Pylon2:
+        M261_MK151 = (2, Weapons.M261_MK151)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_ = (2, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk = (2, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP = (2, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP = (2, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP)
+        M261_Inboard_Launcher__Zone_C_M274_Hydra__6SK___Zones_D_E_M151_Hydra__6PD_ = (2, Weapons.M261_Inboard_Launcher__Zone_C_M274_Hydra__6SK___Zones_D_E_M151_Hydra__6PD_)
+        M261_Inboard_Launcher__Zone_C_M257_Hydra__6IL___Zones_D_E_M151_Hydra__6PD_ = (2, Weapons.M261_Inboard_Launcher__Zone_C_M257_Hydra__6IL___Zones_D_E_M151_Hydra__6PD_)
+        M299___4_x_AGM_114K_Hellfire = (2, Weapons.M299___4_x_AGM_114K_Hellfire)
+        M299___3_x_AGM_114K_Hellfire__Port = (2, Weapons.M299___3_x_AGM_114K_Hellfire__Port)
+        M299___2_x_AGM_114K_Hellfire = (2, Weapons.M299___2_x_AGM_114K_Hellfire)
+        M299___1_x_AGM_114K_Hellfire__Port = (2, Weapons.M299___1_x_AGM_114K_Hellfire__Port)
+        M299___Empty_Launcher = (2, Weapons.M299___Empty_Launcher)
+        Fuel_tank_230_gal = (2, Weapons.Fuel_tank_230_gal)
+
+    class Pylon3:
+        M261_MK151 = (3, Weapons.M261_MK151)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_ = (3, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk = (3, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP = (3, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP = (3, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP)
+        M261_Inboard_Launcher__Zone_C_M274_Hydra__6SK___Zones_D_E_M151_Hydra__6PD_ = (3, Weapons.M261_Inboard_Launcher__Zone_C_M274_Hydra__6SK___Zones_D_E_M151_Hydra__6PD_)
+        M261_Inboard_Launcher__Zone_C_M257_Hydra__6IL___Zones_D_E_M151_Hydra__6PD_ = (3, Weapons.M261_Inboard_Launcher__Zone_C_M257_Hydra__6IL___Zones_D_E_M151_Hydra__6PD_)
+        M299___4_x_AGM_114K_Hellfire = (3, Weapons.M299___4_x_AGM_114K_Hellfire)
+        M299___3_x_AGM_114K_Hellfire__Starboard = (3, Weapons.M299___3_x_AGM_114K_Hellfire__Starboard)
+        M299___2_x_AGM_114K_Hellfire = (3, Weapons.M299___2_x_AGM_114K_Hellfire)
+        M299___1_x_AGM_114K_Hellfire__Starboard = (3, Weapons.M299___1_x_AGM_114K_Hellfire__Starboard)
+        M299___Empty_Launcher = (3, Weapons.M299___Empty_Launcher)
+        Fuel_tank_230_gal = (3, Weapons.Fuel_tank_230_gal)
+
+    class Pylon4:
+        M261_MK151 = (4, Weapons.M261_MK151)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_ = (4, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk = (4, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP = (4, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP)
+        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP = (4, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP)
+        M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M274_Hydra__6SK_ = (4, Weapons.M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M274_Hydra__6SK_)
+        M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M257_Hydra__6IL_ = (4, Weapons.M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M257_Hydra__6IL_)
+        M299___4_x_AGM_114K_Hellfire = (4, Weapons.M299___4_x_AGM_114K_Hellfire)
+        M299___3_x_AGM_114K_Hellfire__Starboard = (4, Weapons.M299___3_x_AGM_114K_Hellfire__Starboard)
+        M299___2_x_AGM_114K_Hellfire = (4, Weapons.M299___2_x_AGM_114K_Hellfire)
+        M299___1_x_AGM_114K_Hellfire__Starboard = (4, Weapons.M299___1_x_AGM_114K_Hellfire__Starboard)
+        M299___Empty_Launcher = (4, Weapons.M299___Empty_Launcher)
+        Fuel_tank_230_gal = (4, Weapons.Fuel_tank_230_gal)
+
+    pylons: Set[int] = {1, 2, 3, 4}
+
+    tasks = [task.CAS, task.GroundAttack, task.Escort, task.AFAC, task.AntishipStrike]
+    task_default = task.CAS
+
+
 class Mi_24P(HelicopterType):
     id = "Mi-24P"
     flyable = True
@@ -2749,7 +3065,7 @@ class Mi_24P(HelicopterType):
         _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE = (2, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE)
         _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag = (2, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        Fuel_tank_PTB_450_ = (2, Weapons.Fuel_tank_PTB_450_)
+        Fuel_tank_PTB_450 = (2, Weapons.Fuel_tank_PTB_450)
         B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (2, Weapons.B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (2, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -2776,7 +3092,7 @@ class Mi_24P(HelicopterType):
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (3, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        Fuel_tank_PTB_450_ = (3, Weapons.Fuel_tank_PTB_450_)
+        Fuel_tank_PTB_450 = (3, Weapons.Fuel_tank_PTB_450)
         APU_68___S_24B = (3, Weapons.APU_68___S_24B)
         GUV_YakB_GSHP = (3, Weapons.GUV_YakB_GSHP)
         GUV_VOG = (3, Weapons.GUV_VOG)
@@ -2798,7 +3114,7 @@ class Mi_24P(HelicopterType):
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (4, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (4, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (4, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        Fuel_tank_PTB_450_ = (4, Weapons.Fuel_tank_PTB_450_)
+        Fuel_tank_PTB_450 = (4, Weapons.Fuel_tank_PTB_450)
         APU_68___S_24B = (4, Weapons.APU_68___S_24B)
         GUV_YakB_GSHP = (4, Weapons.GUV_YakB_GSHP)
         GUV_VOG = (4, Weapons.GUV_VOG)
@@ -2813,7 +3129,7 @@ class Mi_24P(HelicopterType):
         _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE = (5, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE)
         _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag = (5, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (5, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        Fuel_tank_PTB_450_ = (5, Weapons.Fuel_tank_PTB_450_)
+        Fuel_tank_PTB_450 = (5, Weapons.Fuel_tank_PTB_450)
         B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (5, Weapons.B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (5, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (5, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -2883,15 +3199,20 @@ class SA342M(HelicopterType):
 
         class Combined_Joint_Task_Forces_Blue(Enum):
             Combat = "Combat"
+            Combat_sable = "Combat sable"
+            Cyprus_air_force = "Cyprus air force"
             Germany_Fictional = "Germany Fictional"
             Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
             Israel_Fictional = "Israel Fictional"
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
+            Dutch_Fictional = "Dutch Fictional"
             Russia_Fictional = "Russia Fictional"
             Serbia_Fictional = "Serbia Fictional"
             Syria_Fictional = "Syria Fictional"
             Tiger_Meet = "Tiger Meet"
             Tiger_Meet_2 = "Tiger Meet 2"
             Training = "Training"
+            Training_EALAT = "Training EALAT"
             UK_Fictional = "UK Fictional"
             US_Marines_Fictional = "US Marines Fictional"
             Yugoslav_Fictional = "Yugoslav Fictional"
@@ -2906,29 +3227,43 @@ class SA342M(HelicopterType):
             Serbia_Fictional = "Serbia Fictional"
             Yugoslav_Fictional = "Yugoslav Fictional"
 
+        class TheNetherlands(Enum):
+            Dutch_Fictional = "Dutch Fictional"
+
         class Syria(Enum):
             Syria_Fictional = "Syria Fictional"
 
         class Combined_Joint_Task_Forces_Red(Enum):
             Combat = "Combat"
+            Combat_sable = "Combat sable"
+            Cyprus_air_force = "Cyprus air force"
             Germany_Fictional = "Germany Fictional"
             Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
             Israel_Fictional = "Israel Fictional"
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
+            Dutch_Fictional = "Dutch Fictional"
             Russia_Fictional = "Russia Fictional"
             Serbia_Fictional = "Serbia Fictional"
             Syria_Fictional = "Syria Fictional"
             Tiger_Meet = "Tiger Meet"
             Tiger_Meet_2 = "Tiger Meet 2"
             Training = "Training"
+            Training_EALAT = "Training EALAT"
             UK_Fictional = "UK Fictional"
             US_Marines_Fictional = "US Marines Fictional"
             Yugoslav_Fictional = "Yugoslav Fictional"
 
+        class Portugal(Enum):
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
+
         class France(Enum):
             Combat = "Combat"
+            Combat_sable = "Combat sable"
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
             Tiger_Meet = "Tiger Meet"
             Tiger_Meet_2 = "Tiger Meet 2"
             Training = "Training"
+            Training_EALAT = "Training EALAT"
 
         class USA(Enum):
             US_Marines_Fictional = "US Marines Fictional"
@@ -2957,7 +3292,10 @@ class SA342M(HelicopterType):
     class Pylon6:
         IR_Deflector = (6, Weapons.IR_Deflector)
 
-    pylons: Set[int] = {1, 2, 3, 4, 5, 6}
+    class Pylon7:
+        Dipole_Antanna__aesthetic_ = (7, Weapons.Dipole_Antanna__aesthetic_)
+
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
     tasks = [task.CAS, task.GroundAttack, task.AFAC, task.Escort, task.Reconnaissance]
     task_default = task.CAS
@@ -2996,12 +3334,16 @@ class SA342L(HelicopterType):
 
     property_defaults: Dict[str, Any] = {
         "NS430allow": True,
+        "SA342RemoveDoors": False,
     }
 
     class Properties:
 
         class NS430allow:
             id = "NS430allow"
+
+        class SA342RemoveDoors:
+            id = "SA342RemoveDoors"
 
     class Liveries:
 
@@ -3010,15 +3352,20 @@ class SA342L(HelicopterType):
 
         class Combined_Joint_Task_Forces_Blue(Enum):
             Combat = "Combat"
+            Combat_sable = "Combat sable"
+            Cyprus_air_force = "Cyprus air force"
             Germany_Fictional = "Germany Fictional"
             Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
             Israel_Fictional = "Israel Fictional"
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
+            Dutch_Fictional = "Dutch Fictional"
             Russia_Fictional = "Russia Fictional"
             Serbia_Fictional = "Serbia Fictional"
             Syria_Fictional = "Syria Fictional"
             Tiger_Meet = "Tiger Meet"
             Tiger_Meet_2 = "Tiger Meet 2"
             Training = "Training"
+            Training_EALAT = "Training EALAT"
             UK_Fictional = "UK Fictional"
             US_Marines_Fictional = "US Marines Fictional"
             Yugoslav_Fictional = "Yugoslav Fictional"
@@ -3033,29 +3380,43 @@ class SA342L(HelicopterType):
             Serbia_Fictional = "Serbia Fictional"
             Yugoslav_Fictional = "Yugoslav Fictional"
 
+        class TheNetherlands(Enum):
+            Dutch_Fictional = "Dutch Fictional"
+
         class Syria(Enum):
             Syria_Fictional = "Syria Fictional"
 
         class Combined_Joint_Task_Forces_Red(Enum):
             Combat = "Combat"
+            Combat_sable = "Combat sable"
+            Cyprus_air_force = "Cyprus air force"
             Germany_Fictional = "Germany Fictional"
             Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
             Israel_Fictional = "Israel Fictional"
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
+            Dutch_Fictional = "Dutch Fictional"
             Russia_Fictional = "Russia Fictional"
             Serbia_Fictional = "Serbia Fictional"
             Syria_Fictional = "Syria Fictional"
             Tiger_Meet = "Tiger Meet"
             Tiger_Meet_2 = "Tiger Meet 2"
             Training = "Training"
+            Training_EALAT = "Training EALAT"
             UK_Fictional = "UK Fictional"
             US_Marines_Fictional = "US Marines Fictional"
             Yugoslav_Fictional = "Yugoslav Fictional"
 
+        class Portugal(Enum):
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
+
         class France(Enum):
             Combat = "Combat"
+            Combat_sable = "Combat sable"
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
             Tiger_Meet = "Tiger Meet"
             Tiger_Meet_2 = "Tiger Meet 2"
             Training = "Training"
+            Training_EALAT = "Training EALAT"
 
         class USA(Enum):
             US_Marines_Fictional = "US Marines Fictional"
@@ -3077,7 +3438,10 @@ class SA342L(HelicopterType):
     class Pylon6:
         IR_Deflector = (6, Weapons.IR_Deflector)
 
-    pylons: Set[int] = {1, 2, 5, 6}
+    class Pylon7:
+        Dipole_Antanna__aesthetic_ = (7, Weapons.Dipole_Antanna__aesthetic_)
+
+    pylons: Set[int] = {1, 2, 5, 6, 7}
 
     tasks = [task.CAS, task.GroundAttack, task.AFAC, task.Escort, task.Reconnaissance]
     task_default = task.CAS
@@ -3130,15 +3494,20 @@ class SA342Mistral(HelicopterType):
 
         class Combined_Joint_Task_Forces_Blue(Enum):
             Combat = "Combat"
+            Combat_sable = "Combat sable"
+            Cyprus_air_force = "Cyprus air force"
             Germany_Fictional = "Germany Fictional"
             Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
             Israel_Fictional = "Israel Fictional"
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
+            Dutch_Fictional = "Dutch Fictional"
             Russia_Fictional = "Russia Fictional"
             Serbia_Fictional = "Serbia Fictional"
             Syria_Fictional = "Syria Fictional"
             Tiger_Meet = "Tiger Meet"
             Tiger_Meet_2 = "Tiger Meet 2"
             Training = "Training"
+            Training_EALAT = "Training EALAT"
             UK_Fictional = "UK Fictional"
             US_Marines_Fictional = "US Marines Fictional"
             Yugoslav_Fictional = "Yugoslav Fictional"
@@ -3153,29 +3522,43 @@ class SA342Mistral(HelicopterType):
             Serbia_Fictional = "Serbia Fictional"
             Yugoslav_Fictional = "Yugoslav Fictional"
 
+        class TheNetherlands(Enum):
+            Dutch_Fictional = "Dutch Fictional"
+
         class Syria(Enum):
             Syria_Fictional = "Syria Fictional"
 
         class Combined_Joint_Task_Forces_Red(Enum):
             Combat = "Combat"
+            Combat_sable = "Combat sable"
+            Cyprus_air_force = "Cyprus air force"
             Germany_Fictional = "Germany Fictional"
             Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
             Israel_Fictional = "Israel Fictional"
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
+            Dutch_Fictional = "Dutch Fictional"
             Russia_Fictional = "Russia Fictional"
             Serbia_Fictional = "Serbia Fictional"
             Syria_Fictional = "Syria Fictional"
             Tiger_Meet = "Tiger Meet"
             Tiger_Meet_2 = "Tiger Meet 2"
             Training = "Training"
+            Training_EALAT = "Training EALAT"
             UK_Fictional = "UK Fictional"
             US_Marines_Fictional = "US Marines Fictional"
             Yugoslav_Fictional = "Yugoslav Fictional"
 
+        class Portugal(Enum):
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
+
         class France(Enum):
             Combat = "Combat"
+            Combat_sable = "Combat sable"
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
             Tiger_Meet = "Tiger Meet"
             Tiger_Meet_2 = "Tiger Meet 2"
             Training = "Training"
+            Training_EALAT = "Training EALAT"
 
         class USA(Enum):
             US_Marines_Fictional = "US Marines Fictional"
@@ -3204,7 +3587,10 @@ class SA342Mistral(HelicopterType):
     class Pylon6:
         IR_Deflector = (6, Weapons.IR_Deflector)
 
-    pylons: Set[int] = {1, 2, 3, 4, 5, 6}
+    class Pylon7:
+        Dipole_Antanna__aesthetic_ = (7, Weapons.Dipole_Antanna__aesthetic_)
+
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
     tasks = [task.AFAC, task.Escort, task.Reconnaissance]
     task_default = task.Escort
@@ -3257,15 +3643,20 @@ class SA342Minigun(HelicopterType):
 
         class Combined_Joint_Task_Forces_Blue(Enum):
             Combat = "Combat"
+            Combat_sable = "Combat sable"
+            Cyprus_air_force = "Cyprus air force"
             Germany_Fictional = "Germany Fictional"
             Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
             Israel_Fictional = "Israel Fictional"
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
+            Dutch_Fictional = "Dutch Fictional"
             Russia_Fictional = "Russia Fictional"
             Serbia_Fictional = "Serbia Fictional"
             Syria_Fictional = "Syria Fictional"
             Tiger_Meet = "Tiger Meet"
             Tiger_Meet_2 = "Tiger Meet 2"
             Training = "Training"
+            Training_EALAT = "Training EALAT"
             UK_Fictional = "UK Fictional"
             US_Marines_Fictional = "US Marines Fictional"
             Yugoslav_Fictional = "Yugoslav Fictional"
@@ -3280,29 +3671,43 @@ class SA342Minigun(HelicopterType):
             Serbia_Fictional = "Serbia Fictional"
             Yugoslav_Fictional = "Yugoslav Fictional"
 
+        class TheNetherlands(Enum):
+            Dutch_Fictional = "Dutch Fictional"
+
         class Syria(Enum):
             Syria_Fictional = "Syria Fictional"
 
         class Combined_Joint_Task_Forces_Red(Enum):
             Combat = "Combat"
+            Combat_sable = "Combat sable"
+            Cyprus_air_force = "Cyprus air force"
             Germany_Fictional = "Germany Fictional"
             Greece_Cyprus_Fictional_Desert = "Greece Cyprus Fictional Desert"
             Israel_Fictional = "Israel Fictional"
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
+            Dutch_Fictional = "Dutch Fictional"
             Russia_Fictional = "Russia Fictional"
             Serbia_Fictional = "Serbia Fictional"
             Syria_Fictional = "Syria Fictional"
             Tiger_Meet = "Tiger Meet"
             Tiger_Meet_2 = "Tiger Meet 2"
             Training = "Training"
+            Training_EALAT = "Training EALAT"
             UK_Fictional = "UK Fictional"
             US_Marines_Fictional = "US Marines Fictional"
             Yugoslav_Fictional = "Yugoslav Fictional"
 
+        class Portugal(Enum):
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
+
         class France(Enum):
             Combat = "Combat"
+            Combat_sable = "Combat sable"
+            Portuguese_Modern_Fictional = "Portuguese Modern Fictional"
             Tiger_Meet = "Tiger Meet"
             Tiger_Meet_2 = "Tiger Meet 2"
             Training = "Training"
+            Training_EALAT = "Training EALAT"
 
         class USA(Enum):
             US_Marines_Fictional = "US Marines Fictional"
@@ -3343,6 +3748,7 @@ helicopter_map = {
     "UH-1H": UH_1H,
     "Mi-28N": Mi_28N,
     "OH-58D": OH_58D,
+    "AH-64D_BLK_II": AH_64D_BLK_II,
     "Mi-24P": Mi_24P,
     "SA342M": SA342M,
     "SA342L": SA342L,

@@ -337,13 +337,6 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
 
-    class SA_8_Osa_LD_9T217(unittype.VehicleType):
-        id = "SA-8 Osa LD 9T217"
-        name = "SAM SA-8 Osa LD 9T217"
-        detection_range = 0
-        threat_range = 0
-        air_weapon_dist = 0
-
     class Patriot_AMG(unittype.VehicleType):
         id = "Patriot AMG"
         name = "SAM Patriot CR (AMG AN/MRC-137)"
@@ -1298,13 +1291,6 @@ class Unarmed:
         threat_range = 1200
         air_weapon_dist = 0
 
-    class M4_Tractor(unittype.VehicleType):
-        id = "M4_Tractor"
-        name = "Tractor M4 High Speed"
-        detection_range = 0
-        threat_range = 1200
-        air_weapon_dist = 0
-
 
 class Armor:
 
@@ -1767,6 +1753,13 @@ class Armor:
         threat_range = 2000
         air_weapon_dist = 0
 
+    class M4_Tractor(unittype.VehicleType):
+        id = "M4_Tractor"
+        name = "Tractor M4 High Speed"
+        detection_range = 0
+        threat_range = 1200
+        air_weapon_dist = 0
+
 
 class MissilesSS:
 
@@ -1975,7 +1968,6 @@ vehicle_map = {
     "Strela-10M3": AirDefence.Strela_10M3,
     "Strela-1 9P31": AirDefence.Strela_1_9P31,
     "SA-11 Buk CC 9S470M1": AirDefence.SA_11_Buk_CC_9S470M1,
-    "SA-8 Osa LD 9T217": AirDefence.SA_8_Osa_LD_9T217,
     "Patriot AMG": AirDefence.Patriot_AMG,
     "Patriot ECS": AirDefence.Patriot_ECS,
     "Gepard": AirDefence.Gepard,
@@ -2176,7 +2168,7 @@ vehicle_map = {
     "M10_GMC": Armor.M10_GMC,
     "M8_Greyhound": Armor.M8_Greyhound,
     "M2A1-105": Artillery.M2A1_105,
-    "M4_Tractor": Unarmed.M4_Tractor,
+    "M4_Tractor": Armor.M4_Tractor,
     "M45_Quadmount": AirDefence.M45_Quadmount,
     "M1_37mm": AirDefence.M1_37mm,
     "DR_50Ton_Flat_Wagon": Carriage.DR_50Ton_Flat_Wagon,
