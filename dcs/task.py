@@ -308,6 +308,16 @@ class NoTask(Task):
         super(NoTask, self).__init__(self.Id)
 
 
+class Expend(Enum):
+    Auto = "Auto"
+    One = "One"
+    Two = "Two"
+    Four = "Four"
+    Quarter = "Quarter"
+    Half = "Half"
+    All = "All"
+
+
 class AttackGroup(Task):
     """Attack group task action
 
@@ -316,21 +326,23 @@ class AttackGroup(Task):
     """
     Id = "AttackGroup"
 
-    def __init__(self, group_id=0, weapon_type: WeaponType = WeaponType.Auto):
+    def __init__(self, group_id=0, weapon_type: WeaponType = WeaponType.Auto,
+                 attack_limit: Optional[int] = None, group_attack=False,
+                 altitude_enabled=False, altitude=0, direction_enabled=False,
+                 direction=0, expend: Expend = Expend.Auto):
         super(AttackGroup, self).__init__(AttackGroup.Id)
         self.params = {
             "groupId": group_id,
-            "weaponType": weapon_type.value
+            "weaponType": weapon_type.value,
+            "groupAttack": group_attack,
+            "attackQty": attack_limit,
+            "attackQtyLimit": attack_limit is not None,
+            "altitudeEnabled": altitude_enabled,
+            "altitude": altitude if altitude_enabled else None,
+            "directionEnabled": direction_enabled,
+            "direction": direction if direction_enabled else None,
+            "expend": expend.value
         }
-
-
-class Expend(Enum):
-    Auto = "Auto"
-    One = "One"
-    Two = "Two"
-    Four = "Four"
-    Quarter = "Quarter"
-    Half = "Half"
 
 
 class AttackUnit(Task):
