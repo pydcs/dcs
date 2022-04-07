@@ -323,24 +323,29 @@ class AttackGroup(Task):
 
     :param group_id: group id to attack
     :param weapon_type: :py:class:`WeaponType` to use for the attack
+    :param attack_limit: how much attack runs
+    :param group_attack: indicate if the unit must be attacked by all aircrafts in the group.
+    :param altitude: altitude used for attack
+    :param direction: direction of attack
+    :param expend: how many ammunition to expend
     """
     Id = "AttackGroup"
 
-    def __init__(self, group_id=0, weapon_type: WeaponType = WeaponType.Auto,
-                 attack_limit: Optional[int] = None, group_attack=False,
-                 altitude_enabled=False, altitude=0, direction_enabled=False,
-                 direction=0, expend: Expend = Expend.Auto):
+    def __init__(self, group_id: int = 0, weapon_type: WeaponType = WeaponType.Auto,
+                 attack_limit: Optional[int] = None, group_attack: bool = False,
+                 altitude: Optional[int] = None, direction: Optional[int] = None,
+                 expend: Expend = Expend.Auto):
         super(AttackGroup, self).__init__(AttackGroup.Id)
         self.params = {
             "groupId": group_id,
             "weaponType": weapon_type.value,
             "groupAttack": group_attack,
-            "attackQty": attack_limit,
             "attackQtyLimit": attack_limit is not None,
-            "altitudeEnabled": altitude_enabled,
-            "altitude": altitude if altitude_enabled else None,
-            "directionEnabled": direction_enabled,
-            "direction": direction if direction_enabled else None,
+            "attackQty": attack_limit if attack_limit is not None else 1,
+            "altitudeEnabled": altitude is not None,
+            "altitude": altitude if altitude is not None else 0,
+            "directionEnabled": direction is not None,
+            "direction": direction if direction is not None else 0,
             "expend": expend.value
         }
 
@@ -369,8 +374,8 @@ class AttackUnit(Task):
             "unitId": unit_id,
             "weaponType": weapon_type.value,
             "groupAttack": group_attack,
-            "attackQty": attack_limit,
             "attackQtyLimit": attack_limit is not None,
+            "attackQty": attack_limit if attack_limit is not None else 1,
             "altitudeEnabled": altitude_enabled,
             "altitude": altitude if altitude_enabled else None,
             "directionEnabled": direction_enabled,
@@ -390,8 +395,8 @@ class AttackMapObject(Task):
             "y": position.y,
             "weaponType": weapon_type.value,
             "groupAttack": group_attack,
-            "attackQty": attack_limit,
-            "attackQtyLimit": attack_limit is not None
+            "attackQtyLimit": attack_limit is not None,
+            "attackQty": attack_limit if attack_limit is not None else 1
         }
 
 
