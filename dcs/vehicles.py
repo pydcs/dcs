@@ -106,6 +106,20 @@ class Artillery:
         air_weapon_dist = 32000
         eplrs = True
 
+    class HL_B8M1(unittype.VehicleType):
+        id = "HL_B8M1"
+        name = "MLRS HL with B8M1 80mm"
+        detection_range = 5000
+        threat_range = 5000
+        air_weapon_dist = 5000
+
+    class Tt_B8M1(unittype.VehicleType):
+        id = "tt_B8M1"
+        name = "MLRS LC with B8M1 80mm"
+        detection_range = 5000
+        threat_range = 5000
+        air_weapon_dist = 5000
+
     class T155_Firtina(unittype.VehicleType):
         id = "T155_Firtina"
         name = "SPH T155 Firtina 155mm"
@@ -652,6 +666,20 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
 
+    class HL_ZU_23(unittype.VehicleType):
+        id = "HL_ZU-23"
+        name = "SPAAA HL with ZU-23"
+        detection_range = 5000
+        threat_range = 2500
+        air_weapon_dist = 2500
+
+    class Tt_ZU_23(unittype.VehicleType):
+        id = "tt_ZU-23"
+        name = "SPAAA LC with ZU-23"
+        detection_range = 0
+        threat_range = 2500
+        air_weapon_dist = 0
+
     class NASAMS_Radar_MPQ64F1(unittype.VehicleType):
         id = "NASAMS_Radar_MPQ64F1"
         name = "SAM NASAMS SR MPQ64F1"
@@ -681,6 +709,28 @@ class AirDefence:
         detection_range = 0
         threat_range = 15000
         air_weapon_dist = 15000
+
+    class FPS_117_Dome(unittype.VehicleType):
+        id = "FPS-117 Dome"
+        name = "EWR AN/FPS-117 Radar (domed)"
+        detection_range = 400000
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class FPS_117_ECS(unittype.VehicleType):
+        id = "FPS-117 ECS"
+        name = "EWR AN/FPS-117 ECS"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+        eplrs = True
+
+    class FPS_117(unittype.VehicleType):
+        id = "FPS-117"
+        name = "EWR AN/FPS-117 Radar"
+        detection_range = 463000
+        threat_range = 0
+        air_weapon_dist = 0
 
     class S_75M_Volhov(unittype.VehicleType):
         id = "S_75M_Volhov"
@@ -1519,6 +1569,34 @@ class Armor:
         threat_range = 3500
         air_weapon_dist = 1200
 
+    class HL_DSHK(unittype.VehicleType):
+        id = "HL_DSHK"
+        name = "Scout HL with DSHK 12.7mm"
+        detection_range = 5000
+        threat_range = 1200
+        air_weapon_dist = 1200
+
+    class HL_KORD(unittype.VehicleType):
+        id = "HL_KORD"
+        name = "Scout HL with KORD 12.7mm"
+        detection_range = 5000
+        threat_range = 1200
+        air_weapon_dist = 1200
+
+    class Tt_DSHK(unittype.VehicleType):
+        id = "tt_DSHK"
+        name = "Scout LC with DSHK 12.7mm"
+        detection_range = 5000
+        threat_range = 1200
+        air_weapon_dist = 1200
+
+    class Tt_KORD(unittype.VehicleType):
+        id = "tt_KORD"
+        name = "Scout LC with KORD 12.7mm"
+        detection_range = 5000
+        threat_range = 1200
+        air_weapon_dist = 1200
+
     class M4_Sherman(unittype.VehicleType):
         id = "M4_Sherman"
         name = "Tk M4 Sherman"
@@ -2070,12 +2148,23 @@ vehicle_map = {
     "Coach a passenger": Carriage.Coach_a_passenger,
     "Coach a platform": Carriage.Coach_a_platform,
     "Scud_B": MissilesSS.Scud_B,
+    "HL_DSHK": Armor.HL_DSHK,
+    "HL_KORD": Armor.HL_KORD,
+    "tt_DSHK": Armor.Tt_DSHK,
+    "tt_KORD": Armor.Tt_KORD,
+    "HL_ZU-23": AirDefence.HL_ZU_23,
+    "tt_ZU-23": AirDefence.Tt_ZU_23,
+    "HL_B8M1": Artillery.HL_B8M1,
+    "tt_B8M1": Artillery.Tt_B8M1,
     "NASAMS_Radar_MPQ64F1": AirDefence.NASAMS_Radar_MPQ64F1,
     "NASAMS_Command_Post": AirDefence.NASAMS_Command_Post,
     "NASAMS_LN_B": AirDefence.NASAMS_LN_B,
     "NASAMS_LN_C": AirDefence.NASAMS_LN_C,
     "M4_Sherman": Armor.M4_Sherman,
     "M2A1_halftrack": Armor.M2A1_halftrack,
+    "FPS-117 Dome": AirDefence.FPS_117_Dome,
+    "FPS-117 ECS": AirDefence.FPS_117_ECS,
+    "FPS-117": AirDefence.FPS_117,
     "S_75M_Volhov": AirDefence.S_75M_Volhov,
     "SNR_75V": AirDefence.SNR_75V,
     "RLS_19J6": AirDefence.RLS_19J6,

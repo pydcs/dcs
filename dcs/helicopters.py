@@ -579,29 +579,21 @@ class Mi_8MT(HelicopterType):
     class Liveries:
 
         class USSR(Enum):
-            BP_RS01 = "BP_RS01"
             Russia_Aeroflot = "Russia_Aeroflot"
             Russia_Army_Weather = "Russia_Army_Weather"
 
         class Georgia(Enum):
-            BP_RS01 = "BP_RS01"
             Georgia = "Georgia"
 
-        class Venezuela(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Australia(Enum):
-            BP_RS01 = "BP_RS01"
             Australia = "Australia"
             Standard = "Standard"
 
         class Israel(Enum):
-            BP_RS01 = "BP_RS01"
             Israel = "Israel"
             Standard = "Standard"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
-            BP_RS01 = "BP_RS01"
             Russia_VVS_Standard = "Russia_VVS_Standard"
             USA_AFG = "USA_AFG"
             IR_AFAGIR_Blue = "IR AFAGIR Blue"
@@ -660,146 +652,52 @@ class Mi_8MT(HelicopterType):
             placeholder = "placeholder"
             Standard = "Standard"
 
-        class Sudan(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Norway(Enum):
-            BP_RS01 = "BP_RS01"
             Norway = "Norway"
             Standard = "Standard"
 
-        class Romania(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Iran(Enum):
-            BP_RS01 = "BP_RS01"
             IR_AFAGIR_Blue = "IR AFAGIR Blue"
             IR_AFAGIR_Sand = "IR AFAGIR Sand"
             IR_Iranian_Special_Police_Forces = "IR Iranian Special Police Forces"
 
         class Ukraine(Enum):
-            BP_RS01 = "BP_RS01"
             Ukraine = "Ukraine"
 
-        class Libya(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Belgium(Enum):
-            BP_RS01 = "BP_RS01"
             Belgium = "Belgium"
 
-        class Slovakia(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Greece(Enum):
-            BP_RS01 = "BP_RS01"
             Hellenic_Airforce_SAR = "Hellenic Airforce SAR"
             Hellenic_Army_Aviation = "Hellenic Army Aviation"
 
         class UK(Enum):
-            BP_RS01 = "BP_RS01"
             United_Kingdom = "United Kingdom"
             Standard = "Standard"
 
-        class Third_Reich(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Hungary(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Abkhazia(Enum):
-            BP_RS01 = "BP_RS01"
             Abkhazia = "Abkhazia"
 
-        class Morocco(Enum):
-            BP_RS01 = "BP_RS01"
-
         class United_Nations_Peacekeepers(Enum):
-            BP_RS01 = "BP_RS01"
             Russia_UN = "Russia_UN"
 
-        class Switzerland(Enum):
-            BP_RS01 = "BP_RS01"
-
         class SouthOssetia(Enum):
-            BP_RS01 = "BP_RS01"
             South_Ossetia = "South Ossetia"
 
-        class Vietnam(Enum):
-            BP_RS01 = "BP_RS01"
-
         class China(Enum):
-            BP_RS01 = "BP_RS01"
             China_PLAAA_Camo = "China PLAAA Camo"
             China_UN = "China UN"
             China_PLAAA_White = "China PLAAA White"
 
-        class Yemen(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Kuwait(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Serbia(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Oman(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class India(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Egypt(Enum):
-            BP_RS01 = "BP_RS01"
-
         class TheNetherlands(Enum):
-            BP_RS01 = "BP_RS01"
             Netherlands_ARMY = "Netherlands ARMY"
             Netherlands_NAVY = "Netherlands NAVY"
             Standard = "Standard"
 
-        class Poland(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Syria(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Finland(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Kazakhstan(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Denmark(Enum):
-            BP_RS01 = "BP_RS01"
             Denmark = "Denmark"
 
-        class Sweden(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Croatia(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class CzechRepublic(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class GDR(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Yugoslavia(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Bulgaria(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class SouthKorea(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Tunisia(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Combined_Joint_Task_Forces_Red(Enum):
-            BP_RS01 = "BP_RS01"
             Russia_VVS_Standard = "Russia_VVS_Standard"
             USA_AFG = "USA_AFG"
             IR_AFAGIR_Blue = "IR AFAGIR Blue"
@@ -858,42 +756,20 @@ class Mi_8MT(HelicopterType):
             placeholder = "placeholder"
             Standard = "Standard"
 
-        class Lebanon(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Portugal(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Cuba(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Insurgents(Enum):
-            BP_RS01 = "BP_RS01"
             Insurgents = "Insurgents"
             Standard = "Standard"
 
-        class SaudiArabia(Enum):
-            BP_RS01 = "BP_RS01"
-
         class France(Enum):
-            BP_RS01 = "BP_RS01"
             France_ARMY = "France ARMY"
             France_NAVY = "France NAVY"
             Standard = "Standard"
 
         class USA(Enum):
-            BP_RS01 = "BP_RS01"
             USA_AFG = "USA_AFG"
             Standard = "Standard"
 
-        class Honduras(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Qatar(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Russia(Enum):
-            BP_RS01 = "BP_RS01"
             Russia_VVS_Standard = "Russia_VVS_Standard"
             Russia_Aeroflot = "Russia_Aeroflot"
             Russia_Gazprom = "Russia_Gazprom"
@@ -915,99 +791,33 @@ class Mi_8MT(HelicopterType):
             Russia_PF_Ambulance = "Russia_PF_Ambulance"
             Russia_Army_Weather = "Russia_Army_Weather"
 
-        class United_Arab_Emirates(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Italian_Social_Republi(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Austria(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Bahrain(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Italy(Enum):
-            BP_RS01 = "BP_RS01"
             Italy_ARMY = "Italy ARMY"
             Italy_NAVY = "Italy NAVY"
             Standard = "Standard"
 
-        class Chile(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Turkey(Enum):
-            BP_RS01 = "BP_RS01"
             Turkey = "Turkey"
             Standard = "Standard"
 
-        class Philippines(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Algeria(Enum):
-            BP_RS01 = "BP_RS01"
             Algerian_AF_Green = "Algerian AF Green"
             Algerian_AF_Green_EVSAN = "Algerian AF Green EVSAN"
             Algerian_AF_New_Desert = "Algerian AF New Desert"
             Algerian_AF_Old_Desert = "Algerian AF Old Desert"
             Algerian_AF_VIP = "Algerian AF VIP"
 
-        class Pakistan(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Malaysia(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Indonesia(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Iraq(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Germany(Enum):
-            BP_RS01 = "BP_RS01"
             Germany = "Germany"
             Standard = "Standard"
 
-        class South_Africa(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Jordan(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Mexico(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class USAFAggressors(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Brazil(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Spain(Enum):
-            BP_RS01 = "BP_RS01"
             Spain = "Spain"
             Standard = "Standard"
 
-        class Belarus(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Canada(Enum):
-            BP_RS01 = "BP_RS01"
             Canada = "Canada"
             Standard = "Standard"
-
-        class NorthKorea(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Ethiopia(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Japan(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Thailand(Enum):
-            BP_RS01 = "BP_RS01"
 
     class Pylon1:
         B_8V20A_CM = (1, Weapons.B_8V20A_CM)
@@ -1482,6 +1292,7 @@ class UH_60A(HelicopterType):
             standard = "standard"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
+            Golden_Angels = "Golden Angels"
             ISRAIL_UN = "ISRAIL_UN"
             standard = "standard"
 
@@ -1513,6 +1324,7 @@ class UH_60A(HelicopterType):
             standard = "standard"
 
         class Combined_Joint_Task_Forces_Red(Enum):
+            Golden_Angels = "Golden Angels"
             ISRAIL_UN = "ISRAIL_UN"
             standard = "standard"
 
@@ -1520,6 +1332,7 @@ class UH_60A(HelicopterType):
             standard = "standard"
 
         class USA(Enum):
+            Golden_Angels = "Golden Angels"
             standard = "standard"
 
         class Russia(Enum):
@@ -2084,13 +1897,18 @@ class AH_1W(HelicopterType):
 
         class Combined_Joint_Task_Forces_Blue(Enum):
             USA_X_Black = "USA X Black"
+            Ah_1_BD_IRAN = "Ah-1 BD IRAN"
             USA_Marines = "USA Marines"
             standard = "standard"
             Turkey_1 = "Turkey 1"
             Turkey_2 = "Turkey 2"
 
+        class Iran(Enum):
+            Ah_1_BD_IRAN = "Ah-1 BD IRAN"
+
         class Combined_Joint_Task_Forces_Red(Enum):
             USA_X_Black = "USA X Black"
+            Ah_1_BD_IRAN = "Ah-1 BD IRAN"
             USA_Marines = "USA Marines"
             standard = "standard"
             Turkey_1 = "Turkey 1"
@@ -2687,6 +2505,7 @@ class AH_64D_BLK_II(HelicopterType):
         "FCR_RFI_removed": True,
         "NetCrewControlPriority": 0,
         "AIDisabled": False,
+        "TrackAirTargets": True,
         "FlareBurstCount": 0,
         "FlareBurstInterval": 0,
         "FlareSalvoCount": 0,
@@ -2712,6 +2531,9 @@ class AH_64D_BLK_II(HelicopterType):
 
         class AIDisabled:
             id = "AIDisabled"
+
+        class TrackAirTargets:
+            id = "TrackAirTargets"
 
         class FlareBurstCount:
             id = "FlareBurstCount"
@@ -2788,6 +2610,9 @@ class AH_64D_BLK_II(HelicopterType):
             Slayers_4_2_ARB = "Slayers 4-2 ARB"
             General_Attack_Recon_Battalion = "General Attack Recon Battalion"
             Wolfpack_1_82_ARB = "Wolfpack 1-82 ARB"
+
+        class Greece(Enum):
+            _1st_Attack_Helicopter_Battalion_Greece = "1st Attack Helicopter Battalion Greece"
 
         class UK(Enum):
             _664_Squadron_9_Regiment_UK = "664 Squadron 9 Regiment UK"
