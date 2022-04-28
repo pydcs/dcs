@@ -1099,6 +1099,63 @@ class ActivateICLSCommand(WrappedAction):
         }
 
 
+class ActivateLink4Command(WrappedAction):
+    Key = "ActivateLink4"
+
+    def __init__(self, frequency: int = 336, unit_id: int = 0):
+        super(ActivateLink4Command, self).__init__()
+        self.params = {
+            "action": {
+                "id": ActivateLink4Command.Key,
+                "params": {
+                    "frequency": frequency * 1000000,
+                    "unitId": unit_id
+                }
+            }
+        }
+
+
+class DeActivateLink4Command(WrappedAction):
+    Key = "DeactivateLink4"
+
+    def __init__(self):
+        super(DeActivateLink4Command, self).__init__()
+        self.params = {
+            "action": {
+                "id": DeActivateLink4Command.Key,
+                "params": {}
+            }
+        }
+
+
+class ActivateACLSCommand(WrappedAction):
+    Key = "ActivateACLS"
+
+    def __init__(self, unit_id: int = 0):
+        super(ActivateACLSCommand, self).__init__()
+        self.params = {
+            "action": {
+                "id": ActivateACLSCommand.Key,
+                "params": {
+                    "unitId": unit_id
+                }
+            }
+        }
+
+
+class DeactivateACLSCommand(WrappedAction):
+    Key = "DeactivateACLS"
+
+    def __init__(self):
+        super(DeactivateACLSCommand, self).__init__()
+        self.params = {
+            "action": {
+                "id": DeactivateACLSCommand.Key,
+                "params": {}
+            }
+        }
+
+
 class RunScript(WrappedAction):
     """Runs a given script string
 
