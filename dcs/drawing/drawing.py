@@ -28,6 +28,8 @@ class LineStyle(Enum):
     Square = "square"
     Triangle = "triangle"
     Wirefence = "wirefence"
+    Dot2 = "dot2"
+    Solid2 = "solid2"
 
 
 @dataclass
