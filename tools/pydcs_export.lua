@@ -7,7 +7,10 @@
 -------------------------------------------------------------------------------
 
 -- edit export_path to your export folder
-local export_path = "D:\\Work\\DCS\\dcs\\dcs\\"
+local base_path = "D:\\Work\\DCS\\dcs\\dcs\\"
+local export_path = base_path .. "dcs\\"
+
+local log_file = io.open(base_path.."export.log", "w")
 
 local loadLiveries = require('loadLiveries')
 
@@ -17,6 +20,25 @@ local loadLiveries = require('loadLiveries')
 local function writeln(file, text)
     file:write(text.."\r\n")
 end
+
+local function debugln(fmt, ...)
+    local msg = string.format(fmt, unpack(arg))
+    writeln(log_file, msg)
+end
+
+-- https://stackoverflow.com/a/27028488/632035
+local function dump(o)
+    if type(o) == 'table' then
+       local s = '{ '
+       for k,v in pairs(o) do
+          if type(k) ~= 'number' then k = '"'..k..'"' end
+          s = s .. '['..k..'] = ' .. dump(v) .. ','
+       end
+       return s .. '} '
+    else
+       return tostring(o)
+    end
+ end
 
 local function safe_name(name)
     local safeName = name
@@ -143,6 +165,7 @@ local function handle_weapon(weapon, weaponKeys, weaponTable)
         -- There appears to be some garbage data in the weapon table where there are weapons without display names. Based on
         -- the CLSIDs, these are some duplicate copies of Hydras. Since they don't appear to be needed, and we have no names to
         -- display for them, just skip them.
+        debugln("Could not process weapon %s because it does not have a displayName: %s", weapon.CLSID, dump(weapon))
         return
     end
 
@@ -521,6 +544,11 @@ from dcs.unittype import FlyingType
                         writeln(file, '        '..name..' = ('..j..', Weapons.'..name..')')
                     else
                         if plane.Pylons[j].Launchers[k].CLSID then
+                            debugln(
+                                "%s has %s assigned to a pylon but no matching weapon is known",
+                                plane.type,
+                                plane.Pylons[j].Launchers[k].CLSID
+                            )
                             writeln(file, '#ERRR '..plane.Pylons[j].Launchers[k].CLSID)
                         end
                     end

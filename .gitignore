@@ -6,3 +6,4 @@ dist/
 pydcs.egg-info/
 doc/_*
 venv/
+/export.log
