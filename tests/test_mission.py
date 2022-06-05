@@ -744,3 +744,25 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(m2.pictureFileNameB[0], reskey_b.key)
         self.assertEqual(len(m2.pictureFileNameR), 1)
         self.assertEqual(m2.pictureFileNameR[0], reskey_r.key)
+
+    def test_set_10c_presets(self):
+        m = dcs.mission.Mission()
+        m.load_file('tests/loadtest.miz')
+        self.assertIsNone(m.a10c_presets)
+        
+        m.set_10c_preset(1, 251.0)
+        m.set_10c_preset(2, 252.0)
+        m.set_10c_preset(20, 253.0)
+
+        save_path = os.path.join('missions', 'a10c_presets_loadtest.miz')
+        m.save(save_path)
+        print('-' * 10, "Saved", save_path)
+        # reload mission
+        m = dcs.mission.Mission()
+        msgs = m.load_file(save_path)
+        self.assertEqual(0, len(msgs))
+
+        self.assertIsNotNone(m.a10c_presets)
+        self.assertEqual(m.get_10c_preset(1), 251.0)
+        self.assertEqual(m.get_10c_preset(2), 252.0)
+        self.assertEqual(m.get_10c_preset(20), 253.0)
