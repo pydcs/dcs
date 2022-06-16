@@ -32,7 +32,7 @@ setup(
         'Programming Language :: Python :: 3 :: Only'
     ],
     keywords='dcs digital combat simulator eagle dynamics mission framework',
-    packages=['dcs', 'dcs/terrain', 'dcs/terrain/projections', 'dcs/lua', 'dcs/scripts'],
+    packages=['dcs', 'dcs/terrain', 'dcs/terrain/projections', 'dcs/lua', 'dcs/scripts', 'dcs/drawing'],
     package_data={
         'dcs': ['py.typed'],
         'dcs/terrain': ['caucasus.p', 'nevada.p'],
