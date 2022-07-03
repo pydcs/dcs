@@ -42,7 +42,7 @@ def safename(name):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-t", "--terrain",
-                        choices=["caucasus", "nevada", "normandy", "persiangulf", "thechannel", "syria", "marianaislands"],
+                        choices=["caucasus", "falklands", "nevada", "normandy", "persiangulf", "thechannel", "syria", "marianaislands"],
                         default="caucasus")
     parser.add_argument("airportinfofile")
 

@@ -38,6 +38,7 @@ from typing import Any, Dict
 from dcs import Mission
 from dcs.action import DoScriptFile
 from dcs.terrain.caucasus import Caucasus
+from dcs.terrain.falklands import Falklands
 from dcs.terrain.nevada import Nevada
 from dcs.terrain.normandy import Normandy
 from dcs.terrain.persiangulf import PersianGulf
@@ -59,6 +60,7 @@ EXPORT_DIR = SRC_ROOT / "dcs/terrain/projections"
 
 ARG_TO_TERRAIN_MAP = {
     "caucasus": Caucasus(),
+    "falklands": Falklands(),
     "nevada": Nevada(),
     "normandy": Normandy(),
     "persiangulf": PersianGulf(),
@@ -72,6 +74,7 @@ ARG_TO_TERRAIN_MAP = {
 # each map and getting the wrong one will be flagged with errors when processing.
 CENTRAL_MERIDIANS = {
     "caucasus": 33,
+    "falklands": -57,
     "nevada": -117,
     "normandy": -3,
     "persiangulf": 57,
