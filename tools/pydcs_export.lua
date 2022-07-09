@@ -73,6 +73,10 @@ local function has_value (tab, val)
     return false
 end
 
+function ternary ( cond , T , F )
+    if cond then return T else return F end
+end
+
 -------------------------------------------------------------------------------
 -- country to shortname mapping
 -------------------------------------------------------------------------------
