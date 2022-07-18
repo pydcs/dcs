@@ -591,7 +591,6 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(m2.terrain.__class__, dcs.terrain.Caucasus)
         self.assertTrue(type(m2.triggerrules.triggers[0].actions[0]) is dcs.action.SceneryDestructionZone)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].destruction_level, 95)
-        self.assertEqual(m2.triggerrules.triggers[0].actions[0].meters, 1000)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].zone, destruction_zone.id)
 
     def test_remove_trees_in_zone(self):
@@ -618,7 +617,6 @@ class BasicTests(unittest.TestCase):
         self.assertTrue(type(m2.triggerrules.triggers[0].actions[0]) is dcs.action.RemoveSceneObjects)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].objects_mask,
                          dcs.action.RemoveSceneObjectsMask.TREES_ONLY)
-        self.assertEqual(m2.triggerrules.triggers[0].actions[0].meters, 1000)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].zone, removal_zone.id)
 
     def test_remove_objects_in_zone(self):
@@ -645,7 +643,6 @@ class BasicTests(unittest.TestCase):
         self.assertTrue(type(m2.triggerrules.triggers[0].actions[0]) is dcs.action.RemoveSceneObjects)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].objects_mask,
                          dcs.action.RemoveSceneObjectsMask.OBJECTS_ONLY)
-        self.assertEqual(m2.triggerrules.triggers[0].actions[0].meters, 1000)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].zone, removal_zone.id)
 
     def test_remove_trees_and_objects_in_zone(self):
@@ -671,7 +668,6 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(m2.terrain.__class__, dcs.terrain.Caucasus)
         self.assertTrue(type(m2.triggerrules.triggers[0].actions[0]) is dcs.action.RemoveSceneObjects)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].objects_mask, dcs.action.RemoveSceneObjectsMask.ALL)
-        self.assertEqual(m2.triggerrules.triggers[0].actions[0].meters, 1000)
         self.assertEqual(m2.triggerrules.triggers[0].actions[0].zone, removal_zone.id)
 
     def test_bypass_triggers(self):
