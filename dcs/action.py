@@ -1713,50 +1713,42 @@ class RemoveSceneObjectsMask(IntEnum):
 class RemoveSceneObjects(Action):
     predicate = "a_remove_scene_objects"
 
-    def __init__(self, objects_mask: RemoveSceneObjectsMask = RemoveSceneObjectsMask.ALL, zone="", meters=1000):
+    def __init__(self, objects_mask: RemoveSceneObjectsMask = RemoveSceneObjectsMask.ALL, zone=""):
         super(RemoveSceneObjects, self).__init__(RemoveSceneObjects.predicate)
         self.objects_mask = objects_mask
         self.params.append(self.objects_mask)
         self.zone = zone
         self.params.append(self.zone)
-        # Note : the parameter meters is in the DCS save file, but seems unused, and not editable from ME
-        self.meters = meters
-        self.params.append(self.meters)
 
     @classmethod
     def create_from_dict(cls, d, mission):
-        return cls(RemoveSceneObjectsMask(d["objects_mask"]), d["zone"], d["meters"])
+        return cls(RemoveSceneObjectsMask(d["objects_mask"]), d["zone"])
 
     def dict(self):
         d = super(RemoveSceneObjects, self).dict()
         d["objects_mask"] = self.objects_mask.value
         d["zone"] = self.zone
-        d["meters"] = self.meters
         return d
 
 
 class SceneryDestructionZone(Action):
     predicate = "a_scenery_destruction_zone"
 
-    def __init__(self, destruction_level=100, zone="", meters=1000):
+    def __init__(self, destruction_level=100, zone=""):
         super(SceneryDestructionZone, self).__init__(SceneryDestructionZone.predicate)
         self.destruction_level = destruction_level
         self.params.append(self.destruction_level)
         self.zone = zone
         self.params.append(self.zone)
-        # Note : the parameter meters is in the DCS save file, but seems unused, and not editable from ME
-        self.meters = meters
-        self.params.append(self.meters)
 
     @classmethod
     def create_from_dict(cls, d, mission):
-        return cls(d["destruction_level"], d["zone"], d["meters"])
+        return cls(d["destruction_level"], d["zone"])
 
     def dict(self):
         d = super(SceneryDestructionZone, self).dict()
         d["destruction_level"] = self.destruction_level
         d["zone"] = self.zone
-        d["meters"] = self.meters
         return d
 
 
