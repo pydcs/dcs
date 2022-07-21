@@ -63,6 +63,10 @@ local function safe_display_name(name)
     return safeDisplayName
 end
 
+local function replace_semi_colons(name)
+    return string.gsub(name, ";", "_")
+end
+
 local function has_value (tab, val)
     for index, value in ipairs(tab) do
         if value == val then
@@ -258,7 +262,7 @@ local weapons_map = {}
 local i = 1
 while i <= #keys do
     local x = keys[i]
-    weapons_map[weapons[x].clsid] = x
+    weapons_map[weapons[x].clsid] = replace_semi_colons(x)
     i = i + 1
 end
 
@@ -273,7 +277,7 @@ while i <= #keys do
     local x = keys[i]
 
     if weapons[x].displayName ~= nil then
-        writeln(file, "    " .. x .. " = {\"clsid\": \"" .. weapons[x].clsid
+        writeln(file, "    " .. replace_semi_colons(x) .. " = {\"clsid\": \"" .. weapons[x].clsid
                 .. "\", \"name\": \"" .. weapons[x].displayName .. "\", \"weight\": " .. weapons[x].weight .. "}")
     end
     i = i + 1
@@ -284,7 +288,7 @@ writeln(file, "weapon_ids = {")
 i = 1
 while i <= #keys do
     local x = keys[i]
-    local s = "    \"" .. weapons[x].clsid .. "\": Weapons." .. x
+    local s = "    \"" .. weapons[x].clsid .. "\": Weapons." .. replace_semi_colons(x)
     i = i + 1
     if i <= #keys then
         s = s .. ","
