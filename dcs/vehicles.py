@@ -582,7 +582,7 @@ class AirDefence:
 
     class S_300PS_40B6MD_sr(unittype.VehicleType):
         id = "S-300PS 40B6MD sr"
-        name = "SAM SA-10 S-300 \"Grumble\" Clam Shell SR"
+        name = "SAM SA-10 S-300PS Low Alt SR 5N66M"
         detection_range = 60000
         threat_range = 0
         air_weapon_dist = 0
@@ -663,6 +663,20 @@ class AirDefence:
         id = "snr s-125 tr"
         name = "SAM SA-3 S-125 \"Low Blow\" TR"
         detection_range = 100000
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class KS_19(unittype.VehicleType):
+        id = "KS-19"
+        name = "AAA KS-19 100mm"
+        detection_range = 0
+        threat_range = 20000
+        air_weapon_dist = 20000
+
+    class SON_9(unittype.VehicleType):
+        id = "SON_9"
+        name = "AAA Fire Can SON-9"
+        detection_range = 55000
         threat_range = 0
         air_weapon_dist = 0
 
@@ -778,8 +792,8 @@ class AirDefence:
         id = "S-60_Type59_Artillery"
         name = "AAA S-60 57mm"
         detection_range = 5000
-        threat_range = 7000
-        air_weapon_dist = 7000
+        threat_range = 6000
+        air_weapon_dist = 6000
 
     class Generator_5i57(unittype.VehicleType):
         id = "generator_5i57"
@@ -913,6 +927,13 @@ class AirDefence:
         detection_range = 0
         threat_range = 9000
         air_weapon_dist = 9000
+
+    class Allies_Director(unittype.VehicleType):
+        id = "Allies_Director"
+        name = "Allies_Director"
+        detection_range = 30000
+        threat_range = 0
+        air_weapon_dist = 0
 
     class M45_Quadmount(unittype.VehicleType):
         id = "M45_Quadmount"
@@ -1226,6 +1247,20 @@ class Unarmed:
         id = "KrAZ6322"
         name = "Truck KrAZ-6322 6x6"
         detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Tacr2a(unittype.VehicleType):
+        id = "tacr2a"
+        name = "RAF Rescue"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class LARC_V(unittype.VehicleType):
+        id = "LARC-V"
+        name = "LARC-V"
+        detection_range = 500
         threat_range = 0
         air_weapon_dist = 0
 
@@ -1705,6 +1740,13 @@ class Armor:
         air_weapon_dist = 0
         eplrs = True
 
+    class TYPE_59(unittype.VehicleType):
+        id = "TYPE-59"
+        name = "MT Type 59"
+        detection_range = 0
+        threat_range = 2500
+        air_weapon_dist = 1200
+
     class Tiger_I(unittype.VehicleType):
         id = "Tiger_I"
         name = "Tk Tiger 1"
@@ -2147,6 +2189,10 @@ vehicle_map = {
     "Coach a tank yellow": Carriage.Coach_a_tank_yellow,
     "Coach a passenger": Carriage.Coach_a_passenger,
     "Coach a platform": Carriage.Coach_a_platform,
+    "tacr2a": Unarmed.Tacr2a,
+    "LARC-V": Unarmed.LARC_V,
+    "KS-19": AirDefence.KS_19,
+    "SON_9": AirDefence.SON_9,
     "Scud_B": MissilesSS.Scud_B,
     "HL_DSHK": Armor.HL_DSHK,
     "HL_KORD": Armor.HL_KORD,
@@ -2210,6 +2256,7 @@ vehicle_map = {
     "HQ-7_LN_SP": AirDefence.HQ_7_LN_SP,
     "HQ-7_STR_SP": AirDefence.HQ_7_STR_SP,
     "PLZ05": Artillery.PLZ05,
+    "TYPE-59": Armor.TYPE_59,
     "Kubelwagen_82": Unarmed.Kubelwagen_82,
     "Sd_Kfz_2": Unarmed.Sd_Kfz_2,
     "Sd_Kfz_7": Unarmed.Sd_Kfz_7,
@@ -2249,6 +2296,7 @@ vehicle_map = {
     "Daimler_AC": Armor.Daimler_AC,
     "Tetrarch": Armor.Tetrarch,
     "QF_37_AA": AirDefence.QF_37_AA,
+    "Allies_Director": AirDefence.Allies_Director,
     "CCKW_353": Unarmed.CCKW_353,
     "Willys_MB": Unarmed.Willys_MB,
     "M12_GMC": Artillery.M12_GMC,

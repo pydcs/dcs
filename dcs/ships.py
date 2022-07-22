@@ -174,6 +174,94 @@ class CV_1143_5(unittype.ShipType):
     air_weapon_dist = 12000
 
 
+class CastleClass_01(unittype.ShipType):
+    id = "CastleClass_01"
+    name = "Castle Class"
+    plane_num = 0
+    helicopter_num = 2
+    parking = 1
+    detection_range = 25000
+    threat_range = 3000
+    air_weapon_dist = 3000
+
+
+class HarborTug(unittype.ShipType):
+    id = "HarborTug"
+    name = "Harbor Tug"
+    detection_range = 0
+    threat_range = 0
+    air_weapon_dist = 0
+
+
+class Hms_invincible(unittype.ShipType):
+    id = "hms_invincible"
+    name = "HMS Invincible (R05)"
+    plane_num = 7
+    helicopter_num = 9
+    parking = 4
+    detection_range = 416000
+    threat_range = 80000
+    air_weapon_dist = 80000
+
+
+class Leander_gun_achilles(unittype.ShipType):
+    id = "leander-gun-achilles"
+    name = "HMS Achilles (F12)"
+    helicopter_num = 1
+    parking = 1
+    detection_range = 180000
+    threat_range = 140000
+    air_weapon_dist = 140000
+
+
+class Leander_gun_andromeda(unittype.ShipType):
+    id = "leander-gun-andromeda"
+    name = "HMS Andromeda (F57)"
+    helicopter_num = 1
+    parking = 1
+    detection_range = 180000
+    threat_range = 140000
+    air_weapon_dist = 140000
+
+
+class Leander_gun_ariadne(unittype.ShipType):
+    id = "leander-gun-ariadne"
+    name = "HMS Ariadne (F72)"
+    helicopter_num = 1
+    parking = 1
+    detection_range = 180000
+    threat_range = 140000
+    air_weapon_dist = 140000
+
+
+class Leander_gun_condell(unittype.ShipType):
+    id = "leander-gun-condell"
+    name = "CNS Almirante Condell (PFG-06)"
+    helicopter_num = 1
+    parking = 1
+    detection_range = 180000
+    threat_range = 140000
+    air_weapon_dist = 140000
+
+
+class Leander_gun_lynch(unittype.ShipType):
+    id = "leander-gun-lynch"
+    name = "CNS Almirante Lynch (PFG-07)"
+    helicopter_num = 1
+    parking = 1
+    detection_range = 180000
+    threat_range = 140000
+    air_weapon_dist = 140000
+
+
+class Santafe(unittype.ShipType):
+    id = "santafe"
+    name = "ARA Santa Fe S-21"
+    detection_range = 0
+    threat_range = 0
+    air_weapon_dist = 30000
+
+
 class HandyWind(unittype.ShipType):
     id = "HandyWind"
     name = "Bulker Handy Wind"
@@ -202,17 +290,6 @@ class La_Combattante_II(unittype.ShipType):
     air_weapon_dist = 4000
 
 
-class Stennis(unittype.ShipType):
-    id = "Stennis"
-    name = "CVN-74 John C. Stennis"
-    plane_num = 72
-    helicopter_num = 6
-    parking = 4
-    detection_range = 30000
-    threat_range = 15000
-    air_weapon_dist = 15000
-
-
 class CVN_71(unittype.ShipType):
     id = "CVN_71"
     name = "CVN-71 Theodore Roosevelt"
@@ -238,6 +315,17 @@ class CVN_72(unittype.ShipType):
 class CVN_73(unittype.ShipType):
     id = "CVN_73"
     name = "CVN-73 George Washington"
+    plane_num = 72
+    helicopter_num = 6
+    parking = 4
+    detection_range = 50000
+    threat_range = 25000
+    air_weapon_dist = 25000
+
+
+class Stennis(unittype.ShipType):
+    id = "Stennis"
+    name = "CVN-74 John C. Stennis"
     plane_num = 72
     helicopter_num = 6
     parking = 4
@@ -399,13 +487,22 @@ ship_map = {
     "IMPROVED_KILO": IMPROVED_KILO,
     "SOM": SOM,
     "CV_1143_5": CV_1143_5,
+    "CastleClass_01": CastleClass_01,
+    "HarborTug": HarborTug,
+    "hms_invincible": Hms_invincible,
+    "leander-gun-achilles": Leander_gun_achilles,
+    "leander-gun-andromeda": Leander_gun_andromeda,
+    "leander-gun-ariadne": Leander_gun_ariadne,
+    "leander-gun-condell": Leander_gun_condell,
+    "leander-gun-lynch": Leander_gun_lynch,
+    "santafe": Santafe,
     "HandyWind": HandyWind,
     "Seawise_Giant": Seawise_Giant,
     "La_Combattante_II": La_Combattante_II,
-    "Stennis": Stennis,
     "CVN_71": CVN_71,
     "CVN_72": CVN_72,
     "CVN_73": CVN_73,
+    "Stennis": Stennis,
     "CVN_75": CVN_75,
     "USS_Arleigh_Burke_IIa": USS_Arleigh_Burke_IIa,
     "LHA_Tarawa": LHA_Tarawa,

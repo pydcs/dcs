@@ -158,7 +158,7 @@ class BasicTests(unittest.TestCase):
         seapoint.y -= 10 * 1000
 
         # carrier with aircraft
-        sg = m.ship_group(usa, "CVN", dcs.countries.USA.Ship.VINSON, seapoint)
+        sg = m.ship_group(usa, "CVN", dcs.countries.USA.Ship.Stennis, seapoint)
         m.flight_group_from_unit(usa, "F18 Carrier", dcs.planes.F_A_18C, sg, group_size=4)
 
         # some statics
@@ -544,7 +544,7 @@ class BasicTests(unittest.TestCase):
         group = m.ship_group(
             m.country(country_name),
             group_name,
-            dcs.countries.USA.Ship.VINSON,
+            dcs.countries.USA.Ship.Stennis,
             seapoint
         )
         unit: Ship = group.units[0]

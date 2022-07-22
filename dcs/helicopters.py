@@ -285,6 +285,7 @@ class Ka_50(HelicopterType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (1, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (1, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (1, Weapons.FAB_250___250kg_GP_Bomb_LD)
+        FAB_250_M62___250kg_GP_Bomb_LD = (1, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (1, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         Fuel_tank_PTB_450_ = (1, Weapons.Fuel_tank_PTB_450_)
 
@@ -298,6 +299,7 @@ class Ka_50(HelicopterType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
+        FAB_250_M62___250kg_GP_Bomb_LD = (2, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (2, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         Fuel_tank_PTB_450_ = (2, Weapons.Fuel_tank_PTB_450_)
 
@@ -311,6 +313,7 @@ class Ka_50(HelicopterType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (3, Weapons.FAB_250___250kg_GP_Bomb_LD)
+        FAB_250_M62___250kg_GP_Bomb_LD = (3, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (3, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         Fuel_tank_PTB_450_ = (3, Weapons.Fuel_tank_PTB_450_)
 
@@ -326,6 +329,7 @@ class Ka_50(HelicopterType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (4, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (4, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (4, Weapons.FAB_250___250kg_GP_Bomb_LD)
+        FAB_250_M62___250kg_GP_Bomb_LD = (4, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (4, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         Fuel_tank_PTB_450_ = (4, Weapons.Fuel_tank_PTB_450_)
 
@@ -406,14 +410,14 @@ class Mi_24V(HelicopterType):
             Algerian_AF_Old_Desert = "Algerian AF Old Desert"
 
     class Pylon1:
-        _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (1, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (1, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
 
     class Pylon2:
         B_8V20A_CM = (2, Weapons.B_8V20A_CM)
         B_8V20A_OFP2 = (2, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (2, Weapons.B_8V20A_OM)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (2, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (2, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
         B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (2, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (2, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -460,7 +464,7 @@ class Mi_24V(HelicopterType):
         B_8V20A_OFP2 = (5, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (5, Weapons.B_8V20A_OM)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (5, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (5, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (5, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
         B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (5, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (5, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (5, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -469,7 +473,7 @@ class Mi_24V(HelicopterType):
         GUV_VOG = (5, Weapons.GUV_VOG)
 
     class Pylon6:
-        _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (6, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (6, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
 
     pylons: Set[int] = {1, 2, 3, 4, 5, 6}
 
@@ -579,29 +583,21 @@ class Mi_8MT(HelicopterType):
     class Liveries:
 
         class USSR(Enum):
-            BP_RS01 = "BP_RS01"
             Russia_Aeroflot = "Russia_Aeroflot"
             Russia_Army_Weather = "Russia_Army_Weather"
 
         class Georgia(Enum):
-            BP_RS01 = "BP_RS01"
             Georgia = "Georgia"
 
-        class Venezuela(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Australia(Enum):
-            BP_RS01 = "BP_RS01"
             Australia = "Australia"
             Standard = "Standard"
 
         class Israel(Enum):
-            BP_RS01 = "BP_RS01"
             Israel = "Israel"
             Standard = "Standard"
 
         class Combined_Joint_Task_Forces_Blue(Enum):
-            BP_RS01 = "BP_RS01"
             Russia_VVS_Standard = "Russia_VVS_Standard"
             USA_AFG = "USA_AFG"
             IR_AFAGIR_Blue = "IR AFAGIR Blue"
@@ -660,146 +656,52 @@ class Mi_8MT(HelicopterType):
             placeholder = "placeholder"
             Standard = "Standard"
 
-        class Sudan(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Norway(Enum):
-            BP_RS01 = "BP_RS01"
             Norway = "Norway"
             Standard = "Standard"
 
-        class Romania(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Iran(Enum):
-            BP_RS01 = "BP_RS01"
             IR_AFAGIR_Blue = "IR AFAGIR Blue"
             IR_AFAGIR_Sand = "IR AFAGIR Sand"
             IR_Iranian_Special_Police_Forces = "IR Iranian Special Police Forces"
 
         class Ukraine(Enum):
-            BP_RS01 = "BP_RS01"
             Ukraine = "Ukraine"
 
-        class Libya(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Belgium(Enum):
-            BP_RS01 = "BP_RS01"
             Belgium = "Belgium"
 
-        class Slovakia(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Greece(Enum):
-            BP_RS01 = "BP_RS01"
             Hellenic_Airforce_SAR = "Hellenic Airforce SAR"
             Hellenic_Army_Aviation = "Hellenic Army Aviation"
 
         class UK(Enum):
-            BP_RS01 = "BP_RS01"
             United_Kingdom = "United Kingdom"
             Standard = "Standard"
 
-        class Third_Reich(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Hungary(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Abkhazia(Enum):
-            BP_RS01 = "BP_RS01"
             Abkhazia = "Abkhazia"
 
-        class Morocco(Enum):
-            BP_RS01 = "BP_RS01"
-
         class United_Nations_Peacekeepers(Enum):
-            BP_RS01 = "BP_RS01"
             Russia_UN = "Russia_UN"
 
-        class Switzerland(Enum):
-            BP_RS01 = "BP_RS01"
-
         class SouthOssetia(Enum):
-            BP_RS01 = "BP_RS01"
             South_Ossetia = "South Ossetia"
 
-        class Vietnam(Enum):
-            BP_RS01 = "BP_RS01"
-
         class China(Enum):
-            BP_RS01 = "BP_RS01"
             China_PLAAA_Camo = "China PLAAA Camo"
             China_UN = "China UN"
             China_PLAAA_White = "China PLAAA White"
 
-        class Yemen(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Kuwait(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Serbia(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Oman(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class India(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Egypt(Enum):
-            BP_RS01 = "BP_RS01"
-
         class TheNetherlands(Enum):
-            BP_RS01 = "BP_RS01"
             Netherlands_ARMY = "Netherlands ARMY"
             Netherlands_NAVY = "Netherlands NAVY"
             Standard = "Standard"
 
-        class Poland(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Syria(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Finland(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Kazakhstan(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Denmark(Enum):
-            BP_RS01 = "BP_RS01"
             Denmark = "Denmark"
 
-        class Sweden(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Croatia(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class CzechRepublic(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class GDR(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Yugoslavia(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Bulgaria(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class SouthKorea(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Tunisia(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Combined_Joint_Task_Forces_Red(Enum):
-            BP_RS01 = "BP_RS01"
             Russia_VVS_Standard = "Russia_VVS_Standard"
             USA_AFG = "USA_AFG"
             IR_AFAGIR_Blue = "IR AFAGIR Blue"
@@ -858,42 +760,20 @@ class Mi_8MT(HelicopterType):
             placeholder = "placeholder"
             Standard = "Standard"
 
-        class Lebanon(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Portugal(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Cuba(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Insurgents(Enum):
-            BP_RS01 = "BP_RS01"
             Insurgents = "Insurgents"
             Standard = "Standard"
 
-        class SaudiArabia(Enum):
-            BP_RS01 = "BP_RS01"
-
         class France(Enum):
-            BP_RS01 = "BP_RS01"
             France_ARMY = "France ARMY"
             France_NAVY = "France NAVY"
             Standard = "Standard"
 
         class USA(Enum):
-            BP_RS01 = "BP_RS01"
             USA_AFG = "USA_AFG"
             Standard = "Standard"
 
-        class Honduras(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Qatar(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Russia(Enum):
-            BP_RS01 = "BP_RS01"
             Russia_VVS_Standard = "Russia_VVS_Standard"
             Russia_Aeroflot = "Russia_Aeroflot"
             Russia_Gazprom = "Russia_Gazprom"
@@ -915,99 +795,33 @@ class Mi_8MT(HelicopterType):
             Russia_PF_Ambulance = "Russia_PF_Ambulance"
             Russia_Army_Weather = "Russia_Army_Weather"
 
-        class United_Arab_Emirates(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Italian_Social_Republi(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Austria(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Bahrain(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Italy(Enum):
-            BP_RS01 = "BP_RS01"
             Italy_ARMY = "Italy ARMY"
             Italy_NAVY = "Italy NAVY"
             Standard = "Standard"
 
-        class Chile(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Turkey(Enum):
-            BP_RS01 = "BP_RS01"
             Turkey = "Turkey"
             Standard = "Standard"
 
-        class Philippines(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Algeria(Enum):
-            BP_RS01 = "BP_RS01"
             Algerian_AF_Green = "Algerian AF Green"
             Algerian_AF_Green_EVSAN = "Algerian AF Green EVSAN"
             Algerian_AF_New_Desert = "Algerian AF New Desert"
             Algerian_AF_Old_Desert = "Algerian AF Old Desert"
             Algerian_AF_VIP = "Algerian AF VIP"
 
-        class Pakistan(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Malaysia(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Indonesia(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Iraq(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Germany(Enum):
-            BP_RS01 = "BP_RS01"
             Germany = "Germany"
             Standard = "Standard"
 
-        class South_Africa(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Jordan(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Mexico(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class USAFAggressors(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Brazil(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Spain(Enum):
-            BP_RS01 = "BP_RS01"
             Spain = "Spain"
             Standard = "Standard"
 
-        class Belarus(Enum):
-            BP_RS01 = "BP_RS01"
-
         class Canada(Enum):
-            BP_RS01 = "BP_RS01"
             Canada = "Canada"
             Standard = "Standard"
-
-        class NorthKorea(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Ethiopia(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Japan(Enum):
-            BP_RS01 = "BP_RS01"
-
-        class Thailand(Enum):
-            BP_RS01 = "BP_RS01"
 
     class Pylon1:
         B_8V20A_CM = (1, Weapons.B_8V20A_CM)
@@ -2498,7 +2312,7 @@ class Mi_28N(HelicopterType):
         B_8V20A_CM = (1, Weapons.B_8V20A_CM)
         B_8V20A_OFP2 = (1, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (1, Weapons.B_8V20A_OM)
-        _9M114_Shturm_V_8__AT_6_Spiral____ATGM__SACLOS = (1, Weapons._9M114_Shturm_V_8__AT_6_Spiral____ATGM__SACLOS)
+        _8_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (1, Weapons._8_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
         B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (1, Weapons.B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
         FAB_250___250kg_GP_Bomb_LD = (1, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (1, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -2553,7 +2367,7 @@ class Mi_28N(HelicopterType):
         FAB_500_M_62___500kg_GP_Bomb_LD = (4, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (4, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (4, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        _9M114_Shturm_V_8__AT_6_Spiral____ATGM__SACLOS = (4, Weapons._9M114_Shturm_V_8__AT_6_Spiral____ATGM__SACLOS)
+        _8_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (4, Weapons._8_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
         B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (4, Weapons.B_8V20A_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
 
     pylons: Set[int] = {1, 2, 3, 4}
@@ -2688,6 +2502,7 @@ class AH_64D_BLK_II(HelicopterType):
         "NetCrewControlPriority": 0,
         "AIDisabled": False,
         "TrackAirTargets": True,
+        "OverrideIFF": 0,
         "FlareBurstCount": 0,
         "FlareBurstInterval": 0,
         "FlareSalvoCount": 0,
@@ -2716,6 +2531,15 @@ class AH_64D_BLK_II(HelicopterType):
 
         class TrackAirTargets:
             id = "TrackAirTargets"
+
+        class OverrideIFF:
+            id = "OverrideIFF"
+
+            class Values:
+                Auto = 0
+                Simple = 1
+                Label_Only = 2
+                Realistic = 3
 
         class FlareBurstCount:
             id = "FlareBurstCount"
@@ -2835,12 +2659,13 @@ class AH_64D_BLK_II(HelicopterType):
 
     class Pylon1:
         M261_MK151 = (1, Weapons.M261_MK151)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_ = (1, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk = (1, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP = (1, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP = (1, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP)
-        M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M274_Hydra__6SK_ = (1, Weapons.M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M274_Hydra__6SK_)
-        M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M257_Hydra__6IL_ = (1, Weapons.M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M257_Hydra__6IL_)
+        M261___19_x_Hydra_70_M257_IL = (1, Weapons.M261___19_x_Hydra_70_M257_IL)
+        M261___19_x_Hydra_70_M274_TP_SM = (1, Weapons.M261___19_x_Hydra_70_M274_TP_SM)
+        M261___19_x_Hydra_70_M229_HE = (1, Weapons.M261___19_x_Hydra_70_M229_HE)
+        M261___19_x_Hydra_70_M282_MPP = (1, Weapons.M261___19_x_Hydra_70_M282_MPP)
+        M261___19_x_Hydra_70_M151_HE__M433_RC_Fuze = (1, Weapons.M261___19_x_Hydra_70_M151_HE__M433_RC_Fuze)
+        M261___19_x_Hydra_70__Pod_Zones_A_B___M151__E___M274 = (1, Weapons.M261___19_x_Hydra_70__Pod_Zones_A_B___M151__E___M274)
+        M261___19_x_Hydra_70__Pod_Zones_A_B___M151__E___M257 = (1, Weapons.M261___19_x_Hydra_70__Pod_Zones_A_B___M151__E___M257)
         M299___4_x_AGM_114K_Hellfire = (1, Weapons.M299___4_x_AGM_114K_Hellfire)
         M299___3_x_AGM_114K_Hellfire__Port = (1, Weapons.M299___3_x_AGM_114K_Hellfire__Port)
         M299___2_x_AGM_114K_Hellfire = (1, Weapons.M299___2_x_AGM_114K_Hellfire)
@@ -2850,12 +2675,13 @@ class AH_64D_BLK_II(HelicopterType):
 
     class Pylon2:
         M261_MK151 = (2, Weapons.M261_MK151)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_ = (2, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk = (2, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP = (2, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP = (2, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP)
-        M261_Inboard_Launcher__Zone_C_M274_Hydra__6SK___Zones_D_E_M151_Hydra__6PD_ = (2, Weapons.M261_Inboard_Launcher__Zone_C_M274_Hydra__6SK___Zones_D_E_M151_Hydra__6PD_)
-        M261_Inboard_Launcher__Zone_C_M257_Hydra__6IL___Zones_D_E_M151_Hydra__6PD_ = (2, Weapons.M261_Inboard_Launcher__Zone_C_M257_Hydra__6IL___Zones_D_E_M151_Hydra__6PD_)
+        M261___19_x_Hydra_70_M257_IL = (2, Weapons.M261___19_x_Hydra_70_M257_IL)
+        M261___19_x_Hydra_70_M274_TP_SM = (2, Weapons.M261___19_x_Hydra_70_M274_TP_SM)
+        M261___19_x_Hydra_70_M229_HE = (2, Weapons.M261___19_x_Hydra_70_M229_HE)
+        M261___19_x_Hydra_70_M282_MPP = (2, Weapons.M261___19_x_Hydra_70_M282_MPP)
+        M261___19_x_Hydra_70_M151_HE__M433_RC_Fuze = (2, Weapons.M261___19_x_Hydra_70_M151_HE__M433_RC_Fuze)
+        M261___19_x_Hydra_70__Pod_Zones_C___M274__D_E___M151 = (2, Weapons.M261___19_x_Hydra_70__Pod_Zones_C___M274__D_E___M151)
+        M261___19_x_Hydra_70__Pod_Zones_C___M257__D_E___M151 = (2, Weapons.M261___19_x_Hydra_70__Pod_Zones_C___M257__D_E___M151)
         M299___4_x_AGM_114K_Hellfire = (2, Weapons.M299___4_x_AGM_114K_Hellfire)
         M299___3_x_AGM_114K_Hellfire__Port = (2, Weapons.M299___3_x_AGM_114K_Hellfire__Port)
         M299___2_x_AGM_114K_Hellfire = (2, Weapons.M299___2_x_AGM_114K_Hellfire)
@@ -2865,12 +2691,13 @@ class AH_64D_BLK_II(HelicopterType):
 
     class Pylon3:
         M261_MK151 = (3, Weapons.M261_MK151)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_ = (3, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk = (3, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP = (3, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP = (3, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP)
-        M261_Inboard_Launcher__Zone_C_M274_Hydra__6SK___Zones_D_E_M151_Hydra__6PD_ = (3, Weapons.M261_Inboard_Launcher__Zone_C_M274_Hydra__6SK___Zones_D_E_M151_Hydra__6PD_)
-        M261_Inboard_Launcher__Zone_C_M257_Hydra__6IL___Zones_D_E_M151_Hydra__6PD_ = (3, Weapons.M261_Inboard_Launcher__Zone_C_M257_Hydra__6IL___Zones_D_E_M151_Hydra__6PD_)
+        M261___19_x_Hydra_70_M257_IL = (3, Weapons.M261___19_x_Hydra_70_M257_IL)
+        M261___19_x_Hydra_70_M274_TP_SM = (3, Weapons.M261___19_x_Hydra_70_M274_TP_SM)
+        M261___19_x_Hydra_70_M229_HE = (3, Weapons.M261___19_x_Hydra_70_M229_HE)
+        M261___19_x_Hydra_70_M282_MPP = (3, Weapons.M261___19_x_Hydra_70_M282_MPP)
+        M261___19_x_Hydra_70_M151_HE__M433_RC_Fuze = (3, Weapons.M261___19_x_Hydra_70_M151_HE__M433_RC_Fuze)
+        M261___19_x_Hydra_70__Pod_Zones_C___M274__D_E___M151 = (3, Weapons.M261___19_x_Hydra_70__Pod_Zones_C___M274__D_E___M151)
+        M261___19_x_Hydra_70__Pod_Zones_C___M257__D_E___M151 = (3, Weapons.M261___19_x_Hydra_70__Pod_Zones_C___M257__D_E___M151)
         M299___4_x_AGM_114K_Hellfire = (3, Weapons.M299___4_x_AGM_114K_Hellfire)
         M299___3_x_AGM_114K_Hellfire__Starboard = (3, Weapons.M299___3_x_AGM_114K_Hellfire__Starboard)
         M299___2_x_AGM_114K_Hellfire = (3, Weapons.M299___2_x_AGM_114K_Hellfire)
@@ -2880,12 +2707,13 @@ class AH_64D_BLK_II(HelicopterType):
 
     class Pylon4:
         M261_MK151 = (4, Weapons.M261_MK151)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_ = (4, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M257__Illum_)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk = (4, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M274__Smk)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP = (4, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M229__HEDP)
-        M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP = (4, Weapons.M261_pod___19_x_2_75_Hydra__UnGd_Rkts_M282__MPP)
-        M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M274_Hydra__6SK_ = (4, Weapons.M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M274_Hydra__6SK_)
-        M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M257_Hydra__6IL_ = (4, Weapons.M261_Outboard_Launcher__Zones_A_B_M151_Hydra__6PD___Zone_E_M257_Hydra__6IL_)
+        M261___19_x_Hydra_70_M257_IL = (4, Weapons.M261___19_x_Hydra_70_M257_IL)
+        M261___19_x_Hydra_70_M274_TP_SM = (4, Weapons.M261___19_x_Hydra_70_M274_TP_SM)
+        M261___19_x_Hydra_70_M229_HE = (4, Weapons.M261___19_x_Hydra_70_M229_HE)
+        M261___19_x_Hydra_70_M282_MPP = (4, Weapons.M261___19_x_Hydra_70_M282_MPP)
+        M261___19_x_Hydra_70_M151_HE__M433_RC_Fuze = (4, Weapons.M261___19_x_Hydra_70_M151_HE__M433_RC_Fuze)
+        M261___19_x_Hydra_70__Pod_Zones_A_B___M151__E___M274 = (4, Weapons.M261___19_x_Hydra_70__Pod_Zones_A_B___M151__E___M274)
+        M261___19_x_Hydra_70__Pod_Zones_A_B___M151__E___M257 = (4, Weapons.M261___19_x_Hydra_70__Pod_Zones_A_B___M151__E___M257)
         M299___4_x_AGM_114K_Hellfire = (4, Weapons.M299___4_x_AGM_114K_Hellfire)
         M299___3_x_AGM_114K_Hellfire__Starboard = (4, Weapons.M299___3_x_AGM_114K_Hellfire__Starboard)
         M299___2_x_AGM_114K_Hellfire = (4, Weapons.M299___2_x_AGM_114K_Hellfire)
@@ -2901,7 +2729,6 @@ class AH_64D_BLK_II(HelicopterType):
 
 class Mi_24P(HelicopterType):
     id = "Mi-24P"
-    flyable = True
     height = 4.354
     width = 17.3
     length = 20.953
@@ -2966,6 +2793,8 @@ class Mi_24P(HelicopterType):
         "TrackAirTargets": True,
         "PilotNVG": True,
         "OperatorNVG": True,
+        "R60equipment": True,
+        "OverrideIFF": 0,
     }
 
     class Properties:
@@ -3009,10 +2838,26 @@ class Mi_24P(HelicopterType):
         class OperatorNVG:
             id = "OperatorNVG"
 
+        class R60equipment:
+            id = "R60equipment"
+
+        class OverrideIFF:
+            id = "OverrideIFF"
+
+            class Values:
+                Auto = 0
+                Simple = 1
+                Label_Only = 2
+                Realistic = 3
+
     class Liveries:
 
         class USSR(Enum):
             Russian_Air_Force = "Russian Air Force"
+            AF_440_OVP = "AF 440 OVP"
+            AF_Syzran_AFB = "AF Syzran AFB"
+            AF_Torzhok_AFB = "AF Torzhok AFB"
+            AF_USSR = "AF USSR"
             AF_Standard3_Old = "AF Standard3 Old"
 
         class Georgia(Enum):
@@ -3023,7 +2868,11 @@ class Mi_24P(HelicopterType):
             Georgian_Air_Force = "Georgian Air Force"
             IQAF = "IQAF"
             Russian_Air_Force = "Russian Air Force"
+            AF_440_OVP = "AF 440 OVP"
+            AF_Syzran_AFB = "AF Syzran AFB"
+            AF_Torzhok_AFB = "AF Torzhok AFB"
             SyAAF = "SyAAF"
+            AF_USSR = "AF USSR"
             Ukrainian_Army_Aviation = "Ukrainian Army Aviation"
             United_Nations = "United Nations"
             AF_Standard3_Old = "AF Standard3 Old"
@@ -3042,13 +2891,21 @@ class Mi_24P(HelicopterType):
             Georgian_Air_Force = "Georgian Air Force"
             IQAF = "IQAF"
             Russian_Air_Force = "Russian Air Force"
+            AF_440_OVP = "AF 440 OVP"
+            AF_Syzran_AFB = "AF Syzran AFB"
+            AF_Torzhok_AFB = "AF Torzhok AFB"
             SyAAF = "SyAAF"
+            AF_USSR = "AF USSR"
             Ukrainian_Army_Aviation = "Ukrainian Army Aviation"
             United_Nations = "United Nations"
             AF_Standard3_Old = "AF Standard3 Old"
 
         class Russia(Enum):
             Russian_Air_Force = "Russian Air Force"
+            AF_440_OVP = "AF 440 OVP"
+            AF_Syzran_AFB = "AF Syzran AFB"
+            AF_Torzhok_AFB = "AF Torzhok AFB"
+            AF_USSR = "AF USSR"
             United_Nations = "United Nations"
             AF_Standard3_Old = "AF Standard3 Old"
 
@@ -3056,18 +2913,18 @@ class Mi_24P(HelicopterType):
             IQAF = "IQAF"
 
     class Pylon1:
-        _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (1, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (1, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
         _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT = (1, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT)
         _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE = (1, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE)
         _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag = (1, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag)
-        _9M114_Shturm_V_2_Rack = (1, Weapons._9M114_Shturm_V_2_Rack)
+        Missile_Launcher_Rack__Empty_ = (1, Weapons.Missile_Launcher_Rack__Empty_)
 
     class Pylon2:
         B_8V20A_CM = (2, Weapons.B_8V20A_CM)
         B_8V20A_OFP2 = (2, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (2, Weapons.B_8V20A_OM)
         UB_32A_24_pod___32_x_S_5KO = (2, Weapons.UB_32A_24_pod___32_x_S_5KO)
-        _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (2, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (2, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
         _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT = (2, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT)
         _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE = (2, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE)
         _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag = (2, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag)
@@ -3081,6 +2938,8 @@ class Mi_24P(HelicopterType):
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (2, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
         APU_68___S_24B = (2, Weapons.APU_68___S_24B)
         GUV_VOG = (2, Weapons.GUV_VOG)
+        APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red = (2, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red)
+        APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red = (2, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red)
 
     class Pylon3:
         B_8V20A_CM = (3, Weapons.B_8V20A_CM)
@@ -3131,7 +2990,7 @@ class Mi_24P(HelicopterType):
         B_8V20A_OFP2 = (5, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (5, Weapons.B_8V20A_OM)
         UB_32A_24_pod___32_x_S_5KO = (5, Weapons.UB_32A_24_pod___32_x_S_5KO)
-        _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (5, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (5, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
         _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT = (5, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT)
         _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE = (5, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE)
         _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag = (5, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag)
@@ -3145,15 +3004,23 @@ class Mi_24P(HelicopterType):
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (5, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
         APU_68___S_24B = (5, Weapons.APU_68___S_24B)
         GUV_VOG = (5, Weapons.GUV_VOG)
+        APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red = (5, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red)
+        APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red_ = (5, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red_)
 
     class Pylon6:
-        _9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS = (6, Weapons._9M114_Shturm_V_2__AT_6_Spiral____ATGM__SACLOS)
+        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (6, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
         _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT = (6, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT)
         _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE = (6, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE)
         _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag = (6, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag)
-        _9M114_Shturm_V_2_Rack = (6, Weapons._9M114_Shturm_V_2_Rack)
+        Missile_Launcher_Rack__Empty_ = (6, Weapons.Missile_Launcher_Rack__Empty_)
 
-    pylons: Set[int] = {1, 2, 3, 4, 5, 6}
+    class Pylon7:
+        KORD_12_7_MI24_L = (7, Weapons.KORD_12_7_MI24_L)
+
+    class Pylon8:
+        KORD_12_7_MI24_R = (8, Weapons.KORD_12_7_MI24_R)
+
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8}
 
     tasks = [task.CAS, task.GroundAttack, task.Escort, task.Transport, task.AFAC, task.AntishipStrike]
     task_default = task.CAS
@@ -3439,7 +3306,7 @@ class SA342L(HelicopterType):
         Telson_8___8_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.Telson_8___8_x_68_mm_SNEB_Type_250_F1B_TP_SM)
         Telson_8___8_x_68_mm_SNEB_Type_251_H1_HE = (2, Weapons.Telson_8___8_x_68_mm_SNEB_Type_251_H1_HE)
         Telson_8___8_x_68_mm_SNEB_Type_252_H1_TP = (2, Weapons.Telson_8___8_x_68_mm_SNEB_Type_252_H1_TP)
-        Telson_8___8_x_68_mm_SNEB_Type_253_H1_HEAT = (2, Weapons.Telson_8___8_x_68_mm_SNEB_Type_253_H1_HEAT)
+        Telson_8___8_x_68_mm_SNEB_Type_253_H1_HEAT_ = (2, Weapons.Telson_8___8_x_68_mm_SNEB_Type_253_H1_HEAT_)
         Telson_8___8_x_68_mm_SNEB_Type_254_H1_SM_Red = (2, Weapons.Telson_8___8_x_68_mm_SNEB_Type_254_H1_SM_Red)
         Telson_8___8_x_68_mm_SNEB_Type_254_H1_SM_Yellow = (2, Weapons.Telson_8___8_x_68_mm_SNEB_Type_254_H1_SM_Yellow)
         Telson_8___8_x_68_mm_SNEB_Type_254_H1_SM_Green = (2, Weapons.Telson_8___8_x_68_mm_SNEB_Type_254_H1_SM_Green)

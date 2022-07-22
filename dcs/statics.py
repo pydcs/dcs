@@ -462,6 +462,78 @@ class Fortification:
         shape_name = "barrelofbeer_support"
         rate = 5
 
+    class WindTurbine(unittype.StaticType):
+        id = "WindTurbine"
+        name = "Wind Turbine"
+        shape_name = "WindTurbine_10"
+        rate = 3
+
+    class WindTurbine_11(unittype.StaticType):
+        id = "WindTurbine_11"
+        name = "Wind Turbine 11"
+        shape_name = "WindTurbine_11"
+        rate = 3
+
+    class Offshore_WindTurbine(unittype.StaticType):
+        id = "offshore WindTurbine"
+        name = "offshore Wind Turbine"
+        shape_name = "offshore_windturbine"
+        rate = 3
+
+    class Offshore_WindTurbine2(unittype.StaticType):
+        id = "offshore WindTurbine2"
+        name = "offshore Wind Turbine2"
+        shape_name = "offshore_windturbine2"
+        rate = 3
+
+    class Orca(unittype.StaticType):
+        id = "Orca"
+        name = "Orca Whale"
+        shape_name = "Orca"
+        rate = 3
+
+    class Billboard_motorized(unittype.StaticType):
+        id = "billboard_motorized"
+        name = "Billboard Motorized"
+        shape_name = "billboard_motorized"
+        rate = 3
+
+    class Stanley_LightHouse(unittype.StaticType):
+        id = "Stanley_LightHouse"
+        name = "Stanley LightHouse"
+        shape_name = "ST_LightHouse"
+        rate = 3
+
+    class Nodding_Donkey(unittype.StaticType):
+        id = "Nodding_Donkey"
+        name = "Nodding Donkey"
+        shape_name = "Nodding_Donkey"
+        rate = 3
+
+    class _345_Excavator(unittype.StaticType):
+        id = "345 Excavator"
+        name = "Excavator"
+        shape_name = "cat_345l"
+        rate = 3
+
+    class Tower_Crane(unittype.StaticType):
+        id = "Tower Crane"
+        name = "TowerCrane"
+        shape_name = "TowerCrane_01"
+        rate = 3
+
+    class Small_LightHouse(unittype.StaticType):
+        id = "Small_LightHouse"
+        name = "Small_LightHouse"
+        shape_name = "Small_LightHouse"
+        rate = 3
+
+    class Ski_Ramp(unittype.StaticType):
+        id = "Ski Ramp"
+        name = "Skiramp"
+        shape_name = "SkiRamp_01"
+        rate = 3
+
     class Warning_board_a(unittype.StaticType):
         id = "warning_board_a"
         name = "Warning Board: Spy Cannot Escape!"
@@ -701,6 +773,18 @@ fortification_map = {
     "Black_Tyre_WF": Fortification.Black_Tyre_WF,
     "Windsock": Fortification.Windsock,
     "Beer Bomb": Fortification.Beer_Bomb,
+    "WindTurbine": Fortification.WindTurbine,
+    "WindTurbine_11": Fortification.WindTurbine_11,
+    "offshore WindTurbine": Fortification.Offshore_WindTurbine,
+    "offshore WindTurbine2": Fortification.Offshore_WindTurbine2,
+    "Orca": Fortification.Orca,
+    "billboard_motorized": Fortification.Billboard_motorized,
+    "Stanley_LightHouse": Fortification.Stanley_LightHouse,
+    "Nodding_Donkey": Fortification.Nodding_Donkey,
+    "345 Excavator": Fortification._345_Excavator,
+    "Tower Crane": Fortification.Tower_Crane,
+    "Small_LightHouse": Fortification.Small_LightHouse,
+    "Ski Ramp": Fortification.Ski_Ramp,
     "warning_board_a": Fortification.Warning_board_a,
     "warning_board_b": Fortification.Warning_board_b,
     "Belgian gate": Fortification.Belgian_gate,
