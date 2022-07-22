@@ -2729,6 +2729,7 @@ class AH_64D_BLK_II(HelicopterType):
 
 class Mi_24P(HelicopterType):
     id = "Mi-24P"
+    flyable = True
     height = 4.354
     width = 17.3
     length = 20.953
