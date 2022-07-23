@@ -303,49 +303,64 @@ file:close()
 -- aircraft export planes and helicopters
 -------------------------------------------------------------------------------
 local flyable = {}
+-- Jet engine
+flyable["AJS37"] = true
+flyable["AV8BNA"] = true
 flyable["A-10A"] = true
 flyable["A-10C"] = true
-flyable["Su-27"] = true
-flyable["Su-33"] = true
-flyable["Su-25"] = true
-flyable["Su-25T"] = true
-flyable["M-2000C"] = true
-flyable["F-15C"] = true
-flyable["MiG-29A"] = true
-flyable["MiG-29S"] = true
-flyable["P-51D"] = true
-flyable["TF-51D"] = true
-flyable["FW-190D9"] = true
-flyable["Bf-109K-4"] = true
+flyable["A-10C_2"] = true
 flyable["C-101CC"] = true
 flyable["C-101EB"] = true
+flyable["F-14A-135-GR"] = true
+flyable["F-14B"] = true
+flyable["F-15C"] = true
+flyable["F-16C_50"] = true
+flyable["FA-18C_hornet"] = true
+flyable["F-5E-3"] = true
 flyable["F-86F Sabre"] = true
 flyable["Hawk"] = true
+flyable["JF-17"] = true
 flyable["L-39C"] = true
 flyable["L-39ZA"] = true
+flyable["M-2000C"] = true
 flyable["MiG-15bis"] = true
+flyable["MiG-19P"] = true
 flyable["MiG-21Bis"] = true
-flyable["Ka-50"] = true
-flyable["Mi-8MT"] = true
-flyable["UH-1H"] = true
+flyable["MiG-29A"] = true
+flyable["MiG-29S"] = true
+flyable["Mirage-F1CE"] = true
+flyable["Su-25"] = true
+flyable["Su-25T"] = true
+flyable["Su-27"] = true
+flyable["Su-33"] = true
+
+-- Piston engine
+flyable["Bf-109K-4"] = true
+flyable["Christen Eagle II"] = true
+flyable["FW-190A8"] = true
+flyable["FW-190D9"] = true
+flyable["I-16"] = true
+flyable["MosquitoFBMkVI"] = true
+flyable["P-51D"] = true
+flyable["P-51D-30-NA"] = true
+flyable["P-47D-30"] = true
+flyable["P-47D-30bl1"] = true
+flyable["P-47D-40"] = true
 flyable["SpitfireLFMkIX"] = true
 flyable["SpitfireLFMkIXCW"] = true
+flyable["TF-51D"] = true
+flyable["Yak-52"] = true
+
+-- Helicopters
+flyable["AH-64D_BLK_II"] = true
+flyable["Ka-50"] = true
+flyable["Mi-8MT"] = true
+flyable["Mi-24P"] = true
 flyable["SA342L"] = true
 flyable["SA342M"] = true
 flyable["SA342Minigun"] = true
 flyable["SA342Mistral"] = true
-flyable["AV8BNA"] = true
-flyable["F/A-18C"] = true
-flyable["AJS37"] = true
-flyable["F-5E-3"] = true
-flyable["Yak-52"] = true
-flyable["FW-190A8"] = true
-flyable["P-47D-30"] = true
-flyable["P-47D-30bl1"] = true
-flyable["P-47D-40"] = true
-flyable["JF-17"] = true
-flyable["MiG-19P"] = true
-flyable["MosquitoFBMkVI"] = true
+flyable["UH-1H"] = true
 
 
 local function export_aircraft(file, aircrafts, export_type, exportplane)
