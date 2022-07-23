@@ -304,11 +304,11 @@ file:close()
 -------------------------------------------------------------------------------
 local flyable = {}
 -- Jet engine
-flyable["AJS37"] = true
-flyable["AV8BNA"] = true
 flyable["A-10A"] = true
 flyable["A-10C"] = true
 flyable["A-10C_2"] = true
+flyable["AJS37"] = true
+flyable["AV8BNA"] = true
 flyable["C-101CC"] = true
 flyable["C-101EB"] = true
 flyable["F-14A-135-GR"] = true
