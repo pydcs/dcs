@@ -381,7 +381,6 @@ class F_A_18A(PlaneType):
 
 class F_A_18C(PlaneType):
     id = "F/A-18C"
-    flyable = True
     height = 4.66
     width = 11.43
     length = 17.07
@@ -16855,6 +16854,7 @@ class H_6J(PlaneType):
 
 class Christen_Eagle_II(PlaneType):
     id = "Christen Eagle II"
+    flyable = True
     height = 1.9812
     width = 11.594846
     length = 5.6388
@@ -28215,6 +28215,7 @@ class Hawk(PlaneType):
 
 class I_16(PlaneType):
     id = "I-16"
+    flyable = True
     height = 3.25
     width = 9.004
     length = 6.13
@@ -37266,6 +37267,7 @@ class MiG_21Bis(PlaneType):
 
 class Mirage_F1CE(PlaneType):
     id = "Mirage-F1CE"
+    flyable = True
     height = 4.5
     width = 8.4
     length = 15.3
