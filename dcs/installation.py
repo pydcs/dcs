@@ -8,6 +8,7 @@ TODO : [NICE to have] add method to check list of installed DCS modules
 
 import sys
 import os
+import re
 
 is_windows_os = True
 try:
@@ -96,7 +97,14 @@ def get_dcs_saved_games_directory():
     Get the save game directory for DCS World
     :return: Save game directory as string
     """
-    return os.path.join(os.path.expanduser("~"), "Saved Games", "DCS")
+    saved_games = os.path.join(os.path.expanduser("~"), "Saved Games", "DCS")
+    dcs_variant = os.path.join(get_dcs_install_directory(), "dcs_variant.txt")
+    if os.path.exists(dcs_variant):
+        # read from the file, append first line to saved games, e.g.: DCS.openbeta
+        with open(dcs_variant, "r") as file:
+            suffix = re.sub(r'[^\w\d-]', '', file.read())
+            saved_games = saved_games + "." + suffix
+    return saved_games
 
 
 def _find_steam_directory():

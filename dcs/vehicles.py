@@ -5,7 +5,7 @@ import dcs.unittype as unittype
 
 class Artillery:
 
-    class _2B11_mortar(unittype.VehicleType):
+    class X_2B11_mortar(unittype.VehicleType):
         id = "2B11 mortar"
         name = "Mortar 2B11 120mm"
         detection_range = 0
@@ -274,7 +274,7 @@ class Infantry:
 
 class AirDefence:
 
-    class _2S6_Tunguska(unittype.VehicleType):
+    class X_2S6_Tunguska(unittype.VehicleType):
         id = "2S6 Tunguska"
         name = "SAM SA-19 Tunguska \"Grison\" "
         detection_range = 18000
@@ -288,7 +288,7 @@ class AirDefence:
         threat_range = 25000
         air_weapon_dist = 25000
 
-    class _5p73_s_125_ln(unittype.VehicleType):
+    class X_5p73_s_125_ln(unittype.VehicleType):
         id = "5p73 s-125 ln"
         name = "SAM SA-3 S-125 \"Goa\" LN"
         detection_range = 0
@@ -559,7 +559,7 @@ class AirDefence:
         threat_range = 5200
         air_weapon_dist = 5200
 
-    class _1L13_EWR(unittype.VehicleType):
+    class X_1L13_EWR(unittype.VehicleType):
         id = "1L13 EWR"
         name = "EWR 1L13"
         detection_range = 300000
@@ -587,7 +587,7 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
 
-    class _55G6_EWR(unittype.VehicleType):
+    class X_55G6_EWR(unittype.VehicleType):
         id = "55G6 EWR"
         name = "EWR 55G6"
         detection_range = 400000
@@ -2030,7 +2030,7 @@ class Carriage:
         air_weapon_dist = 0
 
 vehicle_map = {
-    "2B11 mortar": Artillery._2B11_mortar,
+    "2B11 mortar": Artillery.X_2B11_mortar,
     "SAU Gvozdika": Artillery.SAU_Gvozdika,
     "SAU Msta": Artillery.SAU_Msta,
     "SAU Akatsia": Artillery.SAU_Akatsia,
@@ -2077,9 +2077,9 @@ vehicle_map = {
     "Smerch": Artillery.Smerch,
     "Smerch_HE": Artillery.Smerch_HE,
     "MLRS": Artillery.MLRS,
-    "2S6 Tunguska": AirDefence._2S6_Tunguska,
+    "2S6 Tunguska": AirDefence.X_2S6_Tunguska,
     "Kub 2P25 ln": AirDefence.Kub_2P25_ln,
-    "5p73 s-125 ln": AirDefence._5p73_s_125_ln,
+    "5p73 s-125 ln": AirDefence.X_5p73_s_125_ln,
     "S-300PS 5P85C ln": AirDefence.S_300PS_5P85C_ln,
     "S-300PS 5P85D ln": AirDefence.S_300PS_5P85D_ln,
     "SA-11 Buk LN 9A310M1": AirDefence.SA_11_Buk_LN_9A310M1,
@@ -2117,11 +2117,11 @@ vehicle_map = {
     "SA-18 Igla-S manpad": AirDefence.SA_18_Igla_S_manpad,
     "SA-18 Igla-S comm": AirDefence.SA_18_Igla_S_comm,
     "Igla manpad INS": AirDefence.Igla_manpad_INS,
-    "1L13 EWR": AirDefence._1L13_EWR,
+    "1L13 EWR": AirDefence.X_1L13_EWR,
     "Kub 1S91 str": AirDefence.Kub_1S91_str,
     "S-300PS 40B6M tr": AirDefence.S_300PS_40B6M_tr,
     "S-300PS 40B6MD sr": AirDefence.S_300PS_40B6MD_sr,
-    "55G6 EWR": AirDefence._55G6_EWR,
+    "55G6 EWR": AirDefence.X_55G6_EWR,
     "S-300PS 64H6E sr": AirDefence.S_300PS_64H6E_sr,
     "SA-11 Buk SR 9S18M1": AirDefence.SA_11_Buk_SR_9S18M1,
     "Dog Ear radar": AirDefence.Dog_Ear_radar,

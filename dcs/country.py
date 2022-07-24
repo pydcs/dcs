@@ -23,9 +23,10 @@ class Country:
     planes: List[Type[PlaneType]] = []
     helicopters: List[Type[HelicopterType]] = []
 
-    def __init__(self, _id, name):
+    def __init__(self, _id, name, short_name):
         self.id = _id
         self.name = name
+        self.shortname = short_name
         self.vehicle_group = []  # type: List[VehicleGroup]
         self.ship_group = []  # type: List[ShipGroup]
         self.plane_group = []  # type: List[PlaneGroup]

@@ -1,4 +1,5 @@
 import dcs.lua as lua
+from dcs.liveries_scanner import LiverySet
 from dcs.payloads import PayloadDirectories
 import re
 import sys
@@ -37,7 +38,7 @@ class StaticType(UnitType):
 
 class LiveryOverwrites:
     map = {
-        "M-2000C.France": "AdA Chasse 2-5"
+        "M-2000C.FRA": "AdA Chasse 2-5"
     }
 
 
@@ -83,7 +84,8 @@ class FlyingType(UnitType):
     property_defaults: Optional[Dict[str, Any]] = None
 
     pylons: Set[int] = set()
-    Liveries: Optional[Type[Any]] = None
+    livery_name: Optional[str] = None
+    Liveries: LiverySet = LiverySet()
     # Dict from payload name to the DCS payload structure. None if not yet initialized.
     payloads: Optional[Dict[str, Dict[str, Any]]] = None
 
@@ -171,10 +173,7 @@ class FlyingType(UnitType):
         if cls.id + "." + country_name in LiveryOverwrites.map:
             return LiveryOverwrites.map[cls.id + "." + country_name]
         else:
-            liveries = cls.Liveries
-            if liveries is not None:
-                for x in liveries.__dict__:
-                    clas = liveries.__dict__[x]
-                    if clas and getattr(clas, "__name__", "") == country_name:
-                        return list(clas)[0].value
+            liveries = sorted(filter(lambda x: x.valid_for_country(country_name), cls.Liveries))
+            if liveries:
+                return liveries[0].name
         return ""

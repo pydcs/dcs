@@ -12,8 +12,6 @@ local export_path = base_path .. "dcs\\"
 
 local log_file = io.open(base_path.."export.log", "w")
 
-local loadLiveries = require('loadLiveries')
-
 -------------------------------------------------------------------------------
 -- helper functions
 -------------------------------------------------------------------------------
@@ -44,7 +42,7 @@ local function safe_name(name)
     local safeName = name
     safeName = string.gsub(safeName, "[-()/., *'+`#%[%]]", "_")
     safeName = string.gsub(safeName, "_*$", "")  -- strip __ from end
-    safeName = string.gsub(safeName, "^([0-9])", "_%1")
+    safeName = string.gsub(safeName, "^([0-9])", "x_%1")
     safeName = string.gsub(safeName, '%"', '') -- Remove the " character (Example unit using it : AA gun QF 3,7")
     safeName = string.gsub(safeName, "%&", "")  -- Remove the '&' sign
     if safeName == 'None' then
@@ -80,93 +78,6 @@ end
 function ternary ( cond , T , F )
     if cond then return T else return F end
 end
-
--------------------------------------------------------------------------------
--- country to shortname mapping
--------------------------------------------------------------------------------
-local countries = {}
-countries["Russia"] = "RUS"
-countries["Ukraine"] = "UKR"
-countries["USA"] = "USA"
-countries["Turkey"] = "TUR"
-countries["UK"] = "UK"
-countries["France"] = "FRA"
-countries["Germany"] = "GER"
-countries["USAFAggressors"] = "AUSAF"
-countries["Canada"] = "CAN"
-countries["Spain"] = "SPN"
-countries["TheNetherlands"] = "NETH"
-countries["Belgium"] = "BEL"
-countries["Norway"] = "NOR"
-countries["Denmark"] = "DEN"
-countries["Israel"] = "ISR"
-countries["Georgia"] = "GRG"
-countries["Insurgents"] = "INS"
-countries["Abkhazia"] = "ABH"
-countries["SouthOssetia"] = "RSO"
-countries["Italy"] = "ITA"
-countries["Australia"] = "AUS"
-countries["Switzerland"] = "SUI"
-countries["Austria"] = "AUT"
-countries["Belarus"] = "BLR"
-countries["Bulgaria"] = "BGR"
-countries["CzechRepublic"] = "CZE"
-countries["China"] = "CHN"
-countries["Croatia"] = "HRV"
-countries["Egypt"] = "EGY"
-countries["Finland"] = "FIN"
-countries["Greece"] = "GRC"
-countries["Hungary"] = "HUN"
-countries["India"] = "IND"
-countries["Iran"] = "IRN"
-countries["Iraq"] = "IRQ"
-countries["Japan"] = "JPN"
-countries["Kazakhstan"] = "KAZ"
-countries["NorthKorea"] = "PRK"
-countries["Pakistan"] = "PAK"
-countries["Poland"] = "POL"
-countries["Romania"] = "ROU"
-countries["SaudiArabia"] = "SAU"
-countries["Serbia"] = "SRB"
-countries["Slovakia"] = "SVK"
-countries["SouthKorea"] = "KOR"
-countries["Sweden"] = "SWE"
-countries["Syria"] = "SYR"
-countries["Yemen"] = "YEM"
-countries["Vietnam"] = "VNM"
-countries["Venezuela"] = "VEN"
-countries["Tunisia"] = "TUN"
-countries["Thailand"] = "THA"
-countries["Sudan"] = "SDN"
-countries["Philippines"] = "PHL"
-countries["Morocco"] = "MAR"
-countries["Mexico"] = "MEX"
-countries["Malaysia"] = "MYS"
-countries["Libya"] = "LBY"
-countries["Jordan"] = "JOR"
-countries["Indonesia"] = "IDN"
-countries["Honduras"] = "HND"
-countries["Ethiopia"] = "ETH"
-countries["Chile"] = "CHL"
-countries["Brazil"] = "BRA"
-countries["Bahrain"] = "BHR"
-countries["Third Reich"] = "NZG"
-countries["Yugoslavia"] = "YUG"
-countries["USSR"] = "SUN"
-countries["Italian Social Republi"] = "RSI"
-countries["Algeria"] = "DZA"
-countries["Kuwait"] = "KWT"
-countries["Qatar"] = "QAT"
-countries["Oman"] = "OMN"
-countries["United Arab Emirates"] = "ARE"
-countries["South Africa"] = "RSA"
-countries["Cuba"] = "CUB"
-countries["Portugal"] = "PRT"
-countries["GDR"] = "GDR"
-countries["Lebanon"] = "LBN"
-countries["Combined Joint Task Forces Blue"] = "BLUE"
-countries["Combined Joint Task Forces Red"] = "RED"
-countries["United Nations Peacekeepers"] = "UN"
 
 local function handle_weapon(weapon, weaponKeys, weaponTable)
     if weapon.displayName == nil then
@@ -367,12 +278,13 @@ local function export_aircraft(file, aircrafts, export_type, exportplane)
     -- generate export output
     file:write(
 [[# This file is generated from pydcs_export.lua
-from enum import Enum
 from typing import Any, Dict, List, Set
 
 from dcs.weapons_data import Weapons
 import dcs.task as task
 from dcs.unittype import FlyingType
+from dcs.liveries_scanner import Liveries
+
 
 ]])
     writeln(file, 'class '..export_type..'Type(FlyingType):')
@@ -532,28 +444,16 @@ from dcs.unittype import FlyingType
             end
         end
 
-        local livery_written = false
-        for j in pairs(countries) do
-            local schemes = loadLiveries.loadSchemes(plane.type, countries[j])
-            if schemes ~= nil and #schemes > 0 then
-                if not livery_written then
-                    writeln(file, '')
-                    writeln(file, '    class Liveries:')
-                    livery_written = true
-                end
-
-                writeln(file, '')
-                writeln(file, '        class '..safe_name(j)..'(Enum):')
-                local dupcheck = {}
-                for k in pairs(schemes) do
-                    local liv_safe = safe_name(schemes[k].itemId)
-                    if dupcheck[liv_safe] == nil then
-                        writeln(file, '            '..liv_safe..' = "'..schemes[k].itemId..'"')
-                        dupcheck[liv_safe] = true
-                    end
-                end
-            end
-        end
+        writeln(file, "")
+        if plane.livery_entry ~= nil then
+            local name = string.upper(plane.livery_entry)
+            writeln(file, '    livery_name = "'..name..'"  # from livery_entry')
+            writeln(file, '    Liveries = Liveries()[livery_name]')
+        else if plane.type ~= nil then
+            local name = string.upper(string.gsub(plane.type, '/', '_'))
+            writeln(file, '    livery_name = "'..name..'"  # from type')
+            writeln(file, '    Liveries = Liveries()[livery_name]')
+        end end
 
         local pylons = {}
 
@@ -935,6 +835,7 @@ while i <= country.maxIndex do
         writeln(file, 'class '..pyName..'(Country):')
         writeln(file, '    id = '..i)
         writeln(file, '    name = "'..c.Name..'"')
+        writeln(file, '    shortname = "'..c.ShortName..'"')
         writeln(file, '')
 
         writeln(file, '    class Vehicle:')
@@ -1074,7 +975,9 @@ while i <= country.maxIndex do
 
         writeln(file, '')
         writeln(file, '    def __init__(self):')
-        writeln(file, '        super('..pyName..', self).__init__('..pyName..'.id, '..pyName..'.name)')
+        local nl = '\n            '
+        local params = nl..pyName..'.id,'..nl..pyName..'.name,'..nl..pyName..'.shortname'..'\n        '
+        writeln(file, '        super('..pyName..', self).__init__('..params..')')
     end
     i = i + 1
 end

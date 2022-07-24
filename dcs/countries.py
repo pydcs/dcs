@@ -10,11 +10,12 @@ import dcs.ships as ships
 class Russia(Country):
     id = 0
     name = "Russia"
+    shortname = "RUS"
 
     class Vehicle:
 
         class Artillery:
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_FDDM = vehicles.Artillery.Grad_FDDM
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_2_C9 = vehicles.Artillery.SAU_2_C9
@@ -35,10 +36,10 @@ class Russia(Country):
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
 
         class AirDefence:
-            _1L13_EWR = vehicles.AirDefence._1L13_EWR
-            _2S6_Tunguska = vehicles.AirDefence._2S6_Tunguska
-            _55G6_EWR = vehicles.AirDefence._55G6_EWR
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_1L13_EWR = vehicles.AirDefence.X_1L13_EWR
+            X_2S6_Tunguska = vehicles.AirDefence.X_2S6_Tunguska
+            X_55G6_EWR = vehicles.AirDefence.X_55G6_EWR
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Dog_Ear_radar = vehicles.AirDefence.Dog_Ear_radar
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -480,17 +481,22 @@ class Russia(Country):
     }
 
     def __init__(self):
-        super(Russia, self).__init__(Russia.id, Russia.name)
+        super(Russia, self).__init__(
+            Russia.id,
+            Russia.name,
+            Russia.shortname
+        )
 
 
 class Ukraine(Country):
     id = 1
     name = "Ukraine"
+    shortname = "UKR"
 
     class Vehicle:
 
         class Artillery:
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_2_C9 = vehicles.Artillery.SAU_2_C9
             SAU_Akatsia = vehicles.Artillery.SAU_Akatsia
@@ -507,9 +513,9 @@ class Ukraine(Country):
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
 
         class AirDefence:
-            _1L13_EWR = vehicles.AirDefence._1L13_EWR
-            _2S6_Tunguska = vehicles.AirDefence._2S6_Tunguska
-            _55G6_EWR = vehicles.AirDefence._55G6_EWR
+            X_1L13_EWR = vehicles.AirDefence.X_1L13_EWR
+            X_2S6_Tunguska = vehicles.AirDefence.X_2S6_Tunguska
+            X_55G6_EWR = vehicles.AirDefence.X_55G6_EWR
             Dog_Ear_radar = vehicles.AirDefence.Dog_Ear_radar
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -533,7 +539,7 @@ class Ukraine(Country):
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             SA_18_Igla_manpad = vehicles.AirDefence.SA_18_Igla_manpad
             SA_18_Igla_comm = vehicles.AirDefence.SA_18_Igla_comm
@@ -833,17 +839,22 @@ class Ukraine(Country):
     }
 
     def __init__(self):
-        super(Ukraine, self).__init__(Ukraine.id, Ukraine.name)
+        super(Ukraine, self).__init__(
+            Ukraine.id,
+            Ukraine.name,
+            Ukraine.shortname
+        )
 
 
 class USA(Country):
     id = 2
     name = "USA"
+    shortname = "USA"
 
     class Vehicle:
 
         class Artillery:
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             M_109 = vehicles.Artillery.M_109
             MLRS_FDDM = vehicles.Artillery.MLRS_FDDM
             MLRS = vehicles.Artillery.MLRS
@@ -1301,12 +1312,17 @@ class USA(Country):
     }
 
     def __init__(self):
-        super(USA, self).__init__(USA.id, USA.name)
+        super(USA, self).__init__(
+            USA.id,
+            USA.name,
+            USA.shortname
+        )
 
 
 class Turkey(Country):
     id = 3
     name = "Turkey"
+    shortname = "TUR"
 
     class Vehicle:
 
@@ -1649,12 +1665,17 @@ class Turkey(Country):
     }
 
     def __init__(self):
-        super(Turkey, self).__init__(Turkey.id, Turkey.name)
+        super(Turkey, self).__init__(
+            Turkey.id,
+            Turkey.name,
+            Turkey.shortname
+        )
 
 
 class UK(Country):
     id = 4
     name = "UK"
+    shortname = "UK"
 
     class Vehicle:
 
@@ -2007,12 +2028,17 @@ class UK(Country):
     }
 
     def __init__(self):
-        super(UK, self).__init__(UK.id, UK.name)
+        super(UK, self).__init__(
+            UK.id,
+            UK.name,
+            UK.shortname
+        )
 
 
 class France(Country):
     id = 5
     name = "France"
+    shortname = "FRA"
 
     class Vehicle:
 
@@ -2354,12 +2380,17 @@ class France(Country):
     }
 
     def __init__(self):
-        super(France, self).__init__(France.id, France.name)
+        super(France, self).__init__(
+            France.id,
+            France.name,
+            France.shortname
+        )
 
 
 class Germany(Country):
     id = 6
     name = "Germany"
+    shortname = "GER"
 
     class Vehicle:
 
@@ -2367,7 +2398,7 @@ class Germany(Country):
             M_109 = vehicles.Artillery.M_109
             MLRS = vehicles.Artillery.MLRS
             MLRS_FDDM = vehicles.Artillery.MLRS_FDDM
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_Gvozdika = vehicles.Artillery.SAU_Gvozdika
             SAU_Akatsia = vehicles.Artillery.SAU_Akatsia
@@ -2404,7 +2435,7 @@ class Germany(Country):
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
@@ -2779,12 +2810,17 @@ class Germany(Country):
     }
 
     def __init__(self):
-        super(Germany, self).__init__(Germany.id, Germany.name)
+        super(Germany, self).__init__(
+            Germany.id,
+            Germany.name,
+            Germany.shortname
+        )
 
 
 class USAFAggressors(Country):
     id = 7
     name = "USAF Aggressors"
+    shortname = "AUSAF"
 
     class Vehicle:
 
@@ -2792,7 +2828,7 @@ class USAFAggressors(Country):
             Wespe124 = vehicles.Artillery.Wespe124
             Pak40 = vehicles.Artillery.Pak40
             LeFH_18_40_105 = vehicles.Artillery.LeFH_18_40_105
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_FDDM = vehicles.Artillery.Grad_FDDM
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_2_C9 = vehicles.Artillery.SAU_2_C9
@@ -2841,10 +2877,10 @@ class USAFAggressors(Country):
             Flak41 = vehicles.AirDefence.Flak41
             FuMG_401 = vehicles.AirDefence.FuMG_401
             FuSe_65 = vehicles.AirDefence.FuSe_65
-            _1L13_EWR = vehicles.AirDefence._1L13_EWR
-            _2S6_Tunguska = vehicles.AirDefence._2S6_Tunguska
-            _55G6_EWR = vehicles.AirDefence._55G6_EWR
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_1L13_EWR = vehicles.AirDefence.X_1L13_EWR
+            X_2S6_Tunguska = vehicles.AirDefence.X_2S6_Tunguska
+            X_55G6_EWR = vehicles.AirDefence.X_55G6_EWR
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Dog_Ear_radar = vehicles.AirDefence.Dog_Ear_radar
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -3562,12 +3598,17 @@ class USAFAggressors(Country):
     }
 
     def __init__(self):
-        super(USAFAggressors, self).__init__(USAFAggressors.id, USAFAggressors.name)
+        super(USAFAggressors, self).__init__(
+            USAFAggressors.id,
+            USAFAggressors.name,
+            USAFAggressors.shortname
+        )
 
 
 class Canada(Country):
     id = 8
     name = "Canada"
+    shortname = "CAN"
 
     class Vehicle:
 
@@ -3895,18 +3936,23 @@ class Canada(Country):
     }
 
     def __init__(self):
-        super(Canada, self).__init__(Canada.id, Canada.name)
+        super(Canada, self).__init__(
+            Canada.id,
+            Canada.name,
+            Canada.shortname
+        )
 
 
 class Spain(Country):
     id = 9
     name = "Spain"
+    shortname = "SPN"
 
     class Vehicle:
 
         class Artillery:
             M_109 = vehicles.Artillery.M_109
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Tt_B8M1 = vehicles.Artillery.Tt_B8M1
             HL_B8M1 = vehicles.Artillery.HL_B8M1
 
@@ -4243,12 +4289,17 @@ class Spain(Country):
     }
 
     def __init__(self):
-        super(Spain, self).__init__(Spain.id, Spain.name)
+        super(Spain, self).__init__(
+            Spain.id,
+            Spain.name,
+            Spain.shortname
+        )
 
 
 class TheNetherlands(Country):
     id = 10
     name = "The Netherlands"
+    shortname = "NETH"
 
     class Vehicle:
 
@@ -4611,12 +4662,17 @@ class TheNetherlands(Country):
     }
 
     def __init__(self):
-        super(TheNetherlands, self).__init__(TheNetherlands.id, TheNetherlands.name)
+        super(TheNetherlands, self).__init__(
+            TheNetherlands.id,
+            TheNetherlands.name,
+            TheNetherlands.shortname
+        )
 
 
 class Belgium(Country):
     id = 11
     name = "Belgium"
+    shortname = "BEL"
 
     class Vehicle:
 
@@ -4945,12 +5001,17 @@ class Belgium(Country):
     }
 
     def __init__(self):
-        super(Belgium, self).__init__(Belgium.id, Belgium.name)
+        super(Belgium, self).__init__(
+            Belgium.id,
+            Belgium.name,
+            Belgium.shortname
+        )
 
 
 class Norway(Country):
     id = 12
     name = "Norway"
+    shortname = "NOR"
 
     class Vehicle:
 
@@ -5265,12 +5326,17 @@ class Norway(Country):
     }
 
     def __init__(self):
-        super(Norway, self).__init__(Norway.id, Norway.name)
+        super(Norway, self).__init__(
+            Norway.id,
+            Norway.name,
+            Norway.shortname
+        )
 
 
 class Denmark(Country):
     id = 13
     name = "Denmark"
+    shortname = "DEN"
 
     class Vehicle:
 
@@ -5580,12 +5646,17 @@ class Denmark(Country):
     }
 
     def __init__(self):
-        super(Denmark, self).__init__(Denmark.id, Denmark.name)
+        super(Denmark, self).__init__(
+            Denmark.id,
+            Denmark.name,
+            Denmark.shortname
+        )
 
 
 class Israel(Country):
     id = 15
     name = "Israel"
+    shortname = "ISR"
 
     class Vehicle:
 
@@ -5930,17 +6001,22 @@ class Israel(Country):
     }
 
     def __init__(self):
-        super(Israel, self).__init__(Israel.id, Israel.name)
+        super(Israel, self).__init__(
+            Israel.id,
+            Israel.name,
+            Israel.shortname
+        )
 
 
 class Georgia(Country):
     id = 16
     name = "Georgia"
+    shortname = "GRG"
 
     class Vehicle:
 
         class Artillery:
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_Akatsia = vehicles.Artillery.SAU_Akatsia
             SAU_Msta = vehicles.Artillery.SAU_Msta
@@ -5956,8 +6032,8 @@ class Georgia(Country):
             Soldier_RPG = vehicles.Infantry.Soldier_RPG
 
         class AirDefence:
-            _1L13_EWR = vehicles.AirDefence._1L13_EWR
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_1L13_EWR = vehicles.AirDefence.X_1L13_EWR
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Dog_Ear_radar = vehicles.AirDefence.Dog_Ear_radar
             Osa_9A33_ln = vehicles.AirDefence.Osa_9A33_ln
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
@@ -6311,12 +6387,17 @@ class Georgia(Country):
     }
 
     def __init__(self):
-        super(Georgia, self).__init__(Georgia.id, Georgia.name)
+        super(Georgia, self).__init__(
+            Georgia.id,
+            Georgia.name,
+            Georgia.shortname
+        )
 
 
 class Insurgents(Country):
     id = 17
     name = "Insurgents"
+    shortname = "INS"
 
     class Vehicle:
 
@@ -6324,7 +6405,7 @@ class Insurgents(Country):
             SAU_Akatsia = vehicles.Artillery.SAU_Akatsia
             SAU_2_C9 = vehicles.Artillery.SAU_2_C9
             Grad_URAL = vehicles.Artillery.Grad_URAL
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Tt_B8M1 = vehicles.Artillery.Tt_B8M1
             HL_B8M1 = vehicles.Artillery.HL_B8M1
 
@@ -6553,17 +6634,22 @@ class Insurgents(Country):
     }
 
     def __init__(self):
-        super(Insurgents, self).__init__(Insurgents.id, Insurgents.name)
+        super(Insurgents, self).__init__(
+            Insurgents.id,
+            Insurgents.name,
+            Insurgents.shortname
+        )
 
 
 class Abkhazia(Country):
     id = 18
     name = "Abkhazia"
+    shortname = "ABH"
 
     class Vehicle:
 
         class Artillery:
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_2_C9 = vehicles.Artillery.SAU_2_C9
             SAU_Akatsia = vehicles.Artillery.SAU_Akatsia
@@ -6577,7 +6663,7 @@ class Abkhazia(Country):
             Soldier_RPG = vehicles.Infantry.Soldier_RPG
 
         class AirDefence:
-            _2S6_Tunguska = vehicles.AirDefence._2S6_Tunguska
+            X_2S6_Tunguska = vehicles.AirDefence.X_2S6_Tunguska
             Dog_Ear_radar = vehicles.AirDefence.Dog_Ear_radar
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -6823,17 +6909,22 @@ class Abkhazia(Country):
     }
 
     def __init__(self):
-        super(Abkhazia, self).__init__(Abkhazia.id, Abkhazia.name)
+        super(Abkhazia, self).__init__(
+            Abkhazia.id,
+            Abkhazia.name,
+            Abkhazia.shortname
+        )
 
 
 class SouthOssetia(Country):
     id = 19
     name = "South Ossetia"
+    shortname = "RSO"
 
     class Vehicle:
 
         class Artillery:
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_2_C9 = vehicles.Artillery.SAU_2_C9
             SAU_Akatsia = vehicles.Artillery.SAU_Akatsia
@@ -6847,7 +6938,7 @@ class SouthOssetia(Country):
             Soldier_RPG = vehicles.Infantry.Soldier_RPG
 
         class AirDefence:
-            _2S6_Tunguska = vehicles.AirDefence._2S6_Tunguska
+            X_2S6_Tunguska = vehicles.AirDefence.X_2S6_Tunguska
             Osa_9A33_ln = vehicles.AirDefence.Osa_9A33_ln
             SA_18_Igla_comm = vehicles.AirDefence.SA_18_Igla_comm
             SA_18_Igla_manpad = vehicles.AirDefence.SA_18_Igla_manpad
@@ -7068,12 +7159,17 @@ class SouthOssetia(Country):
     }
 
     def __init__(self):
-        super(SouthOssetia, self).__init__(SouthOssetia.id, SouthOssetia.name)
+        super(SouthOssetia, self).__init__(
+            SouthOssetia.id,
+            SouthOssetia.name,
+            SouthOssetia.shortname
+        )
 
 
 class Italy(Country):
     id = 20
     name = "Italy"
+    shortname = "ITA"
 
     class Vehicle:
 
@@ -7081,7 +7177,7 @@ class Italy(Country):
             M_109 = vehicles.Artillery.M_109
             MLRS = vehicles.Artillery.MLRS
             MLRS_FDDM = vehicles.Artillery.MLRS_FDDM
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Tt_B8M1 = vehicles.Artillery.Tt_B8M1
             HL_B8M1 = vehicles.Artillery.HL_B8M1
 
@@ -7399,12 +7495,17 @@ class Italy(Country):
     }
 
     def __init__(self):
-        super(Italy, self).__init__(Italy.id, Italy.name)
+        super(Italy, self).__init__(
+            Italy.id,
+            Italy.name,
+            Italy.shortname
+        )
 
 
 class Australia(Country):
     id = 21
     name = "Australia"
+    shortname = "AUS"
 
     class Vehicle:
 
@@ -7739,12 +7840,17 @@ class Australia(Country):
     }
 
     def __init__(self):
-        super(Australia, self).__init__(Australia.id, Australia.name)
+        super(Australia, self).__init__(
+            Australia.id,
+            Australia.name,
+            Australia.shortname
+        )
 
 
 class Switzerland(Country):
     id = 22
     name = "Switzerland"
+    shortname = "SUI"
 
     class Vehicle:
 
@@ -8033,12 +8139,17 @@ class Switzerland(Country):
     }
 
     def __init__(self):
-        super(Switzerland, self).__init__(Switzerland.id, Switzerland.name)
+        super(Switzerland, self).__init__(
+            Switzerland.id,
+            Switzerland.name,
+            Switzerland.shortname
+        )
 
 
 class Austria(Country):
     id = 23
     name = "Austria"
+    shortname = "AUT"
 
     class Vehicle:
 
@@ -8318,17 +8429,22 @@ class Austria(Country):
     }
 
     def __init__(self):
-        super(Austria, self).__init__(Austria.id, Austria.name)
+        super(Austria, self).__init__(
+            Austria.id,
+            Austria.name,
+            Austria.shortname
+        )
 
 
 class Belarus(Country):
     id = 24
     name = "Belarus"
+    shortname = "BLR"
 
     class Vehicle:
 
         class Artillery:
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_FDDM = vehicles.Artillery.Grad_FDDM
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_2_C9 = vehicles.Artillery.SAU_2_C9
@@ -8349,10 +8465,10 @@ class Belarus(Country):
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
 
         class AirDefence:
-            _1L13_EWR = vehicles.AirDefence._1L13_EWR
-            _2S6_Tunguska = vehicles.AirDefence._2S6_Tunguska
-            _55G6_EWR = vehicles.AirDefence._55G6_EWR
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_1L13_EWR = vehicles.AirDefence.X_1L13_EWR
+            X_2S6_Tunguska = vehicles.AirDefence.X_2S6_Tunguska
+            X_55G6_EWR = vehicles.AirDefence.X_55G6_EWR
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Dog_Ear_radar = vehicles.AirDefence.Dog_Ear_radar
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -8632,17 +8748,22 @@ class Belarus(Country):
     }
 
     def __init__(self):
-        super(Belarus, self).__init__(Belarus.id, Belarus.name)
+        super(Belarus, self).__init__(
+            Belarus.id,
+            Belarus.name,
+            Belarus.shortname
+        )
 
 
 class Bulgaria(Country):
     id = 25
     name = "Bulgaria"
+    shortname = "BGR"
 
     class Vehicle:
 
         class Artillery:
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_Gvozdika = vehicles.Artillery.SAU_Gvozdika
             SAU_Akatsia = vehicles.Artillery.SAU_Akatsia
@@ -8659,7 +8780,7 @@ class Bulgaria(Country):
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
@@ -9014,12 +9135,17 @@ class Bulgaria(Country):
     }
 
     def __init__(self):
-        super(Bulgaria, self).__init__(Bulgaria.id, Bulgaria.name)
+        super(Bulgaria, self).__init__(
+            Bulgaria.id,
+            Bulgaria.name,
+            Bulgaria.shortname
+        )
 
 
 class CzechRepublic(Country):
     id = 26
     name = "Czech Republic"
+    shortname = "CZE"
 
     class Vehicle:
 
@@ -9036,7 +9162,7 @@ class CzechRepublic(Country):
         class AirDefence:
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             Bofors40 = vehicles.AirDefence.Bofors40
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
@@ -9356,12 +9482,17 @@ class CzechRepublic(Country):
     }
 
     def __init__(self):
-        super(CzechRepublic, self).__init__(CzechRepublic.id, CzechRepublic.name)
+        super(CzechRepublic, self).__init__(
+            CzechRepublic.id,
+            CzechRepublic.name,
+            CzechRepublic.shortname
+        )
 
 
 class China(Country):
     id = 27
     name = "China"
+    shortname = "CHN"
 
     class Vehicle:
 
@@ -9621,12 +9752,17 @@ class China(Country):
     }
 
     def __init__(self):
-        super(China, self).__init__(China.id, China.name)
+        super(China, self).__init__(
+            China.id,
+            China.name,
+            China.shortname
+        )
 
 
 class Croatia(Country):
     id = 28
     name = "Croatia"
+    shortname = "HRV"
 
     class Vehicle:
 
@@ -9910,12 +10046,17 @@ class Croatia(Country):
     }
 
     def __init__(self):
-        super(Croatia, self).__init__(Croatia.id, Croatia.name)
+        super(Croatia, self).__init__(
+            Croatia.id,
+            Croatia.name,
+            Croatia.shortname
+        )
 
 
 class Egypt(Country):
     id = 29
     name = "Egypt"
+    shortname = "EGY"
 
     class Vehicle:
 
@@ -9942,7 +10083,7 @@ class Egypt(Country):
             Hawk_ln = vehicles.AirDefence.Hawk_ln
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -10274,12 +10415,17 @@ class Egypt(Country):
     }
 
     def __init__(self):
-        super(Egypt, self).__init__(Egypt.id, Egypt.name)
+        super(Egypt, self).__init__(
+            Egypt.id,
+            Egypt.name,
+            Egypt.shortname
+        )
 
 
 class Finland(Country):
     id = 30
     name = "Finland"
+    shortname = "FIN"
 
     class Vehicle:
 
@@ -10301,7 +10447,7 @@ class Finland(Country):
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             SA_11_Buk_LN_9A310M1 = vehicles.AirDefence.SA_11_Buk_LN_9A310M1
@@ -10628,12 +10774,17 @@ class Finland(Country):
     }
 
     def __init__(self):
-        super(Finland, self).__init__(Finland.id, Finland.name)
+        super(Finland, self).__init__(
+            Finland.id,
+            Finland.name,
+            Finland.shortname
+        )
 
 
 class Greece(Country):
     id = 31
     name = "Greece"
+    shortname = "GRC"
 
     class Vehicle:
 
@@ -10984,17 +11135,22 @@ class Greece(Country):
     }
 
     def __init__(self):
-        super(Greece, self).__init__(Greece.id, Greece.name)
+        super(Greece, self).__init__(
+            Greece.id,
+            Greece.name,
+            Greece.shortname
+        )
 
 
 class Hungary(Country):
     id = 32
     name = "Hungary"
+    shortname = "HUN"
 
     class Vehicle:
 
         class Artillery:
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_Gvozdika = vehicles.Artillery.SAU_Gvozdika
             SAU_Akatsia = vehicles.Artillery.SAU_Akatsia
@@ -11014,7 +11170,7 @@ class Hungary(Country):
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
@@ -11350,12 +11506,17 @@ class Hungary(Country):
     }
 
     def __init__(self):
-        super(Hungary, self).__init__(Hungary.id, Hungary.name)
+        super(Hungary, self).__init__(
+            Hungary.id,
+            Hungary.name,
+            Hungary.shortname
+        )
 
 
 class India(Country):
     id = 33
     name = "India"
+    shortname = "IND"
 
     class Vehicle:
 
@@ -11374,7 +11535,7 @@ class India(Country):
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -11693,12 +11854,17 @@ class India(Country):
     }
 
     def __init__(self):
-        super(India, self).__init__(India.id, India.name)
+        super(India, self).__init__(
+            India.id,
+            India.name,
+            India.shortname
+        )
 
 
 class Iran(Country):
     id = 34
     name = "Iran"
+    shortname = "IRN"
 
     class Vehicle:
 
@@ -12069,17 +12235,22 @@ class Iran(Country):
     }
 
     def __init__(self):
-        super(Iran, self).__init__(Iran.id, Iran.name)
+        super(Iran, self).__init__(
+            Iran.id,
+            Iran.name,
+            Iran.shortname
+        )
 
 
 class Iraq(Country):
     id = 35
     name = "Iraq"
+    shortname = "IRQ"
 
     class Vehicle:
 
         class Artillery:
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_Gvozdika = vehicles.Artillery.SAU_Gvozdika
             SAU_Akatsia = vehicles.Artillery.SAU_Akatsia
@@ -12096,7 +12267,7 @@ class Iraq(Country):
             Roland_Radar = vehicles.AirDefence.Roland_Radar
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -12419,12 +12590,17 @@ class Iraq(Country):
     }
 
     def __init__(self):
-        super(Iraq, self).__init__(Iraq.id, Iraq.name)
+        super(Iraq, self).__init__(
+            Iraq.id,
+            Iraq.name,
+            Iraq.shortname
+        )
 
 
 class Japan(Country):
     id = 36
     name = "Japan"
+    shortname = "JPN"
 
     class Vehicle:
 
@@ -12767,12 +12943,17 @@ class Japan(Country):
     }
 
     def __init__(self):
-        super(Japan, self).__init__(Japan.id, Japan.name)
+        super(Japan, self).__init__(
+            Japan.id,
+            Japan.name,
+            Japan.shortname
+        )
 
 
 class Kazakhstan(Country):
     id = 37
     name = "Kazakhstan"
+    shortname = "KAZ"
 
     class Vehicle:
 
@@ -12785,7 +12966,7 @@ class Kazakhstan(Country):
             Smerch = vehicles.Artillery.Smerch
             SAU_Gvozdika = vehicles.Artillery.SAU_Gvozdika
             Grad_FDDM = vehicles.Artillery.Grad_FDDM
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Smerch_HE = vehicles.Artillery.Smerch_HE
             Tt_B8M1 = vehicles.Artillery.Tt_B8M1
             HL_B8M1 = vehicles.Artillery.HL_B8M1
@@ -12798,8 +12979,8 @@ class Kazakhstan(Country):
             Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
 
         class AirDefence:
-            _1L13_EWR = vehicles.AirDefence._1L13_EWR
-            _55G6_EWR = vehicles.AirDefence._55G6_EWR
+            X_1L13_EWR = vehicles.AirDefence.X_1L13_EWR
+            X_55G6_EWR = vehicles.AirDefence.X_55G6_EWR
             S_300PS_40B6M_tr = vehicles.AirDefence.S_300PS_40B6M_tr
             S_300PS_40B6MD_sr = vehicles.AirDefence.S_300PS_40B6MD_sr
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
@@ -12815,7 +12996,7 @@ class Kazakhstan(Country):
             Strela_10M3 = vehicles.AirDefence.Strela_10M3
             Dog_Ear_radar = vehicles.AirDefence.Dog_Ear_radar
             Tor_9A331 = vehicles.AirDefence.Tor_9A331
-            _2S6_Tunguska = vehicles.AirDefence._2S6_Tunguska
+            X_2S6_Tunguska = vehicles.AirDefence.X_2S6_Tunguska
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             S_300PS_54K6_cp = vehicles.AirDefence.S_300PS_54K6_cp
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
@@ -12823,7 +13004,7 @@ class Kazakhstan(Country):
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
             SA_18_Igla_S_manpad = vehicles.AirDefence.SA_18_Igla_S_manpad
             SA_18_Igla_S_comm = vehicles.AirDefence.SA_18_Igla_S_comm
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             SA_18_Igla_manpad = vehicles.AirDefence.SA_18_Igla_manpad
@@ -13173,12 +13354,17 @@ class Kazakhstan(Country):
     }
 
     def __init__(self):
-        super(Kazakhstan, self).__init__(Kazakhstan.id, Kazakhstan.name)
+        super(Kazakhstan, self).__init__(
+            Kazakhstan.id,
+            Kazakhstan.name,
+            Kazakhstan.shortname
+        )
 
 
 class NorthKorea(Country):
     id = 38
     name = "North Korea"
+    shortname = "PRK"
 
     class Vehicle:
 
@@ -13191,7 +13377,7 @@ class NorthKorea(Country):
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             SA_18_Igla_manpad = vehicles.AirDefence.SA_18_Igla_manpad
             SA_18_Igla_comm = vehicles.AirDefence.SA_18_Igla_comm
@@ -13482,12 +13668,17 @@ class NorthKorea(Country):
     }
 
     def __init__(self):
-        super(NorthKorea, self).__init__(NorthKorea.id, NorthKorea.name)
+        super(NorthKorea, self).__init__(
+            NorthKorea.id,
+            NorthKorea.name,
+            NorthKorea.shortname
+        )
 
 
 class Pakistan(Country):
     id = 39
     name = "Pakistan"
+    shortname = "PAK"
 
     class Vehicle:
 
@@ -13800,18 +13991,23 @@ class Pakistan(Country):
     }
 
     def __init__(self):
-        super(Pakistan, self).__init__(Pakistan.id, Pakistan.name)
+        super(Pakistan, self).__init__(
+            Pakistan.id,
+            Pakistan.name,
+            Pakistan.shortname
+        )
 
 
 class Poland(Country):
     id = 40
     name = "Poland"
+    shortname = "POL"
 
     class Vehicle:
 
         class Artillery:
             SpGH_Dana = vehicles.Artillery.SpGH_Dana
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_Gvozdika = vehicles.Artillery.SAU_Gvozdika
             Tt_B8M1 = vehicles.Artillery.Tt_B8M1
@@ -13827,7 +14023,7 @@ class Poland(Country):
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
@@ -14174,12 +14370,17 @@ class Poland(Country):
     }
 
     def __init__(self):
-        super(Poland, self).__init__(Poland.id, Poland.name)
+        super(Poland, self).__init__(
+            Poland.id,
+            Poland.name,
+            Poland.shortname
+        )
 
 
 class Romania(Country):
     id = 41
     name = "Romania"
+    shortname = "ROU"
 
     class Vehicle:
 
@@ -14199,7 +14400,7 @@ class Romania(Country):
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
@@ -14539,12 +14740,17 @@ class Romania(Country):
     }
 
     def __init__(self):
-        super(Romania, self).__init__(Romania.id, Romania.name)
+        super(Romania, self).__init__(
+            Romania.id,
+            Romania.name,
+            Romania.shortname
+        )
 
 
 class SaudiArabia(Country):
     id = 42
     name = "Saudi Arabia"
+    shortname = "SAU"
 
     class Vehicle:
 
@@ -14872,19 +15078,24 @@ class SaudiArabia(Country):
     }
 
     def __init__(self):
-        super(SaudiArabia, self).__init__(SaudiArabia.id, SaudiArabia.name)
+        super(SaudiArabia, self).__init__(
+            SaudiArabia.id,
+            SaudiArabia.name,
+            SaudiArabia.shortname
+        )
 
 
 class Serbia(Country):
     id = 43
     name = "Serbia"
+    shortname = "SRB"
 
     class Vehicle:
 
         class Artillery:
             SAU_Gvozdika = vehicles.Artillery.SAU_Gvozdika
             Grad_URAL = vehicles.Artillery.Grad_URAL
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Tt_B8M1 = vehicles.Artillery.Tt_B8M1
             HL_B8M1 = vehicles.Artillery.HL_B8M1
 
@@ -14896,7 +15107,7 @@ class Serbia(Country):
             Infantry_AK_ver3 = vehicles.Infantry.Infantry_AK_ver3
 
         class AirDefence:
-            _1L13_EWR = vehicles.AirDefence._1L13_EWR
+            X_1L13_EWR = vehicles.AirDefence.X_1L13_EWR
             SA_11_Buk_SR_9S18M1 = vehicles.AirDefence.SA_11_Buk_SR_9S18M1
             SA_11_Buk_CC_9S470M1 = vehicles.AirDefence.SA_11_Buk_CC_9S470M1
             SA_11_Buk_LN_9A310M1 = vehicles.AirDefence.SA_11_Buk_LN_9A310M1
@@ -14909,7 +15120,7 @@ class Serbia(Country):
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
             SA_18_Igla_S_manpad = vehicles.AirDefence.SA_18_Igla_S_manpad
             SA_18_Igla_S_comm = vehicles.AirDefence.SA_18_Igla_S_comm
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             Bofors40 = vehicles.AirDefence.Bofors40
@@ -15210,12 +15421,17 @@ class Serbia(Country):
     }
 
     def __init__(self):
-        super(Serbia, self).__init__(Serbia.id, Serbia.name)
+        super(Serbia, self).__init__(
+            Serbia.id,
+            Serbia.name,
+            Serbia.shortname
+        )
 
 
 class Slovakia(Country):
     id = 44
     name = "Slovakia"
+    shortname = "SVK"
 
     class Vehicle:
 
@@ -15230,7 +15446,7 @@ class Slovakia(Country):
         class AirDefence:
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -15534,12 +15750,17 @@ class Slovakia(Country):
     }
 
     def __init__(self):
-        super(Slovakia, self).__init__(Slovakia.id, Slovakia.name)
+        super(Slovakia, self).__init__(
+            Slovakia.id,
+            Slovakia.name,
+            Slovakia.shortname
+        )
 
 
 class SouthKorea(Country):
     id = 45
     name = "South Korea"
+    shortname = "KOR"
 
     class Vehicle:
 
@@ -15856,12 +16077,17 @@ class SouthKorea(Country):
     }
 
     def __init__(self):
-        super(SouthKorea, self).__init__(SouthKorea.id, SouthKorea.name)
+        super(SouthKorea, self).__init__(
+            SouthKorea.id,
+            SouthKorea.name,
+            SouthKorea.shortname
+        )
 
 
 class Sweden(Country):
     id = 46
     name = "Sweden"
+    shortname = "SWE"
 
     class Vehicle:
 
@@ -16151,17 +16377,22 @@ class Sweden(Country):
     }
 
     def __init__(self):
-        super(Sweden, self).__init__(Sweden.id, Sweden.name)
+        super(Sweden, self).__init__(
+            Sweden.id,
+            Sweden.name,
+            Sweden.shortname
+        )
 
 
 class Syria(Country):
     id = 47
     name = "Syria"
+    shortname = "SYR"
 
     class Vehicle:
 
         class Artillery:
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Smerch = vehicles.Artillery.Smerch
             Smerch_HE = vehicles.Artillery.Smerch_HE
             Uragan_BM_27 = vehicles.Artillery.Uragan_BM_27
@@ -16182,7 +16413,7 @@ class Syria(Country):
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
@@ -16201,7 +16432,7 @@ class Syria(Country):
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             KS_19 = vehicles.AirDefence.KS_19
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
-            _2S6_Tunguska = vehicles.AirDefence._2S6_Tunguska
+            X_2S6_Tunguska = vehicles.AirDefence.X_2S6_Tunguska
             Strela_10M3 = vehicles.AirDefence.Strela_10M3
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
@@ -16509,12 +16740,17 @@ class Syria(Country):
     }
 
     def __init__(self):
-        super(Syria, self).__init__(Syria.id, Syria.name)
+        super(Syria, self).__init__(
+            Syria.id,
+            Syria.name,
+            Syria.shortname
+        )
 
 
 class Yemen(Country):
     id = 48
     name = "Yemen"
+    shortname = "YEM"
 
     class Vehicle:
 
@@ -16534,7 +16770,7 @@ class Yemen(Country):
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
@@ -16830,12 +17066,17 @@ class Yemen(Country):
     }
 
     def __init__(self):
-        super(Yemen, self).__init__(Yemen.id, Yemen.name)
+        super(Yemen, self).__init__(
+            Yemen.id,
+            Yemen.name,
+            Yemen.shortname
+        )
 
 
 class Vietnam(Country):
     id = 49
     name = "Vietnam"
+    shortname = "VNM"
 
     class Vehicle:
 
@@ -16854,7 +17095,7 @@ class Vietnam(Country):
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
@@ -17163,12 +17404,17 @@ class Vietnam(Country):
     }
 
     def __init__(self):
-        super(Vietnam, self).__init__(Vietnam.id, Vietnam.name)
+        super(Vietnam, self).__init__(
+            Vietnam.id,
+            Vietnam.name,
+            Vietnam.shortname
+        )
 
 
 class Venezuela(Country):
     id = 50
     name = "Venezuela"
+    shortname = "VEN"
 
     class Vehicle:
 
@@ -17177,7 +17423,7 @@ class Venezuela(Country):
             Smerch = vehicles.Artillery.Smerch
             SAU_Msta = vehicles.Artillery.SAU_Msta
             Smerch_HE = vehicles.Artillery.Smerch_HE
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Tt_B8M1 = vehicles.Artillery.Tt_B8M1
             HL_B8M1 = vehicles.Artillery.HL_B8M1
 
@@ -17189,7 +17435,7 @@ class Venezuela(Country):
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
             Roland_ADS = vehicles.AirDefence.Roland_ADS
             Roland_Radar = vehicles.AirDefence.Roland_Radar
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
@@ -17478,12 +17724,17 @@ class Venezuela(Country):
     }
 
     def __init__(self):
-        super(Venezuela, self).__init__(Venezuela.id, Venezuela.name)
+        super(Venezuela, self).__init__(
+            Venezuela.id,
+            Venezuela.name,
+            Venezuela.shortname
+        )
 
 
 class Tunisia(Country):
     id = 51
     name = "Tunisia"
+    shortname = "TUN"
 
     class Vehicle:
 
@@ -17759,12 +18010,17 @@ class Tunisia(Country):
     }
 
     def __init__(self):
-        super(Tunisia, self).__init__(Tunisia.id, Tunisia.name)
+        super(Tunisia, self).__init__(
+            Tunisia.id,
+            Tunisia.name,
+            Tunisia.shortname
+        )
 
 
 class Thailand(Country):
     id = 52
     name = "Thailand"
+    shortname = "THA"
 
     class Vehicle:
 
@@ -18062,12 +18318,17 @@ class Thailand(Country):
     }
 
     def __init__(self):
-        super(Thailand, self).__init__(Thailand.id, Thailand.name)
+        super(Thailand, self).__init__(
+            Thailand.id,
+            Thailand.name,
+            Thailand.shortname
+        )
 
 
 class Sudan(Country):
     id = 53
     name = "Sudan"
+    shortname = "SDN"
 
     class Vehicle:
 
@@ -18367,12 +18628,17 @@ class Sudan(Country):
     }
 
     def __init__(self):
-        super(Sudan, self).__init__(Sudan.id, Sudan.name)
+        super(Sudan, self).__init__(
+            Sudan.id,
+            Sudan.name,
+            Sudan.shortname
+        )
 
 
 class Philippines(Country):
     id = 54
     name = "Philippines"
+    shortname = "PHL"
 
     class Vehicle:
 
@@ -18645,12 +18911,17 @@ class Philippines(Country):
     }
 
     def __init__(self):
-        super(Philippines, self).__init__(Philippines.id, Philippines.name)
+        super(Philippines, self).__init__(
+            Philippines.id,
+            Philippines.name,
+            Philippines.shortname
+        )
 
 
 class Morocco(Country):
     id = 55
     name = "Morocco"
+    shortname = "MAR"
 
     class Vehicle:
 
@@ -18671,7 +18942,7 @@ class Morocco(Country):
             Hawk_pcp = vehicles.AirDefence.Hawk_pcp
             M48_Chaparral = vehicles.AirDefence.M48_Chaparral
             Vulcan = vehicles.AirDefence.Vulcan
-            _2S6_Tunguska = vehicles.AirDefence._2S6_Tunguska
+            X_2S6_Tunguska = vehicles.AirDefence.X_2S6_Tunguska
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             SA_18_Igla_S_manpad = vehicles.AirDefence.SA_18_Igla_S_manpad
             SA_18_Igla_S_comm = vehicles.AirDefence.SA_18_Igla_S_comm
@@ -18966,12 +19237,17 @@ class Morocco(Country):
     }
 
     def __init__(self):
-        super(Morocco, self).__init__(Morocco.id, Morocco.name)
+        super(Morocco, self).__init__(
+            Morocco.id,
+            Morocco.name,
+            Morocco.shortname
+        )
 
 
 class Mexico(Country):
     id = 56
     name = "Mexico"
+    shortname = "MEX"
 
     class Vehicle:
 
@@ -19259,12 +19535,17 @@ class Mexico(Country):
     }
 
     def __init__(self):
-        super(Mexico, self).__init__(Mexico.id, Mexico.name)
+        super(Mexico, self).__init__(
+            Mexico.id,
+            Mexico.name,
+            Mexico.shortname
+        )
 
 
 class Malaysia(Country):
     id = 57
     name = "Malaysia"
+    shortname = "MYS"
 
     class Vehicle:
 
@@ -19551,12 +19832,17 @@ class Malaysia(Country):
     }
 
     def __init__(self):
-        super(Malaysia, self).__init__(Malaysia.id, Malaysia.name)
+        super(Malaysia, self).__init__(
+            Malaysia.id,
+            Malaysia.name,
+            Malaysia.shortname
+        )
 
 
 class Libya(Country):
     id = 58
     name = "Libya"
+    shortname = "LBY"
 
     class Vehicle:
 
@@ -19576,7 +19862,7 @@ class Libya(Country):
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
@@ -19872,12 +20158,17 @@ class Libya(Country):
     }
 
     def __init__(self):
-        super(Libya, self).__init__(Libya.id, Libya.name)
+        super(Libya, self).__init__(
+            Libya.id,
+            Libya.name,
+            Libya.shortname
+        )
 
 
 class Jordan(Country):
     id = 59
     name = "Jordan"
+    shortname = "JOR"
 
     class Vehicle:
 
@@ -20188,12 +20479,17 @@ class Jordan(Country):
     }
 
     def __init__(self):
-        super(Jordan, self).__init__(Jordan.id, Jordan.name)
+        super(Jordan, self).__init__(
+            Jordan.id,
+            Jordan.name,
+            Jordan.shortname
+        )
 
 
 class Indonesia(Country):
     id = 60
     name = "Indonesia"
+    shortname = "IDN"
 
     class Vehicle:
 
@@ -20529,12 +20825,17 @@ class Indonesia(Country):
     }
 
     def __init__(self):
-        super(Indonesia, self).__init__(Indonesia.id, Indonesia.name)
+        super(Indonesia, self).__init__(
+            Indonesia.id,
+            Indonesia.name,
+            Indonesia.shortname
+        )
 
 
 class Honduras(Country):
     id = 61
     name = "Honduras"
+    shortname = "HND"
 
     class Vehicle:
 
@@ -20810,12 +21111,17 @@ class Honduras(Country):
     }
 
     def __init__(self):
-        super(Honduras, self).__init__(Honduras.id, Honduras.name)
+        super(Honduras, self).__init__(
+            Honduras.id,
+            Honduras.name,
+            Honduras.shortname
+        )
 
 
 class Ethiopia(Country):
     id = 62
     name = "Ethiopia"
+    shortname = "ETH"
 
     class Vehicle:
 
@@ -20834,7 +21140,7 @@ class Ethiopia(Country):
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -21120,12 +21426,17 @@ class Ethiopia(Country):
     }
 
     def __init__(self):
-        super(Ethiopia, self).__init__(Ethiopia.id, Ethiopia.name)
+        super(Ethiopia, self).__init__(
+            Ethiopia.id,
+            Ethiopia.name,
+            Ethiopia.shortname
+        )
 
 
 class Chile(Country):
     id = 63
     name = "Chile"
+    shortname = "CHL"
 
     class Vehicle:
 
@@ -21438,12 +21749,17 @@ class Chile(Country):
     }
 
     def __init__(self):
-        super(Chile, self).__init__(Chile.id, Chile.name)
+        super(Chile, self).__init__(
+            Chile.id,
+            Chile.name,
+            Chile.shortname
+        )
 
 
 class Brazil(Country):
     id = 64
     name = "Brazil"
+    shortname = "BRA"
 
     class Vehicle:
 
@@ -21744,12 +22060,17 @@ class Brazil(Country):
     }
 
     def __init__(self):
-        super(Brazil, self).__init__(Brazil.id, Brazil.name)
+        super(Brazil, self).__init__(
+            Brazil.id,
+            Brazil.name,
+            Brazil.shortname
+        )
 
 
 class Bahrain(Country):
     id = 65
     name = "Bahrain"
+    shortname = "BHR"
 
     class Vehicle:
 
@@ -22043,12 +22364,17 @@ class Bahrain(Country):
     }
 
     def __init__(self):
-        super(Bahrain, self).__init__(Bahrain.id, Bahrain.name)
+        super(Bahrain, self).__init__(
+            Bahrain.id,
+            Bahrain.name,
+            Bahrain.shortname
+        )
 
 
 class ThirdReich(Country):
     id = 66
     name = "Third Reich"
+    shortname = "NZG"
 
     class Vehicle:
 
@@ -22351,12 +22677,17 @@ class ThirdReich(Country):
     }
 
     def __init__(self):
-        super(ThirdReich, self).__init__(ThirdReich.id, ThirdReich.name)
+        super(ThirdReich, self).__init__(
+            ThirdReich.id,
+            ThirdReich.name,
+            ThirdReich.shortname
+        )
 
 
 class Yugoslavia(Country):
     id = 67
     name = "Yugoslavia"
+    shortname = "YUG"
 
     class Vehicle:
 
@@ -22370,7 +22701,7 @@ class Yugoslavia(Country):
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
@@ -22589,17 +22920,22 @@ class Yugoslavia(Country):
     }
 
     def __init__(self):
-        super(Yugoslavia, self).__init__(Yugoslavia.id, Yugoslavia.name)
+        super(Yugoslavia, self).__init__(
+            Yugoslavia.id,
+            Yugoslavia.name,
+            Yugoslavia.shortname
+        )
 
 
 class USSR(Country):
     id = 68
     name = "USSR"
+    shortname = "SUN"
 
     class Vehicle:
 
         class Artillery:
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_FDDM = vehicles.Artillery.Grad_FDDM
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_2_C9 = vehicles.Artillery.SAU_2_C9
@@ -22621,10 +22957,10 @@ class USSR(Country):
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
 
         class AirDefence:
-            _1L13_EWR = vehicles.AirDefence._1L13_EWR
-            _2S6_Tunguska = vehicles.AirDefence._2S6_Tunguska
-            _55G6_EWR = vehicles.AirDefence._55G6_EWR
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_1L13_EWR = vehicles.AirDefence.X_1L13_EWR
+            X_2S6_Tunguska = vehicles.AirDefence.X_2S6_Tunguska
+            X_55G6_EWR = vehicles.AirDefence.X_55G6_EWR
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Dog_Ear_radar = vehicles.AirDefence.Dog_Ear_radar
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -22968,12 +23304,17 @@ class USSR(Country):
     }
 
     def __init__(self):
-        super(USSR, self).__init__(USSR.id, USSR.name)
+        super(USSR, self).__init__(
+            USSR.id,
+            USSR.name,
+            USSR.shortname
+        )
 
 
 class ItalianSocialRepublic(Country):
     id = 69
     name = "Italian Social Republic"
+    shortname = "RSI"
 
     class Vehicle:
 
@@ -23274,17 +23615,22 @@ class ItalianSocialRepublic(Country):
     }
 
     def __init__(self):
-        super(ItalianSocialRepublic, self).__init__(ItalianSocialRepublic.id, ItalianSocialRepublic.name)
+        super(ItalianSocialRepublic, self).__init__(
+            ItalianSocialRepublic.id,
+            ItalianSocialRepublic.name,
+            ItalianSocialRepublic.shortname
+        )
 
 
 class Algeria(Country):
     id = 70
     name = "Algeria"
+    shortname = "DZA"
 
     class Vehicle:
 
         class Artillery:
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_FDDM = vehicles.Artillery.Grad_FDDM
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_Akatsia = vehicles.Artillery.SAU_Akatsia
@@ -23302,9 +23648,9 @@ class Algeria(Country):
             Paratrooper_RPG_16 = vehicles.Infantry.Paratrooper_RPG_16
 
         class AirDefence:
-            _1L13_EWR = vehicles.AirDefence._1L13_EWR
-            _55G6_EWR = vehicles.AirDefence._55G6_EWR
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_1L13_EWR = vehicles.AirDefence.X_1L13_EWR
+            X_55G6_EWR = vehicles.AirDefence.X_55G6_EWR
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Dog_Ear_radar = vehicles.AirDefence.Dog_Ear_radar
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -23691,12 +24037,17 @@ class Algeria(Country):
     }
 
     def __init__(self):
-        super(Algeria, self).__init__(Algeria.id, Algeria.name)
+        super(Algeria, self).__init__(
+            Algeria.id,
+            Algeria.name,
+            Algeria.shortname
+        )
 
 
 class Kuwait(Country):
     id = 71
     name = "Kuwait"
+    shortname = "KWT"
 
     class Vehicle:
 
@@ -24001,12 +24352,17 @@ class Kuwait(Country):
     }
 
     def __init__(self):
-        super(Kuwait, self).__init__(Kuwait.id, Kuwait.name)
+        super(Kuwait, self).__init__(
+            Kuwait.id,
+            Kuwait.name,
+            Kuwait.shortname
+        )
 
 
 class Qatar(Country):
     id = 72
     name = "Qatar"
+    shortname = "QAT"
 
     class Vehicle:
 
@@ -24300,12 +24656,17 @@ class Qatar(Country):
     }
 
     def __init__(self):
-        super(Qatar, self).__init__(Qatar.id, Qatar.name)
+        super(Qatar, self).__init__(
+            Qatar.id,
+            Qatar.name,
+            Qatar.shortname
+        )
 
 
 class Oman(Country):
     id = 73
     name = "Oman"
+    shortname = "OMN"
 
     class Vehicle:
 
@@ -24620,12 +24981,17 @@ class Oman(Country):
     }
 
     def __init__(self):
-        super(Oman, self).__init__(Oman.id, Oman.name)
+        super(Oman, self).__init__(
+            Oman.id,
+            Oman.name,
+            Oman.shortname
+        )
 
 
 class UnitedArabEmirates(Country):
     id = 74
     name = "United Arab Emirates"
+    shortname = "ARE"
 
     class Vehicle:
 
@@ -24949,12 +25315,17 @@ class UnitedArabEmirates(Country):
     }
 
     def __init__(self):
-        super(UnitedArabEmirates, self).__init__(UnitedArabEmirates.id, UnitedArabEmirates.name)
+        super(UnitedArabEmirates, self).__init__(
+            UnitedArabEmirates.id,
+            UnitedArabEmirates.name,
+            UnitedArabEmirates.shortname
+        )
 
 
 class SouthAfrica(Country):
     id = 75
     name = "South Africa"
+    shortname = "RSA"
 
     class Vehicle:
 
@@ -25241,19 +25612,24 @@ class SouthAfrica(Country):
     }
 
     def __init__(self):
-        super(SouthAfrica, self).__init__(SouthAfrica.id, SouthAfrica.name)
+        super(SouthAfrica, self).__init__(
+            SouthAfrica.id,
+            SouthAfrica.name,
+            SouthAfrica.shortname
+        )
 
 
 class Cuba(Country):
     id = 76
     name = "Cuba"
+    shortname = "CUB"
 
     class Vehicle:
 
         class Artillery:
             SAU_Gvozdika = vehicles.Artillery.SAU_Gvozdika
             Grad_URAL = vehicles.Artillery.Grad_URAL
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             SAU_Akatsia = vehicles.Artillery.SAU_Akatsia
             Tt_B8M1 = vehicles.Artillery.Tt_B8M1
             HL_B8M1 = vehicles.Artillery.HL_B8M1
@@ -25272,7 +25648,7 @@ class Cuba(Country):
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
             SA_18_Igla_S_manpad = vehicles.AirDefence.SA_18_Igla_S_manpad
             SA_18_Igla_S_comm = vehicles.AirDefence.SA_18_Igla_S_comm
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
@@ -25602,12 +25978,17 @@ class Cuba(Country):
     }
 
     def __init__(self):
-        super(Cuba, self).__init__(Cuba.id, Cuba.name)
+        super(Cuba, self).__init__(
+            Cuba.id,
+            Cuba.name,
+            Cuba.shortname
+        )
 
 
 class Portugal(Country):
     id = 77
     name = "Portugal"
+    shortname = "PRT"
 
     class Vehicle:
 
@@ -25902,17 +26283,22 @@ class Portugal(Country):
     }
 
     def __init__(self):
-        super(Portugal, self).__init__(Portugal.id, Portugal.name)
+        super(Portugal, self).__init__(
+            Portugal.id,
+            Portugal.name,
+            Portugal.shortname
+        )
 
 
 class GDR(Country):
     id = 78
     name = "GDR"
+    shortname = "GDR"
 
     class Vehicle:
 
         class Artillery:
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_Gvozdika = vehicles.Artillery.SAU_Gvozdika
             SAU_Akatsia = vehicles.Artillery.SAU_Akatsia
@@ -25929,7 +26315,7 @@ class GDR(Country):
             SNR_75V = vehicles.AirDefence.SNR_75V
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
@@ -26236,12 +26622,17 @@ class GDR(Country):
     }
 
     def __init__(self):
-        super(GDR, self).__init__(GDR.id, GDR.name)
+        super(GDR, self).__init__(
+            GDR.id,
+            GDR.name,
+            GDR.shortname
+        )
 
 
 class Lebanon(Country):
     id = 79
     name = "Lebanon"
+    shortname = "LBN"
 
     class Vehicle:
 
@@ -26549,12 +26940,17 @@ class Lebanon(Country):
     }
 
     def __init__(self):
-        super(Lebanon, self).__init__(Lebanon.id, Lebanon.name)
+        super(Lebanon, self).__init__(
+            Lebanon.id,
+            Lebanon.name,
+            Lebanon.shortname
+        )
 
 
 class CombinedJointTaskForcesBlue(Country):
     id = 80
     name = "Combined Joint Task Forces Blue"
+    shortname = "BLUE"
 
     class Vehicle:
 
@@ -26562,7 +26958,7 @@ class CombinedJointTaskForcesBlue(Country):
             Wespe124 = vehicles.Artillery.Wespe124
             Pak40 = vehicles.Artillery.Pak40
             LeFH_18_40_105 = vehicles.Artillery.LeFH_18_40_105
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_FDDM = vehicles.Artillery.Grad_FDDM
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_2_C9 = vehicles.Artillery.SAU_2_C9
@@ -26611,10 +27007,10 @@ class CombinedJointTaskForcesBlue(Country):
             Flak41 = vehicles.AirDefence.Flak41
             FuMG_401 = vehicles.AirDefence.FuMG_401
             FuSe_65 = vehicles.AirDefence.FuSe_65
-            _1L13_EWR = vehicles.AirDefence._1L13_EWR
-            _2S6_Tunguska = vehicles.AirDefence._2S6_Tunguska
-            _55G6_EWR = vehicles.AirDefence._55G6_EWR
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_1L13_EWR = vehicles.AirDefence.X_1L13_EWR
+            X_2S6_Tunguska = vehicles.AirDefence.X_2S6_Tunguska
+            X_55G6_EWR = vehicles.AirDefence.X_55G6_EWR
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Dog_Ear_radar = vehicles.AirDefence.Dog_Ear_radar
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -27332,12 +27728,17 @@ class CombinedJointTaskForcesBlue(Country):
     }
 
     def __init__(self):
-        super(CombinedJointTaskForcesBlue, self).__init__(CombinedJointTaskForcesBlue.id, CombinedJointTaskForcesBlue.name)
+        super(CombinedJointTaskForcesBlue, self).__init__(
+            CombinedJointTaskForcesBlue.id,
+            CombinedJointTaskForcesBlue.name,
+            CombinedJointTaskForcesBlue.shortname
+        )
 
 
 class CombinedJointTaskForcesRed(Country):
     id = 81
     name = "Combined Joint Task Forces Red"
+    shortname = "RED"
 
     class Vehicle:
 
@@ -27345,7 +27746,7 @@ class CombinedJointTaskForcesRed(Country):
             Wespe124 = vehicles.Artillery.Wespe124
             Pak40 = vehicles.Artillery.Pak40
             LeFH_18_40_105 = vehicles.Artillery.LeFH_18_40_105
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_FDDM = vehicles.Artillery.Grad_FDDM
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_2_C9 = vehicles.Artillery.SAU_2_C9
@@ -27394,10 +27795,10 @@ class CombinedJointTaskForcesRed(Country):
             Flak41 = vehicles.AirDefence.Flak41
             FuMG_401 = vehicles.AirDefence.FuMG_401
             FuSe_65 = vehicles.AirDefence.FuSe_65
-            _1L13_EWR = vehicles.AirDefence._1L13_EWR
-            _2S6_Tunguska = vehicles.AirDefence._2S6_Tunguska
-            _55G6_EWR = vehicles.AirDefence._55G6_EWR
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_1L13_EWR = vehicles.AirDefence.X_1L13_EWR
+            X_2S6_Tunguska = vehicles.AirDefence.X_2S6_Tunguska
+            X_55G6_EWR = vehicles.AirDefence.X_55G6_EWR
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Dog_Ear_radar = vehicles.AirDefence.Dog_Ear_radar
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -28115,12 +28516,17 @@ class CombinedJointTaskForcesRed(Country):
     }
 
     def __init__(self):
-        super(CombinedJointTaskForcesRed, self).__init__(CombinedJointTaskForcesRed.id, CombinedJointTaskForcesRed.name)
+        super(CombinedJointTaskForcesRed, self).__init__(
+            CombinedJointTaskForcesRed.id,
+            CombinedJointTaskForcesRed.name,
+            CombinedJointTaskForcesRed.shortname
+        )
 
 
 class UnitedNationsPeacekeepers(Country):
     id = 82
     name = "United Nations Peacekeepers"
+    shortname = "UN"
 
     class Vehicle:
 
@@ -28128,7 +28534,7 @@ class UnitedNationsPeacekeepers(Country):
             Wespe124 = vehicles.Artillery.Wespe124
             Pak40 = vehicles.Artillery.Pak40
             LeFH_18_40_105 = vehicles.Artillery.LeFH_18_40_105
-            _2B11_mortar = vehicles.Artillery._2B11_mortar
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
             Grad_FDDM = vehicles.Artillery.Grad_FDDM
             Grad_URAL = vehicles.Artillery.Grad_URAL
             SAU_2_C9 = vehicles.Artillery.SAU_2_C9
@@ -28177,10 +28583,10 @@ class UnitedNationsPeacekeepers(Country):
             Flak41 = vehicles.AirDefence.Flak41
             FuMG_401 = vehicles.AirDefence.FuMG_401
             FuSe_65 = vehicles.AirDefence.FuSe_65
-            _1L13_EWR = vehicles.AirDefence._1L13_EWR
-            _2S6_Tunguska = vehicles.AirDefence._2S6_Tunguska
-            _55G6_EWR = vehicles.AirDefence._55G6_EWR
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_1L13_EWR = vehicles.AirDefence.X_1L13_EWR
+            X_2S6_Tunguska = vehicles.AirDefence.X_2S6_Tunguska
+            X_55G6_EWR = vehicles.AirDefence.X_55G6_EWR
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             Dog_Ear_radar = vehicles.AirDefence.Dog_Ear_radar
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
@@ -28898,12 +29304,17 @@ class UnitedNationsPeacekeepers(Country):
     }
 
     def __init__(self):
-        super(UnitedNationsPeacekeepers, self).__init__(UnitedNationsPeacekeepers.id, UnitedNationsPeacekeepers.name)
+        super(UnitedNationsPeacekeepers, self).__init__(
+            UnitedNationsPeacekeepers.id,
+            UnitedNationsPeacekeepers.name,
+            UnitedNationsPeacekeepers.shortname
+        )
 
 
 class Argentina(Country):
     id = 83
     name = "Argentina"
+    shortname = "ARG"
 
     class Vehicle:
 
@@ -29195,12 +29606,17 @@ class Argentina(Country):
     }
 
     def __init__(self):
-        super(Argentina, self).__init__(Argentina.id, Argentina.name)
+        super(Argentina, self).__init__(
+            Argentina.id,
+            Argentina.name,
+            Argentina.shortname
+        )
 
 
 class Cyprus(Country):
     id = 84
     name = "Cyprus"
+    shortname = "CYP"
 
     class Vehicle:
 
@@ -29499,12 +29915,17 @@ class Cyprus(Country):
     }
 
     def __init__(self):
-        super(Cyprus, self).__init__(Cyprus.id, Cyprus.name)
+        super(Cyprus, self).__init__(
+            Cyprus.id,
+            Cyprus.name,
+            Cyprus.shortname
+        )
 
 
 class Slovenia(Country):
     id = 85
     name = "Slovenia"
+    shortname = "SVN"
 
     class Vehicle:
 
@@ -29802,12 +30223,17 @@ class Slovenia(Country):
     }
 
     def __init__(self):
-        super(Slovenia, self).__init__(Slovenia.id, Slovenia.name)
+        super(Slovenia, self).__init__(
+            Slovenia.id,
+            Slovenia.name,
+            Slovenia.shortname
+        )
 
 
 class Bolivia(Country):
     id = 86
     name = "Bolivia"
+    shortname = "BOL"
 
     class Vehicle:
 
@@ -30105,12 +30531,17 @@ class Bolivia(Country):
     }
 
     def __init__(self):
-        super(Bolivia, self).__init__(Bolivia.id, Bolivia.name)
+        super(Bolivia, self).__init__(
+            Bolivia.id,
+            Bolivia.name,
+            Bolivia.shortname
+        )
 
 
 class Ghana(Country):
     id = 87
     name = "Ghana"
+    shortname = "GHA"
 
     class Vehicle:
 
@@ -30392,12 +30823,17 @@ class Ghana(Country):
     }
 
     def __init__(self):
-        super(Ghana, self).__init__(Ghana.id, Ghana.name)
+        super(Ghana, self).__init__(
+            Ghana.id,
+            Ghana.name,
+            Ghana.shortname
+        )
 
 
 class Nigeria(Country):
     id = 88
     name = "Nigeria"
+    shortname = "NGA"
 
     class Vehicle:
 
@@ -30692,12 +31128,17 @@ class Nigeria(Country):
     }
 
     def __init__(self):
-        super(Nigeria, self).__init__(Nigeria.id, Nigeria.name)
+        super(Nigeria, self).__init__(
+            Nigeria.id,
+            Nigeria.name,
+            Nigeria.shortname
+        )
 
 
 class Peru(Country):
     id = 89
     name = "Peru"
+    shortname = "PER"
 
     class Vehicle:
 
@@ -30717,7 +31158,7 @@ class Peru(Country):
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             SA_18_Igla_S_comm = vehicles.AirDefence.SA_18_Igla_S_comm
             SA_18_Igla_S_manpad = vehicles.AirDefence.SA_18_Igla_S_manpad
-            _5p73_s_125_ln = vehicles.AirDefence._5p73_s_125_ln
+            X_5p73_s_125_ln = vehicles.AirDefence.X_5p73_s_125_ln
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             Snr_s_125_tr = vehicles.AirDefence.Snr_s_125_tr
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
@@ -31007,7 +31448,11 @@ class Peru(Country):
     }
 
     def __init__(self):
-        super(Peru, self).__init__(Peru.id, Peru.name)
+        super(Peru, self).__init__(
+            Peru.id,
+            Peru.name,
+            Peru.shortname
+        )
 
 
 country_dict = {

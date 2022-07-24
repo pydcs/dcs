@@ -510,7 +510,7 @@ class Fortification:
         shape_name = "Nodding_Donkey"
         rate = 3
 
-    class _345_Excavator(unittype.StaticType):
+    class X_345_Excavator(unittype.StaticType):
         id = "345 Excavator"
         name = "Excavator"
         shape_name = "cat_345l"
@@ -781,7 +781,7 @@ fortification_map = {
     "billboard_motorized": Fortification.Billboard_motorized,
     "Stanley_LightHouse": Fortification.Stanley_LightHouse,
     "Nodding_Donkey": Fortification.Nodding_Donkey,
-    "345 Excavator": Fortification._345_Excavator,
+    "345 Excavator": Fortification.X_345_Excavator,
     "Tower Crane": Fortification.Tower_Crane,
     "Small_LightHouse": Fortification.Small_LightHouse,
     "Ski Ramp": Fortification.Ski_Ramp,

@@ -7,3 +7,6 @@ pydcs.egg-info/
 doc/_*
 venv/
 /export.log
+
+# Generated stubs
+dcs/liveries_scanner.pyi
