@@ -1484,7 +1484,7 @@ class Mission:
                          name: str,
                          patrol_type: Type[planes.PlaneType],
                          airport: terrain_.Airport,
-                         zone: triggers.TriggerZone,
+                         zone: triggers.TriggerZoneCircular,
                          late_activation=True,
                          start_type: StartType = StartType.Cold,
                          speed=600,

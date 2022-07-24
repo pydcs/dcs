@@ -3,6 +3,7 @@ import time
 import unittest
 from pathlib import Path
 import zipfile
+import math
 
 import dcs
 from dcs.terrain.caucasus import Caucasus
@@ -740,3 +741,40 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(m2.pictureFileNameB[0], reskey_b.key)
         self.assertEqual(len(m2.pictureFileNameR), 1)
         self.assertEqual(m2.pictureFileNameR[0], reskey_r.key)
+
+    def test_create_quad_point_zone(self):
+        caucasus = dcs.terrain.Caucasus()
+        m = dcs.mission.Mission(terrain=caucasus)
+
+        # Create a quad trigger zone centered at Sukhumi with a diamond pattern
+        #   /\
+        #  /  \
+        #  \  /
+        #   \/
+        zone_center: dcs.mapping.Point = caucasus.sukhumi_babushara().position
+        ZONE_RADIUS_M = 10000.0
+        offsets = [(ZONE_RADIUS_M, 0.0), (0.0, ZONE_RADIUS_M),
+                   (-ZONE_RADIUS_M, 0.0), (0.0, -ZONE_RADIUS_M)]
+        offsets = [dcs.mapping.Vector2(*o) for o in offsets]
+        verts = [zone_center + o for o in offsets]
+        m.triggers.add_triggerzone_quad(zone_center, verts, False, "quad zone")
+        print(m.triggers.zones())
+        m.save('missions/test_quad_trigger_zone.miz')
+
+        m2 = dcs.mission.Mission()
+        self.assertEqual(
+            0, len(m2.load_file('missions/test_quad_trigger_zone.miz')))
+        zone = m2.triggers.zones()[0]
+        self.assertEqual(m2.terrain.__class__, dcs.terrain.Caucasus)
+        self.assertTrue(isinstance(zone, dcs.triggers.TriggerZone))
+        self.assertTrue(type(zone) == dcs.triggers.TriggerZoneQuadPoint)
+
+        def distance(p1: dcs.mapping.Point, p2: dcs.mapping.Point) -> float:
+            p = p1 - p2
+            return math.sqrt(p.x**2 + p.y**2)
+
+        sukhmi: dcs.mapping.Point = caucasus.sukhumi_babushara().position
+        self.assertTrue(
+            all(
+                distance(sukhmi, v) <= ZONE_RADIUS_M + 0.001
+                for v in zone.verticies))
