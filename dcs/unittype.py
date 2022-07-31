@@ -175,5 +175,5 @@ class FlyingType(UnitType):
         else:
             liveries = sorted(filter(lambda x: x.valid_for_country(country_name), cls.Liveries))
             if liveries:
-                return liveries[0].name
+                return liveries[0].id
         return ""
