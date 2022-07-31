@@ -437,7 +437,7 @@ class Terrain:
         (-2, 14),
         (-4, 12)
     ]
-    assert(len(temperature) == 12)
+    assert len(temperature) == 12
 
     def __init__(
         self, name: str,
