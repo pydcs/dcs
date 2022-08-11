@@ -1054,8 +1054,8 @@ class USA(Country):
         Mirage_F1M_CE = planes.Mirage_F1M_CE
         Mirage_F1CR = planes.Mirage_F1CR
         Mirage_F1CT = planes.Mirage_F1CT
-        Mirage_F1BE = planes.Mirage_F1BE
         Mirage_F1B = planes.Mirage_F1B
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -1128,8 +1128,8 @@ class USA(Country):
         Plane.Mirage_F1M_CE,
         Plane.Mirage_F1CR,
         Plane.Mirage_F1CT,
-        Plane.Mirage_F1BE,
         Plane.Mirage_F1B,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -2173,9 +2173,9 @@ class France(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        Mirage_F1C = planes.Mirage_F1C
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1C_200 = planes.Mirage_F1C_200
-        Mirage_F1C = planes.Mirage_F1C
         Mirage_F1CR = planes.Mirage_F1CR
         Mirage_F1CT = planes.Mirage_F1CT
         Mirage_F1B = planes.Mirage_F1B
@@ -2225,9 +2225,9 @@ class France(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.Mirage_F1C,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1C_200,
-        Plane.Mirage_F1C,
         Plane.Mirage_F1CR,
         Plane.Mirage_F1CT,
         Plane.Mirage_F1B,
@@ -2959,6 +2959,7 @@ class USAFAggressors(Country):
             Gepard = vehicles.AirDefence.Gepard
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
+            HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
             Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
 
@@ -3235,8 +3236,8 @@ class USAFAggressors(Country):
         KC_135 = planes.KC_135
         E_2C = planes.E_2C
         MiG_29G = planes.MiG_29G
-        Mirage_F1C_200 = planes.Mirage_F1C_200
         Mirage_F1C = planes.Mirage_F1C
+        Mirage_F1C_200 = planes.Mirage_F1C_200
         Mirage_F1CR = planes.Mirage_F1CR
         Mirage_F1CT = planes.Mirage_F1CT
         Mirage_F1B = planes.Mirage_F1B
@@ -3359,8 +3360,8 @@ class USAFAggressors(Country):
         Plane.KC_135,
         Plane.E_2C,
         Plane.MiG_29G,
-        Plane.Mirage_F1C_200,
         Plane.Mirage_F1C,
+        Plane.Mirage_F1C_200,
         Plane.Mirage_F1CR,
         Plane.Mirage_F1CT,
         Plane.Mirage_F1B,
@@ -9527,6 +9528,7 @@ class China(Country):
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -13706,6 +13708,7 @@ class Pakistan(Country):
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -23685,6 +23688,7 @@ class Algeria(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
+            HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
 
         class Fortification:
@@ -27089,6 +27093,7 @@ class CombinedJointTaskForcesBlue(Country):
             Gepard = vehicles.AirDefence.Gepard
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
+            HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
             Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
 
@@ -27364,8 +27369,8 @@ class CombinedJointTaskForcesBlue(Country):
         KC_135 = planes.KC_135
         E_2C = planes.E_2C
         MiG_29G = planes.MiG_29G
-        Mirage_F1C_200 = planes.Mirage_F1C_200
         Mirage_F1C = planes.Mirage_F1C
+        Mirage_F1C_200 = planes.Mirage_F1C_200
         Mirage_F1CR = planes.Mirage_F1CR
         Mirage_F1CT = planes.Mirage_F1CT
         Mirage_F1B = planes.Mirage_F1B
@@ -27488,8 +27493,8 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.KC_135,
         Plane.E_2C,
         Plane.MiG_29G,
-        Plane.Mirage_F1C_200,
         Plane.Mirage_F1C,
+        Plane.Mirage_F1C_200,
         Plane.Mirage_F1CR,
         Plane.Mirage_F1CT,
         Plane.Mirage_F1B,
@@ -27877,6 +27882,7 @@ class CombinedJointTaskForcesRed(Country):
             Gepard = vehicles.AirDefence.Gepard
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
+            HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
             Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
 
@@ -28152,8 +28158,8 @@ class CombinedJointTaskForcesRed(Country):
         KC_135 = planes.KC_135
         E_2C = planes.E_2C
         MiG_29G = planes.MiG_29G
-        Mirage_F1C_200 = planes.Mirage_F1C_200
         Mirage_F1C = planes.Mirage_F1C
+        Mirage_F1C_200 = planes.Mirage_F1C_200
         Mirage_F1CR = planes.Mirage_F1CR
         Mirage_F1CT = planes.Mirage_F1CT
         Mirage_F1B = planes.Mirage_F1B
@@ -28276,8 +28282,8 @@ class CombinedJointTaskForcesRed(Country):
         Plane.KC_135,
         Plane.E_2C,
         Plane.MiG_29G,
-        Plane.Mirage_F1C_200,
         Plane.Mirage_F1C,
+        Plane.Mirage_F1C_200,
         Plane.Mirage_F1CR,
         Plane.Mirage_F1CT,
         Plane.Mirage_F1B,
@@ -28665,6 +28671,7 @@ class UnitedNationsPeacekeepers(Country):
             Gepard = vehicles.AirDefence.Gepard
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
+            HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
             Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
 
@@ -28940,8 +28947,8 @@ class UnitedNationsPeacekeepers(Country):
         KC_135 = planes.KC_135
         E_2C = planes.E_2C
         MiG_29G = planes.MiG_29G
-        Mirage_F1C_200 = planes.Mirage_F1C_200
         Mirage_F1C = planes.Mirage_F1C
+        Mirage_F1C_200 = planes.Mirage_F1C_200
         Mirage_F1CR = planes.Mirage_F1CR
         Mirage_F1CT = planes.Mirage_F1CT
         Mirage_F1B = planes.Mirage_F1B
@@ -29064,8 +29071,8 @@ class UnitedNationsPeacekeepers(Country):
         Plane.KC_135,
         Plane.E_2C,
         Plane.MiG_29G,
-        Plane.Mirage_F1C_200,
         Plane.Mirage_F1C,
+        Plane.Mirage_F1C_200,
         Plane.Mirage_F1CR,
         Plane.Mirage_F1CT,
         Plane.Mirage_F1B,
