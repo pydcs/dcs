@@ -1,4 +1,5 @@
 import json
+import logging
 import os
 import re
 import zipfile
@@ -288,10 +289,13 @@ class Liveries:
                 setattr(Liveries, safe_name(unit), Liveries.map[unit])
             for livery in os.listdir(liveries_path):
                 livery_path = os.path.join(liveries_path, livery)
-                if os.path.isdir(livery_path):
-                    Liveries.scan_lua_description(livery_path, unit)
-                elif os.path.isfile(livery_path) and ".zip" in livery_path:
-                    Liveries.scan_zip_file(livery_path, unit)
+                try:
+                    if os.path.isdir(livery_path):
+                        Liveries.scan_lua_description(livery_path, unit)
+                    elif os.path.isfile(livery_path) and ".zip" in livery_path:
+                        Liveries.scan_zip_file(livery_path, unit)
+                except UnicodeDecodeError:
+                    logging.exception(f"Failed to load livery from {livery_path}")
 
     @staticmethod
     def scan_mods_path(path: str) -> None:
