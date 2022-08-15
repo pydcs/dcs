@@ -393,34 +393,34 @@ if __name__ == "__main__":
     # # for some reason 'Liveries' in the current scope is a different object
     #
     # f18 = FA_18C_hornet()
-    # print(f18.livery_name, sorted(f18.Liveries))
+    # print(f18.livery_name, sorted(f18.Liveries()))
     # print(f18.default_livery("CAN"))
     # print(f18.default_livery("ISR"))
     # print(f18.default_livery("USA"))
     #
     # f14 = F_14B()
-    # print(f14.livery_name, sorted(f14.Liveries))
+    # print(f14.livery_name, sorted(f14.Liveries()))
     # print(f14.default_livery("USA"))
     # print(f14.default_livery("IRN"))
     # print(f14.default_livery("GRC"))
     # print(f14.default_livery("POL"))
     #
     # f15 = F_15E()
-    # print(f15.livery_name, sorted(f15.Liveries))
+    # print(f15.livery_name, sorted(f15.Liveries()))
     # print(f15.default_livery("USA"))
     # print(f15.default_livery("ISR"))
     # print(f15.default_livery("GRC"))
     # print(f15.default_livery("POL"))
     #
     # a10c2 = A_10C_2()
-    # print(a10c2.livery_name, sorted(a10c2.Liveries))
+    # print(a10c2.livery_name, sorted(a10c2.Liveries()))
     # print(a10c2.default_livery("USA"))
     # print(a10c2.default_livery("ISR"))
     # print(a10c2.default_livery("GRC"))
     # print(a10c2.default_livery("POL"))
     #
     # f16 = F_16C_50()
-    # print(f16.livery_name, sorted(f16.Liveries))
+    # print(f16.livery_name, sorted(f16.Liveries()))
     # print(f16.default_livery("USA"))
     # print(f16.default_livery("ISR"))
     # print(f16.default_livery("GRC"))
@@ -428,14 +428,14 @@ if __name__ == "__main__":
     #
     # from helicopters import AH_64D_BLK_II
     # ah64 = AH_64D_BLK_II()
-    # print(ah64.livery_name, sorted(ah64.Liveries))
+    # print(ah64.livery_name, sorted(ah64.Liveries()))
     # print(ah64.default_livery("USA"))
     # print(ah64.default_livery("ISR"))
     #
     # print(Liveries.A_10A)
-    # print(Liveries.F_16C_50.x14th_Fighter_Squadron)
-    # print(Liveries.F_16C_50.x14th_Fighter_Squadron.order)
-    # print(Liveries.F_16C_50.x14th_Fighter_Squadron.countries)
+    # print(Liveries.F_16C_50.x_14th_Fighter_Squadron)
+    # print(Liveries.F_16C_50.x_14th_Fighter_Squadron.order)
+    # print(Liveries.F_16C_50.x_14th_Fighter_Squadron.countries)
     # print(Liveries.map[Liveries.LEOPARD_2.unit_livery_id])
     #
     # from dcs.liveries_scanner import Livery

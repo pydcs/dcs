@@ -1,5 +1,5 @@
 import dcs.lua as lua
-from dcs.liveries_scanner import LiverySet
+from dcs.liveries_scanner import Liveries, LiverySet
 from dcs.payloads import PayloadDirectories
 import re
 import sys
@@ -84,8 +84,7 @@ class FlyingType(UnitType):
     property_defaults: Optional[Dict[str, Any]] = None
 
     pylons: Set[int] = set()
-    livery_name: Optional[str] = None
-    Liveries: LiverySet = LiverySet()
+    livery_name: str = ""  # Aircraft's liveries folder, e.g.: "A-10C II"
     # Dict from payload name to the DCS payload structure. None if not yet initialized.
     payloads: Optional[Dict[str, Dict[str, Any]]] = None
 
@@ -94,6 +93,10 @@ class FlyingType(UnitType):
 
     _payload_cache = None
     _UnitPayloadGlobals = None
+
+    @classmethod
+    def Liveries(cls) -> LiverySet:
+        return Liveries()[cls.livery_name]
 
     @classmethod
     def scan_payload_dir(cls):
@@ -173,7 +176,7 @@ class FlyingType(UnitType):
         if cls.id + "." + country_name in LiveryOverwrites.map:
             return LiveryOverwrites.map[cls.id + "." + country_name]
         else:
-            liveries = sorted(filter(lambda x: x.valid_for_country(country_name), cls.Liveries))
+            liveries = sorted(filter(lambda x: x.valid_for_country(country_name), cls.Liveries()))
             if liveries:
                 return liveries[0].id
         return ""

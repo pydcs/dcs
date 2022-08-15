@@ -448,11 +448,9 @@ from dcs.liveries_scanner import Liveries
         if plane.livery_entry ~= nil then
             local name = string.upper(plane.livery_entry)
             writeln(file, '    livery_name = "'..name..'"  # from livery_entry')
-            writeln(file, '    Liveries = Liveries()[livery_name]')
         else if plane.type ~= nil then
             local name = string.upper(string.gsub(plane.type, '/', '_'))
             writeln(file, '    livery_name = "'..name..'"  # from type')
-            writeln(file, '    Liveries = Liveries()[livery_name]')
         end end
 
         local pylons = {}
