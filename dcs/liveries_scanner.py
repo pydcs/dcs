@@ -65,10 +65,10 @@ def generate_stub() -> None:
 
 class Livery:
     id: str = ""
-    """ID of the livery, corresponds with the folder-name of the livery."""
+    """ID of the livery, corresponds with the folder-name of the livery. To be used in mission file!"""
 
     name: str = ""
-    """Name of the livery"""
+    """Name of the livery as displayed in DCS"""
 
     order: int = 0
     """Order of the livery used to sort like DCS"""
@@ -235,9 +235,21 @@ class Liveries:
         """
         description_path = os.path.join(path, "description.lua")
         if os.path.exists(description_path):
-            with open(description_path, "r", encoding="utf-8") as file:
-                code = file.read()
-                Liveries.scan_lua_code(code, path, unit)
+            # Known encodings used for description.lua files
+            encodes = ["utf-8", "ansi"]
+            scanned = False
+            for enc in encodes:
+                with open(description_path, "r", encoding=enc) as file:
+                    try:
+                        code = file.read()
+                    except UnicodeDecodeError:
+                        file.close()
+                        continue
+                    Liveries.scan_lua_code(code, path, unit)
+                    scanned = True
+                break
+            if not scanned:
+                logging.warning(f" Unknown encoding found in '{description_path}'")
 
     @staticmethod
     def scan_zip_file(path: str, unit: str) -> None:
@@ -289,13 +301,10 @@ class Liveries:
                 setattr(Liveries, safe_name(unit), Liveries.map[unit])
             for livery in os.listdir(liveries_path):
                 livery_path = os.path.join(liveries_path, livery)
-                try:
-                    if os.path.isdir(livery_path):
-                        Liveries.scan_lua_description(livery_path, unit)
-                    elif os.path.isfile(livery_path) and ".zip" in livery_path:
-                        Liveries.scan_zip_file(livery_path, unit)
-                except UnicodeDecodeError:
-                    logging.exception(f"Failed to load livery from {livery_path}")
+                if os.path.isdir(livery_path):
+                    Liveries.scan_lua_description(livery_path, unit)
+                elif os.path.isfile(livery_path) and ".zip" in livery_path:
+                    Liveries.scan_zip_file(livery_path, unit)
 
     @staticmethod
     def scan_mods_path(path: str) -> None:
