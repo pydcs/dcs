@@ -52,6 +52,7 @@ def generate_stub() -> None:
     if __name__ != "__main__":
         print("Stub should not be generated externally!")
         return
+    Liveries()  # initialize in case that hasn't happened yet.
     with open("liveries_scanner.pyi", 'w', encoding="utf8") as file:
         with open("stub templates/liveries_scanner.pyi", 'r', encoding="utf8") as template:
             file.write(template.read())
