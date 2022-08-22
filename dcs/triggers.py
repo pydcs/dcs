@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import copy
-from typing import TYPE_CHECKING, List, Dict, Any, Tuple
+from typing import TYPE_CHECKING, List, Dict, Any
 from enum import Enum, IntEnum
 
 from dcs import mapping
@@ -18,9 +18,8 @@ class TriggerZoneType(IntEnum):
 
 
 class TriggerZone:
-    def __init__(self, _id, position: mapping.Point, hidden=False, name="", color=None, properties=None, radius=1500):
+    def __init__(self, _id, position: mapping.Point, hidden=False, name="", color=None, properties=None):
         self.id = _id
-        self.radius = radius
         self.position = copy.copy(position)
         self.hidden = hidden
         self.name = name
@@ -34,7 +33,6 @@ class TriggerZone:
             "x": self.position.x,
             "y": self.position.y,
             "zoneId": self.id,
-            "radius": self.radius,
             "color": self.color,
             "properties": self.properties
         }
@@ -42,12 +40,14 @@ class TriggerZone:
 
 class TriggerZoneCircular(TriggerZone):
     def __init__(self, _id, position: mapping.Point, radius=1500, hidden=False, name="", color=None, properties=None):
-        super(TriggerZoneCircular, self).__init__(_id, position, hidden, name, color, properties, radius)
+        super(TriggerZoneCircular, self).__init__(_id, position, hidden, name, color, properties)
         self.type = TriggerZoneType.Circular
+        self.radius = radius
 
     def dict(self):
         d = super(TriggerZoneCircular, self).dict()
         d["type"] = int(self.type)
+        d["radius"] = self.radius
         return d
 
     def __repr__(self):
