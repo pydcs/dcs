@@ -296,6 +296,8 @@ class Polygon:
 
     def point_in_poly(self, point: Point) -> bool:
         """Checks if the given point is within the polygon.
+        If the polygon represents a line/point,
+        the test checks whether the point is on the line/point.
 
         :param point: Point to test
         :return: True if point is within the polygon else False
@@ -307,16 +309,17 @@ class Polygon:
         p1y = self.points[0].y
         for i in range(n + 1):
             p = self.points[i % n]
+            if point == p:
+                return True
             p2x = p.x
             p2y = p.y
-            if point.y > min(p1y, p2y):
-                if point.y <= max(p1y, p2y):
-                    if point.x <= max(p1x, p2x):
-                        xs = 0.0
-                        if p1y != p2y:
-                            xs = (point.y - p1y) * (p2x - p1x) / (p2y - p1y) + p1x
-                        if p1x == p2x or point.x <= xs:
-                            inside = not inside
+            if min(p1y, p2y) < point.y <= max(p1y, p2y):
+                if point.x <= max(p1x, p2x):
+                    xs = 0.0
+                    if p1y != p2y:
+                        xs = (point.y - p1y) * (p2x - p1x) / (p2y - p1y) + p1x
+                    if p1x == p2x or point.x <= xs:
+                        inside = not inside
             p1x, p1y = p2x, p2y
 
         return inside
