@@ -5807,3 +5807,54 @@ class TriggerTests(unittest.TestCase):
                 lua.dumps(action),
                 lua.dumps(r.trig()['funcStartup'][key]),
                 f"FuncStartup nr {key}")
+
+    def test_point_in_zone_quad_trigger(self):
+        m = Mission()
+        m.load_file("tests/missions/QuadTrigger_inZoneTest.miz")
+        blue1 = min(zone for zone in m.triggers.zones() if zone.name == "Blue1")
+        blue2 = min(zone for zone in m.triggers.zones() if zone.name == "Blue2")
+        blue3 = min(zone for zone in m.triggers.zones() if zone.name == "Blue3")
+        blue4 = min(zone for zone in m.triggers.zones() if zone.name == "Blue4")
+        blue5 = min(zone for zone in m.triggers.zones() if zone.name == "Blue5")
+        blue6 = min(zone for zone in m.triggers.zones() if zone.name == "Blue6")
+        blue7 = min(zone for zone in m.triggers.zones() if zone.name == "Blue7")
+        whites = [zone for zone in m.triggers.zones() if zone.color == {1: 1, 2: 1, 3: 1, 4: 0.15}]
+        greens = [zone for zone in m.triggers.zones() if zone.color == {1: 0, 2: 1, 3: 0, 4: 0}]
+        yellows = [zone for zone in m.triggers.zones() if zone.color == {1: 1, 2: 1, 3: 0, 4: 0}]
+        cyans = [zone for zone in m.triggers.zones() if zone.color == {1: 0, 2: 1, 3: 1, 4: 0}]
+        purples = [zone for zone in m.triggers.zones() if zone.color == {1: 0.5, 2: 1, 3: 0.5, 4: 0}]
+        darkgreens = [zone for zone in m.triggers.zones() if zone.color == {1: 0, 2: 0.5, 3: 0, 4: 0}]
+        pinks = [zone for zone in m.triggers.zones() if zone.color == {1: 1, 2: 0, 3: 1, 4: 0}]
+        reds = [zone for zone in m.triggers.zones() if zone.color == {1: 1, 2: 0, 3: 0, 4: 0}]
+        for zone in whites:
+            print(zone.name)
+            self.assertTrue(blue1.is_point_in_zone(zone.position))
+            # other_blues = [
+            #     zone for zone in m.triggers.zones()
+            #     if "Blue" in zone.name and zone.name != "Blue1"
+            # ]
+            # for other in other_blues:
+            #     self.assertFalse(other.is_point_in_zone(zone.position))
+        for zone in greens:
+            print(zone.name)
+            self.assertTrue(blue2.is_point_in_zone(zone.position))
+        for zone in yellows:
+            print(zone.name)
+            self.assertTrue(blue3.is_point_in_zone(zone.position))
+        for zone in cyans:
+            print(zone.name)
+            self.assertTrue(blue4.is_point_in_zone(zone.position))
+        for zone in purples:
+            print(zone.name)
+            self.assertTrue(blue5.is_point_in_zone(zone.position))
+        for zone in darkgreens:
+            print(zone.name)
+            self.assertTrue(blue6.is_point_in_zone(zone.position))
+        for zone in pinks:  # Perfect line between Pink0 and Pink1
+            print(zone.name)
+            self.assertTrue(blue7.is_point_in_zone(zone.position))
+        for zone in reds:  # points that should be outside all blue zones
+            print(zone.name)
+            blues = [zone for zone in m.triggers.zones() if "Blue" in zone.name]
+            for blue in blues:
+                self.assertFalse(blue.is_point_in_zone(zone.position))

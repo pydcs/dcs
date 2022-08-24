@@ -37,6 +37,9 @@ class TriggerZone:
             "properties": self.properties
         }
 
+    def is_point_in_zone(self, point: mapping.Point) -> bool:
+        raise NotImplementedError("TriggerZone.is_point_in_zone is considered an abstract method!")
+
 
 class TriggerZoneCircular(TriggerZone):
     def __init__(self, _id, position: mapping.Point, radius=1500, hidden=False, name="", color=None, properties=None):
@@ -54,6 +57,9 @@ class TriggerZoneCircular(TriggerZone):
         return "TriggerZoneCircular({id}, {x}, {y}, {r}, '{m}', '{n}', '{o}')".format(
             id=self.id, x=self.position.x, y=self.position.y, r=self.radius, m=self.name, n=self.color, o=self.properties
         )
+
+    def is_point_in_zone(self, point: mapping.Point) -> bool:
+        return self.position.distance_to_point(point) < self.radius
 
 
 # DCS mission format misspells the plural of "vertex". We follow this convention within PyDCS.
@@ -82,6 +88,9 @@ class TriggerZoneQuadPoint(TriggerZone):
             m=self.name,
             n=self.color,
             o=self.properties)
+
+    def is_point_in_zone(self, point: mapping.Point) -> bool:
+        return mapping.Polygon(point._terrain, self.verticies).point_in_poly(point)
 
 
 class Triggers:
