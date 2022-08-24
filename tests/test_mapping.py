@@ -112,3 +112,44 @@ class PolygonTests(unittest.TestCase):
         for i in range(0, 100):
             rp = poly.random_point()
             self.assertTrue(poly.point_in_poly(rp))
+
+    def test_point_in_poly(self) -> None:
+        terrain = Caucasus()
+        points = [
+            Point(-2, 1, terrain),
+            Point(-1.5, -1, terrain),
+            Point(0, 1, terrain),
+            Point(1, -1, terrain),
+            Point(-1, -2, terrain),
+            Point(2, -2, terrain),
+            Point(2, 2, terrain),
+        ]
+        p = Polygon(terrain, points)
+        self.assertFalse(p.point_in_poly(Point(-0.5, 0, terrain)))
+        self.assertFalse(p.point_in_poly(Point(0, 0, terrain)))
+        self.assertFalse(p.point_in_poly(Point(0, 2, terrain)))
+        self.assertFalse(p.point_in_poly(Point(0.9, -1, terrain)))
+        self.assertFalse(p.point_in_poly(Point(-2, 0, terrain)))
+
+        self.assertTrue(p.point_in_poly(Point(-1.9, 0.9, terrain)))
+        self.assertTrue(p.point_in_poly(Point(-1, 0, terrain)))
+        self.assertTrue(p.point_in_poly(Point(0, 1.2, terrain)))
+        self.assertTrue(p.point_in_poly(Point(0, -1.8, terrain)))
+        self.assertTrue(p.point_in_poly(Point(1, 0, terrain)))
+
+        p.points = [
+            Point(-2, -1, terrain),
+            Point(0, 1, terrain),
+            Point(2, 1, terrain),
+            Point(3, -2, terrain),
+            Point(1, -0.5, terrain),
+        ]
+        self.assertFalse(p.point_in_poly(Point(-1, 0, terrain)))
+        self.assertFalse(p.point_in_poly(Point(0, -1, terrain)))
+        self.assertFalse(p.point_in_poly(Point(0, 2, terrain)))
+        self.assertFalse(p.point_in_poly(Point(1, -1, terrain)))
+
+        self.assertTrue(p.point_in_poly(Point(-0.5, -0.5, terrain)))
+        self.assertTrue(p.point_in_poly(Point(0, 0, terrain)))
+        self.assertTrue(p.point_in_poly(Point(2, 0.5, terrain)))
+        self.assertTrue(p.point_in_poly(Point(2.8, -1.8, terrain)))
