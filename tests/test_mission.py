@@ -259,7 +259,7 @@ class BasicTests(unittest.TestCase):
         mark_all_trigger = dcs.triggers.TriggerOnce(comment="Create Mark for ALL")
         mark_all_trigger.add_condition(dcs.condition.TimeAfter(2))
         mark_all_trigger.add_action(dcs.action.MarkToAll(10, mark_all_zone.id, m.string("Mark to all"),
-                                                         m.string("Mark to all has been added"), 1000, True))
+                                                         m.string("Mark to all has been added"), True))
         m.triggerrules.triggers.append(mark_all_trigger)
 
         # This mark will be visible for blue coalition only (after 5 sec)
@@ -269,7 +269,7 @@ class BasicTests(unittest.TestCase):
         mark_blue_trigger.add_condition(dcs.condition.TimeAfter(5))
         mark_blue_trigger.add_action(
             dcs.action.MarkToCoalition(11, mark_blue_zone.id, dcs.action.Coalition.Blue, m.string("Mark to Blue"),
-                                       m.string("Mark to Blue coalition has been added"), 2000, True))
+                                       m.string("Mark to Blue coalition has been added"), True))
         m.triggerrules.triggers.append(mark_blue_trigger)
 
         # This mark will be visible for red coalition only (after 8 sec)
@@ -279,7 +279,7 @@ class BasicTests(unittest.TestCase):
         mark_red_trigger.add_condition(dcs.condition.TimeAfter(8))
         mark_red_trigger.add_action(
             dcs.action.MarkToCoalition(12, mark_red_zone.id, dcs.action.Coalition.Red, m.string("Mark to RED"),
-                                       m.string("Mark to Red coalition has been added"), 3000, True))
+                                       m.string("Mark to Red coalition has been added"), True))
         m.triggerrules.triggers.append(mark_red_trigger)
 
         # This mark will be visible for the F15 group only (after 11 sec)
@@ -289,32 +289,28 @@ class BasicTests(unittest.TestCase):
         mark_f15_trigger.add_condition(dcs.condition.TimeAfter(11))
         mark_f15_trigger.add_action(
             dcs.action.MarkToGroup(13, mark_f15_zone.id, f15_group.id, m.string("Mark to F15"),
-                                   m.string("Mark to F15 group has been added"), 4000, False))
+                                   m.string("Mark to F15 group has been added"), False))
         m.triggerrules.triggers.append(mark_f15_trigger)
 
         self.assertEqual(len(m.triggerrules.triggers), 4)
 
         self.assertEqual(mark_all_trigger.actions[0].dict()["zone"], mark_all_zone.id)
         self.assertEqual(mark_all_trigger.actions[0].dict()["value"], 10)
-        self.assertEqual(mark_all_trigger.actions[0].dict()["meters"], 1000)
         self.assertEqual(mark_all_trigger.actions[0].dict()["readonly"], True)
 
         self.assertEqual(mark_blue_trigger.actions[0].dict()["zone"], mark_blue_zone.id)
         self.assertEqual(mark_blue_trigger.actions[0].dict()["coalitionlist"], dcs.action.Coalition.Blue.value)
         self.assertEqual(mark_blue_trigger.actions[0].dict()["value"], 11)
-        self.assertEqual(mark_blue_trigger.actions[0].dict()["meters"], 2000)
         self.assertEqual(mark_blue_trigger.actions[0].dict()["readonly"], True)
 
         self.assertEqual(mark_red_trigger.actions[0].dict()["zone"], mark_red_zone.id)
         self.assertEqual(mark_red_trigger.actions[0].dict()["coalitionlist"], dcs.action.Coalition.Red.value)
         self.assertEqual(mark_red_trigger.actions[0].dict()["value"], 12)
-        self.assertEqual(mark_red_trigger.actions[0].dict()["meters"], 3000)
         self.assertEqual(mark_red_trigger.actions[0].dict()["readonly"], True)
 
         self.assertEqual(mark_f15_trigger.actions[0].dict()["zone"], mark_f15_zone.id)
         self.assertEqual(mark_f15_trigger.actions[0].dict()["group"], f15_group.id)
         self.assertEqual(mark_f15_trigger.actions[0].dict()["value"], 13)
-        self.assertEqual(mark_f15_trigger.actions[0].dict()["meters"], 4000)
         self.assertEqual(mark_f15_trigger.actions[0].dict()["readonly"], False)
 
         m.save("missions/mission_with_marks_triggers.miz")
@@ -421,9 +417,10 @@ class BasicTests(unittest.TestCase):
         self.assertEqual("test.lua", m.map_resource.get_file_path((m.map_resource.get_resource_keys()[2])))
 
         # check triggers
-        self.assertEqual(3, len(m.triggerrules.triggers))
+        self.assertEqual(4, len(m.triggerrules.triggers))
         self.assertEqual("1", m.triggerrules.triggers[0].comment)
         self.assertEqual("2", m.triggerrules.triggers[1].comment)
+        self.assertEqual("3", m.triggerrules.triggers[2].comment)
 
         # check options count
         all_task_flight = usa.find_plane_group("AllTasks")

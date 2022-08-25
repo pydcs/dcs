@@ -706,8 +706,7 @@ class MarkToAll(TextAction):
     predicate = "a_mark_to_all"
 
     def __init__(self, value: int, zone: int, text: String = String(),
-                 comment: String = String(), meters: int = 1000,
-                 readonly: bool = True) -> None:
+                 comment: String = String(), readonly: bool = True) -> None:
         super().__init__(MarkToAll.predicate, text)
         self.value = value
         self.params.append(self.value)
@@ -716,22 +715,19 @@ class MarkToAll(TextAction):
         self.params.append(self.text)
         self.comment = comment
         self.params.append(self.comment)
-        self.meters = meters
-        self.params.append(self.meters)
         self.readonly = readonly
         self.params.append(self.readonly)
 
     @classmethod
     def create_from_dict(cls, d: Dict[Any, Any], mission) -> "MarkToAll":
         return cls(d["value"], d["zone"], mission.translation.get_string(d["text"]),
-                   mission.translation.get_string(d["comment"]), d["meters"], d["readonly"])
+                   mission.translation.get_string(d["comment"]), d["readonly"])
 
     def dict(self) -> Dict[Any, Any]:
         d = super().dict()
         d["value"] = self.value
         d["zone"] = self.zone
         d["comment"] = self.comment.id
-        d["meters"] = self.meters
         d["readonly"] = self.readonly
         return d
 
@@ -742,7 +738,7 @@ class MarkToCoalition(TextAction):
     def __init__(self, value: int, zone: int,
                  coalitionlist: Coalition = Coalition.Blue,
                  text: String = String(), comment: String = String(),
-                 meters: int = 1000, readonly: bool = True) -> None:
+                 readonly: bool = True) -> None:
         super().__init__(MarkToCoalition.predicate, text)
         self.value = value
         self.params.append(self.value)
@@ -755,8 +751,6 @@ class MarkToCoalition(TextAction):
         self.params.append(self.text)
         self.comment = comment
         self.params.append(self.comment)
-        self.meters = meters
-        self.params.append(self.meters)
         self.readonly = readonly
         self.params.append(self.readonly)
 
@@ -764,7 +758,7 @@ class MarkToCoalition(TextAction):
     def create_from_dict(cls, d: Dict[Any, Any], mission) -> "MarkToCoalition":
         return cls(d["value"], d["zone"], Coalition(d["coalitionlist"]),
                    mission.translation.get_string(d["text"]),
-                   mission.translation.get_string(d["comment"]), d["meters"],
+                   mission.translation.get_string(d["comment"]),
                    d["readonly"])
 
     def dict(self):
@@ -773,7 +767,6 @@ class MarkToCoalition(TextAction):
         d["zone"] = self.zone
         d["coalitionlist"] = self.coalitionlist
         d["comment"] = self.comment.id
-        d["meters"] = self.meters
         d["readonly"] = self.readonly
         return d
 
@@ -783,7 +776,7 @@ class MarkToGroup(TextAction):
 
     def __init__(self, value: int, zone: int, group: int = 0,
                  text: String = String(), comment: String = String(),
-                 meters: int = 1000, readonly: bool = True) -> None:
+                 readonly: bool = True) -> None:
         super(MarkToGroup, self).__init__(MarkToGroup.predicate, text)
         self.value = value
         self.params.append(self.value)
@@ -794,15 +787,13 @@ class MarkToGroup(TextAction):
         self.params.append(self.text)
         self.comment = comment
         self.params.append(self.comment)
-        self.meters = meters
-        self.params.append(self.meters)
         self.readonly = readonly
         self.params.append(self.readonly)
 
     @classmethod
     def create_from_dict(cls, d: Dict[Any, Any], mission) -> "MarkToGroup":
         return cls(d["value"], d["zone"], d["group"], mission.translation.get_string(d["text"]),
-                   mission.translation.get_string(d["comment"]), d["meters"], d["readonly"])
+                   mission.translation.get_string(d["comment"]), d["readonly"])
 
     def dict(self) -> Dict[Any, Any]:
         d = super().dict()
@@ -810,7 +801,6 @@ class MarkToGroup(TextAction):
         d["zone"] = self.zone
         d["group"] = self.group
         d["comment"] = self.comment.id
-        d["meters"] = self.meters
         d["readonly"] = self.readonly
         return d
 
