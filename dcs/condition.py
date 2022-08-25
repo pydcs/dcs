@@ -1338,7 +1338,7 @@ condition_map: Dict[str, Type[Condition]] = {
     "c_unit_altitude_higher": UnitAltitudeHigher,
     "c_unit_altitude_lower": UnitAltitudeLower,
     "c_unit_altitude_higher_AGL": UnitAltitudeHigherAGL,
-    "c_units_altitude_lower_AGL": UnitAltitudeLowerAGL,
+    "c_unit_altitude_lower_AGL": UnitAltitudeLowerAGL,
     "c_unit_bank": UnitBankWithin,
     "c_unit_damaged": UnitDamaged,
     "c_unit_dead": UnitDead,
