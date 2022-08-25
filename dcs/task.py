@@ -2294,6 +2294,18 @@ class OptInterceptionRange(Option):
         super(OptInterceptionRange, self).__init__(value)
 
 
+class OptRestrictTargets(Option):
+    Key = 28
+
+    class Values(IntEnum):
+        AllUnits = 0
+        AirUnitsOnly = 1
+        GroundUnitsOnly = 2
+
+    def __init__(self, value: Values = Values.AllUnits):
+        super(OptRestrictTargets, self).__init__(value)
+
+
 options: Dict[int, Type[Option]] = {
     OptROE.Key: OptROE,
     OptReactOnThreat.Key: OptReactOnThreat,
@@ -2316,5 +2328,6 @@ options: Dict[int, Type[Option]] = {
     OptRadioUsageContact.Key: OptRadioUsageContact,
     OptRadioUsageEngage.Key: OptRadioUsageEngage,
     OptRadioUsageKill.Key: OptRadioUsageKill,
-    OptInterceptionRange.Key: OptInterceptionRange
+    OptInterceptionRange.Key: OptInterceptionRange,
+    OptRestrictTargets.Key: OptRestrictTargets
 }

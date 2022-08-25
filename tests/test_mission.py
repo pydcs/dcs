@@ -775,3 +775,21 @@ class BasicTests(unittest.TestCase):
             all(
                 distance(sukhmi, v) <= ZONE_RADIUS_M + 0.001
                 for v in zone.verticies))
+
+    def test_restrict_targets(self):
+        m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
+
+        usa = m.country("USA")
+        point = dcs.Point(-217283, 564863, m.terrain)
+        vulcan_group = m.vehicle_group(usa, "Vehicle", dcs.countries.USA.Vehicle.AirDefence.Vulcan, position=point)
+        waypoint = vulcan_group.points[0]
+        waypoint.tasks.append(dcs.task.OptRestrictTargets(dcs.task.OptRestrictTargets.Values.AirUnitsOnly))
+        vg_tasks = vulcan_group.dict()['route']['points'][1]['task']
+        self.assertEqual(vg_tasks['id'], 'ComboTask')
+        tasks_param = vg_tasks['params']['tasks']
+
+        def is_restrict_targets_a2a_option(d):
+            p = d['params']['action']['params']
+            return 'name' in p and p['name'] == 28 and p['value'] == 1
+
+        self.assertTrue(any(is_restrict_targets_a2a_option(tasks_param[k]) for k in tasks_param.keys()))
