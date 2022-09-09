@@ -2,6 +2,7 @@
 import os
 from typing import List
 
+from dcs.atcradio import AtcRadio
 from dcs.terrain.terrain import Terrain, Airport, Runway, ParkingSlot, MapView, Graph
 import dcs.mapping as mapping
 from .projections.caucasus import PARAMETERS
@@ -14,6 +15,7 @@ class Anapa_Vityazevo(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3750000, vhf_low_hz=38400000, vhf_high_hz=121000000, uhf_hz=250000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-5412.409668, 243128.820313, terrain), terrain)
@@ -304,6 +306,7 @@ class Krasnodar_Center(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3800000, vhf_low_hz=38600000, vhf_high_hz=122000000, uhf_hz=251000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(11685.205078, 367933.515625, terrain), terrain)
@@ -486,6 +489,7 @@ class Novorossiysk(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3850000, vhf_low_hz=38800000, vhf_high_hz=123000000, uhf_hz=252000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-40917.535156, 279256.0625, terrain), terrain)
@@ -614,6 +618,7 @@ class Krymsk(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3900000, vhf_low_hz=39000000, vhf_high_hz=124000000, uhf_hz=253000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-6576.524658, 294388.125, terrain), terrain)
@@ -799,6 +804,7 @@ class Maykop_Khanskaya(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3950000, vhf_low_hz=39200000, vhf_high_hz=125000000, uhf_hz=254000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-26437.275391, 458048.84375, terrain), terrain)
@@ -984,6 +990,7 @@ class Gelendzhik(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4000000, vhf_low_hz=39400000, vhf_high_hz=126000000, uhf_hz=255000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-50378.611328, 298406.15625, terrain), terrain)
@@ -1037,6 +1044,7 @@ class Sochi_Adler(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4050000, vhf_low_hz=39600000, vhf_high_hz=127000000, uhf_hz=256000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-164496.46875, 462218.921875, terrain), terrain)
@@ -1255,6 +1263,7 @@ class Krasnodar_Pashkovsky(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4100000, vhf_low_hz=39800000, vhf_high_hz=128000000, uhf_hz=257000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(7717.637452, 387878.803876, terrain), terrain)
@@ -1326,6 +1335,7 @@ class Sukhumi_Babushara(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4150000, vhf_low_hz=40000000, vhf_high_hz=129000000, uhf_hz=258000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-220592.328125, 564391.96875, terrain), terrain)
@@ -1409,6 +1419,7 @@ class Gudauta(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4200000, vhf_low_hz=40200000, vhf_high_hz=130000000, uhf_hz=259000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-196710.085938, 516451.6875, terrain), terrain)
@@ -1516,6 +1527,7 @@ class Batumi(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4250000, vhf_low_hz=40400000, vhf_high_hz=131000000, uhf_hz=260000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-355810.6875, 617386.1875, terrain), terrain)
@@ -1560,6 +1572,7 @@ class Senaki_Kolkhi(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4300000, vhf_low_hz=40600000, vhf_high_hz=132000000, uhf_hz=261000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-281782.46875, 647279.46875, terrain), terrain)
@@ -1778,6 +1791,7 @@ class Kobuleti(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4350000, vhf_low_hz=40800000, vhf_high_hz=133000000, uhf_hz=262000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-317962.296875, 635632.96875, terrain), terrain)
@@ -1918,6 +1932,7 @@ class Kutaisi(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4400000, vhf_low_hz=41000000, vhf_high_hz=134000000, uhf_hz=263000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-284887.375, 683858.71875, terrain), terrain)
@@ -2106,6 +2121,7 @@ class Mineralnye_Vody(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4450000, vhf_low_hz=41200000, vhf_high_hz=135000000, uhf_hz=264000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-51259.983985, 705734.026899, terrain), terrain)
@@ -2204,6 +2220,7 @@ class Nalchik(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4500000, vhf_low_hz=41400000, vhf_high_hz=136000000, uhf_hz=265000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-124932.167279, 760421.182617, terrain), terrain)
@@ -2263,6 +2280,7 @@ class Mozdok(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4550000, vhf_low_hz=41600000, vhf_high_hz=137000000, uhf_hz=266000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-83450.417969, 834461.78125, terrain), terrain)
@@ -2394,6 +2412,7 @@ class Tbilisi_Lochini(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4600000, vhf_low_hz=41800000, vhf_high_hz=138000000, uhf_hz=267000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-315671.078125, 896629.78125, terrain), terrain)
@@ -2630,6 +2649,7 @@ class Soganlug(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4650000, vhf_low_hz=42000000, vhf_high_hz=139000000, uhf_hz=268000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-317828.046875, 895407.1875, terrain), terrain)
@@ -2659,6 +2679,7 @@ class Vaziani(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4700000, vhf_low_hz=42200000, vhf_high_hz=140000000, uhf_hz=269000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-319064.875, 903148.53125, terrain), terrain)
@@ -2949,6 +2970,7 @@ class Beslan(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4750000, vhf_low_hz=42400000, vhf_high_hz=141000000, uhf_hz=270000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-148590.171875, 843668.625, terrain), terrain)
@@ -3216,7 +3238,7 @@ class Caucasus(Terrain):
         #     ))
         #     for r in self.airports[x].runways:
         #         print("airports[{id}]['runways'].append({hdg})".format(id=airport.id, hdg=r.heading))
-        
+
     def anapa_vityazevo(self) -> Airport:
         return self.airports["Anapa-Vityazevo"]
 
@@ -3279,6 +3301,7 @@ class Caucasus(Terrain):
 
     def beslan(self) -> Airport:
         return self.airports["Beslan"]
+
 
     def default_red_airports(self) -> List[Airport]:
         return [

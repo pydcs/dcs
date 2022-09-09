@@ -1,4 +1,5 @@
 # flake8: noqa
+from dcs.atcradio import AtcRadio
 from dcs.terrain import Terrain, Airport, Runway, ParkingSlot, MapView, Graph
 import dcs.mapping as mapping
 import os
@@ -14,6 +15,7 @@ class Creech(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3825000, vhf_low_hz=38550000, vhf_high_hz=118300000, uhf_hz=360600000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-360507.203125, -75590.070313, terrain), terrain)
@@ -182,6 +184,7 @@ class Groom_Lake(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3850000, vhf_low_hz=38600000, vhf_high_hz=118000000, uhf_hz=250050000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-288604.671875, -86870.445313, terrain), terrain)
@@ -352,6 +355,7 @@ class McCarran_International(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3875000, vhf_low_hz=38650000, vhf_high_hz=119900000, uhf_hz=257800000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-416011.359375, -26929.336914, terrain), terrain)
@@ -412,6 +416,7 @@ class Nellis(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3900000, vhf_low_hz=38700000, vhf_high_hz=132550000, uhf_hz=327000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-398195.375, -17233.236816, terrain), terrain)
@@ -1168,6 +1173,7 @@ class Beatty(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = None
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-330553.625, -174958.53125, terrain), terrain)
@@ -1191,6 +1197,7 @@ class Boulder_City(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3925000, vhf_low_hz=38750000, vhf_high_hz=118050000, uhf_hz=250100000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-429660.09375, -1148.724518, terrain), terrain)
@@ -1317,6 +1324,7 @@ class Echo_Bay(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = None
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-388592.34375, 33697.310547, terrain), terrain)
@@ -1337,6 +1345,7 @@ class Henderson_Executive(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3950000, vhf_low_hz=38800000, vhf_high_hz=125100000, uhf_hz=250150000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-427352.71875, -25668.716797, terrain), terrain)
@@ -1481,6 +1490,7 @@ class Jean(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = None
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-450392.859375, -43000.460938, terrain), terrain)
@@ -1508,6 +1518,7 @@ class Laughlin(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3750000, vhf_low_hz=38400000, vhf_high_hz=123900000, uhf_hz=250000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-516946.421875, 28306.30957, terrain), terrain)
@@ -1570,6 +1581,7 @@ class Lincoln_County(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = None
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-224670.351563, 33199.935547, terrain), terrain)
@@ -1602,6 +1614,7 @@ class Mesquite(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = None
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-329622.09375, 68561.148438, terrain), terrain)
@@ -1649,6 +1662,7 @@ class Mina(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = None
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-161504.46875, -289784.765625, terrain), terrain)
@@ -1663,6 +1677,7 @@ class North_Las_Vegas(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3775000, vhf_low_hz=38450000, vhf_high_hz=125700000, uhf_hz=360750000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-400891.484375, -31726.952148, terrain), terrain)
@@ -1820,6 +1835,7 @@ class Pahute_Mesa(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = None
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-303620, -132937.929688, terrain), terrain)
@@ -1849,6 +1865,7 @@ class Tonopah(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = None
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-197282.898438, -201302.882813, terrain), terrain)
@@ -1939,6 +1956,7 @@ class Tonopah_Test_Range(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3800000, vhf_low_hz=38500000, vhf_high_hz=124750000, uhf_hz=257950000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-226505.273438, -174698.484375, terrain), terrain)

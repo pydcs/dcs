@@ -1,8 +1,8 @@
 # flake8: noqa
 from dcs import mapping
+from dcs.atcradio import AtcRadio
 from dcs.terrain import Airport, Runway, ParkingSlot, Terrain, MapView
 from .projections.marianaislands import PARAMETERS
-
 
 class Rota_Intl(Airport):
     id = 1
@@ -11,6 +11,7 @@ class Rota_Intl(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3750000, vhf_low_hz=38400000, vhf_high_hz=123600000, uhf_hz=250000000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(75884.859375, 48589.876953, terrain), terrain)
@@ -52,6 +53,7 @@ class Saipan_Intl(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3775000, vhf_low_hz=38450000, vhf_high_hz=125700000, uhf_hz=256900000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(180035.4375, 101855.960938, terrain), terrain)
@@ -123,6 +125,7 @@ class Tinian_Intl(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3800000, vhf_low_hz=38500000, vhf_high_hz=123650000, uhf_hz=250050000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(166859.859375, 89956.625, terrain), terrain)
@@ -149,6 +152,7 @@ class Antonio_B_Won_Pat_Intl(Airport):
     unit_zones = []
     civilian = True
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3825000, vhf_low_hz=38550000, vhf_high_hz=118100000, uhf_hz=340200000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-23.656158, -77.940308, terrain), terrain)
@@ -233,6 +237,7 @@ class Andersen_AFB(Airport):
     unit_zones = []
     civilian = False
     slot_version = 2
+    atc_radio = AtcRadio(hf_hz=3850000, vhf_low_hz=38600000, vhf_high_hz=126200000, uhf_hz=250100000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(10574.989746, 14548.833496, terrain), terrain)
@@ -381,7 +386,7 @@ class Andersen_AFB(Airport):
                 crossroad_idx=50, position=mapping.Point(9984.599609375, 14028.2890625, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='29', length=26.0, width=24.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=51, position=mapping.Point(10247.48828125, 14664.8984375, self._terrain), large=False, heli=True,
+                crossroad_idx=51, position=mapping.Point(10247.48828125, 14664.8984375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='30', length=60.0, width=60.0, height=18.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=52, position=mapping.Point(10322.262695313, 14770.915039063, self._terrain), large=False, heli=True,
@@ -396,7 +401,7 @@ class Andersen_AFB(Airport):
                 crossroad_idx=55, position=mapping.Point(10434.4296875, 14742.46875, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='57', length=60.0, width=60.0, height=18.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=56, position=mapping.Point(10423.344726563, 15081.461914063, self._terrain), large=False, heli=True,
+                crossroad_idx=56, position=mapping.Point(10423.344726563, 15081.461914063, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='32', length=60.0, width=60.0, height=18.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=57, position=mapping.Point(10514.0390625, 15226.326171875, self._terrain), large=False, heli=True,

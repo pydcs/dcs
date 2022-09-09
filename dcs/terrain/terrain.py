@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from pyproj import CRS, Transformer
 
+from dcs.atcradio import AtcRadio
 import dcs.mapping as mapping
 import dcs.lua as lua
 import dcs.point as point
@@ -80,6 +81,7 @@ class Airport:
     unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 1
+    atc_radio: Optional[AtcRadio]
 
     def __init__(self, position: mapping.Point, terrain: Terrain) -> None:
         self.position = position

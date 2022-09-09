@@ -1,13 +1,11 @@
 """
 This script imports airport data, that was previously exported by a lua function.
 
-The lua function to export is just beneath this comment block, insert it somewhere in the mission editor
-and call it somewhere
+Copy the following lua function into me_map_window.lua and call the function in the
+createAircraft() function. Then open DCS, create a new mission in the editor for the map
+you want to export, and place an aircraft (any aircraft will do, the code will run when
+the aircraft is placed).
 
-See https://github.com/pydcs/dcs/issues/36
-"""
-
-"""
 function dumpairportdata()
     local S	= require('Serializer')
     local airdromedump = {}
@@ -17,6 +15,7 @@ function dumpairportdata()
         info = {}
         info["airport"] = v
         info["standlist"] = sList
+        info["frequencies"] = AirdromeData.getAirdrome(AirdromeData.getAirdromeId(k))
         airdromedump[k] = info
     end
     local f = base.io.open("C:\\standlist.lua", 'w')
@@ -28,11 +27,26 @@ function dumpairportdata()
         showWarningMessageBox(_('Error saving standlist'))
     end
 end
+
+If you are unable to place aircraft in the ME (clicking does nothing), there is probably
+something wrong with the script. Check the DCS log for info.
+
+Once you've done that, C:\standlist.lua will have been written. Run the following to
+generate the data for pydcs:
+
+    .\tools\airport_import.py C:\standlist.lua
+
+That will generate the Python code for the map to stdout. Copy paste into the
+appropriate terrain Python file.
+
+See https://github.com/pydcs/dcs/issues/36
 """
 
 import argparse
-import dcs.lua
 import codecs
+
+import dcs.lua
+from dcs.atcradio import AtcRadio
 
 
 def safename(name):
@@ -41,9 +55,6 @@ def safename(name):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--terrain",
-                        choices=["caucasus", "falklands", "nevada", "normandy", "persiangulf", "thechannel", "syria", "marianaislands"],
-                        default="caucasus")
     parser.add_argument("airportinfofile")
 
     args = parser.parse_args()
@@ -55,28 +66,38 @@ def main():
             airport = data["airports"][id_]
             tacan = airport.get("tacan", None)
             tacan = '"' + tacan + '"' if tacan else None
-            print("""
+            sname = safename(airport['airport']['display_name'])
+            name = airport['airport']['display_name']
+            civ = airport["airport"].get("civilian", True)
+            x = airport["airport"]["reference_point"]["x"]
+            y = airport["airport"]["reference_point"]["y"]
+
+            atc_freqs = list(airport["frequencies"]["frequencyList"].values())
+            if atc_freqs:
+                hf, vhf_low, vhf_high, uhf = sorted(atc_freqs)
+                atc_radio = AtcRadio(
+                    hf_hz=hf,
+                    vhf_low_hz=vhf_low,
+                    vhf_high_hz=vhf_high,
+                    uhf_hz=uhf,
+                )
+            else:
+                atc_radio = None
+
+            print(f"""
 
 class {sname}(Airport):
-    id = {id}
+    id = {id_}
     name = "{name}"
     tacan = {tacan}
     unit_zones = []
     civilian = {civ}
-    slot_version = {slot_version}
+    slot_version = 2
+    atc_radio = {repr(atc_radio)}
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point({x}, {y}, terrain), terrain)
-"""
-                  .format(sname=safename(airport['airport']['display_name']),
-                          name=airport['airport']['display_name'],
-                          id=id_,
-                          x=airport["airport"]["reference_point"]["x"],
-                          y=airport["airport"]["reference_point"]["y"],
-                          tacan=tacan,
-                          # freq=", ".join(map(str, airport["airport"]["frequency"].values())),
-                          civ=airport["airport"].get("civilian", True),
-                          slot_version=2))
+""")
 
             i = 0
             for runway in airport['airport']["runwayName"]:
