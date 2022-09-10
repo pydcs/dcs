@@ -1,15 +1,16 @@
 # flake8: noqa
+from typing import List, Type
+
+from dcs import mapping
 from dcs.atcradio import AtcRadio
-from dcs.terrain.terrain import Terrain, Airport, Runway, ParkingSlot, MapView
-import dcs.mapping as mapping
-from .projections.persiangulf import PARAMETERS
+from dcs.terrain import Airport, Runway, ParkingSlot, Terrain
 
 
 class Abu_Musa_Island(Airport):
     id = 1
     name = "Abu Musa Island"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3975000, vhf_low_hz=38850000, vhf_high_hz=122900000, uhf_hz=250400000)
@@ -48,7 +49,7 @@ class Bandar_Abbas_Intl(Airport):
     id = 2
     name = "Bandar Abbas Intl"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4250000, vhf_low_hz=39400000, vhf_high_hz=118100000, uhf_hz=251000000)
@@ -213,7 +214,7 @@ class Bandar_Lengeh(Airport):
     id = 3
     name = "Bandar Lengeh"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4275000, vhf_low_hz=39450000, vhf_high_hz=121700000, uhf_hz=251050000)
@@ -243,7 +244,7 @@ class Al_Dhafra_AFB(Airport):
     id = 4
     name = "Al Dhafra AFB"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4300000, vhf_low_hz=39500000, vhf_high_hz=126500000, uhf_hz=251100000)
@@ -1009,7 +1010,7 @@ class Dubai_Intl(Airport):
     id = 5
     name = "Dubai Intl"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4325000, vhf_low_hz=39550000, vhf_high_hz=118750000, uhf_hz=251150000)
@@ -1313,7 +1314,7 @@ class Al_Maktoum_Intl(Airport):
     id = 6
     name = "Al Maktoum Intl"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4350000, vhf_low_hz=39600000, vhf_high_hz=118600000, uhf_hz=251200000)
@@ -1535,7 +1536,7 @@ class Fujairah_Intl(Airport):
     id = 7
     name = "Fujairah Intl"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4375000, vhf_low_hz=39650000, vhf_high_hz=124600000, uhf_hz=251250000)
@@ -1562,7 +1563,7 @@ class Tunb_Island_AFB(Airport):
     id = 8
     name = "Tunb Island AFB"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = None
@@ -1589,7 +1590,7 @@ class Havadarya(Airport):
     id = 9
     name = "Havadarya"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4400000, vhf_low_hz=39700000, vhf_high_hz=123150000, uhf_hz=251300000)
@@ -1670,7 +1671,7 @@ class Khasab(Airport):
     id = 10
     name = "Khasab"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3750000, vhf_low_hz=38400000, vhf_high_hz=124350000, uhf_hz=250000000)
@@ -1721,7 +1722,7 @@ class Lar(Airport):
     id = 11
     name = "Lar"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3775000, vhf_low_hz=38450000, vhf_high_hz=127350000, uhf_hz=250050000)
@@ -1751,7 +1752,7 @@ class Al_Minhad_AFB(Airport):
     id = 12
     name = "Al Minhad AFB"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3800000, vhf_low_hz=38500000, vhf_high_hz=118550000, uhf_hz=250100000)
@@ -1952,7 +1953,7 @@ class Qeshm_Island(Airport):
     id = 13
     name = "Qeshm Island"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3825000, vhf_low_hz=38550000, vhf_high_hz=118050000, uhf_hz=250150000)
@@ -2003,7 +2004,7 @@ class Sharjah_Intl(Airport):
     id = 14
     name = "Sharjah Intl"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3850000, vhf_low_hz=38600000, vhf_high_hz=118600000, uhf_hz=250200000)
@@ -2160,7 +2161,7 @@ class Sirri_Island(Airport):
     id = 15
     name = "Sirri Island"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3875000, vhf_low_hz=38650000, vhf_high_hz=135050000, uhf_hz=250250000)
@@ -2181,7 +2182,7 @@ class Tunb_Kochak(Airport):
     id = 16
     name = "Tunb Kochak"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = None
@@ -2202,7 +2203,7 @@ class Sir_Abu_Nuayr(Airport):
     id = 17
     name = "Sir Abu Nuayr"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3900000, vhf_low_hz=38700000, vhf_high_hz=118000000, uhf_hz=250800000)
@@ -2229,7 +2230,7 @@ class Kerman(Airport):
     id = 18
     name = "Kerman"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3925000, vhf_low_hz=38750000, vhf_high_hz=118250000, uhf_hz=250300000)
@@ -2370,7 +2371,7 @@ class Shiraz_Intl(Airport):
     id = 19
     name = "Shiraz Intl"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3950000, vhf_low_hz=38800000, vhf_high_hz=121900000, uhf_hz=250350000)
@@ -2743,7 +2744,7 @@ class Sas_Al_Nakheel(Airport):
     id = 20
     name = "Sas Al Nakheel"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4000000, vhf_low_hz=38900000, vhf_high_hz=128900000, uhf_hz=250450000)
@@ -3019,7 +3020,7 @@ class Bandar_e_Jask(Airport):
     id = 21
     name = "Bandar-e-Jask"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4025000, vhf_low_hz=38950000, vhf_high_hz=118150000, uhf_hz=250500000)
@@ -3046,7 +3047,7 @@ class Abu_Dhabi_Intl(Airport):
     id = 22
     name = "Abu Dhabi Intl"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4050000, vhf_low_hz=39000000, vhf_high_hz=119200000, uhf_hz=250550000)
@@ -3441,7 +3442,7 @@ class Al_Bateen(Airport):
     id = 23
     name = "Al-Bateen"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4075000, vhf_low_hz=39050000, vhf_high_hz=119900000, uhf_hz=250600000)
@@ -3600,7 +3601,7 @@ class Kish_Intl(Airport):
     id = 24
     name = "Kish Intl"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4100000, vhf_low_hz=39100000, vhf_high_hz=121650000, uhf_hz=250650000)
@@ -3754,7 +3755,7 @@ class Al_Ain_Intl(Airport):
     id = 25
     name = "Al Ain Intl"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4125000, vhf_low_hz=39150000, vhf_high_hz=119850000, uhf_hz=250700000)
@@ -3991,7 +3992,7 @@ class Lavan_Island(Airport):
     id = 26
     name = "Lavan Island"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4150000, vhf_low_hz=39200000, vhf_high_hz=128550000, uhf_hz=250750000)
@@ -4015,7 +4016,7 @@ class Jiroft(Airport):
     id = 27
     name = "Jiroft"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4175000, vhf_low_hz=39250000, vhf_high_hz=136000000, uhf_hz=250850000)
@@ -4039,7 +4040,7 @@ class Ras_Al_Khaimah_Intl(Airport):
     id = 28
     name = "Ras Al Khaimah Intl"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4200000, vhf_low_hz=39300000, vhf_high_hz=121600000, uhf_hz=250900000)
@@ -4108,7 +4109,7 @@ class Liwa_AFB(Airport):
     id = 29
     name = "Liwa AFB"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4225000, vhf_low_hz=39350000, vhf_high_hz=119300000, uhf_hz=250950000)
@@ -4314,149 +4315,35 @@ class Liwa_AFB(Airport):
                 airplanes=True, slot_name='65', length=20.5, width=14.5, height=11.0, shelter=False))
 
 
-class PersianGulf(Terrain):
-    center = {"lat": 0, "long": 0}
-    city_graph = None
-    temperature = [
-        (10, 20),
-        (11, 20),
-        (13, 22),
-        (16, 26),
-        (18, 30),
-        (20, 36),
-        (24, 39),
-        (25, 40),
-        (22, 37),
-        (20, 32),
-        (16, 26),
-        (12, 22)
-    ]
-    assert(len(temperature) == 12)
+ALL_AIRPORTS: List[Type[Airport]] = [
+    Abu_Musa_Island,
+    Bandar_Abbas_Intl,
+    Bandar_Lengeh,
+    Al_Dhafra_AFB,
+    Dubai_Intl,
+    Al_Maktoum_Intl,
+    Fujairah_Intl,
+    Tunb_Island_AFB,
+    Havadarya,
+    Khasab,
+    Lar,
+    Al_Minhad_AFB,
+    Qeshm_Island,
+    Sharjah_Intl,
+    Sirri_Island,
+    Tunb_Kochak,
+    Sir_Abu_Nuayr,
+    Kerman,
+    Shiraz_Intl,
+    Sas_Al_Nakheel,
+    Bandar_e_Jask,
+    Abu_Dhabi_Intl,
+    Al_Bateen,
+    Kish_Intl,
+    Al_Ain_Intl,
+    Lavan_Island,
+    Jiroft,
+    Ras_Al_Khaimah_Intl,
+    Liwa_AFB,
+]
 
-    def __init__(self):
-        bounds = mapping.Rectangle(-218768.750000, -392081.937500, 197357.906250, 333129.125000, self)
-        super().__init__(
-            "PersianGulf",
-            PARAMETERS,
-            bounds,
-            map_view_default=MapView(bounds.center(), self, 1000000)
-        )
-        self.bullseye_blue = {"x": self.bounds.center().x, "y": self.bounds.center().y}
-        self.bullseye_red = {"x": self.bounds.center().x, "y": self.bounds.center().y}
-
-        self.airports['Abu Musa Island'] = Abu_Musa_Island(self)
-        self.airports['Bandar Abbas Intl'] = Bandar_Abbas_Intl(self)
-        self.airports['Bandar Lengeh'] = Bandar_Lengeh(self)
-        self.airports['Al Dhafra AFB'] = Al_Dhafra_AFB(self)
-        self.airports['Dubai Intl'] = Dubai_Intl(self)
-        self.airports['Al Maktoum Intl'] = Al_Maktoum_Intl(self)
-        self.airports['Fujairah Intl'] = Fujairah_Intl(self)
-        self.airports['Tunb Island AFB'] = Tunb_Island_AFB(self)
-        self.airports['Havadarya'] = Havadarya(self)
-        self.airports['Khasab'] = Khasab(self)
-        self.airports['Lar'] = Lar(self)
-        self.airports['Al Minhad AFB'] = Al_Minhad_AFB(self)
-        self.airports['Qeshm Island'] = Qeshm_Island(self)
-        self.airports['Sharjah Intl'] = Sharjah_Intl(self)
-        self.airports['Sirri Island'] = Sirri_Island(self)
-        self.airports['Tunb Kochak'] = Tunb_Kochak(self)
-        self.airports['Sir Abu Nuayr'] = Sir_Abu_Nuayr(self)
-        self.airports['Kerman'] = Kerman(self)
-        self.airports['Shiraz Intl'] = Shiraz_Intl(self)
-        self.airports['Sas Al Nakheel'] = Sas_Al_Nakheel(self)
-        self.airports['Bandar-e-Jask'] = Bandar_e_Jask(self)
-        self.airports['Abu Dhabi Intl'] = Abu_Dhabi_Intl(self)
-        self.airports['Al-Bateen'] = Al_Bateen(self)
-        self.airports['Kish Intl'] = Kish_Intl(self)
-        self.airports['Al Ain Intl'] = Al_Ain_Intl(self)
-        self.airports['Lavan Island'] = Lavan_Island(self)
-        self.airports['Jiroft'] = Jiroft(self)
-        self.airports['Ras Al Khaimah Intl'] = Ras_Al_Khaimah_Intl(self)
-        self.airports['Liwa AFB'] = Liwa_AFB(self)
-
-    def abu_musa_island(self) -> Airport:
-        return self.airports["Abu Musa Island"]
-
-    def bandar_abbas_intl(self) -> Airport:
-        return self.airports["Bandar Abbas Intl"]
-
-    def bandar_lengeh(self) -> Airport:
-        return self.airports["Bandar Lengeh"]
-
-    def al_dhafra_afb(self) -> Airport:
-        return self.airports["Al Dhafra AFB"]
-
-    def dubai_intl(self) -> Airport:
-        return self.airports["Dubai Intl"]
-
-    def al_maktoum_intl(self) -> Airport:
-        return self.airports["Al Maktoum Intl"]
-
-    def fujairah_intl(self) -> Airport:
-        return self.airports["Fujairah Intl"]
-
-    def tunb_island_afb(self) -> Airport:
-        return self.airports["Tunb Island AFB"]
-
-    def havadarya(self) -> Airport:
-        return self.airports["Havadarya"]
-
-    def khasab(self) -> Airport:
-        return self.airports["Khasab"]
-
-    def lar(self) -> Airport:
-        return self.airports["Lar"]
-
-    def al_minhad_afb(self) -> Airport:
-        return self.airports["Al Minhad AFB"]
-
-    def qeshm_island(self) -> Airport:
-        return self.airports["Qeshm Island"]
-
-    def sharjah_intl(self) -> Airport:
-        return self.airports["Sharjah Intl"]
-
-    def sirri_island(self) -> Airport:
-        return self.airports["Sirri Island"]
-
-    def tunb_kochak(self) -> Airport:
-        return self.airports["Tunb Kochak"]
-
-    def sir_abu_nuayr(self) -> Airport:
-        return self.airports["Sir Abu Nuayr"]
-
-    def kerman(self) -> Airport:
-        return self.airports["Kerman"]
-
-    def shiraz_intl(self) -> Airport:
-        return self.airports["Shiraz Intl"]
-
-    def sas_al_nakheel(self) -> Airport:
-        return self.airports["Sas Al Nakheel"]
-
-    def bandar_e_jask(self) -> Airport:
-        return self.airports["Bandar-e-Jask"]
-
-    def abu_dhabi_intl(self) -> Airport:
-        return self.airports["Abu Dhabi Intl"]
-
-    def al_bateen(self) -> Airport:
-        return self.airports["Al-Bateen"]
-
-    def kish_intl(self) -> Airport:
-        return self.airports["Kish Intl"]
-
-    def al_ain_intl(self) -> Airport:
-        return self.airports["Al Ain Intl"]
-
-    def lavan_island(self) -> Airport:
-        return self.airports["Lavan Island"]
-
-    def jiroft(self) -> Airport:
-        return self.airports["Jiroft"]
-
-    def ras_al_khaimah_intl(self) -> Airport:
-        return self.airports["Ras Al Khaimah Intl"]
-
-    def liwa_afb(self) -> Airport:
-        return self.airports["Liwa AFB"]

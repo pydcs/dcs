@@ -1,15 +1,16 @@
 # flake8: noqa
+from typing import List, Type
+
+from dcs import mapping
 from dcs.atcradio import AtcRadio
-from dcs.terrain.terrain import Terrain, Airport, Runway, ParkingSlot, MapView
-import dcs.mapping as mapping
-from .projections.normandy import PARAMETERS
+from dcs.terrain import Airport, Runway, ParkingSlot, Terrain
 
 
 class Saint_Pierre_du_Mont(Airport):
     id = 1
     name = "Saint Pierre du Mont"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4000000, vhf_low_hz=38900000, vhf_high_hz=118500000, uhf_hz=250500000)
@@ -375,7 +376,7 @@ class Lignerolles(Airport):
     id = 2
     name = "Lignerolles"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4275000, vhf_low_hz=39450000, vhf_high_hz=119050000, uhf_hz=251050000)
@@ -588,7 +589,7 @@ class Cretteville(Airport):
     id = 3
     name = "Cretteville"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4500000, vhf_low_hz=39900000, vhf_high_hz=119500000, uhf_hz=251500000)
@@ -771,7 +772,7 @@ class Maupertus(Airport):
     id = 4
     name = "Maupertus"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4550000, vhf_low_hz=40000000, vhf_high_hz=119600000, uhf_hz=251600000)
@@ -807,7 +808,7 @@ class Brucheville(Airport):
     id = 5
     name = "Brucheville"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4575000, vhf_low_hz=40050000, vhf_high_hz=119650000, uhf_hz=251650000)
@@ -1143,7 +1144,7 @@ class Meautis(Airport):
     id = 6
     name = "Meautis"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4600000, vhf_low_hz=40100000, vhf_high_hz=119700000, uhf_hz=251700000)
@@ -1296,7 +1297,7 @@ class Cricqueville_en_Bessin(Airport):
     id = 7
     name = "Cricqueville-en-Bessin"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4625000, vhf_low_hz=40150000, vhf_high_hz=119750000, uhf_hz=251750000)
@@ -1530,7 +1531,7 @@ class Lessay(Airport):
     id = 8
     name = "Lessay"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4650000, vhf_low_hz=40200000, vhf_high_hz=119800000, uhf_hz=251800000)
@@ -1717,7 +1718,7 @@ class Sainte_Laurent_sur_Mer(Airport):
     id = 9
     name = "Sainte-Laurent-sur-Mer"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4675000, vhf_low_hz=40250000, vhf_high_hz=119850000, uhf_hz=251850000)
@@ -1858,7 +1859,7 @@ class Biniville(Airport):
     id = 10
     name = "Biniville"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3750000, vhf_low_hz=38400000, vhf_high_hz=118000000, uhf_hz=250000000)
@@ -1969,7 +1970,7 @@ class Cardonville(Airport):
     id = 11
     name = "Cardonville"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3775000, vhf_low_hz=38450000, vhf_high_hz=118050000, uhf_hz=250050000)
@@ -2332,7 +2333,7 @@ class Deux_Jumeaux(Airport):
     id = 12
     name = "Deux Jumeaux"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3800000, vhf_low_hz=38500000, vhf_high_hz=118100000, uhf_hz=250100000)
@@ -2665,7 +2666,7 @@ class Chippelle(Airport):
     id = 13
     name = "Chippelle"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3825000, vhf_low_hz=38550000, vhf_high_hz=118150000, uhf_hz=250150000)
@@ -2794,7 +2795,7 @@ class Beuzeville(Airport):
     id = 14
     name = "Beuzeville"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3850000, vhf_low_hz=38600000, vhf_high_hz=118200000, uhf_hz=250200000)
@@ -2917,7 +2918,7 @@ class Azeville(Airport):
     id = 15
     name = "Azeville"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3875000, vhf_low_hz=38650000, vhf_high_hz=118250000, uhf_hz=250250000)
@@ -3025,7 +3026,7 @@ class Picauville(Airport):
     id = 16
     name = "Picauville"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3900000, vhf_low_hz=38700000, vhf_high_hz=118300000, uhf_hz=250300000)
@@ -3148,7 +3149,7 @@ class Le_Molay(Airport):
     id = 17
     name = "Le Molay"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3925000, vhf_low_hz=38750000, vhf_high_hz=118350000, uhf_hz=250350000)
@@ -3271,7 +3272,7 @@ class Longues_sur_Mer(Airport):
     id = 18
     name = "Longues-sur-Mer"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3950000, vhf_low_hz=38800000, vhf_high_hz=118400000, uhf_hz=250400000)
@@ -3424,7 +3425,7 @@ class Carpiquet(Airport):
     id = 19
     name = "Carpiquet"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3975000, vhf_low_hz=38850000, vhf_high_hz=118450000, uhf_hz=250450000)
@@ -3580,7 +3581,7 @@ class Bazenville(Airport):
     id = 20
     name = "Bazenville"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4025000, vhf_low_hz=38950000, vhf_high_hz=118550000, uhf_hz=250550000)
@@ -3775,7 +3776,7 @@ class Sainte_Croix_sur_Mer(Airport):
     id = 21
     name = "Sainte-Croix-sur-Mer"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4050000, vhf_low_hz=39000000, vhf_high_hz=118600000, uhf_hz=250600000)
@@ -3898,7 +3899,7 @@ class Beny_sur_Mer(Airport):
     id = 22
     name = "Beny-sur-Mer"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4075000, vhf_low_hz=39050000, vhf_high_hz=118650000, uhf_hz=250650000)
@@ -4060,7 +4061,7 @@ class Rucqueville(Airport):
     id = 23
     name = "Rucqueville"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4100000, vhf_low_hz=39100000, vhf_high_hz=118700000, uhf_hz=250700000)
@@ -4195,7 +4196,7 @@ class Sommervieu(Airport):
     id = 24
     name = "Sommervieu"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4125000, vhf_low_hz=39150000, vhf_high_hz=118750000, uhf_hz=250750000)
@@ -4282,7 +4283,7 @@ class Lantheuil(Airport):
     id = 25
     name = "Lantheuil"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4150000, vhf_low_hz=39200000, vhf_high_hz=118800000, uhf_hz=250800000)
@@ -4495,7 +4496,7 @@ class Evreux(Airport):
     id = 26
     name = "Evreux"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4175000, vhf_low_hz=39250000, vhf_high_hz=118850000, uhf_hz=250850000)
@@ -4583,7 +4584,7 @@ class Chailey(Airport):
     id = 27
     name = "Chailey"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4200000, vhf_low_hz=39300000, vhf_high_hz=118900000, uhf_hz=250900000)
@@ -4770,7 +4771,7 @@ class Needs_Oar_Point(Airport):
     id = 28
     name = "Needs Oar Point"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4225000, vhf_low_hz=39350000, vhf_high_hz=118950000, uhf_hz=250950000)
@@ -4957,7 +4958,7 @@ class Funtington(Airport):
     id = 29
     name = "Funtington"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4250000, vhf_low_hz=39400000, vhf_high_hz=119000000, uhf_hz=251000000)
@@ -5141,7 +5142,7 @@ class Tangmere(Airport):
     id = 30
     name = "Tangmere"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4300000, vhf_low_hz=39500000, vhf_high_hz=119100000, uhf_hz=251100000)
@@ -5217,7 +5218,7 @@ class Ford_AF(Airport):
     id = 31
     name = "Ford_AF"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4325000, vhf_low_hz=39550000, vhf_high_hz=119150000, uhf_hz=251150000)
@@ -5293,7 +5294,7 @@ class Argentan(Airport):
     id = 32
     name = "Argentan"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4350000, vhf_low_hz=39600000, vhf_high_hz=119200000, uhf_hz=251200000)
@@ -5404,7 +5405,7 @@ class Goulet(Airport):
     id = 33
     name = "Goulet"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4375000, vhf_low_hz=39650000, vhf_high_hz=119250000, uhf_hz=251250000)
@@ -5515,7 +5516,7 @@ class Barville(Airport):
     id = 34
     name = "Barville"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4400000, vhf_low_hz=39700000, vhf_high_hz=119300000, uhf_hz=251300000)
@@ -5582,7 +5583,7 @@ class Essay(Airport):
     id = 35
     name = "Essay"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4425000, vhf_low_hz=39750000, vhf_high_hz=119350000, uhf_hz=251350000)
@@ -5693,7 +5694,7 @@ class Hauterive(Airport):
     id = 36
     name = "Hauterive"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4450000, vhf_low_hz=39800000, vhf_high_hz=119400000, uhf_hz=251400000)
@@ -5804,7 +5805,7 @@ class Vrigny(Airport):
     id = 38
     name = "Vrigny"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4475000, vhf_low_hz=39850000, vhf_high_hz=119450000, uhf_hz=251450000)
@@ -5915,7 +5916,7 @@ class Conches(Airport):
     id = 40
     name = "Conches"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4525000, vhf_low_hz=39950000, vhf_high_hz=119550000, uhf_hz=251550000)
@@ -5941,185 +5942,44 @@ class Conches(Airport):
                 airplanes=True, slot_name='01', length=24.0, width=33.0, height=7.0, shelter=False))
 
 
-class Normandy(Terrain):
-    center = {"lat": 41.3, "long": 0.18}
-    city_graph = None
-    temperature = [
-        (-10, 10),
-        (-9, 10),
-        (-3, 12),
-        (-1, 14),
-        (0, 18),
-        (2, 22),
-        (7, 30),
-        (8, 32),
-        (3, 28),
-        (0, 22),
-        (-2, 16),
-        (-8, 10)
-    ]
-    assert(len(temperature) == 12)
+ALL_AIRPORTS: List[Type[Airport]] = [
+    Saint_Pierre_du_Mont,
+    Lignerolles,
+    Cretteville,
+    Maupertus,
+    Brucheville,
+    Meautis,
+    Cricqueville_en_Bessin,
+    Lessay,
+    Sainte_Laurent_sur_Mer,
+    Biniville,
+    Cardonville,
+    Deux_Jumeaux,
+    Chippelle,
+    Beuzeville,
+    Azeville,
+    Picauville,
+    Le_Molay,
+    Longues_sur_Mer,
+    Carpiquet,
+    Bazenville,
+    Sainte_Croix_sur_Mer,
+    Beny_sur_Mer,
+    Rucqueville,
+    Sommervieu,
+    Lantheuil,
+    Evreux,
+    Chailey,
+    Needs_Oar_Point,
+    Funtington,
+    Tangmere,
+    Ford_AF,
+    Argentan,
+    Goulet,
+    Barville,
+    Essay,
+    Hauterive,
+    Vrigny,
+    Conches,
+]
 
-    def __init__(self) -> None:
-        bounds = mapping.Rectangle(-132707.843750, -389942.906250, 185756.156250, 165065.078125, self)
-        super().__init__(
-            "Normandy",
-            PARAMETERS,
-            bounds,
-            map_view_default=MapView(bounds.center(), self, 1000000)
-        )
-        self.bullseye_blue = {"x": self.bounds.center().x, "y": self.bounds.center().y}
-        self.bullseye_red = {"x": self.bounds.center().x, "y": self.bounds.center().y}
-
-        self.airports['Saint Pierre du Mont'] = Saint_Pierre_du_Mont(self)
-        self.airports['Lignerolles'] = Lignerolles(self)
-        self.airports['Cretteville'] = Cretteville(self)
-        self.airports['Maupertus'] = Maupertus(self)
-        self.airports['Brucheville'] = Brucheville(self)
-        self.airports['Meautis'] = Meautis(self)
-        self.airports['Cricqueville-en-Bessin'] = Cricqueville_en_Bessin(self)
-        self.airports['Lessay'] = Lessay(self)
-        self.airports['Sainte-Laurent-sur-Mer'] = Sainte_Laurent_sur_Mer(self)
-        self.airports['Biniville'] = Biniville(self)
-        self.airports['Cardonville'] = Cardonville(self)
-        self.airports['Deux Jumeaux'] = Deux_Jumeaux(self)
-        self.airports['Chippelle'] = Chippelle(self)
-        self.airports['Beuzeville'] = Beuzeville(self)
-        self.airports['Azeville'] = Azeville(self)
-        self.airports['Picauville'] = Picauville(self)
-        self.airports['Le Molay'] = Le_Molay(self)
-        self.airports['Longues-sur-Mer'] = Longues_sur_Mer(self)
-        self.airports['Carpiquet'] = Carpiquet(self)
-        self.airports['Bazenville'] = Bazenville(self)
-        self.airports['Sainte-Croix-sur-Mer'] = Sainte_Croix_sur_Mer(self)
-        self.airports['Beny-sur-Mer'] = Beny_sur_Mer(self)
-        self.airports['Rucqueville'] = Rucqueville(self)
-        self.airports['Sommervieu'] = Sommervieu(self)
-        self.airports['Lantheuil'] = Lantheuil(self)
-        self.airports['Evreux'] = Evreux(self)
-        self.airports['Chailey'] = Chailey(self)
-        self.airports['Needs Oar Point'] = Needs_Oar_Point(self)
-        self.airports['Funtington'] = Funtington(self)
-        self.airports['Tangmere'] = Tangmere(self)
-        self.airports['Ford_AF'] = Ford_AF(self)
-        self.airports['Argentan'] = Argentan(self)
-        self.airports['Goulet'] = Goulet(self)
-        self.airports['Barville'] = Barville(self)
-        self.airports['Essay'] = Essay(self)
-        self.airports['Hauterive'] = Hauterive(self)
-        self.airports['Vrigny'] = Vrigny(self)
-        self.airports['Conches'] = Conches(self)
-
-    def saint_pierre_du_mont(self) -> Airport:
-        return self.airports["Saint Pierre du Mont"]
-
-    def lignerolles(self) -> Airport:
-        return self.airports["Lignerolles"]
-
-    def cretteville(self) -> Airport:
-        return self.airports["Cretteville"]
-
-    def maupertus(self) -> Airport:
-        return self.airports["Maupertus"]
-
-    def brucheville(self) -> Airport:
-        return self.airports["Brucheville"]
-
-    def meautis(self) -> Airport:
-        return self.airports["Meautis"]
-
-    def cricqueville_en_bessin(self) -> Airport:
-        return self.airports["Cricqueville-en-Bessin"]
-
-    def lessay(self) -> Airport:
-        return self.airports["Lessay"]
-
-    def sainte_laurent_sur_mer(self) -> Airport:
-        return self.airports["Sainte-Laurent-sur-Mer"]
-
-    def biniville(self) -> Airport:
-        return self.airports["Biniville"]
-
-    def cardonville(self) -> Airport:
-        return self.airports["Cardonville"]
-
-    def deux_jumeaux(self) -> Airport:
-        return self.airports["Deux Jumeaux"]
-
-    def chippelle(self) -> Airport:
-        return self.airports["Chippelle"]
-
-    def beuzeville(self) -> Airport:
-        return self.airports["Beuzeville"]
-
-    def azeville(self) -> Airport:
-        return self.airports["Azeville"]
-
-    def picauville(self) -> Airport:
-        return self.airports["Picauville"]
-
-    def le_molay(self) -> Airport:
-        return self.airports["Le Molay"]
-
-    def longues_sur_mer(self) -> Airport:
-        return self.airports["Longues-sur-Mer"]
-
-    def carpiquet(self) -> Airport:
-        return self.airports["Carpiquet"]
-
-    def bazenville(self) -> Airport:
-        return self.airports["Bazenville"]
-
-    def sainte_croix_sur_mer(self) -> Airport:
-        return self.airports["Sainte-Croix-sur-Mer"]
-
-    def beny_sur_mer(self) -> Airport:
-        return self.airports["Beny-sur-Mer"]
-
-    def rucqueville(self) -> Airport:
-        return self.airports["Rucqueville"]
-
-    def sommervieu(self) -> Airport:
-        return self.airports["Sommervieu"]
-
-    def lantheuil(self) -> Airport:
-        return self.airports["Lantheuil"]
-
-    def evreux(self) -> Airport:
-        return self.airports["Evreux"]
-
-    def chailey(self) -> Airport:
-        return self.airports["Chailey"]
-
-    def needs_oar_point(self) -> Airport:
-        return self.airports["Needs Oar Point"]
-
-    def funtington(self) -> Airport:
-        return self.airports["Funtington"]
-
-    def tangmere(self) -> Airport:
-        return self.airports["Tangmere"]
-
-    def ford_af(self) -> Airport:
-        return self.airports["Ford_AF"]
-
-    def argentan(self) -> Airport:
-        return self.airports["Argentan"]
-
-    def goulet(self) -> Airport:
-        return self.airports["Goulet"]
-
-    def barville(self) -> Airport:
-        return self.airports["Barville"]
-
-    def essay(self) -> Airport:
-        return self.airports["Essay"]
-
-    def hauterive(self) -> Airport:
-        return self.airports["Hauterive"]
-
-    def vrigny(self) -> Airport:
-        return self.airports["Vrigny"]
-
-    def conches(self) -> Airport:
-        return self.airports["Conches"]

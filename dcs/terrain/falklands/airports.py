@@ -1,15 +1,16 @@
 # flake8: noqa
+from typing import List, Type
+
 from dcs import mapping
 from dcs.atcradio import AtcRadio
-from dcs.terrain import Airport, Runway, ParkingSlot, Terrain, MapView
-from .projections.falklands import PARAMETERS
+from dcs.terrain import Airport, Runway, ParkingSlot, Terrain
 
 
 class Port_Stanley(Airport):
     id = 1
     name = "Port Stanley"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3825000, vhf_low_hz=38550000, vhf_high_hz=118100000, uhf_hz=250150000)
@@ -72,7 +73,7 @@ class Mount_Pleasant(Airport):
     id = 2
     name = "Mount Pleasant"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3850000, vhf_low_hz=38600000, vhf_high_hz=133350000, uhf_hz=250200000)
@@ -199,7 +200,7 @@ class San_Carlos_FOB(Airport):
     id = 3
     name = "San Carlos FOB"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3875000, vhf_low_hz=38650000, vhf_high_hz=134350000, uhf_hz=250250000)
@@ -253,7 +254,7 @@ class Rio_Gallegos(Airport):
     id = 5
     name = "Rio Gallegos"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3900000, vhf_low_hz=38700000, vhf_high_hz=119100000, uhf_hz=250300000)
@@ -340,7 +341,7 @@ class Rio_Grande(Airport):
     id = 6
     name = "Rio Grande"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3925000, vhf_low_hz=38750000, vhf_high_hz=118300000, uhf_hz=250350000)
@@ -376,7 +377,7 @@ class Ushuaia(Airport):
     id = 7
     name = "Ushuaia"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3950000, vhf_low_hz=38800000, vhf_high_hz=118100000, uhf_hz=250400000)
@@ -415,7 +416,7 @@ class Ushuaia_Helo_Port(Airport):
     id = 8
     name = "Ushuaia Helo Port"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3975000, vhf_low_hz=38850000, vhf_high_hz=118500000, uhf_hz=250450000)
@@ -454,7 +455,7 @@ class Punta_Arenas(Airport):
     id = 9
     name = "Punta Arenas"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=4000000, vhf_low_hz=38900000, vhf_high_hz=118700000, uhf_hz=250500000)
@@ -621,7 +622,7 @@ class Pampa_Guanaco(Airport):
     id = 10
     name = "Pampa Guanaco"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = None
@@ -642,7 +643,7 @@ class San_Julian(Airport):
     id = 11
     name = "San Julian"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3750000, vhf_low_hz=38400000, vhf_high_hz=118000000, uhf_hz=250000000)
@@ -684,7 +685,7 @@ class Puerto_Williams(Airport):
     id = 12
     name = "Puerto Williams"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3775000, vhf_low_hz=38450000, vhf_high_hz=118050000, uhf_hz=250050000)
@@ -714,7 +715,7 @@ class Puerto_Natales(Airport):
     id = 13
     name = "Puerto Natales"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = None
@@ -741,7 +742,7 @@ class El_Calafate(Airport):
     id = 14
     name = "El Calafate"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3800000, vhf_low_hz=38500000, vhf_high_hz=119950000, uhf_hz=250100000)
@@ -782,84 +783,19 @@ class El_Calafate(Airport):
                 airplanes=True, slot_name='F04', length=26.0, width=24.0, height=11.0, shelter=False))
 
 
-class Falklands(Terrain):
-    center = {"lat": 52.468, "long": 59.173}
-    city_graph = None
-    temperature = [
-        (5, 17),
-        (5, 17),
-        (2, 14),
-        (2, 14),
-        (2, 14),
-        (-5, 11),
-        (-5, 11),
-        (-5, 11),
-        (1, 15),
-        (1, 15),
-        (1, 15),
-        (5, 17)
-    ]
-    assert (len(temperature) == 12)
+ALL_AIRPORTS: List[Type[Airport]] = [
+    Port_Stanley,
+    Mount_Pleasant,
+    San_Carlos_FOB,
+    Rio_Gallegos,
+    Rio_Grande,
+    Ushuaia,
+    Ushuaia_Helo_Port,
+    Punta_Arenas,
+    Pampa_Guanaco,
+    San_Julian,
+    Puerto_Williams,
+    Puerto_Natales,
+    El_Calafate,
+]
 
-    def __init__(self):
-        super().__init__(
-            "Falklands",
-            PARAMETERS,
-            bounds=mapping.Rectangle(74967, -114995, -129982, 129991, self),
-            map_view_default=MapView(mapping.Point(0, 0, self), self, 1000000)
-        )
-        self.bullseye_blue = {"x": 0, "y": 0}
-        self.bullseye_red = {"x": 0, "y": 0}
-
-        self.airports['Port Stanley'] = Port_Stanley(self)
-        self.airports['Mount Pleasant'] = Mount_Pleasant(self)
-        self.airports['San Carlos FOB'] = San_Carlos_FOB(self)
-        self.airports['Rio Gallegos'] = Rio_Gallegos(self)
-        self.airports['Rio Grande'] = Rio_Grande(self)
-        self.airports['Ushuaia'] = Ushuaia(self)
-        self.airports['Ushuaia Helo Port'] = Ushuaia_Helo_Port(self)
-        self.airports['Punta Arenas'] = Punta_Arenas(self)
-        self.airports['Pampa Guanaco'] = Pampa_Guanaco(self)
-        self.airports['San Julian'] = San_Julian(self)
-        self.airports['Puerto Williams'] = Puerto_Williams(self)
-        self.airports['Puerto Natales'] = Puerto_Natales(self)
-        self.airports['El Calafate'] = El_Calafate(self)
-
-    def port_stanley(self) -> Airport:
-        return self.airports["Port Stanley"]
-
-    def mount_pleasant(self) -> Airport:
-        return self.airports["Mount Pleasant"]
-
-    def san_carlos_fob(self) -> Airport:
-        return self.airports["San Carlos FOB"]
-
-    def rio_gallegos(self) -> Airport:
-        return self.airports["Rio Gallegos"]
-
-    def rio_grande(self) -> Airport:
-        return self.airports["Rio Grande"]
-
-    def ushuaia(self) -> Airport:
-        return self.airports["Ushuaia"]
-
-    def ushuaia_helo_port(self) -> Airport:
-        return self.airports["Ushuaia Helo Port"]
-
-    def punta_arenas(self) -> Airport:
-        return self.airports["Punta Arenas"]
-
-    def pampa_guanaco(self) -> Airport:
-        return self.airports["Pampa Guanaco"]
-
-    def san_julian(self) -> Airport:
-        return self.airports["San Julian"]
-
-    def puerto_williams(self) -> Airport:
-        return self.airports["Puerto Williams"]
-
-    def puerto_natales(self) -> Airport:
-        return self.airports["Puerto Natales"]
-
-    def el_calafate(self) -> Airport:
-        return self.airports["El Calafate"]

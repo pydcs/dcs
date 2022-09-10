@@ -30,7 +30,7 @@ class BasicTests(unittest.TestCase):
 
         usa = m.country("USA")
         caucasus = m.terrain  # type: dcs.terrain.Caucasus
-        batumi = caucasus.batumi()
+        batumi = caucasus.airports["Batumi"]
         self.assertIsNotNone(usa)
         pos = batumi.random_unit_zone(caucasus).center()
         vg = m.vehicle_group(usa, "Tanks", dcs.countries.USA.Vehicle.Armor.M_1_Abrams, pos)
@@ -89,7 +89,7 @@ class BasicTests(unittest.TestCase):
         self.assertIsNotNone(awacs)
         self.assertIsNotNone(awacs.points[0].find_task(dcs.task.AWACSTaskAction))
 
-        soganlug = m.terrain.soganlug()
+        soganlug = m.terrain.airports["Soganlug"]
         soganlug.set_blue()
         tanker = m.refuel_flight(usa, "Tanker", dcs.planes.KC_135, None, soganlug.position, race_distance=120 * 1000,
                                  heading=270)
@@ -115,7 +115,7 @@ class BasicTests(unittest.TestCase):
         apache.add_runway_waypoint(kobuleti)
         apache.add_waypoint(ustanks.position, 300, 200)
 
-        senaki = m.terrain.senaki_kolkhi()
+        senaki = m.terrain.airports["Senaki-Kolkhi"]
         senaki.set_red()
         russia = m.coalition["red"].country("Russia")
         bg = m.vehicle_group(
@@ -134,7 +134,7 @@ class BasicTests(unittest.TestCase):
             dcs.mapping.Point(last_wp.position.x - 1000 * 80, last_wp.position.y - 1000 * 150, m.terrain),
             6000, 800)
 
-        sukhumi = m.terrain.sukhumi_babushara()
+        sukhumi = m.terrain.airports["Sukhumi-Babushara"]
         sukhumi.set_red()
         su25 = m.flight_group_from_airport(russia, "Su25 attack", dcs.planes.Su_25T, sukhumi,
                                            start_type=dcs.mission.StartType.Runway, group_size=2)
@@ -187,13 +187,13 @@ class BasicTests(unittest.TestCase):
 
     def test_nav_target_points(self):
         m = dcs.Mission()
-        batumi = m.terrain.batumi()
+        batumi = m.terrain.airports["Batumi"]
         batumi.set_blue()
         usa = m.country("USA")
 
-        jeff = m.flight_group_from_airport(usa, "JF17", dcs.planes.JF_17, group_size=2, airport=m.terrain.batumi())
+        jeff = m.flight_group_from_airport(usa, "JF17", dcs.planes.JF_17, group_size=2, airport=m.terrain.airports["Batumi"])
         jeff.set_client()
-        jeff.add_waypoint(m.terrain.batumi().position.point_from_heading(-90, 10000), 600)
+        jeff.add_waypoint(m.terrain.airports["Batumi"].position.point_from_heading(-90, 10000), 600)
 
         pp1_pos = batumi.position.point_from_heading(-90, 12000)
         jeff.add_nav_target_point(batumi.position.point_from_heading(-90, 12000), "PP1")
@@ -232,24 +232,24 @@ class BasicTests(unittest.TestCase):
 
     def test_create_mission_with_marks(self):
         m = dcs.Mission()
-        batumi = m.terrain.batumi()
+        batumi = m.terrain.airports["Batumi"]
         batumi.set_blue()
-        kutaisi = m.terrain.kutaisi()
+        kutaisi = m.terrain.airports["Kutaisi"]
         kutaisi.set_red()
         usa = m.country("USA")
         rus = m.country("Russia")
 
         # Create some group to use if you want to check visibility of marks in game
         su25_group = m.flight_group_from_airport(usa, "SU25", dcs.planes.Su_25T,
-                                                 group_size=1, airport=m.terrain.batumi())
+                                                 group_size=1, airport=m.terrain.airports["Batumi"])
         su25_group.set_client()
 
         f15_group = m.flight_group_from_airport(usa, "F15C", dcs.planes.F_15C,
-                                                group_size=1, airport=m.terrain.batumi())
+                                                group_size=1, airport=m.terrain.airports["Batumi"])
         f15_group.set_client()
 
         su25_red_group = m.flight_group_from_airport(rus, "SU25 RED", dcs.planes.Su_25T,
-                                                     group_size=1, airport=m.terrain.kutaisi())
+                                                     group_size=1, airport=m.terrain.airports["Kutaisi"])
         su25_red_group.set_client()
 
         # In DCS, you have to create a trigger zone to add a mark.
@@ -321,11 +321,11 @@ class BasicTests(unittest.TestCase):
         usa = m.country("USA")
         russia = m.country("Russia")
         fw190 = m.flight_group_from_airport(russia, "FW-190", dcs.planes.FW_190D9, group_size=1,
-                                            airport=m.terrain.dunkirk_mardyck())
-        fw190.add_waypoint(m.terrain.dunkirk_mardyck().position.point_from_heading(-90, 40000), 500, 300)
+                                            airport=m.terrain.airports["Dunkirk Mardyck"])
+        fw190.add_waypoint(m.terrain.airports["Dunkirk Mardyck"].position.point_from_heading(-90, 40000), 500, 300)
         p47 = m.flight_group_from_airport(usa, "P-47", dcs.planes.P_47D_30, group_size=1,
-                                          airport=m.terrain.hawkinge())
-        p47.add_waypoint(m.terrain.dunkirk_mardyck().position.point_from_heading(-90, 40000), 500, 300)
+                                          airport=m.terrain.airports["Hawkinge"])
+        p47.add_waypoint(m.terrain.airports["Dunkirk Mardyck"].position.point_from_heading(-90, 40000), 500, 300)
 
         m.save('missions/test_mission_the_channel.miz')
 
@@ -340,11 +340,11 @@ class BasicTests(unittest.TestCase):
         usa = m.country("USA")
         russia = m.country("Russia")
         fa18 = m.flight_group_from_airport(usa, "F/A-18C", dcs.planes.FA_18C_hornet, group_size=1,
-                                           airport=m.terrain.damascus())
-        fa18.add_waypoint(m.terrain.damascus().position.point_from_heading(-90, 40000), 500, 300)
+                                           airport=m.terrain.airports["Damascus"])
+        fa18.add_waypoint(m.terrain.airports["Damascus"].position.point_from_heading(-90, 40000), 500, 300)
         su22 = m.flight_group_from_airport(russia, "Su22", dcs.planes.Su_17M4, group_size=1,
-                                           airport=m.terrain.damascus())
-        su22.add_waypoint(m.terrain.damascus().position.point_from_heading(-90, 40000), 500, 300)
+                                           airport=m.terrain.airports["Damascus"])
+        su22.add_waypoint(m.terrain.airports["Damascus"].position.point_from_heading(-90, 40000), 500, 300)
 
         m.save('missions/test_mission_syria.miz')
 
@@ -358,14 +358,14 @@ class BasicTests(unittest.TestCase):
 
         usa = m.country("USA")
 
-        trigger_zone = m.triggers.add_triggerzone(m.terrain.batumi().position.point_from_heading(90, 15000),
+        trigger_zone = m.triggers.add_triggerzone(m.terrain.airports["Batumi"].position.point_from_heading(90, 15000),
                                                   radius=5000, hidden=False, name="TRIGGER_ZONE")
         trigger = dcs.triggers.TriggerOnce(dcs.triggers.Event.NoEvent, "Detection of blue aircraft")
         trigger.add_condition(dcs.condition.PartOfCoalitionInZone("blue", trigger_zone.id, "AIRPLANE"))
         trigger.add_action(dcs.action.MessageToAll(text=String("Blue aircraft detected in trigger zone !")))
         m.triggerrules.triggers.append(trigger)
 
-        trigger_zone_2 = m.triggers.add_triggerzone(m.terrain.batumi().position, radius=5000, hidden=False,
+        trigger_zone_2 = m.triggers.add_triggerzone(m.terrain.airports["Batumi"].position, radius=5000, hidden=False,
                                                     name="BATUMI_ZONE")
         trigger_outside = dcs.triggers.TriggerOnce(dcs.triggers.Event.NoEvent, "No blue in batumi zone")
         trigger_outside.add_condition(dcs.condition.PartOfCoalitionOutsideZone("blue", trigger_zone_2.id, "AIRPLANE"))
@@ -373,7 +373,7 @@ class BasicTests(unittest.TestCase):
             text=String("Blue aircraft are not in batumi zone anymore!")))
         m.triggerrules.triggers.append(trigger_outside)
 
-        f15 = m.flight_group_inflight(usa, "F15", dcs.planes.F_15C, m.terrain.batumi().position, 1000)
+        f15 = m.flight_group_inflight(usa, "F15", dcs.planes.F_15C, m.terrain.airports["Batumi"].position, 1000)
         f15.add_waypoint(trigger_zone.position, 500)
 
         m.save('missions/mission_with_part_of_coalition_zone_trigger.miz')
@@ -508,7 +508,7 @@ class BasicTests(unittest.TestCase):
             group_name,
             dcs.planes.FA_18C_hornet,
             group_size=1,
-            airport=m.terrain.damascus()
+            airport=m.terrain.airports["Damascus"]
         )
         unit = group.units[0]
         unit.set_client()
@@ -688,7 +688,7 @@ class BasicTests(unittest.TestCase):
 
         usa = m.country("USA")
         caucasus = m.terrain
-        batumi = caucasus.batumi()
+        batumi = caucasus.airports["Batumi"]
         m.vehicle_group(usa, "qf17", dcs.countries.USA.Vehicle.AirDefence.QF_37_AA,
                         position=batumi.random_unit_zone(caucasus).center())
 
@@ -748,7 +748,7 @@ class BasicTests(unittest.TestCase):
         #  /  \
         #  \  /
         #   \/
-        zone_center: dcs.mapping.Point = caucasus.sukhumi_babushara().position
+        zone_center: dcs.mapping.Point = caucasus.airports["Sukhumi-Babushara"].position
         ZONE_RADIUS_M = 10000.0
         offsets = [(ZONE_RADIUS_M, 0.0), (0.0, ZONE_RADIUS_M),
                    (-ZONE_RADIUS_M, 0.0), (0.0, -ZONE_RADIUS_M)]
@@ -770,7 +770,7 @@ class BasicTests(unittest.TestCase):
             p = p1 - p2
             return math.sqrt(p.x**2 + p.y**2)
 
-        sukhmi: dcs.mapping.Point = caucasus.sukhumi_babushara().position
+        sukhmi: dcs.mapping.Point = caucasus.airports["Sukhumi-Babushara"].position
         self.assertTrue(
             all(
                 distance(sukhmi, v) <= ZONE_RADIUS_M + 0.001

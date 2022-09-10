@@ -1,14 +1,16 @@
 # flake8: noqa
+from typing import List, Type
+
 from dcs import mapping
 from dcs.atcradio import AtcRadio
-from dcs.terrain import Airport, Runway, ParkingSlot, Terrain, MapView
-from .projections.marianaislands import PARAMETERS
+from dcs.terrain import Airport, Runway, ParkingSlot, Terrain
+
 
 class Rota_Intl(Airport):
     id = 1
     name = "Rota Intl"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3750000, vhf_low_hz=38400000, vhf_high_hz=123600000, uhf_hz=250000000)
@@ -50,7 +52,7 @@ class Saipan_Intl(Airport):
     id = 2
     name = "Saipan Intl"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3775000, vhf_low_hz=38450000, vhf_high_hz=125700000, uhf_hz=256900000)
@@ -122,7 +124,7 @@ class Tinian_Intl(Airport):
     id = 3
     name = "Tinian Intl"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3800000, vhf_low_hz=38500000, vhf_high_hz=123650000, uhf_hz=250050000)
@@ -145,11 +147,11 @@ class Tinian_Intl(Airport):
                 airplanes=True, slot_name='03', length=26.0, width=24.0, height=11.0, shelter=False))
 
 
-class Antonio_B_Won_Pat_Intl(Airport):
+class Antonio_B__Won_Pat_Intl(Airport):
     id = 4
     name = "Antonio B. Won Pat Intl"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3825000, vhf_low_hz=38550000, vhf_high_hz=118100000, uhf_hz=340200000)
@@ -234,7 +236,7 @@ class Andersen_AFB(Airport):
     id = 6
     name = "Andersen AFB"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3850000, vhf_low_hz=38600000, vhf_high_hz=126200000, uhf_hz=250100000)
@@ -828,52 +830,11 @@ class Andersen_AFB(Airport):
                 airplanes=True, slot_name='121', length=60.0, width=60.0, height=18.0, shelter=False))
 
 
-class MarianaIslands(Terrain):
-    center = {"lat": 13.485, "long": 144.798}
-    city_graph = None
-    temperature = [
-        # https://en.wikipedia.org/wiki/Guam#Climate
-        (24, 30),
-        (24, 30),
-        (24, 30),
-        (25, 31),
-        (25, 31),
-        (25, 31),
-        (25, 31),
-        (25, 30),
-        (25, 30),
-        (25, 30),
-        (25, 30),
-        (25, 30)
-    ]
+ALL_AIRPORTS: List[Type[Airport]] = [
+    Rota_Intl,
+    Saipan_Intl,
+    Tinian_Intl,
+    Antonio_B__Won_Pat_Intl,
+    Andersen_AFB,
+]
 
-    assert(len(temperature) == 12)
-
-    def __init__(self):
-        super().__init__(
-            "MarianaIslands",
-            PARAMETERS,
-            bounds=mapping.Rectangle(1000 * 10000, -1000 * 1000, -300 * 1000, 500 * 1000, self),
-            map_view_default=MapView(mapping.Point(76432, 48051, self), self, 1000000)
-        )
-
-        self.airports['Rota Intl'] = Rota_Intl(self)
-        self.airports['Saipan Intl'] = Saipan_Intl(self)
-        self.airports['Tinian Intl'] = Tinian_Intl(self)
-        self.airports['Antonio B. Won Pat Intl'] = Antonio_B_Won_Pat_Intl(self)
-        self.airports['Andersen AFB'] = Andersen_AFB(self)
-
-    def rota_intl(self) -> Airport:
-        return self.airports["Rota Intl"]
-
-    def saipan_intl(self) -> Airport:
-        return self.airports["Saipan Intl"]
-
-    def tinian_intl(self) -> Airport:
-        return self.airports["Tinian Intl"]
-
-    def antonio_b_won_pat_intl(self) -> Airport:
-        return self.airports["Antonio B. Won Pat Intl"]
-
-    def andersen_afb(self) -> Airport:
-        return self.airports["Andersen AFB"]

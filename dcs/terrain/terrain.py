@@ -452,8 +452,8 @@ class Terrain:
         self.bounds = bounds
         self.map_view_default = map_view_default
         self.center = {"lat": 0.0, "long": 0.0}  # WGS84 decimal
-        self.bullseye_blue = {"x": 0, "y": 0}
-        self.bullseye_red = {"x": 0, "y": 0}
+        self.bullseye_blue = {"x": 0.0, "y": 0.0}
+        self.bullseye_red = {"x": 0.0, "y": 0.0}
         self.airports = {}  # type: Dict[str,Airport]
 
         self._point_to_ll_transformer = Transformer.from_crs(

@@ -23,15 +23,15 @@ class TrainingScenario:
 
         self.add_civil_airtraffic(hidden=not unhide,
                                   airports_to_use=[
-                                      nevada.mccarran_international(),
-                                      nevada.henderson_executive(),
-                                      nevada.boulder_city()])
+                                      nevada.airports["McCarran International"],
+                                      nevada.airports["Henderson Executive"],
+                                      nevada.airports["Boulder City"]])
 
         usa = self.m.country(dcs.countries.USA.name)
 
-        nellis = nevada.nellis()
-        creech = nevada.creech()
-        groom = nevada.groom_lake()
+        nellis = nevada.airports["Nellis"]
+        creech = nevada.airports["Creech"]
+        groom = nevada.airports["Groom Lake"]
 
         blue_military = [nellis, creech, groom]
 

@@ -1,18 +1,16 @@
 # flake8: noqa
-from dcs.atcradio import AtcRadio
-from dcs.terrain import Terrain, Airport, Runway, ParkingSlot, MapView, Graph
-import dcs.mapping as mapping
-import os
-from typing import List
+from typing import List, Type
 
-from .projections.nevada import PARAMETERS
+from dcs import mapping
+from dcs.atcradio import AtcRadio
+from dcs.terrain import Airport, Runway, ParkingSlot, Terrain
 
 
 class Creech(Airport):
     id = 1
     name = "Creech"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3825000, vhf_low_hz=38550000, vhf_high_hz=118300000, uhf_hz=360600000)
@@ -181,7 +179,7 @@ class Groom_Lake(Airport):
     id = 2
     name = "Groom Lake"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3850000, vhf_low_hz=38600000, vhf_high_hz=118000000, uhf_hz=250050000)
@@ -352,7 +350,7 @@ class McCarran_International(Airport):
     id = 3
     name = "McCarran International"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3875000, vhf_low_hz=38650000, vhf_high_hz=119900000, uhf_hz=257800000)
@@ -413,7 +411,7 @@ class Nellis(Airport):
     id = 4
     name = "Nellis"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3900000, vhf_low_hz=38700000, vhf_high_hz=132550000, uhf_hz=327000000)
@@ -1170,7 +1168,7 @@ class Beatty(Airport):
     id = 5
     name = "Beatty"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = None
@@ -1194,7 +1192,7 @@ class Boulder_City(Airport):
     id = 6
     name = "Boulder City"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3925000, vhf_low_hz=38750000, vhf_high_hz=118050000, uhf_hz=250100000)
@@ -1321,7 +1319,7 @@ class Echo_Bay(Airport):
     id = 7
     name = "Echo Bay"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = None
@@ -1342,7 +1340,7 @@ class Henderson_Executive(Airport):
     id = 8
     name = "Henderson Executive"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3950000, vhf_low_hz=38800000, vhf_high_hz=125100000, uhf_hz=250150000)
@@ -1487,7 +1485,7 @@ class Jean(Airport):
     id = 9
     name = "Jean"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = None
@@ -1515,7 +1513,7 @@ class Laughlin(Airport):
     id = 10
     name = "Laughlin"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3750000, vhf_low_hz=38400000, vhf_high_hz=123900000, uhf_hz=250000000)
@@ -1578,7 +1576,7 @@ class Lincoln_County(Airport):
     id = 11
     name = "Lincoln County"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = None
@@ -1611,7 +1609,7 @@ class Mesquite(Airport):
     id = 13
     name = "Mesquite"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = None
@@ -1659,7 +1657,7 @@ class Mina(Airport):
     id = 14
     name = "Mina"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = None
@@ -1674,7 +1672,7 @@ class North_Las_Vegas(Airport):
     id = 15
     name = "North Las Vegas"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = True
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3775000, vhf_low_hz=38450000, vhf_high_hz=125700000, uhf_hz=360750000)
@@ -1832,7 +1830,7 @@ class Pahute_Mesa(Airport):
     id = 16
     name = "Pahute Mesa"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = None
@@ -1862,7 +1860,7 @@ class Tonopah(Airport):
     id = 17
     name = "Tonopah"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = None
@@ -1953,7 +1951,7 @@ class Tonopah_Test_Range(Airport):
     id = 18
     name = "Tonopah Test Range"
     tacan = None
-    unit_zones = []
+    unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
     atc_radio = AtcRadio(hf_hz=3800000, vhf_low_hz=38500000, vhf_high_hz=124750000, uhf_hz=257950000)
@@ -2168,113 +2166,23 @@ class Tonopah_Test_Range(Airport):
                 airplanes=True, slot_name='A01', length=39.857483, width=40.0, height=18.0, shelter=False))
 
 
-class Nevada(Terrain):
-    center = {"lat": 39.81806, "long": -114.73333}
-    city_graph = None
-    temperature = [
-        (0, 10),
-        (2, 16),
-        (6, 22),
-        (10, 24),
-        (14, 28),
-        (19, 35),
-        (23, 40),
-        (22, 38),
-        (18, 33),
-        (11, 26),
-        (5, 19),
-        (1, 13)
-    ]
-    assert(len(temperature) == 12)
+ALL_AIRPORTS: List[Type[Airport]] = [
+    Creech,
+    Groom_Lake,
+    McCarran_International,
+    Nellis,
+    Beatty,
+    Boulder_City,
+    Echo_Bay,
+    Henderson_Executive,
+    Jean,
+    Laughlin,
+    Lincoln_County,
+    Mesquite,
+    Mina,
+    North_Las_Vegas,
+    Pahute_Mesa,
+    Tonopah,
+    Tonopah_Test_Range,
+]
 
-    def __init__(self):
-        super().__init__(
-            "Nevada",
-            PARAMETERS,
-            bounds=mapping.Rectangle(-166934.953125, -329334.875000, -497177.656250, 209836.890625, self),
-            map_view_default=MapView(mapping.Point(-340928.57142857, -55928.571428568, self), self, 1000000)
-        )
-        # nttr center MGRS
-        # 11SPE9400410022
-        self.bullseye_blue = {"x": -409931.344, "y": -14024.097}
-        self.bullseye_red = {"x": -288293.969, "y": -88022.641}
-
-        try:
-            self.city_graph = Graph.from_pickle(os.path.join(os.path.dirname(__file__), 'nevada.p'))  # type: Graph
-        except FileNotFoundError:
-            pass
-
-        self.airports['Creech'] = Creech(self)
-        self.airports['Groom Lake'] = Groom_Lake(self)
-        self.airports['McCarran International'] = McCarran_International(self)
-        self.airports['Nellis'] = Nellis(self)
-        self.airports['Beatty'] = Beatty(self)
-        self.airports['Boulder City'] = Boulder_City(self)
-        self.airports['Echo Bay'] = Echo_Bay(self)
-        self.airports['Henderson Executive'] = Henderson_Executive(self)
-        self.airports['Jean'] = Jean(self)
-        self.airports['Laughlin'] = Laughlin(self)
-        self.airports['Lincoln County'] = Lincoln_County(self)
-        self.airports['Mesquite'] = Mesquite(self)
-        self.airports['Mina'] = Mina(self)
-        self.airports['North Las Vegas'] = North_Las_Vegas(self)
-        self.airports['Pahute Mesa'] = Pahute_Mesa(self)
-        self.airports['Tonopah'] = Tonopah(self)
-        self.airports['Tonopah Test Range'] = Tonopah_Test_Range(self)
-
-    def creech(self) -> Airport:
-        return self.airports["Creech"]
-
-    def groom_lake(self) -> Airport:
-        return self.airports["Groom Lake"]
-
-    def mccarran_international(self) -> Airport:
-        return self.airports["McCarran International"]
-
-    def nellis(self) -> Airport:
-        return self.airports["Nellis"]
-
-    def beatty(self) -> Airport:
-        return self.airports["Beatty"]
-
-    def boulder_city(self) -> Airport:
-        return self.airports["Boulder City"]
-
-    def echo_bay(self) -> Airport:
-        return self.airports["Echo Bay"]
-
-    def henderson_executive(self) -> Airport:
-        return self.airports["Henderson Executive"]
-
-    def jean(self) -> Airport:
-        return self.airports["Jean"]
-
-    def laughlin(self) -> Airport:
-        return self.airports["Laughlin"]
-
-    def lincoln_county(self) -> Airport:
-        return self.airports["Lincoln County"]
-
-    def mesquite(self) -> Airport:
-        return self.airports["Mesquite"]
-
-    def mina(self) -> Airport:
-        return self.airports["Mina"]
-
-    def north_las_vegas(self) -> Airport:
-        return self.airports["North Las Vegas"]
-
-    def pahute_mesa(self) -> Airport:
-        return self.airports["Pahute Mesa"]
-
-    def tonopah(self) -> Airport:
-        return self.airports["Tonopah"]
-
-    def tonopah_test_range(self) -> Airport:
-        return self.airports["Tonopah Test Range"]
-
-    def default_red_airports(self) -> List[Airport]:
-        return []
-
-    def default_blue_airports(self) -> List[Airport]:
-        return list(self.airport_list())
