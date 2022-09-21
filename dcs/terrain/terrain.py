@@ -1,5 +1,6 @@
 # terrain module
 from __future__ import annotations
+from dataclasses import dataclass
 
 from pyproj import CRS, Transformer
 
@@ -49,20 +50,35 @@ class ParkingSlot:
         )
 
 
+@dataclass(frozen=True)
 class Runway:
-    def __init__(self, heading, ils=None, leftright=0):
-        """
+    id: Optional[int]
+    name: str
+    heading: int
+    opposite_heading: int
 
-        :param heading: Compass direction of runway
-        :param ils:
-        :param leftright: 0 only 1 runway
-                          1 left runway
-                          2 right runway
-        :return: None
-        """
-        self.heading = heading
-        self.ils = ils
-        self.leftright = leftright
+    @staticmethod
+    def from_lua(data: Dict[str, Any]) -> Runway:
+        # Example data:
+        # {
+        #     ["start"] = "13R",
+        #     ["id"] = 2,
+        #     ["name"] = "13R-31L",
+        #     ["end"] = "31L",
+        # }
+
+        # For some airfields (Sir Abu Nuayr in the gulf, for example), the runway ID is
+        # -1. I have no idea what that means, but since it certainly isn't a valid
+        # index, we translate that to None.
+        runway_id: Optional[int] = data["id"]
+        if runway_id == -1:
+            runway_id = None
+        return Runway(
+            runway_id,
+            data["name"],
+            int(data["start"].rstrip("LR")) * 10,
+            int(data["end"].rstrip("LR")) * 10,
+        )
 
 
 class RunwayOccupiedError(RuntimeError):

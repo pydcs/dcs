@@ -47,6 +47,7 @@ from pathlib import Path
 
 import dcs.lua
 from dcs.atcradio import AtcRadio
+from dcs.terrain.terrain import Runway
 
 
 THIS_DIR = Path(__file__).parent.resolve()
@@ -116,14 +117,9 @@ class {sname}(Airport):
         super().__init__(mapping.Point({x}, {y}, terrain), terrain)
 """, file=output)
 
-            i = 0
-            for runway in airport['airport']["runwayName"]:
-                i += 1
-                if not i % 2:
-                    continue  # pydcs code only needs one direction runway
-                runway = airport['airport']["runwayName"][runway]
-                hdg = int(runway) * 10 if runway[-1].isdigit() else int(runway[:-1]) * 10
-                print("        self.runways.append(Runway({hdg}))".format(hdg=hdg), file=output)
+            for runway_data in airport["airport"]["runways"].values():
+                runway = Runway.from_lua(runway_data)
+                print(f"        self.runways.append({repr(runway)})", file=output)
 
             for standid in sorted(airport["standlist"]):
                 slot = airport["standlist"][standid]
