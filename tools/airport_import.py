@@ -43,11 +43,14 @@ See https://github.com/pydcs/dcs/issues/36
 
 import argparse
 import codecs
+from collections import defaultdict
 from pathlib import Path
+from typing import Any, Dict, Iterable, List, Set, Tuple
 
 import dcs.lua
 from dcs.atcradio import AtcRadio
-from dcs.terrain.terrain import Runway
+from dcs.beacons import AirportBeacon, RunwayBeacon
+from dcs.terrain.terrain import Runway, RunwayBeaconMapping
 
 
 THIS_DIR = Path(__file__).parent.resolve()
@@ -56,6 +59,34 @@ TERRAINS_DIR = THIS_DIR.parent / "dcs/terrain"
 
 def safename(name: str) -> str:
     return name.replace(' ', '_').replace('-', '_').replace('.', '_').replace("'", '_')
+
+
+def parse_beacons(
+    each_beacon: Iterable[Dict[str, Any]]
+) -> Tuple[List[AirportBeacon], RunwayBeaconMapping]:
+    airport_beacons = []
+    runway_beacons: RunwayBeaconMapping = defaultdict(lambda: defaultdict(list))
+    for data in each_beacon:
+        # Example data:
+        #
+        # {
+        #     ["runwayName"] = "04-22",
+        #     ["runwayId"] = 1,
+        #     ["runwaySide"] = "22",
+        #     ["beaconId"] = "airfield12_1",
+        # }
+        #
+        # Some beacons have only a beaconId.
+        if "runwayId" in data:
+            beacon = RunwayBeacon.from_lua(data)
+            # -1 shows up for some runway IDs in the runways section. I assume those
+            # will never have beacons. If this assertion fails, we may need to fall back
+            # to name indexing.
+            assert beacon.runway_id != -1
+            runway_beacons[beacon.runway_id][beacon.runway_side].append(beacon)
+        else:
+            airport_beacons.append(AirportBeacon.from_lua(data))
+    return airport_beacons, runway_beacons
 
 
 def main():
@@ -75,6 +106,7 @@ def main():
         print(file=output)
         print("from dcs import mapping", file=output)
         print("from dcs.atcradio import AtcRadio", file=output)
+        print("from dcs.beacons import AirportBeacon, RunwayBeacon", file=output)
         print("from dcs.terrain import Airport, ParkingSlot, Runway, RunwayApproach, Terrain", file=output)
 
         airport_class_names: list[str] = []
@@ -102,6 +134,12 @@ def main():
 
             airport_class_names.append(sname)
 
+            airport_beacons, runway_beacons = parse_beacons(
+                airport["airport"]["beacons"].values()
+            )
+            runways = [Runway.from_lua(data, runway_beacons)
+                       for data in airport["airport"]["runways"].values()]
+
             print(f"""
 
 class {sname}(Airport):
@@ -117,8 +155,9 @@ class {sname}(Airport):
         super().__init__(mapping.Point({x}, {y}, terrain), terrain)
 """, file=output)
 
-            for runway_data in airport["airport"]["runways"].values():
-                runway = Runway.from_lua(runway_data)
+            for beacon in airport_beacons:
+                print(f"        self.beacons.append({repr(beacon)})", file=output)
+            for runway in runways:
                 print(f"        self.runways.append({repr(runway)})", file=output)
 
             for standid in sorted(airport["standlist"]):

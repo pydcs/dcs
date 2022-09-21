@@ -8,6 +8,7 @@ from dcs.atcradio import AtcRadio
 import dcs.mapping as mapping
 import dcs.lua as lua
 import dcs.point as point
+from dcs.beacons import AirportBeacon, RunwayBeacon
 from dcs.terrain.projections.transversemercator import TransverseMercator
 import dcs.unittype as unittype
 import dcs.weather as weather
@@ -50,14 +51,18 @@ class ParkingSlot:
         )
 
 
+RunwayBeaconMapping = Dict[int, Dict[str, List[RunwayBeacon]]]
+
+
 @dataclass(frozen=True)
 class RunwayApproach:
     name: str
     heading: int
+    beacons: List[RunwayBeacon]
 
     @staticmethod
-    def from_lua(name: str) -> RunwayApproach:
-        return RunwayApproach(name, int(name.rstrip("LR")) * 10)
+    def from_lua(name: str, beacons: Dict[str, List[RunwayBeacon]]) -> RunwayApproach:
+        return RunwayApproach(name, int(name.rstrip("LR")) * 10, beacons.get(name, []))
 
 
 @dataclass(frozen=True)
@@ -77,7 +82,7 @@ class Runway:
         return self.main.heading
 
     @staticmethod
-    def from_lua(data: Dict[str, Any]) -> Runway:
+    def from_lua(data: Dict[str, Any], runway_beacons: RunwayBeaconMapping) -> Runway:
         # Example data:
         # {
         #     ["start"] = "13R",
@@ -92,11 +97,14 @@ class Runway:
         runway_id: Optional[int] = data["id"]
         if runway_id == -1:
             runway_id = None
+            beacons = {}
+        if runway_id is not None:
+            beacons = runway_beacons.get(runway_id, {})
         return Runway(
             id=runway_id,
             name=data["name"],
-            main=RunwayApproach.from_lua(data["start"]),
-            opposite=RunwayApproach.from_lua(data["end"]),
+            main=RunwayApproach.from_lua(data["start"], beacons),
+            opposite=RunwayApproach.from_lua(data["end"], beacons),
         )
 
 
@@ -124,6 +132,11 @@ class Airport:
         self.runway_used = None
         self.runways = []  # type: List[Runway]
         self.parking_slots = []  # type: List[ParkingSlot]
+        # This is currently the raw data from DCS, not a useful API. We don't (yet) have
+        # the info for the beacons themselves, so the beacon associations are not useful
+        # unless that information is available elsewhere. This data contained in this
+        # field will change once pydcs has more data for beacons.
+        self.beacons: list[AirportBeacon] = []
 
         # warehouse values
         self.coalition = "NEUTRAL"

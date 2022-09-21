@@ -3,6 +3,7 @@ from typing import List, Type
 
 from dcs import mapping
 from dcs.atcradio import AtcRadio
+from dcs.beacons import AirportBeacon, RunwayBeacon
 from dcs.terrain import Airport, ParkingSlot, Runway, RunwayApproach, Terrain
 
 
@@ -18,7 +19,7 @@ class Anapa_Vityazevo(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-5412.409668, 243128.820313, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='22-04', main=RunwayApproach(name='22', heading=220), opposite=RunwayApproach(name='04', heading=40)))
+        self.runways.append(Runway(id=1, name='22-04', main=RunwayApproach(name='22', heading=220, beacons=[RunwayBeacon(id='airfield12_1', runway_name='04-22', runway_id=1, runway_side='22'), RunwayBeacon(id='airfield12_0', runway_name='04-22', runway_id=1, runway_side='22')]), opposite=RunwayApproach(name='04', heading=40, beacons=[RunwayBeacon(id='airfield12_2', runway_name='04-22', runway_id=1, runway_side='04'), RunwayBeacon(id='airfield12_3', runway_name='04-22', runway_id=1, runway_side='04')])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=1, position=mapping.Point(-4829.5249882422, 244622.06661236, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='40', length=78.722809, width=67.096466, height=18.0, shelter=False))
@@ -309,7 +310,8 @@ class Krasnodar_Center(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(11685.205078, 367933.515625, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='09-27', main=RunwayApproach(name='09', heading=90), opposite=RunwayApproach(name='27', heading=270)))
+        self.beacons.append(AirportBeacon(id='airfield13_6'))
+        self.runways.append(Runway(id=1, name='09-27', main=RunwayApproach(name='09', heading=90, beacons=[RunwayBeacon(id='airfield13_2', runway_name='09-27', runway_id=1, runway_side='09'), RunwayBeacon(id='airfield13_3', runway_name='09-27', runway_id=1, runway_side='09'), RunwayBeacon(id='airfield13_4', runway_name='09-27', runway_id=1, runway_side='09'), RunwayBeacon(id='airfield13_5', runway_name='09-27', runway_id=1, runway_side='09')]), opposite=RunwayApproach(name='27', heading=270, beacons=[RunwayBeacon(id='airfield13_1', runway_name='09-27', runway_id=1, runway_side='27'), RunwayBeacon(id='airfield13_0', runway_name='09-27', runway_id=1, runway_side='27')])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(10890.094726563, 368483.28125, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='54', length=26.0, width=22.0, height=8.0, shelter=False))
@@ -492,7 +494,7 @@ class Novorossiysk(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-40917.535156, 279256.0625, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='22-04', main=RunwayApproach(name='22', heading=220), opposite=RunwayApproach(name='04', heading=40)))
+        self.runways.append(Runway(id=1, name='22-04', main=RunwayApproach(name='22', heading=220, beacons=[]), opposite=RunwayApproach(name='04', heading=40, beacons=[])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=2, position=mapping.Point(-40106.0234375, 279575.75, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='09', length=26.0, width=24.0, height=11.0, shelter=False))
@@ -621,7 +623,8 @@ class Krymsk(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-6576.524658, 294388.125, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='04-22', main=RunwayApproach(name='04', heading=40), opposite=RunwayApproach(name='22', heading=220)))
+        self.beacons.append(AirportBeacon(id='airfield15_8'))
+        self.runways.append(Runway(id=1, name='04-22', main=RunwayApproach(name='04', heading=40, beacons=[RunwayBeacon(id='airfield15_2', runway_name='04-22', runway_id=1, runway_side='04'), RunwayBeacon(id='airfield15_3', runway_name='04-22', runway_id=1, runway_side='04'), RunwayBeacon(id='airfield15_4', runway_name='04-22', runway_id=1, runway_side='04'), RunwayBeacon(id='airfield15_7', runway_name='04-22', runway_id=1, runway_side='04')]), opposite=RunwayApproach(name='22', heading=220, beacons=[RunwayBeacon(id='airfield15_1', runway_name='04-22', runway_id=1, runway_side='22'), RunwayBeacon(id='airfield15_5', runway_name='04-22', runway_id=1, runway_side='22'), RunwayBeacon(id='airfield15_6', runway_name='04-22', runway_id=1, runway_side='22'), RunwayBeacon(id='airfield15_0', runway_name='04-22', runway_id=1, runway_side='22')])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-6138.9926757813, 295188.6875, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='53', length=26.0, width=22.0, height=8.0, shelter=False))
@@ -807,7 +810,8 @@ class Maykop_Khanskaya(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-26437.275391, 458048.84375, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='04-22', main=RunwayApproach(name='04', heading=40), opposite=RunwayApproach(name='22', heading=220)))
+        self.beacons.append(AirportBeacon(id='airfield16_6'))
+        self.runways.append(Runway(id=1, name='04-22', main=RunwayApproach(name='04', heading=40, beacons=[RunwayBeacon(id='airfield16_2', runway_name='04-22', runway_id=1, runway_side='04'), RunwayBeacon(id='airfield16_3', runway_name='04-22', runway_id=1, runway_side='04'), RunwayBeacon(id='airfield16_4', runway_name='04-22', runway_id=1, runway_side='04'), RunwayBeacon(id='airfield16_5', runway_name='04-22', runway_id=1, runway_side='04')]), opposite=RunwayApproach(name='22', heading=220, beacons=[RunwayBeacon(id='airfield16_1', runway_name='04-22', runway_id=1, runway_side='22'), RunwayBeacon(id='airfield16_0', runway_name='04-22', runway_id=1, runway_side='22')])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-26260.4609375, 459009.125, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='53', length=78.722809, width=67.096466, height=18.0, shelter=False))
@@ -993,7 +997,9 @@ class Gelendzhik(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-50378.611328, 298406.15625, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='01-19', main=RunwayApproach(name='01', heading=10), opposite=RunwayApproach(name='19', heading=190)))
+        self.beacons.append(AirportBeacon(id='airfield17_1'))
+        self.beacons.append(AirportBeacon(id='airfield17_0'))
+        self.runways.append(Runway(id=1, name='01-19', main=RunwayApproach(name='01', heading=10, beacons=[]), opposite=RunwayApproach(name='19', heading=190, beacons=[])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-50574.20703125, 298005.59375, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='01', length=20.5, width=18.0, height=11.0, shelter=False))
@@ -1047,7 +1053,7 @@ class Sochi_Adler(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-164496.46875, 462218.921875, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='06-24', main=RunwayApproach(name='06', heading=60), opposite=RunwayApproach(name='24', heading=240)))
+        self.runways.append(Runway(id=1, name='06-24', main=RunwayApproach(name='06', heading=60, beacons=[RunwayBeacon(id='airfield18_1', runway_name='06-24', runway_id=1, runway_side='06'), RunwayBeacon(id='airfield18_2', runway_name='06-24', runway_id=1, runway_side='06'), RunwayBeacon(id='airfield18_0', runway_name='06-24', runway_id=1, runway_side='06')]), opposite=RunwayApproach(name='24', heading=240, beacons=[])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-164362.125, 463237.3125, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='55', length=26.0, width=22.0, height=8.0, shelter=False))
@@ -1266,7 +1272,8 @@ class Krasnodar_Pashkovsky(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(7717.637452, 387878.803876, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='23L-05R', main=RunwayApproach(name='23L', heading=230), opposite=RunwayApproach(name='05R', heading=50)))
+        self.beacons.append(AirportBeacon(id='airfield19_4'))
+        self.runways.append(Runway(id=1, name='23L-05R', main=RunwayApproach(name='23L', heading=230, beacons=[]), opposite=RunwayApproach(name='05R', heading=50, beacons=[])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(8852.1181640625, 388779.3125, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='19', length=43.057953, width=40.0, height=None, shelter=False))
@@ -1338,7 +1345,7 @@ class Sukhumi_Babushara(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-220592.328125, 564391.96875, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='30-12', main=RunwayApproach(name='30', heading=300), opposite=RunwayApproach(name='12', heading=120)))
+        self.runways.append(Runway(id=1, name='30-12', main=RunwayApproach(name='30', heading=300, beacons=[RunwayBeacon(id='airfield20_1', runway_name='12-30', runway_id=1, runway_side='30'), RunwayBeacon(id='airfield20_0', runway_name='12-30', runway_id=1, runway_side='30')]), opposite=RunwayApproach(name='12', heading=120, beacons=[])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=2, position=mapping.Point(-219883.625, 563502.8125, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='23', length=78.722809, width=67.096466, height=18.0, shelter=False))
@@ -1422,7 +1429,7 @@ class Gudauta(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-196710.085938, 516451.6875, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='15-33', main=RunwayApproach(name='15', heading=150), opposite=RunwayApproach(name='33', heading=330)))
+        self.runways.append(Runway(id=1, name='15-33', main=RunwayApproach(name='15', heading=150, beacons=[]), opposite=RunwayApproach(name='33', heading=330, beacons=[RunwayBeacon(id='airfield21_0', runway_name='15-33', runway_id=1, runway_side='33')])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-196497.375, 515476.09375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='11', length=26.0, width=22.0, height=8.0, shelter=False))
@@ -1530,7 +1537,9 @@ class Batumi(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-355810.6875, 617386.1875, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='31-13', main=RunwayApproach(name='31', heading=310), opposite=RunwayApproach(name='13', heading=130)))
+        self.beacons.append(AirportBeacon(id='airfield22_2'))
+        self.beacons.append(AirportBeacon(id='airfield22_3'))
+        self.runways.append(Runway(id=1, name='31-13', main=RunwayApproach(name='31', heading=310, beacons=[]), opposite=RunwayApproach(name='13', heading=130, beacons=[RunwayBeacon(id='airfield22_1', runway_name='13-31', runway_id=1, runway_side='13'), RunwayBeacon(id='airfield22_0', runway_name='13-31', runway_id=1, runway_side='13')])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=2, position=mapping.Point(-356069.625, 618234.9375, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='06', length=78.722809, width=67.096466, height=18.0, shelter=False))
@@ -1575,7 +1584,8 @@ class Senaki_Kolkhi(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-281782.46875, 647279.46875, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='27-09', main=RunwayApproach(name='27', heading=270), opposite=RunwayApproach(name='09', heading=90)))
+        self.beacons.append(AirportBeacon(id='airfield23_4'))
+        self.runways.append(Runway(id=1, name='27-09', main=RunwayApproach(name='27', heading=270, beacons=[]), opposite=RunwayApproach(name='09', heading=90, beacons=[RunwayBeacon(id='airfield23_1', runway_name='09-27', runway_id=1, runway_side='09'), RunwayBeacon(id='airfield23_2', runway_name='09-27', runway_id=1, runway_side='09'), RunwayBeacon(id='airfield23_3', runway_name='09-27', runway_id=1, runway_side='09'), RunwayBeacon(id='airfield23_0', runway_name='09-27', runway_id=1, runway_side='09')])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=2, position=mapping.Point(-281607.28417614, 646373.17498617, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='01', length=78.722809, width=67.096466, height=18.0, shelter=False))
@@ -1794,7 +1804,8 @@ class Kobuleti(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-317962.296875, 635632.96875, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='25-07', main=RunwayApproach(name='25', heading=250), opposite=RunwayApproach(name='07', heading=70)))
+        self.beacons.append(AirportBeacon(id='airfield24_4'))
+        self.runways.append(Runway(id=1, name='25-07', main=RunwayApproach(name='25', heading=250, beacons=[]), opposite=RunwayApproach(name='07', heading=70, beacons=[RunwayBeacon(id='airfield24_1', runway_name='07-25', runway_id=1, runway_side='07'), RunwayBeacon(id='airfield24_2', runway_name='07-25', runway_id=1, runway_side='07'), RunwayBeacon(id='airfield24_3', runway_name='07-25', runway_id=1, runway_side='07'), RunwayBeacon(id='airfield24_0', runway_name='07-25', runway_id=1, runway_side='07')])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=2, position=mapping.Point(-317882.375, 635012.9375, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='42', length=78.722809, width=67.096466, height=18.0, shelter=False))
@@ -1935,7 +1946,10 @@ class Kutaisi(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-284887.375, 683858.71875, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='25-07', main=RunwayApproach(name='25', heading=250), opposite=RunwayApproach(name='07', heading=70)))
+        self.beacons.append(AirportBeacon(id='airfield25_2'))
+        self.beacons.append(AirportBeacon(id='airfield25_3'))
+        self.beacons.append(AirportBeacon(id='airfield25_4'))
+        self.runways.append(Runway(id=1, name='25-07', main=RunwayApproach(name='25', heading=250, beacons=[]), opposite=RunwayApproach(name='07', heading=70, beacons=[RunwayBeacon(id='airfield25_1', runway_name='07-25', runway_id=1, runway_side='07'), RunwayBeacon(id='airfield25_0', runway_name='07-25', runway_id=1, runway_side='07')])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-284604.8125, 682356.25, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='16', length=78.722809, width=67.096466, height=18.0, shelter=False))
@@ -2124,7 +2138,8 @@ class Mineralnye_Vody(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-51259.983985, 705734.026899, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='30-12', main=RunwayApproach(name='30', heading=300), opposite=RunwayApproach(name='12', heading=120)))
+        self.beacons.append(AirportBeacon(id='airfield26_8'))
+        self.runways.append(Runway(id=1, name='30-12', main=RunwayApproach(name='30', heading=300, beacons=[RunwayBeacon(id='airfield26_1', runway_name='12-30', runway_id=1, runway_side='30'), RunwayBeacon(id='airfield26_2', runway_name='12-30', runway_id=1, runway_side='30'), RunwayBeacon(id='airfield26_3', runway_name='12-30', runway_id=1, runway_side='30'), RunwayBeacon(id='airfield26_0', runway_name='12-30', runway_id=1, runway_side='30')]), opposite=RunwayApproach(name='12', heading=120, beacons=[RunwayBeacon(id='airfield26_4', runway_name='12-30', runway_id=1, runway_side='12'), RunwayBeacon(id='airfield26_5', runway_name='12-30', runway_id=1, runway_side='12'), RunwayBeacon(id='airfield26_6', runway_name='12-30', runway_id=1, runway_side='12'), RunwayBeacon(id='airfield26_7', runway_name='12-30', runway_id=1, runway_side='12')])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-52132.26171875, 706676.875, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='28', length=78.722809, width=67.096466, height=18.0, shelter=False))
@@ -2223,7 +2238,7 @@ class Nalchik(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-124932.167279, 760421.182617, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='06-24', main=RunwayApproach(name='06', heading=60), opposite=RunwayApproach(name='24', heading=240)))
+        self.runways.append(Runway(id=1, name='06-24', main=RunwayApproach(name='06', heading=60, beacons=[]), opposite=RunwayApproach(name='24', heading=240, beacons=[RunwayBeacon(id='airfield27_1', runway_name='06-24', runway_id=1, runway_side='24'), RunwayBeacon(id='airfield27_2', runway_name='06-24', runway_id=1, runway_side='24'), RunwayBeacon(id='airfield27_3', runway_name='06-24', runway_id=1, runway_side='24'), RunwayBeacon(id='airfield27_0', runway_name='06-24', runway_id=1, runway_side='24')])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=1, position=mapping.Point(-125485.39736555, 760349.87924914, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='14', length=26.0, width=24.0, height=11.0, shelter=False))
@@ -2283,7 +2298,8 @@ class Mozdok(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-83450.417969, 834461.78125, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='26-08', main=RunwayApproach(name='26', heading=260), opposite=RunwayApproach(name='08', heading=80)))
+        self.beacons.append(AirportBeacon(id='airfield28_8'))
+        self.runways.append(Runway(id=1, name='26-08', main=RunwayApproach(name='26', heading=260, beacons=[RunwayBeacon(id='airfield28_2', runway_name='08-26', runway_id=1, runway_side='26'), RunwayBeacon(id='airfield28_3', runway_name='08-26', runway_id=1, runway_side='26'), RunwayBeacon(id='airfield28_6', runway_name='08-26', runway_id=1, runway_side='26'), RunwayBeacon(id='airfield28_7', runway_name='08-26', runway_id=1, runway_side='26')]), opposite=RunwayApproach(name='08', heading=80, beacons=[RunwayBeacon(id='airfield28_1', runway_name='08-26', runway_id=1, runway_side='08'), RunwayBeacon(id='airfield28_4', runway_name='08-26', runway_id=1, runway_side='08'), RunwayBeacon(id='airfield28_5', runway_name='08-26', runway_id=1, runway_side='08'), RunwayBeacon(id='airfield28_0', runway_name='08-26', runway_id=1, runway_side='08')])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-84047.34375, 833973.125, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='02', length=78.722809, width=67.096466, height=18.0, shelter=False))
@@ -2415,7 +2431,9 @@ class Tbilisi_Lochini(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-315671.078125, 896629.78125, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='13R-31L', main=RunwayApproach(name='13R', heading=130), opposite=RunwayApproach(name='31L', heading=310)))
+        self.beacons.append(AirportBeacon(id='airfield29_8'))
+        self.beacons.append(AirportBeacon(id='airfield29_9'))
+        self.runways.append(Runway(id=1, name='13R-31L', main=RunwayApproach(name='13R', heading=130, beacons=[]), opposite=RunwayApproach(name='31L', heading=310, beacons=[])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-315166.34375, 897212.5, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='36', length=26.0, width=24.0, height=11.0, shelter=False))
@@ -2652,7 +2670,7 @@ class Soganlug(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-317828.046875, 895407.1875, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='14-32', main=RunwayApproach(name='14', heading=140), opposite=RunwayApproach(name='32', heading=320)))
+        self.runways.append(Runway(id=1, name='14-32', main=RunwayApproach(name='14', heading=140, beacons=[]), opposite=RunwayApproach(name='32', heading=320, beacons=[])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-318023.51732654, 895394.57452592, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='03', length=26.0, width=24.0, height=11.0, shelter=False))
@@ -2682,7 +2700,8 @@ class Vaziani(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-319064.875, 903148.53125, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='13R-31L', main=RunwayApproach(name='13R', heading=130), opposite=RunwayApproach(name='31L', heading=310)))
+        self.beacons.append(AirportBeacon(id='airfield31_4'))
+        self.runways.append(Runway(id=1, name='13R-31L', main=RunwayApproach(name='13R', heading=130, beacons=[]), opposite=RunwayApproach(name='31L', heading=310, beacons=[])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-318059.6875, 902639.0625, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='10', length=26.0, width=22.0, height=8.0, shelter=False))
@@ -2973,7 +2992,7 @@ class Beslan(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-148590.171875, 843668.625, terrain), terrain)
 
-        self.runways.append(Runway(id=1, name='10-28', main=RunwayApproach(name='10', heading=100), opposite=RunwayApproach(name='28', heading=280)))
+        self.runways.append(Runway(id=1, name='10-28', main=RunwayApproach(name='10', heading=100, beacons=[RunwayBeacon(id='airfield32_1', runway_name='10-28', runway_id=1, runway_side='10'), RunwayBeacon(id='airfield32_2', runway_name='10-28', runway_id=1, runway_side='10'), RunwayBeacon(id='airfield32_3', runway_name='10-28', runway_id=1, runway_side='10'), RunwayBeacon(id='airfield32_0', runway_name='10-28', runway_id=1, runway_side='10')]), opposite=RunwayApproach(name='28', heading=280, beacons=[])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=0, position=mapping.Point(-148875.828125, 844108.375, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='15', length=43.057953, width=40.0, height=None, shelter=False))
