@@ -1,4 +1,4 @@
-from dcs.terrain.terrain import ParkingSlot, Airport, Runway, Terrain
+from dcs.terrain.terrain import ParkingSlot, Airport, Runway, RunwayApproach, Terrain
 from dcs.terrain.terrain import RunwayOccupiedError, NoParkingSlotError, Graph, Node, MapView
 from dcs.terrain.caucasus.caucasus import Caucasus
 from dcs.terrain.falklands import Falklands

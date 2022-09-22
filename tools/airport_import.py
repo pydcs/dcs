@@ -75,7 +75,7 @@ def main():
         print(file=output)
         print("from dcs import mapping", file=output)
         print("from dcs.atcradio import AtcRadio", file=output)
-        print("from dcs.terrain import Airport, Runway, ParkingSlot, Terrain", file=output)
+        print("from dcs.terrain import Airport, ParkingSlot, Runway, RunwayApproach, Terrain", file=output)
 
         airport_class_names: list[str] = []
         for id_ in sorted(data["airports"]):

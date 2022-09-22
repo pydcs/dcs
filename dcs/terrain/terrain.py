@@ -51,11 +51,30 @@ class ParkingSlot:
 
 
 @dataclass(frozen=True)
+class RunwayApproach:
+    name: str
+    heading: int
+
+    @staticmethod
+    def from_lua(name: str) -> RunwayApproach:
+        return RunwayApproach(name, int(name.rstrip("LR")) * 10)
+
+
+@dataclass(frozen=True)
 class Runway:
     id: Optional[int]
     name: str
-    heading: int
-    opposite_heading: int
+    main: RunwayApproach
+    opposite: RunwayApproach
+
+    @property
+    def heading(self) -> int:
+        """Returns the heading of the main runway.
+
+        This property is deprecated in favor of `Runway.main.heading`. This property is
+        provided for backwards compatibility.
+        """
+        return self.main.heading
 
     @staticmethod
     def from_lua(data: Dict[str, Any]) -> Runway:
@@ -74,10 +93,10 @@ class Runway:
         if runway_id == -1:
             runway_id = None
         return Runway(
-            runway_id,
-            data["name"],
-            int(data["start"].rstrip("LR")) * 10,
-            int(data["end"].rstrip("LR")) * 10,
+            id=runway_id,
+            name=data["name"],
+            main=RunwayApproach.from_lua(data["start"]),
+            opposite=RunwayApproach.from_lua(data["end"]),
         )
 
 
