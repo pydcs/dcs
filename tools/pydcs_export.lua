@@ -411,31 +411,34 @@ from dcs.liveries_scanner import Liveries
             writeln(file, '')
             -- default dict
             writeln(file, '    property_defaults: Dict[str, Any] = {')
+            local skip_props = {}
             for j in pairs(plane.AddPropAircraft) do
                 local prop = plane.AddPropAircraft[j]
                 local defval = prop.defValue
-                if defval == true then
-                    defval = 'True'
-                elseif defval == false then
-                    defval = 'False'
-                elseif defval == nil then
-                    defval = 'None'
+                -- A nil default value is used by DCS to implement labels in the ME. These aren't real options, so skip them.
+                -- https://github.com/pydcs/dcs/issues/266
+                if defval == nil then
+                    skip_props[prop.id] = true
                 else
-                    defval = tostring(defval)
+                    if defval == true then
+                        defval = 'True'
+                    elseif defval == false then
+                        defval = 'False'
+                    else
+                        defval = tostring(defval)
+                    end
+                    writeln(file, '        "'..safe_name(prop.id)..'": '..defval..',')
                 end
-                writeln(file, '        "'..safe_name(prop.id)..'": '..defval..',')
             end
             writeln(file, '    }')
 
             if plane.AddPropAircraft ~= nil and #plane.AddPropAircraft > 0 then
                 writeln(file, '')
                 writeln(file, '    class Properties:')
-                local seen_props = {}
                 for j in pairs(plane.AddPropAircraft) do
                     local prop = plane.AddPropAircraft[j]
                     prop_class_name = safe_name(prop.id)
-                    if not seen_props[prop_class_name] then
-                        seen_props[prop_class_name] = true
+                    if not skip_props[prop_class_name] then
                         writeln(file, '')
                         writeln(file, '        class '..prop_class_name..':')
                         writeln(file, '            id = "'..prop.id..'"')
