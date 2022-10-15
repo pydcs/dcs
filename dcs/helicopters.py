@@ -1086,10 +1086,8 @@ class AH_64D_BLK_II(HelicopterType):
         "FlareSalvoCount": 0,
         "FlareSalvoInterval": 0,
         "FlareProgramDelay": 0,
-        "mul_Label": None,
         "OverrideIFF": 0,
         "TrackAirTargets": True,
-        "mul_Label": None,
         "NetCrewControlPriority": 0,
         "AIDisabled": False,
         "HumanOrchestra": False,
@@ -1156,9 +1154,6 @@ class AH_64D_BLK_II(HelicopterType):
                 x_2 = 1
                 x_3 = 2
                 x_4 = 3
-
-        class mul_Label:
-            id = "mul_Label"
 
         class OverrideIFF:
             id = "OverrideIFF"
@@ -1323,13 +1318,11 @@ class Mi_24P(HelicopterType):
         "PilotNVG": True,
         "OperatorNVG": True,
         "R60equipment": True,
-        "mul_Label": None,
         "OverrideIFF": 0,
         "GunnersAISkill": 90,
         "SimplifiedAI": False,
         "HideAngleBoxes": False,
         "TrackAirTargets": True,
-        "mul_Label": None,
         "NetCrewControlPriority": 0,
         "HumanOrchestra": False,
     }
@@ -1356,9 +1349,6 @@ class Mi_24P(HelicopterType):
 
         class R60equipment:
             id = "R60equipment"
-
-        class mul_Label:
-            id = "mul_Label"
 
         class OverrideIFF:
             id = "OverrideIFF"
