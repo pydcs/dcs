@@ -250,6 +250,21 @@ class Infantry:
         threat_range = 500
         air_weapon_dist = 500
 
+    class JTAC(unittype.VehicleType):
+        id = "JTAC"
+        name = "JTAC"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+        eplrs = True
+
+    class Infantry_Animated(unittype.VehicleType):
+        id = "Infantry Animated"
+        name = "Infantry"
+        detection_range = 0
+        threat_range = 500
+        air_weapon_dist = 500
+
     class Soldier_mauser98(unittype.VehicleType):
         id = "soldier_mauser98"
         name = "Infantry Mauser 98"
@@ -746,6 +761,13 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
 
+    class RD_75(unittype.VehicleType):
+        id = "RD_75"
+        name = "SAM SA-2 S-75 RD-75 Amazonka RF"
+        detection_range = 100000
+        threat_range = 0
+        air_weapon_dist = 0
+
     class S_75M_Volhov(unittype.VehicleType):
         id = "S_75M_Volhov"
         name = "SAM SA-2 S-75 \"Guideline\" LN"
@@ -869,15 +891,15 @@ class AirDefence:
         id = "flak36"
         name = "AAA 8,8cm Flak 36"
         detection_range = 0
-        threat_range = 11000
-        air_weapon_dist = 11000
+        threat_range = 5000
+        air_weapon_dist = 5000
 
     class Flak37(unittype.VehicleType):
         id = "flak37"
         name = "AAA 8,8cm Flak 37"
         detection_range = 0
-        threat_range = 11000
-        air_weapon_dist = 11000
+        threat_range = 5000
+        air_weapon_dist = 5000
 
     class Flak38(unittype.VehicleType):
         id = "flak38"
@@ -1285,9 +1307,16 @@ class Unarmed:
         threat_range = 0
         air_weapon_dist = 0
 
+    class TZ_22_KrAZ(unittype.VehicleType):
+        id = "TZ-22_KrAZ"
+        name = "Refueler TZ-22 Tractor (KrAZ-258B1)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
     class ATZ_60_Maz(unittype.VehicleType):
         id = "ATZ-60_Maz"
-        name = "Refueler ATZ-60 Tractor"
+        name = "Refueler ATZ-60 Tractor (MAZ-7410)"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -1299,9 +1328,9 @@ class Unarmed:
         threat_range = 0
         air_weapon_dist = 0
 
-    class TZ_22_KrAZ(unittype.VehicleType):
-        id = "TZ-22_KrAZ"
-        name = "Refueler TZ-22 Tractor"
+    class S_75_ZIL(unittype.VehicleType):
+        id = "S_75_ZIL"
+        name = "S-75 Tractor (ZIL-131)"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -1424,13 +1453,6 @@ class Armor:
     class BRDM_2(unittype.VehicleType):
         id = "BRDM-2"
         name = "Scout BRDM-2"
-        detection_range = 0
-        threat_range = 1600
-        air_weapon_dist = 1600
-
-    class BTR_80(unittype.VehicleType):
-        id = "BTR-80"
-        name = "APC BTR-80"
         detection_range = 0
         threat_range = 1600
         air_weapon_dist = 1600
@@ -1652,6 +1674,13 @@ class Armor:
         detection_range = 0
         threat_range = 1200
         air_weapon_dist = 0
+
+    class BTR_80(unittype.VehicleType):
+        id = "BTR-80"
+        name = "APC BTR-80"
+        detection_range = 0
+        threat_range = 1600
+        air_weapon_dist = 1600
 
     class T_72B3(unittype.VehicleType):
         id = "T-72B3"
@@ -2050,7 +2079,6 @@ vehicle_map = {
     "BMP-2": Armor.BMP_2,
     "BMP-3": Armor.BMP_3,
     "BRDM-2": Armor.BRDM_2,
-    "BTR-80": Armor.BTR_80,
     "BTR_D": Armor.BTR_D,
     "Cobra": Armor.Cobra,
     "LAV-25": Armor.LAV_25,
@@ -2188,6 +2216,8 @@ vehicle_map = {
     "ZIL-131 KUNG": Unarmed.ZIL_131_KUNG,
     "ZIL-4331": Unarmed.ZIL_4331,
     "KrAZ6322": Unarmed.KrAZ6322,
+    "JTAC": Infantry.JTAC,
+    "Infantry Animated": Infantry.Infantry_Animated,
     "Electric locomotive": Locomotive.Electric_locomotive,
     "Locomotive": Locomotive.Locomotive,
     "Coach cargo": Carriage.Coach_cargo,
@@ -2218,6 +2248,8 @@ vehicle_map = {
     "FPS-117 Dome": AirDefence.FPS_117_Dome,
     "FPS-117 ECS": AirDefence.FPS_117_ECS,
     "FPS-117": AirDefence.FPS_117,
+    "BTR-80": Armor.BTR_80,
+    "RD_75": AirDefence.RD_75,
     "S_75M_Volhov": AirDefence.S_75M_Volhov,
     "SNR_75V": AirDefence.SNR_75V,
     "RLS_19J6": AirDefence.RLS_19J6,
@@ -2231,9 +2263,10 @@ vehicle_map = {
     "BTR-82A": Armor.BTR_82A,
     "ATZ-5": Unarmed.ATZ_5,
     "AA8": Unarmed.AA8,
+    "TZ-22_KrAZ": Unarmed.TZ_22_KrAZ,
     "ATZ-60_Maz": Unarmed.ATZ_60_Maz,
     "ZIL-135": Unarmed.ZIL_135,
-    "TZ-22_KrAZ": Unarmed.TZ_22_KrAZ,
+    "S_75_ZIL": Unarmed.S_75_ZIL,
     "rapier_fsa_launcher": AirDefence.Rapier_fsa_launcher,
     "rapier_fsa_optical_tracker_unit": AirDefence.Rapier_fsa_optical_tracker_unit,
     "rapier_fsa_blindfire_radar": AirDefence.Rapier_fsa_blindfire_radar,

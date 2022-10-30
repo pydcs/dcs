@@ -77,6 +77,7 @@ class Russia(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             ZSU_57_2 = vehicles.AirDefence.ZSU_57_2
 
         class Fortification:
@@ -118,6 +119,7 @@ class Russia(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            S_75_ZIL = vehicles.Unarmed.S_75_ZIL
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
             Tacr2a = vehicles.Unarmed.Tacr2a
             LARC_V = vehicles.Unarmed.LARC_V
@@ -160,7 +162,6 @@ class Russia(Country):
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_platform = vehicles.Carriage.Coach_a_platform
             Coach_a_passenger = vehicles.Carriage.Coach_a_passenger
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
@@ -232,6 +233,8 @@ class Russia(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -301,6 +304,8 @@ class Russia(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -550,6 +555,7 @@ class Ukraine(Country):
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            RD_75 = vehicles.AirDefence.RD_75
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
             SNR_75V = vehicles.AirDefence.SNR_75V
 
@@ -694,6 +700,8 @@ class Ukraine(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -755,6 +763,8 @@ class Ukraine(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -866,6 +876,7 @@ class USA(Country):
         class Infantry:
             Soldier_M249 = vehicles.Infantry.Soldier_M249
             Soldier_M4 = vehicles.Infantry.Soldier_M4
+            JTAC = vehicles.Infantry.JTAC
             Soldier_wwii_us = vehicles.Infantry.Soldier_wwii_us
 
         class AirDefence:
@@ -1046,6 +1057,8 @@ class USA(Country):
         JF_17 = planes.JF_17
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -1120,6 +1133,8 @@ class USA(Country):
         Plane.JF_17,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -1452,6 +1467,8 @@ class Turkey(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MQ_9_Reaper = planes.MQ_9_Reaper
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
@@ -1501,6 +1518,8 @@ class Turkey(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MQ_9_Reaper,
         Plane.MiG_15bis,
         Plane.MiG_19P,
@@ -1688,6 +1707,7 @@ class UK(Country):
             M2A1_105 = vehicles.Artillery.M2A1_105
 
         class Infantry:
+            JTAC = vehicles.Infantry.JTAC
             Soldier_wwii_br_01 = vehicles.Infantry.Soldier_wwii_br_01
 
         class AirDefence:
@@ -1814,6 +1834,8 @@ class UK(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -1861,6 +1883,8 @@ class UK(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -2134,6 +2158,7 @@ class France(Country):
     class Plane:
         A_10C = planes.A_10C
         Mirage_2000_5 = planes.Mirage_2000_5
+        Mirage_F1C = planes.Mirage_F1C
         C_130 = planes.C_130
         P_51D = planes.P_51D
         C_17A = planes.C_17A
@@ -2170,10 +2195,11 @@ class France(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
-        Mirage_F1C = planes.Mirage_F1C
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1C_200 = planes.Mirage_F1C_200
         Mirage_F1CR = planes.Mirage_F1CR
@@ -2186,6 +2212,7 @@ class France(Country):
     planes = [
         Plane.A_10C,
         Plane.Mirage_2000_5,
+        Plane.Mirage_F1C,
         Plane.C_130,
         Plane.P_51D,
         Plane.C_17A,
@@ -2222,10 +2249,11 @@ class France(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
-        Plane.Mirage_F1C,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1C_200,
         Plane.Mirage_F1CR,
@@ -2455,6 +2483,7 @@ class Germany(Country):
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            RD_75 = vehicles.AirDefence.RD_75
             RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_200_Launcher = vehicles.AirDefence.S_200_Launcher
             Flak18 = vehicles.AirDefence.Flak18
@@ -2606,6 +2635,8 @@ class Germany(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Ju_88A4 = planes.Ju_88A4
@@ -2656,6 +2687,8 @@ class Germany(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Ju_88A4,
@@ -2862,6 +2895,7 @@ class USAFAggressors(Country):
             Soldier_AK = vehicles.Infantry.Soldier_AK
             Soldier_RPG = vehicles.Infantry.Soldier_RPG
             Soldier_M4 = vehicles.Infantry.Soldier_M4
+            JTAC = vehicles.Infantry.JTAC
             Soldier_M249 = vehicles.Infantry.Soldier_M249
             Soldier_M4_GRG = vehicles.Infantry.Soldier_M4_GRG
             Soldier_wwii_us = vehicles.Infantry.Soldier_wwii_us
@@ -2917,6 +2951,7 @@ class USAFAggressors(Country):
             KS_19 = vehicles.AirDefence.KS_19
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             ZSU_57_2 = vehicles.AirDefence.ZSU_57_2
             QF_37_AA = vehicles.AirDefence.QF_37_AA
             Allies_Director = vehicles.AirDefence.Allies_Director
@@ -2959,10 +2994,10 @@ class USAFAggressors(Country):
             NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
             NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             Gepard = vehicles.AirDefence.Gepard
+            Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
             HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
-            Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
 
         class Fortification:
@@ -3010,6 +3045,7 @@ class USAFAggressors(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            S_75_ZIL = vehicles.Unarmed.S_75_ZIL
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
             AA8 = vehicles.Unarmed.AA8
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
@@ -3029,8 +3065,9 @@ class USAFAggressors(Country):
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
 
         class Armor:
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
+            Stug_III = vehicles.Armor.Stug_III
+            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Tiger_I = vehicles.Armor.Tiger_I
             Tiger_II_H = vehicles.Armor.Tiger_II_H
             Pz_V_Panther_G = vehicles.Armor.Pz_V_Panther_G
@@ -3039,7 +3076,6 @@ class USAFAggressors(Country):
             Stug_IV = vehicles.Armor.Stug_IV
             SturmPzIV = vehicles.Armor.SturmPzIV
             Sd_Kfz_234_2_Puma = vehicles.Armor.Sd_Kfz_234_2_Puma
-            Stug_III = vehicles.Armor.Stug_III
             Elefant_SdKfz_184 = vehicles.Armor.Elefant_SdKfz_184
             BMD_1 = vehicles.Armor.BMD_1
             BMP_1 = vehicles.Armor.BMP_1
@@ -3136,7 +3172,6 @@ class USAFAggressors(Country):
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
 
     class Plane:
         A_10C = planes.A_10C
@@ -3168,6 +3203,8 @@ class USAFAggressors(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -3292,6 +3329,8 @@ class USAFAggressors(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -3736,6 +3775,8 @@ class Canada(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -3780,6 +3821,8 @@ class Canada(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -4072,6 +4115,8 @@ class Spain(Country):
         Hawk = planes.Hawk
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -4125,6 +4170,8 @@ class Spain(Country):
         Plane.Hawk,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -4454,6 +4501,8 @@ class TheNetherlands(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -4501,6 +4550,8 @@ class TheNetherlands(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -4801,6 +4852,8 @@ class Belgium(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -4846,6 +4899,8 @@ class Belgium(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -5128,6 +5183,8 @@ class Norway(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -5173,6 +5230,8 @@ class Norway(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -5450,6 +5509,8 @@ class Denmark(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -5495,6 +5556,8 @@ class Denmark(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -5793,6 +5856,8 @@ class Israel(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
@@ -5842,6 +5907,8 @@ class Israel(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
@@ -6064,6 +6131,7 @@ class Georgia(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -6103,6 +6171,7 @@ class Georgia(Country):
             Ural_4320_31 = vehicles.Unarmed.Ural_4320_31
             Ural_4320T = vehicles.Unarmed.Ural_4320T
             ATZ_5 = vehicles.Unarmed.ATZ_5
+            S_75_ZIL = vehicles.Unarmed.S_75_ZIL
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
             Tacr2a = vehicles.Unarmed.Tacr2a
             LARC_V = vehicles.Unarmed.LARC_V
@@ -6136,7 +6205,6 @@ class Georgia(Country):
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_platform = vehicles.Carriage.Coach_a_platform
             Coach_a_passenger = vehicles.Carriage.Coach_a_passenger
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Boxcartrinity = vehicles.Carriage.Boxcartrinity
@@ -6183,6 +6251,8 @@ class Georgia(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -6228,6 +6298,8 @@ class Georgia(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -6527,6 +6599,8 @@ class Insurgents(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -6565,6 +6639,8 @@ class Insurgents(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -6578,6 +6654,7 @@ class Insurgents(Country):
         Mi_8MT = helicopters.Mi_8MT
         UH_1H = helicopters.UH_1H
         AH_64D_BLK_II = helicopters.AH_64D_BLK_II
+        Ka_50 = helicopters.Ka_50
         SA342M = helicopters.SA342M
         SA342L = helicopters.SA342L
         SA342Mistral = helicopters.SA342Mistral
@@ -6587,6 +6664,7 @@ class Insurgents(Country):
         Helicopter.Mi_8MT,
         Helicopter.UH_1H,
         Helicopter.AH_64D_BLK_II,
+        Helicopter.Ka_50,
         Helicopter.SA342M,
         Helicopter.SA342L,
         Helicopter.SA342Mistral,
@@ -6794,6 +6872,8 @@ class Abkhazia(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -6837,6 +6917,8 @@ class Abkhazia(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -7055,6 +7137,8 @@ class SouthOssetia(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -7092,6 +7176,8 @@ class SouthOssetia(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -7185,6 +7271,9 @@ class Italy(Country):
             Tt_B8M1 = vehicles.Artillery.Tt_B8M1
             HL_B8M1 = vehicles.Artillery.HL_B8M1
 
+        class Infantry:
+            JTAC = vehicles.Infantry.JTAC
+
         class AirDefence:
             Hawk_sr = vehicles.AirDefence.Hawk_sr
             Hawk_cwar = vehicles.AirDefence.Hawk_cwar
@@ -7267,6 +7356,7 @@ class Italy(Country):
         RQ_1A_Predator = planes.RQ_1A_Predator
         AV8BNA = planes.AV8BNA
         KC130 = planes.KC130
+        MB_339A = planes.MB_339A
         C_47 = planes.C_47
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
@@ -7293,6 +7383,7 @@ class Italy(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -7316,6 +7407,7 @@ class Italy(Country):
         Plane.RQ_1A_Predator,
         Plane.AV8BNA,
         Plane.KC130,
+        Plane.MB_339A,
         Plane.C_47,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
@@ -7342,6 +7434,7 @@ class Italy(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -7519,6 +7612,9 @@ class Australia(Country):
             M12_GMC = vehicles.Artillery.M12_GMC
             M2A1_105 = vehicles.Artillery.M2A1_105
 
+        class Infantry:
+            JTAC = vehicles.Infantry.JTAC
+
         class AirDefence:
             Bofors40 = vehicles.AirDefence.Bofors40
             Rapier_fsa_launcher = vehicles.AirDefence.Rapier_fsa_launcher
@@ -7635,6 +7731,8 @@ class Australia(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -7681,6 +7779,8 @@ class Australia(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -7952,6 +8052,8 @@ class Switzerland(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -7993,6 +8095,8 @@ class Switzerland(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -8243,6 +8347,8 @@ class Austria(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -8281,6 +8387,8 @@ class Austria(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -8632,6 +8740,8 @@ class Belarus(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -8681,6 +8791,8 @@ class Belarus(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -8808,6 +8920,7 @@ class Bulgaria(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             Flak18 = vehicles.AirDefence.Flak18
             Flak30 = vehicles.AirDefence.Flak30
             Flak36 = vehicles.AirDefence.Flak36
@@ -8944,6 +9057,8 @@ class Bulgaria(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         Mirage_F1CE = planes.Mirage_F1CE
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -8990,6 +9105,8 @@ class Bulgaria(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.Mirage_F1CE,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -9179,6 +9296,7 @@ class CzechRepublic(Country):
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            RD_75 = vehicles.AirDefence.RD_75
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
             SNR_75V = vehicles.AirDefence.SNR_75V
             QF_37_AA = vehicles.AirDefence.QF_37_AA
@@ -9291,6 +9409,8 @@ class CzechRepublic(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -9334,6 +9454,8 @@ class CzechRepublic(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -9537,6 +9659,7 @@ class China(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
 
         class Fortification:
@@ -9635,6 +9758,8 @@ class China(Country):
         Hawk = planes.Hawk
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Yak_52 = planes.Yak_52
@@ -9685,6 +9810,8 @@ class China(Country):
         Plane.Hawk,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Yak_52,
@@ -9864,6 +9991,8 @@ class Croatia(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
@@ -9902,6 +10031,8 @@ class Croatia(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
@@ -10124,6 +10255,7 @@ class Egypt(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -10224,6 +10356,8 @@ class Egypt(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -10266,6 +10400,8 @@ class Egypt(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -10598,6 +10734,8 @@ class Finland(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
@@ -10636,6 +10774,8 @@ class Finland(Country):
         Plane.FA_18C_hornet,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
@@ -10938,6 +11078,8 @@ class Greece(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -10984,6 +11126,8 @@ class Greece(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -11198,6 +11342,7 @@ class Hungary(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             Flak18 = vehicles.AirDefence.Flak18
             Flak30 = vehicles.AirDefence.Flak30
             Flak36 = vehicles.AirDefence.Flak36
@@ -11325,6 +11470,8 @@ class Hungary(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Ju_88A4 = planes.Ju_88A4
@@ -11367,6 +11514,8 @@ class Hungary(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Ju_88A4,
@@ -11660,6 +11809,8 @@ class India(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
@@ -11706,6 +11857,8 @@ class India(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
@@ -11931,6 +12084,7 @@ class Iran(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -12033,6 +12187,8 @@ class Iran(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
@@ -12083,6 +12239,8 @@ class Iran(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
@@ -12405,6 +12563,8 @@ class Iraq(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
@@ -12452,6 +12612,8 @@ class Iraq(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
@@ -12757,6 +12919,8 @@ class Japan(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -12797,6 +12961,8 @@ class Japan(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -13031,6 +13197,7 @@ class Kazakhstan(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
             SNR_75V = vehicles.AirDefence.SNR_75V
 
@@ -13162,6 +13329,8 @@ class Kazakhstan(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -13212,6 +13381,8 @@ class Kazakhstan(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -13406,6 +13577,7 @@ class NorthKorea(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -13494,6 +13666,8 @@ class NorthKorea(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
@@ -13534,6 +13708,8 @@ class NorthKorea(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
@@ -13723,6 +13899,7 @@ class Pakistan(Country):
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            RD_75 = vehicles.AirDefence.RD_75
             HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
 
         class Fortification:
@@ -13812,6 +13989,8 @@ class Pakistan(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -13857,6 +14036,8 @@ class Pakistan(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -14056,6 +14237,7 @@ class Poland(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             Allies_Director = vehicles.AirDefence.Allies_Director
             M45_Quadmount = vehicles.AirDefence.M45_Quadmount
             M1_37mm = vehicles.AirDefence.M1_37mm
@@ -14184,6 +14366,8 @@ class Poland(Country):
         Hawk = planes.Hawk
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         Mirage_F1CE = planes.Mirage_F1CE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
@@ -14233,6 +14417,8 @@ class Poland(Country):
         Plane.Hawk,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.Mirage_F1CE,
         Plane.Yak_52,
         Plane.Ju_88A4,
@@ -14433,6 +14619,7 @@ class Romania(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             Flak18 = vehicles.AirDefence.Flak18
             Flak30 = vehicles.AirDefence.Flak30
             Flak36 = vehicles.AirDefence.Flak36
@@ -14561,6 +14748,8 @@ class Romania(Country):
         Hawk = planes.Hawk
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Ju_88A4 = planes.Ju_88A4
@@ -14604,6 +14793,8 @@ class Romania(Country):
         Plane.Hawk,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Ju_88A4,
@@ -14890,6 +15081,8 @@ class SaudiArabia(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -14934,6 +15127,8 @@ class SaudiArabia(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -15248,6 +15443,8 @@ class Serbia(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
@@ -15290,6 +15487,8 @@ class Serbia(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
@@ -15576,6 +15775,8 @@ class Slovakia(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -15618,6 +15819,8 @@ class Slovakia(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -15897,6 +16100,8 @@ class SouthKorea(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -15942,6 +16147,8 @@ class SouthKorea(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -16206,6 +16413,8 @@ class Sweden(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -16248,6 +16457,8 @@ class Sweden(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -16463,6 +16674,7 @@ class Syria(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             ZSU_57_2 = vehicles.AirDefence.ZSU_57_2
 
         class Fortification:
@@ -16565,6 +16777,8 @@ class Syria(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Yak_52 = planes.Yak_52
@@ -16608,6 +16822,8 @@ class Syria(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Yak_52,
@@ -16801,6 +17017,7 @@ class Yemen(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -16889,6 +17106,8 @@ class Yemen(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -16930,6 +17149,8 @@ class Yemen(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -17137,6 +17358,7 @@ class Vietnam(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -17230,6 +17452,8 @@ class Vietnam(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
@@ -17273,6 +17497,8 @@ class Vietnam(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
@@ -17553,6 +17779,8 @@ class Venezuela(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -17593,6 +17821,8 @@ class Venezuela(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -17844,6 +18074,8 @@ class Tunisia(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -17882,6 +18114,8 @@ class Tunisia(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -18142,6 +18376,8 @@ class Thailand(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -18183,6 +18419,8 @@ class Thailand(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -18372,6 +18610,7 @@ class Sudan(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -18457,6 +18696,8 @@ class Sudan(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -18499,6 +18740,8 @@ class Sudan(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -18744,6 +18987,8 @@ class Philippines(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -18785,6 +19030,8 @@ class Philippines(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -19061,6 +19308,8 @@ class Morocco(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -19104,6 +19353,8 @@ class Morocco(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -19362,6 +19613,8 @@ class Mexico(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -19401,6 +19654,8 @@ class Mexico(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -19639,6 +19894,7 @@ class Malaysia(Country):
         Su_30 = planes.Su_30
         Hawk = planes.Hawk
         KC130 = planes.KC130
+        MB_339A = planes.MB_339A
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -19662,6 +19918,7 @@ class Malaysia(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -19678,6 +19935,7 @@ class Malaysia(Country):
         Plane.Su_30,
         Plane.Hawk,
         Plane.KC130,
+        Plane.MB_339A,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -19701,6 +19959,7 @@ class Malaysia(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -19902,6 +20161,7 @@ class Libya(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             Rapier_fsa_launcher = vehicles.AirDefence.Rapier_fsa_launcher
             Rapier_fsa_optical_tracker_unit = vehicles.AirDefence.Rapier_fsa_optical_tracker_unit
             Rapier_fsa_blindfire_radar = vehicles.AirDefence.Rapier_fsa_blindfire_radar
@@ -19989,6 +20249,8 @@ class Libya(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
@@ -20031,6 +20293,8 @@ class Libya(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
@@ -20302,6 +20566,8 @@ class Jordan(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -20344,6 +20610,8 @@ class Jordan(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -20548,6 +20816,7 @@ class Indonesia(Country):
             NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            RD_75 = vehicles.AirDefence.RD_75
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -20646,6 +20915,8 @@ class Indonesia(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -20692,6 +20963,8 @@ class Indonesia(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -20947,6 +21220,8 @@ class Honduras(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -20985,6 +21260,8 @@ class Honduras(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -21175,6 +21452,7 @@ class Ethiopia(Country):
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            RD_75 = vehicles.AirDefence.RD_75
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -21260,6 +21538,8 @@ class Ethiopia(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
@@ -21301,6 +21581,8 @@ class Ethiopia(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
@@ -21571,6 +21853,8 @@ class Chile(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -21615,6 +21899,8 @@ class Chile(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -21891,6 +22177,8 @@ class Brazil(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -21930,6 +22218,8 @@ class Brazil(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -22199,6 +22489,8 @@ class Bahrain(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -22236,6 +22528,8 @@ class Bahrain(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -22512,6 +22806,8 @@ class ThirdReich(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -22550,6 +22846,8 @@ class ThirdReich(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -22734,6 +23032,7 @@ class Yugoslavia(Country):
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
+            RD_75 = vehicles.AirDefence.RD_75
             Bofors40 = vehicles.AirDefence.Bofors40
             QF_37_AA = vehicles.AirDefence.QF_37_AA
             Allies_Director = vehicles.AirDefence.Allies_Director
@@ -22836,6 +23135,8 @@ class Yugoslavia(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
@@ -22876,6 +23177,8 @@ class Yugoslavia(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
@@ -23020,6 +23323,7 @@ class USSR(Country):
             KS_19 = vehicles.AirDefence.KS_19
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             ZSU_57_2 = vehicles.AirDefence.ZSU_57_2
             QF_37_AA = vehicles.AirDefence.QF_37_AA
             Allies_Director = vehicles.AirDefence.Allies_Director
@@ -23062,6 +23366,7 @@ class USSR(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            S_75_ZIL = vehicles.Unarmed.S_75_ZIL
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
             Tacr2a = vehicles.Unarmed.Tacr2a
             LARC_V = vehicles.Unarmed.LARC_V
@@ -23113,7 +23418,6 @@ class USSR(Country):
             Coach_cargo = vehicles.Carriage.Coach_cargo
             German_covered_wagon_G10 = vehicles.Carriage.German_covered_wagon_G10
             DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
@@ -23182,6 +23486,8 @@ class USSR(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         Mirage_F1CE = planes.Mirage_F1CE
         Ju_88A4 = planes.Ju_88A4
 
@@ -23245,6 +23551,8 @@ class USSR(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.Mirage_F1CE,
         Plane.Ju_88A4,
     ]
@@ -23386,8 +23694,9 @@ class ItalianSocialRepublic(Country):
             Horch_901_typ_40_kfz_21 = vehicles.Unarmed.Horch_901_typ_40_kfz_21
 
         class Armor:
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
+            Stug_III = vehicles.Armor.Stug_III
+            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Tiger_I = vehicles.Armor.Tiger_I
             Tiger_II_H = vehicles.Armor.Tiger_II_H
             Pz_V_Panther_G = vehicles.Armor.Pz_V_Panther_G
@@ -23396,7 +23705,6 @@ class ItalianSocialRepublic(Country):
             Stug_IV = vehicles.Armor.Stug_IV
             SturmPzIV = vehicles.Armor.SturmPzIV
             Sd_Kfz_234_2_Puma = vehicles.Armor.Sd_Kfz_234_2_Puma
-            Stug_III = vehicles.Armor.Stug_III
             Elefant_SdKfz_184 = vehicles.Armor.Elefant_SdKfz_184
 
         class MissilesSS:
@@ -23424,8 +23732,8 @@ class ItalianSocialRepublic(Country):
 
     class Plane:
         A_10C = planes.A_10C
-        FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
+        FW_190A8 = planes.FW_190A8
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         P_47D_30 = planes.P_47D_30
@@ -23451,6 +23759,8 @@ class ItalianSocialRepublic(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -23461,8 +23771,8 @@ class ItalianSocialRepublic(Country):
 
     planes = [
         Plane.A_10C,
-        Plane.FW_190A8,
         Plane.Bf_109K_4,
+        Plane.FW_190A8,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.P_47D_30,
@@ -23488,6 +23798,8 @@ class ItalianSocialRepublic(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -23710,6 +24022,7 @@ class Algeria(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
             HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
@@ -23840,6 +24153,8 @@ class Algeria(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Yak_52 = planes.Yak_52
@@ -23894,6 +24209,8 @@ class Algeria(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Yak_52,
@@ -24185,6 +24502,8 @@ class Kuwait(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -24226,6 +24545,8 @@ class Kuwait(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -24490,6 +24811,8 @@ class Qatar(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -24531,6 +24854,8 @@ class Qatar(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -24814,6 +25139,8 @@ class Oman(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -24854,6 +25181,8 @@ class Oman(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -25112,6 +25441,7 @@ class UnitedArabEmirates(Country):
         M_2000C = planes.M_2000C
         Hawk = planes.Hawk
         WingLoong_I = planes.WingLoong_I
+        MB_339A = planes.MB_339A
         RQ_1A_Predator = planes.RQ_1A_Predator
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
@@ -25138,6 +25468,7 @@ class UnitedArabEmirates(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -25154,6 +25485,7 @@ class UnitedArabEmirates(Country):
         Plane.M_2000C,
         Plane.Hawk,
         Plane.WingLoong_I,
+        Plane.MB_339A,
         Plane.RQ_1A_Predator,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
@@ -25180,6 +25512,7 @@ class UnitedArabEmirates(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -25443,6 +25776,8 @@ class SouthAfrica(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -25485,6 +25820,8 @@ class SouthAfrica(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -25692,6 +26029,7 @@ class Cuba(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -25800,6 +26138,8 @@ class Cuba(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         Mirage_F1CE = planes.Mirage_F1CE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
@@ -25849,6 +26189,8 @@ class Cuba(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.Mirage_F1CE,
         Plane.Yak_52,
         Plane.Ju_88A4,
@@ -26119,6 +26461,8 @@ class Portugal(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -26162,6 +26506,8 @@ class Portugal(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -26390,6 +26736,7 @@ class GDR(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            S_75_ZIL = vehicles.Unarmed.S_75_ZIL
             Tacr2a = vehicles.Unarmed.Tacr2a
             LARC_V = vehicles.Unarmed.LARC_V
 
@@ -26411,7 +26758,6 @@ class GDR(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
@@ -26462,6 +26808,8 @@ class GDR(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Yak_52 = planes.Yak_52
@@ -26503,6 +26851,8 @@ class GDR(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Yak_52,
@@ -26776,6 +27126,8 @@ class Lebanon(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -26815,6 +27167,8 @@ class Lebanon(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -27019,6 +27373,7 @@ class CombinedJointTaskForcesBlue(Country):
             Soldier_AK = vehicles.Infantry.Soldier_AK
             Soldier_RPG = vehicles.Infantry.Soldier_RPG
             Soldier_M4 = vehicles.Infantry.Soldier_M4
+            JTAC = vehicles.Infantry.JTAC
             Soldier_M249 = vehicles.Infantry.Soldier_M249
             Soldier_M4_GRG = vehicles.Infantry.Soldier_M4_GRG
             Soldier_wwii_us = vehicles.Infantry.Soldier_wwii_us
@@ -27074,6 +27429,7 @@ class CombinedJointTaskForcesBlue(Country):
             KS_19 = vehicles.AirDefence.KS_19
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             ZSU_57_2 = vehicles.AirDefence.ZSU_57_2
             QF_37_AA = vehicles.AirDefence.QF_37_AA
             Allies_Director = vehicles.AirDefence.Allies_Director
@@ -27116,10 +27472,10 @@ class CombinedJointTaskForcesBlue(Country):
             NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
             NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             Gepard = vehicles.AirDefence.Gepard
+            Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
             HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
-            Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
 
         class Fortification:
@@ -27167,6 +27523,7 @@ class CombinedJointTaskForcesBlue(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            S_75_ZIL = vehicles.Unarmed.S_75_ZIL
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
             AA8 = vehicles.Unarmed.AA8
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
@@ -27186,8 +27543,9 @@ class CombinedJointTaskForcesBlue(Country):
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
 
         class Armor:
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
+            Stug_III = vehicles.Armor.Stug_III
+            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Tiger_I = vehicles.Armor.Tiger_I
             Tiger_II_H = vehicles.Armor.Tiger_II_H
             Pz_V_Panther_G = vehicles.Armor.Pz_V_Panther_G
@@ -27196,7 +27554,6 @@ class CombinedJointTaskForcesBlue(Country):
             Stug_IV = vehicles.Armor.Stug_IV
             SturmPzIV = vehicles.Armor.SturmPzIV
             Sd_Kfz_234_2_Puma = vehicles.Armor.Sd_Kfz_234_2_Puma
-            Stug_III = vehicles.Armor.Stug_III
             Elefant_SdKfz_184 = vehicles.Armor.Elefant_SdKfz_184
             BMD_1 = vehicles.Armor.BMD_1
             BMP_1 = vehicles.Armor.BMP_1
@@ -27293,7 +27650,6 @@ class CombinedJointTaskForcesBlue(Country):
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
 
     class Plane:
         A_10C = planes.A_10C
@@ -27324,6 +27680,8 @@ class CombinedJointTaskForcesBlue(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -27448,6 +27806,8 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -27808,6 +28168,7 @@ class CombinedJointTaskForcesRed(Country):
             Soldier_AK = vehicles.Infantry.Soldier_AK
             Soldier_RPG = vehicles.Infantry.Soldier_RPG
             Soldier_M4 = vehicles.Infantry.Soldier_M4
+            JTAC = vehicles.Infantry.JTAC
             Soldier_M249 = vehicles.Infantry.Soldier_M249
             Soldier_M4_GRG = vehicles.Infantry.Soldier_M4_GRG
             Soldier_wwii_us = vehicles.Infantry.Soldier_wwii_us
@@ -27863,6 +28224,7 @@ class CombinedJointTaskForcesRed(Country):
             KS_19 = vehicles.AirDefence.KS_19
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             ZSU_57_2 = vehicles.AirDefence.ZSU_57_2
             QF_37_AA = vehicles.AirDefence.QF_37_AA
             Allies_Director = vehicles.AirDefence.Allies_Director
@@ -27905,10 +28267,10 @@ class CombinedJointTaskForcesRed(Country):
             NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
             NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             Gepard = vehicles.AirDefence.Gepard
+            Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
             HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
-            Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
 
         class Fortification:
@@ -27956,6 +28318,7 @@ class CombinedJointTaskForcesRed(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            S_75_ZIL = vehicles.Unarmed.S_75_ZIL
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
             AA8 = vehicles.Unarmed.AA8
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
@@ -27975,8 +28338,9 @@ class CombinedJointTaskForcesRed(Country):
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
 
         class Armor:
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
+            Stug_III = vehicles.Armor.Stug_III
+            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Tiger_I = vehicles.Armor.Tiger_I
             Tiger_II_H = vehicles.Armor.Tiger_II_H
             Pz_V_Panther_G = vehicles.Armor.Pz_V_Panther_G
@@ -27985,7 +28349,6 @@ class CombinedJointTaskForcesRed(Country):
             Stug_IV = vehicles.Armor.Stug_IV
             SturmPzIV = vehicles.Armor.SturmPzIV
             Sd_Kfz_234_2_Puma = vehicles.Armor.Sd_Kfz_234_2_Puma
-            Stug_III = vehicles.Armor.Stug_III
             Elefant_SdKfz_184 = vehicles.Armor.Elefant_SdKfz_184
             BMD_1 = vehicles.Armor.BMD_1
             BMP_1 = vehicles.Armor.BMP_1
@@ -28082,7 +28445,6 @@ class CombinedJointTaskForcesRed(Country):
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
 
     class Plane:
         A_10C = planes.A_10C
@@ -28113,6 +28475,8 @@ class CombinedJointTaskForcesRed(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -28237,6 +28601,8 @@ class CombinedJointTaskForcesRed(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -28597,6 +28963,7 @@ class UnitedNationsPeacekeepers(Country):
             Soldier_AK = vehicles.Infantry.Soldier_AK
             Soldier_RPG = vehicles.Infantry.Soldier_RPG
             Soldier_M4 = vehicles.Infantry.Soldier_M4
+            JTAC = vehicles.Infantry.JTAC
             Soldier_M249 = vehicles.Infantry.Soldier_M249
             Soldier_M4_GRG = vehicles.Infantry.Soldier_M4_GRG
             Soldier_wwii_us = vehicles.Infantry.Soldier_wwii_us
@@ -28652,6 +29019,7 @@ class UnitedNationsPeacekeepers(Country):
             KS_19 = vehicles.AirDefence.KS_19
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
             SON_9 = vehicles.AirDefence.SON_9
+            RD_75 = vehicles.AirDefence.RD_75
             ZSU_57_2 = vehicles.AirDefence.ZSU_57_2
             QF_37_AA = vehicles.AirDefence.QF_37_AA
             Allies_Director = vehicles.AirDefence.Allies_Director
@@ -28694,10 +29062,10 @@ class UnitedNationsPeacekeepers(Country):
             NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
             NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             Gepard = vehicles.AirDefence.Gepard
+            Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
             HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
-            Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
 
         class Fortification:
@@ -28745,6 +29113,7 @@ class UnitedNationsPeacekeepers(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            S_75_ZIL = vehicles.Unarmed.S_75_ZIL
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
             AA8 = vehicles.Unarmed.AA8
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
@@ -28764,8 +29133,9 @@ class UnitedNationsPeacekeepers(Country):
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
 
         class Armor:
-            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
+            Stug_III = vehicles.Armor.Stug_III
+            Pz_IV_H = vehicles.Armor.Pz_IV_H
             Tiger_I = vehicles.Armor.Tiger_I
             Tiger_II_H = vehicles.Armor.Tiger_II_H
             Pz_V_Panther_G = vehicles.Armor.Pz_V_Panther_G
@@ -28774,7 +29144,6 @@ class UnitedNationsPeacekeepers(Country):
             Stug_IV = vehicles.Armor.Stug_IV
             SturmPzIV = vehicles.Armor.SturmPzIV
             Sd_Kfz_234_2_Puma = vehicles.Armor.Sd_Kfz_234_2_Puma
-            Stug_III = vehicles.Armor.Stug_III
             Elefant_SdKfz_184 = vehicles.Armor.Elefant_SdKfz_184
             BMD_1 = vehicles.Armor.BMD_1
             BMP_1 = vehicles.Armor.BMP_1
@@ -28871,7 +29240,6 @@ class UnitedNationsPeacekeepers(Country):
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
 
     class Plane:
         A_10C = planes.A_10C
@@ -28902,6 +29270,8 @@ class UnitedNationsPeacekeepers(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -29026,6 +29396,8 @@ class UnitedNationsPeacekeepers(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -29415,6 +29787,7 @@ class Argentina(Country):
         KC130 = planes.KC130
         B_17G = planes.B_17G
         F_86F_Sabre = planes.F_86F_Sabre
+        MB_339A = planes.MB_339A
         C_47 = planes.C_47
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
@@ -29441,6 +29814,7 @@ class Argentina(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -29454,6 +29828,7 @@ class Argentina(Country):
         Plane.KC130,
         Plane.B_17G,
         Plane.F_86F_Sabre,
+        Plane.MB_339A,
         Plane.C_47,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
@@ -29480,6 +29855,7 @@ class Argentina(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -29757,6 +30133,8 @@ class Cyprus(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -29795,6 +30173,8 @@ class Cyprus(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -30061,6 +30441,8 @@ class Slovenia(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -30100,6 +30482,8 @@ class Slovenia(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -30279,8 +30663,6 @@ class Bolivia(Country):
         class AirDefence:
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
-            ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
-            ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
 
@@ -30370,6 +30752,8 @@ class Bolivia(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -30412,6 +30796,8 @@ class Bolivia(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -30636,6 +31022,7 @@ class Ghana(Country):
     class Plane:
         A_10C = planes.A_10C
         L_39ZA = planes.L_39ZA
+        MB_339A = planes.MB_339A
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -30663,6 +31050,7 @@ class Ghana(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -30674,6 +31062,7 @@ class Ghana(Country):
     planes = [
         Plane.A_10C,
         Plane.L_39ZA,
+        Plane.MB_339A,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -30701,6 +31090,7 @@ class Ghana(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -30939,6 +31329,7 @@ class Nigeria(Country):
         C_130 = planes.C_130
         JF_17 = planes.JF_17
         L_39ZA = planes.L_39ZA
+        MB_339A = planes.MB_339A
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -30965,6 +31356,7 @@ class Nigeria(Country):
         I_16 = planes.I_16
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -30978,6 +31370,7 @@ class Nigeria(Country):
         Plane.C_130,
         Plane.JF_17,
         Plane.L_39ZA,
+        Plane.MB_339A,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -31004,6 +31397,7 @@ class Nigeria(Country):
         Plane.I_16,
         Plane.L_39C,
         Plane.M_2000C,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -31246,6 +31640,7 @@ class Peru(Country):
         A_10C = planes.A_10C
         Mirage_2000_5 = planes.Mirage_2000_5
         M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
         MiG_29S = planes.MiG_29S
         C_130 = planes.C_130
         KC130 = planes.KC130
@@ -31278,6 +31673,7 @@ class Peru(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
@@ -31290,6 +31686,7 @@ class Peru(Country):
         Plane.A_10C,
         Plane.Mirage_2000_5,
         Plane.M_2000C,
+        Plane.MB_339A,
         Plane.MiG_29S,
         Plane.C_130,
         Plane.KC130,
@@ -31322,6 +31719,7 @@ class Peru(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
@@ -31487,6 +31885,311 @@ class Peru(Country):
         )
 
 
+class Ecuador(Country):
+    id = 90
+    name = "Ecuador"
+    shortname = "ECU"
+
+    class Vehicle:
+
+        class Artillery:
+            Grad_URAL = vehicles.Artillery.Grad_URAL
+            X_2B11_mortar = vehicles.Artillery.X_2B11_mortar
+
+        class AirDefence:
+            Bofors40 = vehicles.AirDefence.Bofors40
+            ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
+            ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
+            M45_Quadmount = vehicles.AirDefence.M45_Quadmount
+            ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
+            Vulcan = vehicles.AirDefence.Vulcan
+            Osa_9A33_ln = vehicles.AirDefence.Osa_9A33_ln
+            M48_Chaparral = vehicles.AirDefence.M48_Chaparral
+            Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
+
+        class Fortification:
+            Bunker = vehicles.Fortification.Bunker
+            Sandbox = vehicles.Fortification.Sandbox
+            House1arm = vehicles.Fortification.House1arm
+            House2arm = vehicles.Fortification.House2arm
+            Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost = vehicles.Fortification.Outpost
+            HouseA_arm = vehicles.Fortification.HouseA_arm
+            TACAN_beacon = vehicles.Fortification.TACAN_beacon
+
+        class Unarmed:
+            M_818 = vehicles.Unarmed.M_818
+            Hummer = vehicles.Unarmed.Hummer
+            Tacr2a = vehicles.Unarmed.Tacr2a
+            LARC_V = vehicles.Unarmed.LARC_V
+
+        class Armor:
+            Leopard1A3 = vehicles.Armor.Leopard1A3
+            T_55 = vehicles.Armor.T_55
+            M_113 = vehicles.Armor.M_113
+            M2A1_halftrack = vehicles.Armor.M2A1_halftrack
+            M1043_HMMWV_Armament = vehicles.Armor.M1043_HMMWV_Armament
+
+        class MissilesSS:
+            Scud_B = vehicles.MissilesSS.Scud_B
+
+        class Locomotive:
+            Electric_locomotive = vehicles.Locomotive.Electric_locomotive
+            Locomotive = vehicles.Locomotive.Locomotive
+            ES44AH = vehicles.Locomotive.ES44AH
+            DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
+
+        class Carriage:
+            Coach_cargo = vehicles.Carriage.Coach_cargo
+            Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
+            Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
+            Coach_a_tank_yellow = vehicles.Carriage.Coach_a_tank_yellow
+            Coach_a_passenger = vehicles.Carriage.Coach_a_passenger
+            Coach_a_platform = vehicles.Carriage.Coach_a_platform
+            Boxcartrinity = vehicles.Carriage.Boxcartrinity
+            Tankcartrinity = vehicles.Carriage.Tankcartrinity
+            Wellcarnsc = vehicles.Carriage.Wellcarnsc
+            DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
+            German_covered_wagon_G10 = vehicles.Carriage.German_covered_wagon_G10
+            German_tank_wagon = vehicles.Carriage.German_tank_wagon
+
+    class Plane:
+        A_10C = planes.A_10C
+        C_130 = planes.C_130
+        Mirage_F1C = planes.Mirage_F1C
+        Mirage_F1CE = planes.Mirage_F1CE
+        P_47D_30 = planes.P_47D_30
+        P_47D_30bl1 = planes.P_47D_30bl1
+        P_47D_40 = planes.P_47D_40
+        FW_190A8 = planes.FW_190A8
+        Bf_109K_4 = planes.Bf_109K_4
+        SpitfireLFMkIX = planes.SpitfireLFMkIX
+        SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
+        MosquitoFBMkVI = planes.MosquitoFBMkVI
+        A_20G = planes.A_20G
+        A_10A = planes.A_10A
+        A_10C_2 = planes.A_10C_2
+        AJS37 = planes.AJS37
+        AV8BNA = planes.AV8BNA
+        KC130 = planes.KC130
+        KC135MPRS = planes.KC135MPRS
+        C_101EB = planes.C_101EB
+        C_101CC = planes.C_101CC
+        JF_17 = planes.JF_17
+        Christen_Eagle_II = planes.Christen_Eagle_II
+        F_5E = planes.F_5E
+        F_5E_3 = planes.F_5E_3
+        F_86F_Sabre = planes.F_86F_Sabre
+        FA_18C_hornet = planes.FA_18C_hornet
+        Hawk = planes.Hawk
+        I_16 = planes.I_16
+        L_39C = planes.L_39C
+        M_2000C = planes.M_2000C
+        MB_339A = planes.MB_339A
+        MB_339APAN = planes.MB_339APAN
+        MiG_15bis = planes.MiG_15bis
+        MiG_19P = planes.MiG_19P
+        MiG_21Bis = planes.MiG_21Bis
+        Mirage_F1JA = planes.Mirage_F1JA
+        Yak_52 = planes.Yak_52
+        Ju_88A4 = planes.Ju_88A4
+        C_47 = planes.C_47
+
+    planes = [
+        Plane.A_10C,
+        Plane.C_130,
+        Plane.Mirage_F1C,
+        Plane.Mirage_F1CE,
+        Plane.P_47D_30,
+        Plane.P_47D_30bl1,
+        Plane.P_47D_40,
+        Plane.FW_190A8,
+        Plane.Bf_109K_4,
+        Plane.SpitfireLFMkIX,
+        Plane.SpitfireLFMkIXCW,
+        Plane.MosquitoFBMkVI,
+        Plane.A_20G,
+        Plane.A_10A,
+        Plane.A_10C_2,
+        Plane.AJS37,
+        Plane.AV8BNA,
+        Plane.KC130,
+        Plane.KC135MPRS,
+        Plane.C_101EB,
+        Plane.C_101CC,
+        Plane.JF_17,
+        Plane.Christen_Eagle_II,
+        Plane.F_5E,
+        Plane.F_5E_3,
+        Plane.F_86F_Sabre,
+        Plane.FA_18C_hornet,
+        Plane.Hawk,
+        Plane.I_16,
+        Plane.L_39C,
+        Plane.M_2000C,
+        Plane.MB_339A,
+        Plane.MB_339APAN,
+        Plane.MiG_15bis,
+        Plane.MiG_19P,
+        Plane.MiG_21Bis,
+        Plane.Mirage_F1JA,
+        Plane.Yak_52,
+        Plane.Ju_88A4,
+        Plane.C_47,
+    ]
+
+    class Helicopter:
+        Ka_50 = helicopters.Ka_50
+        Mi_8MT = helicopters.Mi_8MT
+        UH_1H = helicopters.UH_1H
+        SA342M = helicopters.SA342M
+        SA342L = helicopters.SA342L
+        SA342Mistral = helicopters.SA342Mistral
+        SA342Minigun = helicopters.SA342Minigun
+        AH_64D_BLK_II = helicopters.AH_64D_BLK_II
+
+    helicopters = [
+        Helicopter.Ka_50,
+        Helicopter.Mi_8MT,
+        Helicopter.UH_1H,
+        Helicopter.SA342M,
+        Helicopter.SA342L,
+        Helicopter.SA342Mistral,
+        Helicopter.SA342Minigun,
+        Helicopter.AH_64D_BLK_II,
+    ]
+
+    class Ship:
+        Speedboat = ships.Speedboat
+        HarborTug = ships.HarborTug
+
+    class CallsignAWACS:
+        Overlord = "Overlord"
+        Magic = "Magic"
+        Wizard = "Wizard"
+        Focus = "Focus"
+        Darkstar = "Darkstar"
+
+    class CallsignTankers:
+        Texaco = "Texaco"
+        Arco = "Arco"
+        Shell = "Shell"
+
+    class CallsignAir:
+        Enfield = "Enfield"
+        Springfield = "Springfield"
+        Uzi = "Uzi"
+        Colt = "Colt"
+        Dodge = "Dodge"
+        Ford = "Ford"
+        Chevy = "Chevy"
+        Pontiac = "Pontiac"
+
+    class CallsignHelipad:
+        London = "London"
+        Dallas = "Dallas"
+        Paris = "Paris"
+        Moscow = "Moscow"
+        Berlin = "Berlin"
+        Rome = "Rome"
+        Madrid = "Madrid"
+        Warsaw = "Warsaw"
+        Dublin = "Dublin"
+        Perth = "Perth"
+
+    class CallsignGroundUnits:
+        Axeman = "Axeman"
+        Darknight = "Darknight"
+        Warrior = "Warrior"
+        Pointer = "Pointer"
+        Eyeball = "Eyeball"
+        Moonbeam = "Moonbeam"
+        Whiplash = "Whiplash"
+        Finger = "Finger"
+        Pinpoint = "Pinpoint"
+        Ferret = "Ferret"
+        Shaba = "Shaba"
+        Playboy = "Playboy"
+        Hammer = "Hammer"
+        Jaguar = "Jaguar"
+        Deathstar = "Deathstar"
+        Anvil = "Anvil"
+        Firefly = "Firefly"
+        Mantis = "Mantis"
+        Badger = "Badger"
+
+    class CallsignGrassAirfield:
+        New_York = "New York"
+
+    callsign = {
+        "AWACS": [
+            CallsignAWACS.Overlord,
+            CallsignAWACS.Magic,
+            CallsignAWACS.Wizard,
+            CallsignAWACS.Focus,
+            CallsignAWACS.Darkstar
+        ],
+        "Tankers": [
+            CallsignTankers.Texaco,
+            CallsignTankers.Arco,
+            CallsignTankers.Shell
+        ],
+        "Air": [
+            CallsignAir.Enfield,
+            CallsignAir.Springfield,
+            CallsignAir.Uzi,
+            CallsignAir.Colt,
+            CallsignAir.Dodge,
+            CallsignAir.Ford,
+            CallsignAir.Chevy,
+            CallsignAir.Pontiac
+        ],
+        "Helipad": [
+            CallsignHelipad.London,
+            CallsignHelipad.Dallas,
+            CallsignHelipad.Paris,
+            CallsignHelipad.Moscow,
+            CallsignHelipad.Berlin,
+            CallsignHelipad.Rome,
+            CallsignHelipad.Madrid,
+            CallsignHelipad.Warsaw,
+            CallsignHelipad.Dublin,
+            CallsignHelipad.Perth
+        ],
+        "GroundUnits": [
+            CallsignGroundUnits.Axeman,
+            CallsignGroundUnits.Darknight,
+            CallsignGroundUnits.Warrior,
+            CallsignGroundUnits.Pointer,
+            CallsignGroundUnits.Eyeball,
+            CallsignGroundUnits.Moonbeam,
+            CallsignGroundUnits.Whiplash,
+            CallsignGroundUnits.Finger,
+            CallsignGroundUnits.Pinpoint,
+            CallsignGroundUnits.Ferret,
+            CallsignGroundUnits.Shaba,
+            CallsignGroundUnits.Playboy,
+            CallsignGroundUnits.Hammer,
+            CallsignGroundUnits.Jaguar,
+            CallsignGroundUnits.Deathstar,
+            CallsignGroundUnits.Anvil,
+            CallsignGroundUnits.Firefly,
+            CallsignGroundUnits.Mantis,
+            CallsignGroundUnits.Badger
+        ],
+        "GrassAirfield": [
+            CallsignGrassAirfield.New_York
+        ],
+    }
+
+    def __init__(self):
+        super(Ecuador, self).__init__(
+            Ecuador.id,
+            Ecuador.name,
+            Ecuador.shortname
+        )
+
+
 country_dict = {
     Russia.id: Russia,
     Ukraine.id: Ukraine,
@@ -31577,6 +32280,7 @@ country_dict = {
     Ghana.id: Ghana,
     Nigeria.id: Nigeria,
     Peru.id: Peru,
+    Ecuador.id: Ecuador,
 }
 
 

@@ -10,13 +10,13 @@ class Weapons:
     ADM_141A_ = {"clsid": "{BRU3242_ADM141}", "name": "ADM_141A", "weight": 365.38}
     ADM_141A_TALD = {"clsid": "{ADM_141A}", "name": "ADM-141A TALD", "weight": 180}
     ADM_141B_TALD = {"clsid": "{ADM_141B}", "name": "ADM-141B TALD", "weight": 180}
-    AERO_1D_300_Gallons_Fuel_Tank_ = {"clsid": "{AV8BNA_AERO1D}", "name": "AERO 1D 300 Gallons Fuel Tank ", "weight": 1002.439}
-    AERO_1D_300_Gallons_Fuel_Tank__Empty_ = {"clsid": "{AV8BNA_AERO1D_EMPTY}", "name": "AERO 1D 300 Gallons Fuel Tank (Empty)", "weight": 93.89362}
+    AERO_1D_300_Gallons_Fuel_Tank_ = {"clsid": "{AV8BNA_AERO1D}", "name": "AERO 1D 300 Gallons Fuel Tank ", "weight": 998.3513}
+    AERO_1D_300_Gallons_Fuel_Tank__Empty_ = {"clsid": "{AV8BNA_AERO1D_EMPTY}", "name": "AERO 1D 300 Gallons Fuel Tank (Empty)", "weight": 89.8113}
     AGM114x2_OH_58 = {"clsid": "AGM114x2_OH_58", "name": "AGM-114K * 2", "weight": 250}
     AGM_114K = {"clsid": "{ee368869-c35a-486a-afe7-284beb7c5d52}", "name": "AGM-114K", "weight": 65}
     AGM_119B_Penguin_ASM = {"clsid": "{7B8DCEB4-820B-4015-9B48-1028A4195692}", "name": "AGM-119B Penguin ASM", "weight": 300}
-    AGM_122_Sidearm = {"clsid": "{AGM_122_SIDEARM}", "name": "AGM-122 Sidearm", "weight": 92}
-    AGM_122_Sidearm_ = {"clsid": "{LAU_7_AGM_122_SIDEARM}", "name": "AGM-122 Sidearm", "weight": 107}
+    AGM_122_Sidearm = {"clsid": "{AGM_122_SIDEARM}", "name": "AGM-122 Sidearm", "weight": 98.883056}
+    AGM_122_Sidearm_ = {"clsid": "{LAU_7_AGM_122_SIDEARM}", "name": "AGM-122 Sidearm", "weight": 139.706336}
     AGM_122_Sidearm___light_ARM = {"clsid": "{AGM_122}", "name": "AGM-122 Sidearm - light ARM", "weight": 88}
     AGM_154A___JSOW_CEB__CBU_type_ = {"clsid": "{AGM-154A}", "name": "AGM-154A - JSOW CEB (CBU-type)", "weight": 485}
     AGM_154B___JSOW_Anti_Armour = {"clsid": "{AGM-154B}", "name": "AGM-154B - JSOW Anti-Armour", "weight": 485}
@@ -83,7 +83,7 @@ class Weapons:
     ALQ_184_Long = {"clsid": "ALQ_184_Long", "name": "ALQ-184 Long - ECM Pod", "weight": 286}
     AN_AAQ_28_LITENING___Targeting_Pod = {"clsid": "{A111396E-D3E8-4b9c-8AC9-2432489304D5}", "name": "AN/AAQ-28 LITENING - Targeting Pod", "weight": 208}
     AN_AAQ_28_LITENING___Targeting_Pod_ = {"clsid": "{AAQ-28_LEFT}", "name": "AN/AAQ-28 LITENING - Targeting Pod", "weight": 208}
-    AN_ALQ_164_DECM_Pod = {"clsid": "{ALQ_164_RF_Jammer}", "name": "AN/ALQ-164 DECM Pod", "weight": 143.789}
+    AN_ALQ_164_DECM_Pod = {"clsid": "{ALQ_164_RF_Jammer}", "name": "AN/ALQ-164 DECM Pod", "weight": 188.241}
     AN_ASQ_173_Laser_Spot_Tracker_Strike_CAMera__LST_SCAM_ = {"clsid": "{1C2B16EB-8EB0-43de-8788-8EBB2D70B8BC}", "name": "AN/ASQ-173 Laser Spot Tracker/Strike CAMera (LST/SCAM)", "weight": 250}
     AN_ASQ_213_HTS___HARM_Targeting_System = {"clsid": "{AN_ASQ_213}", "name": "AN/ASQ-213 HTS - HARM Targeting System", "weight": 57.2}
     AN_ASQ_228_ATFLIR___Targeting_Pod = {"clsid": "{AN_ASQ_228}", "name": "AN/ASQ-228 ATFLIR - Targeting Pod", "weight": 195}
@@ -91,6 +91,8 @@ class Weapons:
     AN_ASQ_T50_TCTS_Pod___ACMI_Pod_ = {"clsid": "{LAU-138 wtip - TCTS L}", "name": "AN/ASQ-T50 TCTS Pod - ACMI Pod", "weight": 62.6}
     AN_ASQ_T50_TCTS_Pod___ACMI_Pod__ = {"clsid": "{LAU-138 wtip - TCTS R}", "name": "AN/ASQ-T50 TCTS Pod - ACMI Pod", "weight": 62.6}
     AN_M30A1___100lb_GP_Bomb_LD = {"clsid": "{AN_M30A1}", "name": "AN-M30A1 - 100lb GP Bomb LD", "weight": 45.8}
+    AN_M3_Gunpod_Left = {"clsid": "{MB339_ANM3_L}", "name": "AN/M3 Gunpod Left", "weight": 75}
+    AN_M3_Gunpod_Right = {"clsid": "{MB339_ANM3_R}", "name": "AN/M3 Gunpod Right", "weight": 75}
     AN_M3___2_Browning_Machine_Guns_12_7mm = {"clsid": "{AN-M3}", "name": "AN-M3 - 2*Browning Machine Guns 12.7mm", "weight": 218}
     AN_M57___250lb_GP_Bomb_LD = {"clsid": "{AN_M57}", "name": "AN-M57 - 250lb GP Bomb LD", "weight": 113}
     AN_M64___500lb_GP_Bomb_LD = {"clsid": "{AN-M64}", "name": "AN-M64 - 500lb GP Bomb LD", "weight": 227}
@@ -250,7 +252,12 @@ class Weapons:
     CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = {"clsid": "{CLB4_SAMP400LD}", "name": "CLB 4 - 4 x SAMP-400 - 400 kg GP Bomb LD", "weight": 1623}
     CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = {"clsid": "{CLB4_SAMP400HD}", "name": "CLB 4 - 4 x SAMP-400 - 400 kg GP Chute Retarded Bomb HD", "weight": 1763}
     CM_802AKG = {"clsid": "{CM_802AKG}", "name": "CM-802AKG", "weight": None}
+    Color_Oil_Tank = {"clsid": "{COLOR-TANK}", "name": "Color Oil Tank", "weight": 132.5}
+    Cylindrical_Tip_Tank_500lt = {"clsid": "{FUEL-TIP-TANK-500-L}", "name": "Cylindrical Tip Tank 500lt", "weight": 471}
+    Cylindrical_Tip_Tank_500lt_ = {"clsid": "{FUEL-TIP-TANK-500-R}", "name": "Cylindrical Tip Tank 500lt", "weight": 471}
     C_802AK = {"clsid": "{C_802AK}", "name": "C-802AK", "weight": 600}
+    DEFA553_Gunpod_Left = {"clsid": "{MB339_DEFA553_L}", "name": "DEFA553 Gunpod Left", "weight": 190}
+    DEFA553_Gunpod_Right = {"clsid": "{MB339_DEFA553_R}", "name": "DEFA553 Gunpod Right", "weight": 190}
     DEFA_553___30mm_Revolver_Cannon = {"clsid": "{C-101-DEFA553}", "name": "DEFA-553 - 30mm Revolver Cannon", "weight": 218}
     DIS_AKD_10 = {"clsid": "DIS_AKD-10", "name": "AKD-10", "weight": 58}
     DIS_AKG_DLPOD = {"clsid": "DIS_AKG_DLPOD", "name": "DATA-LINK POD", "weight": 295}
@@ -340,6 +347,8 @@ class Weapons:
     Eclair_M_4_2__32_flares_36_chaffs = {"clsid": "{EclairM_42}", "name": "Eclair-M 4/2 : 32 flares 36 chaffs", "weight": 20}
     Eclair_M_5_1__40_flares_18_chaffs = {"clsid": "{EclairM_51}", "name": "Eclair-M 5/1 : 40 flares 18 chaffs", "weight": 20}
     Eclair_M_6_0__48_flares = {"clsid": "{EclairM_60}", "name": "Eclair-M 6/0 : 48 flares", "weight": 20}
+    Elliptic_Tip_Tank_320lt = {"clsid": "{FUEL-TIP-ELLITTIC-L}", "name": "Elliptic Tip Tank 320lt", "weight": 314.2}
+    Elliptic_Tip_Tank_320lt_ = {"clsid": "{FUEL-TIP-ELLITTIC-R}", "name": "Elliptic Tip Tank 320lt", "weight": 314.2}
     ER_4_SC50 = {"clsid": "ER_4_SC50", "name": "4 x SC 50 - 50kg GP Bomb LD", "weight": 220}
     ETHER = {"clsid": "{0519A261-0AB6-11d6-9193-00A0249B6F00}", "name": "ETHER", "weight": 200}
     FAB_100M = {"clsid": "FAB_100M", "name": "FAB-100M - 100kg GP Bomb LD", "weight": 100}
@@ -361,6 +370,7 @@ class Weapons:
     Fuel_Tank_120_gallons = {"clsid": "{PTB_120_F86F35}", "name": "Fuel Tank 120 gallons", "weight": 413.36}
     Fuel_Tank_150_liters = {"clsid": "{PTB_150L_L39}", "name": "Fuel Tank 150 liters", "weight": 124.25}
     Fuel_Tank_200_gallons = {"clsid": "{PTB_200_F86F35}", "name": "Fuel Tank 200 gallons", "weight": 675.6}
+    Fuel_Tank_330lt = {"clsid": "{FUEL-SUBAL_TANK-330}", "name": "Fuel Tank 330lt", "weight": 315}
     Fuel_Tank_350_liters = {"clsid": "{PTB_350L_L39}", "name": "Fuel Tank 350 liters", "weight": 283.25}
     Fuel_Tank_490_L_Central__21_ = {"clsid": "{PTB_490C_MIG21}", "name": "Fuel Tank 490 L Central (21)", "weight": 434}
     Fuel_Tank_490_L__21_ = {"clsid": "{PTB_490_MIG21}", "name": "Fuel Tank 490 L (21)", "weight": 434}
@@ -617,6 +627,7 @@ class Weapons:
     LR_25___25_x_ARF_8_M3_HEI_Heavy = {"clsid": "{LR25_ARF8M3_HEI}", "name": "LR-25 - 25 x ARF-8/M3 HEI Heavy", "weight": 161}
     LR_25___25_x_ARF_8_M3_TP_SM = {"clsid": "{LR25_ARF8M3_TPSM}", "name": "LR-25 - 25 x ARF-8/M3 TP-SM", "weight": 136}
     LTF_5b_Aerial_Torpedo = {"clsid": "{LTF_5B}", "name": "LTF 5b Aerial Torpedo", "weight": 765}
+    Luggage_Container = {"clsid": "{MB339_TRAVELPOD}", "name": "Luggage Container", "weight": 72}
     L_081_Fantasmagoria_ELINT_pod = {"clsid": "{0519A264-0AB6-11d6-9193-00A0249B6F00}", "name": "L-081 Fantasmagoria ELINT pod", "weight": 300}
     M10_Smoke_Tank___blue = {"clsid": "{US_M10_SMOKE_TANK_BLUE}", "name": "M10 Smoke Tank - blue", "weight": 266.7}
     M10_Smoke_Tank___green = {"clsid": "{US_M10_SMOKE_TANK_GREEN}", "name": "M10 Smoke Tank - green", "weight": 266.7}
@@ -703,10 +714,17 @@ class Weapons:
     MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = {"clsid": "{MATRA_F4_SNEBT256}", "name": "MATRA F4 - 18 x 68 mm SNEB Type 256 F1B HE/Frag", "weight": 209.18}
     MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = {"clsid": "{MATRA_F4_SNEBT257}", "name": "MATRA F4 - 18 x 68 mm SNEB Type 257 F1B HE/Frag Lg Whd", "weight": 238.34}
     MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = {"clsid": "{MATRA_F4_SNEBT259E}", "name": "MATRA F4 - 18 x 68 mm SNEB Type 259E F1B IL", "weight": 259.58}
+    Mark_46 = {"clsid": "{Mark_46}", "name": "Mark 46", "weight": 230}
     Matra_Magic_II = {"clsid": "{MMagicII}", "name": "Matra Magic II", "weight": 85}
     Matra_Magic_II___DDM = {"clsid": "{MMagicII_DDM}", "name": "Matra Magic II / DDM", "weight": 95}
     Matra_Super_530D = {"clsid": "{Matra_S530D}", "name": "Matra Super 530D", "weight": 350}
     Matra_Type_155_Rocket_Pod = {"clsid": "{Matra155RocketPod}", "name": "Matra Type 155 Rocket Pod", "weight": 190}
+    MB339_Black_Smoke = {"clsid": "{SMOKE-BLACK-MB339}", "name": "MB339 Black Smoke", "weight": 1}
+    MB339_Green_Smoke = {"clsid": "{SMOKE-GREEN-MB339}", "name": "MB339 Green Smoke", "weight": 1}
+    MB339_ORANGE_Smoke = {"clsid": "{SMOKE-ORANGE-MB339}", "name": "MB339 ORANGE Smoke", "weight": 1}
+    MB339_Red_Smoke = {"clsid": "{SMOKE-RED-MB339}", "name": "MB339 Red Smoke", "weight": 1}
+    MB339_White_Smoke = {"clsid": "{SMOKE-WHITE-MB339}", "name": "MB339 White Smoke", "weight": 1}
+    MB339_YELLOW_Smoke = {"clsid": "{SMOKE-YELLOW-MB339}", "name": "MB339 YELLOW Smoke", "weight": 1}
     MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD = {"clsid": "{5A1AC2B4-CA4B-4D09-A1AF-AC52FBC4B60B}", "name": "MBD2-67U with 4 x FAB-100 - 100kg GP Bombs LD", "weight": 465}
     MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = {"clsid": "{29A828E2-C6BB-11d8-9897-000476191836}", "name": "MBD2-67U with 4 x FAB-100 - 100kg GP Bombs LD", "weight": 465}
     MBD3_U2T_with_2_x_FAB_1500_M_54___1500kg_GP_Bombs_LD = {"clsid": "{7C5F0F5F-0A0B-46E8-937C-8922303E39A8}", "name": "MBD3-U2T with 2 x FAB-1500 M-54 - 1500kg GP Bombs LD", "weight": 3100}
@@ -776,6 +794,8 @@ class Weapons:
     Mk_84 = {"clsid": "{BRU-32 MK-84}", "name": "Mk-84", "weight": 951.38}
     Mk_84_18 = {"clsid": "{F092B80C-BB54-477E-9408-66DEEF740008}", "name": "Mk 84*18", "weight": 16092}
     Mk_84_28 = {"clsid": "{D3ABF208-FA56-4D56-BB31-E0D931D57AE3}", "name": "Mk 84*28", "weight": 25032}
+    Mk_84_AIR__BSU_50____2000_lb_GP_Chute_Retarded_Bomb_HD = {"clsid": "{Mk_84AIR_GP}", "name": "Mk-84 AIR (BSU-50) - 2000 lb GP Chute Retarded Bomb HD", "weight": 911.7}
+    Mk_84_AIR__BSU_50____2000_lb_TP_Chute_Retarded_Bomb_HD = {"clsid": "{Mk_84AIR_TP}", "name": "Mk-84 AIR (BSU-50) - 2000 lb TP Chute Retarded Bomb HD", "weight": 911.7}
     Mk_84___2000lb_GP_Bomb_LD = {"clsid": "{AB8B8299-F1CC-4359-89B5-2172E0CF4A5A}", "name": "Mk-84 - 2000lb GP Bomb LD", "weight": 894}
     MPS_410 = {"clsid": "{44EE8698-89F9-48EE-AF36-5FD31896A82D}", "name": "MPS-410", "weight": 150}
     MPS_410_ = {"clsid": "{44EE8698-89F9-48EE-AF36-5FD31896A82C}", "name": "MPS-410", "weight": 150}
@@ -788,6 +808,7 @@ class Weapons:
     ORO_57K___S_5M_x_8 = {"clsid": "{ORO57K_S5M_HEFRAG}", "name": "ORO-57K - S-5M x 8", "weight": 64.92}
     oh_58_brauning = {"clsid": "oh-58-brauning", "name": "OH-58D Brauning", "weight": 290}
     Pavetack_F_111 = {"clsid": "{199D6D51-1764-497E-9AE5-7D07C8D4D87E}", "name": "Pavetack F-111", "weight": 200}
+    Photo_Recon_Pod__4_70mm_Vinten_Cameras_ = {"clsid": "{MB339_VINTEN}", "name": "Photo-Recon Pod (4*70mm Vinten Cameras)", "weight": 72}
     PKT_7_62 = {"clsid": "PKT_7_62", "name": "PKT 7.62mm MMG", "weight": 90}
     PK_3___7_62mm_GPMG = {"clsid": "{PK-3}", "name": "PK-3 - 7.62mm GPMG", "weight": 218}
     PTB300_MIG15 = {"clsid": "PTB300_MIG15", "name": "Fuel Tank 300 liters", "weight": 271}
@@ -967,6 +988,7 @@ class Weapons:
     UPK_23_250___gun_pod = {"clsid": "{UPK-23-250 MiG-21}", "name": "UPK-23-250 - gun pod", "weight": 218}
     U_22_Jammer_pod = {"clsid": "{U22}", "name": "U/22 Jammer pod", "weight": 348}
     Werfer_Granate_21___21_cm_UnGd_air_to_air_rocket = {"clsid": "{WGr21}", "name": "Werfer-Granate 21 - 21 cm UnGd air-to-air rocket", "weight": 121}
+    White_Oil_Tank = {"clsid": "{WHITE-TANK}", "name": "White Oil Tank", "weight": 132.5}
     XM158_M151 = {"clsid": "XM158_M151", "name": "XM158 pod - 7 x 2.75\" Hydra, UnGd Rkts M151, HE", "weight": 112}
     XM158_M156 = {"clsid": "XM158_M156", "name": "XM158 pod - 7 x 2.75\" Hydra, UnGd Rkts M156, Wht Phos", "weight": 112}
     XM158_M257 = {"clsid": "XM158_M257", "name": "XM158 pod - 7 x 2.75\" Hydra, UnGd Rkts M257, Para Illum", "weight": 112}
@@ -1017,16 +1039,16 @@ class Weapons:
     _2_BDU_45___ = {"clsid": "{BRU42_2*BDU45 LS}", "name": "2 BDU-45", "weight": 592}
     _2_BDU_45____ = {"clsid": "{BRU3242_2*BDU45 LS}", "name": "2 BDU-45", "weight": 649.38}
     _2_BDU_45_____ = {"clsid": "{PHXBRU3242_2*BDU45 LS}", "name": "2 BDU-45", "weight": 649.38}
-    _2_CBU_99 = {"clsid": "{BRU-70_2*CBU-99_LEFT}", "name": "2 CBU-99", "weight": 541}
-    _2_CBU_99_ = {"clsid": "{BRU-70_2*CBU-99_RIGHT}", "name": "2 CBU-99", "weight": 541}
-    _2_GBU_12 = {"clsid": "{BRU-42_2*GBU-12_LEFT}", "name": "2 GBU-12", "weight": 547}
-    _2_GBU_12_ = {"clsid": "{BRU-42_2*GBU-12_RIGHT}", "name": "2 GBU-12", "weight": 547}
-    _2_GBU_16 = {"clsid": "{BRU-42_2*GBU-16_LEFT}", "name": "2 GBU-16", "weight": 1005}
-    _2_GBU_16_ = {"clsid": "{BRU-42_2*GBU-16_RIGHT}", "name": "2 GBU-16", "weight": 1005}
-    _2_GBU_38 = {"clsid": "{BRU-42_2*GBU-38_LEFT}", "name": "2 GBU-38", "weight": 579}
-    _2_GBU_38_ = {"clsid": "{BRU-42_2*GBU-38_RIGHT}", "name": "2 GBU-38", "weight": 579}
-    _2_GBU_54_V_1_B = {"clsid": "{BRU-70A_2*GBU-54_LEFT}", "name": "2 GBU-54(V)1/B", "weight": 603}
-    _2_GBU_54_V_1_B_ = {"clsid": "{BRU-70A_2*GBU-54_RIGHT}", "name": "2 GBU-54(V)1/B", "weight": 603}
+    _2_CBU_99 = {"clsid": "{BRU-70_2*CBU-99_LEFT}", "name": "2 CBU-99", "weight": 515.734104}
+    _2_CBU_99_ = {"clsid": "{BRU-70_2*CBU-99_RIGHT}", "name": "2 CBU-99", "weight": 515.734104}
+    _2_GBU_12 = {"clsid": "{BRU-42_2*GBU-12_LEFT}", "name": "2 GBU-12", "weight": 612.802792}
+    _2_GBU_12_ = {"clsid": "{BRU-42_2*GBU-12_RIGHT}", "name": "2 GBU-12", "weight": 612.802792}
+    _2_GBU_16 = {"clsid": "{BRU-42_2*GBU-16_LEFT}", "name": "2 GBU-16", "weight": 1048.251112}
+    _2_GBU_16_ = {"clsid": "{BRU-42_2*GBU-16_RIGHT}", "name": "2 GBU-16", "weight": 1048.251112}
+    _2_GBU_38 = {"clsid": "{BRU-42_2*GBU-38_LEFT}", "name": "2 GBU-38", "weight": 569.25796}
+    _2_GBU_38_ = {"clsid": "{BRU-42_2*GBU-38_RIGHT}", "name": "2 GBU-38", "weight": 569.25796}
+    _2_GBU_54_V_1_B = {"clsid": "{BRU-70A_2*GBU-54_LEFT}", "name": "2 GBU-54(V)1/B", "weight": 563.814856}
+    _2_GBU_54_V_1_B_ = {"clsid": "{BRU-70A_2*GBU-54_RIGHT}", "name": "2 GBU-54(V)1/B", "weight": 563.814856}
     _2_LAU_10___4_ZUNI_MK_71 = {"clsid": "{BRU42_2*LAU10 L}", "name": "2 LAU-10 - 4 ZUNI MK 71", "weight": 1008}
     _2_LAU_10___4_ZUNI_MK_71_ = {"clsid": "{BRU3242_2*LAU10 L}", "name": "2 LAU-10 - 4 ZUNI MK 71", "weight": 1065.38}
     _2_LAU_10___4_ZUNI_MK_71__ = {"clsid": "{BRU42_2*LAU10 R}", "name": "2 LAU-10 - 4 ZUNI MK 71", "weight": 1008}
@@ -1047,40 +1069,40 @@ class Weapons:
     _2_MK_20___ = {"clsid": "{BRU42_2*MK20 LS}", "name": "2 MK-20", "weight": 572}
     _2_MK_20____ = {"clsid": "{BRU3242_2*MK20 LS}", "name": "2 MK-20", "weight": 629.38}
     _2_MK_20_____ = {"clsid": "{PHXBRU3242_2*MK20 LS}", "name": "2 MK-20", "weight": 629.38}
-    _2_Mk_20_Rockeye = {"clsid": "{BRU-42_2*MK-20_LEFT}", "name": "2 Mk-20 Rockeye", "weight": 541}
-    _2_Mk_20_Rockeye_ = {"clsid": "{BRU-42_2*MK-20_RIGHT}", "name": "2 Mk-20 Rockeye", "weight": 541}
+    _2_Mk_20_Rockeye = {"clsid": "{BRU-42_2*MK-20_LEFT}", "name": "2 Mk-20 Rockeye", "weight": 515.734104}
+    _2_Mk_20_Rockeye_ = {"clsid": "{BRU-42_2*MK-20_RIGHT}", "name": "2 Mk-20 Rockeye", "weight": 515.734104}
     _2_Mk_81 = {"clsid": "{BRU42_2*MK81 RS}", "name": "2 Mk-81", "weight": 364}
     _2_Mk_81_ = {"clsid": "{BRU3242_2*MK81 RS}", "name": "2 Mk-81", "weight": 421.38}
     _2_Mk_81__ = {"clsid": "{PHXBRU3242_2*MK81 RS}", "name": "2 Mk-81", "weight": 421.38}
     _2_Mk_81___ = {"clsid": "{BRU42_2*MK81 LS}", "name": "2 Mk-81", "weight": 364}
     _2_Mk_81____ = {"clsid": "{BRU3242_2*MK81 LS}", "name": "2 Mk-81", "weight": 421.38}
     _2_Mk_81_____ = {"clsid": "{PHXBRU3242_2*MK81 LS}", "name": "2 Mk-81", "weight": 421.38}
-    _2_Mk_82 = {"clsid": "{BRU-42_2*Mk-82_LEFT}", "name": "2 Mk-82", "weight": 579}
+    _2_Mk_82 = {"clsid": "{BRU-42_2*Mk-82_LEFT}", "name": "2 Mk-82", "weight": 520.270024}
     _2_Mk_82AIR = {"clsid": "{BRU42_2*MK82AIR RS}", "name": "2 Mk-82AIR", "weight": 610}
     _2_Mk_82AIR_ = {"clsid": "{BRU3242_2*MK82AIR RS}", "name": "2 Mk-82AIR", "weight": 667.38}
     _2_Mk_82AIR__ = {"clsid": "{PHXBRU3242_2*MK82AIR RS}", "name": "2 Mk-82AIR", "weight": 667.38}
     _2_Mk_82AIR___ = {"clsid": "{BRU42_2*MK82AIR LS}", "name": "2 Mk-82AIR", "weight": 610}
     _2_Mk_82AIR____ = {"clsid": "{BRU3242_2*MK82AIR LS}", "name": "2 Mk-82AIR", "weight": 667.38}
     _2_Mk_82AIR_____ = {"clsid": "{PHXBRU3242_2*MK82AIR LS}", "name": "2 Mk-82AIR", "weight": 667.38}
-    _2_Mk_82_ = {"clsid": "{BRU-42_2*Mk-82_RIGHT}", "name": "2 Mk-82", "weight": 579}
-    _2_Mk_82_AIR = {"clsid": "{BRU-42_2*Mk-82AIR_LEFT}", "name": "2 Mk-82 AIR", "weight": 579}
-    _2_Mk_82_AIR_ = {"clsid": "{BRU-42_2*Mk-82AIR_RIGHT}", "name": "2 Mk-82 AIR", "weight": 579}
+    _2_Mk_82_ = {"clsid": "{BRU-42_2*Mk-82_RIGHT}", "name": "2 Mk-82", "weight": 520.270024}
+    _2_Mk_82_AIR = {"clsid": "{BRU-42_2*Mk-82AIR_LEFT}", "name": "2 Mk-82 AIR", "weight": 551.11428}
+    _2_Mk_82_AIR_ = {"clsid": "{BRU-42_2*Mk-82AIR_RIGHT}", "name": "2 Mk-82 AIR", "weight": 551.11428}
     _2_Mk_82_SnakeEye = {"clsid": "{BRU42_2*MK82SE RS}", "name": "2 Mk-82 SnakeEye", "weight": 610}
     _2_Mk_82_SnakeEye_ = {"clsid": "{BRU3242_2*MK82SE RS}", "name": "2 Mk-82 SnakeEye", "weight": 667.38}
     _2_Mk_82_SnakeEye__ = {"clsid": "{PHXBRU3242_2*MK82SE RS}", "name": "2 Mk-82 SnakeEye", "weight": 667.38}
     _2_Mk_82_SnakeEye___ = {"clsid": "{BRU42_2*MK82SE LS}", "name": "2 Mk-82 SnakeEye", "weight": 610}
     _2_Mk_82_SnakeEye____ = {"clsid": "{BRU3242_2*MK82SE LS}", "name": "2 Mk-82 SnakeEye", "weight": 667.38}
     _2_Mk_82_SnakeEye_____ = {"clsid": "{PHXBRU3242_2*MK82SE LS}", "name": "2 Mk-82 SnakeEye", "weight": 667.38}
-    _2_Mk_82_Snakeye = {"clsid": "{BRU-42_2*Mk-82SNAKEYE_LEFT}", "name": "2 Mk-82 Snakeye", "weight": 579}
-    _2_Mk_82_Snakeye_ = {"clsid": "{BRU-42_2*Mk-82SNAKEYE_RIGHT}", "name": "2 Mk-82 Snakeye", "weight": 579}
+    _2_Mk_82_Snakeye = {"clsid": "{BRU-42_2*Mk-82SNAKEYE_LEFT}", "name": "2 Mk-82 Snakeye", "weight": 556.557384}
+    _2_Mk_82_Snakeye_ = {"clsid": "{BRU-42_2*Mk-82SNAKEYE_RIGHT}", "name": "2 Mk-82 Snakeye", "weight": 556.557384}
     _2_Mk_82__ = {"clsid": "{BRU42_2*MK82 RS}", "name": "2 Mk-82", "weight": 610}
     _2_Mk_82___ = {"clsid": "{BRU3242_2*MK82 RS}", "name": "2 Mk-82", "weight": 667.38}
     _2_Mk_82____ = {"clsid": "{PHXBRU3242_2*MK82 RS}", "name": "2 Mk-82", "weight": 667.38}
     _2_Mk_82_____ = {"clsid": "{BRU42_2*MK82 LS}", "name": "2 Mk-82", "weight": 610}
     _2_Mk_82______ = {"clsid": "{BRU3242_2*MK82 LS}", "name": "2 Mk-82", "weight": 667.38}
     _2_Mk_82_______ = {"clsid": "{PHXBRU3242_2*MK82 LS}", "name": "2 Mk-82", "weight": 667.38}
-    _2_Mk_83 = {"clsid": "{BRU-42_2*Mk-83_LEFT}", "name": "2 Mk-83", "weight": 991}
-    _2_Mk_83_ = {"clsid": "{BRU-42_2*Mk-83_RIGHT}", "name": "2 Mk-83", "weight": 991}
+    _2_Mk_83 = {"clsid": "{BRU-42_2*Mk-83_LEFT}", "name": "2 Mk-83", "weight": 951.182424}
+    _2_Mk_83_ = {"clsid": "{BRU-42_2*Mk-83_RIGHT}", "name": "2 Mk-83", "weight": 951.182424}
     _2_SUU_25___8_LUU_2 = {"clsid": "{BRU42_2*SUU25 L}", "name": "2 SUU-25 * 8 LUU-2", "weight": 388}
     _2_SUU_25___8_LUU_2_ = {"clsid": "{BRU3242_2*SUU25 L}", "name": "2 SUU-25 * 8 LUU-2", "weight": 445.38}
     _2_SUU_25___8_LUU_2__ = {"clsid": "{BRU42_2*SUU25 R}", "name": "2 SUU-25 * 8 LUU-2", "weight": 388}
@@ -1135,15 +1157,15 @@ class Weapons:
     _3_BDU_33__ = {"clsid": "{BRU42_3*BDU33_N}", "name": "3 BDU-33", "weight": 161}
     _3_BDU_33___ = {"clsid": "{BRU3242_3*BDU33_N}", "name": "3 BDU-33", "weight": 218.38}
     _3_BDU_33____ = {"clsid": "{PHXBRU3242_BDU33}", "name": "3 BDU-33", "weight": 218.38}
-    _3_GBU_12 = {"clsid": "{BRU-42A_3*GBU-12}", "name": "3 GBU-12", "weight": 772}
-    _3_GBU_16 = {"clsid": "{BRU-42A_3*GBU-16}", "name": "3 GBU-16", "weight": 1459}
-    _3_GBU_38 = {"clsid": "{BRU-42_3*GBU-38}", "name": "3 GBU-38", "weight": 820}
-    _3_GBU_54_V_1_B = {"clsid": "{BRU-70A_3*GBU-54}", "name": "3 GBU-54(V)1/B", "weight": 856}
-    _3_Mk_81 = {"clsid": "{BRU-42_3*Mk-81LD}", "name": "3 Mk-81", "weight": 451}
-    _3_Mk_82 = {"clsid": "{BRU-42_3*Mk-82LD}", "name": "3 Mk-82", "weight": 820}
-    _3_Mk_82_AIR = {"clsid": "{BRU-42_3_MK82AIR}", "name": "3 Mk-82 AIR", "weight": 820}
-    _3_Mk_82_Snakeye = {"clsid": "{BRU-42_3*Mk-82SNAKEYE}", "name": "3 Mk-82 Snakeye", "weight": 820}
-    _3_Mk_83 = {"clsid": "{BRU-42_3*Mk-83}", "name": "3 Mk-83", "weight": 1438}
+    _3_GBU_12 = {"clsid": "{BRU-42A_3*GBU-12}", "name": "3 GBU-12", "weight": 890.401096}
+    _3_GBU_16 = {"clsid": "{BRU-42A_3*GBU-16}", "name": "3 GBU-16", "weight": 1543.573576}
+    _3_GBU_38 = {"clsid": "{BRU-42_3*GBU-38}", "name": "3 GBU-38", "weight": 825.083848}
+    _3_GBU_54_V_1_B = {"clsid": "{BRU-70A_3*GBU-54}", "name": "3 GBU-54(V)1/B", "weight": 816.919192}
+    _3_Mk_81 = {"clsid": "{BRU-42_3*Mk-81LD}", "name": "3 Mk-81", "weight": 411.407944}
+    _3_Mk_82 = {"clsid": "{BRU-42_3*Mk-82LD}", "name": "3 Mk-82", "weight": 751.601944}
+    _3_Mk_82_AIR = {"clsid": "{BRU-42_3_MK82AIR}", "name": "3 Mk-82 AIR", "weight": 797.868328}
+    _3_Mk_82_Snakeye = {"clsid": "{BRU-42_3*Mk-82SNAKEYE}", "name": "3 Mk-82 Snakeye", "weight": 806.032984}
+    _3_Mk_83 = {"clsid": "{BRU-42_3*Mk-83}", "name": "3 Mk-83", "weight": 1397.970544}
     _3_x_4_5_inch_M8_UnGd_Rocket = {"clsid": "{3xM8_ROCKETS_IN_TUBES}", "name": "3 x 4.5 inch M8 UnGd Rocket", "weight": 71.72}
     _3_x_FAB_1500_M_54___1500kg_GP_Bombs_LD = {"clsid": "{639DB5DD-CB7E-4E42-AC75-2112BC397B97}", "name": "3 x FAB-1500 M-54 - 1500kg GP Bombs LD", "weight": 4500}
     _3_x_LAU_61_pods___57_x_2_75_Hydra__UnGd_Rkts_M151__HE = {"clsid": "{A76344EB-32D2-4532-8FA2-0C1BDC00747E}", "name": "3 x LAU-61 pods - 57 x 2.75\" Hydra, UnGd Rkts M151, HE", "weight": 876.45}
@@ -1297,6 +1319,8 @@ weapon_ids = {
     "{LAU-138 wtip - TCTS L}": Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod_,
     "{LAU-138 wtip - TCTS R}": Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod__,
     "{AN_M30A1}": Weapons.AN_M30A1___100lb_GP_Bomb_LD,
+    "{MB339_ANM3_L}": Weapons.AN_M3_Gunpod_Left,
+    "{MB339_ANM3_R}": Weapons.AN_M3_Gunpod_Right,
     "{AN-M3}": Weapons.AN_M3___2_Browning_Machine_Guns_12_7mm,
     "{AN_M57}": Weapons.AN_M57___250lb_GP_Bomb_LD,
     "{AN-M64}": Weapons.AN_M64___500lb_GP_Bomb_LD,
@@ -1456,7 +1480,12 @@ weapon_ids = {
     "{CLB4_SAMP400LD}": Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD,
     "{CLB4_SAMP400HD}": Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD,
     "{CM_802AKG}": Weapons.CM_802AKG,
+    "{COLOR-TANK}": Weapons.Color_Oil_Tank,
+    "{FUEL-TIP-TANK-500-L}": Weapons.Cylindrical_Tip_Tank_500lt,
+    "{FUEL-TIP-TANK-500-R}": Weapons.Cylindrical_Tip_Tank_500lt_,
     "{C_802AK}": Weapons.C_802AK,
+    "{MB339_DEFA553_L}": Weapons.DEFA553_Gunpod_Left,
+    "{MB339_DEFA553_R}": Weapons.DEFA553_Gunpod_Right,
     "{C-101-DEFA553}": Weapons.DEFA_553___30mm_Revolver_Cannon,
     "DIS_AKD-10": Weapons.DIS_AKD_10,
     "DIS_AKG_DLPOD": Weapons.DIS_AKG_DLPOD,
@@ -1546,6 +1575,8 @@ weapon_ids = {
     "{EclairM_42}": Weapons.Eclair_M_4_2__32_flares_36_chaffs,
     "{EclairM_51}": Weapons.Eclair_M_5_1__40_flares_18_chaffs,
     "{EclairM_60}": Weapons.Eclair_M_6_0__48_flares,
+    "{FUEL-TIP-ELLITTIC-L}": Weapons.Elliptic_Tip_Tank_320lt,
+    "{FUEL-TIP-ELLITTIC-R}": Weapons.Elliptic_Tip_Tank_320lt_,
     "ER_4_SC50": Weapons.ER_4_SC50,
     "{0519A261-0AB6-11d6-9193-00A0249B6F00}": Weapons.ETHER,
     "FAB_100M": Weapons.FAB_100M,
@@ -1567,6 +1598,7 @@ weapon_ids = {
     "{PTB_120_F86F35}": Weapons.Fuel_Tank_120_gallons,
     "{PTB_150L_L39}": Weapons.Fuel_Tank_150_liters,
     "{PTB_200_F86F35}": Weapons.Fuel_Tank_200_gallons,
+    "{FUEL-SUBAL_TANK-330}": Weapons.Fuel_Tank_330lt,
     "{PTB_350L_L39}": Weapons.Fuel_Tank_350_liters,
     "{PTB_490C_MIG21}": Weapons.Fuel_Tank_490_L_Central__21_,
     "{PTB_490_MIG21}": Weapons.Fuel_Tank_490_L__21_,
@@ -1823,6 +1855,7 @@ weapon_ids = {
     "{LR25_ARF8M3_HEI}": Weapons.LR_25___25_x_ARF_8_M3_HEI_Heavy,
     "{LR25_ARF8M3_TPSM}": Weapons.LR_25___25_x_ARF_8_M3_TP_SM,
     "{LTF_5B}": Weapons.LTF_5b_Aerial_Torpedo,
+    "{MB339_TRAVELPOD}": Weapons.Luggage_Container,
     "{0519A264-0AB6-11d6-9193-00A0249B6F00}": Weapons.L_081_Fantasmagoria_ELINT_pod,
     "{US_M10_SMOKE_TANK_BLUE}": Weapons.M10_Smoke_Tank___blue,
     "{US_M10_SMOKE_TANK_GREEN}": Weapons.M10_Smoke_Tank___green,
@@ -1909,10 +1942,17 @@ weapon_ids = {
     "{MATRA_F4_SNEBT256}": Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag,
     "{MATRA_F4_SNEBT257}": Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd,
     "{MATRA_F4_SNEBT259E}": Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL,
+    "{Mark_46}": Weapons.Mark_46,
     "{MMagicII}": Weapons.Matra_Magic_II,
     "{MMagicII_DDM}": Weapons.Matra_Magic_II___DDM,
     "{Matra_S530D}": Weapons.Matra_Super_530D,
     "{Matra155RocketPod}": Weapons.Matra_Type_155_Rocket_Pod,
+    "{SMOKE-BLACK-MB339}": Weapons.MB339_Black_Smoke,
+    "{SMOKE-GREEN-MB339}": Weapons.MB339_Green_Smoke,
+    "{SMOKE-ORANGE-MB339}": Weapons.MB339_ORANGE_Smoke,
+    "{SMOKE-RED-MB339}": Weapons.MB339_Red_Smoke,
+    "{SMOKE-WHITE-MB339}": Weapons.MB339_White_Smoke,
+    "{SMOKE-YELLOW-MB339}": Weapons.MB339_YELLOW_Smoke,
     "{5A1AC2B4-CA4B-4D09-A1AF-AC52FBC4B60B}": Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD,
     "{29A828E2-C6BB-11d8-9897-000476191836}": Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_,
     "{7C5F0F5F-0A0B-46E8-937C-8922303E39A8}": Weapons.MBD3_U2T_with_2_x_FAB_1500_M_54___1500kg_GP_Bombs_LD,
@@ -1982,6 +2022,8 @@ weapon_ids = {
     "{BRU-32 MK-84}": Weapons.Mk_84,
     "{F092B80C-BB54-477E-9408-66DEEF740008}": Weapons.Mk_84_18,
     "{D3ABF208-FA56-4D56-BB31-E0D931D57AE3}": Weapons.Mk_84_28,
+    "{Mk_84AIR_GP}": Weapons.Mk_84_AIR__BSU_50____2000_lb_GP_Chute_Retarded_Bomb_HD,
+    "{Mk_84AIR_TP}": Weapons.Mk_84_AIR__BSU_50____2000_lb_TP_Chute_Retarded_Bomb_HD,
     "{AB8B8299-F1CC-4359-89B5-2172E0CF4A5A}": Weapons.Mk_84___2000lb_GP_Bomb_LD,
     "{44EE8698-89F9-48EE-AF36-5FD31896A82D}": Weapons.MPS_410,
     "{44EE8698-89F9-48EE-AF36-5FD31896A82C}": Weapons.MPS_410_,
@@ -1994,6 +2036,7 @@ weapon_ids = {
     "{ORO57K_S5M_HEFRAG}": Weapons.ORO_57K___S_5M_x_8,
     "oh-58-brauning": Weapons.oh_58_brauning,
     "{199D6D51-1764-497E-9AE5-7D07C8D4D87E}": Weapons.Pavetack_F_111,
+    "{MB339_VINTEN}": Weapons.Photo_Recon_Pod__4_70mm_Vinten_Cameras_,
     "PKT_7_62": Weapons.PKT_7_62,
     "{PK-3}": Weapons.PK_3___7_62mm_GPMG,
     "PTB300_MIG15": Weapons.PTB300_MIG15,
@@ -2173,6 +2216,7 @@ weapon_ids = {
     "{UPK-23-250 MiG-21}": Weapons.UPK_23_250___gun_pod,
     "{U22}": Weapons.U_22_Jammer_pod,
     "{WGr21}": Weapons.Werfer_Granate_21___21_cm_UnGd_air_to_air_rocket,
+    "{WHITE-TANK}": Weapons.White_Oil_Tank,
     "XM158_M151": Weapons.XM158_M151,
     "XM158_M156": Weapons.XM158_M156,
     "XM158_M257": Weapons.XM158_M257,
