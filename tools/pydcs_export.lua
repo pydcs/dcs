@@ -835,7 +835,7 @@ local countryPlaneIgnore = {
     "Su_30MK",
     "TF_51",
 }
-local countryHeliIgnore = { "Mi_24P" }
+local countryHeliIgnore = { "Mi_24P", "Ka_50_3" }
 local i = 0
 while i <= country.maxIndex do
     local c = country.by_idx[i]
