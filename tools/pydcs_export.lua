@@ -829,7 +829,6 @@ local countryPlaneIgnore = {
     "F_86F_MAC",
     "F_86F",
     "L_39_MAC",
-    "MB_339A",
     "MB_339A_PAN",
     "MiG_15bis_MAC",
     "Su_30MK",
