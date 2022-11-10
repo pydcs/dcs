@@ -2294,6 +2294,13 @@ class OptInterceptionRange(Option):
         super(OptInterceptionRange, self).__init__(value)
 
 
+class OptJettisonEmptyTanks(Option):
+    Key = 25
+
+    def __init__(self, value: bool = True):
+        super(OptJettisonEmptyTanks, self).__init__(value)
+
+
 class OptRestrictTargets(Option):
     Key = 28
 
