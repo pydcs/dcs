@@ -32,7 +32,7 @@ class Livery:
 class LiverySet(set):
     unit_livery_id: str = ""
 
-    def __init__(self, unit_livery_id: str) -> None:
+    def __init__(self, unit_livery_id: Optional[str] = None) -> None:
         pass
 
     def __str__(self) -> str:

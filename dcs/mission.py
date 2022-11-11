@@ -946,7 +946,7 @@ class Mission:
                                    maintask: Type[task.MainTask],
                                    airport: terrain_.Airport,
                                    start_type: StartType = StartType.Cold,
-                                   parking_slots: List[terrain_.ParkingSlot] = None) -> unitgroup.FlyingGroup:
+                                   parking_slots: Optional[List[terrain_.ParkingSlot]] = None) -> unitgroup.FlyingGroup:
 
         for u in group.units:
             spos = airport.position

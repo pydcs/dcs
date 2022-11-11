@@ -172,7 +172,7 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
             planes=(10, 20),
             helicopters=(0, 8),
             hidden=True,
-            airports_to_use: List[dcs.terrain.Airport] = None):
+            airports_to_use: Optional[List[dcs.terrain.Airport]] = None):
         p_count = random.randrange(planes[0], planes[1])
         h_count = random.randrange(helicopters[0], helicopters[1])
         if airports_to_use is None:

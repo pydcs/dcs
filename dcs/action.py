@@ -1,4 +1,4 @@
-from typing import Any, Dict, List, Type
+from typing import Any, Dict, List, Type, Optional
 from dcs.lua.serialize import dumps
 from dcs.translation import String, ResourceKey
 from enum import Enum, IntEnum
@@ -394,7 +394,7 @@ class DoScript(TextAction):
 class DoScriptFile(Action):
     predicate = "a_do_script_file"
 
-    def __init__(self, file_res_key: ResourceKey = None):
+    def __init__(self, file_res_key: Optional[ResourceKey] = None):
         super(DoScriptFile, self).__init__(DoScriptFile.predicate)
         if file_res_key:
             self.file_res_key = file_res_key
@@ -1326,7 +1326,7 @@ class SignalFlareOnUnit(Action):
 class SoundToAll(Action):
     predicate = "a_out_sound"
 
-    def __init__(self, file_res_key: ResourceKey = None):
+    def __init__(self, file_res_key: Optional[ResourceKey] = None):
         super(SoundToAll, self).__init__(SoundToAll.predicate)
         if file_res_key:
             self.file_res_key = file_res_key
@@ -1345,7 +1345,7 @@ class SoundToAll(Action):
 class SoundToCoalition(Action):
     predicate = "a_out_sound_s"
 
-    def __init__(self, coalitionlist="", file_res_key: ResourceKey = None):
+    def __init__(self, coalitionlist="", file_res_key: Optional[ResourceKey] = None):
         super(SoundToCoalition, self).__init__(SoundToCoalition.predicate)
         self.coalitionlist = coalitionlist
         if file_res_key:
@@ -1367,7 +1367,7 @@ class SoundToCoalition(Action):
 class SoundToCountry(Action):
     predicate = "a_out_sound_c"
 
-    def __init__(self, countrylist="", file_res_key: ResourceKey = None):
+    def __init__(self, countrylist="", file_res_key: Optional[ResourceKey] = None):
         super(SoundToCountry, self).__init__(SoundToCountry.predicate)
         self.countrylist = countrylist
         if file_res_key:
@@ -1389,7 +1389,7 @@ class SoundToCountry(Action):
 class SoundToGroup(Action):
     predicate = "a_out_sound_g"
 
-    def __init__(self, group=0, file_res_key: ResourceKey = None):
+    def __init__(self, group=0, file_res_key: Optional[ResourceKey] = None):
         super(SoundToGroup, self).__init__(SoundToGroup.predicate)
         self.group = group
         if file_res_key:

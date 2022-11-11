@@ -832,7 +832,7 @@ class Land(Task):
     """
     Id = "Land"
 
-    def __init__(self, position: Vector2 = Vector2(0, 0), duration: int = None):
+    def __init__(self, position: Vector2 = Vector2(0, 0), duration: Optional[int] = None):
         super(Land, self).__init__(self.Id)
 
         self.params = {
@@ -855,8 +855,8 @@ class Embarking(Task):
     """
     Id = "Embarking"
 
-    def __init__(self, position: Vector2 = Vector2(0, 0), groupids: List[int] = None,
-                 distribution: Dict[int, List[int]] = None, duration: int = None):
+    def __init__(self, position: Vector2 = Vector2(0, 0), groupids: Optional[List[int]] = None,
+                 distribution: Optional[Dict[int, List[int]]] = None, duration: Optional[int] = None):
         super(Embarking, self).__init__(self.Id)
 
         groupids = [] if groupids is None else groupids
@@ -1261,7 +1261,11 @@ class SetFrequencyForUnitCommand(WrappedAction):
     """
     Key = "SetFrequencyForUnit"
 
-    def __init__(self, frequency=133, modulation: Modulation = Modulation.AM, power: int = 10, unit: Unit = None):
+    def __init__(self,
+                 frequency=133,
+                 modulation: Modulation = Modulation.AM,
+                 power: int = 10,
+                 unit: Optional[Unit] = None):
         super(SetFrequencyForUnitCommand, self).__init__()
         self.params = {
             "action": {

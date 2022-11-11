@@ -4,7 +4,7 @@ from typing import Dict, Any, Optional, List, Union
 def loads(tablestr, _globals: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
 
     class Parser:
-        def __init__(self, buffer: str, _globals: dict = None):
+        def __init__(self, buffer: str, _globals: Optional[Dict[str, Any]] = None):
             self.buffer: str = buffer
             if _globals:
                 self.variables = _globals.copy()

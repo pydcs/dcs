@@ -288,7 +288,7 @@ class Rectangle:
 
 
 class Polygon:
-    def __init__(self, terrain: Terrain, points: List[Point] = None):
+    def __init__(self, terrain: Terrain, points: Optional[List[Point]] = None):
         self._terrain = terrain
         if points is None:
             points = []
