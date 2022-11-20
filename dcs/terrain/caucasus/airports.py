@@ -36,16 +36,16 @@ class Anapa_Vityazevo(Airport):
                 crossroad_idx=5, position=mapping.Point(-5388.4541015625, 241652.23378172, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='43', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=6, position=mapping.Point(-5551.3579101563, 242507.421875, self._terrain), large=False, heli=True,
+                crossroad_idx=6, position=mapping.Point(-5551.3579101562, 242507.421875, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='03', length=20.5, width=18.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=7, position=mapping.Point(-5536.3608398438, 242520.671875, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='04', length=20.5, width=18.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=8, position=mapping.Point(-5566.2290039063, 242494.109375, self._terrain), large=False, heli=True,
+                crossroad_idx=8, position=mapping.Point(-5566.2290039062, 242494.109375, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='02', length=20.5, width=18.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=9, position=mapping.Point(-5581.0903320313, 242480.671875, self._terrain), large=False, heli=True,
+                crossroad_idx=9, position=mapping.Point(-5581.0903320312, 242480.671875, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='01', length=20.5, width=18.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=10, position=mapping.Point(-5506.6323242188, 242547.34375, self._terrain), large=False, heli=True,
@@ -57,7 +57,7 @@ class Anapa_Vityazevo(Airport):
                 crossroad_idx=12, position=mapping.Point(-5476.833984375, 242574.125, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='08', length=20.5, width=18.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=13, position=mapping.Point(-5521.3090820313, 242533.859375, self._terrain), large=False, heli=True,
+                crossroad_idx=13, position=mapping.Point(-5521.3090820312, 242533.859375, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='05', length=20.5, width=18.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=14, position=mapping.Point(-5446.7998046875, 242601.125, self._terrain), large=False, heli=True,
@@ -87,13 +87,13 @@ class Anapa_Vityazevo(Airport):
                 crossroad_idx=22, position=mapping.Point(-5327.6533203125, 242707.96875, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='18', length=20.5, width=18.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=23, position=mapping.Point(-5312.7817382813, 242721.296875, self._terrain), large=False, heli=True,
+                crossroad_idx=23, position=mapping.Point(-5312.7817382812, 242721.296875, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='19', length=20.5, width=18.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=24, position=mapping.Point(-5297.7846679688, 242734.53125, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='20', length=20.5, width=18.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=25, position=mapping.Point(-5282.7329101563, 242747.71875, self._terrain), large=False, heli=True,
+                crossroad_idx=25, position=mapping.Point(-5282.7329101562, 242747.71875, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='21', length=20.5, width=18.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=26, position=mapping.Point(-5268.0561523438, 242761.203125, self._terrain), large=False, heli=True,
@@ -105,7 +105,7 @@ class Anapa_Vityazevo(Airport):
                 crossroad_idx=28, position=mapping.Point(-5238.2578125, 242787.984375, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='24', length=20.5, width=18.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=29, position=mapping.Point(-5342.5141601563, 242694.53125, self._terrain), large=False, heli=True,
+                crossroad_idx=29, position=mapping.Point(-5342.5141601562, 242694.53125, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='17', length=20.5, width=18.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=30, position=mapping.Point(-4741.4052507743, 243234.59690978, self._terrain), large=False, heli=True,
@@ -192,7 +192,7 @@ class Anapa_Vityazevo(Airport):
                 crossroad_idx=57, position=mapping.Point(-5927.2530718185, 241774.6576346, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='57', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=58, position=mapping.Point(-5819.0512695313, 241880.71875, self._terrain), large=False, heli=False,
+                crossroad_idx=58, position=mapping.Point(-5819.0512695312, 241880.71875, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='54', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=59, position=mapping.Point(-5751.3354492188, 241960.765625, self._terrain), large=False, heli=False,
@@ -207,7 +207,7 @@ class Anapa_Vityazevo(Airport):
                 crossroad_idx=62, position=mapping.Point(-5828.84375, 242005.625, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='62', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=63, position=mapping.Point(-5695.7739257813, 242030.703125, self._terrain), large=False, heli=False,
+                crossroad_idx=63, position=mapping.Point(-5695.7739257812, 242030.703125, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='59', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=64, position=mapping.Point(-5802.478515625, 242106.84375, self._terrain), large=False, heli=False,
@@ -219,7 +219,7 @@ class Anapa_Vityazevo(Airport):
                 crossroad_idx=66, position=mapping.Point(-5136.349609375, 244639.625, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='92', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=67, position=mapping.Point(-5206.4555664063, 244595.46875, self._terrain), large=False, heli=False,
+                crossroad_idx=67, position=mapping.Point(-5206.4555664062, 244595.46875, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='91', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=68, position=mapping.Point(-5116.3564453125, 244752.328125, self._terrain), large=False, heli=False,
@@ -228,7 +228,7 @@ class Anapa_Vityazevo(Airport):
                 crossroad_idx=69, position=mapping.Point(-5045.9018554688, 244796.109375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='82', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=70, position=mapping.Point(-5098.1450195313, 244854.828125, self._terrain), large=False, heli=False,
+                crossroad_idx=70, position=mapping.Point(-5098.1450195312, 244854.828125, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='81', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=71, position=mapping.Point(-4926.8896484375, 244382.046875, self._terrain), large=False, heli=False,
@@ -237,13 +237,13 @@ class Anapa_Vityazevo(Airport):
                 crossroad_idx=72, position=mapping.Point(-4891.9521484375, 244234.578125, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='67', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=73, position=mapping.Point(-4792.0336914063, 244326.671875, self._terrain), large=False, heli=False,
+                crossroad_idx=73, position=mapping.Point(-4792.0336914062, 244326.671875, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='73', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=74, position=mapping.Point(-4858.4965820313, 244134.140625, self._terrain), large=False, heli=False,
+                crossroad_idx=74, position=mapping.Point(-4858.4965820312, 244134.140625, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='65', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=75, position=mapping.Point(-4758.4594726563, 244227.4375, self._terrain), large=False, heli=False,
+                crossroad_idx=75, position=mapping.Point(-4758.4594726562, 244227.4375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='71', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=76, position=mapping.Point(-4833.2495117188, 244254.3125, self._terrain), large=False, heli=False,
@@ -258,19 +258,19 @@ class Anapa_Vityazevo(Airport):
                 crossroad_idx=79, position=mapping.Point(-4999.859375, 244409.109375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='68', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=80, position=mapping.Point(-4719.0668945313, 244710.125, self._terrain), large=False, heli=False,
+                crossroad_idx=80, position=mapping.Point(-4719.0668945312, 244710.125, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='74', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=81, position=mapping.Point(-4751.1293945313, 244810.375, self._terrain), large=False, heli=False,
+                crossroad_idx=81, position=mapping.Point(-4751.1293945312, 244810.375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='75', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=82, position=mapping.Point(-4806.8271484375, 244941.375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='77', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=83, position=mapping.Point(-4931.6782226563, 244826.203125, self._terrain), large=False, heli=False,
+                crossroad_idx=83, position=mapping.Point(-4931.6782226562, 244826.203125, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='80', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=84, position=mapping.Point(-4847.0278320313, 244870.671875, self._terrain), large=False, heli=False,
+                crossroad_idx=84, position=mapping.Point(-4847.0278320312, 244870.671875, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='78', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=85, position=mapping.Point(-4880.447265625, 244968.734375, self._terrain), large=False, heli=False,
@@ -285,7 +285,7 @@ class Anapa_Vityazevo(Airport):
                 crossroad_idx=88, position=mapping.Point(-5273.0068359375, 244631.796875, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='89', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=89, position=mapping.Point(-5239.4360351563, 244835.453125, self._terrain), large=False, heli=False,
+                crossroad_idx=89, position=mapping.Point(-5239.4360351562, 244835.453125, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='84', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=90, position=mapping.Point(-5292.3120117188, 244747.203125, self._terrain), large=False, heli=False,
@@ -313,7 +313,7 @@ class Krasnodar_Center(Airport):
         self.beacons.append(AirportBeacon(id='airfield13_6'))
         self.runways.append(Runway(id=1, name='09-27', main=RunwayApproach(name='09', heading=90, beacons=[RunwayBeacon(id='airfield13_2', runway_name='09-27', runway_id=1, runway_side='09'), RunwayBeacon(id='airfield13_3', runway_name='09-27', runway_id=1, runway_side='09'), RunwayBeacon(id='airfield13_4', runway_name='09-27', runway_id=1, runway_side='09'), RunwayBeacon(id='airfield13_5', runway_name='09-27', runway_id=1, runway_side='09')]), opposite=RunwayApproach(name='27', heading=270, beacons=[RunwayBeacon(id='airfield13_1', runway_name='09-27', runway_id=1, runway_side='27'), RunwayBeacon(id='airfield13_0', runway_name='09-27', runway_id=1, runway_side='27')])))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=0, position=mapping.Point(10890.094726563, 368483.28125, self._terrain), large=False, heli=False,
+                crossroad_idx=0, position=mapping.Point(10890.094726562, 368483.28125, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='54', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=1, position=mapping.Point(10816.975585938, 368480.78125, self._terrain), large=False, heli=False,
@@ -340,13 +340,13 @@ class Krasnodar_Center(Airport):
                 crossroad_idx=8, position=mapping.Point(10974.916015625, 368819.40625, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='50', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=9, position=mapping.Point(11107.930664063, 368865.5, self._terrain), large=False, heli=False,
+                crossroad_idx=9, position=mapping.Point(11107.930664062, 368865.5, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='45', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=10, position=mapping.Point(11034.784179688, 368863.125, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='46', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=11, position=mapping.Point(11046.223632813, 368944.84375, self._terrain), large=False, heli=False,
+                crossroad_idx=11, position=mapping.Point(11046.223632812, 368944.84375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='47', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=12, position=mapping.Point(11178.272460938, 368989, self._terrain), large=False, heli=False,
@@ -355,7 +355,7 @@ class Krasnodar_Center(Airport):
                 crossroad_idx=13, position=mapping.Point(11105.057617188, 368986.625, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='43', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=14, position=mapping.Point(11116.887695313, 369068.1875, self._terrain), large=False, heli=False,
+                crossroad_idx=14, position=mapping.Point(11116.887695312, 369068.1875, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='44', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=15, position=mapping.Point(11250.354492188, 369040.15625, self._terrain), large=False, heli=False,
@@ -364,7 +364,7 @@ class Krasnodar_Center(Airport):
                 crossroad_idx=16, position=mapping.Point(11214.475585938, 369104.75, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='34', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=17, position=mapping.Point(11293.036132813, 369131.375, self._terrain), large=False, heli=False,
+                crossroad_idx=17, position=mapping.Point(11293.036132812, 369131.375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='35', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=18, position=mapping.Point(11285.462890625, 369308.6875, self._terrain), large=False, heli=False,
@@ -379,7 +379,7 @@ class Krasnodar_Center(Airport):
                 crossroad_idx=21, position=mapping.Point(11435.4140625, 369297.28125, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='28', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=22, position=mapping.Point(11509.239257813, 369260.40625, self._terrain), large=False, heli=False,
+                crossroad_idx=22, position=mapping.Point(11509.239257812, 369260.40625, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='29', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=23, position=mapping.Point(11476.19921875, 369354.34375, self._terrain), large=False, heli=False,
@@ -394,16 +394,16 @@ class Krasnodar_Center(Airport):
                 crossroad_idx=26, position=mapping.Point(11599.92578125, 369348.375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='24', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=27, position=mapping.Point(11687.473632813, 369546.84375, self._terrain), large=False, heli=False,
+                crossroad_idx=27, position=mapping.Point(11687.473632812, 369546.84375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='36', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=28, position=mapping.Point(11613.020507813, 369584.90625, self._terrain), large=False, heli=False,
+                crossroad_idx=28, position=mapping.Point(11613.020507812, 369584.90625, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='38', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=29, position=mapping.Point(11646.333007813, 369490.375, self._terrain), large=False, heli=False,
+                crossroad_idx=29, position=mapping.Point(11646.333007812, 369490.375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='37', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=30, position=mapping.Point(11533.930664063, 369554.75, self._terrain), large=False, heli=False,
+                crossroad_idx=30, position=mapping.Point(11533.930664062, 369554.75, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='40', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=31, position=mapping.Point(11459.388671875, 369592.84375, self._terrain), large=False, heli=False,
@@ -626,13 +626,13 @@ class Krymsk(Airport):
         self.beacons.append(AirportBeacon(id='airfield15_8'))
         self.runways.append(Runway(id=1, name='04-22', main=RunwayApproach(name='04', heading=40, beacons=[RunwayBeacon(id='airfield15_2', runway_name='04-22', runway_id=1, runway_side='04'), RunwayBeacon(id='airfield15_3', runway_name='04-22', runway_id=1, runway_side='04'), RunwayBeacon(id='airfield15_4', runway_name='04-22', runway_id=1, runway_side='04'), RunwayBeacon(id='airfield15_7', runway_name='04-22', runway_id=1, runway_side='04')]), opposite=RunwayApproach(name='22', heading=220, beacons=[RunwayBeacon(id='airfield15_1', runway_name='04-22', runway_id=1, runway_side='22'), RunwayBeacon(id='airfield15_5', runway_name='04-22', runway_id=1, runway_side='22'), RunwayBeacon(id='airfield15_6', runway_name='04-22', runway_id=1, runway_side='22'), RunwayBeacon(id='airfield15_0', runway_name='04-22', runway_id=1, runway_side='22')])))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=0, position=mapping.Point(-6138.9926757813, 295188.6875, self._terrain), large=False, heli=False,
+                crossroad_idx=0, position=mapping.Point(-6138.9926757812, 295188.6875, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='53', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=1, position=mapping.Point(-6097.5327148438, 295259.875, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='52', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=2, position=mapping.Point(-6170.1665039063, 295289.59375, self._terrain), large=False, heli=False,
+                crossroad_idx=2, position=mapping.Point(-6170.1665039062, 295289.59375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='51', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=3, position=mapping.Point(-6317.9501953125, 295041.53125, self._terrain), large=False, heli=False,
@@ -641,7 +641,7 @@ class Krymsk(Airport):
                 crossroad_idx=4, position=mapping.Point(-6276.6088867188, 295112.65625, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='49', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=5, position=mapping.Point(-6349.3403320313, 295142.46875, self._terrain), large=False, heli=False,
+                crossroad_idx=5, position=mapping.Point(-6349.3403320312, 295142.46875, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='48', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=6, position=mapping.Point(-6532.59375, 295051.09375, self._terrain), large=False, heli=False,
@@ -656,10 +656,10 @@ class Krymsk(Airport):
                 crossroad_idx=9, position=mapping.Point(-6698.37890625, 294999.09375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='44', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=10, position=mapping.Point(-6633.3872070313, 295049.28125, self._terrain), large=False, heli=False,
+                crossroad_idx=10, position=mapping.Point(-6633.3872070312, 295049.28125, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='43', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=11, position=mapping.Point(-6689.0551757813, 295104.1875, self._terrain), large=False, heli=False,
+                crossroad_idx=11, position=mapping.Point(-6689.0551757812, 295104.1875, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='42', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=12, position=mapping.Point(-7035.1518554688, 294749.6875, self._terrain), large=False, heli=False,
@@ -668,7 +668,7 @@ class Krymsk(Airport):
                 crossroad_idx=13, position=mapping.Point(-6978.9584960938, 294810, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='40', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=14, position=mapping.Point(-7042.8793945313, 294855.15625, self._terrain), large=False, heli=False,
+                crossroad_idx=14, position=mapping.Point(-7042.8793945312, 294855.15625, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='39', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=15, position=mapping.Point(-7759.7709960938, 294398.21875, self._terrain), large=False, heli=False,
@@ -683,10 +683,10 @@ class Krymsk(Airport):
                 crossroad_idx=18, position=mapping.Point(-7794.2456054688, 294270.46875, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='23', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=19, position=mapping.Point(-7802.0161132813, 294350.375, self._terrain), large=False, heli=False,
+                crossroad_idx=19, position=mapping.Point(-7802.0161132812, 294350.375, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='58', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=20, position=mapping.Point(-7877.3930664063, 294333.8125, self._terrain), large=False, heli=False,
+                crossroad_idx=20, position=mapping.Point(-7877.3930664062, 294333.8125, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='21', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=21, position=mapping.Point(-8101.458984375, 293986.15625, self._terrain), large=False, heli=False,
@@ -734,7 +734,7 @@ class Krymsk(Airport):
                 crossroad_idx=36, position=mapping.Point(-7572.2545515475, 293848.69275333, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='08', length=20.5, width=18.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=38, position=mapping.Point(-7997.2153320313, 294137, self._terrain), large=False, heli=True,
+                crossroad_idx=38, position=mapping.Point(-7997.2153320312, 294137, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='19', length=78.722809, width=67.096466, height=18.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=39, position=mapping.Point(-7956.2280273438, 293896.25, self._terrain), large=False, heli=True,
@@ -746,7 +746,7 @@ class Krymsk(Airport):
                 crossroad_idx=41, position=mapping.Point(-7789.0859375, 294061.625, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='13', length=78.722809, width=67.096466, height=18.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=42, position=mapping.Point(-7730.9223632813, 293991.65625, self._terrain), large=False, heli=True,
+                crossroad_idx=42, position=mapping.Point(-7730.9223632812, 293991.65625, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='12', length=78.722809, width=67.096466, height=18.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=43, position=mapping.Point(-7876.2900390625, 294240.34375, self._terrain), large=False, heli=True,
@@ -791,10 +791,10 @@ class Krymsk(Airport):
                 crossroad_idx=56, position=mapping.Point(-7676.2456054688, 293953.5625, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='10', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=57, position=mapping.Point(-7604.6469726563, 293912.65625, self._terrain), large=False, heli=False,
+                crossroad_idx=57, position=mapping.Point(-7604.6469726562, 293912.65625, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='11', length=26.0, width=22.0, height=8.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=58, position=mapping.Point(-7705.3676757813, 293880.78125, self._terrain), large=False, heli=False,
+                crossroad_idx=58, position=mapping.Point(-7705.3676757812, 293880.78125, self._terrain), large=False, heli=False,
                 airplanes=True, slot_name='09', length=26.0, width=22.0, height=8.0, shelter=False))
 
 
@@ -1305,13 +1305,13 @@ class Krasnodar_Pashkovsky(Airport):
                 crossroad_idx=9, position=mapping.Point(7994.3901367188, 387858.8125, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='09', length=78.722809, width=67.096466, height=18.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=10, position=mapping.Point(7953.8774414063, 387814.4375, self._terrain), large=False, heli=True,
+                crossroad_idx=10, position=mapping.Point(7953.8774414062, 387814.4375, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='08', length=78.722809, width=67.096466, height=18.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=11, position=mapping.Point(7912.8627929688, 387770.71875, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='07', length=78.722809, width=67.096466, height=18.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=12, position=mapping.Point(8158.8012695313, 388037.375, self._terrain), large=False, heli=True,
+                crossroad_idx=12, position=mapping.Point(8158.8012695312, 388037.375, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='13', length=78.722809, width=67.096466, height=18.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=13, position=mapping.Point(7036.2416992188, 386835.375, self._terrain), large=False, heli=True,
