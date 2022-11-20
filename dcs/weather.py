@@ -14,6 +14,48 @@ class Wind:
     def dict(self):
         return {"speed": self.speed, "dir": self.direction}
 
+class Halo:
+    class Preset(Enum):
+        Off = "off"
+        Auto = "auto"
+        OnAllMediums = "AtmoHighClouds"
+        OnHighVolumetricClouds = "VolumetricOnly"
+        CirrusAndHighVolumetricClouds = "HighClouds"
+        Cirrus = "CirrusOnly"
+
+    class Crystals(Enum):
+        '''Crystals are only included if not using Auto or Off Halo Presets.'''
+        AllKinds = "AllKinds"
+        BasicHaloCircle = "BasicHaloCircle"
+        BasicHaloWithSundogs = "BasicHaloWithSundogs"
+        BasicSundogsTangents = "BasicSundogsTangents"
+        SundogsArcs = "SundogsArcs"
+        Tangents = "Tangents"
+
+    def __init__(self, preset=Preset.Auto, crystals=None):
+        self.preset = preset
+        self.crystals = crystals
+
+    def validate_halo(self):
+        if self.preset is Halo.Preset.Auto or Halo.Preset.Off and self.crystals is not None:
+            raise ValueError(
+                f"{self.preset} cannot have a crystals value."
+                )
+        if self.preset is not Halo.Preset.Auto or Halo.Preset.Off and self.crystals is None:
+            raise ValueError(
+                f"{self.preset} must have a crystals value."
+                )
+                
+    def dict(self):
+        if self.crystals:
+            return {"crystalsPreset": self.crystals, "preset": self.preset}
+        else:
+            return {"preset": self.preset}
+
+    def _make_halo_dict(self):
+        self.validate_halo()
+        return self.dict()
+
 
 class Cyclone:
     def __init__(self):
@@ -78,6 +120,7 @@ class Weather:
         self.wind_at_2000 = Wind()
         self.wind_at_8000 = Wind()
         self.enable_fog = False
+        self.halo = Halo()
         self.turbulence_at_ground = 0
         self.season_temperature = 20.0
         self.type_weather = 0
@@ -105,6 +148,10 @@ class Weather:
         self.wind_at_ground = Wind(wind_at_ground.get("dir", 0), wind_at_ground.get("speed", 0))
         self.wind_at_2000 = Wind(wind_at_2000.get("dir", 0), wind_at_2000.get("speed", 0))
         self.wind_at_8000 = Wind(wind_at_8000.get("dir", 0), wind_at_8000.get("speed", 0))
+        halo = d.get("halo", {})
+        halo_preset = halo.get("preset", {})
+        halo_crystals_preset = halo.get("crystalsPreset", {})
+        self.halo = Halo(halo_preset, halo_crystals_preset)
         self.enable_fog = d["enable_fog"]
         self.turbulence_at_ground = d.get("groundTurbulence", 0)
         season = d.get("season", {})
@@ -332,6 +379,7 @@ class Weather:
                      "at2000": self.wind_at_2000.dict(),
                      "at8000": self.wind_at_8000.dict()}
         d["enable_fog"] = self.enable_fog
+        d["halo"] = self.halo._make_halo_dict()
         d["groundTurbulence"] = self.turbulence_at_ground
         d["season"] = {"temperature": self.season_temperature}
         assert isinstance(self.type_weather, int)
