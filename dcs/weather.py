@@ -22,35 +22,41 @@ class Halo:
         OnHighVolumetricClouds = "VolumetricOnly"
         CirrusAndHighVolumetricClouds = "HighClouds"
         Cirrus = "CirrusOnly"
+        
+        def __str__(self) -> str:
+            return str(self.value)
 
     class Crystals(Enum):
-        '''Crystals are only included if not using Auto or Off Halo Presets.'''
+        '''Crystals are only required if not using Auto or Off Halo Presets.'''
         AllKinds = "AllKinds"
         BasicHaloCircle = "BasicHaloCircle"
         BasicHaloWithSundogs = "BasicHaloWithSundogs"
         BasicSundogsTangents = "BasicSundogsTangents"
         SundogsArcs = "SundogsArcs"
         Tangents = "Tangents"
+        
+        def __str__(self) -> str:
+            return str(self.value)
 
-    def __init__(self, preset=Preset.Auto, crystals=None):
+    def __init__(self, preset: Preset=Preset.Auto, crystals: Optional[Crystals]=None) -> None:
         self.preset = preset
         self.crystals = crystals
 
-    def validate_halo(self):
-        if self.preset is Halo.Preset.Auto or Halo.Preset.Off and self.crystals is not None:
+    def validate_halo(self) -> None:
+        if self.preset is (Halo.Preset.Auto or Halo.Preset.Off) and self.crystals is not None:
             raise ValueError(
-                f"{self.preset} cannot have a crystals value."
+                f"Halo preset: {self.preset} cannot have a crystals value."
                 )
-        if self.preset is not Halo.Preset.Auto or Halo.Preset.Off and self.crystals is None:
+        if self.preset is not (Halo.Preset.Auto or Halo.Preset.Off) and self.crystals is None:
             raise ValueError(
-                f"{self.preset} must have a crystals value."
+                f"Halo preset: {self.preset} must have a crystals value."
                 )
                 
     def dict(self):
         if self.crystals:
-            return {"crystalsPreset": self.crystals, "preset": self.preset}
+            return {"crystalsPreset": f"{self.crystals}", "preset": f"{self.preset}"}
         else:
-            return {"preset": self.preset}
+            return {"preset": f"{self.preset}"}
 
     def _make_halo_dict(self):
         self.validate_halo()
