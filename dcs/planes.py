@@ -7836,6 +7836,7 @@ class AV8BNA(PlaneType):
     }
 
     property_defaults: Dict[str, Any] = {
+        "LoadWater": True,
         "MountNVG": False,
         "ClockTime": 1,
         "RocketBurst": 1,
@@ -7857,6 +7858,9 @@ class AV8BNA(PlaneType):
     }
 
     class Properties:
+
+        class LoadWater:
+            id = "LoadWater"
 
         class MountNVG:
             id = "MountNVG"
