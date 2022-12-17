@@ -267,6 +267,7 @@ flyable["Yak-52"] = true
 -- Helicopters
 flyable["AH-64D_BLK_II"] = true
 flyable["Ka-50"] = true
+flyable["Ka-50_3"] = true
 flyable["Mi-8MT"] = true
 flyable["Mi-24P"] = true
 flyable["SA342L"] = true
@@ -426,6 +427,8 @@ from dcs.liveries_scanner import Liveries
                         defval = 'True'
                     elseif defval == false then
                         defval = 'False'
+                    elseif type(defval) == 'string' then
+                        defval = '"'..defval..'"'
                     else
                         defval = tostring(defval)
                     end
@@ -448,7 +451,11 @@ from dcs.liveries_scanner import Liveries
                             writeln(file, '')
                             writeln(file, '            class Values:')
                             for k, val in pairs(prop.values) do
-                                writeln(file, '                '..safe_name(val.dispName)..' = '..tostring(val.id))
+                                if type(val.id) == 'string' then
+                                    writeln(file, '                '..safe_name(val.dispName)..' = "'..tostring(val.id)..'"')
+                                else
+                                    writeln(file, '                '..safe_name(val.dispName)..' = '..tostring(val.id))
+								end
                             end
                         end
                     end
