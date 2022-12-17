@@ -27,13 +27,13 @@ class Country:
         self.id = _id
         self.name = name
         self.shortname = short_name
-        self.vehicle_group = []  # type: List[VehicleGroup]
-        self.ship_group = []  # type: List[ShipGroup]
-        self.plane_group = []  # type: List[PlaneGroup]
-        self.helicopter_group = []  # type: List[HelicopterGroup]
-        self.static_group = []  # type: List[StaticGroup]
+        self.vehicle_group: List[VehicleGroup] = []
+        self.ship_group: List[ShipGroup] = []
+        self.plane_group: List[PlaneGroup] = []
+        self.helicopter_group: List[HelicopterGroup] = []
+        self.static_group: List[StaticGroup] = []
         self.current_callsign_id = 99
-        self.current_callsign_category = {}  # type: Dict[str,int]
+        self.current_callsign_category: Dict[str, int] = {}
         self._tail_numbers: Set[str] = set()
 
     def add_vehicle_group(self, vgroup):

@@ -4,7 +4,7 @@ import dcs.condition as condition
 
 class Goal:
     def __init__(self, comment="", score=100):
-        self.rules = []  # type: List[condition.Condition]
+        self.rules: List[condition.Condition] = []
         self.side = "OFFLINE"
         self.score = score
         self.predicate = "score"

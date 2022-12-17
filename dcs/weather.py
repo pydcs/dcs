@@ -256,7 +256,7 @@ class Weather:
     def dynamic_weather(self, system: BaricSystem, cyclones: int = 1):
         self.cyclones.clear()
 
-        center = self.terrain.bounds.center()  # type: mapping.Point
+        center: mapping.Point = self.terrain.bounds.center()
         self.atmosphere_type = 1
         self.type_weather = system.value
 

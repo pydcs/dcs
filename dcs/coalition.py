@@ -19,7 +19,7 @@ if TYPE_CHECKING:
 class Coalition:
     def __init__(self, name, bullseye=None):
         self.name = name
-        self.countries = {}  # type: Dict[str, Country]
+        self.countries: Dict[str, Country] = {}
         self.bullseye = bullseye
         self.nav_points = []  # TODO
 

@@ -37,7 +37,7 @@ class ResourceKey:
 
 class Translation:
     def __init__(self, _mission):
-        self.strings = {}  # type: Dict[str,Dict[str,str]]
+        self.strings: Dict[str, Dict[str, str]] = {}
         self.mission = _mission
 
     def has_string(self, _id: str, lang: str = 'DEFAULT') -> bool:
