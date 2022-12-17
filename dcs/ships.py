@@ -254,6 +254,16 @@ class Leander_gun_lynch(unittype.ShipType):
     air_weapon_dist = 140000
 
 
+class Ship_Tilde_Supply(unittype.ShipType):
+    id = "Ship_Tilde_Supply"
+    name = "Supply Ship MV Tilde"
+    helicopter_num = 1
+    parking = 1
+    detection_range = 0
+    threat_range = 0
+    air_weapon_dist = 0
+
+
 class Santafe(unittype.ShipType):
     id = "santafe"
     name = "ARA Santa Fe S-21"
@@ -495,6 +505,7 @@ ship_map = {
     "leander-gun-ariadne": Leander_gun_ariadne,
     "leander-gun-condell": Leander_gun_condell,
     "leander-gun-lynch": Leander_gun_lynch,
+    "Ship_Tilde_Supply": Ship_Tilde_Supply,
     "santafe": Santafe,
     "HandyWind": HandyWind,
     "Seawise_Giant": Seawise_Giant,

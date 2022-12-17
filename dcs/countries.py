@@ -239,6 +239,7 @@ class Russia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
         TF_51D = planes.TF_51D
@@ -310,6 +311,7 @@ class Russia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Ju_88A4,
         Plane.C_47,
         Plane.TF_51D,
@@ -363,6 +365,7 @@ class Russia(Country):
         Seawise_Giant = ships.Seawise_Giant
         CV_1143_5 = ships.CV_1143_5
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -706,6 +709,7 @@ class Ukraine(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
         TF_51D = planes.TF_51D
@@ -769,6 +773,7 @@ class Ukraine(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Ju_88A4,
         Plane.C_47,
         Plane.TF_51D,
@@ -812,6 +817,7 @@ class Ukraine(Country):
         Dry_cargo_ship_2 = ships.Dry_cargo_ship_2
         REZKY = ships.REZKY
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -1063,6 +1069,7 @@ class USA(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1M_EE = planes.Mirage_F1M_EE
         Mirage_F1M_CE = planes.Mirage_F1M_CE
         Mirage_F1CR = planes.Mirage_F1CR
@@ -1139,6 +1146,7 @@ class USA(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Mirage_F1M_EE,
         Plane.Mirage_F1M_CE,
         Plane.Mirage_F1CR,
@@ -1204,6 +1212,7 @@ class USA(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Santafe = ships.Santafe
         Forrestal = ships.Forrestal
 
@@ -1474,6 +1483,7 @@ class Turkey(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         TF_51D = planes.TF_51D
@@ -1525,6 +1535,7 @@ class Turkey(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.TF_51D,
@@ -1563,6 +1574,7 @@ class Turkey(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -1840,6 +1852,7 @@ class UK(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         B_17G = planes.B_17G
         Ju_88A4 = planes.Ju_88A4
@@ -1889,6 +1902,7 @@ class UK(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.B_17G,
         Plane.Ju_88A4,
@@ -1935,6 +1949,7 @@ class UK(Country):
         Leander_gun_ariadne = ships.Leander_gun_ariadne
         Leander_gun_condell = ships.Leander_gun_condell
         Leander_gun_lynch = ships.Leander_gun_lynch
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
 
@@ -2201,6 +2216,7 @@ class France(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1C_200 = planes.Mirage_F1C_200
         Mirage_F1CR = planes.Mirage_F1CR
         Mirage_F1CT = planes.Mirage_F1CT
@@ -2255,6 +2271,7 @@ class France(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Mirage_F1C_200,
         Plane.Mirage_F1CR,
         Plane.Mirage_F1CT,
@@ -2292,6 +2309,7 @@ class France(Country):
         HarborTug = ships.HarborTug
         Leander_gun_condell = ships.Leander_gun_condell
         Leander_gun_lynch = ships.Leander_gun_lynch
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -2639,6 +2657,7 @@ class Germany(Country):
         MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Ju_88A4 = planes.Ju_88A4
         TF_51D = planes.TF_51D
 
@@ -2691,6 +2710,7 @@ class Germany(Country):
         Plane.MB_339APAN,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Ju_88A4,
         Plane.TF_51D,
     ]
@@ -2722,6 +2742,7 @@ class Germany(Country):
         Seawise_Giant = ships.Seawise_Giant
         La_Combattante_II = ships.La_Combattante_II
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -3209,6 +3230,7 @@ class USAFAggressors(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -3258,7 +3280,6 @@ class USAFAggressors(Country):
         RQ_1A_Predator = planes.RQ_1A_Predator
         F_A_18C = planes.F_A_18C
         F_4E = planes.F_4E
-        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1M_EE = planes.Mirage_F1M_EE
         Mirage_F1M_CE = planes.Mirage_F1M_CE
         Mirage_F1JA = planes.Mirage_F1JA
@@ -3335,6 +3356,7 @@ class USAFAggressors(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -3384,7 +3406,6 @@ class USAFAggressors(Country):
         Plane.RQ_1A_Predator,
         Plane.F_A_18C,
         Plane.F_4E,
-        Plane.Mirage_F1EE,
         Plane.Mirage_F1M_EE,
         Plane.Mirage_F1M_CE,
         Plane.Mirage_F1JA,
@@ -3474,6 +3495,7 @@ class USAFAggressors(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
         ALBATROS = ships.ALBATROS
@@ -3781,6 +3803,7 @@ class Canada(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -3827,6 +3850,7 @@ class Canada(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -3859,6 +3883,7 @@ class Canada(Country):
         HandyWind = ships.HandyWind
         LST_Mk2 = ships.LST_Mk2
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
 
@@ -4218,6 +4243,7 @@ class Spain(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -4507,6 +4533,7 @@ class TheNetherlands(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -4556,6 +4583,7 @@ class TheNetherlands(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -4592,6 +4620,7 @@ class TheNetherlands(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -4858,6 +4887,7 @@ class Belgium(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         TF_51D = planes.TF_51D
@@ -4905,6 +4935,7 @@ class Belgium(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.TF_51D,
@@ -4935,6 +4966,7 @@ class Belgium(Country):
         Speedboat = ships.Speedboat
         HandyWind = ships.HandyWind
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -5189,6 +5221,7 @@ class Norway(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         TF_51D = planes.TF_51D
@@ -5236,6 +5269,7 @@ class Norway(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.TF_51D,
@@ -5267,6 +5301,7 @@ class Norway(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -5515,6 +5550,7 @@ class Denmark(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         TF_51D = planes.TF_51D
@@ -5562,6 +5598,7 @@ class Denmark(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.TF_51D,
@@ -5591,6 +5628,7 @@ class Denmark(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -5861,6 +5899,7 @@ class Israel(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -5912,6 +5951,7 @@ class Israel(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -5950,6 +5990,7 @@ class Israel(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -6257,6 +6298,7 @@ class Georgia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
         TF_51D = planes.TF_51D
@@ -6304,6 +6346,7 @@ class Georgia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Ju_88A4,
         Plane.C_47,
         Plane.TF_51D,
@@ -6342,6 +6385,7 @@ class Georgia(Country):
         ZWEZDNY = ships.ZWEZDNY
         La_Combattante_II = ships.La_Combattante_II
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -6605,6 +6649,7 @@ class Insurgents(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -6645,6 +6690,7 @@ class Insurgents(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -6679,6 +6725,7 @@ class Insurgents(Country):
         Dry_cargo_ship_2 = ships.Dry_cargo_ship_2
         ZWEZDNY = ships.ZWEZDNY
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -6878,6 +6925,7 @@ class Abkhazia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
 
@@ -6923,6 +6971,7 @@ class Abkhazia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Ju_88A4,
         Plane.C_47,
     ]
@@ -6958,6 +7007,7 @@ class Abkhazia(Country):
         Dry_cargo_ship_1 = ships.Dry_cargo_ship_1
         Dry_cargo_ship_2 = ships.Dry_cargo_ship_2
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -7143,6 +7193,7 @@ class SouthOssetia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -7182,6 +7233,7 @@ class SouthOssetia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -7212,6 +7264,7 @@ class SouthOssetia(Country):
 
     class Ship:
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -7388,6 +7441,7 @@ class Italy(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -7439,6 +7493,7 @@ class Italy(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -7471,6 +7526,7 @@ class Italy(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -7737,6 +7793,7 @@ class Australia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -7785,6 +7842,7 @@ class Australia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -7820,6 +7878,7 @@ class Australia(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -8058,6 +8117,7 @@ class Switzerland(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -8101,6 +8161,7 @@ class Switzerland(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -8126,6 +8187,7 @@ class Switzerland(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -8353,6 +8415,7 @@ class Austria(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -8393,6 +8456,7 @@ class Austria(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -8420,6 +8484,7 @@ class Austria(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -8746,6 +8811,7 @@ class Belarus(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
 
@@ -8797,6 +8863,7 @@ class Belarus(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Ju_88A4,
         Plane.C_47,
     ]
@@ -8827,6 +8894,7 @@ class Belarus(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -9060,6 +9128,7 @@ class Bulgaria(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
 
@@ -9108,6 +9177,7 @@ class Bulgaria(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Ju_88A4,
         Plane.C_47,
     ]
@@ -9136,6 +9206,7 @@ class Bulgaria(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -9415,6 +9486,7 @@ class CzechRepublic(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -9460,6 +9532,7 @@ class CzechRepublic(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -9489,6 +9562,7 @@ class CzechRepublic(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -9762,6 +9836,7 @@ class China(Country):
         MB_339APAN = planes.MB_339APAN
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -9814,6 +9889,7 @@ class China(Country):
         Plane.MB_339APAN,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -9853,6 +9929,7 @@ class China(Country):
         Type_093 = ships.Type_093
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -9996,6 +10073,7 @@ class Croatia(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -10036,6 +10114,7 @@ class Croatia(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -10067,6 +10146,7 @@ class Croatia(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -10361,6 +10441,7 @@ class Egypt(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -10405,6 +10486,7 @@ class Egypt(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -10442,6 +10524,7 @@ class Egypt(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -10739,6 +10822,7 @@ class Finland(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -10779,6 +10863,7 @@ class Finland(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -10803,6 +10888,7 @@ class Finland(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -11084,6 +11170,7 @@ class Greece(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1CG = planes.Mirage_F1CG
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
@@ -11132,6 +11219,7 @@ class Greece(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Mirage_F1CG,
         Plane.Yak_52,
         Plane.Ju_88A4,
@@ -11170,6 +11258,7 @@ class Greece(Country):
         Speedboat = ships.Speedboat
         La_Combattante_II = ships.La_Combattante_II
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -11474,6 +11563,7 @@ class Hungary(Country):
         MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Ju_88A4 = planes.Ju_88A4
 
     planes = [
@@ -11518,6 +11608,7 @@ class Hungary(Country):
         Plane.MB_339APAN,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Ju_88A4,
     ]
 
@@ -11545,6 +11636,7 @@ class Hungary(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -11814,6 +11906,7 @@ class India(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -11862,6 +11955,7 @@ class India(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -11899,6 +11993,7 @@ class India(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -12192,6 +12287,7 @@ class Iran(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1EQ = planes.Mirage_F1EQ
         Mirage_F1BQ = planes.Mirage_F1BQ
         Yak_52 = planes.Yak_52
@@ -12244,6 +12340,7 @@ class Iran(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Mirage_F1EQ,
         Plane.Mirage_F1BQ,
         Plane.Yak_52,
@@ -12286,6 +12383,7 @@ class Iran(Country):
         Seawise_Giant = ships.Seawise_Giant
         La_Combattante_II = ships.La_Combattante_II
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -12568,6 +12666,7 @@ class Iraq(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1EQ = planes.Mirage_F1EQ
         Mirage_F1BQ = planes.Mirage_F1BQ
         Yak_52 = planes.Yak_52
@@ -12617,6 +12716,7 @@ class Iraq(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Mirage_F1EQ,
         Plane.Mirage_F1BQ,
         Plane.Yak_52,
@@ -12646,6 +12746,7 @@ class Iraq(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -12925,6 +13026,7 @@ class Japan(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -12967,6 +13069,7 @@ class Japan(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -13001,6 +13104,7 @@ class Japan(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -13335,6 +13439,7 @@ class Kazakhstan(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -13387,6 +13492,7 @@ class Kazakhstan(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -13420,6 +13526,7 @@ class Kazakhstan(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -13671,6 +13778,7 @@ class NorthKorea(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -13713,6 +13821,7 @@ class NorthKorea(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -13740,6 +13849,7 @@ class NorthKorea(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -13995,6 +14105,7 @@ class Pakistan(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -14042,6 +14153,7 @@ class Pakistan(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -14069,6 +14181,7 @@ class Pakistan(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -14369,6 +14482,7 @@ class Poland(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -14420,6 +14534,7 @@ class Poland(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -14451,6 +14566,7 @@ class Poland(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -14752,6 +14868,7 @@ class Romania(Country):
         MB_339APAN = planes.MB_339APAN
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
 
@@ -14797,6 +14914,7 @@ class Romania(Country):
         Plane.MB_339APAN,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Ju_88A4,
         Plane.C_47,
     ]
@@ -14828,6 +14946,7 @@ class Romania(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -15087,6 +15206,7 @@ class SaudiArabia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -15133,6 +15253,7 @@ class SaudiArabia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -15172,6 +15293,7 @@ class SaudiArabia(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -15448,6 +15570,7 @@ class Serbia(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -15492,6 +15615,7 @@ class Serbia(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -15519,6 +15643,7 @@ class Serbia(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -15781,6 +15906,7 @@ class Slovakia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -15825,6 +15951,7 @@ class Slovakia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -15852,6 +15979,7 @@ class Slovakia(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -16106,6 +16234,7 @@ class SouthKorea(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -16153,6 +16282,7 @@ class SouthKorea(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -16183,6 +16313,7 @@ class SouthKorea(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -16419,6 +16550,7 @@ class Sweden(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -16463,6 +16595,7 @@ class Sweden(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -16487,6 +16620,7 @@ class Sweden(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -16781,6 +16915,7 @@ class Syria(Country):
         MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -16826,6 +16961,7 @@ class Syria(Country):
         Plane.MB_339APAN,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -16855,6 +16991,7 @@ class Syria(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -17112,6 +17249,7 @@ class Yemen(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -17155,6 +17293,7 @@ class Yemen(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -17187,6 +17326,7 @@ class Yemen(Country):
         Speedboat = ships.Speedboat
         MOLNIYA = ships.MOLNIYA
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -17457,6 +17597,7 @@ class Vietnam(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Ju_88A4 = planes.Ju_88A4
 
     planes = [
@@ -17502,6 +17643,7 @@ class Vietnam(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Ju_88A4,
     ]
 
@@ -17531,6 +17673,7 @@ class Vietnam(Country):
         MOLNIYA = ships.MOLNIYA
         HandyWind = ships.HandyWind
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -17785,6 +17928,7 @@ class Venezuela(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -17827,6 +17971,7 @@ class Venezuela(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -17855,6 +18000,7 @@ class Venezuela(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -18080,6 +18226,7 @@ class Tunisia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -18120,6 +18267,7 @@ class Tunisia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -18145,6 +18293,7 @@ class Tunisia(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -18382,6 +18531,7 @@ class Thailand(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -18425,6 +18575,7 @@ class Thailand(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -18457,6 +18608,7 @@ class Thailand(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -18702,6 +18854,7 @@ class Sudan(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -18746,6 +18899,7 @@ class Sudan(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -18773,6 +18927,7 @@ class Sudan(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -18993,6 +19148,7 @@ class Philippines(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -19036,6 +19192,7 @@ class Philippines(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -19060,6 +19217,7 @@ class Philippines(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -19314,6 +19472,7 @@ class Morocco(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1EH = planes.Mirage_F1EH
         Mirage_F1CH = planes.Mirage_F1CH
         Mirage_F1BE = planes.Mirage_F1BE
@@ -19359,6 +19518,7 @@ class Morocco(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Mirage_F1EH,
         Plane.Mirage_F1CH,
         Plane.Mirage_F1BE,
@@ -19391,6 +19551,7 @@ class Morocco(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -19619,6 +19780,7 @@ class Mexico(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -19660,6 +19822,7 @@ class Mexico(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -19693,6 +19856,7 @@ class Mexico(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -19923,6 +20087,7 @@ class Malaysia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -19964,6 +20129,7 @@ class Malaysia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -19994,6 +20160,7 @@ class Malaysia(Country):
         Seawise_Giant = ships.Seawise_Giant
         La_Combattante_II = ships.La_Combattante_II
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -20254,6 +20421,7 @@ class Libya(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1ED = planes.Mirage_F1ED
         Mirage_F1BD = planes.Mirage_F1BD
         Yak_52 = planes.Yak_52
@@ -20298,6 +20466,7 @@ class Libya(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Mirage_F1ED,
         Plane.Mirage_F1BD,
         Plane.Yak_52,
@@ -20325,6 +20494,7 @@ class Libya(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         La_Combattante_II = ships.La_Combattante_II
 
     class CallsignAWACS:
@@ -20572,6 +20742,7 @@ class Jordan(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1CJ = planes.Mirage_F1CJ
         Mirage_F1DDA = planes.Mirage_F1DDA
         Yak_52 = planes.Yak_52
@@ -20616,6 +20787,7 @@ class Jordan(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Mirage_F1CJ,
         Plane.Mirage_F1DDA,
         Plane.Yak_52,
@@ -20651,6 +20823,7 @@ class Jordan(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -20921,6 +21094,7 @@ class Indonesia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -20969,6 +21143,7 @@ class Indonesia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -21002,6 +21177,7 @@ class Indonesia(Country):
         Seawise_Giant = ships.Seawise_Giant
         La_Combattante_II = ships.La_Combattante_II
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -21226,6 +21402,7 @@ class Honduras(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -21266,6 +21443,7 @@ class Honduras(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -21292,6 +21470,7 @@ class Honduras(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -21543,6 +21722,7 @@ class Ethiopia(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -21586,6 +21766,7 @@ class Ethiopia(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -21612,6 +21793,7 @@ class Ethiopia(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -21859,6 +22041,7 @@ class Chile(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -21905,6 +22088,7 @@ class Chile(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -21939,6 +22123,7 @@ class Chile(Country):
         Seawise_Giant = ships.Seawise_Giant
         La_Combattante_II = ships.La_Combattante_II
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -22183,6 +22368,7 @@ class Brazil(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -22224,6 +22410,7 @@ class Brazil(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -22254,6 +22441,7 @@ class Brazil(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -22495,6 +22683,7 @@ class Bahrain(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -22534,6 +22723,7 @@ class Bahrain(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -22562,6 +22752,7 @@ class Bahrain(Country):
         Speedboat = ships.Speedboat
         PERRY = ships.PERRY
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -22812,6 +23003,7 @@ class ThirdReich(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -22852,6 +23044,7 @@ class ThirdReich(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -22877,6 +23070,7 @@ class ThirdReich(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -23140,6 +23334,7 @@ class Yugoslavia(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -23182,6 +23377,7 @@ class Yugoslavia(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -23208,6 +23404,7 @@ class Yugoslavia(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -23489,6 +23686,7 @@ class USSR(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Ju_88A4 = planes.Ju_88A4
 
     planes = [
@@ -23554,6 +23752,7 @@ class USSR(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Ju_88A4,
     ]
 
@@ -23597,6 +23796,7 @@ class USSR(Country):
         REZKY = ships.REZKY
         ZWEZDNY = ships.ZWEZDNY
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -23765,6 +23965,7 @@ class ItalianSocialRepublic(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -23804,6 +24005,7 @@ class ItalianSocialRepublic(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -23829,6 +24031,7 @@ class ItalianSocialRepublic(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -24157,6 +24360,7 @@ class Algeria(Country):
         MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -24213,6 +24417,7 @@ class Algeria(Country):
         Plane.MB_339APAN,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -24260,6 +24465,7 @@ class Algeria(Country):
         Dry_cargo_ship_2 = ships.Dry_cargo_ship_2
         REZKY = ships.REZKY
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -24508,6 +24714,7 @@ class Kuwait(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1CK = planes.Mirage_F1CK
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
@@ -24551,6 +24758,7 @@ class Kuwait(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Mirage_F1CK,
         Plane.Yak_52,
         Plane.Ju_88A4,
@@ -24579,6 +24787,7 @@ class Kuwait(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -24817,6 +25026,7 @@ class Qatar(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1EDA = planes.Mirage_F1EDA
         Mirage_F1DDA = planes.Mirage_F1DDA
         Yak_52 = planes.Yak_52
@@ -24860,6 +25070,7 @@ class Qatar(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Mirage_F1EDA,
         Plane.Mirage_F1DDA,
         Plane.Yak_52,
@@ -24887,6 +25098,7 @@ class Qatar(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -25145,6 +25357,7 @@ class Oman(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -25187,6 +25400,7 @@ class Oman(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -25216,6 +25430,7 @@ class Oman(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -25473,6 +25688,7 @@ class UnitedArabEmirates(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -25517,6 +25733,7 @@ class UnitedArabEmirates(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -25554,6 +25771,7 @@ class UnitedArabEmirates(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -25782,6 +26000,7 @@ class SouthAfrica(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1CZ = planes.Mirage_F1CZ
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
@@ -25826,6 +26045,7 @@ class SouthAfrica(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Mirage_F1CZ,
         Plane.Yak_52,
         Plane.Ju_88A4,
@@ -25855,6 +26075,7 @@ class SouthAfrica(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -26141,6 +26362,7 @@ class Cuba(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -26192,6 +26414,7 @@ class Cuba(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -26227,6 +26450,7 @@ class Cuba(Country):
         Dry_cargo_ship_1 = ships.Dry_cargo_ship_1
         Dry_cargo_ship_2 = ships.Dry_cargo_ship_2
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -26467,6 +26691,7 @@ class Portugal(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -26512,6 +26737,7 @@ class Portugal(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -26536,6 +26762,7 @@ class Portugal(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -26812,6 +27039,7 @@ class GDR(Country):
         MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -26855,6 +27083,7 @@ class GDR(Country):
         Plane.MB_339APAN,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -26880,6 +27109,7 @@ class GDR(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -27132,6 +27362,7 @@ class Lebanon(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -27173,6 +27404,7 @@ class Lebanon(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -27202,6 +27434,7 @@ class Lebanon(Country):
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -27686,6 +27919,7 @@ class CombinedJointTaskForcesBlue(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -27735,7 +27969,6 @@ class CombinedJointTaskForcesBlue(Country):
         RQ_1A_Predator = planes.RQ_1A_Predator
         F_A_18C = planes.F_A_18C
         F_4E = planes.F_4E
-        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1M_EE = planes.Mirage_F1M_EE
         Mirage_F1M_CE = planes.Mirage_F1M_CE
         Mirage_F1JA = planes.Mirage_F1JA
@@ -27812,6 +28045,7 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -27861,7 +28095,6 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.RQ_1A_Predator,
         Plane.F_A_18C,
         Plane.F_4E,
-        Plane.Mirage_F1EE,
         Plane.Mirage_F1M_EE,
         Plane.Mirage_F1M_CE,
         Plane.Mirage_F1JA,
@@ -27952,6 +28185,7 @@ class CombinedJointTaskForcesBlue(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
         ALBATROS = ships.ALBATROS
@@ -28481,6 +28715,7 @@ class CombinedJointTaskForcesRed(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -28530,7 +28765,6 @@ class CombinedJointTaskForcesRed(Country):
         RQ_1A_Predator = planes.RQ_1A_Predator
         F_A_18C = planes.F_A_18C
         F_4E = planes.F_4E
-        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1M_EE = planes.Mirage_F1M_EE
         Mirage_F1M_CE = planes.Mirage_F1M_CE
         Mirage_F1JA = planes.Mirage_F1JA
@@ -28607,6 +28841,7 @@ class CombinedJointTaskForcesRed(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -28656,7 +28891,6 @@ class CombinedJointTaskForcesRed(Country):
         Plane.RQ_1A_Predator,
         Plane.F_A_18C,
         Plane.F_4E,
-        Plane.Mirage_F1EE,
         Plane.Mirage_F1M_EE,
         Plane.Mirage_F1M_CE,
         Plane.Mirage_F1JA,
@@ -28747,6 +28981,7 @@ class CombinedJointTaskForcesRed(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
         ALBATROS = ships.ALBATROS
@@ -29276,6 +29511,7 @@ class UnitedNationsPeacekeepers(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -29325,7 +29561,6 @@ class UnitedNationsPeacekeepers(Country):
         RQ_1A_Predator = planes.RQ_1A_Predator
         F_A_18C = planes.F_A_18C
         F_4E = planes.F_4E
-        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1M_EE = planes.Mirage_F1M_EE
         Mirage_F1M_CE = planes.Mirage_F1M_CE
         Mirage_F1JA = planes.Mirage_F1JA
@@ -29402,6 +29637,7 @@ class UnitedNationsPeacekeepers(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -29451,7 +29687,6 @@ class UnitedNationsPeacekeepers(Country):
         Plane.RQ_1A_Predator,
         Plane.F_A_18C,
         Plane.F_4E,
-        Plane.Mirage_F1EE,
         Plane.Mirage_F1M_EE,
         Plane.Mirage_F1M_CE,
         Plane.Mirage_F1JA,
@@ -29542,6 +29777,7 @@ class UnitedNationsPeacekeepers(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
         ALBATROS = ships.ALBATROS
@@ -29819,6 +30055,7 @@ class Argentina(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -29860,6 +30097,7 @@ class Argentina(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -29892,6 +30130,7 @@ class Argentina(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Santafe = ships.Santafe
 
     class CallsignAWACS:
@@ -30139,6 +30378,7 @@ class Cyprus(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -30179,6 +30419,7 @@ class Cyprus(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -30206,6 +30447,7 @@ class Cyprus(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -30447,6 +30689,7 @@ class Slovenia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -30488,6 +30731,7 @@ class Slovenia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -30518,6 +30762,7 @@ class Slovenia(Country):
         Speedboat = ships.Speedboat
         MOLNIYA = ships.MOLNIYA
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -30758,6 +31003,7 @@ class Bolivia(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -30802,6 +31048,7 @@ class Bolivia(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -30828,6 +31075,7 @@ class Bolivia(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -31055,6 +31303,7 @@ class Ghana(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -31095,6 +31344,7 @@ class Ghana(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -31124,6 +31374,7 @@ class Ghana(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -31361,6 +31612,7 @@ class Nigeria(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -31402,6 +31654,7 @@ class Nigeria(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -31433,6 +31686,7 @@ class Nigeria(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -31678,6 +31932,7 @@ class Peru(Country):
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
+        Mirage_F1EE = planes.Mirage_F1EE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -31724,6 +31979,7 @@ class Peru(Country):
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
+        Plane.Mirage_F1EE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -31757,6 +32013,7 @@ class Peru(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -31990,6 +32247,7 @@ class Ecuador(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1JA = planes.Mirage_F1JA
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
@@ -32032,6 +32290,7 @@ class Ecuador(Country):
         Plane.MiG_15bis,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.Mirage_F1EE,
         Plane.Mirage_F1JA,
         Plane.Yak_52,
         Plane.Ju_88A4,
@@ -32062,6 +32321,7 @@ class Ecuador(Country):
     class Ship:
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
+        Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
     class CallsignAWACS:
         Overlord = "Overlord"
