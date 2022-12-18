@@ -79,7 +79,7 @@ class Mount_Pleasant(Airport):
     unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
-    atc_radio = AtcRadio(hf_hz=4025000, vhf_low_hz=38950000, vhf_high_hz=133350000, uhf_hz=250550000)
+    atc_radio = AtcRadio(hf_hz=4050000, vhf_low_hz=39000000, vhf_high_hz=133350000, uhf_hz=250600000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(73318.320312, 47168.748047, terrain), terrain)
@@ -209,7 +209,7 @@ class San_Carlos_FOB(Airport):
     unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
-    atc_radio = AtcRadio(hf_hz=4050000, vhf_low_hz=39000000, vhf_high_hz=134350000, uhf_hz=250600000)
+    atc_radio = AtcRadio(hf_hz=4075000, vhf_low_hz=39050000, vhf_high_hz=134350000, uhf_hz=250650000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(107939.375, 8484.390625, terrain), terrain)
@@ -263,7 +263,7 @@ class Rio_Gallegos(Airport):
     unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
-    atc_radio = AtcRadio(hf_hz=4075000, vhf_low_hz=39050000, vhf_high_hz=119100000, uhf_hz=250650000)
+    atc_radio = AtcRadio(hf_hz=4100000, vhf_low_hz=39100000, vhf_high_hz=119100000, uhf_hz=250700000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(25718.329375, -703408.191242, terrain), terrain)
@@ -351,7 +351,7 @@ class Rio_Grande(Airport):
     unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
-    atc_radio = AtcRadio(hf_hz=4100000, vhf_low_hz=39100000, vhf_high_hz=118300000, uhf_hz=250700000)
+    atc_radio = AtcRadio(hf_hz=4125000, vhf_low_hz=39150000, vhf_high_hz=118300000, uhf_hz=250750000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-197144.468784, -559487.57478, terrain), terrain)
@@ -390,7 +390,7 @@ class Ushuaia(Airport):
     unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
-    atc_radio = AtcRadio(hf_hz=4125000, vhf_low_hz=39150000, vhf_high_hz=118100000, uhf_hz=250750000)
+    atc_radio = AtcRadio(hf_hz=4150000, vhf_low_hz=39200000, vhf_high_hz=118100000, uhf_hz=250800000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-320586.703125, -576144.78125, terrain), terrain)
@@ -430,7 +430,7 @@ class Ushuaia_Helo_Port(Airport):
     unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
-    atc_radio = AtcRadio(hf_hz=4150000, vhf_low_hz=39200000, vhf_high_hz=118500000, uhf_hz=250800000)
+    atc_radio = AtcRadio(hf_hz=4175000, vhf_low_hz=39250000, vhf_high_hz=118500000, uhf_hz=250850000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-318409.578125, -577046.9375, terrain), terrain)
@@ -469,7 +469,7 @@ class Punta_Arenas(Airport):
     unit_zones: List[mapping.Rectangle] = []
     civilian = False
     slot_version = 2
-    atc_radio = AtcRadio(hf_hz=4175000, vhf_low_hz=39250000, vhf_high_hz=118700000, uhf_hz=250850000)
+    atc_radio = AtcRadio(hf_hz=4200000, vhf_low_hz=39300000, vhf_high_hz=118700000, uhf_hz=250900000)
 
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-147785.300936, -779608.568689, terrain), terrain)
@@ -972,8 +972,8 @@ class Almirante_Schroeders(Airport):
     def __init__(self, terrain: Terrain) -> None:
         super().__init__(mapping.Point(-209880.039062, -741327.375, terrain), terrain)
 
-        self.runways.append(Runway(id=None, name='13-31', main=RunwayApproach(name='13', heading=130, beacons=[]), opposite=RunwayApproach(name='31', heading=310, beacons=[])))
-        self.runways.append(Runway(id=None, name='22-4', main=RunwayApproach(name='22', heading=220, beacons=[]), opposite=RunwayApproach(name='4', heading=40, beacons=[])))
+        self.runways.append(Runway(id=1, name='12-30', main=RunwayApproach(name='12', heading=120, beacons=[]), opposite=RunwayApproach(name='30', heading=300, beacons=[])))
+        self.runways.append(Runway(id=2, name='22-04', main=RunwayApproach(name='22', heading=220, beacons=[]), opposite=RunwayApproach(name='04', heading=40, beacons=[])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=4, position=mapping.Point(-209446.421875, -741467.125, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='B08', length=26.0, width=24.0, height=11.0, shelter=False))
@@ -999,23 +999,23 @@ class Almirante_Schroeders(Airport):
                 crossroad_idx=11, position=mapping.Point(-209458.34375, -741664.3125, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='B01', length=26.0, width=24.0, height=11.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=12, position=mapping.Point(-209417.56066517, -741759.56055562, self._terrain), large=False, heli=True,
+                crossroad_idx=12, position=mapping.Point(-209417.5625, -741759.5625, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='A01', length=60.0, width=52.0, height=18.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=13, position=mapping.Point(-209534.28048093, -740958.85333463, self._terrain), large=False, heli=True,
+                crossroad_idx=13, position=mapping.Point(-209534.28125, -740958.875, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='C01', length=60.0, width=52.0, height=18.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=14, position=mapping.Point(-209877.35363589, -741016.9897577, self._terrain), large=False, heli=True,
-                airplanes=False, slot_name='Stand05', length=42.0, width=34.0, height=14.0, shelter=False))
+                crossroad_idx=14, position=mapping.Point(-209877.359375, -741017, self._terrain), large=False, heli=True,
+                airplanes=False, slot_name='Stand01', length=42.0, width=34.0, height=14.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=15, position=mapping.Point(-209873.2372016, -740945.90976459, self._terrain), large=False, heli=True,
-                airplanes=False, slot_name='Stand06', length=42.0, width=34.0, height=14.0, shelter=False))
+                crossroad_idx=15, position=mapping.Point(-209873.234375, -740945.9375, self._terrain), large=False, heli=True,
+                airplanes=False, slot_name='Stand02', length=42.0, width=34.0, height=14.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=16, position=mapping.Point(-209839.91298429, -740973.25907782, self._terrain), large=False, heli=True,
-                airplanes=False, slot_name='Stand07', length=30.0, width=23.0, height=10.0, shelter=False))
+                crossroad_idx=16, position=mapping.Point(-209839.90625, -740973.25, self._terrain), large=False, heli=True,
+                airplanes=False, slot_name='Stand03', length=30.0, width=23.0, height=10.0, shelter=False))
         self.parking_slots.append(ParkingSlot(
-                crossroad_idx=17, position=mapping.Point(-209834.10700399, -740997.60346386, self._terrain), large=False, heli=True,
-                airplanes=False, slot_name='Stand08', length=30.0, width=23.0, height=10.0, shelter=False))
+                crossroad_idx=17, position=mapping.Point(-209834.109375, -740997.625, self._terrain), large=False, heli=True,
+                airplanes=False, slot_name='Stand04', length=30.0, width=23.0, height=10.0, shelter=False))
 
 
 class Rio_Turbio(Airport):
@@ -1043,6 +1043,30 @@ class Rio_Turbio(Airport):
                 airplanes=True, slot_name='A03', length=26.0, width=24.0, height=11.0, shelter=False))
 
 
+class Rio_Chico(Airport):
+    id = 21
+    name = "Rio Chico"
+    tacan = None
+    unit_zones: List[mapping.Rectangle] = []
+    civilian = False
+    slot_version = 2
+    atc_radio = AtcRadio(hf_hz=4025000, vhf_low_hz=38950000, vhf_high_hz=118200000, uhf_hz=250550000)
+
+    def __init__(self, terrain: Terrain) -> None:
+        super().__init__(mapping.Point(19603.670898, -699092, terrain), terrain)
+
+        self.runways.append(Runway(id=1, name='08-26', main=RunwayApproach(name='08', heading=80, beacons=[]), opposite=RunwayApproach(name='26', heading=260, beacons=[])))
+        self.parking_slots.append(ParkingSlot(
+                crossroad_idx=0, position=mapping.Point(19867.458984375, -698786.0625, self._terrain), large=False, heli=True,
+                airplanes=False, slot_name='H01', length=30.0, width=23.0, height=10.0, shelter=False))
+        self.parking_slots.append(ParkingSlot(
+                crossroad_idx=1, position=mapping.Point(19883.187003973, -698743.33939205, self._terrain), large=False, heli=True,
+                airplanes=False, slot_name='H02', length=30.0, width=23.0, height=10.0, shelter=False))
+        self.parking_slots.append(ParkingSlot(
+                crossroad_idx=2, position=mapping.Point(19836.9921875, -698775, self._terrain), large=False, heli=True,
+                airplanes=False, slot_name='H03', length=30.0, width=23.0, height=10.0, shelter=False))
+
+
 ALL_AIRPORTS: List[Type[Airport]] = [
     Port_Stanley,
     Mount_Pleasant,
@@ -1063,5 +1087,6 @@ ALL_AIRPORTS: List[Type[Airport]] = [
     Porvenir_Airfield,
     Almirante_Schroeders,
     Rio_Turbio,
+    Rio_Chico,
 ]
 
