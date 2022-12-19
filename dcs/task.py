@@ -702,6 +702,36 @@ class Tanker(Task):
         super(Tanker, self).__init__(Tanker.Id)
 
 
+class RecoveryTanker(Task):
+    Id = "RecoveryTanker"
+
+    def __init__(self, groupId: int, speed: float, altitude: float, lastWaypoint: Optional[int]):
+        super(RecoveryTanker, self).__init__(RecoveryTanker.Id)
+
+        speedEdited = True
+        altitudeEdited = True
+        lastWaypointIndexFlag = False
+        lastWptIndexChangedManually = False
+
+        if (lastWaypoint is not None):
+            lastWaypointIndexFlag = True
+            lastWptIndexChangedManually = True
+
+        self.params = {
+            "speedEdited": speedEdited,
+            "groupId": groupId,
+            "altitudeEdited": altitudeEdited,
+            "altitude": altitude,
+            "targetTypes": {
+                1: Targets.All.Naval.Ships
+            },
+            "speed": speed,
+            "lastWptIndexFlag": lastWaypointIndexFlag,
+            "lastWptIndexFlagChangedManually": lastWptIndexChangedManually,
+            "lastWptIndex": lastWaypoint,
+        }
+
+
 class OrbitAction(Task):
     Id = "Orbit"
 
