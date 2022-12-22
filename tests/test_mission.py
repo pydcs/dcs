@@ -831,3 +831,20 @@ class BasicTests(unittest.TestCase):
         self.assertListEqual(
             [f"tank {ii:03d}" for ii, _ in enumerate(tanks2.units)],
             [t.name for t in tanks2.units])
+
+    def test_rail_car(self) -> None:
+        m = dcs.mission.Mission()
+        assert isinstance(m.terrain, Caucasus)
+        usa = m.coalition["blue"].country("USA")
+        batumi = m.terrain.airports["Batumi"]
+        m.static_group(usa, "rail_car", "Coach a passenger",
+                       batumi.unit_zones[0].center())
+
+        mizname = "missions/test_rail_car.miz"
+        m.save(mizname)
+        m2 = dcs.mission.Mission()
+        m2.load_file(mizname)
+
+        self.assertTrue(
+            any(g.name == "rail_car"
+                for g in m2.coalition["blue"].countries["USA"].static_group))

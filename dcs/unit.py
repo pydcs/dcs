@@ -132,6 +132,8 @@ class Static(Unit):
         self.shape_name: Optional[str] = None
         self.rate = None
         self.mass = None
+        self.category = None
+        self.can_cargo = None
 
         if not isinstance(_type, str):
             if issubclass(_type, StaticType):
@@ -156,15 +158,17 @@ class Static(Unit):
     def load_from_dict(self, d: Dict[str, Any]) -> None:
         super().load_from_dict(d)
         self.can_cargo = d.get("canCargo", False)
-        self.category = d["category"]
+        self.category = d.get("category", None)
         self.shape_name = d.get("shape_name", None)
         self.rate = d.get("rate")
         self.mass = d.get("mass")
 
     def dict(self):
         d = super(Static, self).dict()
-        d["category"] = self.category
-        d["canCargo"] = self.can_cargo
+        if self.category is not None:
+            d["category"] = self.category
+        if self.can_cargo is not None:
+            d["canCargo"] = self.can_cargo
         if self.shape_name is not None:
             d["shape_name"] = self.shape_name
         if self.rate is not None:
