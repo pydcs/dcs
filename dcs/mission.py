@@ -700,16 +700,68 @@ class Mission:
         country.add_vehicle_group(vg)
         return vg
 
+    def _add_eplrs_to_group(self, group: unitgroup.VehicleGroup) -> None:
+        wp = group.points[0]
+        wp.tasks.append(task.EPLRS(self.next_eplrs("vehicle")))
+
+    def vehicle_group_from_vehicles(
+        self,
+        country,
+        group_name: str,
+        vehicles: List[unit.Vehicle],
+        position: mapping.Point,
+        heading: int = 0,
+        formation=unitgroup.VehicleGroup.Formation.Line,
+        move_formation: PointAction = PointAction.OffRoad
+    ) -> unitgroup.VehicleGroup:
+        """Adds a new vehicle group to the given country from a list of vehicles.
+        This allows the caller to customize attributes of each vehicle.
+
+        Args:
+            country(Country):which the vehicle group will belong too
+            group_name: name of the vehicle group
+            vehicles: a list of dcs.Vehicle objects not already part of a vehicle group
+            position: :py:class:`dcs.mapping.Point` where the new group will be placed
+            heading: initial heading of the group, only used if no additional waypoints
+            formation: formation in which the group should be placed
+            move_formation: formation the group should use for moving
+
+        Returns:
+            VehicleGroup: the new vehicle group object
+        """
+
+        vg = unitgroup.VehicleGroup(self.next_group_id(), group_name)
+
+        for ii, v in enumerate(vehicles):
+            v.position.x = position.x
+            v.position.y = position.y + ii * 20
+            v.heading = heading
+            vg.add_unit(v)
+
+        wp = vg.add_waypoint(vg.units[0].position, move_formation, 0)
+        wp.ETA_locked = True
+
+        from .vehicles import vehicle_map as vm
+
+        eplrs = any(vm[v.type].eplrs for v in vehicles)
+        if eplrs:
+            self._add_eplrs_to_group(vg)
+
+        vg.formation(formation, heading)
+
+        country.add_vehicle_group(vg)
+        return vg
+
     def vehicle_group_platoon(self, country, name: str,
                               types: List[Type[unittype.VehicleType]],
                               position: mapping.Point,
-                              heading=0,
+                              heading: int = 0,
                               formation=unitgroup.VehicleGroup.Formation.Line,
                               move_formation: PointAction = PointAction.OffRoad) -> unitgroup.VehicleGroup:
         """Adds a new vehicle group to the given country and given vehicle types.
 
         Args:
-                country(Country):which the vehicle group will belong too
+            country(Country):which the vehicle group will belong too
             name: of the vehicle group
             types: a list of vehicle types that will be used the units
             position: :py:class:`dcs.mapping.Point` where the new group will be placed
@@ -720,28 +772,13 @@ class Mission:
         Returns:
             VehicleGroup: the new vehicle group object
         """
-        vg = unitgroup.VehicleGroup(self.next_group_id(), name)
-
-        eplrs = False
-        for i in range(0, len(types)):
-            utype = types[i]
-            v = self.vehicle(name + " Unit #{nr}".format(nr=i + 1), utype)
-            v.position.x = position.x
-            v.position.y = position.y + i * 20
-            v.heading = heading
-            if utype.eplrs:
-                eplrs = True
-            vg.add_unit(v)
-
-        wp = vg.add_waypoint(vg.units[0].position, move_formation, 0)
-        wp.ETA_locked = True
-        if eplrs:
-            wp.tasks.append(task.EPLRS(self.next_eplrs("vehicle")))
-
-        vg.formation(formation, heading)
-
-        country.add_vehicle_group(vg)
-        return vg
+        vehicles = [
+            self.vehicle(name + " Unit #{nr}".format(nr=i + 1), t)
+            for i, t in enumerate(types)
+        ]
+        return self.vehicle_group_from_vehicles(country, name, vehicles,
+                                                position, heading, formation,
+                                                move_formation)
 
     def ship(self, name: str, _type: Type[unittype.ShipType]) -> Ship:
         """Creates a plain ship unit to be added to a group

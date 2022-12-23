@@ -793,3 +793,41 @@ class BasicTests(unittest.TestCase):
             return 'name' in p and p['name'] == 28 and p['value'] == 1
 
         self.assertTrue(any(is_restrict_targets_a2a_option(tasks_param[k]) for k in tasks_param.keys()))
+
+    def test_vehicle_group_platoon(self) -> None:
+        m = dcs.mission.Mission()
+        usa = m.coalition["blue"].country("USA")
+        batumi = m.terrain.airports["Batumi"]
+        pos = batumi.random_unit_zone(m.terrain).center()
+        types = [
+            dcs.countries.USA.Vehicle.Armor.M_1_Abrams,
+            dcs.countries.USA.Vehicle.Armor.M_2_Bradley,
+            dcs.countries.USA.Vehicle.Armor.M_60
+        ]
+        vehicles = [
+            m.vehicle(f"tank {ii:03d}", t) for ii, t in enumerate(types)
+        ]
+        vg1 = m.vehicle_group_platoon(usa, "tanks1", types, pos)
+        vg2 = m.vehicle_group_from_vehicles(usa, "tanks2", vehicles, pos)
+
+        self.assertIsNotNone(vg1)
+        self.assertIsNotNone(vg2)
+
+        mizname = os.path.join('missions', 'test_vehicle_group.miz')
+        m.save(mizname)
+        m2 = dcs.mission.Mission()
+        m2.load_file(mizname)
+        usa: dcs.countries.Country = m2.coalition['blue'].country('USA')
+        tanks1: dcs.unitgroup.VehicleGroup = usa.find_group("tanks1")
+        tanks2: dcs.unitgroup.VehicleGroup = usa.find_group("tanks2")
+        self.assertIsNotNone(tanks1)
+        self.assertIsNotNone(tanks2)
+
+        for group in (tanks1, tanks2):
+            self.assertEqual(len(group.units), len(types))
+            for u, t in zip(group.units, types):
+                self.assertEqual(u.type, t.id)
+
+        self.assertListEqual(
+            [f"tank {ii:03d}" for ii, _ in enumerate(tanks2.units)],
+            [t.name for t in tanks2.units])
