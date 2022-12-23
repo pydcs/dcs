@@ -848,3 +848,27 @@ class BasicTests(unittest.TestCase):
         self.assertTrue(
             any(g.name == "rail_car"
                 for g in m2.coalition["blue"].countries["USA"].static_group))
+
+    def test_smoke_preset(self) -> None:
+        m = dcs.mission.Mission()
+        usa = m.coalition["blue"].country("USA")
+        batumi = m.terrain.airports["Batumi"]
+
+        smoke = m.static_group(usa, "some smoke", "big_smoke",
+                               batumi.unit_zones[0].center())
+        u = smoke.units[0]
+        u.effect_preset = 3
+        u.category = "Effects"
+        mizname = "missions/test_smoke_preset.miz"
+        m.save(mizname)
+        m2 = dcs.mission.Mission()
+        m2.load_file(mizname)
+
+        def preset_preserved(group: dcs.unitgroup.StaticGroup,
+                             preset_number: int):
+            u = group.units[0]
+            is_effect = u.category == "Effects"
+            return is_effect and u.effect_preset == preset_number
+
+        static_groups = m2.coalition["blue"].countries["USA"].static_group
+        self.assertTrue(any(preset_preserved(g, 3) for g in static_groups))

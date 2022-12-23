@@ -128,12 +128,14 @@ class Static(Unit):
             _id = _type.id
 
         super().__init__(unit_id, terrain, name, _id)
-        self.skill = None
+        self.skill: Optional[Skill] = None
         self.shape_name: Optional[str] = None
-        self.rate = None
-        self.mass = None
-        self.category = None
-        self.can_cargo = None
+        self.rate: Optional[int] = None
+        self.mass: Optional[int] = None
+        self.category: Optional[str] = None
+        self.can_cargo: Optional[bool] = None
+        self.effect_preset: Optional[int] = None
+        self.effect_transparency: Optional[float] = None
 
         if not isinstance(_type, str):
             if issubclass(_type, StaticType):
@@ -162,19 +164,23 @@ class Static(Unit):
         self.shape_name = d.get("shape_name", None)
         self.rate = d.get("rate")
         self.mass = d.get("mass")
+        self.effect_preset = d.get("effectPreset", None)
+        self.effect_transparency = d.get("effectTransparency", None)
 
     def dict(self):
         d = super(Static, self).dict()
-        if self.category is not None:
-            d["category"] = self.category
-        if self.can_cargo is not None:
-            d["canCargo"] = self.can_cargo
-        if self.shape_name is not None:
-            d["shape_name"] = self.shape_name
-        if self.rate is not None:
-            d["rate"] = self.rate
-        if self.mass is not None:
-            d["mass"] = self.mass
+        fields = [
+            (self.category, "category"),
+            (self.can_cargo, "canCargo"),
+            (self.shape_name, "shape_name"),
+            (self.rate, "rate"),
+            (self.mass, "mass"),
+            (self.effect_preset, "effectPreset"),
+            (self.effect_transparency, "effectTransparency")
+        ]
+        for attr, keyName in fields:
+            if attr is not None:
+                d[keyName] = attr
         return d
 
 
