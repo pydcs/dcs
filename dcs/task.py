@@ -185,6 +185,7 @@ class WeaponType(Enum):
     SR_AAM = 4194304
     MR_AAM = 8388608
     LR_AAM = 16777216
+    Decoy = 8589934592
 
 
 class TargetType(type):
