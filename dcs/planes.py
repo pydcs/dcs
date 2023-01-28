@@ -2794,7 +2794,6 @@ class Su_17M4(PlaneType):
         Fuel_tank_800L = (4, Weapons.Fuel_tank_800L)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (4, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (4, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
-        Kh_28__AS_9_Kyle____720kg__ARM__Pas_Rdr = (4, Weapons.Kh_28__AS_9_Kyle____720kg__ARM__Pas_Rdr)
 
     class Pylon5:
         FAB_100___100kg_GP_Bomb_LD = (5, Weapons.FAB_100___100kg_GP_Bomb_LD)
@@ -3411,7 +3410,7 @@ class Mirage_2000_5(PlaneType):
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
 
     class Pylon2:
-        Super_530D = (2, Weapons.Super_530D)
+        S530D = (2, Weapons.S530D)
         MICA_RF = (2, Weapons.MICA_RF)
         MICA_IR = (2, Weapons.MICA_IR)
         M2000_Fuel_tank = (2, Weapons.M2000_Fuel_tank)
@@ -3436,7 +3435,7 @@ class Mirage_2000_5(PlaneType):
         MICA_RF = (7, Weapons.MICA_RF)
 
     class Pylon8:
-        Super_530D = (8, Weapons.Super_530D)
+        S530D = (8, Weapons.S530D)
         MICA_RF = (8, Weapons.MICA_RF)
         MICA_IR = (8, Weapons.MICA_IR)
         M2000_Fuel_tank = (8, Weapons.M2000_Fuel_tank)
@@ -7953,6 +7952,7 @@ class AV8BNA(PlaneType):
 
     class Pylon1:
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
         AGM_122_Sidearm = (1, Weapons.AGM_122_Sidearm)
         Mk_81___250lb_GP_Bomb_LD = (1, Weapons.Mk_81___250lb_GP_Bomb_LD)
         Mk_82___500lb_GP_Bomb_LD = (1, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -7973,6 +7973,7 @@ class AV8BNA(PlaneType):
 
     class Pylon2:
         LAU_7_with_AIM_9M_Sidewinder_IR_AAM = (2, Weapons.LAU_7_with_AIM_9M_Sidewinder_IR_AAM)
+        LAU_7_with_AIM_9L_Sidewinder_IR_AAM = (2, Weapons.LAU_7_with_AIM_9L_Sidewinder_IR_AAM)
         AGM_122_Sidearm_ = (2, Weapons.AGM_122_Sidearm_)
         Mk_81___250lb_GP_Bomb_LD = (2, Weapons.Mk_81___250lb_GP_Bomb_LD)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -7986,19 +7987,28 @@ class AV8BNA(PlaneType):
         GBU_38___JDAM__500lb_GPS_Guided_Bomb = (2, Weapons.GBU_38___JDAM__500lb_GPS_Guided_Bomb)
         GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb = (2, Weapons.GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb)
         GBU_54B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = (2, Weapons.GBU_54B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD)
-        _2_Mk_82 = (2, Weapons._2_Mk_82)
-        _2_Mk_20_Rockeye = (2, Weapons._2_Mk_20_Rockeye)
-        _2_CBU_99 = (2, Weapons._2_CBU_99)
-        _2_GBU_12 = (2, Weapons._2_GBU_12)
-        _2_Mk_82_AIR = (2, Weapons._2_Mk_82_AIR)
-        _2_Mk_82_Snakeye = (2, Weapons._2_Mk_82_Snakeye)
-        _2_GBU_38 = (2, Weapons._2_GBU_38)
-        _2_GBU_54_V_1_B = (2, Weapons._2_GBU_54_V_1_B)
+        _2_Mk_82____ = (2, Weapons._2_Mk_82____)
+        _2_Mk_83____ = (2, Weapons._2_Mk_83____)
+        _2_Mk_20_Rockeye____ = (2, Weapons._2_Mk_20_Rockeye____)
+        _2_CBU_99____ = (2, Weapons._2_CBU_99____)
+        _2_GBU_12____ = (2, Weapons._2_GBU_12____)
+        _2_Mk_82_AIR____ = (2, Weapons._2_Mk_82_AIR____)
+        _2_Mk_82_Snakeye____ = (2, Weapons._2_Mk_82_Snakeye____)
+        _2_GBU_38____ = (2, Weapons._2_GBU_38____)
+        _2_GBU_54_V_1_B____ = (2, Weapons._2_GBU_54_V_1_B____)
+        _2_Mk_82_____ = (2, Weapons._2_Mk_82_____)
+        _2_Mk_20_Rockeye_____ = (2, Weapons._2_Mk_20_Rockeye_____)
+        _2_CBU_99_____ = (2, Weapons._2_CBU_99_____)
+        _2_Mk_82_AIR_____ = (2, Weapons._2_Mk_82_AIR_____)
+        _2_Mk_82_Snakeye_____ = (2, Weapons._2_Mk_82_Snakeye_____)
+        _2_GBU_38_______ = (2, Weapons._2_GBU_38_______)
+        _2_GBU_54_V_1_B_______ = (2, Weapons._2_GBU_54_V_1_B_______)
+        _2_GBU_38______ = (2, Weapons._2_GBU_38______)
+        _2_GBU_54_V_1_B______ = (2, Weapons._2_GBU_54_V_1_B______)
         _3_Mk_81 = (2, Weapons._3_Mk_81)
         _3_Mk_82 = (2, Weapons._3_Mk_82)
         _3_Mk_82_AIR = (2, Weapons._3_Mk_82_AIR)
         _3_Mk_82_Snakeye = (2, Weapons._3_Mk_82_Snakeye)
-        _3_GBU_12 = (2, Weapons._3_GBU_12)
         _3_GBU_38 = (2, Weapons._3_GBU_38)
         _3_GBU_54_V_1_B = (2, Weapons._3_GBU_54_V_1_B)
         BDU_33___25lb_Practice_Bomb_LD = (2, Weapons.BDU_33___25lb_Practice_Bomb_LD)
@@ -8016,6 +8026,14 @@ class AV8BNA(PlaneType):
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
         LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
         LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
+        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
+        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (2, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
+        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU3_WP156 = (2, Weapons.LAU3_WP156)
+        LAU3_WP1B = (2, Weapons.LAU3_WP1B)
+        LAU3_WP61 = (2, Weapons.LAU3_WP61)
+        LAU3_HE5 = (2, Weapons.LAU3_HE5)
+        LAU3_HE151 = (2, Weapons.LAU3_HE151)
         SUU_25_x_8_LUU_2___Target_Marker_Flares = (2, Weapons.SUU_25_x_8_LUU_2___Target_Marker_Flares)
         BRU_42_with_3_x_SUU_25_x_8_LUU_2___Target_Marker_Flares = (2, Weapons.BRU_42_with_3_x_SUU_25_x_8_LUU_2___Target_Marker_Flares)
         AN_AAQ_28_LITENING___Targeting_Pod = (2, Weapons.AN_AAQ_28_LITENING___Targeting_Pod)
@@ -8041,16 +8059,15 @@ class AV8BNA(PlaneType):
         GBU_38___JDAM__500lb_GPS_Guided_Bomb = (3, Weapons.GBU_38___JDAM__500lb_GPS_Guided_Bomb)
         GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb = (3, Weapons.GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb)
         GBU_54B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = (3, Weapons.GBU_54B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD)
-        _3_Mk_81 = (3, Weapons._3_Mk_81)
-        _2_Mk_82 = (3, Weapons._2_Mk_82)
-        _2_Mk_83 = (3, Weapons._2_Mk_83)
-        _2_Mk_20_Rockeye = (3, Weapons._2_Mk_20_Rockeye)
-        _2_CBU_99 = (3, Weapons._2_CBU_99)
-        _2_GBU_12 = (3, Weapons._2_GBU_12)
-        _2_Mk_82_AIR = (3, Weapons._2_Mk_82_AIR)
-        _2_Mk_82_Snakeye = (3, Weapons._2_Mk_82_Snakeye)
-        _2_GBU_38 = (3, Weapons._2_GBU_38)
-        _2_GBU_54_V_1_B = (3, Weapons._2_GBU_54_V_1_B)
+        _2_Mk_81____ = (3, Weapons._2_Mk_81____)
+        _2_Mk_82____ = (3, Weapons._2_Mk_82____)
+        _2_Mk_83____ = (3, Weapons._2_Mk_83____)
+        _2_Mk_20_Rockeye____ = (3, Weapons._2_Mk_20_Rockeye____)
+        _2_CBU_99____ = (3, Weapons._2_CBU_99____)
+        _2_Mk_82_AIR____ = (3, Weapons._2_Mk_82_AIR____)
+        _2_Mk_82_Snakeye____ = (3, Weapons._2_Mk_82_Snakeye____)
+        _2_GBU_38______ = (3, Weapons._2_GBU_38______)
+        _2_GBU_54_V_1_B______ = (3, Weapons._2_GBU_54_V_1_B______)
         BDU_33___25lb_Practice_Bomb_LD = (3, Weapons.BDU_33___25lb_Practice_Bomb_LD)
         BRU_42_3_BDU_33 = (3, Weapons.BRU_42_3_BDU_33)
         LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = (3, Weapons.LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_)
@@ -8066,6 +8083,14 @@ class AV8BNA(PlaneType):
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
         LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
         LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
+        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
+        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
+        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU3_WP156 = (3, Weapons.LAU3_WP156)
+        LAU3_WP1B = (3, Weapons.LAU3_WP1B)
+        LAU3_WP61 = (3, Weapons.LAU3_WP61)
+        LAU3_HE5 = (3, Weapons.LAU3_HE5)
+        LAU3_HE151 = (3, Weapons.LAU3_HE151)
         AN_AAQ_28_LITENING___Targeting_Pod = (3, Weapons.AN_AAQ_28_LITENING___Targeting_Pod)
         AERO_1D_300_Gallons_Fuel_Tank_ = (3, Weapons.AERO_1D_300_Gallons_Fuel_Tank_)
         AERO_1D_300_Gallons_Fuel_Tank__Empty_ = (3, Weapons.AERO_1D_300_Gallons_Fuel_Tank__Empty_)
@@ -8092,16 +8117,14 @@ class AV8BNA(PlaneType):
         GBU_38___JDAM__500lb_GPS_Guided_Bomb = (6, Weapons.GBU_38___JDAM__500lb_GPS_Guided_Bomb)
         GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb = (6, Weapons.GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb)
         GBU_54B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = (6, Weapons.GBU_54B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD)
-        _3_Mk_81 = (6, Weapons._3_Mk_81)
-        _2_Mk_82_ = (6, Weapons._2_Mk_82_)
-        _2_Mk_83_ = (6, Weapons._2_Mk_83_)
-        _2_Mk_20_Rockeye_ = (6, Weapons._2_Mk_20_Rockeye_)
-        _2_CBU_99_ = (6, Weapons._2_CBU_99_)
-        _2_GBU_12_ = (6, Weapons._2_GBU_12_)
-        _2_Mk_82_AIR_ = (6, Weapons._2_Mk_82_AIR_)
-        _2_Mk_82_Snakeye_ = (6, Weapons._2_Mk_82_Snakeye_)
-        _2_GBU_38_ = (6, Weapons._2_GBU_38_)
-        _2_GBU_54_V_1_B_ = (6, Weapons._2_GBU_54_V_1_B_)
+        _2_Mk_81_____ = (6, Weapons._2_Mk_81_____)
+        _2_Mk_82_____ = (6, Weapons._2_Mk_82_____)
+        _2_Mk_20_Rockeye_____ = (6, Weapons._2_Mk_20_Rockeye_____)
+        _2_CBU_99_____ = (6, Weapons._2_CBU_99_____)
+        _2_Mk_82_AIR_____ = (6, Weapons._2_Mk_82_AIR_____)
+        _2_Mk_82_Snakeye_____ = (6, Weapons._2_Mk_82_Snakeye_____)
+        _2_GBU_38_______ = (6, Weapons._2_GBU_38_______)
+        _2_GBU_54_V_1_B_______ = (6, Weapons._2_GBU_54_V_1_B_______)
         BDU_33___25lb_Practice_Bomb_LD = (6, Weapons.BDU_33___25lb_Practice_Bomb_LD)
         BRU_42_3_BDU_33 = (6, Weapons.BRU_42_3_BDU_33)
         LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = (6, Weapons.LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_)
@@ -8117,12 +8140,21 @@ class AV8BNA(PlaneType):
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
         LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (6, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
         LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (6, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
+        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (6, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
+        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (6, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
+        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (6, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU3_WP156 = (6, Weapons.LAU3_WP156)
+        LAU3_WP1B = (6, Weapons.LAU3_WP1B)
+        LAU3_WP61 = (6, Weapons.LAU3_WP61)
+        LAU3_HE5 = (6, Weapons.LAU3_HE5)
+        LAU3_HE151 = (6, Weapons.LAU3_HE151)
         AN_AAQ_28_LITENING___Targeting_Pod = (6, Weapons.AN_AAQ_28_LITENING___Targeting_Pod)
         AERO_1D_300_Gallons_Fuel_Tank_ = (6, Weapons.AERO_1D_300_Gallons_Fuel_Tank_)
         AERO_1D_300_Gallons_Fuel_Tank__Empty_ = (6, Weapons.AERO_1D_300_Gallons_Fuel_Tank__Empty_)
 
     class Pylon7:
         LAU_7_with_AIM_9M_Sidewinder_IR_AAM = (7, Weapons.LAU_7_with_AIM_9M_Sidewinder_IR_AAM)
+        LAU_7_with_AIM_9L_Sidewinder_IR_AAM = (7, Weapons.LAU_7_with_AIM_9L_Sidewinder_IR_AAM)
         AGM_122_Sidearm_ = (7, Weapons.AGM_122_Sidearm_)
         Mk_81___250lb_GP_Bomb_LD = (7, Weapons.Mk_81___250lb_GP_Bomb_LD)
         Mk_82___500lb_GP_Bomb_LD = (7, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -8136,19 +8168,29 @@ class AV8BNA(PlaneType):
         GBU_38___JDAM__500lb_GPS_Guided_Bomb = (7, Weapons.GBU_38___JDAM__500lb_GPS_Guided_Bomb)
         GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb = (7, Weapons.GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb)
         GBU_54B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = (7, Weapons.GBU_54B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD)
-        _2_Mk_82_ = (7, Weapons._2_Mk_82_)
-        _2_Mk_20_Rockeye_ = (7, Weapons._2_Mk_20_Rockeye_)
-        _2_CBU_99_ = (7, Weapons._2_CBU_99_)
-        _2_GBU_12_ = (7, Weapons._2_GBU_12_)
-        _2_Mk_82_AIR_ = (7, Weapons._2_Mk_82_AIR_)
-        _2_Mk_82_Snakeye_ = (7, Weapons._2_Mk_82_Snakeye_)
-        _2_GBU_38_ = (7, Weapons._2_GBU_38_)
-        _2_GBU_54_V_1_B_ = (7, Weapons._2_GBU_54_V_1_B_)
+        _2_Mk_82_____ = (7, Weapons._2_Mk_82_____)
+        _2_Mk_83_____ = (7, Weapons._2_Mk_83_____)
+        _2_Mk_20_Rockeye_____ = (7, Weapons._2_Mk_20_Rockeye_____)
+        _2_CBU_99_____ = (7, Weapons._2_CBU_99_____)
+        _2_GBU_12_____ = (7, Weapons._2_GBU_12_____)
+        _2_Mk_82_AIR_____ = (7, Weapons._2_Mk_82_AIR_____)
+        _2_Mk_82_Snakeye_____ = (7, Weapons._2_Mk_82_Snakeye_____)
+        _2_GBU_38_____ = (7, Weapons._2_GBU_38_____)
+        _2_GBU_54_V_1_B_____ = (7, Weapons._2_GBU_54_V_1_B_____)
+        _2_Mk_82____ = (7, Weapons._2_Mk_82____)
+        _2_Mk_83____ = (7, Weapons._2_Mk_83____)
+        _2_Mk_20_Rockeye____ = (7, Weapons._2_Mk_20_Rockeye____)
+        _2_CBU_99____ = (7, Weapons._2_CBU_99____)
+        _2_Mk_82_AIR____ = (7, Weapons._2_Mk_82_AIR____)
+        _2_Mk_82_Snakeye____ = (7, Weapons._2_Mk_82_Snakeye____)
+        _2_GBU_38______ = (7, Weapons._2_GBU_38______)
+        _2_GBU_54_V_1_B______ = (7, Weapons._2_GBU_54_V_1_B______)
+        _2_GBU_38_______ = (7, Weapons._2_GBU_38_______)
+        _2_GBU_54_V_1_B_______ = (7, Weapons._2_GBU_54_V_1_B_______)
         _3_Mk_81 = (7, Weapons._3_Mk_81)
         _3_Mk_82 = (7, Weapons._3_Mk_82)
         _3_Mk_82_AIR = (7, Weapons._3_Mk_82_AIR)
         _3_Mk_82_Snakeye = (7, Weapons._3_Mk_82_Snakeye)
-        _3_GBU_12 = (7, Weapons._3_GBU_12)
         _3_GBU_38 = (7, Weapons._3_GBU_38)
         _3_GBU_54_V_1_B = (7, Weapons._3_GBU_54_V_1_B)
         BDU_33___25lb_Practice_Bomb_LD = (7, Weapons.BDU_33___25lb_Practice_Bomb_LD)
@@ -8166,6 +8208,14 @@ class AV8BNA(PlaneType):
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
         LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (7, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
         LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (7, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
+        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (7, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
+        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (7, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
+        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (7, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU3_WP156 = (7, Weapons.LAU3_WP156)
+        LAU3_WP1B = (7, Weapons.LAU3_WP1B)
+        LAU3_WP61 = (7, Weapons.LAU3_WP61)
+        LAU3_HE5 = (7, Weapons.LAU3_HE5)
+        LAU3_HE151 = (7, Weapons.LAU3_HE151)
         SUU_25_x_8_LUU_2___Target_Marker_Flares = (7, Weapons.SUU_25_x_8_LUU_2___Target_Marker_Flares)
         BRU_42_with_3_x_SUU_25_x_8_LUU_2___Target_Marker_Flares = (7, Weapons.BRU_42_with_3_x_SUU_25_x_8_LUU_2___Target_Marker_Flares)
         AN_AAQ_28_LITENING___Targeting_Pod = (7, Weapons.AN_AAQ_28_LITENING___Targeting_Pod)
@@ -8180,6 +8230,7 @@ class AV8BNA(PlaneType):
 
     class Pylon8:
         AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9L_Sidewinder_IR_AAM = (8, Weapons.AIM_9L_Sidewinder_IR_AAM)
         AGM_122_Sidearm = (8, Weapons.AGM_122_Sidearm)
         Mk_81___250lb_GP_Bomb_LD = (8, Weapons.Mk_81___250lb_GP_Bomb_LD)
         Mk_82___500lb_GP_Bomb_LD = (8, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -8243,6 +8294,7 @@ class KC135MPRS(PlaneType):
     chaff_charge_size = 1
     flare_charge_size = 2
     tacan = True
+    eplrs = True
     category = "Tankers"  #{8A302789-A55D-4897-B647-66493FA6826F}
 
     livery_name = "KC135MPRS"  # from type
@@ -10318,7 +10370,7 @@ class F_14B(PlaneType):
         LAU_7_AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (2, Weapons.LAU_7_AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_7P = (2, Weapons.AIM_7P)
         _2_LAU_10___4_ZUNI_MK_71_________ = (2, Weapons._2_LAU_10___4_ZUNI_MK_71_________)
-        _2_Mk_81_____ = (2, Weapons._2_Mk_81_____)
+        _2_Mk_81_______ = (2, Weapons._2_Mk_81_______)
         _2_Mk_82_______ = (2, Weapons._2_Mk_82_______)
         _2_Mk_82AIR_____ = (2, Weapons._2_Mk_82AIR_____)
         _2_Mk_82_SnakeEye_____ = (2, Weapons._2_Mk_82_SnakeEye_____)
@@ -10486,7 +10538,7 @@ class F_14B(PlaneType):
         AIM_7P = (9, Weapons.AIM_7P)
         _2_LAU_10___4_ZUNI_MK_71______ = (9, Weapons._2_LAU_10___4_ZUNI_MK_71______)
         _2_Mk_81__ = (9, Weapons._2_Mk_81__)
-        _2_Mk_82____ = (9, Weapons._2_Mk_82____)
+        _2_Mk_82__ = (9, Weapons._2_Mk_82__)
         _2_Mk_82AIR__ = (9, Weapons._2_Mk_82AIR__)
         _2_Mk_82_SnakeEye__ = (9, Weapons._2_Mk_82_SnakeEye__)
         _2_MK_20__ = (9, Weapons._2_MK_20__)
@@ -10690,7 +10742,7 @@ class F_14A_135_GR(PlaneType):
         LAU_7_AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (2, Weapons.LAU_7_AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_7P = (2, Weapons.AIM_7P)
         _2_LAU_10___4_ZUNI_MK_71_________ = (2, Weapons._2_LAU_10___4_ZUNI_MK_71_________)
-        _2_Mk_81_____ = (2, Weapons._2_Mk_81_____)
+        _2_Mk_81_______ = (2, Weapons._2_Mk_81_______)
         _2_Mk_82_______ = (2, Weapons._2_Mk_82_______)
         _2_Mk_82AIR_____ = (2, Weapons._2_Mk_82AIR_____)
         _2_Mk_82_SnakeEye_____ = (2, Weapons._2_Mk_82_SnakeEye_____)
@@ -10858,7 +10910,7 @@ class F_14A_135_GR(PlaneType):
         AIM_7P = (9, Weapons.AIM_7P)
         _2_LAU_10___4_ZUNI_MK_71______ = (9, Weapons._2_LAU_10___4_ZUNI_MK_71______)
         _2_Mk_81__ = (9, Weapons._2_Mk_81__)
-        _2_Mk_82____ = (9, Weapons._2_Mk_82____)
+        _2_Mk_82__ = (9, Weapons._2_Mk_82__)
         _2_Mk_82AIR__ = (9, Weapons._2_Mk_82AIR__)
         _2_Mk_82_SnakeEye__ = (9, Weapons._2_Mk_82_SnakeEye__)
         _2_MK_20__ = (9, Weapons._2_MK_20__)
@@ -12094,60 +12146,21 @@ class MB_339A(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "SoloFlight": False,
+        "NetCrewControlPriority": 1,
         "MountBlindHood": False,
+        "PilotEquipment": 1,
+        "ARMAMENT": 1,
         "SAAB_RGS_2_Gunsight": True,
-        "Teledyne_TCS_116_2": False,
         "DEFA_553_Burst": 0.5,
         "EnableCutOff": False,
-        "RocketRippleTiming": 62,
+        "RocketRippleTiming": 250,
         "BombsRippleTiming": 300,
-        "NetCrewControlPriority": 1,
     }
 
     class Properties:
 
         class SoloFlight:
             id = "SoloFlight"
-
-        class MountBlindHood:
-            id = "MountBlindHood"
-
-        class SAAB_RGS_2_Gunsight:
-            id = "SAAB_RGS-2_Gunsight"
-
-        class Teledyne_TCS_116_2:
-            id = "Teledyne_TCS_116-2"
-
-        class DEFA_553_Burst:
-            id = "DEFA_553_Burst"
-
-            class Values:
-                x_0_5_Seconds = 0.5
-                x_1_0_Second = 1
-
-        class EnableCutOff:
-            id = "EnableCutOff"
-
-        class RocketRippleTiming:
-            id = "RocketRippleTiming"
-
-            class Values:
-                x_33ms = 33
-                x_40ms = 40
-                x_62ms = 62
-                x_95ms = 95
-
-        class BombsRippleTiming:
-            id = "BombsRippleTiming"
-
-            class Values:
-                x_300ms = 300
-                x_450ms = 450
-                x_600ms = 600
-                x_750ms = 750
-                x_900ms = 900
-                x_1_2s = 1200
-                x_1_5s = 1500
 
         class NetCrewControlPriority:
             id = "NetCrewControlPriority"
@@ -12158,8 +12171,43 @@ class MB_339A(PlaneType):
                 Ask_Always = -1
                 Equally_Responsible = -2
 
+        class MountBlindHood:
+            id = "MountBlindHood"
+
+        class PilotEquipment:
+            id = "PilotEquipment"
+
+            class Values:
+                HGU_33_only = 0
+                HGU_33___Aerazur = 1
+                HGU_55P___Secumar = -1
+                HGU_2A___Secumar = -2
+
+        class ARMAMENT:
+            id = "ARMAMENT"
+
+        class SAAB_RGS_2_Gunsight:
+            id = "SAAB_RGS-2_Gunsight"
+
+        class DEFA_553_Burst:
+            id = "DEFA_553_Burst"
+
+            class Values:
+                x_0_5_Second = 0.5
+                x_1_0_Second = 1
+
+        class EnableCutOff:
+            id = "EnableCutOff"
+
+        class RocketRippleTiming:
+            id = "RocketRippleTiming"
+
+        class BombsRippleTiming:
+            id = "BombsRippleTiming"
+
     livery_name = "MB-339A"  # from type
     Liveries = Liveries()[livery_name]
+#ERRR <CLEAN>
 
     class Pylon1:
         Cylindrical_Tip_Tank_500lt = (1, Weapons.Cylindrical_Tip_Tank_500lt)
@@ -12283,6 +12331,7 @@ class MB_339A(PlaneType):
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (9, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         BL_755_CBU___450kg__147_Frag_Pen_bomblets = (9, Weapons.BL_755_CBU___450kg__147_Frag_Pen_bomblets)
         BLG_66_AC_Belouga = (9, Weapons.BLG_66_AC_Belouga)
+#ERRR <CLEAN>
 
     class Pylon10:
         Cylindrical_Tip_Tank_500lt_ = (10, Weapons.Cylindrical_Tip_Tank_500lt_)
@@ -12367,18 +12416,15 @@ class MB_339APAN(PlaneType):
     }
 
     property_defaults: Dict[str, Any] = {
-        "SoloFlight": False,
-        "UnlimitedSmoke": False,
+        "SoloFlight": True,
         "NetCrewControlPriority": 1,
+        "UnlimitedSmoke": False,
     }
 
     class Properties:
 
         class SoloFlight:
             id = "SoloFlight"
-
-        class UnlimitedSmoke:
-            id = "UnlimitedSmoke"
 
         class NetCrewControlPriority:
             id = "NetCrewControlPriority"
@@ -12389,8 +12435,12 @@ class MB_339APAN(PlaneType):
                 Ask_Always = -1
                 Equally_Responsible = -2
 
+        class UnlimitedSmoke:
+            id = "UnlimitedSmoke"
+
     livery_name = "MB-339APAN"  # from type
     Liveries = Liveries()[livery_name]
+#ERRR <CLEAN>
 
     class Pylon1:
         Cylindrical_Tip_Tank_500lt = (1, Weapons.Cylindrical_Tip_Tank_500lt)
@@ -12422,6 +12472,7 @@ class MB_339APAN(PlaneType):
 
     class Pylon8:
         Fuel_Tank_330lt = (8, Weapons.Fuel_Tank_330lt)
+#ERRR <CLEAN>
 #ERRR <CLEAN>
 
     class Pylon10:
@@ -12854,7 +12905,6 @@ class Mirage_F1C(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -12966,13 +13016,6 @@ class Mirage_F1C(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1C"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -13039,8 +13082,9 @@ class Mirage_F1C(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon4:
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
@@ -13054,13 +13098,15 @@ class Mirage_F1C(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
-        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
+        S530F = (4, Weapons.S530F)
         CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -13092,8 +13138,9 @@ class Mirage_F1C(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -13215,7 +13262,6 @@ class Mirage_F1CE(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -13326,13 +13372,6 @@ class Mirage_F1CE(PlaneType):
 
         class LaserCode1:
             id = "LaserCode1"
-
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
 
     livery_name = "MIRAGE-F1CE"  # from type
     Liveries = Liveries()[livery_name]
@@ -13412,10 +13451,11 @@ class Mirage_F1CE(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (3, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon4:
         Mk_82___500lb_GP_Bomb_LD = (4, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -13431,7 +13471,6 @@ class Mirage_F1CE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
-        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
         CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
@@ -13439,6 +13478,8 @@ class Mirage_F1CE(PlaneType):
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon5:
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -13474,10 +13515,11 @@ class Mirage_F1CE(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (5, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon6:
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -13528,10 +13570,11 @@ class Mirage_F1CE(PlaneType):
 
 class Mirage_F1EE(PlaneType):
     id = "Mirage-F1EE"
+    flyable = True
     height = 4.5
     width = 8.4
     length = 15.3
-    fuel_max = 3356
+    fuel_max = 3246
     max_speed = 1389.6
     chaff = 30
     flare = 15
@@ -13607,6 +13650,7 @@ class Mirage_F1EE(PlaneType):
         "LaserCode10": 8,
         "LaserCode1": 8,
         "INSStartMode": 1,
+        "RWR_type": 1,
     }
 
     class Properties:
@@ -13724,6 +13768,13 @@ class Mirage_F1EE(PlaneType):
             class Values:
                 YES = 1
                 NO = 2
+
+        class RWR_type:
+            id = "RWR_type"
+
+            class Values:
+                ALR_300 = "ALR_300"
+                BF = "BF"
 
     livery_name = "MIRAGE-F1EE"  # from type
     Liveries = Liveries()[livery_name]
@@ -13803,10 +13854,11 @@ class Mirage_F1EE(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (3, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon4:
         Mk_82___500lb_GP_Bomb_LD = (4, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -13822,7 +13874,6 @@ class Mirage_F1EE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
-        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
         CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
@@ -13830,6 +13881,8 @@ class Mirage_F1EE(PlaneType):
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon5:
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -13865,10 +13918,11 @@ class Mirage_F1EE(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (5, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon6:
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -13922,7 +13976,7 @@ class Mirage_F1M_EE(PlaneType):
     height = 4.5
     width = 8.4
     length = 15.3
-    fuel_max = 3356
+    fuel_max = 3246
     max_speed = 1389.6
     chaff = 30
     flare = 15
@@ -13997,7 +14051,6 @@ class Mirage_F1M_EE(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -14109,13 +14162,6 @@ class Mirage_F1M_EE(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1M-EE"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -14182,8 +14228,9 @@ class Mirage_F1M_EE(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon4:
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
@@ -14197,13 +14244,15 @@ class Mirage_F1M_EE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
-        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
+        S530F = (4, Weapons.S530F)
         CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -14235,8 +14284,9 @@ class Mirage_F1M_EE(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -14357,7 +14407,6 @@ class Mirage_F1M_CE(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -14469,13 +14518,6 @@ class Mirage_F1M_CE(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1M-CE"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -14542,8 +14584,9 @@ class Mirage_F1M_CE(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon4:
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
@@ -14557,13 +14600,15 @@ class Mirage_F1M_CE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
-        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
+        S530F = (4, Weapons.S530F)
         CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -14595,8 +14640,9 @@ class Mirage_F1M_CE(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -14717,7 +14763,6 @@ class Mirage_F1C_200(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -14829,13 +14874,6 @@ class Mirage_F1C_200(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1C-200"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -14901,7 +14939,7 @@ class Mirage_F1C_200(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
 
     class Pylon4:
@@ -14916,7 +14954,7 @@ class Mirage_F1C_200(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
-        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
+        S530F = (4, Weapons.S530F)
         CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
@@ -14954,7 +14992,7 @@ class Mirage_F1C_200(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
 
     class Pylon6:
@@ -15075,7 +15113,6 @@ class Mirage_F1EH(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -15187,13 +15224,6 @@ class Mirage_F1EH(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1EH"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -15259,7 +15289,7 @@ class Mirage_F1EH(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
 
     class Pylon4:
@@ -15312,7 +15342,7 @@ class Mirage_F1EH(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
 
     class Pylon6:
@@ -15433,7 +15463,6 @@ class Mirage_F1CH(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -15545,13 +15574,6 @@ class Mirage_F1CH(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1CH"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -15617,7 +15639,7 @@ class Mirage_F1CH(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
 
     class Pylon4:
@@ -15670,7 +15692,7 @@ class Mirage_F1CH(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
 
     class Pylon6:
@@ -15791,7 +15813,6 @@ class Mirage_F1JA(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -15903,13 +15924,6 @@ class Mirage_F1JA(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1JA"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -15975,7 +15989,7 @@ class Mirage_F1JA(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
 
     class Pylon4:
@@ -16028,7 +16042,7 @@ class Mirage_F1JA(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
 
     class Pylon6:
@@ -16149,7 +16163,6 @@ class Mirage_F1CG(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -16261,13 +16274,6 @@ class Mirage_F1CG(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1CG"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -16338,7 +16344,7 @@ class Mirage_F1CG(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
 
     class Pylon4:
@@ -16391,7 +16397,7 @@ class Mirage_F1CG(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
 
     class Pylon6:
@@ -16517,7 +16523,6 @@ class Mirage_F1CZ(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -16629,13 +16634,6 @@ class Mirage_F1CZ(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1CZ"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -16701,7 +16699,7 @@ class Mirage_F1CZ(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
 
     class Pylon4:
@@ -16754,7 +16752,7 @@ class Mirage_F1CZ(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
 
     class Pylon6:
@@ -16875,7 +16873,6 @@ class Mirage_F1CJ(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -16987,13 +16984,6 @@ class Mirage_F1CJ(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1CJ"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -17059,7 +17049,7 @@ class Mirage_F1CJ(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
 
     class Pylon4:
@@ -17112,7 +17102,7 @@ class Mirage_F1CJ(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
 
     class Pylon6:
@@ -17233,7 +17223,6 @@ class Mirage_F1CK(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -17345,13 +17334,6 @@ class Mirage_F1CK(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1CK"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -17417,7 +17399,7 @@ class Mirage_F1CK(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
 
     class Pylon4:
@@ -17470,7 +17452,7 @@ class Mirage_F1CK(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
 
     class Pylon6:
@@ -17591,7 +17573,6 @@ class Mirage_F1EQ(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -17703,13 +17684,6 @@ class Mirage_F1EQ(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1EQ"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -17782,10 +17756,11 @@ class Mirage_F1EQ(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon4:
         Mk_82___500lb_GP_Bomb_LD = (4, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -17807,6 +17782,8 @@ class Mirage_F1EQ(PlaneType):
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon5:
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -17840,10 +17817,11 @@ class Mirage_F1EQ(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon6:
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -17968,7 +17946,6 @@ class Mirage_F1ED(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -18080,13 +18057,6 @@ class Mirage_F1ED(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1ED"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -18159,7 +18129,7 @@ class Mirage_F1ED(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
@@ -18217,7 +18187,7 @@ class Mirage_F1ED(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
@@ -18345,7 +18315,6 @@ class Mirage_F1EDA(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -18457,13 +18426,6 @@ class Mirage_F1EDA(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1EDA"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -18534,7 +18496,7 @@ class Mirage_F1EDA(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
@@ -18592,7 +18554,7 @@ class Mirage_F1EDA(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
@@ -18719,7 +18681,6 @@ class Mirage_F1CR(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -18831,13 +18792,6 @@ class Mirage_F1CR(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1CR"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -18902,10 +18856,11 @@ class Mirage_F1CR(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon4:
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
@@ -18917,15 +18872,16 @@ class Mirage_F1CR(PlaneType):
         SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.SAMP_400___400_kg_GP_Bomb_LD)
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
-        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
-        PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
-        CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
         CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
+        PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
+        PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18955,10 +18911,11 @@ class Mirage_F1CR(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -19079,7 +19036,6 @@ class Mirage_F1CT(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
     }
 
     class Properties:
@@ -19191,13 +19147,6 @@ class Mirage_F1CT(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
     livery_name = "MIRAGE-F1CT"  # from type
     Liveries = Liveries()[livery_name]
 
@@ -19262,8 +19211,9 @@ class Mirage_F1CT(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon4:
         Belouga = (4, Weapons.Belouga)
@@ -19271,15 +19221,17 @@ class Mirage_F1CT(PlaneType):
         SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.SAMP_400___400_kg_GP_Bomb_LD)
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
-#ERRR {S530F}
-        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
-        PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
+        S530F = (4, Weapons.S530F)
         CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
+        PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
+        PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -19309,8 +19261,9 @@ class Mirage_F1CT(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -19356,7 +19309,7 @@ class Mirage_F1B(PlaneType):
     height = 4.5
     width = 8.4
     length = 15.3
-    fuel_max = 4000
+    fuel_max = 3045
     max_speed = 2336.4
     chaff = 0
     flare = 0
@@ -19431,7 +19384,6 @@ class Mirage_F1B(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
         "SoloFlight": False,
     }
 
@@ -19543,13 +19495,6 @@ class Mirage_F1B(PlaneType):
 
         class LaserCode1:
             id = "LaserCode1"
-
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
 
         class SoloFlight:
             id = "SoloFlight"
@@ -19627,10 +19572,11 @@ class Mirage_F1B(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon4:
         Mk_82___500lb_GP_Bomb_LD = (4, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -19647,6 +19593,7 @@ class Mirage_F1B(PlaneType):
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
         CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
@@ -19689,10 +19636,11 @@ class Mirage_F1B(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon6:
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -19741,7 +19689,7 @@ class Mirage_F1BE(PlaneType):
     height = 4.5
     width = 8.4
     length = 15.3
-    fuel_max = 4000
+    fuel_max = 3045
     max_speed = 2336.4
     chaff = 30
     flare = 15
@@ -19816,7 +19764,6 @@ class Mirage_F1BE(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
         "SoloFlight": False,
     }
 
@@ -19928,13 +19875,6 @@ class Mirage_F1BE(PlaneType):
 
         class LaserCode1:
             id = "LaserCode1"
-
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
 
         class SoloFlight:
             id = "SoloFlight"
@@ -20017,10 +19957,11 @@ class Mirage_F1BE(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (3, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon4:
         Mk_82___500lb_GP_Bomb_LD = (4, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -20036,7 +19977,6 @@ class Mirage_F1BE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
-        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
         CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
@@ -20044,6 +19984,8 @@ class Mirage_F1BE(PlaneType):
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon5:
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -20079,10 +20021,11 @@ class Mirage_F1BE(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (5, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
+        PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
 
     class Pylon6:
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -20136,7 +20079,7 @@ class Mirage_F1BQ(PlaneType):
     height = 4.5
     width = 8.4
     length = 15.3
-    fuel_max = 4000
+    fuel_max = 3045
     max_speed = 2336.4
     chaff = 0
     flare = 0
@@ -20211,7 +20154,6 @@ class Mirage_F1BQ(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
         "SoloFlight": False,
     }
 
@@ -20323,13 +20265,6 @@ class Mirage_F1BQ(PlaneType):
 
         class LaserCode1:
             id = "LaserCode1"
-
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
 
         class SoloFlight:
             id = "SoloFlight"
@@ -20406,7 +20341,7 @@ class Mirage_F1BQ(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
@@ -20464,7 +20399,7 @@ class Mirage_F1BQ(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
@@ -20517,7 +20452,7 @@ class Mirage_F1BD(PlaneType):
     height = 4.5
     width = 8.4
     length = 15.3
-    fuel_max = 4000
+    fuel_max = 3045
     max_speed = 2336.4
     chaff = 0
     flare = 0
@@ -20592,7 +20527,6 @@ class Mirage_F1BD(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
         "SoloFlight": False,
     }
 
@@ -20704,13 +20638,6 @@ class Mirage_F1BD(PlaneType):
 
         class LaserCode1:
             id = "LaserCode1"
-
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
 
         class SoloFlight:
             id = "SoloFlight"
@@ -20787,7 +20714,7 @@ class Mirage_F1BD(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
@@ -20845,7 +20772,7 @@ class Mirage_F1BD(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
@@ -20898,7 +20825,7 @@ class Mirage_F1DDA(PlaneType):
     height = 4.5
     width = 8.4
     length = 15.3
-    fuel_max = 4000
+    fuel_max = 3045
     max_speed = 2336.4
     chaff = 0
     flare = 0
@@ -20973,7 +20900,6 @@ class Mirage_F1DDA(PlaneType):
         "LaserCode100": 6,
         "LaserCode10": 8,
         "LaserCode1": 8,
-        "INSStartMode": 1,
         "SoloFlight": False,
     }
 
@@ -21086,13 +21012,6 @@ class Mirage_F1DDA(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
-        class INSStartMode:
-            id = "INSStartMode"
-
-            class Values:
-                YES = 1
-                NO = 2
-
         class SoloFlight:
             id = "SoloFlight"
 
@@ -21166,7 +21085,7 @@ class Mirage_F1DDA(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-#ERRR {S530F}
+        S530F = (3, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
@@ -21224,7 +21143,7 @@ class Mirage_F1DDA(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
-#ERRR {S530F}
+        S530F = (5, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
@@ -21696,6 +21615,9 @@ class Ju_88A4(PlaneType):
         AB_250_2___17_x_SD_10A__250kg_CBU_with_10kg_Frag_HE_submunitions = (1, Weapons.AB_250_2___17_x_SD_10A__250kg_CBU_with_10kg_Frag_HE_submunitions)
         AB_500_1___34_x_SD_10A__500kg_CBU_with_10kg_Frag_HE_submunitions = (1, Weapons.AB_500_1___34_x_SD_10A__500kg_CBU_with_10kg_Frag_HE_submunitions)
 
+    class Pylon2:
+        _10_x_SC_50___50kg_GP_Bomb_LD = (2, Weapons._10_x_SC_50___50kg_GP_Bomb_LD)
+
     class Pylon3:
         LTF_5b_Aerial_Torpedo = (3, Weapons.LTF_5b_Aerial_Torpedo)
         SC_250_Type_1_L2___250kg_GP_Bomb_LD = (3, Weapons.SC_250_Type_1_L2___250kg_GP_Bomb_LD)
@@ -21708,7 +21630,7 @@ class Ju_88A4(PlaneType):
         AB_250_2___17_x_SD_10A__250kg_CBU_with_10kg_Frag_HE_submunitions = (3, Weapons.AB_250_2___17_x_SD_10A__250kg_CBU_with_10kg_Frag_HE_submunitions)
         AB_500_1___34_x_SD_10A__500kg_CBU_with_10kg_Frag_HE_submunitions = (3, Weapons.AB_500_1___34_x_SD_10A__500kg_CBU_with_10kg_Frag_HE_submunitions)
 
-    pylons: Set[int] = {1, 3}
+    pylons: Set[int] = {1, 2, 3}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.AntishipStrike, task.CAS]
     task_default = task.GroundAttack

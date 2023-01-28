@@ -366,6 +366,7 @@ class Russia(Country):
         CV_1143_5 = ships.CV_1143_5
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        BDK_775 = ships.BDK_775
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -3518,6 +3519,7 @@ class USAFAggressors(Country):
         PERRY = ships.PERRY
         PIOTR = ships.PIOTR
         CV_1143_5 = ships.CV_1143_5
+        BDK_775 = ships.BDK_775
         Santafe = ships.Santafe
         La_Combattante_II = ships.La_Combattante_II
         Leander_gun_condell = ships.Leander_gun_condell
@@ -28208,6 +28210,7 @@ class CombinedJointTaskForcesBlue(Country):
         PERRY = ships.PERRY
         PIOTR = ships.PIOTR
         CV_1143_5 = ships.CV_1143_5
+        BDK_775 = ships.BDK_775
         Santafe = ships.Santafe
         La_Combattante_II = ships.La_Combattante_II
         Leander_gun_condell = ships.Leander_gun_condell
@@ -29004,6 +29007,7 @@ class CombinedJointTaskForcesRed(Country):
         PERRY = ships.PERRY
         PIOTR = ships.PIOTR
         CV_1143_5 = ships.CV_1143_5
+        BDK_775 = ships.BDK_775
         Santafe = ships.Santafe
         La_Combattante_II = ships.La_Combattante_II
         Leander_gun_condell = ships.Leander_gun_condell
@@ -29800,6 +29804,7 @@ class UnitedNationsPeacekeepers(Country):
         PERRY = ships.PERRY
         PIOTR = ships.PIOTR
         CV_1143_5 = ships.CV_1143_5
+        BDK_775 = ships.BDK_775
         Santafe = ships.Santafe
         La_Combattante_II = ships.La_Combattante_II
         Leander_gun_condell = ships.Leander_gun_condell

@@ -1309,9 +1309,10 @@ class Ka_50_3(HelicopterType):
 
     property_defaults: Dict[str, Any] = {
         "modification": "Ka-50_3",
-        "IMU_alignment_type": 3,
-        "Realistic_INS": True,
         "Helmet_mounted_device": 0,
+        "ExhaustScreen": True,
+        "Realistic_INS": 1,
+        "IMU_alignment_type": 3,
     }
 
     class Properties:
@@ -1323,17 +1324,6 @@ class Ka_50_3(HelicopterType):
                 Version_2022 = "Ka-50_3"
                 Version_2011 = "Ka-50"
 
-        class IMU_alignment_type:
-            id = "IMU alignment type"
-
-            class Values:
-                Fast_alignment = 1
-                Normal_alignment = 2
-                Normal_alignment_with_gyrocompassing = 3
-
-        class Realistic_INS:
-            id = "Realistic INS"
-
         class Helmet_mounted_device:
             id = "Helmet-mounted device"
 
@@ -1341,6 +1331,25 @@ class Ka_50_3(HelicopterType):
                 Auto = 0
                 HMS = 1
                 NVG = 2
+
+        class ExhaustScreen:
+            id = "ExhaustScreen"
+
+        class Realistic_INS:
+            id = "Realistic INS"
+
+            class Values:
+                No_alignment_and_fixtaking_needed = 0
+                No_alignment_needed_but_fixtaking = 2
+                Fully_realistic = 1
+
+        class IMU_alignment_type:
+            id = "IMU alignment type"
+
+            class Values:
+                Fast = 1
+                Normal = 2
+                Normal_with_Gyro = 3
 
     livery_name = "KA-50_3"  # from type
     Liveries = Liveries()[livery_name]

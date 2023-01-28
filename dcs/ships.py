@@ -6,7 +6,7 @@ import dcs.unittype as unittype
 class Speedboat(unittype.ShipType):
     id = "speedboat"
     name = "Boat Armed Hi-speed"
-    detection_range = 3000
+    detection_range = 5000
     threat_range = 1000
     air_weapon_dist = 1000
 
@@ -197,7 +197,7 @@ class Hms_invincible(unittype.ShipType):
     id = "hms_invincible"
     name = "HMS Invincible (R05)"
     plane_num = 7
-    helicopter_num = 9
+    helicopter_num = 6
     parking = 4
     detection_range = 100000
     threat_range = 74000
@@ -298,6 +298,14 @@ class La_Combattante_II(unittype.ShipType):
     detection_range = 19000
     threat_range = 4000
     air_weapon_dist = 4000
+
+
+class BDK_775(unittype.ShipType):
+    id = "BDK-775"
+    name = "LS Ropucha"
+    detection_range = 25000
+    threat_range = 6000
+    air_weapon_dist = 6000
 
 
 class CVN_71(unittype.ShipType):
@@ -465,7 +473,7 @@ class Higgins_boat(unittype.ShipType):
 class Uboat_VIIC(unittype.ShipType):
     id = "Uboat_VIIC"
     name = "U-boat VIIC U-flak"
-    detection_range = 10000
+    detection_range = 20000
     threat_range = 4000
     air_weapon_dist = 4000
 
@@ -510,6 +518,7 @@ ship_map = {
     "HandyWind": HandyWind,
     "Seawise_Giant": Seawise_Giant,
     "La_Combattante_II": La_Combattante_II,
+    "BDK-775": BDK_775,
     "CVN_71": CVN_71,
     "CVN_72": CVN_72,
     "CVN_73": CVN_73,
