@@ -126,7 +126,7 @@ local function handle_weapon(weapon, weaponKeys, weaponTable)
         pyName = "_NiteHawk_FLIR"
         myclsid = pyName
     else
-        pyName = string.gsub(pyName, "[-()/., *']", "_")
+        pyName = string.gsub(pyName, "[-()\\/., *']", "_")
         pyName = string.gsub(pyName,"^([0-9])", "_%1")
         pyName = string.gsub(pyName,"%&", "")
         pyName = string.gsub(pyName,'%"', "")
