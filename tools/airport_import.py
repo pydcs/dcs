@@ -44,6 +44,7 @@ See https://github.com/pydcs/dcs/issues/36
 import argparse
 import codecs
 from collections import defaultdict
+import logging
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Set, Tuple
 
@@ -89,6 +90,18 @@ def parse_beacons(
     return airport_beacons, runway_beacons
 
 
+def check_airport_valid(name: str, airport: dict[str, Any]) -> bool:
+    """Checks if an airport dict is valid, returning True if it is.
+
+    This isn't an exhaustive check. It only checks for airport data issues that we've
+    previously seen and needed to skip.
+    """
+    if "runways" not in airport["airport"]:
+        return False
+
+    return True
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-t", "--terrain", required=True, help="Name of the terrain.")
@@ -112,10 +125,15 @@ def main():
         airport_class_names: list[str] = []
         for id_ in sorted(data["airports"]):
             airport = data["airports"][id_]
+            name = airport['airport']['display_name']
+
+            if not check_airport_valid(name, airport):
+                logging.warning("Skipping %s because of validation errors", name)
+                continue
+            
             tacan = airport.get("tacan", None)
             tacan = '"' + tacan + '"' if tacan else None
             sname = safename(airport['airport']['display_name'])
-            name = airport['airport']['display_name']
             civ = airport["airport"].get("civilian", True)
             x = airport["airport"]["reference_point"]["x"]
             y = airport["airport"]["reference_point"]["y"]
