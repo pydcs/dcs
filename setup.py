@@ -32,7 +32,22 @@ setup(
         'Programming Language :: Python :: 3 :: Only'
     ],
     keywords='dcs digital combat simulator eagle dynamics mission framework',
-    packages=['dcs', 'dcs/terrain', 'dcs/terrain/projections', 'dcs/lua', 'dcs/scripts', 'dcs/drawing'],
+    packages=[
+        'dcs',
+        'dcs/drawing',
+        'dcs/lua',
+        'dcs/scripts',
+        'dcs/terrain',
+        'dcs/terrain/caucasus',
+        'dcs/terrain/falklands',
+        'dcs/terrain/marianaislands',
+        'dcs/terrain/nevada',
+        'dcs/terrain/normandy',
+        'dcs/terrain/persiangulf',
+        'dcs/terrain/projections',
+        'dcs/terrain/syria',
+        'dcs/terrain/thechannel',
+    ],
     package_data={
         'dcs': ['py.typed'],
         'dcs/terrain': ['caucasus.p', 'nevada.p'],
