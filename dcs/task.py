@@ -886,7 +886,8 @@ class Embarking(Task):
     Id = "Embarking"
 
     def __init__(self, position: Vector2 = Vector2(0, 0), groupids: Optional[List[int]] = None,
-                 distribution: Optional[Dict[int, List[int]]] = None, duration: Optional[int] = None):
+                 distribution: Optional[Dict[int, List[int]]] = None, duration: Optional[int] = None,
+                 onStartMission: bool = False):
         super(Embarking, self).__init__(self.Id)
 
         groupids = [] if groupids is None else groupids
@@ -899,7 +900,8 @@ class Embarking(Task):
             "durationFlag": duration is not None,
             "groupsForEmbarking": {x: x for x in groupids},
             "distributionFlag": len(distribution) > 0,
-            "distribution": {x: {y: y for y in distribution[x]} for x in distribution}
+            "distribution": {x: {y: y for y in distribution[x]} for x in distribution},
+            "onStartMission": onStartMission,
         }
 
 
