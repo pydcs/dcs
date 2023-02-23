@@ -11,6 +11,11 @@ from dcs import condition
 if TYPE_CHECKING:
     from dcs.terrain import Terrain
 
+class TriggerColor(Enum):
+    Red = "0xff0000ff"
+    Green = "0x00ff00ff"
+    Blue = "0x0000ffff"
+    Yellow = "0x00ffffff"
 
 class TriggerZoneType(IntEnum):
     Circular = 0
@@ -197,6 +202,7 @@ class TriggerRule:
 
     def __init__(self, event: Event, comment: str):
         self.comment: str = comment
+        self.color: str = "0x00000000"
         self.eventlist: Event = event
         self.rules: List[condition.Condition] = []
         self.actions: List[action.Action] = []
@@ -213,6 +219,10 @@ class TriggerRule:
             rule = condition.condition_map[rules[r]["predicate"]].create_from_dict(rules[r], mission)
             trig.rules.append(rule)
         return trig
+
+    def set_color(self, color):
+        self.color = color
+        return self
 
     def add_condition(self, cond: condition.Condition):
         self.rules.append(cond)
@@ -247,6 +257,7 @@ class TriggerRule:
     def dict(self):
         return {
             "comment": self.comment,
+            "colorItem": self.color,
             "eventlist": self.eventlist.value,
             "predicate": self.predicate,
             "rules": {i + 1: self.rules[i].dict() for i in range(0, len(self.rules))},
