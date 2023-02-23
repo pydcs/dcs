@@ -11,11 +11,12 @@ from dcs import condition
 if TYPE_CHECKING:
     from dcs.terrain import Terrain
 
-class TriggerColor(Enum):
+class TriggerColor(str, Enum):
     Red = "0xff0000ff"
     Green = "0x00ff00ff"
     Blue = "0x0000ffff"
     Yellow = "0x00ffffff"
+    White = "0xffffffff"
 
 class TriggerZoneType(IntEnum):
     Circular = 0
@@ -202,7 +203,7 @@ class TriggerRule:
 
     def __init__(self, event: Event, comment: str):
         self.comment: str = comment
-        self.color: str = "0x00000000"
+        self.color: str = TriggerColor.White
         self.eventlist: Event = event
         self.rules: List[condition.Condition] = []
         self.actions: List[action.Action] = []
