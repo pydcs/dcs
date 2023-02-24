@@ -11,12 +11,14 @@ from dcs import condition
 if TYPE_CHECKING:
     from dcs.terrain import Terrain
 
+
 class TriggerColor(str, Enum):
     Red = "0xff0000ff"
     Green = "0x00ff00ff"
     Blue = "0x0000ffff"
     Yellow = "0x00ffffff"
     White = "0xffffffff"
+
 
 class TriggerZoneType(IntEnum):
     Circular = 0
