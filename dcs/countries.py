@@ -363,10 +363,10 @@ class Russia(Country):
         Dry_cargo_ship_2 = ships.Dry_cargo_ship_2
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
+        BDK_775 = ships.BDK_775
         CV_1143_5 = ships.CV_1143_5
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
-        BDK_775 = ships.BDK_775
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -817,6 +817,7 @@ class Ukraine(Country):
         Dry_cargo_ship_1 = ships.Dry_cargo_ship_1
         Dry_cargo_ship_2 = ships.Dry_cargo_ship_2
         REZKY = ships.REZKY
+        BDK_775 = ships.BDK_775
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
@@ -2502,6 +2503,9 @@ class Germany(Country):
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
             RD_75 = vehicles.AirDefence.RD_75
             RPC_5N62V = vehicles.AirDefence.RPC_5N62V
             S_200_Launcher = vehicles.AirDefence.S_200_Launcher
@@ -3511,6 +3515,7 @@ class USAFAggressors(Country):
         NEUSTRASH = ships.NEUSTRASH
         REZKY = ships.REZKY
         ZWEZDNY = ships.ZWEZDNY
+        BDK_775 = ships.BDK_775
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -3519,7 +3524,6 @@ class USAFAggressors(Country):
         PERRY = ships.PERRY
         PIOTR = ships.PIOTR
         CV_1143_5 = ships.CV_1143_5
-        BDK_775 = ships.BDK_775
         Santafe = ships.Santafe
         La_Combattante_II = ships.La_Combattante_II
         Leander_gun_condell = ships.Leander_gun_condell
@@ -3693,6 +3697,9 @@ class Canada(Country):
             QF_37_AA = vehicles.AirDefence.QF_37_AA
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
             Allies_Director = vehicles.AirDefence.Allies_Director
             M1_37mm = vehicles.AirDefence.M1_37mm
 
@@ -4781,6 +4788,9 @@ class Belgium(Country):
             QF_37_AA = vehicles.AirDefence.QF_37_AA
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
             Allies_Director = vehicles.AirDefence.Allies_Director
             M45_Quadmount = vehicles.AirDefence.M45_Quadmount
             M1_37mm = vehicles.AirDefence.M1_37mm
@@ -5457,6 +5467,9 @@ class Denmark(Country):
             Bofors40 = vehicles.AirDefence.Bofors40
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -7681,6 +7694,9 @@ class Australia(Country):
             QF_37_AA = vehicles.AirDefence.QF_37_AA
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
             Allies_Director = vehicles.AirDefence.Allies_Director
             M45_Quadmount = vehicles.AirDefence.M45_Quadmount
             M1_37mm = vehicles.AirDefence.M1_37mm
@@ -9994,6 +10010,9 @@ class Croatia(Country):
             Strela_1_9P31 = vehicles.AirDefence.Strela_1_9P31
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -10337,6 +10356,9 @@ class Egypt(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
             RD_75 = vehicles.AirDefence.RD_75
 
         class Fortification:
@@ -11433,6 +11455,9 @@ class Hungary(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
             RD_75 = vehicles.AirDefence.RD_75
             Flak18 = vehicles.AirDefence.Flak18
             Flak30 = vehicles.AirDefence.Flak30
@@ -12560,6 +12585,9 @@ class Iraq(Country):
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -14011,6 +14039,9 @@ class Pakistan(Country):
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
             RD_75 = vehicles.AirDefence.RD_75
             HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
 
@@ -15112,6 +15143,9 @@ class SaudiArabia(Country):
             Bofors40 = vehicles.AirDefence.Bofors40
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -16143,6 +16177,9 @@ class SouthKorea(Country):
             Stinger_comm = vehicles.AirDefence.Stinger_comm
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -17327,6 +17364,7 @@ class Yemen(Country):
     class Ship:
         Speedboat = ships.Speedboat
         MOLNIYA = ships.MOLNIYA
+        BDK_775 = ships.BDK_775
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
 
@@ -18445,6 +18483,9 @@ class Thailand(Country):
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -20007,6 +20048,9 @@ class Malaysia(Country):
             Rapier_fsa_blindfire_radar = vehicles.AirDefence.Rapier_fsa_blindfire_radar
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -20654,6 +20698,9 @@ class Jordan(Country):
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -22283,6 +22330,9 @@ class Brazil(Country):
             Gepard = vehicles.AirDefence.Gepard
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -22602,6 +22652,9 @@ class Bahrain(Country):
             Bofors40 = vehicles.AirDefence.Bofors40
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -23797,6 +23850,7 @@ class USSR(Country):
         NEUSTRASH = ships.NEUSTRASH
         REZKY = ships.REZKY
         ZWEZDNY = ships.ZWEZDNY
+        BDK_775 = ships.BDK_775
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         LST_Mk2 = ships.LST_Mk2
@@ -24624,6 +24678,9 @@ class Kuwait(Country):
             Osa_9A33_ln = vehicles.AirDefence.Osa_9A33_ln
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            FPS_117 = vehicles.AirDefence.FPS_117
+            FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
+            FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -28202,6 +28259,7 @@ class CombinedJointTaskForcesBlue(Country):
         NEUSTRASH = ships.NEUSTRASH
         REZKY = ships.REZKY
         ZWEZDNY = ships.ZWEZDNY
+        BDK_775 = ships.BDK_775
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -28210,7 +28268,6 @@ class CombinedJointTaskForcesBlue(Country):
         PERRY = ships.PERRY
         PIOTR = ships.PIOTR
         CV_1143_5 = ships.CV_1143_5
-        BDK_775 = ships.BDK_775
         Santafe = ships.Santafe
         La_Combattante_II = ships.La_Combattante_II
         Leander_gun_condell = ships.Leander_gun_condell
@@ -28999,6 +29056,7 @@ class CombinedJointTaskForcesRed(Country):
         NEUSTRASH = ships.NEUSTRASH
         REZKY = ships.REZKY
         ZWEZDNY = ships.ZWEZDNY
+        BDK_775 = ships.BDK_775
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -29007,7 +29065,6 @@ class CombinedJointTaskForcesRed(Country):
         PERRY = ships.PERRY
         PIOTR = ships.PIOTR
         CV_1143_5 = ships.CV_1143_5
-        BDK_775 = ships.BDK_775
         Santafe = ships.Santafe
         La_Combattante_II = ships.La_Combattante_II
         Leander_gun_condell = ships.Leander_gun_condell
@@ -29796,6 +29853,7 @@ class UnitedNationsPeacekeepers(Country):
         NEUSTRASH = ships.NEUSTRASH
         REZKY = ships.REZKY
         ZWEZDNY = ships.ZWEZDNY
+        BDK_775 = ships.BDK_775
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -29804,7 +29862,6 @@ class UnitedNationsPeacekeepers(Country):
         PERRY = ships.PERRY
         PIOTR = ships.PIOTR
         CV_1143_5 = ships.CV_1143_5
-        BDK_775 = ships.BDK_775
         Santafe = ships.Santafe
         La_Combattante_II = ships.La_Combattante_II
         Leander_gun_condell = ships.Leander_gun_condell

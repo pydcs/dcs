@@ -422,7 +422,7 @@ class Type_093(unittype.ShipType):
     name = "Type 093 Attack Submarine"
     detection_range = 40000
     threat_range = 40000
-    air_weapon_dist = 30000
+    air_weapon_dist = 0
 
 
 class Type_071(unittype.ShipType):
