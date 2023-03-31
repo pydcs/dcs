@@ -90,18 +90,6 @@ def parse_beacons(
     return airport_beacons, runway_beacons
 
 
-def check_airport_valid(name: str, airport: dict[str, Any]) -> bool:
-    """Checks if an airport dict is valid, returning True if it is.
-
-    This isn't an exhaustive check. It only checks for airport data issues that we've
-    previously seen and needed to skip.
-    """
-    if "runways" not in airport["airport"]:
-        return False
-
-    return True
-
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-t", "--terrain", required=True, help="Name of the terrain.")
@@ -126,10 +114,6 @@ def main():
         for id_ in sorted(data["airports"]):
             airport = data["airports"][id_]
             name = airport['airport']['display_name']
-
-            if not check_airport_valid(name, airport):
-                logging.warning("Skipping %s because of validation errors", name)
-                continue
             
             tacan = airport.get("tacan", None)
             tacan = '"' + tacan + '"' if tacan else None
@@ -155,8 +139,20 @@ def main():
             airport_beacons, runway_beacons = parse_beacons(
                 airport["airport"]["beacons"].values()
             )
+            # The default runway value is, as far as I can tell, only needed for a
+            # single airport in the game: CaletaTortel on the Falklands map. Other
+            # airports in the game that have no runways include an empty list of
+            # runways, but for CaletaTortel the field is absent. The airport has other
+            # quirks. It appears to be farther north than the northern extent of the
+            # map. This might be a bug in the DCS data, but the ME will use the airport
+            # ID in the warehouses file of the miz, and we shouldn't be skipping errors
+            # when parsing that file, so we need to at least have some record of the
+            # airport even if it's probably bogus.
             runways = [Runway.from_lua(data, runway_beacons)
-                       for data in airport["airport"]["runways"].values()]
+                       for data in airport["airport"].get("runways", {}).values()]
+
+            # Ditto.
+            standlist = airport.get("standlist", {})
 
             print(f"""
 
@@ -178,8 +174,8 @@ class {sname}(Airport):
             for runway in runways:
                 print(f"        self.runways.append({repr(runway)})", file=output)
 
-            for standid in sorted(airport["standlist"]):
-                slot = airport["standlist"][standid]
+            for standid in sorted(standlist):
+                slot = standlist[standid]
                 large_bit = 1 << 3
                 large = slot["flag"] & large_bit == large_bit
                 height = float(slot["params"]["HEIGHT"]) if slot["params"]["HEIGHT"] else None
