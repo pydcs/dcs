@@ -31,6 +31,23 @@ class CaucasusTest(unittest.TestCase):
 
         self.assertIsNone(m.terrain.airports["Batumi"].free_parking_slot(dcs.planes.KC_135))
 
+    def test_heli_parking_slots(self):
+        m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
+
+        self.assertEqual(len(m.terrain.airports["Tbilisi-Lochini"].parking_slots), 74)
+
+        hslots = m.terrain.airports["Tbilisi-Lochini"].free_parking_slots(dcs.helicopters.UH_1H)
+        self.assertEqual(len(hslots), 44)
+
+        slots = m.terrain.airports["Tbilisi-Lochini"].free_parking_slots(dcs.planes.A_10A)
+        self.assertEqual(len(slots), 70)
+
+        slot = m.terrain.airports["Tbilisi-Lochini"].free_parking_slot(dcs.planes.A_10C)
+        slot.unit_id = 1
+
+        hslots = m.terrain.airports["Tbilisi-Lochini"].free_parking_slots(dcs.helicopters.UH_1H)
+        self.assertEqual(len(hslots), 44)
+
     def test_parking_mixed_used(self):
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
 
@@ -59,17 +76,17 @@ class NevadaTest(unittest.TestCase):
     def test_parking_slots(self):
         m = dcs.mission.Mission(terrain=dcs.terrain.Nevada())
         slots = m.terrain.airports["Nellis"].free_parking_slots(dcs.planes.A_10C)
-        self.assertEqual(len(slots), 118)
+        self.assertEqual(len(slots), 104)
 
         slot = m.terrain.airports["Nellis"].free_parking_slot(dcs.planes.A_10C)
         slot.unit_id = 1
 
         slots = m.terrain.airports["Nellis"].free_parking_slots(dcs.planes.A_10C)
-        self.assertEqual(len(slots), 117)
+        self.assertEqual(len(slots), 103)
 
         slot.unit_id = None
         slots = m.terrain.airports["Nellis"].free_parking_slots(dcs.planes.A_10C)
-        self.assertEqual(len(slots), 118)
+        self.assertEqual(len(slots), 104)
 
         hslots = m.terrain.airports["Nellis"].free_parking_slots(dcs.helicopters.UH_1H)
         self.assertEqual(len(hslots), 51)
@@ -82,3 +99,28 @@ class NormandyTest(unittest.TestCase):
     def test_creation(self):
         m = dcs.mission.Mission(terrain=dcs.terrain.Normandy())
         self.assertIsInstance(m.terrain, dcs.terrain.Normandy)
+
+
+class SyriaTest(unittest.TestCase):
+    
+    def test_airplane_parking_used(self):
+        m = dcs.mission.Mission(terrain=dcs.terrain.Syria())
+
+        self.assertEqual(len(m.terrain.airports["Aleppo"].parking_slots), 22)
+
+        hslots = m.terrain.airports["Aleppo"].free_parking_slots(dcs.helicopters.UH_1H)
+        self.assertEqual(len(hslots), 16)
+
+        slots = m.terrain.airports["Aleppo"].free_parking_slots(dcs.planes.A_10A)
+        self.assertEqual(len(slots), 8)
+
+        for x in range(0, 8):
+            airplane_slot = m.terrain.airports["Aleppo"].free_parking_slot(dcs.planes.A_10A)
+            self.assertIsNotNone(airplane_slot)
+            airplane_slot.unit_id = x
+
+        self.assertIsNone(m.terrain.airports["Aleppo"].free_parking_slot(dcs.planes.A_10A))
+
+        hslots = m.terrain.airports["Aleppo"].free_parking_slots(dcs.helicopters.UH_1H)
+        self.assertEqual(len(hslots), 8)
+

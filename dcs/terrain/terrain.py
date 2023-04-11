@@ -263,6 +263,8 @@ class Airport:
 
         if aircraft_type.helicopter:
             free_slots = [x for x in free_slots if x.helicopter]
+        else:
+            free_slots = [x for x in free_slots if x.airplanes]
 
         slots_sorted = sorted(free_slots, key=lambda x: (x.helicopter, x.slot_name))
         return slots_sorted
