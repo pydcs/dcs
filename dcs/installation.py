@@ -6,95 +6,40 @@ TODO : [NICE to have] add method to check list of installed DCS modules
        (could be done either through windows registry, or through filesystem analysis ?)
 """
 
-import sys
 import os
 import re
+import sys
+from pathlib import Path
+from typing import List, Optional
 
-is_windows_os = True
-try:
-    import winreg
-except ImportError:
-    is_windows_os = False
-    print("WARNING : Trying to run pydcs on non Windows machine")
+from dcs.winreg import read_current_user_value
 
-
-# Note: Steam App ID for DCS World is 223750
-STEAM_REGISTRY_KEY_NAME = "Software\\Valve\\Steam\\Apps\\223750"
+STEAM_REGISTRY_KEY_NAME = "Software\\Valve\\Steam"
 DCS_STABLE_REGISTRY_KEY_NAME = "Software\\Eagle Dynamics\\DCS World"
 DCS_BETA_REGISTRY_KEY_NAME = "Software\\Eagle Dynamics\\DCS World OpenBeta"
 
 
-def is_using_dcs_steam_edition():
-    """
-    Check if DCS World : Steam Edition version is installed on this computer
-    :return True if DCS Steam edition is installed,
-            -1 if DCS Steam Edition is registered in Steam apps but not installed,
-            False if never installed in Steam
-    """
-    if not is_windows_os:
-        return False
-    try:
-        dcs_steam_app_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, STEAM_REGISTRY_KEY_NAME)
-        installed = winreg.QueryValueEx(dcs_steam_app_key, "Installed")
-        winreg.CloseKey(dcs_steam_app_key)
-        if installed[0] == 1:
-            return True
-        else:
-            return False
-    except FileNotFoundError:
-        return False
-
-
-def is_using_dcs_standalone_edition():
-    """
-    Check if DCS World standalone edition is installed on this computer
-    :return True if Standalone is installed, False if it is not
-    """
-    if not is_windows_os:
-        return False
-    try:
-        dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, DCS_STABLE_REGISTRY_KEY_NAME)
-        winreg.CloseKey(dcs_path_key)
-        return True
-    except FileNotFoundError:
-        try:
-            dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, DCS_BETA_REGISTRY_KEY_NAME)
-            winreg.CloseKey(dcs_path_key)
-            return True
-        except FileNotFoundError:
-            return False
-
-
-def get_dcs_install_directory():
+def get_dcs_install_directory() -> str:
     """
     Get the DCS World install directory for this computer
     :return DCS World install directory
     """
-    if is_using_dcs_standalone_edition():
-        try:
-            dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World")
-            path = winreg.QueryValueEx(dcs_path_key, "Path")
-            dcs_dir = path[0] + os.path.sep
-            winreg.CloseKey(dcs_path_key)
-            return dcs_dir
-        except FileNotFoundError:
-            try:
-                dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World OpenBeta")
-                path = winreg.QueryValueEx(dcs_path_key, "Path")
-                dcs_dir = path[0] + os.path.sep
-                winreg.CloseKey(dcs_path_key)
-                return dcs_dir
-            except FileNotFoundError:
-                print("Couldn't detect DCS World installation folder", file=sys.stderr)
-                return ""
-        except OSError:
-            print("Couldn't detect DCS World installation folder", file=sys.stderr)
-            return ""
-    elif is_using_dcs_steam_edition():
-        return _find_steam_dcs_directory()
-    else:
-        print("Couldn't detect any installed DCS World version", file=sys.stderr)
-        return ""
+    standalone_stable_path = read_current_user_value(
+        DCS_STABLE_REGISTRY_KEY_NAME, "Path", Path
+    )
+    if standalone_stable_path is not None:
+        return f"{standalone_stable_path}{os.path.sep}"
+    standalone_beta_path = read_current_user_value(
+        DCS_BETA_REGISTRY_KEY_NAME, "Path", Path
+    )
+    if standalone_beta_path is not None:
+        return f"{standalone_beta_path}{os.path.sep}"
+    steam_path = _dcs_steam_path()
+    if steam_path is not None:
+        return f"{steam_path}{os.path.sep}"
+
+    print("Couldn't detect any installed DCS World version", file=sys.stderr)
+    return ""
 
 
 def get_dcs_saved_games_directory():
@@ -107,68 +52,50 @@ def get_dcs_saved_games_directory():
     if os.path.exists(dcs_variant):
         # read from the file, append first line to saved games, e.g.: DCS.openbeta
         with open(dcs_variant, "r") as file:
-            suffix = re.sub(r'[^\w\d-]', '', file.read())
+            suffix = re.sub(r"[^\w\d-]", "", file.read())
             saved_games = saved_games + "." + suffix
     return saved_games
 
 
-def _find_steam_directory():
-    """
-    Get the Steam install directory for this computer from registry
-    :return Steam installation path
-    """
-    try:
-        steam_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Valve\\Steam")
-        path = winreg.QueryValueEx(steam_key, "SteamPath")[0]
-        winreg.CloseKey(steam_key)
-        return path
-    except FileNotFoundError as fnfe:
-        print(fnfe, file=sys.stderr)
-        return ""
-
-
-def _get_steam_library_folders():
+def _steam_library_directories() -> List[Path]:
     """
     Get the installation directory for Steam games
     :return List of Steam library folders where games can be installed
     """
-    try:
-        steam_dir = _find_steam_directory()
-        """
-        For reference here is what the vdf file is supposed to look like :
-
-        "LibraryFolders"
-        {
-            "TimeNextStatsReport"        "1561832478"
-            "ContentStatsID"        "-158337411110787451"
-            "1"        "D:\\Games\\Steam"
-            "2"        "E:\\Steam"
-        }
-        """
-        vdf_file_location = steam_dir + os.path.sep + "steamapps" + os.path.sep + "libraryfolders.vdf"
-        with open(vdf_file_location) as adf_file:
-            paths = [line.split("\"")[3] for line in adf_file.readlines()[1:] if ':\\\\' in line]
-            return paths
-    except Exception as e:
-        print(e)
+    steam_dir = read_current_user_value(STEAM_REGISTRY_KEY_NAME, "SteamPath", Path)
+    if steam_dir is None:
         return []
+    """
+    For reference here is what the vdf file is supposed to look like :
+
+    "LibraryFolders"
+    {
+        "TimeNextStatsReport"        "1561832478"
+        "ContentStatsID"        "-158337411110787451"
+        "1"        "D:\\Games\\Steam"
+        "2"        "E:\\Steam"
+    }
+    """
+    contents = (steam_dir / "steamapps/libraryfolders.vdf").read_text()
+    return [
+        Path(line.split('"')[3])
+        for line in contents.splitlines()[1:]
+        if ":\\\\" in line
+    ]
 
 
-def _find_steam_dcs_directory():
+def _dcs_steam_path() -> Optional[Path]:
     """
     Find the DCS install directory for DCS World Steam Edition
     :return: Install directory as string, empty string if not found
     """
-    for library_folder in _get_steam_library_folders():
-        folder = library_folder + os.path.sep + "steamapps" + os.path.sep + "common" + os.path.sep + "DCSWorld"
-        if os.path.isdir(folder):
-            return folder + os.path.sep
-    return ""
+    for library_folder in _steam_library_directories():
+        folder = library_folder / "steamapps/common/DCSWorld"
+        if folder.is_dir():
+            return folder
+    return None
 
 
 if __name__ == "__main__":
-    print("Using Windows : " + str(is_windows_os))
-    print("Using STEAM Edition : " + str(is_using_dcs_steam_edition()))
-    print("Using Standalone Edition : " + str(is_using_dcs_standalone_edition()))
     print("DCS Installation directory : " + get_dcs_install_directory())
     print("DCS saved games directory : " + get_dcs_saved_games_directory())

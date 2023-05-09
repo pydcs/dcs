@@ -1,11 +1,7 @@
-import sys
-
-try:
-    import winreg
-except ImportError:
-    pass
+import textwrap
 from pathlib import Path
-from unittest.mock import Mock, call, patch
+from typing import Any, Callable, Iterator, Optional, TypeVar
+from unittest.mock import Mock, patch
 
 import pytest
 
@@ -15,227 +11,104 @@ from dcs.installation import (
     STEAM_REGISTRY_KEY_NAME,
     get_dcs_install_directory,
     get_dcs_saved_games_directory,
-    is_using_dcs_standalone_edition,
-    is_using_dcs_steam_edition,
 )
 
-pytestmark = pytest.mark.skipif(
-    sys.platform != "win32", reason="dcs.installation is windows only"
-)
+T = TypeVar("T")
 
 
-@patch("winreg.CloseKey")
-@patch("winreg.QueryValueEx")
-@patch("winreg.OpenKey")
-def test_is_using_dcs_steam_edition(
-    mock_openkey: Mock, mock_queryvalueex: Mock, mock_closekey: Mock
+def configure_registry_mock(
+    mock: Mock,
+    steam: Optional[Path] = None,
+    standalone_stable: Optional[Path] = None,
+    standalone_beta: Optional[Path] = None,
 ) -> None:
-    mock_openkey.return_value = "key"
-    mock_queryvalueex.return_value = (1, 4)
-
-    assert is_using_dcs_steam_edition()
-    mock_openkey.assert_called_once_with(
-        winreg.HKEY_CURRENT_USER, STEAM_REGISTRY_KEY_NAME
-    )
-    mock_queryvalueex.assert_called_once_with("key", "Installed")
-    mock_closekey.assert_called_once_with("key")
-
-
-@patch("winreg.CloseKey")
-@patch("winreg.OpenKey")
-def test_is_using_dcs_steam_edition_no_key(
-    mock_openkey: Mock, mock_closekey: Mock
-) -> None:
-    mock_openkey.side_effect = FileNotFoundError
-
-    assert not is_using_dcs_steam_edition()
-    mock_openkey.assert_called_once_with(
-        winreg.HKEY_CURRENT_USER, STEAM_REGISTRY_KEY_NAME
-    )
-    mock_closekey.assert_not_called()
-
-
-@pytest.mark.xfail(strict=True)  # Does not close the key.
-@patch("winreg.CloseKey")
-@patch("winreg.QueryValueEx")
-@patch("winreg.OpenKey")
-def test_is_using_dcs_steam_edition_no_value(
-    mock_openkey: Mock, mock_queryvalueex: Mock, mock_closekey: Mock
-) -> None:
-    mock_openkey.return_value = "key"
-    mock_queryvalueex.side_effect = FileNotFoundError
-
-    assert not is_using_dcs_steam_edition()
-    mock_openkey.assert_called_once_with(
-        winreg.HKEY_CURRENT_USER, STEAM_REGISTRY_KEY_NAME
-    )
-    mock_queryvalueex.assert_called_once_with("key", "Installed")
-    mock_closekey.assert_called_once_with("key")
-
-
-@patch("winreg.CloseKey")
-@patch("winreg.QueryValueEx")
-@patch("winreg.OpenKey")
-def test_is_using_dcs_steam_edition_not_installed(
-    mock_openkey: Mock, mock_queryvalueex: Mock, mock_closekey: Mock
-) -> None:
-    mock_openkey.return_value = "key"
-    mock_queryvalueex.return_value = (0, 0)
-
-    assert not is_using_dcs_steam_edition()
-    mock_openkey.assert_called_once_with(
-        winreg.HKEY_CURRENT_USER, STEAM_REGISTRY_KEY_NAME
-    )
-    mock_queryvalueex.assert_called_once_with("key", "Installed")
-    mock_closekey.assert_called_once_with("key")
-
-
-@patch("winreg.CloseKey")
-@patch("winreg.OpenKey")
-def test_is_using_dcs_standalone_edition_stable(
-    mock_openkey: Mock, mock_closekey: Mock
-) -> None:
-    def stable_installed(key_type: int, name: str) -> str:
+    def registry_mock(
+        key: str, value: str, ctor: Callable[[Any], T] = lambda x: x
+    ) -> Optional[T]:
         if (
-            key_type == winreg.HKEY_CURRENT_USER
-            and name == DCS_STABLE_REGISTRY_KEY_NAME
+            key == STEAM_REGISTRY_KEY_NAME
+            and value == "SteamPath"
+            and steam is not None
         ):
-            return "key"
-        raise FileNotFoundError
-
-    mock_openkey.side_effect = stable_installed
-
-    assert is_using_dcs_standalone_edition()
-    mock_openkey.assert_has_calls(
-        [call(winreg.HKEY_CURRENT_USER, DCS_STABLE_REGISTRY_KEY_NAME)]
-    )
-    mock_closekey.assert_called_once_with("key")
-
-
-@patch("winreg.CloseKey")
-@patch("winreg.OpenKey")
-def test_is_using_dcs_standalone_edition_beta(
-    mock_openkey: Mock, mock_closekey: Mock
-) -> None:
-    def stable_installed(key_type: int, name: str) -> str:
-        if key_type == winreg.HKEY_CURRENT_USER and name == DCS_BETA_REGISTRY_KEY_NAME:
-            return "key"
-        raise FileNotFoundError
-
-    mock_openkey.side_effect = stable_installed
-
-    assert is_using_dcs_standalone_edition()
-    mock_openkey.assert_has_calls(
-        [call(winreg.HKEY_CURRENT_USER, DCS_BETA_REGISTRY_KEY_NAME)]
-    )
-    mock_closekey.assert_called_once_with("key")
-
-
-@patch("winreg.CloseKey")
-@patch("winreg.OpenKey")
-def test_is_using_dcs_standalone_not_installed(
-    mock_openkey: Mock, mock_closekey: Mock
-) -> None:
-    mock_openkey.side_effect = FileNotFoundError
-
-    assert not is_using_dcs_standalone_edition()
-    mock_openkey.assert_has_calls(
-        [
-            call(winreg.HKEY_CURRENT_USER, DCS_STABLE_REGISTRY_KEY_NAME),
-            call(winreg.HKEY_CURRENT_USER, DCS_BETA_REGISTRY_KEY_NAME),
-        ],
-        any_order=True,
-    )
-    mock_closekey.assert_not_called()
-
-
-@patch("dcs.installation.is_using_dcs_steam_edition")
-@patch("dcs.installation.is_using_dcs_standalone_edition")
-@patch("winreg.CloseKey")
-@patch("winreg.QueryValueEx")
-@patch("winreg.OpenKey")
-def test_get_dcs_install_directory_stable(
-    mock_openkey: Mock,
-    mock_queryvalueex: Mock,
-    mock_closekey: Mock,
-    mock_standalone_edition: Mock,
-    mock_steam_edition: Mock,
-) -> None:
-    def stable_installed(key_type: int, name: str) -> str:
+            return ctor(steam)
         if (
-            key_type == winreg.HKEY_CURRENT_USER
-            and name == DCS_STABLE_REGISTRY_KEY_NAME
+            key == DCS_STABLE_REGISTRY_KEY_NAME
+            and value == "Path"
+            and standalone_stable is not None
         ):
-            return "key"
-        raise FileNotFoundError
+            return ctor(standalone_stable)
+        if (
+            key == DCS_BETA_REGISTRY_KEY_NAME
+            and value == "Path"
+            and standalone_beta is not None
+        ):
+            return ctor(standalone_beta)
+        return None
 
-    mock_openkey.side_effect = stable_installed
-    mock_queryvalueex.return_value = ("path",)
-    mock_standalone_edition.return_value = True
-    mock_steam_edition.return_value = False
-
-    assert get_dcs_install_directory() == "path\\"
-
-    mock_queryvalueex.assert_called_once_with("key", "Path")
-    mock_closekey.assert_called_once_with("key")
+    mock.side_effect = registry_mock
 
 
-@patch("dcs.installation.is_using_dcs_steam_edition")
-@patch("dcs.installation.is_using_dcs_standalone_edition")
-@patch("winreg.CloseKey")
-@patch("winreg.QueryValueEx")
-@patch("winreg.OpenKey")
-def test_get_dcs_install_directory_beta(
-    mock_openkey: Mock,
-    mock_queryvalueex: Mock,
-    mock_closekey: Mock,
-    mock_standalone_edition: Mock,
-    mock_steam_edition: Mock,
-) -> None:
-    def stable_installed(key_type: int, name: str) -> str:
-        if key_type == winreg.HKEY_CURRENT_USER and name == DCS_BETA_REGISTRY_KEY_NAME:
-            return "key"
-        raise FileNotFoundError
+@pytest.fixture(name="steam_dcs_install")
+def steam_dcs_install_fixture(tmp_path: Path) -> Iterator[Path]:
+    escaped_path = str(tmp_path).replace("\\", "\\\\")
+    vdf_path = tmp_path / "steamapps/libraryfolders.vdf"
+    vdf_path.parent.mkdir(parents=True)
+    vdf_path.write_text(
+        textwrap.dedent(
+            f"""\
+            "LibraryFolders"
+            {{
+                "TimeNextStatsReport"        "1561832478"
+                "ContentStatsID"        "-158337411110787451"
+                "1"        "D:\\\\Games\\\\Steam"
+                "2"        "{escaped_path}"
+            }}
+            """
+        )
+    )
 
-    mock_openkey.side_effect = stable_installed
-    mock_queryvalueex.return_value = ("path",)
-    mock_standalone_edition.return_value = True
-    mock_steam_edition.return_value = False
+    dcs_install_path = tmp_path / "steamapps/common/DCSWorld"
+    dcs_install_path.mkdir(parents=True)
 
-    assert get_dcs_install_directory() == "path\\"
-
-    mock_queryvalueex.assert_called_once_with("key", "Path")
-    mock_closekey.assert_called_once_with("key")
-
-
-@patch("dcs.installation._get_steam_library_folders")
-@patch("dcs.installation.is_using_dcs_steam_edition")
-@patch("dcs.installation.is_using_dcs_standalone_edition")
-def test_get_dcs_install_directory_steam(
-    mock_standalone_edition: Mock,
-    mock_steam_edition: Mock,
-    mock_get_steam_library_folders: Mock,
-    tmp_path: Path,
-) -> None:
-    install_dir = tmp_path / "steamapps/common/DCSWorld"
-    install_dir.mkdir(parents=True)
-
-    mock_standalone_edition.return_value = False
-    mock_steam_edition.return_value = True
-    mock_get_steam_library_folders.return_value = ["foo", str(tmp_path), "bar"]
-
-    assert get_dcs_install_directory() == f"{install_dir}\\"
+    with patch("dcs.installation.read_current_user_value") as mock:
+        configure_registry_mock(mock, steam=tmp_path)
+        yield dcs_install_path
 
 
-@patch("dcs.installation.is_using_dcs_steam_edition")
-@patch("dcs.installation.is_using_dcs_standalone_edition")
-def test_get_dcs_install_directory_not_installed(
-    mock_standalone_edition: Mock,
-    mock_steam_edition: Mock,
-) -> None:
-    mock_standalone_edition.return_value = False
-    mock_steam_edition.return_value = False
+@pytest.fixture(name="stable_dcs_install")
+def stable_dcs_install_fixture(tmp_path: Path) -> Iterator[Path]:
+    with patch("dcs.installation.read_current_user_value") as mock:
+        configure_registry_mock(mock, standalone_stable=tmp_path)
+        yield tmp_path
 
+
+@pytest.fixture(name="beta_dcs_install")
+def beta_dcs_install_fixture(tmp_path: Path) -> Iterator[Path]:
+    with patch("dcs.installation.read_current_user_value") as mock:
+        configure_registry_mock(mock, standalone_beta=tmp_path)
+        yield tmp_path
+
+
+@pytest.fixture(name="none_installed")
+def none_installed_fixture() -> Iterator[None]:
+    with patch("dcs.installation.read_current_user_value") as mock:
+        configure_registry_mock(mock)
+        yield
+
+
+def test_get_dcs_install_directory_stable(stable_dcs_install: Path) -> None:
+    assert get_dcs_install_directory() == f"{stable_dcs_install}\\"
+
+
+def test_get_dcs_install_directory_beta(beta_dcs_install: Path) -> None:
+    assert get_dcs_install_directory() == f"{beta_dcs_install}\\"
+
+
+def test_get_dcs_install_directory_steam(steam_dcs_install: Path) -> None:
+    assert get_dcs_install_directory() == f"{steam_dcs_install}\\"
+
+
+def test_get_dcs_install_directory_not_installed(none_installed: None) -> None:
     assert get_dcs_install_directory() == ""
 
 
