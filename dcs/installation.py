@@ -18,6 +18,12 @@ except ImportError:
     print("WARNING : Trying to run pydcs on non Windows machine")
 
 
+# Note: Steam App ID for DCS World is 223750
+STEAM_REGISTRY_KEY_NAME = "Software\\Valve\\Steam\\Apps\\223750"
+DCS_STABLE_REGISTRY_KEY_NAME = "Software\\Eagle Dynamics\\DCS World"
+DCS_BETA_REGISTRY_KEY_NAME = "Software\\Eagle Dynamics\\DCS World OpenBeta"
+
+
 def is_using_dcs_steam_edition():
     """
     Check if DCS World : Steam Edition version is installed on this computer
@@ -28,8 +34,7 @@ def is_using_dcs_steam_edition():
     if not is_windows_os:
         return False
     try:
-        # Note : Steam App ID for DCS World is 223750
-        dcs_steam_app_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Valve\\Steam\\Apps\\223750")
+        dcs_steam_app_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, STEAM_REGISTRY_KEY_NAME)
         installed = winreg.QueryValueEx(dcs_steam_app_key, "Installed")
         winreg.CloseKey(dcs_steam_app_key)
         if installed[0] == 1:
@@ -48,12 +53,12 @@ def is_using_dcs_standalone_edition():
     if not is_windows_os:
         return False
     try:
-        dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World")
+        dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, DCS_STABLE_REGISTRY_KEY_NAME)
         winreg.CloseKey(dcs_path_key)
         return True
     except FileNotFoundError:
         try:
-            dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Software\\Eagle Dynamics\\DCS World OpenBeta")
+            dcs_path_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, DCS_BETA_REGISTRY_KEY_NAME)
             winreg.CloseKey(dcs_path_key)
             return True
         except FileNotFoundError:
