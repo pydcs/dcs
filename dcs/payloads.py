@@ -36,12 +36,32 @@ def _find_mod_payload_paths() -> List[Path]:
 
 class PayloadDirectories:
     fallback: Optional[Path] = None
-    dcs: List[Path] = _find_dcs_payload_paths()
-    mod: List[Path] = _find_mod_payload_paths()
-    user: Path = (
-        Path(installation.get_dcs_saved_games_directory()) / "MissionEditor" / "UnitPayloads"
-    )
+    _dcs: Optional[List[Path]] = None
+    _mod: Optional[List[Path]] = None
+    _user: Optional[Path] = None
     preferred: Optional[Path] = None
+
+    @classmethod
+    def dcs(cls) -> List[Path]:
+        if cls._dcs is None:
+            cls._dcs = _find_dcs_payload_paths()
+        return cls._dcs
+
+    @classmethod
+    def mod(cls) -> List[Path]:
+        if cls._mod is None:
+            cls._mod = _find_mod_payload_paths()
+        return cls._mod
+
+    @classmethod
+    def user(cls) -> Path:
+        if cls._user is None:
+            cls._user = (
+                Path(installation.get_dcs_saved_games_directory())
+                / "MissionEditor"
+                / "UnitPayloads"
+            )
+        return cls._user
 
     @classmethod
     def set_fallback(cls, path: Path) -> None:
@@ -56,8 +76,8 @@ class PayloadDirectories:
         # These are iterated in order of decreasing order of preference.
         if cls.preferred is not None:
             yield cls.preferred
-        yield cls.user
-        yield from cls.dcs
-        yield from cls.mod
+        yield cls.user()
+        yield from cls.dcs()
+        yield from cls.mod()
         if cls.fallback:
             yield cls.fallback
