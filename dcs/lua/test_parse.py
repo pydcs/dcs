@@ -325,6 +325,18 @@ return unitPayloads
         r = loads("name = \"foo 'bar' baz\"")
         self.assertEqual(r["name"], "foo 'bar' baz")
 
+    def test_useless_semicolon(self) -> None:
+        r = loads(
+            textwrap.dedent(
+                """\
+                name = "foo";
+                other_name = "bar";
+                """
+            )
+        )
+        self.assertEqual(r["name"], "foo")
+        self.assertEqual(r["other_name"], "bar")
+
 
 if __name__ == '__main__':
     unittest.main()

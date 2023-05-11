@@ -47,6 +47,9 @@ def loads(
                 return self.number()
             elif c == '_':
                 return self.str_function()
+            elif c == ';':
+                self.advance()
+                return self.parse()
             else:  # varname
                 self.eat_ws()
 
