@@ -38,7 +38,7 @@ def loads(
             if self.eob():
                 return
 
-            c = self.buffer[self.pos]
+            c = self.char()
             if c == '{':
                 return self.object()
             elif c == '"':
@@ -79,7 +79,7 @@ def loads(
                     return self.unknown_variable_lookup(varname)
 
                 self.eat_ws()
-                if not self.eob() and self.buffer[self.pos] == '=':
+                if not self.eob() and self.char() == '=':
                     while True:
                         # skip comma or whitespace
                         self.advance()
@@ -102,17 +102,17 @@ def loads(
                     return self.parse()
                 else:
                     se = SyntaxError()
-                    se.text = varname + " '" + self.buffer[self.pos] + "'"
+                    se.text = varname + " '" + self.char() + "'"
                     se.lineno = self.lineno
                     se.offset = self.pos
                     raise se
 
         def str_function(self) -> str:
-            if self.buffer[self.pos] != '_':
+            if self.char() != '_':
                 se = SyntaxError()
                 se.lineno = self.lineno
                 se.offset = self.pos
-                se.text = "Expected character '_', got '{char}'".format(char=self.buffer[self.pos])
+                se.text = "Expected character '_', got '{char}'".format(char=self.char())
                 raise se
 
             if self.advance():
@@ -120,11 +120,11 @@ def loads(
 
             self.eat_ws()
 
-            if self.buffer[self.pos] != '(':
+            if self.char() != '(':
                 se = SyntaxError()
                 se.lineno = self.lineno
                 se.offset = self.pos
-                se.text = "Expected character '(', got '{char}'".format(char=self.buffer[self.pos])
+                se.text = "Expected character '(', got '{char}'".format(char=self.char())
                 raise se
 
             self.advance()
@@ -134,22 +134,22 @@ def loads(
 
             self.eat_ws()
 
-            if self.buffer[self.pos] != ')':
+            if self.char() != ')':
                 se = SyntaxError()
                 se.lineno = self.lineno
                 se.offset = self.pos
-                se.text = "Expected character ')', got '{char}'".format(char=self.buffer[self.pos])
+                se.text = "Expected character ')', got '{char}'".format(char=self.char())
                 raise se
 
             self.pos += 1
             return s
 
         def string(self) -> str:
-            if self.buffer[self.pos] != '"':
+            if self.char() != '"':
                 se = SyntaxError()
                 se.lineno = self.lineno
                 se.offset = self.pos
-                se.text = "Expected character '\"', got '{char}'".format(char=self.buffer[self.pos])
+                se.text = "Expected character '\"', got '{char}'".format(char=self.char())
                 raise se
 
             state = 0
@@ -158,7 +158,7 @@ def loads(
                 if self.advance():
                     raise self.eob_exception()
 
-                c = self.buffer[self.pos]
+                c = self.char()
                 if state == 0:
                     if c == '"':
                         state = 1
@@ -175,26 +175,26 @@ def loads(
         def number(self) -> Union[int, float]:
             n = ''
             sign = 1
-            if self.buffer[self.pos] == '-':
+            if self.char() == '-':
                 sign = -1
                 if self.advance():
                     raise self.eob_exception()
 
             found_exponent, found_exponent_sign, found_separator = False, False, False
             while not self.eob():
-                if self.buffer[self.pos].isnumeric():
+                if self.char().isnumeric():
                     pass
-                elif self.buffer[self.pos] == '.':
+                elif self.char() == '.':
                     if not found_separator:
                         found_separator = True
                     else:
                         raise SyntaxError()
-                elif self.buffer[self.pos].lower() == 'e':
+                elif self.char().lower() == 'e':
                     if not found_exponent:
                         found_exponent = True
                     else:
                         raise SyntaxError()
-                elif self.buffer[self.pos] == '-':
+                elif self.char() == '-':
                     if not found_exponent_sign:
                         found_exponent_sign = True
                     else:
@@ -202,7 +202,7 @@ def loads(
                 else:
                     break
 
-                n += self.buffer[self.pos]
+                n += self.char()
                 self.pos += 1
 
             num = float(n) * sign
@@ -219,11 +219,11 @@ def loads(
 
         def _object(self) -> Dict[Union[int, str], Any]:
             d = {}
-            if self.buffer[self.pos] != '{':
+            if self.char() != '{':
                 se = SyntaxError()
                 se.lineno = self.lineno
                 se.offset = self.pos
-                se.text = "Expected character '{{', got '{char}'".format(char=self.buffer[self.pos])
+                se.text = "Expected character '{{', got '{char}'".format(char=self.char())
                 raise se
 
             if self.advance():
@@ -232,17 +232,17 @@ def loads(
             self.eat_ws()
 
             inc_key = 1
-            while self.buffer[self.pos] != '}':
+            while self.char() != '}':
                 self.eat_ws()
 
-                if self.buffer[self.pos] == '[':
+                if self.char() == '[':
                     # key given
                     if self.advance():
                         raise self.eob_exception()
 
                     self.eat_ws()
                     key: Union[int, str]
-                    if self.buffer[self.pos] == '"':
+                    if self.char() == '"':
                         key = self.string()
                     else:
                         number = self.number()
@@ -259,11 +259,11 @@ def loads(
 
                     self.eat_ws()
 
-                    if self.buffer[self.pos] != ']':
+                    if self.char() != ']':
                         se = SyntaxError()
                         se.lineno = self.lineno
                         se.offset = self.pos
-                        se.text = "Expected character ']', got '{char}'".format(char=self.buffer[self.pos])
+                        se.text = "Expected character ']', got '{char}'".format(char=self.char())
                         raise se
 
                     if self.advance():
@@ -271,11 +271,11 @@ def loads(
 
                     self.eat_ws()
 
-                    if self.buffer[self.pos] != '=':
+                    if self.char() != '=':
                         se = SyntaxError()
                         se.lineno = self.lineno
                         se.offset = self.pos
-                        se.text = "Expected character '=', got '{char}'".format(char=self.buffer[self.pos])
+                        se.text = "Expected character '=', got '{char}'".format(char=self.char())
                         raise se
 
                     if self.advance():
@@ -294,7 +294,7 @@ def loads(
                 if self.eob():
                     raise self.eob_exception()
 
-                c = self.buffer[self.pos]
+                c = self.char()
                 if c == '}':
                     break
                 elif c in {',', ';'}:
@@ -305,7 +305,7 @@ def loads(
                     se = SyntaxError()
                     se.lineno = self.lineno
                     se.offset = self.pos
-                    se.text = "Unexpected character '{char}'".format(char=self.buffer[self.pos])
+                    se.text = "Unexpected character '{char}'".format(char=self.char())
                     raise se
 
             self.pos += 1
@@ -320,8 +320,8 @@ def loads(
 
         def eatvarname(self) -> str:
             varname = ''
-            while (not self.eob()) and (self.buffer[self.pos].isalnum() or self.buffer[self.pos] == '_'):
-                varname += self.buffer[self.pos]
+            while (not self.eob()) and (self.char().isalnum() or self.char() == '_'):
+                varname += self.char()
                 self.pos += 1
 
             return varname
@@ -344,9 +344,9 @@ def loads(
 
         def eat_comment(self):
             if (self.pos + 1 < self.buflen
-                    and self.buffer[self.pos] == '-'
-                    and self.buffer[self.pos + 1] == '-'):
-                while not self.eob() and self.buffer[self.pos] != '\n':
+                    and self.char() == '-'
+                    and self.char(lookahead=1) == '-'):
+                while not self.eob() and self.char() != '\n':
                     self.pos += 1
 
         def eat_ws(self):
@@ -358,12 +358,12 @@ def loads(
             while True:
                 if self.pos >= self.buflen:
                     return
-                c: str = self.buffer[self.pos]
+                c: str = self.char()
                 if c == '\n':
                     self.lineno += 1
                 if c == '-':
                     self.eat_comment()
-                    c = self.buffer[self.pos]
+                    c = self.char()
                 if not c.isspace():
                     return
 
@@ -377,15 +377,21 @@ def loads(
             """
             return self.pos >= self.buflen
 
-        def eob_exception(self):
+        def eob_exception(self, lookahead: int = 0) -> SyntaxError:
+            offset = self.pos + lookahead
             se = SyntaxError()
             se.lineno = self.lineno
-            se.offset = self.pos
-            se.text = "Unexpected end of buffer"
+            se.offset = offset
+            se.text = "Unexpected end of buffer. Previous 20 characters: {}".format(
+                self.buffer[offset - 20:offset]
+            )
             return se
 
-        def char(self):
-            return self.buffer[self.pos]
+        def char(self, lookahead: int = 0) -> str:
+            try:
+                return self.buffer[self.pos + lookahead]
+            except IndexError as ex:
+                raise self.eob_exception(lookahead) from ex
 
         def advance(self) -> bool:
             """
