@@ -4,6 +4,7 @@ import os
 import re
 import zipfile
 
+import dcs.lua
 from dcs.installation import get_dcs_install_directory, get_dcs_saved_games_directory
 from typing import Optional, Dict, Iterator, Set, Tuple
 
@@ -15,14 +16,6 @@ skip_units = {  # Known obsolete units in specific locations
     "leopard-2": "Bazar",
     "Zil_135l": "Bazar",
 }
-
-
-def regex_group_extractor(regex: str, text: str, fallback=None):
-    match = re.search(regex, text, re.MULTILINE)
-    if match is not None:
-        return match.group(1)
-    else:
-        return fallback
 
 
 def read_liberation_preferences() -> Tuple[str, str]:
@@ -226,15 +219,21 @@ class Liveries:
         path_id = path.split('\\')[-1].replace(".zip", "")
         if path_id == "placeholder":
             return
-        livery_name = regex_group_extractor(r'^name\s*=\s*"(.*)"\s*(?:--.*)?$', luacode, path_id)
 
-        regex = r'^countries\s*=\s*(\{\s*"[A-Z]+"\s*(?:,\s*"[A-Z]+"\s*)*\s*,?\s*\})\s*(?:--.*)?$'
-        countries = regex_group_extractor(regex, luacode)
-        if countries is not None:
-            exec(f"country_list = {countries}")
-            countries = set(filter(lambda x: x != "", locals()['country_list']))
+        # Some liveries files use variables in material names. Since the files read by
+        # the scanner can be arbitrarily changed by a game update (we don't want some
+        # liveries to be suddenly unparseable), and so far we aren't interested in the
+        # values of liveries that rely on undefined variables, just assume those are all
+        # the empty string and move on.
+        data = dcs.lua.loads(luacode, unknown_variable_lookup=lambda _: "")
+        livery_name = data.get("name", path_id)
+        countries_table = data.get("countries")
+        if countries_table is None:
+            countries = None
+        else:
+            countries = set(countries_table.values())
+        order = data.get("order", 0)
 
-        order = regex_group_extractor(r'^order\s*=\s*(-?[0-9]+)\s*(?:--.*)?$', luacode, 0)
         order = None if path_id == "default" else order
         if order is not None and not isinstance(order, int):
             try:
@@ -264,7 +263,15 @@ class Liveries:
                 if code is None:
                     logging.warning(f" Unknown encoding found in '{description_path}'")
                     return
-                Liveries.scan_lua_code(code, path, unit)
+
+                try:
+                    Liveries.scan_lua_code(code, path, unit)
+                except (IndexError, SyntaxError):
+                    logging.getLogger("pydcs").exception(
+                        "Failed to parse Lua code in %s", description_path
+                    )
+                    print("Failed to parse Lua code in {}".format(description_path))
+                    raise
 
     @staticmethod
     def scan_zip_file(path: str, unit: str) -> None:
@@ -284,7 +291,15 @@ class Liveries:
                         if code is None:
                             logging.warning(f" Unknown encoding found in '{path}/description.lua'")
                             return
-                        Liveries.scan_lua_code(code, path, unit)
+
+                        try:
+                            Liveries.scan_lua_code(code, path, unit)
+                        except (SyntaxError, IndexError):
+                            error_path = "!".join([path, "description.lua"])
+                            logging.getLogger("pydcs").exception(
+                                "Failed to parse Lua code in %s", error_path
+                            )
+                            raise
 
     @staticmethod
     def scan_liveries(path: str, campaign_path: bool = False) -> None:
