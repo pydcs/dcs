@@ -342,28 +342,24 @@ def loads(
 
             return varnames
 
-        def eat_comment(self):
-            if (self.pos + 1 < self.buflen
-                    and self.char() == '-'
-                    and self.char(lookahead=1) == '-'):
-                while not self.eob() and self.char() != '\n':
-                    self.pos += 1
+        def eat_line(self) -> None:
+            while not self.eob() and self.char() != '\n':
+                self.pos += 1
 
         def eat_ws(self):
             """
             Advances the internal buffer until it reaches a non comment or whitespace.
             :return: None
             """
-            self.eat_comment()
             while True:
                 if self.pos >= self.buflen:
                     return
                 c: str = self.char()
                 if c == '\n':
                     self.lineno += 1
-                if c == '-':
-                    self.eat_comment()
-                    c = self.char()
+                if c == '-' and self.char(lookahead=1) == '-':
+                    self.eat_line()
+                    continue
                 if not c.isspace():
                     return
 

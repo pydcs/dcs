@@ -285,6 +285,11 @@ return unitPayloads
         )
         self.assertEqual(r["foo"][2], "bar")
 
+    def test_whitespace_can_end_with_comment_before_eof(self) -> None:
+        # Regression test for a peculiar old behavior where comments could end a file if
+        # and only if they were not preceded by whitespace.
+        loads('\n--')
+
 
 if __name__ == '__main__':
     unittest.main()
