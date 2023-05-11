@@ -304,6 +304,16 @@ return unitPayloads
 
         loads("--[[ Old Bort Calls For 1.5.3 and Older ]]--")
 
+        r = loads(
+            textwrap.dedent(
+                """\
+                --[[ Comment ]]
+                foo = "bar"
+                """
+            )
+        )
+        self.assertEqual(r["foo"], "bar")
+
 
 if __name__ == '__main__':
     unittest.main()

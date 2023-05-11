@@ -347,10 +347,10 @@ def loads(
                 self.pos += 1
 
         def eat_block_comment(self) -> None:
-            while not self.eob() and self.next_n_chars(4) != "--]]":
+            while not self.eob() and self.next_n_chars(2) != "]]":
                 self.pos += 1
             if not self.eob():
-                self.pos += 4
+                self.pos += 2
 
         def eat_ws(self):
             """
