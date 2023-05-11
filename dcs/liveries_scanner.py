@@ -128,7 +128,7 @@ class Livery:
         return self.countries is None or country in self.countries
 
 
-class LiverySet(set):
+class LiverySet(Set[Livery]):
     unit_livery_id: Optional[str] = None
 
     def __init__(self, unit_livery_id: Optional[str] = None) -> None:
