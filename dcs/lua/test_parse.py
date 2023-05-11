@@ -314,6 +314,17 @@ return unitPayloads
         )
         self.assertEqual(r["foo"], "bar")
 
+    def test_single_quoted_string(self) -> None:
+        r = loads("name = 'foobar'")
+        self.assertEqual(r["name"], "foobar")
+
+    def test_mixed_quote_strings(self) -> None:
+        r = loads("name = 'foo \"bar\" baz'")
+        self.assertEqual(r["name"], 'foo "bar" baz')
+
+        r = loads("name = \"foo 'bar' baz\"")
+        self.assertEqual(r["name"], "foo 'bar' baz")
+
 
 if __name__ == '__main__':
     unittest.main()

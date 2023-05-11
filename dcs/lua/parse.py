@@ -41,7 +41,7 @@ def loads(
             c = self.char()
             if c == '{':
                 return self.object()
-            elif c == '"':
+            elif c in ('"', "'"):
                 return self.string()
             elif c.isnumeric() or c == '-':
                 return self.number()
@@ -145,12 +145,14 @@ def loads(
             return s
 
         def string(self) -> str:
-            if self.char() != '"':
+            if self.char() not in ('"', "'"):
                 se = SyntaxError()
                 se.lineno = self.lineno
                 se.offset = self.pos
-                se.text = "Expected character '\"', got '{char}'".format(char=self.char())
+                se.text = "Expected character '\"' or \"'\", got '{char}'".format(char=self.char())
                 raise se
+
+            terminator = self.char()
 
             state = 0
             s = ''
@@ -160,7 +162,7 @@ def loads(
 
                 c = self.char()
                 if state == 0:
-                    if c == '"':
+                    if c == terminator:
                         state = 1
                         self.pos += 1
                     elif c == '\\':
