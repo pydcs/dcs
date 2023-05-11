@@ -270,6 +270,10 @@ return unitPayloads
         )
         self.assertEqual(len(r["livery"]), 16)
 
+    def test_empty_file_parses(self) -> None:
+        r = loads("")
+        self.assertEqual(len(r), 0)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -20,6 +20,9 @@ def loads(tablestr, _globals: Optional[Dict[str, Any]] = None) -> Dict[str, Any]
         def parse(self):
             self.eat_ws()
 
+            if self.eob():
+                return
+
             c = self.buffer[self.pos]
             if c == '{':
                 return self.object()
