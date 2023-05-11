@@ -337,6 +337,10 @@ return unitPayloads
         self.assertEqual(r["name"], "foo")
         self.assertEqual(r["other_name"], "bar")
 
+    def test_float_beginning_with_dot(self) -> None:
+        r = loads("num = .1")
+        self.assertEqual(r["num"], 0.1)
+
 
 if __name__ == '__main__':
     unittest.main()

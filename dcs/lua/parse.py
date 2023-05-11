@@ -43,7 +43,7 @@ def loads(
                 return self.object()
             elif c in ('"', "'"):
                 return self.string()
-            elif c.isnumeric() or c == '-':
+            elif c.isnumeric() or c in ('-', '.'):
                 return self.number()
             elif c == '_':
                 return self.str_function()
