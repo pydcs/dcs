@@ -346,6 +346,12 @@ def loads(
             while not self.eob() and self.char() != '\n':
                 self.pos += 1
 
+        def eat_block_comment(self) -> None:
+            while not self.eob() and self.next_n_chars(4) != "--]]":
+                self.pos += 1
+            if not self.eob():
+                self.pos += 4
+
         def eat_ws(self):
             """
             Advances the internal buffer until it reaches a non comment or whitespace.
@@ -357,7 +363,10 @@ def loads(
                 c: str = self.char()
                 if c == '\n':
                     self.lineno += 1
-                if c == '-' and self.char(lookahead=1) == '-':
+                if self.next_n_chars(4) == "--[[":
+                    self.eat_block_comment()
+                    continue
+                if self.next_n_chars(2) == "--":
                     self.eat_line()
                     continue
                 if not c.isspace():
@@ -388,6 +397,9 @@ def loads(
                 return self.buffer[self.pos + lookahead]
             except IndexError as ex:
                 raise self.eob_exception(lookahead) from ex
+
+        def next_n_chars(self, n: int) -> str:
+            return self.buffer[self.pos:self.pos + n]
 
         def advance(self) -> bool:
             """

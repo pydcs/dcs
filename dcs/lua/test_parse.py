@@ -290,6 +290,20 @@ return unitPayloads
         # and only if they were not preceded by whitespace.
         loads('\n--')
 
+    def test_block_comment(self) -> None:
+        r = loads(
+            textwrap.dedent(
+                """\
+                --[[
+                this is a comment
+                --]]foo = "bar"
+                """
+            )
+        )
+        self.assertEqual(r["foo"], "bar")
+
+        loads("--[[ Old Bort Calls For 1.5.3 and Older ]]--")
+
 
 if __name__ == '__main__':
     unittest.main()
