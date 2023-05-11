@@ -274,6 +274,17 @@ return unitPayloads
         r = loads("")
         self.assertEqual(len(r), 0)
 
+    def test_unknown_variable_use_fails_by_default(self) -> None:
+        with self.assertRaises(SyntaxError):
+            loads('foo = {"AH-64D_bottom_1", DIFFUSE, false}')
+
+    def test_unknown_variable_lookup(self) -> None:
+        r = loads(
+            'foo = {"AH-64D_bottom_1", DIFFUSE, false}',
+            unknown_variable_lookup=lambda _: "bar"
+        )
+        self.assertEqual(r["foo"][2], "bar")
+
 
 if __name__ == '__main__':
     unittest.main()

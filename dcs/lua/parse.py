@@ -1,21 +1,36 @@
-from typing import Dict, Any, Optional, List, Union
+from typing import Dict, Any, Callable, Optional, List, Union
 
 
-def loads(tablestr, _globals: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+def loads(
+        tablestr,
+        _globals: Optional[Dict[str, Any]] = None,
+        unknown_variable_lookup: Optional[Callable[[str], Any]] = None,
+) -> Dict[str, Any]:
 
     class Parser:
-        def __init__(self, buffer: str, _globals: Optional[Dict[str, Any]] = None):
+        def __init__(
+                self,
+                buffer: str,
+                _globals: Optional[Dict[str, Any]] = None,
+                unknown_variable_lookup: Optional[Callable[[str], Any]] = None,
+        ) -> None:
             self.buffer: str = buffer
             if _globals:
                 self.variables = _globals.copy()
             else:
                 self.variables = {}
+            self.unknown_variable_lookup = unknown_variable_lookup
 
             self._variable_assignment_queue: List[str] = []
 
             self.buflen: int = len(buffer)
             self.pos: int = 0
             self.lineno: int = 1
+
+            # Tracks whether we are at the global scope or in an object. The parser
+            # doesn't currently handle function declarations. Variable declarations are
+            # only allowed when object_depth is zero.
+            self.object_depth = 0
 
         def parse(self):
             self.eat_ws()
@@ -51,9 +66,17 @@ def loads(tablestr, _globals: Optional[Dict[str, Any]] = None) -> Dict[str, Any]
                 elif varname in self.variables:
                     # substitute value from variables
                     return self.variables[varname]
-                else:
+                elif not self.object_depth:
                     # shortcut syntax without `local`
                     self.push_assigned_variable_names([varname])
+                else:
+                    if self.unknown_variable_lookup is None:
+                        se = SyntaxError()
+                        se.text = "Use of undefined variable {}".format(varname)
+                        se.lineno = self.lineno
+                        se.offset = self.pos
+                        raise se
+                    return self.unknown_variable_lookup(varname)
 
                 self.eat_ws()
                 if not self.eob() and self.buffer[self.pos] == '=':
@@ -188,6 +211,13 @@ def loads(tablestr, _globals: Optional[Dict[str, Any]] = None) -> Dict[str, Any]
             return num
 
         def object(self) -> Dict[Union[int, str], Any]:
+            self.object_depth += 1
+            try:
+                return self._object()
+            finally:
+                self.object_depth -= 1
+
+        def _object(self) -> Dict[Union[int, str], Any]:
             d = {}
             if self.buffer[self.pos] != '{':
                 se = SyntaxError()
@@ -365,6 +395,6 @@ def loads(tablestr, _globals: Optional[Dict[str, Any]] = None) -> Dict[str, Any]
             self.pos += 1
             return self.eob()
 
-    p = Parser(tablestr, _globals)
+    p = Parser(tablestr, _globals, unknown_variable_lookup)
     p.parse()
     return p.variables
