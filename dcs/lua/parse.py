@@ -264,7 +264,7 @@ def loads(tablestr, _globals: Optional[Dict[str, Any]] = None) -> Dict[str, Any]
                 c = self.buffer[self.pos]
                 if c == '}':
                     break
-                elif c == ',':
+                elif c in {',', ';'}:
                     if self.advance():
                         raise self.eob_exception()
                     self.eat_ws()
