@@ -14,8 +14,12 @@ class LiveryCache:
         return cls._cache
 
     @classmethod
-    def __getitem__(cls, unit: str) -> LiverySet:
+    def for_unit(cls, livery_id: str) -> LiverySet:
         try:
-            return LiveryCache.cache()[unit]
+            return LiveryCache.cache()[livery_id]
         except KeyError:
-            return LiverySet(unit)
+            return LiverySet(livery_id)
+
+    @classmethod
+    def __getitem__(cls, livery_id: str) -> LiverySet:
+        return cls.for_unit(livery_id)

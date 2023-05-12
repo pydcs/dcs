@@ -48,8 +48,13 @@ class LiveryScanner:
 
     def load(self) -> Dict[str, LiverySet]:
         install, saved_games = read_liberation_preferences()
-        self.scan_dcs_installation(install)
-        self.scan_custom_liveries(saved_games)
+        return self.load_from(install, saved_games)
+
+    def load_from(
+        self, dcs_install_path: str, dcs_saved_games_path: str
+    ) -> Dict[str, LiverySet]:
+        self.scan_dcs_installation(dcs_install_path)
+        self.scan_custom_liveries(dcs_saved_games_path)
         return self.map
 
     def register_livery(self, unit: str, livery: Livery) -> None:
