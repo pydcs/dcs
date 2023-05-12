@@ -9002,7 +9002,6 @@ class JF_17(PlaneType):
         DIS_C_701IR = (2, Weapons.DIS_C_701IR)
         DIS_LS_6_500 = (2, Weapons.DIS_LS_6_500)
         DIS_LS_6_250 = (2, Weapons.DIS_LS_6_250)
-        DIS_LS_6_100 = (2, Weapons.DIS_LS_6_100)
         DIS_LS_6_250_DUAL_L = (2, Weapons.DIS_LS_6_250_DUAL_L)
         DIS_LS_6_100_DUAL_L = (2, Weapons.DIS_LS_6_100_DUAL_L)
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (2, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
@@ -9099,7 +9098,6 @@ class JF_17(PlaneType):
         DIS_C_701IR = (6, Weapons.DIS_C_701IR)
         DIS_LS_6_500 = (6, Weapons.DIS_LS_6_500)
         DIS_LS_6_250 = (6, Weapons.DIS_LS_6_250)
-        DIS_LS_6_100 = (6, Weapons.DIS_LS_6_100)
         DIS_LS_6_250_DUAL_R = (6, Weapons.DIS_LS_6_250_DUAL_R)
         DIS_LS_6_100_DUAL_R = (6, Weapons.DIS_LS_6_100_DUAL_R)
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (6, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
@@ -10554,25 +10552,25 @@ class F_14B(PlaneType):
         Mk_82_SnakeEye = (4, Weapons.Mk_82_SnakeEye)
         BDU_45 = (4, Weapons.BDU_45)
         BDU_45B = (4, Weapons.BDU_45B)
+        _3_BDU_33_ = (4, Weapons._3_BDU_33_)
+        Mk_83 = (4, Weapons.Mk_83)
+        GBU_12 = (4, Weapons.GBU_12)
+        GBU_16 = (4, Weapons.GBU_16)
+        Mk_20 = (4, Weapons.Mk_20)
+        ADM_141A_ = (4, Weapons.ADM_141A_)
+        Mk_84 = (4, Weapons.Mk_84)
+        _2_LAU_10___4_ZUNI_MK_71___ = (4, Weapons._2_LAU_10___4_ZUNI_MK_71___)
+        GBU_10 = (4, Weapons.GBU_10)
+        GBU_24 = (4, Weapons.GBU_24)
         MAK79_4_Mk_81 = (4, Weapons.MAK79_4_Mk_81)
         MAK79_4_Mk_82 = (4, Weapons.MAK79_4_Mk_82)
         MAK79_4_BDU_45 = (4, Weapons.MAK79_4_BDU_45)
         MAK79_4_BDU_45B = (4, Weapons.MAK79_4_BDU_45B)
         MAK79_4_BDU_33 = (4, Weapons.MAK79_4_BDU_33)
-        _3_BDU_33_ = (4, Weapons._3_BDU_33_)
         MAK79_4_Mk_82AIR = (4, Weapons.MAK79_4_Mk_82AIR)
         MAK79_4_Mk_82_SnakeEye = (4, Weapons.MAK79_4_Mk_82_SnakeEye)
         MAK79_3_Mk_83 = (4, Weapons.MAK79_3_Mk_83)
-        Mk_83 = (4, Weapons.Mk_83)
-        GBU_12 = (4, Weapons.GBU_12)
-        GBU_16 = (4, Weapons.GBU_16)
-        _2_LAU_10___4_ZUNI_MK_71___ = (4, Weapons._2_LAU_10___4_ZUNI_MK_71___)
-        Mk_20 = (4, Weapons.Mk_20)
-        ADM_141A_ = (4, Weapons.ADM_141A_)
-        Mk_84 = (4, Weapons.Mk_84)
-        GBU_10 = (4, Weapons.GBU_10)
         MAK79_2_MK_20 = (4, Weapons.MAK79_2_MK_20)
-        GBU_24 = (4, Weapons.GBU_24)
 
     class Pylon5:
         AIM_54A_Mk47 = (5, Weapons.AIM_54A_Mk47)
@@ -10589,22 +10587,22 @@ class F_14B(PlaneType):
         Mk_82_SnakeEye = (5, Weapons.Mk_82_SnakeEye)
         BDU_45 = (5, Weapons.BDU_45)
         BDU_45B = (5, Weapons.BDU_45B)
+        _3_BDU_33_ = (5, Weapons._3_BDU_33_)
+        Mk_83 = (5, Weapons.Mk_83)
+        GBU_12 = (5, Weapons.GBU_12)
+        GBU_16 = (5, Weapons.GBU_16)
+        Mk_20 = (5, Weapons.Mk_20)
+        ADM_141A_ = (5, Weapons.ADM_141A_)
+        Mk_84 = (5, Weapons.Mk_84)
+        _2_SUU_25___8_LUU_2___ = (5, Weapons._2_SUU_25___8_LUU_2___)
         MAK79_3_Mk_81 = (5, Weapons.MAK79_3_Mk_81)
         MAK79_3_Mk_82 = (5, Weapons.MAK79_3_Mk_82)
         MAK79_3_BDU_45 = (5, Weapons.MAK79_3_BDU_45)
         MAK79_3_BDU_45B = (5, Weapons.MAK79_3_BDU_45B)
         MAK79_3_BDU_33 = (5, Weapons.MAK79_3_BDU_33)
-        _3_BDU_33_ = (5, Weapons._3_BDU_33_)
         MAK79_3_Mk_82AIR = (5, Weapons.MAK79_3_Mk_82AIR)
         MAK79_3_Mk_82_SnakeEye = (5, Weapons.MAK79_3_Mk_82_SnakeEye)
         MAK79_Mk_83_ = (5, Weapons.MAK79_Mk_83_)
-        Mk_83 = (5, Weapons.Mk_83)
-        GBU_12 = (5, Weapons.GBU_12)
-        GBU_16 = (5, Weapons.GBU_16)
-        _2_SUU_25___8_LUU_2___ = (5, Weapons._2_SUU_25___8_LUU_2___)
-        Mk_20 = (5, Weapons.Mk_20)
-        ADM_141A_ = (5, Weapons.ADM_141A_)
-        Mk_84 = (5, Weapons.Mk_84)
         MAK79_MK_20_ = (5, Weapons.MAK79_MK_20_)
 
     class Pylon6:
@@ -10622,24 +10620,24 @@ class F_14B(PlaneType):
         Mk_82_SnakeEye = (6, Weapons.Mk_82_SnakeEye)
         BDU_45 = (6, Weapons.BDU_45)
         BDU_45B = (6, Weapons.BDU_45B)
+        _3_BDU_33_ = (6, Weapons._3_BDU_33_)
+        Mk_83 = (6, Weapons.Mk_83)
+        GBU_12 = (6, Weapons.GBU_12)
+        GBU_16 = (6, Weapons.GBU_16)
+        Mk_20 = (6, Weapons.Mk_20)
+        ADM_141A_ = (6, Weapons.ADM_141A_)
+        Mk_84 = (6, Weapons.Mk_84)
+        GBU_24 = (6, Weapons.GBU_24)
+        SUU_25___8_LUU_2_ = (6, Weapons.SUU_25___8_LUU_2_)
         MAK79_3_Mk_81_ = (6, Weapons.MAK79_3_Mk_81_)
         MAK79_3_Mk_82_ = (6, Weapons.MAK79_3_Mk_82_)
         MAK79_3_BDU_45_ = (6, Weapons.MAK79_3_BDU_45_)
         MAK79_3_BDU_45B_ = (6, Weapons.MAK79_3_BDU_45B_)
         MAK79_3_BDU_33_ = (6, Weapons.MAK79_3_BDU_33_)
-        _3_BDU_33_ = (6, Weapons._3_BDU_33_)
         MAK79_3_Mk_82AIR_ = (6, Weapons.MAK79_3_Mk_82AIR_)
         MAK79_3_Mk_82_SnakeEye_ = (6, Weapons.MAK79_3_Mk_82_SnakeEye_)
         MAK79_Mk_83 = (6, Weapons.MAK79_Mk_83)
-        Mk_83 = (6, Weapons.Mk_83)
-        GBU_12 = (6, Weapons.GBU_12)
-        GBU_16 = (6, Weapons.GBU_16)
-        SUU_25___8_LUU_2_ = (6, Weapons.SUU_25___8_LUU_2_)
-        Mk_20 = (6, Weapons.Mk_20)
-        ADM_141A_ = (6, Weapons.ADM_141A_)
-        Mk_84 = (6, Weapons.Mk_84)
         MAK79_MK_20 = (6, Weapons.MAK79_MK_20)
-        GBU_24 = (6, Weapons.GBU_24)
 
     class Pylon7:
         AIM_54A_Mk47 = (7, Weapons.AIM_54A_Mk47)
@@ -10656,23 +10654,23 @@ class F_14B(PlaneType):
         Mk_82_SnakeEye = (7, Weapons.Mk_82_SnakeEye)
         BDU_45 = (7, Weapons.BDU_45)
         BDU_45B = (7, Weapons.BDU_45B)
+        _3_BDU_33_ = (7, Weapons._3_BDU_33_)
+        Mk_83 = (7, Weapons.Mk_83)
+        GBU_12 = (7, Weapons.GBU_12)
+        GBU_16 = (7, Weapons.GBU_16)
+        Mk_20 = (7, Weapons.Mk_20)
+        ADM_141A_ = (7, Weapons.ADM_141A_)
+        Mk_84 = (7, Weapons.Mk_84)
+        LAU_10___4_ZUNI_MK_71_ = (7, Weapons.LAU_10___4_ZUNI_MK_71_)
+        GBU_10 = (7, Weapons.GBU_10)
         MAK79_4_Mk_81 = (7, Weapons.MAK79_4_Mk_81)
         MAK79_4_Mk_82 = (7, Weapons.MAK79_4_Mk_82)
         MAK79_4_BDU_45 = (7, Weapons.MAK79_4_BDU_45)
         MAK79_4_BDU_45B = (7, Weapons.MAK79_4_BDU_45B)
         MAK79_4_BDU_33 = (7, Weapons.MAK79_4_BDU_33)
-        _3_BDU_33_ = (7, Weapons._3_BDU_33_)
         MAK79_4_Mk_82AIR = (7, Weapons.MAK79_4_Mk_82AIR)
         MAK79_4_Mk_82_SnakeEye = (7, Weapons.MAK79_4_Mk_82_SnakeEye)
         MAK79_3_Mk_83_ = (7, Weapons.MAK79_3_Mk_83_)
-        Mk_83 = (7, Weapons.Mk_83)
-        GBU_12 = (7, Weapons.GBU_12)
-        GBU_16 = (7, Weapons.GBU_16)
-        LAU_10___4_ZUNI_MK_71_ = (7, Weapons.LAU_10___4_ZUNI_MK_71_)
-        Mk_20 = (7, Weapons.Mk_20)
-        ADM_141A_ = (7, Weapons.ADM_141A_)
-        Mk_84 = (7, Weapons.Mk_84)
-        GBU_10 = (7, Weapons.GBU_10)
         MAK79_2_MK_20_ = (7, Weapons.MAK79_2_MK_20_)
 
     class Pylon8:
@@ -10928,25 +10926,25 @@ class F_14A_135_GR(PlaneType):
         Mk_82_SnakeEye = (4, Weapons.Mk_82_SnakeEye)
         BDU_45 = (4, Weapons.BDU_45)
         BDU_45B = (4, Weapons.BDU_45B)
+        _3_BDU_33_ = (4, Weapons._3_BDU_33_)
+        Mk_83 = (4, Weapons.Mk_83)
+        GBU_12 = (4, Weapons.GBU_12)
+        GBU_16 = (4, Weapons.GBU_16)
+        Mk_20 = (4, Weapons.Mk_20)
+        ADM_141A_ = (4, Weapons.ADM_141A_)
+        Mk_84 = (4, Weapons.Mk_84)
+        _2_LAU_10___4_ZUNI_MK_71___ = (4, Weapons._2_LAU_10___4_ZUNI_MK_71___)
+        GBU_10 = (4, Weapons.GBU_10)
+        GBU_24 = (4, Weapons.GBU_24)
         MAK79_4_Mk_81 = (4, Weapons.MAK79_4_Mk_81)
         MAK79_4_Mk_82 = (4, Weapons.MAK79_4_Mk_82)
         MAK79_4_BDU_45 = (4, Weapons.MAK79_4_BDU_45)
         MAK79_4_BDU_45B = (4, Weapons.MAK79_4_BDU_45B)
         MAK79_4_BDU_33 = (4, Weapons.MAK79_4_BDU_33)
-        _3_BDU_33_ = (4, Weapons._3_BDU_33_)
         MAK79_4_Mk_82AIR = (4, Weapons.MAK79_4_Mk_82AIR)
         MAK79_4_Mk_82_SnakeEye = (4, Weapons.MAK79_4_Mk_82_SnakeEye)
         MAK79_3_Mk_83 = (4, Weapons.MAK79_3_Mk_83)
-        Mk_83 = (4, Weapons.Mk_83)
-        GBU_12 = (4, Weapons.GBU_12)
-        GBU_16 = (4, Weapons.GBU_16)
-        _2_LAU_10___4_ZUNI_MK_71___ = (4, Weapons._2_LAU_10___4_ZUNI_MK_71___)
-        Mk_20 = (4, Weapons.Mk_20)
-        ADM_141A_ = (4, Weapons.ADM_141A_)
-        Mk_84 = (4, Weapons.Mk_84)
-        GBU_10 = (4, Weapons.GBU_10)
         MAK79_2_MK_20 = (4, Weapons.MAK79_2_MK_20)
-        GBU_24 = (4, Weapons.GBU_24)
 
     class Pylon5:
         AIM_54A_Mk47 = (5, Weapons.AIM_54A_Mk47)
@@ -10963,22 +10961,22 @@ class F_14A_135_GR(PlaneType):
         Mk_82_SnakeEye = (5, Weapons.Mk_82_SnakeEye)
         BDU_45 = (5, Weapons.BDU_45)
         BDU_45B = (5, Weapons.BDU_45B)
+        _3_BDU_33_ = (5, Weapons._3_BDU_33_)
+        Mk_83 = (5, Weapons.Mk_83)
+        GBU_12 = (5, Weapons.GBU_12)
+        GBU_16 = (5, Weapons.GBU_16)
+        Mk_20 = (5, Weapons.Mk_20)
+        ADM_141A_ = (5, Weapons.ADM_141A_)
+        Mk_84 = (5, Weapons.Mk_84)
+        _2_SUU_25___8_LUU_2___ = (5, Weapons._2_SUU_25___8_LUU_2___)
         MAK79_3_Mk_81 = (5, Weapons.MAK79_3_Mk_81)
         MAK79_3_Mk_82 = (5, Weapons.MAK79_3_Mk_82)
         MAK79_3_BDU_45 = (5, Weapons.MAK79_3_BDU_45)
         MAK79_3_BDU_45B = (5, Weapons.MAK79_3_BDU_45B)
         MAK79_3_BDU_33 = (5, Weapons.MAK79_3_BDU_33)
-        _3_BDU_33_ = (5, Weapons._3_BDU_33_)
         MAK79_3_Mk_82AIR = (5, Weapons.MAK79_3_Mk_82AIR)
         MAK79_3_Mk_82_SnakeEye = (5, Weapons.MAK79_3_Mk_82_SnakeEye)
         MAK79_Mk_83_ = (5, Weapons.MAK79_Mk_83_)
-        Mk_83 = (5, Weapons.Mk_83)
-        GBU_12 = (5, Weapons.GBU_12)
-        GBU_16 = (5, Weapons.GBU_16)
-        _2_SUU_25___8_LUU_2___ = (5, Weapons._2_SUU_25___8_LUU_2___)
-        Mk_20 = (5, Weapons.Mk_20)
-        ADM_141A_ = (5, Weapons.ADM_141A_)
-        Mk_84 = (5, Weapons.Mk_84)
         MAK79_MK_20_ = (5, Weapons.MAK79_MK_20_)
 
     class Pylon6:
@@ -10996,24 +10994,24 @@ class F_14A_135_GR(PlaneType):
         Mk_82_SnakeEye = (6, Weapons.Mk_82_SnakeEye)
         BDU_45 = (6, Weapons.BDU_45)
         BDU_45B = (6, Weapons.BDU_45B)
+        _3_BDU_33_ = (6, Weapons._3_BDU_33_)
+        Mk_83 = (6, Weapons.Mk_83)
+        GBU_12 = (6, Weapons.GBU_12)
+        GBU_16 = (6, Weapons.GBU_16)
+        Mk_20 = (6, Weapons.Mk_20)
+        ADM_141A_ = (6, Weapons.ADM_141A_)
+        Mk_84 = (6, Weapons.Mk_84)
+        GBU_24 = (6, Weapons.GBU_24)
+        SUU_25___8_LUU_2_ = (6, Weapons.SUU_25___8_LUU_2_)
         MAK79_3_Mk_81_ = (6, Weapons.MAK79_3_Mk_81_)
         MAK79_3_Mk_82_ = (6, Weapons.MAK79_3_Mk_82_)
         MAK79_3_BDU_45_ = (6, Weapons.MAK79_3_BDU_45_)
         MAK79_3_BDU_45B_ = (6, Weapons.MAK79_3_BDU_45B_)
         MAK79_3_BDU_33_ = (6, Weapons.MAK79_3_BDU_33_)
-        _3_BDU_33_ = (6, Weapons._3_BDU_33_)
         MAK79_3_Mk_82AIR_ = (6, Weapons.MAK79_3_Mk_82AIR_)
         MAK79_3_Mk_82_SnakeEye_ = (6, Weapons.MAK79_3_Mk_82_SnakeEye_)
         MAK79_Mk_83 = (6, Weapons.MAK79_Mk_83)
-        Mk_83 = (6, Weapons.Mk_83)
-        GBU_12 = (6, Weapons.GBU_12)
-        GBU_16 = (6, Weapons.GBU_16)
-        SUU_25___8_LUU_2_ = (6, Weapons.SUU_25___8_LUU_2_)
-        Mk_20 = (6, Weapons.Mk_20)
-        ADM_141A_ = (6, Weapons.ADM_141A_)
-        Mk_84 = (6, Weapons.Mk_84)
         MAK79_MK_20 = (6, Weapons.MAK79_MK_20)
-        GBU_24 = (6, Weapons.GBU_24)
 
     class Pylon7:
         AIM_54A_Mk47 = (7, Weapons.AIM_54A_Mk47)
@@ -11030,23 +11028,23 @@ class F_14A_135_GR(PlaneType):
         Mk_82_SnakeEye = (7, Weapons.Mk_82_SnakeEye)
         BDU_45 = (7, Weapons.BDU_45)
         BDU_45B = (7, Weapons.BDU_45B)
+        _3_BDU_33_ = (7, Weapons._3_BDU_33_)
+        Mk_83 = (7, Weapons.Mk_83)
+        GBU_12 = (7, Weapons.GBU_12)
+        GBU_16 = (7, Weapons.GBU_16)
+        Mk_20 = (7, Weapons.Mk_20)
+        ADM_141A_ = (7, Weapons.ADM_141A_)
+        Mk_84 = (7, Weapons.Mk_84)
+        LAU_10___4_ZUNI_MK_71_ = (7, Weapons.LAU_10___4_ZUNI_MK_71_)
+        GBU_10 = (7, Weapons.GBU_10)
         MAK79_4_Mk_81 = (7, Weapons.MAK79_4_Mk_81)
         MAK79_4_Mk_82 = (7, Weapons.MAK79_4_Mk_82)
         MAK79_4_BDU_45 = (7, Weapons.MAK79_4_BDU_45)
         MAK79_4_BDU_45B = (7, Weapons.MAK79_4_BDU_45B)
         MAK79_4_BDU_33 = (7, Weapons.MAK79_4_BDU_33)
-        _3_BDU_33_ = (7, Weapons._3_BDU_33_)
         MAK79_4_Mk_82AIR = (7, Weapons.MAK79_4_Mk_82AIR)
         MAK79_4_Mk_82_SnakeEye = (7, Weapons.MAK79_4_Mk_82_SnakeEye)
         MAK79_3_Mk_83_ = (7, Weapons.MAK79_3_Mk_83_)
-        Mk_83 = (7, Weapons.Mk_83)
-        GBU_12 = (7, Weapons.GBU_12)
-        GBU_16 = (7, Weapons.GBU_16)
-        LAU_10___4_ZUNI_MK_71_ = (7, Weapons.LAU_10___4_ZUNI_MK_71_)
-        Mk_20 = (7, Weapons.Mk_20)
-        ADM_141A_ = (7, Weapons.ADM_141A_)
-        Mk_84 = (7, Weapons.Mk_84)
-        GBU_10 = (7, Weapons.GBU_10)
         MAK79_2_MK_20_ = (7, Weapons.MAK79_2_MK_20_)
 
     class Pylon8:
@@ -13047,6 +13045,7 @@ class Mirage_F1C(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -13070,6 +13069,13 @@ class Mirage_F1C(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -13254,10 +13260,6 @@ class Mirage_F1C(PlaneType):
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
-        BR_250 = (4, Weapons.BR_250)
-        BR_500 = (4, Weapons.BR_500)
-        GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
-        GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
 
@@ -13403,6 +13405,7 @@ class Mirage_F1CE(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -13426,6 +13429,13 @@ class Mirage_F1CE(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -13631,6 +13641,7 @@ class Mirage_F1CE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        CLB4_BR250 = (4, Weapons.CLB4_BR250)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
 
@@ -13790,6 +13801,7 @@ class Mirage_F1EE(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -13815,6 +13827,13 @@ class Mirage_F1EE(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -14035,6 +14054,7 @@ class Mirage_F1EE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        CLB4_BR250 = (4, Weapons.CLB4_BR250)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
 
@@ -14194,6 +14214,7 @@ class Mirage_F1M_EE(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -14217,6 +14238,13 @@ class Mirage_F1M_EE(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -14423,6 +14451,7 @@ class Mirage_F1M_EE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        CLB4_BR250 = (4, Weapons.CLB4_BR250)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
 
@@ -14582,6 +14611,7 @@ class Mirage_F1M_CE(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -14605,6 +14635,13 @@ class Mirage_F1M_CE(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -14810,6 +14847,7 @@ class Mirage_F1M_CE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        CLB4_BR250 = (4, Weapons.CLB4_BR250)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
 
@@ -14968,6 +15006,7 @@ class Mirage_F1C_200(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -14991,6 +15030,13 @@ class Mirage_F1C_200(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -15321,6 +15367,7 @@ class Mirage_F1EH(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -15344,6 +15391,13 @@ class Mirage_F1EH(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -15674,6 +15728,7 @@ class Mirage_F1CH(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -15697,6 +15752,13 @@ class Mirage_F1CH(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -16027,6 +16089,7 @@ class Mirage_F1JA(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -16050,6 +16113,13 @@ class Mirage_F1JA(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -16153,9 +16223,6 @@ class Mirage_F1JA(PlaneType):
     livery_name = "MIRAGE-F1JA"  # from type
     Liveries = Liveries()[livery_name]
 
-    class Pylon1:
-        R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
-
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
         SAMP_250___250_kg_GP_Bomb_LD = (2, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -16184,6 +16251,7 @@ class Mirage_F1JA(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        DIS_PL_8B = (2, Weapons.DIS_PL_8B)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -16215,9 +16283,6 @@ class Mirage_F1JA(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
-        R530F_EM = (3, Weapons.R530F_EM)
-        R530F_IR = (3, Weapons.R530F_IR)
-        S530F = (3, Weapons.S530F)
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -16233,12 +16298,6 @@ class Mirage_F1JA(PlaneType):
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
-        BR_250 = (4, Weapons.BR_250)
-        BR_500 = (4, Weapons.BR_500)
-        GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
-        GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
-        R530F_EM = (4, Weapons.R530F_EM)
-        R530F_IR = (4, Weapons.R530F_IR)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -16270,9 +16329,6 @@ class Mirage_F1JA(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
-        R530F_EM = (5, Weapons.R530F_EM)
-        R530F_IR = (5, Weapons.R530F_IR)
-        S530F = (5, Weapons.S530F)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -16302,11 +16358,9 @@ class Mirage_F1JA(PlaneType):
         MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        DIS_PL_8B = (6, Weapons.DIS_PL_8B)
 
-    class Pylon7:
-        R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
-
-    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
+    pylons: Set[int] = {2, 3, 4, 5, 6}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.CAS, task.AFAC, task.CAP, task.Escort, task.FighterSweep, task.Intercept]
     task_default = task.CAP
@@ -16380,6 +16434,7 @@ class Mirage_F1CG(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -16403,6 +16458,13 @@ class Mirage_F1CG(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -16743,6 +16805,7 @@ class Mirage_F1CZ(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -16766,6 +16829,13 @@ class Mirage_F1CZ(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -17096,6 +17166,7 @@ class Mirage_F1CJ(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -17119,6 +17190,13 @@ class Mirage_F1CJ(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -17449,6 +17527,7 @@ class Mirage_F1CK(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -17472,6 +17551,13 @@ class Mirage_F1CK(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -17802,6 +17888,7 @@ class Mirage_F1EQ(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -17825,6 +17912,13 @@ class Mirage_F1EQ(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -18002,6 +18096,8 @@ class Mirage_F1EQ(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (3, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (3, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -18024,6 +18120,8 @@ class Mirage_F1EQ(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
+        PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18062,6 +18160,8 @@ class Mirage_F1EQ(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (5, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (5, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (5, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18174,6 +18274,7 @@ class Mirage_F1ED(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -18197,6 +18298,13 @@ class Mirage_F1ED(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -18374,6 +18482,8 @@ class Mirage_F1ED(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (3, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (3, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -18396,6 +18506,8 @@ class Mirage_F1ED(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
+        PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18434,6 +18546,8 @@ class Mirage_F1ED(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (5, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (5, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (5, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18546,6 +18660,7 @@ class Mirage_F1EDA(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -18569,6 +18684,13 @@ class Mirage_F1EDA(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -18916,6 +19038,7 @@ class Mirage_F1CR(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -18939,6 +19062,13 @@ class Mirage_F1CR(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -19269,6 +19399,7 @@ class Mirage_F1CT(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -19292,6 +19423,13 @@ class Mirage_F1CT(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -19459,6 +19597,8 @@ class Mirage_F1CT(PlaneType):
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         S530F = (3, Weapons.S530F)
+        GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
+        GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -19474,6 +19614,8 @@ class Mirage_F1CT(PlaneType):
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
+        GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
+        GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
         PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
 
@@ -19508,6 +19650,8 @@ class Mirage_F1CT(PlaneType):
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         S530F = (5, Weapons.S530F)
+        GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
+        GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -19616,6 +19760,7 @@ class Mirage_F1B(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -19640,6 +19785,13 @@ class Mirage_F1B(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -19827,10 +19979,6 @@ class Mirage_F1B(PlaneType):
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
-        BR_250 = (4, Weapons.BR_250)
-        BR_500 = (4, Weapons.BR_500)
-        GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
-        GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
 
@@ -19975,6 +20123,7 @@ class Mirage_F1BE(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -19999,6 +20148,13 @@ class Mirage_F1BE(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -20207,6 +20363,7 @@ class Mirage_F1BE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        CLB4_BR250 = (4, Weapons.CLB4_BR250)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
 
@@ -20365,6 +20522,7 @@ class Mirage_F1BQ(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -20389,6 +20547,13 @@ class Mirage_F1BQ(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -20569,6 +20734,8 @@ class Mirage_F1BQ(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (3, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (3, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -20591,6 +20758,8 @@ class Mirage_F1BQ(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
+        PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -20629,6 +20798,8 @@ class Mirage_F1BQ(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (5, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (5, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (5, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -20741,6 +20912,7 @@ class Mirage_F1BD(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -20765,6 +20937,13 @@ class Mirage_F1BD(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -20945,6 +21124,8 @@ class Mirage_F1BD(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (3, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (3, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -20967,6 +21148,8 @@ class Mirage_F1BD(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
+        PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -21005,6 +21188,8 @@ class Mirage_F1BD(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (5, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (5, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (5, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -21117,6 +21302,7 @@ class Mirage_F1DDA(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -21141,6 +21327,13 @@ class Mirage_F1DDA(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"

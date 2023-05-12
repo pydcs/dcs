@@ -157,7 +157,7 @@ class Weapons:
     BOZ_107___Countermeasure_Dispenser = {"clsid": "{8C3F26A1-FA0F-11d5-9190-00A0249B6F00}", "name": "BOZ-107 - Countermeasure Dispenser", "weight": 200}
     BRD_4_250___4_x_Mk_106___5lb_Practice_Bomb_LD = {"clsid": "{BRD_4_250_4xMK106}", "name": "BRD-4-250 - 4 x Mk 106 - 5lb Practice Bomb LD", "weight": 95.08}
     BRD_4_250___4_x_Mk_76___25lb_Practice_Bomb_LD = {"clsid": "{BRD_4_250_4xMK76}", "name": "BRD-4-250 - 4 x Mk 76 - 25lb Practice Bomb LD", "weight": 131.2}
-    BRU_33_with_1_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = {"clsid": "{BRU33_LAU10}", "name": "BRU-33 with 1 x LAU-10 pod - 4 x 127mm ZUNI, UnGd Rkts Mk71, HE/FRAG", "weight": 407.6}
+    BRU_33_with_1_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = {"clsid": "{BRU33_LAU10}", "name": "BRU-33 with 1 x LAU-10 pod - 4 x 127mm ZUNI, UnGd Rkts Mk71, HE/FRAG", "weight": 379.9}
     BRU_33_with_1_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = {"clsid": "{BRU33_LAU61}", "name": "BRU-33 with 1 x LAU-61 pod - 19 x 2.75\" Hydra, UnGd Rkts M151, HE", "weight": 364.4}
     BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = {"clsid": "{BRU33_LAU68}", "name": "BRU-33 with 1 x LAU-68 pod - 7 x 2.75\" Hydra, UnGd Rkts M151, HE", "weight": 204.9}
     BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = {"clsid": "{BRU33_LAU68_MK5}", "name": "BRU-33 with 1 x LAU-68 pod - 7 x 2.75\" Hydra, UnGd Rkts Mk5, HEAT", "weight": 193.1}
@@ -167,7 +167,7 @@ class Weapons:
     BRU_33_with_2_x_CBU_99___490lbs__247_x_HEAT_Bomblets = {"clsid": "{BRU33_2X_CBU-99}", "name": "BRU-33 with 2 x CBU-99 - 490lbs, 247 x HEAT Bomblets", "weight": 535}
     BRU_33_with_2_x_GBU_12___500lb_Laser_Guided_Bomb = {"clsid": "{BRU33_2X_GBU-12}", "name": "BRU-33 with 2 x GBU-12 - 500lb Laser Guided Bomb", "weight": 645}
     BRU_33_with_2_x_GBU_16___1000lb_Laser_Guided_Bomb = {"clsid": "{BRU33_2X_GBU-16}", "name": "BRU-33 with 2 x GBU-16 - 1000lb Laser Guided Bomb", "weight": 1117}
-    BRU_33_with_2_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = {"clsid": "{BRU33_2*LAU10}", "name": "BRU-33 with 2 x LAU-10 pod - 4 x 127mm ZUNI, UnGd Rkts Mk71, HE/FRAG", "weight": 724.2}
+    BRU_33_with_2_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = {"clsid": "{BRU33_2*LAU10}", "name": "BRU-33 with 2 x LAU-10 pod - 4 x 127mm ZUNI, UnGd Rkts Mk71, HE/FRAG", "weight": 668.8}
     BRU_33_with_2_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = {"clsid": "{BRU33_2*LAU61}", "name": "BRU-33 with 2 x LAU-61 pod - 19 x 2.75\" Hydra, UnGd Rkts M151, HE", "weight": 637.8}
     BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = {"clsid": "{BRU33_2*LAU68}", "name": "BRU-33 with 2 x LAU-68 pod - 7 x 2.75\" Hydra, UnGd Rkts M151, HE", "weight": 318.8}
     BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = {"clsid": "{BRU33_2*LAU68_MK5}", "name": "BRU-33 with 2 x LAU-68 pod - 7 x 2.75\" Hydra, UnGd Rkts Mk5, HEAT", "weight": 295.2}
@@ -240,6 +240,7 @@ class Weapons:
     CBU_87___202_x_CEM_Cluster_Bomb = {"clsid": "{CBU-87}", "name": "CBU-87 - 202 x CEM Cluster Bomb", "weight": 430}
     CBU_97___10_x_SFW_Cluster_Bomb = {"clsid": "{5335D97A-35A5-4643-9D9B-026C75961E52}", "name": "CBU-97 - 10 x SFW Cluster Bomb", "weight": 417}
     CBU_99___490lbs__247_x_HEAT_Bomblets = {"clsid": "{CBU_99}", "name": "CBU-99 - 490lbs, 247 x HEAT Bomblets", "weight": 222}
+    CLB4_BR250 = {"clsid": "CLB4_BR250", "name": "AUF2 MK-82 x 2", "weight": 525}
     CLB_30___Mk_83___1000lb_GP_Bomb_LD = {"clsid": "{CLB30_MK83}", "name": "CLB 30 - Mk-83 - 1000lb GP Bomb LD", "weight": 499}
     CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = {"clsid": "{CLB4_BLU107}", "name": "CLB 4 - 4 x BLU-107/B Durandal - 219kg Concrete Piercing Chute Retarded Bomb w/Booster", "weight": 1059}
     CLB_4___4_x_Mk_82_Snakeye___500lb_GP_Bomb_HD = {"clsid": "{CLB4_MK82S}", "name": "CLB 4 - 4 x Mk-82 Snakeye - 500lb GP Bomb HD", "weight": 1181}
@@ -507,8 +508,8 @@ class Weapons:
     LAU_105_AIS_ASQ_T50_R = {"clsid": "LAU-105_AIS_ASQ_T50_R", "name": "LAU-105 with 1 x AN/ASQ-T50 TCTS Pod - ACMI Pod", "weight": 92.6}
     LAU_105_with_2_x_AIM_9M_Sidewinder_IR_AAM = {"clsid": "{DB434044-F5D0-4F1F-9BA9-B73027E18DD3}", "name": "LAU-105 with 2 x AIM-9M Sidewinder IR AAM", "weight": 201.46}
     LAU_105_with_2_x_AIM_9P_Sidewinder_IR_AAM = {"clsid": "{3C0745ED-8B0B-42eb-B907-5BD5C1717447}", "name": "LAU-105 with 2 x AIM-9P Sidewinder IR AAM", "weight": 201}
-    LAU_10R_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = {"clsid": "{LAU_10R}", "name": "LAU-10R pod - 4 x 127mm ZUNI, UnGd Rkts Mk71, HE/FRAG", "weight": 316.6}
-    LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = {"clsid": "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}", "name": "LAU-10 pod - 4 x 127mm ZUNI, UnGd Rkts Mk71, HE/FRAG", "weight": 316.6}
+    LAU_10R_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = {"clsid": "{LAU_10R}", "name": "LAU-10R pod - 4 x 127mm ZUNI, UnGd Rkts Mk71, HE/FRAG", "weight": 288.9}
+    LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = {"clsid": "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}", "name": "LAU-10 pod - 4 x 127mm ZUNI, UnGd Rkts Mk71, HE/FRAG", "weight": 288.9}
     LAU_10___4_ZUNI_MK_71 = {"clsid": "{BRU42_LAU10}", "name": "LAU-10 - 4 ZUNI MK 71", "weight": 568}
     LAU_10___4_ZUNI_MK_71_ = {"clsid": "{BRU3242_LAU10}", "name": "LAU-10 - 4 ZUNI MK 71", "weight": 625.38}
     LAU_115C_with_AIM_7E_2_Sparrow_Semi_Active_Radar = {"clsid": "{LAU-115 - AIM-7E}", "name": "LAU-115C with AIM-7E-2 Sparrow Semi-Active Radar", "weight": 284.4}
@@ -1456,6 +1457,7 @@ weapon_ids = {
     "{CBU-87}": Weapons.CBU_87___202_x_CEM_Cluster_Bomb,
     "{5335D97A-35A5-4643-9D9B-026C75961E52}": Weapons.CBU_97___10_x_SFW_Cluster_Bomb,
     "{CBU_99}": Weapons.CBU_99___490lbs__247_x_HEAT_Bomblets,
+    "CLB4_BR250": Weapons.CLB4_BR250,
     "{CLB30_MK83}": Weapons.CLB_30___Mk_83___1000lb_GP_Bomb_LD,
     "{CLB4_BLU107}": Weapons.CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster,
     "{CLB4_MK82S}": Weapons.CLB_4___4_x_Mk_82_Snakeye___500lb_GP_Bomb_HD,
