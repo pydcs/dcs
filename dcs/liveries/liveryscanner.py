@@ -1,5 +1,4 @@
 import os
-import re
 from typing import Dict
 
 from dcs.installation import get_dcs_install_directory, get_dcs_saved_games_directory
@@ -16,14 +15,6 @@ skip_units = {  # Known obsolete units in specific locations
     "leopard-2": "Bazar",
     "Zil_135l": "Bazar",
 }
-
-
-def safe_name(string: str) -> str:
-    safe_name = re.sub(r"[-()/., *\'+`#%\[\]]", "_", string)
-    safe_name = re.sub(r'_*$|"|&', "", safe_name)
-    safe_name = re.sub(r"^(\d)", r"x_\1", safe_name)
-    safe_name = re.sub(r"[\u0080-\uFFFF]", "_", safe_name)
-    return safe_name
 
 
 class LiveryScanner:
@@ -59,7 +50,6 @@ class LiveryScanner:
 
     def register_livery(self, unit: str, livery: Livery) -> None:
         self.map[unit].add(livery)
-        setattr(self.map[unit], safe_name(livery.id), livery)
 
     def scan_liveries(self, path: str, campaign_path: bool = False) -> None:
         """
@@ -90,7 +80,6 @@ class LiveryScanner:
                 unit = campaign_livery_aliases[unit]
             if unit not in self.map:
                 self.map[unit] = LiverySet(unit)
-                setattr(self, safe_name(unit), self.map[unit])
             for livery_name in os.listdir(liveries_path):
                 livery = Livery.from_path(os.path.join(liveries_path, livery_name))
                 if livery is not None:
