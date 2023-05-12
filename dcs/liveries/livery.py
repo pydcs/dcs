@@ -2,24 +2,18 @@ from typing import Optional, Set
 
 
 class Livery:
-    id: str = ""
-    """ID of the livery, corresponds with the folder-name of the livery. To be used in mission file!"""
-
-    name: str = ""
-    """Name of the livery as displayed in DCS"""
-
-    order: int = 0
-    """Order of the livery used to sort like DCS"""
-
-    countries: Optional[Set[str]] = None
-    """Set of short names indicating valid countries, with 'None' indicating all countries."""
-
     def __init__(
         self, path_id: str, name: str, order: int, countries: Optional[Set[str]]
     ) -> None:
+        # ID to be used in the miz.
         self.id = path_id
+        # Display name.
         self.name = name
+        # UI sort order.
         self.order = order
+        # List of countries that may use this livery. If None, all countries may use the
+        # livery. The elements in this list are short names for countries, e.g. "USA"
+        # or "RUS".
         self.countries = countries
 
     def __str__(self) -> str:

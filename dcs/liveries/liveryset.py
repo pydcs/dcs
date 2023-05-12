@@ -4,8 +4,6 @@ from .livery import Livery
 
 
 class LiverySet(Set[Livery]):
-    unit_livery_id: Optional[str] = None
-
     def __init__(self, unit_livery_id: Optional[str] = None) -> None:
         super().__init__()
         self.unit_livery_id = unit_livery_id
