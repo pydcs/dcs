@@ -87,7 +87,7 @@ def test_ignore_cockpit_liveries(tmp_path: Path) -> None:
     description.parent.mkdir(parents=True)
     description.write_text("desc")
 
-    with patch("dcs.liveries_scanner.LiverySet.add") as mock:
+    with patch("dcs.liveries.liveryset.LiverySet.add") as mock:
         LiveryScanner().scan_liveries(str(tmp_path))
     mock.assert_not_called()
 

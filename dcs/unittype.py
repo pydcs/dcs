@@ -1,5 +1,4 @@
 import dcs.lua as lua
-from dcs.liveries_scanner import LiverySet
 from dcs.payloads import PayloadDirectories
 import re
 import sys
@@ -7,6 +6,7 @@ from typing import Any, Dict, Iterator, List, Optional, Set, Type, Union, TYPE_C
 
 from dcs.liveries.livery import Livery
 from dcs.liveries.liverycache import LiveryCache
+from dcs.liveries.liveryset import LiverySet
 
 if TYPE_CHECKING:
     from dcs.task import MainTask
