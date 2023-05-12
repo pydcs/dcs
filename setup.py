@@ -40,6 +40,7 @@ setup(
     packages=[
         'dcs',
         'dcs/drawing',
+        'dcs/liveries',
         'dcs/lua',
         'dcs/scripts',
         'dcs/terrain',
