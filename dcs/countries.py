@@ -32606,7 +32606,195 @@ country_dict = {
 }
 
 
-def get_by_id(_id: int):
+countries_by_name = {
+    Russia.name: Russia,
+    Ukraine.name: Ukraine,
+    USA.name: USA,
+    Turkey.name: Turkey,
+    UK.name: UK,
+    France.name: France,
+    Germany.name: Germany,
+    USAFAggressors.name: USAFAggressors,
+    Canada.name: Canada,
+    Spain.name: Spain,
+    TheNetherlands.name: TheNetherlands,
+    Belgium.name: Belgium,
+    Norway.name: Norway,
+    Denmark.name: Denmark,
+    Israel.name: Israel,
+    Georgia.name: Georgia,
+    Insurgents.name: Insurgents,
+    Abkhazia.name: Abkhazia,
+    SouthOssetia.name: SouthOssetia,
+    Italy.name: Italy,
+    Australia.name: Australia,
+    Switzerland.name: Switzerland,
+    Austria.name: Austria,
+    Belarus.name: Belarus,
+    Bulgaria.name: Bulgaria,
+    CzechRepublic.name: CzechRepublic,
+    China.name: China,
+    Croatia.name: Croatia,
+    Egypt.name: Egypt,
+    Finland.name: Finland,
+    Greece.name: Greece,
+    Hungary.name: Hungary,
+    India.name: India,
+    Iran.name: Iran,
+    Iraq.name: Iraq,
+    Japan.name: Japan,
+    Kazakhstan.name: Kazakhstan,
+    NorthKorea.name: NorthKorea,
+    Pakistan.name: Pakistan,
+    Poland.name: Poland,
+    Romania.name: Romania,
+    SaudiArabia.name: SaudiArabia,
+    Serbia.name: Serbia,
+    Slovakia.name: Slovakia,
+    SouthKorea.name: SouthKorea,
+    Sweden.name: Sweden,
+    Syria.name: Syria,
+    Yemen.name: Yemen,
+    Vietnam.name: Vietnam,
+    Venezuela.name: Venezuela,
+    Tunisia.name: Tunisia,
+    Thailand.name: Thailand,
+    Sudan.name: Sudan,
+    Philippines.name: Philippines,
+    Morocco.name: Morocco,
+    Mexico.name: Mexico,
+    Malaysia.name: Malaysia,
+    Libya.name: Libya,
+    Jordan.name: Jordan,
+    Indonesia.name: Indonesia,
+    Honduras.name: Honduras,
+    Ethiopia.name: Ethiopia,
+    Chile.name: Chile,
+    Brazil.name: Brazil,
+    Bahrain.name: Bahrain,
+    ThirdReich.name: ThirdReich,
+    Yugoslavia.name: Yugoslavia,
+    USSR.name: USSR,
+    ItalianSocialRepublic.name: ItalianSocialRepublic,
+    Algeria.name: Algeria,
+    Kuwait.name: Kuwait,
+    Qatar.name: Qatar,
+    Oman.name: Oman,
+    UnitedArabEmirates.name: UnitedArabEmirates,
+    SouthAfrica.name: SouthAfrica,
+    Cuba.name: Cuba,
+    Portugal.name: Portugal,
+    GDR.name: GDR,
+    Lebanon.name: Lebanon,
+    CombinedJointTaskForcesBlue.name: CombinedJointTaskForcesBlue,
+    CombinedJointTaskForcesRed.name: CombinedJointTaskForcesRed,
+    UnitedNationsPeacekeepers.name: UnitedNationsPeacekeepers,
+    Argentina.name: Argentina,
+    Cyprus.name: Cyprus,
+    Slovenia.name: Slovenia,
+    Bolivia.name: Bolivia,
+    Ghana.name: Ghana,
+    Nigeria.name: Nigeria,
+    Peru.name: Peru,
+    Ecuador.name: Ecuador,
+}
+
+
+countries_by_short_name = {
+    Russia.shortname: Russia,
+    Ukraine.shortname: Ukraine,
+    USA.shortname: USA,
+    Turkey.shortname: Turkey,
+    UK.shortname: UK,
+    France.shortname: France,
+    Germany.shortname: Germany,
+    USAFAggressors.shortname: USAFAggressors,
+    Canada.shortname: Canada,
+    Spain.shortname: Spain,
+    TheNetherlands.shortname: TheNetherlands,
+    Belgium.shortname: Belgium,
+    Norway.shortname: Norway,
+    Denmark.shortname: Denmark,
+    Israel.shortname: Israel,
+    Georgia.shortname: Georgia,
+    Insurgents.shortname: Insurgents,
+    Abkhazia.shortname: Abkhazia,
+    SouthOssetia.shortname: SouthOssetia,
+    Italy.shortname: Italy,
+    Australia.shortname: Australia,
+    Switzerland.shortname: Switzerland,
+    Austria.shortname: Austria,
+    Belarus.shortname: Belarus,
+    Bulgaria.shortname: Bulgaria,
+    CzechRepublic.shortname: CzechRepublic,
+    China.shortname: China,
+    Croatia.shortname: Croatia,
+    Egypt.shortname: Egypt,
+    Finland.shortname: Finland,
+    Greece.shortname: Greece,
+    Hungary.shortname: Hungary,
+    India.shortname: India,
+    Iran.shortname: Iran,
+    Iraq.shortname: Iraq,
+    Japan.shortname: Japan,
+    Kazakhstan.shortname: Kazakhstan,
+    NorthKorea.shortname: NorthKorea,
+    Pakistan.shortname: Pakistan,
+    Poland.shortname: Poland,
+    Romania.shortname: Romania,
+    SaudiArabia.shortname: SaudiArabia,
+    Serbia.shortname: Serbia,
+    Slovakia.shortname: Slovakia,
+    SouthKorea.shortname: SouthKorea,
+    Sweden.shortname: Sweden,
+    Syria.shortname: Syria,
+    Yemen.shortname: Yemen,
+    Vietnam.shortname: Vietnam,
+    Venezuela.shortname: Venezuela,
+    Tunisia.shortname: Tunisia,
+    Thailand.shortname: Thailand,
+    Sudan.shortname: Sudan,
+    Philippines.shortname: Philippines,
+    Morocco.shortname: Morocco,
+    Mexico.shortname: Mexico,
+    Malaysia.shortname: Malaysia,
+    Libya.shortname: Libya,
+    Jordan.shortname: Jordan,
+    Indonesia.shortname: Indonesia,
+    Honduras.shortname: Honduras,
+    Ethiopia.shortname: Ethiopia,
+    Chile.shortname: Chile,
+    Brazil.shortname: Brazil,
+    Bahrain.shortname: Bahrain,
+    ThirdReich.shortname: ThirdReich,
+    Yugoslavia.shortname: Yugoslavia,
+    USSR.shortname: USSR,
+    ItalianSocialRepublic.shortname: ItalianSocialRepublic,
+    Algeria.shortname: Algeria,
+    Kuwait.shortname: Kuwait,
+    Qatar.shortname: Qatar,
+    Oman.shortname: Oman,
+    UnitedArabEmirates.shortname: UnitedArabEmirates,
+    SouthAfrica.shortname: SouthAfrica,
+    Cuba.shortname: Cuba,
+    Portugal.shortname: Portugal,
+    GDR.shortname: GDR,
+    Lebanon.shortname: Lebanon,
+    CombinedJointTaskForcesBlue.shortname: CombinedJointTaskForcesBlue,
+    CombinedJointTaskForcesRed.shortname: CombinedJointTaskForcesRed,
+    UnitedNationsPeacekeepers.shortname: UnitedNationsPeacekeepers,
+    Argentina.shortname: Argentina,
+    Cyprus.shortname: Cyprus,
+    Slovenia.shortname: Slovenia,
+    Bolivia.shortname: Bolivia,
+    Ghana.shortname: Ghana,
+    Nigeria.shortname: Nigeria,
+    Peru.shortname: Peru,
+    Ecuador.shortname: Ecuador,
+}
+
+
+def get_by_id(_id: int) -> Country:
     """Returns a new country object for the given country id
 
     Args:
@@ -32616,3 +32804,31 @@ def get_by_id(_id: int):
         Country: a new country object
     """
     return country_dict[_id]()
+
+
+def get_by_name(name: str) -> Country:
+    """Returns a new country object for the given country name.
+
+    Warning: the country names may or may not be stable. *Short* names' are
+    most likely stable because they're used in livery files, but" the name
+    field could potentially change at the whims of ED.
+
+    Args:
+        name: name of the country
+
+    Returns:
+        Country: a new country object
+    """
+    return countries_by_name[name]()
+
+
+def get_by_short_name(short_name: str) -> Country:
+    """Returns a new country object for the given country short name.
+
+    Args:
+        short_name: short name of the country
+
+    Returns:
+        Country: a new country object
+    """
+    return countries_by_short_name[short_name]()
