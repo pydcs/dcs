@@ -96,7 +96,7 @@ class Livery:
             except ValueError:
                 order = 0
 
-        return Livery(path_id, livery_name, order, countries)
+        return Livery(path_id.lower(), livery_name, order, countries)
 
     @staticmethod
     def from_path(path: str) -> Optional[Livery]:

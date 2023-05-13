@@ -85,3 +85,13 @@ def test_find_zipped_livery(tmp_path: Path) -> None:
         with zip_file.open("description.lua", "w") as description:
             pass
     assert Livery.from_path(str(zip_path)) is not None
+
+
+def test_livery_id_forced_lower_case(tmp_path: Path) -> None:
+    path = tmp_path / "FOO"
+    path.mkdir()
+    description = path / "description.lua"
+    description.touch()
+    livery = Livery.from_path(str(path))
+    assert livery is not None
+    assert livery.id.islower()
