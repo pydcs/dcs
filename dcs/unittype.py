@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import dcs.lua as lua
 from dcs.payloads import PayloadDirectories
 import re
@@ -9,6 +11,7 @@ from dcs.liveries.liverycache import LiveryCache
 from dcs.liveries.liveryset import LiverySet
 
 if TYPE_CHECKING:
+    from dcs.country import Country
     from dcs.task import MainTask
 
 
@@ -176,6 +179,14 @@ class FlyingType(UnitType):
         if cls.livery_name is None:
             return
         yield from LiveryCache.for_unit(cls.livery_name)
+
+    @classmethod
+    def iter_liveries_for_country(cls, country: Country) -> Iterator[Livery]:
+        if cls.livery_name is None:
+            return
+        for livery in LiveryCache.for_unit(cls.livery_name):
+            if livery.valid_for_country(country.shortname):
+                yield livery
 
     @classmethod
     def default_livery(cls, country_name) -> str:
