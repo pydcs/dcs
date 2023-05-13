@@ -223,3 +223,6 @@ class Country:
 
     def __str__(self):
         return str(self.id) + "," + self.name + "," + str(self.vehicle_group)
+
+    def __hash__(self) -> int:
+        return hash(self.id)
