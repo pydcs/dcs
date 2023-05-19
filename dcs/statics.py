@@ -540,6 +540,12 @@ class Fortification:
         shape_name = "container_20ft"
         rate = 1
 
+    class FlagPole(unittype.StaticType):
+        id = "FlagPole"
+        name = "Flag Pole"
+        shape_name = "FlagPole"
+        rate = 1
+
     class Warning_board_a(unittype.StaticType):
         id = "warning_board_a"
         name = "Warning Board: Spy Cannot Escape!"
@@ -792,6 +798,7 @@ fortification_map = {
     "offshore WindTurbine2": Fortification.Offshore_WindTurbine2,
     "container_40ft": Fortification.Container_40ft,
     "container_20ft": Fortification.Container_20ft,
+    "FlagPole": Fortification.FlagPole,
     "warning_board_a": Fortification.Warning_board_a,
     "warning_board_b": Fortification.Warning_board_b,
     "Belgian gate": Fortification.Belgian_gate,
