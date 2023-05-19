@@ -80,7 +80,11 @@ class Livery:
         # liveries to be suddenly unparseable), and so far we aren't interested in the
         # values of liveries that rely on undefined variables, just assume those are all
         # the empty string and move on.
-        data = dcs.lua.loads(code, unknown_variable_lookup=lambda _: "")
+        try:
+            data = dcs.lua.loads(code, unknown_variable_lookup=lambda _: "")
+        except SyntaxError:
+            logging.exception("Could not parse livery definition at %s", path)
+            return None
         livery_name = data.get("name", path_id)
         countries_table = data.get("countries")
         if countries_table is None:
