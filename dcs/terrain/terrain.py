@@ -62,7 +62,7 @@ class RunwayApproach:
 
     @staticmethod
     def from_lua(name: str, beacons: Dict[str, List[RunwayBeacon]]) -> RunwayApproach:
-        return RunwayApproach(name, int(name.rstrip("LR")) * 10, beacons.get(name, []))
+        return RunwayApproach(name, int(name.rstrip("LCR")) * 10, beacons.get(name, []))
 
 
 @dataclass(frozen=True)
