@@ -143,8 +143,11 @@ def test_for_errors(
     if not math.isclose(x, coords.x) or not math.isclose(z, coords.z):
         error_x = x - coords.x
         error_z = z - coords.z
-        error_pct_x = error_x / coords.x * 100
-        error_pct_z = error_z / coords.z * 100
+        try:
+            error_pct_x = error_x / coords.x * 100
+            error_pct_z = error_z / coords.z * 100
+        except ZeroDivisionError as ex:
+            raise RuntimeError(f"Unexpected 0 coordinate in {name}")
         print(f"{name} has error of {error_pct_x}% {error_pct_z}%")
         errors = True
 
@@ -172,6 +175,9 @@ def test_parameters(
     x_z_to_lat_lon = Transformer.from_crs(crs, wgs84)
     for name, coords in airbases.items():
         if name == "zero":
+            continue
+        if name in {"Raj al Issa East", "Raj al Issa West"}:
+            # https://forum.dcs.world/topic/299885-raj-al-issa-west-east-markers/
             continue
         if test_for_errors(name, lat_lon_to_x_z, x_z_to_lat_lon, coords):
             errors = True
