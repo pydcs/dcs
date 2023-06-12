@@ -55,7 +55,7 @@ JSON_LUA = THIS_DIR / "json.lua"
 EXPORT_LUA = THIS_DIR / "coord_export.lua"
 DCS_SAVED_GAMES = Path.home() / "Saved Games/DCS"
 SRC_ROOT = THIS_DIR.parent
-EXPORT_DIR = SRC_ROOT / "dcs/terrain/projections"
+EXPORT_DIR = SRC_ROOT / "dcs/terrain"
 
 
 ARG_TO_TERRAIN_MAP = {
@@ -286,7 +286,7 @@ def main() -> None:
         )
     coords_path = DCS_SAVED_GAMES / "coords.json"
     parameters = compute_tmerc_parameters(coords_path, args.map)
-    out_file = EXPORT_DIR / f"{args.map}.py"
+    out_file = EXPORT_DIR / args.map / "projection.py"
     out_file.write_text(
         textwrap.dedent(
             f"""\
