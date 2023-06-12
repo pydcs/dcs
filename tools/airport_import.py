@@ -122,7 +122,7 @@ def main():
             x = airport["airport"]["reference_point"]["x"]
             y = airport["airport"]["reference_point"]["y"]
 
-            atc_freqs = list(airport["frequencies"]["frequencyList"].values())
+            atc_freqs = [v[1] for v in airport["frequencies"]["frequencyList"].values()]
             if atc_freqs:
                 hf, vhf_low, vhf_high, uhf = sorted(atc_freqs)
                 atc_radio = AtcRadio(
