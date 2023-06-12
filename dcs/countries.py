@@ -10359,6 +10359,12 @@ class Egypt(Country):
             FPS_117 = vehicles.AirDefence.FPS_117
             FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
             FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
+            Patriot_AMG = vehicles.AirDefence.Patriot_AMG
+            Patriot_ECS = vehicles.AirDefence.Patriot_ECS
+            Patriot_ln = vehicles.AirDefence.Patriot_ln
+            Patriot_EPP = vehicles.AirDefence.Patriot_EPP
+            Patriot_cp = vehicles.AirDefence.Patriot_cp
+            Patriot_str = vehicles.AirDefence.Patriot_str
             RD_75 = vehicles.AirDefence.RD_75
 
         class Fortification:
@@ -10436,6 +10442,9 @@ class Egypt(Country):
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         M_2000C = planes.M_2000C
         WingLoong_I = planes.WingLoong_I
+        F_16C_bl_50 = planes.F_16C_bl_50
+        F_16C_bl_52d = planes.F_16C_bl_52d
+        IL_76MD = planes.IL_76MD
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         P_47D_30 = planes.P_47D_30
@@ -10481,6 +10490,9 @@ class Egypt(Country):
         Plane.SpitfireLFMkIXCW,
         Plane.M_2000C,
         Plane.WingLoong_I,
+        Plane.F_16C_bl_50,
+        Plane.F_16C_bl_52d,
+        Plane.IL_76MD,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.P_47D_30,
@@ -10527,6 +10539,8 @@ class Egypt(Country):
         SA342Mistral = helicopters.SA342Mistral
         SA342Minigun = helicopters.SA342Minigun
         AH_64D_BLK_II = helicopters.AH_64D_BLK_II
+        Mi_8MT = helicopters.Mi_8MT
+        Mi_24V = helicopters.Mi_24V
 
     helicopters = [
         Helicopter.Ka_50,
@@ -10539,6 +10553,8 @@ class Egypt(Country):
         Helicopter.SA342Mistral,
         Helicopter.SA342Minigun,
         Helicopter.AH_64D_BLK_II,
+        Helicopter.Mi_8MT,
+        Helicopter.Mi_24V,
     ]
 
     class Ship:

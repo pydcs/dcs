@@ -1575,10 +1575,10 @@ class Mi_24P(HelicopterType):
         B_8V20A_OFP2 = (2, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (2, Weapons.B_8V20A_OM)
         UB_32A_24_pod___32_x_S_5KO = (2, Weapons.UB_32A_24_pod___32_x_S_5KO)
-        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (2, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
-        _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT = (2, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT)
-        _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE = (2, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE)
-        _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag = (2, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag)
+        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT_ = (2, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT_)
+        _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT_ = (2, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT_)
+        _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE_ = (2, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE_)
+        _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag_ = (2, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag_)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         Fuel_tank_PTB_450 = (2, Weapons.Fuel_tank_PTB_450)
         B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
@@ -1641,10 +1641,10 @@ class Mi_24P(HelicopterType):
         B_8V20A_OFP2 = (5, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (5, Weapons.B_8V20A_OM)
         UB_32A_24_pod___32_x_S_5KO = (5, Weapons.UB_32A_24_pod___32_x_S_5KO)
-        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (5, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
-        _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT = (5, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT)
-        _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE = (5, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE)
-        _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag = (5, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag)
+        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT_ = (5, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT_)
+        _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT_ = (5, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT_)
+        _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE_ = (5, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE_)
+        _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag_ = (5, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag_)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (5, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         Fuel_tank_PTB_450 = (5, Weapons.Fuel_tank_PTB_450)
         B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
@@ -1710,6 +1710,7 @@ class SA342M(HelicopterType):
 
     property_defaults: Dict[str, Any] = {
         "NS430allow": True,
+        "RemoveTablet": False,
     }
 
     class Properties:
@@ -1717,28 +1718,43 @@ class SA342M(HelicopterType):
         class NS430allow:
             id = "NS430allow"
 
+        class RemoveTablet:
+            id = "RemoveTablet"
+
     livery_name = "SA342M"  # from type
 
     class Pylon1:
-        HOT3_ = (1, Weapons.HOT3_)
+        HOT3_x1__ = (1, Weapons.HOT3_x1__)
+        HOT3_x2__ = (1, Weapons.HOT3_x2__)
 
     class Pylon2:
-        HOT3 = (2, Weapons.HOT3)
+        HOT3_x1___ = (2, Weapons.HOT3_x1___)
+        HOT3_x2___ = (2, Weapons.HOT3_x2___)
 
     class Pylon3:
-        HOT3_ = (3, Weapons.HOT3_)
+        Sand_Filter = (3, Weapons.Sand_Filter)
 
     class Pylon4:
-        HOT3 = (4, Weapons.HOT3)
+        IR_Deflector = (4, Weapons.IR_Deflector)
 
     class Pylon5:
-        Sand_Filter = (5, Weapons.Sand_Filter)
+        Dipole_Antanna__aesthetic_ = (5, Weapons.Dipole_Antanna__aesthetic_)
 
     class Pylon6:
-        IR_Deflector = (6, Weapons.IR_Deflector)
+        Smoke_Generator___red_ = (6, Weapons.Smoke_Generator___red_)
+        Smoke_Generator___green_ = (6, Weapons.Smoke_Generator___green_)
+        Smoke_Generator___blue_ = (6, Weapons.Smoke_Generator___blue_)
+        Smoke_Generator___white_ = (6, Weapons.Smoke_Generator___white_)
+        Smoke_Generator___yellow_ = (6, Weapons.Smoke_Generator___yellow_)
+        Smoke_Generator___orange_ = (6, Weapons.Smoke_Generator___orange_)
 
     class Pylon7:
-        Dipole_Antanna__aesthetic_ = (7, Weapons.Dipole_Antanna__aesthetic_)
+        Smoke_Generator___red_ = (7, Weapons.Smoke_Generator___red_)
+        Smoke_Generator___green_ = (7, Weapons.Smoke_Generator___green_)
+        Smoke_Generator___blue_ = (7, Weapons.Smoke_Generator___blue_)
+        Smoke_Generator___white_ = (7, Weapons.Smoke_Generator___white_)
+        Smoke_Generator___yellow_ = (7, Weapons.Smoke_Generator___yellow_)
+        Smoke_Generator___orange_ = (7, Weapons.Smoke_Generator___orange_)
 
     pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
@@ -1780,6 +1796,7 @@ class SA342L(HelicopterType):
     property_defaults: Dict[str, Any] = {
         "NS430allow": True,
         "SA342RemoveDoors": False,
+        "RemoveTablet": False,
     }
 
     class Properties:
@@ -1790,8 +1807,34 @@ class SA342L(HelicopterType):
         class SA342RemoveDoors:
             id = "SA342RemoveDoors"
 
+        class RemoveTablet:
+            id = "RemoveTablet"
+
     livery_name = "SA342L"  # from type
-#ERRR {GIAT_M621G}
+
+    class Pylon1:
+        GIAT_M621__240x_Combat_mix_4x_AP_1x_HE_ = (1, Weapons.GIAT_M621__240x_Combat_mix_4x_AP_1x_HE_)
+        GIAT_M621__240x_combat_mix_4x_HE_1x_AP_ = (1, Weapons.GIAT_M621__240x_combat_mix_4x_HE_1x_AP_)
+        GIAT_M621__240x_HE_ = (1, Weapons.GIAT_M621__240x_HE_)
+        GIAT_M621__240x_AP_ = (1, Weapons.GIAT_M621__240x_AP_)
+        GIAT_M621__240x_SAPHEI_ = (1, Weapons.GIAT_M621__240x_SAPHEI_)
+        Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (1, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_251_H1_HE = (1, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_251_H1_HE)
+        Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_252_H1_TP = (1, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_252_H1_TP)
+        Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_253_H1_HEAT_ = (1, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_253_H1_HEAT_)
+        Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_254_H1_SM_Red = (1, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_254_H1_SM_Red)
+        Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_254_H1_SM_Yellow = (1, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_254_H1_SM_Yellow)
+        Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_254_H1_SM_Green = (1, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_254_H1_SM_Green)
+        Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_256_H1_HE_Frag = (1, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_256_H1_HE_Frag)
+        Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_257_H1_HE_Frag_Lg_Whd = (1, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_257_H1_HE_Frag_Lg_Whd)
+        Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_259E_H1_IL = (1, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_259E_H1_IL)
+        FN_HMP400__400rnds_ = (1, Weapons.FN_HMP400__400rnds_)
+        FN_HMP400__200rnds_ = (1, Weapons.FN_HMP400__200rnds_)
+        FN_HMP400__100rnds_ = (1, Weapons.FN_HMP400__100rnds_)
+        _1xMistral_ATAM_ = (1, Weapons._1xMistral_ATAM_)
+        _2xMistral_ATAM = (1, Weapons._2xMistral_ATAM)
+        HOT3_x1 = (1, Weapons.HOT3_x1)
+        HOT3_x2 = (1, Weapons.HOT3_x2)
 
     class Pylon2:
         Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
@@ -1804,18 +1847,40 @@ class SA342L(HelicopterType):
         Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_256_H1_HE_Frag = (2, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_256_H1_HE_Frag)
         Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_257_H1_HE_Frag_Lg_Whd = (2, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_257_H1_HE_Frag_Lg_Whd)
         Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_259E_H1_IL = (2, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_259E_H1_IL)
+        FN_HMP400__400rnds_ = (2, Weapons.FN_HMP400__400rnds_)
+        FN_HMP400__200rnds_ = (2, Weapons.FN_HMP400__200rnds_)
+        FN_HMP400__100rnds_ = (2, Weapons.FN_HMP400__100rnds_)
+        _2xMistral_ATAM_ = (2, Weapons._2xMistral_ATAM_)
+        _1xMistral_ATAM = (2, Weapons._1xMistral_ATAM)
+        HOT3_x1_ = (2, Weapons.HOT3_x1_)
+        HOT3_x2_ = (2, Weapons.HOT3_x2_)
+
+    class Pylon3:
+        Sand_Filter = (3, Weapons.Sand_Filter)
+
+    class Pylon4:
+        IR_Deflector = (4, Weapons.IR_Deflector)
 
     class Pylon5:
-        Sand_Filter = (5, Weapons.Sand_Filter)
+        Dipole_Antanna__aesthetic_ = (5, Weapons.Dipole_Antanna__aesthetic_)
 
     class Pylon6:
-        IR_Deflector = (6, Weapons.IR_Deflector)
+        Smoke_Generator___red_ = (6, Weapons.Smoke_Generator___red_)
+        Smoke_Generator___green_ = (6, Weapons.Smoke_Generator___green_)
+        Smoke_Generator___blue_ = (6, Weapons.Smoke_Generator___blue_)
+        Smoke_Generator___white_ = (6, Weapons.Smoke_Generator___white_)
+        Smoke_Generator___yellow_ = (6, Weapons.Smoke_Generator___yellow_)
+        Smoke_Generator___orange_ = (6, Weapons.Smoke_Generator___orange_)
 
     class Pylon7:
-        Dipole_Antanna__aesthetic_ = (7, Weapons.Dipole_Antanna__aesthetic_)
-#ERRR {SA342_Doors}
+        Smoke_Generator___red_ = (7, Weapons.Smoke_Generator___red_)
+        Smoke_Generator___green_ = (7, Weapons.Smoke_Generator___green_)
+        Smoke_Generator___blue_ = (7, Weapons.Smoke_Generator___blue_)
+        Smoke_Generator___white_ = (7, Weapons.Smoke_Generator___white_)
+        Smoke_Generator___yellow_ = (7, Weapons.Smoke_Generator___yellow_)
+        Smoke_Generator___orange_ = (7, Weapons.Smoke_Generator___orange_)
 
-    pylons: Set[int] = {1, 2, 5, 6, 7, 8}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
     tasks = [task.CAS, task.GroundAttack, task.AFAC, task.Escort, task.Reconnaissance]
     task_default = task.CAS
@@ -1854,6 +1919,7 @@ class SA342Mistral(HelicopterType):
 
     property_defaults: Dict[str, Any] = {
         "NS430allow": True,
+        "RemoveTablet": False,
     }
 
     class Properties:
@@ -1861,19 +1927,14 @@ class SA342Mistral(HelicopterType):
         class NS430allow:
             id = "NS430allow"
 
+        class RemoveTablet:
+            id = "RemoveTablet"
+
     livery_name = "SA342MISTRAL"  # from type
-
-    class Pylon1:
-        Mistral_ = (1, Weapons.Mistral_)
-
-    class Pylon2:
-        Mistral = (2, Weapons.Mistral)
-
-    class Pylon3:
-        Mistral_ = (3, Weapons.Mistral_)
-
-    class Pylon4:
-        Mistral = (4, Weapons.Mistral)
+#ERRR {MBDA_MistralD}
+#ERRR {MBDA_MistralG}
+#ERRR {MBDA_MistralD}
+#ERRR {MBDA_MistralG}
 
     class Pylon5:
         Sand_Filter = (5, Weapons.Sand_Filter)
@@ -1923,6 +1984,7 @@ class SA342Minigun(HelicopterType):
 
     property_defaults: Dict[str, Any] = {
         "NS430allow": True,
+        "RemoveTablet": False,
     }
 
     class Properties:
@@ -1930,16 +1992,38 @@ class SA342Minigun(HelicopterType):
         class NS430allow:
             id = "NS430allow"
 
+        class RemoveTablet:
+            id = "RemoveTablet"
+
     livery_name = "SA342MINIGUN"  # from type
 #ERRR {MINIGUN}
 
+    class Pylon3:
+        Sand_Filter = (3, Weapons.Sand_Filter)
+
+    class Pylon4:
+        IR_Deflector = (4, Weapons.IR_Deflector)
+
     class Pylon5:
-        Sand_Filter = (5, Weapons.Sand_Filter)
+        Dipole_Antanna__aesthetic_ = (5, Weapons.Dipole_Antanna__aesthetic_)
 
     class Pylon6:
-        IR_Deflector = (6, Weapons.IR_Deflector)
+        Smoke_Generator___red_ = (6, Weapons.Smoke_Generator___red_)
+        Smoke_Generator___green_ = (6, Weapons.Smoke_Generator___green_)
+        Smoke_Generator___blue_ = (6, Weapons.Smoke_Generator___blue_)
+        Smoke_Generator___white_ = (6, Weapons.Smoke_Generator___white_)
+        Smoke_Generator___yellow_ = (6, Weapons.Smoke_Generator___yellow_)
+        Smoke_Generator___orange_ = (6, Weapons.Smoke_Generator___orange_)
 
-    pylons: Set[int] = {1, 5, 6}
+    class Pylon7:
+        Smoke_Generator___red_ = (7, Weapons.Smoke_Generator___red_)
+        Smoke_Generator___green_ = (7, Weapons.Smoke_Generator___green_)
+        Smoke_Generator___blue_ = (7, Weapons.Smoke_Generator___blue_)
+        Smoke_Generator___white_ = (7, Weapons.Smoke_Generator___white_)
+        Smoke_Generator___yellow_ = (7, Weapons.Smoke_Generator___yellow_)
+        Smoke_Generator___orange_ = (7, Weapons.Smoke_Generator___orange_)
+
+    pylons: Set[int] = {1, 3, 4, 5, 6, 7}
 
     tasks = [task.CAS, task.GroundAttack, task.AFAC, task.Escort, task.Reconnaissance]
     task_default = task.CAS
