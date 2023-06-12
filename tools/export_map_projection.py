@@ -271,8 +271,8 @@ def main() -> None:
     mission = create_mission(terrain)
     with mission_scripting(args.dcs):
         input(
-            f"Created {mission} and replaced MissionScript.lua. Open DCS and load the "
-            "mission. Once the mission starts running, close it and press enter."
+            f"Created {mission} and replaced MissionScripting.lua. Open DCS and load "
+            "the mission. Once the mission starts running, close it and press enter."
         )
     coords_path = DCS_SAVED_GAMES / "coords.json"
     parameters = compute_tmerc_parameters(coords_path, args.map)
