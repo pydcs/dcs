@@ -51,6 +51,7 @@ setup(
         'dcs/terrain/normandy',
         'dcs/terrain/persiangulf',
         'dcs/terrain/projections',
+        'dcs/terrain/sinai',
         'dcs/terrain/syria',
         'dcs/terrain/thechannel',
     ],

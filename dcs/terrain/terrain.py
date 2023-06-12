@@ -531,6 +531,12 @@ class Terrain:
             CRS("WGS84"), self.projection_parameters.to_crs()
         )
 
+    @property
+    def miz_theatre_name(self) -> str:
+        # Sinai uses a different name for the "theatre" field (SinaiMap) than it does in
+        # the mods directory on disk (Sinai).
+        return self.name
+
     def weather(self, dt: datetime, weather_: weather.Weather):
         # check if there might be the season for thunderstorms
         if 4 < dt.month < 11:

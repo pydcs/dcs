@@ -281,6 +281,8 @@ class Mission:
             self.terrain = terrain_.Normandy()
         elif imp_mission["theatre"] == 'TheChannel':
             self.terrain = terrain_.TheChannel()
+        elif imp_mission["theatre"] == 'SinaiMap':
+            self.terrain = terrain_.Sinai()
         elif imp_mission["theatre"] == 'Syria':
             self.terrain = terrain_.Syria()
         elif imp_mission["theatre"] == "MarianaIslands":
@@ -2018,7 +2020,7 @@ class Mission:
             m["trigrules"] = self.triggerrules.trigrules()
             m["triggers"] = self.triggers.dict()
         m["weather"] = self.weather.dict()
-        m["theatre"] = self.terrain.name
+        m["theatre"] = self.terrain.miz_theatre_name
         if self.needModules:
             m["needModules"] = self.needModules
         m["map"] = self.map.dict()

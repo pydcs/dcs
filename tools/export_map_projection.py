@@ -42,6 +42,7 @@ from dcs.terrain.falklands import Falklands
 from dcs.terrain.nevada import Nevada
 from dcs.terrain.normandy import Normandy
 from dcs.terrain.persiangulf import PersianGulf
+from dcs.terrain.sinai import Sinai
 from dcs.terrain.syria import Syria
 from dcs.terrain.terrain import Terrain
 from dcs.terrain.thechannel import TheChannel
@@ -65,6 +66,7 @@ ARG_TO_TERRAIN_MAP = {
     "normandy": Normandy(),
     "persiangulf": PersianGulf(),
     "thechannel": TheChannel(),
+    "sinai": Sinai(),
     "syria": Syria(),
     "marianaislands": MarianaIslands(),
 }
