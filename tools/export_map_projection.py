@@ -69,20 +69,6 @@ ARG_TO_TERRAIN_MAP = {
     "marianaislands": MarianaIslands(),
 }
 
-# https://gisgeography.com/central-meridian/
-# UTM zones determined by guess and check. There are only a handful in the region for
-# each map and getting the wrong one will be flagged with errors when processing.
-CENTRAL_MERIDIANS = {
-    "caucasus": 33,
-    "falklands": -57,
-    "nevada": -117,
-    "normandy": -3,
-    "persiangulf": 57,
-    "thechannel": 3,
-    "syria": 39,
-    "marianaislands": 147,
-}
-
 
 @dataclass(frozen=True)
 class Coordinates:
@@ -148,7 +134,7 @@ def test_for_errors(
             error_pct_z = error_z / coords.z * 100
         except ZeroDivisionError as ex:
             raise RuntimeError(f"Unexpected 0 coordinate in {name}")
-        print(f"{name} has error of {error_pct_x}% {error_pct_z}%")
+        logging.debug(f"{name} has error of {error_pct_x}% {error_pct_z}%")
         errors = True
 
     lat, lon = x_z_to_lat_lon.transform(coords.x, coords.z)
@@ -159,7 +145,7 @@ def test_for_errors(
         error_lon = lon - coords.longitude
         error_pct_lon = error_lat / coords.latitude * 100
         error_pct_lat = error_lon / coords.longitude * 100
-        print(f"{name} has error of {error_pct_lat}% {error_pct_lon}%")
+        logging.debug(f"{name} has error of {error_pct_lat}% {error_pct_lon}%")
         errors = True
 
     return errors
@@ -192,30 +178,34 @@ def compute_tmerc_parameters(
     airbases = load_coordinate_data(data)
     wgs84 = CRS("WGS84")
 
-    # Creates a transformer with 0 for the false easting and northing, but otherwise has
-    # the correct parameters. We'll use this to transform the zero point from the
-    # mission to calculate the error from the actual zero point to determine the correct
-    # false easting and northing.
-    bad = TransverseMercator(
-        central_meridian=CENTRAL_MERIDIANS[terrain],
-        false_easting=0,
-        false_northing=0,
-        scale_factor=0.9996,
-    ).to_crs()
-    zero_finder = Transformer.from_crs(wgs84, bad)
-    z, x = zero_finder.transform(airbases["zero"].latitude, airbases["zero"].longitude)
+    # UTM has a central meridian every 6 degrees from 177W to 177E.
+    # https://gisgeography.com/central-meridian/
+    for central_meridian in range(-177, 177 + 1, 6):
+        # Creates a transformer with 0 for the false easting and northing, but otherwise has
+        # the correct parameters. We'll use this to transform the zero point from the
+        # mission to calculate the error from the actual zero point to determine the correct
+        # false easting and northing.
+        bad = TransverseMercator(
+            central_meridian=central_meridian,
+            false_easting=0,
+            false_northing=0,
+            scale_factor=0.9996,
+        ).to_crs()
+        zero_finder = Transformer.from_crs(wgs84, bad)
+        z, x = zero_finder.transform(
+            airbases["zero"].latitude, airbases["zero"].longitude
+        )
 
-    parameters = TransverseMercator(
-        central_meridian=CENTRAL_MERIDIANS[terrain],
-        false_easting=-x,
-        false_northing=-z,
-        scale_factor=0.9996,
-    )
+        parameters = TransverseMercator(
+            central_meridian=central_meridian,
+            false_easting=-x,
+            false_northing=-z,
+            scale_factor=0.9996,
+        )
 
-    if test_parameters(airbases, parameters):
-        sys.exit("Found errors in projection parameters. Quitting.")
-
-    return parameters
+        if not test_parameters(airbases, parameters):
+            return parameters
+    sys.exit("Found errors in projection parameters. Quitting.")
 
 
 def replace_mission_scripting_file(install_dir: Path) -> Path:
