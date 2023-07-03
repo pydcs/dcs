@@ -90,7 +90,11 @@ class Livery:
         if countries_table is None:
             countries = None
         else:
-            countries = set(countries_table.values())
+            try:
+                countries = set(countries_table.values())
+            except AttributeError:
+                logging.exception("Could not get country information from livery at %s", path)
+                countries = None
         order = data.get("order", 0)
 
         order = None if path_id == "default" else order
