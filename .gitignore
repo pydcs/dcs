@@ -7,3 +7,5 @@ pydcs.egg-info/
 doc/_*
 venv/
 /export.log
+/.coverage
+/coverage.xml
