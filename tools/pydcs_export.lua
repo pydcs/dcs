@@ -285,6 +285,7 @@ from typing import Any, Dict, List, Set
 
 from dcs.weapons_data import Weapons
 import dcs.task as task
+from dcs.unitpropertydescription import UnitPropertyDescription
 from dcs.unittype import FlyingType
 
 
@@ -409,6 +410,9 @@ from dcs.unittype import FlyingType
             writeln(file, '    }')
         end
 
+        -- Old properties API. Only queryable via reflection and has less data.
+        -- TODO: Remove this at some point.
+
         if plane.AddPropAircraft then
             writeln(file, '')
             -- default dict
@@ -460,6 +464,86 @@ from dcs.unittype import FlyingType
                     end
                 end
             end
+
+            -- New API that has more data and is usable without reflection.
+
+            function format_lua_value(v)
+                -- https://www.lua.org/pil/2.html
+                -- There are eight basic types in Lua: nil, boolean, number, string,
+                -- userdata, function, thread, and table.
+                --
+                -- For property values, we only need to worry about:
+                --
+                -- * boolean
+                -- * number
+                -- * string
+                if type(v) == 'boolean' then
+                    if v then
+                        return 'True'
+                    else
+                        return 'False'
+                    end
+                elseif type(v) == 'string' then
+                    return '"'..v..'"'
+                else
+                    return tostring(v)
+                end
+            end
+
+            -- The order of the elements of the list are the order the
+            -- controls are presented in the UI, so ipairs must be used rather
+            -- than pairs to ensure correct iteration order.
+            writeln(file, '')
+            writeln(file, '    properties = {')
+            for prop_idx, prop in ipairs(plane.AddPropAircraft) do
+                writeln(file, string.format('        "%s": UnitPropertyDescription(', prop.id))
+                -- These three are defined by every property as far as I can
+                -- tell, even the fake label "properties" (which are a hack
+                -- to insert a label into the UI between other properties).
+                writeln(file, string.format('            identifier="%s",', prop.id))
+                writeln(file, string.format('            control="%s",', prop.control))
+
+                -- The others appear to depend on the control, and some still
+                -- are optional for each control type. Some of them (e.g.
+                -- dimension) don't have a clear purpose.
+                if prop.label ~= nil then
+                    writeln(file, string.format('            label="%s",', prop.label))
+                end
+                if prop.playerOnly ~= nil then
+                    writeln(file, string.format('            player_only=%s,', format_lua_value(prop.playerOnly)))
+                end
+                if prop.min ~= nil then
+                    writeln(file, string.format('            minimum=%d,', prop.min))
+                end
+                if prop.max ~= nil then
+                    writeln(file, string.format('            maximum=%d,', prop.max))
+                end
+                if prop.defValue ~= nil then
+                    writeln(file, string.format('            default=%s,', format_lua_value(prop.defValue)))
+                end
+                if prop.weightWhenOn ~= nil then
+                    writeln(file, string.format('            weight_when_on=%s,', format_lua_value(prop.weightWhenOn)))
+                end
+                if prop.dimension ~= nil then
+                    writeln(file, string.format('            dimension="%s",', prop.dimension))
+                end
+                if prop.xLbl ~= nil then
+                    writeln(file, string.format('            x_lbl=%d,', prop.xLbl))
+                end
+                if prop.wCtrl ~= nil then
+                    writeln(file, string.format('            w_ctrl=%d,', prop.wCtrl))
+                end
+                if prop.values ~= nil then
+                    -- Only valid for comboList.
+                    writeln(file, '            values={')
+                    for value_idx, value_desc in ipairs(prop.values) do
+                        writeln(file, string.format('                %s: "%s",', format_lua_value(value_desc.id), value_desc.dispName))
+                    end
+                    writeln(file, '            },')
+                end
+                writeln(file, '        ),')
+            end
+            writeln(file, '    }')
         end
 
         writeln(file, "")

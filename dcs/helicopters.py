@@ -3,6 +3,7 @@ from typing import Any, Dict, List, Set
 
 from dcs.weapons_data import Weapons
 import dcs.task as task
+from dcs.unitpropertydescription import UnitPropertyDescription
 from dcs.unittype import FlyingType
 
 
@@ -195,6 +196,76 @@ class Mi_8MT(HelicopterType):
 
         class NS430allow:
             id = "NS430allow"
+
+    properties = {
+        "ExhaustScreen": UnitPropertyDescription(
+            identifier="ExhaustScreen",
+            control="checkbox",
+            label="Exhaust IR suppressors",
+            default=True,
+        ),
+        "LeftEngineResource": UnitPropertyDescription(
+            identifier="LeftEngineResource",
+            control="slider",
+            label="Remaining srvc. life (lh engine)",
+            player_only=True,
+            minimum=40,
+            maximum=100,
+            default=90,
+            dimension="%",
+        ),
+        "RightEngineResource": UnitPropertyDescription(
+            identifier="RightEngineResource",
+            control="slider",
+            label="Remaining srvc. life (rh engine)",
+            player_only=True,
+            minimum=40,
+            maximum=100,
+            default=90,
+            dimension="%",
+        ),
+        "AdditionalArmor": UnitPropertyDescription(
+            identifier="AdditionalArmor",
+            control="checkbox",
+            label="Additional Armor",
+            default=True,
+        ),
+        "CargoHalfdoor": UnitPropertyDescription(
+            identifier="CargoHalfdoor",
+            control="checkbox",
+            label="Cargo halfdoor",
+            default=True,
+        ),
+        "GunnersAISkill": UnitPropertyDescription(
+            identifier="GunnersAISkill",
+            control="slider",
+            label="Gunners AI Skill",
+            minimum=10,
+            maximum=100,
+            default=90,
+            dimension="%",
+        ),
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "Instructor",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+        "NS430allow": UnitPropertyDescription(
+            identifier="NS430allow",
+            control="checkbox",
+            label="NS 430 allow",
+            default=True,
+        ),
+    }
 
     livery_name = "MI-8MT"  # from type
 
@@ -700,6 +771,55 @@ class UH_1H(HelicopterType):
                 Ask_Always = -1
                 Equally_Responsible = -2
 
+    properties = {
+        "ExhaustScreen": UnitPropertyDescription(
+            identifier="ExhaustScreen",
+            control="checkbox",
+            label="Exhaust IR suppressors",
+            default=True,
+        ),
+        "GunnersAISkill": UnitPropertyDescription(
+            identifier="GunnersAISkill",
+            control="slider",
+            label="Gunners AI Skill",
+            minimum=10,
+            maximum=100,
+            default=90,
+            dimension="%",
+        ),
+        "EngineResource": UnitPropertyDescription(
+            identifier="EngineResource",
+            control="slider",
+            label="Engine Resource",
+            player_only=True,
+            minimum=0,
+            maximum=100,
+            default=90,
+            dimension="%",
+        ),
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            player_only=True,
+            default=False,
+        ),
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "Copilot",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+    }
+
     livery_name = "UH-1H"  # from type
 
     class Pylon1:
@@ -1054,6 +1174,163 @@ class AH_64D_BLK_II(HelicopterType):
         class HumanOrchestra:
             id = "HumanOrchestra"
 
+    properties = {
+        "FCR_RFI_removed": UnitPropertyDescription(
+            identifier="FCR_RFI_removed",
+            control="checkbox",
+            label="FCR/RFI removed",
+            default=True,
+            weight_when_on=-237.23,
+        ),
+        "PltNVG": UnitPropertyDescription(
+            identifier="PltNVG",
+            control="checkbox",
+            label="Allow Plt NVG",
+            default=True,
+        ),
+        "CpgNVG": UnitPropertyDescription(
+            identifier="CpgNVG",
+            control="checkbox",
+            label="Allow Cpg NVG",
+            default=True,
+        ),
+        "FlareBurstCount": UnitPropertyDescription(
+            identifier="FlareBurstCount",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "1",
+                1: "2",
+                2: "3",
+                3: "4",
+                4: "6",
+                5: "8",
+            },
+        ),
+        "FlareBurstInterval": UnitPropertyDescription(
+            identifier="FlareBurstInterval",
+            control="comboList",
+            label="Flare Burst Interval, [sec]",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "0.1",
+                1: "0.2",
+                2: "0.3",
+                3: "0.4",
+            },
+        ),
+        "FlareSalvoCount": UnitPropertyDescription(
+            identifier="FlareSalvoCount",
+            control="comboList",
+            label="Flare Salvo Count",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "1",
+                1: "2",
+                2: "4",
+                3: "8",
+                4: "Continuous",
+            },
+        ),
+        "FlareSalvoInterval": UnitPropertyDescription(
+            identifier="FlareSalvoInterval",
+            control="comboList",
+            label="Flare Salvo Interval, [sec]",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "1",
+                1: "2",
+                2: "3",
+                3: "4",
+                4: "5",
+                5: "8",
+                6: "Random",
+            },
+        ),
+        "FlareProgramDelay": UnitPropertyDescription(
+            identifier="FlareProgramDelay",
+            control="comboList",
+            label="Flare Delay btw. Programs, [sec]",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "1",
+                1: "2",
+                2: "3",
+                3: "4",
+            },
+        ),
+        "mul_Label": UnitPropertyDescription(
+            identifier="mul_Label",
+            control="label",
+            label="AI HELPER",
+            x_lbl=150,
+        ),
+        "OverrideIFF": UnitPropertyDescription(
+            identifier="OverrideIFF",
+            control="comboList",
+            label="AI IFF Detection Mode",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Auto",
+                1: "Simple",
+                2: "Label Only",
+                3: "Realistic",
+            },
+        ),
+        "TrackAirTargets": UnitPropertyDescription(
+            identifier="TrackAirTargets",
+            control="checkbox",
+            label="Track Air Targets",
+            default=True,
+        ),
+        "mul_Label": UnitPropertyDescription(
+            identifier="mul_Label",
+            control="label",
+            label="MULTIPLAYER",
+            x_lbl=150,
+        ),
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "CPG",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+        "AIDisabled": UnitPropertyDescription(
+            identifier="AIDisabled",
+            control="checkbox",
+            label="AI Disabled",
+            default=False,
+        ),
+        "HumanOrchestra": UnitPropertyDescription(
+            identifier="HumanOrchestra",
+            control="checkbox",
+            label="Disable Multicrew",
+            player_only=True,
+            default=False,
+        ),
+    }
+
     livery_name = "AH-64D_BLK_II"  # from type
 
     class Pylon1:
@@ -1357,6 +1634,77 @@ class Ka_50_3(HelicopterType):
                 Normal = 2
                 Normal_with_Gyro = 3
 
+    properties = {
+        "modification": UnitPropertyDescription(
+            identifier="modification",
+            control="comboList",
+            label="Modification",
+            default="Ka-50_3",
+            w_ctrl=150,
+            values={
+                "Ka-50_3": "Version 2022",
+                "Ka-50": "Version 2011",
+            },
+        ),
+        "Helmet-mounted device": UnitPropertyDescription(
+            identifier="Helmet-mounted device",
+            control="comboList",
+            label="Helmet-mounted device",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Auto",
+                1: "HMS",
+                2: "NVG",
+            },
+        ),
+        "ExhaustScreen": UnitPropertyDescription(
+            identifier="ExhaustScreen",
+            control="checkbox",
+            label="Exhaust IR suppressors",
+            default=True,
+        ),
+        "idPlaceHolder": UnitPropertyDescription(
+            identifier="idPlaceHolder",
+            control="label",
+            player_only=True,
+        ),
+        "idLabel": UnitPropertyDescription(
+            identifier="idLabel",
+            control="label",
+            label="INS ALIGNMENT",
+            player_only=True,
+            x_lbl=150,
+        ),
+        "Realistic INS": UnitPropertyDescription(
+            identifier="Realistic INS",
+            control="comboList",
+            label="Realism",
+            player_only=True,
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "No alignment and fixtaking needed",
+                2: "No alignment needed but fixtaking",
+                1: "Fully realistic",
+            },
+        ),
+        "IMU alignment type": UnitPropertyDescription(
+            identifier="IMU alignment type",
+            control="comboList",
+            label="At Hot Start",
+            player_only=True,
+            default=3,
+            w_ctrl=150,
+            values={
+                1: "Fast",
+                2: "Normal",
+                3: "Normal with Gyro",
+            },
+        ),
+    }
+
     livery_name = "KA-50_3"  # from type
 
     class Pylon1:
@@ -1561,6 +1909,136 @@ class Mi_24P(HelicopterType):
         class HumanOrchestra:
             id = "HumanOrchestra"
 
+    properties = {
+        "LeftEngineResource": UnitPropertyDescription(
+            identifier="LeftEngineResource",
+            control="slider",
+            label="Remaining srvc. life (lh engine)",
+            player_only=True,
+            minimum=40,
+            maximum=100,
+            default=90,
+            dimension="%",
+        ),
+        "RightEngineResource": UnitPropertyDescription(
+            identifier="RightEngineResource",
+            control="slider",
+            label="Remaining srvc. life (rh engine)",
+            player_only=True,
+            minimum=40,
+            maximum=100,
+            default=90,
+            dimension="%",
+        ),
+        "ExhaustScreen": UnitPropertyDescription(
+            identifier="ExhaustScreen",
+            control="checkbox",
+            label="Exhaust IR suppressors",
+            default=True,
+        ),
+        "NS430allow": UnitPropertyDescription(
+            identifier="NS430allow",
+            control="checkbox",
+            label="NS 430 allow",
+            player_only=True,
+            default=True,
+        ),
+        "PilotNVG": UnitPropertyDescription(
+            identifier="PilotNVG",
+            control="checkbox",
+            label="Allow Pilots NVG",
+            default=True,
+        ),
+        "OperatorNVG": UnitPropertyDescription(
+            identifier="OperatorNVG",
+            control="checkbox",
+            label="Allow Operators NVG",
+            default=True,
+        ),
+        "R60equipment": UnitPropertyDescription(
+            identifier="R60equipment",
+            control="checkbox",
+            label="R-60 equipment",
+            default=True,
+        ),
+        "ai_Label": UnitPropertyDescription(
+            identifier="ai_Label",
+            control="label",
+            label="AI HELPER",
+            x_lbl=150,
+        ),
+        "OverrideIFF": UnitPropertyDescription(
+            identifier="OverrideIFF",
+            control="comboList",
+            label="AI IFF Detection Mode",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Auto",
+                1: "Simple",
+                2: "Label Only",
+                3: "Realistic",
+            },
+        ),
+        "GunnersAISkill": UnitPropertyDescription(
+            identifier="GunnersAISkill",
+            control="slider",
+            label="Gunners AI Skill",
+            minimum=10,
+            maximum=100,
+            default=90,
+            dimension="%",
+        ),
+        "SimplifiedAI": UnitPropertyDescription(
+            identifier="SimplifiedAI",
+            control="checkbox",
+            label="Simplified AI",
+            default=False,
+        ),
+        "HideAngleBoxes": UnitPropertyDescription(
+            identifier="HideAngleBoxes",
+            control="checkbox",
+            label="Hide boxes in Pilot AI menu",
+            player_only=True,
+            default=False,
+        ),
+        "TrackAirTargets": UnitPropertyDescription(
+            identifier="TrackAirTargets",
+            control="checkbox",
+            label="Track Air Targets",
+            default=True,
+        ),
+        "mul_Label": UnitPropertyDescription(
+            identifier="mul_Label",
+            control="label",
+            label="MULTIPLAYER",
+            player_only=True,
+            x_lbl=150,
+        ),
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "Copilot-gunner",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+        "HumanOrchestra": UnitPropertyDescription(
+            identifier="HumanOrchestra",
+            control="checkbox",
+            label="Disable Multicrew",
+            player_only=True,
+            default=False,
+        ),
+    }
+
     livery_name = "MI-24P"  # from type
 
     class Pylon1:
@@ -1721,6 +2199,23 @@ class SA342M(HelicopterType):
         class RemoveTablet:
             id = "RemoveTablet"
 
+    properties = {
+        "NS430allow": UnitPropertyDescription(
+            identifier="NS430allow",
+            control="checkbox",
+            label="NS430 Allow",
+            player_only=True,
+            default=True,
+        ),
+        "RemoveTablet": UnitPropertyDescription(
+            identifier="RemoveTablet",
+            control="checkbox",
+            label="Remove Tablet",
+            player_only=True,
+            default=False,
+        ),
+    }
+
     livery_name = "SA342M"  # from type
 
     class Pylon1:
@@ -1809,6 +2304,30 @@ class SA342L(HelicopterType):
 
         class RemoveTablet:
             id = "RemoveTablet"
+
+    properties = {
+        "NS430allow": UnitPropertyDescription(
+            identifier="NS430allow",
+            control="checkbox",
+            label="NS430 Allow",
+            player_only=True,
+            default=True,
+        ),
+        "SA342RemoveDoors": UnitPropertyDescription(
+            identifier="SA342RemoveDoors",
+            control="checkbox",
+            label="Remove Doors",
+            player_only=False,
+            default=False,
+        ),
+        "RemoveTablet": UnitPropertyDescription(
+            identifier="RemoveTablet",
+            control="checkbox",
+            label="Remove Tablet",
+            player_only=True,
+            default=False,
+        ),
+    }
 
     livery_name = "SA342L"  # from type
 
@@ -1930,6 +2449,23 @@ class SA342Mistral(HelicopterType):
         class RemoveTablet:
             id = "RemoveTablet"
 
+    properties = {
+        "NS430allow": UnitPropertyDescription(
+            identifier="NS430allow",
+            control="checkbox",
+            label="NS430 Allow",
+            player_only=True,
+            default=True,
+        ),
+        "RemoveTablet": UnitPropertyDescription(
+            identifier="RemoveTablet",
+            control="checkbox",
+            label="Remove Tablet",
+            player_only=True,
+            default=False,
+        ),
+    }
+
     livery_name = "SA342MISTRAL"  # from type
 #ERRR {MBDA_MistralD}
 #ERRR {MBDA_MistralG}
@@ -1994,6 +2530,23 @@ class SA342Minigun(HelicopterType):
 
         class RemoveTablet:
             id = "RemoveTablet"
+
+    properties = {
+        "NS430allow": UnitPropertyDescription(
+            identifier="NS430allow",
+            control="checkbox",
+            label="NS430 Allow",
+            player_only=True,
+            default=True,
+        ),
+        "RemoveTablet": UnitPropertyDescription(
+            identifier="RemoveTablet",
+            control="checkbox",
+            label="Remove Tablet",
+            player_only=True,
+            default=False,
+        ),
+    }
 
     livery_name = "SA342MINIGUN"  # from type
 #ERRR {MINIGUN}

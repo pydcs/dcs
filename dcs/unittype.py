@@ -13,6 +13,7 @@ from dcs.liveries.liveryset import LiverySet
 if TYPE_CHECKING:
     from dcs.country import Country
     from dcs.task import MainTask
+    from .unitpropertydescription import UnitPropertyDescription
 
 
 class UnitType:
@@ -88,6 +89,8 @@ class FlyingType(UnitType):
     panel_radio: Optional[AircraftRadioPresets] = None
 
     property_defaults: Optional[Dict[str, Any]] = None
+
+    properties: Dict[str, UnitPropertyDescription] = {}
 
     pylons: Set[int] = set()
     livery_name: Optional[str] = None

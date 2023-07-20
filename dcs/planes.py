@@ -3,6 +3,7 @@ from typing import Any, Dict, List, Set
 
 from dcs.weapons_data import Weapons
 import dcs.task as task
+from dcs.unitpropertydescription import UnitPropertyDescription
 from dcs.unittype import FlyingType
 
 
@@ -5367,6 +5368,22 @@ class FW_190D9(PlaneType):
                 MW_50_Mix = 1
                 B_4_Gasoline = 2
 
+    properties = {
+        "FW_MW50TankContents": UnitPropertyDescription(
+            identifier="FW_MW50TankContents",
+            control="comboList",
+            label="MW/Fuel Tank Contents",
+            player_only=True,
+            default=1,
+            w_ctrl=110,
+            values={
+                0: "Empty",
+                1: "MW-50 Mix",
+                2: "B-4 Gasoline",
+            },
+        ),
+    }
+
     livery_name = "FW-190D9"  # from type
 
     class Pylon1:
@@ -5423,6 +5440,21 @@ class FW_190A8(PlaneType):
             class Values:
                 Empty = 0
                 Additional_fuel = 2
+
+    properties = {
+        "FW_MW50TankContents": UnitPropertyDescription(
+            identifier="FW_MW50TankContents",
+            control="comboList",
+            label="MW/Fuel Tank Contents",
+            player_only=True,
+            default=0,
+            w_ctrl=110,
+            values={
+                0: "Empty",
+                2: "Additional fuel",
+            },
+        ),
+    }
 
     livery_name = "FW-190A8"  # from type
 #ERRR <CLEAN>
@@ -5496,6 +5528,33 @@ class Bf_109K_4(PlaneType):
             class Values:
                 None_ = 0
                 Flare_Gun = 1
+
+    properties = {
+        "MW50TankContents": UnitPropertyDescription(
+            identifier="MW50TankContents",
+            control="comboList",
+            label="MW/Fuel Tank Contents",
+            default=1,
+            w_ctrl=110,
+            values={
+                0: "Empty",
+                1: "MW-50 Mix",
+                2: "B-4 Gasoline",
+            },
+        ),
+        "Flare_Gun": UnitPropertyDescription(
+            identifier="Flare_Gun",
+            control="comboList",
+            label="Flare Gun Port",
+            player_only=True,
+            default=1,
+            w_ctrl=110,
+            values={
+                0: "None",
+                1: "Flare Gun",
+            },
+        ),
+    }
 
     livery_name = "BF-109K-4"  # from type
 
@@ -5782,6 +5841,21 @@ class P_47D_30(PlaneType):
                 Empty = 0
                 Water = 1
 
+    properties = {
+        "WaterTankContents": UnitPropertyDescription(
+            identifier="WaterTankContents",
+            control="comboList",
+            label="Water Tank Contents",
+            player_only=False,
+            default=1,
+            w_ctrl=110,
+            values={
+                0: "Empty",
+                1: "Water",
+            },
+        ),
+    }
+
     livery_name = "P-47D-30"  # from livery_entry
 
     class Pylon1:
@@ -5869,6 +5943,21 @@ class P_47D_30bl1(PlaneType):
                 Empty = 0
                 Water = 1
 
+    properties = {
+        "WaterTankContents": UnitPropertyDescription(
+            identifier="WaterTankContents",
+            control="comboList",
+            label="Water Tank Contents",
+            player_only=False,
+            default=1,
+            w_ctrl=110,
+            values={
+                0: "Empty",
+                1: "Water",
+            },
+        ),
+    }
+
     livery_name = "P-47D-30"  # from livery_entry
 
     class Pylon1:
@@ -5941,6 +6030,21 @@ class P_47D_40(PlaneType):
             class Values:
                 Empty = 0
                 Water = 1
+
+    properties = {
+        "WaterTankContents": UnitPropertyDescription(
+            identifier="WaterTankContents",
+            control="comboList",
+            label="Water Tank Contents",
+            player_only=False,
+            default=1,
+            w_ctrl=110,
+            values={
+                0: "Empty",
+                1: "Water",
+            },
+        ),
+    }
 
     livery_name = "P-47D-30"  # from livery_entry
 
@@ -6087,6 +6191,46 @@ class MosquitoFBMkVI(PlaneType):
                 Violet = 0.75
                 White = 0.05
 
+    properties = {
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            default=False,
+            weight_when_on=-90,
+            w_ctrl=150,
+        ),
+        "Flare_Gun": UnitPropertyDescription(
+            identifier="Flare_Gun",
+            control="comboList",
+            label="Flare Gun Port",
+            player_only=True,
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "None",
+                1: "Flare Gun",
+            },
+        ),
+        "ResinLights": UnitPropertyDescription(
+            identifier="ResinLights",
+            control="comboList",
+            label="Resin Lights Colour Filter",
+            default=0.15,
+            w_ctrl=150,
+            values={
+                0.15: "Red",
+                0.25: "Orange",
+                0.35: "Yellow",
+                0.45: "Green",
+                0.55: "Sky",
+                0.65: "Blue",
+                0.75: "Violet",
+                0.05: "White",
+            },
+        ),
+    }
+
     livery_name = "MOSQUITOFBMKVI"  # from type
 
     class Pylon1:
@@ -6173,6 +6317,9 @@ class A_20G(PlaneType):
     property_defaults: Dict[str, Any] = {
     }
 
+    properties = {
+    }
+
     livery_name = "A-20G"  # from type
 
     class Pylon1:
@@ -6209,6 +6356,9 @@ class A_10A(PlaneType):
     }
 
     property_defaults: Dict[str, Any] = {
+    }
+
+    properties = {
     }
 
     livery_name = "A-10A"  # from type
@@ -6587,6 +6737,9 @@ class A_10C(PlaneType):
     }
 
     property_defaults: Dict[str, Any] = {
+    }
+
+    properties = {
     }
 
     livery_name = "A-10C"  # from type
@@ -7144,6 +7297,9 @@ class A_10C_2(PlaneType):
     }
 
     property_defaults: Dict[str, Any] = {
+    }
+
+    properties = {
     }
 
     livery_name = "A-10CII"  # from livery_entry
@@ -7737,6 +7893,59 @@ class AJS37(PlaneType):
                 Allow_non_generated = 2
                 Disallow_cartridge_switching = 3
 
+    properties = {
+        "Rb04GroupTarget": UnitPropertyDescription(
+            identifier="Rb04GroupTarget",
+            control="comboList",
+            label="RB-04 Group Target Selection",
+            default=3,
+            w_ctrl=150,
+            values={
+                0: "First and third",
+                1: "First and second",
+                2: "Second and third",
+                3: "Random",
+            },
+        ),
+        "Rb04VinkelHopp": UnitPropertyDescription(
+            identifier="Rb04VinkelHopp",
+            control="comboList",
+            label="RB-04 Angle Jump Target Selection",
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "None",
+                1: "Left",
+                2: "Right",
+                3: "Both",
+            },
+        ),
+        "WeapSafeHeight": UnitPropertyDescription(
+            identifier="WeapSafeHeight",
+            control="comboList",
+            label="Weapon safety height",
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "Low",
+                1: "Medium",
+                2: "High",
+            },
+        ),
+        "MissionGeneratorSetting": UnitPropertyDescription(
+            identifier="MissionGeneratorSetting",
+            control="comboList",
+            label="Cartridge restrictions",
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Allow all",
+                2: "Allow non-generated",
+                3: "Disallow cartridge switching",
+            },
+        ),
+    }
+
     livery_name = "AJS37"  # from type
 
     class Pylon1:
@@ -8068,6 +8277,191 @@ class AV8BNA(PlaneType):
 
         class AAR_Zone3:
             id = "AAR_Zone3"
+
+    properties = {
+        "LoadWater": UnitPropertyDescription(
+            identifier="LoadWater",
+            control="checkbox",
+            label="Load Water (500lb)",
+            default=True,
+            weight_when_on=226.796,
+        ),
+        "MountNVG": UnitPropertyDescription(
+            identifier="MountNVG",
+            control="checkbox",
+            label="Load AN/AVS-9 NVG case",
+            default=False,
+        ),
+        "ClockTime": UnitPropertyDescription(
+            identifier="ClockTime",
+            control="comboList",
+            label="Cockpit clock time",
+            default=1,
+            w_ctrl=150,
+            values={
+                1: "ZULU Time",
+                2: "Local Time",
+            },
+        ),
+        "RocketBurst": UnitPropertyDescription(
+            identifier="RocketBurst",
+            control="comboList",
+            label="FF Rocket Fire Mode",
+            default=1,
+            w_ctrl=150,
+            values={
+                1: "Single Fire",
+                2: "Ripple Fire",
+            },
+        ),
+        "EWDispenserTFL": UnitPropertyDescription(
+            identifier="EWDispenserTFL",
+            control="comboList",
+            label="Top Front Left EW Dispenser load",
+            default=1,
+            w_ctrl=150,
+            values={
+                1: "30 Chaff",
+                2: "30 Flares",
+            },
+        ),
+        "EWDispenserTFR": UnitPropertyDescription(
+            identifier="EWDispenserTFR",
+            control="comboList",
+            label="Top Front Right EW Dispenser load",
+            default=1,
+            w_ctrl=150,
+            values={
+                1: "30 Chaff",
+                2: "30 Flares",
+            },
+        ),
+        "EWDispenserTBL": UnitPropertyDescription(
+            identifier="EWDispenserTBL",
+            control="comboList",
+            label="Top Rear Left EW Dispenser load",
+            default=2,
+            w_ctrl=150,
+            values={
+                1: "30 Chaff",
+                2: "30 Flares",
+            },
+        ),
+        "EWDispenserTBR": UnitPropertyDescription(
+            identifier="EWDispenserTBR",
+            control="comboList",
+            label="Top Rear Right EW Dispenser load",
+            default=2,
+            w_ctrl=150,
+            values={
+                1: "30 Chaff",
+                2: "30 Flares",
+            },
+        ),
+        "EWDispenserBL": UnitPropertyDescription(
+            identifier="EWDispenserBL",
+            control="comboList",
+            label="Bottom Left EW Dispenser load",
+            default=2,
+            w_ctrl=150,
+            values={
+                1: "30 Chaff",
+                2: "30 Flares",
+            },
+        ),
+        "EWDispenserBR": UnitPropertyDescription(
+            identifier="EWDispenserBR",
+            control="comboList",
+            label="Bottom Right EW Dispenser load",
+            default=2,
+            w_ctrl=150,
+            values={
+                1: "30 Chaff",
+                2: "30 Flares",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for APKWS, 1x11",
+            minimum=1,
+            maximum=8,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for APKWS, 11x1",
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for APKWS, 111x",
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "GBULaserCode100": UnitPropertyDescription(
+            identifier="GBULaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            minimum=5,
+            maximum=8,
+            default=6,
+            dimension=" ",
+        ),
+        "GBULaserCode10": UnitPropertyDescription(
+            identifier="GBULaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "GBULaserCode1": UnitPropertyDescription(
+            identifier="GBULaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "AAR_Zone1": UnitPropertyDescription(
+            identifier="AAR_Zone1",
+            control="spinbox",
+            label="AAR Zone 1",
+            minimum=0,
+            maximum=59,
+            default=0,
+            dimension=" ",
+        ),
+        "AAR_Zone2": UnitPropertyDescription(
+            identifier="AAR_Zone2",
+            control="spinbox",
+            label="AAR Zone 2",
+            minimum=0,
+            maximum=59,
+            default=0,
+            dimension=" ",
+        ),
+        "AAR_Zone3": UnitPropertyDescription(
+            identifier="AAR_Zone3",
+            control="spinbox",
+            label="AAR Zone 3",
+            minimum=0,
+            maximum=59,
+            default=0,
+            dimension=" ",
+        ),
+    }
 
     livery_name = "AV8BNA"  # from type
 
@@ -8497,6 +8891,58 @@ class C_101EB(PlaneType):
         class SmokeOnGround:
             id = "SmokeOnGround"
 
+    properties = {
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            player_only=True,
+            default=False,
+            weight_when_on=-80,
+        ),
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "Instructor",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+        "MountIFRHood": UnitPropertyDescription(
+            identifier="MountIFRHood",
+            control="checkbox",
+            label="Mount IFR Hood",
+            player_only=True,
+            default=False,
+        ),
+        "NS430allow": UnitPropertyDescription(
+            identifier="NS430allow",
+            control="comboList",
+            label="NS 430 Setup",
+            player_only=True,
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "Not installed",
+                1: "Forward seat",
+                2: "Rear seat",
+            },
+        ),
+        "SmokeOnGround": UnitPropertyDescription(
+            identifier="SmokeOnGround",
+            control="checkbox",
+            label="Allow Smoke On Ground",
+            player_only=True,
+            default=False,
+        ),
+    }
+
     livery_name = "C-101EB"  # from type
 
     class Pylon1:
@@ -8590,6 +9036,65 @@ class C_101CC(PlaneType):
                 Not_installed = 0
                 Forward_seat = 1
                 Rear_seat = 2
+
+    properties = {
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            player_only=True,
+            default=False,
+            weight_when_on=-80,
+        ),
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "Instructor",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+        "MountIFRHood": UnitPropertyDescription(
+            identifier="MountIFRHood",
+            control="checkbox",
+            label="Mount IFR Hood",
+            player_only=True,
+            default=False,
+        ),
+        "CameraRecorder": UnitPropertyDescription(
+            identifier="CameraRecorder",
+            control="checkbox",
+            label="Camera Recorder",
+            player_only=True,
+            default=False,
+        ),
+        "SightSunFilter": UnitPropertyDescription(
+            identifier="SightSunFilter",
+            control="checkbox",
+            label="Sight Sun Filter",
+            player_only=True,
+            default=False,
+        ),
+        "NS430allow": UnitPropertyDescription(
+            identifier="NS430allow",
+            control="comboList",
+            label="NS 430 Setup",
+            player_only=True,
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "Not installed",
+                1: "Forward seat",
+                2: "Rear seat",
+            },
+        ),
+    }
 
     livery_name = "C-101CC"  # from type
 
@@ -8940,6 +9445,46 @@ class JF_17(PlaneType):
         class AARProbe:
             id = "AARProbe"
 
+    properties = {
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for ordnance, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for ordnance, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for ordnance, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "AARProbe": UnitPropertyDescription(
+            identifier="AARProbe",
+            control="checkbox",
+            label="Remove AAR Probe",
+            player_only=True,
+            default=False,
+        ),
+    }
+
     livery_name = "JF-17"  # from type
 
     class Pylon1:
@@ -9163,6 +9708,15 @@ class H_6J(PlaneType):
         class Belly_Bay_Door:
             id = "Belly Bay Door"
 
+    properties = {
+        "Belly Bay Door": UnitPropertyDescription(
+            identifier="Belly Bay Door",
+            control="checkbox",
+            label="Open Bay Door",
+            default=False,
+        ),
+    }
+
     livery_name = "H-6J"  # from type
 
     class Pylon1:
@@ -9285,6 +9839,36 @@ class Christen_Eagle_II(PlaneType):
 
         class NS430allow:
             id = "NS430allow"
+
+    properties = {
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            default=False,
+            weight_when_on=-85,
+        ),
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "Instructor",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+        "NS430allow": UnitPropertyDescription(
+            identifier="NS430allow",
+            control="checkbox",
+            label="NS430 Allow",
+            player_only=True,
+            default=True,
+        ),
+    }
 
     livery_name = "CHRISTEN EAGLE II"  # from type
 
@@ -9443,6 +10027,126 @@ class F_15ESE(PlaneType):
 
         class HumanOrchestra:
             id = "HumanOrchestra"
+
+    properties = {
+        "MountNVG": UnitPropertyDescription(
+            identifier="MountNVG",
+            control="checkbox",
+            label="Equip AN/AVS-9 NVG and NVG Filters",
+            default=False,
+        ),
+        "needsGCAlign": UnitPropertyDescription(
+            identifier="needsGCAlign",
+            control="checkbox",
+            label="Cold Aircraft needs GC Alignment",
+            player_only=True,
+            default=False,
+            weight_when_on=-80,
+        ),
+        "InitAirborneTime": UnitPropertyDescription(
+            identifier="InitAirborneTime",
+            control="slider",
+            label="Time Airborne (minutes)",
+            minimum=0,
+            maximum=180,
+            default=0,
+            dimension="min",
+        ),
+        "InitAlertStatus": UnitPropertyDescription(
+            identifier="InitAlertStatus",
+            control="checkbox",
+            label="Cold Aircraft is in ALERT status",
+            player_only=True,
+            default=False,
+            weight_when_on=-80,
+        ),
+        "LaserCode_Label": UnitPropertyDescription(
+            identifier="LaserCode_Label",
+            control="label",
+            label="GBU LASER CODES",
+            x_lbl=150,
+        ),
+        "Sta2LaserCode": UnitPropertyDescription(
+            identifier="Sta2LaserCode",
+            control="spinbox",
+            label="Laser code for Station 2 1xxx",
+            minimum=111,
+            maximum=888,
+            default=688,
+            dimension=" ",
+        ),
+        "LCFTLaserCode": UnitPropertyDescription(
+            identifier="LCFTLaserCode",
+            control="spinbox",
+            label="Laser code for Left CFT  1xxx",
+            minimum=111,
+            maximum=888,
+            default=688,
+            dimension=" ",
+        ),
+        "Sta5LaserCode": UnitPropertyDescription(
+            identifier="Sta5LaserCode",
+            control="spinbox",
+            label="Laser code for Station 5 1xxx",
+            minimum=111,
+            maximum=888,
+            default=688,
+            dimension=" ",
+        ),
+        "RCFTLaserCode": UnitPropertyDescription(
+            identifier="RCFTLaserCode",
+            control="spinbox",
+            label="Laser code for Right CFT 1xxx",
+            minimum=111,
+            maximum=888,
+            default=688,
+            dimension=" ",
+        ),
+        "Sta8LaserCode": UnitPropertyDescription(
+            identifier="Sta8LaserCode",
+            control="spinbox",
+            label="Laser code for Station 8 1xxx",
+            minimum=111,
+            maximum=888,
+            default=688,
+            dimension=" ",
+        ),
+        "MC_Label": UnitPropertyDescription(
+            identifier="MC_Label",
+            control="label",
+            label="MULTIPLAYER",
+            x_lbl=150,
+        ),
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            player_only=True,
+            default=False,
+            weight_when_on=-80,
+        ),
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "WSO",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+        "HumanOrchestra": UnitPropertyDescription(
+            identifier="HumanOrchestra",
+            control="checkbox",
+            label="Disable Multicrew",
+            player_only=True,
+            default=False,
+        ),
+    }
 
     livery_name = "F-15ESE"  # from type
 
@@ -9800,6 +10504,64 @@ class F_16C_50(PlaneType):
                 Not_installed = 0
                 JHMCS = 1
                 NVG = 2
+
+    properties = {
+        "LAU3ROF": UnitPropertyDescription(
+            identifier="LAU3ROF",
+            control="comboList",
+            label="LAU-3 Rate of Fire",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Single",
+                1: "Ripple",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "HelmetMountedDevice": UnitPropertyDescription(
+            identifier="HelmetMountedDevice",
+            control="comboList",
+            label="Helmet Mounted Device",
+            player_only=True,
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "Not installed",
+                1: "JHMCS",
+                2: "NVG",
+            },
+        ),
+    }
 
     livery_name = "F-16C_50"  # from type
 
@@ -10410,6 +11172,157 @@ class F_5E_3(PlaneType):
                 x_8s = 3
                 x_10s = 4
 
+    properties = {
+        "LAU3ROF": UnitPropertyDescription(
+            identifier="LAU3ROF",
+            control="comboList",
+            label="LAU-3 Rate of Fire",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Single",
+                1: "Ripple, 17ms",
+                2: "Ripple, 20ms",
+                3: "Ripple, 60ms",
+            },
+        ),
+        "LAU68ROF": UnitPropertyDescription(
+            identifier="LAU68ROF",
+            control="comboList",
+            label="LAU-68 Rate of Fire",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Single",
+                1: "Ripple, 60ms",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "ChaffBurst": UnitPropertyDescription(
+            identifier="ChaffBurst",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "1",
+                1: "2",
+                2: "3",
+                3: "4",
+                4: "6",
+                5: "8",
+            },
+        ),
+        "ChaffSalvo": UnitPropertyDescription(
+            identifier="ChaffSalvo",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "1",
+                1: "2",
+                2: "4",
+                3: "8",
+                4: "C",
+            },
+        ),
+        "ChaffBurstInt": UnitPropertyDescription(
+            identifier="ChaffBurstInt",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "0.1s",
+                1: "0.2s",
+                2: "0.3s",
+                3: "0.4s",
+            },
+        ),
+        "ChaffSalvoInt": UnitPropertyDescription(
+            identifier="ChaffSalvoInt",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "1s",
+                1: "2s",
+                2: "3s",
+                3: "4s",
+                4: "5s",
+                5: "8s",
+                6: "R",
+            },
+        ),
+        "FlareBurst": UnitPropertyDescription(
+            identifier="FlareBurst",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "1",
+                1: "2",
+                2: "4",
+                3: "8",
+                4: "C",
+            },
+        ),
+        "FlareBurstInt": UnitPropertyDescription(
+            identifier="FlareBurstInt",
+            control="comboList",
+            label="Flare Burst Interval ",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "3s",
+                1: "4s",
+                2: "6s",
+                3: "8s",
+                4: "10s",
+            },
+        ),
+    }
+
     livery_name = "F-5E-3"  # from livery_entry
 
     class Pylon1:
@@ -10830,6 +11743,132 @@ class F_14B(PlaneType):
         class LGB1:
             id = "LGB1"
 
+    properties = {
+        "M61BURST": UnitPropertyDescription(
+            identifier="M61BURST",
+            control="comboList",
+            label="M-61 Burst Mode",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Burst 200",
+                1: "Burst 100",
+                2: "Burst 50",
+                3: "Manual",
+            },
+        ),
+        "ALE39Loadout": UnitPropertyDescription(
+            identifier="ALE39Loadout",
+            control="comboList",
+            label="AN/ALE-39 Loadout",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "60 Flares / 0 Chaff",
+                1: "50 Flares / 10 Chaff",
+                2: "40 Flares / 20 Chaff",
+                3: "30 Flares / 30 Chaff",
+                4: "20 Flares / 40 Chaff",
+                5: "10 Flares / 50 Chaff",
+                6: "0 Flares / 60 Chaff",
+            },
+        ),
+        "UseLAU138": UnitPropertyDescription(
+            identifier="UseLAU138",
+            control="checkbox",
+            label="Fill LAU-138 With Chaff",
+            player_only=True,
+            default=True,
+        ),
+        "INSAlignmentStored": UnitPropertyDescription(
+            identifier="INSAlignmentStored",
+            control="checkbox",
+            label="INS Reference Alignment Stored",
+            player_only=True,
+            default=False,
+        ),
+        "TacanChannel": UnitPropertyDescription(
+            identifier="TacanChannel",
+            control="spinbox",
+            label="TACAN Channel Presel (0 = Auto)",
+            player_only=True,
+            minimum=0,
+            maximum=126,
+            default=0,
+        ),
+        "TacanBand": UnitPropertyDescription(
+            identifier="TacanBand",
+            control="comboList",
+            label="TACAN Band",
+            player_only=True,
+            default=0,
+            values={
+                0: "X",
+                1: "Y",
+            },
+        ),
+        "IlsChannel": UnitPropertyDescription(
+            identifier="IlsChannel",
+            control="spinbox",
+            label="ILS Channel Presel",
+            player_only=True,
+            minimum=1,
+            maximum=20,
+            default=1,
+        ),
+        "KY28Key": UnitPropertyDescription(
+            identifier="KY28Key",
+            control="spinbox",
+            label="KY-28 Encryption Key",
+            player_only=True,
+            minimum=1,
+            maximum=255,
+            default=1,
+        ),
+        "LGB1000": UnitPropertyDescription(
+            identifier="LGB1000",
+            control="spinbox",
+            label="Laser Code 1st Digit",
+            player_only=True,
+            minimum=1,
+            maximum=1,
+            default=1,
+            dimension=" ",
+        ),
+        "LGB100": UnitPropertyDescription(
+            identifier="LGB100",
+            control="spinbox",
+            label="Laser Code 2nd Digit",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LGB10": UnitPropertyDescription(
+            identifier="LGB10",
+            control="spinbox",
+            label="Laser Code 3rd Digit",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LGB1": UnitPropertyDescription(
+            identifier="LGB1",
+            control="spinbox",
+            label="Laser Code 4th Digit",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
+
     livery_name = "F-14B"  # from type
 
     class Pylon1:
@@ -11203,6 +12242,132 @@ class F_14A_135_GR(PlaneType):
         class LGB1:
             id = "LGB1"
 
+    properties = {
+        "M61BURST": UnitPropertyDescription(
+            identifier="M61BURST",
+            control="comboList",
+            label="M-61 Burst Mode",
+            player_only=True,
+            default=2,
+            w_ctrl=150,
+            values={
+                0: "Burst 200",
+                1: "Burst 100",
+                2: "Burst 50",
+                3: "Manual",
+            },
+        ),
+        "ALE39Loadout": UnitPropertyDescription(
+            identifier="ALE39Loadout",
+            control="comboList",
+            label="AN/ALE-39 Loadout",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "60 Flares / 0 Chaff",
+                1: "50 Flares / 10 Chaff",
+                2: "40 Flares / 20 Chaff",
+                3: "30 Flares / 30 Chaff",
+                4: "20 Flares / 40 Chaff",
+                5: "10 Flares / 50 Chaff",
+                6: "0 Flares / 60 Chaff",
+            },
+        ),
+        "UseLAU138": UnitPropertyDescription(
+            identifier="UseLAU138",
+            control="checkbox",
+            label="Fill LAU-138 With Chaff",
+            player_only=True,
+            default=True,
+        ),
+        "INSAlignmentStored": UnitPropertyDescription(
+            identifier="INSAlignmentStored",
+            control="checkbox",
+            label="INS Reference Alignment Stored",
+            player_only=True,
+            default=False,
+        ),
+        "TacanChannel": UnitPropertyDescription(
+            identifier="TacanChannel",
+            control="spinbox",
+            label="TACAN Channel Presel (0 = Auto)",
+            player_only=True,
+            minimum=0,
+            maximum=126,
+            default=0,
+        ),
+        "TacanBand": UnitPropertyDescription(
+            identifier="TacanBand",
+            control="comboList",
+            label="TACAN Band",
+            player_only=True,
+            default=0,
+            values={
+                0: "X",
+                1: "Y",
+            },
+        ),
+        "IlsChannel": UnitPropertyDescription(
+            identifier="IlsChannel",
+            control="spinbox",
+            label="ILS Channel Presel",
+            player_only=True,
+            minimum=1,
+            maximum=20,
+            default=1,
+        ),
+        "KY28Key": UnitPropertyDescription(
+            identifier="KY28Key",
+            control="spinbox",
+            label="KY-28 Encryption Key",
+            player_only=True,
+            minimum=1,
+            maximum=255,
+            default=1,
+        ),
+        "LGB1000": UnitPropertyDescription(
+            identifier="LGB1000",
+            control="spinbox",
+            label="Laser Code 1st Digit",
+            player_only=True,
+            minimum=1,
+            maximum=1,
+            default=1,
+            dimension=" ",
+        ),
+        "LGB100": UnitPropertyDescription(
+            identifier="LGB100",
+            control="spinbox",
+            label="Laser Code 2nd Digit",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LGB10": UnitPropertyDescription(
+            identifier="LGB10",
+            control="spinbox",
+            label="Laser Code 3rd Digit",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LGB1": UnitPropertyDescription(
+            identifier="LGB1",
+            control="spinbox",
+            label="Laser Code 4th Digit",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
+
     livery_name = "F-14A-135-GR"  # from type
 
     class Pylon1:
@@ -11542,6 +12707,46 @@ class FA_18C_hornet(PlaneType):
                 Not_installed = 0
                 JHMCS = 1
                 NVG = 2
+
+    properties = {
+        "OuterBoard": UnitPropertyDescription(
+            identifier="OuterBoard",
+            control="comboList",
+            label="Outerboard rockets mode",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Single",
+                1: "Ripple",
+            },
+        ),
+        "InnerBoard": UnitPropertyDescription(
+            identifier="InnerBoard",
+            control="comboList",
+            label="Innerboard rockets mode",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Single",
+                1: "Ripple",
+            },
+        ),
+        "HelmetMountedDevice": UnitPropertyDescription(
+            identifier="HelmetMountedDevice",
+            control="comboList",
+            label="Helmet Mounted Device",
+            player_only=True,
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "Not installed",
+                1: "JHMCS",
+                2: "NVG",
+            },
+        ),
+    }
 
     livery_name = "FA-18C_HORNET"  # from type
 
@@ -11994,6 +13199,16 @@ class I_16(PlaneType):
         class landingTorch:
             id = "landingTorch"
 
+    properties = {
+        "landingTorch": UnitPropertyDescription(
+            identifier="landingTorch",
+            control="checkbox",
+            label="Landing Torch",
+            player_only=True,
+            default=False,
+        ),
+    }
+
     livery_name = "I-16"  # from type
 
     class Pylon1:
@@ -12100,6 +13315,49 @@ class L_39C(PlaneType):
 
         class DismountGunSight:
             id = "DismountGunSight"
+
+    properties = {
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            default=False,
+            weight_when_on=-80,
+        ),
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "Instructor",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+        "NS430allow": UnitPropertyDescription(
+            identifier="NS430allow",
+            control="checkbox",
+            label="Allow NS 430",
+            default=True,
+        ),
+        "DismountIFRHood": UnitPropertyDescription(
+            identifier="DismountIFRHood",
+            control="checkbox",
+            label="Dismount IFR Hood",
+            player_only=True,
+            default=False,
+        ),
+        "DismountGunSight": UnitPropertyDescription(
+            identifier="DismountGunSight",
+            control="checkbox",
+            label="Dismount Gunsight",
+            default=False,
+        ),
+    }
 
     livery_name = "L-39C"  # from type
 
@@ -12213,6 +13471,43 @@ class L_39ZA(PlaneType):
 
         class DismountIFRHood:
             id = "DismountIFRHood"
+
+    properties = {
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            default=False,
+            weight_when_on=-80,
+        ),
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "Instructor",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+        "NS430allow": UnitPropertyDescription(
+            identifier="NS430allow",
+            control="checkbox",
+            label="Allow NS 430",
+            default=True,
+        ),
+        "DismountIFRHood": UnitPropertyDescription(
+            identifier="DismountIFRHood",
+            control="checkbox",
+            label="Dismount IFR Hood",
+            player_only=True,
+            default=False,
+        ),
+    }
 
     livery_name = "L-39ZA"  # from livery_entry
 
@@ -12422,6 +13717,108 @@ class M_2000C(PlaneType):
 
         class DisableVTBExport:
             id = "DisableVTBExport"
+
+    properties = {
+        "RocketBurst": UnitPropertyDescription(
+            identifier="RocketBurst",
+            control="comboList",
+            label="Rocket Burst Count",
+            default=6,
+            w_ctrl=150,
+            values={
+                1: "1 Rocket",
+                3: "3 Rockets",
+                6: "6 Rockets",
+                18: "18 Rockets",
+            },
+        ),
+        "GunBurst": UnitPropertyDescription(
+            identifier="GunBurst",
+            control="comboList",
+            label="Gun Burst Length (Seconds)",
+            default=1,
+            w_ctrl=150,
+            values={
+                1: "0.5 Second",
+                2: "1.0 Second",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            minimum=1,
+            maximum=8,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "WpBullseye": UnitPropertyDescription(
+            identifier="WpBullseye",
+            control="spinbox",
+            label="Waypoint Bullseye",
+            minimum=0,
+            maximum=20,
+            default=0,
+            dimension=" ",
+        ),
+        "ForceINSRules": UnitPropertyDescription(
+            identifier="ForceINSRules",
+            control="checkbox",
+            label="Enforce INS drift",
+            default=False,
+        ),
+        "ReadyALCM": UnitPropertyDescription(
+            identifier="ReadyALCM",
+            control="checkbox",
+            label="Aircraft is ALCM ready",
+            default=True,
+        ),
+        "LoadNVGCase": UnitPropertyDescription(
+            identifier="LoadNVGCase",
+            control="checkbox",
+            label="Load NVG Case",
+            default=False,
+        ),
+        "InitHotDrift": UnitPropertyDescription(
+            identifier="InitHotDrift",
+            control="slider",
+            label="Initial drift for in flight start",
+            minimum=0,
+            maximum=180,
+            default=0,
+            dimension="min",
+        ),
+        "EnableTAF": UnitPropertyDescription(
+            identifier="EnableTAF",
+            control="checkbox",
+            label="Enable TAF (GCI link)",
+            default=True,
+        ),
+        "DisableVTBExport": UnitPropertyDescription(
+            identifier="DisableVTBExport",
+            control="checkbox",
+            label="Disable VTB Export",
+            default=False,
+        ),
+    }
 
     livery_name = "M-2000C"  # from type
 
@@ -12689,6 +14086,101 @@ class MB_339A(PlaneType):
         class BombsRippleTiming:
             id = "BombsRippleTiming"
 
+    properties = {
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            default=False,
+            weight_when_on=-85,
+        ),
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "Instructor",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+        "MountBlindHood": UnitPropertyDescription(
+            identifier="MountBlindHood",
+            control="checkbox",
+            label="Mount Blind Hood",
+            player_only=False,
+            default=False,
+        ),
+        "PilotEquipment": UnitPropertyDescription(
+            identifier="PilotEquipment",
+            control="comboList",
+            label="Pilot Equipment",
+            player_only=False,
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "HGU-33 only",
+                1: "HGU-33 + Aerazur",
+                -1: "HGU-55P + Secumar",
+                -2: "HGU-2A + Secumar",
+            },
+        ),
+        "ARMAMENT": UnitPropertyDescription(
+            identifier="ARMAMENT",
+            control="groupbox",
+            label="ARMAMENT",
+            default=1,
+            w_ctrl=150,
+        ),
+        "SAAB_RGS-2_Gunsight": UnitPropertyDescription(
+            identifier="SAAB_RGS-2_Gunsight",
+            control="checkbox",
+            label="SAAB RGS-2 Gunsight",
+            default=True,
+        ),
+        "DEFA_553_Burst": UnitPropertyDescription(
+            identifier="DEFA_553_Burst",
+            control="comboList",
+            label="DEFA 553 Burst",
+            default=0.5,
+            w_ctrl=150,
+            values={
+                0.5: "0.5 Second",
+                1: "1.0 Second",
+            },
+        ),
+        "EnableCutOff": UnitPropertyDescription(
+            identifier="EnableCutOff",
+            control="checkbox",
+            label="Enable Cut Off",
+            default=False,
+        ),
+        "RocketRippleTiming": UnitPropertyDescription(
+            identifier="RocketRippleTiming",
+            control="slider",
+            label="Rocket Ripple Timing",
+            player_only=True,
+            minimum=100,
+            maximum=500,
+            default=250,
+            dimension="ms",
+        ),
+        "BombsRippleTiming": UnitPropertyDescription(
+            identifier="BombsRippleTiming",
+            control="slider",
+            label="Bombs Ripple Timing",
+            player_only=True,
+            minimum=100,
+            maximum=1500,
+            default=300,
+            dimension="ms",
+        ),
+    }
+
     livery_name = "MB-339A"  # from type
 
     class Pylon1:
@@ -12919,6 +14411,36 @@ class MB_339APAN(PlaneType):
         class UnlimitedSmoke:
             id = "UnlimitedSmoke"
 
+    properties = {
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            default=True,
+            weight_when_on=-85,
+        ),
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=1,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "Instructor",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+        "UnlimitedSmoke": UnitPropertyDescription(
+            identifier="UnlimitedSmoke",
+            control="checkbox",
+            label="Unlimited Smoke",
+            default=False,
+        ),
+    }
+
     livery_name = "MB-339APAN"  # from type
 
     class Pylon1:
@@ -13092,6 +14614,63 @@ class MiG_19P(PlaneType):
             class Values:
                 FAR = 1
                 NEAR = 2
+
+    properties = {
+        "MountSIRENA": UnitPropertyDescription(
+            identifier="MountSIRENA",
+            control="checkbox",
+            label="Mount SPO-2 Sirena RWR",
+            default=False,
+            weight_when_on=-80,
+        ),
+        "MissileToneVolume": UnitPropertyDescription(
+            identifier="MissileToneVolume",
+            control="spinbox",
+            label="Volume level for R-3S",
+            minimum=0,
+            maximum=9,
+            default=5,
+            dimension=" ",
+        ),
+        "NAV_Initial_Hdg": UnitPropertyDescription(
+            identifier="NAV_Initial_Hdg",
+            control="spinbox",
+            label="Initial course",
+            minimum=0,
+            maximum=359,
+            default=0,
+            dimension=" ",
+        ),
+        "ADF_FAR_Frequency": UnitPropertyDescription(
+            identifier="ADF_FAR_Frequency",
+            control="spinbox",
+            label="ADF FAR Frequency Preset",
+            minimum=150,
+            maximum=1300,
+            default=625,
+            dimension=" ",
+        ),
+        "ADF_NEAR_Frequency": UnitPropertyDescription(
+            identifier="ADF_NEAR_Frequency",
+            control="spinbox",
+            label="ADF NEAR Frequency Preset",
+            minimum=150,
+            maximum=1300,
+            default=303,
+            dimension=" ",
+        ),
+        "ADF_Selected_Frequency": UnitPropertyDescription(
+            identifier="ADF_Selected_Frequency",
+            control="comboList",
+            label="ADF Selected Preset",
+            default=1,
+            w_ctrl=150,
+            values={
+                1: "FAR",
+                2: "NEAR",
+            },
+        ),
+    }
 
     livery_name = "MIG-19P"  # from type
 
@@ -13498,6 +15077,199 @@ class Mirage_F1C(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
+
     livery_name = "MIRAGE-F1C"  # from type
 
     class Pylon1:
@@ -13856,6 +15628,199 @@ class Mirage_F1CE(PlaneType):
 
         class LaserCode1:
             id = "LaserCode1"
+
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
 
     livery_name = "MIRAGE-F1CE"  # from type
 
@@ -14268,6 +16233,223 @@ class Mirage_F1EE(PlaneType):
                 ALR_300 = "ALR_300"
                 BF = "BF"
 
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "INSStartMode": UnitPropertyDescription(
+            identifier="INSStartMode",
+            control="comboList",
+            label="INS start position always correct",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "YES",
+                2: "NO",
+            },
+        ),
+        "RWR_type": UnitPropertyDescription(
+            identifier="RWR_type",
+            control="comboList",
+            label="RWR type",
+            player_only=True,
+            default="ALR_300",
+            w_ctrl=75,
+            values={
+                "ALR_300": "ALR-300",
+                "BF": "BF",
+            },
+        ),
+    }
+
     livery_name = "MIRAGE-F1EE"  # from type
 
     class Pylon1:
@@ -14663,6 +16845,199 @@ class Mirage_F1M_EE(PlaneType):
 
         class LaserCode1:
             id = "LaserCode1"
+
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
 
     livery_name = "MIRAGE-F1M-EE"  # from type
 
@@ -15060,6 +17435,199 @@ class Mirage_F1M_CE(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
+
     livery_name = "MIRAGE-F1M-CE"  # from type
 
     class Pylon1:
@@ -15454,6 +18022,199 @@ class Mirage_F1C_200(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
+
     livery_name = "MIRAGE-F1C-200"  # from type
 
     class Pylon1:
@@ -15813,6 +18574,199 @@ class Mirage_F1EH(PlaneType):
 
         class LaserCode1:
             id = "LaserCode1"
+
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
 
     livery_name = "MIRAGE-F1EH"  # from type
 
@@ -16174,6 +19128,199 @@ class Mirage_F1CH(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
+
     livery_name = "MIRAGE-F1CH"  # from type
 
     class Pylon1:
@@ -16534,6 +19681,199 @@ class Mirage_F1JA(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
+
     livery_name = "MIRAGE-F1JA"  # from type
 
     class Pylon2:
@@ -16877,6 +20217,199 @@ class Mirage_F1CG(PlaneType):
 
         class LaserCode1:
             id = "LaserCode1"
+
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
 
     livery_name = "MIRAGE-F1CG"  # from type
 
@@ -17248,6 +20781,199 @@ class Mirage_F1CZ(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
+
     livery_name = "MIRAGE-F1CZ"  # from type
 
     class Pylon1:
@@ -17607,6 +21333,199 @@ class Mirage_F1CJ(PlaneType):
 
         class LaserCode1:
             id = "LaserCode1"
+
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
 
     livery_name = "MIRAGE-F1CJ"  # from type
 
@@ -17968,6 +21887,199 @@ class Mirage_F1CK(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
+
     livery_name = "MIRAGE-F1CK"  # from type
 
     class Pylon1:
@@ -18327,6 +22439,199 @@ class Mirage_F1EQ(PlaneType):
 
         class LaserCode1:
             id = "LaserCode1"
+
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
 
     livery_name = "MIRAGE-F1EQ"  # from type
 
@@ -18715,6 +23020,199 @@ class Mirage_F1ED(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
+
     livery_name = "MIRAGE-F1ED"  # from type
 
     class Pylon1:
@@ -19102,6 +23600,199 @@ class Mirage_F1EDA(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
+
     livery_name = "MIRAGE-F1EDA"  # from type
 
     class Pylon1:
@@ -19479,6 +24170,199 @@ class Mirage_F1CR(PlaneType):
         class LaserCode1:
             id = "LaserCode1"
 
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
+
     livery_name = "MIRAGE-F1CR"  # from type
 
     class Pylon1:
@@ -19842,6 +24726,199 @@ class Mirage_F1CT(PlaneType):
 
         class LaserCode1:
             id = "LaserCode1"
+
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
 
     livery_name = "MIRAGE-F1CT"  # from type
 
@@ -20211,6 +25288,205 @@ class Mirage_F1B(PlaneType):
         class SoloFlight:
             id = "SoloFlight"
 
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            default=False,
+        ),
+    }
+
     livery_name = "MIRAGE-F1B"  # from type
 
     class Pylon1:
@@ -20572,6 +25848,205 @@ class Mirage_F1BE(PlaneType):
 
         class SoloFlight:
             id = "SoloFlight"
+
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            default=False,
+        ),
+    }
 
     livery_name = "MIRAGE-F1BE"  # from type
 
@@ -20971,6 +26446,205 @@ class Mirage_F1BQ(PlaneType):
         class SoloFlight:
             id = "SoloFlight"
 
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            default=False,
+        ),
+    }
+
     livery_name = "MIRAGE-F1BQ"  # from type
 
     class Pylon1:
@@ -21362,6 +27036,205 @@ class Mirage_F1BD(PlaneType):
         class SoloFlight:
             id = "SoloFlight"
 
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            default=False,
+        ),
+    }
+
     livery_name = "MIRAGE-F1BD"  # from type
 
     class Pylon1:
@@ -21752,6 +27625,205 @@ class Mirage_F1DDA(PlaneType):
 
         class SoloFlight:
             id = "SoloFlight"
+
+    properties = {
+        "RadarCoverSettings": UnitPropertyDescription(
+            identifier="RadarCoverSettings",
+            control="comboList",
+            label="Force Radar Cover State At Start",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "FORCE ON",
+                3: "FORCE OFF",
+            },
+        ),
+        "MissSimplLock": UnitPropertyDescription(
+            identifier="MissSimplLock",
+            control="comboList",
+            label="Simplified Missile Locking",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "NO",
+                2: "YES",
+            },
+        ),
+        "ChaffMultiNumber": UnitPropertyDescription(
+            identifier="ChaffMultiNumber",
+            control="comboList",
+            label="Chaff Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "6",
+                6: "8",
+            },
+        ),
+        "ChaffMultiTime": UnitPropertyDescription(
+            identifier="ChaffMultiTime",
+            control="comboList",
+            label="Chaff Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "0.05 s",
+                2: "0.1 s",
+                3: "0.15 s",
+                4: "0.2 s",
+                5: "0.3 s",
+                6: "0.4 s",
+            },
+        ),
+        "ChaffProgramNumber": UnitPropertyDescription(
+            identifier="ChaffProgramNumber",
+            control="comboList",
+            label="Chaff Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "ChaffProgramTime": UnitPropertyDescription(
+            identifier="ChaffProgramTime",
+            control="comboList",
+            label="Chaff Salvo Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1.0 s",
+                2: "2.0 s",
+                3: "3.0 s",
+                4: "4.0 s",
+                5: "5.0 s",
+                6: "8.0 s",
+                7: "Random",
+            },
+        ),
+        "FlareMultiNumber": UnitPropertyDescription(
+            identifier="FlareMultiNumber",
+            control="comboList",
+            label="Flare Burst Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "2",
+                3: "4",
+                4: "8",
+                5: "Continuous",
+            },
+        ),
+        "FlareMultiTime": UnitPropertyDescription(
+            identifier="FlareMultiTime",
+            control="comboList",
+            label="Flare Burst Interval",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "3.0 s",
+                2: "4.0 s",
+                3: "6.0 s",
+                4: "8.0 s",
+                5: "10.0 s",
+            },
+        ),
+        "GunBurstSettings": UnitPropertyDescription(
+            identifier="GunBurstSettings",
+            control="comboList",
+            label="Gun Burst Settings",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                0: "Off",
+                1: "BURST",
+                2: "0.5 s",
+                3: "1 s",
+            },
+        ),
+        "RocketSalvoF1": UnitPropertyDescription(
+            identifier="RocketSalvoF1",
+            control="comboList",
+            label="F1 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "6",
+                2: "12",
+                3: "18",
+            },
+        ),
+        "RocketSalvoF4": UnitPropertyDescription(
+            identifier="RocketSalvoF4",
+            control="comboList",
+            label="F4 Rocket Launcher Salvo Count",
+            player_only=True,
+            default=1,
+            w_ctrl=75,
+            values={
+                1: "1",
+                2: "3",
+                3: "6",
+                4: "18",
+            },
+        ),
+        "LaserCode100": UnitPropertyDescription(
+            identifier="LaserCode100",
+            control="spinbox",
+            label="Laser code for GBUs, 1x11",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCode10": UnitPropertyDescription(
+            identifier="LaserCode10",
+            control="spinbox",
+            label="Laser code for GBUs, 11x1",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCode1": UnitPropertyDescription(
+            identifier="LaserCode1",
+            control="spinbox",
+            label="Laser code for GBUs, 111x",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            default=False,
+        ),
+    }
 
     livery_name = "MIRAGE-F1DDA"  # from type
 
@@ -22279,6 +28351,42 @@ class Yak_52(PlaneType):
                 Ask_Always = -1
                 Equally_Responsible = -2
 
+    properties = {
+        "SoloFlight": UnitPropertyDescription(
+            identifier="SoloFlight",
+            control="checkbox",
+            label="Solo Flight",
+            default=False,
+            weight_when_on=-80,
+            w_ctrl=150,
+        ),
+        "PropellorType": UnitPropertyDescription(
+            identifier="PropellorType",
+            control="comboList",
+            label="Propeller Type",
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "2-Blade V530TA-D35",
+                1: "3-Blade MTV-9",
+            },
+        ),
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "Instructor",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+    }
+
     livery_name = "YAK-52"  # from type
 
     class Pylon1:
@@ -22311,6 +28419,9 @@ class B_17G(PlaneType):
     property_defaults: Dict[str, Any] = {
     }
 
+    properties = {
+    }
+
     livery_name = "B-17G"  # from type
 
     class Pylon1:
@@ -22336,6 +28447,9 @@ class Ju_88A4(PlaneType):
     }
 
     property_defaults: Dict[str, Any] = {
+    }
+
+    properties = {
     }
 
     livery_name = "JU-88A4"  # from type
@@ -22387,6 +28501,9 @@ class C_47(PlaneType):
     }
 
     property_defaults: Dict[str, Any] = {
+    }
+
+    properties = {
     }
 
     livery_name = "C-47"  # from type
