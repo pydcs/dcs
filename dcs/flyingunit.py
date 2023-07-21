@@ -45,7 +45,7 @@ class FlyingUnit(Unit):
         self.speed = 0
         self.radio: Optional[AircraftRadioPresets] = None
         self.hardpoint_racks = True
-        self.addpropaircraft = _type.property_defaults if _type.property_defaults else None
+        self.addpropaircraft = dict(_type.property_defaults) if _type.property_defaults else None
 
     def load_from_dict(self, d):
         super(FlyingUnit, self).load_from_dict(d)
