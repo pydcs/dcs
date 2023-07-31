@@ -271,6 +271,15 @@ class Santafe(unittype.ShipType):
     threat_range = 0
     air_weapon_dist = 30000
 
+class Ara_vdm(unittype.ShipType):
+    id = "ara_vdm"
+    name = "ARA Vienticinco de Mayo"
+    plane_num = 15
+    helicopter_num = 6
+    parking = 6
+    detection_range = 18000
+    threat_range = 5000
+    air_weapon_dist = 5000
 
 class HandyWind(unittype.ShipType):
     id = "HandyWind"
@@ -515,6 +524,7 @@ ship_map = {
     "leander-gun-lynch": Leander_gun_lynch,
     "Ship_Tilde_Supply": Ship_Tilde_Supply,
     "santafe": Santafe,
+    "ara_vdm": Ara_vdm,
     "HandyWind": HandyWind,
     "Seawise_Giant": Seawise_Giant,
     "La_Combattante_II": La_Combattante_II,
