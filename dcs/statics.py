@@ -1028,9 +1028,9 @@ class Cargo:
         can_cargo = True
 
     class L118(unittype.StaticType):
-        id = "L118"
-        name = "L118 Light Artillery Gun"
-        shape_name = "L118"
+        id = "l118"
+        name = "L118 Light Artillery"
+        shape_name = "l118_cargo"
         category = "Cargos"
         rate = 100
         can_cargo = True
@@ -1051,5 +1051,5 @@ cargo_map = {
     "pipes_small_cargo": Cargo.Pipes_small_cargo,
     "trunks_small_cargo": Cargo.Trunks_small_cargo,
     "trunks_long_cargo": Cargo.Trunks_long_cargo,
-    "L118": Cargo.L118,
+    "l118": Cargo.L118,
 }

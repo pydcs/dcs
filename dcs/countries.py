@@ -230,6 +230,8 @@ class Russia(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -303,6 +305,8 @@ class Russia(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -369,6 +373,7 @@ class Russia(Country):
         CV_1143_5 = ships.CV_1143_5
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -703,6 +708,8 @@ class Ukraine(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -768,6 +775,8 @@ class Ukraine(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -824,6 +833,7 @@ class Ukraine(Country):
         BDK_775 = ships.BDK_775
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -1222,6 +1232,7 @@ class USA(Country):
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Santafe = ships.Santafe
+        Ara_vdm = ships.Ara_vdm
         Forrestal = ships.Forrestal
 
     class CallsignAWACS:
@@ -1480,6 +1491,8 @@ class Turkey(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -1533,6 +1546,8 @@ class Turkey(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -1585,6 +1600,7 @@ class Turkey(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -1853,6 +1869,8 @@ class UK(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -1904,6 +1922,8 @@ class UK(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -1962,6 +1982,7 @@ class UK(Country):
         Leander_gun_condell = ships.Leander_gun_condell
         Leander_gun_lynch = ships.Leander_gun_lynch
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
 
@@ -2220,6 +2241,8 @@ class France(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -2276,6 +2299,8 @@ class France(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -2324,6 +2349,7 @@ class France(Country):
         Leander_gun_condell = ships.Leander_gun_condell
         Leander_gun_lynch = ships.Leander_gun_lynch
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -2666,6 +2692,8 @@ class Germany(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -2720,6 +2748,8 @@ class Germany(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -2762,6 +2792,7 @@ class Germany(Country):
         La_Combattante_II = ships.La_Combattante_II
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -3239,6 +3270,8 @@ class USAFAggressors(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -3298,7 +3331,6 @@ class USAFAggressors(Country):
         F_16A = planes.F_16A
         MQ_9_Reaper = planes.MQ_9_Reaper
         RQ_1A_Predator = planes.RQ_1A_Predator
-        F_A_18C = planes.F_A_18C
         F_4E = planes.F_4E
         Mirage_F1M_EE = planes.Mirage_F1M_EE
         Mirage_F1M_CE = planes.Mirage_F1M_CE
@@ -3323,7 +3355,6 @@ class USAFAggressors(Country):
         Mirage_F1B = planes.Mirage_F1B
         Mirage_F1ED = planes.Mirage_F1ED
         Mirage_F1BD = planes.Mirage_F1BD
-        F_A_18A = planes.F_A_18A
         KJ_2000 = planes.KJ_2000
         H_6J = planes.H_6J
         Mirage_F1CZ = planes.Mirage_F1CZ
@@ -3366,6 +3397,8 @@ class USAFAggressors(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -3425,7 +3458,6 @@ class USAFAggressors(Country):
         Plane.F_16A,
         Plane.MQ_9_Reaper,
         Plane.RQ_1A_Predator,
-        Plane.F_A_18C,
         Plane.F_4E,
         Plane.Mirage_F1M_EE,
         Plane.Mirage_F1M_CE,
@@ -3450,7 +3482,6 @@ class USAFAggressors(Country):
         Plane.Mirage_F1B,
         Plane.Mirage_F1ED,
         Plane.Mirage_F1BD,
-        Plane.F_A_18A,
         Plane.KJ_2000,
         Plane.H_6J,
         Plane.Mirage_F1CZ,
@@ -3517,6 +3548,7 @@ class USAFAggressors(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
         ALBATROS = ships.ALBATROS
@@ -3819,6 +3851,7 @@ class Canada(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -3867,6 +3900,7 @@ class Canada(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -3911,6 +3945,7 @@ class Canada(Country):
         LST_Mk2 = ships.LST_Mk2
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
 
@@ -4164,6 +4199,7 @@ class Spain(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         L_39C = planes.L_39C
@@ -4220,6 +4256,7 @@ class Spain(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.L_39C,
@@ -4273,6 +4310,7 @@ class Spain(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -4552,6 +4590,8 @@ class TheNetherlands(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -4603,6 +4643,8 @@ class TheNetherlands(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -4652,6 +4694,7 @@ class TheNetherlands(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -4911,6 +4954,8 @@ class Belgium(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -4960,6 +5005,8 @@ class Belgium(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -5003,6 +5050,7 @@ class Belgium(Country):
         HandyWind = ships.HandyWind
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -5247,6 +5295,8 @@ class Norway(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -5296,6 +5346,8 @@ class Norway(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -5340,6 +5392,7 @@ class Norway(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -5581,6 +5634,8 @@ class Denmark(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -5630,6 +5685,8 @@ class Denmark(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -5672,6 +5729,7 @@ class Denmark(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -5933,6 +5991,8 @@ class Israel(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -5986,6 +6046,8 @@ class Israel(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -6036,6 +6098,7 @@ class Israel(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -6334,6 +6397,8 @@ class Georgia(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -6383,6 +6448,8 @@ class Georgia(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -6433,6 +6500,7 @@ class Georgia(Country):
         La_Combattante_II = ships.La_Combattante_II
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -6686,6 +6754,8 @@ class Insurgents(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -6728,6 +6798,8 @@ class Insurgents(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -6775,6 +6847,7 @@ class Insurgents(Country):
         ZWEZDNY = ships.ZWEZDNY
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -6965,6 +7038,8 @@ class Abkhazia(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -7012,6 +7087,8 @@ class Abkhazia(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -7059,6 +7136,7 @@ class Abkhazia(Country):
         Dry_cargo_ship_2 = ships.Dry_cargo_ship_2
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -7234,6 +7312,8 @@ class SouthOssetia(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -7275,6 +7355,8 @@ class SouthOssetia(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -7318,6 +7400,7 @@ class SouthOssetia(Country):
     class Ship:
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -7485,6 +7568,8 @@ class Italy(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -7538,6 +7623,8 @@ class Italy(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -7582,6 +7669,7 @@ class Italy(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -7939,6 +8027,7 @@ class Australia(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -8168,6 +8257,7 @@ class Switzerland(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -8213,6 +8303,7 @@ class Switzerland(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -8250,6 +8341,7 @@ class Switzerland(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -8467,6 +8559,8 @@ class Austria(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -8509,6 +8603,8 @@ class Austria(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -8549,6 +8645,7 @@ class Austria(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -8866,6 +8963,8 @@ class Belarus(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -8919,6 +9018,8 @@ class Belarus(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -8961,6 +9062,7 @@ class Belarus(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -9187,6 +9289,8 @@ class Bulgaria(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -9237,6 +9341,8 @@ class Bulgaria(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -9275,6 +9381,7 @@ class Bulgaria(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -9545,6 +9652,8 @@ class CzechRepublic(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -9592,6 +9701,8 @@ class CzechRepublic(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -9633,6 +9744,7 @@ class CzechRepublic(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -9899,6 +10011,8 @@ class China(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         L_39C = planes.L_39C
@@ -9953,6 +10067,8 @@ class China(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.L_39C,
@@ -10002,6 +10118,7 @@ class China(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignHelipad:
         Otkrytka = "Otkrytka"
@@ -10139,6 +10256,8 @@ class Croatia(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -10181,6 +10300,8 @@ class Croatia(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -10224,6 +10345,7 @@ class Croatia(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -10523,6 +10645,8 @@ class Egypt(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -10572,6 +10696,8 @@ class Egypt(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -10624,6 +10750,7 @@ class Egypt(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -10914,6 +11041,7 @@ class Finland(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         L_39C = planes.L_39C
         M_2000C = planes.M_2000C
@@ -10956,6 +11084,7 @@ class Finland(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.L_39C,
         Plane.M_2000C,
@@ -10990,6 +11119,7 @@ class Finland(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -11262,6 +11392,8 @@ class Greece(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -11312,6 +11444,8 @@ class Greece(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -11362,6 +11496,7 @@ class Greece(Country):
         La_Combattante_II = ships.La_Combattante_II
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -11661,6 +11796,8 @@ class Hungary(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -11707,6 +11844,8 @@ class Hungary(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -11745,6 +11884,7 @@ class Hungary(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -12007,6 +12147,8 @@ class India(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -12057,6 +12199,8 @@ class India(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -12104,6 +12248,7 @@ class India(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -12388,6 +12533,8 @@ class Iran(Country):
         F_15ESE = planes.F_15ESE
         F_14B = planes.F_14B
         F_14A_135_GR = planes.F_14A_135_GR
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -12442,6 +12589,8 @@ class Iran(Country):
         Plane.F_15ESE,
         Plane.F_14B,
         Plane.F_14A_135_GR,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -12496,6 +12645,7 @@ class Iran(Country):
         La_Combattante_II = ships.La_Combattante_II
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -12773,6 +12923,8 @@ class Iraq(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -12824,6 +12976,8 @@ class Iraq(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -12864,6 +13018,7 @@ class Iraq(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -13133,6 +13288,8 @@ class Japan(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -13177,6 +13334,8 @@ class Japan(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -13224,6 +13383,7 @@ class Japan(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -13549,6 +13709,8 @@ class Kazakhstan(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -13603,6 +13765,8 @@ class Kazakhstan(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -13648,6 +13812,7 @@ class Kazakhstan(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -13891,6 +14056,8 @@ class NorthKorea(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -13935,6 +14102,8 @@ class NorthKorea(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -13973,6 +14142,7 @@ class NorthKorea(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -14221,6 +14391,8 @@ class Pakistan(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -14270,6 +14442,8 @@ class Pakistan(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -14310,6 +14484,7 @@ class Pakistan(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -14604,6 +14779,8 @@ class Poland(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         L_39C = planes.L_39C
@@ -14657,6 +14834,8 @@ class Poland(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.L_39C,
@@ -14697,6 +14876,7 @@ class Poland(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -14991,6 +15171,8 @@ class Romania(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         L_39C = planes.L_39C
@@ -15038,6 +15220,8 @@ class Romania(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.L_39C,
@@ -15079,6 +15263,7 @@ class Romania(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -15332,6 +15517,8 @@ class SaudiArabia(Country):
         JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -15380,6 +15567,8 @@ class SaudiArabia(Country):
         Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -15431,6 +15620,7 @@ class SaudiArabia(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -15698,6 +15888,8 @@ class Serbia(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -15744,6 +15936,8 @@ class Serbia(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -15783,6 +15977,7 @@ class Serbia(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -16036,6 +16231,8 @@ class Slovakia(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -16082,6 +16279,8 @@ class Slovakia(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -16121,6 +16320,7 @@ class Slovakia(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -16369,6 +16569,8 @@ class SouthKorea(Country):
         JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -16418,6 +16620,8 @@ class SouthKorea(Country):
         Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -16460,6 +16664,7 @@ class SouthKorea(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -16686,6 +16891,8 @@ class Sweden(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -16732,6 +16939,8 @@ class Sweden(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -16769,6 +16978,7 @@ class Sweden(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -17055,6 +17265,8 @@ class Syria(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -17102,6 +17314,8 @@ class Syria(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -17142,6 +17356,7 @@ class Syria(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -17390,6 +17605,8 @@ class Yemen(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -17435,6 +17652,8 @@ class Yemen(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -17480,6 +17699,7 @@ class Yemen(Country):
         BDK_775 = ships.BDK_775
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -17742,6 +17962,8 @@ class Vietnam(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -17789,6 +18011,8 @@ class Vietnam(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -17829,6 +18053,7 @@ class Vietnam(Country):
         HandyWind = ships.HandyWind
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -18073,6 +18298,8 @@ class Venezuela(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -18117,6 +18344,8 @@ class Venezuela(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -18158,6 +18387,7 @@ class Venezuela(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -18373,6 +18603,8 @@ class Tunisia(Country):
         JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -18415,6 +18647,8 @@ class Tunisia(Country):
         Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -18453,6 +18687,7 @@ class Tunisia(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -18683,6 +18918,8 @@ class Thailand(Country):
         JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -18728,6 +18965,8 @@ class Thailand(Country):
         Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -18773,6 +19012,7 @@ class Thailand(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -19008,6 +19248,8 @@ class Sudan(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -19054,6 +19296,8 @@ class Sudan(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -19094,6 +19338,7 @@ class Sudan(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -19304,6 +19549,8 @@ class Philippines(Country):
         JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -19349,6 +19596,8 @@ class Philippines(Country):
         Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -19386,6 +19635,7 @@ class Philippines(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -19630,6 +19880,8 @@ class Morocco(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -19677,6 +19929,8 @@ class Morocco(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -19722,6 +19976,7 @@ class Morocco(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -19940,6 +20195,8 @@ class Mexico(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -19983,6 +20240,8 @@ class Mexico(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -20029,6 +20288,7 @@ class Mexico(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -20254,6 +20514,8 @@ class Malaysia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -20297,6 +20559,8 @@ class Malaysia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -20338,6 +20602,7 @@ class Malaysia(Country):
         La_Combattante_II = ships.La_Combattante_II
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -20589,6 +20854,8 @@ class Libya(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -20635,6 +20902,8 @@ class Libya(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -20674,6 +20943,7 @@ class Libya(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         La_Combattante_II = ships.La_Combattante_II
 
     class CallsignAWACS:
@@ -20915,6 +21185,8 @@ class Jordan(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -20961,6 +21233,8 @@ class Jordan(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -21008,6 +21282,7 @@ class Jordan(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -21269,6 +21544,8 @@ class Indonesia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -21319,6 +21596,8 @@ class Indonesia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -21364,6 +21643,7 @@ class Indonesia(Country):
         La_Combattante_II = ships.La_Combattante_II
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -21578,6 +21858,8 @@ class Honduras(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -21620,6 +21902,8 @@ class Honduras(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -21659,6 +21943,7 @@ class Honduras(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -21902,6 +22187,8 @@ class Ethiopia(Country):
         JF_17 = planes.JF_17
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -21947,6 +22234,8 @@ class Ethiopia(Country):
         Plane.JF_17,
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -21984,6 +22273,7 @@ class Ethiopia(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -22221,6 +22511,8 @@ class Chile(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -22269,6 +22561,8 @@ class Chile(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -22316,6 +22610,7 @@ class Chile(Country):
         La_Combattante_II = ships.La_Combattante_II
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -22554,6 +22849,8 @@ class Brazil(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -22597,6 +22894,8 @@ class Brazil(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -22639,6 +22938,7 @@ class Brazil(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -22874,6 +23174,8 @@ class Bahrain(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -22915,6 +23217,8 @@ class Bahrain(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -22955,6 +23259,7 @@ class Bahrain(Country):
         PERRY = ships.PERRY
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -23195,6 +23500,8 @@ class ThirdReich(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -23237,6 +23544,8 @@ class ThirdReich(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -23275,6 +23584,7 @@ class ThirdReich(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -23529,6 +23839,8 @@ class Yugoslavia(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -23573,6 +23885,8 @@ class Yugoslavia(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -23611,6 +23925,7 @@ class Yugoslavia(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -23887,6 +24202,8 @@ class USSR(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         M_2000C = planes.M_2000C
@@ -23954,6 +24271,8 @@ class USSR(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.M_2000C,
@@ -24006,6 +24325,7 @@ class USSR(Country):
         BDK_775 = ships.BDK_775
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         LST_Mk2 = ships.LST_Mk2
         USS_Samuel_Chase = ships.USS_Samuel_Chase
         Higgins_boat = ships.Higgins_boat
@@ -24164,6 +24484,8 @@ class ItalianSocialRepublic(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -24205,6 +24527,8 @@ class ItalianSocialRepublic(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -24243,6 +24567,7 @@ class ItalianSocialRepublic(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
 
@@ -24564,6 +24889,8 @@ class Algeria(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -24622,6 +24949,8 @@ class Algeria(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -24679,6 +25008,7 @@ class Algeria(Country):
         REZKY = ships.REZKY
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -24921,6 +25251,7 @@ class Kuwait(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -24966,6 +25297,7 @@ class Kuwait(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -25006,6 +25338,7 @@ class Kuwait(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -25235,6 +25568,8 @@ class Qatar(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -25280,6 +25615,8 @@ class Qatar(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -25319,6 +25656,7 @@ class Qatar(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -25568,6 +25906,8 @@ class Oman(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -25612,6 +25952,8 @@ class Oman(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -25653,6 +25995,7 @@ class Oman(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -25903,6 +26246,8 @@ class UnitedArabEmirates(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -25949,6 +26294,8 @@ class UnitedArabEmirates(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -25996,6 +26343,7 @@ class UnitedArabEmirates(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -26215,6 +26563,8 @@ class SouthAfrica(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -26261,6 +26611,8 @@ class SouthAfrica(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -26302,6 +26654,7 @@ class SouthAfrica(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -26582,6 +26935,8 @@ class Cuba(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -26635,6 +26990,8 @@ class Cuba(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -26679,6 +27036,7 @@ class Cuba(Country):
         Dry_cargo_ship_2 = ships.Dry_cargo_ship_2
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -26909,6 +27267,8 @@ class Portugal(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -26956,6 +27316,8 @@ class Portugal(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -26993,6 +27355,7 @@ class Portugal(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -27261,6 +27624,8 @@ class GDR(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -27306,6 +27671,8 @@ class GDR(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -27342,6 +27709,7 @@ class GDR(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -27585,6 +27953,8 @@ class Lebanon(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -27628,6 +27998,8 @@ class Lebanon(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -27669,6 +28041,7 @@ class Lebanon(Country):
         Seawise_Giant = ships.Seawise_Giant
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -28143,6 +28516,8 @@ class CombinedJointTaskForcesBlue(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -28202,7 +28577,6 @@ class CombinedJointTaskForcesBlue(Country):
         F_16A = planes.F_16A
         MQ_9_Reaper = planes.MQ_9_Reaper
         RQ_1A_Predator = planes.RQ_1A_Predator
-        F_A_18C = planes.F_A_18C
         F_4E = planes.F_4E
         Mirage_F1M_EE = planes.Mirage_F1M_EE
         Mirage_F1M_CE = planes.Mirage_F1M_CE
@@ -28227,7 +28601,6 @@ class CombinedJointTaskForcesBlue(Country):
         Mirage_F1B = planes.Mirage_F1B
         Mirage_F1ED = planes.Mirage_F1ED
         Mirage_F1BD = planes.Mirage_F1BD
-        F_A_18A = planes.F_A_18A
         J_11A = planes.J_11A
         KJ_2000 = planes.KJ_2000
         H_6J = planes.H_6J
@@ -28270,6 +28643,8 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -28329,7 +28704,6 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.F_16A,
         Plane.MQ_9_Reaper,
         Plane.RQ_1A_Predator,
-        Plane.F_A_18C,
         Plane.F_4E,
         Plane.Mirage_F1M_EE,
         Plane.Mirage_F1M_CE,
@@ -28354,7 +28728,6 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.Mirage_F1B,
         Plane.Mirage_F1ED,
         Plane.Mirage_F1BD,
-        Plane.F_A_18A,
         Plane.J_11A,
         Plane.KJ_2000,
         Plane.H_6J,
@@ -28422,6 +28795,7 @@ class CombinedJointTaskForcesBlue(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
         ALBATROS = ships.ALBATROS
@@ -28942,6 +29316,8 @@ class CombinedJointTaskForcesRed(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -29001,7 +29377,6 @@ class CombinedJointTaskForcesRed(Country):
         F_16A = planes.F_16A
         MQ_9_Reaper = planes.MQ_9_Reaper
         RQ_1A_Predator = planes.RQ_1A_Predator
-        F_A_18C = planes.F_A_18C
         F_4E = planes.F_4E
         Mirage_F1M_EE = planes.Mirage_F1M_EE
         Mirage_F1M_CE = planes.Mirage_F1M_CE
@@ -29026,7 +29401,6 @@ class CombinedJointTaskForcesRed(Country):
         Mirage_F1B = planes.Mirage_F1B
         Mirage_F1ED = planes.Mirage_F1ED
         Mirage_F1BD = planes.Mirage_F1BD
-        F_A_18A = planes.F_A_18A
         J_11A = planes.J_11A
         KJ_2000 = planes.KJ_2000
         H_6J = planes.H_6J
@@ -29069,6 +29443,8 @@ class CombinedJointTaskForcesRed(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -29128,7 +29504,6 @@ class CombinedJointTaskForcesRed(Country):
         Plane.F_16A,
         Plane.MQ_9_Reaper,
         Plane.RQ_1A_Predator,
-        Plane.F_A_18C,
         Plane.F_4E,
         Plane.Mirage_F1M_EE,
         Plane.Mirage_F1M_CE,
@@ -29153,7 +29528,6 @@ class CombinedJointTaskForcesRed(Country):
         Plane.Mirage_F1B,
         Plane.Mirage_F1ED,
         Plane.Mirage_F1BD,
-        Plane.F_A_18A,
         Plane.J_11A,
         Plane.KJ_2000,
         Plane.H_6J,
@@ -29221,6 +29595,7 @@ class CombinedJointTaskForcesRed(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
         ALBATROS = ships.ALBATROS
@@ -29741,6 +30116,8 @@ class UnitedNationsPeacekeepers(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -29800,7 +30177,6 @@ class UnitedNationsPeacekeepers(Country):
         F_16A = planes.F_16A
         MQ_9_Reaper = planes.MQ_9_Reaper
         RQ_1A_Predator = planes.RQ_1A_Predator
-        F_A_18C = planes.F_A_18C
         F_4E = planes.F_4E
         Mirage_F1M_EE = planes.Mirage_F1M_EE
         Mirage_F1M_CE = planes.Mirage_F1M_CE
@@ -29825,7 +30201,6 @@ class UnitedNationsPeacekeepers(Country):
         Mirage_F1B = planes.Mirage_F1B
         Mirage_F1ED = planes.Mirage_F1ED
         Mirage_F1BD = planes.Mirage_F1BD
-        F_A_18A = planes.F_A_18A
         J_11A = planes.J_11A
         KJ_2000 = planes.KJ_2000
         H_6J = planes.H_6J
@@ -29868,6 +30243,8 @@ class UnitedNationsPeacekeepers(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -29927,7 +30304,6 @@ class UnitedNationsPeacekeepers(Country):
         Plane.F_16A,
         Plane.MQ_9_Reaper,
         Plane.RQ_1A_Predator,
-        Plane.F_A_18C,
         Plane.F_4E,
         Plane.Mirage_F1M_EE,
         Plane.Mirage_F1M_CE,
@@ -29952,7 +30328,6 @@ class UnitedNationsPeacekeepers(Country):
         Plane.Mirage_F1B,
         Plane.Mirage_F1ED,
         Plane.Mirage_F1BD,
-        Plane.F_A_18A,
         Plane.J_11A,
         Plane.KJ_2000,
         Plane.H_6J,
@@ -30020,6 +30395,7 @@ class UnitedNationsPeacekeepers(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
         Uboat_VIIC = ships.Uboat_VIIC
         Schnellboot_type_S130 = ships.Schnellboot_type_S130
         ALBATROS = ships.ALBATROS
@@ -30289,6 +30665,8 @@ class Argentina(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -30332,6 +30710,8 @@ class Argentina(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -30377,6 +30757,7 @@ class Argentina(Country):
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Santafe = ships.Santafe
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -30613,6 +30994,8 @@ class Cyprus(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -30655,6 +31038,8 @@ class Cyprus(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -30695,6 +31080,7 @@ class Cyprus(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -30926,6 +31312,8 @@ class Slovenia(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -30969,6 +31357,8 @@ class Slovenia(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -31012,6 +31402,7 @@ class Slovenia(Country):
         MOLNIYA = ships.MOLNIYA
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -31242,6 +31633,8 @@ class Bolivia(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -31288,6 +31681,8 @@ class Bolivia(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -31327,6 +31722,7 @@ class Bolivia(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -31545,6 +31941,8 @@ class Ghana(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -31587,6 +31985,8 @@ class Ghana(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -31628,6 +32028,7 @@ class Ghana(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -31856,6 +32257,8 @@ class Nigeria(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -31899,6 +32302,8 @@ class Nigeria(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -31942,6 +32347,7 @@ class Nigeria(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -32179,6 +32585,8 @@ class Peru(Country):
         F_15ESE = planes.F_15ESE
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -32227,6 +32635,8 @@ class Peru(Country):
         Plane.F_15ESE,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -32271,6 +32681,7 @@ class Peru(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"
@@ -32495,6 +32906,8 @@ class Ecuador(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_86F_Sabre = planes.F_86F_Sabre
+        F_A_18A = planes.F_A_18A
+        F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
@@ -32539,6 +32952,8 @@ class Ecuador(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_86F_Sabre,
+        Plane.F_A_18A,
+        Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
@@ -32581,6 +32996,7 @@ class Ecuador(Country):
         Speedboat = ships.Speedboat
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
+        Ara_vdm = ships.Ara_vdm
 
     class CallsignAWACS:
         Overlord = "Overlord"

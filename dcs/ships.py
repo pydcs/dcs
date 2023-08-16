@@ -271,6 +271,7 @@ class Santafe(unittype.ShipType):
     threat_range = 0
     air_weapon_dist = 30000
 
+
 class Ara_vdm(unittype.ShipType):
     id = "ara_vdm"
     name = "ARA Vienticinco de Mayo"
@@ -280,6 +281,7 @@ class Ara_vdm(unittype.ShipType):
     detection_range = 18000
     threat_range = 5000
     air_weapon_dist = 5000
+
 
 class HandyWind(unittype.ShipType):
     id = "HandyWind"

@@ -238,6 +238,8 @@ class Weapons:
     BRU_57_with_2_x_CBU_103___202_x_CEM__CBU_with_WCMD = {"clsid": "{BRU57_2*CBU-103}", "name": "BRU-57 with 2 x CBU-103 - 202 x CEM, CBU with WCMD", "weight": 951}
     BRU_57_with_2_x_CBU_105___10_x_SFW__CBU_with_WCMD = {"clsid": "{BRU57_2*CBU-105}", "name": "BRU-57 with 2 x CBU-105 - 10 x SFW, CBU with WCMD", "weight": 925}
     BRU_57_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb = {"clsid": "{BRU57_2*GBU-38}", "name": "BRU-57 with 2 x GBU-38 - JDAM, 500lb GPS Guided Bomb", "weight": 573}
+    BR_250 = {"clsid": "BR_250", "name": "BR-250 - 250kg GP Bomb LD", "weight": 250}
+    BR_500 = {"clsid": "BR_500", "name": "BR-500 - 500kg GP Bomb LD", "weight": 500}
     British_GP_250LBS_Bomb_MK4_on_LH_Spitfire_Wing_Carrier = {"clsid": "British_GP_250LBS_Bomb_MK4_on_LH_Spitfire_Wing_Carrier", "name": "250 lb GP Mk.I", "weight": 108.326}
     British_GP_250LBS_Bomb_MK4_on_RH_Spitfire_Wing_Carrier = {"clsid": "British_GP_250LBS_Bomb_MK4_on_RH_Spitfire_Wing_Carrier", "name": "250 lb GP Mk.I", "weight": 108.326}
     British_GP_500LBS_Bomb_MK4_on_British_UniversalBC_MK3 = {"clsid": "British_GP_500LBS_Bomb_MK4_on_British_UniversalBC_MK3", "name": "500 lb GP Mk.I", "weight": 225.188}
@@ -281,6 +283,7 @@ class Weapons:
     CBU_99___490lbs__247_x_HEAT_Bomblets = {"clsid": "{CBU_99}", "name": "CBU-99 - 490lbs, 247 x HEAT Bomblets", "weight": 222}
     CLB_30___Mk_83___1000lb_GP_Bomb_LD = {"clsid": "{CLB30_MK83}", "name": "CLB 30 - Mk-83 - 1000lb GP Bomb LD", "weight": 499}
     CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = {"clsid": "{CLB4_BLU107}", "name": "CLB 4 - 4 x BLU-107/B Durandal - 219kg Concrete Piercing Chute Retarded Bomb w/Booster", "weight": 1059}
+    CLB_4___4_x_BR_250___250kg_GP_Bomb_LD = {"clsid": "{CLB4_BR250}", "name": "CLB 4 - 4 x BR-250 - 250kg GP Bomb LD", "weight": 1183}
     CLB_4___4_x_Mk_82_Snakeye___500lb_GP_Bomb_HD = {"clsid": "{CLB4_MK82S}", "name": "CLB 4 - 4 x Mk-82 Snakeye - 500lb GP Bomb HD", "weight": 1181}
     CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = {"clsid": "{CLB4_MK82}", "name": "CLB 4 - 4 x Mk-82 - 500lb GP Bomb LD", "weight": 1095}
     CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = {"clsid": "{CLB4_SAMP125LD}", "name": "CLB 4 - 4 x SAMP-125 - 125 kg GP Bomb LD", "weight": 663}
@@ -396,7 +399,7 @@ class Weapons:
     FAB_1500_M_54___1500kg_GP_Bomb_LD = {"clsid": "{40AA4ABE-D6EB-4CD6-AEFE-A1A0477B24AB}", "name": "FAB-1500 M-54 - 1500kg GP Bomb LD", "weight": 1392}
     FAB_250_M54_TU___235_kg__bomb__parachute = {"clsid": "{FAB-250-M54-TU}", "name": "FAB-250 M54 TU - 235 kg, bomb, parachute", "weight": 235}
     FAB_250_M54___235_kg__bomb__parachute = {"clsid": "{FAB-250-M54}", "name": "FAB-250 M54 - 235 kg, bomb, parachute", "weight": 235}
-    FAB_250_M62___250kg_GP_Bomb_LD = {"clsid": "{FAB_250_M62}", "name": "FAB-250-M62 - 250kg GP Bomb LD", "weight": 227}
+    FAB_250_M62___250_kg_GP_Bomb_LD = {"clsid": "{FAB_250_M62}", "name": "FAB-250-M62 - 250 kg GP Bomb LD", "weight": 227}
     FAB_250___250kg_GP_Bomb_LD = {"clsid": "{3C612111-C7AD-476E-8A8E-2485812F4E5C}", "name": "FAB-250 - 250kg GP Bomb LD", "weight": 250}
     FAB_50 = {"clsid": "FAB_50", "name": "FAB-50 - 50kg GP Bomb LD", "weight": 50}
     FAB_500_M54_TU___480_kg__bomb__parachute = {"clsid": "{FAB-500-M54-TU}", "name": "FAB-500 M54 TU - 480 kg, bomb, parachute", "weight": 480}
@@ -746,12 +749,17 @@ class Weapons:
     M261___19_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_C___M274__D_E___M151 = {"clsid": "{M261_INBOARD_DE_M151_C_M274}", "name": "M261 - 19 x UnGd Rkts, 70 mm Hydra 70, Pod Zones: C - M274; D/E - M151", "weight": 237}
     M299___1_x_AGM_114K_Hellfire__Port = {"clsid": "{M299_1xAGM_114K_OUTBOARD_PORT}", "name": "M299 - 1 x AGM-114K Hellfire, Port", "weight": 109.8}
     M299___1_x_AGM_114K_Hellfire__Starboard = {"clsid": "{M299_1xAGM_114K_OUTBOARD_STARBOARD}", "name": "M299 - 1 x AGM-114K Hellfire, Starboard", "weight": 109.8}
+    M299___1_x_AGM_114K__3_x_AGM_114L_Hellfire__Port = {"clsid": "{M299_1xAGM_114K_3xAGM_114L_PRT}", "name": "M299 - 1 x AGM-114K, 3 x AGM-114L Hellfire, Port", "weight": 257.3}
+    M299___1_x_AGM_114K__3_x_AGM_114L_Hellfire__Starboard = {"clsid": "{M299_1xAGM_114K_3xAGM_114L_STRBRD}", "name": "M299 - 1 x AGM-114K, 3 x AGM-114L Hellfire, Starboard", "weight": 257.3}
     M299___1_x_AGM_114L_Hellfire__Port = {"clsid": "{M299_1xAGM_114L_OUTBOARD_PORT}", "name": "M299 - 1 x AGM-114L Hellfire, Port", "weight": 113.9}
     M299___1_x_AGM_114L_Hellfire__Starboard = {"clsid": "{M299_1xAGM_114L_OUTBOARD_STARBOARD}", "name": "M299 - 1 x AGM-114L Hellfire, Starboard", "weight": 113.9}
     M299___2_x_AGM_114K_Hellfire = {"clsid": "{M299_2xAGM_114K}", "name": "M299 - 2 x AGM-114K Hellfire", "weight": 154.7}
+    M299___2_x_AGM_114K__2_x_AGM_114L_Hellfire = {"clsid": "{M299_2xAGM_114K_2xAGM_114L}", "name": "M299 - 2 x AGM-114K, 2 x AGM-114L Hellfire", "weight": 253.7}
     M299___2_x_AGM_114L_Hellfire = {"clsid": "{M299_2xAGM_114L}", "name": "M299 - 2 x AGM-114L Hellfire", "weight": 162.9}
     M299___3_x_AGM_114K_Hellfire__Port = {"clsid": "{M299_3xAGM_114K_OUTBOARD_PORT}", "name": "M299 - 3 x AGM-114K Hellfire, Port", "weight": 199.6}
     M299___3_x_AGM_114K_Hellfire__Starboard = {"clsid": "{M299_3xAGM_114K_OUTBOARD_STARBOARD}", "name": "M299 - 3 x AGM-114K Hellfire, Starboard", "weight": 199.6}
+    M299___3_x_AGM_114K__1_x_AGM_114L_Hellfire__Port = {"clsid": "{M299_3xAGM_114K_1xAGM_114L_PRT}", "name": "M299 - 3 x AGM-114K, 1 x AGM-114L Hellfire, Port", "weight": 250.1}
+    M299___3_x_AGM_114K__1_x_AGM_114L_Hellfire__Starboard = {"clsid": "{M299_3xAGM_114K_1xAGM_114L_STRBRD}", "name": "M299 - 3 x AGM-114K, 1 x AGM-114L Hellfire, Starboard", "weight": 250.1}
     M299___3_x_AGM_114L_Hellfire__Port = {"clsid": "{M299_3xAGM_114L_OUTBOARD_PORT}", "name": "M299 - 3 x AGM-114L Hellfire, Port", "weight": 211.9}
     M299___3_x_AGM_114L_Hellfire__Starboard = {"clsid": "{M299_3xAGM_114L_OUTBOARD_STARBOARD}", "name": "M299 - 3 x AGM-114L Hellfire, Starboard", "weight": 211.9}
     M299___4_x_AGM_114K_Hellfire = {"clsid": "{88D18A5E-99C8-4B04-B40B-1C02F2018B6E}", "name": "M299 - 4 x AGM-114K Hellfire", "weight": 244.5}
@@ -1586,6 +1594,8 @@ weapon_ids = {
     "{BRU57_2*CBU-103}": Weapons.BRU_57_with_2_x_CBU_103___202_x_CEM__CBU_with_WCMD,
     "{BRU57_2*CBU-105}": Weapons.BRU_57_with_2_x_CBU_105___10_x_SFW__CBU_with_WCMD,
     "{BRU57_2*GBU-38}": Weapons.BRU_57_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb,
+    "BR_250": Weapons.BR_250,
+    "BR_500": Weapons.BR_500,
     "British_GP_250LBS_Bomb_MK4_on_LH_Spitfire_Wing_Carrier": Weapons.British_GP_250LBS_Bomb_MK4_on_LH_Spitfire_Wing_Carrier,
     "British_GP_250LBS_Bomb_MK4_on_RH_Spitfire_Wing_Carrier": Weapons.British_GP_250LBS_Bomb_MK4_on_RH_Spitfire_Wing_Carrier,
     "British_GP_500LBS_Bomb_MK4_on_British_UniversalBC_MK3": Weapons.British_GP_500LBS_Bomb_MK4_on_British_UniversalBC_MK3,
@@ -1629,6 +1639,7 @@ weapon_ids = {
     "{CBU_99}": Weapons.CBU_99___490lbs__247_x_HEAT_Bomblets,
     "{CLB30_MK83}": Weapons.CLB_30___Mk_83___1000lb_GP_Bomb_LD,
     "{CLB4_BLU107}": Weapons.CLB_4___4_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster,
+    "{CLB4_BR250}": Weapons.CLB_4___4_x_BR_250___250kg_GP_Bomb_LD,
     "{CLB4_MK82S}": Weapons.CLB_4___4_x_Mk_82_Snakeye___500lb_GP_Bomb_HD,
     "{CLB4_MK82}": Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD,
     "{CLB4_SAMP125LD}": Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD,
@@ -1744,7 +1755,7 @@ weapon_ids = {
     "{40AA4ABE-D6EB-4CD6-AEFE-A1A0477B24AB}": Weapons.FAB_1500_M_54___1500kg_GP_Bomb_LD,
     "{FAB-250-M54-TU}": Weapons.FAB_250_M54_TU___235_kg__bomb__parachute,
     "{FAB-250-M54}": Weapons.FAB_250_M54___235_kg__bomb__parachute,
-    "{FAB_250_M62}": Weapons.FAB_250_M62___250kg_GP_Bomb_LD,
+    "{FAB_250_M62}": Weapons.FAB_250_M62___250_kg_GP_Bomb_LD,
     "{3C612111-C7AD-476E-8A8E-2485812F4E5C}": Weapons.FAB_250___250kg_GP_Bomb_LD,
     "FAB_50": Weapons.FAB_50,
     "{FAB-500-M54-TU}": Weapons.FAB_500_M54_TU___480_kg__bomb__parachute,
@@ -2094,12 +2105,17 @@ weapon_ids = {
     "{M261_INBOARD_DE_M151_C_M274}": Weapons.M261___19_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_C___M274__D_E___M151,
     "{M299_1xAGM_114K_OUTBOARD_PORT}": Weapons.M299___1_x_AGM_114K_Hellfire__Port,
     "{M299_1xAGM_114K_OUTBOARD_STARBOARD}": Weapons.M299___1_x_AGM_114K_Hellfire__Starboard,
+    "{M299_1xAGM_114K_3xAGM_114L_PRT}": Weapons.M299___1_x_AGM_114K__3_x_AGM_114L_Hellfire__Port,
+    "{M299_1xAGM_114K_3xAGM_114L_STRBRD}": Weapons.M299___1_x_AGM_114K__3_x_AGM_114L_Hellfire__Starboard,
     "{M299_1xAGM_114L_OUTBOARD_PORT}": Weapons.M299___1_x_AGM_114L_Hellfire__Port,
     "{M299_1xAGM_114L_OUTBOARD_STARBOARD}": Weapons.M299___1_x_AGM_114L_Hellfire__Starboard,
     "{M299_2xAGM_114K}": Weapons.M299___2_x_AGM_114K_Hellfire,
+    "{M299_2xAGM_114K_2xAGM_114L}": Weapons.M299___2_x_AGM_114K__2_x_AGM_114L_Hellfire,
     "{M299_2xAGM_114L}": Weapons.M299___2_x_AGM_114L_Hellfire,
     "{M299_3xAGM_114K_OUTBOARD_PORT}": Weapons.M299___3_x_AGM_114K_Hellfire__Port,
     "{M299_3xAGM_114K_OUTBOARD_STARBOARD}": Weapons.M299___3_x_AGM_114K_Hellfire__Starboard,
+    "{M299_3xAGM_114K_1xAGM_114L_PRT}": Weapons.M299___3_x_AGM_114K__1_x_AGM_114L_Hellfire__Port,
+    "{M299_3xAGM_114K_1xAGM_114L_STRBRD}": Weapons.M299___3_x_AGM_114K__1_x_AGM_114L_Hellfire__Starboard,
     "{M299_3xAGM_114L_OUTBOARD_PORT}": Weapons.M299___3_x_AGM_114L_Hellfire__Port,
     "{M299_3xAGM_114L_OUTBOARD_STARBOARD}": Weapons.M299___3_x_AGM_114L_Hellfire__Starboard,
     "{88D18A5E-99C8-4B04-B40B-1C02F2018B6E}": Weapons.M299___4_x_AGM_114K_Hellfire,
