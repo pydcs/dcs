@@ -417,19 +417,18 @@ from dcs.unittype import FlyingType
             writeln(file, '')
             -- default dict
             writeln(file, '    property_defaults: Dict[str, Any] = {')
-            local skip_props = {}
             for j in pairs(plane.AddPropAircraft) do
                 local prop = plane.AddPropAircraft[j]
                 local defval = prop.defValue
-                -- A nil default value is used by DCS to implement labels in the ME. These aren't real options, so skip them.
+                -- Labels aren't real options, so skip them.
                 -- https://github.com/pydcs/dcs/issues/266
-                if defval == nil then
-                    skip_props[prop.id] = true
-                else
+                if prop.control ~= "label" then
                     if defval == true then
                         defval = 'True'
                     elseif defval == false then
                         defval = 'False'
+                    elseif defval == nil then
+                        defval = 'None'
                     elseif type(defval) == 'string' then
                         defval = '"'..defval..'"'
                     else
@@ -446,7 +445,9 @@ from dcs.unittype import FlyingType
                 for j in pairs(plane.AddPropAircraft) do
                     local prop = plane.AddPropAircraft[j]
                     prop_class_name = safe_name(prop.id)
-                    if not skip_props[prop_class_name] then
+                    -- Labels aren't real options, so skip them.
+                    -- https://github.com/pydcs/dcs/issues/266
+                    if prop.control ~= "label" then
                         writeln(file, '')
                         writeln(file, '        class '..prop_class_name..':')
                         writeln(file, '            id = "'..prop.id..'"')
@@ -456,6 +457,8 @@ from dcs.unittype import FlyingType
                             for k, val in pairs(prop.values) do
                                 if type(val.id) == 'string' then
                                     writeln(file, '                '..safe_name(val.dispName)..' = "'..tostring(val.id)..'"')
+                                elseif val.id == nil then
+                                    writeln(file, '                '..safe_name(val.dispName)..' = None')
                                 else
                                     writeln(file, '                '..safe_name(val.dispName)..' = '..tostring(val.id))
 								end
@@ -483,6 +486,8 @@ from dcs.unittype import FlyingType
                     else
                         return 'False'
                     end
+                elseif v == nil then
+                    return 'None'
                 elseif type(v) == 'string' then
                     return '"'..v..'"'
                 else
