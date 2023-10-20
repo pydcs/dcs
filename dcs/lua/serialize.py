@@ -40,6 +40,8 @@ def dumps(value, varname=None, indent=None):
         s += '"{val}"'.format(val=v)
     elif isinstance(value, bool):
         s += "true" if value else "false"
+    elif value is None:
+        s += "nil"
     else:
         s += str(value)
 

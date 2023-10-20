@@ -56,6 +56,8 @@ def loads(
                 varname = self.eatvarname()
                 if varname == 'false' or varname == 'true':
                     return varname == 'true'
+                elif varname == 'nil':
+                    return None
                 elif varname == 'local':
                     self.eat_ws()
                     # push names for assignment into queue
