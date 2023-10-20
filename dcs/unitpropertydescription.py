@@ -10,7 +10,15 @@ class UnitPropertyDescription:
     # The type of control shown in the UI for this property. "label" type properties are
     # not really properties, but text-only lines shown in the mission editor for
     # grouping properties.
-    control: Literal["checkbox", "comboList", "groupbox", "label", "slider", "spinbox"]
+    control: Literal[
+        "checkbox",
+        "comboList",
+        "editbox",
+        "groupbox",
+        "label",
+        "slider",
+        "spinbox",
+    ]
 
     # The human readable name of this property. When the control is a label,
     # the value may be None to indicate that a blank line should be printed in
@@ -37,7 +45,7 @@ class UnitPropertyDescription:
     # The options allowed for comboList properties. The key of the dict is the ID of the
     # option which is how the value is represented in the miz. The value is the display
     # name for the UI.
-    values: Optional[Dict[Union[str, int, float], str]] = None
+    values: Optional[Dict[Union[str, int, float, None], str]] = None
 
     # No idea what these are for.
     dimension: Optional[str] = None
