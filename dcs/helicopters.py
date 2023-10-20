@@ -273,7 +273,7 @@ class Mi_8MT(HelicopterType):
         "NS430allow": UnitPropertyDescription(
             identifier="NS430allow",
             control="checkbox",
-            label="NS 430 allow",
+            label="Allow N430 nav device",
             default=True,
         ),
     }
@@ -1094,6 +1094,8 @@ class AH_64D_BLK_II(HelicopterType):
         "NetCrewControlPriority": 0,
         "AIDisabled": False,
         "HumanOrchestra": False,
+        "TN_IDM_LB": None,
+        "OwnshipCallSign": None,
     }
 
     class Properties:
@@ -1184,6 +1186,12 @@ class AH_64D_BLK_II(HelicopterType):
 
         class HumanOrchestra:
             id = "HumanOrchestra"
+
+        class TN_IDM_LB:
+            id = "TN_IDM_LB"
+
+        class OwnshipCallSign:
+            id = "OwnshipCallSign"
 
     properties = {
         "FCR_RFI_removed": UnitPropertyDescription(
@@ -1339,6 +1347,22 @@ class AH_64D_BLK_II(HelicopterType):
             label="Disable Multicrew",
             player_only=True,
             default=False,
+        ),
+        "dataluink_Label": UnitPropertyDescription(
+            identifier="dataluink_Label",
+            control="label",
+            label="DATALINK",
+            x_lbl=150,
+        ),
+        "TN_IDM_LB": UnitPropertyDescription(
+            identifier="TN_IDM_LB",
+            control="editbox",
+            label="Datalink Originator ID",
+        ),
+        "OwnshipCallSign": UnitPropertyDescription(
+            identifier="OwnshipCallSign",
+            control="editbox",
+            label="Ownship CallSign",
         ),
     }
 
@@ -1962,7 +1986,7 @@ class Mi_24P(HelicopterType):
         "NS430allow": UnitPropertyDescription(
             identifier="NS430allow",
             control="checkbox",
-            label="NS 430 allow",
+            label="Allow N430 nav device",
             player_only=True,
             default=True,
         ),
@@ -2090,8 +2114,8 @@ class Mi_24P(HelicopterType):
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (2, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
         APU_68___S_24B = (2, Weapons.APU_68___S_24B)
         GUV_VOG = (2, Weapons.GUV_VOG)
-        APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red = (2, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red)
-        APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red = (2, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red)
+        APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_ = (2, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_)
+        APU_60_2M_with_2_x_R_60M__AA_8_Aphid_B____IR_AAM__ = (2, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid_B____IR_AAM__)
 
     class Pylon3:
         B_8V20A_CM = (3, Weapons.B_8V20A_CM)
@@ -2156,8 +2180,8 @@ class Mi_24P(HelicopterType):
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (5, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
         APU_68___S_24B = (5, Weapons.APU_68___S_24B)
         GUV_VOG = (5, Weapons.GUV_VOG)
-        APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red = (5, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red)
-        APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red_ = (5, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red_)
+        APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_ = (5, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_)
+        APU_60_2M_with_2_x_R_60M__AA_8_Aphid_B____IR_AAM___ = (5, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid_B____IR_AAM___)
 
     class Pylon6:
         _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (6, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)

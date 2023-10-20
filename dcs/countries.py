@@ -51,6 +51,8 @@ class Russia(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_11_Buk_CC_9S470M1 = vehicles.AirDefence.SA_11_Buk_CC_9S470M1
             SA_11_Buk_LN_9A310M1 = vehicles.AirDefence.SA_11_Buk_LN_9A310M1
             SA_11_Buk_SR_9S18M1 = vehicles.AirDefence.SA_11_Buk_SR_9S18M1
@@ -243,9 +245,10 @@ class Russia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
-        TF_51D = planes.TF_51D
 
     planes = [
         Plane.A_10C,
@@ -318,9 +321,10 @@ class Russia(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Ju_88A4,
         Plane.C_47,
-        Plane.TF_51D,
     ]
 
     class Helicopter:
@@ -523,6 +527,8 @@ class Ukraine(Country):
             Uragan_BM_27 = vehicles.Artillery.Uragan_BM_27
             Tt_B8M1 = vehicles.Artillery.Tt_B8M1
             HL_B8M1 = vehicles.Artillery.HL_B8M1
+            MLRS = vehicles.Artillery.MLRS
+            M_109 = vehicles.Artillery.M_109
 
         class Infantry:
             Paratrooper_AKS_74 = vehicles.Infantry.Paratrooper_AKS_74
@@ -543,6 +549,8 @@ class Ukraine(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_11_Buk_CC_9S470M1 = vehicles.AirDefence.SA_11_Buk_CC_9S470M1
             SA_11_Buk_LN_9A310M1 = vehicles.AirDefence.SA_11_Buk_LN_9A310M1
             SA_11_Buk_SR_9S18M1 = vehicles.AirDefence.SA_11_Buk_SR_9S18M1
@@ -566,6 +574,18 @@ class Ukraine(Country):
             RLS_19J6 = vehicles.AirDefence.RLS_19J6
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            Soldier_stinger = vehicles.AirDefence.Soldier_stinger
+            Stinger_comm = vehicles.AirDefence.Stinger_comm
+            NASAMS_Command_Post = vehicles.AirDefence.NASAMS_Command_Post
+            NASAMS_Radar_MPQ64F1 = vehicles.AirDefence.NASAMS_Radar_MPQ64F1
+            NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
+            NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
+            Hawk_sr = vehicles.AirDefence.Hawk_sr
+            Hawk_cwar = vehicles.AirDefence.Hawk_cwar
+            Hawk_pcp = vehicles.AirDefence.Hawk_pcp
+            Hawk_tr = vehicles.AirDefence.Hawk_tr
+            Hawk_ln = vehicles.AirDefence.Hawk_ln
+            Gepard = vehicles.AirDefence.Gepard
             RD_75 = vehicles.AirDefence.RD_75
             S_75M_Volhov = vehicles.AirDefence.S_75M_Volhov
             SNR_75V = vehicles.AirDefence.SNR_75V
@@ -610,6 +630,7 @@ class Ukraine(Country):
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
+            M978_HEMTT_Tanker = vehicles.Unarmed.M978_HEMTT_Tanker
             Tacr2a = vehicles.Unarmed.Tacr2a
             LARC_V = vehicles.Unarmed.LARC_V
 
@@ -632,6 +653,8 @@ class Ukraine(Country):
             Tt_DSHK = vehicles.Armor.Tt_DSHK
             HL_KORD = vehicles.Armor.HL_KORD
             HL_DSHK = vehicles.Armor.HL_DSHK
+            TPZ = vehicles.Armor.TPZ
+            M_113 = vehicles.Armor.M_113
 
         class MissilesSS:
             Scud_B = vehicles.MissilesSS.Scud_B
@@ -721,9 +744,10 @@ class Ukraine(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
-        TF_51D = planes.TF_51D
 
     planes = [
         Plane.A_10C,
@@ -788,9 +812,10 @@ class Ukraine(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Ju_88A4,
         Plane.C_47,
-        Plane.TF_51D,
     ]
 
     class Helicopter:
@@ -936,6 +961,7 @@ class USA(Country):
             FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
+            HEMTT_C_RAM_Phalanx = vehicles.AirDefence.HEMTT_C_RAM_Phalanx
             QF_37_AA = vehicles.AirDefence.QF_37_AA
             Allies_Director = vehicles.AirDefence.Allies_Director
 
@@ -1506,9 +1532,10 @@ class Turkey(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
-        TF_51D = planes.TF_51D
 
     planes = [
         Plane.A_10C,
@@ -1561,9 +1588,10 @@ class Turkey(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
-        Plane.TF_51D,
     ]
 
     class Helicopter:
@@ -1882,6 +1910,7 @@ class UK(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         B_17G = planes.B_17G
         Ju_88A4 = planes.Ju_88A4
@@ -1935,6 +1964,7 @@ class UK(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.B_17G,
         Plane.Ju_88A4,
@@ -2257,9 +2287,10 @@ class France(Country):
         Mirage_F1CR = planes.Mirage_F1CR
         Mirage_F1CT = planes.Mirage_F1CT
         Mirage_F1B = planes.Mirage_F1B
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
-        TF_51D = planes.TF_51D
 
     planes = [
         Plane.A_10C,
@@ -2315,9 +2346,10 @@ class France(Country):
         Plane.Mirage_F1CR,
         Plane.Mirage_F1CT,
         Plane.Mirage_F1B,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
-        Plane.TF_51D,
     ]
 
     class Helicopter:
@@ -2535,6 +2567,8 @@ class Germany(Country):
             S_300PS_40B6M_tr = vehicles.AirDefence.S_300PS_40B6M_tr
             S_300PS_40B6MD_sr = vehicles.AirDefence.S_300PS_40B6MD_sr
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             Rapier_fsa_launcher = vehicles.AirDefence.Rapier_fsa_launcher
             Rapier_fsa_optical_tracker_unit = vehicles.AirDefence.Rapier_fsa_optical_tracker_unit
             Rapier_fsa_blindfire_radar = vehicles.AirDefence.Rapier_fsa_blindfire_radar
@@ -2704,8 +2738,9 @@ class Germany(Country):
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
-        Ju_88A4 = planes.Ju_88A4
+        Mirage_F1BE = planes.Mirage_F1BE
         TF_51D = planes.TF_51D
+        Ju_88A4 = planes.Ju_88A4
 
     planes = [
         Plane.A_10C,
@@ -2760,8 +2795,9 @@ class Germany(Country):
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
-        Plane.Ju_88A4,
+        Plane.Mirage_F1BE,
         Plane.TF_51D,
+        Plane.Ju_88A4,
     ]
 
     class Helicopter:
@@ -3000,6 +3036,8 @@ class USAFAggressors(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_11_Buk_CC_9S470M1 = vehicles.AirDefence.SA_11_Buk_CC_9S470M1
             SA_11_Buk_LN_9A310M1 = vehicles.AirDefence.SA_11_Buk_LN_9A310M1
             SA_11_Buk_SR_9S18M1 = vehicles.AirDefence.SA_11_Buk_SR_9S18M1
@@ -3070,6 +3108,7 @@ class USAFAggressors(Country):
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
             HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
+            HEMTT_C_RAM_Phalanx = vehicles.AirDefence.HEMTT_C_RAM_Phalanx
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -3284,6 +3323,8 @@ class USAFAggressors(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -3294,6 +3335,7 @@ class USAFAggressors(Country):
         FW_190D9 = planes.FW_190D9
         IL_76MD = planes.IL_76MD
         IL_78M = planes.IL_78M
+        L_39ZA = planes.L_39ZA
         MiG_23MLD = planes.MiG_23MLD
         MiG_25PD = planes.MiG_25PD
         MiG_25RBT = planes.MiG_25RBT
@@ -3301,7 +3343,6 @@ class USAFAggressors(Country):
         MiG_29A = planes.MiG_29A
         MiG_31 = planes.MiG_31
         P_51D = planes.P_51D
-        TF_51D = planes.TF_51D
         Su_17M4 = planes.Su_17M4
         Su_24M = planes.Su_24M
         Su_24MR = planes.Su_24MR
@@ -3321,7 +3362,6 @@ class USAFAggressors(Country):
         F_16C_bl_52d = planes.F_16C_bl_52d
         Mirage_F1EH = planes.Mirage_F1EH
         Mirage_F1CH = planes.Mirage_F1CH
-        Mirage_F1BE = planes.Mirage_F1BE
         Mirage_F1EQ = planes.Mirage_F1EQ
         Mirage_F1BQ = planes.Mirage_F1BQ
         F_16A_MLU = planes.F_16A_MLU
@@ -3342,7 +3382,6 @@ class USAFAggressors(Country):
         Su_25TM = planes.Su_25TM
         Su_30 = planes.Su_30
         Su_34 = planes.Su_34
-        L_39ZA = planes.L_39ZA
         F_15C = planes.F_15C
         F_15E = planes.F_15E
         KC_135 = planes.KC_135
@@ -3411,6 +3450,8 @@ class USAFAggressors(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -3421,6 +3462,7 @@ class USAFAggressors(Country):
         Plane.FW_190D9,
         Plane.IL_76MD,
         Plane.IL_78M,
+        Plane.L_39ZA,
         Plane.MiG_23MLD,
         Plane.MiG_25PD,
         Plane.MiG_25RBT,
@@ -3428,7 +3470,6 @@ class USAFAggressors(Country):
         Plane.MiG_29A,
         Plane.MiG_31,
         Plane.P_51D,
-        Plane.TF_51D,
         Plane.Su_17M4,
         Plane.Su_24M,
         Plane.Su_24MR,
@@ -3448,7 +3489,6 @@ class USAFAggressors(Country):
         Plane.F_16C_bl_52d,
         Plane.Mirage_F1EH,
         Plane.Mirage_F1CH,
-        Plane.Mirage_F1BE,
         Plane.Mirage_F1EQ,
         Plane.Mirage_F1BQ,
         Plane.F_16A_MLU,
@@ -3469,7 +3509,6 @@ class USAFAggressors(Country):
         Plane.Su_25TM,
         Plane.Su_30,
         Plane.Su_34,
-        Plane.L_39ZA,
         Plane.F_15C,
         Plane.F_15E,
         Plane.KC_135,
@@ -3863,6 +3902,7 @@ class Canada(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -3912,6 +3952,7 @@ class Canada(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -4217,10 +4258,10 @@ class Spain(Country):
         Mirage_F1EDA = planes.Mirage_F1EDA
         Mirage_F1BE = planes.Mirage_F1BE
         Mirage_F1DDA = planes.Mirage_F1DDA
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
-        TF_51D = planes.TF_51D
 
     planes = [
         Plane.A_10C,
@@ -4274,10 +4315,10 @@ class Spain(Country):
         Plane.Mirage_F1EDA,
         Plane.Mirage_F1BE,
         Plane.Mirage_F1DDA,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
-        Plane.TF_51D,
     ]
 
     class Helicopter:
@@ -4604,6 +4645,7 @@ class TheNetherlands(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -4657,6 +4699,7 @@ class TheNetherlands(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -4968,9 +5011,10 @@ class Belgium(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
-        TF_51D = planes.TF_51D
 
     planes = [
         Plane.A_10C,
@@ -5019,9 +5063,10 @@ class Belgium(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
-        Plane.TF_51D,
     ]
 
     class Helicopter:
@@ -5309,9 +5354,10 @@ class Norway(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
-        TF_51D = planes.TF_51D
 
     planes = [
         Plane.A_10C,
@@ -5360,9 +5406,10 @@ class Norway(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
-        Plane.TF_51D,
     ]
 
     class Helicopter:
@@ -5648,9 +5695,10 @@ class Denmark(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
-        TF_51D = planes.TF_51D
 
     planes = [
         Plane.A_10C,
@@ -5699,9 +5747,10 @@ class Denmark(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
-        Plane.TF_51D,
     ]
 
     class Helicopter:
@@ -6004,6 +6053,7 @@ class Israel(Country):
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -6059,6 +6109,7 @@ class Israel(Country):
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -6410,9 +6461,10 @@ class Georgia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
-        TF_51D = planes.TF_51D
 
     planes = [
         Plane.A_10C,
@@ -6461,9 +6513,10 @@ class Georgia(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Ju_88A4,
         Plane.C_47,
-        Plane.TF_51D,
     ]
 
     class Helicopter:
@@ -6768,6 +6821,8 @@ class Insurgents(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -6812,6 +6867,8 @@ class Insurgents(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -7051,6 +7108,7 @@ class Abkhazia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
 
@@ -7100,6 +7158,7 @@ class Abkhazia(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Ju_88A4,
         Plane.C_47,
     ]
@@ -7326,6 +7385,8 @@ class SouthOssetia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -7369,6 +7430,8 @@ class SouthOssetia(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -7581,6 +7644,7 @@ class Italy(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -7636,6 +7700,7 @@ class Italy(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -7941,6 +8006,7 @@ class Australia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -7991,6 +8057,7 @@ class Australia(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -8269,6 +8336,7 @@ class Switzerland(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -8315,6 +8383,7 @@ class Switzerland(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -8573,6 +8642,8 @@ class Austria(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -8617,6 +8688,8 @@ class Austria(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -8818,6 +8891,8 @@ class Belarus(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_11_Buk_CC_9S470M1 = vehicles.AirDefence.SA_11_Buk_CC_9S470M1
             SA_11_Buk_LN_9A310M1 = vehicles.AirDefence.SA_11_Buk_LN_9A310M1
             SA_11_Buk_SR_9S18M1 = vehicles.AirDefence.SA_11_Buk_SR_9S18M1
@@ -8976,6 +9051,8 @@ class Belarus(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
 
@@ -9031,6 +9108,8 @@ class Belarus(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Ju_88A4,
         Plane.C_47,
     ]
@@ -9144,6 +9223,8 @@ class Bulgaria(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_18_Igla_manpad = vehicles.AirDefence.SA_18_Igla_manpad
             SA_18_Igla_comm = vehicles.AirDefence.SA_18_Igla_comm
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
@@ -9300,6 +9381,8 @@ class Bulgaria(Country):
         MB_339APAN = planes.MB_339APAN
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
 
@@ -9352,6 +9435,8 @@ class Bulgaria(Country):
         Plane.MB_339APAN,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Ju_88A4,
         Plane.C_47,
     ]
@@ -9665,6 +9750,8 @@ class CzechRepublic(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -9714,6 +9801,8 @@ class CzechRepublic(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -9899,6 +9988,8 @@ class China(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_54K6_cp = vehicles.AirDefence.S_300PS_54K6_cp
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             P_19_s_125_sr = vehicles.AirDefence.P_19_s_125_sr
             Bofors40 = vehicles.AirDefence.Bofors40
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
@@ -10022,6 +10113,7 @@ class China(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -10078,6 +10170,7 @@ class China(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -10269,6 +10362,8 @@ class Croatia(Country):
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -10313,6 +10408,8 @@ class Croatia(Country):
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -10516,6 +10613,8 @@ class Egypt(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_11_Buk_LN_9A310M1 = vehicles.AirDefence.SA_11_Buk_LN_9A310M1
             SA_11_Buk_CC_9S470M1 = vehicles.AirDefence.SA_11_Buk_CC_9S470M1
             SA_11_Buk_SR_9S18M1 = vehicles.AirDefence.SA_11_Buk_SR_9S18M1
@@ -10657,6 +10756,8 @@ class Egypt(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -10708,6 +10809,8 @@ class Egypt(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -11051,6 +11154,8 @@ class Finland(Country):
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -11094,6 +11199,8 @@ class Finland(Country):
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -11293,6 +11400,8 @@ class Greece(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_54K6_cp = vehicles.AirDefence.S_300PS_54K6_cp
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             Bofors40 = vehicles.AirDefence.Bofors40
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
             Generator_5i57 = vehicles.AirDefence.Generator_5i57
@@ -11406,6 +11515,8 @@ class Greece(Country):
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1CG = planes.Mirage_F1CG
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -11458,6 +11569,8 @@ class Greece(Country):
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1CG,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -11808,6 +11921,8 @@ class Hungary(Country):
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Ju_88A4 = planes.Ju_88A4
 
     planes = [
@@ -11856,6 +11971,8 @@ class Hungary(Country):
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Ju_88A4,
     ]
 
@@ -12158,6 +12275,8 @@ class India(Country):
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -12210,6 +12329,8 @@ class India(Country):
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -12404,6 +12525,8 @@ class Iran(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_54K6_cp = vehicles.AirDefence.S_300PS_54K6_cp
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
             Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
@@ -12547,7 +12670,9 @@ class Iran(Country):
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1EQ = planes.Mirage_F1EQ
+        Mirage_F1BE = planes.Mirage_F1BE
         Mirage_F1BQ = planes.Mirage_F1BQ
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -12603,7 +12728,9 @@ class Iran(Country):
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1EQ,
+        Plane.Mirage_F1BE,
         Plane.Mirage_F1BQ,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -12936,7 +13063,9 @@ class Iraq(Country):
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1EQ = planes.Mirage_F1EQ
+        Mirage_F1BE = planes.Mirage_F1BE
         Mirage_F1BQ = planes.Mirage_F1BQ
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -12989,7 +13118,9 @@ class Iraq(Country):
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1EQ,
+        Plane.Mirage_F1BE,
         Plane.Mirage_F1BQ,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -13302,6 +13433,8 @@ class Japan(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -13348,6 +13481,8 @@ class Japan(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -13550,6 +13685,9 @@ class Kazakhstan(Country):
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
+            S_300PS_54K6_cp = vehicles.AirDefence.S_300PS_54K6_cp
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_11_Buk_SR_9S18M1 = vehicles.AirDefence.SA_11_Buk_SR_9S18M1
             SA_11_Buk_CC_9S470M1 = vehicles.AirDefence.SA_11_Buk_CC_9S470M1
             SA_11_Buk_LN_9A310M1 = vehicles.AirDefence.SA_11_Buk_LN_9A310M1
@@ -13562,7 +13700,6 @@ class Kazakhstan(Country):
             Tor_9A331 = vehicles.AirDefence.Tor_9A331
             X_2S6_Tunguska = vehicles.AirDefence.X_2S6_Tunguska
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
-            S_300PS_54K6_cp = vehicles.AirDefence.S_300PS_54K6_cp
             ZU_23_Emplacement = vehicles.AirDefence.ZU_23_Emplacement
             ZU_23_Emplacement_Closed = vehicles.AirDefence.ZU_23_Emplacement_Closed
             Ural_375_ZU_23 = vehicles.AirDefence.Ural_375_ZU_23
@@ -13722,6 +13859,8 @@ class Kazakhstan(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -13778,6 +13917,8 @@ class Kazakhstan(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -14068,6 +14209,8 @@ class NorthKorea(Country):
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -14114,6 +14257,8 @@ class NorthKorea(Country):
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -14405,6 +14550,8 @@ class Pakistan(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -14456,6 +14603,8 @@ class Pakistan(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -14789,6 +14938,7 @@ class Poland(Country):
         MB_339APAN = planes.MB_339APAN
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -14844,6 +14994,7 @@ class Poland(Country):
         Plane.MB_339APAN,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -15182,6 +15333,8 @@ class Romania(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
 
@@ -15231,6 +15384,8 @@ class Romania(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Ju_88A4,
         Plane.C_47,
     ]
@@ -15530,6 +15685,8 @@ class SaudiArabia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -15580,6 +15737,8 @@ class SaudiArabia(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -15901,6 +16060,8 @@ class Serbia(Country):
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -15949,6 +16110,8 @@ class Serbia(Country):
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -16135,6 +16298,8 @@ class Slovakia(Country):
             S_300PS_40B6M_tr = vehicles.AirDefence.S_300PS_40B6M_tr
             S_300PS_40B6MD_sr = vehicles.AirDefence.S_300PS_40B6MD_sr
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_18_Igla_manpad = vehicles.AirDefence.SA_18_Igla_manpad
             SA_18_Igla_comm = vehicles.AirDefence.SA_18_Igla_comm
             S_60_Type59_Artillery = vehicles.AirDefence.S_60_Type59_Artillery
@@ -16244,6 +16409,8 @@ class Slovakia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -16292,6 +16459,8 @@ class Slovakia(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -16582,6 +16751,7 @@ class SouthKorea(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -16633,6 +16803,7 @@ class SouthKorea(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -16905,6 +17076,7 @@ class Sweden(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -16953,6 +17125,7 @@ class Sweden(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -17163,6 +17336,8 @@ class Syria(Country):
             S_300PS_40B6M_tr = vehicles.AirDefence.S_300PS_40B6M_tr
             S_300PS_40B6MD_sr = vehicles.AirDefence.S_300PS_40B6MD_sr
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
@@ -17277,6 +17452,8 @@ class Syria(Country):
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -17326,6 +17503,8 @@ class Syria(Country):
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -17618,6 +17797,8 @@ class Yemen(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -17665,6 +17846,8 @@ class Yemen(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -17861,6 +18044,8 @@ class Vietnam(Country):
             S_300PS_40B6M_tr = vehicles.AirDefence.S_300PS_40B6M_tr
             S_300PS_40B6MD_sr = vehicles.AirDefence.S_300PS_40B6MD_sr
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_18_Igla_manpad = vehicles.AirDefence.SA_18_Igla_manpad
             SA_18_Igla_comm = vehicles.AirDefence.SA_18_Igla_comm
             ZSU_23_4_Shilka = vehicles.AirDefence.ZSU_23_4_Shilka
@@ -17974,6 +18159,8 @@ class Vietnam(Country):
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Ju_88A4 = planes.Ju_88A4
 
     planes = [
@@ -18023,6 +18210,8 @@ class Vietnam(Country):
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Ju_88A4,
     ]
 
@@ -18215,6 +18404,8 @@ class Venezuela(Country):
             S_300PS_40B6M_tr = vehicles.AirDefence.S_300PS_40B6M_tr
             S_300PS_40B6MD_sr = vehicles.AirDefence.S_300PS_40B6MD_sr
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             Tor_9A331 = vehicles.AirDefence.Tor_9A331
             SA_18_Igla_S_manpad = vehicles.AirDefence.SA_18_Igla_S_manpad
             SA_18_Igla_S_comm = vehicles.AirDefence.SA_18_Igla_S_comm
@@ -18312,6 +18503,8 @@ class Venezuela(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -18358,6 +18551,8 @@ class Venezuela(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -18617,6 +18812,8 @@ class Tunisia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -18661,6 +18858,8 @@ class Tunisia(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -18932,6 +19131,8 @@ class Thailand(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -18979,6 +19180,8 @@ class Thailand(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -19262,6 +19465,8 @@ class Sudan(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -19310,6 +19515,8 @@ class Sudan(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -19563,6 +19770,7 @@ class Philippines(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -19610,6 +19818,7 @@ class Philippines(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -19897,6 +20106,7 @@ class Morocco(Country):
         Mirage_F1EH = planes.Mirage_F1EH
         Mirage_F1CH = planes.Mirage_F1CH
         Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -19946,6 +20156,7 @@ class Morocco(Country):
         Plane.Mirage_F1EH,
         Plane.Mirage_F1CH,
         Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -20209,6 +20420,8 @@ class Mexico(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -20254,6 +20467,8 @@ class Mexico(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -20526,6 +20741,8 @@ class Malaysia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -20571,6 +20788,8 @@ class Malaysia(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -20868,7 +21087,9 @@ class Libya(Country):
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1ED = planes.Mirage_F1ED
+        Mirage_F1BE = planes.Mirage_F1BE
         Mirage_F1BD = planes.Mirage_F1BD
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -20916,7 +21137,9 @@ class Libya(Country):
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1ED,
+        Plane.Mirage_F1BE,
         Plane.Mirage_F1BD,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -21199,7 +21422,9 @@ class Jordan(Country):
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1CJ = planes.Mirage_F1CJ
+        Mirage_F1BE = planes.Mirage_F1BE
         Mirage_F1DDA = planes.Mirage_F1DDA
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -21247,7 +21472,9 @@ class Jordan(Country):
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1CJ,
+        Plane.Mirage_F1BE,
         Plane.Mirage_F1DDA,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -21557,6 +21784,7 @@ class Indonesia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -21609,6 +21837,7 @@ class Indonesia(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -21872,6 +22101,8 @@ class Honduras(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -21916,6 +22147,8 @@ class Honduras(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -22199,6 +22432,8 @@ class Ethiopia(Country):
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -22246,6 +22481,8 @@ class Ethiopia(Country):
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -22525,6 +22762,8 @@ class Chile(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -22575,6 +22814,8 @@ class Chile(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -22862,6 +23103,8 @@ class Brazil(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -22907,6 +23150,8 @@ class Brazil(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -23187,6 +23432,8 @@ class Bahrain(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -23230,6 +23477,8 @@ class Bahrain(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -23514,6 +23763,8 @@ class ThirdReich(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -23558,6 +23809,8 @@ class ThirdReich(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -23852,6 +24105,8 @@ class Yugoslavia(Country):
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -23898,6 +24153,8 @@ class Yugoslavia(Country):
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -24019,6 +24276,8 @@ class USSR(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_11_Buk_CC_9S470M1 = vehicles.AirDefence.SA_11_Buk_CC_9S470M1
             SA_11_Buk_LN_9A310M1 = vehicles.AirDefence.SA_11_Buk_LN_9A310M1
             SA_11_Buk_SR_9S18M1 = vehicles.AirDefence.SA_11_Buk_SR_9S18M1
@@ -24155,6 +24414,7 @@ class USSR(Country):
         IL_76MD = planes.IL_76MD
         IL_78M = planes.IL_78M
         L_39C = planes.L_39C
+        L_39ZA = planes.L_39ZA
         MiG_15bis = planes.MiG_15bis
         MiG_21Bis = planes.MiG_21Bis
         MiG_23MLD = planes.MiG_23MLD
@@ -24211,6 +24471,7 @@ class USSR(Country):
         MB_339APAN = planes.MB_339APAN
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Ju_88A4 = planes.Ju_88A4
 
     planes = [
@@ -24224,6 +24485,7 @@ class USSR(Country):
         Plane.IL_76MD,
         Plane.IL_78M,
         Plane.L_39C,
+        Plane.L_39ZA,
         Plane.MiG_15bis,
         Plane.MiG_21Bis,
         Plane.MiG_23MLD,
@@ -24280,6 +24542,7 @@ class USSR(Country):
         Plane.MB_339APAN,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Ju_88A4,
     ]
 
@@ -24498,6 +24761,8 @@ class ItalianSocialRepublic(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -24541,6 +24806,8 @@ class ItalianSocialRepublic(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -24738,6 +25005,8 @@ class Algeria(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_11_Buk_CC_9S470M1 = vehicles.AirDefence.SA_11_Buk_CC_9S470M1
             SA_11_Buk_LN_9A310M1 = vehicles.AirDefence.SA_11_Buk_LN_9A310M1
             SA_11_Buk_SR_9S18M1 = vehicles.AirDefence.SA_11_Buk_SR_9S18M1
@@ -24900,6 +25169,8 @@ class Algeria(Country):
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -24960,6 +25231,8 @@ class Algeria(Country):
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -25264,6 +25537,8 @@ class Kuwait(Country):
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1CK = planes.Mirage_F1CK
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -25310,6 +25585,8 @@ class Kuwait(Country):
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1CK,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -25582,7 +25859,9 @@ class Qatar(Country):
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1EDA = planes.Mirage_F1EDA
+        Mirage_F1BE = planes.Mirage_F1BE
         Mirage_F1DDA = planes.Mirage_F1DDA
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -25629,7 +25908,9 @@ class Qatar(Country):
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1EDA,
+        Plane.Mirage_F1BE,
         Plane.Mirage_F1DDA,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -25919,6 +26200,8 @@ class Oman(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -25965,6 +26248,8 @@ class Oman(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -26257,6 +26542,8 @@ class UnitedArabEmirates(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -26305,6 +26592,8 @@ class UnitedArabEmirates(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -26577,6 +26866,7 @@ class SouthAfrica(Country):
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1CZ = planes.Mirage_F1CZ
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -26625,6 +26915,7 @@ class SouthAfrica(Country):
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1CZ,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -26945,6 +27236,7 @@ class Cuba(Country):
         MB_339APAN = planes.MB_339APAN
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -27000,6 +27292,7 @@ class Cuba(Country):
         Plane.MB_339APAN,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -27281,6 +27574,8 @@ class Portugal(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -27330,6 +27625,8 @@ class Portugal(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -27517,6 +27814,8 @@ class GDR(Country):
             S_300PS_40B6M_tr = vehicles.AirDefence.S_300PS_40B6M_tr
             S_300PS_40B6MD_sr = vehicles.AirDefence.S_300PS_40B6MD_sr
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             Kub_2P25_ln = vehicles.AirDefence.Kub_2P25_ln
             Kub_1S91_str = vehicles.AirDefence.Kub_1S91_str
             Osa_9A33_ln = vehicles.AirDefence.Osa_9A33_ln
@@ -27636,6 +27935,8 @@ class GDR(Country):
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -27683,6 +27984,8 @@ class GDR(Country):
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -27966,6 +28269,8 @@ class Lebanon(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -28011,6 +28316,8 @@ class Lebanon(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -28247,6 +28554,8 @@ class CombinedJointTaskForcesBlue(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_11_Buk_CC_9S470M1 = vehicles.AirDefence.SA_11_Buk_CC_9S470M1
             SA_11_Buk_LN_9A310M1 = vehicles.AirDefence.SA_11_Buk_LN_9A310M1
             SA_11_Buk_SR_9S18M1 = vehicles.AirDefence.SA_11_Buk_SR_9S18M1
@@ -28317,6 +28626,7 @@ class CombinedJointTaskForcesBlue(Country):
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
             HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
+            HEMTT_C_RAM_Phalanx = vehicles.AirDefence.HEMTT_C_RAM_Phalanx
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -28530,6 +28840,8 @@ class CombinedJointTaskForcesBlue(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -28540,6 +28852,7 @@ class CombinedJointTaskForcesBlue(Country):
         FW_190D9 = planes.FW_190D9
         IL_76MD = planes.IL_76MD
         IL_78M = planes.IL_78M
+        L_39ZA = planes.L_39ZA
         MiG_23MLD = planes.MiG_23MLD
         MiG_25PD = planes.MiG_25PD
         MiG_25RBT = planes.MiG_25RBT
@@ -28547,7 +28860,6 @@ class CombinedJointTaskForcesBlue(Country):
         MiG_29A = planes.MiG_29A
         MiG_31 = planes.MiG_31
         P_51D = planes.P_51D
-        TF_51D = planes.TF_51D
         Su_17M4 = planes.Su_17M4
         Su_24M = planes.Su_24M
         Su_24MR = planes.Su_24MR
@@ -28567,7 +28879,6 @@ class CombinedJointTaskForcesBlue(Country):
         F_16C_bl_52d = planes.F_16C_bl_52d
         Mirage_F1EH = planes.Mirage_F1EH
         Mirage_F1CH = planes.Mirage_F1CH
-        Mirage_F1BE = planes.Mirage_F1BE
         Mirage_F1EQ = planes.Mirage_F1EQ
         Mirage_F1BQ = planes.Mirage_F1BQ
         F_16A_MLU = planes.F_16A_MLU
@@ -28588,7 +28899,6 @@ class CombinedJointTaskForcesBlue(Country):
         Su_25TM = planes.Su_25TM
         Su_30 = planes.Su_30
         Su_34 = planes.Su_34
-        L_39ZA = planes.L_39ZA
         F_15C = planes.F_15C
         F_15E = planes.F_15E
         KC_135 = planes.KC_135
@@ -28657,6 +28967,8 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -28667,6 +28979,7 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.FW_190D9,
         Plane.IL_76MD,
         Plane.IL_78M,
+        Plane.L_39ZA,
         Plane.MiG_23MLD,
         Plane.MiG_25PD,
         Plane.MiG_25RBT,
@@ -28674,7 +28987,6 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.MiG_29A,
         Plane.MiG_31,
         Plane.P_51D,
-        Plane.TF_51D,
         Plane.Su_17M4,
         Plane.Su_24M,
         Plane.Su_24MR,
@@ -28694,7 +29006,6 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.F_16C_bl_52d,
         Plane.Mirage_F1EH,
         Plane.Mirage_F1CH,
-        Plane.Mirage_F1BE,
         Plane.Mirage_F1EQ,
         Plane.Mirage_F1BQ,
         Plane.F_16A_MLU,
@@ -28715,7 +29026,6 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.Su_25TM,
         Plane.Su_30,
         Plane.Su_34,
-        Plane.L_39ZA,
         Plane.F_15C,
         Plane.F_15E,
         Plane.KC_135,
@@ -29047,6 +29357,8 @@ class CombinedJointTaskForcesRed(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_11_Buk_CC_9S470M1 = vehicles.AirDefence.SA_11_Buk_CC_9S470M1
             SA_11_Buk_LN_9A310M1 = vehicles.AirDefence.SA_11_Buk_LN_9A310M1
             SA_11_Buk_SR_9S18M1 = vehicles.AirDefence.SA_11_Buk_SR_9S18M1
@@ -29117,6 +29429,7 @@ class CombinedJointTaskForcesRed(Country):
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
             HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
+            HEMTT_C_RAM_Phalanx = vehicles.AirDefence.HEMTT_C_RAM_Phalanx
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -29330,6 +29643,8 @@ class CombinedJointTaskForcesRed(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -29340,6 +29655,7 @@ class CombinedJointTaskForcesRed(Country):
         FW_190D9 = planes.FW_190D9
         IL_76MD = planes.IL_76MD
         IL_78M = planes.IL_78M
+        L_39ZA = planes.L_39ZA
         MiG_23MLD = planes.MiG_23MLD
         MiG_25PD = planes.MiG_25PD
         MiG_25RBT = planes.MiG_25RBT
@@ -29347,7 +29663,6 @@ class CombinedJointTaskForcesRed(Country):
         MiG_29A = planes.MiG_29A
         MiG_31 = planes.MiG_31
         P_51D = planes.P_51D
-        TF_51D = planes.TF_51D
         Su_17M4 = planes.Su_17M4
         Su_24M = planes.Su_24M
         Su_24MR = planes.Su_24MR
@@ -29367,7 +29682,6 @@ class CombinedJointTaskForcesRed(Country):
         F_16C_bl_52d = planes.F_16C_bl_52d
         Mirage_F1EH = planes.Mirage_F1EH
         Mirage_F1CH = planes.Mirage_F1CH
-        Mirage_F1BE = planes.Mirage_F1BE
         Mirage_F1EQ = planes.Mirage_F1EQ
         Mirage_F1BQ = planes.Mirage_F1BQ
         F_16A_MLU = planes.F_16A_MLU
@@ -29388,7 +29702,6 @@ class CombinedJointTaskForcesRed(Country):
         Su_25TM = planes.Su_25TM
         Su_30 = planes.Su_30
         Su_34 = planes.Su_34
-        L_39ZA = planes.L_39ZA
         F_15C = planes.F_15C
         F_15E = planes.F_15E
         KC_135 = planes.KC_135
@@ -29457,6 +29770,8 @@ class CombinedJointTaskForcesRed(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -29467,6 +29782,7 @@ class CombinedJointTaskForcesRed(Country):
         Plane.FW_190D9,
         Plane.IL_76MD,
         Plane.IL_78M,
+        Plane.L_39ZA,
         Plane.MiG_23MLD,
         Plane.MiG_25PD,
         Plane.MiG_25RBT,
@@ -29474,7 +29790,6 @@ class CombinedJointTaskForcesRed(Country):
         Plane.MiG_29A,
         Plane.MiG_31,
         Plane.P_51D,
-        Plane.TF_51D,
         Plane.Su_17M4,
         Plane.Su_24M,
         Plane.Su_24MR,
@@ -29494,7 +29809,6 @@ class CombinedJointTaskForcesRed(Country):
         Plane.F_16C_bl_52d,
         Plane.Mirage_F1EH,
         Plane.Mirage_F1CH,
-        Plane.Mirage_F1BE,
         Plane.Mirage_F1EQ,
         Plane.Mirage_F1BQ,
         Plane.F_16A_MLU,
@@ -29515,7 +29829,6 @@ class CombinedJointTaskForcesRed(Country):
         Plane.Su_25TM,
         Plane.Su_30,
         Plane.Su_34,
-        Plane.L_39ZA,
         Plane.F_15C,
         Plane.F_15E,
         Plane.KC_135,
@@ -29847,6 +30160,8 @@ class UnitedNationsPeacekeepers(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_11_Buk_CC_9S470M1 = vehicles.AirDefence.SA_11_Buk_CC_9S470M1
             SA_11_Buk_LN_9A310M1 = vehicles.AirDefence.SA_11_Buk_LN_9A310M1
             SA_11_Buk_SR_9S18M1 = vehicles.AirDefence.SA_11_Buk_SR_9S18M1
@@ -29917,6 +30232,7 @@ class UnitedNationsPeacekeepers(Country):
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
             HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
+            HEMTT_C_RAM_Phalanx = vehicles.AirDefence.HEMTT_C_RAM_Phalanx
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -30130,6 +30446,8 @@ class UnitedNationsPeacekeepers(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -30140,6 +30458,7 @@ class UnitedNationsPeacekeepers(Country):
         FW_190D9 = planes.FW_190D9
         IL_76MD = planes.IL_76MD
         IL_78M = planes.IL_78M
+        L_39ZA = planes.L_39ZA
         MiG_23MLD = planes.MiG_23MLD
         MiG_25PD = planes.MiG_25PD
         MiG_25RBT = planes.MiG_25RBT
@@ -30147,7 +30466,6 @@ class UnitedNationsPeacekeepers(Country):
         MiG_29A = planes.MiG_29A
         MiG_31 = planes.MiG_31
         P_51D = planes.P_51D
-        TF_51D = planes.TF_51D
         Su_17M4 = planes.Su_17M4
         Su_24M = planes.Su_24M
         Su_24MR = planes.Su_24MR
@@ -30167,7 +30485,6 @@ class UnitedNationsPeacekeepers(Country):
         F_16C_bl_52d = planes.F_16C_bl_52d
         Mirage_F1EH = planes.Mirage_F1EH
         Mirage_F1CH = planes.Mirage_F1CH
-        Mirage_F1BE = planes.Mirage_F1BE
         Mirage_F1EQ = planes.Mirage_F1EQ
         Mirage_F1BQ = planes.Mirage_F1BQ
         F_16A_MLU = planes.F_16A_MLU
@@ -30188,7 +30505,6 @@ class UnitedNationsPeacekeepers(Country):
         Su_25TM = planes.Su_25TM
         Su_30 = planes.Su_30
         Su_34 = planes.Su_34
-        L_39ZA = planes.L_39ZA
         F_15C = planes.F_15C
         F_15E = planes.F_15E
         KC_135 = planes.KC_135
@@ -30257,6 +30573,8 @@ class UnitedNationsPeacekeepers(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -30267,6 +30585,7 @@ class UnitedNationsPeacekeepers(Country):
         Plane.FW_190D9,
         Plane.IL_76MD,
         Plane.IL_78M,
+        Plane.L_39ZA,
         Plane.MiG_23MLD,
         Plane.MiG_25PD,
         Plane.MiG_25RBT,
@@ -30274,7 +30593,6 @@ class UnitedNationsPeacekeepers(Country):
         Plane.MiG_29A,
         Plane.MiG_31,
         Plane.P_51D,
-        Plane.TF_51D,
         Plane.Su_17M4,
         Plane.Su_24M,
         Plane.Su_24MR,
@@ -30294,7 +30612,6 @@ class UnitedNationsPeacekeepers(Country):
         Plane.F_16C_bl_52d,
         Plane.Mirage_F1EH,
         Plane.Mirage_F1CH,
-        Plane.Mirage_F1BE,
         Plane.Mirage_F1EQ,
         Plane.Mirage_F1BQ,
         Plane.F_16A_MLU,
@@ -30315,7 +30632,6 @@ class UnitedNationsPeacekeepers(Country):
         Plane.Su_25TM,
         Plane.Su_30,
         Plane.Su_34,
-        Plane.L_39ZA,
         Plane.F_15C,
         Plane.F_15E,
         Plane.KC_135,
@@ -30678,6 +30994,8 @@ class Argentina(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -30723,6 +31041,8 @@ class Argentina(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -30910,6 +31230,8 @@ class Cyprus(Country):
             S_300PS_5P85C_ln = vehicles.AirDefence.S_300PS_5P85C_ln
             S_300PS_5P85D_ln = vehicles.AirDefence.S_300PS_5P85D_ln
             S_300PS_64H6E_sr = vehicles.AirDefence.S_300PS_64H6E_sr
+            S_300PS_5H63C_30H6_tr = vehicles.AirDefence.S_300PS_5H63C_30H6_tr
+            S_300PS_40B6MD_sr_19J6 = vehicles.AirDefence.S_300PS_40B6MD_sr_19J6
             SA_11_Buk_CC_9S470M1 = vehicles.AirDefence.SA_11_Buk_CC_9S470M1
             SA_11_Buk_LN_9A310M1 = vehicles.AirDefence.SA_11_Buk_LN_9A310M1
             SA_11_Buk_SR_9S18M1 = vehicles.AirDefence.SA_11_Buk_SR_9S18M1
@@ -31008,6 +31330,8 @@ class Cyprus(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -31052,6 +31376,8 @@ class Cyprus(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -31326,6 +31652,8 @@ class Slovenia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -31371,6 +31699,8 @@ class Slovenia(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -31647,6 +31977,7 @@ class Bolivia(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
 
@@ -31695,6 +32026,7 @@ class Bolivia(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
         Plane.Yak_52,
         Plane.Ju_88A4,
     ]
@@ -31954,6 +32286,8 @@ class Ghana(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -31998,6 +32332,8 @@ class Ghana(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -32270,6 +32606,8 @@ class Nigeria(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -32315,6 +32653,8 @@ class Nigeria(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -32597,6 +32937,8 @@ class Peru(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -32647,6 +32989,8 @@ class Peru(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,
@@ -32920,6 +33264,8 @@ class Ecuador(Country):
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1JA = planes.Mirage_F1JA
+        Mirage_F1BE = planes.Mirage_F1BE
+        TF_51D = planes.TF_51D
         Yak_52 = planes.Yak_52
         Ju_88A4 = planes.Ju_88A4
         C_47 = planes.C_47
@@ -32966,6 +33312,8 @@ class Ecuador(Country):
         Plane.MiG_21Bis,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1JA,
+        Plane.Mirage_F1BE,
+        Plane.TF_51D,
         Plane.Yak_52,
         Plane.Ju_88A4,
         Plane.C_47,

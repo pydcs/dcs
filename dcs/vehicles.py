@@ -258,13 +258,6 @@ class Infantry:
         air_weapon_dist = 0
         eplrs = True
 
-    class Infantry_Animated(unittype.VehicleType):
-        id = "Infantry Animated"
-        name = "Infantry"
-        detection_range = 0
-        threat_range = 500
-        air_weapon_dist = 500
-
     class Soldier_mauser98(unittype.VehicleType):
         id = "soldier_mauser98"
         name = "Infantry Mauser 98"
@@ -309,20 +302,6 @@ class AirDefence:
         detection_range = 0
         threat_range = 18000
         air_weapon_dist = 18000
-
-    class S_300PS_5P85C_ln(unittype.VehicleType):
-        id = "S-300PS 5P85C ln"
-        name = "SAM SA-10 S-300 \"Grumble\" TEL D"
-        detection_range = 0
-        threat_range = 120000
-        air_weapon_dist = 120000
-
-    class S_300PS_5P85D_ln(unittype.VehicleType):
-        id = "S-300PS 5P85D ln"
-        name = "SAM SA-10 S-300 \"Grumble\" TEL C"
-        detection_range = 0
-        threat_range = 120000
-        air_weapon_dist = 120000
 
     class SA_11_Buk_LN_9A310M1(unittype.VehicleType):
         id = "SA-11 Buk LN 9A310M1"
@@ -462,13 +441,6 @@ class AirDefence:
         threat_range = 8000
         air_weapon_dist = 8000
 
-    class S_300PS_54K6_cp(unittype.VehicleType):
-        id = "S-300PS 54K6 cp"
-        name = "SAM SA-10 S-300 \"Grumble\" C2 "
-        detection_range = 0
-        threat_range = 0
-        air_weapon_dist = 0
-
     class Soldier_stinger(unittype.VehicleType):
         id = "Soldier stinger"
         name = "MANPADS Stinger"
@@ -588,31 +560,10 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
 
-    class S_300PS_40B6M_tr(unittype.VehicleType):
-        id = "S-300PS 40B6M tr"
-        name = "SAM SA-10 S-300 \"Grumble\" Flap Lid TR "
-        detection_range = 160000
-        threat_range = 0
-        air_weapon_dist = 0
-
-    class S_300PS_40B6MD_sr(unittype.VehicleType):
-        id = "S-300PS 40B6MD sr"
-        name = "SAM SA-10 S-300PS Low Alt SR 5N66M"
-        detection_range = 60000
-        threat_range = 0
-        air_weapon_dist = 0
-
     class X_55G6_EWR(unittype.VehicleType):
         id = "55G6 EWR"
         name = "EWR 55G6"
         detection_range = 400000
-        threat_range = 0
-        air_weapon_dist = 0
-
-    class S_300PS_64H6E_sr(unittype.VehicleType):
-        id = "S-300PS 64H6E sr"
-        name = "SAM SA-10 S-300 \"Grumble\" Big Bird SR "
-        detection_range = 160000
         threat_range = 0
         air_weapon_dist = 0
 
@@ -678,6 +629,70 @@ class AirDefence:
         id = "snr s-125 tr"
         name = "SAM SA-3 S-125 \"Low Blow\" TR"
         detection_range = 100000
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class HEMTT_C_RAM_Phalanx(unittype.VehicleType):
+        id = "HEMTT_C-RAM_Phalanx"
+        name = "LPWS C-RAM"
+        detection_range = 10000
+        threat_range = 2000
+        air_weapon_dist = 2000
+        eplrs = True
+
+    class S_300PS_5P85C_ln(unittype.VehicleType):
+        id = "S-300PS 5P85C ln"
+        name = "SAM SA-10 S-300 \"Grumble\" TEL C"
+        detection_range = 0
+        threat_range = 120000
+        air_weapon_dist = 120000
+
+    class S_300PS_5P85D_ln(unittype.VehicleType):
+        id = "S-300PS 5P85D ln"
+        name = "SAM SA-10 S-300 \"Grumble\" TEL D"
+        detection_range = 0
+        threat_range = 120000
+        air_weapon_dist = 120000
+
+    class S_300PS_54K6_cp(unittype.VehicleType):
+        id = "S-300PS 54K6 cp"
+        name = "SAM SA-10 S-300 \"Grumble\" C2"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class S_300PS_40B6M_tr(unittype.VehicleType):
+        id = "S-300PS 40B6M tr"
+        name = "SAM SA-10 S-300 \"Grumble\" Flap Lid-A TR"
+        detection_range = 160000
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class S_300PS_64H6E_sr(unittype.VehicleType):
+        id = "S-300PS 64H6E sr"
+        name = "SAM SA-10 S-300 \"Grumble\" Big Bird SR"
+        detection_range = 160000
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class S_300PS_40B6MD_sr_19J6(unittype.VehicleType):
+        id = "S-300PS 40B6MD sr_19J6"
+        name = "SAM SA-10 S-300 \"Grumble\" Tin Shield SR"
+        detection_range = 150000
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class S_300PS_5H63C_30H6_tr(unittype.VehicleType):
+        id = "S-300PS 5H63C 30H6_tr"
+        name = "SAM SA-10 S-300 \"Grumble\" Flap Lid-B TR"
+        detection_range = 120000
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class S_300PS_40B6MD_sr(unittype.VehicleType):
+        id = "S-300PS 40B6MD sr"
+        name = "SAM SA-10 S-300 \"Grumble\" Clam Shell SR"
+        detection_range = 60000
         threat_range = 0
         air_weapon_dist = 0
 
@@ -1448,7 +1463,7 @@ class Armor:
         name = "IFV BMP-3"
         detection_range = 0
         threat_range = 4000
-        air_weapon_dist = 2000
+        air_weapon_dist = 1000
 
     class BRDM_2(unittype.VehicleType):
         id = "BRDM-2"
@@ -1923,8 +1938,8 @@ class MissilesSS:
         id = "Scud_B"
         name = "SSM SS-1C Scud-B"
         detection_range = 0
-        threat_range = 320000
-        air_weapon_dist = 320000
+        threat_range = 285000
+        air_weapon_dist = 285000
 
     class Hy_launcher(unittype.VehicleType):
         id = "hy_launcher"
@@ -2115,8 +2130,6 @@ vehicle_map = {
     "2S6 Tunguska": AirDefence.X_2S6_Tunguska,
     "Kub 2P25 ln": AirDefence.Kub_2P25_ln,
     "5p73 s-125 ln": AirDefence.X_5p73_s_125_ln,
-    "S-300PS 5P85C ln": AirDefence.S_300PS_5P85C_ln,
-    "S-300PS 5P85D ln": AirDefence.S_300PS_5P85D_ln,
     "SA-11 Buk LN 9A310M1": AirDefence.SA_11_Buk_LN_9A310M1,
     "Osa 9A33 ln": AirDefence.Osa_9A33_ln,
     "Tor 9A331": AirDefence.Tor_9A331,
@@ -2136,7 +2149,6 @@ vehicle_map = {
     "Patriot EPP": AirDefence.Patriot_EPP,
     "Patriot cp": AirDefence.Patriot_cp,
     "Roland ADS": AirDefence.Roland_ADS,
-    "S-300PS 54K6 cp": AirDefence.S_300PS_54K6_cp,
     "Soldier stinger": AirDefence.Soldier_stinger,
     "Stinger comm dsr": AirDefence.Stinger_comm_dsr,
     "Stinger comm": AirDefence.Stinger_comm,
@@ -2154,10 +2166,7 @@ vehicle_map = {
     "Igla manpad INS": AirDefence.Igla_manpad_INS,
     "1L13 EWR": AirDefence.X_1L13_EWR,
     "Kub 1S91 str": AirDefence.Kub_1S91_str,
-    "S-300PS 40B6M tr": AirDefence.S_300PS_40B6M_tr,
-    "S-300PS 40B6MD sr": AirDefence.S_300PS_40B6MD_sr,
     "55G6 EWR": AirDefence.X_55G6_EWR,
-    "S-300PS 64H6E sr": AirDefence.S_300PS_64H6E_sr,
     "SA-11 Buk SR 9S18M1": AirDefence.SA_11_Buk_SR_9S18M1,
     "Dog Ear radar": AirDefence.Dog_Ear_radar,
     "Hawk tr": AirDefence.Hawk_tr,
@@ -2217,7 +2226,15 @@ vehicle_map = {
     "ZIL-4331": Unarmed.ZIL_4331,
     "KrAZ6322": Unarmed.KrAZ6322,
     "JTAC": Infantry.JTAC,
-    "Infantry Animated": Infantry.Infantry_Animated,
+    "HEMTT_C-RAM_Phalanx": AirDefence.HEMTT_C_RAM_Phalanx,
+    "S-300PS 5P85C ln": AirDefence.S_300PS_5P85C_ln,
+    "S-300PS 5P85D ln": AirDefence.S_300PS_5P85D_ln,
+    "S-300PS 54K6 cp": AirDefence.S_300PS_54K6_cp,
+    "S-300PS 40B6M tr": AirDefence.S_300PS_40B6M_tr,
+    "S-300PS 64H6E sr": AirDefence.S_300PS_64H6E_sr,
+    "S-300PS 40B6MD sr_19J6": AirDefence.S_300PS_40B6MD_sr_19J6,
+    "S-300PS 5H63C 30H6_tr": AirDefence.S_300PS_5H63C_30H6_tr,
+    "S-300PS 40B6MD sr": AirDefence.S_300PS_40B6MD_sr,
     "Electric locomotive": Locomotive.Electric_locomotive,
     "Locomotive": Locomotive.Locomotive,
     "Coach cargo": Carriage.Coach_cargo,

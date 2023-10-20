@@ -543,7 +543,7 @@ class Fortification:
     class FlagPole(unittype.StaticType):
         id = "FlagPole"
         name = "Flag Pole"
-        shape_name = "FlagPole"
+        shape_name = "FlagPoleStatic"
         rate = 1
 
     class Warning_board_a(unittype.StaticType):
