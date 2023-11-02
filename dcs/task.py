@@ -1360,6 +1360,21 @@ class SetImmortalCommand(WrappedAction):
         }
 
 
+class SetUnlimitedFuelCommand(WrappedAction):
+    Key = "SetUnlimitedFuel"
+
+    def __init__(self, value: bool = True) -> None:
+        super().__init__()
+        self.params = {
+            "action": {
+                "id": SetUnlimitedFuelCommand.Key,
+                "params": {
+                    "value": value,
+                }
+            }
+        }
+
+
 class SetCallsignCommand(WrappedAction):
     Key = "SetCallsign"
 
