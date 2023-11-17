@@ -582,6 +582,27 @@ class BombingRunway(Task):
         }
 
 
+class Strafing(Task):
+    Id = "Strafing"
+
+    def __init__(self, position: Vector2 = Vector2(0, 0), weapon_type: WeaponType = WeaponType.Auto,
+                 expend: Expend = Expend.Auto, attack_qty=1, group_attack=False,
+                 direction: Optional[int] = None, length: Optional[int] = None):
+        super(Strafing, self).__init__(Strafing.Id)
+        self.params = {
+            "directionEnabled": direction is not None,
+            "direction": direction if direction is not None else 0,
+            "length": length if length is not None else 0,
+            "attackQtyLimit": attack_qty > 1,
+            "attackQty": attack_qty if attack_qty > 1 else 1,
+            "expend": expend.value,
+            "x": position.x,
+            "y": position.y,
+            "groupAttack": group_attack,
+            "weaponType": weapon_type.value
+        }
+
+
 class EngageTargets(Task):
     Id = "EngageTargets"
 
@@ -1012,6 +1033,7 @@ tasks_map: Dict[str, Type[Task]] = {
     AttackGroup.Id: AttackGroup,
     Bombing.Id: Bombing,
     BombingRunway.Id: BombingRunway,
+    Strafing.Id: Strafing,
     EngageTargetsInZone.Id: EngageTargetsInZone,
     EngageGroup.Id: EngageGroup,
     EngageUnit.Id: EngageUnit,
