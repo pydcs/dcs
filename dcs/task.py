@@ -1426,6 +1426,7 @@ wrappedactions: Dict[str, Type[WrappedAction]] = {
     SetFrequencyForUnitCommand.Key: SetFrequencyForUnitCommand,
     SetInvisibleCommand.Key: SetInvisibleCommand,
     SetImmortalCommand.Key: SetImmortalCommand,
+    SetUnlimitedFuelCommand.Key: SetUnlimitedFuelCommand,
     SetCallsignCommand.Key: SetCallsignCommand,
     RunScript.Key: RunScript,
     RunScriptFile.Key: RunScriptFile,
