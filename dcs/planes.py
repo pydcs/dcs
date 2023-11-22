@@ -39,6 +39,7 @@ class Tornado_GR4(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (3, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (3, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -76,6 +77,7 @@ class Tornado_GR4(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (10, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (10, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (10, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (10, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -121,6 +123,7 @@ class Tornado_IDS(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (3, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (3, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -150,6 +153,7 @@ class Tornado_IDS(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (10, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (10, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (10, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (10, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -189,6 +193,7 @@ class F_14A(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -228,6 +233,7 @@ class F_14A(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (12, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (12, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (12, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (12, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (12, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (12, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -2821,30 +2827,6 @@ class F_117A(PlaneType):
     task_default = task.PinpointStrike
 
 
-class S_3B_Tanker(PlaneType):
-    id = "S-3B Tanker"
-    large_parking_slot = True
-    height = 6.93
-    width = 20.93
-    length = 16.26
-    fuel_max = 7813
-    max_speed = 840
-    chaff = 30
-    flare = 30
-    charge_total = 60
-    chaff_charge_size = 1
-    flare_charge_size = 1
-    tacan = True
-    category = "Tankers"  #{8A302789-A55D-4897-B647-66493FA6826F}
-
-    livery_name = "S-3B TANKER"  # from type
-
-    pylons: Set[int] = set()
-
-    tasks = [task.Refueling]
-    task_default = task.Refueling
-
-
 class Mirage_2000_5(PlaneType):
     id = "Mirage 2000-5"
     height = 5.2
@@ -2981,6 +2963,7 @@ class F_15C(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -2992,6 +2975,7 @@ class F_15C(PlaneType):
         AIM_120C_AMRAAM___Active_Radar_AAM = (3, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
         AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (3, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -3035,6 +3019,7 @@ class F_15C(PlaneType):
         AIM_120C_AMRAAM___Active_Radar_AAM = (9, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
         AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (9, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -3053,6 +3038,7 @@ class F_15C(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (11, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (11, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (11, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (11, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (11, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (11, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -3146,6 +3132,7 @@ class F_15E(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -3177,6 +3164,7 @@ class F_15E(PlaneType):
         AIM_120C_AMRAAM___Active_Radar_AAM = (3, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
         AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (3, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -3353,6 +3341,7 @@ class F_15E(PlaneType):
         AIM_120C_AMRAAM___Active_Radar_AAM = (17, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
         AIM_9M_Sidewinder_IR_AAM = (17, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (17, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (17, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (17, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (17, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -3385,6 +3374,7 @@ class F_15E(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (19, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (19, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (19, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (19, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (19, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (19, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4311,6 +4301,7 @@ class F_16C_bl_50(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4319,6 +4310,7 @@ class F_16C_bl_50(PlaneType):
         AIM_120C_AMRAAM___Active_Radar_AAM = (2, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
         AIM_9M_Sidewinder_IR_AAM = (2, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (2, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (2, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (2, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (2, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4356,6 +4348,7 @@ class F_16C_bl_50(PlaneType):
         AGM_88C_HARM___High_Speed_Anti_Radiation_Missile_ = (3, Weapons.AGM_88C_HARM___High_Speed_Anti_Radiation_Missile_)
         AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (3, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4444,6 +4437,7 @@ class F_16C_bl_50(PlaneType):
         AGM_88C_HARM___High_Speed_Anti_Radiation_Missile_ = (8, Weapons.AGM_88C_HARM___High_Speed_Anti_Radiation_Missile_)
         AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (8, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (8, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (8, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (8, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4452,6 +4446,7 @@ class F_16C_bl_50(PlaneType):
         AIM_120C_AMRAAM___Active_Radar_AAM = (9, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
         AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (9, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4461,6 +4456,7 @@ class F_16C_bl_50(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (10, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (10, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (10, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (10, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4555,6 +4551,7 @@ class F_16C_bl_52d(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4563,6 +4560,7 @@ class F_16C_bl_52d(PlaneType):
         AIM_120C_AMRAAM___Active_Radar_AAM = (2, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
         AIM_9M_Sidewinder_IR_AAM = (2, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (2, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (2, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (2, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (2, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4599,6 +4597,7 @@ class F_16C_bl_52d(PlaneType):
         AGM_154B___JSOW_Anti_Armour = (3, Weapons.AGM_154B___JSOW_Anti_Armour)
         AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (3, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4694,6 +4693,7 @@ class F_16C_bl_52d(PlaneType):
         AGM_154B___JSOW_Anti_Armour = (8, Weapons.AGM_154B___JSOW_Anti_Armour)
         AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (8, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (8, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (8, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (8, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4702,6 +4702,7 @@ class F_16C_bl_52d(PlaneType):
         AIM_120C_AMRAAM___Active_Radar_AAM = (9, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
         AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (9, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4711,6 +4712,7 @@ class F_16C_bl_52d(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (10, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (10, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (10, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (10, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4741,6 +4743,7 @@ class F_16A(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4748,6 +4751,7 @@ class F_16A(PlaneType):
         AIM_120B_AMRAAM___Active_Radar_AAM = (2, Weapons.AIM_120B_AMRAAM___Active_Radar_AAM)
         AIM_9M_Sidewinder_IR_AAM = (2, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (2, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (2, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (2, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (2, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4768,6 +4772,7 @@ class F_16A(PlaneType):
         AGM_119B_Penguin_ASM = (3, Weapons.AGM_119B_Penguin_ASM)
         AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (3, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4813,6 +4818,7 @@ class F_16A(PlaneType):
         AGM_119B_Penguin_ASM = (8, Weapons.AGM_119B_Penguin_ASM)
         AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (8, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (8, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (8, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (8, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4820,6 +4826,7 @@ class F_16A(PlaneType):
         AIM_120B_AMRAAM___Active_Radar_AAM = (9, Weapons.AIM_120B_AMRAAM___Active_Radar_AAM)
         AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (9, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4828,6 +4835,7 @@ class F_16A(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (10, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (10, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (10, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (10, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4905,6 +4913,7 @@ class F_16A_MLU(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4913,6 +4922,7 @@ class F_16A_MLU(PlaneType):
         AIM_120C_AMRAAM___Active_Radar_AAM = (2, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
         AIM_9M_Sidewinder_IR_AAM = (2, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (2, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (2, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (2, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (2, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -4941,6 +4951,7 @@ class F_16A_MLU(PlaneType):
         AGM_154C___JSOW_Unitary_BROACH = (3, Weapons.AGM_154C___JSOW_Unitary_BROACH)
         AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (3, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (3, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (3, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -5011,6 +5022,7 @@ class F_16A_MLU(PlaneType):
         AGM_154C___JSOW_Unitary_BROACH = (8, Weapons.AGM_154C___JSOW_Unitary_BROACH)
         AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (8, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (8, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (8, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (8, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -5019,6 +5031,7 @@ class F_16A_MLU(PlaneType):
         AIM_120C_AMRAAM___Active_Radar_AAM = (9, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
         AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (9, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -5028,6 +5041,7 @@ class F_16A_MLU(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (10, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (10, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (10, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (10, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (10, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -6358,6 +6372,7 @@ class S_3B(PlaneType):
     charge_total = 60
     chaff_charge_size = 1
     flare_charge_size = 1
+    eplrs = True
     category = "Tankers"  #{8A302789-A55D-4897-B647-66493FA6826F}
 
     callnames: Dict[str, List[str]] = {
@@ -6368,7 +6383,52 @@ class S_3B(PlaneType):
         ]
     }
 
-    livery_name = "S-3B"  # from type
+    property_defaults: Dict[str, Any] = {
+        "VoiceCallsignLabel": None,
+        "VoiceCallsignNumber": None,
+        "STN_L16": None,
+    }
+
+    class Properties:
+
+        class VoiceCallsignLabel:
+            id = "VoiceCallsignLabel"
+
+        class VoiceCallsignNumber:
+            id = "VoiceCallsignNumber"
+
+        class STN_L16:
+            id = "STN_L16"
+
+    properties = {
+        "datalink_Label": UnitPropertyDescription(
+            identifier="datalink_Label",
+            control="label",
+            label="DATALINK",
+            player_only=False,
+            x_lbl=150,
+        ),
+        "VoiceCallsignLabel": UnitPropertyDescription(
+            identifier="VoiceCallsignLabel",
+            control="editbox",
+            label="Voice Callsign Label",
+            player_only=False,
+        ),
+        "VoiceCallsignNumber": UnitPropertyDescription(
+            identifier="VoiceCallsignNumber",
+            control="editbox",
+            label="Voice Callsign Number",
+            player_only=False,
+        ),
+        "STN_L16": UnitPropertyDescription(
+            identifier="STN_L16",
+            control="editbox",
+            label="STN",
+            player_only=False,
+        ),
+    }
+
+    livery_name = "S-3B"  # from livery_entry
 
     class Pylon1:
         BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD = (1, Weapons.BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD)
@@ -6418,6 +6478,83 @@ class S_3B(PlaneType):
     task_default = task.AntishipStrike
 
 
+class S_3B_Tanker(PlaneType):
+    id = "S-3B Tanker"
+    height = 6.93
+    width = 20.93
+    length = 16.26
+    fuel_max = 5500
+    max_speed = 834.12
+    chaff = 30
+    flare = 30
+    charge_total = 60
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    tacan = True
+    eplrs = True
+    category = "Tankers"  #{8A302789-A55D-4897-B647-66493FA6826F}
+
+    callnames: Dict[str, List[str]] = {
+        "USA": [
+            "Navy One",
+            "Mauler",
+            "Bloodhound",
+        ]
+    }
+
+    property_defaults: Dict[str, Any] = {
+        "VoiceCallsignLabel": None,
+        "VoiceCallsignNumber": None,
+        "STN_L16": None,
+    }
+
+    class Properties:
+
+        class VoiceCallsignLabel:
+            id = "VoiceCallsignLabel"
+
+        class VoiceCallsignNumber:
+            id = "VoiceCallsignNumber"
+
+        class STN_L16:
+            id = "STN_L16"
+
+    properties = {
+        "datalink_Label": UnitPropertyDescription(
+            identifier="datalink_Label",
+            control="label",
+            label="DATALINK",
+            player_only=False,
+            x_lbl=150,
+        ),
+        "VoiceCallsignLabel": UnitPropertyDescription(
+            identifier="VoiceCallsignLabel",
+            control="editbox",
+            label="Voice Callsign Label",
+            player_only=False,
+        ),
+        "VoiceCallsignNumber": UnitPropertyDescription(
+            identifier="VoiceCallsignNumber",
+            control="editbox",
+            label="Voice Callsign Number",
+            player_only=False,
+        ),
+        "STN_L16": UnitPropertyDescription(
+            identifier="STN_L16",
+            control="editbox",
+            label="STN",
+            player_only=False,
+        ),
+    }
+
+    livery_name = "S-3B TANKER"  # from livery_entry
+
+    pylons: Set[int] = set()
+
+    tasks = [task.Refueling]
+    task_default = task.Refueling
+
+
 class A_10A(PlaneType):
     id = "A-10A"
     flyable = True
@@ -6454,6 +6591,7 @@ class A_10A(PlaneType):
         LAU_105_2_AIM_9L = (1, Weapons.LAU_105_2_AIM_9L)
         LAU_105_1_AIM_9L_L = (1, Weapons.LAU_105_1_AIM_9L_L)
         LAU_105_2_AIM_9P5 = (1, Weapons.LAU_105_2_AIM_9P5)
+        LAU_105_2_AIM_9P3 = (1, Weapons.LAU_105_2_AIM_9P3)
         LAU_105_with_2_x_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105_with_2_x_AIM_9M_Sidewinder_IR_AAM)
         LAU_105_1_AIM_9M_L = (1, Weapons.LAU_105_1_AIM_9M_L)
         LAU_105_with_2_x_AIM_9P_Sidewinder_IR_AAM = (1, Weapons.LAU_105_with_2_x_AIM_9P_Sidewinder_IR_AAM)
@@ -6698,6 +6836,7 @@ class A_10A(PlaneType):
         LAU_105_2_AIM_9L = (11, Weapons.LAU_105_2_AIM_9L)
         LAU_105_1_AIM_9L_R = (11, Weapons.LAU_105_1_AIM_9L_R)
         LAU_105_2_AIM_9P5 = (11, Weapons.LAU_105_2_AIM_9P5)
+        LAU_105_2_AIM_9P3 = (11, Weapons.LAU_105_2_AIM_9P3)
         LAU_105_with_2_x_AIM_9M_Sidewinder_IR_AAM = (11, Weapons.LAU_105_with_2_x_AIM_9M_Sidewinder_IR_AAM)
         LAU_105_1_AIM_9M_R = (11, Weapons.LAU_105_1_AIM_9M_R)
         LAU_105_with_2_x_AIM_9P_Sidewinder_IR_AAM = (11, Weapons.LAU_105_with_2_x_AIM_9P_Sidewinder_IR_AAM)
@@ -9869,21 +10008,9 @@ class H_6J(PlaneType):
     eplrs = True
 
     property_defaults: Dict[str, Any] = {
-        "Belly_Bay_Door": False,
     }
 
-    class Properties:
-
-        class Belly_Bay_Door:
-            id = "Belly Bay Door"
-
     properties = {
-        "Belly Bay Door": UnitPropertyDescription(
-            identifier="Belly Bay Door",
-            control="checkbox",
-            label="Open Bay Door",
-            default=False,
-        ),
     }
 
     livery_name = "H-6J"  # from type
@@ -10139,6 +10266,7 @@ class F_15ESE(PlaneType):
     }
 
     property_defaults: Dict[str, Any] = {
+        "IFF_M2_CODE": None,
         "MountNVG": False,
         "needsGCAlign": False,
         "InitAirborneTime": 0,
@@ -10154,6 +10282,9 @@ class F_15ESE(PlaneType):
     }
 
     class Properties:
+
+        class IFF_M2_CODE:
+            id = "IFF_M2_CODE"
 
         class MountNVG:
             id = "MountNVG"
@@ -10198,6 +10329,26 @@ class F_15ESE(PlaneType):
             id = "HumanOrchestra"
 
     properties = {
+        "iff_Label": UnitPropertyDescription(
+            identifier="iff_Label",
+            control="label",
+            label="IFF",
+            player_only=True,
+            x_lbl=150,
+        ),
+        "IFF_M2_CODE": UnitPropertyDescription(
+            identifier="IFF_M2_CODE",
+            control="editbox",
+            label="IFF Mode 2 code",
+            player_only=True,
+        ),
+        "misc_Label": UnitPropertyDescription(
+            identifier="misc_Label",
+            control="label",
+            label="MISC.",
+            player_only=True,
+            x_lbl=150,
+        ),
         "MountNVG": UnitPropertyDescription(
             identifier="MountNVG",
             control="checkbox",
@@ -10340,6 +10491,10 @@ class F_15ESE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (2, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (2, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_24_Paveway_III___2000lb_Laser_Guided_Bomb = (2, Weapons.GBU_24_Paveway_III___2000lb_Laser_Guided_Bomb)
+        GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb = (2, Weapons.GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb)
+        GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (2, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
+        GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (2, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
+        GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = (2, Weapons.GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD)
         BDU_50LD___500lb_Inert_Practice_Bomb_LD = (2, Weapons.BDU_50LD___500lb_Inert_Practice_Bomb_LD)
         BDU_50HD___500lb_Inert_Practice_Bomb_HD = (2, Weapons.BDU_50HD___500lb_Inert_Practice_Bomb_HD)
         BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD = (2, Weapons.BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD)
@@ -10389,6 +10544,12 @@ class F_15ESE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_10___2 = (4, Weapons.GBU_10___2)
         GBU_24_Paveway_III___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_24_Paveway_III___2000lb_Laser_Guided_Bomb)
+        GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb = (4, Weapons.GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb)
+        GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (4, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
+        GBU_31_V_1_B___2 = (4, Weapons.GBU_31_V_1_B___2)
+        GBU_31_V_3_B___2 = (4, Weapons.GBU_31_V_3_B___2)
+        GBU_38___3 = (4, Weapons.GBU_38___3)
+        GBU_54B___3 = (4, Weapons.GBU_54B___3)
         BDU_50LD___500lb_Inert_Practice_Bomb_LD = (4, Weapons.BDU_50LD___500lb_Inert_Practice_Bomb_LD)
         BDU_50HD___500lb_Inert_Practice_Bomb_HD = (4, Weapons.BDU_50HD___500lb_Inert_Practice_Bomb_HD)
         BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD = (4, Weapons.BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD)
@@ -10435,6 +10596,10 @@ class F_15ESE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (8, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (8, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_24_Paveway_III___2000lb_Laser_Guided_Bomb = (8, Weapons.GBU_24_Paveway_III___2000lb_Laser_Guided_Bomb)
+        GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb = (8, Weapons.GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb)
+        GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (8, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
+        GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (8, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
+        GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = (8, Weapons.GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD)
         BDU_50LD___500lb_Inert_Practice_Bomb_LD = (8, Weapons.BDU_50LD___500lb_Inert_Practice_Bomb_LD)
         BDU_50HD___500lb_Inert_Practice_Bomb_HD = (8, Weapons.BDU_50HD___500lb_Inert_Practice_Bomb_HD)
         BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD = (8, Weapons.BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD)
@@ -10495,6 +10660,12 @@ class F_15ESE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (12, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_10___2_ = (12, Weapons.GBU_10___2_)
         GBU_24_Paveway_III___2000lb_Laser_Guided_Bomb = (12, Weapons.GBU_24_Paveway_III___2000lb_Laser_Guided_Bomb)
+        GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb = (12, Weapons.GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb)
+        GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (12, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
+        GBU_31_V_1_B___2_ = (12, Weapons.GBU_31_V_1_B___2_)
+        GBU_31_V_3_B___2_ = (12, Weapons.GBU_31_V_3_B___2_)
+        GBU_38___3_ = (12, Weapons.GBU_38___3_)
+        GBU_54B___3_ = (12, Weapons.GBU_54B___3_)
         BDU_50LD___500lb_Inert_Practice_Bomb_LD = (12, Weapons.BDU_50LD___500lb_Inert_Practice_Bomb_LD)
         BDU_50HD___500lb_Inert_Practice_Bomb_HD = (12, Weapons.BDU_50HD___500lb_Inert_Practice_Bomb_HD)
         BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD = (12, Weapons.BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD)
@@ -10531,6 +10702,10 @@ class F_15ESE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (14, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (14, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_24_Paveway_III___2000lb_Laser_Guided_Bomb = (14, Weapons.GBU_24_Paveway_III___2000lb_Laser_Guided_Bomb)
+        GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb = (14, Weapons.GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb)
+        GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (14, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
+        GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (14, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
+        GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = (14, Weapons.GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD)
         BDU_50LD___500lb_Inert_Practice_Bomb_LD = (14, Weapons.BDU_50LD___500lb_Inert_Practice_Bomb_LD)
         BDU_50HD___500lb_Inert_Practice_Bomb_HD = (14, Weapons.BDU_50HD___500lb_Inert_Practice_Bomb_HD)
         BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD = (14, Weapons.BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD)
@@ -11069,6 +11244,7 @@ class F_5E(PlaneType):
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
         Smokewinder___red = (1, Weapons.Smokewinder___red)
         Smokewinder___green = (1, Weapons.Smokewinder___green)
@@ -11228,6 +11404,7 @@ class F_5E(PlaneType):
     class Pylon7:
         AIM_9B_Sidewinder_IR_AAM = (7, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (7, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (7, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (7, Weapons.AIM_9P_Sidewinder_IR_AAM)
         Smokewinder___red = (7, Weapons.Smokewinder___red)
         Smokewinder___green = (7, Weapons.Smokewinder___green)
@@ -11546,6 +11723,7 @@ class F_5E_3(PlaneType):
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
         Smokewinder___red = (1, Weapons.Smokewinder___red)
         Smokewinder___green = (1, Weapons.Smokewinder___green)
@@ -11705,6 +11883,7 @@ class F_5E_3(PlaneType):
     class Pylon7:
         AIM_9B_Sidewinder_IR_AAM = (7, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (7, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (7, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (7, Weapons.AIM_9P_Sidewinder_IR_AAM)
         Smokewinder___red = (7, Weapons.Smokewinder___red)
         Smokewinder___green = (7, Weapons.Smokewinder___green)
@@ -12831,6 +13010,7 @@ class F_A_18A(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -12850,6 +13030,7 @@ class F_A_18A(PlaneType):
         MER2_with_2_x_Mk_20_Rockeye___490lbs_CBUs__247_x_HEAT_Bomblets = (2, Weapons.MER2_with_2_x_Mk_20_Rockeye___490lbs_CBUs__247_x_HEAT_Bomblets)
         AIM_9M_Sidewinder_IR_AAM = (2, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (2, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (2, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (2, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (2, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -12893,6 +13074,7 @@ class F_A_18A(PlaneType):
         MER2_with_2_x_Mk_20_Rockeye___490lbs_CBUs__247_x_HEAT_Bomblets = (8, Weapons.MER2_with_2_x_Mk_20_Rockeye___490lbs_CBUs__247_x_HEAT_Bomblets)
         AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (8, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (8, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (8, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (8, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -12900,6 +13082,7 @@ class F_A_18A(PlaneType):
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (9, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (9, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
 
@@ -13043,9 +13226,9 @@ class F_A_18C(PlaneType):
     class Pylon1:
         AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
-        AIM_120B_AMRAAM___Active_Radar_AAM = (1, Weapons.AIM_120B_AMRAAM___Active_Radar_AAM)
-        AIM_120C_AMRAAM___Active_Radar_AAM = (1, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
 
     class Pylon2:
@@ -13215,9 +13398,9 @@ class F_A_18C(PlaneType):
     class Pylon9:
         AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
         AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (9, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (9, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9P5_Sidewinder_IR_AAM = (9, Weapons.AIM_9P5_Sidewinder_IR_AAM)
-        AIM_120B_AMRAAM___Active_Radar_AAM = (9, Weapons.AIM_120B_AMRAAM___Active_Radar_AAM)
-        AIM_120C_AMRAAM___Active_Radar_AAM = (9, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (9, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
 
     pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9}
@@ -14702,6 +14885,7 @@ class MB_339A(PlaneType):
         "AircraftVariant": None,
         "SAAB_RGS_2_Gunsight": True,
         "Teledyne_TCS_116_2": False,
+        "SAAB_RGS_2_Gunsight_Repeater": False,
         "DEFA_553_Burst": 0.5,
         "EnableCutOff": False,
         "RocketRippleTiming": 62,
@@ -14738,6 +14922,9 @@ class MB_339A(PlaneType):
 
         class Teledyne_TCS_116_2:
             id = "Teledyne_TCS_116-2"
+
+        class SAAB_RGS_2_Gunsight_Repeater:
+            id = "SAAB_RGS-2_Gunsight_Repeater"
 
         class DEFA_553_Burst:
             id = "DEFA_553_Burst"
@@ -14844,6 +15031,12 @@ class MB_339A(PlaneType):
             label="Teledyne TCS 116-2 Gun Camera stored",
             default=False,
             w_ctrl=380,
+        ),
+        "SAAB_RGS-2_Gunsight_Repeater": UnitPropertyDescription(
+            identifier="SAAB_RGS-2_Gunsight_Repeater",
+            control="checkbox",
+            label="SAAB RGS-2 Repeater mounted",
+            default=False,
         ),
         "spacer_Label": UnitPropertyDescription(
             identifier="spacer_Label",
@@ -16650,6 +16843,7 @@ class Mirage_F1CE(PlaneType):
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (1, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (1, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
@@ -16832,6 +17026,7 @@ class Mirage_F1CE(PlaneType):
         AIM_9B_Sidewinder_IR_AAM = (7, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (7, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (7, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (7, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (7, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (7, Weapons.R550_Magic_2_IR_AAM)
@@ -17277,6 +17472,7 @@ class Mirage_F1EE(PlaneType):
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (1, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (1, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
@@ -17461,6 +17657,7 @@ class Mirage_F1EE(PlaneType):
         AIM_9B_Sidewinder_IR_AAM = (7, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (7, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (7, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (7, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (7, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (7, Weapons.R550_Magic_2_IR_AAM)
@@ -17865,6 +18062,7 @@ class Mirage_F1M_EE(PlaneType):
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (1, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (1, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
@@ -18049,6 +18247,7 @@ class Mirage_F1M_EE(PlaneType):
         AIM_9B_Sidewinder_IR_AAM = (7, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (7, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (7, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (7, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (7, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (7, Weapons.R550_Magic_2_IR_AAM)
@@ -18453,6 +18652,7 @@ class Mirage_F1M_CE(PlaneType):
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (1, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (1, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
@@ -18635,6 +18835,7 @@ class Mirage_F1M_CE(PlaneType):
         AIM_9B_Sidewinder_IR_AAM = (7, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (7, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (7, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (7, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (7, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (7, Weapons.R550_Magic_2_IR_AAM)
@@ -26907,6 +27108,7 @@ class Mirage_F1BE(PlaneType):
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (1, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (1, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
@@ -27089,6 +27291,7 @@ class Mirage_F1BE(PlaneType):
         AIM_9B_Sidewinder_IR_AAM = (7, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (7, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9P_Sidewinder_IR_AAM = (7, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (7, Weapons.AIM_9P3_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (7, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (7, Weapons.R550_Magic_2_IR_AAM)
@@ -29480,7 +29683,6 @@ plane_map = {
     "Su-24MR": Su_24MR,
     "Tu-160": Tu_160,
     "F-117A": F_117A,
-    "S-3B Tanker": S_3B_Tanker,
     "Mirage 2000-5": Mirage_2000_5,
     "F-15C": F_15C,
     "F-15E": F_15E,
@@ -29519,6 +29721,7 @@ plane_map = {
     "B-52H": B_52H,
     "B-1B": B_1B,
     "S-3B": S_3B,
+    "S-3B Tanker": S_3B_Tanker,
     "A-10A": A_10A,
     "A-10C": A_10C,
     "A-10C_2": A_10C_2,

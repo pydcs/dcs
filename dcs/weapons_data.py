@@ -21,7 +21,6 @@ class Weapons:
     AGM_122_Sidearm___light_ARM = {"clsid": "{AGM_122}", "name": "AGM-122 Sidearm - light ARM", "weight": 88}
     AGM_12A_Bullpup___MCLOS_missile = {"clsid": "{AGM_12A}", "name": "AGM-12A Bullpup - MCLOS missile", "weight": None}
     AGM_12B_Bullpup___MCLOS_missile = {"clsid": "{AGM_12B}", "name": "AGM-12B Bullpup - MCLOS missile", "weight": None}
-    AGM_130A = {"clsid": "{AGM_130A}", "name": "AGM-130A", "weight": 1140}
     AGM_130C_9___3000lb_TV__EO__Guided_Missile = {"clsid": "{AGM_130C_9}", "name": "AGM-130C-9 - 3000lb TV (EO) Guided Missile", "weight": None}
     AGM_154A___JSOW_CEB__CBU_type_ = {"clsid": "{AGM-154A}", "name": "AGM-154A - JSOW CEB (CBU-type)", "weight": 485}
     AGM_154B___JSOW_Anti_Armour = {"clsid": "{AGM-154B}", "name": "AGM-154B - JSOW Anti-Armour", "weight": 485}
@@ -76,6 +75,7 @@ class Weapons:
     AIM_9J_Sidewinder_IR_AAM = {"clsid": "{AIM-9J}", "name": "AIM-9J Sidewinder IR AAM", "weight": 74.84}
     AIM_9L_Sidewinder_IR_AAM = {"clsid": "{AIM-9L}", "name": "AIM-9L Sidewinder IR AAM", "weight": 85.73}
     AIM_9M_Sidewinder_IR_AAM = {"clsid": "{6CEB49FC-DED8-4DED-B053-E1F033FF72D3}", "name": "AIM-9M Sidewinder IR AAM", "weight": 85.73}
+    AIM_9P3_Sidewinder_IR_AAM = {"clsid": "{AIM-9P3}", "name": "AIM-9P3 Sidewinder IR AAM", "weight": 80.7}
     AIM_9P5_Sidewinder_IR_AAM = {"clsid": "{AIM-9P5}", "name": "AIM-9P5 Sidewinder IR AAM", "weight": 80.7}
     AIM_9P_Sidewinder_IR_AAM = {"clsid": "{9BFD8C90-F7AE-4e90-833B-BFD0CED0E536}", "name": "AIM-9P Sidewinder IR AAM", "weight": 74.84}
     AIM_9X_Sidewinder_IR_AAM = {"clsid": "{5CE2FF2A-645A-4197-B48D-8720AC69394F}", "name": "AIM-9X Sidewinder IR AAM", "weight": 84.46}
@@ -392,7 +392,7 @@ class Weapons:
     DIS_TYPE200 = {"clsid": "DIS_TYPE200", "name": "TYPE-200A", "weight": 200}
     DIS_TYPE200_DUAL_L = {"clsid": "DIS_TYPE200_DUAL_L", "name": "TYPE-200A Dual", "weight": 400}
     DIS_TYPE200_DUAL_R = {"clsid": "DIS_TYPE200_DUAL_R", "name": "TYPE-200A Dual", "weight": 400}
-    DIS_WMD7 = {"clsid": "DIS_WMD7", "name": "AVIC WMD7 POD", "weight": 295}
+    DIS_WMD7 = {"clsid": "DIS_WMD7", "name": "AVIC WMD7 FLIR/LDT POD", "weight": 295}
     DIS_YJ12 = {"clsid": "DIS_YJ12", "name": "YJ-12", "weight": 1750}
     DIS_YJ83K = {"clsid": "DIS_YJ83K", "name": "YJ-83K", "weight": 715}
     DIS_YU_6 = {"clsid": "DIS_YU_6", "name": "YU-6", "weight": 1558}
@@ -480,7 +480,6 @@ class Weapons:
     GBU_12___4 = {"clsid": "{CFT_L_GBU_12_x_4}", "name": "GBU-12 * 4", "weight": 1100}
     GBU_12___4_ = {"clsid": "{CFT_R_GBU_12_x_4}", "name": "GBU-12 * 4", "weight": 1100}
     GBU_12___500lb_Laser_Guided_Bomb = {"clsid": "{DB769D48-67D7-42ED-A2BE-108D566C8B1E}", "name": "GBU-12 - 500lb Laser Guided Bomb", "weight": 277}
-    GBU_15_V_21_B = {"clsid": "{GBU_15_V_21B}", "name": "GBU-15(V)21/B", "weight": 1140}
     GBU_15_V_31_B___2000lb_TV__EO__Guided_Bomb = {"clsid": "{GBU_15_V_31B}", "name": "GBU-15(V)31/B - 2000lb TV (EO) Guided Bomb", "weight": 1125}
     GBU_16 = {"clsid": "{BRU-32 GBU-16}", "name": "GBU-16", "weight": 621.38}
     GBU_16___1000lb_Laser_Guided_Bomb = {"clsid": "{0D33DDAE-524F-4A4E-B5B8-621754FE3ADE}", "name": "GBU-16 - 1000lb Laser Guided Bomb", "weight": 513}
@@ -495,14 +494,10 @@ class Weapons:
     GBU_31_V_1_B___2 = {"clsid": "{CFT_L_GBU_31_x_2}", "name": "GBU-31(V)1/B * 2", "weight": 1788}
     GBU_31_V_1_B___2_ = {"clsid": "{CFT_R_GBU_31_x_2}", "name": "GBU-31(V)1/B * 2", "weight": 1788}
     GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb = {"clsid": "{GBU-31}", "name": "GBU-31(V)1/B - JDAM, 2000lb GPS Guided Bomb", "weight": 934}
-    GBU_31_V_2_B___2 = {"clsid": "{CFT_L_GBU_31V2B_x_2}", "name": "GBU-31(V)2/B * 2", "weight": 1868}
-    GBU_31_V_2_B___2_ = {"clsid": "{CFT_R_GBU_31V2B_x_2}", "name": "GBU-31(V)2/B * 2", "weight": 1788}
     GBU_31_V_2_B___JDAM__2000lb_GPS_Guided_Bomb = {"clsid": "{GBU_31_V_2B}", "name": "GBU-31(V)2/B - JDAM, 2000lb GPS Guided Bomb", "weight": 934}
     GBU_31_V_3_B___2 = {"clsid": "{CFT_L_GBU_31V3B_x_2}", "name": "GBU-31(V)3/B * 2", "weight": 1962}
     GBU_31_V_3_B___2_ = {"clsid": "{CFT_R_GBU_31V3B_x_2}", "name": "GBU-31(V)3/B * 2", "weight": 1962}
     GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = {"clsid": "{GBU-31V3B}", "name": "GBU-31(V)3/B - JDAM, 2000lb GPS Guided Penetrator Bomb", "weight": 981}
-    GBU_31_V_4_B___2 = {"clsid": "{CFT_L_GBU_31V4B_x_2}", "name": "GBU-31(V)4/B * 2", "weight": 1940}
-    GBU_31_V_4_B___2_ = {"clsid": "{CFT_R_GBU_31V4B_x_2}", "name": "GBU-31(V)4/B * 2", "weight": 1940}
     GBU_31_V_4_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = {"clsid": "{GBU_31_V_4B}", "name": "GBU-31(V)4/B - JDAM, 2000lb GPS Guided Penetrator Bomb", "weight": 970}
     GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb = {"clsid": "{GBU_32_V_2B}", "name": "GBU-32(V)2/B - JDAM, 1000lb GPS Guided Bomb", "weight": 467}
     GBU_38_16 = {"clsid": "GBU-38*16", "name": "28 x GBU-38 - JDAM, 500lb GPS Guided Bombs", "weight": 8522.2}
@@ -606,6 +601,7 @@ class Weapons:
     LAU_105_1_CATM_9M_L = {"clsid": "LAU-105_1*CATM-9M_L", "name": "LAU-105 with 1 x Captive AIM-9M for ACM", "weight": 291.73}
     LAU_105_1_CATM_9M_R = {"clsid": "LAU-105_1*CATM-9M_R", "name": "LAU-105 with 1 x Captive AIM-9M for ACM", "weight": 291.73}
     LAU_105_2_AIM_9L = {"clsid": "LAU-105_2*AIM-9L", "name": "LAU-105 with 2 x AIM-9L Sidewinder IR AAM", "weight": 377.46}
+    LAU_105_2_AIM_9P3 = {"clsid": "LAU-105_2*AIM-9P3", "name": "LAU-105 with 2 x AIM-9P3 Sidewinder IR AAM", "weight": 367.4}
     LAU_105_2_AIM_9P5 = {"clsid": "LAU-105_2*AIM-9P5", "name": "LAU-105 with 2 x AIM-9P5 Sidewinder IR AAM", "weight": 367.4}
     LAU_105_2_CATM_9M = {"clsid": "LAU-105_2*CATM-9M", "name": "LAU-105 with 2 x Captive AIM-9M for ACM", "weight": 377.46}
     LAU_105_AIS_ASQ_T50_L = {"clsid": "LAU-105_AIS_ASQ_T50_L", "name": "LAU-105 with 1 x AN/ASQ-T50 TCTS Pod - ACMI Pod", "weight": 268.6}
@@ -714,6 +710,7 @@ class Weapons:
     LAU_7_with_AIM_9J_Sidewinder_IR_AAM = {"clsid": "{AIM-9J-ON-ADAPTER}", "name": "LAU-7 with AIM-9J Sidewinder IR AAM", "weight": 115.84}
     LAU_7_with_AIM_9L_Sidewinder_IR_AAM = {"clsid": "{AIM-9L-ON-ADAPTER}", "name": "LAU-7 with AIM-9L Sidewinder IR AAM", "weight": 126.55328}
     LAU_7_with_AIM_9M_Sidewinder_IR_AAM = {"clsid": "{AIM-9M-ON-ADAPTER}", "name": "LAU-7 with AIM-9M Sidewinder IR AAM", "weight": 126.73}
+    LAU_7_with_AIM_9P3_Sidewinder_IR_AAM = {"clsid": "{AIM-9P3-ON-ADAPTER}", "name": "LAU-7 with AIM-9P3 Sidewinder IR AAM", "weight": 121.7}
     LAU_7_with_AIM_9P5_Sidewinder_IR_AAM = {"clsid": "{AIM-9P5-ON-ADAPTER}", "name": "LAU-7 with AIM-9P5 Sidewinder IR AAM", "weight": 121.7}
     LAU_7_with_AIM_9P_Sidewinder_IR_AAM = {"clsid": "{AIM-9P-ON-ADAPTER}", "name": "LAU-7 with AIM-9P Sidewinder IR AAM", "weight": 115.84}
     LAU_7_with_AIM_9X_Sidewinder_IR_AAM = {"clsid": "{AIM-9X-ON-ADAPTER}", "name": "LAU-7 with AIM-9X Sidewinder IR AAM", "weight": 125.46}
@@ -1395,7 +1392,6 @@ weapon_ids = {
     "{AGM_122}": Weapons.AGM_122_Sidearm___light_ARM,
     "{AGM_12A}": Weapons.AGM_12A_Bullpup___MCLOS_missile,
     "{AGM_12B}": Weapons.AGM_12B_Bullpup___MCLOS_missile,
-    "{AGM_130A}": Weapons.AGM_130A,
     "{AGM_130C_9}": Weapons.AGM_130C_9___3000lb_TV__EO__Guided_Missile,
     "{AGM-154A}": Weapons.AGM_154A___JSOW_CEB__CBU_type_,
     "{AGM-154B}": Weapons.AGM_154B___JSOW_Anti_Armour,
@@ -1450,6 +1446,7 @@ weapon_ids = {
     "{AIM-9J}": Weapons.AIM_9J_Sidewinder_IR_AAM,
     "{AIM-9L}": Weapons.AIM_9L_Sidewinder_IR_AAM,
     "{6CEB49FC-DED8-4DED-B053-E1F033FF72D3}": Weapons.AIM_9M_Sidewinder_IR_AAM,
+    "{AIM-9P3}": Weapons.AIM_9P3_Sidewinder_IR_AAM,
     "{AIM-9P5}": Weapons.AIM_9P5_Sidewinder_IR_AAM,
     "{9BFD8C90-F7AE-4e90-833B-BFD0CED0E536}": Weapons.AIM_9P_Sidewinder_IR_AAM,
     "{5CE2FF2A-645A-4197-B48D-8720AC69394F}": Weapons.AIM_9X_Sidewinder_IR_AAM,
@@ -1854,7 +1851,6 @@ weapon_ids = {
     "{CFT_L_GBU_12_x_4}": Weapons.GBU_12___4,
     "{CFT_R_GBU_12_x_4}": Weapons.GBU_12___4_,
     "{DB769D48-67D7-42ED-A2BE-108D566C8B1E}": Weapons.GBU_12___500lb_Laser_Guided_Bomb,
-    "{GBU_15_V_21B}": Weapons.GBU_15_V_21_B,
     "{GBU_15_V_31B}": Weapons.GBU_15_V_31_B___2000lb_TV__EO__Guided_Bomb,
     "{BRU-32 GBU-16}": Weapons.GBU_16,
     "{0D33DDAE-524F-4A4E-B5B8-621754FE3ADE}": Weapons.GBU_16___1000lb_Laser_Guided_Bomb,
@@ -1869,14 +1865,10 @@ weapon_ids = {
     "{CFT_L_GBU_31_x_2}": Weapons.GBU_31_V_1_B___2,
     "{CFT_R_GBU_31_x_2}": Weapons.GBU_31_V_1_B___2_,
     "{GBU-31}": Weapons.GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb,
-    "{CFT_L_GBU_31V2B_x_2}": Weapons.GBU_31_V_2_B___2,
-    "{CFT_R_GBU_31V2B_x_2}": Weapons.GBU_31_V_2_B___2_,
     "{GBU_31_V_2B}": Weapons.GBU_31_V_2_B___JDAM__2000lb_GPS_Guided_Bomb,
     "{CFT_L_GBU_31V3B_x_2}": Weapons.GBU_31_V_3_B___2,
     "{CFT_R_GBU_31V3B_x_2}": Weapons.GBU_31_V_3_B___2_,
     "{GBU-31V3B}": Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb,
-    "{CFT_L_GBU_31V4B_x_2}": Weapons.GBU_31_V_4_B___2,
-    "{CFT_R_GBU_31V4B_x_2}": Weapons.GBU_31_V_4_B___2_,
     "{GBU_31_V_4B}": Weapons.GBU_31_V_4_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb,
     "{GBU_32_V_2B}": Weapons.GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb,
     "GBU-38*16": Weapons.GBU_38_16,
@@ -1980,6 +1972,7 @@ weapon_ids = {
     "LAU-105_1*CATM-9M_L": Weapons.LAU_105_1_CATM_9M_L,
     "LAU-105_1*CATM-9M_R": Weapons.LAU_105_1_CATM_9M_R,
     "LAU-105_2*AIM-9L": Weapons.LAU_105_2_AIM_9L,
+    "LAU-105_2*AIM-9P3": Weapons.LAU_105_2_AIM_9P3,
     "LAU-105_2*AIM-9P5": Weapons.LAU_105_2_AIM_9P5,
     "LAU-105_2*CATM-9M": Weapons.LAU_105_2_CATM_9M,
     "LAU-105_AIS_ASQ_T50_L": Weapons.LAU_105_AIS_ASQ_T50_L,
@@ -2088,6 +2081,7 @@ weapon_ids = {
     "{AIM-9J-ON-ADAPTER}": Weapons.LAU_7_with_AIM_9J_Sidewinder_IR_AAM,
     "{AIM-9L-ON-ADAPTER}": Weapons.LAU_7_with_AIM_9L_Sidewinder_IR_AAM,
     "{AIM-9M-ON-ADAPTER}": Weapons.LAU_7_with_AIM_9M_Sidewinder_IR_AAM,
+    "{AIM-9P3-ON-ADAPTER}": Weapons.LAU_7_with_AIM_9P3_Sidewinder_IR_AAM,
     "{AIM-9P5-ON-ADAPTER}": Weapons.LAU_7_with_AIM_9P5_Sidewinder_IR_AAM,
     "{AIM-9P-ON-ADAPTER}": Weapons.LAU_7_with_AIM_9P_Sidewinder_IR_AAM,
     "{AIM-9X-ON-ADAPTER}": Weapons.LAU_7_with_AIM_9X_Sidewinder_IR_AAM,
