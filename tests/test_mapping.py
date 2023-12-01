@@ -43,6 +43,13 @@ class PointTests(unittest.TestCase):
         self.assertAlmostEqual(p2.x, 0)
         self.assertAlmostEqual(p2.y, 0)
 
+    def test_point_eq(self) -> None:
+        terrain = Caucasus()
+        self.assertEqual(Point(0, 0, terrain), Point(0, 0, terrain))
+        self.assertNotEqual(Point(0, 0, terrain), Point(0, 1, terrain))
+        self.assertNotEqual(Point(0, 0, terrain), Point(1, 0, terrain))
+        self.assertNotEqual(Point(0, 0, terrain), None)
+
 
 class RectangleTests(unittest.TestCase):
     def test_rectangle(self) -> None:

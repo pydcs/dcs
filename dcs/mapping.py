@@ -171,6 +171,8 @@ class Point(Vector2):
         return self * (1 / other)
 
     def __eq__(self, other):
+        if not isinstance(other, Point):
+            return False
         return self.x == other.x and self.y == other.y
 
     def __ne__(self, other: object) -> bool:
