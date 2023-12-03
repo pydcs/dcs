@@ -1408,6 +1408,28 @@ class SoundToGroup(Action):
         return d
 
 
+class SoundToUnit(Action):
+    predicate = "a_out_sound_u"
+
+    def __init__(self, unit="", file_res_key: Optional[ResourceKey] = None):
+        super(SoundToUnit, self).__init__(SoundToGroup.predicate)
+        self.unit = unit
+        if file_res_key:
+            self.params.append(self.unit)
+            self.file_res_key = file_res_key
+            self.params.append(self.file_res_key)
+
+    @classmethod
+    def create_from_dict(cls, d, mission):
+        return cls(d["unit"], ResourceKey(d["file"]))
+
+    def dict(self):
+        d = super(SoundToUnit, self).dict()
+        d["unit"] = self.unit
+        d["file"] = self.file_res_key.key
+        return d
+
+
 class StartListenCockpitEvent(Action):
     predicate = "a_start_listen_event"
 
@@ -1823,6 +1845,7 @@ actions_map: Dict[str, Type[Action]] = {
     "a_out_sound_s": SoundToCoalition,
     "a_out_sound_c": SoundToCountry,
     "a_out_sound_g": SoundToGroup,
+    "a_out_sound_u": SoundToUnit,
     "a_start_listen_event": StartListenCockpitEvent,
     "a_start_listen_command": StartListenCommand,
     "a_cockpit_lock_player_seat": StartPlayerSeatLock,
