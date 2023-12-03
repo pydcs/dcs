@@ -30,6 +30,14 @@ class LineStyle(Enum):
     Wirefence = "wirefence"
     Dot2 = "dot2"
     Solid2 = "solid2"
+    DotDash = "dotdash"
+    StrongPoint = "strongpoint"
+    WireFence = "wirefence"
+    Boundry1 = "boundry1"
+    Boundry2 = "boundry2"
+    Boundry3 = "boundry3"
+    Boundry4 = "boundry4"
+    Boundry5 = "boundry5"
 
 
 @dataclass
