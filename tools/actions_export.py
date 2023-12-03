@@ -215,6 +215,22 @@ actions = {
         ]
     },
 
+    "SoundToUnit": {
+        "name": "a_out_sound_u",
+        "fields": [
+            {
+                "id": "unit",
+                "type": "combo",
+                "default": "",
+            },
+            {
+                "id": "file",
+                "type": "file_edit",
+                "default": "",
+            },
+        ]
+    },
+
     "SoundToCountry": {
         "name": "a_out_sound_c",
         "fields": [
