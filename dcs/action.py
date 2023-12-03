@@ -1636,7 +1636,9 @@ class AITaskSet(Action):
 
     @classmethod
     def create_from_dict(cls, d, mission):
-        return cls(d["set_ai_task"][0], d["ai_task"][1])
+        # Not sure if this used to be 0/1 in older missions, if
+        # so this needs a conditional.
+        return cls(d["set_ai_task"][1], d["ai_task"][2])
 
     def dict(self):
         d = super(AITaskSet, self).dict()
