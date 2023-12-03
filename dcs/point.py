@@ -26,6 +26,7 @@ class PointAction(Enum):
     FromGroundAreaHot = "From Ground Area Hot"
     LandingReFuAr = "LandingReFuAr"
     Custom = "Custom"
+    OnRailroads = "On Railroads"
 
 
 class StaticPoint:
