@@ -872,3 +872,15 @@ class BasicTests(unittest.TestCase):
 
         static_groups = m2.coalition["blue"].countries["USA"].static_group
         self.assertTrue(any(preset_preserved(g, 3) for g in static_groups))
+
+    def test_smoke_required_modules(self) -> None:
+        mizname = "missions/Mission_with_required_modules.miz"
+        m = dcs.mission.Mission()
+        m.load_file(mizname)
+        self.assertTrue(len(m.requiredModules.keys()) == 1)
+
+        saved_miz = "missions/Mission_with_required_modules_saved.miz"
+        m.save(saved_miz)
+        m2 = dcs.mission.Mission()
+        m2.load_file(saved_miz)
+        self.assertTrue(len(m2.requiredModules.keys()) == 1)
