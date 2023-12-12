@@ -132,7 +132,7 @@ class Mission:
         self.warehouses = Warehouses(self.terrain)
         self.goals = Goals()
         self.drawings = Drawings(self.terrain)
-        self.required_modules = dict[str, str]
+        self.required_modules = None
         blue = Coalition("blue")
         blue.add_country(countries.Australia())
         blue.add_country(countries.Belgium())
@@ -2010,7 +2010,7 @@ class Mission:
             "Month": self.start_time.month,
             "Day": self.start_time.day
         }
-        m["requiredModules"] = self.required_modules
+        m["requiredModules"] = {} if self.required_modules is None else self.required_modules
         if self.random_weather:
             self.weather.random(self.start_time, self.terrain)
         m["groundControl"] = self.groundControl.dict()
