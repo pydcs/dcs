@@ -132,6 +132,7 @@ class Mission:
         self.warehouses = Warehouses(self.terrain)
         self.goals = Goals()
         self.drawings = Drawings(self.terrain)
+        self.required_modules = {}
         blue = Coalition("blue")
         blue.add_country(countries.Australia())
         blue.add_country(countries.Belgium())
@@ -261,7 +262,7 @@ class Mission:
         imp_mission = mission_dict["mission"]
 
         # required modules
-        self.required_modules = imp_mission.get("requiredModules", None)
+        self.required_modules = imp_mission.get("requiredModules", {})
 
         # import translations
         self.translation = Translation(self)
