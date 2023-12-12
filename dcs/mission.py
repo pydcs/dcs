@@ -261,7 +261,7 @@ class Mission:
         imp_mission = mission_dict["mission"]
 
         # required modules
-        self.requiredModules = imp_mission.get("requiredModules", None)
+        self.required_modules = imp_mission.get("requiredModules", None)
 
         # import translations
         self.translation = Translation(self)
@@ -2009,7 +2009,7 @@ class Mission:
             "Month": self.start_time.month,
             "Day": self.start_time.day
         }
-        m["requiredModules"] = self.requiredModules
+        m["requiredModules"] = self.required_modules
         if self.random_weather:
             self.weather.random(self.start_time, self.terrain)
         m["groundControl"] = self.groundControl.dict()

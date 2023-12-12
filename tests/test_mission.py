@@ -877,10 +877,10 @@ class BasicTests(unittest.TestCase):
         mizname = "missions/Mission_with_required_modules.miz"
         m = dcs.mission.Mission()
         m.load_file(mizname)
-        self.assertTrue(len(m.requiredModules.keys()) == 1)
+        self.assertTrue(len(m.required_modules.keys()) == 1)
 
         saved_miz = "missions/Mission_with_required_modules_saved.miz"
         m.save(saved_miz)
         m2 = dcs.mission.Mission()
         m2.load_file(saved_miz)
-        self.assertTrue(len(m2.requiredModules.keys()) == 1)
+        self.assertEqual(m.required_modules, m2.required_modules)
