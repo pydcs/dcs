@@ -874,12 +874,12 @@ class BasicTests(unittest.TestCase):
         self.assertTrue(any(preset_preserved(g, 3) for g in static_groups))
 
     def test_smoke_required_modules(self) -> None:
-        mizname = "missions/Mission_with_required_modules.miz"
+        mizname = "tests/missions/Mission_with_required_modules.miz"
         m = dcs.mission.Mission()
         m.load_file(mizname)
         self.assertTrue(len(m.required_modules.keys()) == 1)
 
-        saved_miz = "missions/Mission_with_required_modules_saved.miz"
+        saved_miz = "tests/missions/Mission_with_required_modules_saved.miz"
         m.save(saved_miz)
         m2 = dcs.mission.Mission()
         m2.load_file(saved_miz)
