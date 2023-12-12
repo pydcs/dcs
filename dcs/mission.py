@@ -132,7 +132,7 @@ class Mission:
         self.warehouses = Warehouses(self.terrain)
         self.goals = Goals()
         self.drawings = Drawings(self.terrain)
-        self.required_modules = {}
+        self.required_modules = dict[str, str]
         blue = Coalition("blue")
         blue.add_country(countries.Australia())
         blue.add_country(countries.Belgium())
