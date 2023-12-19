@@ -877,7 +877,7 @@ class BasicTests(unittest.TestCase):
         mizname = "tests/missions/Mission_with_required_modules.miz"
         m = dcs.mission.Mission()
         m.load_file(mizname)
-        self.assertTrue(len(m.required_modules.keys()) == 1)
+        self.assertEqual(m.required_modules, {"WWII Armour and Technics": "WWII Armour and Technics"})
 
         saved_miz = "tests/missions/Mission_with_required_modules_saved.miz"
         m.save(saved_miz)
