@@ -12,6 +12,7 @@ from dcs.status_message import MessageSeverity, MessageType
 from dcs.flyingunit import FlyingUnit
 from dcs.unit import Ship
 from dcs.task import WWIIFollowBigFormation
+from dcs.action import PictureToAll, PictureToCoalition, PictureToCountry, PictureToGroup, PictureToUnit
 
 
 class BasicTests(unittest.TestCase):
@@ -1001,3 +1002,234 @@ class BasicTests(unittest.TestCase):
         m2_task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[3].points[0].tasks[5]
 
         self.assertEqual(task, m2_task)
+
+    def test_big_formation_action_leader(self) -> None:
+        m_name = "tests/missions/big-formation.miz"
+        m = dcs.mission.Mission()
+        m.load_file(m_name)
+
+        assert isinstance(m.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[0].points[0].tasks[5], WWIIFollowBigFormation)
+
+        task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[0].points[0].tasks[5]
+
+        self.assertNotIn("groupId", task.params)
+        self.assertNotIn("lastWptIndex", task.params)
+        self.assertEqual(task.params["formationType"], WWIIFollowBigFormation.FormationType.COMBAT_BOX_FOR_OPEN_FORMATION)
+        self.assertEqual(task.params["pos"], {"x": 0, "y": 0, "z": 0})
+        self.assertTrue(task.params["lastWptIndexFlagChangedManually"])
+        self.assertEqual(len(task.params), 7)
+
+        m2_name = "missions/saved_big-formation.miz"
+        m.save(m2_name)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(m2_name)
+
+        assert isinstance(m2.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[0].points[0].tasks[5], WWIIFollowBigFormation)
+        m2_task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[0].points[0].tasks[5]
+
+        self.assertEqual(task, m2_task)
+
+    def test_big_formation_action_left(self) -> None:
+        m_name = "tests/missions/big-formation.miz"
+        m = dcs.mission.Mission()
+        m.load_file(m_name)
+
+        assert isinstance(m.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[1].points[0].tasks[5], WWIIFollowBigFormation)
+        task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[1].points[0].tasks[5]
+
+        self.assertEqual(task.params["formationType"], WWIIFollowBigFormation.FormationType.JAVELIN_DOWN)
+        self.assertEqual(task.params["pos"], {"x": -480, "y": -70, "z": -240})
+        self.assertEqual(task.params["groupId"], 2)
+        self.assertEqual(task.params["posInGroup"], 2)
+        self.assertEqual(task.params["lastWptIndex"], 3)
+        self.assertTrue(task.params["lastWptIndexFlag"])
+        self.assertEqual(len(task.params), 9)
+
+        m2_name = "missions/saved_big-formation.miz"
+        m.save(m2_name)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(m2_name)
+
+        assert isinstance(m2.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[1].points[0].tasks[5], WWIIFollowBigFormation)
+        m2_task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[1].points[0].tasks[5]
+
+        self.assertEqual(task, m2_task)
+
+    def test_big_formation_action_back(self) -> None:
+        m_name = "tests/missions/big-formation.miz"
+        m = dcs.mission.Mission()
+        m.load_file(m_name)
+
+        assert isinstance(m.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[2].points[0].tasks[5], WWIIFollowBigFormation)
+        task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[2].points[0].tasks[5]
+
+        self.assertEqual(task.params["formationType"], WWIIFollowBigFormation.FormationType.COMBAT_BOX)
+        self.assertEqual(task.params["pos"], {"x": -320, "y": -50, "z": -0})
+        self.assertEqual(task.params["groupId"], 2)
+        self.assertEqual(task.params["posInBox"], 3)
+        self.assertEqual(task.params["lastWptIndex"], 3)
+        self.assertFalse(task.params["lastWptIndexFlag"])
+        self.assertEqual(len(task.params), 9)
+
+        m2_name = "missions/saved_big-formation.miz"
+        m.save(m2_name)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(m2_name)
+
+        assert isinstance(m2.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[2].points[0].tasks[5], WWIIFollowBigFormation)
+        m2_task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[2].points[0].tasks[5]
+
+        self.assertEqual(task, m2_task)
+
+    def test_big_formation_action_right(self) -> None:
+        m_name = "tests/missions/big-formation.miz"
+        m = dcs.mission.Mission()
+        m.load_file(m_name)
+
+        assert isinstance(m.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[3].points[0].tasks[5], WWIIFollowBigFormation)
+        task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[3].points[0].tasks[5]
+
+        self.assertEqual(task.params["formationType"], WWIIFollowBigFormation.FormationType.COMBAT_BOX_FOR_OPEN_FORMATION)
+        self.assertEqual(task.params["pos"], {"x": -160, "y": 50, "z": 240})
+        self.assertEqual(task.params["groupId"], 2)
+        self.assertEqual(task.params["posInBox"], 1)
+        self.assertEqual(task.params["lastWptIndex"], 3)
+        self.assertTrue(task.params["lastWptIndexFlag"])
+        self.assertEqual(len(task.params), 9)
+
+        m2_name = "missions/saved_big-formation.miz"
+        m.save(m2_name)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(m2_name)
+
+        assert isinstance(m2.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[3].points[0].tasks[5], WWIIFollowBigFormation)
+        m2_task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[3].points[0].tasks[5]
+
+        self.assertEqual(task, m2_task)
+
+    def test_action_a_out_picture(self) -> None:
+        mizname = "tests/missions/a_out_picture.miz"
+        m = dcs.mission.Mission()
+        m.load_file(mizname)
+
+        assert isinstance(m.triggerrules.triggers[0].actions[0], PictureToAll)
+        m_action = m.triggerrules.triggers[0].actions[0]
+
+        self.assertEqual(m_action.seconds, 10)
+        self.assertFalse(m_action.clearview)
+        self.assertEqual(m_action.start_delay, 3)
+        self.assertEqual(m_action.horz_alignment, "0")
+        self.assertEqual(m_action.vert_alignment, "0")
+        self.assertEqual(m_action.size, 100)
+        self.assertEqual(m_action.size_units, "0")
+
+        m2_name = "missions/saved_a_out_picture.miz"
+        m.save(m2_name)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(m2_name)
+
+        self.assertEqual(m_action, m2.triggerrules.triggers[0].actions[0])
+
+    def test_action_a_out_picture_s(self) -> None:
+        mizname = "tests/missions/a_out_picture.miz"
+        m = dcs.mission.Mission()
+        m.load_file(mizname)
+
+        assert isinstance(m.triggerrules.triggers[0].actions[1], PictureToCoalition)
+        m_action = m.triggerrules.triggers[0].actions[1]
+
+        self.assertEqual(m_action.coalition, "blue")
+
+        m2_name = "missions/saved_a_out_picture.miz"
+        m.save(m2_name)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(m2_name)
+
+        self.assertEqual(m_action, m2.triggerrules.triggers[0].actions[1])
+
+    def test_action_a_out_picture_c(self) -> None:
+        mizname = "tests/missions/a_out_picture.miz"
+        m = dcs.mission.Mission()
+        m.load_file(mizname)
+
+        assert isinstance(m.triggerrules.triggers[0].actions[2], PictureToCountry)
+        m_action = m.triggerrules.triggers[0].actions[2]
+
+        self.assertEqual(m_action.country, 1)
+
+        m2_name = "missions/saved_a_out_picture.miz"
+        m.save(m2_name)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(m2_name)
+
+        self.assertEqual(m_action, m2.triggerrules.triggers[0].actions[2])
+
+    def test_action_a_out_picture_g(self) -> None:
+        mizname = "tests/missions/a_out_picture.miz"
+        m = dcs.mission.Mission()
+        m.load_file(mizname)
+
+        assert isinstance(m.triggerrules.triggers[0].actions[3], PictureToGroup)
+        m_action = m.triggerrules.triggers[0].actions[3]
+
+        self.assertEqual(m_action.group, 1)
+
+        m2_name = "missions/saved_a_out_picture.miz"
+        m.save(m2_name)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(m2_name)
+
+        self.assertEqual(m_action, m2.triggerrules.triggers[0].actions[3])
+
+    def test_action_a_out_picture_u_no_file(self) -> None:
+        mizname = "tests/missions/a_out_picture.miz"
+        m = dcs.mission.Mission()
+        m.load_file(mizname)
+
+        assert isinstance(m.triggerrules.triggers[0].actions[4], PictureToUnit)
+        m_action = m.triggerrules.triggers[0].actions[4]
+
+        self.assertEqual(m_action.unit, 1)
+        self.assertEqual(m_action.file_res_key.key, "")
+
+        m2_name = "missions/saved_a_out_picture.miz"
+        m.save(m2_name)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(m2_name)
+
+        self.assertEqual(m_action, m2.triggerrules.triggers[0].actions[4])
+
+    def test_action_a_out_picture_u(self) -> None:
+        mizname = "tests/missions/a_out_picture.miz"
+        m = dcs.mission.Mission()
+        m.load_file(mizname)
+
+        assert isinstance(m.triggerrules.triggers[0].actions[5], PictureToUnit)
+        m_action = m.triggerrules.triggers[0].actions[5]
+
+        self.assertEqual(m_action.unit, 1)
+
+        m2_name = "missions/saved_a_out_picture.miz"
+        m.save(m2_name)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(m2_name)
+
+        self.assertEqual(m_action, m2.triggerrules.triggers[0].actions[5])
