@@ -872,3 +872,80 @@ class BasicTests(unittest.TestCase):
 
         static_groups = m2.coalition["blue"].countries["USA"].static_group
         self.assertTrue(any(preset_preserved(g, 3) for g in static_groups))
+
+    def test_task_follow_big_formation(self) -> None:
+        miz = dcs.mission.Mission()
+        miz.load_file("missions/WWII-mission.miz")
+
+        miz_task = miz.coalition['red'].country('Third Reich').plane_group[1].points[0].tasks[6]
+
+        self.assertEqual(miz_task.id, 'FollowBigFormation')
+        self.assertEqual(miz_task.params["groupId"], 267)
+        self.assertEqual(miz_task.params["pos"]["x"], -160)
+        self.assertEqual(miz_task.params["pos"]["y"], 50)
+        self.assertEqual(miz_task.params["pos"]["z"], 240)
+
+        miz.save('missions/WWII-saved-mission.miz')
+
+        miz2 = dcs.mission.Mission()
+        miz2.load_file("missions/WWII-follow_big_formation.miz")
+
+        miz2_task = miz2.coalition['red'].country('Third Reich').plane_group[1].points[0].tasks[6]
+
+        self.assertEqual(miz_task.id, miz2_task.id)
+        self.assertEqual(miz_task.auto, miz2_task.auto)
+        self.assertEqual(miz_task.enabled, miz2_task.enabled)
+        self.assertEqual(miz_task.number, miz2_task.number)
+        self.assertEqual(miz_task.params, miz2_task.params)
+
+    def test_task_carpetbombing(self) -> None:
+        miz = dcs.mission.Mission()
+        miz.load_file("missions/WWII-mission.miz")
+
+        miz_task = miz.coalition['red'].country('Third Reich').plane_group[1].points[4].tasks[0]
+
+        self.assertTrue(miz_task.id, 'CarpetBombing')
+        self.assertEqual(miz_task.params["groupAttack"], False)
+        self.assertEqual(miz_task.params["attackQtyLimit"], False)
+        self.assertEqual(miz_task.params["attackQty"], 1)
+        self.assertEqual(miz_task.params["expend"], "All")
+        self.assertEqual(miz_task.params["altitude"], 1000)
+        self.assertEqual(miz_task.params["x"], -26586.299212314)
+        self.assertEqual(miz_task.params["y"], -19449.628933977)
+        self.assertEqual(miz_task.params["carpetLength"], 400)
+        self.assertEqual(miz_task.params["attackType"], "Carpet")
+        self.assertEqual(miz_task.params["altitudeEnabled"], False)
+        self.assertEqual(miz_task.params["weaponType"], 240)
+
+        miz.save('missions/WWII-saved-mission.miz')
+
+        miz2 = dcs.mission.Mission()
+        miz2.load_file("missions/WWII-follow_big_formation.miz")
+
+        miz2_task = miz2.coalition['red'].country('Third Reich').plane_group[1].points[4].tasks[0]
+
+        self.assertEqual(miz_task.id, miz2_task.id)
+        self.assertEqual(miz_task.auto, miz2_task.auto)
+        self.assertEqual(miz_task.enabled, miz2_task.enabled)
+        self.assertEqual(miz_task.number, miz2_task.number)
+        self.assertEqual(miz_task.params, miz2_task.params)
+
+    def test_task_option_min_alt_restriction(self) -> None:
+        miz = dcs.mission.Mission()
+        miz.load_file("missions/WWII-mission.miz")
+
+        miz_task = miz.coalition['red'].country('Third Reich').vehicle_group[18].points[0].tasks[0]
+
+        self.assertEqual(miz_task.id, 'WrappedAction')
+        self.assertEqual(miz_task.params["action"]["id"], "Option")
+        self.assertEqual(miz_task.params["action"]["params"], { "value": 243.84, "name": 27 })
+
+        miz.save('missions/WWII-saved-mission.miz')
+
+        miz2 = dcs.mission.Mission()
+        miz2.load_file("missions/WWII-follow_big_formation.miz")
+
+        miz2_task = miz2.coalition['red'].country('Third Reich').vehicle_group[18].points[0].tasks[0]
+
+        self.assertEqual(miz_task.id, miz2_task.id)
+        self.assertEqual(miz_task.params["action"]["params"], miz2_task.params["action"]["params"])
