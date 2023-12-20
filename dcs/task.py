@@ -1069,6 +1069,38 @@ class WWIIFollowBigFormation(Task):
         }
 
 
+class CarpetBombing(Task):
+    Id = "CarpetBombing"
+
+    def __init__(self,
+                 x: Optional[float] = 0.0,
+                 y: Optional[float] = 0.0,
+                 altitude: Optional[int] = 3000,
+                 group_attack: Optional[bool] = False,
+                 attack_qty_limit: Optional[bool] = False,
+                 attack_qty: Optional[int] = 1,
+                 expend: Optional[str] = "All",
+                 carpet_length: Optional[float] = 500.0,
+                 attack_type: Optional[str] = "Carpet",
+                 altitude_enabled: Optional[bool] = False,
+                 weapon_type: Optional[int] = 240, # Iron bombs
+                 ):
+        super(CarpetBombing, self).__init__(self.Id)
+        self.params = {
+            "groupAttack": group_attack,
+            "attackQtyLimit": attack_qty_limit,
+            "attackQty": attack_qty,
+            "expend": expend,
+            "x": x,
+            "y": y,
+            "carpetLength": carpet_length,
+            "attackType": attack_type,
+            "altitudeEnabled": altitude_enabled,
+            "weapon_type": weapon_type,
+            "altitude": altitude
+        }
+
+
 tasks_map: Dict[str, Type[Task]] = {
     ControlledTask.Id: ControlledTask,
     EscortTaskAction.Id: EscortTaskAction,
@@ -1101,7 +1133,8 @@ tasks_map: Dict[str, Type[Task]] = {
     AttackUnit.Id: AttackUnit,
     AttackMapObject.Id: AttackMapObject,
     EngageTargets.Id: EngageTargets,
-    WWIIFollowBigFormation.Id: WWIIFollowBigFormation
+    WWIIFollowBigFormation.Id: WWIIFollowBigFormation,
+    CarpetBombing.Id: CarpetBombing
 }
 
 
@@ -2418,6 +2451,11 @@ class OptJettisonEmptyTanks(Option):
     def __init__(self, value: bool = True):
         super(OptJettisonEmptyTanks, self).__init__(value)
 
+class OptMinAltRestriction(Option):
+    Key = 27
+
+    def __init__(self, value: float = 243.84):
+        super(OptMinAltRestriction, self).__init__(value)
 
 class OptRestrictTargets(Option):
     Key = 28
@@ -2454,5 +2492,6 @@ options: Dict[int, Type[Option]] = {
     OptRadioUsageEngage.Key: OptRadioUsageEngage,
     OptRadioUsageKill.Key: OptRadioUsageKill,
     OptInterceptionRange.Key: OptInterceptionRange,
+    OptMinAltRestriction.Key: OptMinAltRestriction,
     OptRestrictTargets.Key: OptRestrictTargets
 }
