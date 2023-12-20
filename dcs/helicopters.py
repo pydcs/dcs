@@ -1081,7 +1081,7 @@ class AH_64D_BLK_II(HelicopterType):
     }
 
     property_defaults: Dict[str, Any] = {
-        "FCR_RFI_removed": True,
+        "FCR_RFI_removed": False,
         "PltNVG": True,
         "CpgNVG": True,
         "FlareBurstCount": 0,
@@ -1198,7 +1198,7 @@ class AH_64D_BLK_II(HelicopterType):
             identifier="FCR_RFI_removed",
             control="checkbox",
             label="FCR/RFI removed",
-            default=True,
+            default=False,
             weight_when_on=-237.23,
         ),
         "PltNVG": UnitPropertyDescription(
