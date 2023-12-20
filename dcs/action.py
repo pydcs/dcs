@@ -1787,6 +1787,25 @@ class ZoneIncrementResize(Action):
         return d
 
 
+class PictureToAll(Action):
+    predicate = "a_out_picture"
+
+    def __init__(self, file_res_key: Optional[ResourceKey] = None):
+        super(PictureToAll, self).__init__(PictureToAll.predicate)
+        if file_res_key:
+            self.file_res_key = file_res_key
+            self.params.append(self.file_res_key)
+
+    @classmethod
+    def create_from_dict(cls, d, mission):
+        return cls(ResourceKey(d["file"]))
+
+    def dict(self):
+        d = super(PictureToAll, self).dict()
+        d["file"] = self.file_res_key.key
+        return d
+
+
 actions_map: Dict[str, Type[Action]] = {
     "a_activate_group": ActivateGroup,
     "a_add_radio_item": AddRadioItem,
@@ -1865,5 +1884,6 @@ actions_map: Dict[str, Type[Action]] = {
     "a_set_ai_task": AITaskSet,
     "a_remove_scene_objects": RemoveSceneObjects,
     "a_scenery_destruction_zone": SceneryDestructionZone,
-    "a_zone_increment_resize": ZoneIncrementResize
+    "a_zone_increment_resize": ZoneIncrementResize,
+    "a_out_picture": PictureToAll
 }

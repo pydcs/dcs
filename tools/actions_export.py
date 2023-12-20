@@ -1013,6 +1013,16 @@ actions = {
         "name": "a_cockpit_unlock_player_seat",
         "fields": [],
     },
+    "PictureToAll": {
+        "name": "a_out_picture",
+        "fields": [
+            {
+                "id": "file",
+                "type": "file_edit",
+                "default": "",
+            },
+        ]
+    },
 }
 
 
