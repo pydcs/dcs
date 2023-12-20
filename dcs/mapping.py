@@ -97,6 +97,11 @@ class Vector2:
     x: float
     y: float
 
+@dataclass
+class WWIIFollowBigFormationOrder:
+    x: int # distance
+    y: int # elevation
+    z: int # interval
 
 class Point(Vector2):
     def __init__(self, x: float, y: float, terrain: Terrain) -> None:

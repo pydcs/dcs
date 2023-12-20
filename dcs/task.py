@@ -9,7 +9,7 @@ Also options and commands are task actions.
 """
 from typing import List, Dict, Optional, Type, Any, Union
 from enum import Enum, IntEnum
-from dcs.mapping import Vector2
+from dcs.mapping import Vector2, WWIIFollowBigFormationOrder
 from dcs.unit import Unit
 
 
@@ -1026,6 +1026,48 @@ class GoToWaypoint(Task):
         if to_index:
             self.params["nWaypointIndx"] = to_index
 
+class WWIIFollowBigFormation(Task):
+    """Follow as big formation task
+
+    If added to a group, the group will follow the big formation according to orders
+
+    :param group_id: ID of a group to follow
+    :param orders: :py:class:`dcs.mapping.WWIIFollowBigFormationOrder` how to follow
+    :param last_wpt_index_flag: ??? -
+    :param last_wpt_index_flag_changed_manually: ??? -
+    :param last_wpt_index: ???
+    :param formation_type: ???
+    :param pos_in_box: ???
+    :param pos_in_group: ???
+    :param pos_in_wing: ???
+    """
+    Id = "FollowBigFormation"
+
+    def __init__(self,
+                 orders: WWIIFollowBigFormationOrder = WWIIFollowBigFormationOrder(0, 0, 0),
+                 group_id: Optional[int | None] = None,
+                 last_wpt_index_flag: Optional[bool] = True,
+                 last_wpt_index_flag_changed_manually: Optional[bool] = True,
+                 last_wpt_index: Optional[int | None] = None, formation_type: Optional[int] = 0,
+                 pos_in_box: Optional[int] = 1, pos_in_group: Optional[int] = 1,
+                 pos_in_wing: Optional[int] = 1):
+        super(WWIIFollowBigFormation, self).__init__(self.Id)
+        self.params = {
+            "pos": {
+                "x": orders.x,
+                "y": orders.y,
+                "z": orders.z
+            },
+            "groupId": group_id,
+            "lastWptIndexFlag": last_wpt_index_flag,
+            "lastWptIndexFlagChangedManually": last_wpt_index_flag_changed_manually,
+            "lastWptIndex": last_wpt_index,
+            "formationType": formation_type, # 0 = 1943 style Combat Box, 1 = 1942 JAVELIN DOWN
+            "posInBox": pos_in_box, # 1 = Above(right above), 2 = Low(low left), 3 = LowLow(low behind), 0 - leader
+            "posInGroup": pos_in_group, # 1 = left, 2 = right, 0 - lead
+            "posInWing": pos_in_wing # 1 = left, 2 = right,0 - leading group
+        }
+
 
 tasks_map: Dict[str, Type[Task]] = {
     ControlledTask.Id: ControlledTask,
@@ -1058,7 +1100,8 @@ tasks_map: Dict[str, Type[Task]] = {
     FireAtPoint.Id: FireAtPoint,
     AttackUnit.Id: AttackUnit,
     AttackMapObject.Id: AttackMapObject,
-    EngageTargets.Id: EngageTargets
+    EngageTargets.Id: EngageTargets,
+    WWIIFollowBigFormation.Id: WWIIFollowBigFormation
 }
 
 
