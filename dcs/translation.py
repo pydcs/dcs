@@ -34,6 +34,11 @@ class ResourceKey:
     def __str__(self):
         return self.res_key
 
+    def __eq__(self, other):
+        if isinstance(other, ResourceKey):
+            return self.__dict__ == other.__dict__
+        return False
+
 
 class Translation:
     def __init__(self, _mission):

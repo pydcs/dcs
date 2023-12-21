@@ -1814,6 +1814,11 @@ class PictureAction(Action):
         d["size"] = self.size
         return d
 
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            return self.__dict__ == other.__dict__
+        return False
+
 
 class PictureToAll(PictureAction):
     predicate = "a_out_picture"
@@ -1836,7 +1841,6 @@ class PictureToAll(PictureAction):
 
     def dict(self):
         return super().dict()
-
 
 class PictureToCoalition(PictureAction):
     predicate = "a_out_picture_s"
