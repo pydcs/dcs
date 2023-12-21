@@ -1842,6 +1842,7 @@ class PictureToAll(PictureAction):
     def dict(self):
         return super().dict()
 
+
 class PictureToCoalition(PictureAction):
     predicate = "a_out_picture_s"
 
