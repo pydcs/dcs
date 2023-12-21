@@ -98,6 +98,18 @@ class Vector2:
     y: float
 
 
+@dataclass
+class WWIIFollowBigFormationPosition:
+    x: int
+    y: int
+    z: int
+
+    def __eq__(self, other):
+        if isinstance(other, dict):
+            return self.__dict__ == other
+        return self.__dict__ == other.__dict__
+
+
 class Point(Vector2):
     def __init__(self, x: float, y: float, terrain: Terrain) -> None:
         super().__init__(x, y)

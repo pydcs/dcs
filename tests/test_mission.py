@@ -11,6 +11,8 @@ from dcs.translation import String
 from dcs.status_message import MessageSeverity, MessageType
 from dcs.flyingunit import FlyingUnit
 from dcs.unit import Ship
+from dcs.task import WWIIFollowBigFormation
+from dcs.mapping import WWIIFollowBigFormationPosition
 
 
 class BasicTests(unittest.TestCase):
@@ -884,3 +886,119 @@ class BasicTests(unittest.TestCase):
         m2 = dcs.mission.Mission()
         m2.load_file(saved_miz)
         self.assertEqual(m.required_modules, m2.required_modules)
+
+    def test_big_formation_action_leader(self) -> None:
+        m_name = "tests/missions/big-formation.miz"
+        m = dcs.mission.Mission()
+        m.load_file(m_name)
+
+        assert isinstance(m.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[0].points[0].tasks[5], WWIIFollowBigFormation)
+
+        task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[0].points[0].tasks[5]
+
+        self.assertNotIn("groupId", task.params)
+        self.assertNotIn("lastWptIndex", task.params)
+        self.assertEqual(task.params["formationType"], WWIIFollowBigFormation.FormationType.COMBAT_BOX_FOR_OPEN_FORMATION)
+        self.assertEqual(task.params["pos"], WWIIFollowBigFormationPosition(0, 0, 0))
+        self.assertTrue(task.params["lastWptIndexFlagChangedManually"])
+        self.assertEqual(len(task.params), 7)
+
+        m2_name = "missions/saved_big-formation.miz"
+        m.save(m2_name)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(m2_name)
+
+        assert isinstance(m2.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[0].points[0].tasks[5], WWIIFollowBigFormation)
+        m2_task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[0].points[0].tasks[5]
+
+        self.assertEqual(task, m2_task)
+
+    def test_big_formation_action_left(self) -> None:
+        m_name = "tests/missions/big-formation.miz"
+        m = dcs.mission.Mission()
+        m.load_file(m_name)
+
+        assert isinstance(m.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[1].points[0].tasks[5], WWIIFollowBigFormation)
+        task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[1].points[0].tasks[5]
+
+        self.assertEqual(task.params["formationType"], WWIIFollowBigFormation.FormationType.JAVELIN_DOWN)
+        self.assertEqual(task.params["pos"], WWIIFollowBigFormationPosition(-480, -70, -240))
+        self.assertEqual(task.params["groupId"], 2)
+        self.assertEqual(task.params["posInGroup"], 2)
+        self.assertEqual(task.params["lastWptIndex"], 3)
+        self.assertTrue(task.params["lastWptIndexFlag"])
+        self.assertEqual(len(task.params), 9)
+
+        m2_name = "missions/saved_big-formation.miz"
+        m.save(m2_name)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(m2_name)
+
+        assert isinstance(m2.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[1].points[0].tasks[5], WWIIFollowBigFormation)
+        m2_task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[1].points[0].tasks[5]
+
+        self.assertEqual(task, m2_task)
+
+    def test_big_formation_action_back(self) -> None:
+        m_name = "tests/missions/big-formation.miz"
+        m = dcs.mission.Mission()
+        m.load_file(m_name)
+
+        assert isinstance(m.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[2].points[0].tasks[5], WWIIFollowBigFormation)
+        task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[2].points[0].tasks[5]
+
+        self.assertEqual(task.params["formationType"], WWIIFollowBigFormation.FormationType.COMBAT_BOX)
+        self.assertEqual(task.params["pos"], WWIIFollowBigFormationPosition(-320, -50, -0))
+        self.assertEqual(task.params["groupId"], 2)
+        self.assertEqual(task.params["posInBox"], 3)
+        self.assertEqual(task.params["lastWptIndex"], 3)
+        self.assertFalse(task.params["lastWptIndexFlag"])
+        self.assertEqual(len(task.params), 9)
+
+        m2_name = "missions/saved_big-formation.miz"
+        m.save(m2_name)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(m2_name)
+
+        assert isinstance(m2.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[2].points[0].tasks[5], WWIIFollowBigFormation)
+        m2_task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[2].points[0].tasks[5]
+
+        self.assertEqual(task, m2_task)
+
+    def test_big_formation_action_right(self) -> None:
+        m_name = "tests/missions/big-formation.miz"
+        m = dcs.mission.Mission()
+        m.load_file(m_name)
+
+        assert isinstance(m.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[3].points[0].tasks[5], WWIIFollowBigFormation)
+        task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[3].points[0].tasks[5]
+
+        self.assertEqual(task.params["formationType"], WWIIFollowBigFormation.FormationType.COMBAT_BOX_FOR_OPEN_FORMATION)
+        self.assertEqual(task.params["pos"], WWIIFollowBigFormationPosition(-160, 50, 240))
+        self.assertEqual(task.params["groupId"], 2)
+        self.assertEqual(task.params["posInBox"], 1)
+        self.assertEqual(task.params["lastWptIndex"], 3)
+        self.assertTrue(task.params["lastWptIndexFlag"])
+        self.assertEqual(len(task.params), 9)
+
+        m2_name = "missions/saved_big-formation.miz"
+        m.save(m2_name)
+
+        m2 = dcs.mission.Mission()
+        m2.load_file(m2_name)
+
+        assert isinstance(m2.coalition['blue'].country("Combined Joint Task Forces Blue")
+                          .plane_group[3].points[0].tasks[5], WWIIFollowBigFormation)
+        m2_task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[3].points[0].tasks[5]
+
+        self.assertEqual(task, m2_task)
