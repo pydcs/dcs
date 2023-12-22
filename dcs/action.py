@@ -1788,10 +1788,40 @@ class ZoneIncrementResize(Action):
 
 
 class PictureAction(Action):
+
+    class HorzAlignment(Enum):
+        Left = "0"
+        Center = "1"
+        Right = "2"
+
+        def __eq__(self, other) -> bool:
+            if isinstance(other, str):
+                return self.value == other
+            return self == other
+
+    class VertAlignment(Enum):
+        Top = "0"
+        Center = "1"
+        Bottom = "2"
+
+        def __eq__(self, other) -> bool:
+            if isinstance(other, str):
+                return self.value == other
+            return self == other
+
+    class SizeUnits(Enum):
+        Original_Size = "0"
+        Window_Size = "1"
+
+        def __eq__(self, other) -> bool:
+            if isinstance(other, str):
+                return self.value == other
+            return self == other
+
     def __init__(self, predicate: str, file_res_key: ResourceKey, seconds: int,
                  clearview: bool, start_delay: int,
-                 horz_alignment: str, vert_alignment: str,
-                 size: int, size_units: str) -> None:
+                 horz_alignment: HorzAlignment, vert_alignment: VertAlignment,
+                 size: int, size_units: SizeUnits) -> None:
         super().__init__(predicate)
         self.file_res_key = file_res_key
         self.seconds = seconds
@@ -1801,8 +1831,10 @@ class PictureAction(Action):
         self.vert_alignment = vert_alignment
         self.size_units = size_units
         self.size = size
+        if size not in range(1, 101):
+            raise ValueError
 
-    def dict(self) -> Dict[Any, Any]:
+    def dict(self) -> Dict[str, Any]:
         d = super().dict()
         d["file"] = self.file_res_key.key
         d["seconds"] = self.seconds
@@ -1814,7 +1846,7 @@ class PictureAction(Action):
         d["size"] = self.size
         return d
 
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         if isinstance(other, self.__class__):
             return self.__dict__ == other.__dict__
         return False
@@ -1825,45 +1857,42 @@ class PictureToAll(PictureAction):
 
     def __init__(self, file_res_key: ResourceKey, seconds: int,
                  clearview: bool, start_delay: int,
-                 horz_alignment: str, vert_alignment: str,
-                 size: int, size_units: str):
+                 horz_alignment: PictureAction.HorzAlignment, vert_alignment: PictureAction.VertAlignment,
+                 size: int, size_units: PictureAction.SizeUnits) -> None:
         super().__init__(predicate=self.predicate, file_res_key=file_res_key,
                          seconds=seconds, clearview=clearview,
                          start_delay=start_delay, horz_alignment=horz_alignment,
-                         vert_alignment=horz_alignment, size=size, size_units=size_units)
+                         vert_alignment=vert_alignment, size=size, size_units=size_units)
         self.params = [self.file_res_key, seconds, clearview, start_delay,
                        horz_alignment, vert_alignment, size, size_units]
 
     @classmethod
-    def create_from_dict(cls, d, mission):
+    def create_from_dict(cls, d, mission) -> "PictureToAll":
         return cls(ResourceKey(d["file"]), d["seconds"], d["clearview"], d["start_delay"],
                    d["horzAlignment"], d["vertAlignment"], d["size"], d["size_units"])
-
-    def dict(self):
-        return super().dict()
 
 
 class PictureToCoalition(PictureAction):
     predicate = "a_out_picture_s"
 
-    def __init__(self, coalition: str, file_res_key: ResourceKey, seconds: int,
+    def __init__(self, coalition: Coalition, file_res_key: ResourceKey, seconds: int,
                  clearview: bool, start_delay: int,
-                 horz_alignment: str, vert_alignment: str,
-                 size: int, size_units: str):
+                 horz_alignment: PictureAction.HorzAlignment, vert_alignment: PictureAction.VertAlignment,
+                 size: int, size_units: PictureAction.SizeUnits) -> None:
         super().__init__(predicate=self.predicate, file_res_key=file_res_key,
                          seconds=seconds, clearview=clearview,
                          start_delay=start_delay, horz_alignment=horz_alignment,
-                         vert_alignment=horz_alignment, size=size, size_units=size_units)
+                         vert_alignment=vert_alignment, size=size, size_units=size_units)
         self.coalition = coalition
         self.params = [self.coalition, self.file_res_key, seconds, clearview,
                        start_delay, horz_alignment, vert_alignment, size, size_units]
 
     @classmethod
-    def create_from_dict(cls, d, mission):
+    def create_from_dict(cls, d, mission) -> "PictureToCoalition":
         return cls(d["coalitionlist"], ResourceKey(d["file"]), d["seconds"], d["clearview"], d["start_delay"],
                    d["horzAlignment"], d["vertAlignment"], d["size"], d["size_units"])
 
-    def dict(self):
+    def dict(self) -> Dict[str, Any]:
         d = super().dict()
         d["coalitionlist"] = self.coalition
         return d
@@ -1872,78 +1901,78 @@ class PictureToCoalition(PictureAction):
 class PictureToCountry(PictureAction):
     predicate = "a_out_picture_c"
 
-    def __init__(self, country: int, file_res_key: ResourceKey, seconds: int,
+    def __init__(self, country_id: int, file_res_key: ResourceKey, seconds: int,
                  clearview: bool, start_delay: int,
-                 horz_alignment: str, vert_alignment: str,
-                 size: int, size_units: str):
+                 horz_alignment: PictureAction.HorzAlignment, vert_alignment: PictureAction.VertAlignment,
+                 size: int, size_units: PictureAction.SizeUnits) -> None:
         super().__init__(predicate=self.predicate, file_res_key=file_res_key,
                          seconds=seconds, clearview=clearview,
                          start_delay=start_delay, horz_alignment=horz_alignment,
-                         vert_alignment=horz_alignment, size=size, size_units=size_units)
-        self.country = country
-        self.params = [self.country, self.file_res_key, seconds, clearview,
+                         vert_alignment=vert_alignment, size=size, size_units=size_units)
+        self.country_id = country_id
+        self.params = [self.country_id, self.file_res_key, seconds, clearview,
                        start_delay, horz_alignment, vert_alignment, size, size_units]
 
     @classmethod
-    def create_from_dict(cls, d, mission):
+    def create_from_dict(cls, d, mission) -> "PictureToCountry":
         return cls(d["countrylist"], ResourceKey(d["file"]), d["seconds"], d["clearview"], d["start_delay"],
                    d["horzAlignment"], d["vertAlignment"], d["size"], d["size_units"])
 
-    def dict(self):
+    def dict(self) -> Dict[str, Any]:
         d = super().dict()
-        d["countrylist"] = self.country
+        d["countrylist"] = self.country_id
         return d
 
 
 class PictureToGroup(PictureAction):
     predicate = "a_out_picture_g"
 
-    def __init__(self, group: int, file_res_key: ResourceKey, seconds: int,
+    def __init__(self, group_id: int, file_res_key: ResourceKey, seconds: int,
                  clearview: bool, start_delay: int,
-                 horz_alignment: str, vert_alignment: str,
-                 size: int, size_units: str):
+                 horz_alignment: PictureAction.HorzAlignment, vert_alignment: PictureAction.VertAlignment,
+                 size: int, size_units: PictureAction.SizeUnits) -> None:
         super().__init__(predicate=self.predicate, file_res_key=file_res_key,
                          seconds=seconds, clearview=clearview,
                          start_delay=start_delay, horz_alignment=horz_alignment,
-                         vert_alignment=horz_alignment, size=size, size_units=size_units)
-        self.group = group
-        self.params = [self.group, self.file_res_key, seconds, clearview,
+                         vert_alignment=vert_alignment, size=size, size_units=size_units)
+        self.group_id = group_id
+        self.params = [self.group_id, self.file_res_key, seconds, clearview,
                        start_delay, horz_alignment, vert_alignment, size, size_units]
 
     @classmethod
-    def create_from_dict(cls, d, mission):
+    def create_from_dict(cls, d, mission) -> "PictureToGroup":
         return cls(d["group"], ResourceKey(d["file"]), d["seconds"], d["clearview"], d["start_delay"],
                    d["horzAlignment"], d["vertAlignment"], d["size"], d["size_units"])
 
-    def dict(self):
+    def dict(self) -> Dict[str, Any]:
         d = super().dict()
-        d["group"] = self.group
+        d["group"] = self.group_id
         return d
 
 
 class PictureToUnit(PictureAction):
     predicate = "a_out_picture_u"
 
-    def __init__(self, unit: int, file_res_key: ResourceKey, seconds: int,
+    def __init__(self, unit_id: int, file_res_key: ResourceKey, seconds: int,
                  clearview: bool, start_delay: int,
-                 horz_alignment: str, vert_alignment: str,
-                 size: int, size_units: str):
+                 horz_alignment: PictureAction.HorzAlignment, vert_alignment: PictureAction.VertAlignment,
+                 size: int, size_units: PictureAction.SizeUnits) -> None:
         super().__init__(predicate=self.predicate, file_res_key=file_res_key,
                          seconds=seconds, clearview=clearview,
                          start_delay=start_delay, horz_alignment=horz_alignment,
-                         vert_alignment=horz_alignment, size=size, size_units=size_units)
-        self.unit = unit
-        self.params = [self.unit, self.file_res_key, seconds, clearview,
+                         vert_alignment=vert_alignment, size=size, size_units=size_units)
+        self.unit_id = unit_id
+        self.params = [self.unit_id, self.file_res_key, seconds, clearview,
                        start_delay, horz_alignment, vert_alignment, size, size_units]
 
     @classmethod
-    def create_from_dict(cls, d, mission):
+    def create_from_dict(cls, d, mission) -> "PictureToUnit":
         return cls(d["unit"], ResourceKey(d["file"]), d["seconds"], d["clearview"], d["start_delay"],
                    d["horzAlignment"], d["vertAlignment"], d["size"], d["size_units"])
 
-    def dict(self):
+    def dict(self) -> Dict[str, Any]:
         d = super().dict()
-        d["unit"] = self.unit
+        d["unit"] = self.unit_id
         return d
 
 

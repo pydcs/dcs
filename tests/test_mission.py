@@ -12,6 +12,7 @@ from dcs.status_message import MessageSeverity, MessageType
 from dcs.flyingunit import FlyingUnit
 from dcs.unit import Ship
 from dcs.task import WWIIFollowBigFormation
+from dcs.action import PictureAction
 from dcs.action import PictureToAll, PictureToCoalition, PictureToCountry, PictureToGroup, PictureToUnit
 
 
@@ -1130,10 +1131,10 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(m_action.seconds, 10)
         self.assertFalse(m_action.clearview)
         self.assertEqual(m_action.start_delay, 3)
-        self.assertEqual(m_action.horz_alignment, "0")
-        self.assertEqual(m_action.vert_alignment, "0")
+        self.assertEqual(m_action.horz_alignment, PictureAction.HorzAlignment.Left)
+        self.assertEqual(m_action.vert_alignment, PictureAction.VertAlignment.Top)
         self.assertEqual(m_action.size, 100)
-        self.assertEqual(m_action.size_units, "0")
+        self.assertEqual(m_action.size_units, PictureAction.SizeUnits.Original_Size)
 
         m2_name = "missions/saved_a_out_picture.miz"
         m.save(m2_name)
@@ -1169,7 +1170,7 @@ class BasicTests(unittest.TestCase):
         assert isinstance(m.triggerrules.triggers[0].actions[2], PictureToCountry)
         m_action = m.triggerrules.triggers[0].actions[2]
 
-        self.assertEqual(m_action.country, 1)
+        self.assertEqual(m_action.country_id, 1)
 
         m2_name = "missions/saved_a_out_picture.miz"
         m.save(m2_name)
@@ -1187,7 +1188,7 @@ class BasicTests(unittest.TestCase):
         assert isinstance(m.triggerrules.triggers[0].actions[3], PictureToGroup)
         m_action = m.triggerrules.triggers[0].actions[3]
 
-        self.assertEqual(m_action.group, 1)
+        self.assertEqual(m_action.group_id, 1)
 
         m2_name = "missions/saved_a_out_picture.miz"
         m.save(m2_name)
@@ -1205,7 +1206,7 @@ class BasicTests(unittest.TestCase):
         assert isinstance(m.triggerrules.triggers[0].actions[4], PictureToUnit)
         m_action = m.triggerrules.triggers[0].actions[4]
 
-        self.assertEqual(m_action.unit, 1)
+        self.assertEqual(m_action.unit_id, 1)
         self.assertEqual(m_action.file_res_key.key, "")
 
         m2_name = "missions/saved_a_out_picture.miz"
@@ -1224,7 +1225,7 @@ class BasicTests(unittest.TestCase):
         assert isinstance(m.triggerrules.triggers[0].actions[5], PictureToUnit)
         m_action = m.triggerrules.triggers[0].actions[5]
 
-        self.assertEqual(m_action.unit, 1)
+        self.assertEqual(m_action.unit_id, 1)
 
         m2_name = "missions/saved_a_out_picture.miz"
         m.save(m2_name)
