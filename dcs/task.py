@@ -72,6 +72,11 @@ class Task:
             "number": self.number
         }
 
+    def __eq__(self, other: Any) -> bool:
+        if not isinstance(other, Task):
+            return False
+        return self.dict() == other.dict()
+
 
 class ControlledTask(Task):
     """A ControlledTask is a task action with start and stop conditions.
