@@ -11,6 +11,8 @@ from dcs.flyingunit import Plane, Helicopter
 from dcs.point import MovingPoint, StaticPoint
 from dcs.country import Country
 from dcs.status_message import StatusMessage, MessageType, MessageSeverity
+from dcs.planes import PlaneType
+from dcs.helicopters import HelicopterType
 
 if TYPE_CHECKING:
     from . import Mission
@@ -157,11 +159,19 @@ class Coalition:
                     # units
                     for imp_unit_idx in pgroup["units"]:
                         imp_unit = pgroup["units"][imp_unit_idx]
+
+                        if imp_unit["type"] not in planes.plane_map:
+                            print("WARN:", "Unknown plane type", file=sys.stderr)
+                            plane_type = type(imp_unit["type"], (PlaneType,), {})
+                            plane_type.id = imp_unit["type"]
+                        else:
+                            plane_type = planes.plane_map[imp_unit["type"]]
+
                         plane = Plane(
                             mission.terrain,
                             _id=imp_unit["unitId"],
                             name=self.get_name(mission, imp_unit["name"]),
-                            _type=planes.plane_map[imp_unit["type"]],
+                            _type=plane_type,
                             _country=_country)
                         plane.load_from_dict(imp_unit)
 
@@ -196,11 +206,19 @@ class Coalition:
                     # units
                     for imp_unit_idx in pgroup["units"]:
                         imp_unit = pgroup["units"][imp_unit_idx]
+
+                        if imp_unit["type"] not in helicopters.helicopter_map:
+                            print("WARN:", "Unknown helicopter type", file=sys.stderr)
+                            helicopter_type = type(imp_unit["type"], (HelicopterType,), {})
+                            helicopter_type.id = imp_unit["type"]
+                        else:
+                            helicopter_type = helicopters.helicopter_map[imp_unit["type"]]
+
                         heli = Helicopter(
                             mission.terrain,
                             _id=imp_unit["unitId"],
                             name=self.get_name(mission, imp_unit["name"]),
-                            _type=helicopters.helicopter_map[imp_unit["type"]],
+                            _type=helicopter_type,
                             _country=_country)
                         heli.load_from_dict(imp_unit)
 
