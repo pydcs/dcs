@@ -1802,7 +1802,7 @@ class PictureAction(Action):
         Center = "1"
         Right = "2"
 
-        def __eq__(self, other) -> bool:
+        def __eq__(self, other: Any) -> bool:
             if isinstance(other, str):
                 return self.value == other
             return self == other
@@ -1812,7 +1812,7 @@ class PictureAction(Action):
         Center = "1"
         Bottom = "2"
 
-        def __eq__(self, other) -> bool:
+        def __eq__(self, other: Any) -> bool:
             if isinstance(other, str):
                 return self.value == other
             return self == other
@@ -1821,7 +1821,7 @@ class PictureAction(Action):
         OriginalSize = "0"
         WindowSize = "1"
 
-        def __eq__(self, other) -> bool:
+        def __eq__(self, other: Any) -> bool:
             if isinstance(other, str):
                 return self.value == other
             return self == other
@@ -1854,7 +1854,7 @@ class PictureAction(Action):
         d["size"] = self.size
         return d
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: Any) -> bool:
         if isinstance(other, self.__class__):
             return self.__dict__ == other.__dict__
         return False
@@ -1875,7 +1875,7 @@ class PictureToAll(PictureAction):
                        horz_alignment, vert_alignment, size, size_units]
 
     @classmethod
-    def create_from_dict(cls, d, mission) -> "PictureToAll":
+    def create_from_dict(cls, d: Dict[str, Any], mission: Mission) -> PictureToAll:
         return cls(ResourceKey(d["file"]), d["seconds"], d["clearview"], d["start_delay"],
                    d["horzAlignment"], d["vertAlignment"], d["size"], d["size_units"])
 
@@ -1896,7 +1896,7 @@ class PictureToCoalition(PictureAction):
                        start_delay, horz_alignment, vert_alignment, size, size_units]
 
     @classmethod
-    def create_from_dict(cls, d, mission) -> "PictureToCoalition":
+    def create_from_dict(cls, d: Dict[str, Any], mission: Mission) -> PictureToCoalition:
         return cls(d["coalitionlist"], ResourceKey(d["file"]), d["seconds"], d["clearview"], d["start_delay"],
                    d["horzAlignment"], d["vertAlignment"], d["size"], d["size_units"])
 
