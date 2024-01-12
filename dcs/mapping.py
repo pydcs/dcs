@@ -98,16 +98,11 @@ class Vector2:
     y: float
 
 
-@dataclass
-class WWIIFollowBigFormationPosition:
+@dataclass(frozen=True)
+class Vector3:
     x: int
     y: int
     z: int
-
-    def __eq__(self, other):
-        if isinstance(other, dict):
-            return self.__dict__ == other
-        return self.__dict__ == other.__dict__
 
 
 class Point(Vector2):

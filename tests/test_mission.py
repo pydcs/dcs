@@ -12,7 +12,6 @@ from dcs.status_message import MessageSeverity, MessageType
 from dcs.flyingunit import FlyingUnit
 from dcs.unit import Ship
 from dcs.task import WWIIFollowBigFormation
-from dcs.mapping import WWIIFollowBigFormationPosition
 
 
 class BasicTests(unittest.TestCase):
@@ -900,7 +899,7 @@ class BasicTests(unittest.TestCase):
         self.assertNotIn("groupId", task.params)
         self.assertNotIn("lastWptIndex", task.params)
         self.assertEqual(task.params["formationType"], WWIIFollowBigFormation.FormationType.COMBAT_BOX_FOR_OPEN_FORMATION)
-        self.assertEqual(task.params["pos"], WWIIFollowBigFormationPosition(0, 0, 0))
+        self.assertEqual(task.params["pos"], {"x": 0, "y": 0, "z": 0})
         self.assertTrue(task.params["lastWptIndexFlagChangedManually"])
         self.assertEqual(len(task.params), 7)
 
@@ -926,7 +925,7 @@ class BasicTests(unittest.TestCase):
         task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[1].points[0].tasks[5]
 
         self.assertEqual(task.params["formationType"], WWIIFollowBigFormation.FormationType.JAVELIN_DOWN)
-        self.assertEqual(task.params["pos"], WWIIFollowBigFormationPosition(-480, -70, -240))
+        self.assertEqual(task.params["pos"], {"x": -480, "y": -70, "z": -240})
         self.assertEqual(task.params["groupId"], 2)
         self.assertEqual(task.params["posInGroup"], 2)
         self.assertEqual(task.params["lastWptIndex"], 3)
@@ -955,7 +954,7 @@ class BasicTests(unittest.TestCase):
         task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[2].points[0].tasks[5]
 
         self.assertEqual(task.params["formationType"], WWIIFollowBigFormation.FormationType.COMBAT_BOX)
-        self.assertEqual(task.params["pos"], WWIIFollowBigFormationPosition(-320, -50, -0))
+        self.assertEqual(task.params["pos"], {"x": -320, "y": -50, "z": -0})
         self.assertEqual(task.params["groupId"], 2)
         self.assertEqual(task.params["posInBox"], 3)
         self.assertEqual(task.params["lastWptIndex"], 3)
@@ -984,7 +983,7 @@ class BasicTests(unittest.TestCase):
         task = m.coalition['blue'].country("Combined Joint Task Forces Blue").plane_group[3].points[0].tasks[5]
 
         self.assertEqual(task.params["formationType"], WWIIFollowBigFormation.FormationType.COMBAT_BOX_FOR_OPEN_FORMATION)
-        self.assertEqual(task.params["pos"], WWIIFollowBigFormationPosition(-160, 50, 240))
+        self.assertEqual(task.params["pos"], {"x": -160, "y": 50, "z": 240})
         self.assertEqual(task.params["groupId"], 2)
         self.assertEqual(task.params["posInBox"], 1)
         self.assertEqual(task.params["lastWptIndex"], 3)

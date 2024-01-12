@@ -9,7 +9,7 @@ Also options and commands are task actions.
 """
 from typing import List, Dict, Optional, Type, Any, Union
 from enum import Enum, IntEnum
-from dcs.mapping import Vector2, WWIIFollowBigFormationPosition
+from dcs.mapping import Vector2, Vector3
 from dcs.unit import Unit
 
 
@@ -531,7 +531,7 @@ class EscortTaskAction(Task):
             "targetTypes": {i: targets[i - 1] for i in range(1, len(targets) + 1)},
             "pos": position
         }
-        if group_id:
+        if group_id is not None:
             self.params["groupId"] = group_id
         if lastwpt:
             self.params["lastWptIndexFlagChangedManually"] = True
@@ -1037,7 +1037,7 @@ class WWIIFollowBigFormation(Task):
 
     def __init__(self,
                  group_id: Optional[int] = None,
-                 position: WWIIFollowBigFormationPosition = WWIIFollowBigFormationPosition(0, 0, 0),
+                 position: Vector3 = Vector3(0, 0, 0),
                  last_wpt_index_flag: bool = False,
                  last_wpt_index_flag_changed_manually: bool = False,
                  formation_type: FormationType = FormationType.COMBAT_BOX_FOR_OPEN_FORMATION,
@@ -1048,7 +1048,11 @@ class WWIIFollowBigFormation(Task):
         super().__init__(self.Id)
 
         self.params = {
-            "pos": position,
+            "pos": {
+                "x": position.x,
+                "y": position.y,
+                "z": position.z
+            },
             "lastWptIndexFlag": last_wpt_index_flag,
             "lastWptIndexFlagChangedManually": last_wpt_index_flag_changed_manually,
             "lastWptIndex": last_wpt_index,
@@ -1057,7 +1061,7 @@ class WWIIFollowBigFormation(Task):
             "posInGroup": pos_in_group,
             "posInWing": pos_in_wing
         }
-        if group_id:
+        if group_id is not None:
             self.params["groupId"] = group_id
         if last_wpt_index:
             self.params["lastWptIndex"] = last_wpt_index
@@ -1100,7 +1104,7 @@ tasks_map: Dict[str, Type[Task]] = {
     AttackUnit.Id: AttackUnit,
     AttackMapObject.Id: AttackMapObject,
     EngageTargets.Id: EngageTargets,
-    WWIIFollowBigFormation.Id: WWIIFollowBigFormation
+    WWIIFollowBigFormation.Id: WWIIFollowBigFormation,
 }
 
 
