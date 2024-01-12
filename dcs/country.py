@@ -82,13 +82,12 @@ class Country:
         return None
 
     def find_group_by_id(self, group_id: int) -> Optional[Group]:
-        groups = [self.vehicle_group,
-                  self.ship_group,
-                  self.plane_group,
-                  self.helicopter_group,
-                  self.static_group]
+        groups: List = [self.vehicle_group,
+                        self.ship_group,
+                        self.plane_group,
+                        self.helicopter_group,
+                        self.static_group]
         for search_group in groups:
-            assert isinstance(search_group, list)
             for group in search_group:
                 if group.id == group_id:
                     return group
