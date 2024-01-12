@@ -1134,7 +1134,7 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(m_action.horz_alignment, PictureAction.HorzAlignment.Left)
         self.assertEqual(m_action.vert_alignment, PictureAction.VertAlignment.Top)
         self.assertEqual(m_action.size, 100)
-        self.assertEqual(m_action.size_units, PictureAction.SizeUnits.Original_Size)
+        self.assertEqual(m_action.size_units, PictureAction.SizeUnits.OriginalSize)
 
         m2_name = "missions/saved_a_out_picture.miz"
         m.save(m2_name)

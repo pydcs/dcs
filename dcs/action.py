@@ -1818,8 +1818,8 @@ class PictureAction(Action):
             return self == other
 
     class SizeUnits(Enum):
-        Original_Size = "0"
-        Window_Size = "1"
+        OriginalSize = "0"
+        WindowSize = "1"
 
         def __eq__(self, other) -> bool:
             if isinstance(other, str):
