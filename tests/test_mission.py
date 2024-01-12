@@ -1170,7 +1170,7 @@ class BasicTests(unittest.TestCase):
         assert isinstance(m.triggerrules.triggers[0].actions[2], PictureToCountry)
         m_action = m.triggerrules.triggers[0].actions[2]
 
-        self.assertEqual(m_action.country_id, 1)
+        self.assertEqual(m_action.country, dcs.countries.get_by_name("Ukraine"))
 
         m2_name = "missions/saved_a_out_picture.miz"
         m.save(m2_name)
@@ -1188,7 +1188,7 @@ class BasicTests(unittest.TestCase):
         assert isinstance(m.triggerrules.triggers[0].actions[3], PictureToGroup)
         m_action = m.triggerrules.triggers[0].actions[3]
 
-        self.assertEqual(m_action.group_id, 1)
+        self.assertEqual(m_action.group.id, 1)
 
         m2_name = "missions/saved_a_out_picture.miz"
         m.save(m2_name)
@@ -1196,7 +1196,10 @@ class BasicTests(unittest.TestCase):
         m2 = dcs.mission.Mission()
         m2.load_file(m2_name)
 
-        self.assertEqual(m_action, m2.triggerrules.triggers[0].actions[3])
+        assert isinstance(m2.triggerrules.triggers[0].actions[3], PictureToGroup)
+        m2_action = m2.triggerrules.triggers[0].actions[3]
+
+        self.assertEqual(m_action.group.id, m2_action.group.id)
 
     def test_action_a_out_picture_u_no_file(self) -> None:
         mizname = "tests/missions/a_out_picture.miz"

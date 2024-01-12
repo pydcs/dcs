@@ -1,5 +1,5 @@
 import sys
-from typing import Dict, Union, List, TYPE_CHECKING
+from typing import Dict, Union, List, TYPE_CHECKING, Optional
 import dcs.countries as countries
 from dcs.mapping import Point
 import dcs.unitgroup as unitgroup
@@ -284,6 +284,14 @@ class Coalition:
     def find_group(self, group_name, search="exact"):
         for c in self.countries:
             g = self.countries[c].find_group(group_name, search)
+            if g:
+                return g
+
+        return None
+
+    def find_group_by_id(self, group_id: int) -> Optional[unitgroup.Group]:
+        for c in self.countries:
+            g = self.countries[c].find_group_by_id(group_id)
             if g:
                 return g
 

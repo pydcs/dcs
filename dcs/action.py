@@ -1,7 +1,15 @@
-from typing import Any, Dict, List, Type, Optional
+from __future__ import annotations
+
+from typing import Any, Dict, List, Type, Optional, TYPE_CHECKING
 from dcs.lua.serialize import dumps
 from dcs.translation import String, ResourceKey
 from enum import Enum, IntEnum
+import dcs.countries as countries
+
+if TYPE_CHECKING:
+    from .mission import Mission
+    from .country import Country
+    from .unitgroup import Group
 
 
 class Action:
@@ -1901,7 +1909,7 @@ class PictureToCoalition(PictureAction):
 class PictureToCountry(PictureAction):
     predicate = "a_out_picture_c"
 
-    def __init__(self, country_id: int, file_res_key: ResourceKey, seconds: int,
+    def __init__(self, country: Country, file_res_key: ResourceKey, seconds: int,
                  clearview: bool, start_delay: int,
                  horz_alignment: PictureAction.HorzAlignment, vert_alignment: PictureAction.VertAlignment,
                  size: int, size_units: PictureAction.SizeUnits) -> None:
@@ -1909,25 +1917,26 @@ class PictureToCountry(PictureAction):
                          seconds=seconds, clearview=clearview,
                          start_delay=start_delay, horz_alignment=horz_alignment,
                          vert_alignment=vert_alignment, size=size, size_units=size_units)
-        self.country_id = country_id
-        self.params = [self.country_id, self.file_res_key, seconds, clearview,
+        self.country = country
+        self.params = [self.country.id, self.file_res_key, seconds, clearview,
                        start_delay, horz_alignment, vert_alignment, size, size_units]
 
     @classmethod
-    def create_from_dict(cls, d, mission) -> "PictureToCountry":
-        return cls(d["countrylist"], ResourceKey(d["file"]), d["seconds"], d["clearview"], d["start_delay"],
+    def create_from_dict(cls, d: Dict[str, Any], mission: Mission) -> PictureToCountry:
+        return cls(countries.get_by_id(d["countrylist"]), ResourceKey(d["file"]),
+                   d["seconds"], d["clearview"], d["start_delay"],
                    d["horzAlignment"], d["vertAlignment"], d["size"], d["size_units"])
 
     def dict(self) -> Dict[str, Any]:
         d = super().dict()
-        d["countrylist"] = self.country_id
+        d["countrylist"] = self.country.id
         return d
 
 
 class PictureToGroup(PictureAction):
     predicate = "a_out_picture_g"
 
-    def __init__(self, group_id: int, file_res_key: ResourceKey, seconds: int,
+    def __init__(self, group: Group, file_res_key: ResourceKey, seconds: int,
                  clearview: bool, start_delay: int,
                  horz_alignment: PictureAction.HorzAlignment, vert_alignment: PictureAction.VertAlignment,
                  size: int, size_units: PictureAction.SizeUnits) -> None:
@@ -1935,18 +1944,20 @@ class PictureToGroup(PictureAction):
                          seconds=seconds, clearview=clearview,
                          start_delay=start_delay, horz_alignment=horz_alignment,
                          vert_alignment=vert_alignment, size=size, size_units=size_units)
-        self.group_id = group_id
-        self.params = [self.group_id, self.file_res_key, seconds, clearview,
+        self.group = group
+        self.params = [self.group.id, self.file_res_key, seconds, clearview,
                        start_delay, horz_alignment, vert_alignment, size, size_units]
 
     @classmethod
-    def create_from_dict(cls, d, mission) -> "PictureToGroup":
-        return cls(d["group"], ResourceKey(d["file"]), d["seconds"], d["clearview"], d["start_delay"],
+    def create_from_dict(cls, d: Dict[str, Any], mission: Mission) -> PictureToGroup:
+        group = mission.find_group_by_id(d["group"])
+        assert group is not None
+        return cls(group, ResourceKey(d["file"]), d["seconds"], d["clearview"], d["start_delay"],
                    d["horzAlignment"], d["vertAlignment"], d["size"], d["size_units"])
 
     def dict(self) -> Dict[str, Any]:
         d = super().dict()
-        d["group"] = self.group_id
+        d["group"] = self.group.id
         return d
 
 
@@ -1966,7 +1977,7 @@ class PictureToUnit(PictureAction):
                        start_delay, horz_alignment, vert_alignment, size, size_units]
 
     @classmethod
-    def create_from_dict(cls, d, mission) -> "PictureToUnit":
+    def create_from_dict(cls, d: Dict[str, Any], mission: Mission) -> PictureToUnit:
         return cls(d["unit"], ResourceKey(d["file"]), d["seconds"], d["clearview"], d["start_delay"],
                    d["horzAlignment"], d["vertAlignment"], d["size"], d["size_units"])
 
