@@ -3,7 +3,7 @@ from __future__ import annotations
 from dcs.helicopters import HelicopterType
 from dcs.planes import PlaneType
 from dcs.unitgroup import VehicleGroup, ShipGroup, PlaneGroup, StaticGroup, HelicopterGroup, FlyingGroup, Group
-from typing import List, Dict, Optional, Set, Type
+from typing import List, Dict, Optional, Set, Type, Sequence
 
 
 def find_exact(group_name, find_name):
@@ -82,11 +82,11 @@ class Country:
         return None
 
     def find_group_by_id(self, group_id: int) -> Optional[Group]:
-        groups: List = [self.vehicle_group,
-                        self.ship_group,
-                        self.plane_group,
-                        self.helicopter_group,
-                        self.static_group]
+        groups: List[Sequence[Group]] = [self.vehicle_group,
+                                         self.ship_group,
+                                         self.plane_group,
+                                         self.helicopter_group,
+                                         self.static_group]
         for search_group in groups:
             for group in search_group:
                 if group.id == group_id:
