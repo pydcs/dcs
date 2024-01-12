@@ -352,7 +352,8 @@ class Mission:
         for col_name in ["blue", "red", "neutrals"]:
             if col_name in imp_mission["coalition"]:
                 self.coalition[col_name] = Coalition(col_name, imp_mission["coalition"][col_name]["bullseye"])
-                status += self.coalition[col_name].load_from_dict(self, imp_mission["coalition"][col_name])
+                status += self.coalition[col_name].load_from_dict(self, imp_mission["coalition"][col_name],
+                                                                  imp_mission["coalitions"][col_name])
 
         # triggers
         self.bypassed_triggers = None
@@ -2067,7 +2068,7 @@ class Mission:
         col_blue = list(col_blue)
         col_red = list(col_red)
         m["coalitions"] = {
-            "neutral": {x + 1: col_neutral[x] for x in range(0, len(col_neutral))},
+            "neutrals": {x + 1: col_neutral[x] for x in range(0, len(col_neutral))},
             "blue": {x + 1: col_blue[x] for x in range(0, len(col_blue))},
             "red": {x + 1: col_red[x] for x in range(0, len(col_red))}
         }
