@@ -1951,7 +1951,9 @@ class PictureToGroup(PictureAction):
     @classmethod
     def create_from_dict(cls, d: Dict[str, Any], mission: Mission) -> PictureToGroup:
         group = mission.find_group_by_id(d["group"])
-        assert group is not None
+        if group is None:
+            raise RuntimeError("Group id {} found in PictureToGroup action, "
+                               "but it does not exist in the mission.".format(d["group"]))
         return cls(group, ResourceKey(d["file"]), d["seconds"], d["clearview"], d["start_delay"],
                    d["horzAlignment"], d["vertAlignment"], d["size"], d["size_units"])
 
