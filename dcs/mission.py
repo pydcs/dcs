@@ -42,6 +42,7 @@ from dcs.flyingunit import Plane, Helicopter
 from dcs.helicopters import HelicopterType
 from dcs.planes import PlaneType
 from dcs.status_message import StatusMessage, MessageType, MessageSeverity
+from dcs.unitgroup import Group
 
 
 class StartType(Enum):
@@ -1808,7 +1809,7 @@ class Mission:
                 return g
         return None
 
-    def find_group_by_id(self, group_id: int) -> Optional[unitgroup.Group]:
+    def find_group_by_id(self, group_id: int) -> Optional[Group]:
         """Searches a group with the given groupId
 
         Args:
@@ -1819,7 +1820,7 @@ class Mission:
         """
         for k in self.coalition:
             g = self.coalition[k].find_group_by_id(group_id)
-            if g:
+            if g is not None:
                 return g
         return None
 

@@ -11,6 +11,7 @@ from dcs.flyingunit import Plane, Helicopter
 from dcs.point import MovingPoint, StaticPoint
 from dcs.country import Country
 from dcs.status_message import StatusMessage, MessageType, MessageSeverity
+from dcs.unitgroup import Group
 
 if TYPE_CHECKING:
     from . import Mission
@@ -289,10 +290,10 @@ class Coalition:
 
         return None
 
-    def find_group_by_id(self, group_id: int) -> Optional[unitgroup.Group]:
+    def find_group_by_id(self, group_id: int) -> Optional[Group]:
         for c in self.countries:
             g = self.countries[c].find_group_by_id(group_id)
-            if g:
+            if g is not None:
                 return g
 
         return None
