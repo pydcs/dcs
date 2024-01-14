@@ -323,6 +323,11 @@ class Expend(Enum):
     Half = "Half"
     All = "All"
 
+    def __eq__(self, other: Any) -> bool:
+        if isinstance(other, str):
+            return self.value == other
+        return self == other
+
 
 class AttackGroup(Task):
     """Attack group task action
@@ -1077,6 +1082,39 @@ class WWIIFollowBigFormation(Task):
         return False
 
 
+class CarpetBombing(Task):
+    Id = "CarpetBombing"
+
+    class AttackType(Enum):
+        Carpet = "Carpet",
+
+        def __eq__(self, other: Any) -> bool:
+            if isinstance(other, str):
+                return self.value == other
+            return self == other
+
+    def __init__(self, altitude: int = 2000, altitude_enabled: bool = False,
+                 attack_qty: int = 1, attack_qty_limit: bool = False,
+                 attack_type: AttackType = AttackType.Carpet, carpet_length: int = 500,
+                 expend: Expend = Expend.Auto, group_attack: bool = False,
+                 weapon_type: WeaponType = WeaponType.Auto,
+                 x: float = 0, y: float = 0) -> None:
+        super().__init__(self.Id)
+        self.params = {
+            "altitude": altitude,
+            "altitudeEnabled": altitude_enabled,
+            "attackQty": attack_qty,
+            "attackQtyLimit": attack_qty_limit,
+            "attackType": attack_type,
+            "carpetLength": carpet_length,
+            "expend": str(expend),
+            "groupAttack": group_attack,
+            "weaponType": weapon_type.value,
+            "x": x,
+            "y": y,
+        }
+
+
 tasks_map: Dict[str, Type[Task]] = {
     ControlledTask.Id: ControlledTask,
     EscortTaskAction.Id: EscortTaskAction,
@@ -1110,6 +1148,7 @@ tasks_map: Dict[str, Type[Task]] = {
     AttackMapObject.Id: AttackMapObject,
     EngageTargets.Id: EngageTargets,
     WWIIFollowBigFormation.Id: WWIIFollowBigFormation,
+    CarpetBombing.Id: CarpetBombing,
 }
 
 
