@@ -1240,18 +1240,19 @@ class BasicTests(unittest.TestCase):
 
     def test_empty_mission_with_coalitions(self) -> None:
         m = dcs.mission.Mission()
-        m_filename = "tests/missions/empty-mission-with-coalitions.miz"
+        m_filename = "tests/missions/countries-without-units-on-the-map.miz"
         m.load_file(m_filename)
 
         m_blue_countries = m.coalition['blue'].countries
         for country in ["Australia", "UK", "USA", "USSR"]:
             self.assertIn(country, m_blue_countries)
+        self.assertEqual(len(m.coalition['blue'].countries["UK"].plane_group), 1)
 
         m_red_countries = m.coalition['red'].countries
         for country in ["Third Reich", "Bulgaria", "Romania", "Finland"]:
             self.assertIn(country, m_red_countries)
 
-        m2_miz_filename = "missions/saved.empty-mission-with-coalitions.miz"
+        m2_miz_filename = "missions/saved.countries-without-units-on-the-map.miz"
         m.save(m2_miz_filename)
 
         m2 = dcs.mission.Mission()
@@ -1260,3 +1261,6 @@ class BasicTests(unittest.TestCase):
         m2_red_countries = m2.coalition['red'].countries
         self.assertTrue(sorted(m_blue_countries.keys()), sorted(m2_blue_countries.keys()))
         self.assertTrue(sorted(m_red_countries.keys()), sorted(m2_red_countries.keys()))
+        self.assertEqual(len(m.coalition['blue'].countries["UK"].plane_group),
+                         len(m2.coalition['blue'].countries["UK"].plane_group))
+
