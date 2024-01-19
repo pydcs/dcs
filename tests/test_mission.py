@@ -730,6 +730,7 @@ class BasicTests(unittest.TestCase):
         image_path = 'tests/images/blue.png'
         reskey_b = m.add_picture_blue(image_path)
         reskey_r = m.add_picture_red(image_path)
+        reskey_n = m.add_picture_neutral(image_path)
 
         mission_path = 'missions/test_mission_pictureFileName.miz'
         m.save(mission_path)
@@ -741,6 +742,8 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(m2.pictureFileNameB[0], reskey_b.key)
         self.assertEqual(len(m2.pictureFileNameR), 1)
         self.assertEqual(m2.pictureFileNameR[0], reskey_r.key)
+        self.assertEqual(len(m2.pictureFileNameN), 1)
+        self.assertEqual(m2.pictureFileNameN[0], reskey_n.key)
 
     def test_create_quad_point_zone(self):
         caucasus = dcs.terrain.Caucasus()
