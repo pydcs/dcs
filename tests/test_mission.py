@@ -1237,3 +1237,32 @@ class BasicTests(unittest.TestCase):
         m2.load_file(m2_name)
 
         self.assertEqual(m_action, m2.triggerrules.triggers[0].actions[5])
+
+    def test_resource_name_conflict_in_two_missions(self) -> None:
+        m1_filename = "missions/saved.m1.miz"
+        m1 = dcs.Mission(terrain=dcs.terrain.Caucasus())
+        m1_img_path = 'tests/images/m1/briefing.png'
+        m1.add_picture_blue(m1_img_path)
+        m1.save(m1_filename)
+
+        m2_filename = "missions/saved.m2.miz"
+        m2 = dcs.Mission(terrain=dcs.terrain.Caucasus())
+        m2_img_path = 'tests/images/m2/briefing.png'
+        m2.add_picture_blue(m2_img_path)
+        m2.save(m2_filename)
+
+        # verify that when a mission file is loaded
+        # it creates a unique temp folders for it's
+        # resources. If that's not true m2, which is loaded
+        # last, would overwrite resources from m1, and if m1
+        # is safed after m2 is loaded, it's resources
+        # would not have the right content.
+
+        m1 = dcs.Mission()
+        m1.load_file(m1_filename)
+        m2 = dcs.Mission()
+        m2.load_file(m2_filename)
+
+        self.assertNotEqual(m1.tmpdir, m2.tmpdir)
+        self.assertNotEqual(list(m1.map_resource.files["DEFAULT"].values()),
+                            list(m2.map_resource.files["DEFAULT"].values()))

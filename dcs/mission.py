@@ -106,6 +106,7 @@ class Mission:
         self.current_group_id = 0
         self.current_dict_id = 0
         self.filename: Optional[str] = None
+        self.tmpdir: Optional[str] = None
 
         self.translation = Translation(self)
         self.map_resource = MapResource(self)
@@ -234,6 +235,7 @@ class Mission:
         self.current_unit_id = 0
         self.current_group_id = 0
         self.current_dict_id = 0
+        self.tmpdir = tempfile.mkdtemp()
         status = []
 
         def loaddict(fname: str, mizfile: zipfile.ZipFile, reserved_files: List[str]) -> Dict[str, Any]:
@@ -2107,14 +2109,13 @@ class MapResource:
 
     def load_from_dict(self, _dict, zipf: zipfile.ZipFile, lang='DEFAULT'):
         _dict = _dict["mapResource"]
-
         for key in _dict:
             filename = _dict[key]
             filepath = 'l10n/{lang}/{fn}'.format(lang=lang, fn=filename)
             self.added_paths.append(filepath)
 
             try:
-                extractedpath = zipf.extract(filepath, tempfile.gettempdir())
+                extractedpath = zipf.extract(filepath, self.mission.tmpdir)
                 self.add_resource_file(extractedpath, lang, key)
             except KeyError as ke:
                 print(ke, file=sys.stderr)
@@ -2125,7 +2126,7 @@ class MapResource:
                 continue
 
             try:
-                extractedpath = zipf.extract(filepath, tempfile.gettempdir())
+                extractedpath = zipf.extract(filepath, self.mission.tmpdir)
                 self.binary_files.append({
                     "path": os.path.abspath(extractedpath),
                     "respath": filepath,
@@ -2167,7 +2168,10 @@ class MapResource:
         :param lang:
         :return:
         """
-        return self.files[lang][resource_key.key][len(tempfile.gettempdir()) + len('/l10n//') + len(lang):]
+        if self.mission.tmpdir is None:
+            raise RuntimeError("get_file_path() only works for loaded missions.")
+
+        return self.files[lang][resource_key.key][len(self.mission.tmpdir) + len('/l10n//') + len(lang):]
 
     def store(self, zipf: zipfile.ZipFile, lang='DEFAULT'):
         d = {}
