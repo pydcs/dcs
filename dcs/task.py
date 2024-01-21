@@ -162,8 +162,8 @@ class ControlledTask(Task):
         self.params["stopCondition"]["duration"] = duration
 
 
-class WeaponType(Enum):
-    Auto = 1073741822
+class WeaponType(IntEnum):
+    Auto = 9663676414
     NoWeapon = 0
     All = 4294967295
     Unguided = 805339120
