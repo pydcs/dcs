@@ -1420,7 +1420,7 @@ class SoundToUnit(Action):
     predicate = "a_out_sound_u"
 
     def __init__(self, unit="", file_res_key: Optional[ResourceKey] = None):
-        super(SoundToUnit, self).__init__(SoundToGroup.predicate)
+        super(SoundToUnit, self).__init__(SoundToUnit.predicate)
         self.unit = unit
         if file_res_key:
             self.params.append(self.unit)
