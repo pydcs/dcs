@@ -116,6 +116,7 @@ class Mission:
         self._sortie = self.string("")
         self.pictureFileNameR: List[Union[ResourceKey, str]] = []
         self.pictureFileNameB: List[Union[ResourceKey, str]] = []
+        self.pictureFileNameN: List[Union[ResourceKey, str]] = []
         self.version = Mission._CURRENT_MIZ_VERSION
         self.currentKey = 0
         self.start_time = datetime.fromtimestamp(1306886400 + 43200, timezone.utc)  # 01-06-2011 12:00:00 UTC
@@ -314,6 +315,9 @@ class Mission:
             self.pictureFileNameR.append(imp_mission["pictureFileNameR"][pic])
         for pic in sorted(imp_mission["pictureFileNameB"]):
             self.pictureFileNameB.append(imp_mission["pictureFileNameB"][pic])
+        if "pictureFileNameN" in imp_mission:
+            for pic in sorted(imp_mission["pictureFileNameN"]):
+                self.pictureFileNameN.append(imp_mission["pictureFileNameN"][pic])
         self.version = imp_mission["version"]
         self.currentKey = imp_mission["currentKey"]
         imp_date = imp_mission.get("date", {"Year": 2011, "Month": 6, "Day": 1})
@@ -475,6 +479,19 @@ class Mission:
         """
         reskey = self.map_resource.add_resource_file(filepath)
         self.pictureFileNameB.append(reskey)
+        return reskey
+
+    def add_picture_neutral(self, filepath: str) -> ResourceKey:
+        """Adds a new briefing picture to the neutral coalition.
+
+        Args:
+            filepath: path to the image, jpg or bmp.
+
+        Returns:
+            the resource key of the picture
+        """
+        reskey = self.map_resource.add_resource_file(filepath)
+        self.pictureFileNameN.append(reskey)
         return reskey
 
     def next_group_id(self):
@@ -2053,6 +2070,9 @@ class Mission:
         m["pictureFileNameB"] = {}
         for i in range(0, len(self.pictureFileNameB)):
             m["pictureFileNameB"][i + 1] = str(self.pictureFileNameB[i])
+        m["pictureFileNameN"] = {}
+        for i in range(0, len(self.pictureFileNameN)):
+            m["pictureFileNameN"][i + 1] = str(self.pictureFileNameN[i])
         m["descriptionBlueTask"] = self._description_bluetask.id
         m["descriptionRedTask"] = self._description_redtask.id
         if self.init_script_file is not None:
