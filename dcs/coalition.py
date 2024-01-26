@@ -90,7 +90,7 @@ class Coalition:
         else:
             return name
 
-    def load_from_dict(self, mission, d) -> List[StatusMessage]:
+    def load_from_dict(self, mission, d, countries_in_coalition: Dict[int, int]) -> List[StatusMessage]:
         status: List[StatusMessage] = []
         for country_idx in d["country"]:
             imp_country = d["country"][country_idx]
@@ -257,6 +257,13 @@ class Coalition:
                         static_group.add_unit(static)
                     _country.add_static_group(static_group)
             self.add_country(_country)
+
+        # iterate over all .miz countries in coalition, even without any units
+        # on the map, and add them to the respective coalition
+        for country_id in countries_in_coalition.values():
+            if self.country_by_id(country_id) is None:
+                self.add_country(countries.get_by_id(country_id))
+
         return status
 
     def set_bullseye(self, bulls):
