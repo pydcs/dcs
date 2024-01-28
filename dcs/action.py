@@ -923,6 +923,36 @@ class MessageToGroup(TextAction):
         return d
 
 
+class MessageToUnit(TextAction):
+    predicate = "a_out_text_delay_u"
+
+    def __init__(self, unit_id: int = 0, text: String = String(),
+                 seconds: int = 10, clearview: bool = False, start_delay: int = 0) -> None:
+        super().__init__(self.predicate, text)
+        self.unit_id = unit_id
+        self.params.append(self.unit_id)
+        self.params.append(self.text)
+        self.seconds = seconds
+        self.params.append(self.seconds)
+        self.clearview = clearview
+        self.params.append(self.clearview)
+        self.start_delay = start_delay
+        self.params.append(self.start_delay)
+
+    @classmethod
+    def create_from_dict(cls, d: Dict[Any, Any], mission) -> MessageToUnit:
+        return cls(d["unit"], mission.translation.get_string(d["text"]),
+                   d["seconds"], d["clearview"], d["start_delay"])
+
+    def dict(self):
+        d = super(MessageToGroup, self).dict()
+        d["unit"] = self.unit_id
+        d["seconds"] = self.seconds
+        d["clearview"] = self.clearview
+        d["start_delay"] = self.start_delay
+        return d
+
+
 class PlayArgument(Action):
     predicate = "a_play_argument"
 
@@ -2027,6 +2057,7 @@ actions_map: Dict[str, Type[Action]] = {
     "a_out_text_delay_s": MessageToCoalition,
     "a_out_text_delay_c": MessageToCountry,
     "a_out_text_delay_g": MessageToGroup,
+    "a_out_text_delay_u": MessageToUnit,
     "a_play_argument": PlayArgument,
     "a_prevent_controls_synchronization": PreventControlsSynchronization,
     "a_radio_transmission": RadioTransmission,
