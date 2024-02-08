@@ -20,6 +20,9 @@ import dcs.action as action
 import dcs.condition as condition
 import dcs.task as task
 import dcs.mapping as mapping
+import hashlib
+import base64
+import string
 
 PointT = TypeVar("PointT", bound=StaticPoint)
 UnitT = TypeVar("UnitT", bound=Unit)
@@ -44,6 +47,7 @@ class Group(Generic[UnitT, PointT]):
         self.units: List[UnitT] = []
         self.points: List[PointT] = []
         self.name: str = name if name is not None else ""
+        self.password: Optional[str] = None
 
     def __str__(self):
         return "Group: " + self.name
@@ -52,6 +56,7 @@ class Group(Generic[UnitT, PointT]):
         self.hidden = d.get("hidden", False)
         self.hidden_on_planner = d.get("hiddenOnPlanner", False)
         self.hidden_on_mfd = d.get("hiddenOnMFD", False)
+        self.password = d.get("password", None)
 
     def add_unit(self, unit: UnitT):
         self.units.append(unit)
@@ -223,7 +228,23 @@ class Group(Generic[UnitT, PointT]):
             for point in self.points:
                 d["route"]["points"][i] = point.dict()
                 i += 1
+        if self.password is not None:
+            d["password"] = self.password
         return d
+
+    def set_password(self, password: str) -> None:
+        # see https://www.reddit.com/r/hoggit/comments/uf2sh0/psa_creating_the_new_slot_passwords_outside_of_dcs/
+
+        SALT_SIZE = 11
+        DIGEST_SIZE = 32
+
+        key = ''.join(random.sample(string.digits + string.ascii_letters, SALT_SIZE))
+        p_hash = hashlib.blake2b(key=key.encode(), digest_size=DIGEST_SIZE)
+        p_hash.update(password.encode())
+        b64hash = base64.encodebytes(p_hash.digest()).decode()
+
+        # remove '=\n' at the end.
+        self.password = key + ":" + b64hash[:len(b64hash) - 2]
 
 
 class MovingGroup(Generic[UnitT], Group[UnitT, MovingPoint]):
