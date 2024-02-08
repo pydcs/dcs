@@ -246,6 +246,9 @@ class Group(Generic[UnitT, PointT]):
         # remove '=\n' at the end.
         self.password = key + ":" + b64hash[:len(b64hash) - 2]
 
+    def set_no_password(self) -> None:
+        self.password = None
+
 
 class MovingGroup(Generic[UnitT], Group[UnitT, MovingPoint]):
     def __init__(self, _id, name=None, start_time=0):

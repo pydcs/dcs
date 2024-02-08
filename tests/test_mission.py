@@ -1378,3 +1378,11 @@ class BasicTests(unittest.TestCase):
         m2_flying_group = m2.coalition[coal_name].country(country_name).plane_group[0]
         self.assertIsNotNone(m2_flying_group.password)
         self.assertEqual(m2_flying_group.password, flying_group.password)
+
+        m2_flying_group.set_no_password()
+        m2.save('missions/saved.flying-group-with-no-password')
+
+        m3 = Mission()
+        m3.load_file('missions/saved.flying-group-with-no-password')
+        m3_flying_group = m3.coalition[coal_name].country(country_name).plane_group[0]
+        self.assertIsNone(m3_flying_group.password)
