@@ -18,6 +18,7 @@ from dcs.task import Task, CarpetBombing, Expend, WeaponType
 from dcs.action import Coalition
 from dcs.mission import Mission
 from enum import IntEnum
+from dcs.forcedoptions import ForcedOptions
 
 
 class BasicTests(unittest.TestCase):
@@ -1353,3 +1354,23 @@ class BasicTests(unittest.TestCase):
         validate_formation(m, m2, FormationPosition.Left, Expend.Four, WeaponType.IronBombs, False)
         validate_formation(m, m2, FormationPosition.Back, Expend.Auto, WeaponType.IronBombs, False)
         validate_formation(m, m2, FormationPosition.Right, Expend.Auto, WeaponType.Auto, False)
+
+    def test_geffect(self) -> None:
+        m = Mission()
+        m.load_file("tests/missions/g-effect-uncheked.miz")
+        self.assertIsNone(m.forced_options.geffect)
+
+        m.load_file("tests/missions/g-effect-none.miz")
+        self.assertEqual(m.forced_options.geffect, ForcedOptions.GEffect.None_)
+
+        m.load_file("tests/missions/g-effect-game.miz")
+        self.assertEqual(m.forced_options.geffect, ForcedOptions.GEffect.Game)
+
+        m.load_file("tests/missions/g-effect-sim.miz")
+        self.assertEqual(m.forced_options.geffect, ForcedOptions.GEffect.Realistic)
+
+        m.save("missions/saved.g-effect-sim.miz")
+
+        m2 = Mission()
+        m2.load_file("missions/saved.g-effect-sim.miz")
+        self.assertEqual(m.forced_options.geffect, m2.forced_options.geffect)
