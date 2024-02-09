@@ -18,8 +18,8 @@ class ForcedOptions:
         High = "high"
 
     class GEffect(Enum):
-        None_ = ""
-        Game = "game"
+        None_ = "none"
+        Game = "reduced"
         Realistic = "realistic"
 
     class Labels(Enum):
@@ -45,7 +45,7 @@ class ForcedOptions:
         self.unrestricted_satnav: Optional[bool] = None
         self.padlock: Optional[bool] = None
         self.wake_turbulence: Optional[bool] = None
-        self.geffect: Optional[bool] = None
+        self.geffect: Optional[ForcedOptions.GEffect] = None
         self.accidental_failures = None
         self.mini_hud: Optional[bool] = None
         self.cockpit_visual_recon_mode: Optional[bool] = None
@@ -69,8 +69,7 @@ class ForcedOptions:
         self.easy_flight = d.get("easyFlight")
         self.radio = d.get("radio")
         if d.get("geffect") is not None:
-            geffect = ForcedOptions.GEffect.Game.value if d["geffect"] == "reduced" else d["geffect"]
-            self.geffect = ForcedOptions.GEffect(geffect)
+            self.geffect = ForcedOptions.GEffect(d["geffect"])
         self.external_views = d.get("externalViews")
         self.birds = d.get("birds")
         if d.get("civTraffic") is not None:
