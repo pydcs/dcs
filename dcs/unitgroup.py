@@ -64,6 +64,38 @@ class Group(Generic[UnitT, PointT]):
     def add_point(self, point: PointT) -> None:
         self.points.append(point)
 
+    def set_password(self, password: str) -> None:
+        # see https://www.reddit.com/r/hoggit/comments/uf2sh0/psa_creating_the_new_slot_passwords_outside_of_dcs/
+
+        # encode from https://github.com/simonwhitaker/base64url
+        def encode(b: bytes, trim: bool = False, break_at: int = 0) -> str:
+            encoded_string = base64.urlsafe_b64encode(b).decode("utf-8")
+            if trim:
+                encoded_string = encoded_string.rstrip("=")
+
+            if break_at > 0:
+                i = 0
+                result = ""
+                while i < len(encoded_string):
+                    result += encoded_string[i: i + break_at] + "\n"
+                    i += break_at
+                return result
+            else:
+                return encoded_string
+
+        SALT_SIZE = 11
+        DIGEST_SIZE = 32
+
+        key = ''.join(random.sample(string.digits + string.ascii_letters, SALT_SIZE))
+        p_hash = hashlib.blake2b(key=key.encode(), digest_size=DIGEST_SIZE)
+        p_hash.update(password.encode())
+        b64url_hash = encode(p_hash.digest(), trim=True)
+
+        self.password = key + ":" + b64url_hash
+
+    def set_no_password(self) -> None:
+        self.password = None
+
     @property
     def x(self):
         if len(self.units) > 0:
@@ -231,23 +263,6 @@ class Group(Generic[UnitT, PointT]):
         if self.password is not None:
             d["password"] = self.password
         return d
-
-    def set_password(self, password: str) -> None:
-        # see https://www.reddit.com/r/hoggit/comments/uf2sh0/psa_creating_the_new_slot_passwords_outside_of_dcs/
-
-        SALT_SIZE = 11
-        DIGEST_SIZE = 32
-
-        key = ''.join(random.sample(string.digits + string.ascii_letters, SALT_SIZE))
-        p_hash = hashlib.blake2b(key=key.encode(), digest_size=DIGEST_SIZE)
-        p_hash.update(password.encode())
-        b64hash = base64.encodebytes(p_hash.digest()).decode()
-
-        # remove '=\n' at the end.
-        self.password = key + ":" + b64hash[:len(b64hash) - 2]
-
-    def set_no_password(self) -> None:
-        self.password = None
 
 
 class MovingGroup(Generic[UnitT], Group[UnitT, MovingPoint]):
