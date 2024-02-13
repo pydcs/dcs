@@ -945,7 +945,7 @@ class MessageToUnit(TextAction):
                    d["seconds"], d["clearview"], d["start_delay"])
 
     def dict(self):
-        d = super(MessageToGroup, self).dict()
+        d = super().dict()
         d["unit"] = self.unit_id
         d["seconds"] = self.seconds
         d["clearview"] = self.clearview
