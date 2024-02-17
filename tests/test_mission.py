@@ -1290,3 +1290,20 @@ class BasicTests(unittest.TestCase):
         m2 = Mission()
         m2.load_file("missions/saved.g-effect-sim.miz")
         self.assertEqual(m.forced_options.geffect, m2.forced_options.geffect)
+
+    def test_payload_restrictions(self) -> None:
+        m = Mission()
+        m.load_file("tests/missions/payload.restrictions.miz")
+
+        country_name = "USA"
+        coal_name = str(dcs.action.Coalition.Blue.value)
+
+        self.assertIsNotNone(m.coalition[coal_name].country(country_name).plane_group[0].units[0].payload_restricted)
+
+        m.save("missions/saved.payload.restrictions.miz")
+
+        m2 = Mission()
+        m2.load_file("missions/saved.payload.restrictions.miz")
+
+        self.assertDictEqual(m.coalition[coal_name].country(country_name).plane_group[0].units[0].payload_restricted,
+                             m2.coalition[coal_name].country(country_name).plane_group[0].units[0].payload_restricted)
