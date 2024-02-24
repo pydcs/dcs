@@ -358,8 +358,13 @@ class Mission:
         for col_name in ["blue", "red", "neutrals"]:
             if col_name in imp_mission["coalition"]:
                 self.coalition[col_name] = Coalition(col_name, imp_mission["coalition"][col_name]["bullseye"])
+                # Support .miz files saved by earlier versions of DCS or pydcs where countries in coalition 
+                # were not saved.
+                countries_in_coalition = {}
+                if col_name in imp_mission["coalitions"]:
+                    countries_in_coalition = imp_mission["coalitions"][col_name]
                 status += self.coalition[col_name].load_from_dict(self, imp_mission["coalition"][col_name],
-                                                                  imp_mission["coalitions"][col_name])
+                                                                  countries_in_coalition)
 
         # triggers
         self.bypassed_triggers = None
