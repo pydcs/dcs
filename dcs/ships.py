@@ -269,7 +269,7 @@ class Santafe(unittype.ShipType):
     name = "ARA Santa Fe S-21"
     detection_range = 0
     threat_range = 0
-    air_weapon_dist = 30000
+    air_weapon_dist = 0
 
 
 class Ara_vdm(unittype.ShipType):

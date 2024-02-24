@@ -1081,7 +1081,6 @@ class AH_64D_BLK_II(HelicopterType):
     }
 
     property_defaults: Dict[str, Any] = {
-        "FCR_RFI_removed": True,
         "PltNVG": True,
         "CpgNVG": True,
         "FlareBurstCount": 0,
@@ -1099,9 +1098,6 @@ class AH_64D_BLK_II(HelicopterType):
     }
 
     class Properties:
-
-        class FCR_RFI_removed:
-            id = "FCR_RFI_removed"
 
         class PltNVG:
             id = "PltNVG"
@@ -1194,13 +1190,6 @@ class AH_64D_BLK_II(HelicopterType):
             id = "OwnshipCallSign"
 
     properties = {
-        "FCR_RFI_removed": UnitPropertyDescription(
-            identifier="FCR_RFI_removed",
-            control="checkbox",
-            label="FCR/RFI removed",
-            default=True,
-            weight_when_on=-237.23,
-        ),
         "PltNVG": UnitPropertyDescription(
             identifier="PltNVG",
             control="checkbox",
@@ -1459,7 +1448,10 @@ class AH_64D_BLK_II(HelicopterType):
     class Pylon5:
         Internal_Auxiliary_Fuel_tank_100_gal_Combo_Pak = (5, Weapons.Internal_Auxiliary_Fuel_tank_100_gal_Combo_Pak)
 
-    pylons: Set[int] = {1, 2, 3, 4, 5}
+    class Pylon6:
+        AN_APG_78___Fire_Control_Radar_Radar_Frequency_Interferometer__FCR_RFI_ = (6, Weapons.AN_APG_78___Fire_Control_Radar_Radar_Frequency_Interferometer__FCR_RFI_)
+
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6}
 
     tasks = [task.CAS, task.GroundAttack, task.Escort, task.AFAC, task.AntishipStrike]
     task_default = task.CAS
@@ -2266,12 +2258,12 @@ class SA342M(HelicopterType):
     livery_name = "SA342M"  # from type
 
     class Pylon1:
-        HOT3_x1__ = (1, Weapons.HOT3_x1__)
-        HOT3_x2__ = (1, Weapons.HOT3_x2__)
+        _1_x_HOT_3___ATGM__SACLOS__HEAT___ = (1, Weapons._1_x_HOT_3___ATGM__SACLOS__HEAT___)
+        _2_x_HOT_3___ATGM__SACLOS__HEAT__ = (1, Weapons._2_x_HOT_3___ATGM__SACLOS__HEAT__)
 
     class Pylon2:
-        HOT3_x1___ = (2, Weapons.HOT3_x1___)
-        HOT3_x2___ = (2, Weapons.HOT3_x2___)
+        _1_x_HOT_3___ATGM__SACLOS__HEAT__ = (2, Weapons._1_x_HOT_3___ATGM__SACLOS__HEAT__)
+        _2_x_HOT_3___ATGM__SACLOS__HEAT = (2, Weapons._2_x_HOT_3___ATGM__SACLOS__HEAT)
 
     class Pylon3:
         Sand_Filter = (3, Weapons.Sand_Filter)
@@ -2399,8 +2391,8 @@ class SA342L(HelicopterType):
         FN_HMP400__100rnds_ = (1, Weapons.FN_HMP400__100rnds_)
         _1xMistral_ATAM_ = (1, Weapons._1xMistral_ATAM_)
         _2xMistral_ATAM = (1, Weapons._2xMistral_ATAM)
-        HOT3_x1 = (1, Weapons.HOT3_x1)
-        HOT3_x2 = (1, Weapons.HOT3_x2)
+        _1_x_HOT_3___ATGM__SACLOS__HEAT = (1, Weapons._1_x_HOT_3___ATGM__SACLOS__HEAT)
+        _2_x_HOT_3___ATGM__SACLOS__HEAT___ = (1, Weapons._2_x_HOT_3___ATGM__SACLOS__HEAT___)
 
     class Pylon2:
         Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
@@ -2418,8 +2410,8 @@ class SA342L(HelicopterType):
         FN_HMP400__100rnds_ = (2, Weapons.FN_HMP400__100rnds_)
         _2xMistral_ATAM_ = (2, Weapons._2xMistral_ATAM_)
         _1xMistral_ATAM = (2, Weapons._1xMistral_ATAM)
-        HOT3_x1_ = (2, Weapons.HOT3_x1_)
-        HOT3_x2_ = (2, Weapons.HOT3_x2_)
+        _1_x_HOT_3___ATGM__SACLOS__HEAT_ = (2, Weapons._1_x_HOT_3___ATGM__SACLOS__HEAT_)
+        _2_x_HOT_3___ATGM__SACLOS__HEAT_ = (2, Weapons._2_x_HOT_3___ATGM__SACLOS__HEAT_)
 
     class Pylon3:
         Sand_Filter = (3, Weapons.Sand_Filter)
