@@ -358,7 +358,7 @@ class Mission:
         for col_name in ["blue", "red", "neutrals"]:
             if col_name in imp_mission["coalition"]:
                 self.coalition[col_name] = Coalition(col_name, imp_mission["coalition"][col_name]["bullseye"])
-                # Support .miz files saved by earlier versions of DCS or pydcs where countries in coalition 
+                # Support .miz files saved by earlier versions of DCS or pydcs where countries in coalition
                 # were not saved.
                 countries_in_coalition = {}
                 if col_name in imp_mission["coalitions"]:
