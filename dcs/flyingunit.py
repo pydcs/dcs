@@ -46,6 +46,7 @@ class FlyingUnit(Unit):
         self.radio: Optional[AircraftRadioPresets] = None
         self.hardpoint_racks = True
         self.addpropaircraft = dict(_type.property_defaults) if _type.property_defaults else None
+        self.payload_restricted: Optional[Dict[int, Dict[int, str]]] = None
 
     def load_from_dict(self, d):
         super(FlyingUnit, self).load_from_dict(d)
@@ -71,6 +72,7 @@ class FlyingUnit(Unit):
         self.radio = d.get("Radio")
         self.hardpoint_racks = d.get("hardpoint_racks", None)
         self.addpropaircraft = d.get("AddPropAircraft")
+        self.payload_restricted = d["payload"].get("restricted", None)
         return True
 
     def set_parking(self, parking_slot: ParkingSlot):
@@ -227,6 +229,8 @@ class FlyingUnit(Unit):
             d["callsign"] = self.callsign_dict
         if self.radio:
             d["Radio"] = self.radio
+        if self.payload_restricted is not None:
+            d["payload"]["restricted"] = self.payload_restricted
         return d
 
 
