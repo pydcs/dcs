@@ -887,9 +887,9 @@ class Comandante_Luis_Piedrabuena(Airport):
                 airplanes=True, slot_name='F02', length=21.0, width=15.0, height=8.0, shelter=False))
 
 
-class Aerodromo_De_Tolhuin(Airport):
+class Tolhuin(Airport):
     id = 17
-    name = "Aerodromo De Tolhuin"
+    name = "Tolhuin"
     tacan = None
     unit_zones: List[mapping.Rectangle] = []
     civilian = False
@@ -923,9 +923,9 @@ class Aerodromo_De_Tolhuin(Airport):
                 airplanes=True, slot_name='F02', length=26.0, width=22.0, height=11.0, shelter=False))
 
 
-class Porvenir_Airfield(Airport):
+class Porvenir(Airport):
     id = 18
-    name = "Porvenir Airfield"
+    name = "Porvenir"
     tacan = None
     unit_zones: List[mapping.Rectangle] = []
     civilian = False
@@ -1067,9 +1067,9 @@ class Rio_Chico(Airport):
                 airplanes=False, slot_name='H03', length=30.0, width=23.0, height=10.0, shelter=False))
 
 
-class Caleta_Tortel_Airport(Airport):
+class Caleta_Tortel(Airport):
     id = 22
-    name = "Caleta Tortel Airport"
+    name = "Caleta Tortel"
     tacan = None
     unit_zones: List[mapping.Rectangle] = []
     civilian = True
@@ -1200,9 +1200,9 @@ class Hipico_Flying_Club(Airport):
                 airplanes=True, slot_name='04', length=21.0, width=15.0, height=8.0, shelter=False))
 
 
-class Aeropuerto_de_Gobernador_Gregores(Airport):
+class Gobernador_Gregores(Airport):
     id = 26
-    name = "Aeropuerto de Gobernador Gregores"
+    name = "Gobernador Gregores"
     tacan = None
     unit_zones: List[mapping.Rectangle] = []
     civilian = False
@@ -1233,9 +1233,9 @@ class Aeropuerto_de_Gobernador_Gregores(Airport):
                 airplanes=True, slot_name='02', length=26.0, width=22.0, height=11.0, shelter=False))
 
 
-class Aerodromo_O_Higgins(Airport):
+class O_Higgins(Airport):
     id = 27
-    name = "Aerodromo O'Higgins"
+    name = "O'Higgins"
     tacan = None
     unit_zones: List[mapping.Rectangle] = []
     civilian = False
@@ -1295,17 +1295,17 @@ ALL_AIRPORTS: List[Type[Airport]] = [
     El_Calafate,
     Puerto_Santa_Cruz,
     Comandante_Luis_Piedrabuena,
-    Aerodromo_De_Tolhuin,
-    Porvenir_Airfield,
+    Tolhuin,
+    Porvenir,
     Almirante_Schroeders,
     Rio_Turbio,
     Rio_Chico,
-    Caleta_Tortel_Airport,
+    Caleta_Tortel,
     Franco_Bianco,
     Goose_Green,
     Hipico_Flying_Club,
-    Aeropuerto_de_Gobernador_Gregores,
-    Aerodromo_O_Higgins,
+    Gobernador_Gregores,
+    O_Higgins,
     Gull_Point,
 ]
 

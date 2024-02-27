@@ -9,7 +9,7 @@ the aircraft is placed).
 function dumpairportdata()
     local S	= require('Serializer')
     local airdromedump = {}
-    for k, v in base.pairs(base.MapWindow.listAirdromes) do
+    for k, v in pairs(terrainDATA.getTerrainDATA('Airdromes')) do
         --MapWindow.listAirdromes[unit.boss.route.points[1].airdromeId].roadnet
         local sList = Terrain.getStandList(v.roadnet, {"SHELTER","FOR_HELICOPTERS","FOR_AIRPLANES","WIDTH","LENGTH","HEIGHT"})
         info = {}
@@ -18,7 +18,7 @@ function dumpairportdata()
         info["frequencies"] = AirdromeData.getAirdrome(AirdromeData.getAirdromeId(k))
         airdromedump[k] = info
     end
-    local f = base.io.open("C:\\standlist.lua", 'w')
+    local f = base.io.open("standlist.lua", 'w')
     if f then
             local s = S.new(f)
             s:serialize_simple2('airports', airdromedump)
@@ -31,7 +31,7 @@ end
 If you are unable to place aircraft in the ME (clicking does nothing), there is probably
 something wrong with the script. Check the DCS log for info.
 
-Once you've done that, C:\standlist.lua will have been written. Run the following to
+Once you've done that, standlist.lua will have been written in your DCS installation directory. Run the following to
 generate the data for pydcs:
 
     .\tools\airport_import.py -t $TERRAIN_NAME C:\standlist.lua
