@@ -20,9 +20,7 @@ import dcs.action as action
 import dcs.condition as condition
 import dcs.task as task
 import dcs.mapping as mapping
-import hashlib
-import base64
-import string
+from dcs.password import password_hash
 
 PointT = TypeVar("PointT", bound=StaticPoint)
 UnitT = TypeVar("UnitT", bound=Unit)
@@ -63,6 +61,12 @@ class Group(Generic[UnitT, PointT]):
 
     def add_point(self, point: PointT) -> None:
         self.points.append(point)
+
+    def set_password(self, password: str) -> None:
+        self.password = password_hash(password)
+
+    def set_no_password(self) -> None:
+        self.password = None
 
     @property
     def x(self):
@@ -231,23 +235,6 @@ class Group(Generic[UnitT, PointT]):
         if self.password is not None:
             d["password"] = self.password
         return d
-
-    def set_password(self, password: str) -> None:
-        # see https://www.reddit.com/r/hoggit/comments/uf2sh0/psa_creating_the_new_slot_passwords_outside_of_dcs/
-
-        SALT_SIZE = 11
-        DIGEST_SIZE = 32
-
-        key = ''.join(random.sample(string.digits + string.ascii_letters, SALT_SIZE))
-        p_hash = hashlib.blake2b(key=key.encode(), digest_size=DIGEST_SIZE)
-        p_hash.update(password.encode())
-        b64hash = base64.encodebytes(p_hash.digest()).decode()
-
-        # remove '=\n' at the end.
-        self.password = key + ":" + b64hash[:len(b64hash) - 2]
-
-    def set_no_password(self) -> None:
-        self.password = None
 
 
 class MovingGroup(Generic[UnitT], Group[UnitT, MovingPoint]):

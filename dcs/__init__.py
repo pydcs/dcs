@@ -20,5 +20,6 @@ from . import action
 from . import forcedoptions
 from . import installation
 from . import nav_target_point
+from . import password
 from .mapping import Point, Rectangle, Polygon
 from .mission import Mission
