@@ -17,7 +17,7 @@ class Anapa_Vityazevo(Airport):
     atc_radio = AtcRadio(hf_hz=3750000, vhf_low_hz=38400000, vhf_high_hz=121000000, uhf_hz=250000000)
 
     def __init__(self, terrain: Terrain) -> None:
-        super().__init__(mapping.Point(-5412.409668, 243128.820313, terrain), terrain)
+        super().__init__(mapping.Point(-5412.409668, 243128.820312, terrain), terrain)
 
         self.runways.append(Runway(id=1, name='22-04', main=RunwayApproach(name='22', heading=220, beacons=[RunwayBeacon(id='airfield12_1', runway_name='04-22', runway_id=1, runway_side='22'), RunwayBeacon(id='airfield12_0', runway_name='04-22', runway_id=1, runway_side='22')]), opposite=RunwayApproach(name='04', heading=40, beacons=[RunwayBeacon(id='airfield12_2', runway_name='04-22', runway_id=1, runway_side='04'), RunwayBeacon(id='airfield12_3', runway_name='04-22', runway_id=1, runway_side='04')])))
         self.parking_slots.append(ParkingSlot(
