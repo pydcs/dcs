@@ -10434,6 +10434,7 @@ class Christen_Eagle_II(PlaneType):
 
 class F_15ESE(PlaneType):
     id = "F-15ESE"
+    flyable = True
     height = 5.63
     width = 13.05
     length = 19.43
@@ -17317,6 +17318,7 @@ class Mirage_F1CE(PlaneType):
 
 class Mirage_F1EE(PlaneType):
     id = "Mirage-F1EE"
+    flyable = True
     height = 4.5
     width = 8.4
     length = 15.3
@@ -27156,6 +27158,7 @@ class Mirage_F1B(PlaneType):
 
 class Mirage_F1BE(PlaneType):
     id = "Mirage-F1BE"
+    flyable = True
     height = 4.5
     width = 8.4
     length = 15.3
