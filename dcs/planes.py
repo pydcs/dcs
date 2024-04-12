@@ -1203,7 +1203,7 @@ class Su_25TM(PlaneType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (4, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_ = (4, Weapons.Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_)
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (4, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
-        APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag = (4, Weapons.APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag)
+        APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag = (4, Weapons.APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (4, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (4, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
@@ -1309,7 +1309,7 @@ class Su_25TM(PlaneType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (8, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_ = (8, Weapons.Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_)
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (8, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
-        APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag = (8, Weapons.APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag)
+        APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag = (8, Weapons.APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (8, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (8, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
@@ -1504,7 +1504,7 @@ class Su_25T(PlaneType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (4, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_ = (4, Weapons.Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_)
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (4, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
-        APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag = (4, Weapons.APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag)
+        APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag = (4, Weapons.APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (4, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (4, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
@@ -1609,7 +1609,7 @@ class Su_25T(PlaneType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (8, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_ = (8, Weapons.Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_)
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (8, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
-        APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag = (8, Weapons.APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag)
+        APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag = (8, Weapons.APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (8, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (8, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
@@ -9459,7 +9459,6 @@ class C_101EB(PlaneType):
             identifier="SoloFlight",
             control="checkbox",
             label="Solo Flight",
-            player_only=True,
             default=False,
             weight_when_on=-80,
         ),
@@ -9605,7 +9604,6 @@ class C_101CC(PlaneType):
             identifier="SoloFlight",
             control="checkbox",
             label="Solo Flight",
-            player_only=True,
             default=False,
             weight_when_on=-80,
         ),
@@ -9826,6 +9824,7 @@ class J_11A(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (4, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (4, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
         SAB_100MN___100_kg_Illumination_Bomb = (4, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+#ERRR <CLEAN>
 
     class Pylon5:
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (5, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -9884,6 +9883,7 @@ class J_11A(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (7, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (7, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
         SAB_100MN___100_kg_Illumination_Bomb = (7, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+#ERRR <CLEAN>
 
     class Pylon8:
         R_73__AA_11_Archer____Infra_Red = (8, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -11213,9 +11213,9 @@ class F_16C_50(PlaneType):
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
         AIM_9X_Sidewinder_IR_AAM = (1, Weapons.AIM_9X_Sidewinder_IR_AAM)
+        CATM_9M = (1, Weapons.CATM_9M)
         AIM_120B_AMRAAM___Active_Radar_AAM = (1, Weapons.AIM_120B_AMRAAM___Active_Radar_AAM)
         AIM_120C_AMRAAM___Active_Radar_AAM = (1, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
-        CATM_9M = (1, Weapons.CATM_9M)
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
 
     class Pylon2:
@@ -11225,9 +11225,9 @@ class F_16C_50(PlaneType):
         AIM_9M_Sidewinder_IR_AAM = (2, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (2, Weapons.AIM_9L_Sidewinder_IR_AAM)
         AIM_9X_Sidewinder_IR_AAM = (2, Weapons.AIM_9X_Sidewinder_IR_AAM)
+        CATM_9M = (2, Weapons.CATM_9M)
         AIM_120B_AMRAAM___Active_Radar_AAM = (2, Weapons.AIM_120B_AMRAAM___Active_Radar_AAM)
         AIM_120C_AMRAAM___Active_Radar_AAM = (2, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
-        CATM_9M = (2, Weapons.CATM_9M)
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (2, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
 #ERRR <CLEAN>
 
@@ -11238,9 +11238,9 @@ class F_16C_50(PlaneType):
         AIM_9M_Sidewinder_IR_AAM = (3, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (3, Weapons.AIM_9L_Sidewinder_IR_AAM)
         AIM_9X_Sidewinder_IR_AAM = (3, Weapons.AIM_9X_Sidewinder_IR_AAM)
+        CATM_9M = (3, Weapons.CATM_9M)
         AIM_120B_AMRAAM___Active_Radar_AAM = (3, Weapons.AIM_120B_AMRAAM___Active_Radar_AAM)
         AIM_120C_AMRAAM___Active_Radar_AAM = (3, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
-        CATM_9M = (3, Weapons.CATM_9M)
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (3, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         LAU3_WP156 = (3, Weapons.LAU3_WP156)
         LAU3_WP1B = (3, Weapons.LAU3_WP1B)
@@ -11402,9 +11402,9 @@ class F_16C_50(PlaneType):
         AIM_9M_Sidewinder_IR_AAM = (7, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (7, Weapons.AIM_9L_Sidewinder_IR_AAM)
         AIM_9X_Sidewinder_IR_AAM = (7, Weapons.AIM_9X_Sidewinder_IR_AAM)
+        CATM_9M = (7, Weapons.CATM_9M)
         AIM_120B_AMRAAM___Active_Radar_AAM = (7, Weapons.AIM_120B_AMRAAM___Active_Radar_AAM)
         AIM_120C_AMRAAM___Active_Radar_AAM = (7, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
-        CATM_9M = (7, Weapons.CATM_9M)
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (7, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         LAU3_WP156 = (7, Weapons.LAU3_WP156)
         LAU3_WP1B = (7, Weapons.LAU3_WP1B)
@@ -11482,9 +11482,9 @@ class F_16C_50(PlaneType):
         AIM_9M_Sidewinder_IR_AAM = (8, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (8, Weapons.AIM_9L_Sidewinder_IR_AAM)
         AIM_9X_Sidewinder_IR_AAM = (8, Weapons.AIM_9X_Sidewinder_IR_AAM)
+        CATM_9M = (8, Weapons.CATM_9M)
         AIM_120B_AMRAAM___Active_Radar_AAM = (8, Weapons.AIM_120B_AMRAAM___Active_Radar_AAM)
         AIM_120C_AMRAAM___Active_Radar_AAM = (8, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
-        CATM_9M = (8, Weapons.CATM_9M)
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (8, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
 #ERRR <CLEAN>
 
@@ -11495,9 +11495,9 @@ class F_16C_50(PlaneType):
         AIM_9M_Sidewinder_IR_AAM = (9, Weapons.AIM_9M_Sidewinder_IR_AAM)
         AIM_9L_Sidewinder_IR_AAM = (9, Weapons.AIM_9L_Sidewinder_IR_AAM)
         AIM_9X_Sidewinder_IR_AAM = (9, Weapons.AIM_9X_Sidewinder_IR_AAM)
+        CATM_9M = (9, Weapons.CATM_9M)
         AIM_120B_AMRAAM___Active_Radar_AAM = (9, Weapons.AIM_120B_AMRAAM___Active_Radar_AAM)
         AIM_120C_AMRAAM___Active_Radar_AAM = (9, Weapons.AIM_120C_AMRAAM___Active_Radar_AAM)
-        CATM_9M = (9, Weapons.CATM_9M)
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (9, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
 
     class Pylon10:
@@ -16223,16 +16223,16 @@ class Mirage_F1C(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -16301,7 +16301,7 @@ class Mirage_F1C(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -16338,14 +16338,14 @@ class Mirage_F1C(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -16356,8 +16356,8 @@ class Mirage_F1C(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -16461,7 +16461,7 @@ class Mirage_F1C(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -16502,6 +16502,7 @@ class Mirage_F1C(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -16512,6 +16513,7 @@ class Mirage_F1C(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -16522,12 +16524,14 @@ class Mirage_F1C(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -16785,16 +16789,16 @@ class Mirage_F1CE(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -16863,7 +16867,7 @@ class Mirage_F1CE(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -16900,22 +16904,22 @@ class Mirage_F1CE(PlaneType):
             id = "IFFMode4Disabled"
 
             class Values:
-                NO = 1
-                Force_Always_Disabled = 2
-                Force_Always_Enabled = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
     properties = {
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -16926,8 +16930,8 @@ class Mirage_F1CE(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -17031,7 +17035,7 @@ class Mirage_F1CE(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -17072,6 +17076,7 @@ class Mirage_F1CE(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -17082,6 +17087,7 @@ class Mirage_F1CE(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -17092,24 +17098,26 @@ class Mirage_F1CE(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
         "IFFMode4Disabled": UnitPropertyDescription(
             identifier="IFFMode4Disabled",
             control="comboList",
-            label="Force IFF Mode 4 Transponder Installed",
+            label="IFF Mode 4 Transponder Installed",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "Force Always Disabled",
-                3: "Force Always Enabled",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
     }
@@ -17410,16 +17418,16 @@ class Mirage_F1EE(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -17488,7 +17496,7 @@ class Mirage_F1EE(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -17525,16 +17533,16 @@ class Mirage_F1EE(PlaneType):
             id = "IFFMode4Disabled"
 
             class Values:
-                NO = 1
-                Force_Always_Disabled = 2
-                Force_Always_Enabled = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class INSStartMode:
             id = "INSStartMode"
 
             class Values:
-                YES = 1
-                NO = 2
+                Yes = 1
+                No = 2
 
         class RWR_type:
             id = "RWR_type"
@@ -17547,14 +17555,14 @@ class Mirage_F1EE(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -17565,8 +17573,8 @@ class Mirage_F1EE(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -17670,7 +17678,7 @@ class Mirage_F1EE(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -17711,6 +17719,7 @@ class Mirage_F1EE(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -17721,6 +17730,7 @@ class Mirage_F1EE(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -17731,24 +17741,26 @@ class Mirage_F1EE(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
         "IFFMode4Disabled": UnitPropertyDescription(
             identifier="IFFMode4Disabled",
             control="comboList",
-            label="Force IFF Mode 4 Transponder Installed",
+            label="IFF Mode 4 Transponder Installed",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "Force Always Disabled",
-                3: "Force Always Enabled",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "INSStartMode": UnitPropertyDescription(
@@ -17759,8 +17771,8 @@ class Mirage_F1EE(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "YES",
-                2: "NO",
+                1: "Yes",
+                2: "No",
             },
         ),
         "RWR_type": UnitPropertyDescription(
@@ -18071,16 +18083,16 @@ class Mirage_F1M_EE(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -18149,7 +18161,7 @@ class Mirage_F1M_EE(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -18186,14 +18198,14 @@ class Mirage_F1M_EE(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -18204,8 +18216,8 @@ class Mirage_F1M_EE(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -18309,7 +18321,7 @@ class Mirage_F1M_EE(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -18350,6 +18362,7 @@ class Mirage_F1M_EE(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -18360,6 +18373,7 @@ class Mirage_F1M_EE(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -18370,12 +18384,14 @@ class Mirage_F1M_EE(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -18673,16 +18689,16 @@ class Mirage_F1M_CE(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -18751,7 +18767,7 @@ class Mirage_F1M_CE(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -18788,14 +18804,14 @@ class Mirage_F1M_CE(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -18806,8 +18822,8 @@ class Mirage_F1M_CE(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -18911,7 +18927,7 @@ class Mirage_F1M_CE(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -18952,6 +18968,7 @@ class Mirage_F1M_CE(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -18962,6 +18979,7 @@ class Mirage_F1M_CE(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -18972,12 +18990,14 @@ class Mirage_F1M_CE(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -19273,16 +19293,16 @@ class Mirage_F1C_200(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -19351,7 +19371,7 @@ class Mirage_F1C_200(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -19388,14 +19408,14 @@ class Mirage_F1C_200(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -19406,8 +19426,8 @@ class Mirage_F1C_200(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -19511,7 +19531,7 @@ class Mirage_F1C_200(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -19552,6 +19572,7 @@ class Mirage_F1C_200(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -19562,6 +19583,7 @@ class Mirage_F1C_200(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -19572,12 +19594,14 @@ class Mirage_F1C_200(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -19835,16 +19859,16 @@ class Mirage_F1EH(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -19913,7 +19937,7 @@ class Mirage_F1EH(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -19950,14 +19974,14 @@ class Mirage_F1EH(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -19968,8 +19992,8 @@ class Mirage_F1EH(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -20073,7 +20097,7 @@ class Mirage_F1EH(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -20114,6 +20138,7 @@ class Mirage_F1EH(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -20124,6 +20149,7 @@ class Mirage_F1EH(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -20134,12 +20160,14 @@ class Mirage_F1EH(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -20397,16 +20425,16 @@ class Mirage_F1CH(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -20475,7 +20503,7 @@ class Mirage_F1CH(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -20512,14 +20540,14 @@ class Mirage_F1CH(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -20530,8 +20558,8 @@ class Mirage_F1CH(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -20635,7 +20663,7 @@ class Mirage_F1CH(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -20676,6 +20704,7 @@ class Mirage_F1CH(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -20686,6 +20715,7 @@ class Mirage_F1CH(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -20696,12 +20726,14 @@ class Mirage_F1CH(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -20959,16 +20991,16 @@ class Mirage_F1JA(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -21037,7 +21069,7 @@ class Mirage_F1JA(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -21074,14 +21106,14 @@ class Mirage_F1JA(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -21092,8 +21124,8 @@ class Mirage_F1JA(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -21197,7 +21229,7 @@ class Mirage_F1JA(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -21238,6 +21270,7 @@ class Mirage_F1JA(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -21248,6 +21281,7 @@ class Mirage_F1JA(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -21258,12 +21292,14 @@ class Mirage_F1JA(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -21505,16 +21541,16 @@ class Mirage_F1CG(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -21583,7 +21619,7 @@ class Mirage_F1CG(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -21620,14 +21656,14 @@ class Mirage_F1CG(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -21638,8 +21674,8 @@ class Mirage_F1CG(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -21743,7 +21779,7 @@ class Mirage_F1CG(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -21784,6 +21820,7 @@ class Mirage_F1CG(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -21794,6 +21831,7 @@ class Mirage_F1CG(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -21804,12 +21842,14 @@ class Mirage_F1CG(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -22077,16 +22117,16 @@ class Mirage_F1CZ(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -22155,7 +22195,7 @@ class Mirage_F1CZ(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -22192,14 +22232,14 @@ class Mirage_F1CZ(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -22210,8 +22250,8 @@ class Mirage_F1CZ(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -22315,7 +22355,7 @@ class Mirage_F1CZ(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -22356,6 +22396,7 @@ class Mirage_F1CZ(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -22366,6 +22407,7 @@ class Mirage_F1CZ(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -22376,12 +22418,14 @@ class Mirage_F1CZ(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -22639,16 +22683,16 @@ class Mirage_F1CJ(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -22717,7 +22761,7 @@ class Mirage_F1CJ(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -22754,14 +22798,14 @@ class Mirage_F1CJ(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -22772,8 +22816,8 @@ class Mirage_F1CJ(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -22877,7 +22921,7 @@ class Mirage_F1CJ(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -22918,6 +22962,7 @@ class Mirage_F1CJ(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -22928,6 +22973,7 @@ class Mirage_F1CJ(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -22938,12 +22984,14 @@ class Mirage_F1CJ(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -23201,16 +23249,16 @@ class Mirage_F1CK(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -23279,7 +23327,7 @@ class Mirage_F1CK(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -23316,14 +23364,14 @@ class Mirage_F1CK(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -23334,8 +23382,8 @@ class Mirage_F1CK(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -23439,7 +23487,7 @@ class Mirage_F1CK(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -23480,6 +23528,7 @@ class Mirage_F1CK(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -23490,6 +23539,7 @@ class Mirage_F1CK(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -23500,12 +23550,14 @@ class Mirage_F1CK(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -23763,16 +23815,16 @@ class Mirage_F1EQ(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -23841,7 +23893,7 @@ class Mirage_F1EQ(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -23878,14 +23930,14 @@ class Mirage_F1EQ(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -23896,8 +23948,8 @@ class Mirage_F1EQ(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -24001,7 +24053,7 @@ class Mirage_F1EQ(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -24042,6 +24094,7 @@ class Mirage_F1EQ(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -24052,6 +24105,7 @@ class Mirage_F1EQ(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -24062,12 +24116,14 @@ class Mirage_F1EQ(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -24352,16 +24408,16 @@ class Mirage_F1ED(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -24430,7 +24486,7 @@ class Mirage_F1ED(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -24467,14 +24523,14 @@ class Mirage_F1ED(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -24485,8 +24541,8 @@ class Mirage_F1ED(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -24590,7 +24646,7 @@ class Mirage_F1ED(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -24631,6 +24687,7 @@ class Mirage_F1ED(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -24641,6 +24698,7 @@ class Mirage_F1ED(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -24651,12 +24709,14 @@ class Mirage_F1ED(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -24941,16 +25001,16 @@ class Mirage_F1EDA(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -25019,7 +25079,7 @@ class Mirage_F1EDA(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -25056,14 +25116,14 @@ class Mirage_F1EDA(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -25074,8 +25134,8 @@ class Mirage_F1EDA(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -25179,7 +25239,7 @@ class Mirage_F1EDA(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -25220,6 +25280,7 @@ class Mirage_F1EDA(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -25230,6 +25291,7 @@ class Mirage_F1EDA(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -25240,12 +25302,14 @@ class Mirage_F1EDA(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -25520,16 +25584,16 @@ class Mirage_F1CR(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -25598,7 +25662,7 @@ class Mirage_F1CR(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -25635,14 +25699,14 @@ class Mirage_F1CR(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -25653,8 +25717,8 @@ class Mirage_F1CR(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -25758,7 +25822,7 @@ class Mirage_F1CR(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -25799,6 +25863,7 @@ class Mirage_F1CR(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -25809,6 +25874,7 @@ class Mirage_F1CR(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -25819,12 +25885,14 @@ class Mirage_F1CR(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -26086,16 +26154,16 @@ class Mirage_F1CT(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -26164,7 +26232,7 @@ class Mirage_F1CT(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -26201,14 +26269,14 @@ class Mirage_F1CT(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -26219,8 +26287,8 @@ class Mirage_F1CT(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -26324,7 +26392,7 @@ class Mirage_F1CT(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -26365,6 +26433,7 @@ class Mirage_F1CT(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -26375,6 +26444,7 @@ class Mirage_F1CT(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -26385,12 +26455,14 @@ class Mirage_F1CT(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
     }
 
@@ -26654,16 +26726,16 @@ class Mirage_F1B(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -26732,7 +26804,7 @@ class Mirage_F1B(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -26781,14 +26853,14 @@ class Mirage_F1B(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -26799,8 +26871,8 @@ class Mirage_F1B(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -26904,7 +26976,7 @@ class Mirage_F1B(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -26945,6 +27017,7 @@ class Mirage_F1B(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -26955,6 +27028,7 @@ class Mirage_F1B(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -26965,12 +27039,14 @@ class Mirage_F1B(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
         "SoloFlight": UnitPropertyDescription(
             identifier="SoloFlight",
@@ -26984,7 +27060,7 @@ class Mirage_F1B(PlaneType):
             label="Aircraft Control Priority",
             player_only=True,
             default=1,
-            w_ctrl=150,
+            w_ctrl=140,
             values={
                 0: "Pilot",
                 1: "Instructor",
@@ -27250,16 +27326,16 @@ class Mirage_F1BE(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -27328,7 +27404,7 @@ class Mirage_F1BE(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -27365,9 +27441,9 @@ class Mirage_F1BE(PlaneType):
             id = "IFFMode4Disabled"
 
             class Values:
-                NO = 1
-                Force_Always_Disabled = 2
-                Force_Always_Enabled = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class SoloFlight:
             id = "SoloFlight"
@@ -27385,14 +27461,14 @@ class Mirage_F1BE(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -27403,8 +27479,8 @@ class Mirage_F1BE(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -27508,7 +27584,7 @@ class Mirage_F1BE(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -27549,6 +27625,7 @@ class Mirage_F1BE(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -27559,6 +27636,7 @@ class Mirage_F1BE(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -27569,24 +27647,26 @@ class Mirage_F1BE(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
         "IFFMode4Disabled": UnitPropertyDescription(
             identifier="IFFMode4Disabled",
             control="comboList",
-            label="Force IFF Mode 4 Transponder Installed",
+            label="IFF Mode 4 Transponder Installed",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "Force Always Disabled",
-                3: "Force Always Enabled",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "SoloFlight": UnitPropertyDescription(
@@ -27601,7 +27681,7 @@ class Mirage_F1BE(PlaneType):
             label="Aircraft Control Priority",
             player_only=True,
             default=1,
-            w_ctrl=150,
+            w_ctrl=140,
             values={
                 0: "Pilot",
                 1: "Instructor",
@@ -27905,16 +27985,16 @@ class Mirage_F1BQ(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -27983,7 +28063,7 @@ class Mirage_F1BQ(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -28032,14 +28112,14 @@ class Mirage_F1BQ(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -28050,8 +28130,8 @@ class Mirage_F1BQ(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -28155,7 +28235,7 @@ class Mirage_F1BQ(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -28196,6 +28276,7 @@ class Mirage_F1BQ(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -28206,6 +28287,7 @@ class Mirage_F1BQ(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -28216,12 +28298,14 @@ class Mirage_F1BQ(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
         "SoloFlight": UnitPropertyDescription(
             identifier="SoloFlight",
@@ -28235,7 +28319,7 @@ class Mirage_F1BQ(PlaneType):
             label="Aircraft Control Priority",
             player_only=True,
             default=1,
-            w_ctrl=150,
+            w_ctrl=140,
             values={
                 0: "Pilot",
                 1: "Instructor",
@@ -28528,16 +28612,16 @@ class Mirage_F1BD(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -28606,7 +28690,7 @@ class Mirage_F1BD(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -28655,14 +28739,14 @@ class Mirage_F1BD(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -28673,8 +28757,8 @@ class Mirage_F1BD(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -28778,7 +28862,7 @@ class Mirage_F1BD(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -28819,6 +28903,7 @@ class Mirage_F1BD(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -28829,6 +28914,7 @@ class Mirage_F1BD(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -28839,12 +28925,14 @@ class Mirage_F1BD(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
         "SoloFlight": UnitPropertyDescription(
             identifier="SoloFlight",
@@ -28858,7 +28946,7 @@ class Mirage_F1BD(PlaneType):
             label="Aircraft Control Priority",
             player_only=True,
             default=1,
-            w_ctrl=150,
+            w_ctrl=140,
             values={
                 0: "Pilot",
                 1: "Instructor",
@@ -29151,16 +29239,16 @@ class Mirage_F1DDA(PlaneType):
             id = "RadarCoverSettings"
 
             class Values:
-                NO = 1
-                FORCE_ON = 2
-                FORCE_OFF = 3
+                By_global_option = 1
+                Force_installed = 2
+                Force_not_installed = 3
 
         class MissSimplLock:
             id = "MissSimplLock"
 
             class Values:
-                NO = 1
-                YES = 2
+                No = 1
+                Yes = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -29229,7 +29317,7 @@ class Mirage_F1DDA(PlaneType):
 
             class Values:
                 Off = 0
-                BURST = 1
+                Burst = 1
                 x_0_5_s = 2
                 x_1_s = 3
 
@@ -29278,14 +29366,14 @@ class Mirage_F1DDA(PlaneType):
         "RadarCoverSettings": UnitPropertyDescription(
             identifier="RadarCoverSettings",
             control="comboList",
-            label="Force Radar Cover State At Start",
+            label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=75,
+            w_ctrl=140,
             values={
-                1: "NO",
-                2: "FORCE ON",
-                3: "FORCE OFF",
+                1: "By global option",
+                2: "Force installed",
+                3: "Force not installed",
             },
         ),
         "MissSimplLock": UnitPropertyDescription(
@@ -29296,8 +29384,8 @@ class Mirage_F1DDA(PlaneType):
             default=1,
             w_ctrl=75,
             values={
-                1: "NO",
-                2: "YES",
+                1: "No",
+                2: "Yes",
             },
         ),
         "ChaffMultiNumber": UnitPropertyDescription(
@@ -29401,7 +29489,7 @@ class Mirage_F1DDA(PlaneType):
             w_ctrl=75,
             values={
                 0: "Off",
-                1: "BURST",
+                1: "Burst",
                 2: "0.5 s",
                 3: "1 s",
             },
@@ -29442,6 +29530,7 @@ class Mirage_F1DDA(PlaneType):
             maximum=7,
             default=6,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode10": UnitPropertyDescription(
             identifier="LaserCode10",
@@ -29452,6 +29541,7 @@ class Mirage_F1DDA(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "LaserCode1": UnitPropertyDescription(
             identifier="LaserCode1",
@@ -29462,12 +29552,14 @@ class Mirage_F1DDA(PlaneType):
             maximum=8,
             default=8,
             dimension=" ",
+            w_ctrl=75,
         ),
         "IFFMode2Code": UnitPropertyDescription(
             identifier="IFFMode2Code",
             control="editbox",
             label="IFF Mode 2 Code",
             player_only=True,
+            w_ctrl=75,
         ),
         "SoloFlight": UnitPropertyDescription(
             identifier="SoloFlight",
@@ -29481,7 +29573,7 @@ class Mirage_F1DDA(PlaneType):
             label="Aircraft Control Priority",
             player_only=True,
             default=1,
-            w_ctrl=150,
+            w_ctrl=140,
             values={
                 0: "Pilot",
                 1: "Instructor",

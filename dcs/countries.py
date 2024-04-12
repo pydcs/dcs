@@ -3106,7 +3106,7 @@ class USAFAggressors(Country):
             Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
-            HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
+            HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
             HEMTT_C_RAM_Phalanx = vehicles.AirDefence.HEMTT_C_RAM_Phalanx
 
@@ -10007,7 +10007,7 @@ class China(Country):
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
             RD_75 = vehicles.AirDefence.RD_75
-            HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
+            HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -14451,7 +14451,7 @@ class Pakistan(Country):
             FPS_117_ECS = vehicles.AirDefence.FPS_117_ECS
             FPS_117_Dome = vehicles.AirDefence.FPS_117_Dome
             RD_75 = vehicles.AirDefence.RD_75
-            HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
+            HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
 
         class Fortification:
             Bunker = vehicles.Fortification.Bunker
@@ -25032,7 +25032,7 @@ class Algeria(Country):
             SON_9 = vehicles.AirDefence.SON_9
             RD_75 = vehicles.AirDefence.RD_75
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
-            HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
+            HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
 
         class Fortification:
@@ -28624,7 +28624,7 @@ class CombinedJointTaskForcesBlue(Country):
             Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
-            HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
+            HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
             HEMTT_C_RAM_Phalanx = vehicles.AirDefence.HEMTT_C_RAM_Phalanx
 
@@ -29427,7 +29427,7 @@ class CombinedJointTaskForcesRed(Country):
             Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
-            HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
+            HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
             HEMTT_C_RAM_Phalanx = vehicles.AirDefence.HEMTT_C_RAM_Phalanx
 
@@ -30230,7 +30230,7 @@ class UnitedNationsPeacekeepers(Country):
             Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
-            HQ_7_LN_EO = vehicles.AirDefence.HQ_7_LN_EO
+            HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
             HEMTT_C_RAM_Phalanx = vehicles.AirDefence.HEMTT_C_RAM_Phalanx
 

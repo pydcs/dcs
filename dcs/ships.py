@@ -269,15 +269,15 @@ class Santafe(unittype.ShipType):
     name = "ARA Santa Fe S-21"
     detection_range = 0
     threat_range = 0
-    air_weapon_dist = 0
+    air_weapon_dist = 30000
 
 
 class Ara_vdm(unittype.ShipType):
     id = "ara_vdm"
-    name = "ARA Vienticinco de Mayo"
+    name = "ARA Veinticinco de Mayo"
     plane_num = 15
     helicopter_num = 6
-    parking = 6
+    parking = 8
     detection_range = 18000
     threat_range = 5000
     air_weapon_dist = 5000

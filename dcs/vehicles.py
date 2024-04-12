@@ -877,13 +877,13 @@ class AirDefence:
     class HQ_7_LN_SP(unittype.VehicleType):
         id = "HQ-7_LN_SP"
         name = "HQ-7 Self-Propelled LN"
-        detection_range = 15000
-        threat_range = 15000
-        air_weapon_dist = 15000
+        detection_range = 8000
+        threat_range = 12000
+        air_weapon_dist = 12000
 
-    class HQ_7_LN_EO(unittype.VehicleType):
-        id = "HQ-7_LN_EO"
-        name = "HQ-7 LN Electro-Optics"
+    class HQ_7_LN_P(unittype.VehicleType):
+        id = "HQ-7_LN_P"
+        name = "HQ-7 LN (Player)"
         detection_range = 8000
         threat_range = 12000
         air_weapon_dist = 12000
@@ -1296,14 +1296,14 @@ class Unarmed:
 
     class Tacr2a(unittype.VehicleType):
         id = "tacr2a"
-        name = "RAF Rescue"
+        name = "Firefighter RAF Rescue"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
     class LARC_V(unittype.VehicleType):
         id = "LARC-V"
-        name = "LARC-V"
+        name = "Truck LARC-V"
         detection_range = 500
         threat_range = 0
         air_weapon_dist = 0
@@ -2311,7 +2311,7 @@ vehicle_map = {
     "ZTZ96B": Armor.ZTZ96B,
     "ZBD04A": Armor.ZBD04A,
     "HQ-7_LN_SP": AirDefence.HQ_7_LN_SP,
-    "HQ-7_LN_EO": AirDefence.HQ_7_LN_EO,
+    "HQ-7_LN_P": AirDefence.HQ_7_LN_P,
     "HQ-7_STR_SP": AirDefence.HQ_7_STR_SP,
     "PLZ05": Artillery.PLZ05,
     "TYPE-59": Armor.TYPE_59,

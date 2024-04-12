@@ -14,7 +14,7 @@ class Weapons:
     AERO_1D_300_Gallons_Fuel_Tank__Empty_ = {"clsid": "{AV8BNA_AERO1D_EMPTY}", "name": "AERO 1D 300 Gallons Fuel Tank (Empty)", "weight": 89.8113}
     AGM114x2_OH_58 = {"clsid": "AGM114x2_OH_58", "name": "AGM-114K * 2", "weight": 250}
     AGM_114K_Hellfire = {"clsid": "{ee368869-c35a-486a-afe7-284beb7c5d52}", "name": "AGM-114K Hellfire", "weight": 45.3}
-    AGM_114L_Longbow = {"clsid": "{AGM_114L}", "name": "AGM-114L Longbow", "weight": 49}
+    AGM_114L = {"clsid": "{AGM_114L}", "name": "AGM-114L", "weight": 49}
     AGM_119B_Penguin_ASM = {"clsid": "{7B8DCEB4-820B-4015-9B48-1028A4195692}", "name": "AGM-119B Penguin ASM", "weight": 300}
     AGM_122_Sidearm = {"clsid": "{AGM_122_SIDEARM}", "name": "AGM-122 Sidearm", "weight": 98.883056}
     AGM_122_Sidearm_ = {"clsid": "{LAU_7_AGM_122_SIDEARM}", "name": "AGM-122 Sidearm", "weight": 139.706336}
@@ -28,9 +28,10 @@ class Weapons:
     AGM_45A_Shrike_ARM = {"clsid": "{AGM_45A}", "name": "AGM-45A Shrike ARM", "weight": 177}
     AGM_45B_Shrike_ARM__Imp_ = {"clsid": "{3E6B632D-65EB-44D2-9501-1C2D04515404}", "name": "AGM-45B Shrike ARM (Imp)", "weight": 177}
     AGM_62_Walleye_II___Guided_Weapon_Mk_5__TV_Guided_ = {"clsid": "{C40A1E3A-DD05-40D9-85A4-217729E37FAE}", "name": "AGM-62 Walleye II - Guided Weapon Mk 5 (TV Guided)", "weight": 1061}
+    AGM_62_Walleye_I___Guided_Weapon_Mk_1__TV_Guided_ = {"clsid": "{AGM_62_I}", "name": "AGM-62 Walleye I - Guided Weapon Mk 1 (TV Guided)", "weight": 510}
     AGM_65D___Maverick_D__IIR_ASM_ = {"clsid": "{444BA8AE-82A7-4345-842E-76154EFCCA47}", "name": "AGM-65D - Maverick D (IIR ASM)", "weight": 218}
     AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = {"clsid": "{F16A4DE0-116C-4A71-97F0-2CF85B0313EF}", "name": "AGM-65E - Maverick E (Laser ASM - Lg Whd)", "weight": 286}
-    AGM_65K___Maverick_K__CCD_Imp_ASM_ = {"clsid": "{69DC8AE7-8F77-427B-B8AA-B19D3F478B65}", "name": "AGM-65K - Maverick K (CCD Imp ASM)", "weight": 360}
+    AGM_65K___Maverick_K__CCD_Imp_ASM_ = {"clsid": "{69DC8AE7-8F77-427B-B8AA-B19D3F478B65}", "name": "AGM-65K - Maverick K (CCD Imp ASM)", "weight": 298}
     AGM_84A_Harpoon_ASM = {"clsid": "{8B7CADF9-4954-46B3-8CFB-93F2F5B90B03}", "name": "AGM-84A Harpoon ASM", "weight": 661.5}
     AGM_84D_Harpoon_AShM = {"clsid": "{AGM_84D}", "name": "AGM-84D Harpoon AShM", "weight": 540}
     AGM_84E_Harpoon_SLAM__Stand_Off_Land_Attack_Missile_ = {"clsid": "{AF42E6DF-9A60-46D8-A9A0-1708B241AADB}", "name": "AGM-84E Harpoon/SLAM (Stand-Off Land-Attack Missile)", "weight": 628}
@@ -129,8 +130,8 @@ class Weapons:
     APU_60_2M_with_2_x_R_60__AA_8_Aphid____IR_AAM__ = {"clsid": "{APU_60_2M_R_60_L}", "name": "APU-60-2M with 2 x R-60 (AA-8 Aphid) - IR AAM", "weight": 157}
     APU_60_2M_with_2_x_R_60__AA_8_Aphid____IR_AAM___ = {"clsid": "{APU_60_2M_R_60_R}", "name": "APU-60-2M with 2 x R-60 (AA-8 Aphid) - IR AAM", "weight": 157}
     APU_68___S_24B = {"clsid": "{APU_68_S-24}", "name": "APU-68 - S-24B", "weight": 273.5}
-    APU_6___6_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag = {"clsid": "{A6FD14D3-6D30-4C85-88A7-8D17BEE120E2}", "name": "APU-6 - 6 x 9M127-1 Vikhr-M ATGM, LOSBR, Tandem HEAT/Frag", "weight": 416.25}
-    APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag = {"clsid": "{F789E86A-EE2E-4E6B-B81E-D5E5F903B6ED}", "name": "APU-8 - 8 x 9M127-1 Vikhr-M ATGM, LOSBR, Tandem HEAT/Frag", "weight": 535}
+    APU_6___6_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag = {"clsid": "{A6FD14D3-6D30-4C85-88A7-8D17BEE120E2}", "name": "APU-6 - 6 x 9M127 Vikhr - ATGM, LOSBR, Tandem HEAT/Frag", "weight": 416.25}
+    APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag = {"clsid": "{F789E86A-EE2E-4E6B-B81E-D5E5F903B6ED}", "name": "APU-8 - 8 x 9M127 Vikhr - ATGM, LOSBR, Tandem HEAT/Frag", "weight": 535}
     ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT = {"clsid": "{ARAKM70BAP}", "name": "ARAK M/70B AP 6x 135mm UnGd Rkts, Pshu70 HEAT", "weight": 372.2}
     ARAK_M_70B_HE_6x_135mm_UnGd_Rkts__Shu70_HE_FRAG = {"clsid": "{ARAKM70BHE}", "name": "ARAK M/70B HE 6x 135mm UnGd Rkts, Shu70 HE/FRAG", "weight": 372.2}
     ASO_2___countermeasures_pod = {"clsid": "{ASO-2}", "name": "ASO-2 - countermeasures pod", "weight": 22}
@@ -418,16 +419,16 @@ class Weapons:
     DIS_MK_82_DUAL_GDJ_II19_L = {"clsid": "DIS_MK_82_DUAL_GDJ_II19_L", "name": "GDJ-II19 - 2 x Mk-82", "weight": 561}
     DIS_MK_82_DUAL_GDJ_II19_R = {"clsid": "DIS_MK_82_DUAL_GDJ_II19_R", "name": "GDJ-II19 - 2 x Mk-82", "weight": 561}
     DIS_mk46torp = {"clsid": "DIS_mk46torp", "name": "MK46 Torpedo", "weight": 231}
-    DIS_PL_12 = {"clsid": "DIS_PL-12", "name": "PL-12", "weight": 199}
-    DIS_PL_12_DUAL_L = {"clsid": "DIS_PL-12_DUAL_L", "name": "PL-12 x 2", "weight": 528}
-    DIS_PL_12_DUAL_R = {"clsid": "DIS_PL-12_DUAL_R", "name": "PL-12 x 2", "weight": 528}
+    DIS_PL_12 = {"clsid": "DIS_PL-12", "name": "PL-12 AAM", "weight": 199}
+    DIS_PL_12_DUAL_L = {"clsid": "DIS_PL-12_DUAL_L", "name": "PL-12 AAM x 2", "weight": 528}
+    DIS_PL_12_DUAL_R = {"clsid": "DIS_PL-12_DUAL_R", "name": "PL-12 AAM x 2", "weight": 528}
     DIS_PL_5EII = {"clsid": "DIS_PL-5EII", "name": "PL-5EII", "weight": 153}
     DIS_PL_8A = {"clsid": "DIS_PL-8A", "name": "PL-8A", "weight": 115}
     DIS_PL_8B = {"clsid": "DIS_PL-8B", "name": "PL-8B", "weight": 115}
     DIS_RKT_90_UG = {"clsid": "DIS_RKT_90_UG", "name": "UG_90MM", "weight": 462.5}
-    DIS_SD_10 = {"clsid": "DIS_SD-10", "name": "SD-10A", "weight": 259}
-    DIS_SD_10_DUAL_L = {"clsid": "DIS_SD-10_DUAL_L", "name": "SD-10A x 2", "weight": 528}
-    DIS_SD_10_DUAL_R = {"clsid": "DIS_SD-10_DUAL_R", "name": "SD-10A x 2", "weight": 528}
+    DIS_SD_10 = {"clsid": "DIS_SD-10", "name": "SD-10A AAM", "weight": 259}
+    DIS_SD_10_DUAL_L = {"clsid": "DIS_SD-10_DUAL_L", "name": "SD-10A AAM x 2", "weight": 528}
+    DIS_SD_10_DUAL_R = {"clsid": "DIS_SD-10_DUAL_R", "name": "SD-10A AAM x 2", "weight": 528}
     DIS_SMOKE_GENERATOR_B = {"clsid": "DIS_SMOKE_GENERATOR_B", "name": "Smoke Generator - blue", "weight": 0}
     DIS_SMOKE_GENERATOR_G = {"clsid": "DIS_SMOKE_GENERATOR_G", "name": "Smoke Generator - green", "weight": 0}
     DIS_SMOKE_GENERATOR_O = {"clsid": "DIS_SMOKE_GENERATOR_O", "name": "Smoke Generator - orange", "weight": 0}
@@ -558,6 +559,9 @@ class Weapons:
     GBU_54B___3 = {"clsid": "{CFT_L_GBU_54_x_3}", "name": "GBU-54B * 3", "weight": 759}
     GBU_54B___3_ = {"clsid": "{CFT_R_GBU_54_x_3}", "name": "GBU-54B * 3", "weight": 759}
     GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = {"clsid": "{GBU_54_V_1B}", "name": "GBU-54(V)1/B - LJDAM, 500lb Laser & GPS Guided Bomb LD", "weight": 253}
+    GB_6 = {"clsid": "{GB-6}", "name": "GB-6", "weight": 620}
+    GB_6_HE = {"clsid": "{GB-6-HE}", "name": "GB-6-HE", "weight": 620}
+    GB_6_SFW = {"clsid": "{GB-6-SFW}", "name": "GB-6-SFW", "weight": 620}
     GIAT_M621__240x_AP_ = {"clsid": "{GIAT_M621_AP}", "name": "GIAT M621 (240x AP)", "weight": 129.26}
     GIAT_M621__240x_Combat_mix_4x_AP_1x_HE_ = {"clsid": "{GIAT_M621_APHE}", "name": "GIAT M621 (240x Combat mix 4x AP 1x HE)", "weight": 129.26}
     GIAT_M621__240x_combat_mix_4x_HE_1x_AP_ = {"clsid": "{GIAT_M621_HEAP}", "name": "GIAT M621 (240x combat mix 4x HE 1x AP)", "weight": 129.26}
@@ -587,6 +591,7 @@ class Weapons:
     KB_Flare_Chaff_dispenser_pod = {"clsid": "{KB}", "name": "KB Flare/Chaff dispenser pod", "weight": 316}
     KD_20 = {"clsid": "{KD_20}", "name": "KD-20", "weight": 1700}
     KD_63 = {"clsid": "{KD_63}", "name": "KD-63", "weight": 2000}
+    KD_63B = {"clsid": "{KD_63B}", "name": "KD-63B", "weight": 2000}
     Kh_22__AS_4_Kitchen____1000kg__AShM__IN__Act_Pas_Rdr = {"clsid": "{12429ECF-03F0-4DF6-BCBD-5D38B6343DE1}", "name": "Kh-22 (AS-4 Kitchen) - 1000kg, AShM, IN & Act/Pas Rdr", "weight": 6800}
     Kh_23L_Grom__AS_7_Kerry____286kg__ASM__Laser_Guided = {"clsid": "{9F390892-E6F9-42C9-B84E-1136A881DCB2}", "name": "Kh-23L Grom (AS-7 Kerry) - 286kg, ASM, Laser Guided", "weight": 288}
     Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser = {"clsid": "{6DADF342-D4BA-4D8A-B081-BA928C4AF86D}", "name": "Kh-25ML (AS-10 Karen) - 300kg, ASM, Semi-Act Laser", "weight": 360}
@@ -698,7 +703,7 @@ class Weapons:
     LAU_117_TGM_65H = {"clsid": "LAU_117_TGM_65H", "name": "LAU-117 with TGM-65H - Trg Round for Mav H (CCD)", "weight": 267}
     LAU_117_with_AGM_65D___Maverick_D__IIR_ASM_ = {"clsid": "{444BA8AE-82A7-4345-842E-76154EFCCA46}", "name": "LAU-117 with AGM-65D - Maverick D (IIR ASM)", "weight": 277}
     LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = {"clsid": "{F16A4DE0-116C-4A71-97F0-2CF85B0313EC}", "name": "LAU-117 with AGM-65E - Maverick E (Laser ASM - Lg Whd)", "weight": 345}
-    LAU_117_with_AGM_65K___Maverick_K__CCD_Imp_ASM_ = {"clsid": "{69DC8AE7-8F77-427B-B8AA-B19D3F478B66}", "name": "LAU-117 with AGM-65K - Maverick K (CCD Imp ASM)", "weight": 356}
+    LAU_117_with_AGM_65K___Maverick_K__CCD_Imp_ASM_ = {"clsid": "{69DC8AE7-8F77-427B-B8AA-B19D3F478B66}", "name": "LAU-117 with AGM-65K - Maverick K (CCD Imp ASM)", "weight": 357}
     LAU_118A___AGM_45B_Shrike_ARM__Imp_ = {"clsid": "{3E6B632D-65EB-44D2-9501-1C2D04515405}", "name": "LAU-118A - AGM-45B Shrike ARM (Imp)", "weight": 222.4}
     LAU_127_AIM_9L = {"clsid": "LAU-127_AIM-9L", "name": "LAU-127 AIM-9L Sidewinder IR AAM", "weight": 131.03}
     LAU_127_AIM_9M = {"clsid": "LAU-127_AIM-9M", "name": "LAU-127 AIM-9M Sidewinder IR AAM", "weight": 131.03}
@@ -773,16 +778,18 @@ class Weapons:
     LAU_88_with_2_x_AGM_65D___Maverick_D__IIR_ASM__ = {"clsid": "{E6A6262A-CA08-4B3D-B030-E1A993B98453}", "name": "LAU-88 with 2 x AGM-65D - Maverick D (IIR ASM)", "weight": 647}
     LAU_88_with_2_x_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = {"clsid": "{2CC29C7A-E863-411C-8A6E-BD6F0E730548}", "name": "LAU-88 with 2 x AGM-65E - Maverick E (Laser ASM - Lg Whd)", "weight": 783}
     LAU_88_with_2_x_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd__ = {"clsid": "{2CC29C7A-E863-411C-8A6E-BD6F0E730547}", "name": "LAU-88 with 2 x AGM-65E - Maverick E (Laser ASM - Lg Whd)", "weight": 783}
-    LAU_88_with_2_x_AGM_65K___Maverick_K__CCD_Imp_ASM_ = {"clsid": "{D7670BC7-881B-4094-906C-73879CF7EB28}", "name": "LAU-88 with 2 x AGM-65K - Maverick K (CCD Imp ASM)", "weight": 805}
-    LAU_88_with_2_x_AGM_65K___Maverick_K__CCD_Imp_ASM__ = {"clsid": "{D7670BC7-881B-4094-906C-73879CF7EB27}", "name": "LAU-88 with 2 x AGM-65K - Maverick K (CCD Imp ASM)", "weight": 805}
+    LAU_88_with_2_x_AGM_65K___Maverick_K__CCD_Imp_ASM_ = {"clsid": "{D7670BC7-881B-4094-906C-73879CF7EB28}", "name": "LAU-88 with 2 x AGM-65K - Maverick K (CCD Imp ASM)", "weight": 807}
+    LAU_88_with_2_x_AGM_65K___Maverick_K__CCD_Imp_ASM__ = {"clsid": "{D7670BC7-881B-4094-906C-73879CF7EB27}", "name": "LAU-88 with 2 x AGM-65K - Maverick K (CCD Imp ASM)", "weight": 807}
     LAU_88_with_3_x_AGM_65D___Maverick_D__IIR_ASM_ = {"clsid": "{DAC53A2F-79CA-42FF-A77A-F5649B601308}", "name": "LAU-88 with 3 x AGM-65D - Maverick D (IIR ASM)", "weight": 865}
     LAU_88_with_3_x_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = {"clsid": "{71AAB9B8-81C1-4925-BE50-1EF8E9899271}", "name": "LAU-88 with 3 x AGM-65E - Maverick E (Laser ASM - Lg Whd)", "weight": 1069}
-    LAU_88_with_3_x_AGM_65K___Maverick_K__CCD_Imp_ASM_ = {"clsid": "{907D835F-E650-4154-BAFD-C656882555C0}", "name": "LAU-88 with 3 x AGM-65K - Maverick K (CCD Imp ASM)", "weight": 1102}
+    LAU_88_with_3_x_AGM_65K___Maverick_K__CCD_Imp_ASM_ = {"clsid": "{907D835F-E650-4154-BAFD-C656882555C0}", "name": "LAU-88 with 3 x AGM-65K - Maverick K (CCD Imp ASM)", "weight": 1105}
     Lantirn_F_16 = {"clsid": "{CAAC1CFD-6745-416B-AFA4-CB57414856D0}", "name": "Lantirn F-16", "weight": 445}
     Lantirn_Target_Pod = {"clsid": "{D1744B93-2A8A-4C4D-B004-7A09CD8C8F3F}", "name": "Lantirn Target Pod", "weight": 200}
     LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_API = {"clsid": "{LR25_ARF8M3_API}", "name": "LR-25 - 25 x UnGd Rkts, 50 mm ARF-8/M3 API", "weight": 141}
     LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy = {"clsid": "{LR25_ARF8M3_HEI}", "name": "LR-25 - 25 x UnGd Rkts, 50 mm ARF-8/M3 HEI Heavy", "weight": 161}
     LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_TP_SM = {"clsid": "{LR25_ARF8M3_TPSM}", "name": "LR-25 - 25 x UnGd Rkts, 50 mm ARF-8/M3 TP-SM", "weight": 136}
+    LS_6_250 = {"clsid": "{LS-6-250}", "name": "LS-6-250", "weight": 275}
+    LS_6_500 = {"clsid": "{LS-6-500}", "name": "LS-6-500", "weight": 525}
     LTF_5b_Aerial_Torpedo = {"clsid": "{LTF_5B}", "name": "LTF 5b Aerial Torpedo", "weight": 765}
     Luggage_Container = {"clsid": "{MB339_TRAVELPOD}", "name": "Luggage Container", "weight": 72}
     L_081_Fantasmagoria_ELINT_pod = {"clsid": "{0519A264-0AB6-11d6-9193-00A0249B6F00}", "name": "L-081 Fantasmagoria ELINT pod", "weight": 300}
@@ -1457,7 +1464,7 @@ weapon_ids = {
     "{AV8BNA_AERO1D_EMPTY}": Weapons.AERO_1D_300_Gallons_Fuel_Tank__Empty_,
     "AGM114x2_OH_58": Weapons.AGM114x2_OH_58,
     "{ee368869-c35a-486a-afe7-284beb7c5d52}": Weapons.AGM_114K_Hellfire,
-    "{AGM_114L}": Weapons.AGM_114L_Longbow,
+    "{AGM_114L}": Weapons.AGM_114L,
     "{7B8DCEB4-820B-4015-9B48-1028A4195692}": Weapons.AGM_119B_Penguin_ASM,
     "{AGM_122_SIDEARM}": Weapons.AGM_122_Sidearm,
     "{LAU_7_AGM_122_SIDEARM}": Weapons.AGM_122_Sidearm_,
@@ -1471,6 +1478,7 @@ weapon_ids = {
     "{AGM_45A}": Weapons.AGM_45A_Shrike_ARM,
     "{3E6B632D-65EB-44D2-9501-1C2D04515404}": Weapons.AGM_45B_Shrike_ARM__Imp_,
     "{C40A1E3A-DD05-40D9-85A4-217729E37FAE}": Weapons.AGM_62_Walleye_II___Guided_Weapon_Mk_5__TV_Guided_,
+    "{AGM_62_I}": Weapons.AGM_62_Walleye_I___Guided_Weapon_Mk_1__TV_Guided_,
     "{444BA8AE-82A7-4345-842E-76154EFCCA47}": Weapons.AGM_65D___Maverick_D__IIR_ASM_,
     "{F16A4DE0-116C-4A71-97F0-2CF85B0313EF}": Weapons.AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_,
     "{69DC8AE7-8F77-427B-B8AA-B19D3F478B65}": Weapons.AGM_65K___Maverick_K__CCD_Imp_ASM_,
@@ -1572,8 +1580,8 @@ weapon_ids = {
     "{APU_60_2M_R_60_L}": Weapons.APU_60_2M_with_2_x_R_60__AA_8_Aphid____IR_AAM__,
     "{APU_60_2M_R_60_R}": Weapons.APU_60_2M_with_2_x_R_60__AA_8_Aphid____IR_AAM___,
     "{APU_68_S-24}": Weapons.APU_68___S_24B,
-    "{A6FD14D3-6D30-4C85-88A7-8D17BEE120E2}": Weapons.APU_6___6_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag,
-    "{F789E86A-EE2E-4E6B-B81E-D5E5F903B6ED}": Weapons.APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag,
+    "{A6FD14D3-6D30-4C85-88A7-8D17BEE120E2}": Weapons.APU_6___6_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag,
+    "{F789E86A-EE2E-4E6B-B81E-D5E5F903B6ED}": Weapons.APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag,
     "{ARAKM70BAP}": Weapons.ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT,
     "{ARAKM70BHE}": Weapons.ARAK_M_70B_HE_6x_135mm_UnGd_Rkts__Shu70_HE_FRAG,
     "{ASO-2}": Weapons.ASO_2___countermeasures_pod,
@@ -2001,6 +2009,9 @@ weapon_ids = {
     "{CFT_L_GBU_54_x_3}": Weapons.GBU_54B___3,
     "{CFT_R_GBU_54_x_3}": Weapons.GBU_54B___3_,
     "{GBU_54_V_1B}": Weapons.GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD,
+    "{GB-6}": Weapons.GB_6,
+    "{GB-6-HE}": Weapons.GB_6_HE,
+    "{GB-6-SFW}": Weapons.GB_6_SFW,
     "{GIAT_M621_AP}": Weapons.GIAT_M621__240x_AP_,
     "{GIAT_M621_APHE}": Weapons.GIAT_M621__240x_Combat_mix_4x_AP_1x_HE_,
     "{GIAT_M621_HEAP}": Weapons.GIAT_M621__240x_combat_mix_4x_HE_1x_AP_,
@@ -2030,6 +2041,7 @@ weapon_ids = {
     "{KB}": Weapons.KB_Flare_Chaff_dispenser_pod,
     "{KD_20}": Weapons.KD_20,
     "{KD_63}": Weapons.KD_63,
+    "{KD_63B}": Weapons.KD_63B,
     "{12429ECF-03F0-4DF6-BCBD-5D38B6343DE1}": Weapons.Kh_22__AS_4_Kitchen____1000kg__AShM__IN__Act_Pas_Rdr,
     "{9F390892-E6F9-42C9-B84E-1136A881DCB2}": Weapons.Kh_23L_Grom__AS_7_Kerry____286kg__ASM__Laser_Guided,
     "{6DADF342-D4BA-4D8A-B081-BA928C4AF86D}": Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser,
@@ -2226,6 +2238,8 @@ weapon_ids = {
     "{LR25_ARF8M3_API}": Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_API,
     "{LR25_ARF8M3_HEI}": Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy,
     "{LR25_ARF8M3_TPSM}": Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_TP_SM,
+    "{LS-6-250}": Weapons.LS_6_250,
+    "{LS-6-500}": Weapons.LS_6_500,
     "{LTF_5B}": Weapons.LTF_5b_Aerial_Torpedo,
     "{MB339_TRAVELPOD}": Weapons.Luggage_Container,
     "{0519A264-0AB6-11d6-9193-00A0249B6F00}": Weapons.L_081_Fantasmagoria_ELINT_pod,

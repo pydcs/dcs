@@ -1525,7 +1525,7 @@ class Ka_50(HelicopterType):
         FAB_250_M62___250_kg_GP_Bomb_LD = (1, Weapons.FAB_250_M62___250_kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (1, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         Fuel_tank_PTB_450 = (1, Weapons.Fuel_tank_PTB_450)
-        APU_6___6_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag = (1, Weapons.APU_6___6_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag)
+        APU_6___6_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag = (1, Weapons.APU_6___6_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag)
 
     class Pylon2:
         B_8V20A_CM = (2, Weapons.B_8V20A_CM)
@@ -1569,7 +1569,7 @@ class Ka_50(HelicopterType):
         FAB_250_M62___250_kg_GP_Bomb_LD = (4, Weapons.FAB_250_M62___250_kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (4, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         Fuel_tank_PTB_450 = (4, Weapons.Fuel_tank_PTB_450)
-        APU_6___6_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag = (4, Weapons.APU_6___6_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag)
+        APU_6___6_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag = (4, Weapons.APU_6___6_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag)
 
     pylons: Set[int] = {1, 2, 3, 4}
 
@@ -1760,7 +1760,7 @@ class Ka_50_3(HelicopterType):
         FAB_250_M62___250_kg_GP_Bomb_LD = (1, Weapons.FAB_250_M62___250_kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (1, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         Fuel_tank_PTB_450 = (1, Weapons.Fuel_tank_PTB_450)
-        APU_6___6_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag = (1, Weapons.APU_6___6_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag)
+        APU_6___6_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag = (1, Weapons.APU_6___6_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag)
 
     class Pylon2:
         B_8V20A_CM = (2, Weapons.B_8V20A_CM)
@@ -1804,7 +1804,7 @@ class Ka_50_3(HelicopterType):
         FAB_250_M62___250_kg_GP_Bomb_LD = (4, Weapons.FAB_250_M62___250_kg_GP_Bomb_LD)
         FAB_500_M_62___500kg_GP_Bomb_LD = (4, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         Fuel_tank_PTB_450 = (4, Weapons.Fuel_tank_PTB_450)
-        APU_6___6_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag = (4, Weapons.APU_6___6_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag)
+        APU_6___6_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag = (4, Weapons.APU_6___6_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag)
 
     class Pylon5:
         _9S846_Strelets___2_x_9M39_Igla = (5, Weapons._9S846_Strelets___2_x_9M39_Igla)
