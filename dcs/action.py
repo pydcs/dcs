@@ -1513,21 +1513,21 @@ class StartPlayerSeatLock(Action):
 class StartWaitUserResponse(Action):
     predicate = "c_start_wait_for_user"
 
-    def __init__(self, flag=1, flag_black=999):
+    def __init__(self, flag=1, flag_back=999):
         super(StartWaitUserResponse, self).__init__(StartWaitUserResponse.predicate)
         self.flag = flag
         self.params.append(self.flag)
-        self.flag_black = flag_black
-        self.params.append(self.flag_black)
+        self.flag_back = flag_back
+        self.params.append(self.flag_back)
 
     @classmethod
     def create_from_dict(cls, d, mission):
-        return cls(d["flag"], d["flag_black"])
+        return cls(d["flag"], d["flag_back"])
 
     def dict(self):
         d = super(StartWaitUserResponse, self).dict()
         d["flag"] = self.flag
-        d["flag_black"] = self.flag_black
+        d["flag_back"] = self.flag_back
         return d
 
 

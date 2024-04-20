@@ -594,7 +594,7 @@ actions = {
         "name": "c_start_wait_for_user",
         "fields": [
             {"id": "flag", "default": 1},
-            {"id": "flag_black", "default": 999}
+            {"id": "flag_back", "default": 999}
         ]
     },
     "StopWaitUserResponse": {
