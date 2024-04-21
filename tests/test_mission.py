@@ -1290,3 +1290,57 @@ class BasicTests(unittest.TestCase):
         m2 = Mission()
         m2.load_file("missions/saved.g-effect-sim.miz")
         self.assertEqual(m.forced_options.geffect, m2.forced_options.geffect)
+
+    def test_find_unit(self) -> None:
+        m_name = "tests/missions/big-formation-carpet-bombing.miz"
+        m = dcs.mission.Mission()
+        m.load_file(m_name)
+
+        unit_name = "Aerial-2-1"
+        non_existing_unit_name = "Aerial-7-1"
+
+        unit_id = 2
+        non_existing_unit_id = 1234
+
+        # search by unit id
+        unit = m.find_unit_by_id(unit_id)
+        assert unit is not None
+        self.assertEqual(unit.name, unit_name)
+        self.assertEqual(unit.id, unit_id)
+
+        blue_coalition = m.coalition["blue"]
+        blue_unit = m.find_unit_by_id(unit_id, blue_coalition)
+        self.assertEqual(blue_unit, unit)
+
+        red_coalition = m.coalition["red"]
+        no_unit = m.find_unit_by_id(2, red_coalition)
+        self.assertIsNone(no_unit)
+
+        no_unit = m.find_unit_by_id(non_existing_unit_id)
+        self.assertIsNone(no_unit)
+
+        no_unit = m.find_unit_by_id(non_existing_unit_id, blue_coalition)
+        self.assertIsNone(no_unit)
+
+        no_unit = m.find_unit_by_id(non_existing_unit_id, red_coalition)
+        self.assertIsNone(no_unit)
+
+        # search by unit name
+        unit = m.find_unit(unit_name)
+        assert unit is not None
+        self.assertEqual(unit.name, unit_name)
+
+        blue_unit = m.find_unit(unit_name, blue_coalition)
+        self.assertEqual(blue_unit, unit)
+
+        no_unit = m.find_unit(unit_name, red_coalition)
+        self.assertIsNone(no_unit)
+
+        no_unit = m.find_unit(non_existing_unit_name)
+        self.assertIsNone(no_unit)
+
+        no_unit = m.find_unit(non_existing_unit_name, blue_coalition)
+        self.assertIsNone(no_unit, unit)
+
+        no_unit = m.find_unit(non_existing_unit_name, red_coalition)
+        self.assertIsNone(no_unit)

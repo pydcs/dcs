@@ -1844,6 +1844,52 @@ class Mission:
                 return g
         return None
 
+    def find_unit(self, unit_name: str, coalition: Optional[Coalition] = None) -> Optional[Unit]:
+        """Search for a unit matching a specified unit name. If a coalition is indicated,
+        the search is limited to that coalition; otherwise, it extends across all coalitions.
+
+        Args:
+            unit_name: unit's name as defined in the mission file
+            coalition: coalition to search in
+
+        Returns:
+            Unit: the unit found, otherwise None
+        """
+
+        coalitions = [coalition] if coalition is not None else self.coalition.values()
+        for k in coalitions:
+            for c in k.countries.values():
+                groups = c.plane_group + c.vehicle_group + c.ship_group + c.static_group + c.helicopter_group
+                for group in groups:
+                    for _unit in group.units:
+                        if _unit.name == unit_name:
+                            return _unit
+
+        return None
+
+    def find_unit_by_id(self, unit_id: int, coalition: Optional[Coalition] = None) -> Optional[Unit]:
+        """Search for a unit matching a specified unit identifier. If a coalition is indicated,
+        the search is limited to that coalition; otherwise, it extends across all coalitions.
+
+        Args:
+            unit_id: unit identifier assigned by the mission file
+            coalition: coalition to search in
+
+        Returns:
+            Unit: the unit found, otherwise None
+        """
+
+        coalitions = [coalition] if coalition is not None else self.coalition.values()
+        for k in coalitions:
+            for c in k.countries.values():
+                groups = c.plane_group + c.vehicle_group + c.ship_group + c.static_group + c.helicopter_group
+                for group in groups:
+                    for _unit in group.units:
+                        if _unit.id == unit_id:
+                            return _unit
+
+        return None
+
     def is_red(self, country: Country) -> bool:
         """Checks if the given country object is part o the red coalition.
 
