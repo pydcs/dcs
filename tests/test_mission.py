@@ -1344,3 +1344,19 @@ class BasicTests(unittest.TestCase):
 
         no_unit = m.find_unit(non_existing_unit_name, red_coalition)
         self.assertIsNone(no_unit)
+
+    def test_linked_trigger_zone(self) -> None:
+        m_name = "tests/missions/linked-trigger-zone.miz"
+        m = dcs.mission.Mission()
+        m.load_file(m_name)
+
+        self.assertEqual(m.triggers._zones[0].link_unit_id, 1)
+        self.assertEqual(m.triggers._zones[0].heading, 1.4549281053684)
+
+        m2_name = "missions/saved.linked-trigger-zone.miz"
+        m.save(m2_name)
+
+        m2 = Mission()
+        m2.load_file(m2_name)
+
+        self.assertDictEqual(m.triggers._zones[0].dict(), m2.triggers._zones[0].dict())

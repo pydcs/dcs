@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import copy
-from typing import TYPE_CHECKING, List, Dict, Any
+from typing import TYPE_CHECKING, List, Dict, Any, Optional
 from enum import Enum, IntEnum
 
 from dcs import mapping
@@ -26,7 +26,8 @@ class TriggerZoneType(IntEnum):
 
 
 class TriggerZone:
-    def __init__(self, _id, position: mapping.Point, hidden=False, name="", color=None, properties=None, radius=1500):
+    def __init__(self, _id, position: mapping.Point, hidden=False, name="", color=None, properties=None, radius=1500,
+                 heading: Optional[float] = None, link_unit_id: Optional[int] = None) -> None:
         self.id = _id
         self.radius = radius
         self.position = copy.copy(position)
@@ -34,9 +35,11 @@ class TriggerZone:
         self.name = name
         self.color = color if color is not None else {1: 1, 2: 1, 3: 1, 4: 0.15}
         self.properties = properties if properties is not None else {}
+        self.heading: Optional[float] = heading
+        self.link_unit_id: Optional[int] = link_unit_id
 
     def dict(self):
-        return {
+        d = {
             "name": self.name,
             "hidden": self.hidden,
             "x": self.position.x,
@@ -44,13 +47,20 @@ class TriggerZone:
             "zoneId": self.id,
             "radius": self.radius,
             "color": self.color,
-            "properties": self.properties
+            "properties": self.properties,
         }
+        if self.heading is not None:
+            d["heading"] = self.heading
+        if self.link_unit_id is not None:
+            d["linkUnit"] = self.link_unit_id
+        return d
 
 
 class TriggerZoneCircular(TriggerZone):
-    def __init__(self, _id, position: mapping.Point, radius=1500, hidden=False, name="", color=None, properties=None):
-        super(TriggerZoneCircular, self).__init__(_id, position, hidden, name, color, properties, radius)
+    def __init__(self, _id, position: mapping.Point, radius=1500, hidden=False, name="", color=None, properties=None,
+                 heading: Optional[float] = None, link_unit_id: Optional[int] = None):
+        super(TriggerZoneCircular, self).__init__(_id, position, hidden, name, color, properties, radius,
+                                                  heading, link_unit_id)
         self.type = TriggerZoneType.Circular
 
     def dict(self):
@@ -59,16 +69,18 @@ class TriggerZoneCircular(TriggerZone):
         return d
 
     def __repr__(self):
-        return "TriggerZoneCircular({id}, {x}, {y}, {r}, '{m}', '{n}', '{o}')".format(
-            id=self.id, x=self.position.x, y=self.position.y, r=self.radius, m=self.name, n=self.color, o=self.properties
+        return "TriggerZoneCircular({id}, {x}, {y}, {r}, '{m}', '{n}', '{o}', '{h}', '{l}')".format(
+            id=self.id, x=self.position.x, y=self.position.y, r=self.radius, m=self.name,
+            n=self.color, o=self.properties, h=self.heading, l=self.link_unit_id
         )
 
 
 # DCS mission format misspells the plural of "vertex". We follow this convention within PyDCS.
 class TriggerZoneQuadPoint(TriggerZone):
     def __init__(self, _id, position: mapping.Point, verticies: List[mapping.Point],
-                 hidden=False, name="", color=None, properties=None):
-        super(TriggerZoneQuadPoint, self).__init__(_id, position, hidden, name, color, properties)
+                 hidden=False, name="", color=None, properties=None,
+                 heading: Optional[float] = None, link_unit_id: Optional[int] = None):
+        super(TriggerZoneQuadPoint, self).__init__(_id, position, hidden, name, color, properties, heading, link_unit_id)
         self.type = TriggerZoneType.QuadPoint
         self.verticies = copy.copy(verticies)
 
@@ -83,13 +95,15 @@ class TriggerZoneQuadPoint(TriggerZone):
         return d
 
     def __repr__(self):
-        return "TriggerZoneQuadPoint({id}, {x}, {y}, '{m}', '{n}', '{o}')".format(
+        return "TriggerZoneQuadPoint({id}, {x}, {y}, '{m}', '{n}', '{o}', '{h}', '{l}')".format(
             id=self.id,
             x=self.position.x,
             y=self.position.y,
             m=self.name,
             n=self.color,
-            o=self.properties)
+            o=self.properties,
+            h=self.heading,
+            l=self.link_unit_id)
 
 
 class Triggers:
@@ -106,7 +120,9 @@ class Triggers:
             imp_zone["hidden"],
             imp_zone["name"],
             imp_zone["color"],
-            imp_zone.get("properties", {})
+            imp_zone.get("properties", {}),
+            imp_zone.get("heading", None),
+            imp_zone.get("linkUnit", None),
         )
         return tz
 
@@ -124,7 +140,9 @@ class Triggers:
             imp_zone["hidden"],
             imp_zone["name"],
             imp_zone["color"],
-            imp_zone.get("properties", {})
+            imp_zone.get("properties", {}),
+            imp_zone.get("heading", None),
+            imp_zone.get("linkUnit", None),
         )
         return tz
 
