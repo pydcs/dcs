@@ -53,6 +53,10 @@ class GroundControlPasswords:
         role_password = self._find_role_password(role)
         role_password[coalition] = None
 
+    def is_locked(self, coalition: Coalition, role: GroundControlRole) -> bool:
+        role_password = self._find_role_password(role)
+        return coalition in role_password and role_password[coalition] is not None
+
     def dict(self) -> Dict[str, Dict[str, str]]:
         d: Dict[str, Any] = {}
         for coalition in [Coalition.Red, Coalition.Blue, Coalition.Neutral]:
@@ -114,6 +118,9 @@ class GroundControl:
 
     def unlock(self, coalition: Coalition, role: GroundControlRole) -> None:
         self.passwords.unlock(coalition, role)
+
+    def is_locked(self, coalition: Coalition, role: GroundControlRole) -> bool:
+        return self.passwords.is_locked(coalition, role)
 
     def dict(self):
         return {

@@ -1386,6 +1386,9 @@ class BasicTests(unittest.TestCase):
         m.groundControl.lock(Coalition.Blue, GroundControlRole.OBSERVER, "p-observer-blue")
         m.groundControl.lock(Coalition.Blue, GroundControlRole.TACTICAL_COMMANDER, "p-tc-blue")
 
+        self.assertTrue(m.groundControl.is_locked(Coalition.Blue, GroundControlRole.TACTICAL_COMMANDER))
+        self.assertFalse(m.groundControl.is_locked(Coalition.Red, GroundControlRole.TACTICAL_COMMANDER))
+
         self.assertIn(Coalition.Blue.value,
                       m.groundControl.dict()["passwords"][GroundControlRole.TACTICAL_COMMANDER.value])
         self.assertIn(Coalition.Blue.value,
