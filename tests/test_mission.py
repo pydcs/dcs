@@ -19,6 +19,7 @@ from dcs.action import Coalition
 from dcs.mission import Mission
 from enum import IntEnum
 from dcs.forcedoptions import ForcedOptions
+from dcs.groundcontrol import GroundControlRole
 
 
 class BasicTests(unittest.TestCase):
@@ -1361,3 +1362,75 @@ class BasicTests(unittest.TestCase):
 
         self.assertDictEqual(m.coalition[coal_name].country(country_name).plane_group[0].units[0].payload_restricted,
                              m2.coalition[coal_name].country(country_name).plane_group[0].units[0].payload_restricted)
+
+    def test_linked_trigger_zone(self) -> None:
+        m_name = "tests/missions/linked-trigger-zone.miz"
+        m = dcs.mission.Mission()
+        m.load_file(m_name)
+
+        self.assertEqual(m.triggers._zones[0].link_unit_id, 1)
+        self.assertEqual(m.triggers._zones[0].heading, 1.4549281053684)
+
+        m2_name = "missions/saved.linked-trigger-zone.miz"
+        m.save(m2_name)
+
+        m2 = Mission()
+        m2.load_file(m2_name)
+
+        self.assertDictEqual(m.triggers._zones[0].dict(), m2.triggers._zones[0].dict())
+
+    def test_ground_control_password(self) -> None:
+        m = dcs.mission.Mission()
+        m_saved_name = "missions/saved.ground-control-passwords.miz"
+
+        kobuleti = m.terrain.airports["Kobuleti"]
+        kobuleti.set_blue()
+        batumi = m.terrain.airports["Batumi"]
+        batumi.set_blue()
+
+        country_name = "USA"
+        coal_name = str(Coalition.Blue.value)
+        country = m.coalition[coal_name].country(country_name)
+
+        flying_group = m.flight_group_from_airport(country, "Airgroup", dcs.planes.A_10C, kobuleti,
+                                                   start_type=dcs.mission.StartType.Warm)
+        flying_group.units[0].set_client()
+
+        self.assertDictEqual(m.groundControl.dict()["passwords"], {})
+
+        m.groundControl.lock(Coalition.Blue, GroundControlRole.GAME_MASTER, "p-master-blue")
+        m.groundControl.lock(Coalition.Blue, GroundControlRole.JTAC, "p-jtac-blue")
+        m.groundControl.lock(Coalition.Blue, GroundControlRole.OBSERVER, "p-observer-blue")
+        m.groundControl.lock(Coalition.Blue, GroundControlRole.TACTICAL_COMMANDER, "p-tc-blue")
+
+        self.assertTrue(m.groundControl.is_locked(Coalition.Blue, GroundControlRole.TACTICAL_COMMANDER))
+        self.assertFalse(m.groundControl.is_locked(Coalition.Red, GroundControlRole.TACTICAL_COMMANDER))
+
+        self.assertIn(Coalition.Blue.value,
+                      m.groundControl.dict()["passwords"][GroundControlRole.TACTICAL_COMMANDER.value])
+        self.assertIn(Coalition.Blue.value,
+                      m.groundControl.dict()["passwords"][GroundControlRole.JTAC.value])
+        self.assertIn(Coalition.Blue.value,
+                      m.groundControl.dict()["passwords"][GroundControlRole.GAME_MASTER.value])
+        self.assertIn(Coalition.Blue.value,
+                      m.groundControl.dict()["passwords"][GroundControlRole.OBSERVER.value])
+
+        m.groundControl.unlock(Coalition.Blue, GroundControlRole.TACTICAL_COMMANDER)
+        self.assertNotIn(GroundControlRole.TACTICAL_COMMANDER.value, m.groundControl.dict()["passwords"])
+
+        m.groundControl.lock(Coalition.Red, GroundControlRole.JTAC, "p-jtac-red")
+
+        self.assertIn(Coalition.Red.value, m.groundControl.dict()["passwords"][GroundControlRole.JTAC.value])
+
+        m.save(m_saved_name)
+
+        m2 = Mission()
+        m2.load_file(m_saved_name)
+
+        self.assertIn(Coalition.Blue.value,
+                      m2.groundControl.dict()["passwords"][GroundControlRole.JTAC.value])
+        self.assertIn(Coalition.Blue.value,
+                      m2.groundControl.dict()["passwords"][GroundControlRole.GAME_MASTER.value])
+        self.assertIn(Coalition.Blue.value,
+                      m2.groundControl.dict()["passwords"][GroundControlRole.OBSERVER.value])
+        self.assertIn(Coalition.Red.value, m2.groundControl.dict()["passwords"][GroundControlRole.JTAC.value])
