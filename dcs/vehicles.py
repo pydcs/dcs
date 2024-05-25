@@ -106,6 +106,13 @@ class Artillery:
         air_weapon_dist = 32000
         eplrs = True
 
+    class L118_Unit(unittype.VehicleType):
+        id = "L118_Unit"
+        name = "L118 Light Artillery Gun"
+        detection_range = 500
+        threat_range = 17200
+        air_weapon_dist = 17200
+
     class HL_B8M1(unittype.VehicleType):
         id = "HL_B8M1"
         name = "MLRS HL with B8M1 80mm"
@@ -1205,7 +1212,7 @@ class Unarmed:
 
     class Trolley_bus(unittype.VehicleType):
         id = "Trolley bus"
-        name = "Bus ZIU-9 Trolley"
+        name = "ZIU-9 Trolley"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -1290,6 +1297,41 @@ class Unarmed:
     class KrAZ6322(unittype.VehicleType):
         id = "KrAZ6322"
         name = "Truck KrAZ-6322 6x6"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class TugHarlan_drivable(unittype.VehicleType):
+        id = "TugHarlan_drivable"
+        name = "M92 Tug Harlan drivable"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class B600_drivable(unittype.VehicleType):
+        id = "B600_drivable"
+        name = "M92 B600 drivable"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class MJ_1_drivable(unittype.VehicleType):
+        id = "MJ-1_drivable"
+        name = "M92 MJ-1 drivable"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class P20_drivable(unittype.VehicleType):
+        id = "P20_drivable"
+        name = "M92 P20 drivable"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class R11_volvo_drivable(unittype.VehicleType):
+        id = "r11_volvo_drivable"
+        name = "M92 R11 Volvo drivable"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -2235,6 +2277,11 @@ vehicle_map = {
     "S-300PS 40B6MD sr_19J6": AirDefence.S_300PS_40B6MD_sr_19J6,
     "S-300PS 5H63C 30H6_tr": AirDefence.S_300PS_5H63C_30H6_tr,
     "S-300PS 40B6MD sr": AirDefence.S_300PS_40B6MD_sr,
+    "TugHarlan_drivable": Unarmed.TugHarlan_drivable,
+    "B600_drivable": Unarmed.B600_drivable,
+    "MJ-1_drivable": Unarmed.MJ_1_drivable,
+    "P20_drivable": Unarmed.P20_drivable,
+    "r11_volvo_drivable": Unarmed.R11_volvo_drivable,
     "Electric locomotive": Locomotive.Electric_locomotive,
     "Locomotive": Locomotive.Locomotive,
     "Coach cargo": Carriage.Coach_cargo,
@@ -2243,6 +2290,7 @@ vehicle_map = {
     "Coach a tank yellow": Carriage.Coach_a_tank_yellow,
     "Coach a passenger": Carriage.Coach_a_passenger,
     "Coach a platform": Carriage.Coach_a_platform,
+    "L118_Unit": Artillery.L118_Unit,
     "tacr2a": Unarmed.Tacr2a,
     "LARC-V": Unarmed.LARC_V,
     "KS-19": AirDefence.KS_19,
