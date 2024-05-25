@@ -462,6 +462,618 @@ class Fortification:
         shape_name = "barrelofbeer_support"
         rate = 5
 
+    class AM32a_60_01(unittype.StaticType):
+        id = "AM32a-60_01"
+        name = "M92 AM32a-60-01"
+        shape_name = "M92_AM32a-60_01"
+        rate = 1
+
+    class AM32a_60_02(unittype.StaticType):
+        id = "AM32a-60_02"
+        name = "M92 AM32a-60-02"
+        shape_name = "M92_AM32a-60_02"
+        rate = 1
+
+    class APFC_fuel(unittype.StaticType):
+        id = "APFC fuel"
+        name = "M92 APFC fuel"
+        shape_name = "M92_APFCfuel"
+        rate = 1
+
+    class B600(unittype.StaticType):
+        id = "B600"
+        name = "M92 B600"
+        shape_name = "M92_B600"
+        rate = 1
+
+    class Barrier_A(unittype.StaticType):
+        id = "Barrier A"
+        name = "M92 Barrier A"
+        shape_name = "M92_BarrierA"
+        rate = 1
+
+    class Barrier_B(unittype.StaticType):
+        id = "Barrier B"
+        name = "M92 Barrier B"
+        shape_name = "M92_BarrierB"
+        rate = 1
+
+    class Barrier_C(unittype.StaticType):
+        id = "Barrier C"
+        name = "M92 Barrier C"
+        shape_name = "M92_BarrierC"
+        rate = 1
+
+    class Barrier_D(unittype.StaticType):
+        id = "Barrier D"
+        name = "M92 Barrier D"
+        shape_name = "M92_BarrierD"
+        rate = 1
+
+    class BoomBarrier_open(unittype.StaticType):
+        id = "BoomBarrier_open"
+        name = "M92 Boom Barrier open"
+        shape_name = "M92_BoomBarrier_open"
+        rate = 1
+
+    class BoomBarrier_closed(unittype.StaticType):
+        id = "BoomBarrier_closed"
+        name = "M92 Boom Barrier closed"
+        shape_name = "M92_BoomBarrier_closed"
+        rate = 1
+
+    class Building01_PBR(unittype.StaticType):
+        id = "Building01_PBR"
+        name = "M92 Building01 PBR"
+        shape_name = "M92_Building01_PBR"
+        rate = 1
+
+    class Building02_PBR(unittype.StaticType):
+        id = "Building02_PBR"
+        name = "M92 Building02 PBR"
+        shape_name = "M92_Building02_PBR"
+        rate = 1
+
+    class Building03_PBR(unittype.StaticType):
+        id = "Building03_PBR"
+        name = "M92 Building03 PBR"
+        shape_name = "M92_Building03_PBR"
+        rate = 1
+
+    class Building04_PBR(unittype.StaticType):
+        id = "Building04_PBR"
+        name = "M92 Building04 PBR"
+        shape_name = "M92_Building04_PBR"
+        rate = 1
+
+    class Building05_PBR(unittype.StaticType):
+        id = "Building05_PBR"
+        name = "M92 Building05 PBR"
+        shape_name = "M92_Building05_PBR"
+        rate = 1
+
+    class Building06_PBR(unittype.StaticType):
+        id = "Building06_PBR"
+        name = "M92 Building06 PBR"
+        shape_name = "M92_Building06_PBR"
+        rate = 1
+
+    class Building07_PBR(unittype.StaticType):
+        id = "Building07_PBR"
+        name = "M92 Building07 PBR"
+        shape_name = "M92_Building07_PBR"
+        rate = 1
+
+    class Building08_PBR(unittype.StaticType):
+        id = "Building08_PBR"
+        name = "M92 Building08 PBR"
+        shape_name = "M92_Building08_PBR"
+        rate = 1
+
+    class Cargo01(unittype.StaticType):
+        id = "Cargo01"
+        name = "M92 Cargo 01"
+        shape_name = "M92_Cargo01"
+        rate = 1
+
+    class Cargo02(unittype.StaticType):
+        id = "Cargo02"
+        name = "M92 Cargo 02"
+        shape_name = "M92_Cargo02"
+        rate = 1
+
+    class Cargo03(unittype.StaticType):
+        id = "Cargo03"
+        name = "M92 Cargo 03"
+        shape_name = "M92_Cargo03"
+        rate = 1
+
+    class Cargo04(unittype.StaticType):
+        id = "Cargo04"
+        name = "M92 Cargo 04"
+        shape_name = "M92_Cargo04"
+        rate = 1
+
+    class Cargo05(unittype.StaticType):
+        id = "Cargo05"
+        name = "M92 Cargo 05"
+        shape_name = "M92_Cargo05"
+        rate = 1
+
+    class Cargo06(unittype.StaticType):
+        id = "Cargo06"
+        name = "M92 Cargo 06"
+        shape_name = "M92_Cargo06"
+        rate = 1
+
+    class Camouflage01(unittype.StaticType):
+        id = "Camouflage01"
+        name = "M92 Camouflage 01"
+        shape_name = "M92_Camouflage01"
+        rate = 1
+
+    class Camouflage02(unittype.StaticType):
+        id = "Camouflage02"
+        name = "M92 Camouflage 02"
+        shape_name = "M92_Camouflage02"
+        rate = 1
+
+    class Camouflage03(unittype.StaticType):
+        id = "Camouflage03"
+        name = "M92 Camouflage 03"
+        shape_name = "M92_Camouflage03"
+        rate = 1
+
+    class Camouflage04(unittype.StaticType):
+        id = "Camouflage04"
+        name = "M92 Camouflage 04"
+        shape_name = "M92_Camouflage04"
+        rate = 1
+
+    class Camouflage05(unittype.StaticType):
+        id = "Camouflage05"
+        name = "M92 Camouflage 05"
+        shape_name = "M92_Camouflage05"
+        rate = 1
+
+    class Camouflage06(unittype.StaticType):
+        id = "Camouflage06"
+        name = "M92 Camouflage 06"
+        shape_name = "M92_Camouflage06"
+        rate = 1
+
+    class Camouflage07(unittype.StaticType):
+        id = "Camouflage07"
+        name = "M92 Camouflage 07"
+        shape_name = "M92_Camouflage07"
+        rate = 1
+
+    class Cone01(unittype.StaticType):
+        id = "Cone01"
+        name = "M92 Cone 01"
+        shape_name = "M92_Cone01"
+        rate = 1
+
+    class Cone02(unittype.StaticType):
+        id = "Cone02"
+        name = "M92 Cone 02"
+        shape_name = "M92_Cone02"
+        rate = 1
+
+    class Container_10ft(unittype.StaticType):
+        id = "Container_10ft"
+        name = "M92 Container 10ft"
+        shape_name = "M92_Container_10ft"
+        rate = 1
+
+    class Container_20ft(unittype.StaticType):
+        id = "Container_20ft"
+        name = "M92 Container 20ft"
+        shape_name = "M92_Container_20ft"
+        rate = 1
+
+    class Container_40ft(unittype.StaticType):
+        id = "Container_40ft"
+        name = "M92 Container 40ft"
+        shape_name = "M92_Container_40ft"
+        rate = 1
+
+    class Container_watchtower(unittype.StaticType):
+        id = "Container_watchtower"
+        name = "M92 Container watchtower"
+        shape_name = "M92_Container_watchtower"
+        rate = 1
+
+    class Container_watchtower_lights(unittype.StaticType):
+        id = "Container_watchtower_lights"
+        name = "M92 Container watchtower lights"
+        shape_name = "M92_Container_watchtower_lights"
+        rate = 1
+
+    class Container_office(unittype.StaticType):
+        id = "Container_office"
+        name = "M92 Container office"
+        shape_name = "M92_Container_office"
+        rate = 1
+
+    class Container_generator(unittype.StaticType):
+        id = "Container_generator"
+        name = "M92 Container generator"
+        shape_name = "M92_Container_generator"
+        rate = 1
+
+    class ElevatedPlatform_down(unittype.StaticType):
+        id = "ElevatedPlatform_down"
+        name = "M92 Elevated Platform down"
+        shape_name = "M92_ElevatedPlatform_down"
+        rate = 1
+
+    class ElevatedPlatform_up(unittype.StaticType):
+        id = "ElevatedPlatform_up"
+        name = "M92 Elevated Platform up"
+        shape_name = "M92_ElevatedPlatform_up"
+        rate = 1
+
+    class FireExtinguisher01(unittype.StaticType):
+        id = "FireExtinguisher01"
+        name = "M92 Fire Extinguisher 01"
+        shape_name = "M92_FireExtinguisher01"
+        rate = 1
+
+    class FireExtinguisher02(unittype.StaticType):
+        id = "FireExtinguisher02"
+        name = "M92 Fire Extinguisher 02"
+        shape_name = "M92_FireExtinguisher02"
+        rate = 1
+
+    class FireExtinguisher03(unittype.StaticType):
+        id = "FireExtinguisher03"
+        name = "M92 Fire Extinguisher 03"
+        shape_name = "M92_FireExtinguisher03"
+        rate = 1
+
+    class HESCO_generator(unittype.StaticType):
+        id = "HESCO_generator"
+        name = "M92 HESCO generator"
+        shape_name = "M92_HESCO_generator"
+        rate = 1
+
+    class HESCO_post_1(unittype.StaticType):
+        id = "HESCO_post_1"
+        name = "M92 HESCO post 1"
+        shape_name = "M92_HESCO_post_1"
+        rate = 1
+
+    class HESCO_wallperimeter_1(unittype.StaticType):
+        id = "HESCO_wallperimeter_1"
+        name = "M92 HESCO wallperimeter 1"
+        shape_name = "M92_HESCO_wallperimeter_1"
+        rate = 1
+
+    class HESCO_wallperimeter_2(unittype.StaticType):
+        id = "HESCO_wallperimeter_2"
+        name = "M92 HESCO wallperimeter 2"
+        shape_name = "M92_HESCO_wallperimeter_2"
+        rate = 1
+
+    class HESCO_wallperimeter_3(unittype.StaticType):
+        id = "HESCO_wallperimeter_3"
+        name = "M92 HESCO wallperimeter 3"
+        shape_name = "M92_HESCO_wallperimeter_3"
+        rate = 1
+
+    class HESCO_wallperimeter_4(unittype.StaticType):
+        id = "HESCO_wallperimeter_4"
+        name = "M92 HESCO wallperimeter 4"
+        shape_name = "M92_HESCO_wallperimeter_4"
+        rate = 1
+
+    class HESCO_wallperimeter_5(unittype.StaticType):
+        id = "HESCO_wallperimeter_5"
+        name = "M92 HESCO wallperimeter 5"
+        shape_name = "M92_HESCO_wallperimeter_5"
+        rate = 1
+
+    class HESCO_watchtower_1(unittype.StaticType):
+        id = "HESCO_watchtower_1"
+        name = "M92 HESCO watchtower 1"
+        shape_name = "M92_HESCO_watchtower_1"
+        rate = 1
+
+    class HESCO_watchtower_2(unittype.StaticType):
+        id = "HESCO_watchtower_2"
+        name = "M92 HESCO watchtower 2"
+        shape_name = "M92_HESCO_watchtower_2"
+        rate = 1
+
+    class HESCO_watchtower_3(unittype.StaticType):
+        id = "HESCO_watchtower_3"
+        name = "M92 HESCO watchtower 3"
+        shape_name = "M92_HESCO_watchtower_3"
+        rate = 1
+
+    class Jerrycan(unittype.StaticType):
+        id = "Jerrycan"
+        name = "M92 Jerrycan"
+        shape_name = "M92_Jerrycan"
+        rate = 1
+
+    class Ladder(unittype.StaticType):
+        id = "Ladder"
+        name = "M92 Ladder"
+        shape_name = "M92_Ladder"
+        rate = 1
+
+    class LHD_LHA(unittype.StaticType):
+        id = "LHD_LHA"
+        name = "M92 LHD LHA"
+        shape_name = "M92_LHD_LHA"
+        rate = 1
+
+    class M32_10C_01(unittype.StaticType):
+        id = "M32-10C_01"
+        name = "M92 M32-10C 01"
+        shape_name = "M92_M32-10C_01"
+        rate = 1
+
+    class M32_10C_02(unittype.StaticType):
+        id = "M32-10C_02"
+        name = "M92 M32-10C 02"
+        shape_name = "M92_M32-10C_02"
+        rate = 1
+
+    class M32_10C_03(unittype.StaticType):
+        id = "M32-10C_03"
+        name = "M92 M32-10C 03"
+        shape_name = "M92_M32-10C_03"
+        rate = 1
+
+    class M32_10C_04(unittype.StaticType):
+        id = "M32-10C_04"
+        name = "M92 M32-10C 04"
+        shape_name = "M92_M32-10C_04"
+        rate = 1
+
+    class MJ_1_01(unittype.StaticType):
+        id = "MJ-1_01"
+        name = "M92 MJ-1 01"
+        shape_name = "M92_MJ-1_01"
+        rate = 1
+
+    class MJ_1_02(unittype.StaticType):
+        id = "MJ-1_02"
+        name = "M92 MJ-1 02"
+        shape_name = "M92_MJ-1_02"
+        rate = 1
+
+    class NF_2_LightOn(unittype.StaticType):
+        id = "NF-2_LightOn"
+        name = "M92 NF-2 LightOn"
+        shape_name = "M92_NF-2_LightOn"
+        rate = 1
+
+    class NF_2_LightOff01(unittype.StaticType):
+        id = "NF-2_LightOff01"
+        name = "M92 NF-2 LightOff 01"
+        shape_name = "M92_NF-2_LightOff01"
+        rate = 1
+
+    class NF_2_LightOff02(unittype.StaticType):
+        id = "NF-2_LightOff02"
+        name = "M92 NF-2 LightOff 02"
+        shape_name = "M92_NF-2_LightOff02"
+        rate = 1
+
+    class Oil_Barrel(unittype.StaticType):
+        id = "Oil Barrel"
+        name = "M92 Oil barrel"
+        shape_name = "M92_Oilbarrel"
+        rate = 1
+
+    class Pile_of_Woods(unittype.StaticType):
+        id = "Pile of Woods"
+        name = "M92 Pile of woods"
+        shape_name = "M92_Pileofwoods"
+        rate = 1
+
+    class P20_01(unittype.StaticType):
+        id = "P20_01"
+        name = "M92 P20 01"
+        shape_name = "M92_P20_01"
+        rate = 1
+
+    class Revetment_x4(unittype.StaticType):
+        id = "Revetment_x4"
+        name = "M92 Revetment x4"
+        shape_name = "M92_Revetment_x4"
+        rate = 1
+
+    class Revetment_x8(unittype.StaticType):
+        id = "Revetment_x8"
+        name = "M92 Revetment x8"
+        shape_name = "M92_Revetment_x8"
+        rate = 1
+
+    class R11_volvo(unittype.StaticType):
+        id = "r11_volvo"
+        name = "M92 R11 Volvo"
+        shape_name = "M92_r11_volvo"
+        rate = 1
+
+    class Sandbag_01(unittype.StaticType):
+        id = "Sandbag_01"
+        name = "M92 Sandbag 01"
+        shape_name = "M92_Sandbag_01"
+        rate = 1
+
+    class Sandbag_02(unittype.StaticType):
+        id = "Sandbag_02"
+        name = "M92 Sandbag 02"
+        shape_name = "M92_Sandbag_02"
+        rate = 1
+
+    class Sandbag_03(unittype.StaticType):
+        id = "Sandbag_03"
+        name = "M92 Sandbag 03"
+        shape_name = "M92_Sandbag_03"
+        rate = 1
+
+    class Sandbag_04(unittype.StaticType):
+        id = "Sandbag_04"
+        name = "M92 Sandbag 04"
+        shape_name = "M92_Sandbag_04"
+        rate = 1
+
+    class Sandbag_05(unittype.StaticType):
+        id = "Sandbag_05"
+        name = "M92 Sandbag 05"
+        shape_name = "M92_Sandbag_05"
+        rate = 1
+
+    class Sandbag_06(unittype.StaticType):
+        id = "Sandbag_06"
+        name = "M92 Sandbag 06"
+        shape_name = "M92_Sandbag_06"
+        rate = 1
+
+    class Sandbag_07(unittype.StaticType):
+        id = "Sandbag_07"
+        name = "M92 Sandbag 07"
+        shape_name = "M92_Sandbag_07"
+        rate = 1
+
+    class Sandbag_08(unittype.StaticType):
+        id = "Sandbag_08"
+        name = "M92 Sandbag 08"
+        shape_name = "M92_Sandbag_08"
+        rate = 1
+
+    class Sandbag_09(unittype.StaticType):
+        id = "Sandbag_09"
+        name = "M92 Sandbag 09"
+        shape_name = "M92_Sandbag_09"
+        rate = 1
+
+    class Sandbag_10(unittype.StaticType):
+        id = "Sandbag_10"
+        name = "M92 Sandbag 10"
+        shape_name = "M92_Sandbag_10"
+        rate = 1
+
+    class Sandbag_11(unittype.StaticType):
+        id = "Sandbag_11"
+        name = "M92 Sandbag 11"
+        shape_name = "M92_Sandbag_11"
+        rate = 1
+
+    class Sandbag_12(unittype.StaticType):
+        id = "Sandbag_12"
+        name = "M92 Sandbag 12"
+        shape_name = "M92_Sandbag_12"
+        rate = 1
+
+    class Sandbag_13(unittype.StaticType):
+        id = "Sandbag_13"
+        name = "M92 Sandbag 13"
+        shape_name = "M92_Sandbag_13"
+        rate = 1
+
+    class Sandbag_15(unittype.StaticType):
+        id = "Sandbag_15"
+        name = "M92 Sandbag 15"
+        shape_name = "M92_Sandbag_15"
+        rate = 1
+
+    class Sandbag_16(unittype.StaticType):
+        id = "Sandbag_16"
+        name = "M92 Sandbag 16"
+        shape_name = "M92_Sandbag_16"
+        rate = 1
+
+    class Sandbag_17(unittype.StaticType):
+        id = "Sandbag_17"
+        name = "M92 Sandbag 17"
+        shape_name = "M92_Sandbag_17"
+        rate = 1
+
+    class Shelter01(unittype.StaticType):
+        id = "Shelter01"
+        name = "M92 Shelter 01"
+        shape_name = "M92_Shelter01"
+        rate = 1
+
+    class Shelter02(unittype.StaticType):
+        id = "Shelter02"
+        name = "M92 Shelter 02"
+        shape_name = "M92_Shelter02"
+        rate = 1
+
+    class TugHarlan(unittype.StaticType):
+        id = "TugHarlan"
+        name = "M92 Tug Harlan"
+        shape_name = "M92_TugHarlan"
+        rate = 1
+
+    class Tent05(unittype.StaticType):
+        id = "Tent05"
+        name = "M92 Tent 05"
+        shape_name = "M92_Tent05"
+        rate = 1
+
+    class Tent04(unittype.StaticType):
+        id = "Tent04"
+        name = "M92 Tent 04"
+        shape_name = "M92_Tent04"
+        rate = 1
+
+    class Tent03(unittype.StaticType):
+        id = "Tent03"
+        name = "M92 Tent 03"
+        shape_name = "M92_Tent03"
+        rate = 1
+
+    class Tent02(unittype.StaticType):
+        id = "Tent02"
+        name = "M92 Tent 02"
+        shape_name = "M92_Tent02"
+        rate = 1
+
+    class Tent01(unittype.StaticType):
+        id = "Tent01"
+        name = "M92 Tent 01"
+        shape_name = "M92_Tent01"
+        rate = 1
+
+    class Toolbox01(unittype.StaticType):
+        id = "Toolbox01"
+        name = "M92 Toolbox 01"
+        shape_name = "M92_Toolbox01"
+        rate = 1
+
+    class Toolbox02(unittype.StaticType):
+        id = "Toolbox02"
+        name = "M92 Toolbox 02"
+        shape_name = "M92_Toolbox02"
+        rate = 1
+
+    class Twall_x1(unittype.StaticType):
+        id = "Twall_x1"
+        name = "M92 Twall x1"
+        shape_name = "M92_Twall_x1"
+        rate = 1
+
+    class Twall_x6(unittype.StaticType):
+        id = "Twall_x6"
+        name = "M92 Twall x6"
+        shape_name = "M92_Twall_x6"
+        rate = 1
+
+    class Twall_x6_3mts(unittype.StaticType):
+        id = "Twall_x6_3mts"
+        name = "M92 Twall x6 3mts"
+        shape_name = "M92_Twall_x6_3mts"
+        rate = 1
+
     class Orca(unittype.StaticType):
         id = "Orca"
         name = "Orca Whale"
@@ -526,6 +1138,30 @@ class Fortification:
         id = "offshore WindTurbine2"
         name = "Offshore Wind Turbine 2"
         shape_name = "offshore_windturbine2"
+        rate = 3
+
+    class FarpHide_small(unittype.StaticType):
+        id = "FarpHide_small"
+        name = "FARP Hide Single Small"
+        shape_name = "FarpHide_small"
+        rate = 3
+
+    class FarpHide_Med(unittype.StaticType):
+        id = "FarpHide_Med"
+        name = "FARP Hide Single Med"
+        shape_name = "FarpHide_Med"
+        rate = 3
+
+    class FarpHide_Dsmall(unittype.StaticType):
+        id = "FarpHide_Dsmall"
+        name = "FARP Hide Double Small"
+        shape_name = "FarpHide_Dsmall"
+        rate = 3
+
+    class FarpHide_Dmed(unittype.StaticType):
+        id = "FarpHide_Dmed"
+        name = "FARP Hide Double Med"
+        shape_name = "FarpHide_Dmed"
         rate = 3
 
     class Container_40ft(unittype.StaticType):
@@ -785,6 +1421,108 @@ fortification_map = {
     "Black_Tyre_WF": Fortification.Black_Tyre_WF,
     "Windsock": Fortification.Windsock,
     "Beer Bomb": Fortification.Beer_Bomb,
+    "AM32a-60_01": Fortification.AM32a_60_01,
+    "AM32a-60_02": Fortification.AM32a_60_02,
+    "APFC fuel": Fortification.APFC_fuel,
+    "B600": Fortification.B600,
+    "Barrier A": Fortification.Barrier_A,
+    "Barrier B": Fortification.Barrier_B,
+    "Barrier C": Fortification.Barrier_C,
+    "Barrier D": Fortification.Barrier_D,
+    "BoomBarrier_open": Fortification.BoomBarrier_open,
+    "BoomBarrier_closed": Fortification.BoomBarrier_closed,
+    "Building01_PBR": Fortification.Building01_PBR,
+    "Building02_PBR": Fortification.Building02_PBR,
+    "Building03_PBR": Fortification.Building03_PBR,
+    "Building04_PBR": Fortification.Building04_PBR,
+    "Building05_PBR": Fortification.Building05_PBR,
+    "Building06_PBR": Fortification.Building06_PBR,
+    "Building07_PBR": Fortification.Building07_PBR,
+    "Building08_PBR": Fortification.Building08_PBR,
+    "Cargo01": Fortification.Cargo01,
+    "Cargo02": Fortification.Cargo02,
+    "Cargo03": Fortification.Cargo03,
+    "Cargo04": Fortification.Cargo04,
+    "Cargo05": Fortification.Cargo05,
+    "Cargo06": Fortification.Cargo06,
+    "Camouflage01": Fortification.Camouflage01,
+    "Camouflage02": Fortification.Camouflage02,
+    "Camouflage03": Fortification.Camouflage03,
+    "Camouflage04": Fortification.Camouflage04,
+    "Camouflage05": Fortification.Camouflage05,
+    "Camouflage06": Fortification.Camouflage06,
+    "Camouflage07": Fortification.Camouflage07,
+    "Cone01": Fortification.Cone01,
+    "Cone02": Fortification.Cone02,
+    "Container_10ft": Fortification.Container_10ft,
+    "Container_20ft": Fortification.Container_20ft,
+    "Container_40ft": Fortification.Container_40ft,
+    "Container_watchtower": Fortification.Container_watchtower,
+    "Container_watchtower_lights": Fortification.Container_watchtower_lights,
+    "Container_office": Fortification.Container_office,
+    "Container_generator": Fortification.Container_generator,
+    "ElevatedPlatform_down": Fortification.ElevatedPlatform_down,
+    "ElevatedPlatform_up": Fortification.ElevatedPlatform_up,
+    "FireExtinguisher01": Fortification.FireExtinguisher01,
+    "FireExtinguisher02": Fortification.FireExtinguisher02,
+    "FireExtinguisher03": Fortification.FireExtinguisher03,
+    "HESCO_generator": Fortification.HESCO_generator,
+    "HESCO_post_1": Fortification.HESCO_post_1,
+    "HESCO_wallperimeter_1": Fortification.HESCO_wallperimeter_1,
+    "HESCO_wallperimeter_2": Fortification.HESCO_wallperimeter_2,
+    "HESCO_wallperimeter_3": Fortification.HESCO_wallperimeter_3,
+    "HESCO_wallperimeter_4": Fortification.HESCO_wallperimeter_4,
+    "HESCO_wallperimeter_5": Fortification.HESCO_wallperimeter_5,
+    "HESCO_watchtower_1": Fortification.HESCO_watchtower_1,
+    "HESCO_watchtower_2": Fortification.HESCO_watchtower_2,
+    "HESCO_watchtower_3": Fortification.HESCO_watchtower_3,
+    "Jerrycan": Fortification.Jerrycan,
+    "Ladder": Fortification.Ladder,
+    "LHD_LHA": Fortification.LHD_LHA,
+    "M32-10C_01": Fortification.M32_10C_01,
+    "M32-10C_02": Fortification.M32_10C_02,
+    "M32-10C_03": Fortification.M32_10C_03,
+    "M32-10C_04": Fortification.M32_10C_04,
+    "MJ-1_01": Fortification.MJ_1_01,
+    "MJ-1_02": Fortification.MJ_1_02,
+    "NF-2_LightOn": Fortification.NF_2_LightOn,
+    "NF-2_LightOff01": Fortification.NF_2_LightOff01,
+    "NF-2_LightOff02": Fortification.NF_2_LightOff02,
+    "Oil Barrel": Fortification.Oil_Barrel,
+    "Pile of Woods": Fortification.Pile_of_Woods,
+    "P20_01": Fortification.P20_01,
+    "Revetment_x4": Fortification.Revetment_x4,
+    "Revetment_x8": Fortification.Revetment_x8,
+    "r11_volvo": Fortification.R11_volvo,
+    "Sandbag_01": Fortification.Sandbag_01,
+    "Sandbag_02": Fortification.Sandbag_02,
+    "Sandbag_03": Fortification.Sandbag_03,
+    "Sandbag_04": Fortification.Sandbag_04,
+    "Sandbag_05": Fortification.Sandbag_05,
+    "Sandbag_06": Fortification.Sandbag_06,
+    "Sandbag_07": Fortification.Sandbag_07,
+    "Sandbag_08": Fortification.Sandbag_08,
+    "Sandbag_09": Fortification.Sandbag_09,
+    "Sandbag_10": Fortification.Sandbag_10,
+    "Sandbag_11": Fortification.Sandbag_11,
+    "Sandbag_12": Fortification.Sandbag_12,
+    "Sandbag_13": Fortification.Sandbag_13,
+    "Sandbag_15": Fortification.Sandbag_15,
+    "Sandbag_16": Fortification.Sandbag_16,
+    "Sandbag_17": Fortification.Sandbag_17,
+    "Shelter01": Fortification.Shelter01,
+    "Shelter02": Fortification.Shelter02,
+    "TugHarlan": Fortification.TugHarlan,
+    "Tent05": Fortification.Tent05,
+    "Tent04": Fortification.Tent04,
+    "Tent03": Fortification.Tent03,
+    "Tent02": Fortification.Tent02,
+    "Tent01": Fortification.Tent01,
+    "Toolbox01": Fortification.Toolbox01,
+    "Toolbox02": Fortification.Toolbox02,
+    "Twall_x1": Fortification.Twall_x1,
+    "Twall_x6": Fortification.Twall_x6,
+    "Twall_x6_3mts": Fortification.Twall_x6_3mts,
     "Orca": Fortification.Orca,
     "WindTurbine": Fortification.WindTurbine,
     "WindTurbine_11": Fortification.WindTurbine_11,
@@ -796,6 +1534,10 @@ fortification_map = {
     "Nodding_Donkey_Pump": Fortification.Nodding_Donkey_Pump,
     "offshore WindTurbine": Fortification.Offshore_WindTurbine,
     "offshore WindTurbine2": Fortification.Offshore_WindTurbine2,
+    "FarpHide_small": Fortification.FarpHide_small,
+    "FarpHide_Med": Fortification.FarpHide_Med,
+    "FarpHide_Dsmall": Fortification.FarpHide_Dsmall,
+    "FarpHide_Dmed": Fortification.FarpHide_Dmed,
     "container_40ft": Fortification.Container_40ft,
     "container_20ft": Fortification.Container_20ft,
     "FlagPole": Fortification.FlagPole,

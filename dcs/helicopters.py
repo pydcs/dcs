@@ -27,14 +27,14 @@ class Mi_24V(HelicopterType):
     livery_name = "MI-24V"  # from type
 
     class Pylon1:
-        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (1, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
+        _2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT = (1, Weapons._2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT)
 
     class Pylon2:
         B_8V20A_CM = (2, Weapons.B_8V20A_CM)
         B_8V20A_OFP2 = (2, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (2, Weapons.B_8V20A_OM)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (2, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
+        _2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT = (2, Weapons._2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (2, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -81,7 +81,7 @@ class Mi_24V(HelicopterType):
         B_8V20A_OFP2 = (5, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (5, Weapons.B_8V20A_OM)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (5, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (5, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
+        _2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT = (5, Weapons._2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (5, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (5, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -90,7 +90,7 @@ class Mi_24V(HelicopterType):
         GUV_VOG = (5, Weapons.GUV_VOG)
 
     class Pylon6:
-        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (6, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
+        _2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT = (6, Weapons._2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT)
 
     pylons: Set[int] = {1, 2, 3, 4, 5, 6}
 
@@ -892,7 +892,7 @@ class Mi_28N(HelicopterType):
         B_8V20A_CM = (1, Weapons.B_8V20A_CM)
         B_8V20A_OFP2 = (1, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (1, Weapons.B_8V20A_OM)
-        _8_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (1, Weapons._8_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
+        _8_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT = (1, Weapons._8_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT)
         B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (1, Weapons.B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         FAB_250___250kg_GP_Bomb_LD = (1, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250_kg_GP_Bomb_LD = (1, Weapons.FAB_250_M62___250_kg_GP_Bomb_LD)
@@ -947,7 +947,7 @@ class Mi_28N(HelicopterType):
         FAB_500_M_62___500kg_GP_Bomb_LD = (4, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (4, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (4, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        _8_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (4, Weapons._8_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
+        _8_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT = (4, Weapons._8_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT)
         B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
 
     pylons: Set[int] = {1, 2, 3, 4}
@@ -1515,7 +1515,7 @@ class Ka_50(HelicopterType):
         B_8V20A_CM = (1, Weapons.B_8V20A_CM)
         B_8V20A_OFP2 = (1, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (1, Weapons.B_8V20A_OM)
-        Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser = (1, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser)
+        Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (1, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
         B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (1, Weapons.B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (1, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (1, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -1559,7 +1559,7 @@ class Ka_50(HelicopterType):
         B_8V20A_CM = (4, Weapons.B_8V20A_CM)
         B_8V20A_OFP2 = (4, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (4, Weapons.B_8V20A_OM)
-        Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser = (4, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser)
+        Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (4, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
         B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (4, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (4, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -1750,7 +1750,7 @@ class Ka_50_3(HelicopterType):
         B_8V20A_CM = (1, Weapons.B_8V20A_CM)
         B_8V20A_OFP2 = (1, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (1, Weapons.B_8V20A_OM)
-        Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser = (1, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser)
+        Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (1, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
         B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (1, Weapons.B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (1, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (1, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -1794,7 +1794,7 @@ class Ka_50_3(HelicopterType):
         B_8V20A_CM = (4, Weapons.B_8V20A_CM)
         B_8V20A_OFP2 = (4, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (4, Weapons.B_8V20A_OM)
-        Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser = (4, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser)
+        Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (4, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
         B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (4, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod = (4, Weapons.UPK_23_250___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -2081,7 +2081,7 @@ class Mi_24P(HelicopterType):
     livery_name = "MI-24P"  # from type
 
     class Pylon1:
-        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (1, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
+        _2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT = (1, Weapons._2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT)
         _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT = (1, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT)
         _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE = (1, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE)
         _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag = (1, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag)
@@ -2092,7 +2092,7 @@ class Mi_24P(HelicopterType):
         B_8V20A_OFP2 = (2, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (2, Weapons.B_8V20A_OM)
         UB_32A_24_pod___32_x_S_5KO = (2, Weapons.UB_32A_24_pod___32_x_S_5KO)
-        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT_ = (2, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT_)
+        _2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT_ = (2, Weapons._2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT_)
         _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT_ = (2, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT_)
         _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE_ = (2, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE_)
         _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag_ = (2, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag_)
@@ -2158,7 +2158,7 @@ class Mi_24P(HelicopterType):
         B_8V20A_OFP2 = (5, Weapons.B_8V20A_OFP2)
         B_8V20A_OM = (5, Weapons.B_8V20A_OM)
         UB_32A_24_pod___32_x_S_5KO = (5, Weapons.UB_32A_24_pod___32_x_S_5KO)
-        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT_ = (5, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT_)
+        _2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT_ = (5, Weapons._2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT_)
         _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT_ = (5, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT_)
         _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE_ = (5, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE_)
         _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag_ = (5, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag_)
@@ -2176,7 +2176,7 @@ class Mi_24P(HelicopterType):
         APU_60_2M_with_2_x_R_60M__AA_8_Aphid_B____IR_AAM___ = (5, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid_B____IR_AAM___)
 
     class Pylon6:
-        _2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT = (6, Weapons._2_x_9M114_Shturm_V__AT_6_Spiral____ATGM__SACLOS__HEAT)
+        _2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT = (6, Weapons._2_x_9M114_Kokon__AT_6_Spiral____ATGM__SACLOS__HEAT)
         _2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT = (6, Weapons._2_x_9M120_Ataka__AT_9_Spiral_2____ATGM__SACLOS__Tandem_HEAT)
         _2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE = (6, Weapons._2_x_9M120F_Ataka__AT_9_Spiral_2____AGM__SACLOS__HE)
         _2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag = (6, Weapons._2_x_9M220O_Ataka__AT_9_Spiral_2____AAM__SACLOS__Frag)
