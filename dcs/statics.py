@@ -1164,13 +1164,13 @@ class Fortification:
         shape_name = "FarpHide_Dmed"
         rate = 3
 
-    class Container_40ft(unittype.StaticType):
+    class Container_40ft_(unittype.StaticType):
         id = "container_40ft"
         name = "Container 40ft"
         shape_name = "container_40ft"
         rate = 1
 
-    class Container_20ft(unittype.StaticType):
+    class Container_20ft_(unittype.StaticType):
         id = "container_20ft"
         name = "Container 20ft"
         shape_name = "container_20ft"
@@ -1538,8 +1538,8 @@ fortification_map = {
     "FarpHide_Med": Fortification.FarpHide_Med,
     "FarpHide_Dsmall": Fortification.FarpHide_Dsmall,
     "FarpHide_Dmed": Fortification.FarpHide_Dmed,
-    "container_40ft": Fortification.Container_40ft,
-    "container_20ft": Fortification.Container_20ft,
+    "container_40ft": Fortification.Container_40ft_,
+    "container_20ft": Fortification.Container_20ft_,
     "FlagPole": Fortification.FlagPole,
     "warning_board_a": Fortification.Warning_board_a,
     "warning_board_b": Fortification.Warning_board_b,
