@@ -843,6 +843,20 @@ class Weapons:
     M2000_Fuel_tank = {"clsid": "{414DA830-B61A-4F9E-B71B-C2F6832E1D7A}", "name": "M2000 Fuel tank", "weight": 1050}
     M260_HYDRA = {"clsid": "M260_HYDRA", "name": "M260 pod - 7 x 2.75\" Hydra, UnGd Rkts Mk5, HEAT", "weight": 112}
     M260_HYDRA_WP = {"clsid": "M260_HYDRA_WP", "name": "M260 pod - 7 x 2.75\" Hydra, UnGd Rkts M156, Wht Phos", "weight": 112}
+    M260___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = {"clsid": "{M260_APKWS_M151}", "name": "M260 - 7 x Laser Guided Rkts, 70 mm Hydra 70 M151 HE APKWS", "weight": 120.9}
+    M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = {"clsid": "{M260_M151}", "name": "M260 - 7 x UnGd Rkts, 70 mm Hydra 70 M151 HE", "weight": 88.7}
+    M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = {"clsid": "{M260_M156}", "name": "M260 - 7 x UnGd Rkts, 70 mm Hydra 70 M156 SM", "weight": 89.96}
+    M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M229_HE = {"clsid": "{M260_M229}", "name": "M260 - 7 x UnGd Rkts, 70 mm Hydra 70 M229 HE", "weight": 112.99}
+    M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = {"clsid": "{M260_M257}", "name": "M260 - 7 x UnGd Rkts, 70 mm Hydra 70 M257 IL", "weight": 94.3}
+    M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M259_SM = {"clsid": "{M260_M259}", "name": "M260 - 7 x UnGd Rkts, 70 mm Hydra 70 M259 SM", "weight": 86.32}
+    M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = {"clsid": "{M260_M274}", "name": "M260 - 7 x UnGd Rkts, 70 mm Hydra 70 M274 TP-SM", "weight": 88.7}
+    M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M156 = {"clsid": "{M260_A_M151_B_M156}", "name": "M260 - 7 x UnGd Rkts, 70 mm Hydra 70, Pod Zones: A - M151; B - M156", "weight": 89.24}
+    M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M257 = {"clsid": "{M260_A_M151_B_M257}", "name": "M260 - 7 x UnGd Rkts, 70 mm Hydra 70, Pod Zones: A - M151; B - M257", "weight": 91.1}
+    M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M259 = {"clsid": "{M260_A_M151_B_M259}", "name": "M260 - 7 x UnGd Rkts, 70 mm Hydra 70, Pod Zones: A - M151; B - M259", "weight": 87.68}
+    M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M274 = {"clsid": "{M260_A_M151_B_M274}", "name": "M260 - 7 x UnGd Rkts, 70 mm Hydra 70, Pod Zones: A - M151; B - M274", "weight": 88.7}
+    M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M156 = {"clsid": "{M260_A_M229_B_M156}", "name": "M260 - 7 x UnGd Rkts, 70 mm Hydra 70, Pod Zones: A - M229; B - M156", "weight": 103.12}
+    M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M257 = {"clsid": "{M260_A_M229_B_M257}", "name": "M260 - 7 x UnGd Rkts, 70 mm Hydra 70, Pod Zones: A - M229; B - M257", "weight": 104.98}
+    M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M259 = {"clsid": "{M260_A_M229_B_M259}", "name": "M260 - 7 x UnGd Rkts, 70 mm Hydra 70, Pod Zones: A - M229; B - M259", "weight": 101.56}
     M261_MK151 = {"clsid": "M261_MK151", "name": "M261 - 19 x UnGd Rkts, 70 mm Hydra 70 M151 HE", "weight": 237}
     M261_MK156 = {"clsid": "M261_MK156", "name": "M261 - 19 x UnGd Rkts, 70 mm Hydra 70 M156 SM", "weight": 240.42}
     M261___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE__M433_RC_Fuze = {"clsid": "{M261_M151_M433}", "name": "M261 - 19 x UnGd Rkts, 70 mm Hydra 70 M151 HE, M433 RC Fuze", "weight": 237}
@@ -1033,6 +1047,23 @@ class Weapons:
     ODAB_500PM___525_kg__bomb__parachute__simulated_aerosol = {"clsid": "{ODAB-500PM}", "name": "ODAB-500PM - 525 kg, bomb, parachute, simulated aerosol", "weight": 520}
     OFAB_100_120_TU_x_4 = {"clsid": "{OFAB-100-120-TU}", "name": "OFAB-100-120-TU x 4", "weight": 557}
     OFAB_100_Jupiter___100kg_GP_Bomb_HD = {"clsid": "{OFAB_100_Jupiter}", "name": "OFAB-100 Jupiter - 100kg GP Bomb HD", "weight": 121}
+    OH58D_AGM_114_L = {"clsid": "OH58D_AGM_114_L", "name": "2xAGM-114K", "weight": 138.23}
+    OH58D_AGM_114_L1 = {"clsid": "OH58D_AGM_114_L1", "name": "1xAGM-114K", "weight": 93.05}
+    OH58D_AGM_114_R = {"clsid": "OH58D_AGM_114_R", "name": "2xAGM-114K", "weight": 138.23}
+    OH58D_AGM_114_R1 = {"clsid": "OH58D_AGM_114_R1", "name": "1xAGM-114K", "weight": 93.05}
+    OH58D_Blue_Smoke_Grenade = {"clsid": "OH58D_Blue_Smoke_Grenade", "name": "1xBlue Smoke Grenade", "weight": 0.5}
+    OH58D_FIM_92_L = {"clsid": "OH58D_FIM_92_L", "name": "2xFIM-92", "weight": 42.8}
+    OH58D_FIM_92_R = {"clsid": "OH58D_FIM_92_R", "name": "2xFIM-92", "weight": 42.8}
+    OH58D_Green_Smoke_Grenade = {"clsid": "OH58D_Green_Smoke_Grenade", "name": "1xGreen Smoke Grenade", "weight": 0.5}
+    OH58D_M3P_L100 = {"clsid": "OH58D_M3P_L100", "name": "M3P100", "weight": 85.868}
+    OH58D_M3P_L200 = {"clsid": "OH58D_M3P_L200", "name": "M3P200", "weight": 99.186}
+    OH58D_M3P_L300 = {"clsid": "OH58D_M3P_L300", "name": "M3P300", "weight": 112.504}
+    OH58D_M3P_L400 = {"clsid": "OH58D_M3P_L400", "name": "M3P400", "weight": 125.822}
+    OH58D_M3P_L500 = {"clsid": "OH58D_M3P_L500", "name": "M3P500", "weight": 139.14}
+    OH58D_Red_Smoke_Grenade = {"clsid": "OH58D_Red_Smoke_Grenade", "name": "1xRed Smoke Grenade", "weight": 0.5}
+    OH58D_Violet_Smoke_Grenade = {"clsid": "OH58D_Violet_Smoke_Grenade", "name": "1xViolet Smoke Grenade", "weight": 0.5}
+    OH58D_White_Smoke_Grenade = {"clsid": "OH58D_White_Smoke_Grenade", "name": "1xWhite Smoke Grenade", "weight": 0.5}
+    OH58D_Yellow_Smoke_Grenade = {"clsid": "OH58D_Yellow_Smoke_Grenade", "name": "1xYellow Smoke Grenade", "weight": 0.5}
     ORO_57K___S_5M1_HE_FRAG_FFAR_x_8 = {"clsid": "{ORO57K_S5M1_HEFRAG}", "name": "ORO-57K - S-5M1 HE-FRAG FFAR x 8", "weight": 63.88}
     ORO_57K___S_5MO_HE_FRAG_FFAR_x_8 = {"clsid": "{ORO57K_S5MO_HEFRAG}", "name": "ORO-57K - S-5MO HE-FRAG FFAR x 8", "weight": 63.88}
     ORO_57K___S_5M_x_8 = {"clsid": "{ORO57K_S5M_HEFRAG}", "name": "ORO-57K - S-5M x 8", "weight": 64.92}
@@ -2481,6 +2512,20 @@ weapon_ids = {
     "{414DA830-B61A-4F9E-B71B-C2F6832E1D7A}": Weapons.M2000_Fuel_tank,
     "M260_HYDRA": Weapons.M260_HYDRA,
     "M260_HYDRA_WP": Weapons.M260_HYDRA_WP,
+    "{M260_APKWS_M151}": Weapons.M260___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS,
+    "{M260_M151}": Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE,
+    "{M260_M156}": Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM,
+    "{M260_M229}": Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M229_HE,
+    "{M260_M257}": Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL,
+    "{M260_M259}": Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M259_SM,
+    "{M260_M274}": Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM,
+    "{M260_A_M151_B_M156}": Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M156,
+    "{M260_A_M151_B_M257}": Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M257,
+    "{M260_A_M151_B_M259}": Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M259,
+    "{M260_A_M151_B_M274}": Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M274,
+    "{M260_A_M229_B_M156}": Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M156,
+    "{M260_A_M229_B_M257}": Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M257,
+    "{M260_A_M229_B_M259}": Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M259,
     "M261_MK151": Weapons.M261_MK151,
     "M261_MK156": Weapons.M261_MK156,
     "{M261_M151_M433}": Weapons.M261___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE__M433_RC_Fuze,
@@ -2671,6 +2716,23 @@ weapon_ids = {
     "{ODAB-500PM}": Weapons.ODAB_500PM___525_kg__bomb__parachute__simulated_aerosol,
     "{OFAB-100-120-TU}": Weapons.OFAB_100_120_TU_x_4,
     "{OFAB_100_Jupiter}": Weapons.OFAB_100_Jupiter___100kg_GP_Bomb_HD,
+    "OH58D_AGM_114_L": Weapons.OH58D_AGM_114_L,
+    "OH58D_AGM_114_L1": Weapons.OH58D_AGM_114_L1,
+    "OH58D_AGM_114_R": Weapons.OH58D_AGM_114_R,
+    "OH58D_AGM_114_R1": Weapons.OH58D_AGM_114_R1,
+    "OH58D_Blue_Smoke_Grenade": Weapons.OH58D_Blue_Smoke_Grenade,
+    "OH58D_FIM_92_L": Weapons.OH58D_FIM_92_L,
+    "OH58D_FIM_92_R": Weapons.OH58D_FIM_92_R,
+    "OH58D_Green_Smoke_Grenade": Weapons.OH58D_Green_Smoke_Grenade,
+    "OH58D_M3P_L100": Weapons.OH58D_M3P_L100,
+    "OH58D_M3P_L200": Weapons.OH58D_M3P_L200,
+    "OH58D_M3P_L300": Weapons.OH58D_M3P_L300,
+    "OH58D_M3P_L400": Weapons.OH58D_M3P_L400,
+    "OH58D_M3P_L500": Weapons.OH58D_M3P_L500,
+    "OH58D_Red_Smoke_Grenade": Weapons.OH58D_Red_Smoke_Grenade,
+    "OH58D_Violet_Smoke_Grenade": Weapons.OH58D_Violet_Smoke_Grenade,
+    "OH58D_White_Smoke_Grenade": Weapons.OH58D_White_Smoke_Grenade,
+    "OH58D_Yellow_Smoke_Grenade": Weapons.OH58D_Yellow_Smoke_Grenade,
     "{ORO57K_S5M1_HEFRAG}": Weapons.ORO_57K___S_5M1_HE_FRAG_FFAR_x_8,
     "{ORO57K_S5MO_HEFRAG}": Weapons.ORO_57K___S_5MO_HE_FRAG_FFAR_x_8,
     "{ORO57K_S5M_HEFRAG}": Weapons.ORO_57K___S_5M_x_8,

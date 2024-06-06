@@ -2194,6 +2194,345 @@ class Mi_24P(HelicopterType):
     task_default = task.CAS
 
 
+class OH58D(HelicopterType):
+    id = "OH58D"
+    flyable = True
+    height = 2.77
+    width = 10.668
+    length = 10.2
+    fuel_max = 333.69
+    max_speed = 230
+    chaff = 0
+    flare = 30
+    charge_total = 30
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    eplrs = True
+    radio_frequency = 116
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 260,
+                2: 225,
+                4: 240,
+                8: 280,
+                16: 360,
+                17: 370,
+                9: 290,
+                18: 380,
+                5: 250,
+                10: 300,
+                20: 395,
+                11: 310,
+                3: 230,
+                6: 260,
+                12: 320,
+                13: 330,
+                7: 270,
+                14: 340,
+                19: 390,
+                15: 350
+            },
+        },
+        2: {
+            "channels": {
+                1: 131,
+                2: 116,
+                4: 120,
+                8: 128,
+                16: 144,
+                17: 146,
+                9: 130,
+                18: 148,
+                5: 122,
+                10: 132,
+                20: 151,
+                11: 134,
+                3: 118,
+                6: 124,
+                12: 136,
+                13: 138,
+                7: 126,
+                14: 140,
+                19: 150,
+                15: 142
+            },
+        },
+        4: {
+            "channels": {
+                1: 30,
+                2: 40.4,
+                4: 32,
+                8: 44,
+                16: 68,
+                17: 72,
+                9: 48,
+                18: 74,
+                5: 36,
+                10: 50,
+                20: 80,
+                21: 84,
+                11: 54,
+                3: 30,
+                6: 38,
+                12: 56,
+                13: 60,
+                7: 42,
+                14: 62,
+                19: 78,
+                15: 66
+            },
+        },
+        3: {
+            "channels": {
+                1: 30,
+                2: 40.4,
+                4: 32,
+                8: 44,
+                16: 68,
+                17: 72,
+                9: 48,
+                18: 74,
+                5: 36,
+                10: 50,
+                20: 80,
+                21: 84,
+                11: 54,
+                3: 30,
+                6: 38,
+                12: 56,
+                13: 60,
+                7: 42,
+                14: 62,
+                19: 78,
+                15: 66
+            },
+        },
+    }
+
+    callnames: Dict[str, List[str]] = {
+        "USA": [
+            "Anvil",
+            "Azrael",
+            "Bam-Bam",
+            "Blackjack",
+            "Bootleg",
+            "Burnin' Stogie",
+            "Chaos",
+            "Crazyhorse",
+            "Crusader",
+            "Darkhorse",
+            "Eagle",
+            "Lighthorse",
+            "Mustang",
+            "Outcast",
+            "Palehorse",
+            "Pegasus",
+            "Pistol",
+            "Roughneck",
+            "Saber",
+            "Shamus",
+            "Spur",
+            "Stetson",
+            "Wrath",
+        ]
+    }
+
+    property_defaults: Dict[str, Any] = {
+        "NetCrewControlPriority": 0,
+        "Remove_doors": True,
+        "PDU": False,
+        "Rifles": True,
+        "MMS_removal": False,
+        "Rapid_Deployment_Gear": False,
+        "ALQ144": False,
+        "importDrawings": True,
+        "tacNet": 1,
+    }
+
+    class Properties:
+
+        class NetCrewControlPriority:
+            id = "NetCrewControlPriority"
+
+            class Values:
+                Pilot = 0
+                Copilot = 1
+                Ask_Always = -1
+                Equally_Responsible = -2
+
+        class Remove_doors:
+            id = "Remove doors"
+
+        class PDU:
+            id = "PDU"
+
+        class Rifles:
+            id = "Rifles"
+
+        class MMS_removal:
+            id = "MMS removal"
+
+        class Rapid_Deployment_Gear:
+            id = "Rapid Deployment Gear"
+
+        class ALQ144:
+            id = "ALQ144"
+
+        class importDrawings:
+            id = "importDrawings"
+
+        class tacNet:
+            id = "tacNet"
+
+    properties = {
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "Copilot",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+        "Remove doors": UnitPropertyDescription(
+            identifier="Remove doors",
+            control="checkbox",
+            label="Remove Doors",
+            default=True,
+            weight_when_on=-3.6,
+        ),
+        "PDU": UnitPropertyDescription(
+            identifier="PDU",
+            control="checkbox",
+            label="Install Pilot Display Unit",
+            default=False,
+            weight_when_on=5,
+        ),
+        "Rifles": UnitPropertyDescription(
+            identifier="Rifles",
+            control="checkbox",
+            label="Equip Personal Weapons",
+            player_only=True,
+            default=True,
+        ),
+        "MMS removal": UnitPropertyDescription(
+            identifier="MMS removal",
+            control="checkbox",
+            label="Remove Mast Mounted Sight",
+            default=False,
+            weight_when_on=-122.47,
+        ),
+        "Rapid Deployment Gear": UnitPropertyDescription(
+            identifier="Rapid Deployment Gear",
+            control="checkbox",
+            label="Rapid Deployment Gear",
+            default=False,
+        ),
+        "ALQ144": UnitPropertyDescription(
+            identifier="ALQ144",
+            control="checkbox",
+            label="Install AN/ALQ-144 IRCM",
+            default=False,
+            weight_when_on=-12.7,
+        ),
+        "importDrawings": UnitPropertyDescription(
+            identifier="importDrawings",
+            control="checkbox",
+            label="Import Editor Drawings",
+            player_only=True,
+            default=True,
+        ),
+        "tacNet": UnitPropertyDescription(
+            identifier="tacNet",
+            control="spinbox",
+            label="IDM Net",
+            minimum=1,
+            maximum=20,
+            default=1,
+            dimension=" ",
+        ),
+    }
+
+    livery_name = "OH58D"  # from type
+
+    class Pylon1:
+        OH58D_AGM_114_L1 = (1, Weapons.OH58D_AGM_114_L1)
+        OH58D_AGM_114_L = (1, Weapons.OH58D_AGM_114_L)
+        OH58D_FIM_92_L = (1, Weapons.OH58D_FIM_92_L)
+        OH58D_M3P_L100 = (1, Weapons.OH58D_M3P_L100)
+        OH58D_M3P_L200 = (1, Weapons.OH58D_M3P_L200)
+        OH58D_M3P_L300 = (1, Weapons.OH58D_M3P_L300)
+        OH58D_M3P_L400 = (1, Weapons.OH58D_M3P_L400)
+        OH58D_M3P_L500 = (1, Weapons.OH58D_M3P_L500)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (1, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (1, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M229_HE = (1, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M229_HE)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (1, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M259_SM = (1, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M259_SM)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (1, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M156 = (1, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M156)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M257 = (1, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M257)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M259 = (1, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M259)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M156 = (1, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M156)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M257 = (1, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M257)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M259 = (1, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M259)
+        M260___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (1, Weapons.M260___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+
+    class Pylon2:
+        OH58D_Red_Smoke_Grenade = (2, Weapons.OH58D_Red_Smoke_Grenade)
+        OH58D_Blue_Smoke_Grenade = (2, Weapons.OH58D_Blue_Smoke_Grenade)
+        OH58D_Green_Smoke_Grenade = (2, Weapons.OH58D_Green_Smoke_Grenade)
+        OH58D_Yellow_Smoke_Grenade = (2, Weapons.OH58D_Yellow_Smoke_Grenade)
+        OH58D_Violet_Smoke_Grenade = (2, Weapons.OH58D_Violet_Smoke_Grenade)
+        OH58D_White_Smoke_Grenade = (2, Weapons.OH58D_White_Smoke_Grenade)
+
+    class Pylon3:
+        OH58D_Red_Smoke_Grenade = (3, Weapons.OH58D_Red_Smoke_Grenade)
+        OH58D_Blue_Smoke_Grenade = (3, Weapons.OH58D_Blue_Smoke_Grenade)
+        OH58D_Green_Smoke_Grenade = (3, Weapons.OH58D_Green_Smoke_Grenade)
+        OH58D_Yellow_Smoke_Grenade = (3, Weapons.OH58D_Yellow_Smoke_Grenade)
+        OH58D_Violet_Smoke_Grenade = (3, Weapons.OH58D_Violet_Smoke_Grenade)
+        OH58D_White_Smoke_Grenade = (3, Weapons.OH58D_White_Smoke_Grenade)
+
+    class Pylon4:
+        OH58D_Red_Smoke_Grenade = (4, Weapons.OH58D_Red_Smoke_Grenade)
+        OH58D_Blue_Smoke_Grenade = (4, Weapons.OH58D_Blue_Smoke_Grenade)
+        OH58D_Green_Smoke_Grenade = (4, Weapons.OH58D_Green_Smoke_Grenade)
+        OH58D_Yellow_Smoke_Grenade = (4, Weapons.OH58D_Yellow_Smoke_Grenade)
+        OH58D_Violet_Smoke_Grenade = (4, Weapons.OH58D_Violet_Smoke_Grenade)
+        OH58D_White_Smoke_Grenade = (4, Weapons.OH58D_White_Smoke_Grenade)
+
+    class Pylon5:
+        OH58D_AGM_114_R1 = (5, Weapons.OH58D_AGM_114_R1)
+        OH58D_AGM_114_R = (5, Weapons.OH58D_AGM_114_R)
+        OH58D_FIM_92_R = (5, Weapons.OH58D_FIM_92_R)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (5, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (5, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M229_HE = (5, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M229_HE)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (5, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M259_SM = (5, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M259_SM)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (5, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M156 = (5, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M156)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M257 = (5, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M257)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M259 = (5, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M151__B___M259)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M156 = (5, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M156)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M257 = (5, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M257)
+        M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M259 = (5, Weapons.M260___7_x_UnGd_Rkts__70_mm_Hydra_70__Pod_Zones_A___M229__B___M259)
+        M260___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (5, Weapons.M260___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+
+    pylons: Set[int] = {1, 2, 3, 4, 5}
+
+    tasks = [task.CAP, task.CAS, task.GroundAttack, task.AFAC, task.Escort, task.Transport, task.AntishipStrike, task.Reconnaissance]
+    task_default = task.AFAC
+
+
 class SA342M(HelicopterType):
     id = "SA342M"
     flyable = True
@@ -2641,6 +2980,7 @@ helicopter_map = {
     "Ka-50": Ka_50,
     "Ka-50_3": Ka_50_3,
     "Mi-24P": Mi_24P,
+    "OH58D": OH58D,
     "SA342M": SA342M,
     "SA342L": SA342L,
     "SA342Mistral": SA342Mistral,
