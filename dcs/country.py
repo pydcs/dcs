@@ -24,6 +24,7 @@ class Country:
     callsign: Dict[str, List[str]] = {}
     planes: List[Type[PlaneType]] = []
     helicopters: List[Type[HelicopterType]] = []
+    use_western_callsigns = True
 
     def __init__(self, _id, name, short_name):
         self.id = _id
