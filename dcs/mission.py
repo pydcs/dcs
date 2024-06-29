@@ -358,8 +358,16 @@ class Mission:
         for col_name in ["blue", "red", "neutrals"]:
             if col_name in imp_mission["coalition"]:
                 self.coalition[col_name] = Coalition(col_name, imp_mission["coalition"][col_name]["bullseye"])
+                # Support .miz files saved by earlier versions of pydcs where neutral country IDs were stored
+                # under the 'neutral' key instead of the 'neutrals' key in the coalitions section of the LUA
+                # file. Use an empty dict in this case as DCS will auto-populate the neutral coalition with
+                # countries that are not in blue or red.
+                if col_name not in imp_mission["coalitions"] and col_name == 'neutrals':
+                    countries_in_coalition = {}
+                else:
+                    countries_in_coalition = imp_mission["coalitions"][col_name]
                 status += self.coalition[col_name].load_from_dict(self, imp_mission["coalition"][col_name],
-                                                                  imp_mission["coalitions"][col_name])
+                                                                  countries_in_coalition)
 
         # triggers
         self.bypassed_triggers = None
