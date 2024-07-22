@@ -306,10 +306,10 @@ class F_4E(PlaneType):
         BRU_42_with_3_x_Mk_20_Rockeye___490lbs_CBUs__247_x_HEAT_Bomblets = (1, Weapons.BRU_42_with_3_x_Mk_20_Rockeye___490lbs_CBUs__247_x_HEAT_Bomblets)
         MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD = (1, Weapons.MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD)
         Mk_84___2000lb_GP_Bomb_LD = (1, Weapons.Mk_84___2000lb_GP_Bomb_LD)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (1, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (1, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        _3_x_LAU_61_pods___57_x_2_75_Hydra__UnGd_Rkts_M151__HE = (1, Weapons._3_x_LAU_61_pods___57_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (1, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (1, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_ = (1, Weapons.LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_)
+        BRU_42_3_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (1, Weapons.BRU_42_3_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (1, Weapons.LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
         F_4_Fuel_tank_W = (1, Weapons.F_4_Fuel_tank_W)
         LAU_118A___AGM_45B_Shrike_ARM = (1, Weapons.LAU_118A___AGM_45B_Shrike_ARM)
         AGM_45A_Shrike_ARM = (1, Weapons.AGM_45A_Shrike_ARM)
@@ -326,8 +326,8 @@ class F_4E(PlaneType):
         LAU_88_with_2_x_AGM_65K___Maverick_K__CCD_Imp_ASM_ = (2, Weapons.LAU_88_with_2_x_AGM_65K___Maverick_K__CCD_Imp_ASM_)
         LAU_88_with_2_x_AGM_65D___Maverick_D__IIR_ASM_ = (2, Weapons.LAU_88_with_2_x_AGM_65D___Maverick_D__IIR_ASM_)
         LAU_118A___AGM_45B_Shrike_ARM = (2, Weapons.LAU_118A___AGM_45B_Shrike_ARM)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (2, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        _3_x_LAU_61_pods___57_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons._3_x_LAU_61_pods___57_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (2, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        BRU_42_3_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.BRU_42_3_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
         LAU_7_with_AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (2, Weapons.LAU_7_with_AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
         AGM_45A_Shrike_ARM = (2, Weapons.AGM_45A_Shrike_ARM)
 
@@ -363,8 +363,8 @@ class F_4E(PlaneType):
         LAU_88_with_2_x_AGM_65K___Maverick_K__CCD_Imp_ASM__ = (8, Weapons.LAU_88_with_2_x_AGM_65K___Maverick_K__CCD_Imp_ASM__)
         LAU_88_with_2_x_AGM_65D___Maverick_D__IIR_ASM__ = (8, Weapons.LAU_88_with_2_x_AGM_65D___Maverick_D__IIR_ASM__)
         LAU_118A___AGM_45B_Shrike_ARM = (8, Weapons.LAU_118A___AGM_45B_Shrike_ARM)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (8, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        _3_x_LAU_61_pods___57_x_2_75_Hydra__UnGd_Rkts_M151__HE = (8, Weapons._3_x_LAU_61_pods___57_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (8, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        BRU_42_3_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.BRU_42_3_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
         AGM_45A_Shrike_ARM = (8, Weapons.AGM_45A_Shrike_ARM)
 
     class Pylon9:
@@ -373,10 +373,10 @@ class F_4E(PlaneType):
         BRU_42_with_3_x_Mk_20_Rockeye___490lbs_CBUs__247_x_HEAT_Bomblets = (9, Weapons.BRU_42_with_3_x_Mk_20_Rockeye___490lbs_CBUs__247_x_HEAT_Bomblets)
         MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD = (9, Weapons.MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD)
         Mk_84___2000lb_GP_Bomb_LD = (9, Weapons.Mk_84___2000lb_GP_Bomb_LD)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (9, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (9, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        _3_x_LAU_61_pods___57_x_2_75_Hydra__UnGd_Rkts_M151__HE = (9, Weapons._3_x_LAU_61_pods___57_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (9, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (9, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_ = (9, Weapons.LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_)
+        BRU_42_3_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (9, Weapons.BRU_42_3_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (9, Weapons.LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
         F_4_Fuel_tank_W = (9, Weapons.F_4_Fuel_tank_W)
         LAU_118A___AGM_45B_Shrike_ARM = (9, Weapons.LAU_118A___AGM_45B_Shrike_ARM)
         AGM_45A_Shrike_ARM = (9, Weapons.AGM_45A_Shrike_ARM)
@@ -408,7 +408,9 @@ class MiG_27K(PlaneType):
         Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided = (2, Weapons.Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided)
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (2, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (2, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (2, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (2, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
@@ -431,7 +433,9 @@ class MiG_27K(PlaneType):
     class Pylon3:
         APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_ = (3, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_)
         APU_60_2M_with_2_x_R_60M__AA_8_Aphid_B____IR_AAM__ = (3, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid_B____IR_AAM__)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         APU_60_2M_with_2_x_R_60__AA_8_Aphid____IR_AAM = (3, Weapons.APU_60_2M_with_2_x_R_60__AA_8_Aphid____IR_AAM)
         APU_60_1M_with_R_60__AA_8_Aphid____IR_AAM = (3, Weapons.APU_60_1M_with_R_60__AA_8_Aphid____IR_AAM)
@@ -454,7 +458,9 @@ class MiG_27K(PlaneType):
     class Pylon7:
         APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_ = (7, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_)
         APU_60_2M_with_2_x_R_60M__AA_8_Aphid_B____IR_AAM___ = (7, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid_B____IR_AAM___)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (7, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         APU_60_2M_with_2_x_R_60__AA_8_Aphid____IR_AAM_ = (7, Weapons.APU_60_2M_with_2_x_R_60__AA_8_Aphid____IR_AAM_)
         APU_60_1M_with_R_60__AA_8_Aphid____IR_AAM = (7, Weapons.APU_60_1M_with_R_60__AA_8_Aphid____IR_AAM)
@@ -465,7 +471,9 @@ class MiG_27K(PlaneType):
         Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided = (8, Weapons.Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided)
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (8, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (8, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (8, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (8, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (8, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
@@ -549,9 +557,9 @@ class Su_27(PlaneType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (3, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (3, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (3, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (3, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD = (3, Weapons.MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD)
@@ -561,12 +569,12 @@ class Su_27(PlaneType):
         Smoke_Generator___white = (3, Weapons.Smoke_Generator___white)
         Smoke_Generator___yellow = (3, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (3, Weapons.Smoke_Generator___orange)
-        _2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator = (3, Weapons._2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator)
-        _2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons._2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        _2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons._2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
-        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP = (3, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP)
+        _2_x_O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (3, Weapons._2_x_O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        _2_x_O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (3, Weapons._2_x_O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
+        _2_x_B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (3, Weapons._2_x_B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
+        _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
+        _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8OFP2_MPP = (3, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8OFP2_MPP)
 
     class Pylon4:
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (4, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -681,9 +689,9 @@ class Su_27(PlaneType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (8, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         SAB_100MN___100_kg_Illumination_Bomb = (8, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (8, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (8, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (8, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (8, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD = (8, Weapons.MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD)
@@ -693,12 +701,12 @@ class Su_27(PlaneType):
         Smoke_Generator___white = (8, Weapons.Smoke_Generator___white)
         Smoke_Generator___yellow = (8, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (8, Weapons.Smoke_Generator___orange)
-        _2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator = (8, Weapons._2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator)
-        _2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons._2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        _2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons._2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
-        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP = (8, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP)
+        _2_x_O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (8, Weapons._2_x_O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        _2_x_O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (8, Weapons._2_x_O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
+        _2_x_B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (8, Weapons._2_x_B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
+        _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
+        _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8OFP2_MPP = (8, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8OFP2_MPP)
 
     class Pylon9:
         R_73__AA_11_Archer____Infra_Red = (9, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -744,9 +752,11 @@ class MiG_23MLD(PlaneType):
     class Pylon2:
         R_24R__AA_7_Apex_SA____Semi_Act_Rdr = (2, Weapons.R_24R__AA_7_Apex_SA____Semi_Act_Rdr)
         R_24T__AA_7_Apex_IR____Infra_Red = (2, Weapons.R_24T__AA_7_Apex_IR____Infra_Red)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (2, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         FAB_100___100kg_GP_Bomb_LD = (2, Weapons.FAB_100___100kg_GP_Bomb_LD)
         SAB_100MN___100_kg_Illumination_Bomb = (2, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
@@ -761,9 +771,11 @@ class MiG_23MLD(PlaneType):
     class Pylon3:
         APU_60_2M_with_2_x_R_60M__AA_8_Aphid_B____IR_AAM__ = (3, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid_B____IR_AAM__)
         APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_ = (3, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (3, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         FAB_100___100kg_GP_Bomb_LD = (3, Weapons.FAB_100___100kg_GP_Bomb_LD)
         SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_250___250kg_GP_Bomb_LD = (3, Weapons.FAB_250___250kg_GP_Bomb_LD)
@@ -782,9 +794,11 @@ class MiG_23MLD(PlaneType):
     class Pylon5:
         APU_60_2M_with_2_x_R_60M__AA_8_Aphid_B____IR_AAM___ = (5, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid_B____IR_AAM___)
         APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_ = (5, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (5, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (5, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (5, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (5, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (5, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (5, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         FAB_100___100kg_GP_Bomb_LD = (5, Weapons.FAB_100___100kg_GP_Bomb_LD)
         SAB_100MN___100_kg_Illumination_Bomb = (5, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_250___250kg_GP_Bomb_LD = (5, Weapons.FAB_250___250kg_GP_Bomb_LD)
@@ -800,9 +814,11 @@ class MiG_23MLD(PlaneType):
     class Pylon6:
         R_24R__AA_7_Apex_SA____Semi_Act_Rdr = (6, Weapons.R_24R__AA_7_Apex_SA____Semi_Act_Rdr)
         R_24T__AA_7_Apex_IR____Infra_Red = (6, Weapons.R_24T__AA_7_Apex_IR____Infra_Red)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (6, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (6, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (6, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (6, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (6, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (6, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         FAB_100___100kg_GP_Bomb_LD = (6, Weapons.FAB_100___100kg_GP_Bomb_LD)
         SAB_100MN___100_kg_Illumination_Bomb = (6, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_250___250kg_GP_Bomb_LD = (6, Weapons.FAB_250___250kg_GP_Bomb_LD)
@@ -866,12 +882,14 @@ class Su_25(PlaneType):
         BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb = (2, Weapons.BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (2, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (2, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (2, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (2, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (2, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (2, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (2, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
 
@@ -896,12 +914,14 @@ class Su_25(PlaneType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__ = (3, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (3, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (3, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (3, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (3, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (3, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (3, Weapons.Fuel_tank_800L_Wing)
 
@@ -926,12 +946,14 @@ class Su_25(PlaneType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (4, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__ = (4, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (4, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (4, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (4, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (4, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (4, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (4, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (4, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (4, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (4, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (4, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (4, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (4, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (4, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (4, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
 
@@ -956,12 +978,14 @@ class Su_25(PlaneType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (5, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (5, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (5, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (5, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (5, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (5, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (5, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (5, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (5, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (5, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (5, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (5, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (5, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (5, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (5, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (5, Weapons.Fuel_tank_800L_Wing)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (5, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -987,12 +1011,14 @@ class Su_25(PlaneType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (6, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (6, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (6, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (6, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (6, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (6, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (6, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (6, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (6, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (6, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (6, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (6, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (6, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (6, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (6, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (6, Weapons.Fuel_tank_800L_Wing)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (6, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -1018,12 +1044,14 @@ class Su_25(PlaneType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (7, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__ = (7, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (7, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (7, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (7, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (7, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (7, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (7, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (7, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (7, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (7, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (7, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (7, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
 
@@ -1048,12 +1076,14 @@ class Su_25(PlaneType):
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (8, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__ = (8, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (8, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (8, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (8, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (8, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (8, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (8, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (8, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (8, Weapons.Fuel_tank_800L_Wing)
         SPS_141___ECM_Jamming_Pod = (8, Weapons.SPS_141___ECM_Jamming_Pod)
@@ -1077,12 +1107,14 @@ class Su_25(PlaneType):
         BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb = (9, Weapons.BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (9, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (9, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (9, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (9, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (9, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (9, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (9, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (9, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (9, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (9, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (9, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (9, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (9, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (9, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (9, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
 
@@ -1144,12 +1176,14 @@ class Su_25TM(PlaneType):
         BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb = (2, Weapons.BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (2, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (2, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (2, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (2, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (2, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (2, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (2, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         R_73__AA_11_Archer____Infra_Red_ = (2, Weapons.R_73__AA_11_Archer____Infra_Red_)
@@ -1174,12 +1208,14 @@ class Su_25TM(PlaneType):
         Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr__ = (3, Weapons.Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr__)
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__ = (3, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (3, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (3, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (3, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (3, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (3, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (3, Weapons.Fuel_tank_800L_Wing)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (3, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
@@ -1205,12 +1241,14 @@ class Su_25TM(PlaneType):
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__ = (4, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__)
         APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag = (4, Weapons.APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (4, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (4, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (4, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (4, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (4, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (4, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (4, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (4, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (4, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (4, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (4, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (4, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (4, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (4, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (4, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
@@ -1240,12 +1278,14 @@ class Su_25TM(PlaneType):
         Kh_31A__AS_17_Krypton____610kg__AShM__IN__Act_Rdr_ = (5, Weapons.Kh_31A__AS_17_Krypton____610kg__AShM__IN__Act_Rdr_)
         Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr_ = (5, Weapons.Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr_)
         Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr_ = (5, Weapons.Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr_)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (5, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (5, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (5, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (5, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (5, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (5, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (5, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (5, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (5, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (5, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (5, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (5, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (5, Weapons.Fuel_tank_800L_Wing)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (5, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -1280,12 +1320,14 @@ class Su_25TM(PlaneType):
         Kh_31A__AS_17_Krypton____610kg__AShM__IN__Act_Rdr_ = (7, Weapons.Kh_31A__AS_17_Krypton____610kg__AShM__IN__Act_Rdr_)
         Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr_ = (7, Weapons.Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr_)
         Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr_ = (7, Weapons.Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr_)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (7, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (7, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (7, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (7, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (7, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (7, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (7, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (7, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (7, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (7, Weapons.Fuel_tank_800L_Wing)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (7, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -1311,12 +1353,14 @@ class Su_25TM(PlaneType):
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__ = (8, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__)
         APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag = (8, Weapons.APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (8, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (8, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (8, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (8, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (8, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (8, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (8, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (8, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (8, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
@@ -1341,12 +1385,14 @@ class Su_25TM(PlaneType):
         Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr__ = (9, Weapons.Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr__)
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__ = (9, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (9, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (9, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (9, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (9, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (9, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (9, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (9, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (9, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (9, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (9, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (9, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (9, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (9, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (9, Weapons.Fuel_tank_800L_Wing)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (9, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
@@ -1368,12 +1414,14 @@ class Su_25TM(PlaneType):
         BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb = (10, Weapons.BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (10, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (10, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (10, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (10, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (10, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (10, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (10, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (10, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (10, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (10, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (10, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (10, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (10, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (10, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (10, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         R_73__AA_11_Archer____Infra_Red_ = (10, Weapons.R_73__AA_11_Archer____Infra_Red_)
@@ -1441,12 +1489,14 @@ class Su_25T(PlaneType):
         BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb = (2, Weapons.BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (2, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (2, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (2, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (2, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (2, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (2, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (2, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         R_73__AA_11_Archer____Infra_Red_ = (2, Weapons.R_73__AA_11_Archer____Infra_Red_)
@@ -1473,12 +1523,14 @@ class Su_25T(PlaneType):
         Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr__ = (3, Weapons.Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr__)
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__ = (3, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (3, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (3, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (3, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (3, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (3, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (3, Weapons.Fuel_tank_800L_Wing)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (3, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
@@ -1506,12 +1558,14 @@ class Su_25T(PlaneType):
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__ = (4, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__)
         APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag = (4, Weapons.APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (4, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (4, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (4, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (4, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (4, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (4, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (4, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (4, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (4, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (4, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (4, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (4, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (4, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (4, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (4, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
@@ -1540,12 +1594,14 @@ class Su_25T(PlaneType):
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (5, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_ = (5, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (5, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (5, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (5, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (5, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (5, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (5, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (5, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (5, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (5, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (5, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (5, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (5, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (5, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (5, Weapons.Fuel_tank_800L_Wing)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (5, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -1578,12 +1634,14 @@ class Su_25T(PlaneType):
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (7, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_ = (7, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (7, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (7, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (7, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (7, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (7, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (7, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (7, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (7, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (7, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (7, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (7, Weapons.Fuel_tank_800L_Wing)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (7, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
@@ -1611,12 +1669,14 @@ class Su_25T(PlaneType):
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__ = (8, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__)
         APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag = (8, Weapons.APU_8___8_x_9M127_Vikhr___ATGM__LOSBR__Tandem_HEAT_Frag)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (8, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (8, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (8, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (8, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (8, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (8, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (8, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (8, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (8, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
@@ -1643,12 +1703,14 @@ class Su_25T(PlaneType):
         Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr__ = (9, Weapons.Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr__)
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__ = (9, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser__)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (9, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (9, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (9, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (9, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (9, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (9, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (9, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (9, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (9, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (9, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (9, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (9, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (9, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (9, Weapons.Fuel_tank_800L_Wing)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (9, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
@@ -1672,12 +1734,14 @@ class Su_25T(PlaneType):
         BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb = (10, Weapons.BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (10, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (10, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (10, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (10, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (10, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (10, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (10, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (10, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (10, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (10, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (10, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (10, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (10, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (10, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (10, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         R_73__AA_11_Archer____Infra_Red_ = (10, Weapons.R_73__AA_11_Archer____Infra_Red_)
@@ -1757,9 +1821,9 @@ class Su_33(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (3, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         FAB_500_M_62___500kg_GP_Bomb_LD = (3, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (3, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (3, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (3, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         Smoke_Generator___red = (3, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (3, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (3, Weapons.Smoke_Generator___blue)
@@ -1769,12 +1833,12 @@ class Su_33(PlaneType):
         B_8M1___20_S_8OFP2 = (3, Weapons.B_8M1___20_S_8OFP2)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
-        _2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator = (3, Weapons._2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator)
-        _2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons._2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        _2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons._2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
-        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP = (3, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP)
+        _2_x_O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (3, Weapons._2_x_O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        _2_x_O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (3, Weapons._2_x_O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
+        _2_x_B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (3, Weapons._2_x_B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
+        _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
+        _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8OFP2_MPP = (3, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8OFP2_MPP)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (3, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_3_x_FAB_250___250kg_GP_Bombs_LD = (3, Weapons.MBD3_U6_68_with_3_x_FAB_250___250kg_GP_Bombs_LD)
 
@@ -1793,9 +1857,9 @@ class Su_33(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (4, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         FAB_500_M_62___500kg_GP_Bomb_LD = (4, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (4, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (4, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (4, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (4, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (4, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (4, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         Smoke_Generator___red = (4, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (4, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (4, Weapons.Smoke_Generator___blue)
@@ -1909,9 +1973,9 @@ class Su_33(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (9, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         FAB_500_M_62___500kg_GP_Bomb_LD = (9, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (9, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (9, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (9, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (9, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (9, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (9, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         Smoke_Generator___red = (9, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (9, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (9, Weapons.Smoke_Generator___blue)
@@ -1940,9 +2004,9 @@ class Su_33(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (10, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         FAB_500_M_62___500kg_GP_Bomb_LD = (10, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (10, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (10, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (10, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (10, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (10, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (10, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         Smoke_Generator___red = (10, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (10, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (10, Weapons.Smoke_Generator___blue)
@@ -1952,12 +2016,12 @@ class Su_33(PlaneType):
         B_8M1___20_S_8OFP2 = (10, Weapons.B_8M1___20_S_8OFP2)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SAB_100MN___100_kg_Illumination_Bomb = (10, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
-        _2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator = (10, Weapons._2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator)
-        _2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag = (10, Weapons._2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        _2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (10, Weapons._2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (10, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (10, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
-        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP = (10, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP)
+        _2_x_O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (10, Weapons._2_x_O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        _2_x_O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (10, Weapons._2_x_O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
+        _2_x_B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (10, Weapons._2_x_B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (10, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
+        _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (10, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
+        _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8OFP2_MPP = (10, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8OFP2_MPP)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (10, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_3_x_FAB_250___250kg_GP_Bombs_LD = (10, Weapons.MBD3_U6_68_with_3_x_FAB_250___250kg_GP_Bombs_LD)
 
@@ -2144,9 +2208,9 @@ class Su_30(PlaneType):
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided_ = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided_)
         Kh_59M__AS_18_Kazoo____930kg__ASM__IN = (3, Weapons.Kh_59M__AS_18_Kazoo____930kg__ASM__IN)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (3, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (3, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (3, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         BetAB_500___500kg_Concrete_Piercing_Bomb_LD = (3, Weapons.BetAB_500___500kg_Concrete_Piercing_Bomb_LD)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
@@ -2265,9 +2329,9 @@ class Su_30(PlaneType):
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided_ = (8, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided_)
         Kh_59M__AS_18_Kazoo____930kg__ASM__IN = (8, Weapons.Kh_59M__AS_18_Kazoo____930kg__ASM__IN)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (8, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (8, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (8, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         BetAB_500___500kg_Concrete_Piercing_Bomb_LD = (8, Weapons.BetAB_500___500kg_Concrete_Piercing_Bomb_LD)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (8, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (8, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
@@ -2342,12 +2406,14 @@ class Su_17M4(PlaneType):
         Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_ = (1, Weapons.Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_)
         Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided = (1, Weapons.Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided)
         Fuel_tank_1150L = (1, Weapons.Fuel_tank_1150L)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (1, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (1, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (1, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (1, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (1, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (1, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (1, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (1, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (1, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (1, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (1, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (1, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (1, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (1, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (1, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (1, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
@@ -2379,12 +2445,14 @@ class Su_17M4(PlaneType):
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser_ = (3, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser_)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided_ = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided_)
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr = (3, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (3, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (3, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (3, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (3, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (3, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (3, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
         SPS_141___ECM_Jamming_Pod = (3, Weapons.SPS_141___ECM_Jamming_Pod)
@@ -2449,12 +2517,14 @@ class Su_17M4(PlaneType):
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser_ = (6, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser_)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided_ = (6, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided_)
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr = (6, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (6, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (6, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (6, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (6, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (6, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (6, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (6, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (6, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (6, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (6, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (6, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (6, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (6, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (6, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
@@ -2484,12 +2554,14 @@ class Su_17M4(PlaneType):
         Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_ = (8, Weapons.Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_)
         Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided = (8, Weapons.Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided)
         Fuel_tank_1150L = (8, Weapons.Fuel_tank_1150L)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (8, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (8, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (8, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (8, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (8, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (8, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (8, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (8, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
@@ -2587,14 +2659,16 @@ class Su_24M(PlaneType):
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (1, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (1, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
         SAB_100MN___100_kg_Illumination_Bomb = (1, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (1, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (1, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (1, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (1, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (1, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         FAB_250___250kg_GP_Bomb_LD = (1, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250_kg_GP_Bomb_LD = (1, Weapons.FAB_250_M62___250_kg_GP_Bomb_LD)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (1, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (1, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (1, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (1, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (1, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (1, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (1, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (1, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (1, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
         Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_ = (1, Weapons.Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_)
         Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided = (1, Weapons.Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided)
@@ -2630,12 +2704,14 @@ class Su_24M(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         SAB_100MN___100_kg_Illumination_Bomb = (2, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (2, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (2, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (2, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (2, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (2, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (2, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (2, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         KAB_1500L___1500kg_Laser_Guided_Bomb = (2, Weapons.KAB_1500L___1500kg_Laser_Guided_Bomb)
         KAB_1500LG_Pr___1500kg_Laser_Guided_Penetrator_Bomb = (2, Weapons.KAB_1500LG_Pr___1500kg_Laser_Guided_Penetrator_Bomb)
         KAB_1500Kr___1500kg_TV_Guided_Bomb = (2, Weapons.KAB_1500Kr___1500kg_TV_Guided_Bomb)
@@ -2720,12 +2796,14 @@ class Su_24M(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (7, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (7, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         SAB_100MN___100_kg_Illumination_Bomb = (7, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (7, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (7, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (7, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (7, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (7, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (7, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (7, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (7, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (7, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (7, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         KAB_1500L___1500kg_Laser_Guided_Bomb = (7, Weapons.KAB_1500L___1500kg_Laser_Guided_Bomb)
         KAB_1500LG_Pr___1500kg_Laser_Guided_Penetrator_Bomb = (7, Weapons.KAB_1500LG_Pr___1500kg_Laser_Guided_Penetrator_Bomb)
         KAB_1500Kr___1500kg_TV_Guided_Bomb = (7, Weapons.KAB_1500Kr___1500kg_TV_Guided_Bomb)
@@ -2738,14 +2816,16 @@ class Su_24M(PlaneType):
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (8, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (8, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
         SAB_100MN___100_kg_Illumination_Bomb = (8, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
-        UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (8, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE = (8, Weapons.UB_32A___32_x_UnGd_Rkts__57_mm_S_5M_HE)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         FAB_250___250kg_GP_Bomb_LD = (8, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250_kg_GP_Bomb_LD = (8, Weapons.FAB_250_M62___250_kg_GP_Bomb_LD)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (8, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (8, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (8, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (8, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (8, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (8, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
         Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_ = (8, Weapons.Kh_25MPU__Updated_AS_12_Kegler____320kg__ARM__IN__Pas_Rdr_)
         Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided = (8, Weapons.Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided)
@@ -3466,7 +3546,7 @@ class MiG_29A(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (2, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         B_8M1___20_S_8OFP2 = (2, Weapons.B_8M1___20_S_8OFP2)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
 
@@ -3493,7 +3573,7 @@ class MiG_29A(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (3, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         B_8M1___20_S_8OFP2 = (3, Weapons.B_8M1___20_S_8OFP2)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (3, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -3534,7 +3614,7 @@ class MiG_29A(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (5, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (5, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (5, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (5, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         B_8M1___20_S_8OFP2 = (5, Weapons.B_8M1___20_S_8OFP2)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (5, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -3566,7 +3646,7 @@ class MiG_29A(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (6, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (6, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (6, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (6, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         B_8M1___20_S_8OFP2 = (6, Weapons.B_8M1___20_S_8OFP2)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
 
@@ -3590,7 +3670,6 @@ class MiG_29A(PlaneType):
 
 class MiG_29G(PlaneType):
     id = "MiG-29G"
-    flyable = True
     height = 4.73
     width = 11.36
     length = 20.32
@@ -3641,7 +3720,7 @@ class MiG_29G(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (2, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         B_8M1___20_S_8OFP2 = (2, Weapons.B_8M1___20_S_8OFP2)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
 
@@ -3668,7 +3747,7 @@ class MiG_29G(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (3, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         B_8M1___20_S_8OFP2 = (3, Weapons.B_8M1___20_S_8OFP2)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (3, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -3709,7 +3788,7 @@ class MiG_29G(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (5, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (5, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (5, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (5, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         B_8M1___20_S_8OFP2 = (5, Weapons.B_8M1___20_S_8OFP2)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (5, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -3741,7 +3820,7 @@ class MiG_29G(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (6, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (6, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (6, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (6, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         B_8M1___20_S_8OFP2 = (6, Weapons.B_8M1___20_S_8OFP2)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
 
@@ -3817,7 +3896,7 @@ class MiG_29S(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (2, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         B_8M1___20_S_8OFP2 = (2, Weapons.B_8M1___20_S_8OFP2)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_77__AA_12_Adder____Active_Rdr = (2, Weapons.R_77__AA_12_Adder____Active_Rdr)
@@ -3845,7 +3924,7 @@ class MiG_29S(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (3, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         B_8M1___20_S_8OFP2 = (3, Weapons.B_8M1___20_S_8OFP2)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_77__AA_12_Adder____Active_Rdr = (3, Weapons.R_77__AA_12_Adder____Active_Rdr)
@@ -3887,7 +3966,7 @@ class MiG_29S(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (5, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (5, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (5, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (5, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         B_8M1___20_S_8OFP2 = (5, Weapons.B_8M1___20_S_8OFP2)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_77__AA_12_Adder____Active_Rdr = (5, Weapons.R_77__AA_12_Adder____Active_Rdr)
@@ -3920,7 +3999,7 @@ class MiG_29S(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (6, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (6, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (6, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
+        APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_ = (6, Weapons.APU_68___S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk_)
         B_8M1___20_S_8OFP2 = (6, Weapons.B_8M1___20_S_8OFP2)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_77__AA_12_Adder____Active_Rdr = (6, Weapons.R_77__AA_12_Adder____Active_Rdr)
@@ -6487,7 +6566,7 @@ class S_3B(PlaneType):
         LAU_117_with_AGM_65K___Maverick_K__CCD_Imp_ASM_ = (1, Weapons.LAU_117_with_AGM_65K___Maverick_K__CCD_Imp_ASM_)
         AGM_84A_Harpoon_ASM = (1, Weapons.AGM_84A_Harpoon_ASM)
         AGM_84E_Harpoon_SLAM__Stand_Off_Land_Attack_Missile_ = (1, Weapons.AGM_84E_Harpoon_SLAM__Stand_Off_Land_Attack_Missile_)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (1, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (1, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
         Fuel_tank_S_3 = (1, Weapons.Fuel_tank_S_3)
 
     class Pylon2:
@@ -6516,7 +6595,7 @@ class S_3B(PlaneType):
         LAU_117_with_AGM_65K___Maverick_K__CCD_Imp_ASM_ = (6, Weapons.LAU_117_with_AGM_65K___Maverick_K__CCD_Imp_ASM_)
         AGM_84A_Harpoon_ASM = (6, Weapons.AGM_84A_Harpoon_ASM)
         AGM_84E_Harpoon_SLAM__Stand_Off_Land_Attack_Missile_ = (6, Weapons.AGM_84E_Harpoon_SLAM__Stand_Off_Land_Attack_Missile_)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (6, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (6, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
         Fuel_tank_S_3 = (6, Weapons.Fuel_tank_S_3)
 
     pylons: Set[int] = {1, 2, 3, 4, 5, 6}
@@ -6666,22 +6745,22 @@ class A_10A(PlaneType):
         CBU_87___202_x_CEM_Cluster_Bomb = (2, Weapons.CBU_87___202_x_CEM_Cluster_Bomb)
         BDU_50LD___500lb_Inert_Practice_Bomb_LD = (2, Weapons.BDU_50LD___500lb_Inert_Practice_Bomb_LD)
         BDU_50HD___500lb_Inert_Practice_Bomb_HD = (2, Weapons.BDU_50HD___500lb_Inert_Practice_Bomb_HD)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         CBU_97___10_x_SFW_Cluster_Bomb = (2, Weapons.CBU_97___10_x_SFW_Cluster_Bomb)
         Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (2, Weapons.Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
 
@@ -6703,22 +6782,22 @@ class A_10A(PlaneType):
         BRU_42_3_BDU_33 = (3, Weapons.BRU_42_3_BDU_33)
         BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD = (3, Weapons.BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD)
         BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD = (3, Weapons.BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         CBU_97___10_x_SFW_Cluster_Bomb = (3, Weapons.CBU_97___10_x_SFW_Cluster_Bomb)
         Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (3, Weapons.Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
 
@@ -6732,22 +6811,22 @@ class A_10A(PlaneType):
         BRU_42_3_BDU_33 = (4, Weapons.BRU_42_3_BDU_33)
         BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD = (4, Weapons.BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD)
         BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD = (4, Weapons.BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         Fuel_Tank_FT600 = (4, Weapons.Fuel_Tank_FT600)
         CBU_97___10_x_SFW_Cluster_Bomb = (4, Weapons.CBU_97___10_x_SFW_Cluster_Bomb)
         Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (4, Weapons.Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
@@ -6796,22 +6875,22 @@ class A_10A(PlaneType):
         BRU_42_3_BDU_33 = (8, Weapons.BRU_42_3_BDU_33)
         BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD = (8, Weapons.BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD)
         BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD = (8, Weapons.BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         Fuel_Tank_FT600 = (8, Weapons.Fuel_Tank_FT600)
         CBU_97___10_x_SFW_Cluster_Bomb = (8, Weapons.CBU_97___10_x_SFW_Cluster_Bomb)
         Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (8, Weapons.Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
@@ -6834,22 +6913,22 @@ class A_10A(PlaneType):
         BRU_42_3_BDU_33 = (9, Weapons.BRU_42_3_BDU_33)
         BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD = (9, Weapons.BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD)
         BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD = (9, Weapons.BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         CBU_97___10_x_SFW_Cluster_Bomb = (9, Weapons.CBU_97___10_x_SFW_Cluster_Bomb)
         Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (9, Weapons.Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
 
@@ -6860,22 +6939,22 @@ class A_10A(PlaneType):
         CBU_87___202_x_CEM_Cluster_Bomb = (10, Weapons.CBU_87___202_x_CEM_Cluster_Bomb)
         BDU_50LD___500lb_Inert_Practice_Bomb_LD = (10, Weapons.BDU_50LD___500lb_Inert_Practice_Bomb_LD)
         BDU_50HD___500lb_Inert_Practice_Bomb_HD = (10, Weapons.BDU_50HD___500lb_Inert_Practice_Bomb_HD)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         CBU_97___10_x_SFW_Cluster_Bomb = (10, Weapons.CBU_97___10_x_SFW_Cluster_Bomb)
         Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (10, Weapons.Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
 
@@ -7091,23 +7170,23 @@ class A_10C(PlaneType):
         BDU_50HD___500lb_Inert_Practice_Bomb_HD = (2, Weapons.BDU_50HD___500lb_Inert_Practice_Bomb_HD)
         Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = (2, Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD)
         CBU_87___202_x_CEM_Cluster_Bomb = (2, Weapons.CBU_87___202_x_CEM_Cluster_Bomb)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
         CBU_97___10_x_SFW_Cluster_Bomb = (2, Weapons.CBU_97___10_x_SFW_Cluster_Bomb)
         BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD = (2, Weapons.BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD)
@@ -7133,32 +7212,32 @@ class A_10C(PlaneType):
         GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb = (3, Weapons.GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb)
         GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (3, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (3, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
 #ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
         LAU_131x3_HYDRA_70_MK1 = (3, Weapons.LAU_131x3_HYDRA_70_MK1)
         LAU_131x3_HYDRA_70_MK5 = (3, Weapons.LAU_131x3_HYDRA_70_MK5)
@@ -7169,22 +7248,22 @@ class A_10C(PlaneType):
         LAU_131x3_HYDRA_70_M257 = (3, Weapons.LAU_131x3_HYDRA_70_M257)
         LAU_131x3_HYDRA_70_M274 = (3, Weapons.LAU_131x3_HYDRA_70_M274)
 #ERRR LAU_131x3_HYDRA_70_M278
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_ = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_ = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_ = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_ = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         MXU_648_TP = (3, Weapons.MXU_648_TP)
         BRU_42_LS = (3, Weapons.BRU_42_LS)
         BRU_42_3_BDU_33 = (3, Weapons.BRU_42_3_BDU_33)
@@ -7225,32 +7304,32 @@ class A_10C(PlaneType):
         GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (4, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (4, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
         CBU_87___202_x_CEM_Cluster_Bomb = (4, Weapons.CBU_87___202_x_CEM_Cluster_Bomb)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
 #ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
         LAU_131x3_HYDRA_70_MK1 = (4, Weapons.LAU_131x3_HYDRA_70_MK1)
         LAU_131x3_HYDRA_70_MK5 = (4, Weapons.LAU_131x3_HYDRA_70_MK5)
@@ -7261,22 +7340,22 @@ class A_10C(PlaneType):
         LAU_131x3_HYDRA_70_M257 = (4, Weapons.LAU_131x3_HYDRA_70_M257)
         LAU_131x3_HYDRA_70_M274 = (4, Weapons.LAU_131x3_HYDRA_70_M274)
 #ERRR LAU_131x3_HYDRA_70_M278
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_ = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_ = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_ = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_ = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         MXU_648_TP = (4, Weapons.MXU_648_TP)
         BRU_42_LS = (4, Weapons.BRU_42_LS)
         BRU_42_3_BDU_33 = (4, Weapons.BRU_42_3_BDU_33)
@@ -7375,32 +7454,32 @@ class A_10C(PlaneType):
         GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (8, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (8, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
         CBU_87___202_x_CEM_Cluster_Bomb = (8, Weapons.CBU_87___202_x_CEM_Cluster_Bomb)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
 #ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
         LAU_131x3_HYDRA_70_MK1 = (8, Weapons.LAU_131x3_HYDRA_70_MK1)
         LAU_131x3_HYDRA_70_MK5 = (8, Weapons.LAU_131x3_HYDRA_70_MK5)
@@ -7411,22 +7490,22 @@ class A_10C(PlaneType):
         LAU_131x3_HYDRA_70_M257 = (8, Weapons.LAU_131x3_HYDRA_70_M257)
         LAU_131x3_HYDRA_70_M274 = (8, Weapons.LAU_131x3_HYDRA_70_M274)
 #ERRR LAU_131x3_HYDRA_70_M278
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_ = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_ = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_ = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_ = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_ = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_ = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_ = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_ = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_ = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_ = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_ = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_ = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_)
         MXU_648_TP = (8, Weapons.MXU_648_TP)
         BRU_42_LS = (8, Weapons.BRU_42_LS)
         BRU_42_3_BDU_33 = (8, Weapons.BRU_42_3_BDU_33)
@@ -7464,32 +7543,32 @@ class A_10C(PlaneType):
         GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (9, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (9, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
         CBU_87___202_x_CEM_Cluster_Bomb = (9, Weapons.CBU_87___202_x_CEM_Cluster_Bomb)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
 #ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
         LAU_131x3_HYDRA_70_MK1 = (9, Weapons.LAU_131x3_HYDRA_70_MK1)
         LAU_131x3_HYDRA_70_MK5 = (9, Weapons.LAU_131x3_HYDRA_70_MK5)
@@ -7500,22 +7579,22 @@ class A_10C(PlaneType):
         LAU_131x3_HYDRA_70_M257 = (9, Weapons.LAU_131x3_HYDRA_70_M257)
         LAU_131x3_HYDRA_70_M274 = (9, Weapons.LAU_131x3_HYDRA_70_M274)
 #ERRR LAU_131x3_HYDRA_70_M278
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_ = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_ = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_ = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_ = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_ = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_ = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_ = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_ = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_ = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_ = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_ = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_ = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_)
         MXU_648_TP = (9, Weapons.MXU_648_TP)
         BRU_42_LS = (9, Weapons.BRU_42_LS)
         BRU_42_3_BDU_33 = (9, Weapons.BRU_42_3_BDU_33)
@@ -7552,23 +7631,23 @@ class A_10C(PlaneType):
         BDU_50HD___500lb_Inert_Practice_Bomb_HD = (10, Weapons.BDU_50HD___500lb_Inert_Practice_Bomb_HD)
         Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = (10, Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD)
         CBU_87___202_x_CEM_Cluster_Bomb = (10, Weapons.CBU_87___202_x_CEM_Cluster_Bomb)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
         CBU_97___10_x_SFW_Cluster_Bomb = (10, Weapons.CBU_97___10_x_SFW_Cluster_Bomb)
         BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD = (10, Weapons.BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD)
@@ -7792,29 +7871,29 @@ class A_10C_2(PlaneType):
         BDU_50HD___500lb_Inert_Practice_Bomb_HD = (2, Weapons.BDU_50HD___500lb_Inert_Practice_Bomb_HD)
         Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = (2, Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD)
         CBU_87___202_x_CEM_Cluster_Bomb = (2, Weapons.CBU_87___202_x_CEM_Cluster_Bomb)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
         CBU_97___10_x_SFW_Cluster_Bomb = (2, Weapons.CBU_97___10_x_SFW_Cluster_Bomb)
         BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD = (2, Weapons.BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD)
         SUU_25_x_8_LUU_2___Target_Marker_Flares = (2, Weapons.SUU_25_x_8_LUU_2___Target_Marker_Flares)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (2, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (2, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
 
     class Pylon3:
         LAU_117_with_AGM_65K___Maverick_K__CCD_Imp_ASM_ = (3, Weapons.LAU_117_with_AGM_65K___Maverick_K__CCD_Imp_ASM_)
@@ -7837,32 +7916,32 @@ class A_10C_2(PlaneType):
         GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb = (3, Weapons.GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb)
         GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (3, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (3, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
 #ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
         LAU_131x3_HYDRA_70_MK1 = (3, Weapons.LAU_131x3_HYDRA_70_MK1)
         LAU_131x3_HYDRA_70_MK5 = (3, Weapons.LAU_131x3_HYDRA_70_MK5)
@@ -7873,22 +7952,22 @@ class A_10C_2(PlaneType):
         LAU_131x3_HYDRA_70_M257 = (3, Weapons.LAU_131x3_HYDRA_70_M257)
         LAU_131x3_HYDRA_70_M274 = (3, Weapons.LAU_131x3_HYDRA_70_M274)
 #ERRR LAU_131x3_HYDRA_70_M278
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_ = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_ = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_ = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_ = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         MXU_648_TP = (3, Weapons.MXU_648_TP)
         BRU_42_LS = (3, Weapons.BRU_42_LS)
         BRU_42_3_BDU_33 = (3, Weapons.BRU_42_3_BDU_33)
@@ -7915,12 +7994,12 @@ class A_10C_2(PlaneType):
         BRU_42_with_3_x_SUU_25_x_8_LUU_2___Target_Marker_Flares = (3, Weapons.BRU_42_with_3_x_SUU_25_x_8_LUU_2___Target_Marker_Flares)
         BRU_42_with_2_x_SUU_25_x_8_LUU_2___Target_Marker_Flares = (3, Weapons.BRU_42_with_2_x_SUU_25_x_8_LUU_2___Target_Marker_Flares)
         BRU_42_with_1_x_SUU_25_x_8_LUU_2___Target_Marker_Flares = (3, Weapons.BRU_42_with_1_x_SUU_25_x_8_LUU_2___Target_Marker_Flares)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
-        BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (3, Weapons.BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (3, Weapons.BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (3, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (3, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (3, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
+        BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (3, Weapons.BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (3, Weapons.BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (3, Weapons.BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
+        BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (3, Weapons.BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
         GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = (3, Weapons.GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD)
 
     class Pylon4:
@@ -7936,32 +8015,32 @@ class A_10C_2(PlaneType):
         GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (4, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (4, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
         CBU_87___202_x_CEM_Cluster_Bomb = (4, Weapons.CBU_87___202_x_CEM_Cluster_Bomb)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (4, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (4, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (4, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (4, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (4, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
 #ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
         LAU_131x3_HYDRA_70_MK1 = (4, Weapons.LAU_131x3_HYDRA_70_MK1)
         LAU_131x3_HYDRA_70_MK5 = (4, Weapons.LAU_131x3_HYDRA_70_MK5)
@@ -7972,22 +8051,22 @@ class A_10C_2(PlaneType):
         LAU_131x3_HYDRA_70_M257 = (4, Weapons.LAU_131x3_HYDRA_70_M257)
         LAU_131x3_HYDRA_70_M274 = (4, Weapons.LAU_131x3_HYDRA_70_M274)
 #ERRR LAU_131x3_HYDRA_70_M278
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (4, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_ = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (4, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_ = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_ = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_ = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (4, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         MXU_648_TP = (4, Weapons.MXU_648_TP)
         BRU_42_LS = (4, Weapons.BRU_42_LS)
         BRU_42_3_BDU_33 = (4, Weapons.BRU_42_3_BDU_33)
@@ -8004,12 +8083,12 @@ class A_10C_2(PlaneType):
         BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD = (4, Weapons.BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD)
         BRU_42_with_2_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.BRU_42_with_2_x_Mk_82___500lb_GP_Bomb_LD)
         BRU_42_with_1_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.BRU_42_with_1_x_Mk_82___500lb_GP_Bomb_LD)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (4, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
-        BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (4, Weapons.BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (4, Weapons.BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (4, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (4, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (4, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
+        BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (4, Weapons.BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (4, Weapons.BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (4, Weapons.BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
+        BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (4, Weapons.BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
         GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = (4, Weapons.GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD)
 
     class Pylon5:
@@ -8095,32 +8174,32 @@ class A_10C_2(PlaneType):
         GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (8, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (8, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
         CBU_87___202_x_CEM_Cluster_Bomb = (8, Weapons.CBU_87___202_x_CEM_Cluster_Bomb)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (8, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (8, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (8, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
 #ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
         LAU_131x3_HYDRA_70_MK1 = (8, Weapons.LAU_131x3_HYDRA_70_MK1)
         LAU_131x3_HYDRA_70_MK5 = (8, Weapons.LAU_131x3_HYDRA_70_MK5)
@@ -8131,22 +8210,22 @@ class A_10C_2(PlaneType):
         LAU_131x3_HYDRA_70_M257 = (8, Weapons.LAU_131x3_HYDRA_70_M257)
         LAU_131x3_HYDRA_70_M274 = (8, Weapons.LAU_131x3_HYDRA_70_M274)
 #ERRR LAU_131x3_HYDRA_70_M278
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_ = (8, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_ = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_ = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_ = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_ = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_ = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_ = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_ = (8, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_ = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_ = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_ = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_ = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_ = (8, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_)
         MXU_648_TP = (8, Weapons.MXU_648_TP)
         BRU_42_LS = (8, Weapons.BRU_42_LS)
         BRU_42_3_BDU_33 = (8, Weapons.BRU_42_3_BDU_33)
@@ -8163,12 +8242,12 @@ class A_10C_2(PlaneType):
         BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD = (8, Weapons.BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD)
         BRU_42_with_2_x_Mk_82___500lb_GP_Bomb_LD_ = (8, Weapons.BRU_42_with_2_x_Mk_82___500lb_GP_Bomb_LD_)
         BRU_42_with_1_x_Mk_82___500lb_GP_Bomb_LD = (8, Weapons.BRU_42_with_1_x_Mk_82___500lb_GP_Bomb_LD)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (8, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
-        BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (8, Weapons.BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS_)
-        BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (8, Weapons.BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS_ = (8, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS_)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (8, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (8, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
+        BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (8, Weapons.BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS_ = (8, Weapons.BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS_)
+        BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (8, Weapons.BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
+        BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS_ = (8, Weapons.BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS_)
         GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = (8, Weapons.GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD)
 
     class Pylon9:
@@ -8192,32 +8271,32 @@ class A_10C_2(PlaneType):
         GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (9, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (9, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
         CBU_87___202_x_CEM_Cluster_Bomb = (9, Weapons.CBU_87___202_x_CEM_Cluster_Bomb)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (9, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (9, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (9, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (9, Weapons.BRU_42_with_3_x_LAU_68_pods___21_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (9, Weapons.BRU_42_3_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
 #ERRR {B2DC636E-5E45-42db-81D9-38F3E059107C}
         LAU_131x3_HYDRA_70_MK1 = (9, Weapons.LAU_131x3_HYDRA_70_MK1)
         LAU_131x3_HYDRA_70_MK5 = (9, Weapons.LAU_131x3_HYDRA_70_MK5)
@@ -8228,22 +8307,22 @@ class A_10C_2(PlaneType):
         LAU_131x3_HYDRA_70_M257 = (9, Weapons.LAU_131x3_HYDRA_70_M257)
         LAU_131x3_HYDRA_70_M274 = (9, Weapons.LAU_131x3_HYDRA_70_M274)
 #ERRR LAU_131x3_HYDRA_70_M278
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_)
-        BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_ = (9, Weapons.BRU_42_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum_)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_ = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_ = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_ = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_ = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_ = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_ = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_)
+        BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_ = (9, Weapons.BRU_42_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_ = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_ = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_ = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_ = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL_)
+        BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_ = (9, Weapons.BRU_42_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM_)
         MXU_648_TP = (9, Weapons.MXU_648_TP)
         BRU_42_LS = (9, Weapons.BRU_42_LS)
         BRU_42_3_BDU_33 = (9, Weapons.BRU_42_3_BDU_33)
@@ -8270,12 +8349,12 @@ class A_10C_2(PlaneType):
         BRU_42_with_3_x_SUU_25_x_8_LUU_2___Target_Marker_Flares = (9, Weapons.BRU_42_with_3_x_SUU_25_x_8_LUU_2___Target_Marker_Flares)
         BRU_42_with_2_x_SUU_25_x_8_LUU_2___Target_Marker_Flares_ = (9, Weapons.BRU_42_with_2_x_SUU_25_x_8_LUU_2___Target_Marker_Flares_)
         BRU_42_with_1_x_SUU_25_x_8_LUU_2___Target_Marker_Flares = (9, Weapons.BRU_42_with_1_x_SUU_25_x_8_LUU_2___Target_Marker_Flares)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (9, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
-        BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (9, Weapons.BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS_)
-        BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (9, Weapons.BRU_42_with_3_x_LAU_131_pods___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
-        BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS_ = (9, Weapons.BRU_42_with_2_x_LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS_)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (9, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (9, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
+        BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (9, Weapons.BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS_ = (9, Weapons.BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS_)
+        BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (9, Weapons.BRU_42_3_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
+        BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS_ = (9, Weapons.BRU_42_2_x_LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS_)
         GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = (9, Weapons.GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD)
 
     class Pylon10:
@@ -8287,28 +8366,28 @@ class A_10C_2(PlaneType):
         BDU_50HD___500lb_Inert_Practice_Bomb_HD = (10, Weapons.BDU_50HD___500lb_Inert_Practice_Bomb_HD)
         Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = (10, Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD)
         CBU_87___202_x_CEM_Cluster_Bomb = (10, Weapons.CBU_87___202_x_CEM_Cluster_Bomb)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (10, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (10, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (10, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {1FE353C6-5EB6-4d22-9CFD-6DB384EC7296}
         CBU_97___10_x_SFW_Cluster_Bomb = (10, Weapons.CBU_97___10_x_SFW_Cluster_Bomb)
         BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD = (10, Weapons.BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (10, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (10, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (10, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
 
     class Pylon11:
         LAU_105_with_2_x_AIM_9M_Sidewinder_IR_AAM = (11, Weapons.LAU_105_with_2_x_AIM_9M_Sidewinder_IR_AAM)
@@ -8351,9 +8430,9 @@ class AJS37(PlaneType):
     length = 16.3
     fuel_max = 4476
     max_speed = 2203.2
-    chaff = 210
+    chaff = 1080
     flare = 72
-    charge_total = 280
+    charge_total = 1152
     chaff_charge_size = 1
     flare_charge_size = 1
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
@@ -8526,12 +8605,13 @@ class AJS37(PlaneType):
         AKAN_M_55_Gunpod__150_rnds_MINGR55_HE__no_Tracer_ = (2, Weapons.AKAN_M_55_Gunpod__150_rnds_MINGR55_HE__no_Tracer_)
         ARAK_M_70B_HE_6x_135mm_UnGd_Rkts__Shu70_HE_FRAG = (2, Weapons.ARAK_M_70B_HE_6x_135mm_UnGd_Rkts__Shu70_HE_FRAG)
         ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT = (2, Weapons.ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT)
+        ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT__Zonar_m_70 = (2, Weapons.ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT__Zonar_m_70)
         Rb_04E_Anti_ship_Missile = (2, Weapons.Rb_04E_Anti_ship_Missile)
         Rb_15F_Programmable_Anti_ship_Missile = (2, Weapons.Rb_15F_Programmable_Anti_ship_Missile)
         RB_04E__for_A_I___with_launcher = (2, Weapons.RB_04E__for_A_I___with_launcher)
         RB_15F__for_A_I___with_launcher = (2, Weapons.RB_15F__for_A_I___with_launcher)
         KB_Flare_Chaff_dispenser_pod = (2, Weapons.KB_Flare_Chaff_dispenser_pod)
-        _2x_80kg_LYSB_71_Illumination_Bomb = (2, Weapons._2x_80kg_LYSB_71_Illumination_Bomb)
+        _2x_80kg_LYSB_71_Illumination_Bomb___V7V = (2, Weapons._2x_80kg_LYSB_71_Illumination_Bomb___V7V)
         _4x_SB_M_71_120kg_GP_Bomb_Low_drag = (2, Weapons._4x_SB_M_71_120kg_GP_Bomb_Low_drag)
         _4x_SB_M_71_120kg_GP_Bomb_High_drag = (2, Weapons._4x_SB_M_71_120kg_GP_Bomb_High_drag)
 #ERRR {MERPYLON}
@@ -8548,8 +8628,9 @@ class AJS37(PlaneType):
         BK_90_MJ2__24_x_MJ2_HEAT_Bomblets_ = (3, Weapons.BK_90_MJ2__24_x_MJ2_HEAT_Bomblets_)
         ARAK_M_70B_HE_6x_135mm_UnGd_Rkts__Shu70_HE_FRAG = (3, Weapons.ARAK_M_70B_HE_6x_135mm_UnGd_Rkts__Shu70_HE_FRAG)
         ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT = (3, Weapons.ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT)
+        ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT__Zonar_m_70 = (3, Weapons.ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT__Zonar_m_70)
         Rb_05A_MCLOS_ASM_AShM_AAM = (3, Weapons.Rb_05A_MCLOS_ASM_AShM_AAM)
-        _2x_80kg_LYSB_71_Illumination_Bomb = (3, Weapons._2x_80kg_LYSB_71_Illumination_Bomb)
+        _2x_80kg_LYSB_71_Illumination_Bomb___S7V = (3, Weapons._2x_80kg_LYSB_71_Illumination_Bomb___S7V)
         _4x_SB_M_71_120kg_GP_Bomb_Low_drag = (3, Weapons._4x_SB_M_71_120kg_GP_Bomb_Low_drag)
         _4x_SB_M_71_120kg_GP_Bomb_High_drag = (3, Weapons._4x_SB_M_71_120kg_GP_Bomb_High_drag)
 #ERRR {MERPYLON}
@@ -8569,8 +8650,9 @@ class AJS37(PlaneType):
         BK_90_MJ2__24_x_MJ2_HEAT_Bomblets_ = (5, Weapons.BK_90_MJ2__24_x_MJ2_HEAT_Bomblets_)
         ARAK_M_70B_HE_6x_135mm_UnGd_Rkts__Shu70_HE_FRAG = (5, Weapons.ARAK_M_70B_HE_6x_135mm_UnGd_Rkts__Shu70_HE_FRAG)
         ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT = (5, Weapons.ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT)
+        ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT__Zonar_m_70 = (5, Weapons.ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT__Zonar_m_70)
         Rb_05A_MCLOS_ASM_AShM_AAM = (5, Weapons.Rb_05A_MCLOS_ASM_AShM_AAM)
-        _2x_80kg_LYSB_71_Illumination_Bomb = (5, Weapons._2x_80kg_LYSB_71_Illumination_Bomb)
+        _2x_80kg_LYSB_71_Illumination_Bomb___S7H = (5, Weapons._2x_80kg_LYSB_71_Illumination_Bomb___S7H)
         _4x_SB_M_71_120kg_GP_Bomb_Low_drag = (5, Weapons._4x_SB_M_71_120kg_GP_Bomb_Low_drag)
         _4x_SB_M_71_120kg_GP_Bomb_High_drag = (5, Weapons._4x_SB_M_71_120kg_GP_Bomb_High_drag)
         Rb_75A__AGM_65A_Maverick___TV_ASM_ = (5, Weapons.Rb_75A__AGM_65A_Maverick___TV_ASM_)
@@ -8589,6 +8671,7 @@ class AJS37(PlaneType):
         AKAN_M_55_Gunpod__150_rnds_MINGR55_HE__no_Tracer_ = (6, Weapons.AKAN_M_55_Gunpod__150_rnds_MINGR55_HE__no_Tracer_)
         ARAK_M_70B_HE_6x_135mm_UnGd_Rkts__Shu70_HE_FRAG = (6, Weapons.ARAK_M_70B_HE_6x_135mm_UnGd_Rkts__Shu70_HE_FRAG)
         ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT = (6, Weapons.ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT)
+        ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT__Zonar_m_70 = (6, Weapons.ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT__Zonar_m_70)
         Rb_04E_Anti_ship_Missile = (6, Weapons.Rb_04E_Anti_ship_Missile)
         Rb_15F_Programmable_Anti_ship_Missile = (6, Weapons.Rb_15F_Programmable_Anti_ship_Missile)
         RB_04E__for_A_I___with_launcher = (6, Weapons.RB_04E__for_A_I___with_launcher)
@@ -8596,7 +8679,7 @@ class AJS37(PlaneType):
         KB_Flare_Chaff_dispenser_pod = (6, Weapons.KB_Flare_Chaff_dispenser_pod)
         U_22_Jammer_pod = (6, Weapons.U_22_Jammer_pod)
         U22_A_Jammer = (6, Weapons.U22_A_Jammer)
-        _2x_80kg_LYSB_71_Illumination_Bomb = (6, Weapons._2x_80kg_LYSB_71_Illumination_Bomb)
+        _2x_80kg_LYSB_71_Illumination_Bomb___V7H = (6, Weapons._2x_80kg_LYSB_71_Illumination_Bomb___V7H)
         _4x_SB_M_71_120kg_GP_Bomb_Low_drag = (6, Weapons._4x_SB_M_71_120kg_GP_Bomb_Low_drag)
         _4x_SB_M_71_120kg_GP_Bomb_High_drag = (6, Weapons._4x_SB_M_71_120kg_GP_Bomb_High_drag)
 #ERRR {MERPYLON}
@@ -9093,19 +9176,19 @@ class AV8BNA(PlaneType):
         LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = (2, Weapons.LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_)
         LAU_117_AGM_65L = (2, Weapons.LAU_117_AGM_65L)
         LAU_117_AGM_65F = (2, Weapons.LAU_117_AGM_65F)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (2, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (2, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (2, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (2, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (2, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (2, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (2, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (2, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         LAU3_WP156 = (2, Weapons.LAU3_WP156)
         LAU3_WP1B = (2, Weapons.LAU3_WP1B)
         LAU3_WP61 = (2, Weapons.LAU3_WP61)
@@ -9150,19 +9233,19 @@ class AV8BNA(PlaneType):
         LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = (3, Weapons.LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_)
         LAU_117_AGM_65L = (3, Weapons.LAU_117_AGM_65L)
         LAU_117_AGM_65F = (3, Weapons.LAU_117_AGM_65F)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (3, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (3, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (3, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (3, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         LAU3_WP156 = (3, Weapons.LAU3_WP156)
         LAU3_WP1B = (3, Weapons.LAU3_WP1B)
         LAU3_WP61 = (3, Weapons.LAU3_WP61)
@@ -9208,19 +9291,19 @@ class AV8BNA(PlaneType):
         LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = (6, Weapons.LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_)
         LAU_117_AGM_65L = (6, Weapons.LAU_117_AGM_65L)
         LAU_117_AGM_65F = (6, Weapons.LAU_117_AGM_65F)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (6, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (6, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (6, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (6, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (6, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (6, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (6, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (6, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (6, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (6, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (6, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (6, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         LAU3_WP156 = (6, Weapons.LAU3_WP156)
         LAU3_WP1B = (6, Weapons.LAU3_WP1B)
         LAU3_WP61 = (6, Weapons.LAU3_WP61)
@@ -9274,19 +9357,19 @@ class AV8BNA(PlaneType):
         LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_ = (7, Weapons.LAU_117_with_AGM_65E___Maverick_E__Laser_ASM___Lg_Whd_)
         LAU_117_AGM_65L = (7, Weapons.LAU_117_AGM_65L)
         LAU_117_AGM_65F = (7, Weapons.LAU_117_AGM_65F)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (7, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (7, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (7, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (7, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (7, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (7, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (7, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (7, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 #ERRR {9115A5AF-6D5C-4b6b-BEA9-31D48B5C6001}
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS = (7, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M151__HE_APKWS)
-        LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS = (7, Weapons.LAU_131_pod___7_x_2_75_Hydra__Laser_Guided_Rkts_M282__MPP_APKWS)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (7, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (7, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (7, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS = (7, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M151_HE_APKWS)
+        LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS = (7, Weapons.LAU_131___7_x_Laser_Guided_Rkts__70_mm_Hydra_70_M282_MPP_APKWS)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (7, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (7, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (7, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         LAU3_WP156 = (7, Weapons.LAU3_WP156)
         LAU3_WP1B = (7, Weapons.LAU3_WP1B)
         LAU3_WP61 = (7, Weapons.LAU3_WP61)
@@ -9667,11 +9750,11 @@ class C_101CC(PlaneType):
     class Pylon2:
         Sea_Eagle___ASM = (2, Weapons.Sea_Eagle___ASM)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
-        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (2, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_ = (2, Weapons.LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (2, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         BL_755_CBU___450kg__147_Frag_Pen_bomblets = (2, Weapons.BL_755_CBU___450kg__147_Frag_Pen_bomblets)
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_100___100kg_GP_Bomb_LD = (2, Weapons.FAB_100___100kg_GP_Bomb_LD)
@@ -9680,10 +9763,10 @@ class C_101CC(PlaneType):
         BIN_200 = (2, Weapons.BIN_200)
 
     class Pylon3:
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
         BL_755_CBU___450kg__147_Frag_Pen_bomblets = (3, Weapons.BL_755_CBU___450kg__147_Frag_Pen_bomblets)
         FAB_250___250kg_GP_Bomb_LD = (3, Weapons.FAB_250___250kg_GP_Bomb_LD)
@@ -9699,10 +9782,10 @@ class C_101CC(PlaneType):
         AN_M3___2_Browning_Machine_Guns_12_7mm = (4, Weapons.AN_M3___2_Browning_Machine_Guns_12_7mm)
 
     class Pylon5:
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (5, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (5, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
         BL_755_CBU___450kg__147_Frag_Pen_bomblets = (5, Weapons.BL_755_CBU___450kg__147_Frag_Pen_bomblets)
         FAB_250___250kg_GP_Bomb_LD = (5, Weapons.FAB_250___250kg_GP_Bomb_LD)
@@ -9716,11 +9799,11 @@ class C_101CC(PlaneType):
     class Pylon6:
         Sea_Eagle___ASM = (6, Weapons.Sea_Eagle___ASM)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
-        LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (6, Weapons.LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (6, Weapons.LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_ = (6, Weapons.LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (6, Weapons.LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         BL_755_CBU___450kg__147_Frag_Pen_bomblets = (6, Weapons.BL_755_CBU___450kg__147_Frag_Pen_bomblets)
         FAB_250___250kg_GP_Bomb_LD = (6, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_100___100kg_GP_Bomb_LD = (6, Weapons.FAB_100___100kg_GP_Bomb_LD)
@@ -9741,7 +9824,6 @@ class C_101CC(PlaneType):
 
 class J_11A(PlaneType):
     id = "J-11A"
-    flyable = True
     height = 5.932
     width = 14.7
     length = 21.935
@@ -9795,8 +9877,8 @@ class J_11A(PlaneType):
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (3, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD = (3, Weapons.MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD)
         SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (3, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (3, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         B_8M1___20_S_8OFP2 = (3, Weapons.B_8M1___20_S_8OFP2)
@@ -9904,8 +9986,8 @@ class J_11A(PlaneType):
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (8, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD = (8, Weapons.MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD)
         SAB_100MN___100_kg_Illumination_Bomb = (8, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (8, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (8, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         B_8M1___20_S_8OFP2 = (8, Weapons.B_8M1___20_S_8OFP2)
@@ -11257,16 +11339,16 @@ class F_16C_50(PlaneType):
         TER_9A_with_2_x_CBU_97___10_x_SFW_Cluster_Bomb = (3, Weapons.TER_9A_with_2_x_CBU_97___10_x_SFW_Cluster_Bomb)
         LAU_88_with_2_x_AGM_65D___Maverick_D__IIR_ASM_ = (3, Weapons.LAU_88_with_2_x_AGM_65D___Maverick_D__IIR_ASM_)
         LAU_88_AGM_65H_2_L = (3, Weapons.LAU_88_AGM_65H_2_L)
-        TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
+        TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_ = (3, Weapons.TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_)
+        TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_ = (3, Weapons.TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT_)
+        TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_ = (3, Weapons.TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_)
+        TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_ = (3, Weapons.TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_)
         TER_9A_with_2_x_BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD = (3, Weapons.TER_9A_with_2_x_BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD)
 
     class Pylon4:
@@ -11421,16 +11503,16 @@ class F_16C_50(PlaneType):
         TER_9A_with_2_x_CBU_97___10_x_SFW_Cluster_Bomb_ = (7, Weapons.TER_9A_with_2_x_CBU_97___10_x_SFW_Cluster_Bomb_)
         LAU_88_with_2_x_AGM_65D___Maverick_D__IIR_ASM__ = (7, Weapons.LAU_88_with_2_x_AGM_65D___Maverick_D__IIR_ASM__)
         LAU_88_AGM_65H_2_R = (7, Weapons.LAU_88_AGM_65H_2_R)
-        TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_ = (7, Weapons.TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_)
-        TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_ = (7, Weapons.TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_)
-        TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_ = (7, Weapons.TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_)
-        TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_ = (7, Weapons.TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_)
-        TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_ = (7, Weapons.TER_9A_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_)
-        TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_ = (7, Weapons.TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT_)
-        TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_ = (7, Weapons.TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE_)
-        TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_ = (7, Weapons.TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos_)
-        TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_ = (7, Weapons.TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice_)
-        TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_ = (7, Weapons.TER_9A_with_2_x_LAU_131_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice_)
+        TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (7, Weapons.TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_ = (7, Weapons.TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE_)
+        TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_ = (7, Weapons.TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_)
+        TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_ = (7, Weapons.TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_)
+        TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_ = (7, Weapons.TER_9A_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP_)
+        TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (7, Weapons.TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (7, Weapons.TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_ = (7, Weapons.TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM_)
+        TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_ = (7, Weapons.TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP_)
+        TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (7, Weapons.TER_9A_2_x_LAU_131___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
         TER_9A_with_2_x_BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD_ = (7, Weapons.TER_9A_with_2_x_BDU_50LGB___500lb_Laser_Guided_Inert_Practice_Bomb_LD_)
 
     class Pylon8:
@@ -11547,7 +11629,7 @@ class F_4E_45MC(PlaneType):
         "Quality": 100,
         "Wear": 0,
         "UseReferenceAircraft": False,
-        "INSAlignmentStored": False,
+        "INSAlignmentStored": True,
         "IsNvgAllowed": True,
         "TacanChannel": 0,
         "TacanBand": 0,
@@ -11681,7 +11763,7 @@ class F_4E_45MC(PlaneType):
             control="checkbox",
             label="INS Reference Alignment Stored",
             player_only=True,
-            default=False,
+            default=True,
         ),
         "IsNvgAllowed": UnitPropertyDescription(
             identifier="IsNvgAllowed",
@@ -11880,9 +11962,9 @@ class F_4E_45MC(PlaneType):
         BDU_45_LG___500lb_Practice_Laser_Guided_Bomb = (1, Weapons.BDU_45_LG___500lb_Practice_Laser_Guided_Bomb)
         GBU_8_HOBOS___2000_lb_TV_Guided_Bomb = (1, Weapons.GBU_8_HOBOS___2000_lb_TV_Guided_Bomb)
         AGM_62_Walleye_I___Guided_Weapon_Mk_1__TV_Guided_ = (1, Weapons.AGM_62_Walleye_I___Guided_Weapon_Mk_1__TV_Guided_)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (1, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (1, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (1, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (1, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (1, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (1, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__MER_ = (1, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__MER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__MER_ = (1, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__MER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__MER_ = (1, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__MER_)
@@ -11904,6 +11986,12 @@ class F_4E_45MC(PlaneType):
         CATM_9M = (2, Weapons.CATM_9M)
         AIM_9P5_Sidewinder_IR_AAM = (2, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9P3_Sidewinder_IR_AAM = (2, Weapons.AIM_9P3_Sidewinder_IR_AAM)
+        Smokewinder___red = (2, Weapons.Smokewinder___red)
+        Smokewinder___green = (2, Weapons.Smokewinder___green)
+        Smokewinder___blue = (2, Weapons.Smokewinder___blue)
+        Smokewinder___white = (2, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (2, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (2, Weapons.Smokewinder___orange)
 
     class Pylon3:
         _2x_Mk_83___1000lb_GP_Bomb_LD__TER_ = (3, Weapons._2x_Mk_83___1000lb_GP_Bomb_LD__TER_)
@@ -11958,18 +12046,18 @@ class F_4E_45MC(PlaneType):
         _3x_LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_ = (3, Weapons._3x_LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_)
         _3x_LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_ = (3, Weapons._3x_LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_)
         _3x_LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_ = (3, Weapons._3x_LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (3, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         _1x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_ = (3, Weapons._1x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_)
         _1x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_ = (3, Weapons._1x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_)
         _1x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_ = (3, Weapons._1x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_ = (3, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_ = (3, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_ = (3, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         ALQ_131___ECM_Pod = (3, Weapons.ALQ_131___ECM_Pod)
 #ERRR <CLEAN>
         _3x_Mk_81___250lb_GP_Bomb_LD__TER_ = (3, Weapons._3x_Mk_81___250lb_GP_Bomb_LD__TER_)
@@ -12011,6 +12099,12 @@ class F_4E_45MC(PlaneType):
         CATM_9M = (4, Weapons.CATM_9M)
         AIM_9P5_Sidewinder_IR_AAM = (4, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9P3_Sidewinder_IR_AAM = (4, Weapons.AIM_9P3_Sidewinder_IR_AAM)
+        Smokewinder___red = (4, Weapons.Smokewinder___red)
+        Smokewinder___green = (4, Weapons.Smokewinder___green)
+        Smokewinder___blue = (4, Weapons.Smokewinder___blue)
+        Smokewinder___white = (4, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (4, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (4, Weapons.Smokewinder___orange)
 
     class Pylon5:
         AIM_7F = (5, Weapons.AIM_7F)
@@ -12077,6 +12171,12 @@ class F_4E_45MC(PlaneType):
         CATM_9M = (10, Weapons.CATM_9M)
         AIM_9P5_Sidewinder_IR_AAM = (10, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9P3_Sidewinder_IR_AAM = (10, Weapons.AIM_9P3_Sidewinder_IR_AAM)
+        Smokewinder___red = (10, Weapons.Smokewinder___red)
+        Smokewinder___green = (10, Weapons.Smokewinder___green)
+        Smokewinder___blue = (10, Weapons.Smokewinder___blue)
+        Smokewinder___white = (10, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (10, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (10, Weapons.Smokewinder___orange)
 
     class Pylon11:
         _2x_Mk_83___1000lb_GP_Bomb_LD__TER__ = (11, Weapons._2x_Mk_83___1000lb_GP_Bomb_LD__TER__)
@@ -12131,18 +12231,18 @@ class F_4E_45MC(PlaneType):
         _3x_LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_ = (11, Weapons._3x_LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_)
         _3x_LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_ = (11, Weapons._3x_LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_)
         _3x_LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_ = (11, Weapons._3x_LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (11, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (11, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (11, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (11, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (11, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (11, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         _1x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_ = (11, Weapons._1x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_)
         _1x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_ = (11, Weapons._1x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_)
         _1x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_ = (11, Weapons._1x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_ = (11, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_ = (11, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_ = (11, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (11, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (11, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (11, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (11, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (11, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (11, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         ALQ_131___ECM_Pod = (11, Weapons.ALQ_131___ECM_Pod)
 #ERRR <CLEAN>
         _3x_Mk_81___250lb_GP_Bomb_LD__TER_ = (11, Weapons._3x_Mk_81___250lb_GP_Bomb_LD__TER_)
@@ -12184,6 +12284,12 @@ class F_4E_45MC(PlaneType):
         CATM_9M = (12, Weapons.CATM_9M)
         AIM_9P5_Sidewinder_IR_AAM = (12, Weapons.AIM_9P5_Sidewinder_IR_AAM)
         AIM_9P3_Sidewinder_IR_AAM = (12, Weapons.AIM_9P3_Sidewinder_IR_AAM)
+        Smokewinder___red = (12, Weapons.Smokewinder___red)
+        Smokewinder___green = (12, Weapons.Smokewinder___green)
+        Smokewinder___blue = (12, Weapons.Smokewinder___blue)
+        Smokewinder___white = (12, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (12, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (12, Weapons.Smokewinder___orange)
 
     class Pylon13:
         _1x_Mk_83___1000lb_GP_Bomb_LD__MER__Ripple_ = (13, Weapons._1x_Mk_83___1000lb_GP_Bomb_LD__MER__Ripple_)
@@ -12217,9 +12323,9 @@ class F_4E_45MC(PlaneType):
         BDU_45_LG___500lb_Practice_Laser_Guided_Bomb = (13, Weapons.BDU_45_LG___500lb_Practice_Laser_Guided_Bomb)
         GBU_8_HOBOS___2000_lb_TV_Guided_Bomb = (13, Weapons.GBU_8_HOBOS___2000_lb_TV_Guided_Bomb)
         AGM_62_Walleye_I___Guided_Weapon_Mk_1__TV_Guided_ = (13, Weapons.AGM_62_Walleye_I___Guided_Weapon_Mk_1__TV_Guided_)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (13, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (13, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (13, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (13, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (13, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (13, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__MER_ = (13, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__MER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__MER_ = (13, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__MER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__MER_ = (13, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__MER_)
@@ -12281,25 +12387,25 @@ class F_5E(PlaneType):
         M117___750lb_GP_Bomb_LD = (2, Weapons.M117___750lb_GP_Bomb_LD)
         GBU_12___500lb_Laser_Guided_Bomb = (2, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CBU_52B___220_x_HE_Frag_bomblets = (2, Weapons.CBU_52B___220_x_HE_Frag_bomblets)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (2, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         LAU3_WP156 = (2, Weapons.LAU3_WP156)
         LAU3_WP1B = (2, Weapons.LAU3_WP1B)
         LAU3_WP61 = (2, Weapons.LAU3_WP61)
         LAU3_HE5 = (2, Weapons.LAU3_HE5)
         LAU3_HE151 = (2, Weapons.LAU3_HE151)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (2, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (2, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (2, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (2, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         SUU_25_x_8_LUU_2___Target_Marker_Flares = (2, Weapons.SUU_25_x_8_LUU_2___Target_Marker_Flares)
         BDU_33___25lb_Practice_Bomb_LD = (2, Weapons.BDU_33___25lb_Practice_Bomb_LD)
         BDU_50LD___500lb_Inert_Practice_Bomb_LD = (2, Weapons.BDU_50LD___500lb_Inert_Practice_Bomb_LD)
@@ -12313,25 +12419,25 @@ class F_5E(PlaneType):
         M117___750lb_GP_Bomb_LD = (3, Weapons.M117___750lb_GP_Bomb_LD)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CBU_52B___220_x_HE_Frag_bomblets = (3, Weapons.CBU_52B___220_x_HE_Frag_bomblets)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (3, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         LAU3_WP156 = (3, Weapons.LAU3_WP156)
         LAU3_WP1B = (3, Weapons.LAU3_WP1B)
         LAU3_WP61 = (3, Weapons.LAU3_WP61)
         LAU3_HE5 = (3, Weapons.LAU3_HE5)
         LAU3_HE151 = (3, Weapons.LAU3_HE151)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         F_5_275Gal_Fuel_tank = (3, Weapons.F_5_275Gal_Fuel_tank)
         F_5_150Gal_Fuel_tank = (3, Weapons.F_5_150Gal_Fuel_tank)
         MXU_648_TP = (3, Weapons.MXU_648_TP)
@@ -12363,25 +12469,25 @@ class F_5E(PlaneType):
         M117___750lb_GP_Bomb_LD = (5, Weapons.M117___750lb_GP_Bomb_LD)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CBU_52B___220_x_HE_Frag_bomblets = (5, Weapons.CBU_52B___220_x_HE_Frag_bomblets)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (5, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (5, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (5, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         LAU3_WP156 = (5, Weapons.LAU3_WP156)
         LAU3_WP1B = (5, Weapons.LAU3_WP1B)
         LAU3_WP61 = (5, Weapons.LAU3_WP61)
         LAU3_HE5 = (5, Weapons.LAU3_HE5)
         LAU3_HE151 = (5, Weapons.LAU3_HE151)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (5, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (5, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (5, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (5, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (5, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (5, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         F_5_275Gal_Fuel_tank = (5, Weapons.F_5_275Gal_Fuel_tank)
         F_5_150Gal_Fuel_tank = (5, Weapons.F_5_150Gal_Fuel_tank)
         MXU_648_TP = (5, Weapons.MXU_648_TP)
@@ -12396,25 +12502,25 @@ class F_5E(PlaneType):
         M117___750lb_GP_Bomb_LD = (6, Weapons.M117___750lb_GP_Bomb_LD)
         GBU_12___500lb_Laser_Guided_Bomb = (6, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CBU_52B___220_x_HE_Frag_bomblets = (6, Weapons.CBU_52B___220_x_HE_Frag_bomblets)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (6, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (6, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (6, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         LAU3_WP156 = (6, Weapons.LAU3_WP156)
         LAU3_WP1B = (6, Weapons.LAU3_WP1B)
         LAU3_WP61 = (6, Weapons.LAU3_WP61)
         LAU3_HE5 = (6, Weapons.LAU3_HE5)
         LAU3_HE151 = (6, Weapons.LAU3_HE151)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (6, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (6, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (6, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (6, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (6, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (6, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         SUU_25_x_8_LUU_2___Target_Marker_Flares = (6, Weapons.SUU_25_x_8_LUU_2___Target_Marker_Flares)
         BDU_33___25lb_Practice_Bomb_LD = (6, Weapons.BDU_33___25lb_Practice_Bomb_LD)
         BDU_50LD___500lb_Inert_Practice_Bomb_LD = (6, Weapons.BDU_50LD___500lb_Inert_Practice_Bomb_LD)
@@ -12438,7 +12544,7 @@ class F_5E(PlaneType):
 
     pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
-    tasks = [task.CAS, task.GroundAttack, task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.AntishipStrike]
+    tasks = [task.CAS, task.GroundAttack, task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.AntishipStrike, task.RunwayAttack, task.Reconnaissance]
     task_default = task.CAP
 
 
@@ -12720,25 +12826,25 @@ class F_5E_3(PlaneType):
         M117___750lb_GP_Bomb_LD = (2, Weapons.M117___750lb_GP_Bomb_LD)
         GBU_12___500lb_Laser_Guided_Bomb = (2, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CBU_52B___220_x_HE_Frag_bomblets = (2, Weapons.CBU_52B___220_x_HE_Frag_bomblets)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (2, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         LAU3_WP156 = (2, Weapons.LAU3_WP156)
         LAU3_WP1B = (2, Weapons.LAU3_WP1B)
         LAU3_WP61 = (2, Weapons.LAU3_WP61)
         LAU3_HE5 = (2, Weapons.LAU3_HE5)
         LAU3_HE151 = (2, Weapons.LAU3_HE151)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (2, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (2, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (2, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (2, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         SUU_25_x_8_LUU_2___Target_Marker_Flares = (2, Weapons.SUU_25_x_8_LUU_2___Target_Marker_Flares)
         BDU_33___25lb_Practice_Bomb_LD = (2, Weapons.BDU_33___25lb_Practice_Bomb_LD)
         BDU_50LD___500lb_Inert_Practice_Bomb_LD = (2, Weapons.BDU_50LD___500lb_Inert_Practice_Bomb_LD)
@@ -12752,25 +12858,25 @@ class F_5E_3(PlaneType):
         M117___750lb_GP_Bomb_LD = (3, Weapons.M117___750lb_GP_Bomb_LD)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CBU_52B___220_x_HE_Frag_bomblets = (3, Weapons.CBU_52B___220_x_HE_Frag_bomblets)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (3, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         LAU3_WP156 = (3, Weapons.LAU3_WP156)
         LAU3_WP1B = (3, Weapons.LAU3_WP1B)
         LAU3_WP61 = (3, Weapons.LAU3_WP61)
         LAU3_HE5 = (3, Weapons.LAU3_HE5)
         LAU3_HE151 = (3, Weapons.LAU3_HE151)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         F_5_275Gal_Fuel_tank = (3, Weapons.F_5_275Gal_Fuel_tank)
         F_5_150Gal_Fuel_tank = (3, Weapons.F_5_150Gal_Fuel_tank)
         MXU_648_TP = (3, Weapons.MXU_648_TP)
@@ -12802,25 +12908,25 @@ class F_5E_3(PlaneType):
         M117___750lb_GP_Bomb_LD = (5, Weapons.M117___750lb_GP_Bomb_LD)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CBU_52B___220_x_HE_Frag_bomblets = (5, Weapons.CBU_52B___220_x_HE_Frag_bomblets)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (5, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (5, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (5, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (5, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         LAU3_WP156 = (5, Weapons.LAU3_WP156)
         LAU3_WP1B = (5, Weapons.LAU3_WP1B)
         LAU3_WP61 = (5, Weapons.LAU3_WP61)
         LAU3_HE5 = (5, Weapons.LAU3_HE5)
         LAU3_HE151 = (5, Weapons.LAU3_HE151)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (5, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (5, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (5, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (5, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (5, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (5, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         F_5_275Gal_Fuel_tank = (5, Weapons.F_5_275Gal_Fuel_tank)
         F_5_150Gal_Fuel_tank = (5, Weapons.F_5_150Gal_Fuel_tank)
         MXU_648_TP = (5, Weapons.MXU_648_TP)
@@ -12835,25 +12941,25 @@ class F_5E_3(PlaneType):
         M117___750lb_GP_Bomb_LD = (6, Weapons.M117___750lb_GP_Bomb_LD)
         GBU_12___500lb_Laser_Guided_Bomb = (6, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CBU_52B___220_x_HE_Frag_bomblets = (6, Weapons.CBU_52B___220_x_HE_Frag_bomblets)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (6, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (6, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (6, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (6, Weapons.LAU_68_pod___7_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         LAU3_WP156 = (6, Weapons.LAU3_WP156)
         LAU3_WP1B = (6, Weapons.LAU3_WP1B)
         LAU3_WP61 = (6, Weapons.LAU3_WP61)
         LAU3_HE5 = (6, Weapons.LAU3_HE5)
         LAU3_HE151 = (6, Weapons.LAU3_HE151)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos = (6, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE = (6, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE)
-        LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT = (6, Weapons.LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (6, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (6, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (6, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
         SUU_25_x_8_LUU_2___Target_Marker_Flares = (6, Weapons.SUU_25_x_8_LUU_2___Target_Marker_Flares)
         BDU_33___25lb_Practice_Bomb_LD = (6, Weapons.BDU_33___25lb_Practice_Bomb_LD)
         BDU_50LD___500lb_Inert_Practice_Bomb_LD = (6, Weapons.BDU_50LD___500lb_Inert_Practice_Bomb_LD)
@@ -12877,7 +12983,155 @@ class F_5E_3(PlaneType):
 
     pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
-    tasks = [task.CAS, task.GroundAttack, task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.AntishipStrike]
+    tasks = [task.CAS, task.GroundAttack, task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.AntishipStrike, task.RunwayAttack, task.Reconnaissance]
+    task_default = task.CAP
+
+
+class F_5E_3_FC(PlaneType):
+    id = "F-5E-3_FC"
+    flyable = True
+    height = 4.06
+    width = 8.53
+    length = 14.68
+    fuel_max = 2046
+    max_speed = 1742.4
+    chaff = 30
+    flare = 15
+    charge_total = 60
+    chaff_charge_size = 1
+    flare_charge_size = 2
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 305
+
+    livery_name = "F-5E-3"  # from livery_entry
+
+    class Pylon1:
+        AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (1, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (1, Weapons.AIM_9P3_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (1, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        Smokewinder___red = (1, Weapons.Smokewinder___red)
+        Smokewinder___green = (1, Weapons.Smokewinder___green)
+        Smokewinder___blue = (1, Weapons.Smokewinder___blue)
+        Smokewinder___white = (1, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (1, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (1, Weapons.Smokewinder___orange)
+
+    class Pylon2:
+        Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
+        Mk_82_Snakeye___500lb_GP_Bomb_HD = (2, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
+        M117___750lb_GP_Bomb_LD = (2, Weapons.M117___750lb_GP_Bomb_LD)
+        CBU_52B___220_x_HE_Frag_bomblets = (2, Weapons.CBU_52B___220_x_HE_Frag_bomblets)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
+        LAU3_WP156 = (2, Weapons.LAU3_WP156)
+        LAU3_HE5 = (2, Weapons.LAU3_HE5)
+        LAU3_HE151 = (2, Weapons.LAU3_HE151)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (2, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (2, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (2, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
+        SUU_25_x_8_LUU_2___Target_Marker_Flares = (2, Weapons.SUU_25_x_8_LUU_2___Target_Marker_Flares)
+
+    class Pylon3:
+        Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
+        Mk_82_Snakeye___500lb_GP_Bomb_HD = (3, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
+        Mk_83___1000lb_GP_Bomb_LD = (3, Weapons.Mk_83___1000lb_GP_Bomb_LD)
+        M117___750lb_GP_Bomb_LD = (3, Weapons.M117___750lb_GP_Bomb_LD)
+        CBU_52B___220_x_HE_Frag_bomblets = (3, Weapons.CBU_52B___220_x_HE_Frag_bomblets)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
+        LAU3_WP156 = (3, Weapons.LAU3_WP156)
+        LAU3_HE5 = (3, Weapons.LAU3_HE5)
+        LAU3_HE151 = (3, Weapons.LAU3_HE151)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
+        F_5_275Gal_Fuel_tank = (3, Weapons.F_5_275Gal_Fuel_tank)
+        F_5_150Gal_Fuel_tank = (3, Weapons.F_5_150Gal_Fuel_tank)
+
+    class Pylon4:
+        Mk_82___500lb_GP_Bomb_LD = (4, Weapons.Mk_82___500lb_GP_Bomb_LD)
+        Mk_82_Snakeye___500lb_GP_Bomb_HD = (4, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
+        Mk_83___1000lb_GP_Bomb_LD = (4, Weapons.Mk_83___1000lb_GP_Bomb_LD)
+        Mk_84___2000lb_GP_Bomb_LD = (4, Weapons.Mk_84___2000lb_GP_Bomb_LD)
+        M117___750lb_GP_Bomb_LD = (4, Weapons.M117___750lb_GP_Bomb_LD)
+        _5_x_Mk_82___500lb_GP_Bombs_LD = (4, Weapons._5_x_Mk_82___500lb_GP_Bombs_LD)
+        _5_x_Mk_82_Snakeye___500lb_GP_Bomb_HD = (4, Weapons._5_x_Mk_82_Snakeye___500lb_GP_Bomb_HD)
+        CBU_52B___220_x_HE_Frag_bomblets = (4, Weapons.CBU_52B___220_x_HE_Frag_bomblets)
+        F_5_275Gal_Fuel_tank = (4, Weapons.F_5_275Gal_Fuel_tank)
+        F_5_150Gal_Fuel_tank = (4, Weapons.F_5_150Gal_Fuel_tank)
+
+    class Pylon5:
+        Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
+        Mk_82_Snakeye___500lb_GP_Bomb_HD = (5, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
+        Mk_83___1000lb_GP_Bomb_LD = (5, Weapons.Mk_83___1000lb_GP_Bomb_LD)
+        M117___750lb_GP_Bomb_LD = (5, Weapons.M117___750lb_GP_Bomb_LD)
+        CBU_52B___220_x_HE_Frag_bomblets = (5, Weapons.CBU_52B___220_x_HE_Frag_bomblets)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (5, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
+        LAU3_WP156 = (5, Weapons.LAU3_WP156)
+        LAU3_HE5 = (5, Weapons.LAU3_HE5)
+        LAU3_HE151 = (5, Weapons.LAU3_HE151)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (5, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (5, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (5, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
+        F_5_275Gal_Fuel_tank = (5, Weapons.F_5_275Gal_Fuel_tank)
+        F_5_150Gal_Fuel_tank = (5, Weapons.F_5_150Gal_Fuel_tank)
+
+    class Pylon6:
+        Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
+        Mk_82_Snakeye___500lb_GP_Bomb_HD = (6, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
+        M117___750lb_GP_Bomb_LD = (6, Weapons.M117___750lb_GP_Bomb_LD)
+        CBU_52B___220_x_HE_Frag_bomblets = (6, Weapons.CBU_52B___220_x_HE_Frag_bomblets)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (6, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
+        LAU3_WP156 = (6, Weapons.LAU3_WP156)
+        LAU3_HE5 = (6, Weapons.LAU3_HE5)
+        LAU3_HE151 = (6, Weapons.LAU3_HE151)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (6, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (6, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
+        LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (6, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
+        SUU_25_x_8_LUU_2___Target_Marker_Flares = (6, Weapons.SUU_25_x_8_LUU_2___Target_Marker_Flares)
+
+    class Pylon7:
+        AIM_9B_Sidewinder_IR_AAM = (7, Weapons.AIM_9B_Sidewinder_IR_AAM)
+        AIM_9P5_Sidewinder_IR_AAM = (7, Weapons.AIM_9P5_Sidewinder_IR_AAM)
+        AIM_9P3_Sidewinder_IR_AAM = (7, Weapons.AIM_9P3_Sidewinder_IR_AAM)
+        AIM_9P_Sidewinder_IR_AAM = (7, Weapons.AIM_9P_Sidewinder_IR_AAM)
+        Smokewinder___red = (7, Weapons.Smokewinder___red)
+        Smokewinder___green = (7, Weapons.Smokewinder___green)
+        Smokewinder___blue = (7, Weapons.Smokewinder___blue)
+        Smokewinder___white = (7, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (7, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (7, Weapons.Smokewinder___orange)
+
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
+
+    tasks = [task.CAS, task.GroundAttack, task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.AntishipStrike, task.RunwayAttack, task.Reconnaissance]
     task_default = task.CAP
 
 
@@ -12936,9 +13190,9 @@ class F_86F_Sabre(PlaneType):
     class Pylon4:
         Fuel_Tank_120_gallons = (4, Weapons.Fuel_Tank_120_gallons)
         AN_M64___500lb_GP_Bomb_LD_ = (4, Weapons.AN_M64___500lb_GP_Bomb_LD_)
+        M117___750lb_GP_Bomb_LD = (4, Weapons.M117___750lb_GP_Bomb_LD)
         _2_x_HVAR__UnGd_Rkts = (4, Weapons._2_x_HVAR__UnGd_Rkts)
         HVAR_SMOKE__UnGd_Rkt = (4, Weapons.HVAR_SMOKE__UnGd_Rkt)
-        M117___750lb_GP_Bomb_LD = (4, Weapons.M117___750lb_GP_Bomb_LD)
 
     class Pylon5:
         LAU_7_with_AIM_9B_Sidewinder_IR_AAM = (5, Weapons.LAU_7_with_AIM_9B_Sidewinder_IR_AAM)
@@ -12949,9 +13203,101 @@ class F_86F_Sabre(PlaneType):
     class Pylon7:
         Fuel_Tank_120_gallons = (7, Weapons.Fuel_Tank_120_gallons)
         AN_M64___500lb_GP_Bomb_LD_ = (7, Weapons.AN_M64___500lb_GP_Bomb_LD_)
+        M117___750lb_GP_Bomb_LD = (7, Weapons.M117___750lb_GP_Bomb_LD)
         _2_x_HVAR__UnGd_Rkts = (7, Weapons._2_x_HVAR__UnGd_Rkts)
         HVAR_SMOKE__UnGd_Rkt = (7, Weapons.HVAR_SMOKE__UnGd_Rkt)
+
+    class Pylon8:
+        _2_x_HVAR__UnGd_Rkts = (8, Weapons._2_x_HVAR__UnGd_Rkts)
+        HVAR_SMOKE__UnGd_Rkt = (8, Weapons.HVAR_SMOKE__UnGd_Rkt)
+
+    class Pylon9:
+        _2_x_HVAR__UnGd_Rkts = (9, Weapons._2_x_HVAR__UnGd_Rkts)
+        HVAR_SMOKE__UnGd_Rkt = (9, Weapons.HVAR_SMOKE__UnGd_Rkt)
+
+    class Pylon10:
+        Fuel_Tank_200_gallons = (10, Weapons.Fuel_Tank_200_gallons)
+        Fuel_Tank_120_gallons = (10, Weapons.Fuel_Tank_120_gallons)
+        _2_x_HVAR__UnGd_Rkts = (10, Weapons._2_x_HVAR__UnGd_Rkts)
+        HVAR_SMOKE__UnGd_Rkt = (10, Weapons.HVAR_SMOKE__UnGd_Rkt)
+
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+    tasks = [task.CAP, task.CAS, task.Escort, task.FighterSweep, task.GroundAttack, task.Intercept, task.AntishipStrike]
+    task_default = task.CAP
+
+
+class F_86F_FC(PlaneType):
+    id = "F-86F_FC"
+    flyable = True
+    height = 4.496
+    width = 11.9
+    length = 11.43
+    fuel_max = 1282
+    max_speed = 964.8
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 225
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 225,
+                2: 258,
+                4: 270,
+                8: 257,
+                16: 252,
+                17: 268,
+                9: 253,
+                18: 269,
+                5: 255,
+                10: 263,
+                11: 267,
+                3: 260,
+                6: 259,
+                12: 254,
+                13: 264,
+                7: 262,
+                14: 266,
+                15: 265
+            },
+        },
+    }
+
+    livery_name = "F-86F SABRE"  # from livery_entry
+
+    class Pylon1:
+        Fuel_Tank_200_gallons = (1, Weapons.Fuel_Tank_200_gallons)
+        Fuel_Tank_120_gallons = (1, Weapons.Fuel_Tank_120_gallons)
+        _2_x_HVAR__UnGd_Rkts = (1, Weapons._2_x_HVAR__UnGd_Rkts)
+        HVAR_SMOKE__UnGd_Rkt = (1, Weapons.HVAR_SMOKE__UnGd_Rkt)
+
+    class Pylon2:
+        _2_x_HVAR__UnGd_Rkts = (2, Weapons._2_x_HVAR__UnGd_Rkts)
+        HVAR_SMOKE__UnGd_Rkt = (2, Weapons.HVAR_SMOKE__UnGd_Rkt)
+
+    class Pylon3:
+        _2_x_HVAR__UnGd_Rkts = (3, Weapons._2_x_HVAR__UnGd_Rkts)
+        HVAR_SMOKE__UnGd_Rkt = (3, Weapons.HVAR_SMOKE__UnGd_Rkt)
+
+    class Pylon4:
+        Fuel_Tank_120_gallons = (4, Weapons.Fuel_Tank_120_gallons)
+        AN_M64___500lb_GP_Bomb_LD_ = (4, Weapons.AN_M64___500lb_GP_Bomb_LD_)
+        M117___750lb_GP_Bomb_LD = (4, Weapons.M117___750lb_GP_Bomb_LD)
+        _2_x_HVAR__UnGd_Rkts = (4, Weapons._2_x_HVAR__UnGd_Rkts)
+        HVAR_SMOKE__UnGd_Rkt = (4, Weapons.HVAR_SMOKE__UnGd_Rkt)
+
+    class Pylon5:
+        LAU_7_with_AIM_9B_Sidewinder_IR_AAM = (5, Weapons.LAU_7_with_AIM_9B_Sidewinder_IR_AAM)
+
+    class Pylon6:
+        LAU_7_with_AIM_9B_Sidewinder_IR_AAM = (6, Weapons.LAU_7_with_AIM_9B_Sidewinder_IR_AAM)
+
+    class Pylon7:
+        Fuel_Tank_120_gallons = (7, Weapons.Fuel_Tank_120_gallons)
+        AN_M64___500lb_GP_Bomb_LD_ = (7, Weapons.AN_M64___500lb_GP_Bomb_LD_)
         M117___750lb_GP_Bomb_LD = (7, Weapons.M117___750lb_GP_Bomb_LD)
+        _2_x_HVAR__UnGd_Rkts = (7, Weapons._2_x_HVAR__UnGd_Rkts)
+        HVAR_SMOKE__UnGd_Rkt = (7, Weapons.HVAR_SMOKE__UnGd_Rkt)
 
     class Pylon8:
         _2_x_HVAR__UnGd_Rkts = (8, Weapons._2_x_HVAR__UnGd_Rkts)
@@ -12980,7 +13326,7 @@ class F_14B(PlaneType):
     width = 10.15
     length = 16.6
     fuel_max = 7348
-    max_speed = 2520
+    max_speed = 2407.5792
     chaff = 140
     flare = 60
     charge_total = 200
@@ -13482,7 +13828,7 @@ class F_14A_135_GR(PlaneType):
     width = 10.15
     length = 16.6
     fuel_max = 7348
-    max_speed = 2520
+    max_speed = 2407.5792
     chaff = 140
     flare = 60
     charge_total = 200
@@ -14003,7 +14349,7 @@ class F_A_18A(PlaneType):
 
     class Pylon2:
         AIM_7M_Sparrow_Semi_Active_Radar = (2, Weapons.AIM_7M_Sparrow_Semi_Active_Radar)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (2, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (2, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
         AGM_84A_Harpoon_ASM = (2, Weapons.AGM_84A_Harpoon_ASM)
         AGM_88C_HARM___High_Speed_Anti_Radiation_Missile_ = (2, Weapons.AGM_88C_HARM___High_Speed_Anti_Radiation_Missile_)
         LAU_117_with_AGM_65D___Maverick_D__IIR_ASM_ = (2, Weapons.LAU_117_with_AGM_65D___Maverick_D__IIR_ASM_)
@@ -14047,7 +14393,7 @@ class F_A_18A(PlaneType):
 
     class Pylon8:
         AIM_7M_Sparrow_Semi_Active_Radar = (8, Weapons.AIM_7M_Sparrow_Semi_Active_Radar)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (8, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (8, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
         AGM_84A_Harpoon_ASM = (8, Weapons.AGM_84A_Harpoon_ASM)
         AGM_88C_HARM___High_Speed_Anti_Radiation_Missile_ = (8, Weapons.AGM_88C_HARM___High_Speed_Anti_Radiation_Missile_)
         LAU_117_with_AGM_65D___Maverick_D__IIR_ASM_ = (8, Weapons.LAU_117_with_AGM_65D___Maverick_D__IIR_ASM_)
@@ -14225,7 +14571,7 @@ class F_A_18C(PlaneType):
         AIM_7F_Sparrow_Semi_Active_Radar = (2, Weapons.AIM_7F_Sparrow_Semi_Active_Radar)
         AIM_7MH_Sparrow_Semi_Active_Radar = (2, Weapons.AIM_7MH_Sparrow_Semi_Active_Radar)
         AIM_7E_Sparrow_Semi_Active_Radar = (2, Weapons.AIM_7E_Sparrow_Semi_Active_Radar)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (2, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (2, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
         AGM_84A_Harpoon_ASM = (2, Weapons.AGM_84A_Harpoon_ASM)
         AGM_84E_Harpoon_SLAM__Stand_Off_Land_Attack_Missile_ = (2, Weapons.AGM_84E_Harpoon_SLAM__Stand_Off_Land_Attack_Missile_)
         AGM_88C_HARM___High_Speed_Anti_Radiation_Missile_ = (2, Weapons.AGM_88C_HARM___High_Speed_Anti_Radiation_Missile_)
@@ -14242,14 +14588,14 @@ class F_A_18C(PlaneType):
         BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD = (2, Weapons.BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD)
         Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = (2, Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD)
         BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD = (2, Weapons.BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (2, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (2, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb = (2, Weapons.GBU_31_V_3_B___JDAM__2000lb_GPS_Guided_Penetrator_Bomb)
         GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb = (2, Weapons.GBU_31_V_1_B___JDAM__2000lb_GPS_Guided_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (2, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
@@ -14280,14 +14626,14 @@ class F_A_18C(PlaneType):
         BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD = (3, Weapons.BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD)
         Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = (3, Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD)
         BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD = (3, Weapons.BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (3, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (3, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 
     class Pylon4:
         AIM_120B_AMRAAM___Active_Radar_AAM = (4, Weapons.AIM_120B_AMRAAM___Active_Radar_AAM)
@@ -14335,14 +14681,14 @@ class F_A_18C(PlaneType):
         BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD = (7, Weapons.BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD)
         Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = (7, Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD)
         BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD = (7, Weapons.BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (7, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (7, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (7, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (7, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (7, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (7, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (7, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (7, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (7, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
 
     class Pylon8:
         AIM_120B_AMRAAM___Active_Radar_AAM = (8, Weapons.AIM_120B_AMRAAM___Active_Radar_AAM)
@@ -14351,7 +14697,7 @@ class F_A_18C(PlaneType):
         AIM_7F_Sparrow_Semi_Active_Radar = (8, Weapons.AIM_7F_Sparrow_Semi_Active_Radar)
         AIM_7MH_Sparrow_Semi_Active_Radar = (8, Weapons.AIM_7MH_Sparrow_Semi_Active_Radar)
         AIM_7E_Sparrow_Semi_Active_Radar = (8, Weapons.AIM_7E_Sparrow_Semi_Active_Radar)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (8, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (8, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
         AGM_84A_Harpoon_ASM = (8, Weapons.AGM_84A_Harpoon_ASM)
         AGM_84E_Harpoon_SLAM__Stand_Off_Land_Attack_Missile_ = (8, Weapons.AGM_84E_Harpoon_SLAM__Stand_Off_Land_Attack_Missile_)
         AGM_88C_HARM___High_Speed_Anti_Radiation_Missile_ = (8, Weapons.AGM_88C_HARM___High_Speed_Anti_Radiation_Missile_)
@@ -14372,14 +14718,14 @@ class F_A_18C(PlaneType):
         BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD = (8, Weapons.BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD)
         Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = (8, Weapons.Mk_82_AIR_Ballute___500lb_GP_Bomb_HD)
         BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD = (8, Weapons.BRU_42_with_3_x_Mk_82_AIR_Ballute___500lb_GP_Bombs_HD)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk1__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk61__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M156__Wht_Phos)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_WTU_1_B__Practice)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M257__Para_Illum)
-        LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk = (8, Weapons.LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M274__Practice_Smk)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_1_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_61_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M156_SM)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_WTU_1_B_TP)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M257_IL)
+        LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM = (8, Weapons.LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M274_TP_SM)
         LAU_115_2_LAU_127_AIM_9M = (8, Weapons.LAU_115_2_LAU_127_AIM_9M)
 
     class Pylon9:
@@ -14632,14 +14978,14 @@ class FA_18C_hornet(PlaneType):
         BRU_33_with_2_x_GBU_12___500lb_Laser_Guided_Bomb = (2, Weapons.BRU_33_with_2_x_GBU_12___500lb_Laser_Guided_Bomb)
         BRU_33_with_2_x_CBU_99___490lbs__247_x_HEAT_Bomblets = (2, Weapons.BRU_33_with_2_x_CBU_99___490lbs__247_x_HEAT_Bomblets)
         BRU_33_with_2_x_Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (2, Weapons.BRU_33_with_2_x_Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
-        BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (2, Weapons.BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (2, Weapons.BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_33_with_1_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (2, Weapons.BRU_33_with_1_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        BRU_33_with_2_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (2, Weapons.BRU_33_with_2_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        BRU_33_with_1_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.BRU_33_with_1_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_33_with_2_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (2, Weapons.BRU_33_with_2_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (2, Weapons.BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (2, Weapons.BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_33_1_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (2, Weapons.BRU_33_1_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        BRU_33_2_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (2, Weapons.BRU_33_2_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        BRU_33_1_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.BRU_33_1_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_33_2_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (2, Weapons.BRU_33_2_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
         BRU_41A_with_6_x_BDU_33___25lb_Practice_Bomb_LD = (2, Weapons.BRU_41A_with_6_x_BDU_33___25lb_Practice_Bomb_LD)
         AGM_154A___JSOW_CEB__CBU_type_ = (2, Weapons.AGM_154A___JSOW_CEB__CBU_type_)
         AGM_154C___JSOW_Unitary_BROACH = (2, Weapons.AGM_154C___JSOW_Unitary_BROACH)
@@ -14702,14 +15048,14 @@ class FA_18C_hornet(PlaneType):
         BRU_33_with_2_x_GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.BRU_33_with_2_x_GBU_12___500lb_Laser_Guided_Bomb)
         BRU_33_with_2_x_CBU_99___490lbs__247_x_HEAT_Bomblets = (3, Weapons.BRU_33_with_2_x_CBU_99___490lbs__247_x_HEAT_Bomblets)
         BRU_33_with_2_x_Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (3, Weapons.BRU_33_with_2_x_Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
-        BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (3, Weapons.BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_33_with_1_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (3, Weapons.BRU_33_with_1_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        BRU_33_with_2_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (3, Weapons.BRU_33_with_2_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        BRU_33_with_1_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.BRU_33_with_1_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_33_with_2_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (3, Weapons.BRU_33_with_2_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (3, Weapons.BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_33_1_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (3, Weapons.BRU_33_1_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        BRU_33_2_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (3, Weapons.BRU_33_2_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        BRU_33_1_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.BRU_33_1_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_33_2_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (3, Weapons.BRU_33_2_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
         BRU_41A_with_6_x_BDU_33___25lb_Practice_Bomb_LD = (3, Weapons.BRU_41A_with_6_x_BDU_33___25lb_Practice_Bomb_LD)
         AGM_154A___JSOW_CEB__CBU_type_ = (3, Weapons.AGM_154A___JSOW_CEB__CBU_type_)
         AGM_154C___JSOW_Unitary_BROACH = (3, Weapons.AGM_154C___JSOW_Unitary_BROACH)
@@ -14808,14 +15154,14 @@ class FA_18C_hornet(PlaneType):
         BRU_33_with_2_x_GBU_12___500lb_Laser_Guided_Bomb = (7, Weapons.BRU_33_with_2_x_GBU_12___500lb_Laser_Guided_Bomb)
         BRU_33_with_2_x_CBU_99___490lbs__247_x_HEAT_Bomblets = (7, Weapons.BRU_33_with_2_x_CBU_99___490lbs__247_x_HEAT_Bomblets)
         BRU_33_with_2_x_Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (7, Weapons.BRU_33_with_2_x_Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
-        BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (7, Weapons.BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (7, Weapons.BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (7, Weapons.BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (7, Weapons.BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_33_with_1_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (7, Weapons.BRU_33_with_1_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        BRU_33_with_2_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (7, Weapons.BRU_33_with_2_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        BRU_33_with_1_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (7, Weapons.BRU_33_with_1_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_33_with_2_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (7, Weapons.BRU_33_with_2_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (7, Weapons.BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (7, Weapons.BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (7, Weapons.BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (7, Weapons.BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_33_1_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (7, Weapons.BRU_33_1_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        BRU_33_2_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (7, Weapons.BRU_33_2_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        BRU_33_1_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (7, Weapons.BRU_33_1_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_33_2_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (7, Weapons.BRU_33_2_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
         BRU_41A_with_6_x_BDU_33___25lb_Practice_Bomb_LD = (7, Weapons.BRU_41A_with_6_x_BDU_33___25lb_Practice_Bomb_LD)
         AGM_154A___JSOW_CEB__CBU_type_ = (7, Weapons.AGM_154A___JSOW_CEB__CBU_type_)
         AGM_154C___JSOW_Unitary_BROACH = (7, Weapons.AGM_154C___JSOW_Unitary_BROACH)
@@ -14878,14 +15224,14 @@ class FA_18C_hornet(PlaneType):
         BRU_33_with_2_x_GBU_12___500lb_Laser_Guided_Bomb = (8, Weapons.BRU_33_with_2_x_GBU_12___500lb_Laser_Guided_Bomb)
         BRU_33_with_2_x_CBU_99___490lbs__247_x_HEAT_Bomblets = (8, Weapons.BRU_33_with_2_x_CBU_99___490lbs__247_x_HEAT_Bomblets)
         BRU_33_with_2_x_Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = (8, Weapons.BRU_33_with_2_x_Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets)
-        BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (8, Weapons.BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE = (8, Weapons.BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (8, Weapons.BRU_33_with_1_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT = (8, Weapons.BRU_33_with_2_x_LAU_68_pod___7_x_2_75_Hydra__UnGd_Rkts_Mk5__HEAT)
-        BRU_33_with_1_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (8, Weapons.BRU_33_with_1_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        BRU_33_with_2_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (8, Weapons.BRU_33_with_2_x_LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
-        BRU_33_with_1_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (8, Weapons.BRU_33_with_1_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
-        BRU_33_with_2_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE = (8, Weapons.BRU_33_with_2_x_LAU_61_pod___19_x_2_75_Hydra__UnGd_Rkts_M151__HE)
+        BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (8, Weapons.BRU_33_1_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT = (8, Weapons.BRU_33_2_x_LAU_68___7_x_UnGd_Rkts__70_mm_Hydra_70_Mk_5_HEAT)
+        BRU_33_1_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (8, Weapons.BRU_33_1_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        BRU_33_2_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (8, Weapons.BRU_33_2_x_LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        BRU_33_1_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.BRU_33_1_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
+        BRU_33_2_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE = (8, Weapons.BRU_33_2_x_LAU_61___19_x_UnGd_Rkts__70_mm_Hydra_70_M151_HE)
         BRU_41A_with_6_x_BDU_33___25lb_Practice_Bomb_LD = (8, Weapons.BRU_41A_with_6_x_BDU_33___25lb_Practice_Bomb_LD)
         AGM_154A___JSOW_CEB__CBU_type_ = (8, Weapons.AGM_154A___JSOW_CEB__CBU_type_)
         AGM_154C___JSOW_Unitary_BROACH = (8, Weapons.AGM_154C___JSOW_Unitary_BROACH)
@@ -15204,7 +15550,9 @@ class L_39C(PlaneType):
     class Pylon1:
         FAB_100___100kg_GP_Bomb_LD = (1, Weapons.FAB_100___100kg_GP_Bomb_LD)
         SAB_100MN___100_kg_Illumination_Bomb = (1, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
-        UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (1, Weapons.UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (1, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (1, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5M_HE = (1, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5M_HE)
         P_50T___50kg_Practice_Bomb_LD = (1, Weapons.P_50T___50kg_Practice_Bomb_LD)
         Fuel_Tank_150_liters = (1, Weapons.Fuel_Tank_150_liters)
         APU_13U_2_with_R_3S__AA_2_Atoll_B____IR_AAM = (1, Weapons.APU_13U_2_with_R_3S__AA_2_Atoll_B____IR_AAM)
@@ -15226,7 +15574,9 @@ class L_39C(PlaneType):
     class Pylon3:
         FAB_100___100kg_GP_Bomb_LD = (3, Weapons.FAB_100___100kg_GP_Bomb_LD)
         SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
-        UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (3, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (3, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5M_HE = (3, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5M_HE)
         P_50T___50kg_Practice_Bomb_LD = (3, Weapons.P_50T___50kg_Practice_Bomb_LD)
         Fuel_Tank_150_liters = (3, Weapons.Fuel_Tank_150_liters)
         APU_13U_2_with_R_3S__AA_2_Atoll_B____IR_AAM = (3, Weapons.APU_13U_2_with_R_3S__AA_2_Atoll_B____IR_AAM)
@@ -15359,7 +15709,9 @@ class L_39ZA(PlaneType):
         OFAB_100_Jupiter___100kg_GP_Bomb_HD = (1, Weapons.OFAB_100_Jupiter___100kg_GP_Bomb_HD)
         P_50T___50kg_Practice_Bomb_LD = (1, Weapons.P_50T___50kg_Practice_Bomb_LD)
         _2_x_OFAB_100_Jupiter___100kg_GP_Bombs_HD = (1, Weapons._2_x_OFAB_100_Jupiter___100kg_GP_Bombs_HD)
-        UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (1, Weapons.UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (1, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (1, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5M_HE = (1, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5M_HE)
         PK_3___7_62mm_GPMG = (1, Weapons.PK_3___7_62mm_GPMG)
         APU_13U_2_with_R_3S__AA_2_Atoll_B____IR_AAM = (1, Weapons.APU_13U_2_with_R_3S__AA_2_Atoll_B____IR_AAM)
         APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_ = (1, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_)
@@ -15378,7 +15730,9 @@ class L_39ZA(PlaneType):
         OFAB_100_Jupiter___100kg_GP_Bomb_HD = (2, Weapons.OFAB_100_Jupiter___100kg_GP_Bomb_HD)
         P_50T___50kg_Practice_Bomb_LD = (2, Weapons.P_50T___50kg_Practice_Bomb_LD)
         _2_x_OFAB_100_Jupiter___100kg_GP_Bombs_HD = (2, Weapons._2_x_OFAB_100_Jupiter___100kg_GP_Bombs_HD)
-        UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (2, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (2, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5M_HE = (2, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5M_HE)
         PK_3___7_62mm_GPMG = (2, Weapons.PK_3___7_62mm_GPMG)
         Fuel_Tank_150_liters = (2, Weapons.Fuel_Tank_150_liters)
         Fuel_Tank_350_liters = (2, Weapons.Fuel_Tank_350_liters)
@@ -15399,7 +15753,9 @@ class L_39ZA(PlaneType):
         OFAB_100_Jupiter___100kg_GP_Bomb_HD = (4, Weapons.OFAB_100_Jupiter___100kg_GP_Bomb_HD)
         P_50T___50kg_Practice_Bomb_LD = (4, Weapons.P_50T___50kg_Practice_Bomb_LD)
         _2_x_OFAB_100_Jupiter___100kg_GP_Bombs_HD = (4, Weapons._2_x_OFAB_100_Jupiter___100kg_GP_Bombs_HD)
-        UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (4, Weapons.UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (4, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (4, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5M_HE = (4, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5M_HE)
         PK_3___7_62mm_GPMG = (4, Weapons.PK_3___7_62mm_GPMG)
         Fuel_Tank_150_liters = (4, Weapons.Fuel_Tank_150_liters)
         Fuel_Tank_350_liters = (4, Weapons.Fuel_Tank_350_liters)
@@ -15412,7 +15768,9 @@ class L_39ZA(PlaneType):
         OFAB_100_Jupiter___100kg_GP_Bomb_HD = (5, Weapons.OFAB_100_Jupiter___100kg_GP_Bomb_HD)
         P_50T___50kg_Practice_Bomb_LD = (5, Weapons.P_50T___50kg_Practice_Bomb_LD)
         _2_x_OFAB_100_Jupiter___100kg_GP_Bombs_HD = (5, Weapons._2_x_OFAB_100_Jupiter___100kg_GP_Bombs_HD)
-        UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (5, Weapons.UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag = (5, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KO_HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag = (5, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5KP_HEAT_Frag)
+        UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5M_HE = (5, Weapons.UB_16_57UMP___16_x_UnGd_Rkts__57_mm_S_5M_HE)
         PK_3___7_62mm_GPMG = (5, Weapons.PK_3___7_62mm_GPMG)
         APU_13U_2_with_R_3S__AA_2_Atoll_B____IR_AAM = (5, Weapons.APU_13U_2_with_R_3S__AA_2_Atoll_B____IR_AAM)
         APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_ = (5, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid_B____IR_AAM_)
@@ -16104,7 +16462,7 @@ class MB_339A(PlaneType):
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (3, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
         Mk_83___1000lb_GP_Bomb_LD = (3, Weapons.Mk_83___1000lb_GP_Bomb_LD)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (3, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (3, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
         BRD_4_250___4_x_Mk_76___25lb_Practice_Bomb_LD = (3, Weapons.BRD_4_250___4_x_Mk_76___25lb_Practice_Bomb_LD)
         BRD_4_250___4_x_Mk_106___5lb_Practice_Bomb_LD = (3, Weapons.BRD_4_250___4_x_Mk_106___5lb_Practice_Bomb_LD)
         Matra_Type_155_Rocket_Pod = (3, Weapons.Matra_Type_155_Rocket_Pod)
@@ -16164,7 +16522,7 @@ class MB_339A(PlaneType):
         Mk_82___500lb_GP_Bomb_LD = (8, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (8, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
         Mk_83___1000lb_GP_Bomb_LD = (8, Weapons.Mk_83___1000lb_GP_Bomb_LD)
-        LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG = (8, Weapons.LAU_10_pod___4_x_127mm_ZUNI__UnGd_Rkts_Mk71__HE_FRAG)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (8, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
         Matra_Type_155_Rocket_Pod = (8, Weapons.Matra_Type_155_Rocket_Pod)
         LAU3_WP156 = (8, Weapons.LAU3_WP156)
         LAU3_HE151 = (8, Weapons.LAU3_HE151)
@@ -16477,6 +16835,39 @@ class MQ_9_Reaper(PlaneType):
 
 class MiG_15bis(PlaneType):
     id = "MiG-15bis"
+    flyable = True
+    height = 3.7
+    width = 10.08
+    length = 10.11
+    fuel_max = 1172
+    max_speed = 992
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 3.75
+
+    livery_name = "MIG-15BIS"  # from livery_entry
+
+    class Pylon1:
+        FAB_50 = (1, Weapons.FAB_50)
+        FAB_100M = (1, Weapons.FAB_100M)
+        PTB400_MIG15 = (1, Weapons.PTB400_MIG15)
+        PTB600_MIG15 = (1, Weapons.PTB600_MIG15)
+        PTB300_MIG15 = (1, Weapons.PTB300_MIG15)
+
+    class Pylon2:
+        FAB_50 = (2, Weapons.FAB_50)
+        FAB_100M = (2, Weapons.FAB_100M)
+        PTB400_MIG15 = (2, Weapons.PTB400_MIG15)
+        PTB600_MIG15 = (2, Weapons.PTB600_MIG15)
+        PTB300_MIG15 = (2, Weapons.PTB300_MIG15)
+
+    pylons: Set[int] = {1, 2}
+
+    tasks = [task.CAP, task.CAS, task.Escort, task.FighterSweep, task.GroundAttack, task.Intercept]
+    task_default = task.CAP
+
+
+class MiG_15bis_FC(PlaneType):
+    id = "MiG-15bis_FC"
     flyable = True
     height = 3.7
     width = 10.08
@@ -17024,7 +17415,7 @@ class Mirage_F1C(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -17165,7 +17556,7 @@ class Mirage_F1C(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -17218,7 +17609,6 @@ class Mirage_F1C(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -17228,6 +17618,10 @@ class Mirage_F1C(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -17247,7 +17641,6 @@ class Mirage_F1C(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -17265,8 +17658,10 @@ class Mirage_F1C(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -17281,6 +17676,10 @@ class Mirage_F1C(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -17300,7 +17699,6 @@ class Mirage_F1C(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -17335,7 +17733,6 @@ class Mirage_F1C(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -17553,7 +17950,7 @@ class Mirage_F1CE(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -17694,7 +18091,7 @@ class Mirage_F1CE(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -17718,7 +18115,7 @@ class Mirage_F1CE(PlaneType):
             label="IFF Mode 4 Transponder Installed",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -17765,7 +18162,6 @@ class Mirage_F1CE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -17779,6 +18175,10 @@ class Mirage_F1CE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -17798,7 +18198,6 @@ class Mirage_F1CE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -17808,6 +18207,10 @@ class Mirage_F1CE(PlaneType):
         BR_500 = (3, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (3, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
@@ -17822,8 +18225,10 @@ class Mirage_F1CE(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -17835,6 +18240,10 @@ class Mirage_F1CE(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
         CLB_4___4_x_BR_250___250kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_BR_250___250kg_GP_Bomb_LD)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
@@ -17848,6 +18257,10 @@ class Mirage_F1CE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -17867,7 +18280,6 @@ class Mirage_F1CE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -17877,6 +18289,10 @@ class Mirage_F1CE(PlaneType):
         BR_500 = (5, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (5, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
@@ -17908,7 +18324,6 @@ class Mirage_F1CE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -18151,7 +18566,7 @@ class Mirage_F1EE(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -18292,7 +18707,7 @@ class Mirage_F1EE(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -18316,7 +18731,7 @@ class Mirage_F1EE(PlaneType):
             label="IFF Mode 4 Transponder Installed",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -18387,7 +18802,6 @@ class Mirage_F1EE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -18402,6 +18816,10 @@ class Mirage_F1EE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -18421,7 +18839,6 @@ class Mirage_F1EE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -18431,6 +18848,10 @@ class Mirage_F1EE(PlaneType):
         BR_500 = (3, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (3, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
@@ -18445,8 +18866,10 @@ class Mirage_F1EE(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -18458,6 +18881,10 @@ class Mirage_F1EE(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
         CLB_4___4_x_BR_250___250kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_BR_250___250kg_GP_Bomb_LD)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
@@ -18471,6 +18898,10 @@ class Mirage_F1EE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -18490,7 +18921,6 @@ class Mirage_F1EE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -18500,6 +18930,10 @@ class Mirage_F1EE(PlaneType):
         BR_500 = (5, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (5, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
@@ -18531,7 +18965,6 @@ class Mirage_F1EE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -18749,7 +19182,7 @@ class Mirage_F1M_EE(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -18890,7 +19323,7 @@ class Mirage_F1M_EE(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -18948,7 +19381,6 @@ class Mirage_F1M_EE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -18963,6 +19395,10 @@ class Mirage_F1M_EE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -18982,7 +19418,6 @@ class Mirage_F1M_EE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -18992,6 +19427,10 @@ class Mirage_F1M_EE(PlaneType):
         BR_500 = (3, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (3, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
@@ -19006,8 +19445,10 @@ class Mirage_F1M_EE(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -19019,6 +19460,10 @@ class Mirage_F1M_EE(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
         CLB_4___4_x_BR_250___250kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_BR_250___250kg_GP_Bomb_LD)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
@@ -19032,6 +19477,10 @@ class Mirage_F1M_EE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -19051,7 +19500,6 @@ class Mirage_F1M_EE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -19061,6 +19509,10 @@ class Mirage_F1M_EE(PlaneType):
         BR_500 = (5, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (5, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
@@ -19092,7 +19544,6 @@ class Mirage_F1M_EE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -19310,7 +19761,7 @@ class Mirage_F1M_CE(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -19451,7 +19902,7 @@ class Mirage_F1M_CE(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -19509,7 +19960,6 @@ class Mirage_F1M_CE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -19523,6 +19973,10 @@ class Mirage_F1M_CE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -19542,7 +19996,6 @@ class Mirage_F1M_CE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -19552,6 +20005,10 @@ class Mirage_F1M_CE(PlaneType):
         BR_500 = (3, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (3, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
@@ -19566,8 +20023,10 @@ class Mirage_F1M_CE(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -19579,6 +20038,10 @@ class Mirage_F1M_CE(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
         CLB_4___4_x_BR_250___250kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_BR_250___250kg_GP_Bomb_LD)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
@@ -19592,6 +20055,10 @@ class Mirage_F1M_CE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -19611,7 +20078,6 @@ class Mirage_F1M_CE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -19621,6 +20087,10 @@ class Mirage_F1M_CE(PlaneType):
         BR_500 = (5, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (5, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
@@ -19652,7 +20122,6 @@ class Mirage_F1M_CE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -19869,7 +20338,7 @@ class Mirage_F1C_200(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -20010,7 +20479,7 @@ class Mirage_F1C_200(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -20062,7 +20531,6 @@ class Mirage_F1C_200(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -20072,6 +20540,10 @@ class Mirage_F1C_200(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -20091,7 +20563,6 @@ class Mirage_F1C_200(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -20109,8 +20580,10 @@ class Mirage_F1C_200(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -20129,6 +20602,10 @@ class Mirage_F1C_200(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -20148,7 +20625,6 @@ class Mirage_F1C_200(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -20183,7 +20659,6 @@ class Mirage_F1C_200(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -20390,7 +20865,7 @@ class Mirage_F1EH(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -20531,7 +21006,7 @@ class Mirage_F1EH(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -20583,7 +21058,6 @@ class Mirage_F1EH(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -20593,6 +21067,10 @@ class Mirage_F1EH(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -20612,7 +21090,6 @@ class Mirage_F1EH(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -20630,8 +21107,10 @@ class Mirage_F1EH(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -20650,6 +21129,10 @@ class Mirage_F1EH(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -20669,7 +21152,6 @@ class Mirage_F1EH(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -20704,7 +21186,6 @@ class Mirage_F1EH(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -20911,7 +21392,7 @@ class Mirage_F1CH(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -21052,7 +21533,7 @@ class Mirage_F1CH(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -21104,7 +21585,6 @@ class Mirage_F1CH(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -21114,6 +21594,10 @@ class Mirage_F1CH(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -21133,7 +21617,6 @@ class Mirage_F1CH(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -21151,8 +21634,10 @@ class Mirage_F1CH(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -21171,6 +21656,10 @@ class Mirage_F1CH(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -21190,7 +21679,6 @@ class Mirage_F1CH(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -21225,7 +21713,6 @@ class Mirage_F1CH(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -21432,7 +21919,7 @@ class Mirage_F1JA(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -21573,7 +22060,7 @@ class Mirage_F1JA(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -21622,7 +22109,6 @@ class Mirage_F1JA(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         DIS_PL_8B = (2, Weapons.DIS_PL_8B)
 
     class Pylon3:
@@ -21633,6 +22119,10 @@ class Mirage_F1JA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -21652,7 +22142,6 @@ class Mirage_F1JA(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -21667,8 +22156,10 @@ class Mirage_F1JA(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -21681,6 +22172,10 @@ class Mirage_F1JA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -21700,7 +22195,6 @@ class Mirage_F1JA(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -21732,7 +22226,6 @@ class Mirage_F1JA(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         DIS_PL_8B = (6, Weapons.DIS_PL_8B)
 
     pylons: Set[int] = {2, 3, 4, 5, 6}
@@ -21937,7 +22430,7 @@ class Mirage_F1CG(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -22078,7 +22571,7 @@ class Mirage_F1CG(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -22132,7 +22625,6 @@ class Mirage_F1CG(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         AIM_9B_Sidewinder_IR_AAM = (2, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (2, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (2, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
@@ -22145,6 +22637,10 @@ class Mirage_F1CG(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -22164,7 +22660,6 @@ class Mirage_F1CG(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -22182,8 +22677,10 @@ class Mirage_F1CG(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -22202,6 +22699,10 @@ class Mirage_F1CG(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -22221,7 +22722,6 @@ class Mirage_F1CG(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -22256,7 +22756,6 @@ class Mirage_F1CG(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         AIM_9B_Sidewinder_IR_AAM = (6, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (6, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (6, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
@@ -22468,7 +22967,7 @@ class Mirage_F1CZ(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -22609,7 +23108,7 @@ class Mirage_F1CZ(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -22661,7 +23160,6 @@ class Mirage_F1CZ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -22671,6 +23169,10 @@ class Mirage_F1CZ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -22690,7 +23192,6 @@ class Mirage_F1CZ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -22708,8 +23209,10 @@ class Mirage_F1CZ(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -22728,6 +23231,10 @@ class Mirage_F1CZ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -22747,7 +23254,6 @@ class Mirage_F1CZ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -22782,7 +23288,6 @@ class Mirage_F1CZ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -22989,7 +23494,7 @@ class Mirage_F1CJ(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -23130,7 +23635,7 @@ class Mirage_F1CJ(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -23182,7 +23687,6 @@ class Mirage_F1CJ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -23192,6 +23696,10 @@ class Mirage_F1CJ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -23211,7 +23719,6 @@ class Mirage_F1CJ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -23229,8 +23736,10 @@ class Mirage_F1CJ(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -23249,6 +23758,10 @@ class Mirage_F1CJ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -23268,7 +23781,6 @@ class Mirage_F1CJ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -23303,7 +23815,6 @@ class Mirage_F1CJ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -23510,7 +24021,7 @@ class Mirage_F1CK(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -23651,7 +24162,7 @@ class Mirage_F1CK(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -23703,7 +24214,6 @@ class Mirage_F1CK(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -23713,6 +24223,10 @@ class Mirage_F1CK(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -23732,7 +24246,6 @@ class Mirage_F1CK(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -23750,8 +24263,10 @@ class Mirage_F1CK(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -23770,6 +24285,10 @@ class Mirage_F1CK(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -23789,7 +24308,6 @@ class Mirage_F1CK(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -23824,7 +24342,6 @@ class Mirage_F1CK(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -24031,7 +24548,7 @@ class Mirage_F1EQ(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -24172,7 +24689,7 @@ class Mirage_F1EQ(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -24225,7 +24742,6 @@ class Mirage_F1EQ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -24240,6 +24756,10 @@ class Mirage_F1EQ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -24259,7 +24779,6 @@ class Mirage_F1EQ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -24283,8 +24802,10 @@ class Mirage_F1EQ(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -24306,6 +24827,10 @@ class Mirage_F1EQ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -24325,7 +24850,6 @@ class Mirage_F1EQ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -24366,7 +24890,6 @@ class Mirage_F1EQ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -24579,7 +25102,7 @@ class Mirage_F1ED(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -24720,7 +25243,7 @@ class Mirage_F1ED(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -24773,7 +25296,6 @@ class Mirage_F1ED(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -24788,6 +25310,10 @@ class Mirage_F1ED(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -24807,7 +25333,6 @@ class Mirage_F1ED(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -24831,8 +25356,10 @@ class Mirage_F1ED(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -24854,6 +25381,10 @@ class Mirage_F1ED(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -24873,7 +25404,6 @@ class Mirage_F1ED(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -24914,7 +25444,6 @@ class Mirage_F1ED(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -25127,7 +25656,7 @@ class Mirage_F1EDA(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -25268,7 +25797,7 @@ class Mirage_F1EDA(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -25320,7 +25849,6 @@ class Mirage_F1EDA(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -25334,6 +25862,10 @@ class Mirage_F1EDA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -25353,7 +25885,6 @@ class Mirage_F1EDA(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -25375,8 +25906,10 @@ class Mirage_F1EDA(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -25396,6 +25929,10 @@ class Mirage_F1EDA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -25415,7 +25952,6 @@ class Mirage_F1EDA(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -25454,7 +25990,6 @@ class Mirage_F1EDA(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -25665,7 +26200,7 @@ class Mirage_F1CR(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -25806,7 +26341,7 @@ class Mirage_F1CR(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -25859,7 +26394,6 @@ class Mirage_F1CR(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         BARAX_ECM = (2, Weapons.BARAX_ECM)
         PHIMAT_CM = (2, Weapons.PHIMAT_CM)
 
@@ -25871,6 +26405,10 @@ class Mirage_F1CR(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -25890,7 +26428,6 @@ class Mirage_F1CR(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -25907,8 +26444,10 @@ class Mirage_F1CR(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -25927,6 +26466,10 @@ class Mirage_F1CR(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -25946,7 +26489,6 @@ class Mirage_F1CR(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -25980,7 +26522,6 @@ class Mirage_F1CR(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         BARAX_ECM = (6, Weapons.BARAX_ECM)
         PHIMAT_CM = (6, Weapons.PHIMAT_CM)
 
@@ -26190,7 +26731,7 @@ class Mirage_F1CT(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -26331,7 +26872,7 @@ class Mirage_F1CT(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -26384,7 +26925,6 @@ class Mirage_F1CT(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         BARAX_ECM = (2, Weapons.BARAX_ECM)
         PHIMAT_CM = (2, Weapons.PHIMAT_CM)
 
@@ -26396,6 +26936,10 @@ class Mirage_F1CT(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -26415,7 +26959,6 @@ class Mirage_F1CT(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -26433,8 +26976,10 @@ class Mirage_F1CT(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -26451,6 +26996,10 @@ class Mirage_F1CT(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -26470,7 +27019,6 @@ class Mirage_F1CT(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -26505,7 +27053,6 @@ class Mirage_F1CT(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         BARAX_ECM = (6, Weapons.BARAX_ECM)
         PHIMAT_CM = (6, Weapons.PHIMAT_CM)
 
@@ -26729,7 +27276,7 @@ class Mirage_F1B(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -26870,7 +27417,7 @@ class Mirage_F1B(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -26900,7 +27447,7 @@ class Mirage_F1B(PlaneType):
             label="Aircraft Control Priority",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 0: "Pilot",
                 1: "Instructor",
@@ -26943,7 +27490,6 @@ class Mirage_F1B(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -26953,6 +27499,10 @@ class Mirage_F1B(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -26972,7 +27522,6 @@ class Mirage_F1B(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -26990,8 +27539,10 @@ class Mirage_F1B(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -27006,6 +27557,10 @@ class Mirage_F1B(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -27025,7 +27580,6 @@ class Mirage_F1B(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -27060,7 +27614,6 @@ class Mirage_F1B(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -27292,7 +27845,7 @@ class Mirage_F1BE(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -27433,7 +27986,7 @@ class Mirage_F1BE(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -27457,7 +28010,7 @@ class Mirage_F1BE(PlaneType):
             label="IFF Mode 4 Transponder Installed",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -27476,7 +28029,7 @@ class Mirage_F1BE(PlaneType):
             label="Aircraft Control Priority",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 0: "Pilot",
                 1: "Instructor",
@@ -27524,7 +28077,6 @@ class Mirage_F1BE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -27538,6 +28090,10 @@ class Mirage_F1BE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -27557,7 +28113,6 @@ class Mirage_F1BE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -27567,6 +28122,10 @@ class Mirage_F1BE(PlaneType):
         BR_500 = (3, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (3, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
@@ -27581,8 +28140,10 @@ class Mirage_F1BE(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -27594,6 +28155,10 @@ class Mirage_F1BE(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
         CLB_4___4_x_BR_250___250kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_BR_250___250kg_GP_Bomb_LD)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
@@ -27607,6 +28172,10 @@ class Mirage_F1BE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -27626,7 +28195,6 @@ class Mirage_F1BE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -27636,6 +28204,10 @@ class Mirage_F1BE(PlaneType):
         BR_500 = (5, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_16___1000lb_Laser_Guided_Bomb = (5, Weapons.GBU_16___1000lb_Laser_Guided_Bomb)
+        AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD)
+#ERRR {AUF2_BRP250}
+        AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD)
+        AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
@@ -27667,7 +28239,6 @@ class Mirage_F1BE(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -27898,7 +28469,7 @@ class Mirage_F1BQ(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -28039,7 +28610,7 @@ class Mirage_F1BQ(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -28069,7 +28640,7 @@ class Mirage_F1BQ(PlaneType):
             label="Aircraft Control Priority",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 0: "Pilot",
                 1: "Instructor",
@@ -28112,7 +28683,6 @@ class Mirage_F1BQ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -28127,6 +28697,10 @@ class Mirage_F1BQ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -28146,7 +28720,6 @@ class Mirage_F1BQ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -28170,8 +28743,10 @@ class Mirage_F1BQ(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -28193,6 +28768,10 @@ class Mirage_F1BQ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -28212,7 +28791,6 @@ class Mirage_F1BQ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -28253,7 +28831,6 @@ class Mirage_F1BQ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -28480,7 +29057,7 @@ class Mirage_F1BD(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -28621,7 +29198,7 @@ class Mirage_F1BD(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -28651,7 +29228,7 @@ class Mirage_F1BD(PlaneType):
             label="Aircraft Control Priority",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 0: "Pilot",
                 1: "Instructor",
@@ -28694,7 +29271,6 @@ class Mirage_F1BD(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -28709,6 +29285,10 @@ class Mirage_F1BD(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -28728,7 +29308,6 @@ class Mirage_F1BD(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -28752,8 +29331,10 @@ class Mirage_F1BD(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -28775,6 +29356,10 @@ class Mirage_F1BD(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -28794,7 +29379,6 @@ class Mirage_F1BD(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -28835,7 +29419,6 @@ class Mirage_F1BD(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -29062,7 +29645,7 @@ class Mirage_F1DDA(PlaneType):
             label="Radar Cover State",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 1: "By global option",
                 2: "Force installed",
@@ -29203,7 +29786,7 @@ class Mirage_F1DDA(PlaneType):
         "RocketSalvoF4": UnitPropertyDescription(
             identifier="RocketSalvoF4",
             control="comboList",
-            label="F4 Rocket Launcher Salvo Count",
+            label="F4/JL100 Rocket Launchers Salvo Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -29233,7 +29816,7 @@ class Mirage_F1DDA(PlaneType):
             label="Aircraft Control Priority",
             player_only=True,
             default=1,
-            w_ctrl=140,
+            w_ctrl=130,
             values={
                 0: "Pilot",
                 1: "Instructor",
@@ -29275,7 +29858,6 @@ class Mirage_F1DDA(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -29289,6 +29871,10 @@ class Mirage_F1DDA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -29308,7 +29894,6 @@ class Mirage_F1DDA(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -29330,8 +29915,10 @@ class Mirage_F1DDA(PlaneType):
         CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_125___125_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Bomb_LD)
         CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Bomb_LD)
-        CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (4, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -29351,6 +29938,10 @@ class Mirage_F1DDA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
+        AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
+        AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD)
+        AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
         MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
@@ -29370,7 +29961,6 @@ class Mirage_F1DDA(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
@@ -29409,7 +29999,6 @@ class Mirage_F1DDA(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -29456,9 +30045,9 @@ class Su_34(PlaneType):
         Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr = (3, Weapons.Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr)
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_ = (3, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (3, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (3, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (3, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         BetAB_500___500kg_Concrete_Piercing_Bomb_LD = (3, Weapons.BetAB_500___500kg_Concrete_Piercing_Bomb_LD)
         BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb = (3, Weapons.BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (3, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
@@ -29493,9 +30082,9 @@ class Su_34(PlaneType):
         Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr = (4, Weapons.Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr)
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_ = (4, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (4, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (4, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (4, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (4, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (4, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (4, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         BetAB_500___500kg_Concrete_Piercing_Bomb_LD = (4, Weapons.BetAB_500___500kg_Concrete_Piercing_Bomb_LD)
         BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb = (4, Weapons.BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (4, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
@@ -29635,9 +30224,9 @@ class Su_34(PlaneType):
         Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr = (9, Weapons.Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr)
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_ = (9, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (9, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (9, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (9, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (9, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (9, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (9, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         BetAB_500___500kg_Concrete_Piercing_Bomb_LD = (9, Weapons.BetAB_500___500kg_Concrete_Piercing_Bomb_LD)
         BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb = (9, Weapons.BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (9, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
@@ -29676,9 +30265,9 @@ class Su_34(PlaneType):
         Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr = (10, Weapons.Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr)
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_ = (10, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_)
         B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
-        B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (10, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (10, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        S_25_O___420mm_UnGd_Rkt__380kg_Frag = (10, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
+        B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation = (10, Weapons.B_13L___5_x_UnGd_Rkts__122_mm_S_13OF_Blast_Fragmentation)
+        O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator = (10, Weapons.O_25___1_x_UnGd_Rkts__340_mm_S_25_OFM_Hardened_Target_Penetrator)
+        O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation = (10, Weapons.O_25___1_x_UnGd_Rkts__420_mm_S_25_O_Fragmentation)
         BetAB_500___500kg_Concrete_Piercing_Bomb_LD = (10, Weapons.BetAB_500___500kg_Concrete_Piercing_Bomb_LD)
         BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb = (10, Weapons.BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (10, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
@@ -30051,7 +30640,9 @@ plane_map = {
     "F-4E-45MC": F_4E_45MC,
     "F-5E": F_5E,
     "F-5E-3": F_5E_3,
+    "F-5E-3_FC": F_5E_3_FC,
     "F-86F Sabre": F_86F_Sabre,
+    "F-86F_FC": F_86F_FC,
     "F-14B": F_14B,
     "F-14A-135-GR": F_14A_135_GR,
     "F/A-18A": F_A_18A,
@@ -30066,6 +30657,7 @@ plane_map = {
     "MB-339APAN": MB_339APAN,
     "MQ-9 Reaper": MQ_9_Reaper,
     "MiG-15bis": MiG_15bis,
+    "MiG-15bis_FC": MiG_15bis_FC,
     "MiG-19P": MiG_19P,
     "MiG-21Bis": MiG_21Bis,
     "Mirage-F1C": Mirage_F1C,

@@ -89,6 +89,8 @@ class Russia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -186,6 +188,7 @@ class Russia(Country):
         Su_25 = planes.Su_25
         MiG_29S = planes.MiG_29S
         MiG_29A = planes.MiG_29A
+        FULCRUM_LAB = planes.FULCRUM_LAB
         Su_27 = planes.Su_27
         Su_25TM = planes.Su_25TM
         Su_25T = planes.Su_25T
@@ -238,7 +241,9 @@ class Russia(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -248,6 +253,7 @@ class Russia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -263,6 +269,7 @@ class Russia(Country):
         Plane.Su_25,
         Plane.MiG_29S,
         Plane.MiG_29A,
+        Plane.FULCRUM_LAB,
         Plane.Su_27,
         Plane.Su_25TM,
         Plane.Su_25T,
@@ -315,7 +322,9 @@ class Russia(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -325,6 +334,7 @@ class Russia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -607,6 +617,8 @@ class Ukraine(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -747,7 +759,9 @@ class Ukraine(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -757,6 +771,7 @@ class Ukraine(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -816,7 +831,9 @@ class Ukraine(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -826,6 +843,7 @@ class Ukraine(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -992,6 +1010,8 @@ class USA(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -1036,6 +1056,8 @@ class USA(Country):
             Tt_DSHK = vehicles.Armor.Tt_DSHK
             HL_KORD = vehicles.Armor.HL_KORD
             HL_DSHK = vehicles.Armor.HL_DSHK
+            M1A2C_SEP_V3 = vehicles.Armor.M1A2C_SEP_V3
+            MaxxPro_MRAP = vehicles.Armor.MaxxPro_MRAP
             M4_Sherman = vehicles.Armor.M4_Sherman
             Cromwell_IV = vehicles.Armor.Cromwell_IV
             M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
@@ -1099,10 +1121,11 @@ class USA(Country):
         B_17G = planes.B_17G
         F_16A_MLU = planes.F_16A_MLU
         F_16C_bl_50 = planes.F_16C_bl_50
-        F_4E = planes.F_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         KC135MPRS = planes.KC135MPRS
@@ -1136,6 +1159,7 @@ class USA(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -1178,10 +1202,11 @@ class USA(Country):
         Plane.B_17G,
         Plane.F_16A_MLU,
         Plane.F_16C_bl_50,
-        Plane.F_4E,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.KC135MPRS,
@@ -1215,6 +1240,7 @@ class USA(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -1461,6 +1487,8 @@ class Turkey(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -1520,7 +1548,6 @@ class Turkey(Country):
     class Plane:
         A_10C = planes.A_10C
         F_16C_bl_50 = planes.F_16C_bl_50
-        F_4E = planes.F_4E
         C_130 = planes.C_130
         P_51D = planes.P_51D
         KC_135 = planes.KC_135
@@ -1528,6 +1555,7 @@ class Turkey(Country):
         E_3A = planes.E_3A
         F_16C_bl_52d = planes.F_16C_bl_52d
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         KC135MPRS = planes.KC135MPRS
         RQ_1A_Predator = planes.RQ_1A_Predator
         MosquitoFBMkVI = planes.MosquitoFBMkVI
@@ -1554,6 +1582,7 @@ class Turkey(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -1565,6 +1594,7 @@ class Turkey(Country):
         MB_339APAN = planes.MB_339APAN
         MQ_9_Reaper = planes.MQ_9_Reaper
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -1577,7 +1607,6 @@ class Turkey(Country):
     planes = [
         Plane.A_10C,
         Plane.F_16C_bl_50,
-        Plane.F_4E,
         Plane.C_130,
         Plane.P_51D,
         Plane.KC_135,
@@ -1585,6 +1614,7 @@ class Turkey(Country):
         Plane.E_3A,
         Plane.F_16C_bl_52d,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.KC135MPRS,
         Plane.RQ_1A_Predator,
         Plane.MosquitoFBMkVI,
@@ -1611,6 +1641,7 @@ class Turkey(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -1622,6 +1653,7 @@ class Turkey(Country):
         Plane.MB_339APAN,
         Plane.MQ_9_Reaper,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -1841,6 +1873,8 @@ class UK(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -1943,7 +1977,9 @@ class UK(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -1953,6 +1989,7 @@ class UK(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -1998,7 +2035,9 @@ class UK(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -2008,6 +2047,7 @@ class UK(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -2228,6 +2268,8 @@ class France(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -2327,7 +2369,9 @@ class France(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -2336,6 +2380,7 @@ class France(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -2387,7 +2432,9 @@ class France(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -2396,6 +2443,7 @@ class France(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -2660,6 +2708,8 @@ class Germany(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -2754,13 +2804,13 @@ class Germany(Country):
     class Plane:
         A_10C = planes.A_10C
         MiG_29G = planes.MiG_29G
-        F_4E = planes.F_4E
         Tornado_IDS = planes.Tornado_IDS
         P_51D = planes.P_51D
         An_26B = planes.An_26B
         C_17A = planes.C_17A
         E_3A = planes.E_3A
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_21Bis = planes.MiG_21Bis
         Su_17M4 = planes.Su_17M4
         Yak_40 = planes.Yak_40
@@ -2792,7 +2842,9 @@ class Germany(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -2812,13 +2864,13 @@ class Germany(Country):
     planes = [
         Plane.A_10C,
         Plane.MiG_29G,
-        Plane.F_4E,
         Plane.Tornado_IDS,
         Plane.P_51D,
         Plane.An_26B,
         Plane.C_17A,
         Plane.E_3A,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_21Bis,
         Plane.Su_17M4,
         Plane.Yak_40,
@@ -2850,7 +2902,9 @@ class Germany(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -3187,6 +3241,8 @@ class USAFAggressors(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -3320,6 +3376,8 @@ class USAFAggressors(Country):
             M1126_Stryker_ICV = vehicles.Armor.M1126_Stryker_ICV
             M1128_Stryker_MGS = vehicles.Armor.M1128_Stryker_MGS
             M1134_Stryker_ATGM = vehicles.Armor.M1134_Stryker_ATGM
+            M1A2C_SEP_V3 = vehicles.Armor.M1A2C_SEP_V3
+            MaxxPro_MRAP = vehicles.Armor.MaxxPro_MRAP
             MCV_80 = vehicles.Armor.MCV_80
 
         class MissilesSS:
@@ -3385,7 +3443,9 @@ class USAFAggressors(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -3396,6 +3456,7 @@ class USAFAggressors(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -3448,7 +3509,6 @@ class USAFAggressors(Country):
         F_16A = planes.F_16A
         MQ_9_Reaper = planes.MQ_9_Reaper
         RQ_1A_Predator = planes.RQ_1A_Predator
-        F_4E = planes.F_4E
         Mirage_F1M_EE = planes.Mirage_F1M_EE
         Mirage_F1M_CE = planes.Mirage_F1M_CE
         Mirage_F1JA = planes.Mirage_F1JA
@@ -3456,6 +3516,7 @@ class USAFAggressors(Country):
         Mirage_F1DDA = planes.Mirage_F1DDA
         WingLoong_I = planes.WingLoong_I
         Su_33 = planes.Su_33
+        FULCRUM_LAB = planes.FULCRUM_LAB
         Su_25TM = planes.Su_25TM
         Su_30 = planes.Su_30
         Su_34 = planes.Su_34
@@ -3513,7 +3574,9 @@ class USAFAggressors(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -3524,6 +3587,7 @@ class USAFAggressors(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -3576,7 +3640,6 @@ class USAFAggressors(Country):
         Plane.F_16A,
         Plane.MQ_9_Reaper,
         Plane.RQ_1A_Predator,
-        Plane.F_4E,
         Plane.Mirage_F1M_EE,
         Plane.Mirage_F1M_CE,
         Plane.Mirage_F1JA,
@@ -3584,6 +3647,7 @@ class USAFAggressors(Country):
         Plane.Mirage_F1DDA,
         Plane.WingLoong_I,
         Plane.Su_33,
+        Plane.FULCRUM_LAB,
         Plane.Su_25TM,
         Plane.Su_30,
         Plane.Su_34,
@@ -3877,6 +3941,8 @@ class Canada(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -3952,6 +4018,7 @@ class Canada(Country):
         C_17A = planes.C_17A
         E_3A = planes.E_3A
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         Hawk = planes.Hawk
         KC130 = planes.KC130
         MosquitoFBMkVI = planes.MosquitoFBMkVI
@@ -3977,6 +4044,7 @@ class Canada(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
@@ -3985,6 +4053,7 @@ class Canada(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -4003,6 +4072,7 @@ class Canada(Country):
         Plane.C_17A,
         Plane.E_3A,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.Hawk,
         Plane.KC130,
         Plane.MosquitoFBMkVI,
@@ -4028,6 +4098,7 @@ class Canada(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.I_16,
@@ -4036,6 +4107,7 @@ class Canada(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -4251,6 +4323,8 @@ class Spain(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -4309,8 +4383,8 @@ class Spain(Country):
         F_A_18C = planes.F_A_18C
         C_17A = planes.C_17A
         E_3A = planes.E_3A
-        F_4E = planes.F_4E
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         MQ_9_Reaper = planes.MQ_9_Reaper
         AV8BNA = planes.AV8BNA
         C_101EB = planes.C_101EB
@@ -4337,6 +4411,7 @@ class Spain(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
@@ -4345,6 +4420,7 @@ class Spain(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -4367,8 +4443,8 @@ class Spain(Country):
         Plane.F_A_18C,
         Plane.C_17A,
         Plane.E_3A,
-        Plane.F_4E,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.MQ_9_Reaper,
         Plane.AV8BNA,
         Plane.C_101EB,
@@ -4395,6 +4471,7 @@ class Spain(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.Hawk,
@@ -4403,6 +4480,7 @@ class Spain(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -4633,6 +4711,8 @@ class TheNetherlands(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -4737,7 +4817,9 @@ class TheNetherlands(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -4748,6 +4830,7 @@ class TheNetherlands(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -4792,7 +4875,9 @@ class TheNetherlands(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -4803,6 +4888,7 @@ class TheNetherlands(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -5020,6 +5106,8 @@ class Belgium(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -5113,7 +5201,9 @@ class Belgium(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -5124,6 +5214,7 @@ class Belgium(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -5166,7 +5257,9 @@ class Belgium(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -5177,6 +5270,7 @@ class Belgium(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -5384,6 +5478,8 @@ class Norway(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -5442,6 +5538,7 @@ class Norway(Country):
         E_3A = planes.E_3A
         F_16A = planes.F_16A
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         MosquitoFBMkVI = planes.MosquitoFBMkVI
         C_47 = planes.C_47
         FW_190A8 = planes.FW_190A8
@@ -5467,6 +5564,7 @@ class Norway(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -5477,6 +5575,7 @@ class Norway(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -5495,6 +5594,7 @@ class Norway(Country):
         Plane.E_3A,
         Plane.F_16A,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.MosquitoFBMkVI,
         Plane.C_47,
         Plane.FW_190A8,
@@ -5520,6 +5620,7 @@ class Norway(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -5530,6 +5631,7 @@ class Norway(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -5734,6 +5836,8 @@ class Denmark(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -5793,6 +5897,7 @@ class Denmark(Country):
         C_17A = planes.C_17A
         F_16A = planes.F_16A
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         C_47 = planes.C_47
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
@@ -5818,6 +5923,7 @@ class Denmark(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -5828,6 +5934,7 @@ class Denmark(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -5846,6 +5953,7 @@ class Denmark(Country):
         Plane.C_17A,
         Plane.F_16A,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.C_47,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
@@ -5871,6 +5979,7 @@ class Denmark(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -5881,6 +5990,7 @@ class Denmark(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -6093,6 +6203,8 @@ class Israel(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -6153,7 +6265,6 @@ class Israel(Country):
         F_15E = planes.F_15E
         F_16C_bl_52d = planes.F_16C_bl_52d
         C_130 = planes.C_130
-        F_4E = planes.F_4E
         P_51D = planes.P_51D
         P_51D_30_NA = planes.P_51D_30_NA
         TF_51D = planes.TF_51D
@@ -6186,7 +6297,9 @@ class Israel(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -6197,6 +6310,7 @@ class Israel(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
@@ -6210,7 +6324,6 @@ class Israel(Country):
         Plane.F_15E,
         Plane.F_16C_bl_52d,
         Plane.C_130,
-        Plane.F_4E,
         Plane.P_51D,
         Plane.P_51D_30_NA,
         Plane.TF_51D,
@@ -6243,7 +6356,9 @@ class Israel(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -6254,6 +6369,7 @@ class Israel(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
@@ -6490,6 +6606,8 @@ class Georgia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -6604,7 +6722,9 @@ class Georgia(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -6614,6 +6734,7 @@ class Georgia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -6657,7 +6778,9 @@ class Georgia(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -6667,6 +6790,7 @@ class Georgia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -6883,6 +7007,8 @@ class Insurgents(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -6973,7 +7099,9 @@ class Insurgents(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -6984,6 +7112,7 @@ class Insurgents(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -7020,7 +7149,9 @@ class Insurgents(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -7031,6 +7162,7 @@ class Insurgents(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -7167,6 +7299,8 @@ class Abkhazia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -7271,7 +7405,9 @@ class Abkhazia(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -7281,6 +7417,7 @@ class Abkhazia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -7322,7 +7459,9 @@ class Abkhazia(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -7332,6 +7471,7 @@ class Abkhazia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -7462,6 +7602,8 @@ class SouthOssetia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -7557,7 +7699,9 @@ class SouthOssetia(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -7568,6 +7712,7 @@ class SouthOssetia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -7603,7 +7748,9 @@ class SouthOssetia(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -7614,6 +7761,7 @@ class SouthOssetia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -7738,6 +7886,8 @@ class Italy(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -7827,7 +7977,9 @@ class Italy(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -7837,6 +7989,7 @@ class Italy(Country):
         M_2000C = planes.M_2000C
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -7884,7 +8037,9 @@ class Italy(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -7894,6 +8049,7 @@ class Italy(Country):
         Plane.M_2000C,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -8101,6 +8257,8 @@ class Australia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -8173,7 +8331,6 @@ class Australia(Country):
         P_51D_30_NA = planes.P_51D_30_NA
         TF_51D = planes.TF_51D
         C_17A = planes.C_17A
-        F_4E = planes.F_4E
         F_A_18A = planes.F_A_18A
         MQ_9_Reaper = planes.MQ_9_Reaper
         Hawk = planes.Hawk
@@ -8201,7 +8358,9 @@ class Australia(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -8209,6 +8368,7 @@ class Australia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -8225,7 +8385,6 @@ class Australia(Country):
         Plane.P_51D_30_NA,
         Plane.TF_51D,
         Plane.C_17A,
-        Plane.F_4E,
         Plane.F_A_18A,
         Plane.MQ_9_Reaper,
         Plane.Hawk,
@@ -8253,7 +8412,9 @@ class Australia(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -8261,6 +8422,7 @@ class Australia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -8465,6 +8627,8 @@ class Switzerland(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -8517,6 +8681,7 @@ class Switzerland(Country):
         P_51D_30_NA = planes.P_51D_30_NA
         TF_51D = planes.TF_51D
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         Hawk = planes.Hawk
         MosquitoFBMkVI = planes.MosquitoFBMkVI
         FW_190A8 = planes.FW_190A8
@@ -8541,6 +8706,7 @@ class Switzerland(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
@@ -8549,6 +8715,7 @@ class Switzerland(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -8565,6 +8732,7 @@ class Switzerland(Country):
         Plane.P_51D_30_NA,
         Plane.TF_51D,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.Hawk,
         Plane.MosquitoFBMkVI,
         Plane.FW_190A8,
@@ -8589,6 +8757,7 @@ class Switzerland(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.I_16,
@@ -8597,6 +8766,7 @@ class Switzerland(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -8782,6 +8952,8 @@ class Austria(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -8833,6 +9005,7 @@ class Austria(Country):
         C_130 = planes.C_130
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -8855,6 +9028,7 @@ class Austria(Country):
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -8865,6 +9039,7 @@ class Austria(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -8880,6 +9055,7 @@ class Austria(Country):
         Plane.C_130,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -8902,6 +9078,7 @@ class Austria(Country):
         Plane.F_15ESE,
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -8912,6 +9089,7 @@ class Austria(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -9151,6 +9329,8 @@ class Belarus(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -9274,7 +9454,9 @@ class Belarus(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -9284,6 +9466,7 @@ class Belarus(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -9332,7 +9515,9 @@ class Belarus(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -9342,6 +9527,7 @@ class Belarus(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -9497,6 +9683,8 @@ class Bulgaria(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -9584,6 +9772,7 @@ class Bulgaria(Country):
         An_26B = planes.An_26B
         C_17A = planes.C_17A
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_21Bis = planes.MiG_21Bis
         MiG_23MLD = planes.MiG_23MLD
         MiG_25RBT = planes.MiG_25RBT
@@ -9616,7 +9805,9 @@ class Bulgaria(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -9639,6 +9830,7 @@ class Bulgaria(Country):
         Plane.An_26B,
         Plane.C_17A,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_21Bis,
         Plane.MiG_23MLD,
         Plane.MiG_25RBT,
@@ -9671,7 +9863,9 @@ class Bulgaria(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -9892,6 +10086,8 @@ class CzechRepublic(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -9993,7 +10189,9 @@ class CzechRepublic(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -10003,6 +10201,7 @@ class CzechRepublic(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -10045,7 +10244,9 @@ class CzechRepublic(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -10055,6 +10256,7 @@ class CzechRepublic(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -10276,6 +10478,8 @@ class China(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -10338,6 +10542,7 @@ class China(Country):
         P_51D_30_NA = planes.P_51D_30_NA
         TF_51D = planes.TF_51D
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         Su_30 = planes.Su_30
         I_16 = planes.I_16
         J_11A = planes.J_11A
@@ -10368,7 +10573,9 @@ class China(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -10396,6 +10603,7 @@ class China(Country):
         Plane.P_51D_30_NA,
         Plane.TF_51D,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.Su_30,
         Plane.I_16,
         Plane.J_11A,
@@ -10426,7 +10634,9 @@ class China(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -10555,6 +10765,8 @@ class Croatia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -10625,7 +10837,9 @@ class Croatia(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -10636,6 +10850,7 @@ class Croatia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
@@ -10672,7 +10887,9 @@ class Croatia(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -10683,6 +10900,7 @@ class Croatia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
@@ -10932,6 +11150,8 @@ class Egypt(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -11000,8 +11220,8 @@ class Egypt(Country):
         C_130 = planes.C_130
         E_2C = planes.E_2C
         F_16A = planes.F_16A
-        F_4E = planes.F_4E
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         M_2000C = planes.M_2000C
@@ -11030,7 +11250,9 @@ class Egypt(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -11054,8 +11276,8 @@ class Egypt(Country):
         Plane.C_130,
         Plane.E_2C,
         Plane.F_16A,
-        Plane.F_4E,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.M_2000C,
@@ -11084,7 +11306,9 @@ class Egypt(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -11333,6 +11557,8 @@ class Finland(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -11417,6 +11643,7 @@ class Finland(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         C_47 = planes.C_47
+        C_17A = planes.C_17A
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -11440,7 +11667,9 @@ class Finland(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         L_39C = planes.L_39C
@@ -11448,6 +11677,7 @@ class Finland(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
@@ -11463,6 +11693,7 @@ class Finland(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.C_47,
+        Plane.C_17A,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -11486,7 +11717,9 @@ class Finland(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.L_39C,
@@ -11494,6 +11727,7 @@ class Finland(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
@@ -11505,6 +11739,8 @@ class Finland(Country):
 
     class Helicopter:
         Ka_50 = helicopters.Ka_50
+        Mi_8MT = helicopters.Mi_8MT
+        UH_1H = helicopters.UH_1H
         AH_64D_BLK_II = helicopters.AH_64D_BLK_II
         OH58D = helicopters.OH58D
         SA342M = helicopters.SA342M
@@ -11514,6 +11750,8 @@ class Finland(Country):
 
     helicopters = [
         Helicopter.Ka_50,
+        Helicopter.Mi_8MT,
+        Helicopter.UH_1H,
         Helicopter.AH_64D_BLK_II,
         Helicopter.OH58D,
         Helicopter.SA342M,
@@ -11715,6 +11953,8 @@ class Greece(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -11775,7 +12015,6 @@ class Greece(Country):
     class Plane:
         A_10C = planes.A_10C
         C_130 = planes.C_130
-        F_4E = planes.F_4E
         F_16C_bl_50 = planes.F_16C_bl_50
         F_16C_bl_52d = planes.F_16C_bl_52d
         Mirage_2000_5 = planes.Mirage_2000_5
@@ -11807,7 +12046,9 @@ class Greece(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -11817,6 +12058,7 @@ class Greece(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -11830,7 +12072,6 @@ class Greece(Country):
     planes = [
         Plane.A_10C,
         Plane.C_130,
-        Plane.F_4E,
         Plane.F_16C_bl_50,
         Plane.F_16C_bl_52d,
         Plane.Mirage_2000_5,
@@ -11862,7 +12103,9 @@ class Greece(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -11872,6 +12115,7 @@ class Greece(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -12115,6 +12359,8 @@ class Hungary(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -12197,6 +12443,7 @@ class Hungary(Country):
         An_26B = planes.An_26B
         C_17A = planes.C_17A
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_21Bis = planes.MiG_21Bis
         MiG_29A = planes.MiG_29A
         Yak_40 = planes.Yak_40
@@ -12225,7 +12472,9 @@ class Hungary(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -12248,6 +12497,7 @@ class Hungary(Country):
         Plane.An_26B,
         Plane.C_17A,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_21Bis,
         Plane.MiG_29A,
         Plane.Yak_40,
@@ -12276,7 +12526,9 @@ class Hungary(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -12501,6 +12753,8 @@ class India(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -12590,7 +12844,9 @@ class India(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -12599,6 +12855,7 @@ class India(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
@@ -12645,7 +12902,9 @@ class India(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -12654,6 +12913,7 @@ class India(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
@@ -12896,6 +13156,8 @@ class Iran(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -12963,11 +13225,12 @@ class Iran(Country):
         MiG_21Bis = planes.MiG_21Bis
         A_50 = planes.A_50
         F_14A = planes.F_14A
-        F_4E = planes.F_4E
         C_130 = planes.C_130
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         Su_25T = planes.Su_25T
         C_47 = planes.C_47
         FW_190A8 = planes.FW_190A8
@@ -13003,6 +13266,7 @@ class Iran(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
@@ -13022,11 +13286,12 @@ class Iran(Country):
         Plane.MiG_21Bis,
         Plane.A_50,
         Plane.F_14A,
-        Plane.F_4E,
         Plane.C_130,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.Su_25T,
         Plane.C_47,
         Plane.FW_190A8,
@@ -13062,6 +13327,7 @@ class Iran(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
@@ -13298,6 +13564,8 @@ class Iraq(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -13368,6 +13636,7 @@ class Iraq(Country):
         F_16C_bl_50 = planes.F_16C_bl_50
         F_16C_bl_52d = planes.F_16C_bl_52d
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         L_39C = planes.L_39C
         MiG_21Bis = planes.MiG_21Bis
         MiG_25PD = planes.MiG_25PD
@@ -13397,6 +13666,7 @@ class Iraq(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -13406,6 +13676,7 @@ class Iraq(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
@@ -13424,6 +13695,7 @@ class Iraq(Country):
         Plane.F_16C_bl_50,
         Plane.F_16C_bl_52d,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.L_39C,
         Plane.MiG_21Bis,
         Plane.MiG_25PD,
@@ -13453,6 +13725,7 @@ class Iraq(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -13462,6 +13735,7 @@ class Iraq(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
@@ -13683,6 +13957,8 @@ class Japan(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -13752,6 +14028,7 @@ class Japan(Country):
         E_2C = planes.E_2C
         F_15C = planes.F_15C
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         KC130 = planes.KC130
         C_47 = planes.C_47
         FW_190A8 = planes.FW_190A8
@@ -13776,6 +14053,7 @@ class Japan(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -13786,6 +14064,7 @@ class Japan(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -13801,6 +14080,7 @@ class Japan(Country):
         Plane.E_2C,
         Plane.F_15C,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.KC130,
         Plane.C_47,
         Plane.FW_190A8,
@@ -13825,6 +14105,7 @@ class Japan(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -13835,6 +14116,7 @@ class Japan(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -14088,6 +14370,8 @@ class Kazakhstan(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -14212,7 +14496,9 @@ class Kazakhstan(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -14222,6 +14508,7 @@ class Kazakhstan(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -14271,7 +14558,9 @@ class Kazakhstan(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -14281,6 +14570,7 @@ class Kazakhstan(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -14490,6 +14780,8 @@ class NorthKorea(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -14573,7 +14865,9 @@ class NorthKorea(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -14583,6 +14877,7 @@ class NorthKorea(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
@@ -14622,7 +14917,9 @@ class NorthKorea(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -14632,6 +14929,7 @@ class NorthKorea(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
@@ -14840,6 +15138,8 @@ class Pakistan(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -14897,6 +15197,7 @@ class Pakistan(Country):
         F_16C_bl_50 = planes.F_16C_bl_50
         F_16C_bl_52d = planes.F_16C_bl_52d
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         IL_78M = planes.IL_78M
         WingLoong_I = planes.WingLoong_I
         JF_17 = planes.JF_17
@@ -14923,6 +15224,7 @@ class Pakistan(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -14933,6 +15235,7 @@ class Pakistan(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -14951,6 +15254,7 @@ class Pakistan(Country):
         Plane.F_16C_bl_50,
         Plane.F_16C_bl_52d,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.IL_78M,
         Plane.WingLoong_I,
         Plane.JF_17,
@@ -14977,6 +15281,7 @@ class Pakistan(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -14987,6 +15292,7 @@ class Pakistan(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -15204,6 +15510,8 @@ class Poland(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -15295,6 +15603,7 @@ class Poland(Country):
         C_17A = planes.C_17A
         F_16C_bl_52d = planes.F_16C_bl_52d
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_21Bis = planes.MiG_21Bis
         MiG_29G = planes.MiG_29G
         Yak_40 = planes.Yak_40
@@ -15324,7 +15633,9 @@ class Poland(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -15352,6 +15663,7 @@ class Poland(Country):
         Plane.C_17A,
         Plane.F_16C_bl_52d,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_21Bis,
         Plane.MiG_29G,
         Plane.Yak_40,
@@ -15381,7 +15693,9 @@ class Poland(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -15616,6 +15930,8 @@ class Romania(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -15701,6 +16017,7 @@ class Romania(Country):
         F_16A_MLU = planes.F_16A_MLU
         L_39ZA = planes.L_39ZA
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_29A = planes.MiG_29A
         Yak_52 = planes.Yak_52
         I_16 = planes.I_16
@@ -15728,7 +16045,9 @@ class Romania(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -15753,6 +16072,7 @@ class Romania(Country):
         Plane.F_16A_MLU,
         Plane.L_39ZA,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_29A,
         Plane.Yak_52,
         Plane.I_16,
@@ -15780,7 +16100,9 @@ class Romania(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -16003,6 +16325,8 @@ class SaudiArabia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -16065,7 +16389,9 @@ class SaudiArabia(Country):
         KC_135 = planes.KC_135
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         Hawk = planes.Hawk
         KC130 = planes.KC130
         WingLoong_I = planes.WingLoong_I
@@ -16098,6 +16424,7 @@ class SaudiArabia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -16118,7 +16445,9 @@ class SaudiArabia(Country):
         Plane.KC_135,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.Hawk,
         Plane.KC130,
         Plane.WingLoong_I,
@@ -16151,6 +16480,7 @@ class SaudiArabia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -16379,6 +16709,8 @@ class Serbia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -16473,7 +16805,9 @@ class Serbia(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -16484,6 +16818,7 @@ class Serbia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
@@ -16524,7 +16859,9 @@ class Serbia(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -16535,6 +16872,7 @@ class Serbia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
@@ -16744,6 +17082,8 @@ class Slovakia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -16832,7 +17172,9 @@ class Slovakia(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -16842,6 +17184,7 @@ class Slovakia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -16883,7 +17226,9 @@ class Slovakia(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -16893,6 +17238,7 @@ class Slovakia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -17102,6 +17448,8 @@ class SouthKorea(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -17156,12 +17504,13 @@ class SouthKorea(Country):
         TF_51D = planes.TF_51D
         C_130 = planes.C_130
         F_15E = planes.F_15E
-        F_4E = planes.F_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_16C_bl_50 = planes.F_16C_bl_50
         F_16C_bl_52d = planes.F_16C_bl_52d
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         Hawk = planes.Hawk
         C_47 = planes.C_47
         FW_190A8 = planes.FW_190A8
@@ -17194,6 +17543,7 @@ class SouthKorea(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -17209,12 +17559,13 @@ class SouthKorea(Country):
         Plane.TF_51D,
         Plane.C_130,
         Plane.F_15E,
-        Plane.F_4E,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_16C_bl_50,
         Plane.F_16C_bl_52d,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.Hawk,
         Plane.C_47,
         Plane.FW_190A8,
@@ -17247,6 +17598,7 @@ class SouthKorea(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -17442,6 +17794,8 @@ class Sweden(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -17518,7 +17872,9 @@ class Sweden(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -17529,6 +17885,7 @@ class Sweden(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -17568,7 +17925,9 @@ class Sweden(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -17579,6 +17938,7 @@ class Sweden(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -17811,6 +18171,8 @@ class Syria(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -17878,6 +18240,7 @@ class Syria(Country):
         L_39ZA = planes.L_39ZA
         An_26B = planes.An_26B
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_21Bis = planes.MiG_21Bis
         MiG_23MLD = planes.MiG_23MLD
         MiG_29A = planes.MiG_29A
@@ -17906,7 +18269,9 @@ class Syria(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -17930,6 +18295,7 @@ class Syria(Country):
         Plane.L_39ZA,
         Plane.An_26B,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_21Bis,
         Plane.MiG_23MLD,
         Plane.MiG_29A,
@@ -17958,7 +18324,9 @@ class Syria(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -18177,6 +18545,8 @@ class Yemen(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -18236,6 +18606,7 @@ class Yemen(Country):
         C_130 = planes.C_130
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         L_39C = planes.L_39C
         MiG_29S = planes.MiG_29S
         Yak_40 = planes.Yak_40
@@ -18261,6 +18632,7 @@ class Yemen(Country):
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -18270,6 +18642,7 @@ class Yemen(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -18286,6 +18659,7 @@ class Yemen(Country):
         Plane.C_130,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.L_39C,
         Plane.MiG_29S,
         Plane.Yak_40,
@@ -18311,6 +18685,7 @@ class Yemen(Country):
         Plane.F_15ESE,
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -18320,6 +18695,7 @@ class Yemen(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -18545,6 +18921,8 @@ class Vietnam(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -18604,6 +18982,7 @@ class Vietnam(Country):
         C_130 = planes.C_130
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         L_39C = planes.L_39C
         MiG_21Bis = planes.MiG_21Bis
         Su_17M4 = planes.Su_17M4
@@ -18634,6 +19013,7 @@ class Vietnam(Country):
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -18643,6 +19023,7 @@ class Vietnam(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
@@ -18656,6 +19037,7 @@ class Vietnam(Country):
         Plane.C_130,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.L_39C,
         Plane.MiG_21Bis,
         Plane.Su_17M4,
@@ -18686,6 +19068,7 @@ class Vietnam(Country):
         Plane.F_15ESE,
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -18695,6 +19078,7 @@ class Vietnam(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
@@ -18910,6 +19294,8 @@ class Venezuela(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -18961,6 +19347,7 @@ class Venezuela(Country):
         C_130 = planes.C_130
         F_16A = planes.F_16A
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         Su_30 = planes.Su_30
         MosquitoFBMkVI = planes.MosquitoFBMkVI
         C_47 = planes.C_47
@@ -18986,6 +19373,7 @@ class Venezuela(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -18996,6 +19384,7 @@ class Venezuela(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -19010,6 +19399,7 @@ class Venezuela(Country):
         Plane.C_130,
         Plane.F_16A,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.Su_30,
         Plane.MosquitoFBMkVI,
         Plane.C_47,
@@ -19035,6 +19425,7 @@ class Venezuela(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -19045,6 +19436,7 @@ class Venezuela(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -19234,6 +19626,8 @@ class Tunisia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -19283,7 +19677,9 @@ class Tunisia(Country):
         C_130 = planes.C_130
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -19315,6 +19711,7 @@ class Tunisia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -19330,7 +19727,9 @@ class Tunisia(Country):
         Plane.C_130,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -19362,6 +19761,7 @@ class Tunisia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -19557,6 +19957,8 @@ class Thailand(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -19610,7 +20012,9 @@ class Thailand(Country):
         F_16A_MLU = planes.F_16A_MLU
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         L_39ZA = planes.L_39ZA
         C_47 = planes.C_47
         FW_190A8 = planes.FW_190A8
@@ -19644,6 +20048,7 @@ class Thailand(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -19660,7 +20065,9 @@ class Thailand(Country):
         Plane.F_16A_MLU,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.L_39ZA,
         Plane.C_47,
         Plane.FW_190A8,
@@ -19694,6 +20101,7 @@ class Thailand(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -19898,6 +20306,8 @@ class Sudan(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -19953,6 +20363,7 @@ class Sudan(Country):
         C_130 = planes.C_130
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         MiG_29S = planes.MiG_29S
         Su_24M = planes.Su_24M
         Su_25 = planes.Su_25
@@ -19978,6 +20389,7 @@ class Sudan(Country):
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -19988,6 +20400,7 @@ class Sudan(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -20004,6 +20417,7 @@ class Sudan(Country):
         Plane.C_130,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.MiG_29S,
         Plane.Su_24M,
         Plane.Su_25,
@@ -20029,6 +20443,7 @@ class Sudan(Country):
         Plane.F_15ESE,
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -20039,6 +20454,7 @@ class Sudan(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -20223,6 +20639,8 @@ class Philippines(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -20272,7 +20690,9 @@ class Philippines(Country):
         TF_51D = planes.TF_51D
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         C_47 = planes.C_47
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
@@ -20305,6 +20725,7 @@ class Philippines(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -20321,7 +20742,9 @@ class Philippines(Country):
         Plane.TF_51D,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.C_47,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
@@ -20354,6 +20777,7 @@ class Philippines(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -20559,6 +20983,8 @@ class Morocco(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -20614,6 +21040,7 @@ class Morocco(Country):
         C_130 = planes.C_130
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_16C_bl_50 = planes.F_16C_bl_50
         F_16C_bl_52d = planes.F_16C_bl_52d
         KC130 = planes.KC130
@@ -20638,6 +21065,7 @@ class Morocco(Country):
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -20648,6 +21076,7 @@ class Morocco(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -20665,6 +21094,7 @@ class Morocco(Country):
         Plane.C_130,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_16C_bl_50,
         Plane.F_16C_bl_52d,
         Plane.KC130,
@@ -20689,6 +21119,7 @@ class Morocco(Country):
         Plane.F_15ESE,
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -20699,6 +21130,7 @@ class Morocco(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -20893,6 +21325,8 @@ class Mexico(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -20943,6 +21377,7 @@ class Mexico(Country):
         E_2C = planes.E_2C
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -20965,6 +21400,7 @@ class Mexico(Country):
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -20975,6 +21411,7 @@ class Mexico(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -20991,6 +21428,7 @@ class Mexico(Country):
         Plane.E_2C,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -21013,6 +21451,7 @@ class Mexico(Country):
         Plane.F_15ESE,
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -21023,6 +21462,7 @@ class Mexico(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -21225,6 +21665,8 @@ class Malaysia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -21273,6 +21715,7 @@ class Malaysia(Country):
         C_130 = planes.C_130
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         Su_30 = planes.Su_30
         Hawk = planes.Hawk
         KC130 = planes.KC130
@@ -21298,6 +21741,7 @@ class Malaysia(Country):
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -21306,6 +21750,7 @@ class Malaysia(Country):
         M_2000C = planes.M_2000C
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -21321,6 +21766,7 @@ class Malaysia(Country):
         Plane.C_130,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.Su_30,
         Plane.Hawk,
         Plane.KC130,
@@ -21346,6 +21792,7 @@ class Malaysia(Country):
         Plane.F_15ESE,
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -21354,6 +21801,7 @@ class Malaysia(Country):
         Plane.M_2000C,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -21573,6 +22021,8 @@ class Libya(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -21651,7 +22101,9 @@ class Libya(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -21662,6 +22114,7 @@ class Libya(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
@@ -21702,7 +22155,9 @@ class Libya(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -21713,6 +22168,7 @@ class Libya(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
@@ -21917,6 +22373,8 @@ class Jordan(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -21974,6 +22432,7 @@ class Jordan(Country):
         F_16A_MLU = planes.F_16A_MLU
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         Hawk = planes.Hawk
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
@@ -21997,6 +22456,7 @@ class Jordan(Country):
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -22006,6 +22466,7 @@ class Jordan(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -22025,6 +22486,7 @@ class Jordan(Country):
         Plane.F_16A_MLU,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.Hawk,
         Plane.C_101EB,
         Plane.C_101CC,
@@ -22048,6 +22510,7 @@ class Jordan(Country):
         Plane.F_15ESE,
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -22057,6 +22520,7 @@ class Jordan(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -22276,6 +22740,8 @@ class Indonesia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -22344,6 +22810,7 @@ class Indonesia(Country):
         F_16C_bl_52d = planes.F_16C_bl_52d
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         Su_27 = planes.Su_27
         Su_30 = planes.Su_30
         Hawk = planes.Hawk
@@ -22370,6 +22837,7 @@ class Indonesia(Country):
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -22379,6 +22847,7 @@ class Indonesia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -22398,6 +22867,7 @@ class Indonesia(Country):
         Plane.F_16C_bl_52d,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.Su_27,
         Plane.Su_30,
         Plane.Hawk,
@@ -22424,6 +22894,7 @@ class Indonesia(Country):
         Plane.F_15ESE,
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -22433,6 +22904,7 @@ class Indonesia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -22625,6 +23097,8 @@ class Honduras(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -22673,6 +23147,7 @@ class Honduras(Country):
         C_130 = planes.C_130
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
         C_47 = planes.C_47
@@ -22696,6 +23171,7 @@ class Honduras(Country):
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -22706,6 +23182,7 @@ class Honduras(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -22720,6 +23197,7 @@ class Honduras(Country):
         Plane.C_130,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.C_101EB,
         Plane.C_101CC,
         Plane.C_47,
@@ -22743,6 +23221,7 @@ class Honduras(Country):
         Plane.F_15ESE,
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -22753,6 +23232,7 @@ class Honduras(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -22958,6 +23438,8 @@ class Ethiopia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -23011,7 +23493,9 @@ class Ethiopia(Country):
         C_130 = planes.C_130
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         L_39C = planes.L_39C
         MiG_21Bis = planes.MiG_21Bis
         Su_25T = planes.Su_25T
@@ -23048,6 +23532,7 @@ class Ethiopia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
@@ -23061,7 +23546,9 @@ class Ethiopia(Country):
         Plane.C_130,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.L_39C,
         Plane.MiG_21Bis,
         Plane.Su_25T,
@@ -23098,6 +23585,7 @@ class Ethiopia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
@@ -23295,6 +23783,8 @@ class Chile(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -23354,6 +23844,7 @@ class Chile(Country):
         F_16C_bl_52d = planes.F_16C_bl_52d
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         KC135MPRS = planes.KC135MPRS
         C_130 = planes.C_130
         C_101EB = planes.C_101EB
@@ -23377,6 +23868,7 @@ class Chile(Country):
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -23387,6 +23879,7 @@ class Chile(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -23407,6 +23900,7 @@ class Chile(Country):
         Plane.F_16C_bl_52d,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.KC135MPRS,
         Plane.C_130,
         Plane.C_101EB,
@@ -23430,6 +23924,7 @@ class Chile(Country):
         Plane.F_15ESE,
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -23440,6 +23935,7 @@ class Chile(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -23652,6 +24148,8 @@ class Brazil(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -23705,6 +24203,7 @@ class Brazil(Country):
         C_130 = planes.C_130
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         M_2000C = planes.M_2000C
         KC130 = planes.KC130
         C_47 = planes.C_47
@@ -23729,6 +24228,7 @@ class Brazil(Country):
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -23738,6 +24238,7 @@ class Brazil(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -23753,6 +24254,7 @@ class Brazil(Country):
         Plane.C_130,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.M_2000C,
         Plane.KC130,
         Plane.C_47,
@@ -23777,6 +24279,7 @@ class Brazil(Country):
         Plane.F_15ESE,
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -23786,6 +24289,7 @@ class Brazil(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -23995,6 +24499,8 @@ class Bahrain(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -24045,6 +24551,7 @@ class Bahrain(Country):
         A_10C = planes.A_10C
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         Hawk = planes.Hawk
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
@@ -24068,6 +24575,7 @@ class Bahrain(Country):
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -24077,6 +24585,7 @@ class Bahrain(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -24091,6 +24600,7 @@ class Bahrain(Country):
         Plane.A_10C,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.Hawk,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
@@ -24114,6 +24624,7 @@ class Bahrain(Country):
         Plane.F_15ESE,
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -24123,6 +24634,7 @@ class Bahrain(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -24324,6 +24836,8 @@ class ThirdReich(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -24407,7 +24921,9 @@ class ThirdReich(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -24418,6 +24934,7 @@ class ThirdReich(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -24454,7 +24971,9 @@ class ThirdReich(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -24465,6 +24984,7 @@ class ThirdReich(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -24669,6 +25189,8 @@ class Yugoslavia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -24760,7 +25282,9 @@ class Yugoslavia(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -24771,6 +25295,7 @@ class Yugoslavia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
@@ -24809,7 +25334,9 @@ class Yugoslavia(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -24820,6 +25347,7 @@ class Yugoslavia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
@@ -24986,6 +25514,8 @@ class USSR(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -25094,6 +25624,7 @@ class USSR(Country):
         L_39C = planes.L_39C
         L_39ZA = planes.L_39ZA
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_21Bis = planes.MiG_21Bis
         MiG_23MLD = planes.MiG_23MLD
         MiG_25PD = planes.MiG_25PD
@@ -25140,7 +25671,9 @@ class USSR(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -25166,6 +25699,7 @@ class USSR(Country):
         Plane.L_39C,
         Plane.L_39ZA,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_21Bis,
         Plane.MiG_23MLD,
         Plane.MiG_25PD,
@@ -25212,7 +25746,9 @@ class USSR(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -25353,6 +25889,8 @@ class ItalianSocialRepublic(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -25435,7 +25973,9 @@ class ItalianSocialRepublic(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -25446,6 +25986,7 @@ class ItalianSocialRepublic(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -25481,7 +26022,9 @@ class ItalianSocialRepublic(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -25492,6 +26035,7 @@ class ItalianSocialRepublic(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -25734,6 +26278,8 @@ class Algeria(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -25832,6 +26378,7 @@ class Algeria(Country):
         Yak_40 = planes.Yak_40
         L_39C = planes.L_39C
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         WingLoong_I = planes.WingLoong_I
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
@@ -25856,7 +26403,9 @@ class Algeria(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -25895,6 +26444,7 @@ class Algeria(Country):
         Plane.Yak_40,
         Plane.L_39C,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.WingLoong_I,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
@@ -25919,7 +26469,9 @@ class Algeria(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -26151,6 +26703,8 @@ class Kuwait(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -26232,7 +26786,9 @@ class Kuwait(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
@@ -26241,6 +26797,7 @@ class Kuwait(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -26281,7 +26838,9 @@ class Kuwait(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.I_16,
@@ -26290,6 +26849,7 @@ class Kuwait(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -26489,6 +27049,8 @@ class Qatar(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -26563,7 +27125,9 @@ class Qatar(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -26573,6 +27137,7 @@ class Qatar(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -26613,7 +27178,9 @@ class Qatar(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -26623,6 +27190,7 @@ class Qatar(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -26833,6 +27401,8 @@ class Oman(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -26915,7 +27485,9 @@ class Oman(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -26925,6 +27497,7 @@ class Oman(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -26964,7 +27537,9 @@ class Oman(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -26974,6 +27549,7 @@ class Oman(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -27183,6 +27759,8 @@ class UnitedArabEmirates(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -27269,7 +27847,9 @@ class UnitedArabEmirates(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -27277,6 +27857,7 @@ class UnitedArabEmirates(Country):
         L_39C = planes.L_39C
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -27320,7 +27901,9 @@ class UnitedArabEmirates(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -27328,6 +27911,7 @@ class UnitedArabEmirates(Country):
         Plane.L_39C,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -27528,6 +28112,8 @@ class SouthAfrica(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -27576,6 +28162,7 @@ class SouthAfrica(Country):
         P_51D_30_NA = planes.P_51D_30_NA
         TF_51D = planes.TF_51D
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         Hawk = planes.Hawk
         MosquitoFBMkVI = planes.MosquitoFBMkVI
         C_47 = planes.C_47
@@ -27601,6 +28188,7 @@ class SouthAfrica(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -27610,6 +28198,7 @@ class SouthAfrica(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -27626,6 +28215,7 @@ class SouthAfrica(Country):
         Plane.P_51D_30_NA,
         Plane.TF_51D,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.Hawk,
         Plane.MosquitoFBMkVI,
         Plane.C_47,
@@ -27651,6 +28241,7 @@ class SouthAfrica(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -27660,6 +28251,7 @@ class SouthAfrica(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -27881,6 +28473,8 @@ class Cuba(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -27957,6 +28551,7 @@ class Cuba(Country):
         TF_51D = planes.TF_51D
         L_39C = planes.L_39C
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_23MLD = planes.MiG_23MLD
         MiG_23MLD = planes.MiG_23MLD
         MiG_23MLD = planes.MiG_23MLD
@@ -27984,7 +28579,9 @@ class Cuba(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -28014,6 +28611,7 @@ class Cuba(Country):
         Plane.TF_51D,
         Plane.L_39C,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_23MLD,
         Plane.MiG_23MLD,
         Plane.MiG_23MLD,
@@ -28041,7 +28639,9 @@ class Cuba(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -28249,6 +28849,8 @@ class Portugal(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -28303,6 +28905,7 @@ class Portugal(Country):
         F_16A = planes.F_16A
         F_16C_bl_50 = planes.F_16C_bl_50
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         SpitfireLFMkIX = planes.SpitfireLFMkIX
         SpitfireLFMkIXCW = planes.SpitfireLFMkIXCW
         B_17G = planes.B_17G
@@ -28329,6 +28932,7 @@ class Portugal(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -28339,6 +28943,7 @@ class Portugal(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -28355,6 +28960,7 @@ class Portugal(Country):
         Plane.F_16A,
         Plane.F_16C_bl_50,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.SpitfireLFMkIX,
         Plane.SpitfireLFMkIXCW,
         Plane.B_17G,
@@ -28381,6 +28987,7 @@ class Portugal(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -28391,6 +28998,7 @@ class Portugal(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -28608,6 +29216,8 @@ class GDR(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -28674,6 +29284,7 @@ class GDR(Country):
         A_10C = planes.A_10C
         An_26B = planes.An_26B
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_21Bis = planes.MiG_21Bis
         MiG_29A = planes.MiG_29A
         Su_17M4 = planes.Su_17M4
@@ -28701,7 +29312,9 @@ class GDR(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -28724,6 +29337,7 @@ class GDR(Country):
         Plane.A_10C,
         Plane.An_26B,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_21Bis,
         Plane.MiG_29A,
         Plane.Su_17M4,
@@ -28751,7 +29365,9 @@ class GDR(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -28963,6 +29579,8 @@ class Lebanon(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -29044,7 +29662,9 @@ class Lebanon(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -29054,6 +29674,7 @@ class Lebanon(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -29092,7 +29713,9 @@ class Lebanon(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -29102,6 +29725,7 @@ class Lebanon(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -29427,6 +30051,8 @@ class CombinedJointTaskForcesBlue(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -29560,6 +30186,8 @@ class CombinedJointTaskForcesBlue(Country):
             M1126_Stryker_ICV = vehicles.Armor.M1126_Stryker_ICV
             M1128_Stryker_MGS = vehicles.Armor.M1128_Stryker_MGS
             M1134_Stryker_ATGM = vehicles.Armor.M1134_Stryker_ATGM
+            M1A2C_SEP_V3 = vehicles.Armor.M1A2C_SEP_V3
+            MaxxPro_MRAP = vehicles.Armor.MaxxPro_MRAP
             MCV_80 = vehicles.Armor.MCV_80
 
         class MissilesSS:
@@ -29624,7 +30252,9 @@ class CombinedJointTaskForcesBlue(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -29635,6 +30265,7 @@ class CombinedJointTaskForcesBlue(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -29687,7 +30318,6 @@ class CombinedJointTaskForcesBlue(Country):
         F_16A = planes.F_16A
         MQ_9_Reaper = planes.MQ_9_Reaper
         RQ_1A_Predator = planes.RQ_1A_Predator
-        F_4E = planes.F_4E
         Mirage_F1M_EE = planes.Mirage_F1M_EE
         Mirage_F1M_CE = planes.Mirage_F1M_CE
         Mirage_F1JA = planes.Mirage_F1JA
@@ -29695,6 +30325,7 @@ class CombinedJointTaskForcesBlue(Country):
         Mirage_F1DDA = planes.Mirage_F1DDA
         WingLoong_I = planes.WingLoong_I
         Su_33 = planes.Su_33
+        FULCRUM_LAB = planes.FULCRUM_LAB
         Su_25TM = planes.Su_25TM
         Su_30 = planes.Su_30
         Su_34 = planes.Su_34
@@ -29752,7 +30383,9 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -29763,6 +30396,7 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -29815,7 +30449,6 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.F_16A,
         Plane.MQ_9_Reaper,
         Plane.RQ_1A_Predator,
-        Plane.F_4E,
         Plane.Mirage_F1M_EE,
         Plane.Mirage_F1M_CE,
         Plane.Mirage_F1JA,
@@ -29823,6 +30456,7 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.Mirage_F1DDA,
         Plane.WingLoong_I,
         Plane.Su_33,
+        Plane.FULCRUM_LAB,
         Plane.Su_25TM,
         Plane.Su_30,
         Plane.Su_34,
@@ -30240,6 +30874,8 @@ class CombinedJointTaskForcesRed(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -30373,6 +31009,8 @@ class CombinedJointTaskForcesRed(Country):
             M1126_Stryker_ICV = vehicles.Armor.M1126_Stryker_ICV
             M1128_Stryker_MGS = vehicles.Armor.M1128_Stryker_MGS
             M1134_Stryker_ATGM = vehicles.Armor.M1134_Stryker_ATGM
+            M1A2C_SEP_V3 = vehicles.Armor.M1A2C_SEP_V3
+            MaxxPro_MRAP = vehicles.Armor.MaxxPro_MRAP
             MCV_80 = vehicles.Armor.MCV_80
 
         class MissilesSS:
@@ -30437,7 +31075,9 @@ class CombinedJointTaskForcesRed(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -30448,6 +31088,7 @@ class CombinedJointTaskForcesRed(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -30500,7 +31141,6 @@ class CombinedJointTaskForcesRed(Country):
         F_16A = planes.F_16A
         MQ_9_Reaper = planes.MQ_9_Reaper
         RQ_1A_Predator = planes.RQ_1A_Predator
-        F_4E = planes.F_4E
         Mirage_F1M_EE = planes.Mirage_F1M_EE
         Mirage_F1M_CE = planes.Mirage_F1M_CE
         Mirage_F1JA = planes.Mirage_F1JA
@@ -30508,6 +31148,7 @@ class CombinedJointTaskForcesRed(Country):
         Mirage_F1DDA = planes.Mirage_F1DDA
         WingLoong_I = planes.WingLoong_I
         Su_33 = planes.Su_33
+        FULCRUM_LAB = planes.FULCRUM_LAB
         Su_25TM = planes.Su_25TM
         Su_30 = planes.Su_30
         Su_34 = planes.Su_34
@@ -30565,7 +31206,9 @@ class CombinedJointTaskForcesRed(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -30576,6 +31219,7 @@ class CombinedJointTaskForcesRed(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -30628,7 +31272,6 @@ class CombinedJointTaskForcesRed(Country):
         Plane.F_16A,
         Plane.MQ_9_Reaper,
         Plane.RQ_1A_Predator,
-        Plane.F_4E,
         Plane.Mirage_F1M_EE,
         Plane.Mirage_F1M_CE,
         Plane.Mirage_F1JA,
@@ -30636,6 +31279,7 @@ class CombinedJointTaskForcesRed(Country):
         Plane.Mirage_F1DDA,
         Plane.WingLoong_I,
         Plane.Su_33,
+        Plane.FULCRUM_LAB,
         Plane.Su_25TM,
         Plane.Su_30,
         Plane.Su_34,
@@ -31053,6 +31697,8 @@ class UnitedNationsPeacekeepers(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -31186,6 +31832,8 @@ class UnitedNationsPeacekeepers(Country):
             M1126_Stryker_ICV = vehicles.Armor.M1126_Stryker_ICV
             M1128_Stryker_MGS = vehicles.Armor.M1128_Stryker_MGS
             M1134_Stryker_ATGM = vehicles.Armor.M1134_Stryker_ATGM
+            M1A2C_SEP_V3 = vehicles.Armor.M1A2C_SEP_V3
+            MaxxPro_MRAP = vehicles.Armor.MaxxPro_MRAP
             MCV_80 = vehicles.Armor.MCV_80
 
         class MissilesSS:
@@ -31250,7 +31898,9 @@ class UnitedNationsPeacekeepers(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -31261,6 +31911,7 @@ class UnitedNationsPeacekeepers(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -31313,7 +31964,6 @@ class UnitedNationsPeacekeepers(Country):
         F_16A = planes.F_16A
         MQ_9_Reaper = planes.MQ_9_Reaper
         RQ_1A_Predator = planes.RQ_1A_Predator
-        F_4E = planes.F_4E
         Mirage_F1M_EE = planes.Mirage_F1M_EE
         Mirage_F1M_CE = planes.Mirage_F1M_CE
         Mirage_F1JA = planes.Mirage_F1JA
@@ -31321,6 +31971,7 @@ class UnitedNationsPeacekeepers(Country):
         Mirage_F1DDA = planes.Mirage_F1DDA
         WingLoong_I = planes.WingLoong_I
         Su_33 = planes.Su_33
+        FULCRUM_LAB = planes.FULCRUM_LAB
         Su_25TM = planes.Su_25TM
         Su_30 = planes.Su_30
         Su_34 = planes.Su_34
@@ -31378,7 +32029,9 @@ class UnitedNationsPeacekeepers(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -31389,6 +32042,7 @@ class UnitedNationsPeacekeepers(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -31441,7 +32095,6 @@ class UnitedNationsPeacekeepers(Country):
         Plane.F_16A,
         Plane.MQ_9_Reaper,
         Plane.RQ_1A_Predator,
-        Plane.F_4E,
         Plane.Mirage_F1M_EE,
         Plane.Mirage_F1M_CE,
         Plane.Mirage_F1JA,
@@ -31449,6 +32102,7 @@ class UnitedNationsPeacekeepers(Country):
         Plane.Mirage_F1DDA,
         Plane.WingLoong_I,
         Plane.Su_33,
+        Plane.FULCRUM_LAB,
         Plane.Su_25TM,
         Plane.Su_30,
         Plane.Su_34,
@@ -31733,6 +32387,8 @@ class Argentina(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -31786,6 +32442,7 @@ class Argentina(Country):
         KC130 = planes.KC130
         B_17G = planes.B_17G
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         MB_339A = planes.MB_339A
         C_47 = planes.C_47
         FW_190A8 = planes.FW_190A8
@@ -31810,6 +32467,7 @@ class Argentina(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -31819,6 +32477,7 @@ class Argentina(Country):
         M_2000C = planes.M_2000C
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -31834,6 +32493,7 @@ class Argentina(Country):
         Plane.KC130,
         Plane.B_17G,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.MB_339A,
         Plane.C_47,
         Plane.FW_190A8,
@@ -31858,6 +32518,7 @@ class Argentina(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -31867,6 +32528,7 @@ class Argentina(Country):
         Plane.M_2000C,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -32082,6 +32744,8 @@ class Cyprus(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -32154,7 +32818,9 @@ class Cyprus(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -32165,6 +32831,7 @@ class Cyprus(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -32201,7 +32868,9 @@ class Cyprus(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -32212,6 +32881,7 @@ class Cyprus(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -32408,6 +33078,8 @@ class Slovenia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -32486,7 +33158,9 @@ class Slovenia(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -32497,6 +33171,7 @@ class Slovenia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -32534,7 +33209,9 @@ class Slovenia(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -32545,6 +33222,7 @@ class Slovenia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -32740,6 +33418,8 @@ class Bolivia(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -32795,6 +33475,7 @@ class Bolivia(Country):
         Mirage_2000_5 = planes.Mirage_2000_5
         C_130 = planes.C_130
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         P_51D = planes.P_51D
         P_51D_30_NA = planes.P_51D_30_NA
         TF_51D = planes.TF_51D
@@ -32822,6 +33503,7 @@ class Bolivia(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -32832,6 +33514,7 @@ class Bolivia(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -32845,6 +33528,7 @@ class Bolivia(Country):
         Plane.Mirage_2000_5,
         Plane.C_130,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.P_51D,
         Plane.P_51D_30_NA,
         Plane.TF_51D,
@@ -32872,6 +33556,7 @@ class Bolivia(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -32882,6 +33567,7 @@ class Bolivia(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -33074,6 +33760,8 @@ class Ghana(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -33141,7 +33829,9 @@ class Ghana(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -33151,6 +33841,7 @@ class Ghana(Country):
         M_2000C = planes.M_2000C
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -33188,7 +33879,9 @@ class Ghana(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -33198,6 +33891,7 @@ class Ghana(Country):
         Plane.M_2000C,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -33396,6 +34090,8 @@ class Nigeria(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -33471,7 +34167,9 @@ class Nigeria(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -33481,6 +34179,7 @@ class Nigeria(Country):
         M_2000C = planes.M_2000C
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -33519,7 +34218,9 @@ class Nigeria(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -33529,6 +34230,7 @@ class Nigeria(Country):
         Plane.M_2000C,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -33736,6 +34438,8 @@ class Peru(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -33814,6 +34518,8 @@ class Peru(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -33822,6 +34528,7 @@ class Peru(Country):
         L_39C = planes.L_39C
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1CE = planes.Mirage_F1CE
@@ -33867,6 +34574,8 @@ class Peru(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -33875,6 +34584,7 @@ class Peru(Country):
         Plane.L_39C,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1CE,
@@ -34075,6 +34785,8 @@ class Ecuador(Country):
             House1arm = vehicles.Fortification.House1arm
             House2arm = vehicles.Fortification.House2arm
             Outpost_road = vehicles.Fortification.Outpost_road
+            Outpost_road_l = vehicles.Fortification.Outpost_road_l
+            Outpost_road_r = vehicles.Fortification.Outpost_road_r
             Outpost = vehicles.Fortification.Outpost
             HouseA_arm = vehicles.Fortification.HouseA_arm
             TACAN_beacon = vehicles.Fortification.TACAN_beacon
@@ -34148,7 +34860,9 @@ class Ecuador(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
+        F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
+        F_86F_FC = planes.F_86F_FC
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -34159,6 +34873,7 @@ class Ecuador(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
+        MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
         Mirage_F1EE = planes.Mirage_F1EE
@@ -34197,7 +34912,9 @@ class Ecuador(Country):
         Plane.F_4E_45MC,
         Plane.F_5E,
         Plane.F_5E_3,
+        Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
+        Plane.F_86F_FC,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -34208,6 +34925,7 @@ class Ecuador(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
+        Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
         Plane.Mirage_F1EE,
