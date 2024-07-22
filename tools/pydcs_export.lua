@@ -943,6 +943,7 @@ local countryPlaneIgnore = {
     "MiG_15bis_MAC",
     "Su_30MK",
     "TF_51",
+    "FULCRUM_LAB"
 }
 local countryHeliIgnore = { "Mi_24P", "Ka_50_3" }
 local i = 0

@@ -188,7 +188,6 @@ class Russia(Country):
         Su_25 = planes.Su_25
         MiG_29S = planes.MiG_29S
         MiG_29A = planes.MiG_29A
-        FULCRUM_LAB = planes.FULCRUM_LAB
         Su_27 = planes.Su_27
         Su_25TM = planes.Su_25TM
         Su_25T = planes.Su_25T
@@ -269,7 +268,6 @@ class Russia(Country):
         Plane.Su_25,
         Plane.MiG_29S,
         Plane.MiG_29A,
-        Plane.FULCRUM_LAB,
         Plane.Su_27,
         Plane.Su_25TM,
         Plane.Su_25T,
@@ -3516,7 +3514,6 @@ class USAFAggressors(Country):
         Mirage_F1DDA = planes.Mirage_F1DDA
         WingLoong_I = planes.WingLoong_I
         Su_33 = planes.Su_33
-        FULCRUM_LAB = planes.FULCRUM_LAB
         Su_25TM = planes.Su_25TM
         Su_30 = planes.Su_30
         Su_34 = planes.Su_34
@@ -3647,7 +3644,6 @@ class USAFAggressors(Country):
         Plane.Mirage_F1DDA,
         Plane.WingLoong_I,
         Plane.Su_33,
-        Plane.FULCRUM_LAB,
         Plane.Su_25TM,
         Plane.Su_30,
         Plane.Su_34,
@@ -30325,7 +30321,6 @@ class CombinedJointTaskForcesBlue(Country):
         Mirage_F1DDA = planes.Mirage_F1DDA
         WingLoong_I = planes.WingLoong_I
         Su_33 = planes.Su_33
-        FULCRUM_LAB = planes.FULCRUM_LAB
         Su_25TM = planes.Su_25TM
         Su_30 = planes.Su_30
         Su_34 = planes.Su_34
@@ -30456,7 +30451,6 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.Mirage_F1DDA,
         Plane.WingLoong_I,
         Plane.Su_33,
-        Plane.FULCRUM_LAB,
         Plane.Su_25TM,
         Plane.Su_30,
         Plane.Su_34,
@@ -31148,7 +31142,6 @@ class CombinedJointTaskForcesRed(Country):
         Mirage_F1DDA = planes.Mirage_F1DDA
         WingLoong_I = planes.WingLoong_I
         Su_33 = planes.Su_33
-        FULCRUM_LAB = planes.FULCRUM_LAB
         Su_25TM = planes.Su_25TM
         Su_30 = planes.Su_30
         Su_34 = planes.Su_34
@@ -31279,7 +31272,6 @@ class CombinedJointTaskForcesRed(Country):
         Plane.Mirage_F1DDA,
         Plane.WingLoong_I,
         Plane.Su_33,
-        Plane.FULCRUM_LAB,
         Plane.Su_25TM,
         Plane.Su_30,
         Plane.Su_34,
@@ -31971,7 +31963,6 @@ class UnitedNationsPeacekeepers(Country):
         Mirage_F1DDA = planes.Mirage_F1DDA
         WingLoong_I = planes.WingLoong_I
         Su_33 = planes.Su_33
-        FULCRUM_LAB = planes.FULCRUM_LAB
         Su_25TM = planes.Su_25TM
         Su_30 = planes.Su_30
         Su_34 = planes.Su_34
@@ -32102,7 +32093,6 @@ class UnitedNationsPeacekeepers(Country):
         Plane.Mirage_F1DDA,
         Plane.WingLoong_I,
         Plane.Su_33,
-        Plane.FULCRUM_LAB,
         Plane.Su_25TM,
         Plane.Su_30,
         Plane.Su_34,
