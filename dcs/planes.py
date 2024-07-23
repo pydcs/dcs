@@ -3670,7 +3670,6 @@ class MiG_29A(PlaneType):
 
 class MiG_29G(PlaneType):
     id = "MiG-29G"
-    flyable = True
     height = 4.73
     width = 11.36
     length = 20.32
@@ -9825,7 +9824,6 @@ class C_101CC(PlaneType):
 
 class J_11A(PlaneType):
     id = "J-11A"
-    flyable = True
     height = 5.932
     width = 14.7
     length = 21.935
