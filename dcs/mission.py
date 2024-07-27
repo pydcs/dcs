@@ -673,6 +673,7 @@ class Mission:
         sg.add_point(sp)
 
         country.add_static_group(sg)
+        self.warehouses.warehouses[str(sg.id)] = terrain_.terrain.Warehouse().dict()
         return sg
 
     def vehicle(self, name: str, _type: Type[unittype.VehicleType]) -> Vehicle:
@@ -847,12 +848,12 @@ class Mission:
         wp.ETA_locked = True
 
         country.add_ship_group(sg)
-        
-        # If ship can support aircraft or helicopters, add warehouse data as DCS requires 
+
+        # If ship can support aircraft or helicopters, add warehouse data as DCS requires
         # this information to spawn any aircraft on the ship.
         if _type.parking > 0:
-            self.warehouses.warehouses[sg.id] = terrain_.terrain.Warehouse().dict()
-        
+            self.warehouses.warehouses[str(sg.id)] = terrain_.terrain.Warehouse().dict()
+
         return sg
 
     def plane_group(self, name: str) -> unitgroup.PlaneGroup:

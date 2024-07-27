@@ -114,8 +114,8 @@ class RunwayOccupiedError(RuntimeError):
 
 class NoParkingSlotError(RuntimeError):
     pass
-    
-    
+
+
 class Warehouse:
 
     def __init__(self):
