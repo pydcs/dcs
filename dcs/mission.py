@@ -22,6 +22,7 @@ import dcs.helicopters as helicopters
 import dcs.lua as lua
 import dcs.mapping as mapping
 import dcs.planes as planes
+import dcs.ships as ships
 import dcs.task as task
 import dcs.unitgroup as unitgroup
 import dcs.unittype as unittype
@@ -673,7 +674,6 @@ class Mission:
         sg.add_point(sp)
 
         country.add_static_group(sg)
-        self.warehouses.warehouses[str(sg.id)] = terrain_.terrain.Warehouse().dict()
         return sg
 
     def vehicle(self, name: str, _type: Type[unittype.VehicleType]) -> Vehicle:
@@ -848,12 +848,6 @@ class Mission:
         wp.ETA_locked = True
 
         country.add_ship_group(sg)
-
-        # If ship can support aircraft or helicopters, add warehouse data as DCS requires
-        # this information to spawn any aircraft on the ship.
-        if _type.parking > 0:
-            self.warehouses.warehouses[str(sg.id)] = terrain_.terrain.Warehouse().dict()
-
         return sg
 
     def plane_group(self, name: str) -> unitgroup.PlaneGroup:
@@ -1012,6 +1006,27 @@ class Mission:
             ptask.auto = True
             mp.tasks.append(ptask)
         return mp
+        
+    def update_warehouses(self):
+        """Some units need to have warehouse entries. This function updates warehouse entries based on units defined
+        in the mission.
+        """
+        coalition_to_warehouse_names = {'red': 'RED', 'blue': 'BLUE', 'neutrals': 'NEUTRAL'}
+        for coalition_name in self.coalition:
+            coalition_name_in_warehouse = coalition_to_warehouse_names[coalition_name]
+            for country_name in self.coalition[coalition_name].countries:
+                # Ships that can have aircraft parked need a warehouse entry.
+                for ship_group in self.coalition[coalition_name].countries[country_name].ship_group:
+                    for unit_ in ship_group.units:
+                        if ships.ship_map[unit_.type].parking > 0:
+                            self.warehouses.warehouses[str(unit_.id)] = terrain_.terrain.Warehouse().dict()
+                            self.warehouses.warehouses[str(unit_.id)]['coalition'] = coalition_name_in_warehouse
+                # FARPs need a warehouse entry.
+                for static_group in self.coalition[coalition_name].countries[country_name].static_group:
+                    for unit_ in static_group.units:
+                        if isinstance(unit_, unit.BaseFARP):
+                            self.warehouses.warehouses[str(unit_.id)] = terrain_.terrain.Warehouse().dict()
+                            self.warehouses.warehouses[str(unit_.id)]['coalition'] = coalition_name_in_warehouse
 
     def _flying_group_from_airport(self, _country, group: unitgroup.FlyingGroup,
                                    maintask: Type[task.MainTask],
@@ -2062,6 +2077,7 @@ class Mission:
         self.filename = filename  # store filename
 
         options = str(self.options)
+        self.update_warehouses()  # update warehouses to make sure units that need warehouses have them.
         warehouses = str(self.warehouses)
         mission = str(self)
 
