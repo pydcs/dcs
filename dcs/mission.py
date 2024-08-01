@@ -1006,7 +1006,7 @@ class Mission:
             ptask.auto = True
             mp.tasks.append(ptask)
         return mp
-        
+
     def update_warehouses(self):
         """Some units need to have warehouse entries. This function updates warehouse entries based on units defined
         in the mission.
