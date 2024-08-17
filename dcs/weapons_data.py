@@ -100,11 +100,11 @@ class Weapons:
     AKAN_M_55_Gunpod__150_rnds_MINGR55_HE = {"clsid": "{AKAN}", "name": "AKAN M/55 Gunpod, 150 rnds MINGR55-HE", "weight": 276}
     AKAN_M_55_Gunpod__150_rnds_MINGR55_HE__no_Tracer_ = {"clsid": "{AKAN_NO_TRC}", "name": "AKAN M/55 Gunpod, 150 rnds MINGR55-HE (no Tracer)", "weight": 276}
     ALARM = {"clsid": "{E6747967-B1F0-4C77-977B-AB2E6EB0C102}", "name": "ALARM", "weight": 268}
-    ALE_40_Dispensers__120_Chaff_ = {"clsid": "{HB_ALE_40_0_120}", "name": "ALE-40 Dispensers (120 Chaff)", "weight": 0}
-    ALE_40_Dispensers__15_Flares__90_Chaff_ = {"clsid": "{HB_ALE_40_15_90}", "name": "ALE-40 Dispensers (15 Flares + 90 Chaff)", "weight": 0}
-    ALE_40_Dispensers__30_Flares_ = {"clsid": "{HB_ALE_40_30_0}", "name": "ALE-40 Dispensers (30 Flares)", "weight": 0}
-    ALE_40_Dispensers__30_Flares__60_Chaff_ = {"clsid": "{HB_ALE_40_30_60}", "name": "ALE-40 Dispensers (30 Flares + 60 Chaff)", "weight": 0}
-    ALE_40_Dispensers__Empty_ = {"clsid": "{HB_ALE_40_0_0}", "name": "ALE-40 Dispensers (Empty)", "weight": 0}
+    ALE_40_Dispensers__120_Chaff_ = {"clsid": "{HB_ALE_40_0_120}", "name": "ALE-40 Dispensers (120 Chaff)", "weight": 59}
+    ALE_40_Dispensers__15_Flares__90_Chaff_ = {"clsid": "{HB_ALE_40_15_90}", "name": "ALE-40 Dispensers (15 Flares + 90 Chaff)", "weight": 59}
+    ALE_40_Dispensers__30_Flares_ = {"clsid": "{HB_ALE_40_30_0}", "name": "ALE-40 Dispensers (30 Flares)", "weight": 59}
+    ALE_40_Dispensers__30_Flares__60_Chaff_ = {"clsid": "{HB_ALE_40_30_60}", "name": "ALE-40 Dispensers (30 Flares + 60 Chaff)", "weight": 59}
+    ALE_40_Dispensers__Empty_ = {"clsid": "{HB_ALE_40_0_0}", "name": "ALE-40 Dispensers (Empty)", "weight": 59}
     ALQ_131___ECM_Pod = {"clsid": "{6D21ECEA-F85B-4E8D-9D51-31DC9B8AA4EF}", "name": "ALQ-131 - ECM Pod", "weight": 305}
     ALQ_131___ECM_Pod_Rack = {"clsid": "{HB_ALQ-131_ON_ADAPTER_IN_AERO7}", "name": "ALQ-131 - ECM Pod Rack", "weight": 330.9}
     ALQ_167__non_functional_ = {"clsid": "{F14-ALQ167}", "name": "ALQ-167 (non-functional)", "weight": 107}
@@ -559,7 +559,6 @@ class Weapons:
     F_4_Fuel_tank_W = {"clsid": "{7B4B122D-C12C-4DB4-834E-4D8BB4D863A8}", "name": "F-4 Fuel tank-W", "weight": 1420}
     F_5_150Gal_Fuel_tank = {"clsid": "{PTB-150GAL}", "name": "F-5 150Gal Fuel tank", "weight": 509}
     F_5_275Gal_Fuel_tank = {"clsid": "{0395076D-2F77-4420-9D33-087A4398130B}", "name": "F-5 275Gal Fuel tank", "weight": 909}
-    G7A_T1 = {"clsid": "{G7A_T1}", "name": "G7A_T1", "weight": 1528}
     GAU_12_Gunpod_w_AP_M79 = {"clsid": "{GAU_12_Equalizer_AP}", "name": "GAU 12 Gunpod w/AP M79", "weight": 283.9}
     GAU_12_Gunpod_w_HE_M792 = {"clsid": "{GAU_12_Equalizer_HE}", "name": "GAU 12 Gunpod w/HE M792", "weight": 283.9}
     GAU_12_Gunpod_w_SAPHEI_T = {"clsid": "{GAU_12_Equalizer}", "name": "GAU 12 Gunpod w/SAPHEI-T", "weight": 283.9}
@@ -1321,9 +1320,7 @@ class Weapons:
     YU_6 = {"clsid": "{Yu_6}", "name": "YU-6", "weight": 1558}
     _100_gal__Drop_Tank = {"clsid": "{MOSQUITO_100GAL_SLIPPER_TANK}", "name": "100 gal. Drop Tank", "weight": 375.3}
     _108_US_gal__Paper_Fuel_Tank = {"clsid": "{US_108GAL_PAPER_FUEL_TANK}", "name": "108 US gal. Paper Fuel Tank", "weight": 319}
-    _10_x_SC_50___50kg_GP_Bomb_LD = {"clsid": "{JU88A4TORP_10xSC50_on_InvCountedAttachmentPoints}", "name": "10 x SC 50 - 50kg GP Bomb LD", "weight": 500}
     _110_US_gal__Fuel_Tank = {"clsid": "{US_110GAL_FUEL_TANK}", "name": "110 US gal. Fuel Tank", "weight": 349}
-    _12_AN_M64___500lb_GP_Bomb_LD = {"clsid": "{12xM64}", "name": "12 AN-M64 - 500lb GP Bomb LD", "weight": 2744}
     _12_x_BetAB_500___500kg_Concrete_Piercing_Bombs_LD = {"clsid": "{D6A0441E-6794-4FEB-87F7-E68E2290DFAB}", "name": "12 x BetAB-500 - 500kg Concrete Piercing Bombs LD", "weight": 478}
     _12_x_FAB_500_M_62___500kg_GP_Bombs_LD = {"clsid": "{E70446B7-C7E6-4B95-B685-DEA10CAD1A0E}", "name": "12 x FAB-500 M-62 - 500kg GP Bombs LD", "weight": 6000}
     _13_R4M_3_2kg_UnGd_air_to_air_rocket = {"clsid": "{FW_190_R4M_LEFT_WING}", "name": "13 R4M 3.2kg UnGd air-to-air rocket", "weight": 70.05}
@@ -2263,7 +2260,6 @@ weapon_ids = {
     "{7B4B122D-C12C-4DB4-834E-4D8BB4D863A8}": Weapons.F_4_Fuel_tank_W,
     "{PTB-150GAL}": Weapons.F_5_150Gal_Fuel_tank,
     "{0395076D-2F77-4420-9D33-087A4398130B}": Weapons.F_5_275Gal_Fuel_tank,
-    "{G7A_T1}": Weapons.G7A_T1,
     "{GAU_12_Equalizer_AP}": Weapons.GAU_12_Gunpod_w_AP_M79,
     "{GAU_12_Equalizer_HE}": Weapons.GAU_12_Gunpod_w_HE_M792,
     "{GAU_12_Equalizer}": Weapons.GAU_12_Gunpod_w_SAPHEI_T,
@@ -3025,9 +3021,7 @@ weapon_ids = {
     "{Yu_6}": Weapons.YU_6,
     "{MOSQUITO_100GAL_SLIPPER_TANK}": Weapons._100_gal__Drop_Tank,
     "{US_108GAL_PAPER_FUEL_TANK}": Weapons._108_US_gal__Paper_Fuel_Tank,
-    "{JU88A4TORP_10xSC50_on_InvCountedAttachmentPoints}": Weapons._10_x_SC_50___50kg_GP_Bomb_LD,
     "{US_110GAL_FUEL_TANK}": Weapons._110_US_gal__Fuel_Tank,
-    "{12xM64}": Weapons._12_AN_M64___500lb_GP_Bomb_LD,
     "{D6A0441E-6794-4FEB-87F7-E68E2290DFAB}": Weapons._12_x_BetAB_500___500kg_Concrete_Piercing_Bombs_LD,
     "{E70446B7-C7E6-4B95-B685-DEA10CAD1A0E}": Weapons._12_x_FAB_500_M_62___500kg_GP_Bombs_LD,
     "{FW_190_R4M_LEFT_WING}": Weapons._13_R4M_3_2kg_UnGd_air_to_air_rocket,

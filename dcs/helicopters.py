@@ -1465,6 +1465,94 @@ class AH_64D_BLK_II(HelicopterType):
     task_default = task.CAS
 
 
+class CH_47Fbl1(HelicopterType):
+    id = "CH-47Fbl1"
+    flyable = True
+    height = 5.998
+    width = 18.3
+    length = 28.3
+    fuel_max = 3054.592
+    max_speed = 285
+    chaff = 120
+    flare = 120
+    charge_total = 240
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    radio_frequency = 251
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 31.5,
+                2: 45.7,
+                4: 38,
+                8: 50,
+                16: 51.5,
+                17: 50,
+                9: 55.5,
+                18: 79,
+                5: 30,
+                10: 39.9,
+                20: 34.9,
+                11: 41.5,
+                3: 57,
+                6: 32,
+                12: 75.7,
+                13: 33,
+                7: 40,
+                14: 38,
+                19: 51.5,
+                15: 42
+            },
+        },
+    }
+
+    property_defaults: Dict[str, Any] = {
+        "NetCrewControlPriority": 0,
+    }
+
+    class Properties:
+
+        class NetCrewControlPriority:
+            id = "NetCrewControlPriority"
+
+            class Values:
+                Pilot = 0
+                Co_Pilot = 1
+                Ask_Always = -1
+                Equally_Responsible = -2
+
+    properties = {
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "Pilot",
+                1: "Co-Pilot",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+    }
+
+    livery_name = "CH-47F"  # from livery_entry
+
+    class Pylon1:
+        M60D = (1, Weapons.M60D)
+
+    class Pylon2:
+        M60D_ = (2, Weapons.M60D_)
+
+    pylons: Set[int] = {1, 2}
+
+    tasks = [task.Reconnaissance, task.Escort, task.Transport, task.CAS]
+    task_default = task.Transport
+
+
 class Ka_50(HelicopterType):
     id = "Ka-50"
     flyable = True
@@ -1658,7 +1746,7 @@ class Ka_50_3(HelicopterType):
             id = "Helmet-mounted device"
 
             class Values:
-                Auto = 0
+                AUTO = 0
                 HMS = 1
                 NVG = 2
 
@@ -1701,7 +1789,7 @@ class Ka_50_3(HelicopterType):
             default=0,
             w_ctrl=150,
             values={
-                0: "Auto",
+                0: "AUTO",
                 1: "HMS",
                 2: "NVG",
             },
@@ -2993,6 +3081,7 @@ helicopter_map = {
     "Mi-28N": Mi_28N,
     "OH-58D": OH_58D,
     "AH-64D_BLK_II": AH_64D_BLK_II,
+    "CH-47Fbl1": CH_47Fbl1,
     "Ka-50": Ka_50,
     "Ka-50_3": Ka_50_3,
     "Mi-24P": Mi_24P,

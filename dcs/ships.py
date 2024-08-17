@@ -456,46 +456,6 @@ class Forrestal(unittype.ShipType):
     threat_range = 25000
     air_weapon_dist = 25000
 
-
-class LST_Mk2(unittype.ShipType):
-    id = "LST_Mk2"
-    name = "LST Mk.II"
-    detection_range = 0
-    threat_range = 4000
-    air_weapon_dist = 4000
-
-
-class USS_Samuel_Chase(unittype.ShipType):
-    id = "USS_Samuel_Chase"
-    name = "LS Samuel Chase"
-    detection_range = 0
-    threat_range = 7000
-    air_weapon_dist = 7000
-
-
-class Higgins_boat(unittype.ShipType):
-    id = "Higgins_boat"
-    name = "Boat LCVP Higgins"
-    detection_range = 3000
-    threat_range = 1000
-    air_weapon_dist = 1000
-
-
-class Uboat_VIIC(unittype.ShipType):
-    id = "Uboat_VIIC"
-    name = "U-boat VIIC U-flak"
-    detection_range = 20000
-    threat_range = 4000
-    air_weapon_dist = 4000
-
-
-class Schnellboot_type_S130(unittype.ShipType):
-    id = "Schnellboot_type_S130"
-    name = "Boat Schnellboot type S130"
-    detection_range = 10000
-    threat_range = 4000
-    air_weapon_dist = 4000
-
 ship_map = {
     "speedboat": Speedboat,
     "VINSON": VINSON,
@@ -544,9 +504,4 @@ ship_map = {
     "Type_093": Type_093,
     "Type_071": Type_071,
     "Forrestal": Forrestal,
-    "LST_Mk2": LST_Mk2,
-    "USS_Samuel_Chase": USS_Samuel_Chase,
-    "Higgins_boat": Higgins_boat,
-    "Uboat_VIIC": Uboat_VIIC,
-    "Schnellboot_type_S130": Schnellboot_type_S130,
 }
