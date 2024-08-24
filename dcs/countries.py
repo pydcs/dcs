@@ -35735,6 +35735,7 @@ class Afghanistan(Country):
             CallsignGrassAirfield.New_York
         ],
     }
+    use_western_callsigns = True
 
     def __init__(self):
         super(Afghanistan, self).__init__(
