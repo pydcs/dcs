@@ -100,11 +100,11 @@ class Weapons:
     AKAN_M_55_Gunpod__150_rnds_MINGR55_HE = {"clsid": "{AKAN}", "name": "AKAN M/55 Gunpod, 150 rnds MINGR55-HE", "weight": 276}
     AKAN_M_55_Gunpod__150_rnds_MINGR55_HE__no_Tracer_ = {"clsid": "{AKAN_NO_TRC}", "name": "AKAN M/55 Gunpod, 150 rnds MINGR55-HE (no Tracer)", "weight": 276}
     ALARM = {"clsid": "{E6747967-B1F0-4C77-977B-AB2E6EB0C102}", "name": "ALARM", "weight": 268}
-    ALE_40_Dispensers__120_Chaff_ = {"clsid": "{HB_ALE_40_0_120}", "name": "ALE-40 Dispensers (120 Chaff)", "weight": 0}
-    ALE_40_Dispensers__15_Flares__90_Chaff_ = {"clsid": "{HB_ALE_40_15_90}", "name": "ALE-40 Dispensers (15 Flares + 90 Chaff)", "weight": 0}
-    ALE_40_Dispensers__30_Flares_ = {"clsid": "{HB_ALE_40_30_0}", "name": "ALE-40 Dispensers (30 Flares)", "weight": 0}
-    ALE_40_Dispensers__30_Flares__60_Chaff_ = {"clsid": "{HB_ALE_40_30_60}", "name": "ALE-40 Dispensers (30 Flares + 60 Chaff)", "weight": 0}
-    ALE_40_Dispensers__Empty_ = {"clsid": "{HB_ALE_40_0_0}", "name": "ALE-40 Dispensers (Empty)", "weight": 0}
+    ALE_40_Dispensers__120_Chaff_ = {"clsid": "{HB_ALE_40_0_120}", "name": "ALE-40 Dispensers (120 Chaff)", "weight": 59}
+    ALE_40_Dispensers__15_Flares__90_Chaff_ = {"clsid": "{HB_ALE_40_15_90}", "name": "ALE-40 Dispensers (15 Flares + 90 Chaff)", "weight": 59}
+    ALE_40_Dispensers__30_Flares_ = {"clsid": "{HB_ALE_40_30_0}", "name": "ALE-40 Dispensers (30 Flares)", "weight": 59}
+    ALE_40_Dispensers__30_Flares__60_Chaff_ = {"clsid": "{HB_ALE_40_30_60}", "name": "ALE-40 Dispensers (30 Flares + 60 Chaff)", "weight": 59}
+    ALE_40_Dispensers__Empty_ = {"clsid": "{HB_ALE_40_0_0}", "name": "ALE-40 Dispensers (Empty)", "weight": 59}
     ALQ_131___ECM_Pod = {"clsid": "{6D21ECEA-F85B-4E8D-9D51-31DC9B8AA4EF}", "name": "ALQ-131 - ECM Pod", "weight": 305}
     ALQ_131___ECM_Pod_Rack = {"clsid": "{HB_ALQ-131_ON_ADAPTER_IN_AERO7}", "name": "ALQ-131 - ECM Pod Rack", "weight": 330.9}
     ALQ_167__non_functional_ = {"clsid": "{F14-ALQ167}", "name": "ALQ-167 (non-functional)", "weight": 107}

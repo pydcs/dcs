@@ -196,7 +196,7 @@ class Infantry:
 
     class Infantry_AK_Ins(unittype.VehicleType):
         id = "Infantry AK Ins"
-        name = "Insurgent AK-74"
+        name = "Insurgent AKM"
         detection_range = 0
         threat_range = 500
         air_weapon_dist = 500

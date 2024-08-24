@@ -116,7 +116,76 @@ class NoParkingSlotError(RuntimeError):
     pass
 
 
-class Airport:
+class Warehouse:
+
+    def __init__(self):
+        self.coalition = "NEUTRAL"
+        self.size = 100
+        self.speed = 16.666666
+        self.periodicity = 30
+        self.unlimited_munitions = True
+        self.unlimited_aircrafts = True
+        self.unlimited_fuel = True
+        self.operating_level_air = 10
+        self.operating_level_fuel = 10
+        self.operating_level_equipment = 10
+        self.aircrafts: Dict[str, Any] = {}
+        self.weapons: Dict[str, Any] = {}
+        self.suppliers: Dict[str, Any] = {}
+        self.gasoline_init = 100
+        self.methanol_mixture_init = 100
+        self.diesel_init = 100
+        self.jet_init = 100
+        self.dynamic_spawn = False
+        self.dynamic_cargo = False
+
+    def load_from_dict(self, d):
+        self.coalition = d["coalition"]
+        self.size = d["size"]
+        self.speed = d["speed"]
+        self.periodicity = d["periodicity"]
+        self.unlimited_munitions = d["unlimitedMunitions"]
+        self.unlimited_aircrafts = d["unlimitedAircrafts"]
+        self.unlimited_fuel = d["unlimitedFuel"]
+        self.operating_level_air = d["OperatingLevel_Air"]
+        self.operating_level_fuel = d["OperatingLevel_Fuel"]
+        self.operating_level_equipment = d["OperatingLevel_Eqp"]
+        self.aircrafts = d["aircrafts"]
+        self.weapons = d["weapons"]
+        self.suppliers = d["suppliers"]
+        self.gasoline_init = d.get("gasoline", {}).get("InitFuel", 100)
+        self.methanol_mixture_init = d.get("methanol_mixture", {}).get("InitFuel", 100)
+        self.diesel_init = d.get("diesel", {}).get("InitFuel", 100)
+        self.jet_init = d.get("jet_fuel", {}).get("InitFuel", 100)
+        self.dynamic_spawn = d.get("dynamicSpawn", False)
+        self.dynamic_cargo = d.get("dynamicCargo", False)
+
+    def dict(self):
+        d = {
+            "coalition": self.coalition,
+            "size": self.size,
+            "speed": self.speed,
+            "periodicity": self.periodicity,
+            "unlimitedMunitions": self.unlimited_munitions,
+            "unlimitedAircrafts": self.unlimited_aircrafts,
+            "unlimitedFuel": self.unlimited_fuel,
+            "OperatingLevel_Air": self.operating_level_air,
+            "OperatingLevel_Fuel": self.operating_level_fuel,
+            "OperatingLevel_Eqp": self.operating_level_equipment,
+            "aircrafts": self.aircrafts,
+            "weapons": self.weapons,
+            "suppliers": self.suppliers,
+            "gasoline": {"InitFuel": self.gasoline_init},
+            "methanol_mixture": {"InitFuel": self.methanol_mixture_init},
+            "diesel": {"InitFuel": self.diesel_init},
+            "jet_fuel": {"InitFuel": self.jet_init},
+            "dynamicSpawn": self.dynamic_spawn,
+            "dynamicCargo": self.dynamic_cargo
+        }
+        return d
+
+
+class Airport(Warehouse):
     id: int
     name: str
     tacan = None
@@ -137,43 +206,7 @@ class Airport:
         # unless that information is available elsewhere. This data contained in this
         # field will change once pydcs has more data for beacons.
         self.beacons: list[AirportBeacon] = []
-
-        # warehouse values
-        self.coalition = "NEUTRAL"
-        self.size = 100
-        self.speed = 16.666666
-        self.periodicity = 30
-        self.unlimited_munitions = True
-        self.unlimited_aircrafts = True
-        self.unlimited_fuel = True
-        self.operating_level_air = 10
-        self.operating_level_fuel = 10
-        self.operating_level_equipment = 10
-        self.aircrafts: Dict[str, Any] = {}
-        self.weapons: Dict[str, Any] = {}
-        self.suppliers: Dict[str, Any] = {}
-        self.gasoline_init = 100
-        self.methanol_mixture_init = 100
-        self.diesel_init = 100
-        self.jet_init = 100
-
-    def load_from_dict(self, d):
-        self.coalition = d["coalition"]
-        self.speed = d["speed"]
-        self.size = d["size"]
-        self.periodicity = d["periodicity"]
-        self.unlimited_munitions = d["unlimitedMunitions"]
-        self.unlimited_fuel = d["unlimitedFuel"]
-        self.unlimited_aircrafts = d["unlimitedAircrafts"]
-        self.operating_level_air = d["OperatingLevel_Air"]
-        self.operating_level_equipment = d["OperatingLevel_Eqp"]
-        self.operating_level_fuel = d["OperatingLevel_Fuel"]
-        self.gasoline_init = d.get("gasoline", {}).get("InitFuel", 100)
-        self.diesel_init = d.get("diesel", {}).get("InitFuel", 100)
-        self.jet_init = d.get("jet_fuel", {}).get("InitFuel", 100)
-        self.methanol_mixture_init = d.get("methanol_mixture", {}).get("InitFuel", 100)
-        self.aircrafts = d["aircrafts"]
-        self.weapons = d["weapons"]
+        super().__init__()
 
     def set_blue(self):
         self.set_coalition("BLUE")
@@ -280,28 +313,6 @@ class Airport:
         if slots:
             return slots[0]
         return None
-
-    def dict(self):
-        d = {
-            "coalition": self.coalition,
-            "speed": self.speed,
-            "size": self.size,
-            "periodicity": self.periodicity,
-            "unlimitedMunitions": self.unlimited_munitions,
-            "unlimitedFuel": self.unlimited_fuel,
-            "unlimitedAircrafts": self.unlimited_aircrafts,
-            "OperatingLevel_Air": self.operating_level_air,
-            "OperatingLevel_Eqp": self.operating_level_equipment,
-            "OperatingLevel_Fuel": self.operating_level_fuel,
-            "gasoline": {"InitFuel": self.gasoline_init},
-            "diesel": {"InitFuel": self.diesel_init},
-            "jet_fuel": {"InitFuel": self.jet_init},
-            "methanol_mixture": {"InitFuel": self.methanol_mixture_init},
-            "aircrafts": self.aircrafts,
-            "weapons": self.weapons,
-            "suppliers": self.suppliers
-        }
-        return d
 
     def __repr__(self):
         return "Airport(" + self.name + ")"
