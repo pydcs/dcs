@@ -239,7 +239,9 @@ flyable["F-16C_50"] = true
 flyable["FA-18C_hornet"] = true
 flyable["F-4E-45MC"] = true
 flyable["F-5E-3"] = true
+flyable["F-5E-3_FC"] = true
 flyable["F-86F Sabre"] = true
+flyable["F-86F_FC"] = true
 flyable["Hawk"] = true
 flyable["JF-17"] = true
 flyable["L-39C"] = true
@@ -248,6 +250,7 @@ flyable["M-2000C"] = true
 flyable["MB-339A"] = true
 flyable["MB-339APAN"] = true
 flyable["MiG-15bis"] = true
+flyable["MiG-15bis_FC"] = true
 flyable["MiG-19P"] = true
 flyable["MiG-21Bis"] = true
 flyable["MiG-29A"] = true
@@ -940,6 +943,7 @@ local countryPlaneIgnore = {
     "MiG_15bis_MAC",
     "Su_30MK",
     "TF_51",
+    "FULCRUM_LAB"
 }
 local countryHeliIgnore = { "Mi_24P", "Ka_50_3" }
 local country_uses_western_callsigns = {}

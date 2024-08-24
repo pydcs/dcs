@@ -492,7 +492,7 @@ class AirDefence:
 
     class Ural_375_ZU_23(unittype.VehicleType):
         id = "Ural-375 ZU-23"
-        name = "SPAAA ZU-23-2 Mounted Ural 375"
+        name = "AAA ZU-23 on Ural-4320"
         detection_range = 5000
         threat_range = 2500
         air_weapon_dist = 2500
@@ -506,7 +506,7 @@ class AirDefence:
 
     class Ural_375_ZU_23_Insurgent(unittype.VehicleType):
         id = "Ural-375 ZU-23 Insurgent"
-        name = "SPAAA ZU-23-2 Insurgent Mounted Ural-375"
+        name = "AAA ZU-23 on Ural-4320 Insurgent"
         detection_range = 5000
         threat_range = 2500
         air_weapon_dist = 2500
@@ -1038,6 +1038,20 @@ class Fortification:
         threat_range = 800
         air_weapon_dist = 800
 
+    class Outpost_road_l(unittype.VehicleType):
+        id = "outpost_road_l"
+        name = "Road outpost_L"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Outpost_road_r(unittype.VehicleType):
+        id = "outpost_road_r"
+        name = "Road outpost-R"
+        detection_range = 0
+        threat_range = 800
+        air_weapon_dist = 800
+
     class Outpost(unittype.VehicleType):
         id = "outpost"
         name = "Outpost"
@@ -1247,14 +1261,14 @@ class Unarmed:
 
     class Ural_375_PBU(unittype.VehicleType):
         id = "Ural-375 PBU"
-        name = "Truck Ural-375 Mobile C2"
+        name = "Truck Ural-4320 MCC"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
     class Ural_375(unittype.VehicleType):
         id = "Ural-375"
-        name = "Truck Ural-375"
+        name = "Truck Ural-4320"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -1640,14 +1654,6 @@ class Armor:
         air_weapon_dist = 1200
         eplrs = True
 
-    class M_1_Abrams(unittype.VehicleType):
-        id = "M-1 Abrams"
-        name = "MBT M1A2 Abrams"
-        detection_range = 0
-        threat_range = 3500
-        air_weapon_dist = 1200
-        eplrs = True
-
     class T_55(unittype.VehicleType):
         id = "T-55"
         name = "MBT T-55"
@@ -1689,6 +1695,30 @@ class Armor:
         detection_range = 0
         threat_range = 3500
         air_weapon_dist = 1200
+
+    class M1A2C_SEP_V3(unittype.VehicleType):
+        id = "M1A2C_SEP_V3"
+        name = "MBT M1A2C SEP v3 Abrams"
+        detection_range = 0
+        threat_range = 3500
+        air_weapon_dist = 1200
+        eplrs = True
+
+    class M_1_Abrams(unittype.VehicleType):
+        id = "M-1 Abrams"
+        name = "MBT M1A2 Abrams"
+        detection_range = 0
+        threat_range = 3500
+        air_weapon_dist = 1200
+        eplrs = True
+
+    class MaxxPro_MRAP(unittype.VehicleType):
+        id = "MaxxPro_MRAP"
+        name = "APC MRAP MaxxPro"
+        detection_range = 0
+        threat_range = 1200
+        air_weapon_dist = 1200
+        eplrs = True
 
     class HL_DSHK(unittype.VehicleType):
         id = "HL_DSHK"
@@ -2221,6 +2251,8 @@ vehicle_map = {
     "house1arm": Fortification.House1arm,
     "house2arm": Fortification.House2arm,
     "outpost_road": Fortification.Outpost_road,
+    "outpost_road_l": Fortification.Outpost_road_l,
+    "outpost_road_r": Fortification.Outpost_road_r,
     "outpost": Fortification.Outpost,
     "houseA_arm": Fortification.HouseA_arm,
     "TACAN_beacon": Fortification.TACAN_beacon,
@@ -2228,7 +2260,6 @@ vehicle_map = {
     "Leclerc": Armor.Leclerc,
     "M-60": Armor.M_60,
     "M1128 Stryker MGS": Armor.M1128_Stryker_MGS,
-    "M-1 Abrams": Armor.M_1_Abrams,
     "T-55": Armor.T_55,
     "T-72B": Armor.T_72B,
     "T-80UD": Armor.T_80UD,
@@ -2277,6 +2308,9 @@ vehicle_map = {
     "S-300PS 40B6MD sr_19J6": AirDefence.S_300PS_40B6MD_sr_19J6,
     "S-300PS 5H63C 30H6_tr": AirDefence.S_300PS_5H63C_30H6_tr,
     "S-300PS 40B6MD sr": AirDefence.S_300PS_40B6MD_sr,
+    "M1A2C_SEP_V3": Armor.M1A2C_SEP_V3,
+    "M-1 Abrams": Armor.M_1_Abrams,
+    "MaxxPro_MRAP": Armor.MaxxPro_MRAP,
     "TugHarlan_drivable": Unarmed.TugHarlan_drivable,
     "B600_drivable": Unarmed.B600_drivable,
     "MJ-1_drivable": Unarmed.MJ_1_drivable,
