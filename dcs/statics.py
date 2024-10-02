@@ -1194,6 +1194,18 @@ class Fortification:
         shape_name = "biaoyu-2"
         rate = 1
 
+    class Ip_tower(unittype.StaticType):
+        id = "ip_tower"
+        name = "IP Tower"
+        shape_name = "ip_tower"
+        rate = 1
+
+    class Af_hq(unittype.StaticType):
+        id = "af_hq"
+        name = "HQ Building"
+        shape_name = "syr_af_hq"
+        rate = 1
+
     class Belgian_gate(unittype.StaticType):
         id = "Belgian gate"
         name = "Belgian gate"
@@ -1543,6 +1555,8 @@ fortification_map = {
     "FlagPole": Fortification.FlagPole,
     "warning_board_a": Fortification.Warning_board_a,
     "warning_board_b": Fortification.Warning_board_b,
+    "ip_tower": Fortification.Ip_tower,
+    "af_hq": Fortification.Af_hq,
     "Belgian gate": Fortification.Belgian_gate,
     "Concertina wire": Fortification.Concertina_wire,
     "Tetrahydra": Fortification.Tetrahydra,
