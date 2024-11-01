@@ -283,6 +283,17 @@ class Ara_vdm(unittype.ShipType):
     air_weapon_dist = 5000
 
 
+class Atconveyor(unittype.ShipType):
+    id = "atconveyor"
+    name = "SS Atlantic Conveyor"
+    plane_num = 6
+    helicopter_num = 1
+    parking = 7
+    detection_range = 100000
+    threat_range = 74000
+    air_weapon_dist = 74000
+
+
 class HandyWind(unittype.ShipType):
     id = "HandyWind"
     name = "Bulker Handy Wind"
@@ -527,6 +538,7 @@ ship_map = {
     "Ship_Tilde_Supply": Ship_Tilde_Supply,
     "santafe": Santafe,
     "ara_vdm": Ara_vdm,
+    "atconveyor": Atconveyor,
     "HandyWind": HandyWind,
     "Seawise_Giant": Seawise_Giant,
     "La_Combattante_II": La_Combattante_II,

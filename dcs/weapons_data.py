@@ -22,7 +22,6 @@ class Weapons:
     AGM_12A_Bullpup_MCLOS_ASM__LAU_34_ = {"clsid": "{AGM_12A}", "name": "AGM-12A Bullpup MCLOS ASM (LAU-34)", "weight": 296}
     AGM_12B_Bullpup_MCLOS_ASM__LAU_34_ = {"clsid": "{AGM_12B}", "name": "AGM-12B Bullpup MCLOS ASM (LAU-34)", "weight": 302}
     AGM_12C_Bullpup_MCLOS_ASM = {"clsid": "{AGM_12C}", "name": "AGM-12C Bullpup MCLOS ASM", "weight": 811.5}
-    AGM_12C_Bullpup___MCLOS_missile = {"clsid": "{HB_F4E_AGM_12C}", "name": "AGM-12C Bullpup - MCLOS missile", "weight": None}
     AGM_130C_9___3000lb_TV__EO__Guided_Missile = {"clsid": "{AGM_130C_9}", "name": "AGM-130C-9 - 3000lb TV (EO) Guided Missile", "weight": None}
     AGM_154A___JSOW_CEB__CBU_type_ = {"clsid": "{AGM-154A}", "name": "AGM-154A - JSOW CEB (CBU-type)", "weight": 485}
     AGM_154B___JSOW_Anti_Armour = {"clsid": "{AGM-154B}", "name": "AGM-154B - JSOW Anti-Armour", "weight": 485}
@@ -107,7 +106,8 @@ class Weapons:
     ALE_40_Dispensers__Empty_ = {"clsid": "{HB_ALE_40_0_0}", "name": "ALE-40 Dispensers (Empty)", "weight": 59}
     ALQ_131___ECM_Pod = {"clsid": "{6D21ECEA-F85B-4E8D-9D51-31DC9B8AA4EF}", "name": "ALQ-131 - ECM Pod", "weight": 305}
     ALQ_131___ECM_Pod_Rack = {"clsid": "{HB_ALQ-131_ON_ADAPTER_IN_AERO7}", "name": "ALQ-131 - ECM Pod Rack", "weight": 330.9}
-    ALQ_167__non_functional_ = {"clsid": "{F14-ALQ167}", "name": "ALQ-167 (non-functional)", "weight": 107}
+    ALQ_167_pod = {"clsid": "{F14-ALQ167-POD}", "name": "ALQ-167 pod", "weight": 107}
+    ALQ_167__non_functional_ = {"clsid": "{F14-ALQ167}", "name": "ALQ-167 (non-functional)", "weight": 164.38}
     ALQ_184 = {"clsid": "ALQ_184", "name": "ALQ-184 - ECM Pod", "weight": 215}
     ALQ_184_Long = {"clsid": "ALQ_184_Long", "name": "ALQ-184 Long - ECM Pod", "weight": 286}
     AN_AAQ_13_LANTIRN_NAV_POD = {"clsid": "{F-15E_AAQ-13_LANTIRN}", "name": "AN/AAQ-13 LANTIRN NAV POD", "weight": 235.86784}
@@ -341,6 +341,7 @@ class Weapons:
     BRU_42_with_ADM_141A_TALD = {"clsid": "{BRU_42A_x1_ADM_141A}", "name": "BRU-42 with ADM-141A TALD", "weight": 230.8}
     BRU_55_with_2_x_AGM_154A___JSOW_CEB__CBU_type_ = {"clsid": "{BRU55_2*AGM-154A}", "name": "BRU-55 with 2 x AGM-154A - JSOW CEB (CBU-type)", "weight": 1057.5}
     BRU_55_with_2_x_AGM_154C___JSOW_Unitary_BROACH = {"clsid": "{BRU55_2*AGM-154C}", "name": "BRU-55 with 2 x AGM-154C - JSOW Unitary BROACH", "weight": 1055.5}
+    BRU_55_with_2_x_GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb = {"clsid": "{BRU55_2*GBU-32}", "name": "BRU-55 with 2 x GBU-32(V)2/B - JDAM, 1000lb GPS Guided Bomb", "weight": 1025}
     BRU_55_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb = {"clsid": "{BRU55_2*GBU-38}", "name": "BRU-55 with 2 x GBU-38 - JDAM, 500lb GPS Guided Bomb", "weight": 573}
     BRU_57_with_2_x_AGM_154A___JSOW_CEB__CBU_type_ = {"clsid": "{BRU57_2*AGM-154A}", "name": "BRU-57 with 2 x AGM-154A - JSOW CEB (CBU-type)", "weight": 1082}
     BRU_57_with_2_x_AGM_154B___JSOW_Anti_Armour = {"clsid": "{BRU57_2*AGM-154B}", "name": "BRU-57 with 2 x AGM-154B - JSOW Anti-Armour", "weight": 1082}
@@ -389,6 +390,7 @@ class Weapons:
     CBU_97___3_ = {"clsid": "{CFT_R_CBU_97_x_3}", "name": "CBU-97 * 3", "weight": 1251}
     CBU_97___6 = {"clsid": "{CFT_L_CBU_97_x_6}", "name": "CBU-97 * 6", "weight": 2502}
     CBU_97___6_ = {"clsid": "{CFT_R_CBU_97_x_6}", "name": "CBU-97 * 6", "weight": 2502}
+    CBU_99 = {"clsid": "{BRU-32 CBU-99}", "name": "CBU-99", "weight": 279.38}
     CBU_99___490lbs__247_x_HEAT_Bomblets = {"clsid": "{CBU_99}", "name": "CBU-99 - 490lbs, 247 x HEAT Bomblets", "weight": 222}
     CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = {"clsid": "{CC420_GUN_POD}", "name": "CC420 DEFA-550 gun pod - 30mm Revolver Cannon", "weight": 205}
     CLB_30___Mk_83___1000lb_GP_Bomb_LD = {"clsid": "{CLB30_MK83}", "name": "CLB 30 - Mk-83 - 1000lb GP Bomb LD", "weight": 499}
@@ -576,6 +578,7 @@ class Weapons:
     GBU_12___4_ = {"clsid": "{CFT_R_GBU_12_x_4}", "name": "GBU-12 * 4", "weight": 1100}
     GBU_12___500lb_Laser_Guided_Bomb = {"clsid": "{DB769D48-67D7-42ED-A2BE-108D566C8B1E}", "name": "GBU-12 - 500lb Laser Guided Bomb", "weight": 277}
     GBU_15_V1___2000_lb_TV_Guided_Bomb = {"clsid": "{GBU-15V1}", "name": "GBU-15 V1 - 2000 lb TV Guided Bomb", "weight": 1136}
+    GBU_15_V_1_B___2000lb_TV__EO__Guided_Bomb = {"clsid": "{GBU_15_V_1B}", "name": "GBU-15(V)1/B - 2000lb TV (EO) Guided Bomb", "weight": 1123}
     GBU_15_V_31_B___2000lb_TV__EO__Guided_Bomb = {"clsid": "{GBU_15_V_31B}", "name": "GBU-15(V)31/B - 2000lb TV (EO) Guided Bomb", "weight": 1125}
     GBU_16 = {"clsid": "{BRU-32 GBU-16}", "name": "GBU-16", "weight": 621.38}
     GBU_16___1000lb_Laser_Guided_Bomb = {"clsid": "{0D33DDAE-524F-4A4E-B5B8-621754FE3ADE}", "name": "GBU-16 - 1000lb Laser Guided Bomb", "weight": 513}
@@ -604,6 +607,7 @@ class Weapons:
     GBU_54B___3 = {"clsid": "{CFT_L_GBU_54_x_3}", "name": "GBU-54B * 3", "weight": 759}
     GBU_54B___3_ = {"clsid": "{CFT_R_GBU_54_x_3}", "name": "GBU-54B * 3", "weight": 759}
     GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = {"clsid": "{GBU_54_V_1B}", "name": "GBU-54(V)1/B - LJDAM, 500lb Laser & GPS Guided Bomb LD", "weight": 253}
+    GBU_8_B_HOBOS___2000_lb_TV_Guided_Bomb = {"clsid": "{GBU_8_B}", "name": "GBU-8/B HOBOS - 2000 lb TV Guided Bomb", "weight": 1027}
     GBU_8_HOBOS___2000_lb_TV_Guided_Bomb = {"clsid": "{HB_F4E_GBU_8}", "name": "GBU-8 HOBOS - 2000 lb TV Guided Bomb", "weight": 1027}
     GB_6 = {"clsid": "{GB-6}", "name": "GB-6", "weight": 620}
     GB_6_HE = {"clsid": "{GB-6-HE}", "name": "GB-6-HE", "weight": 620}
@@ -919,6 +923,8 @@ class Weapons:
     M60D__ = {"clsid": "{CH47_AFT_M60D}", "name": "M60D", "weight": 113}
     M60_SIDE_L = {"clsid": "M60_SIDE_L", "name": "M60 - 7.62mm MG left door", "weight": 141.4}
     M60_SIDE_R = {"clsid": "M60_SIDE_R", "name": "M60 - 7.62mm MG right door", "weight": 141.4}
+    MAK79_2_CBU_99 = {"clsid": "{MAK79_CBU99 2L}", "name": "MAK79 2 CBU-99", "weight": 464}
+    MAK79_2_CBU_99_ = {"clsid": "{MAK79_CBU99 2R}", "name": "MAK79 2 CBU-99", "weight": 464}
     MAK79_2_MK_20 = {"clsid": "{MAK79_MK20 2L}", "name": "MAK79 2 MK-20", "weight": 464}
     MAK79_2_MK_20_ = {"clsid": "{MAK79_MK20 2R}", "name": "MAK79 2 MK-20", "weight": 464}
     MAK79_3_BDU_33 = {"clsid": "{MAK79_BDU33 3L}", "name": "MAK79 3 BDU-33", "weight": 63}
@@ -944,6 +950,8 @@ class Weapons:
     MAK79_4_Mk_82 = {"clsid": "{MAK79_MK82 4}", "name": "MAK79 4 Mk-82", "weight": 1004}
     MAK79_4_Mk_82AIR = {"clsid": "{MAK79_MK82AIR 4}", "name": "MAK79 4 Mk-82AIR", "weight": 1004}
     MAK79_4_Mk_82_SnakeEye = {"clsid": "{MAK79_MK82SE 4}", "name": "MAK79 4 Mk-82 SnakeEye", "weight": 1004}
+    MAK79_CBU_99 = {"clsid": "{MAK79_CBU99 1R}", "name": "MAK79 CBU-99", "weight": 232}
+    MAK79_CBU_99_ = {"clsid": "{MAK79_CBU99 1L}", "name": "MAK79 CBU-99", "weight": 232}
     MAK79_MK_20 = {"clsid": "{MAK79_MK20 1R}", "name": "MAK79 MK-20", "weight": 232}
     MAK79_MK_20_ = {"clsid": "{MAK79_MK20 1L}", "name": "MAK79 MK-20", "weight": 232}
     MAK79_Mk_83 = {"clsid": "{MAK79_MK83 1R}", "name": "MAK79 Mk-83", "weight": 457}
@@ -1447,8 +1455,14 @@ class Weapons:
     _2_BDU_45___ = {"clsid": "{BRU42_2*BDU45 LS}", "name": "2 BDU-45", "weight": 592}
     _2_BDU_45____ = {"clsid": "{BRU3242_2*BDU45 LS}", "name": "2 BDU-45", "weight": 649.38}
     _2_BDU_45_____ = {"clsid": "{PHXBRU3242_2*BDU45 LS}", "name": "2 BDU-45", "weight": 649.38}
+    _2_CBU_99 = {"clsid": "{BRU42_2*CBU99 RS}", "name": "2 CBU-99", "weight": 572}
+    _2_CBU_99_ = {"clsid": "{BRU3242_2*CBU99 RS}", "name": "2 CBU-99", "weight": 629.38}
+    _2_CBU_99__ = {"clsid": "{PHXBRU3242_2*CBU99 RS}", "name": "2 CBU-99", "weight": 629.38}
+    _2_CBU_99___ = {"clsid": "{BRU42_2*CBU99 LS}", "name": "2 CBU-99", "weight": 572}
     _2_CBU_99____ = {"clsid": "{BRU-70_2*CBU-99_LEFT}", "name": "2 CBU-99 */*", "weight": 515.734104}
     _2_CBU_99_____ = {"clsid": "{BRU-70_2*CBU-99_RIGHT}", "name": "2 CBU-99 *\*", "weight": 515.734104}
+    _2_CBU_99______ = {"clsid": "{BRU3242_2*CBU99 LS}", "name": "2 CBU-99", "weight": 629.38}
+    _2_CBU_99_______ = {"clsid": "{PHXBRU3242_2*CBU99 LS}", "name": "2 CBU-99", "weight": 629.38}
     _2_GBU_12____ = {"clsid": "{BRU-42A_2*GBU-12_SIDE_LEFT}", "name": "2 GBU-12 *-*", "weight": 612.802792}
     _2_GBU_12_____ = {"clsid": "{BRU-42A_2*GBU-12_SIDE_RIGHT}", "name": "2 GBU-12 *-*", "weight": 612.802792}
     _2_GBU_12______ = {"clsid": "{BRU-42_2*GBU-12_LEFT}", "name": "2 GBU-12 */*", "weight": 612.802792}
@@ -1740,7 +1754,6 @@ weapon_ids = {
     "{AGM_12A}": Weapons.AGM_12A_Bullpup_MCLOS_ASM__LAU_34_,
     "{AGM_12B}": Weapons.AGM_12B_Bullpup_MCLOS_ASM__LAU_34_,
     "{AGM_12C}": Weapons.AGM_12C_Bullpup_MCLOS_ASM,
-    "{HB_F4E_AGM_12C}": Weapons.AGM_12C_Bullpup___MCLOS_missile,
     "{AGM_130C_9}": Weapons.AGM_130C_9___3000lb_TV__EO__Guided_Missile,
     "{AGM-154A}": Weapons.AGM_154A___JSOW_CEB__CBU_type_,
     "{AGM-154B}": Weapons.AGM_154B___JSOW_Anti_Armour,
@@ -1825,6 +1838,7 @@ weapon_ids = {
     "{HB_ALE_40_0_0}": Weapons.ALE_40_Dispensers__Empty_,
     "{6D21ECEA-F85B-4E8D-9D51-31DC9B8AA4EF}": Weapons.ALQ_131___ECM_Pod,
     "{HB_ALQ-131_ON_ADAPTER_IN_AERO7}": Weapons.ALQ_131___ECM_Pod_Rack,
+    "{F14-ALQ167-POD}": Weapons.ALQ_167_pod,
     "{F14-ALQ167}": Weapons.ALQ_167__non_functional_,
     "ALQ_184": Weapons.ALQ_184,
     "ALQ_184_Long": Weapons.ALQ_184_Long,
@@ -2059,6 +2073,7 @@ weapon_ids = {
     "{BRU_42A_x1_ADM_141A}": Weapons.BRU_42_with_ADM_141A_TALD,
     "{BRU55_2*AGM-154A}": Weapons.BRU_55_with_2_x_AGM_154A___JSOW_CEB__CBU_type_,
     "{BRU55_2*AGM-154C}": Weapons.BRU_55_with_2_x_AGM_154C___JSOW_Unitary_BROACH,
+    "{BRU55_2*GBU-32}": Weapons.BRU_55_with_2_x_GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb,
     "{BRU55_2*GBU-38}": Weapons.BRU_55_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb,
     "{BRU57_2*AGM-154A}": Weapons.BRU_57_with_2_x_AGM_154A___JSOW_CEB__CBU_type_,
     "{BRU57_2*AGM-154B}": Weapons.BRU_57_with_2_x_AGM_154B___JSOW_Anti_Armour,
@@ -2107,6 +2122,7 @@ weapon_ids = {
     "{CFT_R_CBU_97_x_3}": Weapons.CBU_97___3_,
     "{CFT_L_CBU_97_x_6}": Weapons.CBU_97___6,
     "{CFT_R_CBU_97_x_6}": Weapons.CBU_97___6_,
+    "{BRU-32 CBU-99}": Weapons.CBU_99,
     "{CBU_99}": Weapons.CBU_99___490lbs__247_x_HEAT_Bomblets,
     "{CC420_GUN_POD}": Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon,
     "{CLB30_MK83}": Weapons.CLB_30___Mk_83___1000lb_GP_Bomb_LD,
@@ -2294,6 +2310,7 @@ weapon_ids = {
     "{CFT_R_GBU_12_x_4}": Weapons.GBU_12___4_,
     "{DB769D48-67D7-42ED-A2BE-108D566C8B1E}": Weapons.GBU_12___500lb_Laser_Guided_Bomb,
     "{GBU-15V1}": Weapons.GBU_15_V1___2000_lb_TV_Guided_Bomb,
+    "{GBU_15_V_1B}": Weapons.GBU_15_V_1_B___2000lb_TV__EO__Guided_Bomb,
     "{GBU_15_V_31B}": Weapons.GBU_15_V_31_B___2000lb_TV__EO__Guided_Bomb,
     "{BRU-32 GBU-16}": Weapons.GBU_16,
     "{0D33DDAE-524F-4A4E-B5B8-621754FE3ADE}": Weapons.GBU_16___1000lb_Laser_Guided_Bomb,
@@ -2322,6 +2339,7 @@ weapon_ids = {
     "{CFT_L_GBU_54_x_3}": Weapons.GBU_54B___3,
     "{CFT_R_GBU_54_x_3}": Weapons.GBU_54B___3_,
     "{GBU_54_V_1B}": Weapons.GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD,
+    "{GBU_8_B}": Weapons.GBU_8_B_HOBOS___2000_lb_TV_Guided_Bomb,
     "{HB_F4E_GBU_8}": Weapons.GBU_8_HOBOS___2000_lb_TV_Guided_Bomb,
     "{GB-6}": Weapons.GB_6,
     "{GB-6-HE}": Weapons.GB_6_HE,
@@ -2637,6 +2655,8 @@ weapon_ids = {
     "{CH47_AFT_M60D}": Weapons.M60D__,
     "M60_SIDE_L": Weapons.M60_SIDE_L,
     "M60_SIDE_R": Weapons.M60_SIDE_R,
+    "{MAK79_CBU99 2L}": Weapons.MAK79_2_CBU_99,
+    "{MAK79_CBU99 2R}": Weapons.MAK79_2_CBU_99_,
     "{MAK79_MK20 2L}": Weapons.MAK79_2_MK_20,
     "{MAK79_MK20 2R}": Weapons.MAK79_2_MK_20_,
     "{MAK79_BDU33 3L}": Weapons.MAK79_3_BDU_33,
@@ -2662,6 +2682,8 @@ weapon_ids = {
     "{MAK79_MK82 4}": Weapons.MAK79_4_Mk_82,
     "{MAK79_MK82AIR 4}": Weapons.MAK79_4_Mk_82AIR,
     "{MAK79_MK82SE 4}": Weapons.MAK79_4_Mk_82_SnakeEye,
+    "{MAK79_CBU99 1R}": Weapons.MAK79_CBU_99,
+    "{MAK79_CBU99 1L}": Weapons.MAK79_CBU_99_,
     "{MAK79_MK20 1R}": Weapons.MAK79_MK_20,
     "{MAK79_MK20 1L}": Weapons.MAK79_MK_20_,
     "{MAK79_MK83 1R}": Weapons.MAK79_Mk_83,
@@ -3165,8 +3187,14 @@ weapon_ids = {
     "{BRU42_2*BDU45 LS}": Weapons._2_BDU_45___,
     "{BRU3242_2*BDU45 LS}": Weapons._2_BDU_45____,
     "{PHXBRU3242_2*BDU45 LS}": Weapons._2_BDU_45_____,
+    "{BRU42_2*CBU99 RS}": Weapons._2_CBU_99,
+    "{BRU3242_2*CBU99 RS}": Weapons._2_CBU_99_,
+    "{PHXBRU3242_2*CBU99 RS}": Weapons._2_CBU_99__,
+    "{BRU42_2*CBU99 LS}": Weapons._2_CBU_99___,
     "{BRU-70_2*CBU-99_LEFT}": Weapons._2_CBU_99____,
     "{BRU-70_2*CBU-99_RIGHT}": Weapons._2_CBU_99_____,
+    "{BRU3242_2*CBU99 LS}": Weapons._2_CBU_99______,
+    "{PHXBRU3242_2*CBU99 LS}": Weapons._2_CBU_99_______,
     "{BRU-42A_2*GBU-12_SIDE_LEFT}": Weapons._2_GBU_12____,
     "{BRU-42A_2*GBU-12_SIDE_RIGHT}": Weapons._2_GBU_12_____,
     "{BRU-42_2*GBU-12_LEFT}": Weapons._2_GBU_12______,

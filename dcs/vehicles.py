@@ -109,7 +109,7 @@ class Artillery:
     class L118_Unit(unittype.VehicleType):
         id = "L118_Unit"
         name = "L118 Light Artillery Gun"
-        detection_range = 500
+        detection_range = 17500
         threat_range = 17200
         air_weapon_dist = 17200
 

@@ -9468,7 +9468,7 @@ class C_101EB(PlaneType):
     id = "C-101EB"
     flyable = True
     height = 4.25
-    width = 14
+    width = 10.6
     length = 12.25
     fuel_max = 1796
     max_speed = 925.2
@@ -9608,7 +9608,7 @@ class C_101CC(PlaneType):
     id = "C-101CC"
     flyable = True
     height = 4.25
-    width = 14
+    width = 10.6
     length = 12.25
     fuel_max = 1796
     max_speed = 925.2
@@ -13648,6 +13648,7 @@ class F_14B(PlaneType):
         _2_Mk_82AIR_____ = (2, Weapons._2_Mk_82AIR_____)
         _2_Mk_82_SnakeEye_____ = (2, Weapons._2_Mk_82_SnakeEye_____)
         _2_MK_20_____ = (2, Weapons._2_MK_20_____)
+        _2_CBU_99_______ = (2, Weapons._2_CBU_99_______)
         Mk_83______ = (2, Weapons.Mk_83______)
         _3_BDU_33____ = (2, Weapons._3_BDU_33____)
         _2_BDU_45_____ = (2, Weapons._2_BDU_45_____)
@@ -13679,6 +13680,7 @@ class F_14B(PlaneType):
         GBU_12 = (4, Weapons.GBU_12)
         GBU_16 = (4, Weapons.GBU_16)
         Mk_20 = (4, Weapons.Mk_20)
+        CBU_99 = (4, Weapons.CBU_99)
         ADM_141A_ = (4, Weapons.ADM_141A_)
         Mk_84 = (4, Weapons.Mk_84)
         _2_LAU_10___4_ZUNI_MK_71___ = (4, Weapons._2_LAU_10___4_ZUNI_MK_71___)
@@ -13693,6 +13695,7 @@ class F_14B(PlaneType):
         MAK79_4_Mk_82_SnakeEye = (4, Weapons.MAK79_4_Mk_82_SnakeEye)
         MAK79_3_Mk_83 = (4, Weapons.MAK79_3_Mk_83)
         MAK79_2_MK_20 = (4, Weapons.MAK79_2_MK_20)
+        MAK79_2_CBU_99 = (4, Weapons.MAK79_2_CBU_99)
 
     class Pylon5:
         AIM_54A_Mk47 = (5, Weapons.AIM_54A_Mk47)
@@ -13714,6 +13717,7 @@ class F_14B(PlaneType):
         GBU_12 = (5, Weapons.GBU_12)
         GBU_16 = (5, Weapons.GBU_16)
         Mk_20 = (5, Weapons.Mk_20)
+        CBU_99 = (5, Weapons.CBU_99)
         ADM_141A_ = (5, Weapons.ADM_141A_)
         Mk_84 = (5, Weapons.Mk_84)
         _2_SUU_25___8_LUU_2___ = (5, Weapons._2_SUU_25___8_LUU_2___)
@@ -13726,6 +13730,7 @@ class F_14B(PlaneType):
         MAK79_3_Mk_82_SnakeEye = (5, Weapons.MAK79_3_Mk_82_SnakeEye)
         MAK79_Mk_83_ = (5, Weapons.MAK79_Mk_83_)
         MAK79_MK_20_ = (5, Weapons.MAK79_MK_20_)
+        MAK79_CBU_99_ = (5, Weapons.MAK79_CBU_99_)
 
     class Pylon6:
         Tactical_Airborne_Reconnaissance_Pod_System = (6, Weapons.Tactical_Airborne_Reconnaissance_Pod_System)
@@ -13748,6 +13753,7 @@ class F_14B(PlaneType):
         GBU_12 = (6, Weapons.GBU_12)
         GBU_16 = (6, Weapons.GBU_16)
         Mk_20 = (6, Weapons.Mk_20)
+        CBU_99 = (6, Weapons.CBU_99)
         ADM_141A_ = (6, Weapons.ADM_141A_)
         Mk_84 = (6, Weapons.Mk_84)
         GBU_24 = (6, Weapons.GBU_24)
@@ -13761,6 +13767,7 @@ class F_14B(PlaneType):
         MAK79_3_Mk_82_SnakeEye_ = (6, Weapons.MAK79_3_Mk_82_SnakeEye_)
         MAK79_Mk_83 = (6, Weapons.MAK79_Mk_83)
         MAK79_MK_20 = (6, Weapons.MAK79_MK_20)
+        MAK79_CBU_99 = (6, Weapons.MAK79_CBU_99)
 
     class Pylon7:
         AIM_54A_Mk47 = (7, Weapons.AIM_54A_Mk47)
@@ -13783,6 +13790,7 @@ class F_14B(PlaneType):
         GBU_12 = (7, Weapons.GBU_12)
         GBU_16 = (7, Weapons.GBU_16)
         Mk_20 = (7, Weapons.Mk_20)
+        CBU_99 = (7, Weapons.CBU_99)
         ADM_141A_ = (7, Weapons.ADM_141A_)
         Mk_84 = (7, Weapons.Mk_84)
         LAU_10___4_ZUNI_MK_71_ = (7, Weapons.LAU_10___4_ZUNI_MK_71_)
@@ -13796,6 +13804,7 @@ class F_14B(PlaneType):
         MAK79_4_Mk_82_SnakeEye = (7, Weapons.MAK79_4_Mk_82_SnakeEye)
         MAK79_3_Mk_83_ = (7, Weapons.MAK79_3_Mk_83_)
         MAK79_2_MK_20_ = (7, Weapons.MAK79_2_MK_20_)
+        MAK79_2_CBU_99_ = (7, Weapons.MAK79_2_CBU_99_)
 
     class Pylon8:
         Fuel_tank_300_gal_ = (8, Weapons.Fuel_tank_300_gal_)
@@ -13820,6 +13829,7 @@ class F_14B(PlaneType):
         _2_Mk_82AIR__ = (9, Weapons._2_Mk_82AIR__)
         _2_Mk_82_SnakeEye__ = (9, Weapons._2_Mk_82_SnakeEye__)
         _2_MK_20__ = (9, Weapons._2_MK_20__)
+        _2_CBU_99__ = (9, Weapons._2_CBU_99__)
         Mk_83___ = (9, Weapons.Mk_83___)
         _3_BDU_33____ = (9, Weapons._3_BDU_33____)
         _2_BDU_45__ = (9, Weapons._2_BDU_45__)
@@ -14094,6 +14104,7 @@ class F_14A_135_GR(PlaneType):
         _2_Mk_82AIR_____ = (2, Weapons._2_Mk_82AIR_____)
         _2_Mk_82_SnakeEye_____ = (2, Weapons._2_Mk_82_SnakeEye_____)
         _2_MK_20_____ = (2, Weapons._2_MK_20_____)
+        _2_CBU_99_______ = (2, Weapons._2_CBU_99_______)
         Mk_83______ = (2, Weapons.Mk_83______)
         _3_BDU_33____ = (2, Weapons._3_BDU_33____)
         _2_BDU_45_____ = (2, Weapons._2_BDU_45_____)
@@ -14125,6 +14136,7 @@ class F_14A_135_GR(PlaneType):
         GBU_12 = (4, Weapons.GBU_12)
         GBU_16 = (4, Weapons.GBU_16)
         Mk_20 = (4, Weapons.Mk_20)
+        CBU_99 = (4, Weapons.CBU_99)
         ADM_141A_ = (4, Weapons.ADM_141A_)
         Mk_84 = (4, Weapons.Mk_84)
         _2_LAU_10___4_ZUNI_MK_71___ = (4, Weapons._2_LAU_10___4_ZUNI_MK_71___)
@@ -14139,6 +14151,7 @@ class F_14A_135_GR(PlaneType):
         MAK79_4_Mk_82_SnakeEye = (4, Weapons.MAK79_4_Mk_82_SnakeEye)
         MAK79_3_Mk_83 = (4, Weapons.MAK79_3_Mk_83)
         MAK79_2_MK_20 = (4, Weapons.MAK79_2_MK_20)
+        MAK79_2_CBU_99 = (4, Weapons.MAK79_2_CBU_99)
 
     class Pylon5:
         AIM_54A_Mk47 = (5, Weapons.AIM_54A_Mk47)
@@ -14160,6 +14173,7 @@ class F_14A_135_GR(PlaneType):
         GBU_12 = (5, Weapons.GBU_12)
         GBU_16 = (5, Weapons.GBU_16)
         Mk_20 = (5, Weapons.Mk_20)
+        CBU_99 = (5, Weapons.CBU_99)
         ADM_141A_ = (5, Weapons.ADM_141A_)
         Mk_84 = (5, Weapons.Mk_84)
         _2_SUU_25___8_LUU_2___ = (5, Weapons._2_SUU_25___8_LUU_2___)
@@ -14172,6 +14186,7 @@ class F_14A_135_GR(PlaneType):
         MAK79_3_Mk_82_SnakeEye = (5, Weapons.MAK79_3_Mk_82_SnakeEye)
         MAK79_Mk_83_ = (5, Weapons.MAK79_Mk_83_)
         MAK79_MK_20_ = (5, Weapons.MAK79_MK_20_)
+        MAK79_CBU_99_ = (5, Weapons.MAK79_CBU_99_)
 
     class Pylon6:
         Tactical_Airborne_Reconnaissance_Pod_System = (6, Weapons.Tactical_Airborne_Reconnaissance_Pod_System)
@@ -14194,6 +14209,7 @@ class F_14A_135_GR(PlaneType):
         GBU_12 = (6, Weapons.GBU_12)
         GBU_16 = (6, Weapons.GBU_16)
         Mk_20 = (6, Weapons.Mk_20)
+        CBU_99 = (6, Weapons.CBU_99)
         ADM_141A_ = (6, Weapons.ADM_141A_)
         Mk_84 = (6, Weapons.Mk_84)
         GBU_24 = (6, Weapons.GBU_24)
@@ -14207,6 +14223,7 @@ class F_14A_135_GR(PlaneType):
         MAK79_3_Mk_82_SnakeEye_ = (6, Weapons.MAK79_3_Mk_82_SnakeEye_)
         MAK79_Mk_83 = (6, Weapons.MAK79_Mk_83)
         MAK79_MK_20 = (6, Weapons.MAK79_MK_20)
+        MAK79_CBU_99 = (6, Weapons.MAK79_CBU_99)
 
     class Pylon7:
         AIM_54A_Mk47 = (7, Weapons.AIM_54A_Mk47)
@@ -14229,6 +14246,7 @@ class F_14A_135_GR(PlaneType):
         GBU_12 = (7, Weapons.GBU_12)
         GBU_16 = (7, Weapons.GBU_16)
         Mk_20 = (7, Weapons.Mk_20)
+        CBU_99 = (7, Weapons.CBU_99)
         ADM_141A_ = (7, Weapons.ADM_141A_)
         Mk_84 = (7, Weapons.Mk_84)
         LAU_10___4_ZUNI_MK_71_ = (7, Weapons.LAU_10___4_ZUNI_MK_71_)
@@ -14242,6 +14260,7 @@ class F_14A_135_GR(PlaneType):
         MAK79_4_Mk_82_SnakeEye = (7, Weapons.MAK79_4_Mk_82_SnakeEye)
         MAK79_3_Mk_83_ = (7, Weapons.MAK79_3_Mk_83_)
         MAK79_2_MK_20_ = (7, Weapons.MAK79_2_MK_20_)
+        MAK79_2_CBU_99_ = (7, Weapons.MAK79_2_CBU_99_)
 
     class Pylon8:
         Fuel_tank_300_gal_ = (8, Weapons.Fuel_tank_300_gal_)
@@ -14266,6 +14285,7 @@ class F_14A_135_GR(PlaneType):
         _2_Mk_82AIR__ = (9, Weapons._2_Mk_82AIR__)
         _2_Mk_82_SnakeEye__ = (9, Weapons._2_Mk_82_SnakeEye__)
         _2_MK_20__ = (9, Weapons._2_MK_20__)
+        _2_CBU_99__ = (9, Weapons._2_CBU_99__)
         Mk_83___ = (9, Weapons.Mk_83___)
         _3_BDU_33____ = (9, Weapons._3_BDU_33____)
         _2_BDU_45__ = (9, Weapons._2_BDU_45__)
@@ -14966,6 +14986,7 @@ class FA_18C_hornet(PlaneType):
         GBU_24B_B_Paveway_III___2000lb_Laser_Guided_Bomb = (2, Weapons.GBU_24B_B_Paveway_III___2000lb_Laser_Guided_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (2, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
         BRU_55_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb = (2, Weapons.BRU_55_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb)
+        BRU_55_with_2_x_GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb = (2, Weapons.BRU_55_with_2_x_GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb)
         AGM_62_Walleye_II___Guided_Weapon_Mk_5__TV_Guided_ = (2, Weapons.AGM_62_Walleye_II___Guided_Weapon_Mk_5__TV_Guided_)
         BDU_45_LG___500lb_Practice_Laser_Guided_Bomb = (2, Weapons.BDU_45_LG___500lb_Practice_Laser_Guided_Bomb)
         BRU_33_with_2_x_BDU_45_LG_500lb_Practice_Laser_Guided_Bomb = (2, Weapons.BRU_33_with_2_x_BDU_45_LG_500lb_Practice_Laser_Guided_Bomb)
@@ -15036,6 +15057,7 @@ class FA_18C_hornet(PlaneType):
         GBU_24B_B_Paveway_III___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_24B_B_Paveway_III___2000lb_Laser_Guided_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (3, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
         BRU_55_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb = (3, Weapons.BRU_55_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb)
+        BRU_55_with_2_x_GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb = (3, Weapons.BRU_55_with_2_x_GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb)
         BDU_45_LG___500lb_Practice_Laser_Guided_Bomb = (3, Weapons.BDU_45_LG___500lb_Practice_Laser_Guided_Bomb)
         BRU_33_with_2_x_BDU_45_LG_500lb_Practice_Laser_Guided_Bomb = (3, Weapons.BRU_33_with_2_x_BDU_45_LG_500lb_Practice_Laser_Guided_Bomb)
         AGM_84D_Harpoon_AShM = (3, Weapons.AGM_84D_Harpoon_AShM)
@@ -15142,6 +15164,7 @@ class FA_18C_hornet(PlaneType):
         GBU_24B_B_Paveway_III___2000lb_Laser_Guided_Bomb = (7, Weapons.GBU_24B_B_Paveway_III___2000lb_Laser_Guided_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (7, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
         BRU_55_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb = (7, Weapons.BRU_55_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb)
+        BRU_55_with_2_x_GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb = (7, Weapons.BRU_55_with_2_x_GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb)
         BDU_45_LG___500lb_Practice_Laser_Guided_Bomb = (7, Weapons.BDU_45_LG___500lb_Practice_Laser_Guided_Bomb)
         BRU_33_with_2_x_BDU_45_LG_500lb_Practice_Laser_Guided_Bomb = (7, Weapons.BRU_33_with_2_x_BDU_45_LG_500lb_Practice_Laser_Guided_Bomb)
         AGM_84D_Harpoon_AShM = (7, Weapons.AGM_84D_Harpoon_AShM)
@@ -15212,6 +15235,7 @@ class FA_18C_hornet(PlaneType):
         GBU_24B_B_Paveway_III___2000lb_Laser_Guided_Bomb = (8, Weapons.GBU_24B_B_Paveway_III___2000lb_Laser_Guided_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (8, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
         BRU_55_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb = (8, Weapons.BRU_55_with_2_x_GBU_38___JDAM__500lb_GPS_Guided_Bomb)
+        BRU_55_with_2_x_GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb = (8, Weapons.BRU_55_with_2_x_GBU_32_V_2_B___JDAM__1000lb_GPS_Guided_Bomb)
         AGM_62_Walleye_II___Guided_Weapon_Mk_5__TV_Guided_ = (8, Weapons.AGM_62_Walleye_II___Guided_Weapon_Mk_5__TV_Guided_)
         BDU_45_LG___500lb_Practice_Laser_Guided_Bomb = (8, Weapons.BDU_45_LG___500lb_Practice_Laser_Guided_Bomb)
         BRU_33_with_2_x_BDU_45_LG_500lb_Practice_Laser_Guided_Bomb = (8, Weapons.BRU_33_with_2_x_BDU_45_LG_500lb_Practice_Laser_Guided_Bomb)
@@ -16776,7 +16800,6 @@ class MQ_9_Reaper(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (1, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (1, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
         AGM114x2_OH_58 = (1, Weapons.AGM114x2_OH_58)
-        M299___4_x_AGM_114K_Hellfire = (1, Weapons.M299___4_x_AGM_114K_Hellfire)
 
     class Pylon2:
         GBU_12___500lb_Laser_Guided_Bomb = (2, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
@@ -16792,7 +16815,6 @@ class MQ_9_Reaper(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb = (4, Weapons.GBU_38_V_1_B___JDAM__500lb_GPS_Guided_Bomb)
         AGM114x2_OH_58 = (4, Weapons.AGM114x2_OH_58)
-        M299___4_x_AGM_114K_Hellfire = (4, Weapons.M299___4_x_AGM_114K_Hellfire)
 
     pylons: Set[int] = {1, 2, 3, 4}
 
