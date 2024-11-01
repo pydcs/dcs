@@ -937,6 +937,7 @@ writeln(file, 'import dcs.ships as ships')
 local countryPlaneIgnore = {
     "F_14A_95_GR",
     "F_16C_50",
+    "F_16C",
     "F_4E_new",
     "F_5E_MAC",
     "F_86F_MAC",

@@ -3575,7 +3575,6 @@ class USAFAggressors(Country):
         Mirage_F1BD = planes.Mirage_F1BD
         KJ_2000 = planes.KJ_2000
         H_6J = planes.H_6J
-        F_16C = planes.F_16C
         Mirage_F1CZ = planes.Mirage_F1CZ
         Mirage_F1AZ = planes.Mirage_F1AZ
         Mirage_F1CJ = planes.Mirage_F1CJ
@@ -3708,7 +3707,6 @@ class USAFAggressors(Country):
         Plane.Mirage_F1BD,
         Plane.KJ_2000,
         Plane.H_6J,
-        Plane.F_16C,
         Plane.Mirage_F1CZ,
         Plane.Mirage_F1AZ,
         Plane.Mirage_F1CJ,
@@ -30849,7 +30847,6 @@ class CombinedJointTaskForcesBlue(Country):
         J_11A = planes.J_11A
         KJ_2000 = planes.KJ_2000
         H_6J = planes.H_6J
-        F_16C = planes.F_16C
         Mirage_F1CZ = planes.Mirage_F1CZ
         Mirage_F1AZ = planes.Mirage_F1AZ
         Mirage_F1CJ = planes.Mirage_F1CJ
@@ -30982,7 +30979,6 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.J_11A,
         Plane.KJ_2000,
         Plane.H_6J,
-        Plane.F_16C,
         Plane.Mirage_F1CZ,
         Plane.Mirage_F1AZ,
         Plane.Mirage_F1CJ,
@@ -31680,7 +31676,6 @@ class CombinedJointTaskForcesRed(Country):
         J_11A = planes.J_11A
         KJ_2000 = planes.KJ_2000
         H_6J = planes.H_6J
-        F_16C = planes.F_16C
         Mirage_F1CZ = planes.Mirage_F1CZ
         Mirage_F1AZ = planes.Mirage_F1AZ
         Mirage_F1CJ = planes.Mirage_F1CJ
@@ -31813,7 +31808,6 @@ class CombinedJointTaskForcesRed(Country):
         Plane.J_11A,
         Plane.KJ_2000,
         Plane.H_6J,
-        Plane.F_16C,
         Plane.Mirage_F1CZ,
         Plane.Mirage_F1AZ,
         Plane.Mirage_F1CJ,
@@ -32511,7 +32505,6 @@ class UnitedNationsPeacekeepers(Country):
         J_11A = planes.J_11A
         KJ_2000 = planes.KJ_2000
         H_6J = planes.H_6J
-        F_16C = planes.F_16C
         Mirage_F1CZ = planes.Mirage_F1CZ
         Mirage_F1AZ = planes.Mirage_F1AZ
         Mirage_F1CJ = planes.Mirage_F1CJ
@@ -32644,7 +32637,6 @@ class UnitedNationsPeacekeepers(Country):
         Plane.J_11A,
         Plane.KJ_2000,
         Plane.H_6J,
-        Plane.F_16C,
         Plane.Mirage_F1CZ,
         Plane.Mirage_F1AZ,
         Plane.Mirage_F1CJ,
@@ -36143,7 +36135,6 @@ class NewZealand(Country):
         MosquitoFBMkVI = planes.MosquitoFBMkVI
         C_130 = planes.C_130
         MB_339A = planes.MB_339A
-        F_16C = planes.F_16C
         P_51D = planes.P_51D
         C_47 = planes.C_47
         FW_190A8 = planes.FW_190A8
@@ -36196,7 +36187,6 @@ class NewZealand(Country):
         Plane.MosquitoFBMkVI,
         Plane.C_130,
         Plane.MB_339A,
-        Plane.F_16C,
         Plane.P_51D,
         Plane.C_47,
         Plane.FW_190A8,
