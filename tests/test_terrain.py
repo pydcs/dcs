@@ -106,15 +106,15 @@ class SyriaTest(unittest.TestCase):
     def test_airplane_parking_used(self):
         m = dcs.mission.Mission(terrain=dcs.terrain.Syria())
 
-        self.assertEqual(len(m.terrain.airports["Aleppo"].parking_slots), 22)
+        self.assertEqual(len(m.terrain.airports["Aleppo"].parking_slots), 23)
 
         hslots = m.terrain.airports["Aleppo"].free_parking_slots(dcs.helicopters.UH_1H)
-        self.assertEqual(len(hslots), 16)
+        self.assertEqual(len(hslots), 17)
 
         slots = m.terrain.airports["Aleppo"].free_parking_slots(dcs.planes.A_10A)
-        self.assertEqual(len(slots), 8)
+        self.assertEqual(len(slots), 9)
 
-        for x in range(0, 8):
+        for x in range(0, 9):
             airplane_slot = m.terrain.airports["Aleppo"].free_parking_slot(dcs.planes.A_10A)
             self.assertIsNotNone(airplane_slot)
             airplane_slot.unit_id = x

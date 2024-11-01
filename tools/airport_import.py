@@ -113,11 +113,14 @@ def main():
         airport_class_names: list[str] = []
         for id_ in sorted(data["airports"]):
             airport = data["airports"][id_]
-            name = airport['airport']['display_name']
+            if airport['airport']['display_name'] == 'H':
+                name = f'Helipad_{id_}'  # Handle helipads on Syria all being named "H"
+            else:
+                name = airport['airport']['display_name']
             
             tacan = airport.get("tacan", None)
             tacan = '"' + tacan + '"' if tacan else None
-            sname = safename(airport['airport']['display_name'])
+            sname = safename(name)
             civ = airport["airport"].get("civilian", True)
             x = airport["airport"]["reference_point"]["x"]
             y = airport["airport"]["reference_point"]["y"]
