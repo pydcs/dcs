@@ -1570,7 +1570,7 @@ class Nothing(MainTask):
 class AFAC(MainTask):
     id = 16
     name = "AFAC"
-    internal_name = "AFAK"
+    internal_name = "AFAC"
     sub_tasks = [OrbitAction, Follow, AttackGroup, AttackUnit, Bombing, AttackMapObject]
 
 
