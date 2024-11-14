@@ -82,13 +82,13 @@ class Mount_Pleasant(Airport):
     atc_radio = AtcRadio(hf_hz=4150000, vhf_low_hz=39200000, vhf_high_hz=133350000, uhf_hz=250800000)
 
     def __init__(self, terrain: Terrain) -> None:
-        super().__init__(mapping.Point(73318.320312, 47168.748047, terrain), terrain)
+        super().__init__(mapping.Point(73318.320313, 47168.748047, terrain), terrain)
 
         self.beacons.append(AirportBeacon(id='airfield2_1'))
-        self.beacons.append(AirportBeacon(id='airfield2_2'))
-        self.beacons.append(AirportBeacon(id='airfield2_3'))
+        self.beacons.append(AirportBeacon(id='airfield2_4'))
+        self.beacons.append(AirportBeacon(id='airfield2_0'))
         self.runways.append(Runway(id=2, name='23-05', main=RunwayApproach(name='23', heading=230, beacons=[]), opposite=RunwayApproach(name='05', heading=50, beacons=[])))
-        self.runways.append(Runway(id=1, name='10-28', main=RunwayApproach(name='10', heading=100, beacons=[]), opposite=RunwayApproach(name='28', heading=280, beacons=[RunwayBeacon(id='airfield2_4', runway_name='28-10', runway_id=1, runway_side='28'), RunwayBeacon(id='airfield2_0', runway_name='28-10', runway_id=1, runway_side='28')])))
+        self.runways.append(Runway(id=1, name='10-28', main=RunwayApproach(name='10', heading=100, beacons=[]), opposite=RunwayApproach(name='28', heading=280, beacons=[RunwayBeacon(id='airfield2_2', runway_name='28-10', runway_id=1, runway_side='28'), RunwayBeacon(id='airfield2_3', runway_name='28-10', runway_id=1, runway_side='28')])))
         self.parking_slots.append(ParkingSlot(
                 crossroad_idx=2, position=mapping.Point(73289.8359375, 46269.83984375, self._terrain), large=False, heli=True,
                 airplanes=True, slot_name='E01', length=40.0, width=40.0, height=12.0, shelter=False))
@@ -641,7 +641,7 @@ class Pampa_Guanaco(Airport):
     atc_radio = AtcRadio(hf_hz=3750000, vhf_low_hz=38400000, vhf_high_hz=118000000, uhf_hz=250000000)
 
     def __init__(self, terrain: Terrain) -> None:
-        super().__init__(mapping.Point(-238408.351562, -623774.96875, terrain), terrain)
+        super().__init__(mapping.Point(-238408.351563, -623774.96875, terrain), terrain)
 
         self.runways.append(Runway(id=1, name='26-08', main=RunwayApproach(name='26', heading=260, beacons=[]), opposite=RunwayApproach(name='08', heading=80, beacons=[])))
         self.parking_slots.append(ParkingSlot(
@@ -1067,33 +1067,6 @@ class Rio_Chico(Airport):
                 airplanes=False, slot_name='H03', length=30.0, width=23.0, height=10.0, shelter=False))
 
 
-class Caleta_Tortel(Airport):
-    id = 22
-    name = "Caleta Tortel"
-    tacan = None
-    unit_zones: List[mapping.Rectangle] = []
-    civilian = True
-    slot_version = 2
-    atc_radio = None
-
-    def __init__(self, terrain: Terrain) -> None:
-        super().__init__(mapping.Point(388906, -1088761.6875, terrain), terrain)
-
-        self.runways.append(Runway(id=1, name='04-22', main=RunwayApproach(name='04', heading=40, beacons=[]), opposite=RunwayApproach(name='22', heading=220, beacons=[])))
-        self.parking_slots.append(ParkingSlot(
-                crossroad_idx=2, position=mapping.Point(389126.125, -1088453.625, self._terrain), large=False, heli=True,
-                airplanes=True, slot_name='04', length=21.0, width=15.0, height=8.0, shelter=False))
-        self.parking_slots.append(ParkingSlot(
-                crossroad_idx=3, position=mapping.Point(389127, -1088476, self._terrain), large=False, heli=True,
-                airplanes=True, slot_name='03', length=21.0, width=15.0, height=8.0, shelter=False))
-        self.parking_slots.append(ParkingSlot(
-                crossroad_idx=4, position=mapping.Point(389128.03125, -1088498.375, self._terrain), large=False, heli=True,
-                airplanes=True, slot_name='02', length=21.0, width=15.0, height=8.0, shelter=False))
-        self.parking_slots.append(ParkingSlot(
-                crossroad_idx=5, position=mapping.Point(389105.625, -1088519.125, self._terrain), large=False, heli=True,
-                airplanes=True, slot_name='01', length=21.0, width=15.0, height=8.0, shelter=False))
-
-
 class Franco_Bianco(Airport):
     id = 23
     name = "Franco Bianco"
@@ -1300,7 +1273,6 @@ ALL_AIRPORTS: List[Type[Airport]] = [
     Almirante_Schroeders,
     Rio_Turbio,
     Rio_Chico,
-    Caleta_Tortel,
     Franco_Bianco,
     Goose_Green,
     Hipico_Flying_Club,
