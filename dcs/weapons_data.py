@@ -608,7 +608,6 @@ class Weapons:
     GBU_54B___3_ = {"clsid": "{CFT_R_GBU_54_x_3}", "name": "GBU-54B * 3", "weight": 759}
     GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD = {"clsid": "{GBU_54_V_1B}", "name": "GBU-54(V)1/B - LJDAM, 500lb Laser & GPS Guided Bomb LD", "weight": 253}
     GBU_8_B_HOBOS___2000_lb_TV_Guided_Bomb = {"clsid": "{GBU_8_B}", "name": "GBU-8/B HOBOS - 2000 lb TV Guided Bomb", "weight": 1027}
-    GBU_8_HOBOS___2000_lb_TV_Guided_Bomb = {"clsid": "{HB_F4E_GBU_8}", "name": "GBU-8 HOBOS - 2000 lb TV Guided Bomb", "weight": 1027}
     GB_6 = {"clsid": "{GB-6}", "name": "GB-6", "weight": 620}
     GB_6_HE = {"clsid": "{GB-6-HE}", "name": "GB-6-HE", "weight": 620}
     GB_6_SFW = {"clsid": "{GB-6-SFW}", "name": "GB-6-SFW", "weight": 620}
@@ -1328,6 +1327,7 @@ class Weapons:
     XM158_M274 = {"clsid": "XM158_M274", "name": "XM158 - 7 x UnGd Rkts, 70 mm Hydra 70 M274 TP-SM", "weight": 90.5}
     XM158_MK1 = {"clsid": "XM158_MK1", "name": "XM158 - 7 x UnGd Rkts, 70 mm Hydra 70 Mk 1 HE", "weight": 81.61}
     XM158_MK5 = {"clsid": "XM158_MK5", "name": "XM158 - 7 x UnGd Rkts, 70 mm Hydra 70 Mk 5 HEAT", "weight": 82.1}
+    YJ_83 = {"clsid": "{YJ_83}", "name": "YJ-83", "weight": 715}
     YU_6 = {"clsid": "{Yu_6}", "name": "YU-6", "weight": 1558}
     _100_gal__Drop_Tank = {"clsid": "{MOSQUITO_100GAL_SLIPPER_TANK}", "name": "100 gal. Drop Tank", "weight": 375.3}
     _108_US_gal__Paper_Fuel_Tank = {"clsid": "{US_108GAL_PAPER_FUEL_TANK}", "name": "108 US gal. Paper Fuel Tank", "weight": 319}
@@ -2340,7 +2340,6 @@ weapon_ids = {
     "{CFT_R_GBU_54_x_3}": Weapons.GBU_54B___3_,
     "{GBU_54_V_1B}": Weapons.GBU_54_V_1_B___LJDAM__500lb_Laser__GPS_Guided_Bomb_LD,
     "{GBU_8_B}": Weapons.GBU_8_B_HOBOS___2000_lb_TV_Guided_Bomb,
-    "{HB_F4E_GBU_8}": Weapons.GBU_8_HOBOS___2000_lb_TV_Guided_Bomb,
     "{GB-6}": Weapons.GB_6,
     "{GB-6-HE}": Weapons.GB_6_HE,
     "{GB-6-SFW}": Weapons.GB_6_SFW,
@@ -3060,6 +3059,7 @@ weapon_ids = {
     "XM158_M274": Weapons.XM158_M274,
     "XM158_MK1": Weapons.XM158_MK1,
     "XM158_MK5": Weapons.XM158_MK5,
+    "{YJ_83}": Weapons.YJ_83,
     "{Yu_6}": Weapons.YU_6,
     "{MOSQUITO_100GAL_SLIPPER_TANK}": Weapons._100_gal__Drop_Tank,
     "{US_108GAL_PAPER_FUEL_TANK}": Weapons._108_US_gal__Paper_Fuel_Tank,
