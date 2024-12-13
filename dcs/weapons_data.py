@@ -176,6 +176,7 @@ class Weapons:
     AUF2_ROCKEYE_x_2 = {"clsid": "{M2KC_RAFAUT_ROCKEYE}", "name": "AUF2 ROCKEYE x 2", "weight": 525}
     AUF2_SAMP_250_HD_x_2 = {"clsid": "{M2KC_RAFAUT_SAMP250HD}", "name": "AUF2 SAMP-250 HD x 2", "weight": 613}
     AUF2_SAMP_250_x_2 = {"clsid": "{M2KC_RAFAUT_SAMP250LD}", "name": "AUF2 SAMP-250 x 2", "weight": 565}
+    AUF_2___2_x_Belouga_AC___305kg_CBU__151_x_HEAT_Bomblets = {"clsid": "{AUF2_BLG66}", "name": "AUF 2 - 2 x Belouga AC - 305kg CBU, 151 x HEAT Bomblets", "weight": 685}
     AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = {"clsid": "{AUF2_BLU107}", "name": "AUF 2 - 2 x BLU-107/B Durandal - 219kg Concrete Piercing Chute Retarded Bomb w/Booster", "weight": 513}
     AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = {"clsid": "{AUF2_BR250}", "name": "AUF 2 - 2 x BR-250 - 250kg GP Bomb LD", "weight": 575}
     AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = {"clsid": "{AUF2_GBU12}", "name": "AUF 2 - 2 x GBU-12 - 500lb Laser Guided Bomb", "weight": 629}
@@ -1908,6 +1909,7 @@ weapon_ids = {
     "{M2KC_RAFAUT_ROCKEYE}": Weapons.AUF2_ROCKEYE_x_2,
     "{M2KC_RAFAUT_SAMP250HD}": Weapons.AUF2_SAMP_250_HD_x_2,
     "{M2KC_RAFAUT_SAMP250LD}": Weapons.AUF2_SAMP_250_x_2,
+    "{AUF2_BLG66}": Weapons.AUF_2___2_x_Belouga_AC___305kg_CBU__151_x_HEAT_Bomblets,
     "{AUF2_BLU107}": Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster,
     "{AUF2_BR250}": Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD,
     "{AUF2_GBU12}": Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb,
