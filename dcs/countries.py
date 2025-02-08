@@ -13969,6 +13969,7 @@ class Iraq(Country):
         SA342L = helicopters.SA342L
         SA342Mistral = helicopters.SA342Mistral
         SA342Minigun = helicopters.SA342Minigun
+        Mi_8MT = helicopters.Mi_8MT
         AH_64D_BLK_II = helicopters.AH_64D_BLK_II
         CH_47Fbl1 = helicopters.CH_47Fbl1
         OH58D = helicopters.OH58D
@@ -13980,6 +13981,7 @@ class Iraq(Country):
         Helicopter.SA342L,
         Helicopter.SA342Mistral,
         Helicopter.SA342Minigun,
+        Helicopter.Mi_8MT,
         Helicopter.AH_64D_BLK_II,
         Helicopter.CH_47Fbl1,
         Helicopter.OH58D,
