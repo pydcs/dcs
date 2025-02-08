@@ -176,14 +176,16 @@ class Weapons:
     AUF2_ROCKEYE_x_2 = {"clsid": "{M2KC_RAFAUT_ROCKEYE}", "name": "AUF2 ROCKEYE x 2", "weight": 525}
     AUF2_SAMP_250_HD_x_2 = {"clsid": "{M2KC_RAFAUT_SAMP250HD}", "name": "AUF2 SAMP-250 HD x 2", "weight": 613}
     AUF2_SAMP_250_x_2 = {"clsid": "{M2KC_RAFAUT_SAMP250LD}", "name": "AUF2 SAMP-250 x 2", "weight": 565}
-    AUF_2___2_x_Belouga_AC___305kg_CBU__151_x_HEAT_Bomblets = {"clsid": "{AUF2_BLG66}", "name": "AUF 2 - 2 x Belouga AC - 305kg CBU, 151 x HEAT Bomblets", "weight": 685}
-    AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = {"clsid": "{AUF2_BLU107}", "name": "AUF 2 - 2 x BLU-107/B Durandal - 219kg Concrete Piercing Chute Retarded Bomb w/Booster", "weight": 513}
-    AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = {"clsid": "{AUF2_BR250}", "name": "AUF 2 - 2 x BR-250 - 250kg GP Bomb LD", "weight": 575}
-    AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = {"clsid": "{AUF2_GBU12}", "name": "AUF 2 - 2 x GBU-12 - 500lb Laser Guided Bomb", "weight": 629}
-    AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = {"clsid": "{AUF2_MK82}", "name": "AUF 2 - 2 x Mk-82 - 500lb GP Bomb LD", "weight": 531}
-    AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = {"clsid": "{AUF2_SAMP125LD}", "name": "AUF 2 - 2 x SAMP-125 - 125 kg GP Bomb LD", "weight": 315}
-    AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = {"clsid": "{AUF2_SAMP250LD}", "name": "AUF 2 - 2 x SAMP-250 - 250 kg GP Bomb LD", "weight": 565}
-    AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = {"clsid": "{AUF2_SAMP250HD}", "name": "AUF 2 - 2 x SAMP-250 - 250 kg GP Chute Retarded Bomb HD", "weight": 613}
+    AUF_2___2_x_BLG_66_Belouga_AC___CBU__151_x_HEAT_Bomblets = {"clsid": "{AUF2_BLG66}", "name": "AUF 2 - 2 x BLG-66 Belouga AC - CBU, 151 x HEAT Bomblets", "weight": 680}
+    AUF_2___2_x_BLG_66_Belouga_AC___CBU__151_x_HEAT_Bomblets_ = {"clsid": "{AUF2_BLG66_AC}", "name": "AUF 2 - 2 x BLG-66 Belouga AC - CBU, 151 x HEAT Bomblets", "weight": 680}
+    AUF_2___2_x_BLG_66_Belouga_EG___CBU__151_x_HE_Frag_Bomblets = {"clsid": "{AUF2_BLG66_EG}", "name": "AUF 2 - 2 x BLG-66 Belouga EG - CBU, 151 x HE/Frag Bomblets", "weight": 680}
+    AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = {"clsid": "{AUF2_BLU107}", "name": "AUF 2 - 2 x BLU-107/B Durandal - 219kg Concrete Piercing Chute Retarded Bomb w/Booster", "weight": 518}
+    AUF_2___2_x_BR_250___250kg_GP_Bomb_LD = {"clsid": "{AUF2_BR250}", "name": "AUF 2 - 2 x BR-250 - 250kg GP Bomb LD", "weight": 580}
+    AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb = {"clsid": "{AUF2_GBU12}", "name": "AUF 2 - 2 x GBU-12 - 500lb Laser Guided Bomb", "weight": 634}
+    AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD = {"clsid": "{AUF2_MK82}", "name": "AUF 2 - 2 x Mk-82 - 500lb GP Bomb LD", "weight": 536}
+    AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = {"clsid": "{AUF2_SAMP125LD}", "name": "AUF 2 - 2 x SAMP-125 - 125 kg GP Bomb LD", "weight": 320}
+    AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = {"clsid": "{AUF2_SAMP250HD}", "name": "AUF 2 - 2 x SAMP-250 - 250 kg GP Bomb LD", "weight": 570}
+    AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = {"clsid": "{AUF2_SAMP250LD}", "name": "AUF 2 - 2 x SAMP-250 - 250 kg GP Chute Retarded Bomb HD", "weight": 618}
     AWW_13_DATALINK_POD = {"clsid": "{AWW-13}", "name": "AWW-13 DATALINK POD", "weight": 200}
     A_A_Training = {"clsid": "{M2KC_AAF}", "name": "A/A Training", "weight": 0}
     A_G_Training = {"clsid": "{M2KC_AGF}", "name": "A/G Training", "weight": 0}
@@ -224,7 +226,6 @@ class Weapons:
     Beer_Bomb__D__on_RH_Spitfire_Wing_Carrier = {"clsid": "Beer_Bomb_(D)_on_RH_Spitfire_Wing_Carrier", "name": "\"Beer Bomb\" (Bitter Ale)", "weight": 104}
     Beer_Bomb__L__on_LH_Spitfire_Wing_Carrier = {"clsid": "Beer_Bomb_(L)_on_LH_Spitfire_Wing_Carrier", "name": "\"Beer Bomb\" (Pale Ale)", "weight": 104}
     Beer_Bomb__L__on_RH_Spitfire_Wing_Carrier = {"clsid": "Beer_Bomb_(L)_on_RH_Spitfire_Wing_Carrier", "name": "\"Beer Bomb\" (Pale Ale)", "weight": 104}
-    Belouga = {"clsid": "{BLG66_BELOUGA}", "name": "Belouga", "weight": 290}
     BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb = {"clsid": "{BD289E34-DF84-4C5E-9220-4B14C346E79D}", "name": "BetAB-500ShP - 500kg Concrete Piercing HD w booster Bomb", "weight": 424}
     BetAB_500___500kg_Concrete_Piercing_Bomb_LD = {"clsid": "{35B698AC-9FEF-4EC4-AD29-484A0085F62B}", "name": "BetAB-500 - 500kg Concrete Piercing Bomb LD", "weight": 430}
     BF109K_4_FUEL_TANK = {"clsid": "BF109K_4_FUEL_TANK", "name": "300 liter Fuel Tank", "weight": 266}
@@ -235,7 +236,8 @@ class Weapons:
     BK_90_MJ1__72_x_MJ1_HE_FRAG_Bomblets_ = {"clsid": "{BK90MJ1}", "name": "BK-90 MJ1 (72 x MJ1 HE-FRAG Bomblets)", "weight": 605}
     BK_90_MJ2__24_x_MJ2_HEAT_Bomblets_ = {"clsid": "{BK90MJ2}", "name": "BK-90 MJ2 (24 x MJ2 HEAT Bomblets)", "weight": 605}
     BLG_66_AC_Belouga = {"clsid": "{BLG66_BELOUGA_AC}", "name": "BLG-66-AC Belouga", "weight": 305}
-    BLG_66_Belouga_AC___305kg_CBU__151_x_HEAT_Bomblets = {"clsid": "{BLG66_AC}", "name": "BLG-66 Belouga AC - 305kg CBU, 151 x HEAT Bomblets", "weight": 305}
+    BLG_66_Belouga_AC___CBU__151_x_HEAT_Bomblets = {"clsid": "{BLG66_AC}", "name": "BLG-66 Belouga AC - CBU, 151 x HEAT Bomblets", "weight": 300}
+    BLG_66_Belouga_EG___CBU__151_x_HE_Frag_Bomblets = {"clsid": "{BLG66_EG}", "name": "BLG-66 Belouga EG - CBU, 151 x HE/Frag Bomblets", "weight": 300}
     BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = {"clsid": "{BLU107B_DURANDAL}", "name": "BLU-107/B Durandal - 219kg Concrete Piercing Chute Retarded Bomb w/Booster", "weight": 219}
     BLU_107___3 = {"clsid": "{CFT_L_BLU107_x_3}", "name": "BLU-107 * 3", "weight": 657}
     BLU_107___3_ = {"clsid": "{CFT_R_BLU107_x_3}", "name": "BLU-107 * 3", "weight": 657}
@@ -419,8 +421,8 @@ class Weapons:
     DIS_BOMB_250_3 = {"clsid": "DIS_BOMB_250_3", "name": "250-3 - 250kg GP Bombs LD", "weight": 250}
     DIS_BRM1_90 = {"clsid": "DIS_BRM1_90", "name": "BRM-1_90MM", "weight": 462.5}
     DIS_CM_400AKG = {"clsid": "DIS_CM-400AKG", "name": "CM-400AKG", "weight": 960}
-    DIS_CM_802AKG = {"clsid": "DIS_CM-802AKG", "name": "CM802AKG (DIS)", "weight": 765}
-    DIS_CM_802AKG_AI = {"clsid": "DIS_CM-802AKG_AI", "name": "CM802AKG (DIS) for AI", "weight": 765}
+    DIS_CM_802AKG = {"clsid": "DIS_CM-802AKG", "name": "CM802AKG (DIS)", "weight": 720}
+    DIS_CM_802AKG_AI = {"clsid": "DIS_CM-802AKG_AI", "name": "CM802AKG (DIS) for AI", "weight": 720}
     DIS_C_701IR = {"clsid": "DIS_C-701IR", "name": "C-701IR", "weight": 170}
     DIS_C_701T = {"clsid": "DIS_C-701T", "name": "C-701T", "weight": 170}
     DIS_C_802AK = {"clsid": "DIS_C-802AK", "name": "C802AK", "weight": 765}
@@ -436,7 +438,7 @@ class Weapons:
     DIS_GBU_16 = {"clsid": "DIS_GBU_16", "name": "GBU-16", "weight": 564}
     DIS_GDJ_KD63 = {"clsid": "DIS_GDJ_KD63", "name": "KD-63", "weight": 2050}
     DIS_GDJ_KD63B = {"clsid": "DIS_GDJ_KD63B", "name": "KD-63B", "weight": 2050}
-    DIS_GDJ_YJ83K = {"clsid": "DIS_GDJ_YJ83K", "name": "YJ-83K", "weight": 765}
+    DIS_GDJ_YJ83K = {"clsid": "DIS_GDJ_YJ83K", "name": "YJ83K", "weight": 765}
     DIS_H6_250_2_N12 = {"clsid": "DIS_H6_250_2_N12", "name": "12 x 250-2 - 250kg GP Bombs HD", "weight": 3000}
     DIS_H6_250_2_N24 = {"clsid": "DIS_H6_250_2_N24", "name": "24 x 250-2 - 250kg GP Bombs HD", "weight": 6000}
     DIS_HJ_12 = {"clsid": "DIS_HJ-12", "name": "HJ-12", "weight": 22}
@@ -491,7 +493,7 @@ class Weapons:
     DIS_TYPE200_DUAL_R = {"clsid": "DIS_TYPE200_DUAL_R", "name": "TYPE-200A Dual", "weight": 400}
     DIS_WMD7 = {"clsid": "DIS_WMD7", "name": "AVIC WMD7 FLIR/LDT POD", "weight": 295}
     DIS_YJ12 = {"clsid": "DIS_YJ12", "name": "YJ-12", "weight": 1750}
-    DIS_YJ83K = {"clsid": "DIS_YJ83K", "name": "YJ-83K", "weight": 715}
+    DIS_YJ83K = {"clsid": "DIS_YJ83K", "name": "YJ83K", "weight": 715}
     DIS_YU_6 = {"clsid": "DIS_YU_6", "name": "YU-6", "weight": 1558}
     Dipole_Antanna__aesthetic_ = {"clsid": "{SA342_Dipole}", "name": "Dipole Antanna (aesthetic)", "weight": 5}
     DWS39_MJ1 = {"clsid": "{DWS39_MJ1}", "name": "DWS39 MJ1", "weight": 605}
@@ -1909,14 +1911,16 @@ weapon_ids = {
     "{M2KC_RAFAUT_ROCKEYE}": Weapons.AUF2_ROCKEYE_x_2,
     "{M2KC_RAFAUT_SAMP250HD}": Weapons.AUF2_SAMP_250_HD_x_2,
     "{M2KC_RAFAUT_SAMP250LD}": Weapons.AUF2_SAMP_250_x_2,
-    "{AUF2_BLG66}": Weapons.AUF_2___2_x_Belouga_AC___305kg_CBU__151_x_HEAT_Bomblets,
+    "{AUF2_BLG66}": Weapons.AUF_2___2_x_BLG_66_Belouga_AC___CBU__151_x_HEAT_Bomblets,
+    "{AUF2_BLG66_AC}": Weapons.AUF_2___2_x_BLG_66_Belouga_AC___CBU__151_x_HEAT_Bomblets_,
+    "{AUF2_BLG66_EG}": Weapons.AUF_2___2_x_BLG_66_Belouga_EG___CBU__151_x_HE_Frag_Bomblets,
     "{AUF2_BLU107}": Weapons.AUF_2___2_x_BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster,
     "{AUF2_BR250}": Weapons.AUF_2___2_x_BR_250___250kg_GP_Bomb_LD,
     "{AUF2_GBU12}": Weapons.AUF_2___2_x_GBU_12___500lb_Laser_Guided_Bomb,
     "{AUF2_MK82}": Weapons.AUF_2___2_x_Mk_82___500lb_GP_Bomb_LD,
     "{AUF2_SAMP125LD}": Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD,
-    "{AUF2_SAMP250LD}": Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD,
-    "{AUF2_SAMP250HD}": Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD,
+    "{AUF2_SAMP250HD}": Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD,
+    "{AUF2_SAMP250LD}": Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD,
     "{AWW-13}": Weapons.AWW_13_DATALINK_POD,
     "{M2KC_AAF}": Weapons.A_A_Training,
     "{M2KC_AGF}": Weapons.A_G_Training,
@@ -1957,7 +1961,6 @@ weapon_ids = {
     "Beer_Bomb_(D)_on_RH_Spitfire_Wing_Carrier": Weapons.Beer_Bomb__D__on_RH_Spitfire_Wing_Carrier,
     "Beer_Bomb_(L)_on_LH_Spitfire_Wing_Carrier": Weapons.Beer_Bomb__L__on_LH_Spitfire_Wing_Carrier,
     "Beer_Bomb_(L)_on_RH_Spitfire_Wing_Carrier": Weapons.Beer_Bomb__L__on_RH_Spitfire_Wing_Carrier,
-    "{BLG66_BELOUGA}": Weapons.Belouga,
     "{BD289E34-DF84-4C5E-9220-4B14C346E79D}": Weapons.BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb,
     "{35B698AC-9FEF-4EC4-AD29-484A0085F62B}": Weapons.BetAB_500___500kg_Concrete_Piercing_Bomb_LD,
     "BF109K_4_FUEL_TANK": Weapons.BF109K_4_FUEL_TANK,
@@ -1968,7 +1971,8 @@ weapon_ids = {
     "{BK90MJ1}": Weapons.BK_90_MJ1__72_x_MJ1_HE_FRAG_Bomblets_,
     "{BK90MJ2}": Weapons.BK_90_MJ2__24_x_MJ2_HEAT_Bomblets_,
     "{BLG66_BELOUGA_AC}": Weapons.BLG_66_AC_Belouga,
-    "{BLG66_AC}": Weapons.BLG_66_Belouga_AC___305kg_CBU__151_x_HEAT_Bomblets,
+    "{BLG66_AC}": Weapons.BLG_66_Belouga_AC___CBU__151_x_HEAT_Bomblets,
+    "{BLG66_EG}": Weapons.BLG_66_Belouga_EG___CBU__151_x_HE_Frag_Bomblets,
     "{BLU107B_DURANDAL}": Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster,
     "{CFT_L_BLU107_x_3}": Weapons.BLU_107___3,
     "{CFT_R_BLU107_x_3}": Weapons.BLU_107___3_,
