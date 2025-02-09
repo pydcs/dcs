@@ -1027,14 +1027,14 @@ class Mission:
                 for ship_group in self.coalition[coalition_name].countries[country_name].ship_group:
                     for unit_ in ship_group.units:
                         if ships.ship_map[unit_.type].parking > 0:
-                            self.warehouses.warehouses[str(unit_.id)] = terrain_.terrain.Warehouse().dict()
-                            self.warehouses.warehouses[str(unit_.id)]['coalition'] = coalition_name_in_warehouse
+                            self.warehouses.warehouses[int(unit_.id)] = terrain_.terrain.Warehouse().dict()
+                            self.warehouses.warehouses[int(unit_.id)]['coalition'] = coalition_name_in_warehouse
                 # FARPs need a warehouse entry.
                 for static_group in self.coalition[coalition_name].countries[country_name].static_group:
                     for unit_ in static_group.units:
                         if isinstance(unit_, unit.BaseFARP):
-                            self.warehouses.warehouses[str(unit_.id)] = terrain_.terrain.Warehouse().dict()
-                            self.warehouses.warehouses[str(unit_.id)]['coalition'] = coalition_name_in_warehouse
+                            self.warehouses.warehouses[int(unit_.id)] = terrain_.terrain.Warehouse().dict()
+                            self.warehouses.warehouses[int(unit_.id)]['coalition'] = coalition_name_in_warehouse
 
     def _flying_group_from_airport(self, _country, group: unitgroup.FlyingGroup,
                                    maintask: Type[task.MainTask],

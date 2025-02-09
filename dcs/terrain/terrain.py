@@ -138,6 +138,7 @@ class Warehouse:
         self.jet_init = 100
         self.dynamic_spawn = False
         self.dynamic_cargo = False
+        self.allow_hot_start = False
 
     def load_from_dict(self, d):
         self.coalition = d["coalition"]
@@ -159,6 +160,7 @@ class Warehouse:
         self.jet_init = d.get("jet_fuel", {}).get("InitFuel", 100)
         self.dynamic_spawn = d.get("dynamicSpawn", False)
         self.dynamic_cargo = d.get("dynamicCargo", False)
+        self.allow_hot_start = d.get("allowHotStart", False)
 
     def dict(self):
         d = {
@@ -180,7 +182,8 @@ class Warehouse:
             "diesel": {"InitFuel": self.diesel_init},
             "jet_fuel": {"InitFuel": self.jet_init},
             "dynamicSpawn": self.dynamic_spawn,
-            "dynamicCargo": self.dynamic_cargo
+            "dynamicCargo": self.dynamic_cargo,
+            "allowHotStart": self.allow_hot_start
         }
         return d
 
