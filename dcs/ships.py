@@ -435,15 +435,15 @@ class Type_052C(unittype.ShipType):
     helicopter_num = 1
     parking = 1
     detection_range = 260000
-    threat_range = 100000
-    air_weapon_dist = 100000
+    threat_range = 150000
+    air_weapon_dist = 150000
 
 
 class Type_093(unittype.ShipType):
     id = "Type_093"
     name = "Type 093 Attack Submarine"
-    detection_range = 40000
-    threat_range = 40000
+    detection_range = 42000
+    threat_range = 42000
     air_weapon_dist = 0
 
 

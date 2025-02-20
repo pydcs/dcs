@@ -883,21 +883,21 @@ class AirDefence:
 
     class HQ_7_LN_SP(unittype.VehicleType):
         id = "HQ-7_LN_SP"
-        name = "HQ-7 Self-Propelled LN"
-        detection_range = 8000
-        threat_range = 12000
-        air_weapon_dist = 12000
+        name = "HQ-7B SHORAD TELAR"
+        detection_range = 20000
+        threat_range = 15000
+        air_weapon_dist = 15000
 
     class HQ_7_LN_P(unittype.VehicleType):
         id = "HQ-7_LN_P"
-        name = "HQ-7 LN (Player)"
-        detection_range = 8000
-        threat_range = 12000
-        air_weapon_dist = 12000
+        name = "HQ-7 SHORAD TELAR (Player)"
+        detection_range = 20000
+        threat_range = 15000
+        air_weapon_dist = 15000
 
     class HQ_7_STR_SP(unittype.VehicleType):
         id = "HQ-7_STR_SP"
-        name = "HQ-7 Self-Propelled STR"
+        name = "HQ-7B SHORAD SR"
         detection_range = 30000
         threat_range = 0
         air_weapon_dist = 0
