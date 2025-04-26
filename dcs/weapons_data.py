@@ -139,6 +139,7 @@ class Weapons:
     AN_M64___500lb_GP_Bomb_LD_ = {"clsid": "{F86ANM64}", "name": "AN-M64 - 500lb GP Bomb LD", "weight": 227}
     AN_M65___1000lb_GP_Bomb_LD = {"clsid": "{AN_M65}", "name": "AN-M65 - 1000lb GP Bomb LD", "weight": 475}
     AN_M66___2000lb_GP_Bomb_LD = {"clsid": "{AN_M66}", "name": "AN-M66 - 2000lb GP Bomb LD", "weight": 977}
+    APK_9_Datalink_Pod = {"clsid": "{APK_9}", "name": "APK-9 Datalink Pod", "weight": 260}
     APU_13MT_with_R_13M1__AA_2_Atoll_D____IR_AAM = {"clsid": "{R-13M1}", "name": "APU-13MT with R-13M1 (AA-2 Atoll-D) - IR AAM", "weight": 146.8}
     APU_13MT_with_R_13M__AA_2_Atoll_D____IR_AAM = {"clsid": "{R-13M}", "name": "APU-13MT with R-13M (AA-2 Atoll-D) - IR AAM", "weight": 143.9}
     APU_13MT_with_R_3S__AA_2_Atoll_B____IR_AAM = {"clsid": "{APU_13MT_R_3S}", "name": "APU-13MT with R-3S (AA-2 Atoll-B) - IR AAM", "weight": 122.8}
@@ -410,6 +411,7 @@ class Weapons:
     Color_Oil_Tank = {"clsid": "{COLOR-TANK}", "name": "Color Oil Tank", "weight": 132.5}
     Cylindrical_Tip_Tank_500lt = {"clsid": "{FUEL-TIP-TANK-500-L}", "name": "Cylindrical Tip Tank 500lt", "weight": 471}
     Cylindrical_Tip_Tank_500lt_ = {"clsid": "{FUEL-TIP-TANK-500-R}", "name": "Cylindrical Tip Tank 500lt", "weight": 471}
+    C_701IR = {"clsid": "{DIS_C-701IR}", "name": "C-701IR", "weight": 170}
     C_701T = {"clsid": "{DIS_C-701T}", "name": "C-701T", "weight": 170}
     C_802AK = {"clsid": "{C_802AK}", "name": "C-802AK", "weight": 600}
     DEFA553_Gunpod_Left = {"clsid": "{MB339_DEFA553_L}", "name": "DEFA553 Gunpod Left", "weight": 190}
@@ -1331,6 +1333,7 @@ class Weapons:
     XM158_MK5 = {"clsid": "XM158_MK5", "name": "XM158 - 7 x UnGd Rkts, 70 mm Hydra 70 Mk 5 HEAT", "weight": 82.1}
     YJ_12 = {"clsid": "{YJ_12}", "name": "YJ-12", "weight": 1750}
     YJ_83 = {"clsid": "{YJ_83}", "name": "YJ-83", "weight": 715}
+    YJ_83K = {"clsid": "{YJ_83K}", "name": "YJ-83K", "weight": 715}
     YU_6 = {"clsid": "{Yu_6}", "name": "YU-6", "weight": 1558}
     _100_gal__Drop_Tank = {"clsid": "{MOSQUITO_100GAL_SLIPPER_TANK}", "name": "100 gal. Drop Tank", "weight": 375.3}
     _108_US_gal__Paper_Fuel_Tank = {"clsid": "{US_108GAL_PAPER_FUEL_TANK}", "name": "108 US gal. Paper Fuel Tank", "weight": 319}
@@ -1367,6 +1370,8 @@ class Weapons:
     _1x_Mk_83___1000lb_GP_Bomb_LD__MER__Ripple_ = {"clsid": "{HB_F4E_MK-83_MER_1x_Right_Ripple}", "name": "1x Mk-83 - 1000lb GP Bomb LD (MER) Ripple", "weight": 553.8}
     _1x_SAMP_250___250KG_GP_Bomb_LD__TER_ = {"clsid": "{HB_F4E_SAMP250LD_TER_1x_SingleLeft}", "name": "1x SAMP-250 - 250KG GP Bomb LD (TER)", "weight": 375}
     _1x_SAMP_250___250KG_GP_Bomb_LD__TER__ = {"clsid": "{HB_F4E_SAMP250LD_TER_1x_SingleRight}", "name": "1x SAMP-250 - 250KG GP Bomb LD (TER)", "weight": 375}
+    _1x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_ = {"clsid": "{HB_F4E_SAMP250HD_TER_1x_SingleLeft}", "name": "1x SAMP-250 - 250KG GP Chute Retarded Bomb HD (TER)", "weight": 397}
+    _1x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER__ = {"clsid": "{HB_F4E_SAMP250HD_TER_1x_SingleRight}", "name": "1x SAMP-250 - 250KG GP Chute Retarded Bomb HD (TER)", "weight": 397}
     _1_x_HOT_3___ATGM__SACLOS__HEAT = {"clsid": "{HOT3_R1}", "name": "1 x HOT-3 - ATGM, SACLOS, HEAT", "weight": 54.5}
     _1_x_HOT_3___ATGM__SACLOS__HEAT_ = {"clsid": "{HOT3_L1}", "name": "1 x HOT-3 - ATGM, SACLOS, HEAT", "weight": 54.5}
     _1_x_HOT_3___ATGM__SACLOS__HEAT__ = {"clsid": "{HOT3_L1_M}", "name": "1 x HOT-3 - ATGM, SACLOS, HEAT", "weight": 54.5}
@@ -1443,6 +1448,9 @@ class Weapons:
     _2x_SAMP_250___250KG_GP_Bomb_LD__TER_ = {"clsid": "{HB_F4E_SAMP250LD_TER_2x_Left}", "name": "2x SAMP-250 - 250KG GP Bomb LD (TER)", "weight": 622}
     _2x_SAMP_250___250KG_GP_Bomb_LD__TER__ = {"clsid": "{HB_F4E_SAMP250LD_TER_2x_Right}", "name": "2x SAMP-250 - 250KG GP Bomb LD (TER)", "weight": 622}
     _2x_SAMP_250___250KG_GP_Bomb_LD__TER___ = {"clsid": "{HB_F4E_SAMP250LD_TER_2x_opposed}", "name": "2x SAMP-250 - 250KG GP Bomb LD (TER)", "weight": 622}
+    _2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_ = {"clsid": "{HB_F4E_SAMP250HD_TER_2x_Left}", "name": "2x SAMP-250 - 250KG GP Chute Retarded Bomb HD (TER)", "weight": 666}
+    _2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER__ = {"clsid": "{HB_F4E_SAMP250HD_TER_2x_Right}", "name": "2x SAMP-250 - 250KG GP Chute Retarded Bomb HD (TER)", "weight": 666}
+    _2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER___ = {"clsid": "{HB_F4E_SAMP250HD_TER_2x_opposed}", "name": "2x SAMP-250 - 250KG GP Chute Retarded Bomb HD (TER)", "weight": 666}
     _2x_SUU_25_x_8_LUU_2___Target_Marker_Flares__MER_ = {"clsid": "{HB_F4E_SUU-25_MER_2x_Left}", "name": "2x SUU-25 x 8 LUU-2 - Target Marker Flares (MER)", "weight": 553.4}
     _2x_SUU_25_x_8_LUU_2___Target_Marker_Flares__MER__ = {"clsid": "{HB_F4E_SUU-25_MER_2x_Right}", "name": "2x SUU-25 x 8 LUU-2 - Target Marker Flares (MER)", "weight": 553.4}
     _2x_SUU_25_x_8_LUU_2___Target_Marker_Flares__MER___ = {"clsid": "{HB_F4E_SUU-25_MER_2x}", "name": "2x SUU-25 x 8 LUU-2 - Target Marker Flares (MER)", "weight": 553.4}
@@ -1631,6 +1639,7 @@ class Weapons:
     _3x_Mk_83___1000lb_GP_Bomb_LD__MER__Ripple = {"clsid": "{HB_F4E_MK-83_MER_3x_Ripple}", "name": "3x Mk-83 - 1000lb GP Bomb LD (MER) Ripple", "weight": 1461.8}
     _3x_Mk_83___1000lb_GP_Bomb_LD__TER_ = {"clsid": "{HB_F4E_MK-83_3x}", "name": "3x Mk-83 - 1000lb GP Bomb LD (TER)", "weight": 1490}
     _3x_SAMP_250___250KG_GP_Bomb_LD__TER_ = {"clsid": "{HB_F4E_SAMP250LD_TER_3x}", "name": "3x SAMP-250 - 250KG GP Bomb LD (TER)", "weight": 869}
+    _3x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_ = {"clsid": "{HB_F4E_SAMP250HD_TER_3x}", "name": "3x SAMP-250 - 250KG GP Chute Retarded Bomb HD (TER)", "weight": 935}
     _3_BDU_33 = {"clsid": "{BRU42_3*BDU33}", "name": "3 BDU-33", "weight": 161}
     _3_BDU_33_ = {"clsid": "{BRU3242_3*BDU33}", "name": "3 BDU-33", "weight": 218.38}
     _3_BDU_33__ = {"clsid": "{BRU42_3*BDU33_N}", "name": "3 BDU-33", "weight": 161}
@@ -1874,6 +1883,7 @@ weapon_ids = {
     "{F86ANM64}": Weapons.AN_M64___500lb_GP_Bomb_LD_,
     "{AN_M65}": Weapons.AN_M65___1000lb_GP_Bomb_LD,
     "{AN_M66}": Weapons.AN_M66___2000lb_GP_Bomb_LD,
+    "{APK_9}": Weapons.APK_9_Datalink_Pod,
     "{R-13M1}": Weapons.APU_13MT_with_R_13M1__AA_2_Atoll_D____IR_AAM,
     "{R-13M}": Weapons.APU_13MT_with_R_13M__AA_2_Atoll_D____IR_AAM,
     "{APU_13MT_R_3S}": Weapons.APU_13MT_with_R_3S__AA_2_Atoll_B____IR_AAM,
@@ -2145,6 +2155,7 @@ weapon_ids = {
     "{COLOR-TANK}": Weapons.Color_Oil_Tank,
     "{FUEL-TIP-TANK-500-L}": Weapons.Cylindrical_Tip_Tank_500lt,
     "{FUEL-TIP-TANK-500-R}": Weapons.Cylindrical_Tip_Tank_500lt_,
+    "{DIS_C-701IR}": Weapons.C_701IR,
     "{DIS_C-701T}": Weapons.C_701T,
     "{C_802AK}": Weapons.C_802AK,
     "{MB339_DEFA553_L}": Weapons.DEFA553_Gunpod_Left,
@@ -3066,6 +3077,7 @@ weapon_ids = {
     "XM158_MK5": Weapons.XM158_MK5,
     "{YJ_12}": Weapons.YJ_12,
     "{YJ_83}": Weapons.YJ_83,
+    "{YJ_83K}": Weapons.YJ_83K,
     "{Yu_6}": Weapons.YU_6,
     "{MOSQUITO_100GAL_SLIPPER_TANK}": Weapons._100_gal__Drop_Tank,
     "{US_108GAL_PAPER_FUEL_TANK}": Weapons._108_US_gal__Paper_Fuel_Tank,
@@ -3102,6 +3114,8 @@ weapon_ids = {
     "{HB_F4E_MK-83_MER_1x_Right_Ripple}": Weapons._1x_Mk_83___1000lb_GP_Bomb_LD__MER__Ripple_,
     "{HB_F4E_SAMP250LD_TER_1x_SingleLeft}": Weapons._1x_SAMP_250___250KG_GP_Bomb_LD__TER_,
     "{HB_F4E_SAMP250LD_TER_1x_SingleRight}": Weapons._1x_SAMP_250___250KG_GP_Bomb_LD__TER__,
+    "{HB_F4E_SAMP250HD_TER_1x_SingleLeft}": Weapons._1x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_,
+    "{HB_F4E_SAMP250HD_TER_1x_SingleRight}": Weapons._1x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER__,
     "{HOT3_R1}": Weapons._1_x_HOT_3___ATGM__SACLOS__HEAT,
     "{HOT3_L1}": Weapons._1_x_HOT_3___ATGM__SACLOS__HEAT_,
     "{HOT3_L1_M}": Weapons._1_x_HOT_3___ATGM__SACLOS__HEAT__,
@@ -3178,6 +3192,9 @@ weapon_ids = {
     "{HB_F4E_SAMP250LD_TER_2x_Left}": Weapons._2x_SAMP_250___250KG_GP_Bomb_LD__TER_,
     "{HB_F4E_SAMP250LD_TER_2x_Right}": Weapons._2x_SAMP_250___250KG_GP_Bomb_LD__TER__,
     "{HB_F4E_SAMP250LD_TER_2x_opposed}": Weapons._2x_SAMP_250___250KG_GP_Bomb_LD__TER___,
+    "{HB_F4E_SAMP250HD_TER_2x_Left}": Weapons._2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_,
+    "{HB_F4E_SAMP250HD_TER_2x_Right}": Weapons._2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER__,
+    "{HB_F4E_SAMP250HD_TER_2x_opposed}": Weapons._2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER___,
     "{HB_F4E_SUU-25_MER_2x_Left}": Weapons._2x_SUU_25_x_8_LUU_2___Target_Marker_Flares__MER_,
     "{HB_F4E_SUU-25_MER_2x_Right}": Weapons._2x_SUU_25_x_8_LUU_2___Target_Marker_Flares__MER__,
     "{HB_F4E_SUU-25_MER_2x}": Weapons._2x_SUU_25_x_8_LUU_2___Target_Marker_Flares__MER___,
@@ -3366,6 +3383,7 @@ weapon_ids = {
     "{HB_F4E_MK-83_MER_3x_Ripple}": Weapons._3x_Mk_83___1000lb_GP_Bomb_LD__MER__Ripple,
     "{HB_F4E_MK-83_3x}": Weapons._3x_Mk_83___1000lb_GP_Bomb_LD__TER_,
     "{HB_F4E_SAMP250LD_TER_3x}": Weapons._3x_SAMP_250___250KG_GP_Bomb_LD__TER_,
+    "{HB_F4E_SAMP250HD_TER_3x}": Weapons._3x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_,
     "{BRU42_3*BDU33}": Weapons._3_BDU_33,
     "{BRU3242_3*BDU33}": Weapons._3_BDU_33_,
     "{BRU42_3*BDU33_N}": Weapons._3_BDU_33__,

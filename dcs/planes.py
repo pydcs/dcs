@@ -2060,11 +2060,11 @@ class MiG_25PD(PlaneType):
     length = 23.82
     fuel_max = 15245
     max_speed = 3000
-    chaff = 64
-    flare = 64
-    charge_total = 128
-    chaff_charge_size = 1
-    flare_charge_size = 1
+    chaff = 0
+    flare = 0
+    charge_total = 0
+    chaff_charge_size = 0
+    flare_charge_size = 0
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
 
     livery_name = "MIG-25PD"  # from type
@@ -2736,6 +2736,7 @@ class Su_24M(PlaneType):
         SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
 
     class Pylon4:
+        APK_9_Datalink_Pod = (4, Weapons.APK_9_Datalink_Pod)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (4, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (4, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
         FAB_250___250kg_GP_Bomb_LD = (4, Weapons.FAB_250___250kg_GP_Bomb_LD)
@@ -4235,7 +4236,7 @@ class IL_78M(PlaneType):
     height = 14.76
     width = 50.5
     length = 46.59
-    fuel_max = 90000
+    fuel_max = 112000
     max_speed = 850
     chaff = 96
     flare = 96
@@ -4327,7 +4328,7 @@ class IL_76MD(PlaneType):
     height = 14.76
     width = 50.5
     length = 46.59
-    fuel_max = 80000
+    fuel_max = 87584
     max_speed = 850
     chaff = 96
     flare = 96
@@ -11671,6 +11672,7 @@ class F_4E_45MC(PlaneType):
         "Wear": 0,
         "UseReferenceAircraft": False,
         "INSAlignmentStored": True,
+        "IsModifiedJesterAllowed": True,
         "IsNvgAllowed": True,
         "TacanChannel": 0,
         "TacanBand": 0,
@@ -11701,6 +11703,9 @@ class F_4E_45MC(PlaneType):
 
         class INSAlignmentStored:
             id = "INSAlignmentStored"
+
+        class IsModifiedJesterAllowed:
+            id = "IsModifiedJesterAllowed"
 
         class IsNvgAllowed:
             id = "IsNvgAllowed"
@@ -11803,6 +11808,13 @@ class F_4E_45MC(PlaneType):
             identifier="INSAlignmentStored",
             control="checkbox",
             label="INS Reference Alignment Stored",
+            player_only=True,
+            default=True,
+        ),
+        "IsModifiedJesterAllowed": UnitPropertyDescription(
+            identifier="IsModifiedJesterAllowed",
+            control="checkbox",
+            label="Allow Jester Modifications",
             player_only=True,
             default=True,
         ),
@@ -11982,6 +11994,9 @@ class F_4E_45MC(PlaneType):
         _3x_SAMP_250___250KG_GP_Bomb_LD__TER_ = (1, Weapons._3x_SAMP_250___250KG_GP_Bomb_LD__TER_)
         _2x_SAMP_250___250KG_GP_Bomb_LD__TER_ = (1, Weapons._2x_SAMP_250___250KG_GP_Bomb_LD__TER_)
         _1x_SAMP_250___250KG_GP_Bomb_LD__TER_ = (1, Weapons._1x_SAMP_250___250KG_GP_Bomb_LD__TER_)
+        _3x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_ = (1, Weapons._3x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_)
+        _2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_ = (1, Weapons._2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_)
+        _1x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_ = (1, Weapons._1x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_)
         _2x_CBU_1A_A_x_27x19__513__BLU_4B_Bomblets__HE__MER_ = (1, Weapons._2x_CBU_1A_A_x_27x19__513__BLU_4B_Bomblets__HE__MER_)
         _2x_CBU_2_A_x_19x19__361__BLU_3_Bomblets__HE__MER_ = (1, Weapons._2x_CBU_2_A_x_19x19__361__BLU_3_Bomblets__HE__MER_)
         _2x_CBU_2B_A_x_22x19__418__BLU_3B_Bomblets__HE__MER_ = (1, Weapons._2x_CBU_2B_A_x_22x19__418__BLU_3B_Bomblets__HE__MER_)
@@ -12073,6 +12088,9 @@ class F_4E_45MC(PlaneType):
         _3x_SAMP_250___250KG_GP_Bomb_LD__TER_ = (3, Weapons._3x_SAMP_250___250KG_GP_Bomb_LD__TER_)
         _2x_SAMP_250___250KG_GP_Bomb_LD__TER___ = (3, Weapons._2x_SAMP_250___250KG_GP_Bomb_LD__TER___)
         _1x_SAMP_250___250KG_GP_Bomb_LD__TER__ = (3, Weapons._1x_SAMP_250___250KG_GP_Bomb_LD__TER__)
+        _3x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_ = (3, Weapons._3x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_)
+        _2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER___ = (3, Weapons._2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER___)
+        _1x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER__ = (3, Weapons._1x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER__)
         Mk_84_AIR__BSU_50____2000_lb_GP_Chute_Retarded_Bomb_HD = (3, Weapons.Mk_84_AIR__BSU_50____2000_lb_GP_Chute_Retarded_Bomb_HD)
         GBU_24A_B_Paveway_III___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_24A_B_Paveway_III___2000lb_Laser_Guided_Bomb)
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
@@ -12199,6 +12217,9 @@ class F_4E_45MC(PlaneType):
         _3x_SAMP_250___250KG_GP_Bomb_LD__TER_ = (7, Weapons._3x_SAMP_250___250KG_GP_Bomb_LD__TER_)
         _2x_SAMP_250___250KG_GP_Bomb_LD__TER___ = (7, Weapons._2x_SAMP_250___250KG_GP_Bomb_LD__TER___)
         _1x_SAMP_250___250KG_GP_Bomb_LD__TER__ = (7, Weapons._1x_SAMP_250___250KG_GP_Bomb_LD__TER__)
+        _3x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_ = (7, Weapons._3x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_)
+        _2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER___ = (7, Weapons._2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER___)
+        _1x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER__ = (7, Weapons._1x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER__)
         Mk_84___2000lb_GP_Bomb_LD = (7, Weapons.Mk_84___2000lb_GP_Bomb_LD)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__MER_ = (7, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__MER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__MER_ = (7, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__MER_)
@@ -12275,6 +12296,9 @@ class F_4E_45MC(PlaneType):
         _3x_SAMP_250___250KG_GP_Bomb_LD__TER_ = (11, Weapons._3x_SAMP_250___250KG_GP_Bomb_LD__TER_)
         _2x_SAMP_250___250KG_GP_Bomb_LD__TER___ = (11, Weapons._2x_SAMP_250___250KG_GP_Bomb_LD__TER___)
         _1x_SAMP_250___250KG_GP_Bomb_LD__TER__ = (11, Weapons._1x_SAMP_250___250KG_GP_Bomb_LD__TER__)
+        _3x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_ = (11, Weapons._3x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_)
+        _2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER___ = (11, Weapons._2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER___)
+        _1x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER__ = (11, Weapons._1x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER__)
         Mk_84_AIR__BSU_50____2000_lb_GP_Chute_Retarded_Bomb_HD = (11, Weapons.Mk_84_AIR__BSU_50____2000_lb_GP_Chute_Retarded_Bomb_HD)
         GBU_24A_B_Paveway_III___2000lb_Laser_Guided_Bomb = (11, Weapons.GBU_24A_B_Paveway_III___2000lb_Laser_Guided_Bomb)
         GBU_10___2000lb_Laser_Guided_Bomb = (11, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
@@ -12376,6 +12400,9 @@ class F_4E_45MC(PlaneType):
         _3x_SAMP_250___250KG_GP_Bomb_LD__TER_ = (13, Weapons._3x_SAMP_250___250KG_GP_Bomb_LD__TER_)
         _2x_SAMP_250___250KG_GP_Bomb_LD__TER__ = (13, Weapons._2x_SAMP_250___250KG_GP_Bomb_LD__TER__)
         _1x_SAMP_250___250KG_GP_Bomb_LD__TER__ = (13, Weapons._1x_SAMP_250___250KG_GP_Bomb_LD__TER__)
+        _3x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_ = (13, Weapons._3x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER_)
+        _2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER__ = (13, Weapons._2x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER__)
+        _1x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER__ = (13, Weapons._1x_SAMP_250___250KG_GP_Chute_Retarded_Bomb_HD__TER__)
         _2x_CBU_1A_A_x_27x19__513__BLU_4B_Bomblets__HE__MER__ = (13, Weapons._2x_CBU_1A_A_x_27x19__513__BLU_4B_Bomblets__HE__MER__)
         _2x_CBU_2_A_x_19x19__361__BLU_3_Bomblets__HE__MER__ = (13, Weapons._2x_CBU_2_A_x_19x19__361__BLU_3_Bomblets__HE__MER__)
         _2x_CBU_2B_A_x_22x19__418__BLU_3B_Bomblets__HE__MER__ = (13, Weapons._2x_CBU_2B_A_x_22x19__418__BLU_3B_Bomblets__HE__MER__)
@@ -17294,8 +17321,8 @@ class Mirage_F1C(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -17387,16 +17414,16 @@ class Mirage_F1C(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -17539,10 +17566,10 @@ class Mirage_F1C(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -17552,10 +17579,10 @@ class Mirage_F1C(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -17576,10 +17603,12 @@ class Mirage_F1C(PlaneType):
     }
 
     livery_name = "MIRAGE-F1C"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -17608,6 +17637,7 @@ class Mirage_F1C(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -17647,6 +17677,7 @@ class Mirage_F1C(PlaneType):
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -17670,6 +17701,7 @@ class Mirage_F1C(PlaneType):
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -17709,6 +17741,7 @@ class Mirage_F1C(PlaneType):
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -17737,6 +17770,7 @@ class Mirage_F1C(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -17825,8 +17859,8 @@ class Mirage_F1CE(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
         "IFFMode4Disabled": 1,
     }
@@ -17919,16 +17953,16 @@ class Mirage_F1CE(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -18079,10 +18113,10 @@ class Mirage_F1CE(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -18092,10 +18126,10 @@ class Mirage_F1CE(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -18129,6 +18163,7 @@ class Mirage_F1CE(PlaneType):
     }
 
     livery_name = "MIRAGE-F1CE"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -18138,6 +18173,7 @@ class Mirage_F1CE(PlaneType):
         AIM_9JULI_Sidewinder_IR_AAM = (1, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18171,6 +18207,7 @@ class Mirage_F1CE(PlaneType):
         BR_250 = (2, Weapons.BR_250)
         BR_500 = (2, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (2, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18220,6 +18257,7 @@ class Mirage_F1CE(PlaneType):
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -18258,6 +18296,7 @@ class Mirage_F1CE(PlaneType):
         R530F_IR = (4, Weapons.R530F_IR)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
         PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18307,6 +18346,7 @@ class Mirage_F1CE(PlaneType):
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18340,6 +18380,7 @@ class Mirage_F1CE(PlaneType):
         BR_250 = (6, Weapons.BR_250)
         BR_500 = (6, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (6, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
+#ERRR <CLEAN>
 
     class Pylon7:
         AIM_9B_Sidewinder_IR_AAM = (7, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -18433,8 +18474,8 @@ class Mirage_F1EE(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
         "IFFMode4Disabled": 1,
         "INSStartMode": 1,
@@ -18529,16 +18570,16 @@ class Mirage_F1EE(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -18703,10 +18744,10 @@ class Mirage_F1EE(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -18716,10 +18757,10 @@ class Mirage_F1EE(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -18777,6 +18818,7 @@ class Mirage_F1EE(PlaneType):
     }
 
     livery_name = "MIRAGE-F1EE"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -18786,6 +18828,7 @@ class Mirage_F1EE(PlaneType):
         AIM_9JULI_Sidewinder_IR_AAM = (1, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18820,6 +18863,7 @@ class Mirage_F1EE(PlaneType):
         BR_500 = (2, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (2, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         BARAX_ECM = (2, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18869,6 +18913,7 @@ class Mirage_F1EE(PlaneType):
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -18907,6 +18952,7 @@ class Mirage_F1EE(PlaneType):
         R530F_IR = (4, Weapons.R530F_IR)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
         PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18956,6 +19002,7 @@ class Mirage_F1EE(PlaneType):
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18990,6 +19037,7 @@ class Mirage_F1EE(PlaneType):
         BR_500 = (6, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (6, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         BARAX_ECM = (6, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon7:
         AIM_9B_Sidewinder_IR_AAM = (7, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -19082,8 +19130,8 @@ class Mirage_F1M_EE(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -19175,16 +19223,16 @@ class Mirage_F1M_EE(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -19327,10 +19375,10 @@ class Mirage_F1M_EE(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -19340,10 +19388,10 @@ class Mirage_F1M_EE(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -19364,6 +19412,7 @@ class Mirage_F1M_EE(PlaneType):
     }
 
     livery_name = "MIRAGE-F1M-EE"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -19373,6 +19422,7 @@ class Mirage_F1M_EE(PlaneType):
         AIM_9JULI_Sidewinder_IR_AAM = (1, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -19407,6 +19457,7 @@ class Mirage_F1M_EE(PlaneType):
         BR_500 = (2, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (2, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         BARAX_ECM = (2, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -19456,6 +19507,7 @@ class Mirage_F1M_EE(PlaneType):
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -19494,6 +19546,7 @@ class Mirage_F1M_EE(PlaneType):
         R530F_IR = (4, Weapons.R530F_IR)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
         PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -19543,6 +19596,7 @@ class Mirage_F1M_EE(PlaneType):
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -19577,6 +19631,7 @@ class Mirage_F1M_EE(PlaneType):
         BR_500 = (6, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (6, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         BARAX_ECM = (6, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon7:
         AIM_9B_Sidewinder_IR_AAM = (7, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -19669,8 +19724,8 @@ class Mirage_F1M_CE(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -19762,16 +19817,16 @@ class Mirage_F1M_CE(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -19914,10 +19969,10 @@ class Mirage_F1M_CE(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -19927,10 +19982,10 @@ class Mirage_F1M_CE(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -19951,6 +20006,7 @@ class Mirage_F1M_CE(PlaneType):
     }
 
     livery_name = "MIRAGE-F1M-CE"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -19960,6 +20016,7 @@ class Mirage_F1M_CE(PlaneType):
         AIM_9JULI_Sidewinder_IR_AAM = (1, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -19993,6 +20050,7 @@ class Mirage_F1M_CE(PlaneType):
         BR_250 = (2, Weapons.BR_250)
         BR_500 = (2, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (2, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -20042,6 +20100,7 @@ class Mirage_F1M_CE(PlaneType):
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -20080,6 +20139,7 @@ class Mirage_F1M_CE(PlaneType):
         R530F_IR = (4, Weapons.R530F_IR)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
         PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -20129,6 +20189,7 @@ class Mirage_F1M_CE(PlaneType):
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -20162,6 +20223,7 @@ class Mirage_F1M_CE(PlaneType):
         BR_250 = (6, Weapons.BR_250)
         BR_500 = (6, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (6, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
+#ERRR <CLEAN>
 
     class Pylon7:
         AIM_9B_Sidewinder_IR_AAM = (7, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -20254,8 +20316,8 @@ class Mirage_F1C_200(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -20347,16 +20409,16 @@ class Mirage_F1C_200(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -20499,10 +20561,10 @@ class Mirage_F1C_200(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -20512,10 +20574,10 @@ class Mirage_F1C_200(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -20536,9 +20598,11 @@ class Mirage_F1C_200(PlaneType):
     }
 
     livery_name = "MIRAGE-F1C-200"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -20568,6 +20632,7 @@ class Mirage_F1C_200(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (2, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -20607,6 +20672,7 @@ class Mirage_F1C_200(PlaneType):
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -20634,6 +20700,7 @@ class Mirage_F1C_200(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -20673,6 +20740,7 @@ class Mirage_F1C_200(PlaneType):
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -20702,6 +20770,7 @@ class Mirage_F1C_200(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (6, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -20788,8 +20857,8 @@ class Mirage_F1EH(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -20881,16 +20950,16 @@ class Mirage_F1EH(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -21033,10 +21102,10 @@ class Mirage_F1EH(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -21046,10 +21115,10 @@ class Mirage_F1EH(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -21070,9 +21139,11 @@ class Mirage_F1EH(PlaneType):
     }
 
     livery_name = "MIRAGE-F1EH"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -21102,6 +21173,7 @@ class Mirage_F1EH(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (2, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -21141,6 +21213,7 @@ class Mirage_F1EH(PlaneType):
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -21168,6 +21241,7 @@ class Mirage_F1EH(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -21207,6 +21281,7 @@ class Mirage_F1EH(PlaneType):
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -21236,6 +21311,7 @@ class Mirage_F1EH(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (6, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -21322,8 +21398,8 @@ class Mirage_F1CH(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -21415,16 +21491,16 @@ class Mirage_F1CH(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -21567,10 +21643,10 @@ class Mirage_F1CH(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -21580,10 +21656,10 @@ class Mirage_F1CH(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -21604,9 +21680,11 @@ class Mirage_F1CH(PlaneType):
     }
 
     livery_name = "MIRAGE-F1CH"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -21636,6 +21714,7 @@ class Mirage_F1CH(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (2, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -21675,6 +21754,7 @@ class Mirage_F1CH(PlaneType):
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -21702,6 +21782,7 @@ class Mirage_F1CH(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -21741,6 +21822,7 @@ class Mirage_F1CH(PlaneType):
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -21770,6 +21852,7 @@ class Mirage_F1CH(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (6, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -21856,8 +21939,8 @@ class Mirage_F1JA(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -21949,16 +22032,16 @@ class Mirage_F1JA(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -22101,10 +22184,10 @@ class Mirage_F1JA(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -22114,10 +22197,10 @@ class Mirage_F1JA(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -22138,6 +22221,8 @@ class Mirage_F1JA(PlaneType):
     }
 
     livery_name = "MIRAGE-F1JA"  # from type
+#ERRR <CLEAN>
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -22167,6 +22252,7 @@ class Mirage_F1JA(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         DIS_PL_8B = (2, Weapons.DIS_PL_8B)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -22203,6 +22289,7 @@ class Mirage_F1JA(PlaneType):
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -22224,6 +22311,7 @@ class Mirage_F1JA(PlaneType):
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -22260,6 +22348,7 @@ class Mirage_F1JA(PlaneType):
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -22289,8 +22378,9 @@ class Mirage_F1JA(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         DIS_PL_8B = (6, Weapons.DIS_PL_8B)
+#ERRR <CLEAN>
 
-    pylons: Set[int] = {2, 3, 4, 5, 6}
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.CAS, task.AFAC, task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.AntishipStrike]
     task_default = task.CAP
@@ -22372,8 +22462,8 @@ class Mirage_F1CG(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -22465,16 +22555,16 @@ class Mirage_F1CG(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -22617,10 +22707,10 @@ class Mirage_F1CG(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -22630,10 +22720,10 @@ class Mirage_F1CG(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -22654,11 +22744,13 @@ class Mirage_F1CG(PlaneType):
     }
 
     livery_name = "MIRAGE-F1CG"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (1, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (1, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -22690,6 +22782,7 @@ class Mirage_F1CG(PlaneType):
         AIM_9B_Sidewinder_IR_AAM = (2, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (2, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (2, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -22729,6 +22822,7 @@ class Mirage_F1CG(PlaneType):
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -22756,6 +22850,7 @@ class Mirage_F1CG(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -22795,6 +22890,7 @@ class Mirage_F1CG(PlaneType):
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -22826,6 +22922,7 @@ class Mirage_F1CG(PlaneType):
         AIM_9B_Sidewinder_IR_AAM = (6, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (6, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (6, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon7:
         AIM_9B_Sidewinder_IR_AAM = (7, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -22914,8 +23011,8 @@ class Mirage_F1CZ(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -23007,16 +23104,16 @@ class Mirage_F1CZ(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -23159,10 +23256,10 @@ class Mirage_F1CZ(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -23172,10 +23269,10 @@ class Mirage_F1CZ(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -23196,9 +23293,11 @@ class Mirage_F1CZ(PlaneType):
     }
 
     livery_name = "MIRAGE-F1CZ"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -23228,6 +23327,7 @@ class Mirage_F1CZ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (2, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -23267,6 +23367,7 @@ class Mirage_F1CZ(PlaneType):
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -23294,6 +23395,7 @@ class Mirage_F1CZ(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -23333,6 +23435,7 @@ class Mirage_F1CZ(PlaneType):
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -23362,6 +23465,7 @@ class Mirage_F1CZ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (6, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -23448,8 +23552,8 @@ class Mirage_F1CJ(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -23541,16 +23645,16 @@ class Mirage_F1CJ(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -23693,10 +23797,10 @@ class Mirage_F1CJ(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -23706,10 +23810,10 @@ class Mirage_F1CJ(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -23730,9 +23834,11 @@ class Mirage_F1CJ(PlaneType):
     }
 
     livery_name = "MIRAGE-F1CJ"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -23762,6 +23868,7 @@ class Mirage_F1CJ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (2, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -23801,6 +23908,7 @@ class Mirage_F1CJ(PlaneType):
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -23828,6 +23936,7 @@ class Mirage_F1CJ(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -23867,6 +23976,7 @@ class Mirage_F1CJ(PlaneType):
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -23896,6 +24006,7 @@ class Mirage_F1CJ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (6, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -23982,8 +24093,8 @@ class Mirage_F1CK(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -24075,16 +24186,16 @@ class Mirage_F1CK(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -24227,10 +24338,10 @@ class Mirage_F1CK(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -24240,10 +24351,10 @@ class Mirage_F1CK(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -24264,9 +24375,11 @@ class Mirage_F1CK(PlaneType):
     }
 
     livery_name = "MIRAGE-F1CK"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -24296,6 +24409,7 @@ class Mirage_F1CK(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (2, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -24335,6 +24449,7 @@ class Mirage_F1CK(PlaneType):
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -24362,6 +24477,7 @@ class Mirage_F1CK(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -24401,6 +24517,7 @@ class Mirage_F1CK(PlaneType):
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -24430,6 +24547,7 @@ class Mirage_F1CK(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (6, Weapons.BARAX_ECM)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -24516,8 +24634,8 @@ class Mirage_F1EQ(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -24609,16 +24727,16 @@ class Mirage_F1EQ(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -24761,10 +24879,10 @@ class Mirage_F1EQ(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -24774,10 +24892,10 @@ class Mirage_F1EQ(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -24798,10 +24916,12 @@ class Mirage_F1EQ(PlaneType):
     }
 
     livery_name = "MIRAGE-F1EQ"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -24835,6 +24955,7 @@ class Mirage_F1EQ(PlaneType):
         BR_250 = (2, Weapons.BR_250)
         BR_500 = (2, Weapons.BR_500)
         PHIMAT_CM = (2, Weapons.PHIMAT_CM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -24880,6 +25001,7 @@ class Mirage_F1EQ(PlaneType):
         S530F = (3, Weapons.S530F)
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser = (3, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -24910,6 +25032,7 @@ class Mirage_F1EQ(PlaneType):
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
         PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -24955,6 +25078,7 @@ class Mirage_F1EQ(PlaneType):
         S530F = (5, Weapons.S530F)
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser = (5, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided = (5, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -24988,6 +25112,7 @@ class Mirage_F1EQ(PlaneType):
         BR_250 = (6, Weapons.BR_250)
         BR_500 = (6, Weapons.BR_500)
         PHIMAT_CM = (6, Weapons.PHIMAT_CM)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -25075,8 +25200,8 @@ class Mirage_F1ED(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -25168,16 +25293,16 @@ class Mirage_F1ED(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -25320,10 +25445,10 @@ class Mirage_F1ED(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -25333,10 +25458,10 @@ class Mirage_F1ED(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -25357,10 +25482,12 @@ class Mirage_F1ED(PlaneType):
     }
 
     livery_name = "MIRAGE-F1ED"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -25394,6 +25521,7 @@ class Mirage_F1ED(PlaneType):
         BR_250 = (2, Weapons.BR_250)
         BR_500 = (2, Weapons.BR_500)
         PHIMAT_CM = (2, Weapons.PHIMAT_CM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -25439,6 +25567,7 @@ class Mirage_F1ED(PlaneType):
         S530F = (3, Weapons.S530F)
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser = (3, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -25469,6 +25598,7 @@ class Mirage_F1ED(PlaneType):
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
         PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -25514,6 +25644,7 @@ class Mirage_F1ED(PlaneType):
         S530F = (5, Weapons.S530F)
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser = (5, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided = (5, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -25547,6 +25678,7 @@ class Mirage_F1ED(PlaneType):
         BR_250 = (6, Weapons.BR_250)
         BR_500 = (6, Weapons.BR_500)
         PHIMAT_CM = (6, Weapons.PHIMAT_CM)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -25634,8 +25766,8 @@ class Mirage_F1EDA(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -25727,16 +25859,16 @@ class Mirage_F1EDA(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -25879,10 +26011,10 @@ class Mirage_F1EDA(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -25892,10 +26024,10 @@ class Mirage_F1EDA(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -25916,9 +26048,11 @@ class Mirage_F1EDA(PlaneType):
     }
 
     livery_name = "MIRAGE-F1EDA"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -25951,6 +26085,7 @@ class Mirage_F1EDA(PlaneType):
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
         BR_500 = (2, Weapons.BR_500)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -25994,6 +26129,7 @@ class Mirage_F1EDA(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -26022,6 +26158,7 @@ class Mirage_F1EDA(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -26065,6 +26202,7 @@ class Mirage_F1EDA(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -26097,6 +26235,7 @@ class Mirage_F1EDA(PlaneType):
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
         BR_500 = (6, Weapons.BR_500)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -26183,8 +26322,8 @@ class Mirage_F1CR(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -26276,16 +26415,16 @@ class Mirage_F1CR(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -26428,10 +26567,10 @@ class Mirage_F1CR(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -26441,10 +26580,10 @@ class Mirage_F1CR(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -26465,10 +26604,12 @@ class Mirage_F1CR(PlaneType):
     }
 
     livery_name = "MIRAGE-F1CR"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -26499,6 +26640,7 @@ class Mirage_F1CR(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (2, Weapons.BARAX_ECM)
         PHIMAT_CM = (2, Weapons.PHIMAT_CM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -26537,6 +26679,7 @@ class Mirage_F1CR(PlaneType):
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -26564,6 +26707,7 @@ class Mirage_F1CR(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
         PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -26602,6 +26746,7 @@ class Mirage_F1CR(PlaneType):
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -26632,6 +26777,7 @@ class Mirage_F1CR(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (6, Weapons.BARAX_ECM)
         PHIMAT_CM = (6, Weapons.PHIMAT_CM)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -26719,8 +26865,8 @@ class Mirage_F1CT(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -26812,16 +26958,16 @@ class Mirage_F1CT(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -26964,10 +27110,10 @@ class Mirage_F1CT(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -26977,10 +27123,10 @@ class Mirage_F1CT(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -27001,10 +27147,12 @@ class Mirage_F1CT(PlaneType):
     }
 
     livery_name = "MIRAGE-F1CT"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -27035,6 +27183,7 @@ class Mirage_F1CT(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (2, Weapons.BARAX_ECM)
         PHIMAT_CM = (2, Weapons.PHIMAT_CM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -27074,6 +27223,7 @@ class Mirage_F1CT(PlaneType):
         S530F = (3, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -27099,6 +27249,7 @@ class Mirage_F1CT(PlaneType):
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
         PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -27138,6 +27289,7 @@ class Mirage_F1CT(PlaneType):
         S530F = (5, Weapons.S530F)
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -27168,6 +27320,7 @@ class Mirage_F1CT(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
         BARAX_ECM = (6, Weapons.BARAX_ECM)
         PHIMAT_CM = (6, Weapons.PHIMAT_CM)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -27255,8 +27408,8 @@ class Mirage_F1AD(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -27348,16 +27501,16 @@ class Mirage_F1AD(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -27500,10 +27653,10 @@ class Mirage_F1AD(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -27513,10 +27666,10 @@ class Mirage_F1AD(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -27537,10 +27690,12 @@ class Mirage_F1AD(PlaneType):
     }
 
     livery_name = "MIRAGE-F1AD"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -27569,6 +27724,7 @@ class Mirage_F1AD(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -27605,6 +27761,7 @@ class Mirage_F1AD(PlaneType):
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -27626,6 +27783,7 @@ class Mirage_F1AD(PlaneType):
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -27662,6 +27820,7 @@ class Mirage_F1AD(PlaneType):
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -27690,6 +27849,7 @@ class Mirage_F1AD(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -27777,8 +27937,8 @@ class Mirage_F1AZ(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
     }
 
@@ -27870,16 +28030,16 @@ class Mirage_F1AZ(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -28022,10 +28182,10 @@ class Mirage_F1AZ(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -28035,10 +28195,10 @@ class Mirage_F1AZ(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -28059,9 +28219,11 @@ class Mirage_F1AZ(PlaneType):
     }
 
     livery_name = "MIRAGE-F1AZ"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -28090,6 +28252,7 @@ class Mirage_F1AZ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -28126,6 +28289,7 @@ class Mirage_F1AZ(PlaneType):
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (3, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -28147,6 +28311,7 @@ class Mirage_F1AZ(PlaneType):
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -28183,6 +28348,7 @@ class Mirage_F1AZ(PlaneType):
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (5, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -28211,6 +28377,7 @@ class Mirage_F1AZ(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -28297,8 +28464,8 @@ class Mirage_F1B(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
         "SoloFlight": False,
         "NetCrewControlPriority": 1,
@@ -28392,16 +28559,16 @@ class Mirage_F1B(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -28556,10 +28723,10 @@ class Mirage_F1B(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -28569,10 +28736,10 @@ class Mirage_F1B(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -28614,10 +28781,12 @@ class Mirage_F1B(PlaneType):
     }
 
     livery_name = "MIRAGE-F1B"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -28646,6 +28815,7 @@ class Mirage_F1B(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -28685,6 +28855,7 @@ class Mirage_F1B(PlaneType):
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -28708,6 +28879,7 @@ class Mirage_F1B(PlaneType):
         CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon = (4, Weapons.CC420_DEFA_550_gun_pod___30mm_Revolver_Cannon)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -28747,6 +28919,7 @@ class Mirage_F1B(PlaneType):
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -28775,6 +28948,7 @@ class Mirage_F1B(PlaneType):
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
         MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -28863,8 +29037,8 @@ class Mirage_F1BE(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
         "IFFMode4Disabled": 1,
         "SoloFlight": False,
@@ -28959,16 +29133,16 @@ class Mirage_F1BE(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -29131,10 +29305,10 @@ class Mirage_F1BE(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -29144,10 +29318,10 @@ class Mirage_F1BE(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -29202,6 +29376,7 @@ class Mirage_F1BE(PlaneType):
     }
 
     livery_name = "MIRAGE-F1BE"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -29211,6 +29386,7 @@ class Mirage_F1BE(PlaneType):
         AIM_9JULI_Sidewinder_IR_AAM = (1, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -29244,6 +29420,7 @@ class Mirage_F1BE(PlaneType):
         BR_250 = (2, Weapons.BR_250)
         BR_500 = (2, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (2, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -29293,6 +29470,7 @@ class Mirage_F1BE(PlaneType):
         R530F_EM = (3, Weapons.R530F_EM)
         R530F_IR = (3, Weapons.R530F_IR)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -29331,6 +29509,7 @@ class Mirage_F1BE(PlaneType):
         R530F_IR = (4, Weapons.R530F_IR)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
         PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -29380,6 +29559,7 @@ class Mirage_F1BE(PlaneType):
         R530F_EM = (5, Weapons.R530F_EM)
         R530F_IR = (5, Weapons.R530F_IR)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -29413,6 +29593,7 @@ class Mirage_F1BE(PlaneType):
         BR_250 = (6, Weapons.BR_250)
         BR_500 = (6, Weapons.BR_500)
         GBU_12___500lb_Laser_Guided_Bomb = (6, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
+#ERRR <CLEAN>
 
     class Pylon7:
         AIM_9B_Sidewinder_IR_AAM = (7, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -29505,8 +29686,8 @@ class Mirage_F1BQ(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
         "SoloFlight": False,
         "NetCrewControlPriority": 1,
@@ -29600,16 +29781,16 @@ class Mirage_F1BQ(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -29764,10 +29945,10 @@ class Mirage_F1BQ(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -29777,10 +29958,10 @@ class Mirage_F1BQ(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -29822,10 +30003,12 @@ class Mirage_F1BQ(PlaneType):
     }
 
     livery_name = "MIRAGE-F1BQ"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -29859,6 +30042,7 @@ class Mirage_F1BQ(PlaneType):
         BR_250 = (2, Weapons.BR_250)
         BR_500 = (2, Weapons.BR_500)
         PHIMAT_CM = (2, Weapons.PHIMAT_CM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -29904,6 +30088,7 @@ class Mirage_F1BQ(PlaneType):
         S530F = (3, Weapons.S530F)
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser = (3, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -29934,6 +30119,7 @@ class Mirage_F1BQ(PlaneType):
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
         PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -29979,6 +30165,7 @@ class Mirage_F1BQ(PlaneType):
         S530F = (5, Weapons.S530F)
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser = (5, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided = (5, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -30012,6 +30199,7 @@ class Mirage_F1BQ(PlaneType):
         BR_250 = (6, Weapons.BR_250)
         BR_500 = (6, Weapons.BR_500)
         PHIMAT_CM = (6, Weapons.PHIMAT_CM)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -30099,8 +30287,8 @@ class Mirage_F1BD(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
         "SoloFlight": False,
         "NetCrewControlPriority": 1,
@@ -30194,16 +30382,16 @@ class Mirage_F1BD(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -30358,10 +30546,10 @@ class Mirage_F1BD(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -30371,10 +30559,10 @@ class Mirage_F1BD(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -30416,10 +30604,12 @@ class Mirage_F1BD(PlaneType):
     }
 
     livery_name = "MIRAGE-F1BD"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -30453,6 +30643,7 @@ class Mirage_F1BD(PlaneType):
         BR_250 = (2, Weapons.BR_250)
         BR_500 = (2, Weapons.BR_500)
         PHIMAT_CM = (2, Weapons.PHIMAT_CM)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -30498,6 +30689,7 @@ class Mirage_F1BD(PlaneType):
         S530F = (3, Weapons.S530F)
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser = (3, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -30528,6 +30720,7 @@ class Mirage_F1BD(PlaneType):
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
         PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -30573,6 +30766,7 @@ class Mirage_F1BD(PlaneType):
         S530F = (5, Weapons.S530F)
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser = (5, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided = (5, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -30606,6 +30800,7 @@ class Mirage_F1BD(PlaneType):
         BR_250 = (6, Weapons.BR_250)
         BR_500 = (6, Weapons.BR_500)
         PHIMAT_CM = (6, Weapons.PHIMAT_CM)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -30693,8 +30888,8 @@ class Mirage_F1DDA(PlaneType):
         "FlareMultiNumber": 1,
         "FlareMultiTime": 1,
         "GunBurstSettings": 1,
-        "RocketSalvoF1": 1,
-        "RocketSalvoF4": 1,
+        "RocketBurstF1": 1,
+        "RocketBurstF4": 1,
         "IFFMode2Code": None,
         "SoloFlight": False,
         "NetCrewControlPriority": 1,
@@ -30788,16 +30983,16 @@ class Mirage_F1DDA(PlaneType):
                 x_0_5_s = 2
                 x_1_s = 3
 
-        class RocketSalvoF1:
-            id = "RocketSalvoF1"
+        class RocketBurstF1:
+            id = "RocketBurstF1"
 
             class Values:
                 x_6 = 1
                 x_12 = 2
                 x_18 = 3
 
-        class RocketSalvoF4:
-            id = "RocketSalvoF4"
+        class RocketBurstF4:
+            id = "RocketBurstF4"
 
             class Values:
                 x_1 = 1
@@ -30952,10 +31147,10 @@ class Mirage_F1DDA(PlaneType):
                 3: "1 s",
             },
         ),
-        "RocketSalvoF1": UnitPropertyDescription(
-            identifier="RocketSalvoF1",
+        "RocketBurstF1": UnitPropertyDescription(
+            identifier="RocketBurstF1",
             control="comboList",
-            label="F1 Rocket Launcher Salvo Count",
+            label="F1 Rocket Launcher Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -30965,10 +31160,10 @@ class Mirage_F1DDA(PlaneType):
                 3: "18",
             },
         ),
-        "RocketSalvoF4": UnitPropertyDescription(
-            identifier="RocketSalvoF4",
+        "RocketBurstF4": UnitPropertyDescription(
+            identifier="RocketBurstF4",
             control="comboList",
-            label="F4/JL100 Rocket Launchers Salvo Count",
+            label="F4/JL100 Rocket Launchers Burst Count",
             player_only=True,
             default=1,
             w_ctrl=75,
@@ -31010,9 +31205,11 @@ class Mirage_F1DDA(PlaneType):
     }
 
     livery_name = "MIRAGE-F1DDA"  # from type
+#ERRR <CLEAN>
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
+#ERRR <CLEAN>
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -31045,6 +31242,7 @@ class Mirage_F1DDA(PlaneType):
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
         BR_500 = (2, Weapons.BR_500)
+#ERRR <CLEAN>
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -31088,6 +31286,7 @@ class Mirage_F1DDA(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (3, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -31116,6 +31315,7 @@ class Mirage_F1DDA(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+#ERRR <CLEAN>
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -31159,6 +31359,7 @@ class Mirage_F1DDA(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (5, Weapons.S530F)
+#ERRR <CLEAN>
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -31191,6 +31392,7 @@ class Mirage_F1DDA(PlaneType):
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
         BR_500 = (6, Weapons.BR_500)
+#ERRR <CLEAN>
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
