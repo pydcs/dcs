@@ -1434,6 +1434,13 @@ class Unarmed:
         threat_range = 0
         air_weapon_dist = 0
 
+    class GD_20(unittype.VehicleType):
+        id = "GD-20"
+        name = "GD-20 Lift Truck"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
     class Kubelwagen_82(unittype.VehicleType):
         id = "Kubelwagen_82"
         name = "LUV Kubelwagen Jeep"
@@ -2027,6 +2034,27 @@ class MissilesSS:
         threat_range = 0
         air_weapon_dist = 0
 
+    class SD10_Loadout(unittype.VehicleType):
+        id = "SD10 Loadout"
+        name = "Payload SD-10"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class PL5EII_Loadout(unittype.VehicleType):
+        id = "PL5EII Loadout"
+        name = "Payload PL-5EII"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class PL8_Loadout(unittype.VehicleType):
+        id = "PL8 Loadout"
+        name = "Payload PL-8"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
     class V1_launcher(unittype.VehicleType):
         id = "v1_launcher"
         name = "V-1 Launch Ramp"
@@ -2397,6 +2425,10 @@ vehicle_map = {
     "HQ-7_STR_SP": AirDefence.HQ_7_STR_SP,
     "PLZ05": Artillery.PLZ05,
     "TYPE-59": Armor.TYPE_59,
+    "GD-20": Unarmed.GD_20,
+    "SD10 Loadout": MissilesSS.SD10_Loadout,
+    "PL5EII Loadout": MissilesSS.PL5EII_Loadout,
+    "PL8 Loadout": MissilesSS.PL8_Loadout,
     "Kubelwagen_82": Unarmed.Kubelwagen_82,
     "Sd_Kfz_2": Unarmed.Sd_Kfz_2,
     "Sd_Kfz_7": Unarmed.Sd_Kfz_7,

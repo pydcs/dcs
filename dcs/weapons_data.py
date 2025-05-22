@@ -427,7 +427,7 @@ class Weapons:
     DIS_CM_802AKG_AI = {"clsid": "DIS_CM-802AKG_AI", "name": "CM802AKG (DIS) for AI", "weight": 720}
     DIS_C_701IR = {"clsid": "DIS_C-701IR", "name": "C-701IR", "weight": 170}
     DIS_C_701T = {"clsid": "DIS_C-701T", "name": "C-701T", "weight": 170}
-    DIS_C_802AK = {"clsid": "DIS_C-802AK", "name": "C802AK", "weight": 765}
+    DIS_C_802AK = {"clsid": "DIS_C-802AK", "name": "C-802AK", "weight": 765}
     DIS_DF4A_KD20 = {"clsid": "DIS_DF4A_KD20", "name": "KD-20", "weight": 1750}
     DIS_DF4B_YJ12 = {"clsid": "DIS_DF4B_YJ12", "name": "YJ-12", "weight": 1800}
     DIS_GB6 = {"clsid": "DIS_GB6", "name": "GB-6", "weight": 672}
@@ -440,7 +440,7 @@ class Weapons:
     DIS_GBU_16 = {"clsid": "DIS_GBU_16", "name": "GBU-16", "weight": 564}
     DIS_GDJ_KD63 = {"clsid": "DIS_GDJ_KD63", "name": "KD-63", "weight": 2050}
     DIS_GDJ_KD63B = {"clsid": "DIS_GDJ_KD63B", "name": "KD-63B", "weight": 2050}
-    DIS_GDJ_YJ83K = {"clsid": "DIS_GDJ_YJ83K", "name": "YJ83K", "weight": 765}
+    DIS_GDJ_YJ83K = {"clsid": "DIS_GDJ_YJ83K", "name": "YJ-83K", "weight": 765}
     DIS_H6_250_2_N12 = {"clsid": "DIS_H6_250_2_N12", "name": "12 x 250-2 - 250kg GP Bombs HD", "weight": 3000}
     DIS_H6_250_2_N24 = {"clsid": "DIS_H6_250_2_N24", "name": "24 x 250-2 - 250kg GP Bombs HD", "weight": 6000}
     DIS_HJ_12 = {"clsid": "DIS_HJ-12", "name": "HJ-12", "weight": 22}
@@ -494,8 +494,7 @@ class Weapons:
     DIS_TYPE200_DUAL_L = {"clsid": "DIS_TYPE200_DUAL_L", "name": "TYPE-200A Dual", "weight": 400}
     DIS_TYPE200_DUAL_R = {"clsid": "DIS_TYPE200_DUAL_R", "name": "TYPE-200A Dual", "weight": 400}
     DIS_WMD7 = {"clsid": "DIS_WMD7", "name": "AVIC WMD7 FLIR/LDT POD", "weight": 295}
-    DIS_YJ83K = {"clsid": "DIS_YJ83K", "name": "YJ83K", "weight": 715}
-    DIS_YU_6 = {"clsid": "DIS_YU_6", "name": "YU-6", "weight": 1558}
+    DIS_YJ83K = {"clsid": "DIS_YJ83K", "name": "YJ-83K", "weight": 715}
     Dipole_Antanna__aesthetic_ = {"clsid": "{SA342_Dipole}", "name": "Dipole Antanna (aesthetic)", "weight": 5}
     DWS39_MJ1 = {"clsid": "{DWS39_MJ1}", "name": "DWS39 MJ1", "weight": 605}
     DWS39_MJ1_MJ2 = {"clsid": "{DWS39_MJ1_MJ2}", "name": "DWS39 MJ1-MJ2", "weight": 605}
@@ -2239,7 +2238,6 @@ weapon_ids = {
     "DIS_TYPE200_DUAL_R": Weapons.DIS_TYPE200_DUAL_R,
     "DIS_WMD7": Weapons.DIS_WMD7,
     "DIS_YJ83K": Weapons.DIS_YJ83K,
-    "DIS_YU_6": Weapons.DIS_YU_6,
     "{SA342_Dipole}": Weapons.Dipole_Antanna__aesthetic_,
     "{DWS39_MJ1}": Weapons.DWS39_MJ1,
     "{DWS39_MJ1_MJ2}": Weapons.DWS39_MJ1_MJ2,

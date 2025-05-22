@@ -3335,6 +3335,7 @@ class USAFAggressors(Country):
             Predator_GCS = vehicles.Unarmed.Predator_GCS
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
+            GD_20 = vehicles.Unarmed.GD_20
 
         class Armor:
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
@@ -3415,6 +3416,9 @@ class USAFAggressors(Country):
             Scud_B = vehicles.MissilesSS.Scud_B
             Hy_launcher = vehicles.MissilesSS.Hy_launcher
             Silkworm_SR = vehicles.MissilesSS.Silkworm_SR
+            SD10_Loadout = vehicles.MissilesSS.SD10_Loadout
+            PL5EII_Loadout = vehicles.MissilesSS.PL5EII_Loadout
+            PL8_Loadout = vehicles.MissilesSS.PL8_Loadout
 
         class Locomotive:
             Electric_locomotive = vehicles.Locomotive.Electric_locomotive
@@ -10614,6 +10618,7 @@ class China(Country):
             R11_volvo_drivable = vehicles.Unarmed.R11_volvo_drivable
             Tacr2a = vehicles.Unarmed.Tacr2a
             LARC_V = vehicles.Unarmed.LARC_V
+            GD_20 = vehicles.Unarmed.GD_20
 
         class Armor:
             BMP_1 = vehicles.Armor.BMP_1
@@ -10629,6 +10634,9 @@ class China(Country):
         class MissilesSS:
             Hy_launcher = vehicles.MissilesSS.Hy_launcher
             Silkworm_SR = vehicles.MissilesSS.Silkworm_SR
+            SD10_Loadout = vehicles.MissilesSS.SD10_Loadout
+            PL5EII_Loadout = vehicles.MissilesSS.PL5EII_Loadout
+            PL8_Loadout = vehicles.MissilesSS.PL8_Loadout
 
         class Locomotive:
             ES44AH = vehicles.Locomotive.ES44AH
@@ -30499,6 +30507,7 @@ class CombinedJointTaskForcesBlue(Country):
             Predator_GCS = vehicles.Unarmed.Predator_GCS
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
+            GD_20 = vehicles.Unarmed.GD_20
 
         class Armor:
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
@@ -30579,6 +30588,9 @@ class CombinedJointTaskForcesBlue(Country):
             Scud_B = vehicles.MissilesSS.Scud_B
             Hy_launcher = vehicles.MissilesSS.Hy_launcher
             Silkworm_SR = vehicles.MissilesSS.Silkworm_SR
+            SD10_Loadout = vehicles.MissilesSS.SD10_Loadout
+            PL5EII_Loadout = vehicles.MissilesSS.PL5EII_Loadout
+            PL8_Loadout = vehicles.MissilesSS.PL8_Loadout
 
         class Locomotive:
             Electric_locomotive = vehicles.Locomotive.Electric_locomotive
@@ -31331,6 +31343,7 @@ class CombinedJointTaskForcesRed(Country):
             Predator_GCS = vehicles.Unarmed.Predator_GCS
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
+            GD_20 = vehicles.Unarmed.GD_20
 
         class Armor:
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
@@ -31411,6 +31424,9 @@ class CombinedJointTaskForcesRed(Country):
             Scud_B = vehicles.MissilesSS.Scud_B
             Hy_launcher = vehicles.MissilesSS.Hy_launcher
             Silkworm_SR = vehicles.MissilesSS.Silkworm_SR
+            SD10_Loadout = vehicles.MissilesSS.SD10_Loadout
+            PL5EII_Loadout = vehicles.MissilesSS.PL5EII_Loadout
+            PL8_Loadout = vehicles.MissilesSS.PL8_Loadout
 
         class Locomotive:
             Electric_locomotive = vehicles.Locomotive.Electric_locomotive
@@ -32163,6 +32179,7 @@ class UnitedNationsPeacekeepers(Country):
             Predator_GCS = vehicles.Unarmed.Predator_GCS
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
+            GD_20 = vehicles.Unarmed.GD_20
 
         class Armor:
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
@@ -32243,6 +32260,9 @@ class UnitedNationsPeacekeepers(Country):
             Scud_B = vehicles.MissilesSS.Scud_B
             Hy_launcher = vehicles.MissilesSS.Hy_launcher
             Silkworm_SR = vehicles.MissilesSS.Silkworm_SR
+            SD10_Loadout = vehicles.MissilesSS.SD10_Loadout
+            PL5EII_Loadout = vehicles.MissilesSS.PL5EII_Loadout
+            PL8_Loadout = vehicles.MissilesSS.PL8_Loadout
 
         class Locomotive:
             Electric_locomotive = vehicles.Locomotive.Electric_locomotive

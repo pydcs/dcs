@@ -1107,7 +1107,7 @@ class Fortification:
     class X_345_Excavator(unittype.StaticType):
         id = "345 Excavator"
         name = "Excavator"
-        shape_name = "cat_345l"
+        shape_name = "cat_345L"
         rate = 3
 
     class Tower_Crane(unittype.StaticType):
