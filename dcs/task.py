@@ -1,4 +1,4 @@
-"""This module holds all Tasks that are possible to specifiy in dcs.
+"""This module holds all Tasks that are possible to specify in dcs.
 
 There are 2 type of tasks, a MainTask and a Task action.
  * MainTasks are the flight groups main objective like :py:class:`CAS`, :py:class:`CAP`, :py:class:`SEAD`, ...
