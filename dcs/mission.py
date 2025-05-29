@@ -1351,7 +1351,7 @@ class Mission:
             airport(terrain_.Airport): starting airport, use None if you want it to spawn inflight
             position(dcs.mapping.Point): reference point for the race-track
             race_distance: distance for the race-track pattern
-            heading: direction from the referene position
+            heading: direction from the reference position
             altitude: of the AWACS race-track
             speed: of the AWACS flight
             start_type(StartType): of the flight if starts from airport
