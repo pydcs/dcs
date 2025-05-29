@@ -178,7 +178,7 @@ class Weather:
         fog = d.get("fog", {})
         self.fog_thickness = fog.get("thickness", 0)
         self.fog_visibility = fog.get("visibility", 25)
-        visibility = d.get("visiblity", {})
+        visibility = d.get("visibility", {})
         self.visibility_distance = visibility.get("distance", 80000)
         clouds = d.get("clouds", {})
         self.clouds_thickness = clouds.get("thickness", 200)
