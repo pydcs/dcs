@@ -1873,7 +1873,7 @@ class OptFormation(Option):
         SpreadFourGroupClose = 458755
         WW2_BomberElementClose = 786433
         WW2_BomberElementOpen = 786434
-        # WW2: Bomber Height Seperation has no VariantIndex field.
+        # WW2: Bomber Height Separation has no VariantIndex field.
         WW2_BomberElementHeightSeperation = 851968
         WW2_FighterVicClose = 917505
         WW2_FighterVicOpen = 917506
