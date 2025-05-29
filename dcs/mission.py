@@ -1355,7 +1355,7 @@ class Mission:
             altitude: of the AWACS race-track
             speed: of the AWACS flight
             start_type(StartType): of the flight if starts from airport
-            frequency: VHF-AM frequencey in mhz
+            frequency: VHF-AM frequency in mhz
 
         Returns:
             FlyingGroup: the created AWACS flight group
