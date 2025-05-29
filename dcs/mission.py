@@ -1411,7 +1411,7 @@ class Mission:
             altitude: of the refuel race-track
             speed: of the refuel flight
             start_type(StartType): of the flight if starts from airport
-            frequency: VHF-AM frequencey in mhz
+            frequency: VHF-AM frequency in mhz
             tacanchannel: if the PlaneType supports tacan this channel will be set.
 
         Returns:
