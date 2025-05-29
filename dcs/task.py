@@ -966,7 +966,7 @@ class EmbarkToTransport(Task):
 
     :param position: :py:class:`dcs.mapping.Point` where to wait to get picked up.
     :param zone_radius: radius around the point where the group will embark.
-    :param concrete_unitid: if specified the group will embark to exaclty this unit.
+    :param concrete_unitid: if specified the group will embark to exactly this unit.
     """
     Id = "EmbarkToTransport"
 
