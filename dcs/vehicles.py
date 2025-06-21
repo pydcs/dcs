@@ -314,8 +314,8 @@ class AirDefence:
         id = "SA-11 Buk LN 9A310M1"
         name = "SAM SA-11 Buk \"Gadfly\" Fire Dome TEL"
         detection_range = 50000
-        threat_range = 35000
-        air_weapon_dist = 35000
+        threat_range = 50000
+        air_weapon_dist = 50000
 
     class Osa_9A33_ln(unittype.VehicleType):
         id = "Osa 9A33 ln"
@@ -702,6 +702,34 @@ class AirDefence:
         detection_range = 60000
         threat_range = 0
         air_weapon_dist = 0
+
+    class Type_3_80mm_AA(unittype.VehicleType):
+        id = "Type_3_80mm_AA"
+        name = "AAA 80mm Type 3 Flak"
+        detection_range = 10000
+        threat_range = 3200
+        air_weapon_dist = 3200
+
+    class Type_88_75mm_AA(unittype.VehicleType):
+        id = "Type_88_75mm_AA"
+        name = "AAA 75mm Type 88 Flak"
+        detection_range = 10000
+        threat_range = 3500
+        air_weapon_dist = 3500
+
+    class Type_96_25mm_AA(unittype.VehicleType):
+        id = "Type_96_25mm_AA"
+        name = "AAA 25mm x 2 Type 96"
+        detection_range = 10000
+        threat_range = 3500
+        air_weapon_dist = 3500
+
+    class Type_94_25mm_AA_Truck(unittype.VehicleType):
+        id = "Type_94_25mm_AA_Truck"
+        name = "AAA 25mm x 2 Type 94 Truck"
+        detection_range = 10000
+        threat_range = 3500
+        air_weapon_dist = 3500
 
     class KS_19(unittype.VehicleType):
         id = "KS-19"
@@ -1315,6 +1343,20 @@ class Unarmed:
         threat_range = 0
         air_weapon_dist = 0
 
+    class Type_94_Truck(unittype.VehicleType):
+        id = "Type_94_Truck"
+        name = "Truck Type 94"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Type_98_So_Da(unittype.VehicleType):
+        id = "Type_98_So_Da"
+        name = "APC Type 98 So Da"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
     class TugHarlan_drivable(unittype.VehicleType):
         id = "TugHarlan_drivable"
         name = "M92 Tug Harlan drivable"
@@ -1430,6 +1472,13 @@ class Unarmed:
     class Blitz_36_6700A(unittype.VehicleType):
         id = "Blitz_36-6700A"
         name = "Truck Opel Blitz"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class GD_20(unittype.VehicleType):
+        id = "GD-20"
+        name = "GD-20 Lift Truck"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -1719,6 +1768,20 @@ class Armor:
         threat_range = 1200
         air_weapon_dist = 1200
         eplrs = True
+
+    class Type_98_Ke_Ni(unittype.VehicleType):
+        id = "Type_98_Ke_Ni"
+        name = "Tk Type 98 Ke Ni"
+        detection_range = 5000
+        threat_range = 3000
+        air_weapon_dist = 3000
+
+    class Type_89_I_Go(unittype.VehicleType):
+        id = "Type_89_I_Go"
+        name = "Tk Type 89 I Go"
+        detection_range = 5000
+        threat_range = 3000
+        air_weapon_dist = 3000
 
     class HL_DSHK(unittype.VehicleType):
         id = "HL_DSHK"
@@ -2027,6 +2090,27 @@ class MissilesSS:
         threat_range = 0
         air_weapon_dist = 0
 
+    class SD10_Loadout(unittype.VehicleType):
+        id = "SD10 Loadout"
+        name = "Payload SD-10"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class PL5EII_Loadout(unittype.VehicleType):
+        id = "PL5EII Loadout"
+        name = "Payload PL-5EII"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class PL8_Loadout(unittype.VehicleType):
+        id = "PL8 Loadout"
+        name = "Payload PL-8"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
     class V1_launcher(unittype.VehicleType):
         id = "v1_launcher"
         name = "V-1 Launch Ramp"
@@ -2311,6 +2395,14 @@ vehicle_map = {
     "M1A2C_SEP_V3": Armor.M1A2C_SEP_V3,
     "M-1 Abrams": Armor.M_1_Abrams,
     "MaxxPro_MRAP": Armor.MaxxPro_MRAP,
+    "Type_3_80mm_AA": AirDefence.Type_3_80mm_AA,
+    "Type_88_75mm_AA": AirDefence.Type_88_75mm_AA,
+    "Type_94_Truck": Unarmed.Type_94_Truck,
+    "Type_96_25mm_AA": AirDefence.Type_96_25mm_AA,
+    "Type_94_25mm_AA_Truck": AirDefence.Type_94_25mm_AA_Truck,
+    "Type_98_Ke_Ni": Armor.Type_98_Ke_Ni,
+    "Type_98_So_Da": Unarmed.Type_98_So_Da,
+    "Type_89_I_Go": Armor.Type_89_I_Go,
     "TugHarlan_drivable": Unarmed.TugHarlan_drivable,
     "B600_drivable": Unarmed.B600_drivable,
     "MJ-1_drivable": Unarmed.MJ_1_drivable,
@@ -2397,6 +2489,10 @@ vehicle_map = {
     "HQ-7_STR_SP": AirDefence.HQ_7_STR_SP,
     "PLZ05": Artillery.PLZ05,
     "TYPE-59": Armor.TYPE_59,
+    "GD-20": Unarmed.GD_20,
+    "SD10 Loadout": MissilesSS.SD10_Loadout,
+    "PL5EII Loadout": MissilesSS.PL5EII_Loadout,
+    "PL8 Loadout": MissilesSS.PL8_Loadout,
     "Kubelwagen_82": Unarmed.Kubelwagen_82,
     "Sd_Kfz_2": Unarmed.Sd_Kfz_2,
     "Sd_Kfz_7": Unarmed.Sd_Kfz_7,

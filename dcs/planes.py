@@ -14347,6 +14347,509 @@ class F_14A_135_GR(PlaneType):
     task_default = task.Intercept
 
 
+class F4U_1D(PlaneType):
+    id = "F4U-1D"
+    flyable = True
+    height = 4.5
+    width = 12.49
+    length = 10.31
+    fuel_max = 662
+    max_speed = 662.4
+    chaff = 0
+    flare = 0
+    charge_total = 0
+    chaff_charge_size = 0
+    flare_charge_size = 0
+    radio_frequency = 124
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 124,
+                2: 121,
+                4: 123,
+                3: 122
+            },
+        },
+        2: {
+            "channels": {
+                6: 125,
+                2: 121,
+                3: 122,
+                1: 124,
+                4: 123,
+                5: 124
+            },
+        },
+    }
+
+    property_defaults: Dict[str, Any] = {
+        "F4U_CustomGunsFiringPattern": False,
+        "F4U_GunsConvergence_Inner": 2,
+        "F4U_GunsConvergence_Mid": 2,
+        "F4U_GunsConvergence_Outer": 2,
+    }
+
+    class Properties:
+
+        class F4U_CustomGunsFiringPattern:
+            id = "F4U_CustomGunsFiringPattern"
+
+        class F4U_GunsConvergence_Inner:
+            id = "F4U_GunsConvergence_Inner"
+
+            class Values:
+                x_300 = 0
+                x_400 = 1
+                x_500 = 2
+                x_600 = 3
+                x_700 = 4
+                x_800 = 5
+
+        class F4U_GunsConvergence_Mid:
+            id = "F4U_GunsConvergence_Mid"
+
+            class Values:
+                x_300 = 0
+                x_400 = 1
+                x_500 = 2
+                x_600 = 3
+                x_700 = 4
+                x_800 = 5
+
+        class F4U_GunsConvergence_Outer:
+            id = "F4U_GunsConvergence_Outer"
+
+            class Values:
+                x_300 = 0
+                x_400 = 1
+                x_500 = 2
+                x_600 = 3
+                x_700 = 4
+                x_800 = 5
+
+    properties = {
+        "F4U_CustomGunsFiringPattern": UnitPropertyDescription(
+            identifier="F4U_CustomGunsFiringPattern",
+            control="checkbox",
+            label="Custom guns firing pattern",
+            default=False,
+        ),
+        "F4U_GunsConvergence_Inner": UnitPropertyDescription(
+            identifier="F4U_GunsConvergence_Inner",
+            control="comboList",
+            label="Inner guns convergence",
+            default=2,
+            values={
+                0: "300",
+                1: "400",
+                2: "500",
+                3: "600",
+                4: "700",
+                5: "800",
+            },
+        ),
+        "F4U_GunsConvergence_Mid": UnitPropertyDescription(
+            identifier="F4U_GunsConvergence_Mid",
+            control="comboList",
+            label="Mid guns convergence",
+            default=2,
+            values={
+                0: "300",
+                1: "400",
+                2: "500",
+                3: "600",
+                4: "700",
+                5: "800",
+            },
+        ),
+        "F4U_GunsConvergence_Outer": UnitPropertyDescription(
+            identifier="F4U_GunsConvergence_Outer",
+            control="comboList",
+            label="Outer guns distance",
+            default=2,
+            values={
+                0: "300",
+                1: "400",
+                2: "500",
+                3: "600",
+                4: "700",
+                5: "800",
+            },
+        ),
+    }
+
+    livery_name = "F4U-1D"  # from livery_entry
+
+    class Pylon1:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (1, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon2:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (2, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon3:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (3, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon4:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (4, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon5:
+        Mk5_Universal_Drop_Tank_150_Corsair = (5, Weapons.Mk5_Universal_Drop_Tank_150_Corsair)
+        Mk_6_Lockheed_Drop_Tank_150_U_S__Gal = (5, Weapons.Mk_6_Lockheed_Drop_Tank_150_U_S__Gal)
+        Tiny_Tim__Corsair____569_kg__unguided_rocket = (5, Weapons.Tiny_Tim__Corsair____569_kg__unguided_rocket)
+        AN_M30A1___100lb_GP_Bomb_LD = (5, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
+        AN_M57___250lb_GP_Bomb_LD = (5, Weapons.AN_M57___250lb_GP_Bomb_LD)
+        AN_M64___500lb_GP_Bomb_LD = (5, Weapons.AN_M64___500lb_GP_Bomb_LD)
+        AN_M65___1000lb_GP_Bomb_LD = (5, Weapons.AN_M65___1000lb_GP_Bomb_LD)
+
+    class Pylon6:
+        Auxiliary_Drop_Tank_175_U_S__Gal = (6, Weapons.Auxiliary_Drop_Tank_175_U_S__Gal)
+        AN_M64___500lb_GP_Bomb_LD = (6, Weapons.AN_M64___500lb_GP_Bomb_LD)
+        AN_M65___1000lb_GP_Bomb_LD = (6, Weapons.AN_M65___1000lb_GP_Bomb_LD)
+        ASM_N_2_Bat___1000lb_Radar_Guided_Glide_Bomb = (6, Weapons.ASM_N_2_Bat___1000lb_Radar_Guided_Glide_Bomb)
+
+    class Pylon7:
+        Mk5_Universal_Drop_Tank_150_Corsair = (7, Weapons.Mk5_Universal_Drop_Tank_150_Corsair)
+        Mk_6_Lockheed_Drop_Tank_150_U_S__Gal = (7, Weapons.Mk_6_Lockheed_Drop_Tank_150_U_S__Gal)
+        Tiny_Tim__Corsair____569_kg__unguided_rocket_ = (7, Weapons.Tiny_Tim__Corsair____569_kg__unguided_rocket_)
+        AN_M30A1___100lb_GP_Bomb_LD = (7, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
+        AN_M57___250lb_GP_Bomb_LD = (7, Weapons.AN_M57___250lb_GP_Bomb_LD)
+        AN_M64___500lb_GP_Bomb_LD = (7, Weapons.AN_M64___500lb_GP_Bomb_LD)
+        AN_M65___1000lb_GP_Bomb_LD = (7, Weapons.AN_M65___1000lb_GP_Bomb_LD)
+
+    class Pylon8:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (8, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon9:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (9, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon10:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (10, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon11:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (11, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon12:
+        Smoke_Generator___white_ = (12, Weapons.Smoke_Generator___white_)
+        Smoke_Generator___red_ = (12, Weapons.Smoke_Generator___red_)
+        Smoke_Generator___green_ = (12, Weapons.Smoke_Generator___green_)
+        Smoke_Generator___blue_ = (12, Weapons.Smoke_Generator___blue_)
+        Smoke_Generator___orange_ = (12, Weapons.Smoke_Generator___orange_)
+        Smoke_Generator___yellow_ = (12, Weapons.Smoke_Generator___yellow_)
+
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+
+    tasks = [task.Intercept, task.CAP, task.Escort, task.CAS, task.GroundAttack, task.Reconnaissance, task.AntishipStrike, task.FighterSweep]
+    task_default = task.Intercept
+
+
+class F4U_1D_CW(PlaneType):
+    id = "F4U-1D_CW"
+    height = 4.5
+    width = 12.49
+    length = 10.31
+    fuel_max = 662
+    max_speed = 662.4
+    chaff = 0
+    flare = 0
+    charge_total = 0
+    chaff_charge_size = 0
+    flare_charge_size = 0
+    radio_frequency = 124
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 124,
+                2: 121,
+                4: 123,
+                3: 122
+            },
+        },
+        2: {
+            "channels": {
+                6: 125,
+                2: 121,
+                3: 122,
+                1: 124,
+                4: 123,
+                5: 124
+            },
+        },
+    }
+
+    property_defaults: Dict[str, Any] = {
+        "F4U_CustomGunsFiringPattern": False,
+        "F4U_GunsConvergence_Inner": 2,
+        "F4U_GunsConvergence_Mid": 2,
+        "F4U_GunsConvergence_Outer": 2,
+        "F4U_CW_number": True,
+        "F4U_CW_number_1": 0,
+        "F4U_CW_number_2": 9,
+        "F4U_CW_number_3": 2,
+    }
+
+    class Properties:
+
+        class F4U_CustomGunsFiringPattern:
+            id = "F4U_CustomGunsFiringPattern"
+
+        class F4U_GunsConvergence_Inner:
+            id = "F4U_GunsConvergence_Inner"
+
+            class Values:
+                x_300 = 0
+                x_400 = 1
+                x_500 = 2
+                x_600 = 3
+                x_700 = 4
+                x_800 = 5
+
+        class F4U_GunsConvergence_Mid:
+            id = "F4U_GunsConvergence_Mid"
+
+            class Values:
+                x_300 = 0
+                x_400 = 1
+                x_500 = 2
+                x_600 = 3
+                x_700 = 4
+                x_800 = 5
+
+        class F4U_GunsConvergence_Outer:
+            id = "F4U_GunsConvergence_Outer"
+
+            class Values:
+                x_300 = 0
+                x_400 = 1
+                x_500 = 2
+                x_600 = 3
+                x_700 = 4
+                x_800 = 5
+
+        class F4U_CW_number:
+            id = "F4U_CW_number"
+
+        class F4U_CW_number_1:
+            id = "F4U_CW_number_1"
+
+            class Values:
+                x_0 = 0
+                x_1 = 1
+                x_2 = 2
+                x_3 = 3
+                x_4 = 4
+                x_5 = 5
+                x_6 = 6
+                x_7 = 7
+                x_8 = 8
+                x_9 = 9
+
+        class F4U_CW_number_2:
+            id = "F4U_CW_number_2"
+
+            class Values:
+                x_0 = 0
+                x_1 = 1
+                x_2 = 2
+                x_3 = 3
+                x_4 = 4
+                x_5 = 5
+                x_6 = 6
+                x_7 = 7
+                x_8 = 8
+                x_9 = 9
+
+        class F4U_CW_number_3:
+            id = "F4U_CW_number_3"
+
+            class Values:
+                x_0 = 0
+                x_1 = 1
+                x_2 = 2
+                x_3 = 3
+                x_4 = 4
+                x_5 = 5
+                x_6 = 6
+                x_7 = 7
+                x_8 = 8
+                x_9 = 9
+
+    properties = {
+        "F4U_CustomGunsFiringPattern": UnitPropertyDescription(
+            identifier="F4U_CustomGunsFiringPattern",
+            control="checkbox",
+            label="Custom guns firing pattern",
+            default=False,
+        ),
+        "F4U_GunsConvergence_Inner": UnitPropertyDescription(
+            identifier="F4U_GunsConvergence_Inner",
+            control="comboList",
+            label="Inner guns convergence",
+            default=2,
+            values={
+                0: "300",
+                1: "400",
+                2: "500",
+                3: "600",
+                4: "700",
+                5: "800",
+            },
+        ),
+        "F4U_GunsConvergence_Mid": UnitPropertyDescription(
+            identifier="F4U_GunsConvergence_Mid",
+            control="comboList",
+            label="Mid guns convergence",
+            default=2,
+            values={
+                0: "300",
+                1: "400",
+                2: "500",
+                3: "600",
+                4: "700",
+                5: "800",
+            },
+        ),
+        "F4U_GunsConvergence_Outer": UnitPropertyDescription(
+            identifier="F4U_GunsConvergence_Outer",
+            control="comboList",
+            label="Outer guns distance",
+            default=2,
+            values={
+                0: "300",
+                1: "400",
+                2: "500",
+                3: "600",
+                4: "700",
+                5: "800",
+            },
+        ),
+        "F4U_CW_number": UnitPropertyDescription(
+            identifier="F4U_CW_number",
+            control="checkbox",
+            label="Royal Navy Build Numbers",
+            default=True,
+        ),
+        "F4U_CW_number_1": UnitPropertyDescription(
+            identifier="F4U_CW_number_1",
+            control="comboList",
+            label="1st number",
+            default=0,
+            values={
+                0: "0",
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "5",
+                6: "6",
+                7: "7",
+                8: "8",
+                9: "9",
+            },
+        ),
+        "F4U_CW_number_2": UnitPropertyDescription(
+            identifier="F4U_CW_number_2",
+            control="comboList",
+            label="2nd number",
+            default=9,
+            values={
+                0: "0",
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "5",
+                6: "6",
+                7: "7",
+                8: "8",
+                9: "9",
+            },
+        ),
+        "F4U_CW_number_3": UnitPropertyDescription(
+            identifier="F4U_CW_number_3",
+            control="comboList",
+            label="3rd number",
+            default=2,
+            values={
+                0: "0",
+                1: "1",
+                2: "2",
+                3: "3",
+                4: "4",
+                5: "5",
+                6: "6",
+                7: "7",
+                8: "8",
+                9: "9",
+            },
+        ),
+    }
+
+    livery_name = "F4U-1D_CW"  # from livery_entry
+
+    class Pylon1:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (1, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon2:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (2, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon3:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (3, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon4:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (4, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon5:
+        Mk5_Universal_Drop_Tank_150_Corsair = (5, Weapons.Mk5_Universal_Drop_Tank_150_Corsair)
+        Mk_6_Lockheed_Drop_Tank_150_U_S__Gal = (5, Weapons.Mk_6_Lockheed_Drop_Tank_150_U_S__Gal)
+        Tiny_Tim__Corsair____569_kg__unguided_rocket = (5, Weapons.Tiny_Tim__Corsair____569_kg__unguided_rocket)
+        AN_M30A1___100lb_GP_Bomb_LD = (5, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
+        AN_M57___250lb_GP_Bomb_LD = (5, Weapons.AN_M57___250lb_GP_Bomb_LD)
+        AN_M64___500lb_GP_Bomb_LD = (5, Weapons.AN_M64___500lb_GP_Bomb_LD)
+        AN_M65___1000lb_GP_Bomb_LD = (5, Weapons.AN_M65___1000lb_GP_Bomb_LD)
+
+    class Pylon6:
+        Auxiliary_Drop_Tank_175_U_S__Gal = (6, Weapons.Auxiliary_Drop_Tank_175_U_S__Gal)
+        AN_M64___500lb_GP_Bomb_LD = (6, Weapons.AN_M64___500lb_GP_Bomb_LD)
+        AN_M65___1000lb_GP_Bomb_LD = (6, Weapons.AN_M65___1000lb_GP_Bomb_LD)
+        ASM_N_2_Bat___1000lb_Radar_Guided_Glide_Bomb = (6, Weapons.ASM_N_2_Bat___1000lb_Radar_Guided_Glide_Bomb)
+
+    class Pylon7:
+        Mk5_Universal_Drop_Tank_150_Corsair = (7, Weapons.Mk5_Universal_Drop_Tank_150_Corsair)
+        Mk_6_Lockheed_Drop_Tank_150_U_S__Gal = (7, Weapons.Mk_6_Lockheed_Drop_Tank_150_U_S__Gal)
+        Tiny_Tim__Corsair____569_kg__unguided_rocket_ = (7, Weapons.Tiny_Tim__Corsair____569_kg__unguided_rocket_)
+        AN_M30A1___100lb_GP_Bomb_LD = (7, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
+        AN_M57___250lb_GP_Bomb_LD = (7, Weapons.AN_M57___250lb_GP_Bomb_LD)
+        AN_M64___500lb_GP_Bomb_LD = (7, Weapons.AN_M64___500lb_GP_Bomb_LD)
+        AN_M65___1000lb_GP_Bomb_LD = (7, Weapons.AN_M65___1000lb_GP_Bomb_LD)
+
+    class Pylon8:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (8, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon9:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (9, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon10:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (10, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon11:
+        HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (11, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
+
+    class Pylon12:
+        Smoke_Generator___white_ = (12, Weapons.Smoke_Generator___white_)
+        Smoke_Generator___red_ = (12, Weapons.Smoke_Generator___red_)
+        Smoke_Generator___green_ = (12, Weapons.Smoke_Generator___green_)
+        Smoke_Generator___blue_ = (12, Weapons.Smoke_Generator___blue_)
+        Smoke_Generator___orange_ = (12, Weapons.Smoke_Generator___orange_)
+        Smoke_Generator___yellow_ = (12, Weapons.Smoke_Generator___yellow_)
+
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+
+    tasks = [task.Intercept, task.CAP, task.Escort, task.CAS, task.GroundAttack, task.Reconnaissance, task.AntishipStrike, task.FighterSweep]
+    task_default = task.Intercept
+
+
 class F_A_18A(PlaneType):
     id = "F/A-18A"
     height = 4.66
@@ -32036,6 +32539,8 @@ plane_map = {
     "F-86F_FC": F_86F_FC,
     "F-14B": F_14B,
     "F-14A-135-GR": F_14A_135_GR,
+    "F4U-1D": F4U_1D,
+    "F4U-1D_CW": F4U_1D_CW,
     "F/A-18A": F_A_18A,
     "F/A-18C": F_A_18C,
     "FA-18C_hornet": FA_18C_hornet,
