@@ -174,6 +174,17 @@ class CV_1143_5(unittype.ShipType):
     air_weapon_dist = 12000
 
 
+class Essex(unittype.ShipType):
+    id = "Essex"
+    name = "Essex Class Carrier 1944"
+    plane_num = 90
+    helicopter_num = 1
+    parking = 32
+    detection_range = 15000
+    threat_range = 4000
+    air_weapon_dist = 4000
+
+
 class CastleClass_01(unittype.ShipType):
     id = "CastleClass_01"
     name = "Castle Class"
@@ -527,6 +538,7 @@ ship_map = {
     "IMPROVED_KILO": IMPROVED_KILO,
     "SOM": SOM,
     "CV_1143_5": CV_1143_5,
+    "Essex": Essex,
     "CastleClass_01": CastleClass_01,
     "HarborTug": HarborTug,
     "hms_invincible": Hms_invincible,

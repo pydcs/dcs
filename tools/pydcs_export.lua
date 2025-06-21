@@ -268,6 +268,7 @@ flyable["Su-33"] = true
 -- Piston engine
 flyable["Bf-109K-4"] = true
 flyable["Christen Eagle II"] = true
+flyable["F4U-1D"] = true
 flyable["FW-190A8"] = true
 flyable["FW-190D9"] = true
 flyable["I-16"] = true

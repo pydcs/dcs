@@ -130,15 +130,15 @@ class Weapons:
     AN_AVQ_23_Pave_Spike___Targeting_Pod = {"clsid": "{HB_PAVE_SPIKE}", "name": "AN/AVQ-23 Pave Spike - Targeting Pod", "weight": 192}
     AN_AVQ_23_Pave_Spike___Targeting_Pod_Rack = {"clsid": "{HB_PAVE_SPIKE_ON_ADAPTER_IN_AERO7}", "name": "AN/AVQ-23 Pave Spike - Targeting Pod Rack", "weight": 217.9}
     AN_AXQ_14_Data_Link_Pod = {"clsid": "{AN_AXQ_14}", "name": "AN/AXQ-14 Data Link Pod", "weight": 300}
-    AN_M30A1___100lb_GP_Bomb_LD = {"clsid": "{AN_M30A1}", "name": "AN-M30A1 - 100lb GP Bomb LD", "weight": 45.8}
+    AN_M30A1___100lb_GP_Bomb_LD = {"clsid": "{AN_M30A1}", "name": "AN-M30A1 - 100lb GP Bomb LD", "weight": 56.5}
     AN_M3_Gunpod_Left = {"clsid": "{MB339_ANM3_L}", "name": "AN/M3 Gunpod Left", "weight": 75}
     AN_M3_Gunpod_Right = {"clsid": "{MB339_ANM3_R}", "name": "AN/M3 Gunpod Right", "weight": 75}
     AN_M3___2_Browning_Machine_Guns_12_7mm = {"clsid": "{AN-M3}", "name": "AN-M3 - 2*Browning Machine Guns 12.7mm", "weight": 218}
-    AN_M57___250lb_GP_Bomb_LD = {"clsid": "{AN_M57}", "name": "AN-M57 - 250lb GP Bomb LD", "weight": 113}
-    AN_M64___500lb_GP_Bomb_LD = {"clsid": "{AN-M64}", "name": "AN-M64 - 500lb GP Bomb LD", "weight": 227}
+    AN_M57___250lb_GP_Bomb_LD = {"clsid": "{AN_M57}", "name": "AN-M57 - 250lb GP Bomb LD", "weight": 123.5}
+    AN_M64___500lb_GP_Bomb_LD = {"clsid": "{AN-M64}", "name": "AN-M64 - 500lb GP Bomb LD", "weight": 254.5}
     AN_M64___500lb_GP_Bomb_LD_ = {"clsid": "{F86ANM64}", "name": "AN-M64 - 500lb GP Bomb LD", "weight": 227}
-    AN_M65___1000lb_GP_Bomb_LD = {"clsid": "{AN_M65}", "name": "AN-M65 - 1000lb GP Bomb LD", "weight": 475}
-    AN_M66___2000lb_GP_Bomb_LD = {"clsid": "{AN_M66}", "name": "AN-M66 - 2000lb GP Bomb LD", "weight": 977}
+    AN_M65___1000lb_GP_Bomb_LD = {"clsid": "{AN_M65}", "name": "AN-M65 - 1000lb GP Bomb LD", "weight": 500.8}
+    AN_M66___2000lb_GP_Bomb_LD = {"clsid": "{AN_M66}", "name": "AN-M66 - 2000lb GP Bomb LD", "weight": 996.3}
     APK_9_Datalink_Pod = {"clsid": "{APK_9}", "name": "APK-9 Datalink Pod", "weight": 260}
     APU_13MT_with_R_13M1__AA_2_Atoll_D____IR_AAM = {"clsid": "{R-13M1}", "name": "APU-13MT with R-13M1 (AA-2 Atoll-D) - IR AAM", "weight": 146.8}
     APU_13MT_with_R_13M__AA_2_Atoll_D____IR_AAM = {"clsid": "{R-13M}", "name": "APU-13MT with R-13M (AA-2 Atoll-D) - IR AAM", "weight": 143.9}
@@ -164,6 +164,7 @@ class Weapons:
     ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT = {"clsid": "{ARAKM70BAP}", "name": "ARAK M/70B AP 6x 135mm UnGd Rkts, Pshu70 HEAT", "weight": 372.2}
     ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT__Zonar_m_70 = {"clsid": "{ARAKM70BAPPX}", "name": "ARAK M/70B AP 6x 135mm UnGd Rkts, Pshu70 HEAT, Zonar m/70", "weight": 411.8}
     ARAK_M_70B_HE_6x_135mm_UnGd_Rkts__Shu70_HE_FRAG = {"clsid": "{ARAKM70BHE}", "name": "ARAK M/70B HE 6x 135mm UnGd Rkts, Shu70 HE/FRAG", "weight": 372.2}
+    ASM_N_2_Bat___1000lb_Radar_Guided_Glide_Bomb = {"clsid": "{ASM_N_2}", "name": "ASM-N-2 Bat - 1000lb Radar Guided Glide Bomb", "weight": 727}
     ASO_2___countermeasures_pod = {"clsid": "{ASO-2}", "name": "ASO-2 - countermeasures pod", "weight": 22}
     ATAM___1_x_Mistral = {"clsid": "{SA342_Mistral_R1}", "name": "ATAM - 1 x Mistral", "weight": 88.7}
     ATAM___1_x_Mistral_ = {"clsid": "{SA342_Mistral_L1}", "name": "ATAM - 1 x Mistral", "weight": 88.7}
@@ -187,6 +188,7 @@ class Weapons:
     AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD = {"clsid": "{AUF2_SAMP125LD}", "name": "AUF 2 - 2 x SAMP-125 - 125 kg GP Bomb LD", "weight": 320}
     AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD = {"clsid": "{AUF2_SAMP250HD}", "name": "AUF 2 - 2 x SAMP-250 - 250 kg GP Bomb LD", "weight": 570}
     AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD = {"clsid": "{AUF2_SAMP250LD}", "name": "AUF 2 - 2 x SAMP-250 - 250 kg GP Chute Retarded Bomb HD", "weight": 618}
+    Auxiliary_Drop_Tank_175_U_S__Gal = {"clsid": "{175_USgal_Corsair_droptank_aux}", "name": "Auxiliary Drop Tank 175 U.S. Gal", "weight": 546}
     AWW_13_DATALINK_POD = {"clsid": "{AWW-13}", "name": "AWW-13 DATALINK POD", "weight": 200}
     A_A_Training = {"clsid": "{M2KC_AAF}", "name": "A/A Training", "weight": 0}
     A_G_Training = {"clsid": "{M2KC_AGF}", "name": "A/G Training", "weight": 0}
@@ -631,6 +633,7 @@ class Weapons:
     HSAB_with_9_x_Mk_82___500lb_GP_Bombs_LD = {"clsid": "{585D626E-7F42-4073-AB70-41E728C333E2}", "name": "HSAB with 9 x Mk-82 - 500lb GP Bombs LD", "weight": 3140.6}
     HVAR_SMOKE__UnGd_Rkt = {"clsid": "{HVAR_SMOKE_2}", "name": "HVAR SMOKE, UnGd Rkt", "weight": 100}
     HVAR_Smoke_Generator = {"clsid": "{HVAR_SMOKE_GENERATOR}", "name": "HVAR Smoke Generator", "weight": 64}
+    HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = {"clsid": "{HVAR_USN_Mk28_Mod4_Corsair}", "name": "HVAR USN Mk28 Mod4 (Corsair) - 64 kg, unguided rocket", "weight": 64}
     HVAR__UnGd_Rkt = {"clsid": "{HVAR}", "name": "HVAR, UnGd Rkt", "weight": 64}
     I16_DROP_FUEL_TANK = {"clsid": "I16_DROP_FUEL_TANK", "name": "I-16 External Fuel Tank", "weight": 73}
     I16_FAB_100SV = {"clsid": "I16_FAB_100SV", "name": "FAB-100SV", "weight": 100}
@@ -1030,12 +1033,14 @@ class Weapons:
     Missile_Launcher_Rack__Empty_ = {"clsid": "{9M114 Shturm-V-2 Rack}", "name": "Missile Launcher Rack (Empty)", "weight": 13}
     MK_82_28 = {"clsid": "MK_82*28", "name": "28 x Mk-82 - 500lb GP Bombs LD", "weight": 7819.4}
     MK_84___2 = {"clsid": "{CFT_R_MK84LD_x_2}", "name": "MK-84 * 2", "weight": 1788}
+    Mk5_Universal_Drop_Tank_150_Corsair = {"clsid": "{150_USgal_Corsair_droptank_mk5}", "name": "Mk5 Universal Drop Tank 150 Corsair", "weight": 469}
     Mk_20 = {"clsid": "{BRU-32 MK-20}", "name": "Mk-20", "weight": 279.38}
     Mk_20_Rockeye___3 = {"clsid": "{CFT_L_CBU_100_x_3}", "name": "Mk-20 Rockeye * 3", "weight": 666}
     Mk_20_Rockeye___3_ = {"clsid": "{CFT_R_CBU_100_x_3}", "name": "Mk-20 Rockeye * 3", "weight": 666}
     Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets = {"clsid": "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}", "name": "Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets", "weight": 222}
     Mk_20_Rockeye___6 = {"clsid": "{CFT_L_CBU_100_x_6}", "name": "Mk-20 Rockeye * 6", "weight": 1332}
     Mk_20_Rockeye___6_ = {"clsid": "{CFT_R_CBU_100_x_6}", "name": "Mk-20 Rockeye * 6", "weight": 1332}
+    Mk_6_Lockheed_Drop_Tank_150_U_S__Gal = {"clsid": "{150_USgal_Corsair_droptank_mk6}", "name": "Mk.6 Lockheed Drop Tank 150 U.S. Gal", "weight": 471}
     Mk_81___250lb_GP_Bomb_LD = {"clsid": "{90321C8E-7ED1-47D4-A160-E074D5ABD902}", "name": "Mk-81 - 250lb GP Bomb LD", "weight": 118}
     Mk_82 = {"clsid": "{BRU-32 MK-82}", "name": "Mk-82", "weight": 298.38}
     Mk_82AIR = {"clsid": "{BRU-32 MK-82AIR}", "name": "Mk-82AIR", "weight": 298.38}
@@ -1214,6 +1219,7 @@ class Weapons:
     Smokewinder___white = {"clsid": "{A4BCC903-06C8-47bb-9937-A30FEDB4E744}", "name": "Smokewinder - white", "weight": 92.1}
     Smokewinder___yellow = {"clsid": "{A4BCC903-06C8-47bb-9937-A30FEDB4E745}", "name": "Smokewinder - yellow", "weight": 92.1}
     Smoke_for_Christen_Eagle_II__white = {"clsid": "{CE2_SMOKE_WHITE}", "name": "Smoke for Christen Eagle II, white", "weight": 7}
+    Smoke_for_F4U_1D__white = {"clsid": "{F4U1D_SMOKE_WHITE}", "name": "Smoke for F4U-1D, white", "weight": 7}
     Smoke_Generator___blue = {"clsid": "{D3F65166-1AB8-490f-AF2F-2FB6E22568B3}", "name": "Smoke Generator - blue", "weight": 220}
     Smoke_Generator___blue_ = {"clsid": "{INV-SMOKE-BLUE}", "name": "Smoke Generator - blue", "weight": 0}
     Smoke_Generator___green = {"clsid": "{D3F65166-1AB8-490f-AF2F-2FB6E22568B2}", "name": "Smoke Generator - green", "weight": 220}
@@ -1305,6 +1311,8 @@ class Weapons:
     Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_257_H1_HE_Frag_Lg_Whd = {"clsid": "{TELSON8_SNEBT257}", "name": "Telson 8 - 8 x UnGd Rkts, 68 mm SNEB Type 257 H1 HE/Frag Lg Whd", "weight": 93.04}
     Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_259E_H1_IL = {"clsid": "{TELSON8_SNEBT259E}", "name": "Telson 8 - 8 x UnGd Rkts, 68 mm SNEB Type 259E H1 IL", "weight": 91.28}
     TGM_65H = {"clsid": "TGM_65H", "name": "TGM-65H - Trg Round for Mav H (CCD)", "weight": 208}
+    Tiny_Tim__Corsair____569_kg__unguided_rocket = {"clsid": "{Tiny_Tim_Corsair_L}", "name": "Tiny Tim (Corsair) - 569 kg, unguided rocket", "weight": 569}
+    Tiny_Tim__Corsair____569_kg__unguided_rocket_ = {"clsid": "{Tiny_Tim_Corsair_R}", "name": "Tiny Tim (Corsair) - 569 kg, unguided rocket", "weight": 569}
     TORNADO_Fuel_tank = {"clsid": "{EF124821-F9BB-4314-A153-E0E2FE1162C4}", "name": "TORNADO Fuel tank", "weight": 1275}
     TYPE_200A = {"clsid": "{DIS_TYPE200A}", "name": "TYPE-200A", "weight": 200}
     U22_A_Jammer = {"clsid": "{U22A}", "name": "U22/A Jammer", "weight": 348}
@@ -1907,6 +1915,7 @@ weapon_ids = {
     "{ARAKM70BAP}": Weapons.ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT,
     "{ARAKM70BAPPX}": Weapons.ARAK_M_70B_AP_6x_135mm_UnGd_Rkts__Pshu70_HEAT__Zonar_m_70,
     "{ARAKM70BHE}": Weapons.ARAK_M_70B_HE_6x_135mm_UnGd_Rkts__Shu70_HE_FRAG,
+    "{ASM_N_2}": Weapons.ASM_N_2_Bat___1000lb_Radar_Guided_Glide_Bomb,
     "{ASO-2}": Weapons.ASO_2___countermeasures_pod,
     "{SA342_Mistral_R1}": Weapons.ATAM___1_x_Mistral,
     "{SA342_Mistral_L1}": Weapons.ATAM___1_x_Mistral_,
@@ -1930,6 +1939,7 @@ weapon_ids = {
     "{AUF2_SAMP125LD}": Weapons.AUF_2___2_x_SAMP_125___125_kg_GP_Bomb_LD,
     "{AUF2_SAMP250HD}": Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Bomb_LD,
     "{AUF2_SAMP250LD}": Weapons.AUF_2___2_x_SAMP_250___250_kg_GP_Chute_Retarded_Bomb_HD,
+    "{175_USgal_Corsair_droptank_aux}": Weapons.Auxiliary_Drop_Tank_175_U_S__Gal,
     "{AWW-13}": Weapons.AWW_13_DATALINK_POD,
     "{M2KC_AAF}": Weapons.A_A_Training,
     "{M2KC_AGF}": Weapons.A_G_Training,
@@ -2374,6 +2384,7 @@ weapon_ids = {
     "{585D626E-7F42-4073-AB70-41E728C333E2}": Weapons.HSAB_with_9_x_Mk_82___500lb_GP_Bombs_LD,
     "{HVAR_SMOKE_2}": Weapons.HVAR_SMOKE__UnGd_Rkt,
     "{HVAR_SMOKE_GENERATOR}": Weapons.HVAR_Smoke_Generator,
+    "{HVAR_USN_Mk28_Mod4_Corsair}": Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket,
     "{HVAR}": Weapons.HVAR__UnGd_Rkt,
     "I16_DROP_FUEL_TANK": Weapons.I16_DROP_FUEL_TANK,
     "I16_FAB_100SV": Weapons.I16_FAB_100SV,
@@ -2773,12 +2784,14 @@ weapon_ids = {
     "{9M114 Shturm-V-2 Rack}": Weapons.Missile_Launcher_Rack__Empty_,
     "MK_82*28": Weapons.MK_82_28,
     "{CFT_R_MK84LD_x_2}": Weapons.MK_84___2,
+    "{150_USgal_Corsair_droptank_mk5}": Weapons.Mk5_Universal_Drop_Tank_150_Corsair,
     "{BRU-32 MK-20}": Weapons.Mk_20,
     "{CFT_L_CBU_100_x_3}": Weapons.Mk_20_Rockeye___3,
     "{CFT_R_CBU_100_x_3}": Weapons.Mk_20_Rockeye___3_,
     "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}": Weapons.Mk_20_Rockeye___490lbs_CBU__247_x_HEAT_Bomblets,
     "{CFT_L_CBU_100_x_6}": Weapons.Mk_20_Rockeye___6,
     "{CFT_R_CBU_100_x_6}": Weapons.Mk_20_Rockeye___6_,
+    "{150_USgal_Corsair_droptank_mk6}": Weapons.Mk_6_Lockheed_Drop_Tank_150_U_S__Gal,
     "{90321C8E-7ED1-47D4-A160-E074D5ABD902}": Weapons.Mk_81___250lb_GP_Bomb_LD,
     "{BRU-32 MK-82}": Weapons.Mk_82,
     "{BRU-32 MK-82AIR}": Weapons.Mk_82AIR,
@@ -2957,6 +2970,7 @@ weapon_ids = {
     "{A4BCC903-06C8-47bb-9937-A30FEDB4E744}": Weapons.Smokewinder___white,
     "{A4BCC903-06C8-47bb-9937-A30FEDB4E745}": Weapons.Smokewinder___yellow,
     "{CE2_SMOKE_WHITE}": Weapons.Smoke_for_Christen_Eagle_II__white,
+    "{F4U1D_SMOKE_WHITE}": Weapons.Smoke_for_F4U_1D__white,
     "{D3F65166-1AB8-490f-AF2F-2FB6E22568B3}": Weapons.Smoke_Generator___blue,
     "{INV-SMOKE-BLUE}": Weapons.Smoke_Generator___blue_,
     "{D3F65166-1AB8-490f-AF2F-2FB6E22568B2}": Weapons.Smoke_Generator___green,
@@ -3048,6 +3062,8 @@ weapon_ids = {
     "{TELSON8_SNEBT257}": Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_257_H1_HE_Frag_Lg_Whd,
     "{TELSON8_SNEBT259E}": Weapons.Telson_8___8_x_UnGd_Rkts__68_mm_SNEB_Type_259E_H1_IL,
     "TGM_65H": Weapons.TGM_65H,
+    "{Tiny_Tim_Corsair_L}": Weapons.Tiny_Tim__Corsair____569_kg__unguided_rocket,
+    "{Tiny_Tim_Corsair_R}": Weapons.Tiny_Tim__Corsair____569_kg__unguided_rocket_,
     "{EF124821-F9BB-4314-A153-E0E2FE1162C4}": Weapons.TORNADO_Fuel_tank,
     "{DIS_TYPE200A}": Weapons.TYPE_200A,
     "{U22A}": Weapons.U22_A_Jammer,
