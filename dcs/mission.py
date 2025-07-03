@@ -1161,7 +1161,7 @@ class Mission:
             p = self.aircraft(name + " Pilot #{nr}".format(nr=i), aircraft_type, country)
             p.position = copy.copy(position)
             p.fuel = int(p.fuel * 0.9)
-            ag.add_unit(p)
+            ag.add_unit(p)  # type: ignore
 
         country.add_aircraft_group(self._flying_group_inflight(country, ag, maintask, altitude, speed))
         return ag
@@ -1207,7 +1207,7 @@ class Mission:
 
         for i in range(1, group_size + 1):
             p = self.aircraft(name + " Pilot #{nr}".format(nr=i), aircraft_type, country)
-            ag.add_unit(p)
+            ag.add_unit(p)  # type: ignore
 
         country.add_aircraft_group(
             self._flying_group_from_airport(country, ag, maintask, airport, start_type, parking_slots))
@@ -1250,7 +1250,7 @@ class Mission:
 
         for i in range(1, group_size + 1):
             p = self.aircraft(name + " Pilot #{nr}".format(nr=i), aircraft_type, country)
-            ag.add_unit(p)
+            ag.add_unit(p)  # type: ignore
 
         ag.units[0].position = copy.copy(pad_group.position)
         ag.formation_rectangle(pad_group.units[0].heading, 10)

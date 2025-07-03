@@ -345,7 +345,7 @@ class FlyingGroup(Generic[FlyingUnitT], MovingGroup[FlyingUnitT]):
         self.uncontrolled = False
         self.radio_set = False
         self.task = "CAS"
-        self.units = []  # type: List[FlyingUnit]
+        self.units = []  # type: List[FlyingUnitT]
         self.nav_target_points = []  # type: List[NavTargetPoint]
 
     def starts_from_airport(self) -> bool:
