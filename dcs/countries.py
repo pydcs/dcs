@@ -244,6 +244,8 @@ class Russia(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -325,6 +327,8 @@ class Russia(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -767,6 +771,8 @@ class Ukraine(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -840,6 +846,8 @@ class Ukraine(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -1162,6 +1170,8 @@ class USA(Country):
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         I_16 = planes.I_16
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
@@ -1243,6 +1253,8 @@ class USA(Country):
         Plane.Falcon_Gyrocopter,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.I_16,
         Plane.M_2000C,
         Plane.MB_339A,
@@ -1321,6 +1333,7 @@ class USA(Country):
         CVN_75 = ships.CVN_75
         HandyWind = ships.HandyWind
         Seawise_Giant = ships.Seawise_Giant
+        Essex = ships.Essex
         HarborTug = ships.HarborTug
         Ship_Tilde_Supply = ships.Ship_Tilde_Supply
         Santafe = ships.Santafe
@@ -1594,6 +1607,8 @@ class Turkey(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -1654,6 +1669,8 @@ class Turkey(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -1996,6 +2013,8 @@ class UK(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -2055,6 +2074,8 @@ class UK(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -2394,6 +2415,8 @@ class France(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -2458,6 +2481,8 @@ class France(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -2872,6 +2897,8 @@ class Germany(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -2933,6 +2960,8 @@ class Germany(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -3263,6 +3292,10 @@ class USAFAggressors(Country):
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
             HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
+            Type_3_80mm_AA = vehicles.AirDefence.Type_3_80mm_AA
+            Type_88_75mm_AA = vehicles.AirDefence.Type_88_75mm_AA
+            Type_96_25mm_AA = vehicles.AirDefence.Type_96_25mm_AA
+            Type_94_25mm_AA_Truck = vehicles.AirDefence.Type_94_25mm_AA_Truck
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
 
         class Fortification:
@@ -3336,6 +3369,8 @@ class USAFAggressors(Country):
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
             GD_20 = vehicles.Unarmed.GD_20
+            Type_94_Truck = vehicles.Unarmed.Type_94_Truck
+            Type_98_So_Da = vehicles.Unarmed.Type_98_So_Da
 
         class Armor:
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
@@ -3406,6 +3441,8 @@ class USAFAggressors(Country):
             M1126_Stryker_ICV = vehicles.Armor.M1126_Stryker_ICV
             Leopard_2A4_trs = vehicles.Armor.Leopard_2A4_trs
             Challenger2 = vehicles.Armor.Challenger2
+            Type_98_Ke_Ni = vehicles.Armor.Type_98_Ke_Ni
+            Type_89_I_Go = vehicles.Armor.Type_89_I_Go
             M1128_Stryker_MGS = vehicles.Armor.M1128_Stryker_MGS
             M1134_Stryker_ATGM = vehicles.Armor.M1134_Stryker_ATGM
             M1A2C_SEP_V3 = vehicles.Armor.M1A2C_SEP_V3
@@ -3484,6 +3521,8 @@ class USAFAggressors(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -3616,6 +3655,8 @@ class USAFAggressors(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -3813,6 +3854,7 @@ class USAFAggressors(Country):
         CVN_72 = ships.CVN_72
         CVN_73 = ships.CVN_73
         CVN_75 = ships.CVN_75
+        Essex = ships.Essex
         Forrestal = ships.Forrestal
         CastleClass_01 = ships.CastleClass_01
         Hms_invincible = ships.Hms_invincible
@@ -4092,6 +4134,8 @@ class Canada(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
@@ -4147,6 +4191,8 @@ class Canada(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.I_16,
@@ -4464,6 +4510,8 @@ class Spain(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
@@ -4525,6 +4573,8 @@ class Spain(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.Hawk,
@@ -4876,6 +4926,8 @@ class TheNetherlands(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -4935,6 +4987,8 @@ class TheNetherlands(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -5264,6 +5318,8 @@ class Belgium(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -5321,6 +5377,8 @@ class Belgium(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -5629,6 +5687,8 @@ class Norway(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -5686,6 +5746,8 @@ class Norway(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -5992,6 +6054,8 @@ class Denmark(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -6049,6 +6113,8 @@ class Denmark(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -6373,6 +6439,8 @@ class Israel(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -6433,6 +6501,8 @@ class Israel(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -6802,6 +6872,8 @@ class Georgia(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -6859,6 +6931,8 @@ class Georgia(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -7183,6 +7257,8 @@ class Insurgents(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -7234,6 +7310,8 @@ class Insurgents(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -7493,6 +7571,8 @@ class Abkhazia(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -7548,6 +7628,8 @@ class Abkhazia(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -7791,6 +7873,8 @@ class SouthOssetia(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -7841,6 +7925,8 @@ class SouthOssetia(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -8073,6 +8159,8 @@ class Italy(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -8134,6 +8222,8 @@ class Italy(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -8460,6 +8550,8 @@ class Australia(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
@@ -8515,6 +8607,8 @@ class Australia(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
@@ -8810,6 +8904,8 @@ class Switzerland(Country):
         F_5E = planes.F_5E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
@@ -8862,6 +8958,8 @@ class Switzerland(Country):
         Plane.F_5E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.I_16,
@@ -9136,6 +9234,8 @@ class Austria(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -9187,6 +9287,8 @@ class Austria(Country):
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -9568,6 +9670,8 @@ class Belarus(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -9630,6 +9734,8 @@ class Belarus(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -9924,6 +10030,8 @@ class Bulgaria(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -9983,6 +10091,8 @@ class Bulgaria(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -10312,6 +10422,8 @@ class CzechRepublic(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -10368,6 +10480,8 @@ class CzechRepublic(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -10704,6 +10818,8 @@ class China(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -10766,6 +10882,8 @@ class China(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -10973,6 +11091,8 @@ class Croatia(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -11024,6 +11144,8 @@ class Croatia(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -11391,6 +11513,8 @@ class Egypt(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -11448,6 +11572,8 @@ class Egypt(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -11813,6 +11939,8 @@ class Finland(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         L_39C = planes.L_39C
@@ -11864,6 +11992,8 @@ class Finland(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.L_39C,
@@ -12197,6 +12327,8 @@ class Greece(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -12255,6 +12387,8 @@ class Greece(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -12629,6 +12763,8 @@ class Hungary(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -12684,6 +12820,8 @@ class Hungary(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -13005,6 +13143,8 @@ class India(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -13064,6 +13204,8 @@ class India(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -13418,6 +13560,8 @@ class Iran(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_14B = planes.F_14B
         F_14A_135_GR = planes.F_14A_135_GR
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -13479,6 +13623,8 @@ class Iran(Country):
         Plane.F_4E_45MC,
         Plane.F_14B,
         Plane.F_14A_135_GR,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -13834,6 +13980,8 @@ class Iraq(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -13894,6 +14042,8 @@ class Iraq(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -14109,6 +14259,10 @@ class Japan(Country):
             Patriot_str = vehicles.AirDefence.Patriot_str
             Soldier_stinger = vehicles.AirDefence.Soldier_stinger
             Stinger_comm = vehicles.AirDefence.Stinger_comm
+            Type_3_80mm_AA = vehicles.AirDefence.Type_3_80mm_AA
+            Type_88_75mm_AA = vehicles.AirDefence.Type_88_75mm_AA
+            Type_96_25mm_AA = vehicles.AirDefence.Type_96_25mm_AA
+            Type_94_25mm_AA_Truck = vehicles.AirDefence.Type_94_25mm_AA_Truck
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             Tt_ZU_23 = vehicles.AirDefence.Tt_ZU_23
             Flak18 = vehicles.AirDefence.Flak18
@@ -14140,6 +14294,8 @@ class Japan(Country):
         class Unarmed:
             M_818 = vehicles.Unarmed.M_818
             Hummer = vehicles.Unarmed.Hummer
+            Type_94_Truck = vehicles.Unarmed.Type_94_Truck
+            Type_98_So_Da = vehicles.Unarmed.Type_98_So_Da
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -14154,6 +14310,8 @@ class Japan(Country):
             Horch_901_typ_40_kfz_21 = vehicles.Unarmed.Horch_901_typ_40_kfz_21
 
         class Armor:
+            Type_98_Ke_Ni = vehicles.Armor.Type_98_Ke_Ni
+            Type_89_I_Go = vehicles.Armor.Type_89_I_Go
             HL_DSHK = vehicles.Armor.HL_DSHK
             HL_KORD = vehicles.Armor.HL_KORD
             Tt_DSHK = vehicles.Armor.Tt_DSHK
@@ -14227,6 +14385,8 @@ class Japan(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -14280,6 +14440,8 @@ class Japan(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -14676,6 +14838,8 @@ class Kazakhstan(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -14739,6 +14903,8 @@ class Kazakhstan(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -15050,6 +15216,8 @@ class NorthKorea(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -15103,6 +15271,8 @@ class NorthKorea(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -15412,6 +15582,8 @@ class Pakistan(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -15470,6 +15642,8 @@ class Pakistan(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -15829,6 +16003,8 @@ class Poland(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -15890,6 +16066,8 @@ class Poland(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -16247,6 +16425,8 @@ class Romania(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -16303,6 +16483,8 @@ class Romania(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -16618,6 +16800,8 @@ class SaudiArabia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -16675,6 +16859,8 @@ class SaudiArabia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -17015,6 +17201,8 @@ class Serbia(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -17070,6 +17258,8 @@ class Serbia(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -17386,6 +17576,8 @@ class Slovakia(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -17441,6 +17633,8 @@ class Slovakia(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -17750,6 +17944,8 @@ class SouthKorea(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -17806,6 +18002,8 @@ class SouthKorea(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -18096,6 +18294,8 @@ class Sweden(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -18150,6 +18350,8 @@ class Sweden(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -18499,6 +18701,8 @@ class Syria(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -18557,6 +18761,8 @@ class Syria(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -18869,6 +19075,8 @@ class Yemen(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -18923,6 +19131,8 @@ class Yemen(Country):
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -19255,6 +19465,8 @@ class Vietnam(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -19311,6 +19523,8 @@ class Vietnam(Country):
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -19619,6 +19833,8 @@ class Venezuela(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -19672,6 +19888,8 @@ class Venezuela(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -19950,6 +20168,8 @@ class Tunisia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -20001,6 +20221,8 @@ class Tunisia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -20291,6 +20513,8 @@ class Thailand(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -20345,6 +20569,8 @@ class Thailand(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -20647,6 +20873,8 @@ class Sudan(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -20702,6 +20930,8 @@ class Sudan(Country):
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -20976,6 +21206,8 @@ class Philippines(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -21029,6 +21261,8 @@ class Philippines(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -21331,6 +21565,8 @@ class Morocco(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -21386,6 +21622,8 @@ class Morocco(Country):
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -21670,6 +21908,8 @@ class Mexico(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -21722,6 +21962,8 @@ class Mexico(Country):
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -22015,6 +22257,8 @@ class Malaysia(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -22067,6 +22311,8 @@ class Malaysia(Country):
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -22381,6 +22627,8 @@ class Libya(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -22437,6 +22685,8 @@ class Libya(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -22740,6 +22990,8 @@ class Jordan(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -22795,6 +23047,8 @@ class Jordan(Country):
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -23125,6 +23379,8 @@ class Indonesia(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -23183,6 +23439,8 @@ class Indonesia(Country):
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -23463,6 +23721,8 @@ class Honduras(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -23514,6 +23774,8 @@ class Honduras(Country):
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -23819,6 +24081,8 @@ class Ethiopia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -23873,6 +24137,8 @@ class Ethiopia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -24169,6 +24435,8 @@ class Chile(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -24226,6 +24494,8 @@ class Chile(Country):
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -24536,6 +24806,8 @@ class Brazil(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -24588,6 +24860,8 @@ class Brazil(Country):
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -24889,6 +25163,8 @@ class Bahrain(Country):
         F_4E_45MC = planes.F_4E_45MC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -24939,6 +25215,8 @@ class Bahrain(Country):
         Plane.F_4E_45MC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -25241,6 +25519,8 @@ class ThirdReich(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -25292,6 +25572,8 @@ class ThirdReich(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -25607,6 +25889,8 @@ class Yugoslavia(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -25660,6 +25944,8 @@ class Yugoslavia(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -26000,6 +26286,8 @@ class USSR(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -26076,6 +26364,8 @@ class USSR(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -26306,6 +26596,8 @@ class ItalianSocialRepublic(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -26356,6 +26648,8 @@ class ItalianSocialRepublic(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -26742,6 +27036,8 @@ class Algeria(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -26809,6 +27105,8 @@ class Algeria(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -27129,6 +27427,8 @@ class Kuwait(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
@@ -27182,6 +27482,8 @@ class Kuwait(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.I_16,
@@ -27472,6 +27774,8 @@ class Qatar(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -27526,6 +27830,8 @@ class Qatar(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -27836,6 +28142,8 @@ class Oman(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -27889,6 +28197,8 @@ class Oman(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -28203,6 +28513,8 @@ class UnitedArabEmirates(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -28258,6 +28570,8 @@ class UnitedArabEmirates(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -28546,6 +28860,8 @@ class SouthAfrica(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -28601,6 +28917,8 @@ class SouthAfrica(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -28946,6 +29264,8 @@ class Cuba(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -29007,6 +29327,8 @@ class Cuba(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -29301,6 +29623,8 @@ class Portugal(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -29357,6 +29681,8 @@ class Portugal(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -29694,6 +30020,8 @@ class GDR(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -29750,6 +30078,8 @@ class GDR(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -30054,6 +30384,8 @@ class Lebanon(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -30106,6 +30438,8 @@ class Lebanon(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -30435,6 +30769,10 @@ class CombinedJointTaskForcesBlue(Country):
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
             HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
+            Type_3_80mm_AA = vehicles.AirDefence.Type_3_80mm_AA
+            Type_88_75mm_AA = vehicles.AirDefence.Type_88_75mm_AA
+            Type_96_25mm_AA = vehicles.AirDefence.Type_96_25mm_AA
+            Type_94_25mm_AA_Truck = vehicles.AirDefence.Type_94_25mm_AA_Truck
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
 
         class Fortification:
@@ -30508,6 +30846,8 @@ class CombinedJointTaskForcesBlue(Country):
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
             GD_20 = vehicles.Unarmed.GD_20
+            Type_94_Truck = vehicles.Unarmed.Type_94_Truck
+            Type_98_So_Da = vehicles.Unarmed.Type_98_So_Da
 
         class Armor:
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
@@ -30578,6 +30918,8 @@ class CombinedJointTaskForcesBlue(Country):
             M1126_Stryker_ICV = vehicles.Armor.M1126_Stryker_ICV
             Leopard_2A4_trs = vehicles.Armor.Leopard_2A4_trs
             Challenger2 = vehicles.Armor.Challenger2
+            Type_98_Ke_Ni = vehicles.Armor.Type_98_Ke_Ni
+            Type_89_I_Go = vehicles.Armor.Type_89_I_Go
             M1128_Stryker_MGS = vehicles.Armor.M1128_Stryker_MGS
             M1134_Stryker_ATGM = vehicles.Armor.M1134_Stryker_ATGM
             M1A2C_SEP_V3 = vehicles.Armor.M1A2C_SEP_V3
@@ -30655,6 +30997,8 @@ class CombinedJointTaskForcesBlue(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -30787,6 +31131,8 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -30985,6 +31331,7 @@ class CombinedJointTaskForcesBlue(Country):
         CVN_72 = ships.CVN_72
         CVN_73 = ships.CVN_73
         CVN_75 = ships.CVN_75
+        Essex = ships.Essex
         Forrestal = ships.Forrestal
         CastleClass_01 = ships.CastleClass_01
         Hms_invincible = ships.Hms_invincible
@@ -31271,6 +31618,10 @@ class CombinedJointTaskForcesRed(Country):
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
             HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
+            Type_3_80mm_AA = vehicles.AirDefence.Type_3_80mm_AA
+            Type_88_75mm_AA = vehicles.AirDefence.Type_88_75mm_AA
+            Type_96_25mm_AA = vehicles.AirDefence.Type_96_25mm_AA
+            Type_94_25mm_AA_Truck = vehicles.AirDefence.Type_94_25mm_AA_Truck
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
 
         class Fortification:
@@ -31344,6 +31695,8 @@ class CombinedJointTaskForcesRed(Country):
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
             GD_20 = vehicles.Unarmed.GD_20
+            Type_94_Truck = vehicles.Unarmed.Type_94_Truck
+            Type_98_So_Da = vehicles.Unarmed.Type_98_So_Da
 
         class Armor:
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
@@ -31414,6 +31767,8 @@ class CombinedJointTaskForcesRed(Country):
             M1126_Stryker_ICV = vehicles.Armor.M1126_Stryker_ICV
             Leopard_2A4_trs = vehicles.Armor.Leopard_2A4_trs
             Challenger2 = vehicles.Armor.Challenger2
+            Type_98_Ke_Ni = vehicles.Armor.Type_98_Ke_Ni
+            Type_89_I_Go = vehicles.Armor.Type_89_I_Go
             M1128_Stryker_MGS = vehicles.Armor.M1128_Stryker_MGS
             M1134_Stryker_ATGM = vehicles.Armor.M1134_Stryker_ATGM
             M1A2C_SEP_V3 = vehicles.Armor.M1A2C_SEP_V3
@@ -31491,6 +31846,8 @@ class CombinedJointTaskForcesRed(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -31623,6 +31980,8 @@ class CombinedJointTaskForcesRed(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -31821,6 +32180,7 @@ class CombinedJointTaskForcesRed(Country):
         CVN_72 = ships.CVN_72
         CVN_73 = ships.CVN_73
         CVN_75 = ships.CVN_75
+        Essex = ships.Essex
         Forrestal = ships.Forrestal
         CastleClass_01 = ships.CastleClass_01
         Hms_invincible = ships.Hms_invincible
@@ -32107,6 +32467,10 @@ class UnitedNationsPeacekeepers(Country):
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
             HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
+            Type_3_80mm_AA = vehicles.AirDefence.Type_3_80mm_AA
+            Type_88_75mm_AA = vehicles.AirDefence.Type_88_75mm_AA
+            Type_96_25mm_AA = vehicles.AirDefence.Type_96_25mm_AA
+            Type_94_25mm_AA_Truck = vehicles.AirDefence.Type_94_25mm_AA_Truck
             M6_Linebacker = vehicles.AirDefence.M6_Linebacker
 
         class Fortification:
@@ -32180,6 +32544,8 @@ class UnitedNationsPeacekeepers(Country):
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
             GD_20 = vehicles.Unarmed.GD_20
+            Type_94_Truck = vehicles.Unarmed.Type_94_Truck
+            Type_98_So_Da = vehicles.Unarmed.Type_98_So_Da
 
         class Armor:
             Sd_Kfz_251 = vehicles.Armor.Sd_Kfz_251
@@ -32250,6 +32616,8 @@ class UnitedNationsPeacekeepers(Country):
             M1126_Stryker_ICV = vehicles.Armor.M1126_Stryker_ICV
             Leopard_2A4_trs = vehicles.Armor.Leopard_2A4_trs
             Challenger2 = vehicles.Armor.Challenger2
+            Type_98_Ke_Ni = vehicles.Armor.Type_98_Ke_Ni
+            Type_89_I_Go = vehicles.Armor.Type_89_I_Go
             M1128_Stryker_MGS = vehicles.Armor.M1128_Stryker_MGS
             M1134_Stryker_ATGM = vehicles.Armor.M1134_Stryker_ATGM
             M1A2C_SEP_V3 = vehicles.Armor.M1A2C_SEP_V3
@@ -32327,6 +32695,8 @@ class UnitedNationsPeacekeepers(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -32459,6 +32829,8 @@ class UnitedNationsPeacekeepers(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -32657,6 +33029,7 @@ class UnitedNationsPeacekeepers(Country):
         CVN_72 = ships.CVN_72
         CVN_73 = ships.CVN_73
         CVN_75 = ships.CVN_75
+        Essex = ships.Essex
         Forrestal = ships.Forrestal
         CastleClass_01 = ships.CastleClass_01
         Hms_invincible = ships.Hms_invincible
@@ -32900,6 +33273,8 @@ class Argentina(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -32952,6 +33327,8 @@ class Argentina(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -33258,6 +33635,8 @@ class Cyprus(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -33309,6 +33688,8 @@ class Cyprus(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -33602,6 +33983,8 @@ class Slovenia(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -33654,6 +34037,8 @@ class Slovenia(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -33949,6 +34334,8 @@ class Bolivia(Country):
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -34003,6 +34390,8 @@ class Bolivia(Country):
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -34281,6 +34670,8 @@ class Ghana(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -34332,6 +34723,8 @@ class Ghana(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -34624,6 +35017,8 @@ class Nigeria(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -34676,6 +35071,8 @@ class Nigeria(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -34978,6 +35375,8 @@ class Peru(Country):
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -35035,6 +35434,8 @@ class Peru(Country):
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -35323,6 +35724,8 @@ class Ecuador(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -35375,6 +35778,8 @@ class Ecuador(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -35696,6 +36101,8 @@ class Afghanistan(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -35750,6 +36157,8 @@ class Afghanistan(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
@@ -36055,6 +36464,8 @@ class NewZealand(Country):
         F_5E_3_FC = planes.F_5E_3_FC
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
+        F4U_1D = planes.F4U_1D
+        F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
@@ -36107,6 +36518,8 @@ class NewZealand(Country):
         Plane.F_5E_3_FC,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
+        Plane.F4U_1D,
+        Plane.F4U_1D_CW,
         Plane.F_A_18A,
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
