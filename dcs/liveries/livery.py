@@ -6,6 +6,7 @@ from typing import Optional, Set
 from zipfile import ZipFile
 
 import dcs.lua
+from lupa import LuaRuntime
 
 
 def _attempt_read_from_filestream(filestream: bytes) -> Optional[str]:
@@ -80,18 +81,24 @@ class Livery:
         # liveries to be suddenly unparseable), and so far we aren't interested in the
         # values of liveries that rely on undefined variables, just assume those are all
         # the empty string and move on.
+        lua = LuaRuntime()
         try:
-            data = dcs.lua.loads(code, unknown_variable_lookup=lambda _: "")
+            lua.execute(code)
+            data = lua.globals()
         except SyntaxError:
             logging.exception("Could not parse livery definition at %s", path)
             return None
-        livery_name = data.get("name", path_id)
-        countries_table = data.get("countries")
+        livery_name = data.name
+        if livery_name is None:
+            livery_name = path_id
+        countries_table = data.countries
         if countries_table is None:
             countries = None
         else:
             countries = set(countries_table.values())
-        order = data.get("order", 0)
+        order = data.order
+        if order is None:
+            order = 0
 
         order = None if path_id == "default" else order
         if order is not None and not isinstance(order, int):
