@@ -163,6 +163,28 @@ class SOM(unittype.ShipType):
     air_weapon_dist = 0
 
 
+class CHAP_Project22160(unittype.ShipType):
+    id = "CHAP_Project22160"
+    name = "Project 22160 Patrol Ship [CH]"
+    plane_num = 0
+    helicopter_num = 1
+    parking = 1
+    detection_range = 80000
+    threat_range = 7000
+    air_weapon_dist = 7000
+
+
+class CHAP_Project22160_TorM2KM(unittype.ShipType):
+    id = "CHAP_Project22160_TorM2KM"
+    name = "Project 22160 Patrol Ship with Tor M2KM [CH]"
+    plane_num = 0
+    helicopter_num = 0
+    parking = 0
+    detection_range = 80000
+    threat_range = 25000
+    air_weapon_dist = 25000
+
+
 class CV_1143_5(unittype.ShipType):
     id = "CV_1143_5"
     name = "CV 1143.5 Admiral Kuznetsov(2017)"
@@ -180,9 +202,9 @@ class Essex(unittype.ShipType):
     plane_num = 90
     helicopter_num = 1
     parking = 32
-    detection_range = 15000
-    threat_range = 4000
-    air_weapon_dist = 4000
+    detection_range = 25000
+    threat_range = 15000
+    air_weapon_dist = 15000
 
 
 class CastleClass_01(unittype.ShipType):
@@ -537,6 +559,8 @@ ship_map = {
     "KILO": KILO,
     "IMPROVED_KILO": IMPROVED_KILO,
     "SOM": SOM,
+    "CHAP_Project22160": CHAP_Project22160,
+    "CHAP_Project22160_TorM2KM": CHAP_Project22160_TorM2KM,
     "CV_1143_5": CV_1143_5,
     "Essex": Essex,
     "CastleClass_01": CastleClass_01,

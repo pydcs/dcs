@@ -2619,23 +2619,60 @@ class Tu_95MS(PlaneType):
     large_parking_slot = True
     height = 13.3
     width = 50.04
-    length = 49.13
+    length = 49.5
     fuel_max = 87000
-    max_speed = 830
+    max_speed = 828
     chaff = 48
     flare = 48
     charge_total = 96
     chaff_charge_size = 1
     flare_charge_size = 1
+    category = "Air"  #Bomber
 
     livery_name = "TU-95MS"  # from type
 
     class Pylon1:
-        _6_x_Kh_65__AS_15B_Kent____1250kg__ASM__IN__MCC = (1, Weapons._6_x_Kh_65__AS_15B_Kent____1250kg__ASM__IN__MCC)
+        _6_x_Kh_555_ALCM = (1, Weapons._6_x_Kh_555_ALCM)
 
-    pylons: Set[int] = {1}
+    class Pylon2:
+        Kh_101 = (2, Weapons.Kh_101)
+        Kh_555 = (2, Weapons.Kh_555)
+#ERRR <CLEAN>
 
-    tasks = [task.PinpointStrike]
+    class Pylon3:
+        Kh_101 = (3, Weapons.Kh_101)
+        Kh_555 = (3, Weapons.Kh_555)
+
+    class Pylon4:
+        Kh_101 = (4, Weapons.Kh_101)
+        Kh_555 = (4, Weapons.Kh_555)
+#ERRR <CLEAN>
+
+    class Pylon5:
+        Kh_101 = (5, Weapons.Kh_101)
+        Kh_555 = (5, Weapons.Kh_555)
+
+    class Pylon6:
+        Kh_101 = (6, Weapons.Kh_101)
+        Kh_555 = (6, Weapons.Kh_555)
+#ERRR <CLEAN>
+
+    class Pylon7:
+        Kh_101 = (7, Weapons.Kh_101)
+        Kh_555 = (7, Weapons.Kh_555)
+
+    class Pylon8:
+        Kh_101 = (8, Weapons.Kh_101)
+        Kh_555 = (8, Weapons.Kh_555)
+#ERRR <CLEAN>
+
+    class Pylon9:
+        Kh_101 = (9, Weapons.Kh_101)
+        Kh_555 = (9, Weapons.Kh_555)
+
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+    tasks = [task.Reconnaissance, task.GroundAttack, task.CAS, task.PinpointStrike, task.SEAD]
     task_default = task.PinpointStrike
 
 
@@ -14553,8 +14590,8 @@ class F4U_1D(PlaneType):
         HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (4, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
 
     class Pylon5:
-        Mk5_Universal_Drop_Tank_150_Corsair = (5, Weapons.Mk5_Universal_Drop_Tank_150_Corsair)
-        Mk_6_Lockheed_Drop_Tank_150_U_S__Gal = (5, Weapons.Mk_6_Lockheed_Drop_Tank_150_U_S__Gal)
+        Mk_5_Universal_Drop_Tank_150_U_S__Gal = (5, Weapons.Mk_5_Universal_Drop_Tank_150_U_S__Gal)
+        Mk_6_Lockheed_Drop_Tank_165_U_S__Gal = (5, Weapons.Mk_6_Lockheed_Drop_Tank_165_U_S__Gal)
         Tiny_Tim__Corsair____569_kg__unguided_rocket = (5, Weapons.Tiny_Tim__Corsair____569_kg__unguided_rocket)
         AN_M30A1___100lb_GP_Bomb_LD = (5, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
         AN_M57___250lb_GP_Bomb_LD = (5, Weapons.AN_M57___250lb_GP_Bomb_LD)
@@ -14568,8 +14605,8 @@ class F4U_1D(PlaneType):
         ASM_N_2_Bat___1000lb_Radar_Guided_Glide_Bomb = (6, Weapons.ASM_N_2_Bat___1000lb_Radar_Guided_Glide_Bomb)
 
     class Pylon7:
-        Mk5_Universal_Drop_Tank_150_Corsair = (7, Weapons.Mk5_Universal_Drop_Tank_150_Corsair)
-        Mk_6_Lockheed_Drop_Tank_150_U_S__Gal = (7, Weapons.Mk_6_Lockheed_Drop_Tank_150_U_S__Gal)
+        Mk_5_Universal_Drop_Tank_150_U_S__Gal = (7, Weapons.Mk_5_Universal_Drop_Tank_150_U_S__Gal)
+        Mk_6_Lockheed_Drop_Tank_165_U_S__Gal = (7, Weapons.Mk_6_Lockheed_Drop_Tank_165_U_S__Gal)
         Tiny_Tim__Corsair____569_kg__unguided_rocket_ = (7, Weapons.Tiny_Tim__Corsair____569_kg__unguided_rocket_)
         AN_M30A1___100lb_GP_Bomb_LD = (7, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
         AN_M57___250lb_GP_Bomb_LD = (7, Weapons.AN_M57___250lb_GP_Bomb_LD)
@@ -14643,9 +14680,9 @@ class F4U_1D_CW(PlaneType):
         "F4U_GunsConvergence_Mid": 2,
         "F4U_GunsConvergence_Outer": 2,
         "F4U_CW_number": True,
-        "F4U_CW_number_1": 2,
-        "F4U_CW_number_2": 0,
-        "F4U_CW_number_3": 5,
+        "F4U_CW_number_1": 6,
+        "F4U_CW_number_2": 6,
+        "F4U_CW_number_3": 3,
     }
 
     class Properties:
@@ -14793,7 +14830,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_1",
             control="comboList",
             label="1st number",
-            default=2,
+            default=6,
             values={
                 0: "0",
                 1: "1",
@@ -14811,7 +14848,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_2",
             control="comboList",
             label="2nd number",
-            default=0,
+            default=6,
             values={
                 0: "0",
                 1: "1",
@@ -14829,7 +14866,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_3",
             control="comboList",
             label="3rd number",
-            default=5,
+            default=3,
             values={
                 0: "0",
                 1: "1",
@@ -14860,8 +14897,8 @@ class F4U_1D_CW(PlaneType):
         HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (4, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
 
     class Pylon5:
-        Mk5_Universal_Drop_Tank_150_Corsair = (5, Weapons.Mk5_Universal_Drop_Tank_150_Corsair)
-        Mk_6_Lockheed_Drop_Tank_150_U_S__Gal = (5, Weapons.Mk_6_Lockheed_Drop_Tank_150_U_S__Gal)
+        Mk_5_Universal_Drop_Tank_150_U_S__Gal = (5, Weapons.Mk_5_Universal_Drop_Tank_150_U_S__Gal)
+        Mk_6_Lockheed_Drop_Tank_165_U_S__Gal = (5, Weapons.Mk_6_Lockheed_Drop_Tank_165_U_S__Gal)
         Tiny_Tim__Corsair____569_kg__unguided_rocket = (5, Weapons.Tiny_Tim__Corsair____569_kg__unguided_rocket)
         AN_M30A1___100lb_GP_Bomb_LD = (5, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
         AN_M57___250lb_GP_Bomb_LD = (5, Weapons.AN_M57___250lb_GP_Bomb_LD)
@@ -14875,8 +14912,8 @@ class F4U_1D_CW(PlaneType):
         ASM_N_2_Bat___1000lb_Radar_Guided_Glide_Bomb = (6, Weapons.ASM_N_2_Bat___1000lb_Radar_Guided_Glide_Bomb)
 
     class Pylon7:
-        Mk5_Universal_Drop_Tank_150_Corsair = (7, Weapons.Mk5_Universal_Drop_Tank_150_Corsair)
-        Mk_6_Lockheed_Drop_Tank_150_U_S__Gal = (7, Weapons.Mk_6_Lockheed_Drop_Tank_150_U_S__Gal)
+        Mk_5_Universal_Drop_Tank_150_U_S__Gal = (7, Weapons.Mk_5_Universal_Drop_Tank_150_U_S__Gal)
+        Mk_6_Lockheed_Drop_Tank_165_U_S__Gal = (7, Weapons.Mk_6_Lockheed_Drop_Tank_165_U_S__Gal)
         Tiny_Tim__Corsair____569_kg__unguided_rocket_ = (7, Weapons.Tiny_Tim__Corsair____569_kg__unguided_rocket_)
         AN_M30A1___100lb_GP_Bomb_LD = (7, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
         AN_M57___250lb_GP_Bomb_LD = (7, Weapons.AN_M57___250lb_GP_Bomb_LD)

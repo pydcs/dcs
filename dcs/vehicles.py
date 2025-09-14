@@ -106,6 +106,45 @@ class Artillery:
         air_weapon_dist = 32000
         eplrs = True
 
+    class CHAP_TOS1A(unittype.VehicleType):
+        id = "CHAP_TOS1A"
+        name = "MLRS TOS-1A Solntsepyok [CH]"
+        detection_range = 0
+        threat_range = 6000
+        air_weapon_dist = 6000
+
+    class CHAP_M142_GMLRS_M30(unittype.VehicleType):
+        id = "CHAP_M142_GMLRS_M30"
+        name = "MLRS M142 HIMARS GMLRS CM [CH]"
+        detection_range = 0
+        threat_range = 70000
+        air_weapon_dist = 70000
+        eplrs = True
+
+    class CHAP_M142_GMLRS_M31(unittype.VehicleType):
+        id = "CHAP_M142_GMLRS_M31"
+        name = "MLRS M142 HIMARS GMLRS HE [CH]"
+        detection_range = 0
+        threat_range = 70000
+        air_weapon_dist = 70000
+        eplrs = True
+
+    class CHAP_M142_ATACMS_M39A1(unittype.VehicleType):
+        id = "CHAP_M142_ATACMS_M39A1"
+        name = "MLRS M142 HIMARS ATACMS CM [CH]"
+        detection_range = 0
+        threat_range = 300000
+        air_weapon_dist = 300000
+        eplrs = True
+
+    class CHAP_M142_ATACMS_M48(unittype.VehicleType):
+        id = "CHAP_M142_ATACMS_M48"
+        name = "MLRS M142 HIMARS ATACMS HE [CH]"
+        detection_range = 0
+        threat_range = 300000
+        air_weapon_dist = 300000
+        eplrs = True
+
     class L118_Unit(unittype.VehicleType):
         id = "L118_Unit"
         name = "L118 Light Artillery Gun"
@@ -638,6 +677,46 @@ class AirDefence:
         detection_range = 100000
         threat_range = 0
         air_weapon_dist = 0
+
+    class CHAP_PantsirS1(unittype.VehicleType):
+        id = "CHAP_PantsirS1"
+        name = "SAM SA-22 Pantsir-S1 \"Greyhound\" [CH]"
+        detection_range = 36000
+        threat_range = 20000
+        air_weapon_dist = 20000
+        eplrs = True
+
+    class CHAP_IRISTSLM_STR(unittype.VehicleType):
+        id = "CHAP_IRISTSLM_STR"
+        name = "SAM IRIS-T SLM STR [CH]"
+        detection_range = 250000
+        threat_range = 0
+        air_weapon_dist = 0
+        eplrs = True
+
+    class CHAP_IRISTSLM_LN(unittype.VehicleType):
+        id = "CHAP_IRISTSLM_LN"
+        name = "SAM IRIS-T SLM LN [CH]"
+        detection_range = 0
+        threat_range = 40000
+        air_weapon_dist = 40000
+        eplrs = True
+
+    class CHAP_IRISTSLM_CP(unittype.VehicleType):
+        id = "CHAP_IRISTSLM_CP"
+        name = "SAM IRIS-T SLM C2 [CH]"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+        eplrs = True
+
+    class CHAP_TorM2(unittype.VehicleType):
+        id = "CHAP_TorM2"
+        name = "SAM SA-15 Tor M2 \"Gauntlet\" [CH]"
+        detection_range = 32000
+        threat_range = 16000
+        air_weapon_dist = 16000
+        eplrs = True
 
     class HEMTT_C_RAM_Phalanx(unittype.VehicleType):
         id = "HEMTT_C-RAM_Phalanx"
@@ -1343,6 +1422,13 @@ class Unarmed:
         threat_range = 0
         air_weapon_dist = 0
 
+    class CHAP_M1083(unittype.VehicleType):
+        id = "CHAP_M1083"
+        name = "Truck M1083 A1P2 MTV [CH]"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
     class Type_94_Truck(unittype.VehicleType):
         id = "Type_94_Truck"
         name = "Truck Type 94"
@@ -1726,10 +1812,11 @@ class Armor:
 
     class T_90(unittype.VehicleType):
         id = "T-90"
-        name = "MBT T-90"
-        detection_range = 0
+        name = "MBT T-90A [CH]"
+        detection_range = 6000
         threat_range = 5000
-        air_weapon_dist = 3500
+        air_weapon_dist = 5000
+        eplrs = True
 
     class Leopard1A3(unittype.VehicleType):
         id = "Leopard1A3"
@@ -1744,6 +1831,69 @@ class Armor:
         detection_range = 0
         threat_range = 3500
         air_weapon_dist = 1200
+
+    class CHAP_FV107(unittype.VehicleType):
+        id = "CHAP_FV107"
+        name = "Scout FV107 Scimitar [CH]"
+        detection_range = 6000
+        threat_range = 2500
+        air_weapon_dist = 2500
+        eplrs = True
+
+    class CHAP_FV101(unittype.VehicleType):
+        id = "CHAP_FV101"
+        name = "LT FV101 Scorpion [CH]"
+        detection_range = 5000
+        threat_range = 5000
+        air_weapon_dist = 1200
+        eplrs = True
+
+    class CHAP_T90M(unittype.VehicleType):
+        id = "CHAP_T90M"
+        name = "MBT T-90M [CH]"
+        detection_range = 8000
+        threat_range = 5000
+        air_weapon_dist = 5000
+        eplrs = True
+
+    class CHAP_MATV(unittype.VehicleType):
+        id = "CHAP_MATV"
+        name = "APC MRAP M-ATV [CH]"
+        detection_range = 0
+        threat_range = 1200
+        air_weapon_dist = 1200
+        eplrs = True
+
+    class CHAP_T84OplotM(unittype.VehicleType):
+        id = "CHAP_T84OplotM"
+        name = "MBT T-84 Oplot-M [CH]"
+        detection_range = 8000
+        threat_range = 5000
+        air_weapon_dist = 5000
+        eplrs = True
+
+    class CHAP_T64BV(unittype.VehicleType):
+        id = "CHAP_T64BV"
+        name = "MBT T-64BV Type 2017 [CH]"
+        detection_range = 5000
+        threat_range = 4000
+        air_weapon_dist = 4000
+        eplrs = True
+
+    class CHAP_M1130(unittype.VehicleType):
+        id = "CHAP_M1130"
+        name = "IFV M1130 Stryker CV [CH]"
+        detection_range = 0
+        threat_range = 1200
+        air_weapon_dist = 1200
+        eplrs = True
+
+    class CHAP_BMPT(unittype.VehicleType):
+        id = "CHAP_BMPT"
+        name = "IFV BMPT Terminator [CH]"
+        detection_range = 7000
+        threat_range = 6000
+        air_weapon_dist = 6000
 
     class M1A2C_SEP_V3(unittype.VehicleType):
         id = "M1A2C_SEP_V3"
@@ -2069,6 +2219,22 @@ class Armor:
 
 class MissilesSS:
 
+    class CHAP_9K720_HE(unittype.VehicleType):
+        id = "CHAP_9K720_HE"
+        name = "SRBM 9K720 Iskander HE [CH]"
+        detection_range = 0
+        threat_range = 400000
+        air_weapon_dist = 400000
+        eplrs = True
+
+    class CHAP_9K720_Cluster(unittype.VehicleType):
+        id = "CHAP_9K720_Cluster"
+        name = "SRBM 9K720 Iskander CM [CH]"
+        detection_range = 0
+        threat_range = 400000
+        air_weapon_dist = 400000
+        eplrs = True
+
     class Scud_B(unittype.VehicleType):
         id = "Scud_B"
         name = "SSM SS-1C Scud-B"
@@ -2383,6 +2549,27 @@ vehicle_map = {
     "ZIL-4331": Unarmed.ZIL_4331,
     "KrAZ6322": Unarmed.KrAZ6322,
     "JTAC": Infantry.JTAC,
+    "CHAP_FV107": Armor.CHAP_FV107,
+    "CHAP_FV101": Armor.CHAP_FV101,
+    "CHAP_T90M": Armor.CHAP_T90M,
+    "CHAP_M1083": Unarmed.CHAP_M1083,
+    "CHAP_MATV": Armor.CHAP_MATV,
+    "CHAP_TOS1A": Artillery.CHAP_TOS1A,
+    "CHAP_PantsirS1": AirDefence.CHAP_PantsirS1,
+    "CHAP_T84OplotM": Armor.CHAP_T84OplotM,
+    "CHAP_T64BV": Armor.CHAP_T64BV,
+    "CHAP_M1130": Armor.CHAP_M1130,
+    "CHAP_IRISTSLM_STR": AirDefence.CHAP_IRISTSLM_STR,
+    "CHAP_IRISTSLM_LN": AirDefence.CHAP_IRISTSLM_LN,
+    "CHAP_IRISTSLM_CP": AirDefence.CHAP_IRISTSLM_CP,
+    "CHAP_TorM2": AirDefence.CHAP_TorM2,
+    "CHAP_M142_GMLRS_M30": Artillery.CHAP_M142_GMLRS_M30,
+    "CHAP_M142_GMLRS_M31": Artillery.CHAP_M142_GMLRS_M31,
+    "CHAP_M142_ATACMS_M39A1": Artillery.CHAP_M142_ATACMS_M39A1,
+    "CHAP_M142_ATACMS_M48": Artillery.CHAP_M142_ATACMS_M48,
+    "CHAP_9K720_HE": MissilesSS.CHAP_9K720_HE,
+    "CHAP_9K720_Cluster": MissilesSS.CHAP_9K720_Cluster,
+    "CHAP_BMPT": Armor.CHAP_BMPT,
     "HEMTT_C-RAM_Phalanx": AirDefence.HEMTT_C_RAM_Phalanx,
     "S-300PS 5P85C ln": AirDefence.S_300PS_5P85C_ln,
     "S-300PS 5P85D ln": AirDefence.S_300PS_5P85D_ln,
