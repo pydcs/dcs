@@ -254,6 +254,7 @@ flyable["MiG-15bis"] = true
 flyable["MiG-15bis_FC"] = true
 flyable["MiG-19P"] = true
 flyable["MiG-21Bis"] = true
+flyable["MiG-29 Fulcrum"] = true
 flyable["MiG-29A"] = true
 flyable["MiG-29G"] = true
 flyable["MiG-29S"] = true

@@ -1492,6 +1492,13 @@ class Unarmed:
         threat_range = 0
         air_weapon_dist = 0
 
+    class GPS_Spoofer_Blue(unittype.VehicleType):
+        id = "GPS_Spoofer_Blue"
+        name = "GPS Spoofer NATO"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
     class ATZ_5(unittype.VehicleType):
         id = "ATZ-5"
         name = "Refueler ATZ-5"
@@ -1530,6 +1537,34 @@ class Unarmed:
     class S_75_ZIL(unittype.VehicleType):
         id = "S_75_ZIL"
         name = "S-75 Tractor (ZIL-131)"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class GPS_Spoofer_Red(unittype.VehicleType):
+        id = "GPS_Spoofer_Red"
+        name = "GPS Spoofer RF"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Rsbn_beacon(unittype.VehicleType):
+        id = "rsbn_beacon"
+        name = "RSBN car"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Prmg_gp_beacon(unittype.VehicleType):
+        id = "prmg_gp_beacon"
+        name = "PRMG Glidepath car"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class Prmg_loc_beacon(unittype.VehicleType):
+        id = "prmg_loc_beacon"
+        name = "PRMG Localizer car"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -2615,6 +2650,7 @@ vehicle_map = {
     "tt_KORD": Armor.Tt_KORD,
     "HL_ZU-23": AirDefence.HL_ZU_23,
     "tt_ZU-23": AirDefence.Tt_ZU_23,
+    "GPS_Spoofer_Blue": Unarmed.GPS_Spoofer_Blue,
     "HL_B8M1": Artillery.HL_B8M1,
     "tt_B8M1": Artillery.Tt_B8M1,
     "NASAMS_Radar_MPQ64F1": AirDefence.NASAMS_Radar_MPQ64F1,
@@ -2645,6 +2681,10 @@ vehicle_map = {
     "ATZ-60_Maz": Unarmed.ATZ_60_Maz,
     "ZIL-135": Unarmed.ZIL_135,
     "S_75_ZIL": Unarmed.S_75_ZIL,
+    "GPS_Spoofer_Red": Unarmed.GPS_Spoofer_Red,
+    "rsbn_beacon": Unarmed.Rsbn_beacon,
+    "prmg_gp_beacon": Unarmed.Prmg_gp_beacon,
+    "prmg_loc_beacon": Unarmed.Prmg_loc_beacon,
     "rapier_fsa_launcher": AirDefence.Rapier_fsa_launcher,
     "rapier_fsa_optical_tracker_unit": AirDefence.Rapier_fsa_optical_tracker_unit,
     "rapier_fsa_blindfire_radar": AirDefence.Rapier_fsa_blindfire_radar,
