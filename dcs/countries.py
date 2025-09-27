@@ -136,6 +136,10 @@ class Russia(Country):
             R11_volvo_drivable = vehicles.Unarmed.R11_volvo_drivable
             Tacr2a = vehicles.Unarmed.Tacr2a
             LARC_V = vehicles.Unarmed.LARC_V
+            GPS_Spoofer_Red = vehicles.Unarmed.GPS_Spoofer_Red
+            Rsbn_beacon = vehicles.Unarmed.Rsbn_beacon
+            Prmg_gp_beacon = vehicles.Unarmed.Prmg_gp_beacon
+            Prmg_loc_beacon = vehicles.Unarmed.Prmg_loc_beacon
 
         class Armor:
             BMD_1 = vehicles.Armor.BMD_1
@@ -265,6 +269,7 @@ class Russia(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -348,6 +353,7 @@ class Russia(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -810,6 +816,7 @@ class Ukraine(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -885,6 +892,7 @@ class Ukraine(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -1079,6 +1087,7 @@ class USA(Country):
             R11_volvo_drivable = vehicles.Unarmed.R11_volvo_drivable
             Tacr2a = vehicles.Unarmed.Tacr2a
             LARC_V = vehicles.Unarmed.LARC_V
+            GPS_Spoofer_Blue = vehicles.Unarmed.GPS_Spoofer_Blue
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
 
         class Armor:
@@ -1212,6 +1221,7 @@ class USA(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1M_EE = planes.Mirage_F1M_EE
@@ -1295,6 +1305,7 @@ class USA(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1M_EE,
@@ -1562,6 +1573,7 @@ class Turkey(Country):
             R11_volvo_drivable = vehicles.Unarmed.R11_volvo_drivable
             Tacr2a = vehicles.Unarmed.Tacr2a
             LARC_V = vehicles.Unarmed.LARC_V
+            GPS_Spoofer_Blue = vehicles.Unarmed.GPS_Spoofer_Blue
             Land_Rover_101_FC = vehicles.Unarmed.Land_Rover_101_FC
             Land_Rover_109_S3 = vehicles.Unarmed.Land_Rover_109_S3
 
@@ -1655,6 +1667,7 @@ class Turkey(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -1717,6 +1730,7 @@ class Turkey(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -2061,6 +2075,7 @@ class UK(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -2122,6 +2137,7 @@ class UK(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -2462,6 +2478,7 @@ class France(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1C = planes.Mirage_F1C
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
@@ -2528,6 +2545,7 @@ class France(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1C,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
@@ -2946,6 +2964,7 @@ class Germany(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -3009,6 +3028,7 @@ class Germany(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -3400,6 +3420,10 @@ class USAFAggressors(Country):
             S_75_ZIL = vehicles.Unarmed.S_75_ZIL
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
             AA8 = vehicles.Unarmed.AA8
+            GPS_Spoofer_Red = vehicles.Unarmed.GPS_Spoofer_Red
+            Rsbn_beacon = vehicles.Unarmed.Rsbn_beacon
+            Prmg_gp_beacon = vehicles.Unarmed.Prmg_gp_beacon
+            Prmg_loc_beacon = vehicles.Unarmed.Prmg_loc_beacon
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
             CCKW_353 = vehicles.Unarmed.CCKW_353
             M30_CC = vehicles.Unarmed.M30_CC
@@ -3417,6 +3441,7 @@ class USAFAggressors(Country):
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
             GD_20 = vehicles.Unarmed.GD_20
+            GPS_Spoofer_Blue = vehicles.Unarmed.GPS_Spoofer_Blue
             Type_94_Truck = vehicles.Unarmed.Type_94_Truck
             Type_98_So_Da = vehicles.Unarmed.Type_98_So_Da
 
@@ -3594,6 +3619,7 @@ class USAFAggressors(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -3728,6 +3754,7 @@ class USAFAggressors(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -4207,6 +4234,7 @@ class Canada(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -4264,6 +4292,7 @@ class Canada(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -4584,6 +4613,7 @@ class Spain(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1M_EE = planes.Mirage_F1M_EE
@@ -4647,6 +4677,7 @@ class Spain(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1M_EE,
@@ -5002,6 +5033,7 @@ class TheNetherlands(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -5063,6 +5095,7 @@ class TheNetherlands(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -5396,6 +5429,7 @@ class Belgium(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -5455,6 +5489,7 @@ class Belgium(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -5765,6 +5800,7 @@ class Norway(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -5824,6 +5860,7 @@ class Norway(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -6132,6 +6169,7 @@ class Denmark(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -6191,6 +6229,7 @@ class Denmark(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -6516,6 +6555,7 @@ class Israel(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -6578,6 +6618,7 @@ class Israel(Country):
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -6949,6 +6990,7 @@ class Georgia(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -7008,6 +7050,7 @@ class Georgia(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -7335,6 +7378,7 @@ class Insurgents(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -7388,6 +7432,7 @@ class Insurgents(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -7648,6 +7693,7 @@ class Abkhazia(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -7705,6 +7751,7 @@ class Abkhazia(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -7951,6 +7998,7 @@ class SouthOssetia(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -8003,6 +8051,7 @@ class SouthOssetia(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -8236,6 +8285,7 @@ class Italy(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -8299,6 +8349,7 @@ class Italy(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -8625,6 +8676,7 @@ class Australia(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -8682,6 +8734,7 @@ class Australia(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -8980,6 +9033,7 @@ class Switzerland(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -9034,6 +9088,7 @@ class Switzerland(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -9312,6 +9367,7 @@ class Austria(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -9365,6 +9421,7 @@ class Austria(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -9750,6 +9807,7 @@ class Belarus(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -9814,6 +9872,7 @@ class Belarus(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -10107,6 +10166,7 @@ class Bulgaria(Country):
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -10168,6 +10228,7 @@ class Bulgaria(Country):
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -10502,6 +10563,7 @@ class CzechRepublic(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -10560,6 +10622,7 @@ class CzechRepublic(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -10896,6 +10959,7 @@ class China(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -10960,6 +11024,7 @@ class China(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -11173,6 +11238,7 @@ class Croatia(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -11226,6 +11292,7 @@ class Croatia(Country):
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -11594,6 +11661,7 @@ class Egypt(Country):
         MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -11653,6 +11721,7 @@ class Egypt(Country):
         Plane.MB_339APAN,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -12019,6 +12088,7 @@ class Finland(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -12072,6 +12142,7 @@ class Finland(Country):
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -12411,6 +12482,7 @@ class Greece(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1CG = planes.Mirage_F1CG
@@ -12471,6 +12543,7 @@ class Greece(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1CG,
@@ -12845,6 +12918,7 @@ class Hungary(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -12902,6 +12976,7 @@ class Hungary(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -13225,6 +13300,7 @@ class India(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -13286,6 +13362,7 @@ class India(Country):
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -13646,6 +13723,7 @@ class Iran(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1EQ = planes.Mirage_F1EQ
@@ -13709,6 +13787,7 @@ class Iran(Country):
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1EQ,
@@ -14069,6 +14148,7 @@ class Iraq(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1EQ = planes.Mirage_F1EQ
@@ -14131,6 +14211,7 @@ class Iraq(Country):
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1EQ,
@@ -14476,6 +14557,7 @@ class Japan(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -14531,6 +14613,7 @@ class Japan(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -14930,6 +15013,7 @@ class Kazakhstan(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -14995,6 +15079,7 @@ class Kazakhstan(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -15307,6 +15392,7 @@ class NorthKorea(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -15362,6 +15448,7 @@ class NorthKorea(Country):
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -15675,6 +15762,7 @@ class Pakistan(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -15735,6 +15823,7 @@ class Pakistan(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -16092,6 +16181,7 @@ class Poland(Country):
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -16155,6 +16245,7 @@ class Poland(Country):
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -16516,6 +16607,7 @@ class Romania(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -16574,6 +16666,7 @@ class Romania(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -16896,6 +16989,7 @@ class SaudiArabia(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -16955,6 +17049,7 @@ class SaudiArabia(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -17298,6 +17393,7 @@ class Serbia(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -17355,6 +17451,7 @@ class Serbia(Country):
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -17673,6 +17770,7 @@ class Slovakia(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -17730,6 +17828,7 @@ class Slovakia(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -18041,6 +18140,7 @@ class SouthKorea(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -18099,6 +18199,7 @@ class SouthKorea(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -18392,6 +18493,7 @@ class Sweden(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -18448,6 +18550,7 @@ class Sweden(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -18706,6 +18809,7 @@ class Syria(Country):
             R11_volvo_drivable = vehicles.Unarmed.R11_volvo_drivable
             Tacr2a = vehicles.Unarmed.Tacr2a
             LARC_V = vehicles.Unarmed.LARC_V
+            GPS_Spoofer_Red = vehicles.Unarmed.GPS_Spoofer_Red
 
         class Armor:
             BTR_80 = vehicles.Armor.BTR_80
@@ -18798,6 +18902,7 @@ class Syria(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -18858,6 +18963,7 @@ class Syria(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -19175,6 +19281,7 @@ class Yemen(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -19231,6 +19338,7 @@ class Yemen(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -19564,6 +19672,7 @@ class Vietnam(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -19622,6 +19731,7 @@ class Vietnam(Country):
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -19935,6 +20045,7 @@ class Venezuela(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -19990,6 +20101,7 @@ class Venezuela(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -20270,6 +20382,7 @@ class Tunisia(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -20323,6 +20436,7 @@ class Tunisia(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -20616,6 +20730,7 @@ class Thailand(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -20672,6 +20787,7 @@ class Thailand(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -20976,6 +21092,7 @@ class Sudan(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -21033,6 +21150,7 @@ class Sudan(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -21310,6 +21428,7 @@ class Philippines(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -21365,6 +21484,7 @@ class Philippines(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -21669,6 +21789,7 @@ class Morocco(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1EH = planes.Mirage_F1EH
@@ -21726,6 +21847,7 @@ class Morocco(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1EH,
@@ -22012,6 +22134,7 @@ class Mexico(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -22066,6 +22189,7 @@ class Mexico(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -22360,6 +22484,7 @@ class Malaysia(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -22414,6 +22539,7 @@ class Malaysia(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -22731,6 +22857,7 @@ class Libya(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1ED = planes.Mirage_F1ED
@@ -22789,6 +22916,7 @@ class Libya(Country):
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1ED,
@@ -23097,6 +23225,7 @@ class Jordan(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1CJ = planes.Mirage_F1CJ
@@ -23154,6 +23283,7 @@ class Jordan(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1CJ,
@@ -23487,6 +23617,7 @@ class Indonesia(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -23547,6 +23678,7 @@ class Indonesia(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -23831,6 +23963,7 @@ class Honduras(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -23884,6 +24017,7 @@ class Honduras(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -24189,6 +24323,7 @@ class Ethiopia(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -24245,6 +24380,7 @@ class Ethiopia(Country):
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -24546,6 +24682,7 @@ class Chile(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -24605,6 +24742,7 @@ class Chile(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -24916,6 +25054,7 @@ class Brazil(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -24970,6 +25109,7 @@ class Brazil(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -25273,6 +25413,7 @@ class Bahrain(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -25325,6 +25466,7 @@ class Bahrain(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -25630,6 +25772,7 @@ class ThirdReich(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -25683,6 +25826,7 @@ class ThirdReich(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -25999,6 +26143,7 @@ class Yugoslavia(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -26054,6 +26199,7 @@ class Yugoslavia(Country):
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -26263,6 +26409,10 @@ class USSR(Country):
             Tacr2a = vehicles.Unarmed.Tacr2a
             LARC_V = vehicles.Unarmed.LARC_V
             AA8 = vehicles.Unarmed.AA8
+            GPS_Spoofer_Red = vehicles.Unarmed.GPS_Spoofer_Red
+            Rsbn_beacon = vehicles.Unarmed.Rsbn_beacon
+            Prmg_gp_beacon = vehicles.Unarmed.Prmg_gp_beacon
+            Prmg_loc_beacon = vehicles.Unarmed.Prmg_loc_beacon
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
             CCKW_353 = vehicles.Unarmed.CCKW_353
             M30_CC = vehicles.Unarmed.M30_CC
@@ -26391,6 +26541,7 @@ class USSR(Country):
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -26469,6 +26620,7 @@ class USSR(Country):
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -26707,6 +26859,7 @@ class ItalianSocialRepublic(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -26759,6 +26912,7 @@ class ItalianSocialRepublic(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -27150,6 +27304,7 @@ class Algeria(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -27219,6 +27374,7 @@ class Algeria(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -27544,6 +27700,7 @@ class Kuwait(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1CK = planes.Mirage_F1CK
@@ -27599,6 +27756,7 @@ class Kuwait(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1CK,
@@ -27892,6 +28050,7 @@ class Qatar(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1EDA = planes.Mirage_F1EDA
@@ -27948,6 +28107,7 @@ class Qatar(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1EDA,
@@ -28261,6 +28421,7 @@ class Oman(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -28316,6 +28477,7 @@ class Oman(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -28633,6 +28795,7 @@ class UnitedArabEmirates(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -28690,6 +28853,7 @@ class UnitedArabEmirates(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -28982,6 +29146,7 @@ class SouthAfrica(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1CZ = planes.Mirage_F1CZ
@@ -29039,6 +29204,7 @@ class SouthAfrica(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1CZ,
@@ -29382,6 +29548,7 @@ class Cuba(Country):
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -29445,6 +29612,7 @@ class Cuba(Country):
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -29746,6 +29914,7 @@ class Portugal(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -29804,6 +29973,7 @@ class Portugal(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -30140,6 +30310,7 @@ class GDR(Country):
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -30198,6 +30369,7 @@ class GDR(Country):
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -30507,6 +30679,7 @@ class Lebanon(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -30561,6 +30734,7 @@ class Lebanon(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -30949,6 +31123,10 @@ class CombinedJointTaskForcesBlue(Country):
             S_75_ZIL = vehicles.Unarmed.S_75_ZIL
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
             AA8 = vehicles.Unarmed.AA8
+            GPS_Spoofer_Red = vehicles.Unarmed.GPS_Spoofer_Red
+            Rsbn_beacon = vehicles.Unarmed.Rsbn_beacon
+            Prmg_gp_beacon = vehicles.Unarmed.Prmg_gp_beacon
+            Prmg_loc_beacon = vehicles.Unarmed.Prmg_loc_beacon
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
             CCKW_353 = vehicles.Unarmed.CCKW_353
             M30_CC = vehicles.Unarmed.M30_CC
@@ -30966,6 +31144,7 @@ class CombinedJointTaskForcesBlue(Country):
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
             GD_20 = vehicles.Unarmed.GD_20
+            GPS_Spoofer_Blue = vehicles.Unarmed.GPS_Spoofer_Blue
             Type_94_Truck = vehicles.Unarmed.Type_94_Truck
             Type_98_So_Da = vehicles.Unarmed.Type_98_So_Da
 
@@ -31142,6 +31321,7 @@ class CombinedJointTaskForcesBlue(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -31276,6 +31456,7 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -31821,6 +32002,10 @@ class CombinedJointTaskForcesRed(Country):
             S_75_ZIL = vehicles.Unarmed.S_75_ZIL
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
             AA8 = vehicles.Unarmed.AA8
+            GPS_Spoofer_Red = vehicles.Unarmed.GPS_Spoofer_Red
+            Rsbn_beacon = vehicles.Unarmed.Rsbn_beacon
+            Prmg_gp_beacon = vehicles.Unarmed.Prmg_gp_beacon
+            Prmg_loc_beacon = vehicles.Unarmed.Prmg_loc_beacon
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
             CCKW_353 = vehicles.Unarmed.CCKW_353
             M30_CC = vehicles.Unarmed.M30_CC
@@ -31838,6 +32023,7 @@ class CombinedJointTaskForcesRed(Country):
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
             GD_20 = vehicles.Unarmed.GD_20
+            GPS_Spoofer_Blue = vehicles.Unarmed.GPS_Spoofer_Blue
             Type_94_Truck = vehicles.Unarmed.Type_94_Truck
             Type_98_So_Da = vehicles.Unarmed.Type_98_So_Da
 
@@ -32014,6 +32200,7 @@ class CombinedJointTaskForcesRed(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -32148,6 +32335,7 @@ class CombinedJointTaskForcesRed(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -32693,6 +32881,10 @@ class UnitedNationsPeacekeepers(Country):
             S_75_ZIL = vehicles.Unarmed.S_75_ZIL
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
             AA8 = vehicles.Unarmed.AA8
+            GPS_Spoofer_Red = vehicles.Unarmed.GPS_Spoofer_Red
+            Rsbn_beacon = vehicles.Unarmed.Rsbn_beacon
+            Prmg_gp_beacon = vehicles.Unarmed.Prmg_gp_beacon
+            Prmg_loc_beacon = vehicles.Unarmed.Prmg_loc_beacon
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
             CCKW_353 = vehicles.Unarmed.CCKW_353
             M30_CC = vehicles.Unarmed.M30_CC
@@ -32710,6 +32902,7 @@ class UnitedNationsPeacekeepers(Country):
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
             GD_20 = vehicles.Unarmed.GD_20
+            GPS_Spoofer_Blue = vehicles.Unarmed.GPS_Spoofer_Blue
             Type_94_Truck = vehicles.Unarmed.Type_94_Truck
             Type_98_So_Da = vehicles.Unarmed.Type_98_So_Da
 
@@ -32886,6 +33079,7 @@ class UnitedNationsPeacekeepers(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -33020,6 +33214,7 @@ class UnitedNationsPeacekeepers(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -33466,6 +33661,7 @@ class Argentina(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -33520,6 +33716,7 @@ class Argentina(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -33829,6 +34026,7 @@ class Cyprus(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -33882,6 +34080,7 @@ class Cyprus(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -34177,6 +34376,7 @@ class Slovenia(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -34231,6 +34431,7 @@ class Slovenia(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -34528,6 +34729,7 @@ class Bolivia(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -34584,6 +34786,7 @@ class Bolivia(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -34863,6 +35066,7 @@ class Ghana(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -34916,6 +35120,7 @@ class Ghana(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -35211,6 +35416,7 @@ class Nigeria(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -35265,6 +35471,7 @@ class Nigeria(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -35568,6 +35775,7 @@ class Peru(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -35627,6 +35835,7 @@ class Peru(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -35919,6 +36128,7 @@ class Ecuador(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1JA = planes.Mirage_F1JA
@@ -35973,6 +36183,7 @@ class Ecuador(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1JA,
@@ -36294,6 +36505,7 @@ class Afghanistan(Country):
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -36350,6 +36562,7 @@ class Afghanistan(Country):
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
@@ -36659,6 +36872,7 @@ class NewZealand(Country):
         MiG_15bis_FC = planes.MiG_15bis_FC
         MiG_19P = planes.MiG_19P
         MiG_21Bis = planes.MiG_21Bis
+        MiG_29_Fulcrum = planes.MiG_29_Fulcrum
         Mirage_F1CE = planes.Mirage_F1CE
         Mirage_F1EE = planes.Mirage_F1EE
         Mirage_F1BE = planes.Mirage_F1BE
@@ -36713,6 +36927,7 @@ class NewZealand(Country):
         Plane.MiG_15bis_FC,
         Plane.MiG_19P,
         Plane.MiG_21Bis,
+        Plane.MiG_29_Fulcrum,
         Plane.Mirage_F1CE,
         Plane.Mirage_F1EE,
         Plane.Mirage_F1BE,
