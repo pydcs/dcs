@@ -140,6 +140,12 @@ class Russia(Country):
             Rsbn_beacon = vehicles.Unarmed.Rsbn_beacon
             Prmg_gp_beacon = vehicles.Unarmed.Prmg_gp_beacon
             Prmg_loc_beacon = vehicles.Unarmed.Prmg_loc_beacon
+            Kamaz_tent_civil = vehicles.Unarmed.Kamaz_tent_civil
+            Ural_atz5_civil = vehicles.Unarmed.Ural_atz5_civil
+            Ural_4230_civil_b = vehicles.Unarmed.Ural_4230_civil_b
+            Ural_4230_civil_t = vehicles.Unarmed.Ural_4230_civil_t
+            Zil_131_civil = vehicles.Unarmed.Zil_131_civil
+            Gaz_66_civil = vehicles.Unarmed.Gaz_66_civil
 
         class Armor:
             BMD_1 = vehicles.Armor.BMD_1
@@ -250,6 +256,7 @@ class Russia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -334,6 +341,7 @@ class Russia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -797,6 +805,7 @@ class Ukraine(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -873,6 +882,7 @@ class Ukraine(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -1211,6 +1221,8 @@ class USA(Country):
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
+        F_14A_135_GR_Early = planes.F_14A_135_GR_Early
         F4U_1D = planes.F4U_1D
         F4U_1D_CW = planes.F4U_1D_CW
         I_16 = planes.I_16
@@ -1295,6 +1307,8 @@ class USA(Country):
         Plane.Falcon_Gyrocopter,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
+        Plane.F_14A_135_GR_Early,
         Plane.F4U_1D,
         Plane.F4U_1D_CW,
         Plane.I_16,
@@ -1648,6 +1662,7 @@ class Turkey(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -1711,6 +1726,7 @@ class Turkey(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -2056,6 +2072,7 @@ class UK(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -2118,6 +2135,7 @@ class UK(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -2460,6 +2478,7 @@ class France(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -2527,6 +2546,7 @@ class France(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -2947,6 +2967,7 @@ class Germany(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -3011,6 +3032,7 @@ class Germany(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -3425,6 +3447,12 @@ class USAFAggressors(Country):
             Prmg_gp_beacon = vehicles.Unarmed.Prmg_gp_beacon
             Prmg_loc_beacon = vehicles.Unarmed.Prmg_loc_beacon
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
+            Kamaz_tent_civil = vehicles.Unarmed.Kamaz_tent_civil
+            Ural_atz5_civil = vehicles.Unarmed.Ural_atz5_civil
+            Ural_4230_civil_b = vehicles.Unarmed.Ural_4230_civil_b
+            Ural_4230_civil_t = vehicles.Unarmed.Ural_4230_civil_t
+            Zil_131_civil = vehicles.Unarmed.Zil_131_civil
+            Gaz_66_civil = vehicles.Unarmed.Gaz_66_civil
             CCKW_353 = vehicles.Unarmed.CCKW_353
             M30_CC = vehicles.Unarmed.M30_CC
             Hummer = vehicles.Unarmed.Hummer
@@ -3599,6 +3627,7 @@ class USAFAggressors(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -3705,6 +3734,7 @@ class USAFAggressors(Country):
         S_3B = planes.S_3B
         F_14B = planes.F_14B
         F_14A_135_GR = planes.F_14A_135_GR
+        F_14A_135_GR_Early = planes.F_14A_135_GR_Early
         Tornado_GR4 = planes.Tornado_GR4
         Mirage_F1CG = planes.Mirage_F1CG
         Mirage_F1CK = planes.Mirage_F1CK
@@ -3734,6 +3764,7 @@ class USAFAggressors(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -3840,6 +3871,7 @@ class USAFAggressors(Country):
         Plane.S_3B,
         Plane.F_14B,
         Plane.F_14A_135_GR,
+        Plane.F_14A_135_GR_Early,
         Plane.Tornado_GR4,
         Plane.Mirage_F1CG,
         Plane.Mirage_F1CK,
@@ -4218,6 +4250,7 @@ class Canada(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -4276,6 +4309,7 @@ class Canada(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -4597,6 +4631,7 @@ class Spain(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -4661,6 +4696,7 @@ class Spain(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -5013,6 +5049,7 @@ class TheNetherlands(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -5075,6 +5112,7 @@ class TheNetherlands(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -5409,6 +5447,7 @@ class Belgium(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -5469,6 +5508,7 @@ class Belgium(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -5782,6 +5822,7 @@ class Norway(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -5842,6 +5883,7 @@ class Norway(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -6151,6 +6193,7 @@ class Denmark(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -6211,6 +6254,7 @@ class Denmark(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -6536,6 +6580,7 @@ class Israel(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -6599,6 +6644,7 @@ class Israel(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -6971,6 +7017,7 @@ class Georgia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -7031,6 +7078,7 @@ class Georgia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -7358,6 +7406,7 @@ class Insurgents(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -7412,6 +7461,7 @@ class Insurgents(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -7674,6 +7724,7 @@ class Abkhazia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -7732,6 +7783,7 @@ class Abkhazia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -7978,6 +8030,7 @@ class SouthOssetia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -8031,6 +8084,7 @@ class SouthOssetia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -8266,6 +8320,7 @@ class Italy(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -8330,6 +8385,7 @@ class Italy(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -8659,6 +8715,7 @@ class Australia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -8717,6 +8774,7 @@ class Australia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -9017,6 +9075,7 @@ class Switzerland(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
@@ -9072,6 +9131,7 @@ class Switzerland(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
@@ -9350,6 +9410,7 @@ class Austria(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
         F4U_1D = planes.F4U_1D
@@ -9404,6 +9465,7 @@ class Austria(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
         Plane.F4U_1D,
@@ -9788,6 +9850,7 @@ class Belarus(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -9853,6 +9916,7 @@ class Belarus(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -10150,6 +10214,7 @@ class Bulgaria(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -10212,6 +10277,7 @@ class Bulgaria(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -10544,6 +10610,7 @@ class CzechRepublic(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -10603,6 +10670,7 @@ class CzechRepublic(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -10943,6 +11011,7 @@ class China(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -11008,6 +11077,7 @@ class China(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -11219,6 +11289,7 @@ class Croatia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -11273,6 +11344,7 @@ class Croatia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -11644,6 +11716,7 @@ class Egypt(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -11704,6 +11777,7 @@ class Egypt(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -12072,6 +12146,7 @@ class Finland(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -12126,6 +12201,7 @@ class Finland(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -12463,6 +12539,7 @@ class Greece(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -12524,6 +12601,7 @@ class Greece(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -12901,6 +12979,7 @@ class Hungary(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -12959,6 +13038,7 @@ class Hungary(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -13283,6 +13363,7 @@ class India(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -13345,6 +13426,7 @@ class India(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -13707,7 +13789,9 @@ class Iran(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_14B = planes.F_14B
+        F_14A_135_GR_Early = planes.F_14A_135_GR_Early
         F_14A_135_GR = planes.F_14A_135_GR
         F4U_1D = planes.F4U_1D
         F4U_1D_CW = planes.F4U_1D_CW
@@ -13771,7 +13855,9 @@ class Iran(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_14B,
+        Plane.F_14A_135_GR_Early,
         Plane.F_14A_135_GR,
         Plane.F4U_1D,
         Plane.F4U_1D_CW,
@@ -14132,6 +14218,7 @@ class Iraq(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -14195,6 +14282,7 @@ class Iraq(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -14539,6 +14627,7 @@ class Japan(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -14595,6 +14684,7 @@ class Japan(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -14994,6 +15084,7 @@ class Kazakhstan(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -15060,6 +15151,7 @@ class Kazakhstan(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -15374,6 +15466,7 @@ class NorthKorea(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -15430,6 +15523,7 @@ class NorthKorea(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -15744,6 +15838,7 @@ class Pakistan(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -15805,6 +15900,7 @@ class Pakistan(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -16166,6 +16262,7 @@ class Poland(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -16230,6 +16327,7 @@ class Poland(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -16591,6 +16689,7 @@ class Romania(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -16650,6 +16749,7 @@ class Romania(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -16975,6 +17075,7 @@ class SaudiArabia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F4U_1D = planes.F4U_1D
         F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
@@ -17035,6 +17136,7 @@ class SaudiArabia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F4U_1D,
         Plane.F4U_1D_CW,
         Plane.F_A_18A,
@@ -17374,6 +17476,7 @@ class Serbia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -17432,6 +17535,7 @@ class Serbia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -17751,6 +17855,7 @@ class Slovakia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -17809,6 +17914,7 @@ class Slovakia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -18126,6 +18232,7 @@ class SouthKorea(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F4U_1D = planes.F4U_1D
         F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
@@ -18185,6 +18292,7 @@ class SouthKorea(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F4U_1D,
         Plane.F4U_1D_CW,
         Plane.F_A_18A,
@@ -18473,6 +18581,7 @@ class Sweden(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -18530,6 +18639,7 @@ class Sweden(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -18885,6 +18995,7 @@ class Syria(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -18946,6 +19057,7 @@ class Syria(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -19265,6 +19377,7 @@ class Yemen(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
         F4U_1D = planes.F4U_1D
@@ -19322,6 +19435,7 @@ class Yemen(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
         Plane.F4U_1D,
@@ -19657,6 +19771,7 @@ class Vietnam(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
         F4U_1D = planes.F4U_1D
@@ -19716,6 +19831,7 @@ class Vietnam(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
         Plane.F4U_1D,
@@ -20027,6 +20143,7 @@ class Venezuela(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -20083,6 +20200,7 @@ class Venezuela(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -20367,6 +20485,7 @@ class Tunisia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F4U_1D = planes.F4U_1D
         F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
@@ -20421,6 +20540,7 @@ class Tunisia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F4U_1D,
         Plane.F4U_1D_CW,
         Plane.F_A_18A,
@@ -20715,6 +20835,7 @@ class Thailand(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F4U_1D = planes.F4U_1D
         F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
@@ -20772,6 +20893,7 @@ class Thailand(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F4U_1D,
         Plane.F4U_1D_CW,
         Plane.F_A_18A,
@@ -21075,6 +21197,7 @@ class Sudan(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
         F4U_1D = planes.F4U_1D
@@ -21133,6 +21256,7 @@ class Sudan(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
         Plane.F4U_1D,
@@ -21413,6 +21537,7 @@ class Philippines(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F4U_1D = planes.F4U_1D
         F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
@@ -21469,6 +21594,7 @@ class Philippines(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F4U_1D,
         Plane.F4U_1D_CW,
         Plane.F_A_18A,
@@ -21772,6 +21898,7 @@ class Morocco(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
         F4U_1D = planes.F4U_1D
@@ -21830,6 +21957,7 @@ class Morocco(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
         Plane.F4U_1D,
@@ -22117,6 +22245,7 @@ class Mexico(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
         F4U_1D = planes.F4U_1D
@@ -22172,6 +22301,7 @@ class Mexico(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
         Plane.F4U_1D,
@@ -22469,6 +22599,7 @@ class Malaysia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
         F4U_1D = planes.F4U_1D
@@ -22524,6 +22655,7 @@ class Malaysia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
         Plane.F4U_1D,
@@ -22838,6 +22970,7 @@ class Libya(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -22897,6 +23030,7 @@ class Libya(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -23209,6 +23343,7 @@ class Jordan(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
         F4U_1D = planes.F4U_1D
@@ -23267,6 +23402,7 @@ class Jordan(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
         Plane.F4U_1D,
@@ -23601,6 +23737,7 @@ class Indonesia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
         F4U_1D = planes.F4U_1D
@@ -23662,6 +23799,7 @@ class Indonesia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
         Plane.F4U_1D,
@@ -23946,6 +24084,7 @@ class Honduras(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
         F4U_1D = planes.F4U_1D
@@ -24000,6 +24139,7 @@ class Honduras(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
         Plane.F4U_1D,
@@ -24310,6 +24450,7 @@ class Ethiopia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F4U_1D = planes.F4U_1D
         F4U_1D_CW = planes.F4U_1D_CW
         F_A_18A = planes.F_A_18A
@@ -24367,6 +24508,7 @@ class Ethiopia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F4U_1D,
         Plane.F4U_1D_CW,
         Plane.F_A_18A,
@@ -24665,6 +24807,7 @@ class Chile(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
         F4U_1D = planes.F4U_1D
@@ -24725,6 +24868,7 @@ class Chile(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
         Plane.F4U_1D,
@@ -25038,6 +25182,7 @@ class Brazil(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
         F4U_1D = planes.F4U_1D
@@ -25093,6 +25238,7 @@ class Brazil(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
         Plane.F4U_1D,
@@ -25397,6 +25543,7 @@ class Bahrain(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_86F_Sabre = planes.F_86F_Sabre
         F_86F_FC = planes.F_86F_FC
         F4U_1D = planes.F4U_1D
@@ -25450,6 +25597,7 @@ class Bahrain(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_86F_Sabre,
         Plane.F_86F_FC,
         Plane.F4U_1D,
@@ -25752,6 +25900,7 @@ class ThirdReich(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -25806,6 +25955,7 @@ class ThirdReich(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -26124,6 +26274,7 @@ class Yugoslavia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -26180,6 +26331,7 @@ class Yugoslavia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -26414,6 +26566,12 @@ class USSR(Country):
             Prmg_gp_beacon = vehicles.Unarmed.Prmg_gp_beacon
             Prmg_loc_beacon = vehicles.Unarmed.Prmg_loc_beacon
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
+            Kamaz_tent_civil = vehicles.Unarmed.Kamaz_tent_civil
+            Ural_atz5_civil = vehicles.Unarmed.Ural_atz5_civil
+            Ural_4230_civil_b = vehicles.Unarmed.Ural_4230_civil_b
+            Ural_4230_civil_t = vehicles.Unarmed.Ural_4230_civil_t
+            Zil_131_civil = vehicles.Unarmed.Zil_131_civil
+            Gaz_66_civil = vehicles.Unarmed.Gaz_66_civil
             CCKW_353 = vehicles.Unarmed.CCKW_353
             M30_CC = vehicles.Unarmed.M30_CC
 
@@ -26527,6 +26685,7 @@ class USSR(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -26606,6 +26765,7 @@ class USSR(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -26839,6 +26999,7 @@ class ItalianSocialRepublic(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -26892,6 +27053,7 @@ class ItalianSocialRepublic(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -27288,6 +27450,7 @@ class Algeria(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -27358,6 +27521,7 @@ class Algeria(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -27682,6 +27846,7 @@ class Kuwait(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -27738,6 +27903,7 @@ class Kuwait(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -28031,6 +28197,7 @@ class Qatar(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -28088,6 +28255,7 @@ class Qatar(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -28402,6 +28570,7 @@ class Oman(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -28458,6 +28627,7 @@ class Oman(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -28778,6 +28948,7 @@ class UnitedArabEmirates(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -28836,6 +29007,7 @@ class UnitedArabEmirates(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -29129,6 +29301,7 @@ class SouthAfrica(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -29187,6 +29360,7 @@ class SouthAfrica(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -29533,6 +29707,7 @@ class Cuba(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -29597,6 +29772,7 @@ class Cuba(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -29896,6 +30072,7 @@ class Portugal(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -29955,6 +30132,7 @@ class Portugal(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -30293,6 +30471,7 @@ class GDR(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -30352,6 +30531,7 @@ class GDR(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -30660,6 +30840,7 @@ class Lebanon(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -30715,6 +30896,7 @@ class Lebanon(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -31128,6 +31310,12 @@ class CombinedJointTaskForcesBlue(Country):
             Prmg_gp_beacon = vehicles.Unarmed.Prmg_gp_beacon
             Prmg_loc_beacon = vehicles.Unarmed.Prmg_loc_beacon
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
+            Kamaz_tent_civil = vehicles.Unarmed.Kamaz_tent_civil
+            Ural_atz5_civil = vehicles.Unarmed.Ural_atz5_civil
+            Ural_4230_civil_b = vehicles.Unarmed.Ural_4230_civil_b
+            Ural_4230_civil_t = vehicles.Unarmed.Ural_4230_civil_t
+            Zil_131_civil = vehicles.Unarmed.Zil_131_civil
+            Gaz_66_civil = vehicles.Unarmed.Gaz_66_civil
             CCKW_353 = vehicles.Unarmed.CCKW_353
             M30_CC = vehicles.Unarmed.M30_CC
             Hummer = vehicles.Unarmed.Hummer
@@ -31301,6 +31489,7 @@ class CombinedJointTaskForcesBlue(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -31408,6 +31597,7 @@ class CombinedJointTaskForcesBlue(Country):
         S_3B = planes.S_3B
         F_14B = planes.F_14B
         F_14A_135_GR = planes.F_14A_135_GR
+        F_14A_135_GR_Early = planes.F_14A_135_GR_Early
         Tornado_GR4 = planes.Tornado_GR4
         Mirage_F1CG = planes.Mirage_F1CG
         Mirage_F1CK = planes.Mirage_F1CK
@@ -31436,6 +31626,7 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -31543,6 +31734,7 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.S_3B,
         Plane.F_14B,
         Plane.F_14A_135_GR,
+        Plane.F_14A_135_GR_Early,
         Plane.Tornado_GR4,
         Plane.Mirage_F1CG,
         Plane.Mirage_F1CK,
@@ -32007,6 +32199,12 @@ class CombinedJointTaskForcesRed(Country):
             Prmg_gp_beacon = vehicles.Unarmed.Prmg_gp_beacon
             Prmg_loc_beacon = vehicles.Unarmed.Prmg_loc_beacon
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
+            Kamaz_tent_civil = vehicles.Unarmed.Kamaz_tent_civil
+            Ural_atz5_civil = vehicles.Unarmed.Ural_atz5_civil
+            Ural_4230_civil_b = vehicles.Unarmed.Ural_4230_civil_b
+            Ural_4230_civil_t = vehicles.Unarmed.Ural_4230_civil_t
+            Zil_131_civil = vehicles.Unarmed.Zil_131_civil
+            Gaz_66_civil = vehicles.Unarmed.Gaz_66_civil
             CCKW_353 = vehicles.Unarmed.CCKW_353
             M30_CC = vehicles.Unarmed.M30_CC
             Hummer = vehicles.Unarmed.Hummer
@@ -32180,6 +32378,7 @@ class CombinedJointTaskForcesRed(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -32287,6 +32486,7 @@ class CombinedJointTaskForcesRed(Country):
         S_3B = planes.S_3B
         F_14B = planes.F_14B
         F_14A_135_GR = planes.F_14A_135_GR
+        F_14A_135_GR_Early = planes.F_14A_135_GR_Early
         Tornado_GR4 = planes.Tornado_GR4
         Mirage_F1CG = planes.Mirage_F1CG
         Mirage_F1CK = planes.Mirage_F1CK
@@ -32315,6 +32515,7 @@ class CombinedJointTaskForcesRed(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -32422,6 +32623,7 @@ class CombinedJointTaskForcesRed(Country):
         Plane.S_3B,
         Plane.F_14B,
         Plane.F_14A_135_GR,
+        Plane.F_14A_135_GR_Early,
         Plane.Tornado_GR4,
         Plane.Mirage_F1CG,
         Plane.Mirage_F1CK,
@@ -32886,6 +33088,12 @@ class UnitedNationsPeacekeepers(Country):
             Prmg_gp_beacon = vehicles.Unarmed.Prmg_gp_beacon
             Prmg_loc_beacon = vehicles.Unarmed.Prmg_loc_beacon
             Bedford_MWD = vehicles.Unarmed.Bedford_MWD
+            Kamaz_tent_civil = vehicles.Unarmed.Kamaz_tent_civil
+            Ural_atz5_civil = vehicles.Unarmed.Ural_atz5_civil
+            Ural_4230_civil_b = vehicles.Unarmed.Ural_4230_civil_b
+            Ural_4230_civil_t = vehicles.Unarmed.Ural_4230_civil_t
+            Zil_131_civil = vehicles.Unarmed.Zil_131_civil
+            Gaz_66_civil = vehicles.Unarmed.Gaz_66_civil
             CCKW_353 = vehicles.Unarmed.CCKW_353
             M30_CC = vehicles.Unarmed.M30_CC
             Hummer = vehicles.Unarmed.Hummer
@@ -33059,6 +33267,7 @@ class UnitedNationsPeacekeepers(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -33166,6 +33375,7 @@ class UnitedNationsPeacekeepers(Country):
         S_3B = planes.S_3B
         F_14B = planes.F_14B
         F_14A_135_GR = planes.F_14A_135_GR
+        F_14A_135_GR_Early = planes.F_14A_135_GR_Early
         Tornado_GR4 = planes.Tornado_GR4
         Mirage_F1CG = planes.Mirage_F1CG
         Mirage_F1CK = planes.Mirage_F1CK
@@ -33194,6 +33404,7 @@ class UnitedNationsPeacekeepers(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -33301,6 +33512,7 @@ class UnitedNationsPeacekeepers(Country):
         Plane.S_3B,
         Plane.F_14B,
         Plane.F_14A_135_GR,
+        Plane.F_14A_135_GR_Early,
         Plane.Tornado_GR4,
         Plane.Mirage_F1CG,
         Plane.Mirage_F1CK,
@@ -33644,6 +33856,7 @@ class Argentina(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -33699,6 +33912,7 @@ class Argentina(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -34006,6 +34220,7 @@ class Cyprus(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -34060,6 +34275,7 @@ class Cyprus(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -34356,6 +34572,7 @@ class Slovenia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -34411,6 +34628,7 @@ class Slovenia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -34711,6 +34929,7 @@ class Bolivia(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -34768,6 +34987,7 @@ class Bolivia(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -35047,6 +35267,7 @@ class Ghana(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -35101,6 +35322,7 @@ class Ghana(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -35397,6 +35619,7 @@ class Nigeria(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -35452,6 +35675,7 @@ class Nigeria(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -35758,6 +35982,7 @@ class Peru(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -35818,6 +36043,7 @@ class Peru(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -36108,6 +36334,7 @@ class Ecuador(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -36163,6 +36390,7 @@ class Ecuador(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -36487,6 +36715,7 @@ class Afghanistan(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -36544,6 +36773,7 @@ class Afghanistan(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
@@ -36853,6 +37083,7 @@ class NewZealand(Country):
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
         F_4E_45MC = planes.F_4E_45MC
+        QF_4E = planes.QF_4E
         F_5E = planes.F_5E
         F_5E_3 = planes.F_5E_3
         F_5E_3_FC = planes.F_5E_3_FC
@@ -36908,6 +37139,7 @@ class NewZealand(Country):
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
         Plane.F_4E_45MC,
+        Plane.QF_4E,
         Plane.F_5E,
         Plane.F_5E_3,
         Plane.F_5E_3_FC,
