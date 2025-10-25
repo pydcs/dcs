@@ -535,6 +535,7 @@ class Su_27(PlaneType):
         Smoke_Generator___white = (2, Weapons.Smoke_Generator___white)
         Smoke_Generator___yellow = (2, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (2, Weapons.Smoke_Generator___orange)
+#ERRR <CLEAN>
 
     class Pylon3:
         R_73__AA_11_Archer____Infra_Red = (3, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -575,6 +576,7 @@ class Su_27(PlaneType):
         _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8OFP2_MPP = (3, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8OFP2_MPP)
+#ERRR <CLEAN>
 
     class Pylon4:
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (4, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -600,6 +602,7 @@ class Su_27(PlaneType):
         Smoke_Generator___white = (4, Weapons.Smoke_Generator___white)
         Smoke_Generator___yellow = (4, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (4, Weapons.Smoke_Generator___orange)
+#ERRR <CLEAN>
 
     class Pylon5:
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (5, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -623,6 +626,7 @@ class Su_27(PlaneType):
         Smoke_Generator___white = (5, Weapons.Smoke_Generator___white)
         Smoke_Generator___yellow = (5, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (5, Weapons.Smoke_Generator___orange)
+#ERRR <CLEAN>
 
     class Pylon6:
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (6, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -642,6 +646,7 @@ class Su_27(PlaneType):
         SAB_100MN___100_kg_Illumination_Bomb = (6, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD3_U6_68___6_x_OFAB_100_120___100_kg_GP_Bomb_LD = (6, Weapons.MBD3_U6_68___6_x_OFAB_100_120___100_kg_GP_Bomb_LD)
         MBD3_U6_68___6_x_OFAB_250_270___250_kg_GP_Bomb_LD = (6, Weapons.MBD3_U6_68___6_x_OFAB_250_270___250_kg_GP_Bomb_LD)
+#ERRR <CLEAN>
 
     class Pylon7:
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (7, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -667,6 +672,7 @@ class Su_27(PlaneType):
         Smoke_Generator___white = (7, Weapons.Smoke_Generator___white)
         Smoke_Generator___yellow = (7, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (7, Weapons.Smoke_Generator___orange)
+#ERRR <CLEAN>
 
     class Pylon8:
         R_73__AA_11_Archer____Infra_Red = (8, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -707,6 +713,7 @@ class Su_27(PlaneType):
         _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         _2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8OFP2_MPP = (8, Weapons._2_x_B_8M1___20_x_UnGd_Rkts__80_mm_S_8OFP2_MPP)
+#ERRR <CLEAN>
 
     class Pylon9:
         R_73__AA_11_Archer____Infra_Red = (9, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -716,6 +723,7 @@ class Su_27(PlaneType):
         Smoke_Generator___white = (9, Weapons.Smoke_Generator___white)
         Smoke_Generator___yellow = (9, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (9, Weapons.Smoke_Generator___orange)
+#ERRR <CLEAN>
 
     class Pylon10:
         R_73__AA_11_Archer____Infra_Red = (10, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -11766,10 +11774,13 @@ class F_4E_45MC(PlaneType):
     property_defaults: Dict[str, Any] = {
         "Quality": 100,
         "Wear": 0,
-        "UseReferenceAircraft": False,
+        "UseReferenceAircraft": 0,
         "INSAlignmentStored": True,
+        "PersistentAircraftKey": "",
         "IsModifiedJesterAllowed": True,
         "IsNvgAllowed": True,
+        "IsEfbAllowed": True,
+        "CombatTreeSpoofable": 2,
         "TacanChannel": 0,
         "TacanBand": 0,
         "VORILSFrequencyMHZ": 108,
@@ -11797,14 +11808,33 @@ class F_4E_45MC(PlaneType):
         class UseReferenceAircraft:
             id = "UseReferenceAircraft"
 
+            class Values:
+                Random = 0
+                Reference = 1
+                Persistent = 2
+
         class INSAlignmentStored:
             id = "INSAlignmentStored"
+
+        class PersistentAircraftKey:
+            id = "PersistentAircraftKey"
 
         class IsModifiedJesterAllowed:
             id = "IsModifiedJesterAllowed"
 
         class IsNvgAllowed:
             id = "IsNvgAllowed"
+
+        class IsEfbAllowed:
+            id = "IsEfbAllowed"
+
+        class CombatTreeSpoofable:
+            id = "CombatTreeSpoofable"
+
+            class Values:
+                All = 0
+                Historical = 1
+                None_ = 2
 
         class TacanChannel:
             id = "TacanChannel"
@@ -11895,10 +11925,15 @@ class F_4E_45MC(PlaneType):
         ),
         "UseReferenceAircraft": UnitPropertyDescription(
             identifier="UseReferenceAircraft",
-            control="checkbox",
-            label="Reference Aircraft",
+            control="comboList",
+            label="Aircraft Type On Spawn",
             player_only=True,
-            default=False,
+            default=0,
+            values={
+                0: "Random",
+                1: "Reference",
+                2: "Persistent",
+            },
         ),
         "INSAlignmentStored": UnitPropertyDescription(
             identifier="INSAlignmentStored",
@@ -11906,6 +11941,13 @@ class F_4E_45MC(PlaneType):
             label="INS Reference Alignment Stored",
             player_only=True,
             default=True,
+        ),
+        "PersistentAircraftKey": UnitPropertyDescription(
+            identifier="PersistentAircraftKey",
+            control="editbox",
+            label="Persistent Aircraft Key",
+            player_only=True,
+            default="",
         ),
         "IsModifiedJesterAllowed": UnitPropertyDescription(
             identifier="IsModifiedJesterAllowed",
@@ -11920,6 +11962,25 @@ class F_4E_45MC(PlaneType):
             label="Allow Night Vision Goggles",
             player_only=True,
             default=True,
+        ),
+        "IsEfbAllowed": UnitPropertyDescription(
+            identifier="IsEfbAllowed",
+            control="checkbox",
+            label="Allow use of EFB",
+            player_only=True,
+            default=True,
+        ),
+        "CombatTreeSpoofable": UnitPropertyDescription(
+            identifier="CombatTreeSpoofable",
+            control="comboList",
+            label="Combat-Tree Spoofable",
+            player_only=True,
+            default=2,
+            values={
+                0: "All",
+                1: "Historical",
+                2: "None",
+            },
         ),
         "TacanChannel": UnitPropertyDescription(
             identifier="TacanChannel",
@@ -12125,6 +12186,10 @@ class F_4E_45MC(PlaneType):
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__MER_ = (1, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__MER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__MER_ = (1, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__MER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__MER_ = (1, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__MER_)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (1, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        _3x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_ = (1, Weapons._3x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_)
+        _2x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_ = (1, Weapons._2x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_)
+        _1x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_ = (1, Weapons._1x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_)
         SUU_25_x_8_LUU_2___Target_Marker_Flares = (1, Weapons.SUU_25_x_8_LUU_2___Target_Marker_Flares)
         AGM_45A_Shrike_ARM__LAU_34_ = (1, Weapons.AGM_45A_Shrike_ARM__LAU_34_)
         AGM_12A_Bullpup_MCLOS_ASM__LAU_34_ = (1, Weapons.AGM_12A_Bullpup_MCLOS_ASM__LAU_34_)
@@ -12160,6 +12225,7 @@ class F_4E_45MC(PlaneType):
         _2x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER__ = (3, Weapons._2x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER__)
         _2x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER__ = (3, Weapons._2x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER__)
         _2x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER__ = (3, Weapons._2x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER__)
+        _2x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER__ = (3, Weapons._2x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER__)
         _3x_AGM_65A___Maverick_A__TV_Guided___LAU_88__ = (3, Weapons._3x_AGM_65A___Maverick_A__TV_Guided___LAU_88__)
         _2x_AGM_65A___Maverick_A__TV_Guided___LAU_88__ = (3, Weapons._2x_AGM_65A___Maverick_A__TV_Guided___LAU_88__)
         _3x_AGM_65B___Maverick_B__TV_Guided___LAU_88__ = (3, Weapons._3x_AGM_65B___Maverick_B__TV_Guided___LAU_88__)
@@ -12222,6 +12288,10 @@ class F_4E_45MC(PlaneType):
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_ = (3, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_ = (3, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_ = (3, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_)
+        _3x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER_ = (3, Weapons._3x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER_)
+        _2x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER__Opposed = (3, Weapons._2x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER__Opposed)
+        _1x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER_ = (3, Weapons._1x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER_)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (3, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
         LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
         LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
         LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (3, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
@@ -12368,6 +12438,7 @@ class F_4E_45MC(PlaneType):
         _2x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_ = (11, Weapons._2x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_)
         _2x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_ = (11, Weapons._2x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_)
         _2x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_ = (11, Weapons._2x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_)
+        _2x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER_ = (11, Weapons._2x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER_)
         _3x_AGM_65A___Maverick_A__TV_Guided___LAU_88_ = (11, Weapons._3x_AGM_65A___Maverick_A__TV_Guided___LAU_88_)
         _2x_AGM_65A___Maverick_A__TV_Guided___LAU_88_ = (11, Weapons._2x_AGM_65A___Maverick_A__TV_Guided___LAU_88_)
         _3x_AGM_65B___Maverick_B__TV_Guided___LAU_88_ = (11, Weapons._3x_AGM_65B___Maverick_B__TV_Guided___LAU_88_)
@@ -12430,6 +12501,10 @@ class F_4E_45MC(PlaneType):
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_ = (11, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__TER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_ = (11, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__TER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_ = (11, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__TER_)
+        _3x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER_ = (11, Weapons._3x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER_)
+        _2x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER__Opposed = (11, Weapons._2x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER__Opposed)
+        _1x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER_ = (11, Weapons._1x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__TER_)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (11, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
         LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM = (11, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_M156_SM)
         LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE = (11, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_1_HE)
         LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT = (11, Weapons.LAU_3___19_x_UnGd_Rkts__70_mm_Mk_4_FFAR_Mk_5_HEAT)
@@ -12531,6 +12606,10 @@ class F_4E_45MC(PlaneType):
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__MER_ = (13, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_M156__Wht_Phos__MER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__MER_ = (13, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk1__HE__MER_)
         _3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__MER_ = (13, Weapons._3x_LAU_3_pod___19_x_2_75_FFAR__UnGd_Rkts_Mk5__HEAT__MER_)
+        LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = (13, Weapons.LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE)
+        _3x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_ = (13, Weapons._3x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_)
+        _2x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_ = (13, Weapons._2x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_)
+        _1x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_ = (13, Weapons._1x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_)
         SUU_25_x_8_LUU_2___Target_Marker_Flares = (13, Weapons.SUU_25_x_8_LUU_2___Target_Marker_Flares)
         AGM_45A_Shrike_ARM__LAU_34_ = (13, Weapons.AGM_45A_Shrike_ARM__LAU_34_)
         AGM_12A_Bullpup_MCLOS_ASM__LAU_34_ = (13, Weapons.AGM_12A_Bullpup_MCLOS_ASM__LAU_34_)
@@ -12549,6 +12628,472 @@ class F_4E_45MC(PlaneType):
 
     tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.CAS, task.AFAC, task.SEAD, task.AntishipStrike, task.Reconnaissance]
     task_default = task.CAP
+
+
+class QF_4E(PlaneType):
+    id = "QF-4E"
+    height = 5
+    width = 11.7
+    length = 19.2
+    fuel_max = 5510.5
+    max_speed = 2203.2
+    chaff = 120
+    flare = 30
+    charge_total = 150
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
+    radio_frequency = 305
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 305,
+                2: 264,
+                4: 256,
+                8: 257,
+                16: 261,
+                17: 267,
+                9: 255,
+                18: 251,
+                5: 254,
+                10: 262,
+                11: 259,
+                3: 265,
+                6: 250,
+                12: 268,
+                13: 269,
+                7: 270,
+                14: 260,
+                15: 263
+            },
+        },
+        2: {
+            "channels": {
+                1: 284,
+                2: 283,
+                4: 281,
+                8: 277,
+                16: 273,
+                17: 267,
+                9: 276,
+                18: 272,
+                5: 280,
+                10: 275,
+                20: 266,
+                11: 274,
+                3: 265,
+                6: 279,
+                12: 268,
+                13: 269,
+                7: 270,
+                14: 271,
+                19: 282,
+                15: 278
+            },
+        },
+    }
+
+    property_defaults: Dict[str, Any] = {
+        "Quality": 100,
+        "Wear": 0,
+        "UseReferenceAircraft": 0,
+        "INSAlignmentStored": True,
+        "PersistentAircraftKey": "",
+        "IsModifiedJesterAllowed": True,
+        "IsNvgAllowed": True,
+        "IsEfbAllowed": True,
+        "CombatTreeSpoofable": 2,
+        "TacanChannel": 0,
+        "TacanBand": 0,
+        "VORILSFrequencyMHZ": 108,
+        "VORILSFrequencyDecimalMHZ": 0,
+        "KY28Key": 1,
+        "ChaffDoubleDispense": False,
+        "IffMode2Digit1": 0,
+        "IffMode2Digit2": 0,
+        "IffMode2Digit3": 0,
+        "IffMode2Digit4": 0,
+        "LaserCodeDigit1": 1,
+        "LaserCodeDigit2": 6,
+        "LaserCodeDigit3": 8,
+        "LaserCodeDigit4": 8,
+    }
+
+    class Properties:
+
+        class Quality:
+            id = "Quality"
+
+        class Wear:
+            id = "Wear"
+
+        class UseReferenceAircraft:
+            id = "UseReferenceAircraft"
+
+            class Values:
+                Random = 0
+                Reference = 1
+                Persistent = 2
+
+        class INSAlignmentStored:
+            id = "INSAlignmentStored"
+
+        class PersistentAircraftKey:
+            id = "PersistentAircraftKey"
+
+        class IsModifiedJesterAllowed:
+            id = "IsModifiedJesterAllowed"
+
+        class IsNvgAllowed:
+            id = "IsNvgAllowed"
+
+        class IsEfbAllowed:
+            id = "IsEfbAllowed"
+
+        class CombatTreeSpoofable:
+            id = "CombatTreeSpoofable"
+
+            class Values:
+                All = 0
+                Historical = 1
+                None_ = 2
+
+        class TacanChannel:
+            id = "TacanChannel"
+
+        class TacanBand:
+            id = "TacanBand"
+
+            class Values:
+                X = 0
+                Y = 1
+
+        class VORILSFrequencyMHZ:
+            id = "VORILSFrequencyMHZ"
+
+        class VORILSFrequencyDecimalMHZ:
+            id = "VORILSFrequencyDecimalMHZ"
+
+            class Values:
+                _00 = 0
+                _05 = 1
+                _10 = 2
+                _15 = 3
+                _20 = 4
+                _25 = 5
+                _30 = 6
+                _35 = 7
+                _40 = 8
+                _45 = 9
+                _50 = 10
+                _55 = 11
+                _60 = 12
+                _65 = 13
+                _70 = 14
+                _75 = 15
+                _80 = 16
+                _85 = 17
+                _90 = 18
+                _95 = 19
+
+        class KY28Key:
+            id = "KY28Key"
+
+        class ChaffDoubleDispense:
+            id = "ChaffDoubleDispense"
+
+        class IffMode2Digit1:
+            id = "IffMode2Digit1"
+
+        class IffMode2Digit2:
+            id = "IffMode2Digit2"
+
+        class IffMode2Digit3:
+            id = "IffMode2Digit3"
+
+        class IffMode2Digit4:
+            id = "IffMode2Digit4"
+
+        class LaserCodeDigit1:
+            id = "LaserCodeDigit1"
+
+        class LaserCodeDigit2:
+            id = "LaserCodeDigit2"
+
+        class LaserCodeDigit3:
+            id = "LaserCodeDigit3"
+
+        class LaserCodeDigit4:
+            id = "LaserCodeDigit4"
+
+    properties = {
+        "Quality": UnitPropertyDescription(
+            identifier="Quality",
+            control="spinbox",
+            label="Aircraft Condition",
+            player_only=True,
+            minimum=0,
+            maximum=100,
+            default=100,
+        ),
+        "Wear": UnitPropertyDescription(
+            identifier="Wear",
+            control="spinbox",
+            label="Aircraft Wear and Tear",
+            player_only=True,
+            minimum=0,
+            maximum=100,
+            default=0,
+        ),
+        "UseReferenceAircraft": UnitPropertyDescription(
+            identifier="UseReferenceAircraft",
+            control="comboList",
+            label="Aircraft Type On Spawn",
+            player_only=True,
+            default=0,
+            values={
+                0: "Random",
+                1: "Reference",
+                2: "Persistent",
+            },
+        ),
+        "INSAlignmentStored": UnitPropertyDescription(
+            identifier="INSAlignmentStored",
+            control="checkbox",
+            label="INS Reference Alignment Stored",
+            player_only=True,
+            default=True,
+        ),
+        "PersistentAircraftKey": UnitPropertyDescription(
+            identifier="PersistentAircraftKey",
+            control="editbox",
+            label="Persistent Aircraft Key",
+            player_only=True,
+            default="",
+        ),
+        "IsModifiedJesterAllowed": UnitPropertyDescription(
+            identifier="IsModifiedJesterAllowed",
+            control="checkbox",
+            label="Allow Jester Modifications",
+            player_only=True,
+            default=True,
+        ),
+        "IsNvgAllowed": UnitPropertyDescription(
+            identifier="IsNvgAllowed",
+            control="checkbox",
+            label="Allow Night Vision Goggles",
+            player_only=True,
+            default=True,
+        ),
+        "IsEfbAllowed": UnitPropertyDescription(
+            identifier="IsEfbAllowed",
+            control="checkbox",
+            label="Allow use of EFB",
+            player_only=True,
+            default=True,
+        ),
+        "CombatTreeSpoofable": UnitPropertyDescription(
+            identifier="CombatTreeSpoofable",
+            control="comboList",
+            label="Combat-Tree Spoofable",
+            player_only=True,
+            default=2,
+            values={
+                0: "All",
+                1: "Historical",
+                2: "None",
+            },
+        ),
+        "TacanChannel": UnitPropertyDescription(
+            identifier="TacanChannel",
+            control="spinbox",
+            label="TACAN Channel Presel (0 = Auto)",
+            player_only=True,
+            minimum=0,
+            maximum=126,
+            default=0,
+        ),
+        "TacanBand": UnitPropertyDescription(
+            identifier="TacanBand",
+            control="comboList",
+            label="TACAN Band",
+            player_only=True,
+            default=0,
+            values={
+                0: "X",
+                1: "Y",
+            },
+        ),
+        "VORILSFrequencyMHZ": UnitPropertyDescription(
+            identifier="VORILSFrequencyMHZ",
+            control="spinbox",
+            label="VOR/ILS Frequency [MHz]",
+            player_only=True,
+            minimum=108,
+            maximum=117,
+            default=108,
+        ),
+        "VORILSFrequencyDecimalMHZ": UnitPropertyDescription(
+            identifier="VORILSFrequencyDecimalMHZ",
+            control="comboList",
+            label="VOR/ILS Frequency [decimal MHz]",
+            player_only=True,
+            default=0,
+            values={
+                0: ".00",
+                1: ".05",
+                2: ".10",
+                3: ".15",
+                4: ".20",
+                5: ".25",
+                6: ".30",
+                7: ".35",
+                8: ".40",
+                9: ".45",
+                10: ".50",
+                11: ".55",
+                12: ".60",
+                13: ".65",
+                14: ".70",
+                15: ".75",
+                16: ".80",
+                17: ".85",
+                18: ".90",
+                19: ".95",
+            },
+        ),
+        "KY28Key": UnitPropertyDescription(
+            identifier="KY28Key",
+            control="spinbox",
+            label="KY-28 Encryption Key",
+            player_only=True,
+            minimum=1,
+            maximum=255,
+            default=1,
+        ),
+        "ChaffDoubleDispense": UnitPropertyDescription(
+            identifier="ChaffDoubleDispense",
+            control="checkbox",
+            label="Chaff Double Dispense",
+            player_only=True,
+            default=False,
+        ),
+        "IffMode2Digit1": UnitPropertyDescription(
+            identifier="IffMode2Digit1",
+            control="spinbox",
+            label="IFF Mode 2 Code 1st Digit",
+            player_only=True,
+            minimum=0,
+            maximum=7,
+            default=0,
+            dimension=" ",
+        ),
+        "IffMode2Digit2": UnitPropertyDescription(
+            identifier="IffMode2Digit2",
+            control="spinbox",
+            label="IFF Mode 2 Code 2nd Digit",
+            player_only=True,
+            minimum=0,
+            maximum=7,
+            default=0,
+            dimension=" ",
+        ),
+        "IffMode2Digit3": UnitPropertyDescription(
+            identifier="IffMode2Digit3",
+            control="spinbox",
+            label="IFF Mode 2 Code 3rd Digit",
+            player_only=True,
+            minimum=0,
+            maximum=7,
+            default=0,
+            dimension=" ",
+        ),
+        "IffMode2Digit4": UnitPropertyDescription(
+            identifier="IffMode2Digit4",
+            control="spinbox",
+            label="IFF Mode 2 Code 4th Digit",
+            player_only=True,
+            minimum=0,
+            maximum=7,
+            default=0,
+            dimension=" ",
+        ),
+        "LaserCodeDigit1": UnitPropertyDescription(
+            identifier="LaserCodeDigit1",
+            control="spinbox",
+            label="TGP Laser Code 1st Digit",
+            player_only=True,
+            minimum=1,
+            maximum=1,
+            default=1,
+            dimension=" ",
+        ),
+        "LaserCodeDigit2": UnitPropertyDescription(
+            identifier="LaserCodeDigit2",
+            control="spinbox",
+            label="TGP Laser Code 2nd Digit",
+            player_only=True,
+            minimum=5,
+            maximum=7,
+            default=6,
+            dimension=" ",
+        ),
+        "LaserCodeDigit3": UnitPropertyDescription(
+            identifier="LaserCodeDigit3",
+            control="spinbox",
+            label="TGP Laser Code 3rd Digit",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+        "LaserCodeDigit4": UnitPropertyDescription(
+            identifier="LaserCodeDigit4",
+            control="spinbox",
+            label="TGP Laser Code 4th Digit",
+            player_only=True,
+            minimum=1,
+            maximum=8,
+            default=8,
+            dimension=" ",
+        ),
+    }
+
+    livery_name = "QF-4E"  # from type
+
+    class Pylon1:
+        Sargent_Fletcher_Fuel_Tank_370_gallons = (1, Weapons.Sargent_Fletcher_Fuel_Tank_370_gallons)
+        Sargent_Fletcher_Fuel_Tank_370_gallons__empty_ = (1, Weapons.Sargent_Fletcher_Fuel_Tank_370_gallons__empty_)
+#ERRR <CLEAN>
+#ERRR <CLEAN>
+#ERRR <CLEAN>
+#ERRR <CLEAN>
+
+    class Pylon7:
+        Sargent_Fletcher_Fuel_Tank_600_gallons = (7, Weapons.Sargent_Fletcher_Fuel_Tank_600_gallons)
+        Sargent_Fletcher_Fuel_Tank_600_gallons__empty_ = (7, Weapons.Sargent_Fletcher_Fuel_Tank_600_gallons__empty_)
+#ERRR <CLEAN>
+#ERRR <CLEAN>
+#ERRR <CLEAN>
+
+    class Pylon13:
+        Sargent_Fletcher_Fuel_Tank_370_gallons_ = (13, Weapons.Sargent_Fletcher_Fuel_Tank_370_gallons_)
+        Sargent_Fletcher_Fuel_Tank_370_gallons__empty__ = (13, Weapons.Sargent_Fletcher_Fuel_Tank_370_gallons__empty__)
+#ERRR <CLEAN>
+
+    class Pylon14:
+        ALE_40_Dispensers__Empty_ = (14, Weapons.ALE_40_Dispensers__Empty_)
+        ALE_40_Dispensers__120_Chaff_ = (14, Weapons.ALE_40_Dispensers__120_Chaff_)
+        ALE_40_Dispensers__30_Flares__60_Chaff_ = (14, Weapons.ALE_40_Dispensers__30_Flares__60_Chaff_)
+        ALE_40_Dispensers__15_Flares__90_Chaff_ = (14, Weapons.ALE_40_Dispensers__15_Flares__90_Chaff_)
+        ALE_40_Dispensers__30_Flares_ = (14, Weapons.ALE_40_Dispensers__30_Flares_)
+
+    pylons: Set[int] = {1, 2, 3, 4, 7, 10, 11, 12, 13, 14}
+
+    tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.CAS, task.AFAC, task.SEAD, task.AntishipStrike, task.Reconnaissance]
+    task_default = task.Nothing
 
 
 class F_5E(PlaneType):
@@ -13987,6 +14532,462 @@ class F_14B(PlaneType):
     task_default = task.Intercept
 
 
+class F_14A_135_GR_Early(PlaneType):
+    id = "F-14A-135-GR-Early"
+    flyable = True
+    height = 4.8
+    width = 10.15
+    length = 16.6
+    fuel_max = 7348
+    max_speed = 2407.5792
+    chaff = 140
+    flare = 60
+    charge_total = 200
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    radio_frequency = 124
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 225,
+                2: 258,
+                4: 270,
+                8: 257,
+                16: 252,
+                17: 268,
+                9: 253,
+                18: 269,
+                5: 255,
+                10: 263,
+                20: 269,
+                11: 267,
+                3: 260,
+                6: 259,
+                12: 254,
+                13: 264,
+                7: 262,
+                14: 266,
+                19: 268,
+                15: 265
+            },
+        },
+        2: {
+            "channels": {
+                1: 225,
+                2: 258,
+                4: 270,
+                8: 257,
+                16: 252,
+                17: 268,
+                9: 253,
+                18: 269,
+                5: 255,
+                10: 263,
+                20: 269,
+                30: 263,
+                21: 225,
+                11: 267,
+                22: 258,
+                3: 260,
+                6: 259,
+                12: 254,
+                24: 270,
+                19: 268,
+                25: 255,
+                13: 264,
+                26: 259,
+                27: 262,
+                7: 262,
+                14: 266,
+                28: 257,
+                23: 260,
+                29: 253,
+                15: 265
+            },
+        },
+    }
+
+    property_defaults: Dict[str, Any] = {
+        "M61BURST": 2,
+        "ALE39Loadout": 0,
+        "UseLAU138": True,
+        "INSAlignmentStored": False,
+        "TacanChannel": 0,
+        "TacanBand": 0,
+        "IlsChannel": 1,
+        "KY28Key": 1,
+    }
+
+    class Properties:
+
+        class M61BURST:
+            id = "M61BURST"
+
+            class Values:
+                Burst_200 = 0
+                Burst_100 = 1
+                Burst_50 = 2
+                Manual = 3
+
+        class ALE39Loadout:
+            id = "ALE39Loadout"
+
+            class Values:
+                x_60_Flares___0_Chaff = 0
+                x_50_Flares___10_Chaff = 1
+                x_40_Flares___20_Chaff = 2
+                x_30_Flares___30_Chaff = 3
+                x_20_Flares___40_Chaff = 4
+                x_10_Flares___50_Chaff = 5
+                x_0_Flares___60_Chaff = 6
+
+        class UseLAU138:
+            id = "UseLAU138"
+
+        class INSAlignmentStored:
+            id = "INSAlignmentStored"
+
+        class TacanChannel:
+            id = "TacanChannel"
+
+        class TacanBand:
+            id = "TacanBand"
+
+            class Values:
+                X = 0
+                Y = 1
+
+        class IlsChannel:
+            id = "IlsChannel"
+
+        class KY28Key:
+            id = "KY28Key"
+
+    properties = {
+        "M61BURST": UnitPropertyDescription(
+            identifier="M61BURST",
+            control="comboList",
+            label="M-61 Burst Mode",
+            player_only=True,
+            default=2,
+            w_ctrl=150,
+            values={
+                0: "Burst 200",
+                1: "Burst 100",
+                2: "Burst 50",
+                3: "Manual",
+            },
+        ),
+        "ALE39Loadout": UnitPropertyDescription(
+            identifier="ALE39Loadout",
+            control="comboList",
+            label="AN/ALE-39 Loadout",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "60 Flares / 0 Chaff",
+                1: "50 Flares / 10 Chaff",
+                2: "40 Flares / 20 Chaff",
+                3: "30 Flares / 30 Chaff",
+                4: "20 Flares / 40 Chaff",
+                5: "10 Flares / 50 Chaff",
+                6: "0 Flares / 60 Chaff",
+            },
+        ),
+        "UseLAU138": UnitPropertyDescription(
+            identifier="UseLAU138",
+            control="checkbox",
+            label="Fill LAU-138 With Chaff",
+            player_only=True,
+            default=True,
+        ),
+        "INSAlignmentStored": UnitPropertyDescription(
+            identifier="INSAlignmentStored",
+            control="checkbox",
+            label="INS Reference Alignment Stored",
+            player_only=True,
+            default=False,
+        ),
+        "TacanChannel": UnitPropertyDescription(
+            identifier="TacanChannel",
+            control="spinbox",
+            label="TACAN Channel Presel (0 = Auto)",
+            player_only=True,
+            minimum=0,
+            maximum=126,
+            default=0,
+        ),
+        "TacanBand": UnitPropertyDescription(
+            identifier="TacanBand",
+            control="comboList",
+            label="TACAN Band",
+            player_only=True,
+            default=0,
+            values={
+                0: "X",
+                1: "Y",
+            },
+        ),
+        "IlsChannel": UnitPropertyDescription(
+            identifier="IlsChannel",
+            control="spinbox",
+            label="ILS Channel Presel",
+            player_only=True,
+            minimum=1,
+            maximum=20,
+            default=1,
+        ),
+        "KY28Key": UnitPropertyDescription(
+            identifier="KY28Key",
+            control="spinbox",
+            label="KY-28 Encryption Key",
+            player_only=True,
+            minimum=1,
+            maximum=255,
+            default=1,
+        ),
+    }
+
+    livery_name = "F-14A-135-GR-EARLY"  # from type
+
+    class Pylon1:
+        LAU_138_AIM_9M = (1, Weapons.LAU_138_AIM_9M)
+        LAU_138_AIM_9L = (1, Weapons.LAU_138_AIM_9L)
+        AN_ASQ_T50_TCTS_Pod___ACMI_Pod_ = (1, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod_)
+        CATM_9M = (1, Weapons.CATM_9M)
+        Smokewinder___red = (1, Weapons.Smokewinder___red)
+        Smokewinder___green = (1, Weapons.Smokewinder___green)
+        Smokewinder___blue = (1, Weapons.Smokewinder___blue)
+        Smokewinder___white = (1, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (1, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (1, Weapons.Smokewinder___orange)
+
+    class Pylon2:
+        AIM_54C_Mk47_ = (2, Weapons.AIM_54C_Mk47_)
+        AIM_54C_Mk60_ = (2, Weapons.AIM_54C_Mk60_)
+        AIM_54A_Mk47_ = (2, Weapons.AIM_54A_Mk47_)
+        AIM_54A_Mk60_ = (2, Weapons.AIM_54A_Mk60_)
+        AIM_7M_ = (2, Weapons.AIM_7M_)
+        AIM_7F_ = (2, Weapons.AIM_7F_)
+        AIM_7MH = (2, Weapons.AIM_7MH)
+        LAU_7_AIM_9M = (2, Weapons.LAU_7_AIM_9M)
+        LAU_7_AIM_9L = (2, Weapons.LAU_7_AIM_9L)
+        LAU_7_AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (2, Weapons.LAU_7_AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
+        AIM_7P = (2, Weapons.AIM_7P)
+        _2_LAU_10___4_ZUNI_MK_71_________ = (2, Weapons._2_LAU_10___4_ZUNI_MK_71_________)
+        _2_Mk_81_______ = (2, Weapons._2_Mk_81_______)
+        _2_Mk_82_______ = (2, Weapons._2_Mk_82_______)
+        _2_Mk_82AIR_____ = (2, Weapons._2_Mk_82AIR_____)
+        _2_Mk_82_SnakeEye_____ = (2, Weapons._2_Mk_82_SnakeEye_____)
+        _2_MK_20_____ = (2, Weapons._2_MK_20_____)
+        _2_CBU_99_______ = (2, Weapons._2_CBU_99_______)
+        Mk_83______ = (2, Weapons.Mk_83______)
+        _3_BDU_33____ = (2, Weapons._3_BDU_33____)
+        _2_BDU_45_____ = (2, Weapons._2_BDU_45_____)
+        _2_BDU_45B_____ = (2, Weapons._2_BDU_45B_____)
+
+    class Pylon3:
+        Fuel_tank_300_gal_ = (3, Weapons.Fuel_tank_300_gal_)
+        Fuel_tank_300_gal__empty_ = (3, Weapons.Fuel_tank_300_gal__empty_)
+#ERRR <CLEAN>
+
+    class Pylon4:
+        AIM_54A_Mk47 = (4, Weapons.AIM_54A_Mk47)
+        AIM_54A_Mk60 = (4, Weapons.AIM_54A_Mk60)
+        AIM_54C_Mk47 = (4, Weapons.AIM_54C_Mk47)
+        AIM_54C_Mk60 = (4, Weapons.AIM_54C_Mk60)
+        AIM_7M__ = (4, Weapons.AIM_7M__)
+        AIM_7F__ = (4, Weapons.AIM_7F__)
+        AIM_7MH_ = (4, Weapons.AIM_7MH_)
+#ERRR <CLEAN>
+        AIM_7P_ = (4, Weapons.AIM_7P_)
+        Mk_82 = (4, Weapons.Mk_82)
+        Expanded_Chaff_Adapter = (4, Weapons.Expanded_Chaff_Adapter)
+        Mk_82AIR = (4, Weapons.Mk_82AIR)
+        Mk_82_SnakeEye = (4, Weapons.Mk_82_SnakeEye)
+        BDU_45 = (4, Weapons.BDU_45)
+        BDU_45B = (4, Weapons.BDU_45B)
+        _3_BDU_33_ = (4, Weapons._3_BDU_33_)
+        Mk_83 = (4, Weapons.Mk_83)
+        GBU_12 = (4, Weapons.GBU_12)
+        GBU_16 = (4, Weapons.GBU_16)
+        Mk_20 = (4, Weapons.Mk_20)
+        CBU_99 = (4, Weapons.CBU_99)
+        ADM_141A_ = (4, Weapons.ADM_141A_)
+        Mk_84 = (4, Weapons.Mk_84)
+        _2_LAU_10___4_ZUNI_MK_71___ = (4, Weapons._2_LAU_10___4_ZUNI_MK_71___)
+        GBU_10 = (4, Weapons.GBU_10)
+        GBU_24 = (4, Weapons.GBU_24)
+        MAK79_4_Mk_81 = (4, Weapons.MAK79_4_Mk_81)
+        MAK79_4_Mk_82 = (4, Weapons.MAK79_4_Mk_82)
+        MAK79_4_BDU_45 = (4, Weapons.MAK79_4_BDU_45)
+        MAK79_4_BDU_45B = (4, Weapons.MAK79_4_BDU_45B)
+        MAK79_4_BDU_33 = (4, Weapons.MAK79_4_BDU_33)
+        MAK79_4_Mk_82AIR = (4, Weapons.MAK79_4_Mk_82AIR)
+        MAK79_4_Mk_82_SnakeEye = (4, Weapons.MAK79_4_Mk_82_SnakeEye)
+        MAK79_3_Mk_83 = (4, Weapons.MAK79_3_Mk_83)
+        MAK79_2_MK_20 = (4, Weapons.MAK79_2_MK_20)
+        MAK79_2_CBU_99 = (4, Weapons.MAK79_2_CBU_99)
+
+    class Pylon5:
+        AIM_54A_Mk47 = (5, Weapons.AIM_54A_Mk47)
+        AIM_54A_Mk60 = (5, Weapons.AIM_54A_Mk60)
+        AIM_54C_Mk47 = (5, Weapons.AIM_54C_Mk47)
+        AIM_54C_Mk60 = (5, Weapons.AIM_54C_Mk60)
+        AIM_7M__ = (5, Weapons.AIM_7M__)
+        AIM_7F__ = (5, Weapons.AIM_7F__)
+        AIM_7MH_ = (5, Weapons.AIM_7MH_)
+#ERRR <CLEAN>
+        AIM_7P_ = (5, Weapons.AIM_7P_)
+        Mk_82 = (5, Weapons.Mk_82)
+        Mk_82AIR = (5, Weapons.Mk_82AIR)
+        Mk_82_SnakeEye = (5, Weapons.Mk_82_SnakeEye)
+        BDU_45 = (5, Weapons.BDU_45)
+        BDU_45B = (5, Weapons.BDU_45B)
+        _3_BDU_33_ = (5, Weapons._3_BDU_33_)
+        Mk_83 = (5, Weapons.Mk_83)
+        GBU_12 = (5, Weapons.GBU_12)
+        GBU_16 = (5, Weapons.GBU_16)
+        Mk_20 = (5, Weapons.Mk_20)
+        CBU_99 = (5, Weapons.CBU_99)
+        ADM_141A_ = (5, Weapons.ADM_141A_)
+        Mk_84 = (5, Weapons.Mk_84)
+        _2_SUU_25___8_LUU_2___ = (5, Weapons._2_SUU_25___8_LUU_2___)
+        MAK79_3_Mk_81 = (5, Weapons.MAK79_3_Mk_81)
+        MAK79_3_Mk_82 = (5, Weapons.MAK79_3_Mk_82)
+        MAK79_3_BDU_45 = (5, Weapons.MAK79_3_BDU_45)
+        MAK79_3_BDU_45B = (5, Weapons.MAK79_3_BDU_45B)
+        MAK79_3_BDU_33 = (5, Weapons.MAK79_3_BDU_33)
+        MAK79_3_Mk_82AIR = (5, Weapons.MAK79_3_Mk_82AIR)
+        MAK79_3_Mk_82_SnakeEye = (5, Weapons.MAK79_3_Mk_82_SnakeEye)
+        MAK79_Mk_83_ = (5, Weapons.MAK79_Mk_83_)
+        MAK79_MK_20_ = (5, Weapons.MAK79_MK_20_)
+        MAK79_CBU_99_ = (5, Weapons.MAK79_CBU_99_)
+
+    class Pylon6:
+        Tactical_Airborne_Reconnaissance_Pod_System = (6, Weapons.Tactical_Airborne_Reconnaissance_Pod_System)
+        AIM_54A_Mk47 = (6, Weapons.AIM_54A_Mk47)
+        AIM_54A_Mk60 = (6, Weapons.AIM_54A_Mk60)
+        AIM_54C_Mk47 = (6, Weapons.AIM_54C_Mk47)
+        AIM_54C_Mk60 = (6, Weapons.AIM_54C_Mk60)
+        AIM_7M__ = (6, Weapons.AIM_7M__)
+        AIM_7F__ = (6, Weapons.AIM_7F__)
+        AIM_7MH_ = (6, Weapons.AIM_7MH_)
+#ERRR <CLEAN>
+        AIM_7P_ = (6, Weapons.AIM_7P_)
+        Mk_82 = (6, Weapons.Mk_82)
+        Mk_82AIR = (6, Weapons.Mk_82AIR)
+        Mk_82_SnakeEye = (6, Weapons.Mk_82_SnakeEye)
+        BDU_45 = (6, Weapons.BDU_45)
+        BDU_45B = (6, Weapons.BDU_45B)
+        _3_BDU_33_ = (6, Weapons._3_BDU_33_)
+        Mk_83 = (6, Weapons.Mk_83)
+        GBU_12 = (6, Weapons.GBU_12)
+        GBU_16 = (6, Weapons.GBU_16)
+        Mk_20 = (6, Weapons.Mk_20)
+        CBU_99 = (6, Weapons.CBU_99)
+        ADM_141A_ = (6, Weapons.ADM_141A_)
+        Mk_84 = (6, Weapons.Mk_84)
+        GBU_24 = (6, Weapons.GBU_24)
+        SUU_25___8_LUU_2_ = (6, Weapons.SUU_25___8_LUU_2_)
+        MAK79_3_Mk_81_ = (6, Weapons.MAK79_3_Mk_81_)
+        MAK79_3_Mk_82_ = (6, Weapons.MAK79_3_Mk_82_)
+        MAK79_3_BDU_45_ = (6, Weapons.MAK79_3_BDU_45_)
+        MAK79_3_BDU_45B_ = (6, Weapons.MAK79_3_BDU_45B_)
+        MAK79_3_BDU_33_ = (6, Weapons.MAK79_3_BDU_33_)
+        MAK79_3_Mk_82AIR_ = (6, Weapons.MAK79_3_Mk_82AIR_)
+        MAK79_3_Mk_82_SnakeEye_ = (6, Weapons.MAK79_3_Mk_82_SnakeEye_)
+        MAK79_Mk_83 = (6, Weapons.MAK79_Mk_83)
+        MAK79_MK_20 = (6, Weapons.MAK79_MK_20)
+        MAK79_CBU_99 = (6, Weapons.MAK79_CBU_99)
+
+    class Pylon7:
+        AIM_54A_Mk47 = (7, Weapons.AIM_54A_Mk47)
+        AIM_54A_Mk60 = (7, Weapons.AIM_54A_Mk60)
+        AIM_54C_Mk47 = (7, Weapons.AIM_54C_Mk47)
+        AIM_54C_Mk60 = (7, Weapons.AIM_54C_Mk60)
+        AIM_7M__ = (7, Weapons.AIM_7M__)
+        AIM_7F__ = (7, Weapons.AIM_7F__)
+        AIM_7MH_ = (7, Weapons.AIM_7MH_)
+#ERRR <CLEAN>
+        AIM_7P_ = (7, Weapons.AIM_7P_)
+        Mk_82 = (7, Weapons.Mk_82)
+        ALQ_167__non_functional_ = (7, Weapons.ALQ_167__non_functional_)
+        Mk_82AIR = (7, Weapons.Mk_82AIR)
+        Mk_82_SnakeEye = (7, Weapons.Mk_82_SnakeEye)
+        BDU_45 = (7, Weapons.BDU_45)
+        BDU_45B = (7, Weapons.BDU_45B)
+        _3_BDU_33_ = (7, Weapons._3_BDU_33_)
+        Mk_83 = (7, Weapons.Mk_83)
+        GBU_12 = (7, Weapons.GBU_12)
+        GBU_16 = (7, Weapons.GBU_16)
+        Mk_20 = (7, Weapons.Mk_20)
+        CBU_99 = (7, Weapons.CBU_99)
+        ADM_141A_ = (7, Weapons.ADM_141A_)
+        Mk_84 = (7, Weapons.Mk_84)
+        LAU_10___4_ZUNI_MK_71_ = (7, Weapons.LAU_10___4_ZUNI_MK_71_)
+        GBU_10 = (7, Weapons.GBU_10)
+        MAK79_4_Mk_81 = (7, Weapons.MAK79_4_Mk_81)
+        MAK79_4_Mk_82 = (7, Weapons.MAK79_4_Mk_82)
+        MAK79_4_BDU_45 = (7, Weapons.MAK79_4_BDU_45)
+        MAK79_4_BDU_45B = (7, Weapons.MAK79_4_BDU_45B)
+        MAK79_4_BDU_33 = (7, Weapons.MAK79_4_BDU_33)
+        MAK79_4_Mk_82AIR = (7, Weapons.MAK79_4_Mk_82AIR)
+        MAK79_4_Mk_82_SnakeEye = (7, Weapons.MAK79_4_Mk_82_SnakeEye)
+        MAK79_3_Mk_83_ = (7, Weapons.MAK79_3_Mk_83_)
+        MAK79_2_MK_20_ = (7, Weapons.MAK79_2_MK_20_)
+        MAK79_2_CBU_99_ = (7, Weapons.MAK79_2_CBU_99_)
+
+    class Pylon8:
+        Fuel_tank_300_gal_ = (8, Weapons.Fuel_tank_300_gal_)
+        Fuel_tank_300_gal__empty_ = (8, Weapons.Fuel_tank_300_gal__empty_)
+#ERRR <CLEAN>
+
+    class Pylon9:
+        AIM_54C_Mk47__ = (9, Weapons.AIM_54C_Mk47__)
+        AIM_54C_Mk60__ = (9, Weapons.AIM_54C_Mk60__)
+        AIM_54A_Mk47__ = (9, Weapons.AIM_54A_Mk47__)
+        AIM_54A_Mk60__ = (9, Weapons.AIM_54A_Mk60__)
+        AIM_7M_ = (9, Weapons.AIM_7M_)
+        AIM_7F_ = (9, Weapons.AIM_7F_)
+        AIM_7MH = (9, Weapons.AIM_7MH)
+        LAU_7_AIM_9M = (9, Weapons.LAU_7_AIM_9M)
+        LAU_7_AIM_9L = (9, Weapons.LAU_7_AIM_9L)
+        LAU_7_AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (9, Weapons.LAU_7_AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
+        AIM_7P = (9, Weapons.AIM_7P)
+        _2_LAU_10___4_ZUNI_MK_71______ = (9, Weapons._2_LAU_10___4_ZUNI_MK_71______)
+        _2_Mk_81__ = (9, Weapons._2_Mk_81__)
+        _2_Mk_82__ = (9, Weapons._2_Mk_82__)
+        _2_Mk_82AIR__ = (9, Weapons._2_Mk_82AIR__)
+        _2_Mk_82_SnakeEye__ = (9, Weapons._2_Mk_82_SnakeEye__)
+        _2_MK_20__ = (9, Weapons._2_MK_20__)
+        _2_CBU_99__ = (9, Weapons._2_CBU_99__)
+        Mk_83___ = (9, Weapons.Mk_83___)
+        _3_BDU_33____ = (9, Weapons._3_BDU_33____)
+        _2_BDU_45__ = (9, Weapons._2_BDU_45__)
+        _2_BDU_45B__ = (9, Weapons._2_BDU_45B__)
+        LANTIRN_Targeting_Pod = (9, Weapons.LANTIRN_Targeting_Pod)
+
+    class Pylon10:
+        LAU_138_AIM_9M = (10, Weapons.LAU_138_AIM_9M)
+        LAU_138_AIM_9L = (10, Weapons.LAU_138_AIM_9L)
+        AN_ASQ_T50_TCTS_Pod___ACMI_Pod__ = (10, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod__)
+        CATM_9M = (10, Weapons.CATM_9M)
+        Smokewinder___red = (10, Weapons.Smokewinder___red)
+        Smokewinder___green = (10, Weapons.Smokewinder___green)
+        Smokewinder___blue = (10, Weapons.Smokewinder___blue)
+        Smokewinder___white = (10, Weapons.Smokewinder___white)
+        Smokewinder___yellow = (10, Weapons.Smokewinder___yellow)
+        Smokewinder___orange = (10, Weapons.Smokewinder___orange)
+
+    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+    tasks = [task.CAP, task.Escort, task.FighterSweep, task.Intercept, task.Reconnaissance, task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.AntishipStrike, task.CAS, task.AFAC, task.SEAD]
+    task_default = task.Intercept
+
+
 class F_14A_135_GR(PlaneType):
     id = "F-14A-135-GR"
     flyable = True
@@ -14590,8 +15591,8 @@ class F4U_1D(PlaneType):
         HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (4, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
 
     class Pylon5:
-        Mk5_Universal_Drop_Tank_150_Corsair = (5, Weapons.Mk5_Universal_Drop_Tank_150_Corsair)
-        Mk_6_Lockheed_Drop_Tank_150_U_S__Gal = (5, Weapons.Mk_6_Lockheed_Drop_Tank_150_U_S__Gal)
+        Mk_5_Universal_Drop_Tank_150_U_S__Gal = (5, Weapons.Mk_5_Universal_Drop_Tank_150_U_S__Gal)
+        Mk_6_Lockheed_Drop_Tank_165_U_S__Gal = (5, Weapons.Mk_6_Lockheed_Drop_Tank_165_U_S__Gal)
         Tiny_Tim__Corsair____569_kg__unguided_rocket = (5, Weapons.Tiny_Tim__Corsair____569_kg__unguided_rocket)
         AN_M30A1___100lb_GP_Bomb_LD = (5, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
         AN_M57___250lb_GP_Bomb_LD = (5, Weapons.AN_M57___250lb_GP_Bomb_LD)
@@ -14605,8 +15606,8 @@ class F4U_1D(PlaneType):
         ASM_N_2_Bat___1000lb_Radar_Guided_Glide_Bomb = (6, Weapons.ASM_N_2_Bat___1000lb_Radar_Guided_Glide_Bomb)
 
     class Pylon7:
-        Mk5_Universal_Drop_Tank_150_Corsair = (7, Weapons.Mk5_Universal_Drop_Tank_150_Corsair)
-        Mk_6_Lockheed_Drop_Tank_150_U_S__Gal = (7, Weapons.Mk_6_Lockheed_Drop_Tank_150_U_S__Gal)
+        Mk_5_Universal_Drop_Tank_150_U_S__Gal = (7, Weapons.Mk_5_Universal_Drop_Tank_150_U_S__Gal)
+        Mk_6_Lockheed_Drop_Tank_165_U_S__Gal = (7, Weapons.Mk_6_Lockheed_Drop_Tank_165_U_S__Gal)
         Tiny_Tim__Corsair____569_kg__unguided_rocket_ = (7, Weapons.Tiny_Tim__Corsair____569_kg__unguided_rocket_)
         AN_M30A1___100lb_GP_Bomb_LD = (7, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
         AN_M57___250lb_GP_Bomb_LD = (7, Weapons.AN_M57___250lb_GP_Bomb_LD)
@@ -14680,9 +15681,9 @@ class F4U_1D_CW(PlaneType):
         "F4U_GunsConvergence_Mid": 2,
         "F4U_GunsConvergence_Outer": 2,
         "F4U_CW_number": True,
-        "F4U_CW_number_1": 9,
-        "F4U_CW_number_2": 4,
-        "F4U_CW_number_3": 1,
+        "F4U_CW_number_1": 1,
+        "F4U_CW_number_2": 6,
+        "F4U_CW_number_3": 3,
     }
 
     class Properties:
@@ -14830,7 +15831,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_1",
             control="comboList",
             label="1st number",
-            default=9,
+            default=1,
             values={
                 0: "0",
                 1: "1",
@@ -14848,7 +15849,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_2",
             control="comboList",
             label="2nd number",
-            default=4,
+            default=6,
             values={
                 0: "0",
                 1: "1",
@@ -14866,7 +15867,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_3",
             control="comboList",
             label="3rd number",
-            default=1,
+            default=3,
             values={
                 0: "0",
                 1: "1",
@@ -14897,8 +15898,8 @@ class F4U_1D_CW(PlaneType):
         HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket = (4, Weapons.HVAR_USN_Mk28_Mod4__Corsair____64_kg__unguided_rocket)
 
     class Pylon5:
-        Mk5_Universal_Drop_Tank_150_Corsair = (5, Weapons.Mk5_Universal_Drop_Tank_150_Corsair)
-        Mk_6_Lockheed_Drop_Tank_150_U_S__Gal = (5, Weapons.Mk_6_Lockheed_Drop_Tank_150_U_S__Gal)
+        Mk_5_Universal_Drop_Tank_150_U_S__Gal = (5, Weapons.Mk_5_Universal_Drop_Tank_150_U_S__Gal)
+        Mk_6_Lockheed_Drop_Tank_165_U_S__Gal = (5, Weapons.Mk_6_Lockheed_Drop_Tank_165_U_S__Gal)
         Tiny_Tim__Corsair____569_kg__unguided_rocket = (5, Weapons.Tiny_Tim__Corsair____569_kg__unguided_rocket)
         AN_M30A1___100lb_GP_Bomb_LD = (5, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
         AN_M57___250lb_GP_Bomb_LD = (5, Weapons.AN_M57___250lb_GP_Bomb_LD)
@@ -14912,8 +15913,8 @@ class F4U_1D_CW(PlaneType):
         ASM_N_2_Bat___1000lb_Radar_Guided_Glide_Bomb = (6, Weapons.ASM_N_2_Bat___1000lb_Radar_Guided_Glide_Bomb)
 
     class Pylon7:
-        Mk5_Universal_Drop_Tank_150_Corsair = (7, Weapons.Mk5_Universal_Drop_Tank_150_Corsair)
-        Mk_6_Lockheed_Drop_Tank_150_U_S__Gal = (7, Weapons.Mk_6_Lockheed_Drop_Tank_150_U_S__Gal)
+        Mk_5_Universal_Drop_Tank_150_U_S__Gal = (7, Weapons.Mk_5_Universal_Drop_Tank_150_U_S__Gal)
+        Mk_6_Lockheed_Drop_Tank_165_U_S__Gal = (7, Weapons.Mk_6_Lockheed_Drop_Tank_165_U_S__Gal)
         Tiny_Tim__Corsair____569_kg__unguided_rocket_ = (7, Weapons.Tiny_Tim__Corsair____569_kg__unguided_rocket_)
         AN_M30A1___100lb_GP_Bomb_LD = (7, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
         AN_M57___250lb_GP_Bomb_LD = (7, Weapons.AN_M57___250lb_GP_Bomb_LD)
@@ -33047,12 +34048,14 @@ plane_map = {
     "F-15ESE": F_15ESE,
     "F-16C_50": F_16C_50,
     "F-4E-45MC": F_4E_45MC,
+    "QF-4E": QF_4E,
     "F-5E": F_5E,
     "F-5E-3": F_5E_3,
     "F-5E-3_FC": F_5E_3_FC,
     "F-86F Sabre": F_86F_Sabre,
     "F-86F_FC": F_86F_FC,
     "F-14B": F_14B,
+    "F-14A-135-GR-Early": F_14A_135_GR_Early,
     "F-14A-135-GR": F_14A_135_GR,
     "F4U-1D": F4U_1D,
     "F4U-1D_CW": F4U_1D_CW,
