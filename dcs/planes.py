@@ -9927,6 +9927,253 @@ class C_101CC(PlaneType):
     task_default = task.CAS
 
 
+class C_130J_30(PlaneType):
+    id = "C-130J-30"
+    flyable = True
+    height = 11.84
+    width = 40.41
+    length = 44.36
+    fuel_max = 19692
+    max_speed = 630
+    chaff = 220
+    flare = 200
+    charge_total = 420
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    tacan = True
+    radio_frequency = 305
+
+    panel_radio = {
+        1: {
+            "channels": {
+                1: 305,
+                2: 259,
+                4: 256,
+                8: 257,
+                16: 261,
+                17: 267,
+                9: 255,
+                18: 251,
+                5: 254,
+                10: 262,
+                20: 266,
+                11: 275,
+                3: 265,
+                6: 250,
+                12: 252,
+                13: 269,
+                7: 270,
+                14: 260,
+                19: 253,
+                15: 263
+            },
+        },
+        2: {
+            "channels": {
+                7: 119,
+                1: 130,
+                2: 131,
+                4: 116,
+                8: 120,
+                9: 121,
+                5: 117,
+                10: 122,
+                3: 121,
+                6: 118
+            },
+        },
+    }
+
+    property_defaults: Dict[str, Any] = {
+        "NetCrewControlPriority": 0,
+        "pre_flight_complete": False,
+        "ramp_down": False,
+        "save_custom_data": True,
+        "allow_air_load": False,
+        "cargo_1": None,
+        "cargo_2": None,
+        "cargo_3": None,
+        "cargo_4": None,
+        "cargo_5": None,
+        "cargo_6": None,
+        "cargo_7": None,
+        "cargo_8": None,
+        "cargo_9": None,
+        "cargo_10": None,
+    }
+
+    class Properties:
+
+        class NetCrewControlPriority:
+            id = "NetCrewControlPriority"
+
+            class Values:
+                Pilot = 0
+                Copilot = 1
+                Ask_Always = -1
+                Equally_Responsible = -2
+
+        class pre_flight_complete:
+            id = "pre_flight_complete"
+
+        class ramp_down:
+            id = "ramp_down"
+
+        class save_custom_data:
+            id = "save_custom_data"
+
+        class allow_air_load:
+            id = "allow_air_load"
+
+        class cargo_1:
+            id = "cargo_1"
+
+        class cargo_2:
+            id = "cargo_2"
+
+        class cargo_3:
+            id = "cargo_3"
+
+        class cargo_4:
+            id = "cargo_4"
+
+        class cargo_5:
+            id = "cargo_5"
+
+        class cargo_6:
+            id = "cargo_6"
+
+        class cargo_7:
+            id = "cargo_7"
+
+        class cargo_8:
+            id = "cargo_8"
+
+        class cargo_9:
+            id = "cargo_9"
+
+        class cargo_10:
+            id = "cargo_10"
+
+    properties = {
+        "NetCrewControlPriority": UnitPropertyDescription(
+            identifier="NetCrewControlPriority",
+            control="comboList",
+            label="Aircraft Control Priority",
+            player_only=True,
+            default=0,
+            values={
+                0: "Pilot",
+                1: "Copilot",
+                -1: "Ask Always",
+                -2: "Equally Responsible",
+            },
+        ),
+        "pre_flight_complete": UnitPropertyDescription(
+            identifier="pre_flight_complete",
+            control="checkbox",
+            label="Pre-flight Complete",
+            default=False,
+        ),
+        "ramp_down": UnitPropertyDescription(
+            identifier="ramp_down",
+            control="checkbox",
+            label="Set Ramp Open",
+            default=False,
+        ),
+        "save_custom_data": UnitPropertyDescription(
+            identifier="save_custom_data",
+            control="checkbox",
+            label="Save Custom Data Entries",
+            default=True,
+        ),
+        "allow_air_load": UnitPropertyDescription(
+            identifier="allow_air_load",
+            control="checkbox",
+            label="Allow Cargo Loading In Flight",
+            default=False,
+        ),
+        "cargo_1": UnitPropertyDescription(
+            identifier="cargo_1",
+            control="editbox",
+            label="Cargo 1",
+            player_only=True,
+        ),
+        "cargo_2": UnitPropertyDescription(
+            identifier="cargo_2",
+            control="editbox",
+            label="Cargo 2",
+            player_only=True,
+        ),
+        "cargo_3": UnitPropertyDescription(
+            identifier="cargo_3",
+            control="editbox",
+            label="Cargo 3",
+            player_only=True,
+        ),
+        "cargo_4": UnitPropertyDescription(
+            identifier="cargo_4",
+            control="editbox",
+            label="Cargo 4",
+            player_only=True,
+        ),
+        "cargo_5": UnitPropertyDescription(
+            identifier="cargo_5",
+            control="editbox",
+            label="Cargo 5",
+            player_only=True,
+        ),
+        "cargo_6": UnitPropertyDescription(
+            identifier="cargo_6",
+            control="editbox",
+            label="Cargo 6",
+            player_only=True,
+        ),
+        "cargo_7": UnitPropertyDescription(
+            identifier="cargo_7",
+            control="editbox",
+            label="Cargo 7",
+            player_only=True,
+        ),
+        "cargo_8": UnitPropertyDescription(
+            identifier="cargo_8",
+            control="editbox",
+            label="Cargo 8",
+            player_only=True,
+        ),
+        "cargo_9": UnitPropertyDescription(
+            identifier="cargo_9",
+            control="editbox",
+            label="Cargo 9",
+            player_only=True,
+        ),
+        "cargo_10": UnitPropertyDescription(
+            identifier="cargo_10",
+            control="editbox",
+            label="Cargo 10",
+            player_only=True,
+        ),
+    }
+
+    livery_name = "C-130J-30"  # from type
+
+    class Pylon1:
+        Fuel_Tank_8900_pounds = (1, Weapons.Fuel_Tank_8900_pounds)
+#ERRR <CLEAN>
+
+    class Pylon2:
+        Fuel_Tank_8900_pounds_ = (2, Weapons.Fuel_Tank_8900_pounds_)
+#ERRR <CLEAN>
+
+    class Pylon3:
+        Cargo_Bay_M4 = (3, Weapons.Cargo_Bay_M4)
+
+    pylons: Set[int] = {1, 2, 3}
+
+    tasks = [task.Transport, task.GroundAttack, task.Refueling]
+    task_default = task.Transport
+
+
 class J_11A(PlaneType):
     id = "J-11A"
     flyable = True
@@ -11809,7 +12056,7 @@ class F_4E_45MC(PlaneType):
             id = "UseReferenceAircraft"
 
             class Values:
-                Random = 0
+                Default = 0
                 Reference = 1
                 Persistent = 2
 
@@ -11930,7 +12177,7 @@ class F_4E_45MC(PlaneType):
             player_only=True,
             default=0,
             values={
-                0: "Random",
+                0: "Default",
                 1: "Reference",
                 2: "Persistent",
             },
@@ -12732,7 +12979,7 @@ class QF_4E(PlaneType):
             id = "UseReferenceAircraft"
 
             class Values:
-                Random = 0
+                Default = 0
                 Reference = 1
                 Persistent = 2
 
@@ -12853,7 +13100,7 @@ class QF_4E(PlaneType):
             player_only=True,
             default=0,
             values={
-                0: "Random",
+                0: "Default",
                 1: "Reference",
                 2: "Persistent",
             },
@@ -15681,9 +15928,9 @@ class F4U_1D_CW(PlaneType):
         "F4U_GunsConvergence_Mid": 2,
         "F4U_GunsConvergence_Outer": 2,
         "F4U_CW_number": True,
-        "F4U_CW_number_1": 8,
-        "F4U_CW_number_2": 2,
-        "F4U_CW_number_3": 1,
+        "F4U_CW_number_1": 3,
+        "F4U_CW_number_2": 4,
+        "F4U_CW_number_3": 9,
     }
 
     class Properties:
@@ -15831,7 +16078,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_1",
             control="comboList",
             label="1st number",
-            default=8,
+            default=3,
             values={
                 0: "0",
                 1: "1",
@@ -15849,7 +16096,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_2",
             control="comboList",
             label="2nd number",
-            default=2,
+            default=4,
             values={
                 0: "0",
                 1: "1",
@@ -15867,7 +16114,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_3",
             control="comboList",
             label="3rd number",
-            default=1,
+            default=9,
             values={
                 0: "0",
                 1: "1",
@@ -18910,6 +19157,9 @@ class MiG_29_Fulcrum(PlaneType):
     }
 
     property_defaults: Dict[str, Any] = {
+        "HUDLanguage": 0,
+        "AvionicsLanguage": 0,
+        "AvionicsUnits": 0,
         "Realistic_INS": 1,
         "IMU_alignment_type": 1,
         "SPOMode": 1,
@@ -18918,6 +19168,30 @@ class MiG_29_Fulcrum(PlaneType):
     }
 
     class Properties:
+
+        class HUDLanguage:
+            id = "HUDLanguage"
+
+            class Values:
+                User = 0
+                Russian__Native = 1
+                English = 2
+
+        class AvionicsLanguage:
+            id = "AvionicsLanguage"
+
+            class Values:
+                User = 0
+                Russian__Native = 1
+                English = 2
+
+        class AvionicsUnits:
+            id = "AvionicsUnits"
+
+            class Values:
+                User = 0
+                Metric__Native = 1
+                Imperial = 2
 
         class Realistic_INS:
             id = "Realistic INS"
@@ -18951,6 +19225,45 @@ class MiG_29_Fulcrum(PlaneType):
                 HMS = 1
 
     properties = {
+        "HUDLanguage": UnitPropertyDescription(
+            identifier="HUDLanguage",
+            control="comboList",
+            label="HUD/HDD Language",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "User",
+                1: "Russian (Native)",
+                2: "English",
+            },
+        ),
+        "AvionicsLanguage": UnitPropertyDescription(
+            identifier="AvionicsLanguage",
+            control="comboList",
+            label="Avionics Language",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "User",
+                1: "Russian (Native)",
+                2: "English",
+            },
+        ),
+        "AvionicsUnits": UnitPropertyDescription(
+            identifier="AvionicsUnits",
+            control="comboList",
+            label="Avionics Units",
+            player_only=True,
+            default=0,
+            w_ctrl=150,
+            values={
+                0: "User",
+                1: "Metric (Native)",
+                2: "Imperial",
+            },
+        ),
         "Realistic INS": UnitPropertyDescription(
             identifier="Realistic INS",
             control="comboList",
@@ -34038,6 +34351,7 @@ plane_map = {
     "KC135MPRS": KC135MPRS,
     "C-101EB": C_101EB,
     "C-101CC": C_101CC,
+    "C-130J-30": C_130J_30,
     "J-11A": J_11A,
     "JF-17": JF_17,
     "KJ-2000": KJ_2000,

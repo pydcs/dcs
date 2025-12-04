@@ -165,7 +165,7 @@ class SOM(unittype.ShipType):
 
 class CHAP_Project22160(unittype.ShipType):
     id = "CHAP_Project22160"
-    name = "Project 22160 Patrol Ship [CH]"
+    name = "Patrol Ship 22160 Vasily Bykov [CH]"
     plane_num = 0
     helicopter_num = 1
     parking = 1
@@ -176,7 +176,7 @@ class CHAP_Project22160(unittype.ShipType):
 
 class CHAP_Project22160_TorM2KM(unittype.ShipType):
     id = "CHAP_Project22160_TorM2KM"
-    name = "Project 22160 Patrol Ship with Tor M2KM [CH]"
+    name = "Patrol ship 22160 Vasily Bykov with Tor M2KM [CH]"
     plane_num = 0
     helicopter_num = 0
     parking = 0
