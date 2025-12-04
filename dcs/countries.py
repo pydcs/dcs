@@ -251,6 +251,7 @@ class Russia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -336,6 +337,7 @@ class Russia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -1217,6 +1219,7 @@ class USA(Country):
         AJS37 = planes.AJS37
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         F_15ESE = planes.F_15ESE
@@ -1303,6 +1306,7 @@ class USA(Country):
         Plane.AJS37,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.F_15ESE,
@@ -1657,6 +1661,7 @@ class Turkey(Country):
         KC130 = planes.KC130
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -1721,6 +1726,7 @@ class Turkey(Country):
         Plane.KC130,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -2067,6 +2073,7 @@ class UK(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -2130,6 +2137,7 @@ class UK(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -2473,6 +2481,7 @@ class France(Country):
         AV8BNA = planes.AV8BNA
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -2541,6 +2550,7 @@ class France(Country):
         Plane.AV8BNA,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -2962,6 +2972,7 @@ class Germany(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -3027,6 +3038,7 @@ class Germany(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -3621,6 +3633,7 @@ class USAFAggressors(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         J_11A = planes.J_11A
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
@@ -3758,6 +3771,7 @@ class USAFAggressors(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.J_11A,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
@@ -4245,6 +4259,7 @@ class Canada(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -4304,6 +4319,7 @@ class Canada(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -4626,6 +4642,7 @@ class Spain(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -4691,6 +4708,7 @@ class Spain(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -5044,6 +5062,7 @@ class TheNetherlands(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -5107,6 +5126,7 @@ class TheNetherlands(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -5442,6 +5462,7 @@ class Belgium(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -5503,6 +5524,7 @@ class Belgium(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -5817,6 +5839,7 @@ class Norway(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -5878,6 +5901,7 @@ class Norway(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -6188,6 +6212,7 @@ class Denmark(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -6249,6 +6274,7 @@ class Denmark(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -6575,6 +6601,7 @@ class Israel(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -6639,6 +6666,7 @@ class Israel(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -7012,6 +7040,7 @@ class Georgia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -7073,6 +7102,7 @@ class Georgia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -7401,6 +7431,7 @@ class Insurgents(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -7456,6 +7487,7 @@ class Insurgents(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -8315,6 +8347,7 @@ class Italy(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -8380,6 +8413,7 @@ class Italy(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -8710,6 +8744,7 @@ class Australia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -8769,6 +8804,7 @@ class Australia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -9405,6 +9441,7 @@ class Austria(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -9460,6 +9497,7 @@ class Austria(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -10209,6 +10247,7 @@ class Bulgaria(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -10272,6 +10311,7 @@ class Bulgaria(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -11004,6 +11044,7 @@ class China(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         WingLoong_I = planes.WingLoong_I
         H_6J = planes.H_6J
@@ -11070,6 +11111,7 @@ class China(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.WingLoong_I,
         Plane.H_6J,
@@ -11711,6 +11753,7 @@ class Egypt(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -11772,6 +11815,7 @@ class Egypt(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -12534,6 +12578,7 @@ class Greece(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -12596,6 +12641,7 @@ class Greece(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -13358,6 +13404,7 @@ class India(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -13421,6 +13468,7 @@ class India(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -13784,6 +13832,7 @@ class Iran(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -13850,6 +13899,7 @@ class Iran(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -14213,6 +14263,7 @@ class Iraq(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -14277,6 +14328,7 @@ class Iraq(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -14622,6 +14674,7 @@ class Japan(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -14679,6 +14732,7 @@ class Japan(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -15834,6 +15888,7 @@ class Pakistan(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
         F_15ESE = planes.F_15ESE
@@ -15896,6 +15951,7 @@ class Pakistan(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
         Plane.F_15ESE,
@@ -16257,6 +16313,7 @@ class Poland(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -16322,6 +16379,7 @@ class Poland(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -16684,6 +16742,7 @@ class Romania(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -16744,6 +16803,7 @@ class Romania(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -17070,6 +17130,7 @@ class SaudiArabia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -17131,6 +17192,7 @@ class SaudiArabia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -18227,6 +18289,7 @@ class SouthKorea(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -18287,6 +18350,7 @@ class SouthKorea(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -18576,6 +18640,7 @@ class Sweden(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -18634,6 +18699,7 @@ class Sweden(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -19372,6 +19438,7 @@ class Yemen(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -19430,6 +19497,7 @@ class Yemen(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -20138,6 +20206,7 @@ class Venezuela(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -20195,6 +20264,7 @@ class Venezuela(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -20480,6 +20550,7 @@ class Tunisia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -20535,6 +20606,7 @@ class Tunisia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -20830,6 +20902,7 @@ class Thailand(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -20888,6 +20961,7 @@ class Thailand(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -21192,6 +21266,7 @@ class Sudan(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -21251,6 +21326,7 @@ class Sudan(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -21532,6 +21608,7 @@ class Philippines(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -21589,6 +21666,7 @@ class Philippines(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -21893,6 +21971,7 @@ class Morocco(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -21952,6 +22031,7 @@ class Morocco(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -22240,6 +22320,7 @@ class Mexico(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -22296,6 +22377,7 @@ class Mexico(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -22594,6 +22676,7 @@ class Malaysia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -22650,6 +22733,7 @@ class Malaysia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -22965,6 +23049,7 @@ class Libya(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -23025,6 +23110,7 @@ class Libya(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -23338,6 +23424,7 @@ class Jordan(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -23397,6 +23484,7 @@ class Jordan(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -23732,6 +23820,7 @@ class Indonesia(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -23794,6 +23883,7 @@ class Indonesia(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -24079,6 +24169,7 @@ class Honduras(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -24134,6 +24225,7 @@ class Honduras(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -24802,6 +24894,7 @@ class Chile(Country):
         KC130 = planes.KC130
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -24863,6 +24956,7 @@ class Chile(Country):
         Plane.KC130,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -25177,6 +25271,7 @@ class Brazil(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -25233,6 +25328,7 @@ class Brazil(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -27445,6 +27541,7 @@ class Algeria(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -27516,6 +27613,7 @@ class Algeria(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -27841,6 +27939,7 @@ class Kuwait(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -27898,6 +27997,7 @@ class Kuwait(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -28565,6 +28665,7 @@ class Oman(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -28622,6 +28723,7 @@ class Oman(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -28943,6 +29045,7 @@ class UnitedArabEmirates(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -29002,6 +29105,7 @@ class UnitedArabEmirates(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -29296,6 +29400,7 @@ class SouthAfrica(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -29355,6 +29460,7 @@ class SouthAfrica(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -30067,6 +30173,7 @@ class Portugal(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -30127,6 +30234,7 @@ class Portugal(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,
@@ -31546,6 +31654,7 @@ class CombinedJointTaskForcesBlue(Country):
         Yak_40 = planes.Yak_40
         C_130 = planes.C_130
         MiG_29S = planes.MiG_29S
+        C_130J_30 = planes.C_130J_30
         Mirage_2000_5 = planes.Mirage_2000_5
         P_51D_30_NA = planes.P_51D_30_NA
         F_16C_bl_50 = planes.F_16C_bl_50
@@ -31683,6 +31792,7 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.Yak_40,
         Plane.C_130,
         Plane.MiG_29S,
+        Plane.C_130J_30,
         Plane.Mirage_2000_5,
         Plane.P_51D_30_NA,
         Plane.F_16C_bl_50,
@@ -32435,6 +32545,7 @@ class CombinedJointTaskForcesRed(Country):
         Yak_40 = planes.Yak_40
         C_130 = planes.C_130
         MiG_29S = planes.MiG_29S
+        C_130J_30 = planes.C_130J_30
         Mirage_2000_5 = planes.Mirage_2000_5
         P_51D_30_NA = planes.P_51D_30_NA
         F_16C_bl_50 = planes.F_16C_bl_50
@@ -32572,6 +32683,7 @@ class CombinedJointTaskForcesRed(Country):
         Plane.Yak_40,
         Plane.C_130,
         Plane.MiG_29S,
+        Plane.C_130J_30,
         Plane.Mirage_2000_5,
         Plane.P_51D_30_NA,
         Plane.F_16C_bl_50,
@@ -33324,6 +33436,7 @@ class UnitedNationsPeacekeepers(Country):
         Yak_40 = planes.Yak_40
         C_130 = planes.C_130
         MiG_29S = planes.MiG_29S
+        C_130J_30 = planes.C_130J_30
         Mirage_2000_5 = planes.Mirage_2000_5
         P_51D_30_NA = planes.P_51D_30_NA
         F_16C_bl_50 = planes.F_16C_bl_50
@@ -33461,6 +33574,7 @@ class UnitedNationsPeacekeepers(Country):
         Plane.Yak_40,
         Plane.C_130,
         Plane.MiG_29S,
+        Plane.C_130J_30,
         Plane.Mirage_2000_5,
         Plane.P_51D_30_NA,
         Plane.F_16C_bl_50,
@@ -33851,6 +33965,7 @@ class Argentina(Country):
         KC135MPRS = planes.KC135MPRS
         C_101EB = planes.C_101EB
         C_101CC = planes.C_101CC
+        C_130J_30 = planes.C_130J_30
         JF_17 = planes.JF_17
         Falcon_Gyrocopter = planes.Falcon_Gyrocopter
         Christen_Eagle_II = planes.Christen_Eagle_II
@@ -33907,6 +34022,7 @@ class Argentina(Country):
         Plane.KC135MPRS,
         Plane.C_101EB,
         Plane.C_101CC,
+        Plane.C_130J_30,
         Plane.JF_17,
         Plane.Falcon_Gyrocopter,
         Plane.Christen_Eagle_II,

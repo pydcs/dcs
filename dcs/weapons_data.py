@@ -377,6 +377,7 @@ class Weapons:
     B_8V20A_OM = {"clsid": "B_8V20A_OM", "name": "B-8V20A - 20 x UnGd Rkts, 80 mm S-8OM IL", "weight": 364}
     B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = {"clsid": "{6A4B9E69-64FE-439a-9163-3A87FB6A4D81}", "name": "B-8V20A - 20 x UnGd Rkts, 80 mm S-8KOM HEAT/Frag", "weight": 348}
     CATM_9M = {"clsid": "CATM-9M", "name": "Captive AIM-9M for ACM", "weight": 85.73}
+    Cargo_Bay_M4 = {"clsid": "{C130-Cargo-Bay-M4}", "name": "Cargo-Bay-M4", "weight": 1}
     CBLS_200 = {"clsid": "CBLS-200", "name": "4*BDU-33 - AF/B37K Rack with 4*25lb Practice Bomb LD", "weight": 84.4}
     CBM___28_x_Mk_82_AIR_Ballute___500lb_GP_Bomb_HD = {"clsid": "{CBM_Mk82AIR}", "name": "CBM - 28 x Mk-82 AIR Ballute - 500lb GP Bomb HD", "weight": 8211.4}
     CBU87_10 = {"clsid": "CBU87*10", "name": "SECBM - 10 x CBU-87 - 202 x CEM Cluster Bomb", "weight": 5477.3}
@@ -545,6 +546,8 @@ class Weapons:
     Fuel_Tank_490_L_Central__21_ = {"clsid": "{PTB_490C_MIG21}", "name": "Fuel Tank 490 L Central (21)", "weight": 434}
     Fuel_Tank_490_L__21_ = {"clsid": "{PTB_490_MIG21}", "name": "Fuel Tank 490 L (21)", "weight": 434}
     Fuel_Tank_800_L__21_ = {"clsid": "{PTB_800_MIG21}", "name": "Fuel Tank 800 L (21)", "weight": 682}
+    Fuel_Tank_8900_pounds = {"clsid": "{C130J_Ext_Tank_L}", "name": "Fuel Tank 8900 pounds", "weight": 4145.83088}
+    Fuel_Tank_8900_pounds_ = {"clsid": "{C130J_Ext_Tank_R}", "name": "Fuel Tank 8900 pounds", "weight": 4145.83088}
     Fuel_Tank_FT600 = {"clsid": "Fuel_Tank_FT600", "name": "Fuel tank FT600", "weight": 1925}
     Fuel_tank_1150L = {"clsid": "{414E383A-59EB-41BC-8566-2B5E0788ED1F}", "name": "Fuel tank 1150L", "weight": 975.25}
     Fuel_tank_1150L_MiG_29 = {"clsid": "{C0FF4842-FBAC-11d5-9190-00A0249B6F00}", "name": "Fuel tank 1150L MiG-29", "weight": 975.25}
@@ -905,6 +908,7 @@ class Weapons:
     M134_SIDE_L = {"clsid": "M134_SIDE_L", "name": "M134 - 6 x 7.62mm MiniGun left door", "weight": 270.4}
     M134_SIDE_R = {"clsid": "M134_SIDE_R", "name": "M134 - 6 x 7.62mm MiniGun right door", "weight": 270.4}
     M134___6_x_7_62mm_MiniGun_right_door = {"clsid": "{SA342_M134_SIDE_R}", "name": "M134 - 6 x 7.62mm MiniGun right door", "weight": 270.4}
+    M18_Sidearm = {"clsid": "{C130-M18-Sidearm}", "name": "M18-Sidearm", "weight": 4.3}
     M2000_Fuel_tank = {"clsid": "{414DA830-B61A-4F9E-B71B-C2F6832E1D7A}", "name": "M2000 Fuel tank", "weight": 1050}
     M240H = {"clsid": "{CH47_PORT_M240H}", "name": "M240H", "weight": 150.4}
     M240H_ = {"clsid": "{CH47_STBD_M240H}", "name": "M240H", "weight": 150.4}
@@ -2187,6 +2191,7 @@ weapon_ids = {
     "B_8V20A_OM": Weapons.B_8V20A_OM,
     "{6A4B9E69-64FE-439a-9163-3A87FB6A4D81}": Weapons.B_8V20A___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag,
     "CATM-9M": Weapons.CATM_9M,
+    "{C130-Cargo-Bay-M4}": Weapons.Cargo_Bay_M4,
     "CBLS-200": Weapons.CBLS_200,
     "{CBM_Mk82AIR}": Weapons.CBM___28_x_Mk_82_AIR_Ballute___500lb_GP_Bomb_HD,
     "CBU87*10": Weapons.CBU87_10,
@@ -2355,6 +2360,8 @@ weapon_ids = {
     "{PTB_490C_MIG21}": Weapons.Fuel_Tank_490_L_Central__21_,
     "{PTB_490_MIG21}": Weapons.Fuel_Tank_490_L__21_,
     "{PTB_800_MIG21}": Weapons.Fuel_Tank_800_L__21_,
+    "{C130J_Ext_Tank_L}": Weapons.Fuel_Tank_8900_pounds,
+    "{C130J_Ext_Tank_R}": Weapons.Fuel_Tank_8900_pounds_,
     "Fuel_Tank_FT600": Weapons.Fuel_Tank_FT600,
     "{414E383A-59EB-41BC-8566-2B5E0788ED1F}": Weapons.Fuel_tank_1150L,
     "{C0FF4842-FBAC-11d5-9190-00A0249B6F00}": Weapons.Fuel_tank_1150L_MiG_29,
@@ -2715,6 +2722,7 @@ weapon_ids = {
     "M134_SIDE_L": Weapons.M134_SIDE_L,
     "M134_SIDE_R": Weapons.M134_SIDE_R,
     "{SA342_M134_SIDE_R}": Weapons.M134___6_x_7_62mm_MiniGun_right_door,
+    "{C130-M18-Sidearm}": Weapons.M18_Sidearm,
     "{414DA830-B61A-4F9E-B71B-C2F6832E1D7A}": Weapons.M2000_Fuel_tank,
     "{CH47_PORT_M240H}": Weapons.M240H,
     "{CH47_STBD_M240H}": Weapons.M240H_,

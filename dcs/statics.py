@@ -462,6 +462,36 @@ class Fortification:
         shape_name = "barrelofbeer_support"
         rate = 5
 
+    class Drop_Zone_Marker_A(unittype.StaticType):
+        id = "Drop Zone Marker A"
+        name = "Drop Zone Marker A"
+        shape_name = "asc_drop_marker_tent"
+        rate = 1
+
+    class Drop_Zone_Marker_B(unittype.StaticType):
+        id = "Drop Zone Marker B"
+        name = "Drop Zone Marker B"
+        shape_name = "asc_drop_marker_cylinder"
+        rate = 1
+
+    class Drop_Zone_Marker_C(unittype.StaticType):
+        id = "Drop Zone Marker C"
+        name = "Drop Zone Marker C"
+        shape_name = "asc_drop_marker_triangle"
+        rate = 1
+
+    class Drop_Zone_Marker_D(unittype.StaticType):
+        id = "Drop Zone Marker D"
+        name = "Drop Zone Marker D"
+        shape_name = "asc_drop_marker_vertical_tall"
+        rate = 1
+
+    class Drop_Zone_Marker_E(unittype.StaticType):
+        id = "Drop Zone Marker E"
+        name = "Drop Zone Marker E"
+        shape_name = "asc_drop_marker_vertical_short"
+        rate = 1
+
     class AM32a_60_01(unittype.StaticType):
         id = "AM32a-60_01"
         name = "M92 AM32a-60-01"
@@ -1433,6 +1463,11 @@ fortification_map = {
     "Black_Tyre_WF": Fortification.Black_Tyre_WF,
     "Windsock": Fortification.Windsock,
     "Beer Bomb": Fortification.Beer_Bomb,
+    "Drop Zone Marker A": Fortification.Drop_Zone_Marker_A,
+    "Drop Zone Marker B": Fortification.Drop_Zone_Marker_B,
+    "Drop Zone Marker C": Fortification.Drop_Zone_Marker_C,
+    "Drop Zone Marker D": Fortification.Drop_Zone_Marker_D,
+    "Drop Zone Marker E": Fortification.Drop_Zone_Marker_E,
     "AM32a-60_01": Fortification.AM32a_60_01,
     "AM32a-60_02": Fortification.AM32a_60_02,
     "APFC fuel": Fortification.APFC_fuel,
@@ -1791,6 +1826,62 @@ class Cargo:
         rate = 100
         can_cargo = True
 
+    class Cds_crate(unittype.StaticType):
+        id = "cds_crate"
+        name = "CDS Crate"
+        shape_name = "cds_crate"
+        category = "Cargos"
+        rate = 1200
+        can_cargo = True
+
+    class Cds_barrels(unittype.StaticType):
+        id = "cds_barrels"
+        name = "CDS Barrels"
+        shape_name = "cds_barrels"
+        category = "Cargos"
+        rate = 1200
+        can_cargo = True
+
+    class X_463_Pallet(unittype.StaticType):
+        id = "463_Pallet"
+        name = "463 Pallet"
+        shape_name = "463_Pallet"
+        category = "Cargos"
+        rate = 100
+        can_cargo = True
+
+    class M92_Concrete_Barrier_Cargo(unittype.StaticType):
+        id = "M92_Concrete_Barrier_Cargo"
+        name = "Concrete Barrier"
+        shape_name = "M92_barrierb"
+        category = "Cargos"
+        rate = 1
+        can_cargo = True
+
+    class M92_MRE_Pallet(unittype.StaticType):
+        id = "M92_MRE_Pallet"
+        name = "MRE Pallet"
+        shape_name = "M92_Cargo01"
+        category = "Cargos"
+        rate = 1
+        can_cargo = True
+
+    class M92_Ammo_Pallet(unittype.StaticType):
+        id = "M92_Ammo_Pallet"
+        name = "Ammo Pallet"
+        shape_name = "M92_Cargo03"
+        category = "Cargos"
+        rate = 1
+        can_cargo = True
+
+    class M92_10Ft_Container(unittype.StaticType):
+        id = "M92_10Ft_Container"
+        name = "10ft Container"
+        shape_name = "M92_Container_10ft"
+        category = "Cargos"
+        rate = 1
+        can_cargo = True
+
     class L118(unittype.StaticType):
         id = "l118"
         name = "L118 Light Artillery"
@@ -1816,5 +1907,12 @@ cargo_map = {
     "trunks_small_cargo": Cargo.Trunks_small_cargo,
     "trunks_long_cargo": Cargo.Trunks_long_cargo,
     "gbu_43b_airdrop": Cargo.Gbu_43b_airdrop,
+    "cds_crate": Cargo.Cds_crate,
+    "cds_barrels": Cargo.Cds_barrels,
+    "463_Pallet": Cargo.X_463_Pallet,
+    "M92_Concrete_Barrier_Cargo": Cargo.M92_Concrete_Barrier_Cargo,
+    "M92_MRE_Pallet": Cargo.M92_MRE_Pallet,
+    "M92_Ammo_Pallet": Cargo.M92_Ammo_Pallet,
+    "M92_10Ft_Container": Cargo.M92_10Ft_Container,
     "l118": Cargo.L118,
 }
