@@ -44,7 +44,7 @@ class TICONDEROG(unittype.ShipType):
 
 class ALBATROS(unittype.ShipType):
     id = "ALBATROS"
-    name = "Corvette 1124.4 Grisha"
+    name = "Corvette 1124M Grisha [CH]"
     detection_range = 30000
     threat_range = 16000
     air_weapon_dist = 16000
@@ -490,6 +490,14 @@ class Type_071(unittype.ShipType):
     air_weapon_dist = 150000
 
 
+class Type_021_1(unittype.ShipType):
+    id = "Type_021_1"
+    name = "Type 021-1 Missile Boat"
+    detection_range = 30000
+    threat_range = 4000
+    air_weapon_dist = 4000
+
+
 class Forrestal(unittype.ShipType):
     id = "Forrestal"
     name = "CV-59 Forrestal"
@@ -591,6 +599,7 @@ ship_map = {
     "Type_052C": Type_052C,
     "Type_093": Type_093,
     "Type_071": Type_071,
+    "Type_021_1": Type_021_1,
     "Forrestal": Forrestal,
     "LST_Mk2": LST_Mk2,
     "USS_Samuel_Chase": USS_Samuel_Chase,

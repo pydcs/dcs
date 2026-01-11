@@ -678,6 +678,13 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
 
+    class P14_SR(unittype.VehicleType):
+        id = "P14_SR"
+        name = "SAM SA-5 S-200 P-14 'Tall king' SR"
+        detection_range = 400000
+        threat_range = 0
+        air_weapon_dist = 0
+
     class CHAP_PantsirS1(unittype.VehicleType):
         id = "CHAP_PantsirS1"
         name = "SAM SA-22 Pantsir-S1 \"Greyhound\" [CH]"
@@ -1909,6 +1916,48 @@ class Armor:
         threat_range = 3500
         air_weapon_dist = 1200
 
+    class T_34_85(unittype.VehicleType):
+        id = "T-34-85"
+        name = "Tk T-34-85"
+        detection_range = 0
+        threat_range = 5200
+        air_weapon_dist = 1000
+
+    class BTR_60(unittype.VehicleType):
+        id = "BTR-60"
+        name = "APC BTR-60"
+        detection_range = 0
+        threat_range = 1600
+        air_weapon_dist = 1600
+
+    class BTR_70(unittype.VehicleType):
+        id = "BTR-70"
+        name = "APC BTR-70"
+        detection_range = 0
+        threat_range = 1600
+        air_weapon_dist = 1600
+
+    class T62M(unittype.VehicleType):
+        id = "T62M"
+        name = "MBT T-62M"
+        detection_range = 0
+        threat_range = 5200
+        air_weapon_dist = 1200
+
+    class T_80B(unittype.VehicleType):
+        id = "T-80B"
+        name = "MBT T-80B"
+        detection_range = 0
+        threat_range = 5000
+        air_weapon_dist = 3500
+
+    class BRDM_2_malyutka(unittype.VehicleType):
+        id = "BRDM-2_malyutka"
+        name = "ATGM AT-3 Sagger 9P133"
+        detection_range = 5000
+        threat_range = 3000
+        air_weapon_dist = 3000
+
     class CHAP_FV107(unittype.VehicleType):
         id = "CHAP_FV107"
         name = "Scout FV107 Scimitar [CH]"
@@ -2626,6 +2675,13 @@ vehicle_map = {
     "ZIL-4331": Unarmed.ZIL_4331,
     "KrAZ6322": Unarmed.KrAZ6322,
     "JTAC": Infantry.JTAC,
+    "T-34-85": Armor.T_34_85,
+    "BTR-60": Armor.BTR_60,
+    "BTR-70": Armor.BTR_70,
+    "T62M": Armor.T62M,
+    "T-80B": Armor.T_80B,
+    "BRDM-2_malyutka": Armor.BRDM_2_malyutka,
+    "P14_SR": AirDefence.P14_SR,
     "CHAP_FV107": Armor.CHAP_FV107,
     "CHAP_FV101": Armor.CHAP_FV101,
     "CHAP_T90M": Armor.CHAP_T90M,
