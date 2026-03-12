@@ -992,6 +992,57 @@ class OH_58D(HelicopterType):
     task_default = task.AFAC
 
 
+class CHAP_TigerUHT(HelicopterType):
+    id = "CHAP_TigerUHT"
+    height = 3.83
+    width = 13
+    length = 14.08
+    fuel_max = 1420
+    max_speed = 315
+    chaff = 16
+    flare = 48
+    charge_total = 64
+    chaff_charge_size = 1
+    flare_charge_size = 1
+    eplrs = True
+    radio_frequency = 124
+
+    livery_name = "CHAP_TIGERUHT"  # from type
+
+    class Pylon1:
+        FZ225___19_x_70_mm_UnGd_Rkts__M151_HE = (1, Weapons.FZ225___19_x_70_mm_UnGd_Rkts__M151_HE)
+        FZ225___19_x_70_mm_UnGd_Rkts__M229_HE = (1, Weapons.FZ225___19_x_70_mm_UnGd_Rkts__M229_HE)
+        _2_x_FIM_92C_Stinger = (1, Weapons._2_x_FIM_92C_Stinger)
+#ERRR <CLEAN>
+
+    class Pylon2:
+        HMP400LC = (2, Weapons.HMP400LC)
+        FZ225___19_x_70_mm_UnGd_Rkts__M151_HE = (2, Weapons.FZ225___19_x_70_mm_UnGd_Rkts__M151_HE)
+        FZ225___19_x_70_mm_UnGd_Rkts__M229_HE = (2, Weapons.FZ225___19_x_70_mm_UnGd_Rkts__M229_HE)
+        _4_x_HOT3___ATGM__SACLOS__Tandem_HEAT = (2, Weapons._4_x_HOT3___ATGM__SACLOS__Tandem_HEAT)
+        _2_x_FIM_92C_Stinger = (2, Weapons._2_x_FIM_92C_Stinger)
+        Fuel_tank_350_liters = (2, Weapons.Fuel_tank_350_liters)
+
+    class Pylon3:
+        HMP400LC = (3, Weapons.HMP400LC)
+        FZ225___19_x_70_mm_UnGd_Rkts__M151_HE = (3, Weapons.FZ225___19_x_70_mm_UnGd_Rkts__M151_HE)
+        FZ225___19_x_70_mm_UnGd_Rkts__M229_HE = (3, Weapons.FZ225___19_x_70_mm_UnGd_Rkts__M229_HE)
+        _4_x_HOT3___ATGM__SACLOS__Tandem_HEAT = (3, Weapons._4_x_HOT3___ATGM__SACLOS__Tandem_HEAT)
+        _2_x_FIM_92C_Stinger = (3, Weapons._2_x_FIM_92C_Stinger)
+        Fuel_tank_350_liters = (3, Weapons.Fuel_tank_350_liters)
+
+    class Pylon4:
+        FZ225___19_x_70_mm_UnGd_Rkts__M151_HE = (4, Weapons.FZ225___19_x_70_mm_UnGd_Rkts__M151_HE)
+        FZ225___19_x_70_mm_UnGd_Rkts__M229_HE = (4, Weapons.FZ225___19_x_70_mm_UnGd_Rkts__M229_HE)
+        _2_x_FIM_92C_Stinger = (4, Weapons._2_x_FIM_92C_Stinger)
+#ERRR <CLEAN>
+
+    pylons: Set[int] = {1, 2, 3, 4}
+
+    tasks = [task.CAS, task.GroundAttack, task.Escort, task.AFAC, task.AntishipStrike, task.Transport, task.Reconnaissance]
+    task_default = task.CAS
+
+
 class AH_64D_BLK_II(HelicopterType):
     id = "AH-64D_BLK_II"
     flyable = True
@@ -1205,6 +1256,12 @@ class AH_64D_BLK_II(HelicopterType):
             control="checkbox",
             label="Allow Cpg NVG",
             default=True,
+        ),
+        "flaresProgram_Label": UnitPropertyDescription(
+            identifier="flaresProgram_Label",
+            control="label",
+            label="FLARES",
+            x_lbl=150,
         ),
         "FlareBurstCount": UnitPropertyDescription(
             identifier="FlareBurstCount",
@@ -3131,6 +3188,7 @@ helicopter_map = {
     "UH-1H": UH_1H,
     "Mi-28N": Mi_28N,
     "OH-58D": OH_58D,
+    "CHAP_TigerUHT": CHAP_TigerUHT,
     "AH-64D_BLK_II": AH_64D_BLK_II,
     "CH-47Fbl1": CH_47Fbl1,
     "Ka-50": Ka_50,
