@@ -249,6 +249,7 @@ flyable["J-11A"] = true
 flyable["JF-17"] = true
 flyable["L-39C"] = true
 flyable["L-39ZA"] = true
+flyable["La-7"] = true
 flyable["M-2000C"] = true
 flyable["MB-339A"] = true
 flyable["MB-339APAN"] = true

@@ -985,8 +985,8 @@ class AirDefence:
         id = "bofors40"
         name = "AAA Bofors 40mm"
         detection_range = 0
-        threat_range = 4000
-        air_weapon_dist = 4000
+        threat_range = 2000
+        air_weapon_dist = 2000
 
     class Flak18(unittype.VehicleType):
         id = "flak18"
@@ -2415,28 +2415,28 @@ class Locomotive:
 
     class Electric_locomotive(unittype.VehicleType):
         id = "Electric locomotive"
-        name = "Loco VL80 Electric"
+        name = "Rwy. Loco VL80 Electric"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
     class Locomotive(unittype.VehicleType):
         id = "Locomotive"
-        name = "Loco CHME3T"
+        name = "Rwy. Loco CHME3T"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
     class ES44AH(unittype.VehicleType):
         id = "ES44AH"
-        name = "Loco ES44AH"
+        name = "Rwy. Loco ES44AH"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
     class DRG_Class_86(unittype.VehicleType):
         id = "DRG_Class_86"
-        name = "Loco DRG Class 86"
+        name = "Rwy. Loco DRG Class 86 (Germany, WWII)"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -2446,63 +2446,63 @@ class Carriage:
 
     class Coach_cargo(unittype.VehicleType):
         id = "Coach cargo"
-        name = "Freight Van"
+        name = "Rwy. Freight Van"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
     class Coach_cargo_open(unittype.VehicleType):
         id = "Coach cargo open"
-        name = "Open Wagon"
+        name = "Rwy. Open Wagon"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
     class Coach_a_tank_blue(unittype.VehicleType):
         id = "Coach a tank blue"
-        name = "Tank Car blue"
+        name = "Rwy. Tank Car blue"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
     class Coach_a_tank_yellow(unittype.VehicleType):
         id = "Coach a tank yellow"
-        name = "Tank Car yellow"
+        name = "Rwy. Tank Car yellow"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
     class Coach_a_passenger(unittype.VehicleType):
         id = "Coach a passenger"
-        name = "Passenger Car"
+        name = "Rwy. Passenger Car"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
     class Coach_a_platform(unittype.VehicleType):
         id = "Coach a platform"
-        name = "Coach Platform"
+        name = "Rwy. Coach Platform"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
     class Boxcartrinity(unittype.VehicleType):
         id = "Boxcartrinity"
-        name = "Flatcar"
+        name = "Rwy. Flat Car"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
     class Tankcartrinity(unittype.VehicleType):
         id = "Tankcartrinity"
-        name = "Tank Cartrinity"
+        name = "Rwy. Tank Cartrinity"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
     class Wellcarnsc(unittype.VehicleType):
         id = "Wellcarnsc"
-        name = "Well Car"
+        name = "Rwy. Well Car"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
@@ -2516,14 +2516,14 @@ class Carriage:
 
     class German_covered_wagon_G10(unittype.VehicleType):
         id = "German_covered_wagon_G10"
-        name = "Wagon G10 (Germany)"
+        name = "Rwy. Wagon G10 (Germany, WWII)"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
 
     class German_tank_wagon(unittype.VehicleType):
         id = "German_tank_wagon"
-        name = "Tank Car (Germany)"
+        name = "Rwy. Tank Car (Germany, WWII)"
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0

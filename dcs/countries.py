@@ -278,6 +278,7 @@ class Russia(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -365,6 +366,7 @@ class Russia(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -835,6 +837,7 @@ class Ukraine(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -913,6 +916,7 @@ class Ukraine(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -1248,6 +1252,7 @@ class USA(Country):
         F4U_1D = planes.F4U_1D
         F4U_1D_CW = planes.F4U_1D_CW
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -1336,6 +1341,7 @@ class USA(Country):
         Plane.F4U_1D,
         Plane.F4U_1D_CW,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -1702,6 +1708,7 @@ class Turkey(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -1768,6 +1775,7 @@ class Turkey(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -2119,6 +2127,7 @@ class UK(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -2184,6 +2193,7 @@ class UK(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -2531,6 +2541,7 @@ class France(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
@@ -2601,6 +2612,7 @@ class France(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
@@ -3025,6 +3037,7 @@ class Germany(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -3092,6 +3105,7 @@ class Germany(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -3108,6 +3122,7 @@ class Germany(Country):
         Ka_50 = helicopters.Ka_50
         Mi_8MT = helicopters.Mi_8MT
         UH_1H = helicopters.UH_1H
+        CHAP_TigerUHT = helicopters.CHAP_TigerUHT
         AH_64D_BLK_II = helicopters.AH_64D_BLK_II
         CH_47Fbl1 = helicopters.CH_47Fbl1
         OH58D = helicopters.OH58D
@@ -3120,6 +3135,7 @@ class Germany(Country):
         Helicopter.Ka_50,
         Helicopter.Mi_8MT,
         Helicopter.UH_1H,
+        Helicopter.CHAP_TigerUHT,
         Helicopter.AH_64D_BLK_II,
         Helicopter.CH_47Fbl1,
         Helicopter.OH58D,
@@ -3693,6 +3709,7 @@ class USAFAggressors(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -3832,6 +3849,7 @@ class USAFAggressors(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -3952,6 +3970,7 @@ class USAFAggressors(Country):
         OH_58D = helicopters.OH_58D
         AH_64A = helicopters.AH_64A
         AH_1W = helicopters.AH_1W
+        CHAP_TigerUHT = helicopters.CHAP_TigerUHT
         SH_60B = helicopters.SH_60B
         CH_53E = helicopters.CH_53E
 
@@ -3976,6 +3995,7 @@ class USAFAggressors(Country):
         Helicopter.OH_58D,
         Helicopter.AH_64A,
         Helicopter.AH_1W,
+        Helicopter.CHAP_TigerUHT,
         Helicopter.SH_60B,
         Helicopter.CH_53E,
     ]
@@ -4319,6 +4339,7 @@ class Canada(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -4380,6 +4401,7 @@ class Canada(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -4706,6 +4728,7 @@ class Spain(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -4773,6 +4796,7 @@ class Spain(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -5134,6 +5158,7 @@ class TheNetherlands(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -5199,6 +5224,7 @@ class TheNetherlands(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -5538,6 +5564,7 @@ class Belgium(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -5601,6 +5628,7 @@ class Belgium(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -5917,6 +5945,7 @@ class Norway(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -5980,6 +6009,7 @@ class Norway(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -6294,6 +6324,7 @@ class Denmark(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -6357,6 +6388,7 @@ class Denmark(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -6688,6 +6720,7 @@ class Israel(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -6754,6 +6787,7 @@ class Israel(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -7131,6 +7165,7 @@ class Georgia(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -7194,6 +7229,7 @@ class Georgia(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -7525,6 +7561,7 @@ class Insurgents(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -7582,6 +7619,7 @@ class Insurgents(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -7845,6 +7883,7 @@ class Abkhazia(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -7905,6 +7944,7 @@ class Abkhazia(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -8154,6 +8194,7 @@ class SouthOssetia(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -8209,6 +8250,7 @@ class SouthOssetia(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -8449,6 +8491,7 @@ class Italy(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
@@ -8516,6 +8559,7 @@ class Italy(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
@@ -8847,6 +8891,7 @@ class Australia(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -8908,6 +8953,7 @@ class Australia(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -9211,6 +9257,7 @@ class Switzerland(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -9268,6 +9315,7 @@ class Switzerland(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -9552,6 +9600,7 @@ class Austria(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -9609,6 +9658,7 @@ class Austria(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -10002,6 +10052,7 @@ class Belarus(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -10069,6 +10120,7 @@ class Belarus(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -10374,6 +10426,7 @@ class Bulgaria(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -10439,6 +10492,7 @@ class Bulgaria(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -10776,6 +10830,7 @@ class CzechRepublic(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -10837,6 +10892,7 @@ class CzechRepublic(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -11183,6 +11239,7 @@ class China(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -11251,6 +11308,7 @@ class China(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -11466,6 +11524,7 @@ class Croatia(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -11522,6 +11581,7 @@ class Croatia(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -11897,6 +11957,7 @@ class Egypt(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_19P = planes.MiG_19P
@@ -11960,6 +12021,7 @@ class Egypt(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_19P,
@@ -12331,6 +12393,7 @@ class Finland(Country):
         F_A_18A = planes.F_A_18A
         FA_18C_hornet = planes.FA_18C_hornet
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -12387,6 +12450,7 @@ class Finland(Country):
         Plane.F_A_18A,
         Plane.FA_18C_hornet,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -12732,6 +12796,7 @@ class Greece(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
@@ -12796,6 +12861,7 @@ class Greece(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
@@ -13180,6 +13246,7 @@ class Hungary(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -13240,6 +13307,7 @@ class Hungary(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -13567,6 +13635,7 @@ class India(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
@@ -13632,6 +13701,7 @@ class India(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
@@ -13999,6 +14069,7 @@ class Iran(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -14067,6 +14138,7 @@ class Iran(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -14433,6 +14505,7 @@ class Iraq(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -14499,6 +14572,7 @@ class Iraq(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -14849,6 +14923,7 @@ class Japan(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -14908,6 +14983,7 @@ class Japan(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -15314,6 +15390,7 @@ class Kazakhstan(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -15382,6 +15459,7 @@ class Kazakhstan(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -15701,6 +15779,7 @@ class NorthKorea(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -15759,6 +15838,7 @@ class NorthKorea(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -16077,6 +16157,7 @@ class Pakistan(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -16141,6 +16222,7 @@ class Pakistan(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -16511,6 +16593,7 @@ class Poland(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -16578,6 +16661,7 @@ class Poland(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -16946,6 +17030,7 @@ class Romania(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -17008,6 +17093,7 @@ class Romania(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -17333,6 +17419,7 @@ class SaudiArabia(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -17396,6 +17483,7 @@ class SaudiArabia(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -17745,6 +17833,7 @@ class Serbia(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -17805,6 +17894,7 @@ class Serbia(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -18128,6 +18218,7 @@ class Slovakia(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -18188,6 +18279,7 @@ class Slovakia(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -18506,6 +18598,7 @@ class SouthKorea(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -18568,6 +18661,7 @@ class SouthKorea(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -18867,6 +18961,7 @@ class Sweden(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -18927,6 +19022,7 @@ class Sweden(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -19286,6 +19382,7 @@ class Syria(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -19349,6 +19446,7 @@ class Syria(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -19668,6 +19766,7 @@ class Yemen(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -19728,6 +19827,7 @@ class Yemen(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -20067,6 +20167,7 @@ class Vietnam(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -20128,6 +20229,7 @@ class Vietnam(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -20447,6 +20549,7 @@ class Venezuela(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -20506,6 +20609,7 @@ class Venezuela(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -20792,6 +20896,7 @@ class Tunisia(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -20849,6 +20954,7 @@ class Tunisia(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -21148,6 +21254,7 @@ class Thailand(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -21208,6 +21315,7 @@ class Thailand(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -21517,6 +21625,7 @@ class Sudan(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -21578,6 +21687,7 @@ class Sudan(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -21861,6 +21971,7 @@ class Philippines(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -21920,6 +22031,7 @@ class Philippines(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -22230,6 +22342,7 @@ class Morocco(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -22291,6 +22404,7 @@ class Morocco(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -22583,6 +22697,7 @@ class Mexico(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -22641,6 +22756,7 @@ class Mexico(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -22942,6 +23058,7 @@ class Malaysia(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
@@ -23000,6 +23117,7 @@ class Malaysia(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
@@ -23323,6 +23441,7 @@ class Libya(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -23385,6 +23504,7 @@ class Libya(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -23698,6 +23818,7 @@ class Jordan(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -23759,6 +23880,7 @@ class Jordan(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -24098,6 +24220,7 @@ class Indonesia(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -24162,6 +24285,7 @@ class Indonesia(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -24452,6 +24576,7 @@ class Honduras(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -24509,6 +24634,7 @@ class Honduras(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -24818,6 +24944,7 @@ class Ethiopia(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -24877,6 +25004,7 @@ class Ethiopia(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -25183,6 +25311,7 @@ class Chile(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -25246,6 +25375,7 @@ class Chile(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -25564,6 +25694,7 @@ class Brazil(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
@@ -25622,6 +25753,7 @@ class Brazil(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
@@ -25929,6 +26061,7 @@ class Bahrain(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -25984,6 +26117,7 @@ class Bahrain(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -26294,6 +26428,7 @@ class ThirdReich(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -26350,6 +26485,7 @@ class ThirdReich(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -26670,6 +26806,7 @@ class Yugoslavia(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -26728,6 +26865,7 @@ class Yugoslavia(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -27088,6 +27226,7 @@ class USSR(Country):
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -27169,6 +27308,7 @@ class USSR(Country):
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -27408,6 +27548,7 @@ class ItalianSocialRepublic(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -27463,6 +27604,7 @@ class ItalianSocialRepublic(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -27864,6 +28006,7 @@ class Algeria(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -27937,6 +28080,7 @@ class Algeria(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -28265,6 +28409,7 @@ class Kuwait(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -28324,6 +28469,7 @@ class Kuwait(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -28623,6 +28769,7 @@ class Qatar(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
@@ -28682,6 +28829,7 @@ class Qatar(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
@@ -29000,6 +29148,7 @@ class Oman(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -29059,6 +29208,7 @@ class Oman(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -29384,6 +29534,7 @@ class UnitedArabEmirates(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
@@ -29445,6 +29596,7 @@ class UnitedArabEmirates(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
@@ -29741,6 +29893,7 @@ class SouthAfrica(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -29802,6 +29955,7 @@ class SouthAfrica(Country):
         Plane.FA_18C_hornet,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -30154,6 +30308,7 @@ class Cuba(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -30220,6 +30375,7 @@ class Cuba(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -30523,6 +30679,7 @@ class Portugal(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -30585,6 +30742,7 @@ class Portugal(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -30931,6 +31089,7 @@ class GDR(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -30992,6 +31151,7 @@ class GDR(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -31303,6 +31463,7 @@ class Lebanon(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
@@ -31360,6 +31521,7 @@ class Lebanon(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.MB_339A,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
@@ -31958,6 +32120,7 @@ class CombinedJointTaskForcesBlue(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -32097,6 +32260,7 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -32219,6 +32383,7 @@ class CombinedJointTaskForcesBlue(Country):
         OH_58D = helicopters.OH_58D
         AH_64A = helicopters.AH_64A
         AH_1W = helicopters.AH_1W
+        CHAP_TigerUHT = helicopters.CHAP_TigerUHT
         SH_60B = helicopters.SH_60B
         CH_53E = helicopters.CH_53E
 
@@ -32243,6 +32408,7 @@ class CombinedJointTaskForcesBlue(Country):
         Helicopter.OH_58D,
         Helicopter.AH_64A,
         Helicopter.AH_1W,
+        Helicopter.CHAP_TigerUHT,
         Helicopter.SH_60B,
         Helicopter.CH_53E,
     ]
@@ -32856,6 +33022,7 @@ class CombinedJointTaskForcesRed(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -32995,6 +33162,7 @@ class CombinedJointTaskForcesRed(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -33117,6 +33285,7 @@ class CombinedJointTaskForcesRed(Country):
         OH_58D = helicopters.OH_58D
         AH_64A = helicopters.AH_64A
         AH_1W = helicopters.AH_1W
+        CHAP_TigerUHT = helicopters.CHAP_TigerUHT
         SH_60B = helicopters.SH_60B
         CH_53E = helicopters.CH_53E
 
@@ -33141,6 +33310,7 @@ class CombinedJointTaskForcesRed(Country):
         Helicopter.OH_58D,
         Helicopter.AH_64A,
         Helicopter.AH_1W,
+        Helicopter.CHAP_TigerUHT,
         Helicopter.SH_60B,
         Helicopter.CH_53E,
     ]
@@ -33754,6 +33924,7 @@ class UnitedNationsPeacekeepers(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -33893,6 +34064,7 @@ class UnitedNationsPeacekeepers(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -34015,6 +34187,7 @@ class UnitedNationsPeacekeepers(Country):
         OH_58D = helicopters.OH_58D
         AH_64A = helicopters.AH_64A
         AH_1W = helicopters.AH_1W
+        CHAP_TigerUHT = helicopters.CHAP_TigerUHT
         SH_60B = helicopters.SH_60B
         CH_53E = helicopters.CH_53E
 
@@ -34039,6 +34212,7 @@ class UnitedNationsPeacekeepers(Country):
         Helicopter.OH_58D,
         Helicopter.AH_64A,
         Helicopter.AH_1W,
+        Helicopter.CHAP_TigerUHT,
         Helicopter.SH_60B,
         Helicopter.CH_53E,
     ]
@@ -34349,6 +34523,7 @@ class Argentina(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
@@ -34407,6 +34582,7 @@ class Argentina(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
@@ -34720,6 +34896,7 @@ class Cyprus(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -34776,6 +34953,7 @@ class Cyprus(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -35074,6 +35252,7 @@ class Slovenia(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -35131,6 +35310,7 @@ class Slovenia(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -35433,6 +35613,7 @@ class Bolivia(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -35492,6 +35673,7 @@ class Bolivia(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -35777,6 +35959,7 @@ class Ghana(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
@@ -35833,6 +36016,7 @@ class Ghana(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
@@ -36133,6 +36317,7 @@ class Nigeria(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
@@ -36190,6 +36375,7 @@ class Nigeria(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
@@ -36499,6 +36685,7 @@ class Peru(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
         MiG_15bis_FC = planes.MiG_15bis_FC
@@ -36561,6 +36748,7 @@ class Peru(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
         Plane.MiG_15bis_FC,
@@ -36856,6 +37044,7 @@ class Ecuador(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -36913,6 +37102,7 @@ class Ecuador(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -37243,6 +37433,7 @@ class Afghanistan(Country):
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
         I_16 = planes.I_16
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -37302,6 +37493,7 @@ class Afghanistan(Country):
         Plane.FA_18C_hornet,
         Plane.Hawk,
         Plane.I_16,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
@@ -37616,6 +37808,7 @@ class NewZealand(Country):
         Hawk = planes.Hawk
         I_16 = planes.I_16
         L_39C = planes.L_39C
+        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339APAN = planes.MB_339APAN
         MiG_15bis = planes.MiG_15bis
@@ -37673,6 +37866,7 @@ class NewZealand(Country):
         Plane.Hawk,
         Plane.I_16,
         Plane.L_39C,
+        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339APAN,
         Plane.MiG_15bis,
