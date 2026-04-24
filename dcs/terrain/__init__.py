@@ -2,6 +2,8 @@ from dcs.terrain.terrain import ParkingSlot, Airport, Runway, RunwayApproach, Te
 from dcs.terrain.terrain import RunwayOccupiedError, NoParkingSlotError, Graph, Node, MapView
 from dcs.terrain.caucasus.caucasus import Caucasus
 from dcs.terrain.falklands import Falklands
+from dcs.terrain.germany import Germany
+from dcs.terrain.kola import Kola
 from dcs.terrain.nevada import Nevada
 from dcs.terrain.normandy import Normandy
 from dcs.terrain.persiangulf import PersianGulf

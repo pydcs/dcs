@@ -39,6 +39,8 @@ from dcs import Mission
 from dcs.action import DoScriptFile
 from dcs.terrain.caucasus import Caucasus
 from dcs.terrain.falklands import Falklands
+from dcs.terrain.germany import Germany
+from dcs.terrain.kola import Kola
 from dcs.terrain.nevada import Nevada
 from dcs.terrain.normandy import Normandy
 from dcs.terrain.persiangulf import PersianGulf
@@ -69,6 +71,8 @@ ARG_TO_TERRAIN_MAP = {
     "sinai": Sinai(),
     "syria": Syria(),
     "marianaislands": MarianaIslands(),
+    "germany": Germany(),
+    "kola": Kola()
 }
 
 
