@@ -1,3 +1,5 @@
+import datetime
+
 import dcs.mapping as mapping
 from dcs.terrain.terrain import Terrain, MapView
 from .airports import ALL_AIRPORTS
@@ -28,7 +30,8 @@ class Sinai(Terrain):
             "Sinai",
             PARAMETERS,
             bounds,
-            map_view_default=MapView(bounds.center(), self, 1000000)
+            map_view_default=MapView(bounds.center(), self, 1000000),
+            utc_offset=datetime.timezone(datetime.timedelta(hours=2))
         )
         self.bullseye_blue = {"x": 0, "y": 0}
         self.bullseye_red = {"x": 0, "y": 0}

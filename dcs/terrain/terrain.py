@@ -16,7 +16,7 @@ import dcs.weather as weather
 import random
 import pickle
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Deque, Iterator, List, Dict, Optional, Tuple, Set, Type
 from collections import defaultdict, deque
 
@@ -510,6 +510,7 @@ class Terrain:
         projection_parameters: TransverseMercator,
         bounds: mapping.Rectangle,
         map_view_default: MapView,
+        utc_offset: timezone,
     ) -> None:
         self.name = name
         self.projection_parameters = projection_parameters
@@ -519,6 +520,7 @@ class Terrain:
         self.bullseye_blue = {"x": 0.0, "y": 0.0}
         self.bullseye_red = {"x": 0.0, "y": 0.0}
         self.airports = {}  # type: Dict[str,Airport]
+        self.utc_offset = utc_offset
 
         self._point_to_ll_transformer = Transformer.from_crs(
             self.projection_parameters.to_crs(), CRS("WGS84")

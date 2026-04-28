@@ -1,3 +1,5 @@
+import datetime
+
 from dcs import mapping
 from dcs.terrain import Terrain, MapView
 from .airports import ALL_AIRPORTS
@@ -27,7 +29,8 @@ class Falklands(Terrain):
             "Falklands",
             PARAMETERS,
             bounds=mapping.Rectangle(74967, -114995, -129982, 129991, self),
-            map_view_default=MapView(mapping.Point(0, 0, self), self, 1000000)
+            map_view_default=MapView(mapping.Point(0, 0, self), self, 1000000),
+            utc_offset=datetime.timezone(datetime.timedelta(hours=-3))
         )
         self.bullseye_blue = {"x": 0, "y": 0}
         self.bullseye_red = {"x": 0, "y": 0}
