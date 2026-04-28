@@ -1,4 +1,5 @@
 # flake8: noqa
+import datetime
 import os
 
 from dcs.terrain.terrain import Terrain, MapView, Graph
@@ -30,7 +31,8 @@ class Caucasus(Terrain):
             "Caucasus",
             PARAMETERS,
             bounds=mapping.Rectangle(380 * 1000, -560 * 1000, -600 * 1000, 1130 * 1000, self),
-            map_view_default=MapView(mapping.Point(-255714.28571428, 680571.42857143, self), self, 1000000)
+            map_view_default=MapView(mapping.Point(-255714.28571428, 680571.42857143, self), self, 1000000),
+            utc_offset=datetime.timezone(datetime.timedelta(hours=4))
         )
         # caucasus center MGRS
         # 36TWQ9949898109

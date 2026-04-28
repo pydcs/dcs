@@ -1,3 +1,5 @@
+import datetime
+
 from dcs.terrain.terrain import Terrain, MapView
 import dcs.mapping as mapping
 from .airports import ALL_AIRPORTS
@@ -28,7 +30,8 @@ class Normandy(Terrain):
             "Normandy",
             PARAMETERS,
             bounds,
-            map_view_default=MapView(bounds.center(), self, 1000000)
+            map_view_default=MapView(bounds.center(), self, 1000000),
+            utc_offset=datetime.timezone(datetime.timedelta(hours=0))
         )
         self.bullseye_blue = {"x": self.bounds.center().x, "y": self.bounds.center().y}
         self.bullseye_red = {"x": self.bounds.center().x, "y": self.bounds.center().y}

@@ -1,4 +1,6 @@
 # flake8: noqa
+import datetime
+
 from dcs.terrain import Terrain, MapView, Graph
 import dcs.mapping as mapping
 import os
@@ -29,7 +31,8 @@ class Nevada(Terrain):
             "Nevada",
             PARAMETERS,
             bounds=mapping.Rectangle(-166934.953125, -329334.875000, -497177.656250, 209836.890625, self),
-            map_view_default=MapView(mapping.Point(-340928.57142857, -55928.571428568, self), self, 1000000)
+            map_view_default=MapView(mapping.Point(-340928.57142857, -55928.571428568, self), self, 1000000),
+            utc_offset=datetime.timezone(datetime.timedelta(hours=-8))
         )
         # nttr center MGRS
         # 11SPE9400410022
