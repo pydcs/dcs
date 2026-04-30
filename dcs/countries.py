@@ -19040,6 +19040,7 @@ class Sweden(Country):
 
     class Helicopter:
         Ka_50 = helicopters.Ka_50
+        UH_1H = helicopters.UH_1H
         AH_64D_BLK_II = helicopters.AH_64D_BLK_II
         CH_47Fbl1 = helicopters.CH_47Fbl1
         OH58D = helicopters.OH58D
@@ -19050,6 +19051,7 @@ class Sweden(Country):
 
     helicopters = [
         Helicopter.Ka_50,
+        Helicopter.UH_1H,
         Helicopter.AH_64D_BLK_II,
         Helicopter.CH_47Fbl1,
         Helicopter.OH58D,
@@ -27193,6 +27195,7 @@ class USSR(Country):
         Yak_52 = planes.Yak_52
         MiG_19P = planes.MiG_19P
         C_47 = planes.C_47
+        La_7 = planes.La_7
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         P_47D_30 = planes.P_47D_30
@@ -27226,7 +27229,6 @@ class USSR(Country):
         F_A_18C = planes.F_A_18C
         FA_18C_hornet = planes.FA_18C_hornet
         Hawk = planes.Hawk
-        La_7 = planes.La_7
         M_2000C = planes.M_2000C
         MB_339A = planes.MB_339A
         MB_339APAN = planes.MB_339APAN
@@ -27275,6 +27277,7 @@ class USSR(Country):
         Plane.Yak_52,
         Plane.MiG_19P,
         Plane.C_47,
+        Plane.La_7,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.P_47D_30,
@@ -27308,7 +27311,6 @@ class USSR(Country):
         Plane.F_A_18C,
         Plane.FA_18C_hornet,
         Plane.Hawk,
-        Plane.La_7,
         Plane.M_2000C,
         Plane.MB_339A,
         Plane.MB_339APAN,
