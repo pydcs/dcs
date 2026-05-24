@@ -1556,9 +1556,9 @@ wrappedactions: Dict[str, Type[WrappedAction]] = {
 
 
 class MainTask:
-    id = None  # type: int
-    name = None  # type: str
-    internal_name = None  # type: str
+    id = None  # type: int | None
+    name = None  # type: str | None
+    internal_name = None  # type: str | None
     sub_tasks: List[Type[Task]] = []
     perform_task: List[Type[Task]] = []
     map: Dict[str, Type['MainTask']] = {}
