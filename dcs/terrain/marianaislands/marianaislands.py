@@ -32,7 +32,7 @@ class MarianaIslands(Terrain):
             PARAMETERS,
             bounds=mapping.Rectangle(1000 * 10000, -1000 * 1000, -300 * 1000, 500 * 1000, self),
             map_view_default=MapView(mapping.Point(76432, 48051, self), self, 1000000),
-            utc_offset=datetime.timezone(datetime.timedelta(hours=-10))
+            utc_offset=datetime.timezone(datetime.timedelta(hours=10))
         )
 
         self.airports = {a.name: a(self) for a in ALL_AIRPORTS}
