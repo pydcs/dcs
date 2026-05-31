@@ -31,7 +31,7 @@ class Kola(Terrain):
             PARAMETERS,
             bounds=bounds,
             map_view_default=MapView(bounds.center(), self, 1000000),
-            utc_offset=datetime.zoneinfo(datetime.timedelta(hours=3))
+            utc_offset=datetime.timezone(datetime.timedelta(hours=3))
         )
         self.bullseye_blue = {"x": bounds.center().x, "y": bounds.center().y}
         self.bullseye_red = {"x": bounds.center().x, "y": bounds.center().y}
