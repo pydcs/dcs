@@ -86,13 +86,16 @@ class Livery:
             logging.exception("Could not parse livery definition at %s", path)
             return None
         livery_name = data.get("name", path_id)
-        countries_table = data.get("countries")
-        if countries_table is None:
-            countries = None
-        else:
-            countries = set(countries_table.values())
-        order = data.get("order", 0)
 
+        countries_table = data.get("countries")
+        countries = None
+        if countries_table is not None:
+            try:
+                countries = set(countries_table.values())
+            except AttributeError:
+                logging.exception("Could not parse 'countries' field for livery at %s", path)
+
+        order = data.get("order", 0)
         order = None if path_id == "default" else order
         if order is not None and not isinstance(order, int):
             try:
@@ -104,11 +107,15 @@ class Livery:
 
     @staticmethod
     def from_path(path: str) -> Optional[Livery]:
-        if os.path.isdir(path):
-            return Livery.from_directory(path)
-        elif path.endswith(".zip"):
-            return Livery.from_zip(path)
-        return None
+        try:
+            if os.path.isdir(path):
+                return Livery.from_directory(path)
+            elif path.endswith(".zip"):
+                return Livery.from_zip(path)
+            return None
+        except Exception:
+            logging.exception("Could not parse the livery at %s", path)
+            return None
 
     @staticmethod
     def from_directory(path: str) -> Optional[Livery]:
