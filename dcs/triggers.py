@@ -80,7 +80,12 @@ class TriggerZoneQuadPoint(TriggerZone):
     def __init__(self, _id, position: mapping.Point, verticies: List[mapping.Point],
                  hidden=False, name="", color=None, properties=None,
                  heading: Optional[float] = None, link_unit_id: Optional[int] = None):
-        super(TriggerZoneQuadPoint, self).__init__(_id, position, hidden, name, color, properties, heading, link_unit_id)
+        # Forward by keyword and pass radius=0: quad zones have no radius (the DCS ME
+        # writes "radius": 0 for them). Positional forwarding silently slots `heading`
+        # into the parent's `radius` arg (added in PR #254) -- keyword args prevent that.
+        super(TriggerZoneQuadPoint, self).__init__(
+            _id, position, hidden=hidden, name=name, color=color,
+            properties=properties, radius=0, heading=heading, link_unit_id=link_unit_id)
         self.type = TriggerZoneType.QuadPoint
         self.verticies = copy.copy(verticies)
 

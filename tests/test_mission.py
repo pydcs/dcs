@@ -788,6 +788,48 @@ class BasicTests(unittest.TestCase):
                 distance(sukhmi, v) <= ZONE_RADIUS_M + 0.001
                 for v in zone.verticies))
 
+    def test_quad_point_zone_radius_heading_link_roundtrip(self):
+        # Regression: TriggerZoneQuadPoint.__init__ forwarded args to the parent
+        # positionally, so an explicit heading slid into the parent's `radius` slot
+        # (added in PR #254) and link_unit_id was lost. A quad zone must serialize
+        # "radius": 0 (DCS-canonical) and round-trip heading/link_unit_id intact.
+        # The existing test_create_quad_point_zone threads neither, so it can't see
+        # the bug; this one passes both explicitly.
+        caucasus = dcs.terrain.Caucasus()
+        m = dcs.mission.Mission(terrain=caucasus)
+
+        zone_center: dcs.mapping.Point = caucasus.airports["Sukhumi-Babushara"].position
+        ZONE_RADIUS_M = 10000.0
+        offsets = [(ZONE_RADIUS_M, 0.0), (0.0, ZONE_RADIUS_M),
+                   (-ZONE_RADIUS_M, 0.0), (0.0, -ZONE_RADIUS_M)]
+        verts = [zone_center + dcs.mapping.Vector2(*o) for o in offsets]
+
+        HEADING = 45.0
+        LINK_UNIT_ID = 7
+        m.triggers.current_zone_id += 1
+        zone = dcs.triggers.TriggerZoneQuadPoint(
+            m.triggers.current_zone_id, zone_center, verts,
+            hidden=False, name="quad heading zone",
+            heading=HEADING, link_unit_id=LINK_UNIT_ID)
+        m.triggers._zones.append(zone)
+
+        # In-memory, straight from the constructor.
+        self.assertEqual(0, zone.radius)
+        self.assertEqual(HEADING, zone.heading)
+        self.assertEqual(LINK_UNIT_ID, zone.link_unit_id)
+
+        m.save('missions/test_quad_heading_zone.miz')
+        m2 = dcs.mission.Mission()
+        self.assertEqual(
+            0, len(m2.load_file('missions/test_quad_heading_zone.miz')))
+        z = m2.triggers.zones()[0]
+        self.assertTrue(type(z) == dcs.triggers.TriggerZoneQuadPoint)
+        # Post-reload: radius is the DCS-canonical 0, and heading/link_unit_id
+        # survived without sliding into radius / each other.
+        self.assertEqual(0, z.radius)
+        self.assertEqual(HEADING, z.heading)
+        self.assertEqual(LINK_UNIT_ID, z.link_unit_id)
+
     def test_restrict_targets(self):
         m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
 
