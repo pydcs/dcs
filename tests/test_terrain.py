@@ -94,6 +94,24 @@ class NevadaTest(unittest.TestCase):
         slots = m.terrain.airports["Nellis"].free_parking_slots(dcs.planes.KC_135)
 
 
+class WarehousesTest(unittest.TestCase):
+
+    def test_load_dict_reads_warehouses(self):
+        # __str__ serializes both "airports" and "warehouses", but load_dict
+        # historically read only "airports", silently dropping unit/FARP/ship
+        # warehouse state on every save->load round-trip.  load_dict must read
+        # "warehouses" symmetrically with the serializer.
+        m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
+        m.warehouses.load_dict({
+            "airports": {},
+            "warehouses": {"4242": {"coalition": "BLUE", "size": 100}},
+        })
+
+        self.assertIn(4242, m.warehouses.warehouses)
+        self.assertEqual(m.warehouses.warehouses[4242]["coalition"], "BLUE")
+        self.assertEqual(m.warehouses.warehouses[4242]["size"], 100)
+
+
 class NormandyTest(unittest.TestCase):
 
     def test_creation(self):

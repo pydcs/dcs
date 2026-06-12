@@ -614,6 +614,8 @@ class Warehouses:
     def load_dict(self, data):
         for x in data.get("airports", {}):
             self.terrain.airport_by_id(x).load_from_dict(data["airports"][x])
+        for uid, wh_data in data.get("warehouses", {}).items():
+            self.warehouses[int(uid)] = wh_data
 
     def __str__(self):
         airports = self.terrain.airports
