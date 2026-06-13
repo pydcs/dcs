@@ -1599,10 +1599,14 @@ class CH_47Fbl1(HelicopterType):
     }
 
     property_defaults: Dict[str, Any] = {
+        "DustProtectionDevices": False,
         "NetCrewControlPriority": 0,
     }
 
     class Properties:
+
+        class DustProtectionDevices:
+            id = "DustProtectionDevices"
 
         class NetCrewControlPriority:
             id = "NetCrewControlPriority"
@@ -1614,6 +1618,12 @@ class CH_47Fbl1(HelicopterType):
                 Equally_Responsible = -2
 
     properties = {
+        "DustProtectionDevices": UnitPropertyDescription(
+            identifier="DustProtectionDevices",
+            control="checkbox",
+            label="EAPS",
+            default=False,
+        ),
         "NetCrewControlPriority": UnitPropertyDescription(
             identifier="NetCrewControlPriority",
             control="comboList",
