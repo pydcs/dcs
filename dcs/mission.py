@@ -1022,6 +1022,10 @@ class Mission:
     def update_warehouses(self):
         """Some units need to have warehouse entries. This function updates warehouse entries based on units defined
         in the mission.
+
+        Gap-fill only: units that need a warehouse entry but do not have one get a default, while existing entries
+        are preserved. Without this guard the entries were overwritten with defaults on every save, discarding any
+        customized warehouse configuration for ships and FARPs.
         """
         coalition_to_warehouse_names = {'red': 'RED', 'blue': 'BLUE', 'neutrals': 'NEUTRAL'}
         for coalition_name in self.coalition:
@@ -1030,13 +1034,13 @@ class Mission:
                 # Ships that can have aircraft parked need a warehouse entry.
                 for ship_group in self.coalition[coalition_name].countries[country_name].ship_group:
                     for unit_ in ship_group.units:
-                        if ships.ship_map[unit_.type].parking > 0:
+                        if ships.ship_map[unit_.type].parking > 0 and int(unit_.id) not in self.warehouses.warehouses:
                             self.warehouses.warehouses[int(unit_.id)] = terrain_.terrain.Warehouse().dict()
                             self.warehouses.warehouses[int(unit_.id)]['coalition'] = coalition_name_in_warehouse
                 # FARPs need a warehouse entry.
                 for static_group in self.coalition[coalition_name].countries[country_name].static_group:
                     for unit_ in static_group.units:
-                        if isinstance(unit_, unit.BaseFARP):
+                        if isinstance(unit_, unit.BaseFARP) and int(unit_.id) not in self.warehouses.warehouses:
                             self.warehouses.warehouses[int(unit_.id)] = terrain_.terrain.Warehouse().dict()
                             self.warehouses.warehouses[int(unit_.id)]['coalition'] = coalition_name_in_warehouse
 

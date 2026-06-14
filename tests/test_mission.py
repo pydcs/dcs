@@ -1476,3 +1476,39 @@ class BasicTests(unittest.TestCase):
         self.assertIn(Coalition.Blue.value,
                       m2.groundControl.dict()["passwords"][GroundControlRole.OBSERVER.value])
         self.assertIn(Coalition.Red.value, m2.groundControl.dict()["passwords"][GroundControlRole.JTAC.value])
+
+
+class UpdateWarehousesTest(unittest.TestCase):
+
+    def _carrier_unit_id(self, m):
+        # A carrier is a ship whose type has parking > 0 -- exactly the unit
+        # class update_warehouses() creates warehouse entries for (FARPs are the
+        # other; the gap-fill logic is identical for both).
+        group = m.ship_group(
+            m.country("USA"), "CSG", dcs.ships.Stennis,
+            dcs.mapping.Point(-290000, 620000, m.terrain),
+        )
+        return int(group.units[0].id)
+
+    def test_update_warehouses_preserves_existing_entries(self):
+        # update_warehouses() runs on every Mission.save(). It must NOT overwrite
+        # an existing (possibly customized) ship/FARP warehouse entry with a fresh
+        # default; before the gap-fill guard, custom warehouse config was lost on
+        # every save.
+        m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
+        uid = self._carrier_unit_id(m)
+
+        m.warehouses.warehouses[uid] = {"coalition": "BLUE", "size": 42}
+        m.update_warehouses()
+
+        self.assertEqual(m.warehouses.warehouses[uid]["size"], 42)
+        self.assertEqual(m.warehouses.warehouses[uid]["coalition"], "BLUE")
+
+    def test_update_warehouses_gap_fills_missing_entries(self):
+        # A unit that needs a warehouse but has none still gets a default entry.
+        m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
+        uid = self._carrier_unit_id(m)
+
+        self.assertNotIn(uid, m.warehouses.warehouses)
+        m.update_warehouses()
+        self.assertIn(uid, m.warehouses.warehouses)
