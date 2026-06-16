@@ -5,7 +5,9 @@ import dcs.countries
 from dcs.liveries.livery import Livery
 from dcs.liveries.liverycache import LiveryCache
 from dcs.liveries.liveryscanner import LiveryScanner
+from dcs.payloads import PayloadDirectories
 from dcs.planes import F_16C_50
+from dcs.unittype import FlyingType
 
 
 def test_plane_liveries(tmp_path: Path) -> None:
@@ -83,3 +85,48 @@ def test_plane_liveries_for_country(tmp_path: Path) -> None:
         set(F_16C_50.iter_liveries_for_country(dcs.countries.get_by_short_name("USA")))
         == expected
     )
+
+
+def test_non_standard_payload_definition(tmp_path: Path) -> None:
+    PayloadDirectories.set_preferred(tmp_path)
+
+    (tmp_path / "test.lua").write_text(textwrap.dedent("""\
+            unitPayloads = abc
+            """))
+    # Clears cached payloads to force re-load
+    FlyingType._payload_cache = None
+    F_16C_50.payloads = None
+    F_16C_50._payload_cache = {}
+    F_16C_50.load_payloads()  # test is that load_payloads() runs without failing
+
+
+def test_standard_payload_definition(tmp_path: Path) -> None:
+    PayloadDirectories.set_preferred(tmp_path)
+
+    (tmp_path / "test.lua").write_text(textwrap.dedent("""\
+            local unitPayloads = {
+                ["name"] = "F-16C_50",
+                ["payloads"] = {
+                    [1] = {
+                        ["displayName"] = "test_payload",
+                        ["name"] = "test_payload",
+                        ["pylons"] = {
+                            [1] = {
+                                ["CLSID"] = "{C8E06185-7CD6-4C90-959F-044679E90751}",
+                                ["num"] = 1,
+                            },
+                        },
+                        ["tasks"] = {
+                            [1] = 11,
+                        },
+                    },
+                },    
+            	["unitType"] = "F-16C_50",
+            }
+            return unitPayloads
+            """))
+    # Clears cached payloads to force re-load
+    FlyingType._payload_cache = None
+    F_16C_50.payloads = None
+    payloads = F_16C_50.load_payloads()
+    assert "test_payload" in payloads
