@@ -137,7 +137,7 @@ class FlyingType(UnitType):
             if not payload_dir.exists():
                 continue
             for payload_path in payload_dir.glob("*.lua"):
-                if FlyingType._payload_cache[payload_path] == cls.id and payload_path.exists():
+                if FlyingType._payload_cache.get(payload_path) == cls.id and payload_path.exists():
                     try:
                         payload_main = lua.loads(payload_path.read_text(), _globals=FlyingType._UnitPayloadGlobals)
                     except SyntaxError:
