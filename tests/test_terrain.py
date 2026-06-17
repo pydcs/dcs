@@ -111,6 +111,33 @@ class WarehousesTest(unittest.TestCase):
         self.assertEqual(m.warehouses.warehouses[4242]["coalition"], "BLUE")
         self.assertEqual(m.warehouses.warehouses[4242]["size"], 100)
 
+    def test_load_dict_skips_airport_absent_from_terrain(self):
+        # airport_by_id() returns None when warehouse data references an airport
+        # id not present in the current terrain (e.g. a mission authored before
+        # a map update that renumbered or removed airports).  load_dict must
+        # skip the absent id instead of crashing on None.load_from_dict(), and
+        # must still load any valid airport entries in the same dict.
+        m = dcs.mission.Mission(terrain=dcs.terrain.Caucasus())
+
+        present = m.terrain.airport_by_id(12)  # Anapa-Vityazevo
+        self.assertIsNotNone(present)
+        present_data = present.dict()
+        present_data["coalition"] = "BLUE"
+        present_data["size"] = 7777
+
+        # The absent id is iterated first, so the loop must continue past it to
+        # reach the present id.  This must not raise.
+        m.warehouses.load_dict({
+            "airports": {
+                999999: {},   # not present in Caucasus -> airport_by_id() is None
+                12: present_data,
+            },
+            "warehouses": {},
+        })
+
+        self.assertEqual(present.coalition, "BLUE")
+        self.assertEqual(present.size, 7777)
+
 
 class NormandyTest(unittest.TestCase):
 

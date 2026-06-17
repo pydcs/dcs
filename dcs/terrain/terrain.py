@@ -613,7 +613,14 @@ class Warehouses:
 
     def load_dict(self, data):
         for x in data.get("airports", {}):
-            self.terrain.airport_by_id(x).load_from_dict(data["airports"][x])
+            airport = self.terrain.airport_by_id(x)
+            if airport is None:
+                # Warehouse data references an airport id not present in the
+                # current terrain (e.g. a mission authored before a map update
+                # that renumbered or removed airports).  Skip it rather than
+                # crash the whole load on None.load_from_dict().
+                continue
+            airport.load_from_dict(data["airports"][x])
         for uid, wh_data in data.get("warehouses", {}).items():
             self.warehouses[int(uid)] = wh_data
 
