@@ -7,6 +7,7 @@ from dcs.liveries.liverycache import LiveryCache
 from dcs.liveries.liveryscanner import LiveryScanner
 from dcs.payloads import PayloadDirectories
 from dcs.planes import F_16C_50
+from dcs.task import CAP
 from dcs.unittype import FlyingType
 
 
@@ -130,3 +131,45 @@ def test_standard_payload_definition(tmp_path: Path) -> None:
     F_16C_50.payloads = None
     payloads = F_16C_50.load_payloads()
     assert "test_payload" in payloads
+    assert payloads["test_payload"] == {'displayName': 'test_payload', 'name': 'test_payload', 'pylons': {1: {'CLSID': '{C8E06185-7CD6-4C90-959F-044679E90751}', 'num': 1}}, 'tasks': {1: 11}}
+    assert F_16C_50.loadout_by_name("test_payload") == [(1, {'clsid': '{C8E06185-7CD6-4C90-959F-044679E90751}'})]
+    assert F_16C_50.loadout(CAP) == [(1, {'clsid': '{C8E06185-7CD6-4C90-959F-044679E90751}'})]
+    
+
+def test_payload_definition_with_fuze_settings(tmp_path: Path) -> None:
+    PayloadDirectories.set_preferred(tmp_path)
+
+    (tmp_path / "test.lua").write_text(textwrap.dedent("""\
+            local unitPayloads = {
+                ["name"] = "F-16C_50",
+                ["payloads"] = {
+                    [1] = {
+                        ["displayName"] = "test_payload",
+                        ["name"] = "test_payload",
+                        ["pylons"] = {
+                            [1] = {
+                                ["CLSID"] = "{C8E06185-7CD6-4C90-959F-044679E90751}",
+                                ["num"] = 1,
+                                ["settings"] = {
+                                    ["first"] = 1,
+                                    ["second"] = "A",
+                                },
+                            },
+                        },
+                        ["tasks"] = {
+                            [1] = 11,
+                        },
+                    },
+                },    
+            	["unitType"] = "F-16C_50",
+            }
+            return unitPayloads
+            """))
+    # Clears cached payloads to force re-load
+    FlyingType._payload_cache = None
+    F_16C_50.payloads = None
+    payloads = F_16C_50.load_payloads()
+    assert "test_payload" in payloads
+    assert payloads["test_payload"] == {'displayName': 'test_payload', 'name': 'test_payload', 'pylons': {1: {'CLSID': '{C8E06185-7CD6-4C90-959F-044679E90751}', 'num': 1, 'settings': {'first': 1, 'second': 'A'}}}, 'tasks': {1: 11}}
+    assert F_16C_50.loadout_by_name("test_payload") == [(1, {'clsid': '{C8E06185-7CD6-4C90-959F-044679E90751}', 'settings': {'first': 1, 'second': 'A'}})]
+    assert F_16C_50.loadout(CAP) == [(1, {'clsid': '{C8E06185-7CD6-4C90-959F-044679E90751}', 'settings': {'first': 1, 'second': 'A'}})]

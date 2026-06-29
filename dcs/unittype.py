@@ -162,7 +162,12 @@ class FlyingType(UnitType):
                 tasks = [payload["tasks"][x] for x in payload["tasks"]]
                 if _task.id in tasks:
                     pylons = payload["pylons"]
-                    r = [(pylons[x]["num"], {"clsid": pylons[x]["CLSID"]}) for x in pylons]
+                    r = []
+                    for pylon in pylons:
+                        pylon_data = {"clsid": pylons[pylon]["CLSID"]}
+                        if "settings" in pylons[pylon]:
+                            pylon_data["settings"] = pylons[pylon]["settings"]
+                        r.append((pylons[pylon]["num"], pylon_data))
                     return r
         return None
 
@@ -173,7 +178,12 @@ class FlyingType(UnitType):
             if payload is None:
                 return None
             pylons = payload["pylons"]
-            r = [(pylons[x]["num"], {"clsid": pylons[x]["CLSID"]}) for x in pylons]
+            r = []
+            for pylon in pylons:
+                pylon_data = {"clsid": pylons[pylon]["CLSID"]}
+                if "settings" in pylons[pylon]:
+                    pylon_data["settings"] = pylons[pylon]["settings"]
+                r.append((pylons[pylon]["num"], pylon_data))
             return r
         return None
 
