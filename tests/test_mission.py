@@ -933,7 +933,7 @@ class BasicTests(unittest.TestCase):
         m.load_file(mizname)
         self.assertEqual(m.required_modules, {"WWII Armour and Technics": "WWII Armour and Technics"})
 
-        saved_miz = "tests/missions/Mission_with_required_modules_saved.miz"
+        saved_miz = "missions/Mission_with_required_modules_saved.miz"
         m.save(saved_miz)
         m2 = dcs.mission.Mission()
         m2.load_file(saved_miz)
@@ -1476,6 +1476,35 @@ class BasicTests(unittest.TestCase):
         self.assertIn(Coalition.Blue.value,
                       m2.groundControl.dict()["passwords"][GroundControlRole.OBSERVER.value])
         self.assertIn(Coalition.Red.value, m2.groundControl.dict()["passwords"][GroundControlRole.JTAC.value])
+        
+    def test_unit_payload(self):
+        m = dcs.mission.Mission(terrain=dcs.terrain.Syria())
+
+        country_name = "USA"
+        group_name = "F/A-18C"
+        group = m.flight_group_from_airport(
+            m.country(country_name),
+            group_name,
+            dcs.planes.FA_18C_hornet,
+            group_size=1,
+            airport=m.terrain.airports["Damascus"]
+        )
+        unit = group.units[0]
+        unit.reset_loadout()
+        unit.load_pylon((1, {"clsid": "test_without_settings"}))
+        unit.load_pylon((2, {"clsid": "test_with_settings", "settings": {"first": 1, "second": 2}}))
+        mission_file = Path('missions/payload.miz')
+        m.save(mission_file)
+
+        m = dcs.mission.Mission()
+        self.assertEqual(0, len(m.load_file('missions/payload.miz')))
+        group = m.country(country_name).find_group(group_name)
+        self.assertIsNotNone(group)
+        self.assertIsInstance(group, dcs.unitgroup.FlyingGroup)
+        self.assertEqual(1, len(group.units))
+        unit = group.units[0]
+        self.assertIsInstance(unit, FlyingUnit)
+        self.assertDictEqual(unit.pylons, {1: {"CLSID": "test_without_settings"}, 2: {"CLSID": "test_with_settings", "settings": {"first": 1, "second": 2}}})
 
 
 class UpdateWarehousesTest(unittest.TestCase):

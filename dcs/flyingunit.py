@@ -92,7 +92,10 @@ class FlyingUnit(Unit):
             raise RuntimeError("Plane {pn} has no pylon {p}.".format(pn=self.unit_type.id, p=pylon))
         if weapon is None:
             return self.pylons.pop(pylon, None)
-        self.pylons[pylon] = {"CLSID": weapon[1]["clsid"]}
+        pylon_data = {"CLSID": weapon[1]["clsid"]}
+        if "settings" in weapon[1]:
+            pylon_data["settings"] = weapon[1]["settings"]
+        self.pylons[pylon] = pylon_data
         return True
 
     def store_loadout(self, filename):
