@@ -237,6 +237,7 @@ flyable["F-14A-95-GR"] = true
 flyable["F-14A-135-GR"] = true
 flyable["F-14A-135-GR-EARLY"] = true
 flyable["F-14B"] = true
+flyable["F-14BU"] = true
 flyable["F-15C"] = true
 flyable["F-15ESE"] = true
 flyable["F-16C_50"] = true

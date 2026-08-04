@@ -1501,8 +1501,15 @@ class Unarmed:
 
     class GPS_Spoofer_Blue(unittype.VehicleType):
         id = "GPS_Spoofer_Blue"
-        name = "GPS Spoofer NATO"
-        detection_range = 0
+        name = "Radio jammer"
+        detection_range = 50000
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class GCI_station_MiG29(unittype.VehicleType):
+        id = "GCI_station_MiG29"
+        name = "GCI station (KRU)"
+        detection_range = 10
         threat_range = 0
         air_weapon_dist = 0
 
@@ -1550,8 +1557,8 @@ class Unarmed:
 
     class GPS_Spoofer_Red(unittype.VehicleType):
         id = "GPS_Spoofer_Red"
-        name = "GPS Spoofer RF"
-        detection_range = 0
+        name = "Radio jammer"
+        detection_range = 50000
         threat_range = 0
         air_weapon_dist = 0
 
@@ -2770,6 +2777,7 @@ vehicle_map = {
     "ZSU_57_2": AirDefence.ZSU_57_2,
     "S-60_Type59_Artillery": AirDefence.S_60_Type59_Artillery,
     "generator_5i57": AirDefence.Generator_5i57,
+    "GCI_station_MiG29": Unarmed.GCI_station_MiG29,
     "T-72B3": Armor.T_72B3,
     "PT_76": Armor.PT_76,
     "BTR-82A": Armor.BTR_82A,
