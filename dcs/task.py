@@ -1209,7 +1209,7 @@ class ActivateBeaconCommand(WrappedAction):
                     "unitId": unit_id,
                     "modeChannel": modechannel,
                     "bearing": bearing,
-                    "system": 4 if aa else 3,
+                    "system": 5 if modechannel == "Y" else 4 if aa else 3,
                 }
             }
         }
