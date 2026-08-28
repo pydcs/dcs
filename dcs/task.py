@@ -739,7 +739,7 @@ class Tanker(Task):
 class RecoveryTanker(Task):
     Id = "RecoveryTanker"
 
-    def __init__(self, groupId: int, speed: float, altitude: float, lastWaypoint: Optional[int]):
+    def __init__(self, groupId=None, speed=600, altitude=4000, lastWaypoint: Optional[int] = None):
         super(RecoveryTanker, self).__init__(RecoveryTanker.Id)
 
         speedEdited = True
@@ -753,7 +753,6 @@ class RecoveryTanker(Task):
 
         self.params = {
             "speedEdited": speedEdited,
-            "groupId": groupId,
             "altitudeEdited": altitudeEdited,
             "altitude": altitude,
             "targetTypes": {
@@ -764,6 +763,8 @@ class RecoveryTanker(Task):
             "lastWptIndexFlagChangedManually": lastWptIndexChangedManually,
             "lastWptIndex": lastWaypoint,
         }
+        if groupId is not None:
+            self.params["groupId"] = groupId
 
 
 class OrbitAction(Task):
@@ -1129,6 +1130,7 @@ tasks_map: Dict[str, Type[Task]] = {
     AWACSTaskAction.Id: AWACSTaskAction,
     RefuelingTaskAction.Id: RefuelingTaskAction,
     Tanker.Id: Tanker,
+    RecoveryTanker.Id: RecoveryTanker,
     OrbitAction.Id: OrbitAction,
     Follow.Id: Follow,
     Aerobatics.Id: Aerobatics,
