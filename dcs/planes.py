@@ -11569,7 +11569,7 @@ class JF_17(PlaneType):
         "EW_Database_Target1": UnitPropertyDescription(
             identifier="EW_Database_Target1",
             control="comboList",
-            label="EW Target I",
+            label="EW Target I (PP1)",
             default=1,
             w_ctrl=150,
             values={
@@ -11620,7 +11620,7 @@ class JF_17(PlaneType):
         "EW_Database_Target2": UnitPropertyDescription(
             identifier="EW_Database_Target2",
             control="comboList",
-            label="EW Target II",
+            label="EW Target II (PP2)",
             default=1,
             w_ctrl=150,
             values={
@@ -11671,7 +11671,7 @@ class JF_17(PlaneType):
         "EW_Database_Target3": UnitPropertyDescription(
             identifier="EW_Database_Target3",
             control="comboList",
-            label="EW Target III",
+            label="EW Target III (PP3)",
             default=1,
             w_ctrl=150,
             values={
@@ -11722,7 +11722,7 @@ class JF_17(PlaneType):
         "EW_Database_Target4": UnitPropertyDescription(
             identifier="EW_Database_Target4",
             control="comboList",
-            label="EW Target IV",
+            label="EW Target IV (PP4)",
             default=1,
             w_ctrl=150,
             values={
@@ -12430,6 +12430,7 @@ class F_100D(PlaneType):
         CBU_7_A_x_30x40__1200__BLU_18_B_Bomblets__HE = (3, Weapons.CBU_7_A_x_30x40__1200__BLU_18_B_Bomblets__HE)
         CBU_38_A_x_1x40__40__BLU_49_B_Bomblets__HE = (3, Weapons.CBU_38_A_x_1x40__40__BLU_49_B_Bomblets__HE)
         AGM_45A_Shrike_ARM = (3, Weapons.AGM_45A_Shrike_ARM)
+        AGM_45B_Shrike_ARM = (3, Weapons.AGM_45B_Shrike_ARM)
 #ERRR <CLEAN>
         _2x_AIM_9B_Sidewinder_IR_AAM = (3, Weapons._2x_AIM_9B_Sidewinder_IR_AAM)
         _2x_AIM_9E_Sidewinder_IR_AAM = (3, Weapons._2x_AIM_9E_Sidewinder_IR_AAM)
@@ -12483,6 +12484,7 @@ class F_100D(PlaneType):
         CBU_7_A_x_30x40__1200__BLU_18_B_Bomblets__HE = (5, Weapons.CBU_7_A_x_30x40__1200__BLU_18_B_Bomblets__HE)
         CBU_38_A_x_1x40__40__BLU_49_B_Bomblets__HE = (5, Weapons.CBU_38_A_x_1x40__40__BLU_49_B_Bomblets__HE)
         AGM_45A_Shrike_ARM = (5, Weapons.AGM_45A_Shrike_ARM)
+        AGM_45B_Shrike_ARM = (5, Weapons.AGM_45B_Shrike_ARM)
 #ERRR <CLEAN>
         _2x_AIM_9B_Sidewinder_IR_AAM = (5, Weapons._2x_AIM_9B_Sidewinder_IR_AAM)
         _2x_AIM_9E_Sidewinder_IR_AAM = (5, Weapons._2x_AIM_9E_Sidewinder_IR_AAM)
@@ -14119,6 +14121,7 @@ class F_4E_45MC(PlaneType):
         _1x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_ = (1, Weapons._1x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_)
         SUU_25___8_x_Illumination_Flare__LUU_2B = (1, Weapons.SUU_25___8_x_Illumination_Flare__LUU_2B)
         AGM_45A_Shrike_ARM__LAU_34_ = (1, Weapons.AGM_45A_Shrike_ARM__LAU_34_)
+        AGM_45B_Shrike_ARM__LAU_34_ = (1, Weapons.AGM_45B_Shrike_ARM__LAU_34_)
         AGM_12A_Bullpup_MCLOS_ASM__LAU_34_ = (1, Weapons.AGM_12A_Bullpup_MCLOS_ASM__LAU_34_)
         AGM_12B_Bullpup_MCLOS_ASM__LAU_34_ = (1, Weapons.AGM_12B_Bullpup_MCLOS_ASM__LAU_34_)
         SUU_23_ = (1, Weapons.SUU_23_)
@@ -14203,6 +14206,8 @@ class F_4E_45MC(PlaneType):
         AGM_65G___Maverick_G__IIR_ASM___Lg_Whd___LAU_117_ = (3, Weapons.AGM_65G___Maverick_G__IIR_ASM___Lg_Whd___LAU_117_)
         AGM_45A_Shrike_ARM__LAU_34_ = (3, Weapons.AGM_45A_Shrike_ARM__LAU_34_)
         _Special_Weapons_Adapter__AGM_45A_Shrike_ARM__LAU_34_ = (3, Weapons._Special_Weapons_Adapter__AGM_45A_Shrike_ARM__LAU_34_)
+        AGM_45B_Shrike_ARM__LAU_34_ = (3, Weapons.AGM_45B_Shrike_ARM__LAU_34_)
+        _Special_Weapons_Adapter__AGM_45B_Shrike_ARM__LAU_34_ = (3, Weapons._Special_Weapons_Adapter__AGM_45B_Shrike_ARM__LAU_34_)
         AGM_62_Walleye_II___Guided_Weapon_Mk_5__TV_Guided_ = (3, Weapons.AGM_62_Walleye_II___Guided_Weapon_Mk_5__TV_Guided_)
         AGM_62_Walleye_I___Guided_Weapon_Mk_1__TV_Guided_ = (3, Weapons.AGM_62_Walleye_I___Guided_Weapon_Mk_1__TV_Guided_)
         GBU_8_B_HOBOS___2000_lb_TV_Guided_Bomb = (3, Weapons.GBU_8_B_HOBOS___2000_lb_TV_Guided_Bomb)
@@ -14438,6 +14443,8 @@ class F_4E_45MC(PlaneType):
         AGM_65G___Maverick_G__IIR_ASM___Lg_Whd___LAU_117_ = (11, Weapons.AGM_65G___Maverick_G__IIR_ASM___Lg_Whd___LAU_117_)
         AGM_45A_Shrike_ARM__LAU_34_ = (11, Weapons.AGM_45A_Shrike_ARM__LAU_34_)
         _Special_Weapons_Adapter__AGM_45A_Shrike_ARM__LAU_34_ = (11, Weapons._Special_Weapons_Adapter__AGM_45A_Shrike_ARM__LAU_34_)
+        AGM_45B_Shrike_ARM__LAU_34_ = (11, Weapons.AGM_45B_Shrike_ARM__LAU_34_)
+        _Special_Weapons_Adapter__AGM_45B_Shrike_ARM__LAU_34_ = (11, Weapons._Special_Weapons_Adapter__AGM_45B_Shrike_ARM__LAU_34_)
         AGM_62_Walleye_II___Guided_Weapon_Mk_5__TV_Guided_ = (11, Weapons.AGM_62_Walleye_II___Guided_Weapon_Mk_5__TV_Guided_)
         AGM_62_Walleye_I___Guided_Weapon_Mk_1__TV_Guided_ = (11, Weapons.AGM_62_Walleye_I___Guided_Weapon_Mk_1__TV_Guided_)
         GBU_8_B_HOBOS___2000_lb_TV_Guided_Bomb = (11, Weapons.GBU_8_B_HOBOS___2000_lb_TV_Guided_Bomb)
@@ -14580,6 +14587,7 @@ class F_4E_45MC(PlaneType):
         _1x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_ = (13, Weapons._1x_LAU_10_pod___4_x_5_Zuni__UnGd_Rkts_Mk71__HE_FRAG__MER_)
         SUU_25___8_x_Illumination_Flare__LUU_2B = (13, Weapons.SUU_25___8_x_Illumination_Flare__LUU_2B)
         AGM_45A_Shrike_ARM__LAU_34_ = (13, Weapons.AGM_45A_Shrike_ARM__LAU_34_)
+        AGM_45B_Shrike_ARM__LAU_34_ = (13, Weapons.AGM_45B_Shrike_ARM__LAU_34_)
         AGM_12A_Bullpup_MCLOS_ASM__LAU_34_ = (13, Weapons.AGM_12A_Bullpup_MCLOS_ASM__LAU_34_)
         AGM_12B_Bullpup_MCLOS_ASM__LAU_34_ = (13, Weapons.AGM_12B_Bullpup_MCLOS_ASM__LAU_34_)
         SUU_23_ = (13, Weapons.SUU_23_)
@@ -18697,9 +18705,9 @@ class F4U_1D_CW(PlaneType):
         "F4U_GunsConvergence_Mid": 2,
         "F4U_GunsConvergence_Outer": 2,
         "F4U_CW_number": True,
-        "F4U_CW_number_1": 0,
-        "F4U_CW_number_2": 4,
-        "F4U_CW_number_3": 6,
+        "F4U_CW_number_1": 6,
+        "F4U_CW_number_2": 3,
+        "F4U_CW_number_3": 8,
     }
 
     class Properties:
@@ -18847,7 +18855,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_1",
             control="comboList",
             label="1st number",
-            default=0,
+            default=6,
             values={
                 0: "0",
                 1: "1",
@@ -18865,7 +18873,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_2",
             control="comboList",
             label="2nd number",
-            default=4,
+            default=3,
             values={
                 0: "0",
                 1: "1",
@@ -18883,7 +18891,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_3",
             control="comboList",
             label="3rd number",
-            default=6,
+            default=8,
             values={
                 0: "0",
                 1: "1",
@@ -21134,6 +21142,7 @@ class MB_339A(PlaneType):
         _14_3_M2___6_x_BAP_100___32kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons._14_3_M2___6_x_BAP_100___32kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         _14_3_M2___6_x_BAT_120_ABL___34kg_HE_Frag_Chute_Retarded_Bomb_HD = (2, Weapons._14_3_M2___6_x_BAT_120_ABL___34kg_HE_Frag_Chute_Retarded_Bomb_HD)
         LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy = (2, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy)
+        LAU_7_with_AIM_9B = (2, Weapons.LAU_7_with_AIM_9B)
         LAU_7_with_Magic_I = (2, Weapons.LAU_7_with_Magic_I)
         LAU_7_with_Magic_II = (2, Weapons.LAU_7_with_Magic_II)
         LAU_7_with_AIM_9L = (2, Weapons.LAU_7_with_AIM_9L)
@@ -21240,6 +21249,7 @@ class MB_339A(PlaneType):
         _14_3_M2___6_x_BAP_100___32kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (9, Weapons._14_3_M2___6_x_BAP_100___32kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         _14_3_M2___6_x_BAT_120_ABL___34kg_HE_Frag_Chute_Retarded_Bomb_HD = (9, Weapons._14_3_M2___6_x_BAT_120_ABL___34kg_HE_Frag_Chute_Retarded_Bomb_HD)
         LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy = (9, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy)
+        LAU_7_with_AIM_9B = (9, Weapons.LAU_7_with_AIM_9B)
         LAU_7_with_Magic_I = (9, Weapons.LAU_7_with_Magic_I)
         LAU_7_with_Magic_II = (9, Weapons.LAU_7_with_Magic_II)
         LAU_7_with_AIM_9L = (9, Weapons.LAU_7_with_AIM_9L)

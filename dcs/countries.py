@@ -128,8 +128,11 @@ class Russia(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             S_75_ZIL = vehicles.Unarmed.S_75_ZIL
+            S_75_Zil_Trailer = vehicles.Unarmed.S_75_Zil_Trailer
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
+            TZ_22_TANK = vehicles.Unarmed.TZ_22_TANK
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -177,6 +180,8 @@ class Russia(Country):
             BRDM_2_malyutka = vehicles.Armor.BRDM_2_malyutka
             CHAP_T90M = vehicles.Armor.CHAP_T90M
             CHAP_BMPT = vehicles.Armor.CHAP_BMPT
+            CHAP_BMP3_ERA = vehicles.Armor.CHAP_BMP3_ERA
+            CHAP_Titan = vehicles.Armor.CHAP_Titan
 
         class MissilesSS:
             Scud_B = vehicles.MissilesSS.Scud_B
@@ -197,9 +202,6 @@ class Russia(Country):
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_platform = vehicles.Carriage.Coach_a_platform
             Coach_a_passenger = vehicles.Carriage.Coach_a_passenger
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Boxcartrinity = vehicles.Carriage.Boxcartrinity
             Tankcartrinity = vehicles.Carriage.Tankcartrinity
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
@@ -708,9 +710,12 @@ class Ukraine(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
+            TZ_22_TANK = vehicles.Unarmed.TZ_22_TANK
             M978_HEMTT_Tanker = vehicles.Unarmed.M978_HEMTT_Tanker
             CHAP_M1083 = vehicles.Unarmed.CHAP_M1083
+            CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -751,6 +756,7 @@ class Ukraine(Country):
             CHAP_T84OplotM = vehicles.Armor.CHAP_T84OplotM
             CHAP_T64BV = vehicles.Armor.CHAP_T64BV
             T_90 = vehicles.Armor.T_90
+            CHAP_BMP3_ERA = vehicles.Armor.CHAP_BMP3_ERA
 
         class MissilesSS:
             Scud_B = vehicles.MissilesSS.Scud_B
@@ -768,8 +774,6 @@ class Ukraine(Country):
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_platform = vehicles.Carriage.Coach_a_platform
             Coach_a_passenger = vehicles.Carriage.Coach_a_passenger
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Boxcartrinity = vehicles.Carriage.Boxcartrinity
             Tankcartrinity = vehicles.Carriage.Tankcartrinity
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
@@ -1152,6 +1156,7 @@ class USA(Country):
             M1A2C_SEP_V3 = vehicles.Armor.M1A2C_SEP_V3
             CHAP_MATV = vehicles.Armor.CHAP_MATV
             CHAP_M1130 = vehicles.Armor.CHAP_M1130
+            CHAP_M1296 = vehicles.Armor.CHAP_M1296
             M4_Sherman = vehicles.Armor.M4_Sherman
             Cromwell_IV = vehicles.Armor.Cromwell_IV
             M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
@@ -2027,6 +2032,7 @@ class UK(Country):
             Willys_MB = vehicles.Unarmed.Willys_MB
             Land_Rover_101_FC = vehicles.Unarmed.Land_Rover_101_FC
             Land_Rover_109_S3 = vehicles.Unarmed.Land_Rover_109_S3
+            CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -2923,6 +2929,10 @@ class Germany(Country):
             Ural_4320T = vehicles.Unarmed.Ural_4320T
             ZIL_131_KUNG = vehicles.Unarmed.ZIL_131_KUNG
             ATZ_5 = vehicles.Unarmed.ATZ_5
+            CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
+            CHAP_SLT50_Tractor = vehicles.Unarmed.CHAP_SLT50_Tractor
+            CHAP_SLT50_Trailer = vehicles.Unarmed.CHAP_SLT50_Trailer
+            CHAP_HX81_Tractor = vehicles.Unarmed.CHAP_HX81_Tractor
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -3511,8 +3521,11 @@ class USAFAggressors(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             S_75_ZIL = vehicles.Unarmed.S_75_ZIL
+            S_75_Zil_Trailer = vehicles.Unarmed.S_75_Zil_Trailer
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
+            TZ_22_TANK = vehicles.Unarmed.TZ_22_TANK
             GCI_station_MiG29 = vehicles.Unarmed.GCI_station_MiG29
             AA8 = vehicles.Unarmed.AA8
             GPS_Spoofer_Red = vehicles.Unarmed.GPS_Spoofer_Red
@@ -3541,6 +3554,10 @@ class USAFAggressors(Country):
             Predator_GCS = vehicles.Unarmed.Predator_GCS
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
+            CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
+            CHAP_SLT50_Tractor = vehicles.Unarmed.CHAP_SLT50_Tractor
+            CHAP_SLT50_Trailer = vehicles.Unarmed.CHAP_SLT50_Trailer
+            CHAP_HX81_Tractor = vehicles.Unarmed.CHAP_HX81_Tractor
             GD_20 = vehicles.Unarmed.GD_20
             GPS_Spoofer_Blue = vehicles.Unarmed.GPS_Spoofer_Blue
             Type_94_Truck = vehicles.Unarmed.Type_94_Truck
@@ -3603,6 +3620,7 @@ class USAFAggressors(Country):
             VAB_Mephisto = vehicles.Armor.VAB_Mephisto
             T_90 = vehicles.Armor.T_90
             Chieftain_mk3 = vehicles.Armor.Chieftain_mk3
+            CHAP_BMP3_ERA = vehicles.Armor.CHAP_BMP3_ERA
             AAV7 = vehicles.Armor.AAV7
             Leopard1A3 = vehicles.Armor.Leopard1A3
             Leopard_2 = vehicles.Armor.Leopard_2
@@ -3612,6 +3630,7 @@ class USAFAggressors(Country):
             BTR_82A = vehicles.Armor.BTR_82A
             CHAP_T90M = vehicles.Armor.CHAP_T90M
             CHAP_BMPT = vehicles.Armor.CHAP_BMPT
+            CHAP_Titan = vehicles.Armor.CHAP_Titan
             M_2_Bradley = vehicles.Armor.M_2_Bradley
             Cobra = vehicles.Armor.Cobra
             LAV_25 = vehicles.Armor.LAV_25
@@ -3632,6 +3651,7 @@ class USAFAggressors(Country):
             M1134_Stryker_ATGM = vehicles.Armor.M1134_Stryker_ATGM
             M1A2C_SEP_V3 = vehicles.Armor.M1A2C_SEP_V3
             CHAP_M1130 = vehicles.Armor.CHAP_M1130
+            CHAP_M1296 = vehicles.Armor.CHAP_M1296
             CHAP_T84OplotM = vehicles.Armor.CHAP_T84OplotM
             CHAP_T64BV = vehicles.Armor.CHAP_T64BV
             MCV_80 = vehicles.Armor.MCV_80
@@ -3665,9 +3685,6 @@ class USAFAggressors(Country):
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
             DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
             German_covered_wagon_G10 = vehicles.Carriage.German_covered_wagon_G10
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
@@ -6247,6 +6264,7 @@ class Denmark(Country):
         class Unarmed:
             Hummer = vehicles.Unarmed.Hummer
             M_818 = vehicles.Unarmed.M_818
+            CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -7083,7 +7101,9 @@ class Georgia(Country):
             Ural_4320T = vehicles.Unarmed.Ural_4320T
             ATZ_5 = vehicles.Unarmed.ATZ_5
             S_75_ZIL = vehicles.Unarmed.S_75_ZIL
+            S_75_Zil_Trailer = vehicles.Unarmed.S_75_Zil_Trailer
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
+            TZ_22_TANK = vehicles.Unarmed.TZ_22_TANK
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -7123,8 +7143,6 @@ class Georgia(Country):
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_platform = vehicles.Carriage.Coach_a_platform
             Coach_a_passenger = vehicles.Carriage.Coach_a_passenger
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Boxcartrinity = vehicles.Carriage.Boxcartrinity
             Tankcartrinity = vehicles.Carriage.Tankcartrinity
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
@@ -8812,6 +8830,7 @@ class Australia(Country):
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Land_Rover_101_FC = vehicles.Unarmed.Land_Rover_101_FC
             Land_Rover_109_S3 = vehicles.Unarmed.Land_Rover_109_S3
+            CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -9965,7 +9984,9 @@ class Belarus(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
+            TZ_22_TANK = vehicles.Unarmed.TZ_22_TANK
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -10014,8 +10035,6 @@ class Belarus(Country):
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_platform = vehicles.Carriage.Coach_a_platform
             Coach_a_passenger = vehicles.Carriage.Coach_a_passenger
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Boxcartrinity = vehicles.Carriage.Boxcartrinity
             Tankcartrinity = vehicles.Carriage.Tankcartrinity
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
@@ -10330,6 +10349,7 @@ class Bulgaria(Country):
             VAZ_Car = vehicles.Unarmed.VAZ_Car
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -10383,7 +10403,6 @@ class Bulgaria(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -11884,6 +11903,7 @@ class Egypt(Country):
             M978_HEMTT_Tanker = vehicles.Unarmed.M978_HEMTT_Tanker
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -11926,7 +11946,6 @@ class Egypt(Country):
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
             Boxcartrinity = vehicles.Carriage.Boxcartrinity
             Tankcartrinity = vehicles.Carriage.Tankcartrinity
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -13161,6 +13180,7 @@ class Hungary(Country):
             MAZ_6303 = vehicles.Unarmed.MAZ_6303
             Trolley_bus = vehicles.Unarmed.Trolley_bus
             VAZ_Car = vehicles.Unarmed.VAZ_Car
+            CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -14466,6 +14486,7 @@ class Iraq(Country):
             MaxxPro_MRAP = vehicles.Armor.MaxxPro_MRAP
             BRDM_2_malyutka = vehicles.Armor.BRDM_2_malyutka
             CHAP_MATV = vehicles.Armor.CHAP_MATV
+            CHAP_BMP3_ERA = vehicles.Armor.CHAP_BMP3_ERA
 
         class MissilesSS:
             Scud_B = vehicles.MissilesSS.Scud_B
@@ -15318,7 +15339,9 @@ class Kazakhstan(Country):
             Hummer = vehicles.Unarmed.Hummer
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
+            TZ_22_TANK = vehicles.Unarmed.TZ_22_TANK
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -15370,8 +15393,6 @@ class Kazakhstan(Country):
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_platform = vehicles.Carriage.Coach_a_platform
             Coach_a_passenger = vehicles.Carriage.Coach_a_passenger
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
             German_covered_wagon_G10 = vehicles.Carriage.German_covered_wagon_G10
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
@@ -18176,6 +18197,8 @@ class Slovakia(Country):
             Trolley_bus = vehicles.Unarmed.Trolley_bus
             VAZ_Car = vehicles.Unarmed.VAZ_Car
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
+            CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -18207,7 +18230,6 @@ class Slovakia(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -20126,6 +20148,7 @@ class Vietnam(Country):
         class Unarmed:
             Ural_375 = vehicles.Unarmed.Ural_375
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -20159,7 +20182,6 @@ class Vietnam(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -20520,6 +20542,7 @@ class Venezuela(Country):
         class Unarmed:
             Ural_375 = vehicles.Unarmed.Ural_375
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -20545,7 +20568,6 @@ class Venezuela(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -27136,8 +27158,11 @@ class USSR(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             S_75_ZIL = vehicles.Unarmed.S_75_ZIL
+            S_75_Zil_Trailer = vehicles.Unarmed.S_75_Zil_Trailer
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
+            TZ_22_TANK = vehicles.Unarmed.TZ_22_TANK
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -27210,9 +27235,6 @@ class USSR(Country):
             Coach_cargo = vehicles.Carriage.Coach_cargo
             German_covered_wagon_G10 = vehicles.Carriage.German_covered_wagon_G10
             DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Boxcartrinity = vehicles.Carriage.Boxcartrinity
             Tankcartrinity = vehicles.Carriage.Tankcartrinity
@@ -27960,6 +27982,7 @@ class Algeria(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -27986,6 +28009,8 @@ class Algeria(Country):
             T_34_85 = vehicles.Armor.T_34_85
             BTR_60 = vehicles.Armor.BTR_60
             CHAP_BMPT = vehicles.Armor.CHAP_BMPT
+            BMP_3 = vehicles.Armor.BMP_3
+            CHAP_BMP3_ERA = vehicles.Armor.CHAP_BMP3_ERA
 
         class MissilesSS:
             CHAP_9K720_HE = vehicles.MissilesSS.CHAP_9K720_HE
@@ -27998,7 +28023,6 @@ class Algeria(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -28412,6 +28436,7 @@ class Kuwait(Country):
             HL_KORD = vehicles.Armor.HL_KORD
             HL_DSHK = vehicles.Armor.HL_DSHK
             CHAP_FV101 = vehicles.Armor.CHAP_FV101
+            CHAP_BMP3_ERA = vehicles.Armor.CHAP_BMP3_ERA
 
         class Locomotive:
             Electric_locomotive = vehicles.Locomotive.Electric_locomotive
@@ -31062,7 +31087,9 @@ class GDR(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             S_75_ZIL = vehicles.Unarmed.S_75_ZIL
+            S_75_Zil_Trailer = vehicles.Unarmed.S_75_Zil_Trailer
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -31096,8 +31123,6 @@ class GDR(Country):
             DRG_Class_86 = vehicles.Locomotive.DRG_Class_86
 
         class Carriage:
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             Coach_cargo = vehicles.Carriage.Coach_cargo
             Coach_cargo_open = vehicles.Carriage.Coach_cargo_open
             Coach_a_tank_blue = vehicles.Carriage.Coach_a_tank_blue
@@ -31988,8 +32013,11 @@ class CombinedJointTaskForcesBlue(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             S_75_ZIL = vehicles.Unarmed.S_75_ZIL
+            S_75_Zil_Trailer = vehicles.Unarmed.S_75_Zil_Trailer
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
+            TZ_22_TANK = vehicles.Unarmed.TZ_22_TANK
             GCI_station_MiG29 = vehicles.Unarmed.GCI_station_MiG29
             AA8 = vehicles.Unarmed.AA8
             GPS_Spoofer_Red = vehicles.Unarmed.GPS_Spoofer_Red
@@ -32018,6 +32046,10 @@ class CombinedJointTaskForcesBlue(Country):
             Predator_GCS = vehicles.Unarmed.Predator_GCS
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
+            CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
+            CHAP_SLT50_Tractor = vehicles.Unarmed.CHAP_SLT50_Tractor
+            CHAP_SLT50_Trailer = vehicles.Unarmed.CHAP_SLT50_Trailer
+            CHAP_HX81_Tractor = vehicles.Unarmed.CHAP_HX81_Tractor
             GD_20 = vehicles.Unarmed.GD_20
             GPS_Spoofer_Blue = vehicles.Unarmed.GPS_Spoofer_Blue
             Type_94_Truck = vehicles.Unarmed.Type_94_Truck
@@ -32080,6 +32112,7 @@ class CombinedJointTaskForcesBlue(Country):
             VAB_Mephisto = vehicles.Armor.VAB_Mephisto
             T_90 = vehicles.Armor.T_90
             Chieftain_mk3 = vehicles.Armor.Chieftain_mk3
+            CHAP_BMP3_ERA = vehicles.Armor.CHAP_BMP3_ERA
             AAV7 = vehicles.Armor.AAV7
             Leopard1A3 = vehicles.Armor.Leopard1A3
             Leopard_2 = vehicles.Armor.Leopard_2
@@ -32089,6 +32122,7 @@ class CombinedJointTaskForcesBlue(Country):
             BTR_82A = vehicles.Armor.BTR_82A
             CHAP_T90M = vehicles.Armor.CHAP_T90M
             CHAP_BMPT = vehicles.Armor.CHAP_BMPT
+            CHAP_Titan = vehicles.Armor.CHAP_Titan
             M_2_Bradley = vehicles.Armor.M_2_Bradley
             Cobra = vehicles.Armor.Cobra
             LAV_25 = vehicles.Armor.LAV_25
@@ -32109,6 +32143,7 @@ class CombinedJointTaskForcesBlue(Country):
             M1134_Stryker_ATGM = vehicles.Armor.M1134_Stryker_ATGM
             M1A2C_SEP_V3 = vehicles.Armor.M1A2C_SEP_V3
             CHAP_M1130 = vehicles.Armor.CHAP_M1130
+            CHAP_M1296 = vehicles.Armor.CHAP_M1296
             CHAP_T84OplotM = vehicles.Armor.CHAP_T84OplotM
             CHAP_T64BV = vehicles.Armor.CHAP_T64BV
             MCV_80 = vehicles.Armor.MCV_80
@@ -32142,9 +32177,6 @@ class CombinedJointTaskForcesBlue(Country):
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
             DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
             German_covered_wagon_G10 = vehicles.Carriage.German_covered_wagon_G10
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
@@ -32895,8 +32927,11 @@ class CombinedJointTaskForcesRed(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             S_75_ZIL = vehicles.Unarmed.S_75_ZIL
+            S_75_Zil_Trailer = vehicles.Unarmed.S_75_Zil_Trailer
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
+            TZ_22_TANK = vehicles.Unarmed.TZ_22_TANK
             GCI_station_MiG29 = vehicles.Unarmed.GCI_station_MiG29
             AA8 = vehicles.Unarmed.AA8
             GPS_Spoofer_Red = vehicles.Unarmed.GPS_Spoofer_Red
@@ -32925,6 +32960,10 @@ class CombinedJointTaskForcesRed(Country):
             Predator_GCS = vehicles.Unarmed.Predator_GCS
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
+            CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
+            CHAP_SLT50_Tractor = vehicles.Unarmed.CHAP_SLT50_Tractor
+            CHAP_SLT50_Trailer = vehicles.Unarmed.CHAP_SLT50_Trailer
+            CHAP_HX81_Tractor = vehicles.Unarmed.CHAP_HX81_Tractor
             GD_20 = vehicles.Unarmed.GD_20
             GPS_Spoofer_Blue = vehicles.Unarmed.GPS_Spoofer_Blue
             Type_94_Truck = vehicles.Unarmed.Type_94_Truck
@@ -32987,6 +33026,7 @@ class CombinedJointTaskForcesRed(Country):
             VAB_Mephisto = vehicles.Armor.VAB_Mephisto
             T_90 = vehicles.Armor.T_90
             Chieftain_mk3 = vehicles.Armor.Chieftain_mk3
+            CHAP_BMP3_ERA = vehicles.Armor.CHAP_BMP3_ERA
             AAV7 = vehicles.Armor.AAV7
             Leopard1A3 = vehicles.Armor.Leopard1A3
             Leopard_2 = vehicles.Armor.Leopard_2
@@ -32996,6 +33036,7 @@ class CombinedJointTaskForcesRed(Country):
             BTR_82A = vehicles.Armor.BTR_82A
             CHAP_T90M = vehicles.Armor.CHAP_T90M
             CHAP_BMPT = vehicles.Armor.CHAP_BMPT
+            CHAP_Titan = vehicles.Armor.CHAP_Titan
             M_2_Bradley = vehicles.Armor.M_2_Bradley
             Cobra = vehicles.Armor.Cobra
             LAV_25 = vehicles.Armor.LAV_25
@@ -33016,6 +33057,7 @@ class CombinedJointTaskForcesRed(Country):
             M1134_Stryker_ATGM = vehicles.Armor.M1134_Stryker_ATGM
             M1A2C_SEP_V3 = vehicles.Armor.M1A2C_SEP_V3
             CHAP_M1130 = vehicles.Armor.CHAP_M1130
+            CHAP_M1296 = vehicles.Armor.CHAP_M1296
             CHAP_T84OplotM = vehicles.Armor.CHAP_T84OplotM
             CHAP_T64BV = vehicles.Armor.CHAP_T64BV
             MCV_80 = vehicles.Armor.MCV_80
@@ -33049,9 +33091,6 @@ class CombinedJointTaskForcesRed(Country):
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
             DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
             German_covered_wagon_G10 = vehicles.Carriage.German_covered_wagon_G10
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
@@ -33802,8 +33841,11 @@ class UnitedNationsPeacekeepers(Country):
             ATZ_5 = vehicles.Unarmed.ATZ_5
             ZIL_135 = vehicles.Unarmed.ZIL_135
             ATZ_60_Maz = vehicles.Unarmed.ATZ_60_Maz
+            ATZ_60_TANK = vehicles.Unarmed.ATZ_60_TANK
             S_75_ZIL = vehicles.Unarmed.S_75_ZIL
+            S_75_Zil_Trailer = vehicles.Unarmed.S_75_Zil_Trailer
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
+            TZ_22_TANK = vehicles.Unarmed.TZ_22_TANK
             GCI_station_MiG29 = vehicles.Unarmed.GCI_station_MiG29
             AA8 = vehicles.Unarmed.AA8
             GPS_Spoofer_Red = vehicles.Unarmed.GPS_Spoofer_Red
@@ -33832,6 +33874,10 @@ class UnitedNationsPeacekeepers(Country):
             Predator_GCS = vehicles.Unarmed.Predator_GCS
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
+            CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
+            CHAP_SLT50_Tractor = vehicles.Unarmed.CHAP_SLT50_Tractor
+            CHAP_SLT50_Trailer = vehicles.Unarmed.CHAP_SLT50_Trailer
+            CHAP_HX81_Tractor = vehicles.Unarmed.CHAP_HX81_Tractor
             GD_20 = vehicles.Unarmed.GD_20
             GPS_Spoofer_Blue = vehicles.Unarmed.GPS_Spoofer_Blue
             Type_94_Truck = vehicles.Unarmed.Type_94_Truck
@@ -33894,6 +33940,7 @@ class UnitedNationsPeacekeepers(Country):
             VAB_Mephisto = vehicles.Armor.VAB_Mephisto
             T_90 = vehicles.Armor.T_90
             Chieftain_mk3 = vehicles.Armor.Chieftain_mk3
+            CHAP_BMP3_ERA = vehicles.Armor.CHAP_BMP3_ERA
             AAV7 = vehicles.Armor.AAV7
             Leopard1A3 = vehicles.Armor.Leopard1A3
             Leopard_2 = vehicles.Armor.Leopard_2
@@ -33903,6 +33950,7 @@ class UnitedNationsPeacekeepers(Country):
             BTR_82A = vehicles.Armor.BTR_82A
             CHAP_T90M = vehicles.Armor.CHAP_T90M
             CHAP_BMPT = vehicles.Armor.CHAP_BMPT
+            CHAP_Titan = vehicles.Armor.CHAP_Titan
             M_2_Bradley = vehicles.Armor.M_2_Bradley
             Cobra = vehicles.Armor.Cobra
             LAV_25 = vehicles.Armor.LAV_25
@@ -33923,6 +33971,7 @@ class UnitedNationsPeacekeepers(Country):
             M1134_Stryker_ATGM = vehicles.Armor.M1134_Stryker_ATGM
             M1A2C_SEP_V3 = vehicles.Armor.M1A2C_SEP_V3
             CHAP_M1130 = vehicles.Armor.CHAP_M1130
+            CHAP_M1296 = vehicles.Armor.CHAP_M1296
             CHAP_T84OplotM = vehicles.Armor.CHAP_T84OplotM
             CHAP_T64BV = vehicles.Armor.CHAP_T64BV
             MCV_80 = vehicles.Armor.MCV_80
@@ -33956,9 +34005,6 @@ class UnitedNationsPeacekeepers(Country):
             Wellcarnsc = vehicles.Carriage.Wellcarnsc
             DR_50Ton_Flat_Wagon = vehicles.Carriage.DR_50Ton_Flat_Wagon
             German_covered_wagon_G10 = vehicles.Carriage.German_covered_wagon_G10
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
-            German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
             German_tank_wagon = vehicles.Carriage.German_tank_wagon
@@ -37811,6 +37857,7 @@ class NewZealand(Country):
             M978_HEMTT_Tanker = vehicles.Unarmed.M978_HEMTT_Tanker
             Hummer = vehicles.Unarmed.Hummer
             Land_Rover_109_S3 = vehicles.Unarmed.Land_Rover_109_S3
+            CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable

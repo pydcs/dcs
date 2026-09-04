@@ -1138,11 +1138,11 @@ class AH_64D_BLK_II(HelicopterType):
     property_defaults: Dict[str, Any] = {
         "PltNVG": True,
         "CpgNVG": True,
-        "FlareBurstCount": 0,
+        "FlareBurstCount": 1,
         "FlareBurstInterval": 0,
         "FlareSalvoCount": 0,
         "FlareSalvoInterval": 0,
-        "FlareProgramDelay": 0,
+        "FlareProgramDelay": 3,
         "OverrideIFF": 0,
         "TrackAirTargets": True,
         "NetCrewControlPriority": 0,
@@ -1268,7 +1268,7 @@ class AH_64D_BLK_II(HelicopterType):
             control="comboList",
             label="Flare Burst Count",
             player_only=True,
-            default=0,
+            default=1,
             w_ctrl=150,
             values={
                 0: "1",
@@ -1330,7 +1330,7 @@ class AH_64D_BLK_II(HelicopterType):
             control="comboList",
             label="Flare Delay btw. Programs, [sec]",
             player_only=True,
-            default=0,
+            default=3,
             w_ctrl=150,
             values={
                 0: "1",
