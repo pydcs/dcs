@@ -1,5 +1,31 @@
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
+
 import dcs
+
+
+class AfghanistanTest(unittest.TestCase):
+    def test_airports_and_parking_stands(self):
+        terrain = dcs.terrain.Afghanistan()
+
+        self.assertEqual(len(terrain.airports), 25)
+        self.assertEqual(len(terrain.airports["Bagram"].parking_slots), 187)
+        self.assertEqual(len(terrain.airports["Kandahar"].parking_slots), 316)
+
+    def test_mission_uses_the_afghanistan_theatre_name(self):
+        mission = dcs.mission.Mission(terrain=dcs.terrain.Afghanistan())
+
+        self.assertEqual(mission.terrain.name, "Afghanistan")
+
+    def test_saved_afghanistan_mission_loads_its_terrain(self):
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / "afghanistan.miz"
+            dcs.mission.Mission(dcs.terrain.Afghanistan()).save(path)
+
+            loaded = dcs.mission.Mission()
+            self.assertEqual(loaded.load_file(path), [])
+            self.assertIsInstance(loaded.terrain, dcs.terrain.Afghanistan)
 
 
 class CaucasusTest(unittest.TestCase):
@@ -168,4 +194,3 @@ class SyriaTest(unittest.TestCase):
 
         hslots = m.terrain.airports["Aleppo"].free_parking_slots(dcs.helicopters.UH_1H)
         self.assertEqual(len(hslots), 8)
-

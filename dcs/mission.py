@@ -280,7 +280,9 @@ class Mission:
         # print(self.translation)
 
         # setup terrain_
-        if imp_mission["theatre"] == 'Caucasus':
+        if imp_mission["theatre"] == 'Afghanistan':
+            self.terrain = terrain_.Afghanistan()
+        elif imp_mission["theatre"] == 'Caucasus':
             self.terrain = terrain_.Caucasus()
         elif imp_mission["theatre"] == 'Nevada':
             self.terrain = terrain_.Nevada()

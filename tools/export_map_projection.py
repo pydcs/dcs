@@ -36,6 +36,7 @@ from pathlib import Path
 from typing import Any, Dict
 
 from dcs import Mission
+from dcs.terrain.afghanistan import Afghanistan
 from dcs.action import DoScriptFile
 from dcs.terrain.caucasus import Caucasus
 from dcs.terrain.falklands import Falklands
@@ -62,6 +63,7 @@ EXPORT_DIR = SRC_ROOT / "dcs/terrain"
 
 
 ARG_TO_TERRAIN_MAP = {
+    "afghanistan": Afghanistan(),
     "caucasus": Caucasus(),
     "falklands": Falklands(),
     "nevada": Nevada(),

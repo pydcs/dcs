@@ -43,6 +43,7 @@ setup(
         'dcs/lua',
         'dcs/scripts',
         'dcs/terrain',
+        'dcs/terrain/afghanistan',
         'dcs/terrain/caucasus',
         'dcs/terrain/falklands',
         'dcs/terrain/germany',
@@ -57,7 +58,7 @@ setup(
         'dcs/terrain/thechannel',
     ],
     package_data={
-        'dcs': ['py.typed'],
+        'dcs': ['py.typed', 'terrain/afghanistan/airports.json'],
         'dcs/terrain': ['caucasus.p', 'nevada.p'],
     },
     entry_points={
