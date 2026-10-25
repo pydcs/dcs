@@ -37,6 +37,7 @@ from typing import Any, Dict
 
 from dcs import Mission
 from dcs.action import DoScriptFile
+from dcs.terrain.afghanistan import Afghanistan
 from dcs.terrain.caucasus import Caucasus
 from dcs.terrain.falklands import Falklands
 from dcs.terrain.germany import Germany
@@ -72,7 +73,8 @@ ARG_TO_TERRAIN_MAP = {
     "syria": Syria(),
     "marianaislands": MarianaIslands(),
     "germany": Germany(),
-    "kola": Kola()
+    "kola": Kola(),
+    "afghanistan": Afghanistan(),
 }
 
 
