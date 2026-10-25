@@ -30,6 +30,7 @@ def _groups(mission: Dict[str, Any]) -> Iterator[Tuple[str, Dict[str, Any]]]:
 
 class RoundTripTests(unittest.TestCase):
     missions: Dict[str, Tuple[Dict[str, Any], Dict[str, Any]]] = {}
+    generated_trig_actions: Dict[str, Dict[int, str]] = {}
 
     @classmethod
     def setUpClass(cls) -> None:
@@ -37,6 +38,7 @@ class RoundTripTests(unittest.TestCase):
             for path in sorted(glob.glob("tests/**/*.miz", recursive=True)):
                 m = dcs.Mission()
                 m.load_file(path)
+                cls.generated_trig_actions[os.path.basename(path)] = m.triggerrules.trig()["actions"]
                 saved = os.path.join(tmp, "saved.miz")
                 m.save(saved)
                 cls.missions[os.path.basename(path)] = (_read_miz(path), _read_miz(saved))
@@ -97,3 +99,39 @@ class RoundTripTests(unittest.TestCase):
                 for side in before["coalition"]:
                     self.assertEqual(before["coalition"][side].get("nav_points", {}),
                                      after["coalition"][side]["nav_points"])
+
+    def test_trigger_action_keys_are_kept(self) -> None:
+        for name, (orig, saved) in self.missions.items():
+            with self.subTest(mission=name):
+                before, after = orig["mission"]["mission"]["trigrules"], saved["mission"]["mission"]["trigrules"]
+                for rule_key, rule in before.items():
+                    for action_key, action in rule["actions"].items():
+                        new_action = after[rule_key]["actions"][action_key]
+                        expected = []
+                        if action["predicate"] == "a_out_text_delay" and "start_delay" in action:
+                            expected.append("start_delay")
+                        # KeyDict_<field> belongs to localized fields; on other fields it's a stale leftover
+                        expected += [k for k in ("KeyDict_radiotext", "KeyDict_comment")
+                                     if k in action and k[len("KeyDict_"):] in new_action]
+                        for key in expected:
+                            self.assertEqual(action[key], new_action.get(key), (action["predicate"], key))
+
+    def test_trigger_zones_are_kept(self) -> None:
+        for name, (orig, saved) in self.missions.items():
+            with self.subTest(mission=name):
+                before = orig["mission"]["mission"]["triggers"]["zones"]
+                after = {z["zoneId"]: z for z in saved["mission"]["mission"]["triggers"]["zones"].values()}
+                for zone in before.values():
+                    self.assertEqual(zone["radius"], after[zone["zoneId"]]["radius"], zone["name"])
+
+    def test_generated_trigger_code_matches_mission_editor(self) -> None:
+        for name, (orig_miz, _) in self.missions.items():
+            with self.subTest(mission=name):
+                orig = orig_miz["mission"]["mission"]["trig"]["actions"]
+                generated = self.generated_trig_actions[name]
+                for key, code in orig.items():
+                    for dcs_call, pydcs_call in zip(code.split(";"), generated[key].split(";")):
+                        dcs_call, pydcs_call = dcs_call.strip(), pydcs_call.strip()
+                        # the mission editor fills in a trailing default argument that isn't stored
+                        if dcs_call != pydcs_call:
+                            self.assertEqual(dcs_call, pydcs_call[:-1] + ", 0)")
