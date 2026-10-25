@@ -31,7 +31,7 @@ Homepage = "https://github.com/pydcs/dcs"
 Documentation = "https://dcs.readthedocs.org/en/latest"
 
 [project.scripts]
-dcs_random = "dcs.scripts.caucasus_random_mission:main"
+dcs_random = "dcs.scripts.nevada_random_mission:main"
 dcs_dogfight_wwii = "dcs.scripts.dogfight_wwii:main"
 dcs_oil_convoy = "dcs.scripts.destroy_oil_transport:main"
 

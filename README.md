@@ -35,19 +35,9 @@ pydcs comes with 2 proof of concept scripts:
 
 ### dcs_random
 
-This script can generate 3 different mission types
-
- * refuel
-
-   Generates a refuel mission for A-10C or M-2000C aircrafts, search your tanker and refuel.
-
- * CAS
-
-   Support ground troops.
-
- * CAP
-
-   Take care of your tanker and AWACS.
+This script generates a random training mission on the Nevada map: player flight(s) for the
+A-10C, M-2000C, Ka-50, AV-8B or F/A-18C at Nellis, Creech or Groom Lake, with AWACS, tankers and
+civil air traffic around them.
 
 For options see the script help with `dcs_random --help`
 

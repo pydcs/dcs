@@ -70,8 +70,21 @@ class CaucasusTest(unittest.TestCase):
 
         self.assertEqual(len(used)+2, len(m.terrain.airports["Batumi"].parking_slots))
 
+    def test_city_graph(self):
+        terrain = dcs.terrain.Caucasus()
+        node = terrain.city_graph.node('Adler')
+        # positions must be bound to the terrain to be usable for geometry
+        self.assertIsNotNone(node.position.random_point_within(50))
+        self.assertAlmostEqual(node.position.latlng().lat, 43.4, places=1)
+
 
 class NevadaTest(unittest.TestCase):
+
+    def test_city_graph(self):
+        terrain = dcs.terrain.Nevada()
+        self.assertEqual(len(terrain.city_graph.nodes), 4)
+        for node in terrain.city_graph.nodes:
+            self.assertIsNotNone(node.position.random_point_within(50))
 
     def test_parking_slots(self):
         m = dcs.mission.Mission(terrain=dcs.terrain.Nevada())

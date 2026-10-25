@@ -40,7 +40,7 @@ class Nevada(Terrain):
         self.bullseye_red = {"x": -288293.969, "y": -88022.641}
 
         try:
-            self.city_graph = Graph.from_pickle(os.path.join(os.path.dirname(__file__), 'nevada.p'))  # type: Graph
+            self.city_graph = Graph.from_pickle(os.path.join(os.path.dirname(__file__), 'citygraph.p'), self)  # type: Graph
         except FileNotFoundError:
             pass
 

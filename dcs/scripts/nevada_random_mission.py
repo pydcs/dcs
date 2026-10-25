@@ -101,8 +101,8 @@ class TrainingScenario:
         pg: Optional[FlyingGroup] = None
 
         for pg in player_groups:
-            assert pg.points[0].airdrome_id is not None
-            airport = self.m.terrain.airport_by_id(pg.points[0].airdrome_id)
+            airdrome_id = pg.points[0].airdrome_id
+            airport = self.m.terrain.airport_by_id(airdrome_id) if airdrome_id is not None else None
             if not airport:
                 airport = random.choice(blue_military)
 
@@ -156,8 +156,8 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
 
     def setup_airports(self):
         nevada = self.m.terrain  # type: dcs.terrain.Nevada
-        self.blue_airports = nevada.default_blue_airports()
-        self.red_airports = [nevada.tonopah(), nevada.mina(), nevada.tonopah_test_range()]
+        self.blue_airports = list(nevada.airport_list())
+        self.red_airports = [nevada.airports[x] for x in ["Tonopah", "Mina", "Tonopah Test Range"]]
         for a in self.blue_airports:
             self.setup_airport(a, "blue", [])
         for a in self.red_airports:
@@ -191,14 +191,14 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
 
             slots = airport.free_parking_slot(ptype)
 
-            beatty = self.m.terrain.beatty()
-            groom = self.m.terrain.groom_lake()
-            x = random.randrange(int(dcs.terrain.Nevada.bounds.bottom) + 100 * 1000,
+            beatty = self.m.terrain.airports["Beatty"]
+            groom = self.m.terrain.airports["Groom Lake"]
+            x = random.randrange(int(self.m.terrain.bounds.bottom) + 100 * 1000,
                                  int(groom.position.x))
             y = random.randrange(int(beatty.position.y),
-                                 int(dcs.terrain.Nevada.bounds.right) - 130 * 1000)
+                                 int(self.m.terrain.bounds.right) - 130 * 1000)
 
-            pos = dcs.mapping.Point(x, y)
+            pos = dcs.mapping.Point(x, y, self.m.terrain)
             name = "Civil " + str(c_count)
             rand = random.random()
             if 0.3 < rand < 0.5 and slots:
@@ -211,16 +211,17 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
                 pg = self.m.flight_group_from_airport(country, name, ptype, airport)
                 pg.uncontrolled = True
             else:
-                bound = dcs.mapping.Rectangle(dcs.terrain.Nevada.bounds.top - 100 * 1000,
-                                              dcs.terrain.Nevada.bounds.left + 200 * 1000,
-                                              dcs.terrain.Nevada.bounds.bottom + 100 * 1000,
-                                              dcs.terrain.Nevada.bounds.right - 130 * 1000)
+                bound = dcs.mapping.Rectangle(self.m.terrain.bounds.top - 100 * 1000,
+                                              self.m.terrain.bounds.left + 200 * 1000,
+                                              self.m.terrain.bounds.bottom + 100 * 1000,
+                                              self.m.terrain.bounds.right - 130 * 1000,
+                                              self.m.terrain)
                 point = bound.random_point()
 
                 pg = self.m.flight_group_inflight(
                     country, name, ptype, point, random.randrange(5000, 8000, 100), 400
                 )
-                tmp = pg.add_waypoint(dcs.mapping.Point(0, 0), pg.points[0].alt)
+                tmp = pg.add_waypoint(dcs.mapping.Point(0, 0, self.m.terrain), pg.points[0].alt)
                 wp = pg.add_runway_waypoint(airport, distance=random.randrange(6000, 8000, 100))
                 heading = wp.position.heading_between_point(point)
                 tmp.position = wp.position.point_from_heading(heading, 30 * 1000)
@@ -357,7 +358,7 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
 
     def add_ground_targets(self):
         russia = self.m.country(dcs.countries.Russia.name)
-        pos1 = self.m.terrain.groom_lake().position.point_from_heading(5, 60 * 1000)
+        pos1 = self.m.terrain.airports["Groom Lake"].position.point_from_heading(5, 60 * 1000)
         rus_vehicles = dcs.countries.Russia.Vehicle
         vtypes = [
             rus_vehicles.Armor.T_72B,
@@ -397,7 +398,7 @@ KC-135 Tanker has TACAN 12X and KC-130 has TACAN 10X.""".format(
         jtac1.units[0].player_can_drive = True
 
         # these are targets with light air defense in sector 74C
-        pos = self.m.terrain.groom_lake().position.point_from_heading(320, 53 * 1000)
+        pos = self.m.terrain.airports["Groom Lake"].position.point_from_heading(320, 53 * 1000)
         self.m.vehicle_group(russia, "ref 2", rus_vehicles.Infantry.Infantry_AK, pos)
         vtypes_light = [
             rus_vehicles.AirDefence.Ural_375_ZU_23,
