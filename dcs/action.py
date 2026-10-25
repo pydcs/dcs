@@ -88,6 +88,7 @@ class AddRadioItem(Action):
     def dict(self):
         d = super(AddRadioItem, self).dict()
         d["radiotext"] = self.radiotext.id
+        d["KeyDict_radiotext"] = self.radiotext.id
         d["flag"] = self.flag
         d["value"] = self.value
         return d
@@ -115,6 +116,7 @@ class AddRadioItemForCoalition(Action):
         d = super(AddRadioItemForCoalition, self).dict()
         d["coalitionlist"] = self.coalitionlist
         d["radiotext"] = self.radiotext.id
+        d["KeyDict_radiotext"] = self.radiotext.id
         d["flag"] = self.flag
         d["value"] = self.value
         return d
@@ -142,6 +144,7 @@ class AddRadioItemForGroup(Action):
         d = super(AddRadioItemForGroup, self).dict()
         d["group"] = self.group
         d["radiotext"] = self.radiotext.id
+        d["KeyDict_radiotext"] = self.radiotext.id
         d["flag"] = self.flag
         d["value"] = self.value
         return d
@@ -737,6 +740,7 @@ class MarkToAll(TextAction):
         d["value"] = self.value
         d["zone"] = self.zone
         d["comment"] = self.comment.id
+        d["KeyDict_comment"] = self.comment.id
         d["readonly"] = self.readonly
         return d
 
@@ -777,6 +781,7 @@ class MarkToCoalition(TextAction):
         d["zone"] = self.zone
         d["coalitionlist"] = self.coalitionlist
         d["comment"] = self.comment.id
+        d["KeyDict_comment"] = self.comment.id
         d["readonly"] = self.readonly
         return d
 
@@ -812,6 +817,7 @@ class MarkToGroup(TextAction):
         d["zone"] = self.zone
         d["group"] = self.group
         d["comment"] = self.comment.id
+        d["KeyDict_comment"] = self.comment.id
         d["readonly"] = self.readonly
         return d
 
@@ -820,23 +826,29 @@ class MessageToAll(TextAction):
     predicate = "a_out_text_delay"
 
     def __init__(self, text: String = String(), seconds: int = 10,
-                 clearview: bool = False) -> None:
+                 clearview: bool = False, start_delay: Optional[int] = None) -> None:
         super().__init__(MessageToAll.predicate, text)
         self.params.append(self.text)
         self.seconds = seconds
         self.params.append(self.seconds)
         self.clearview = clearview
         self.params.append(self.clearview)
+        # older versions of the mission editor don't write a start delay
+        self.start_delay = start_delay
+        if self.start_delay is not None:
+            self.params.append(self.start_delay)
 
     @classmethod
     def create_from_dict(cls, d: Dict[Any, Any], mission) -> "MessageToAll":
         return cls(mission.translation.get_string(d["text"]), d["seconds"],
-                   d["clearview"])
+                   d["clearview"], d.get("start_delay"))
 
     def dict(self) -> Dict[Any, Any]:
         d = super().dict()
         d["seconds"] = self.seconds
         d["clearview"] = self.clearview
+        if self.start_delay is not None:
+            d["start_delay"] = self.start_delay
         return d
 
 
@@ -1055,6 +1067,7 @@ class RemoveRadioItem(Action):
     def dict(self):
         d = super(RemoveRadioItem, self).dict()
         d["radiotext"] = self.radiotext.id
+        d["KeyDict_radiotext"] = self.radiotext.id
         return d
 
 
@@ -1076,6 +1089,7 @@ class RemoveRadioItemForCoalition(Action):
         d = super(RemoveRadioItemForCoalition, self).dict()
         d["coalitionlist"] = self.coalitionlist
         d["radiotext"] = self.radiotext.id
+        d["KeyDict_radiotext"] = self.radiotext.id
         return d
 
 
@@ -1097,6 +1111,7 @@ class RemoveRadioItemForGroup(Action):
         d = super(RemoveRadioItemForGroup, self).dict()
         d["group"] = self.group
         d["radiotext"] = self.radiotext.id
+        d["KeyDict_radiotext"] = self.radiotext.id
         return d
 
 

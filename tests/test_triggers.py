@@ -1,7 +1,7 @@
 import unittest
 
 from dcs.mission import Mission
-from dcs.triggers import Rules
+from dcs.triggers import Rules, TriggerOnce
 from dcs import lua
 
 
@@ -5807,3 +5807,11 @@ class TriggerTests(unittest.TestCase):
                 lua.dumps(action),
                 lua.dumps(r.trig()['funcStartup'][key]),
                 f"FuncStartup nr {key}")
+
+    def test_load_trigger_color(self):
+        m = Mission()
+        d = {"eventlist": "", "comment": "colored", "predicate": "triggerOnce", "colorItem": "0x0080ffff",
+             "actions": {}, "rules": {}}
+        trigger = TriggerOnce.create_from_dict(m, d)
+        self.assertEqual(trigger.dict()["colorItem"], "0x0080ffff")
+

@@ -79,13 +79,13 @@ class TriggerZoneCircular(TriggerZone):
 class TriggerZoneQuadPoint(TriggerZone):
     def __init__(self, _id, position: mapping.Point, verticies: List[mapping.Point],
                  hidden=False, name="", color=None, properties=None,
-                 heading: Optional[float] = None, link_unit_id: Optional[int] = None):
-        # Forward by keyword and pass radius=0: quad zones have no radius (the DCS ME
-        # writes "radius": 0 for them). Positional forwarding silently slots `heading`
-        # into the parent's `radius` arg (added in PR #254) -- keyword args prevent that.
+                 heading: Optional[float] = None, link_unit_id: Optional[int] = None, radius: float = 0):
+        # Forward by keyword: positional forwarding silently slots `heading` into the parent's
+        # `radius` arg (added in PR #254) -- keyword args prevent that. Quad zones have no radius
+        # and the DCS ME writes 0 for new ones, but a radius stored in a loaded mission is kept.
         super(TriggerZoneQuadPoint, self).__init__(
             _id, position, hidden=hidden, name=name, color=color,
-            properties=properties, radius=0, heading=heading, link_unit_id=link_unit_id)
+            properties=properties, radius=radius, heading=heading, link_unit_id=link_unit_id)
         self.type = TriggerZoneType.QuadPoint
         self.verticies = copy.copy(verticies)
 
@@ -148,6 +148,7 @@ class Triggers:
             imp_zone.get("properties", {}),
             imp_zone.get("heading", None),
             imp_zone.get("linkUnit", None),
+            radius=imp_zone.get("radius", 0),
         )
         return tz
 
@@ -236,6 +237,7 @@ class TriggerRule:
     @classmethod
     def create_from_dict(cls, mission, d) -> 'TriggerRule':
         trig = cls(Event(d["eventlist"]), d["comment"])
+        trig.color = d.get("colorItem", TriggerColor.White)
         actions = d["actions"]
         for a in actions:
             action_ = action.actions_map[actions[a]["predicate"]].create_from_dict(actions[a], mission)
