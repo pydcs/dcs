@@ -4,6 +4,7 @@ import unittest
 from unittest import mock
 from pathlib import Path
 import tempfile
+import warnings
 import zipfile
 import math
 
@@ -1689,3 +1690,45 @@ class SaveLoadRoundTripTests(unittest.TestCase):
                 self.assertEqual(miz.read("l10n/DEFAULT/" + resources[blue.key]), b"BLUE")
                 self.assertEqual(resources[red_again.key], resources[red.key])
                 self.assertEqual(len(miz.namelist()), len(set(miz.namelist())))
+
+    def test_load_file_replaces_previous_state(self) -> None:
+        m = dcs.Mission()
+        m.load_file("tests/missions/LUNA.miz")
+        pictures = list(m.pictureFileNameR)
+        self.assertTrue(pictures)
+        m.reload()
+        self.assertEqual(m.pictureFileNameR, pictures)
+
+        # a reloaded mission is saved without duplicate archive entries
+        m = dcs.Mission()
+        m.load_file("tests/missions/a_out_picture.miz")
+        m.reload()
+        with tempfile.TemporaryDirectory() as tmp, warnings.catch_warnings():
+            warnings.simplefilter("error")
+            path = os.path.join(tmp, "reloaded.miz")
+            m.save(path)
+            with zipfile.ZipFile(path) as miz:
+                self.assertEqual(len(miz.namelist()), len(set(miz.namelist())))
+
+        # nothing of the first mission is kept
+        m = dcs.Mission()
+        m.load_file("tests/missions/Coop_OP_Custodia_v1.miz")
+        m.add_aircraft_kneeboard(dcs.planes.FA_18C_hornet, Path("tests/images/blue.png"))
+        m.load_file("tests/loadtest.miz")
+        fresh = dcs.Mission()
+        fresh.load_file("tests/loadtest.miz")
+        self.assertEqual(m.forced_options.dict(), fresh.forced_options.dict())
+        self.assertEqual(m.aircraft_kneeboards, {})
+
+        # a mission without neutral coalition doesn't keep the one of the previous mission
+        m.load_file("tests/missions/Coop_OP_Custodia_v1.miz")
+        self.assertEqual(set(m.coalition), {"blue", "red"})
+
+    def test_load_file_uses_map_view_of_loaded_terrain(self) -> None:
+        m = dcs.Mission()  # Caucasus
+        m.load_file("tests/missions/Forestry_Operations.miz")  # Nevada
+        self.assertIsInstance(m.terrain, dcs.terrain.Nevada)
+        self.assertIs(m.map._terrain, m.terrain)
+        position = m.map.position.latlng()
+        self.assertAlmostEqual(position.lat, 36.27, places=1)
+        self.assertAlmostEqual(position.lng, -115.57, places=1)
