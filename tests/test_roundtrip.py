@@ -135,3 +135,30 @@ class RoundTripTests(unittest.TestCase):
                         # the mission editor fills in a trailing default argument that isn't stored
                         if dcs_call != pydcs_call:
                             self.assertEqual(dcs_call, pydcs_call[:-1] + ", 0)")
+
+    def test_weather_is_kept(self) -> None:
+        def flatten(d: Dict[Any, Any], prefix: str = "") -> Dict[str, Any]:
+            out: Dict[str, Any] = {}
+            for k, v in d.items():
+                if isinstance(v, dict):
+                    out.update(flatten(v, f"{prefix}{k}/"))
+                else:
+                    out[f"{prefix}{k}"] = v
+            return out
+
+        for name, (orig, saved) in self.missions.items():
+            with self.subTest(mission=name):
+                before = flatten(orig["mission"]["mission"]["weather"])
+                after = flatten(saved["mission"]["mission"]["weather"])
+                self.assertEqual(before, {k: after.get(k, "<missing>") for k in before})
+
+    def test_drawings_are_kept(self) -> None:
+        for name, (orig, saved) in self.missions.items():
+            with self.subTest(mission=name):
+                before = orig["mission"]["mission"].get("drawings", {}).get("layers", {})
+                after = saved["mission"]["mission"]["drawings"]["layers"]
+                for layer_key, layer in before.items():
+                    for object_key, drawing in layer["objects"].items():
+                        new = after[layer_key]["objects"][object_key]
+                        self.assertFalse(set(drawing) - set(new), drawing["name"])
+                        self.assertEqual(drawing.get("hiddenOnPlanner"), new.get("hiddenOnPlanner"))

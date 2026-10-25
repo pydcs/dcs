@@ -153,6 +153,7 @@ class Weather:
         self.name = "Summer, clean sky"
         self.fog_thickness = 0
         self.fog_visibility = 25
+        self.fog_density: Optional[int] = None
         self.visibility_distance = 80000
         self.clouds_preset: Optional[CloudPreset] = None
         self.clouds_thickness = 200
@@ -163,7 +164,16 @@ class Weather:
         self.enable_dust = False
         self.dust_density = 0
 
+        # values pydcs doesn't know, written back unchanged
+        self.unknown_values: Dict[str, Any] = {}
+        self.unknown_season_values: Dict[str, Any] = {}
+
+    _KNOWN_KEYS = {"atmosphere_type", "wind", "enable_fog", "halo", "groundTurbulence", "season", "type_weather",
+                   "qnh", "cyclones", "name", "fog", "visibility", "clouds", "enable_dust", "dust_density"}
+
     def load_from_dict(self, d):
+        self.unknown_values = {k: v for k, v in d.items() if k not in Weather._KNOWN_KEYS}
+        self.unknown_season_values = {k: v for k, v in d.get("season", {}).items() if k != "temperature"}
         self.atmosphere_type = d["atmosphere_type"]
         wind = d.get("wind", {})
         wind_at_ground = wind.get("atGround", {})
@@ -180,7 +190,7 @@ class Weather:
         self.type_weather = d.get("type_weather", 0)
         self.qnh = d.get("qnh", 760)
         cyclones = d.get("cyclones", {})
-        for x in cyclones:
+        for x in sorted(cyclones):
             c = Cyclone()
             c.centerX = cyclones[x].get("centerX", 0)
             c.centerZ = cyclones[x].get("centerZ", 0)
@@ -193,6 +203,7 @@ class Weather:
         fog = d.get("fog", {})
         self.fog_thickness = fog.get("thickness", 0)
         self.fog_visibility = fog.get("visibility", 25)
+        self.fog_density = fog.get("density")
         visibility = d.get("visibility", {})
         self.visibility_distance = visibility.get("distance", 80000)
         clouds = d.get("clouds", {})
@@ -383,18 +394,19 @@ class Weather:
 
         self.clouds_preset.validate_base(self.clouds_base)
 
-        # The hard coded values here seem to be the case for all presets. They are not
-        # configurable in the ME and not defined by clouds.lua.
+        # Thickness and density are not configurable in the ME for presets and not defined by
+        # clouds.lua. New missions use 200 and 0, but the ME may keep other values from before a
+        # preset was selected, so the loaded ones are written back.
         return {
             "base": self.clouds_base,
-            "density": 0,
+            "density": self.clouds_density,
             "preset": self.clouds_preset.name,
-            "thickness": 200,
+            "thickness": self.clouds_thickness,
             "iprecptns": 0,
         }
 
     def dict(self) -> Dict[str, Any]:
-        d = {}
+        d = dict(self.unknown_values)
         d["atmosphere_type"] = self.atmosphere_type
         d["wind"] = {"atGround": self.wind_at_ground.dict(),
                      "at2000": self.wind_at_2000.dict(),
@@ -402,13 +414,15 @@ class Weather:
         d["enable_fog"] = self.enable_fog
         d["halo"] = self.halo._make_halo_dict()
         d["groundTurbulence"] = self.turbulence_at_ground
-        d["season"] = {"temperature": self.season_temperature}
+        d["season"] = {**self.unknown_season_values, "temperature": self.season_temperature}
         assert isinstance(self.type_weather, int)
         d["type_weather"] = self.type_weather
         d["qnh"] = self.qnh
         d["cyclones"] = {x + 1: self.cyclones[x].dict() for x in range(0, len(self.cyclones))}
         d["name"] = self.name
         d["fog"] = {"thickness": self.fog_thickness, "visibility": self.fog_visibility}
+        if self.fog_density is not None:
+            d["fog"]["density"] = self.fog_density
         d["visibility"] = {"distance": self.visibility_distance}
         d["clouds"] = self._make_cloud_dict()
         d["enable_dust"] = self.enable_dust

@@ -1,5 +1,6 @@
 from enum import Enum
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+from typing import Optional
 import dcs.mapping as mapping
 
 
@@ -47,10 +48,14 @@ class Drawing:
     name: str
     color: Rgba
     layer_name: str
+    # keyword only, so the subclasses can still add positional fields
+    hidden_on_planner: Optional[bool] = field(default=None, kw_only=True)
 
     def dict(self):
         d = {}
         d["visible"] = self.visible
+        if self.hidden_on_planner is not None:
+            d["hiddenOnPlanner"] = self.hidden_on_planner
         d["mapX"] = self.position.x
         d["mapY"] = self.position.y
         d["name"] = self.name
