@@ -17,17 +17,21 @@ TaskDict = Dict[str, Any]
 
 
 def _create_from_dict(d: TaskDict) -> 'Task':
+    # Unknown tasks, options and actions are kept as EmptyTaskAction with their raw params,
+    # so missions using things pydcs doesn't know (yet) still load and save unchanged.
     _id = d["id"]
+    cls: Type[Task]
     if _id == "WrappedAction":
         actionid = d["params"]["action"]["id"]
         if actionid == "Option":
-            t = options[d["params"]["action"]["params"]["name"]].create_from_dict(d)
+            cls = options.get(d["params"]["action"]["params"]["name"], EmptyTaskAction)
         else:
-            t = wrappedactions[actionid].create_from_dict(d)
+            cls = wrappedactions.get(actionid, EmptyTaskAction)
     elif _id == "EngageTargets":
-        t = engagetargets_tasks[d.get("key")].create_from_dict(d)
+        cls = engagetargets_tasks.get(d.get("key"), EmptyTaskAction)
     else:
-        t = tasks_map[_id].create_from_dict(d)
+        cls = tasks_map.get(_id, EmptyTaskAction)
+    t = cls.create_from_dict(d)
 
     t.auto = d["auto"]
     t.enabled = d["enabled"]
@@ -765,6 +769,13 @@ class RecoveryTanker(Task):
             "lastWptIndex": lastWaypoint,
         }
 
+    @classmethod
+    def create_from_dict(cls, d: TaskDict) -> "RecoveryTanker":
+        p = d["params"]
+        t = cls(p["groupId"], p["speed"], p["altitude"], p.get("lastWptIndex"))
+        t.params = p
+        return t
+
 
 class OrbitAction(Task):
     Id = "Orbit"
@@ -862,6 +873,12 @@ class FACAttackGroup(Task):
             "callname": callsign,
             "number": number
         }
+
+    @classmethod
+    def create_from_dict(cls, d: TaskDict) -> "FACAttackGroup":
+        t = cls(d["params"]["groupId"], d["params"]["groupName"])
+        t.params = d["params"]
+        return t
 
 
 class FACEngageGroup(Task):
@@ -1150,6 +1167,8 @@ tasks_map: Dict[str, Type[Task]] = {
     EngageTargets.Id: EngageTargets,
     WWIIFollowBigFormation.Id: WWIIFollowBigFormation,
     CarpetBombing.Id: CarpetBombing,
+    RecoveryTanker.Id: RecoveryTanker,
+    NoTask.Id: NoTask,
 }
 
 
@@ -2506,5 +2525,6 @@ options: Dict[int, Type[Option]] = {
     OptRadioUsageEngage.Key: OptRadioUsageEngage,
     OptRadioUsageKill.Key: OptRadioUsageKill,
     OptInterceptionRange.Key: OptInterceptionRange,
-    OptRestrictTargets.Key: OptRestrictTargets
+    OptRestrictTargets.Key: OptRestrictTargets,
+    OptJettisonEmptyTanks.Key: OptJettisonEmptyTanks,
 }
