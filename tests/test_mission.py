@@ -1637,3 +1637,22 @@ class SaveLoadRoundTripTests(unittest.TestCase):
         group = dcs.unitgroup.VehicleGroup(m.next_group_id(), "no waypoints")
         group.add_unit(m.vehicle("unit", dcs.vehicles.Armor.M_1_Abrams))
         self.assertNotIn("route", group.dict())
+
+    def test_coalition_nav_points(self) -> None:
+        m = dcs.Mission()
+        m.load_file("tests/loadtest.miz")
+        point = {"type": "Default", "comment": "", "callsignStr": "REF1", "id": 1, "properties": {"vnav": 1},
+                 "x": -280000, "y": 650000}
+        m.coalition["blue"].nav_points.append(point)
+
+        m2 = self._save_and_load(m)
+        self.assertEqual(m2.coalition["blue"].nav_points, [point])
+        self.assertEqual(m2.coalition["red"].nav_points, [])
+
+    def test_neutral_task_description(self) -> None:
+        m = dcs.Mission()
+        self.assertNotIn("descriptionNeutralsTask", m.dict())
+        m.set_description_neutralstask_text("neutral task")
+
+        m2 = self._save_and_load(m)
+        self.assertEqual(m2.description_neutralstask_text(), "neutral task")

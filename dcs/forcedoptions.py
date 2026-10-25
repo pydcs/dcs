@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import Optional
+from typing import Any, Dict, Optional
 
 
 class ForcedOptions:
@@ -29,6 +29,14 @@ class ForcedOptions:
         DotOnly = 3
         NeutralDot = 4
 
+    # keys handled by the attributes below
+    _KNOWN_KEYS = {
+        "accidental_failures", "birds", "civTraffic", "cockpitStatusBarAllowed", "cockpitVisualRM",
+        "easyCommunication", "easyFlight", "easyRadar", "externalViews", "fuel", "geffect", "immortal", "labels",
+        "miniHUD", "optionsView", "padlock", "permitCrash", "radio", "RBDAI", "unrestrictedSATNAV", "userMarks",
+        "wakeTurbulence", "weapons",
+    }
+
     def __init__(self):
         # In the order they appear in the ME.
         self.permit_crash: Optional[bool] = None
@@ -54,8 +62,11 @@ class ForcedOptions:
         self.birds: Optional[int] = None
         self.cockpit_status_bar: Optional[bool] = None
         self.battle_damage_assessment: Optional[bool] = None
+        # forced options pydcs doesn't know, written back unchanged
+        self.unknown_options: Dict[str, Any] = {}
 
     def load_from_dict(self, d):
+        self.unknown_options = {k: v for k, v in d.items() if k not in ForcedOptions._KNOWN_KEYS}
         self.fuel = d.get("fuel")
         self.easy_radar = d.get("easyRadar")
         self.mini_hud = d.get("miniHUD")
@@ -85,7 +96,7 @@ class ForcedOptions:
         self.user_marks = d.get("userMarks")
 
     def dict(self):
-        d = {}
+        d = dict(self.unknown_options)
         if self.fuel is not None:
             d["fuel"] = self.fuel
         if self.easy_radar is not None:
