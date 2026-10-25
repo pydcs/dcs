@@ -9,11 +9,12 @@ import dcs.lua
 
 
 def _attempt_read_from_filestream(filestream: bytes) -> Optional[str]:
-    encodes = ["utf-8", "ansi"]
+    # 'ansi' (the active Windows code page) only exists on Windows, cp1252 is the fallback elsewhere
+    encodes = ["utf-8", "ansi", "cp1252"]
     for enc in encodes:
         try:
             code = filestream.decode(enc)
-        except UnicodeDecodeError:
+        except (UnicodeDecodeError, LookupError):
             continue
         return code
     return None
@@ -71,7 +72,7 @@ class Livery:
         :param unit: The name of the unit as 'DCS type',
             i.e. name of the unit inside the Liveries folder, e.g. 'A-10CII'
         """
-        path_id = path.split("\\")[-1].replace(".zip", "")
+        path_id = os.path.basename(path).replace(".zip", "")
         if path_id == "placeholder":
             return None
 
