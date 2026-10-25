@@ -1669,3 +1669,23 @@ class SaveLoadRoundTripTests(unittest.TestCase):
 
         ids = list(m.eplrs_for("vehicle").values())
         self.assertEqual(sorted(ids), [1, 2, 3])
+
+    def test_resource_files_with_same_name(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            for side, content in (("red", b"RED"), ("blue", b"BLUE")):
+                os.makedirs(os.path.join(tmp, side))
+                with open(os.path.join(tmp, side, "brief.jpg"), "wb") as f:
+                    f.write(content)
+            m = dcs.Mission()
+            red = m.add_picture_red(os.path.join(tmp, "red", "brief.jpg"))
+            blue = m.add_picture_blue(os.path.join(tmp, "blue", "brief.jpg"))
+            red_again = m.map_resource.add_resource_file(os.path.join(tmp, "red", "brief.jpg"))
+            path = os.path.join(tmp, "pictures.miz")
+            m.save(path)
+
+            with zipfile.ZipFile(path) as miz:
+                resources = dcs.lua.loads(miz.read("l10n/DEFAULT/mapResource").decode())["mapResource"]
+                self.assertEqual(miz.read("l10n/DEFAULT/" + resources[red.key]), b"RED")
+                self.assertEqual(miz.read("l10n/DEFAULT/" + resources[blue.key]), b"BLUE")
+                self.assertEqual(resources[red_again.key], resources[red.key])
+                self.assertEqual(len(miz.namelist()), len(set(miz.namelist())))
