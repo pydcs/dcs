@@ -18,7 +18,7 @@ python3 -m venv venv
 ./venv/bin/pip install -r requirements.txt mypy flake8 pytest
 ```
 
-CI (`.github/workflows/pythonpackage.yml`, runs on **Windows**, Python 3.10/3.11) does exactly this —
+CI (`.github/workflows/pythonpackage.yml`, runs on **Windows**, Python 3.11–3.15) does exactly this —
 run all three before considering a change done:
 
 ```sh
