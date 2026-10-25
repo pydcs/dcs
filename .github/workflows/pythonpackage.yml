@@ -41,3 +41,23 @@ jobs:
       run: |
         pip install pytest
         pytest
+
+  package:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v7
+    - name: Set up uv
+      uses: astral-sh/setup-uv@v10.3.2
+    - name: Build sdist and wheel
+      run: |
+        uv build
+    - name: Check package metadata
+      run: |
+        uvx twine check --strict dist/*
+    - name: Smoke test installed wheel
+      run: |
+        uv venv /tmp/wheel-test
+        uv pip install --python /tmp/wheel-test dist/*.whl
+        cd /tmp && /tmp/wheel-test/bin/python -c "import dcs; assert dcs.terrain.Caucasus().city_graph.nodes"

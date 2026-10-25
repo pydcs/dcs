@@ -7,7 +7,7 @@ Guidance for AI coding agents (and humans) working in this repository.
 **pydcs** (`dcs` package): a Python framework to create, load, edit and save mission files (`.miz`) for
 the flight simulator *DCS World*. A `.miz` is a zip archive with Lua tables (`mission`, `options`,
 `warehouses`, `l10n/DEFAULT/dictionary`, `mapResource`, …) plus resources. License: LGPLv3.
-Package version lives in `setup.py`.
+Package metadata and version live in `pyproject.toml` (setuptools backend, no `setup.py`).
 
 ## Setup & commands
 
@@ -34,7 +34,10 @@ pytest                                                          # tests/ and dcs
 - On Linux, a few tests in `tests/liveries/`, `tests/test_installation.py` and `tests/test_unittype.py`
   fail because they assume Windows paths/registry/encodings. Those failures are pre-existing; only
   CI on Windows is authoritative for them.
-- Packaging: `make build` (sdist + wheel), `make upload` (twine).
+- Packaging: `make build` (`uv build`, sdist + wheel into `dist/`; `python -m build` works too),
+  `make upload` (twine, credentials from `~/.pypirc`). Packages are auto-discovered (`dcs*`); non-Python
+  files to ship must be listed under `[tool.setuptools.package-data]` in `pyproject.toml`. A separate CI
+  job (`package`, Linux) runs `uv build`, `twine check --strict` and a smoke test of the installed wheel.
 
 ## Code style
 
@@ -87,9 +90,9 @@ These files are huge (`planes.py`, `countries.py` are ~40k lines) — search the
 
 ## Adding a new terrain
 
-Add the subpackage under `dcs/terrain/`, export it in `dcs/terrain/__init__.py`, add the package to
-`packages` in `setup.py`, and if the generated airport file needs it, add an `E126` per-file-ignore in
-`setup.cfg`. Add a test in `tests/test_terrain.py`.
+Add the subpackage (with `__init__.py`) under `dcs/terrain/` and export it in `dcs/terrain/__init__.py`;
+packaging picks it up automatically. If the generated airport file needs it, add an `E126`
+per-file-ignore in `setup.cfg`. Add a test in `tests/test_terrain.py`.
 
 ## Other directories
 
