@@ -57,3 +57,35 @@ class TaskLoadTests(unittest.TestCase):
             self.assertEqual(m2.load_file(path), [])
         loaded = m2.country("USA").plane_group[0].points[0].tasks[-len(tasks):]
         self.assertEqual([type(t) for t in loaded], [type(t) for t in tasks])
+
+
+class FormationTests(unittest.TestCase):
+
+    @staticmethod
+    def _decode(value: int):
+        # formation values are encoded as formationIndex << 16 | zInverse << 8 | variantIndex
+        return value >> 16, (value >> 8) & 0xFF, value & 0xFF
+
+    def test_values_decode_to_known_formations(self) -> None:
+        formations = {int(x) for x in task.OptFormation.FormationIndex}
+        for name, value in task.OptFormation.Values.__members__.items():
+            if name == "RotaryWedge":
+                continue  # DCS uses the plain value 8 for it
+            with self.subTest(name):
+                formation, z_inverse, variant = self._decode(int(value))
+                self.assertIn(formation, formations)
+                self.assertIn(z_inverse, (0, 1))
+                self.assertIn(variant, (0, 1, 2, 3))
+
+    def test_factories_match_their_value(self) -> None:
+        for name, factory in inspect.getmembers(task.OptFormation, predicate=inspect.isfunction):
+            if name.startswith("_") or inspect.signature(factory).parameters:
+                continue
+            params = factory().params["action"]["params"]
+            if params["value"] == task.OptFormation.Values.RotaryWedge:
+                continue
+            with self.subTest(name):
+                formation, z_inverse, variant = self._decode(int(params["value"]))
+                self.assertEqual(params["formationIndex"], formation)
+                self.assertEqual(params.get("variantIndex", 0), variant)
+                self.assertEqual(params.get("zInverse", 0), z_inverse)
