@@ -1,5 +1,5 @@
 import sys
-from typing import Dict, Union, List, TYPE_CHECKING, Optional
+from typing import Any, Dict, Union, List, TYPE_CHECKING, Optional
 import dcs.countries as countries
 from dcs.mapping import Point
 import dcs.unitgroup as unitgroup
@@ -22,7 +22,8 @@ class Coalition:
         self.name = name
         self.countries: Dict[str, Country] = {}
         self.bullseye = bullseye
-        self.nav_points = []  # TODO
+        # reference points of the coalition, kept as loaded from the mission
+        self.nav_points: List[Dict[str, Any]] = []
 
     @staticmethod
     def _sort_keys(points):
@@ -92,6 +93,8 @@ class Coalition:
 
     def load_from_dict(self, mission, d, countries_in_coalition: Dict[int, int]) -> List[StatusMessage]:
         status: List[StatusMessage] = []
+        nav_points = d.get("nav_points", {})
+        self.nav_points = [nav_points[k] for k in sorted(nav_points)]
         for country_idx in d["country"]:
             imp_country = d["country"][country_idx]
             _country = countries.get_by_id(imp_country["id"])
@@ -314,5 +317,5 @@ class Coalition:
         for country in sorted(self.countries.keys()):
             d["country"][i] = self.country(country).dict()
             i += 1
-        d["nav_points"] = {}
+        d["nav_points"] = {i + 1: point for i, point in enumerate(self.nav_points)}
         return d

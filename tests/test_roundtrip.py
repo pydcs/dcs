@@ -77,3 +77,23 @@ class RoundTripTests(unittest.TestCase):
                 before, after = facts(orig["mission"]["mission"]), facts(saved["mission"]["mission"])
                 self.assertEqual({k: v for k, v in before.items() if v is not None},
                                  {k: v for k, v in after.items() if k in before and before[k] is not None})
+
+    def test_options_are_kept(self) -> None:
+        for name, (orig, saved) in self.missions.items():
+            with self.subTest(mission=name):
+                before, after = orig["options"]["options"], saved["options"]["options"]
+                self.assertEqual(before.get("playerName"), after.get("playerName"))
+                self.assertFalse(set(before) - set(after), "options lost")
+                self.assertFalse(set(before["difficulty"]) - set(after["difficulty"]), "difficulty options lost")
+                for key, value in before["difficulty"].items():
+                    self.assertEqual(value, after["difficulty"][key], key)
+
+    def test_mission_settings_are_kept(self) -> None:
+        for name, (orig, saved) in self.missions.items():
+            with self.subTest(mission=name):
+                before, after = orig["mission"]["mission"], saved["mission"]["mission"]
+                self.assertEqual(before.get("forcedOptions"), after.get("forcedOptions"))
+                self.assertEqual("descriptionNeutralsTask" in before, "descriptionNeutralsTask" in after)
+                for side in before["coalition"]:
+                    self.assertEqual(before["coalition"][side].get("nav_points", {}),
+                                     after["coalition"][side]["nav_points"])

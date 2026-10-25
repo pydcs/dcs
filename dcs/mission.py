@@ -113,6 +113,8 @@ class Mission:
         self._description_text = self.string("")
         self._description_bluetask = self.string("")
         self._description_redtask = self.string("")
+        # only present in missions saved by newer versions of the mission editor
+        self._description_neutralstask: Optional[String] = None
         self._sortie = self.string("")
         self.pictureFileNameR: List[Union[ResourceKey, str]] = []
         self.pictureFileNameB: List[Union[ResourceKey, str]] = []
@@ -315,6 +317,10 @@ class Mission:
         self._description_text = self.translation.get_string(imp_mission["descriptionText"])
         self._description_bluetask = self.translation.get_string(imp_mission["descriptionBlueTask"])
         self._description_redtask = self.translation.get_string(imp_mission["descriptionRedTask"])
+        if "descriptionNeutralsTask" in imp_mission:
+            self._description_neutralstask = self.translation.get_string(imp_mission["descriptionNeutralsTask"])
+        else:
+            self._description_neutralstask = None
         self._sortie = self.translation.get_string(imp_mission["sortie"])
         for pic in sorted(imp_mission["pictureFileNameR"]):
             self.pictureFileNameR.append(imp_mission["pictureFileNameR"][pic])
@@ -467,6 +473,25 @@ class Mission:
             text: text to set.
         """
         self._description_redtask.set(text)
+
+    def description_neutralstask_text(self) -> str:
+        """Returns the neutral task description text.
+
+        Returns:
+            the neutral task description text
+        """
+        return str(self._description_neutralstask) if self._description_neutralstask is not None else ""
+
+    def set_description_neutralstask_text(self, text: str):
+        """Sets the neutral coalitions task description text.
+
+        Args:
+            text: text to set.
+        """
+        if self._description_neutralstask is None:
+            self._description_neutralstask = self.string(text)
+        else:
+            self._description_neutralstask.set(text)
 
     def add_picture_red(self, filepath: str) -> ResourceKey:
         """Adds a new briefing picture to the red coalition.
@@ -2160,6 +2185,8 @@ class Mission:
             m["pictureFileNameN"][i + 1] = str(self.pictureFileNameN[i])
         m["descriptionBlueTask"] = self._description_bluetask.id
         m["descriptionRedTask"] = self._description_redtask.id
+        if self._description_neutralstask is not None:
+            m["descriptionNeutralsTask"] = self._description_neutralstask.id
         if self.init_script_file is not None:
             m["initScriptFile"] = self.init_script_file
         if self.init_script is not None:
@@ -2337,8 +2364,12 @@ class OptionsDifficulty:
         self.weapons = False
         self.setGlobal = True
         self.labels = False
+        # options pydcs doesn't know, written back unchanged
+        self.unknown_options: Dict[str, Any] = {}
 
     def load_from_dict(self, d):
+        known = self.dict()
+        self.unknown_options = {k: v for k, v in d.items() if k not in known}
         self.geffect = d.get("geffect", "realistic")
         self.padlock = d.get("padlock", False)
         self.compassTape = d.get("compassTape", True)
@@ -2374,6 +2405,7 @@ class OptionsDifficulty:
 
     def dict(self):
         return {
+            **self.unknown_options,
             "geffect": self.geffect,
             "padlock": self.padlock,
             "compassTape": self.compassTape,
@@ -2419,6 +2451,7 @@ class Options:
         self.options = {}
 
     def load_from_dict(self, d):
+        self.playerName = d.get("playerName", self.playerName)
         self.difficulty.load_from_dict(d["difficulty"])
         self.options = d
 
