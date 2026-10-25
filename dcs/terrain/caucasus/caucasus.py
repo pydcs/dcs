@@ -40,7 +40,7 @@ class Caucasus(Terrain):
         self.bullseye_red = {"x": 11557, "y": 371700}
 
         try:
-            self.city_graph: Graph = Graph.from_pickle(os.path.join(os.path.dirname(__file__), 'citygraph.p'))
+            self.city_graph: Graph = Graph.from_pickle(os.path.join(os.path.dirname(__file__), 'citygraph.p'), self)
         except FileNotFoundError:
             pass
 

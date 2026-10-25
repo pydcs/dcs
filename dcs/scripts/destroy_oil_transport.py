@@ -15,7 +15,7 @@ def main():
                         choices=aircraft_types,
                         help="Player aircraft type")
     parser.add_argument("-u", "--unhide", action="store_true", default=False, help="Show enemy pre mission")
-    parser.add_argument("-t", "--terrain", choices=["caucasus", "nevada"], default='caucasus')
+    parser.add_argument("-t", "--terrain", choices=["caucasus"], default='caucasus')
     parser.add_argument("-d", "--difficulty", choices=["easy", "normal", "hard", "ohno"], default='normal')
     parser.add_argument("-m", "--multiplayer", action="store_true", default=False)
     parser.add_argument("-s", "--stats", action="store_false", default=True)
@@ -23,8 +23,7 @@ def main():
 
     args = parser.parse_args()
     terrain_map = {
-        "caucasus": dcs.terrain.Caucasus,
-        "nevada": dcs.terrain.Nevada
+        "caucasus": dcs.terrain.Caucasus
     }
     difficulty_map = {
         'easy': 0.25,
@@ -36,7 +35,7 @@ def main():
 
     terrain = terrain_map[args.terrain]()
 
-    zone_abkhazia = dcs.Polygon([
+    zone_abkhazia = dcs.Polygon(terrain, [
         dcs.Point(-187092.85714285, 460857.14285714, terrain),
         dcs.Point(-149378.57142856, 476285.71428571, terrain),
         dcs.Point(-147664.28571428, 520000, terrain),
@@ -60,11 +59,18 @@ def main():
     m.random_date()
     m.random_daytime('day')
 
-    for a in m.terrain.default_red_airports():
-        a.set_red()
+    red_airports = [
+        "Anapa-Vityazevo", "Krymsk", "Novorossiysk", "Krasnodar-Center", "Krasnodar-Pashkovsky",
+        "Maykop-Khanskaya", "Gelendzhik", "Mineralnye Vody", "Mozdok", "Beslan", "Nalchik", "Sochi-Adler"
+    ]
+    for a in red_airports:
+        m.terrain.airports[a].set_red()
 
-    for b in m.terrain.default_blue_airports():
-        b.set_blue()
+    blue_airports = ["Batumi", "Vaziani", "Soganlug", "Kobuleti", "Senaki-Kolkhi", "Tbilisi-Lochini", "Kutaisi"]
+    for b in blue_airports:
+        m.terrain.airports[b].set_blue()
+
+    senaki = m.terrain.airports["Senaki-Kolkhi"]
 
     city_graph = m.terrain.city_graph
 
@@ -79,11 +85,11 @@ def main():
     abkhazia = m.country(dcs.countries.Abkhazia.name)
     convoy_vehicles = []
     for i in range(0, 1 + int(max(difficulty, random.random()) * 10)):
-        convoy_vehicles.append(dcs.vehicles.Unarmed.Fuel_Truck_ATZ_10)
+        convoy_vehicles.append(dcs.vehicles.Unarmed.ATZ_10)
 
     airdef = [
-        dcs.countries.Abkhazia.Vehicle.AirDefence.AAA_ZU_23_on_Ural_375,
-        dcs.countries.Abkhazia.Vehicle.AirDefence.SPAAA_ZSU_23_4_Shilka
+        dcs.countries.Abkhazia.Vehicle.AirDefence.Ural_375_ZU_23,
+        dcs.countries.Abkhazia.Vehicle.AirDefence.ZSU_23_4_Shilka
     ]
     if random.random() < difficulty:
         convoy_vehicles.append(random.choice(airdef))
@@ -101,9 +107,9 @@ def main():
     _, path = city_graph.travel(oil_convoy, start_node, destination_node, 100)
 
     # add light air defence around and in cities on path
-    aaa_def = [[dcs.countries.Abkhazia.Vehicle.AirDefence.AAA_ZU_23_Emplacement],
-               [dcs.countries.Abkhazia.Vehicle.AirDefence.SAM_SA_18_Igla_MANPADS,
-                dcs.countries.Abkhazia.Vehicle.AirDefence.SAM_SA_18_Igla_comm]]
+    aaa_def = [[dcs.countries.Abkhazia.Vehicle.AirDefence.ZU_23_Emplacement],
+               [dcs.countries.Abkhazia.Vehicle.AirDefence.SA_18_Igla_manpad,
+                dcs.countries.Abkhazia.Vehicle.AirDefence.SA_18_Igla_comm]]
     for city in city_graph.rated_nodes_within(zone_enemy, 50):
         use_building_pos = int(min(difficulty, random.random()) * len(city.air_defence_pos_small))
         small_aaa_pos = list(city.air_defence_pos_small)
@@ -118,9 +124,9 @@ def main():
             vg.hidden = not args.unhide
             vg.formation_scattered(random.randrange(0, 360), 15)
 
-    aaa_def += [[dcs.countries.Abkhazia.Vehicle.AirDefence.SPAAA_ZSU_23_4_Shilka,
-                 dcs.countries.Abkhazia.Vehicle.Armor.ARV_BRDM_2,
-                 dcs.countries.Abkhazia.Vehicle.Armor.ARV_BRDM_2]]
+    aaa_def += [[dcs.countries.Abkhazia.Vehicle.AirDefence.ZSU_23_4_Shilka,
+                 dcs.countries.Abkhazia.Vehicle.Armor.BRDM_2,
+                 dcs.countries.Abkhazia.Vehicle.Armor.BRDM_2]]
     for node in city_graph.nodes_within(zone_enemy):
         if random.random() < (difficulty - 0.1):
             vg = m.vehicle_group_platoon(abkhazia,
@@ -146,12 +152,12 @@ def main():
 
     # place farp for helis
     zugdidi_ne = city_graph.node('Zugidi NE')
-    farp = m.farp(usa, "FARP Zugdidi", zugdidi_ne.position + dcs.mapping.Point(0, 500), callsign_id=1)
+    farp = m.farp(usa, "FARP Zugdidi", zugdidi_ne.position + dcs.mapping.Point(0, 500, m.terrain), callsign_id=1)
     fg = m.flight_group_from_unit(
         usa, dcs.helicopters.Ka_50.id + " Client", dcs.helicopters.Ka_50, farp, dcs.task.CAS, group_size=2)
     fg.set_client()
 
-    farp = m.farp(usa, "FARP Kvemo", zugdidi_ne.position + dcs.mapping.Point(0, -22 * 1000), callsign_id=2)
+    farp = m.farp(usa, "FARP Kvemo", zugdidi_ne.position + dcs.mapping.Point(0, -22 * 1000, m.terrain), callsign_id=2)
     fg = m.flight_group_from_unit(
         usa, dcs.helicopters.UH_1H.id + " Client", dcs.helicopters.UH_1H, farp, dcs.task.CAS, group_size=2)
     fg.set_client()
@@ -159,22 +165,27 @@ def main():
     # place player
     player_fg = None
     if args.multiplayer:
+        # senaki first, the other blue airports take the client groups that no longer fit there
+        client_airports = [senaki] + [m.terrain.airports[b] for b in blue_airports if b != "Senaki-Kolkhi"]
         for x in aircrafts:
             if dcs.task.CAS in x.tasks and x not in [dcs.planes.Su_33, dcs.planes.MiG_29A, dcs.planes.MiG_29S]:
+                airport = next((a for a in client_airports if len(a.free_parking_slots(x)) >= 2), None)
+                if airport is None:
+                    continue
                 country = m.country(dcs.countries.Georgia.name) if x in [dcs.planes.Su_25T, dcs.planes.Su_25] else usa
                 fg = m.flight_group_from_airport(
-                    country, x.id + " Client", x, m.terrain.senaki_kolkhi(), dcs.task.CAS, group_size=2)
-                fg.add_runway_waypoint(m.terrain.senaki_kolkhi())
+                    country, x.id + " Client", x, airport, dcs.task.CAS, group_size=2)
+                fg.add_runway_waypoint(airport)
                 fg.set_client()
     else:
-        aircraft_type = [x for x in aircrafts if x.id == args.aircrafttype][0]
-        player_fg = m.flight_group_from_airport(usa, "Player", aircraft_type, m.terrain.senaki_kolkhi(), dcs.task.CAS)
-        player_fg.add_runway_waypoint(m.terrain.senaki_kolkhi())
+        aircraft_type = [x for x in aircrafts + helicopters if x.id == args.aircrafttype][0]
+        player_fg = m.flight_group_from_airport(usa, "Player", aircraft_type, senaki, dcs.task.CAS)
+        player_fg.add_runway_waypoint(senaki)
         player_fg.units[0].set_player()
 
     # CAP flight
     cap_type = random.choice([dcs.planes.F_16C_bl_52d, dcs.planes.F_A_18C, dcs.planes.F_15E])
-    m.patrol_flight(usa, "CAP", cap_type, m.terrain.kutaisi(), zugdidi_ne.position,
+    m.patrol_flight(usa, "CAP", cap_type, m.terrain.airports["Kutaisi"], zugdidi_ne.position,
                     zugdidi_ne.position.point_from_heading(random.randint(270, 350), 35 * 1000))
 
     notify_nodes = path[1:5]

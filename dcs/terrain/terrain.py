@@ -407,9 +407,17 @@ class Graph:
         self.edge_properties[(from_node.name, to_node.name)] = (distance, on_road)
 
     @staticmethod
-    def from_pickle(pickle_file):
+    def from_pickle(pickle_file, terrain: Terrain) -> Graph:
         with open(pickle_file, 'rb') as f:
-            return pickle.load(f)
+            graph = pickle.load(f)
+        # The pickled positions only carry coordinates, rebind them to the terrain.
+        # Older pickles also lack the air defence positions.
+        for node in graph.nodes:
+            node.position = mapping.Point(node.position.x, node.position.y, terrain)
+            node.air_defence_pos_small = [
+                mapping.Point(p.x, p.y, terrain) for p in getattr(node, 'air_defence_pos_small', [])
+            ]
+        return graph
 
     def _dijkstra(self, initial):
         visited = {initial: 0}
