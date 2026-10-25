@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydcs"
+version = "0.15.0"
+description = "A Digital Combat Simulator mission builder framework"
+readme = "README.md"
+authors = [{ name = "Peinthor Rene", email = "peinthor@gmail.com" }]
+license = "LGPL-3.0-or-later"
+license-files = ["LICENSE.txt"]
+requires-python = ">=3.11"
+dependencies = ["pyproj"]
+keywords = ["dcs", "digital combat simulator", "eagle dynamics", "mission", "framework"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Topic :: Games/Entertainment :: Simulation",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.urls]
+Homepage = "https://github.com/pydcs/dcs"
+Documentation = "https://dcs.readthedocs.org/en/latest"
+
+[project.scripts]
+dcs_random = "dcs.scripts.caucasus_random_mission:main"
+dcs_dogfight_wwii = "dcs.scripts.dogfight_wwii:main"
+dcs_oil_convoy = "dcs.scripts.destroy_oil_transport:main"
+
+[tool.setuptools.packages.find]
+include = ["dcs*"]
+
+[tool.setuptools.package-data]
+dcs = ["py.typed", "terrain/*/citygraph.p"]
