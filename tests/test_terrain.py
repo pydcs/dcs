@@ -1,3 +1,4 @@
+import os
 import unittest
 import dcs
 
@@ -181,6 +182,28 @@ class SyriaTest(unittest.TestCase):
 
         hslots = m.terrain.airports["Aleppo"].free_parking_slots(dcs.helicopters.UH_1H)
         self.assertEqual(len(hslots), 8)
+
+
+class AfghanistanTest(unittest.TestCase):
+
+    def test_airports(self):
+        terrain = dcs.terrain.Afghanistan()
+        self.assertEqual(len(terrain.airports), 26)
+
+        kabul = terrain.airports["Kabul"].position.latlng()
+        self.assertAlmostEqual(kabul.lat, 34.566, places=2)
+        self.assertAlmostEqual(kabul.lng, 69.213, places=2)
+
+        self.assertEqual(len(terrain.airports["Bagram"].free_parking_slots(dcs.planes.A_10C)), 101)
+
+    def test_save_load_theatre(self):
+        m = dcs.mission.Mission(terrain=dcs.terrain.Afghanistan())
+        os.makedirs("missions", exist_ok=True)
+        m.save("missions/afghanistan.miz")
+
+        loaded = dcs.mission.Mission()
+        loaded.load_file("missions/afghanistan.miz")
+        self.assertIsInstance(loaded.terrain, dcs.terrain.Afghanistan)
 
 
 class AirportTests(unittest.TestCase):

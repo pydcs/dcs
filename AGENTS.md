@@ -68,9 +68,9 @@ pytest                                                          # tests/ and dcs
   DCS installation (`dcs/installation.py`, `dcs/winreg.py` — degrade gracefully off Windows).
 - `dcs/terrain/` — `terrain.py` defines `Terrain`, `Airport`, `Runway`, `ParkingSlot`, `Warehouse`,
   `Graph`; one subpackage per map (`caucasus`, `nevada`, `normandy`, `persiangulf`, `thechannel`,
-  `syria`, `marianaislands`, `falklands`, `sinai`, `kola`, `germany`), each with `<map>.py` (the
-  `Terrain` subclass incl. bounds, projection, `utc_offset`), `airports.py` (generated airport data)
-  and `projection.py`. `dcs/mapping.py` handles points, vectors and lat/lon conversion via `pyproj`.
+  `syria`, `marianaislands`, `falklands`, `sinai`, `kola`, `germany`, `afghanistan`), each with
+  `<map>.py` (the `Terrain` subclass incl. bounds, projection, `utc_offset`), `airports.py` (generated
+  airport data) and `projection.py`. `dcs/mapping.py` handles points, vectors and lat/lon conversion via `pyproj`.
 - `dcs/drawing/` — mission editor drawings (layers, lines, polygons, icons, text boxes).
 - `dcs/scripts/` — example random-mission generators installed as console scripts (`dcs_random`,
   `dcs_dogfight_wwii`, `dcs_oil_convoy`).
