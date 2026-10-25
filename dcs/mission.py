@@ -253,6 +253,14 @@ class Mission:
         self.tmpdir = tempfile.mkdtemp()
         status = []
 
+        # state that is filled from the file or added to afterwards must not survive from a previous load
+        self.map_resource = MapResource(self)
+        self.pictureFileNameR = []
+        self.pictureFileNameB = []
+        self.pictureFileNameN = []
+        self.forced_options = ForcedOptions()
+        self.aircraft_kneeboards = defaultdict(list)
+
         def loaddict(fname: str, mizfile: zipfile.ZipFile, reserved_files: List[str]) -> Dict[str, Any]:
             reserved_files.append(fname)
             with mizfile.open(fname) as mfile:
@@ -377,6 +385,7 @@ class Mission:
         self.init_script = imp_mission.get("initScript")
 
         # import coalition with countries and units
+        self.coalition = {}
         for col_name in ["blue", "red", "neutrals"]:
             if col_name in imp_mission["coalition"]:
                 self.coalition[col_name] = Coalition(col_name, imp_mission["coalition"][col_name]["bullseye"])
@@ -413,6 +422,7 @@ class Mission:
         self.forced_options.load_from_dict(imp_mission["forcedOptions"])
 
         # map
+        self.map = copy.copy(self.terrain.map_view_default)
         self.map.load_from_dict(imp_mission["map"])
 
         # weather
