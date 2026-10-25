@@ -2313,16 +2313,28 @@ class MapResource:
             zipf.write(file["path"], file["respath"])
 
         if lang in self.files:
+            names_in_zip = set(zipf.namelist())
+            written: Dict[str, str] = {}  # name in zip -> source file
             for reskey in self.files[lang]:
                 filepath = self.files[lang][reskey]
                 if os.path.isabs(filepath):
                     nameinzip = os.path.basename(filepath)
-                    zippath = "l10n/{lang}/{name}".format(lang=lang, name=nameinzip)
-                    # do not write files twice
-                    # if a script is called multiple times, a resource key is duplicated for the same file
-                    has_file = [x for x in zipf.filelist if x.filename == zippath]
-                    if not has_file:
-                        zipf.write(filepath, zippath)
+                    stem, ext = os.path.splitext(nameinzip)
+                    n = 1
+
+                    def taken(name: str) -> bool:
+                        if name in written:
+                            return written[name] != filepath
+                        return "l10n/{lang}/{name}".format(lang=lang, name=name) in names_in_zip
+
+                    # the same file can be used by several resource keys and is only written once,
+                    # a different file with an already used name gets a unique one
+                    while taken(nameinzip):
+                        nameinzip = "{stem}_{n}{ext}".format(stem=stem, n=n, ext=ext)
+                        n += 1
+                    if nameinzip not in written:
+                        zipf.write(filepath, "l10n/{lang}/{name}".format(lang=lang, name=nameinzip))
+                        written[nameinzip] = filepath
                     d[reskey] = nameinzip
 
         return d
