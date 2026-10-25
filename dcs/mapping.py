@@ -256,7 +256,8 @@ class Rectangle:
 
     def random_distant_points(self, distance: float) -> Tuple[Point, Point]:
         # determine vertical/horizontal
-        if self.width() > self.height():
+        horizontal = self.width() > self.height()
+        if horizontal:
             axis_y = self.width()
             axis_x = self.height()
             sy = self.left
@@ -272,7 +273,8 @@ class Rectangle:
         d = distance if distance < axis_y else axis_y * 0.2
         sy += random.random() * (axis_y - d)
         sx += random.random() * axis_x
-        p1 = Point(sx, sy, self._terrain)
+        # sy runs along the long axis, which is x (north) for a vertical rectangle
+        p1 = Point(sx, sy, self._terrain) if horizontal else Point(sy, sx, self._terrain)
         while True:
             hdg = random.random() * 60
             p2 = p1.point_from_heading(hdg_start + hdg, d)

@@ -44,13 +44,31 @@ class Halo:
         self.crystals = crystals
 
     def validate_halo(self) -> None:
-        if self.preset is (Halo.Preset.Auto or Halo.Preset.Off) and self.crystals is not None:
-            raise ValueError(
-                f"Halo preset: {self.preset} cannot have a crystals value.")
-
-        if self.preset is not (Halo.Preset.Auto or Halo.Preset.Off) and self.crystals is None:
+        if self.preset in (Halo.Preset.Auto, Halo.Preset.Off):
+            if self.crystals is not None:
+                raise ValueError(
+                    f"Halo preset: {self.preset} cannot have a crystals value.")
+        elif isinstance(self.preset, Halo.Preset) and self.crystals is None:
             raise ValueError(
                 f"Halo preset: {self.preset} must have a crystals value.")
+
+    @classmethod
+    def load_from_dict(cls, d: Dict[str, Any]) -> "Halo":
+        # values unknown to pydcs are kept as raw strings, so they are written back unchanged
+        preset: Any = d.get("preset", Halo.Preset.Auto.value)
+        try:
+            preset = Halo.Preset(preset)
+        except ValueError:
+            pass
+        crystals: Any = d.get("crystalsPreset")
+        if preset in (Halo.Preset.Auto, Halo.Preset.Off):
+            crystals = None
+        elif crystals is not None:
+            try:
+                crystals = Halo.Crystals(crystals)
+            except ValueError:
+                pass
+        return cls(preset, crystals)
 
     def dict(self):
         if self.crystals:
@@ -154,10 +172,7 @@ class Weather:
         self.wind_at_ground = Wind(wind_at_ground.get("dir", 0), wind_at_ground.get("speed", 0))
         self.wind_at_2000 = Wind(wind_at_2000.get("dir", 0), wind_at_2000.get("speed", 0))
         self.wind_at_8000 = Wind(wind_at_8000.get("dir", 0), wind_at_8000.get("speed", 0))
-        halo = d.get("halo", {})
-        halo_preset = halo.get("preset", {})
-        halo_crystals_preset = halo.get("crystalsPreset", {})
-        self.halo = Halo(halo_preset, halo_crystals_preset)
+        self.halo = Halo.load_from_dict(d.get("halo", {}))
         self.enable_fog = d["enable_fog"]
         self.turbulence_at_ground = d.get("groundTurbulence", 0)
         season = d.get("season", {})

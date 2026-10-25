@@ -1,7 +1,7 @@
 import unittest
 
 from dcs.terrain import Caucasus
-from dcs.weather import CloudPreset, Weather
+from dcs.weather import CloudPreset, Halo, Weather
 from dcs.cloud_presets import Clouds
 
 
@@ -63,3 +63,34 @@ class WeatherTests(unittest.TestCase):
         del weather_dict["clouds"]["preset"]
         weather.load_from_dict(weather_dict)
         self.assertIsNone(weather.clouds_preset)
+
+
+class HaloTests(unittest.TestCase):
+    def test_auto_and_off_need_no_crystals(self) -> None:
+        self.assertEqual(Halo(Halo.Preset.Off)._make_halo_dict(), {"preset": "off"})
+        self.assertEqual(Halo(Halo.Preset.Auto)._make_halo_dict(), {"preset": "auto"})
+        with self.assertRaises(ValueError):
+            Halo(Halo.Preset.Off, Halo.Crystals.AllKinds)._make_halo_dict()
+
+    def test_other_presets_need_crystals(self) -> None:
+        with self.assertRaises(ValueError):
+            Halo(Halo.Preset.Cirrus)._make_halo_dict()
+        self.assertEqual(Halo(Halo.Preset.Cirrus, Halo.Crystals.Tangents)._make_halo_dict(),
+                         {"preset": "CirrusOnly", "crystalsPreset": "Tangents"})
+
+    def test_load(self) -> None:
+        self.assertEqual(Halo.load_from_dict({})._make_halo_dict(), {"preset": "auto"})
+        self.assertEqual(Halo.load_from_dict({"preset": "off"})._make_halo_dict(), {"preset": "off"})
+        loaded = Halo.load_from_dict({"preset": "CirrusOnly", "crystalsPreset": "Tangents"})
+        self.assertIs(loaded.preset, Halo.Preset.Cirrus)
+        self.assertIs(loaded.crystals, Halo.Crystals.Tangents)
+        # values pydcs doesn't know are written back unchanged
+        future = {"preset": "FuturePreset", "crystalsPreset": "FutureCrystals"}
+        self.assertEqual(Halo.load_from_dict(future)._make_halo_dict(), future)
+
+    def test_weather_without_halo_round_trips(self) -> None:
+        weather = Weather(Caucasus())
+        d = weather.dict()
+        del d["halo"]
+        weather.load_from_dict(d)
+        self.assertEqual(weather.dict()["halo"], {"preset": "auto"})
