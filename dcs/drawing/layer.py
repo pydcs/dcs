@@ -31,6 +31,7 @@ class Layer:
         for object_index in sorted(data["objects"].keys()):
             object_data = data["objects"][object_index]
             object = self.load_drawing_from_data(object_data)
+            object.hidden_on_planner = object_data.get("hiddenOnPlanner")
             self.objects.append(object)
 
     def dict(self):
