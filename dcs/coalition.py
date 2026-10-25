@@ -64,6 +64,13 @@ class Coalition:
         ret: List[StatusMessage] = []
         if group.points[0].airdrome_id is not None and unit.parking is not None:
             airport = mission.terrain.airport_by_id(group.points[0].airdrome_id)
+            if airport is None:
+                # e.g. an airfield added in a newer DCS version, keep the parking as loaded
+                msg = "Unknown airport id '{i}' for unit '{u}' in group '{p}', keeping its parking slot " \
+                      "'{s}' unchecked".format(i=group.points[0].airdrome_id, u=unit.name, p=group.name, s=unit.parking)
+                print("WARN", msg, file=sys.stderr)
+                ret.append(StatusMessage(msg, MessageType.AIRPORT_UNKNOWN, MessageSeverity.WARN))
+                return ret
             slot = airport.parking_slot(unit.parking)
             if slot is not None:
                 unit.set_parking(slot)

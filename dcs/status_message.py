@@ -12,6 +12,7 @@ class MessageType(IntEnum):
     PARKING_SLOT_NOT_VALID = 1
     PARKING_SLOTS_FULL = 3
     MISSION_FORMAT_OLD = 4
+    AIRPORT_UNKNOWN = 5
 
 
 class StatusMessage:
