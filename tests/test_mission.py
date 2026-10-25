@@ -1656,3 +1656,16 @@ class SaveLoadRoundTripTests(unittest.TestCase):
 
         m2 = self._save_and_load(m)
         self.assertEqual(m2.description_neutralstask_text(), "neutral task")
+
+    def test_next_eplrs_skips_used_ids(self) -> None:
+        m = dcs.Mission()
+        pos = m.terrain.airports["Batumi"].position
+        usa, russia = m.country("USA"), m.country("Russia")
+        a = m.vehicle_group(usa, "A", dcs.vehicles.Armor.M_1_Abrams, pos)
+        m.vehicle_group(usa, "B", dcs.vehicles.Armor.M_1_Abrams, pos)
+        usa.vehicle_group.remove(a)
+        m.vehicle_group(russia, "C", dcs.vehicles.Armor.T_90, pos)
+        m.vehicle_group(usa, "D", dcs.vehicles.Armor.M_1_Abrams, pos)
+
+        ids = list(m.eplrs_for("vehicle").values())
+        self.assertEqual(sorted(ids), [1, 2, 3])
