@@ -16,8 +16,12 @@ DEFAULT_VALUED_GROUP_KEYS = {"lateActivation": False, "probability": 1}
 
 
 def _read_miz(path: str) -> Dict[str, Any]:
-    with zipfile.ZipFile(path) as miz:
-        return {name: loads(miz.read(name).decode("utf-8")) for name in ("mission", "options")}
+    # the mission editor writes UTF-8 file names without setting the archive's UTF-8 flag
+    with zipfile.ZipFile(path, metadata_encoding="utf-8") as miz:
+        content = {name: loads(miz.read(name).decode("utf-8")) for name in ("mission", "options")}
+        content["files"] = miz.namelist()
+        content["mapResource"] = loads(miz.read("l10n/DEFAULT/mapResource").decode("utf-8"))["mapResource"]
+        return content
 
 
 def _groups(mission: Dict[str, Any]) -> Iterator[Tuple[str, Dict[str, Any]]]:
@@ -162,3 +166,14 @@ class RoundTripTests(unittest.TestCase):
                         new = after[layer_key]["objects"][object_key]
                         self.assertFalse(set(drawing) - set(new), drawing["name"])
                         self.assertEqual(drawing.get("hiddenOnPlanner"), new.get("hiddenOnPlanner"))
+
+
+    def test_resources_are_kept(self) -> None:
+        for name, (orig, saved) in self.missions.items():
+            with self.subTest(mission=name):
+                # resources whose file is missing in the original mission can't be kept
+                expected = {k: v for k, v in orig["mapResource"].items()
+                            if k and "l10n/DEFAULT/" + v in orig["files"]}
+                self.assertEqual(expected, {k: v for k, v in saved["mapResource"].items() if k in expected})
+                self.assertFalse(set(orig["files"]) - set(saved["files"]), "files lost")
+                self.assertEqual(len(saved["files"]), len(set(saved["files"])), "duplicate zip entries")
