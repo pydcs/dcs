@@ -1631,3 +1631,9 @@ class SaveLoadRoundTripTests(unittest.TestCase):
 
         m2 = self._save_and_load(m)
         self.assertEqual([a.coalitionlist for a in m2.triggerrules.triggers[0].actions], ["all", "all"])
+
+    def test_vehicle_group_without_waypoints(self) -> None:
+        m = dcs.Mission()
+        group = dcs.unitgroup.VehicleGroup(m.next_group_id(), "no waypoints")
+        group.add_unit(m.vehicle("unit", dcs.vehicles.Armor.M_1_Abrams))
+        self.assertNotIn("route", group.dict())

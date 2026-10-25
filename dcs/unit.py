@@ -81,14 +81,30 @@ class Vehicle(Unit):
     def __init__(self, terrain: Terrain, id: Optional[int] = None, name: Optional[str] = None, _type="Sandbox"):
         super().__init__(id, terrain, name, _type)
         self.player_can_drive = False
+        self.transportable: Optional[Dict[str, Any]] = None
+        self.cold_at_start: Optional[bool] = None
+        self.addpropvehicle: Optional[Dict[str, Any]] = None
+        self.wagons: Optional[Dict[int, str]] = None  # train wagons
 
     def load_from_dict(self, d: Dict[str, Any]) -> None:
         super().load_from_dict(d)
         self.player_can_drive = d["playerCanDrive"]
+        self.transportable = d.get("transportable")
+        self.cold_at_start = d.get("coldAtStart")
+        self.addpropvehicle = d.get("AddPropVehicle")
+        self.wagons = d.get("wagons")
 
     def dict(self):
         d = super(Vehicle, self).dict()
         d["playerCanDrive"] = self.player_can_drive
+        if self.transportable is not None:
+            d["transportable"] = self.transportable
+        if self.cold_at_start is not None:
+            d["coldAtStart"] = self.cold_at_start
+        if self.addpropvehicle is not None:
+            d["AddPropVehicle"] = self.addpropvehicle
+        if self.wagons is not None:
+            d["wagons"] = self.wagons
         return d
 
 
@@ -96,6 +112,8 @@ class Ship(Unit):
     def __init__(self, terrain: Terrain, id=None, name: Optional[str] = None, _type=None):
         super().__init__(id, terrain, name, _type.id)
         self.frequency = 127500000
+        self.modulation: Optional[int] = None
+        self.transportable: Optional[Dict[str, Any]] = None
 
     def set_frequency(self, frequency: int) -> None:
         """Sets the communications frequency for this unit.
@@ -108,10 +126,16 @@ class Ship(Unit):
     def load_from_dict(self, d: Dict[str, Any]) -> None:
         super().load_from_dict(d)
         self.frequency = d.get("frequency", self.frequency)
+        self.modulation = d.get("modulation")
+        self.transportable = d.get("transportable")
 
     def dict(self):
         d = super(Ship, self).dict()
         d["frequency"] = self.frequency
+        if self.modulation is not None:
+            d["modulation"] = self.modulation
+        if self.transportable is not None:
+            d["transportable"] = self.transportable
         return d
 
 
@@ -134,6 +158,7 @@ class Static(Unit):
         self.can_cargo: Optional[bool] = None
         self.effect_preset: Optional[int] = None
         self.effect_transparency: Optional[float] = None
+        self.rope_length: Optional[float] = None
 
         if not isinstance(_type, str):
             if issubclass(_type, StaticType):
@@ -164,6 +189,8 @@ class Static(Unit):
         self.mass = d.get("mass")
         self.effect_preset = d.get("effectPreset", None)
         self.effect_transparency = d.get("effectTransparency", None)
+        # sic, the mission editor writes it with this typo
+        self.rope_length = d.get("lenghtRope")
 
     def dict(self):
         d = super(Static, self).dict()
@@ -174,7 +201,8 @@ class Static(Unit):
             (self.rate, "rate"),
             (self.mass, "mass"),
             (self.effect_preset, "effectPreset"),
-            (self.effect_transparency, "effectTransparency")
+            (self.effect_transparency, "effectTransparency"),
+            (self.rope_length, "lenghtRope"),
         ]
         for attr, keyName in fields:
             if attr is not None:

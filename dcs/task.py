@@ -37,6 +37,7 @@ def _create_from_dict(d: TaskDict) -> 'Task':
     t.enabled = d["enabled"]
     t.number = d["number"]
     t.params = d["params"]
+    t.name = d.get("name")
     return t
 
 
@@ -57,6 +58,7 @@ class Task:
         self.auto: bool = False
         self.number: int = 1
         self.enabled: bool = True
+        self.name: Optional[str] = None  # optional name given in the mission editor
 
     def __repr__(self) -> str:
         return str(self.dict())
@@ -68,13 +70,16 @@ class Task:
         return t
 
     def dict(self) -> TaskDict:
-        return {
+        d: TaskDict = {
             "id": self.id,
             "auto": self.auto,
             "enabled": self.enabled,
             "params": self.params,
             "number": self.number
         }
+        if self.name is not None:
+            d["name"] = self.name
+        return d
 
     def __eq__(self, other: Any) -> bool:
         if not isinstance(other, Task):
