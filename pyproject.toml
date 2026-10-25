@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pydcs"
-version = "0.15.0"
+version = "1.0.0"
 description = "A Digital Combat Simulator mission builder framework"
 readme = "README.md"
 authors = [{ name = "Peinthor Rene", email = "peinthor@gmail.com" }]
@@ -14,7 +14,7 @@ requires-python = ">=3.11"
 dependencies = ["pyproj"]
 keywords = ["dcs", "digital combat simulator", "eagle dynamics", "mission", "framework"]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Topic :: Games/Entertainment :: Simulation",
     "Intended Audience :: Developers",
     "Intended Audience :: End Users/Desktop",
