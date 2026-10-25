@@ -594,11 +594,9 @@ class Mission:
         Returns:
             int: the next eplrs id to use
         """
-        eplrs_usage = self.eplrs_for(group_type)
+        used = set(self.eplrs_for(group_type).values())
         eplrs_id = 1
-        for ep_id in [eplrs_usage[x] for x in eplrs_usage]:
-            if ep_id != eplrs_id:
-                return eplrs_id
+        while eplrs_id in used:
             eplrs_id += 1
         return eplrs_id
 
