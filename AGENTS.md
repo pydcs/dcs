@@ -18,7 +18,7 @@ python3 -m venv venv
 ./venv/bin/pip install -r requirements.txt mypy flake8 pytest
 ```
 
-CI (`.github/workflows/pythonpackage.yml`, runs on **Windows**, Python 3.11–3.15) does exactly this —
+CI (`.github/workflows/pythonpackage.yml`, runs on **Windows and Linux**, Python 3.11–3.15) does exactly this —
 run all three before considering a change done:
 
 ```sh
@@ -31,9 +31,9 @@ pytest                                                          # tests/ and dcs
 - Single test: `pytest tests/test_mission.py::BasicTests::test_basic_mission`
 - Tests use paths relative to the repo root (e.g. `tests/missions/*.miz` as input, `missions/` as output
   dir — gitignored), so run pytest from the repo root.
-- On Linux, a few tests in `tests/liveries/`, `tests/test_installation.py` and `tests/test_unittype.py`
-  fail because they assume Windows paths/registry/encodings. Those failures are pre-existing; only
-  CI on Windows is authoritative for them.
+- The suite must pass on Windows and Linux. Use `os.path` / `pathlib` instead of hard-coded `\\`
+  separators. Tests for genuinely Windows-only behavior (e.g. the `ansi` codec, Steam library parsing)
+  are gated with `@pytest.mark.skipif(sys.platform != "win32", ...)`.
 - Packaging: `make build` (`uv build`, sdist + wheel into `dist/`; `python -m build` works too),
   `make upload` (twine, credentials from `~/.pypirc`). Packages are auto-discovered (`dcs*`); non-Python
   files to ship must be listed under `[tool.setuptools.package-data]` in `pyproject.toml`. A separate CI

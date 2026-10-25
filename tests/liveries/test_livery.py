@@ -1,5 +1,8 @@
+import sys
 from pathlib import Path
 from zipfile import ZipFile
+
+import pytest
 
 from dcs.liveries.livery import Livery
 from dcs.liveries.liveryset import LiverySet
@@ -66,8 +69,17 @@ def test_livery_valid_for_country() -> None:
     assert Livery("", "", 0, {"USA", "RUS"}).valid_for_country("RUS")
 
 
+@pytest.mark.skipif(sys.platform != "win32", reason="the 'ansi' codec only exists on Windows")
 def test_ansi_encoded_description(tmp_path: Path) -> None:
     (tmp_path / "description.lua").write_bytes("name = 'Š'".encode("ansi"))
+    livery = Livery.from_path(str(tmp_path))
+    assert livery is not None
+    assert livery.name == "Š"
+
+
+@pytest.mark.skipif(sys.platform == "win32", reason="Windows decodes with the 'ansi' codec first")
+def test_cp1252_encoded_description_without_ansi_codec(tmp_path: Path) -> None:
+    (tmp_path / "description.lua").write_bytes("name = 'Š'".encode("cp1252"))
     livery = Livery.from_path(str(tmp_path))
     assert livery is not None
     assert livery.name == "Š"

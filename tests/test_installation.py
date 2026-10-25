@@ -1,3 +1,5 @@
+import os
+import sys
 import textwrap
 from pathlib import Path
 from typing import Any, Callable, Iterator, Optional, TypeVar
@@ -97,15 +99,16 @@ def none_installed_fixture() -> Iterator[None]:
 
 
 def test_get_dcs_install_directory_stable(stable_dcs_install: Path) -> None:
-    assert get_dcs_install_directory() == f"{stable_dcs_install}\\"
+    assert get_dcs_install_directory() == f"{stable_dcs_install}{os.path.sep}"
 
 
 def test_get_dcs_install_directory_beta(beta_dcs_install: Path) -> None:
-    assert get_dcs_install_directory() == f"{beta_dcs_install}\\"
+    assert get_dcs_install_directory() == f"{beta_dcs_install}{os.path.sep}"
 
 
+@pytest.mark.skipif(sys.platform != "win32", reason="Steam library folders are parsed as Windows drive paths")
 def test_get_dcs_install_directory_steam(steam_dcs_install: Path) -> None:
-    assert get_dcs_install_directory() == f"{steam_dcs_install}\\"
+    assert get_dcs_install_directory() == f"{steam_dcs_install}{os.path.sep}"
 
 
 def test_get_dcs_install_directory_not_installed(none_installed: None) -> None:
