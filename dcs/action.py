@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Any, Dict, List, Type, Optional, TYPE_CHECKING
+from typing import Any, Dict, List, Type, Optional, Union, TYPE_CHECKING
 from dcs.lua.serialize import dumps
 from dcs.translation import String, ResourceKey
 from enum import Enum, IntEnum
@@ -96,7 +96,7 @@ class AddRadioItem(Action):
 class AddRadioItemForCoalition(Action):
     predicate = "a_add_radio_item_for_coalition"
 
-    def __init__(self, coalitionlist=all, radiotext=String(), flag=1, value=1):
+    def __init__(self, coalitionlist="all", radiotext=String(), flag=1, value=1):
         super(AddRadioItemForCoalition, self).__init__(AddRadioItemForCoalition.predicate)
         self.coalitionlist = coalitionlist
         self.params.append(self.coalitionlist)
@@ -716,15 +716,16 @@ class MarkToAll(TextAction):
     def __init__(self, value: int, zone: int, text: String = String(),
                  comment: String = String(), readonly: bool = True) -> None:
         super().__init__(MarkToAll.predicate, text)
+        # parameter order of a_mark_to_all: value, text, zone, readonly, comment
         self.value = value
         self.params.append(self.value)
+        self.params.append(self.text)
         self.zone = zone
         self.params.append(self.zone)
-        self.params.append(self.text)
-        self.comment = comment
-        self.params.append(self.comment)
         self.readonly = readonly
         self.params.append(self.readonly)
+        self.comment = comment
+        self.params.append(self.comment)
 
     @classmethod
     def create_from_dict(cls, d: Dict[Any, Any], mission) -> "MarkToAll":
@@ -748,19 +749,20 @@ class MarkToCoalition(TextAction):
                  text: String = String(), comment: String = String(),
                  readonly: bool = True) -> None:
         super().__init__(MarkToCoalition.predicate, text)
+        # parameter order of a_mark_to_coalition: value, text, zone, coalitionlist, readonly, comment
         self.value = value
         self.params.append(self.value)
+        self.params.append(self.text)
         self.zone = zone
         self.params.append(self.zone)
         if not isinstance(coalitionlist, Coalition):
             raise TypeError("Unexpected type for coalitionlist")
         self.coalitionlist = coalitionlist.value
         self.params.append(self.coalitionlist)
-        self.params.append(self.text)
-        self.comment = comment
-        self.params.append(self.comment)
         self.readonly = readonly
         self.params.append(self.readonly)
+        self.comment = comment
+        self.params.append(self.comment)
 
     @classmethod
     def create_from_dict(cls, d: Dict[Any, Any], mission) -> "MarkToCoalition":
@@ -786,17 +788,18 @@ class MarkToGroup(TextAction):
                  text: String = String(), comment: String = String(),
                  readonly: bool = True) -> None:
         super(MarkToGroup, self).__init__(MarkToGroup.predicate, text)
+        # parameter order of a_mark_to_group: value, text, zone, group, readonly, comment
         self.value = value
         self.params.append(self.value)
+        self.params.append(self.text)
         self.zone = zone
         self.params.append(self.zone)
         self.group = group
         self.params.append(self.group)
-        self.params.append(self.text)
-        self.comment = comment
-        self.params.append(self.comment)
         self.readonly = readonly
         self.params.append(self.readonly)
+        self.comment = comment
+        self.params.append(self.comment)
 
     @classmethod
     def create_from_dict(cls, d: Dict[Any, Any], mission) -> "MarkToGroup":
@@ -1058,7 +1061,7 @@ class RemoveRadioItem(Action):
 class RemoveRadioItemForCoalition(Action):
     predicate = "a_remove_radio_item_for_coalition"
 
-    def __init__(self, coalitionlist=all, radiotext=String()):
+    def __init__(self, coalitionlist="all", radiotext=String()):
         super(RemoveRadioItemForCoalition, self).__init__(RemoveRadioItemForCoalition.predicate)
         self.coalitionlist = coalitionlist
         self.params.append(self.coalitionlist)
@@ -1835,7 +1838,9 @@ class PictureAction(Action):
         def __eq__(self, other: Any) -> bool:
             if isinstance(other, str):
                 return self.value == other
-            return self == other
+            return self is other
+
+        __hash__ = Enum.__hash__
 
     class VertAlignment(Enum):
         Top = "0"
@@ -1845,7 +1850,9 @@ class PictureAction(Action):
         def __eq__(self, other: Any) -> bool:
             if isinstance(other, str):
                 return self.value == other
-            return self == other
+            return self is other
+
+        __hash__ = Enum.__hash__
 
     class SizeUnits(Enum):
         OriginalSize = "0"
@@ -1854,7 +1861,9 @@ class PictureAction(Action):
         def __eq__(self, other: Any) -> bool:
             if isinstance(other, str):
                 return self.value == other
-            return self == other
+            return self is other
+
+        __hash__ = Enum.__hash__
 
     def __init__(self, predicate: str, file_res_key: ResourceKey, seconds: int,
                  clearview: bool, start_delay: int,
@@ -1865,9 +1874,10 @@ class PictureAction(Action):
         self.seconds = seconds
         self.clearview = clearview
         self.start_delay = start_delay
-        self.horz_alignment = horz_alignment
-        self.vert_alignment = vert_alignment
-        self.size_units = size_units
+        # accept the enums as well as their raw values as loaded from a mission
+        self.horz_alignment = PictureAction.HorzAlignment(horz_alignment)
+        self.vert_alignment = PictureAction.VertAlignment(vert_alignment)
+        self.size_units = PictureAction.SizeUnits(size_units)
         self.size = size
         if size not in range(1, 101):
             raise ValueError
@@ -1878,9 +1888,9 @@ class PictureAction(Action):
         d["seconds"] = self.seconds
         d["clearview"] = self.clearview
         d["start_delay"] = self.start_delay
-        d["horzAlignment"] = self.horz_alignment
-        d["vertAlignment"] = self.vert_alignment
-        d["size_units"] = self.size_units
+        d["horzAlignment"] = self.horz_alignment.value
+        d["vertAlignment"] = self.vert_alignment.value
+        d["size_units"] = self.size_units.value
         d["size"] = self.size
         return d
 
@@ -1902,7 +1912,7 @@ class PictureToAll(PictureAction):
                          start_delay=start_delay, horz_alignment=horz_alignment,
                          vert_alignment=vert_alignment, size=size, size_units=size_units)
         self.params = [self.file_res_key, seconds, clearview, start_delay,
-                       horz_alignment, vert_alignment, size, size_units]
+                       self.horz_alignment.value, self.vert_alignment.value, size, self.size_units.value]
 
     @classmethod
     def create_from_dict(cls, d: Dict[str, Any], mission: Mission) -> PictureToAll:
@@ -1913,7 +1923,7 @@ class PictureToAll(PictureAction):
 class PictureToCoalition(PictureAction):
     predicate = "a_out_picture_s"
 
-    def __init__(self, coalition: Coalition, file_res_key: ResourceKey, seconds: int,
+    def __init__(self, coalition: Union[Coalition, str], file_res_key: ResourceKey, seconds: int,
                  clearview: bool, start_delay: int,
                  horz_alignment: PictureAction.HorzAlignment, vert_alignment: PictureAction.VertAlignment,
                  size: int, size_units: PictureAction.SizeUnits) -> None:
@@ -1921,9 +1931,10 @@ class PictureToCoalition(PictureAction):
                          seconds=seconds, clearview=clearview,
                          start_delay=start_delay, horz_alignment=horz_alignment,
                          vert_alignment=vert_alignment, size=size, size_units=size_units)
-        self.coalition = coalition
+        self.coalition = coalition.value if isinstance(coalition, Coalition) else coalition
         self.params = [self.coalition, self.file_res_key, seconds, clearview,
-                       start_delay, horz_alignment, vert_alignment, size, size_units]
+                       start_delay, self.horz_alignment.value, self.vert_alignment.value, size,
+                       self.size_units.value]
 
     @classmethod
     def create_from_dict(cls, d: Dict[str, Any], mission: Mission) -> PictureToCoalition:
@@ -1949,7 +1960,8 @@ class PictureToCountry(PictureAction):
                          vert_alignment=vert_alignment, size=size, size_units=size_units)
         self.country = country
         self.params = [self.country.id, self.file_res_key, seconds, clearview,
-                       start_delay, horz_alignment, vert_alignment, size, size_units]
+                       start_delay, self.horz_alignment.value, self.vert_alignment.value, size,
+                       self.size_units.value]
 
     @classmethod
     def create_from_dict(cls, d: Dict[str, Any], mission: Mission) -> PictureToCountry:
@@ -1976,7 +1988,8 @@ class PictureToGroup(PictureAction):
                          vert_alignment=vert_alignment, size=size, size_units=size_units)
         self.group = group
         self.params = [self.group.id, self.file_res_key, seconds, clearview,
-                       start_delay, horz_alignment, vert_alignment, size, size_units]
+                       start_delay, self.horz_alignment.value, self.vert_alignment.value, size,
+                       self.size_units.value]
 
     @classmethod
     def create_from_dict(cls, d: Dict[str, Any], mission: Mission) -> PictureToGroup:
@@ -2006,7 +2019,8 @@ class PictureToUnit(PictureAction):
                          vert_alignment=vert_alignment, size=size, size_units=size_units)
         self.unit_id = unit_id
         self.params = [self.unit_id, self.file_res_key, seconds, clearview,
-                       start_delay, horz_alignment, vert_alignment, size, size_units]
+                       start_delay, self.horz_alignment.value, self.vert_alignment.value, size,
+                       self.size_units.value]
 
     @classmethod
     def create_from_dict(cls, d: Dict[str, Any], mission: Mission) -> PictureToUnit:

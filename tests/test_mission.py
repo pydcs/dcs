@@ -1585,3 +1585,49 @@ class SaveLoadRoundTripTests(unittest.TestCase):
         algeria = m.country("Algeria")
         self.assertIn(algeria, m.coalition["neutrals"].countries.values())
         self.assertIn(algeria.id, m.dict()["coalitions"]["neutrals"].values())
+
+    def test_mark_actions_parameter_order(self) -> None:
+        with zipfile.ZipFile("tests/loadtest.miz") as miz:
+            orig = dcs.lua.loads(miz.read("mission").decode())["mission"]["trig"]["actions"]
+        m = dcs.Mission()
+        m.load_file("tests/loadtest.miz")
+        regenerated = m.triggerrules.trig()["actions"]
+
+        def marks(actions):
+            return [x for a in actions.values() for x in a.split(";") if x.startswith("a_mark_to_")]
+
+        self.assertEqual(len(marks(orig)), 3)
+        self.assertEqual(marks(orig), marks(regenerated))
+
+    def test_picture_action_from_enums(self) -> None:
+        P = dcs.action.PictureAction
+        m = dcs.Mission()
+        res_key = m.map_resource.add_resource_file("tests/images/blue.png")
+        trigger = dcs.triggers.TriggerOnce(comment="picture")
+        trigger.add_action(PictureToAll(res_key, 10, False, 0, P.HorzAlignment.Center, P.VertAlignment.Top,
+                                        50, P.SizeUnits.WindowSize))
+        trigger.add_action(PictureToCoalition(dcs.action.Coalition.Red, res_key, 10, False, 0,
+                                              P.HorzAlignment.Right, P.VertAlignment.Bottom,
+                                              50, P.SizeUnits.OriginalSize))
+        m.triggerrules.triggers.append(trigger)
+
+        m2 = self._save_and_load(m)
+        self.assertEqual(m2.triggerrules.triggers[0].actions, trigger.actions)
+        self.assertEqual(m2.triggerrules.triggers[0].actions[1].coalition, "red")
+
+    def test_picture_alignment_enums(self) -> None:
+        P = dcs.action.PictureAction
+        self.assertEqual(P.HorzAlignment.Left, P.HorzAlignment.Left)
+        self.assertNotEqual(P.HorzAlignment.Left, P.HorzAlignment.Right)
+        self.assertEqual(P.HorzAlignment.Left, "0")
+        self.assertEqual(len({P.HorzAlignment.Center, P.VertAlignment.Center, P.SizeUnits.WindowSize}), 3)
+
+    def test_radio_item_for_coalition_default(self) -> None:
+        m = dcs.Mission()
+        trigger = dcs.triggers.TriggerOnce(comment="radio")
+        trigger.add_action(dcs.action.AddRadioItemForCoalition(radiotext=m.string("menu"), flag=5))
+        trigger.add_action(dcs.action.RemoveRadioItemForCoalition(radiotext=m.string("menu")))
+        m.triggerrules.triggers.append(trigger)
+
+        m2 = self._save_and_load(m)
+        self.assertEqual([a.coalitionlist for a in m2.triggerrules.triggers[0].actions], ["all", "all"])
