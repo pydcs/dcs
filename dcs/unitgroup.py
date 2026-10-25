@@ -169,7 +169,7 @@ class Group(Generic[UnitT, PointT]):
 
             u_idx += 1
 
-            if u_idx <= unit_count:
+            if u_idx < unit_count:
                 self.units[u_idx].position = start_pos.point_from_heading(heading - 225, distance * (i + 1))
                 self.units[u_idx].heading = self.units[0].heading
                 u_idx += 1

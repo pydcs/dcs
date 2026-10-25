@@ -1865,7 +1865,7 @@ class OptFormation(Option):
         # RotaryWedge has no VariantIndex or zInverse field.
         RotaryWedge = 8
         RotaryEchelonRightSmall = 589825
-        RotaryEchelonRightMedium = 583826
+        RotaryEchelonRightMedium = 589826
         RotaryEchelonRightLarge = 589827
         RotaryEchelonLeftSmall = 590081
         RotaryEchelonLeftMedium = 590082
@@ -2044,7 +2044,7 @@ class OptFormation(Option):
             value=OptFormation.Values.RotaryFrontRightMedium,
             formationIndex=OptFormation.FormationIndex.RotaryFront,
             zInverse=OptFormation.ZInverse.Right,
-            variantIndex=OptFormation.VariantIndex.Close
+            variantIndex=OptFormation.VariantIndex.Open
         )
 
     @staticmethod
@@ -2062,7 +2062,7 @@ class OptFormation(Option):
             value=OptFormation.Values.RotaryFrontLeftMedium,
             formationIndex=OptFormation.FormationIndex.RotaryFront,
             zInverse=OptFormation.ZInverse.Left,
-            variantIndex=OptFormation.VariantIndex.Close
+            variantIndex=OptFormation.VariantIndex.Open
         )
 
     @staticmethod
@@ -2096,7 +2096,7 @@ class OptFormation(Option):
     @staticmethod
     def line_abreast_group_close():
         return OptFormation(
-            value=OptFormation.Values.LineAbreastClose,
+            value=OptFormation.Values.LineAbreastGroupClose,
             formationIndex=OptFormation.FormationIndex.LineAbreast,
             zInverse=None,
             variantIndex=OptFormation.VariantIndex.GroupClose
