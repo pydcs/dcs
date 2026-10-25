@@ -76,6 +76,17 @@ class RectangleTests(unittest.TestCase):
             rp = r.random_point()
             self.assertTrue(r.point_in_rect(rp))
 
+    def test_random_distant_points(self) -> None:
+        terrain = Caucasus()
+        wide = Rectangle(-300000, 600000, -301000, 620000, terrain)
+        tall = Rectangle(-300000, 600000, -320000, 601000, terrain)
+        for r in (wide, tall):
+            for i in range(0, 50):
+                p1, p2 = r.random_distant_points(500)
+                self.assertTrue(r.point_in_rect(p1))
+                self.assertTrue(r.point_in_rect(p2))
+                self.assertAlmostEqual(p1.distance_to_point(p2), 500)
+
 
 class TriangleTests(unittest.TestCase):
     def test_triangle_random(self) -> None:
