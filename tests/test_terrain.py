@@ -182,3 +182,14 @@ class SyriaTest(unittest.TestCase):
         hslots = m.terrain.airports["Aleppo"].free_parking_slots(dcs.helicopters.UH_1H)
         self.assertEqual(len(hslots), 8)
 
+
+class AirportTests(unittest.TestCase):
+    def test_unit_zones_are_per_instance(self) -> None:
+        first = dcs.terrain.Caucasus()
+        zones = len(first.airports["Batumi"].unit_zones)
+        self.assertGreater(zones, 0)
+
+        second = dcs.terrain.Caucasus()
+        self.assertEqual(len(first.airports["Batumi"].unit_zones), zones)
+        self.assertEqual(len(second.airports["Batumi"].unit_zones), zones)
+        self.assertTrue(all(z._terrain is second for z in second.airports["Batumi"].unit_zones))

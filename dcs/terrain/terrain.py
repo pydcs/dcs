@@ -201,6 +201,8 @@ class Airport(Warehouse):
     def __init__(self, position: mapping.Point, terrain: Terrain) -> None:
         self.position = position
         self._terrain = terrain
+        # per instance copy, the terrains add their zones to it and must not change the class default
+        self.unit_zones = list(self.unit_zones)
         self.runway_used = None
         self.runways = []  # type: List[Runway]
         self.parking_slots = []  # type: List[ParkingSlot]
