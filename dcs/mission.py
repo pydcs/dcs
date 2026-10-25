@@ -75,6 +75,19 @@ class StartType(Enum):
         return st_map[s.lower()]
 
 
+def _open_miz(filename: str) -> zipfile.ZipFile:
+    """Opens a mission file for reading.
+
+    The mission editor stores UTF-8 file names without setting the archive's UTF-8 flag, so
+    they would be read as cp437 and resources with non-ASCII names would not be found.
+    """
+    try:
+        return zipfile.ZipFile(filename, 'r', metadata_encoding='utf-8')
+    except UnicodeDecodeError:
+        # names that are not valid UTF-8, keep the zip standard's default
+        return zipfile.ZipFile(filename, 'r')
+
+
 class Mission:
     """This class represents the whole dcs .miz file.
 
@@ -246,7 +259,7 @@ class Mission:
                 data = mfile.read().decode()
                 return lua.loads(data)
 
-        with zipfile.ZipFile(filename, 'r') as miz:
+        with _open_miz(filename) as miz:
             reserved_files: List[str] = []
             mission_dict = loaddict('mission', miz, reserved_files)
 
