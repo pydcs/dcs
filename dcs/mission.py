@@ -95,8 +95,6 @@ class Mission:
     Args:
         terrain: the used terrain for this mission.
     """
-    _COUNTRY_IDS = {x for x in range(0, 13)} | {x for x in range(15, 47)}
-
     _CURRENT_MIZ_VERSION: int = 20  # on save this version number will be written
 
     def __init__(self, terrain: Optional[Terrain] = None) -> None:
@@ -2171,7 +2169,11 @@ class Mission:
             m["coalition"][col] = self.coalition[col].dict()
         col_blue = {self.coalition["blue"].country(x).id for x in self.coalition["blue"].countries.keys()}
         col_red = {self.coalition["red"].country(x).id for x in self.coalition["red"].countries.keys()}
-        col_neutral = list(Mission._COUNTRY_IDS - col_blue - col_red)
+        col_neutral_countries = set()
+        if "neutrals" in self.coalition:
+            col_neutral_countries = {self.coalition["neutrals"].country(x).id
+                                     for x in self.coalition["neutrals"].countries.keys()}
+        col_neutral = sorted((set(countries.country_dict) | col_neutral_countries) - col_blue - col_red)
         col_blue = list(col_blue)
         col_red = list(col_red)
         m["coalitions"] = {

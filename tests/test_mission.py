@@ -1,7 +1,9 @@
 import os
 import time
 import unittest
+from unittest import mock
 from pathlib import Path
+import tempfile
 import zipfile
 import math
 
@@ -1541,3 +1543,45 @@ class UpdateWarehousesTest(unittest.TestCase):
         self.assertNotIn(uid, m.warehouses.warehouses)
         m.update_warehouses()
         self.assertIn(uid, m.warehouses.warehouses)
+
+
+class SaveLoadRoundTripTests(unittest.TestCase):
+
+    def _save_and_load(self, m: dcs.Mission) -> dcs.Mission:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = os.path.join(tmp, "roundtrip.miz")
+            m.save(path)
+            m2 = dcs.Mission()
+            self.assertEqual(m2.load_file(path), [])
+        return m2
+
+    def test_unit_with_empty_type(self) -> None:
+        with mock.patch("sys.breakpointhook", side_effect=AssertionError("breakpoint() called")):
+            static = dcs.unit.Static(1, "static", "", Caucasus())
+        self.assertEqual(static.type, "")
+
+    def test_goals_of_all_sides_are_saved(self) -> None:
+        m = dcs.Mission()
+        m.goals.add_blue(dcs.goals.Goal("blue 1"))
+        m.goals.add_blue(dcs.goals.Goal("blue 2"))
+        m.goals.add_red(dcs.goals.Goal("red 1"))
+        m.goals.add_offline(dcs.goals.Goal("offline 1"))
+
+        m2 = self._save_and_load(m)
+        comments = {side: [g.comment for g in goals] for side, goals in m2.goals.goals.items()}
+        self.assertEqual(comments, {"blue": ["blue 1", "blue 2"], "red": ["red 1"], "offline": ["offline 1"]})
+
+    def test_all_neutral_countries_in_coalitions(self) -> None:
+        m = dcs.Mission()
+        coalitions = m.dict()["coalitions"]
+        neutrals = set(coalitions["neutrals"].values())
+        blue = set(coalitions["blue"].values())
+        red = set(coalitions["red"].values())
+        self.assertFalse(neutrals & (blue | red))
+        self.assertEqual(neutrals | blue | red, set(dcs.countries.country_dict))
+
+        m = dcs.Mission()
+        m.load_file("tests/missions/Draw_tool_test.miz")
+        algeria = m.country("Algeria")
+        self.assertIn(algeria, m.coalition["neutrals"].countries.values())
+        self.assertIn(algeria.id, m.dict()["coalitions"]["neutrals"].values())
