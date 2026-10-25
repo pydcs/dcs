@@ -247,9 +247,13 @@ class MovingGroup(Generic[UnitT], Group[UnitT, MovingPoint]):
         self.task_selected = True
         self.spawn_probability = 1.0
         self.late_activation = False
+        self.uncontrollable: Optional[bool] = None
+        self.route_relative_tot: Optional[bool] = None
 
     def load_from_dict(self, d: Dict[str, Any], terrain: Terrain) -> None:
         super().load_from_dict(d, terrain)
+        self.uncontrollable = d.get("uncontrollable")
+        self.route_relative_tot = d.get("route", {}).get("routeRelativeTOT")
         self.frequency = d.get("frequency")
         self.task = d.get("task")  # ships don't have a task
         self.spawn_probability = d.get("probability", 1.0)
@@ -283,6 +287,10 @@ class MovingGroup(Generic[UnitT], Group[UnitT, MovingPoint]):
             d["probability"] = self.spawn_probability
         if self.late_activation:
             d["lateActivation"] = self.late_activation
+        if self.uncontrollable is not None:
+            d["uncontrollable"] = self.uncontrollable
+        if self.route_relative_tot is not None and "route" in d:
+            d["route"]["routeRelativeTOT"] = self.route_relative_tot
         return d
 
 
@@ -303,6 +311,8 @@ class VehicleGroup(MovingGroup[Vehicle]):
         self.communication = d.get("communication", False)
         self.visible = d.get("visible", False)
         self.manualHeading = d.get("manualHeading", False)
+        spans = d.get("route", {}).get("spans", {})
+        self.spans = [spans[k] for k in sorted(spans)]
 
     def add_span(self, position: mapping.Point):
         self.spans.append({"x": position.x, "y": position.y})
@@ -326,13 +336,8 @@ class VehicleGroup(MovingGroup[Vehicle]):
             d["frequency"] = self.frequency
         d["visible"] = self.visible
         d["manualHeading"] = self.manualHeading
-        if self.spans is not None:
-            # spans
-            d["route"]["spans"] = {}
-            i = 1
-            for spawn in self.spans:
-                d["route"]["spans"][i] = spawn
-                i += 1
+        if self.spans is not None and "route" in d:
+            d["route"]["spans"] = {i + 1: span for i, span in enumerate(self.spans)}
         return d
 
 
@@ -576,6 +581,10 @@ class ShipGroup(MovingGroup[Ship]):
         self.frequency = None
         self.spans = None
         self.visible = False  # visible before start flag
+
+    def load_from_dict(self, d: Dict[str, Any], terrain: Terrain) -> None:
+        super().load_from_dict(d, terrain)
+        self.visible = d.get("visible", False)
 
     def add_waypoint(self, position: mapping.Point, speed=20) -> MovingPoint:
         mp = MovingPoint(position)

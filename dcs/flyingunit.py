@@ -9,7 +9,7 @@ from dcs.planes import PlaneType, A_10C
 from dcs.helicopters import HelicopterType, Ka_50
 
 import json
-from typing import TYPE_CHECKING, Dict, Optional, Type
+from typing import TYPE_CHECKING, Any, Dict, Optional, Type
 
 if TYPE_CHECKING:
     from dcs.terrain import Terrain
@@ -47,6 +47,8 @@ class FlyingUnit(Unit):
         self.hardpoint_racks = True
         self.addpropaircraft = dict(_type.property_defaults) if _type.property_defaults else None
         self.payload_restricted: Optional[Dict[int, Dict[int, str]]] = None
+        self.datalinks: Optional[Dict[str, Any]] = None
+        self.data_cartridge: Optional[Dict[str, Any]] = None
 
     def load_from_dict(self, d):
         super(FlyingUnit, self).load_from_dict(d)
@@ -73,6 +75,8 @@ class FlyingUnit(Unit):
         self.hardpoint_racks = d.get("hardpoint_racks", None)
         self.addpropaircraft = d.get("AddPropAircraft")
         self.payload_restricted = d["payload"].get("restricted", None)
+        self.datalinks = d.get("datalinks")
+        self.data_cartridge = d.get("dataCartridge")
         return True
 
     def set_parking(self, parking_slot: ParkingSlot):
@@ -234,6 +238,10 @@ class FlyingUnit(Unit):
             d["Radio"] = self.radio
         if self.payload_restricted is not None:
             d["payload"]["restricted"] = self.payload_restricted
+        if self.datalinks is not None:
+            d["datalinks"] = self.datalinks
+        if self.data_cartridge is not None:
+            d["dataCartridge"] = self.data_cartridge
         return d
 
 
