@@ -341,6 +341,26 @@ return unitPayloads
         r = loads("num = .1")
         self.assertEqual(r["num"], 0.1)
 
+    def test_number_exponents(self) -> None:
+        r = loads("a = 1e+5 b = 2.5E-3 c = -1e+20 d = 3e2")
+        self.assertEqual(r, {"a": 100000, "b": 0.0025, "c": -1e20, "d": 300})
+
+    def test_large_integer_keeps_precision(self) -> None:
+        self.assertEqual(loads("a = 12345678901234567890")["a"], 12345678901234567890)
+
+    def test_invalid_number_raises_syntax_error(self) -> None:
+        for code in ["a = 1.2.3", "a = 1e5e5", "a = -"]:
+            with self.subTest(code), self.assertRaises(SyntaxError):
+                loads(code)
+
+    def test_string_escapes(self) -> None:
+        # as written by lua's %q format: \r, \000 and an escaped line break
+        r = loads('a = "x\\r\\\ny\\000z\\tq\\"e\\\\"')
+        self.assertEqual(r["a"], 'x\r\ny\x00z\tq"e\\')
+
+    def test_single_quoted_key(self) -> None:
+        self.assertEqual(loads("a = {['k'] = 1}")["a"], {"k": 1})
+
 
 if __name__ == '__main__':
     unittest.main()

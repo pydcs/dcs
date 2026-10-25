@@ -1,6 +1,9 @@
 from typing import Dict, Any, Callable, Optional, List, Union
 
 
+_ESCAPES = {'n': '\n', 'r': '\r', 't': '\t', 'a': '\a', 'b': '\b', 'f': '\f', 'v': '\v'}
+
+
 def loads(
         tablestr,
         _globals: Optional[Dict[str, Any]] = None,
@@ -175,7 +178,20 @@ def loads(
                     else:
                         s += c
                 elif state == 2:
-                    s += c
+                    # escape sequences as handled by the lua 5.1 lexer
+                    if c.isdigit():
+                        digits = c
+                        while len(digits) < 3 and self.char(1).isdigit():
+                            self.pos += 1
+                            digits += self.char()
+                        s += chr(int(digits))
+                    elif c in ('\n', '\r'):
+                        # escaped line break, a \r\n or \n\r pair counts as one
+                        if self.char(1) in ('\n', '\r') and self.char(1) != c:
+                            self.pos += 1
+                        s += '\n'
+                    else:
+                        s += _ESCAPES.get(c, c)
                     state = 0
             return s
 
@@ -187,32 +203,36 @@ def loads(
                 if self.advance():
                     raise self.eob_exception()
 
-            found_exponent, found_exponent_sign, found_separator = False, False, False
+            found_exponent, found_separator = False, False
             while not self.eob():
-                if self.char().isnumeric():
+                c = self.char()
+                if c.isdigit():
                     pass
-                elif self.char() == '.':
-                    if not found_separator:
-                        found_separator = True
-                    else:
+                elif c == '.':
+                    if found_separator or found_exponent:
                         raise SyntaxError()
-                elif self.char().lower() == 'e':
-                    if not found_exponent:
-                        found_exponent = True
-                    else:
+                    found_separator = True
+                elif c.lower() == 'e':
+                    if found_exponent:
                         raise SyntaxError()
-                elif self.char() == '-':
-                    if not found_exponent_sign:
-                        found_exponent_sign = True
-                    else:
-                        raise SyntaxError()
+                    found_exponent = True
+                elif c in '+-':
+                    # a sign is only valid directly after the exponent marker, e.g. 1e+20 or 2.5e-3
+                    if not n or n[-1].lower() != 'e':
+                        break
                 else:
                     break
 
-                n += self.char()
+                n += c
                 self.pos += 1
 
-            num = float(n) * sign
+            try:
+                if not found_separator and not found_exponent:
+                    # parse integers directly, going through float would lose precision of large values
+                    return int(n) * sign
+                num = float(n) * sign
+            except ValueError as ex:
+                raise SyntaxError("Invalid number '{}' in line {}".format(n, self.lineno)) from ex
             if num.is_integer():
                 return int(num)
             return num
@@ -249,7 +269,7 @@ def loads(
 
                     self.eat_ws()
                     key: Union[int, str]
-                    if self.char() == '"':
+                    if self.char() in ('"', "'"):
                         key = self.string()
                     else:
                         number = self.number()
