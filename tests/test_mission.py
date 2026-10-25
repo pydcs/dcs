@@ -1732,3 +1732,34 @@ class SaveLoadRoundTripTests(unittest.TestCase):
         position = m.map.position.latlng()
         self.assertAlmostEqual(position.lat, 36.27, places=1)
         self.assertAlmostEqual(position.lng, -115.57, places=1)
+
+    def test_load_unknown_airport(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            # move a parked plane group to an airport id pydcs doesn't know
+            path = os.path.join(tmp, "unknown_airport.miz")
+            with zipfile.ZipFile("tests/loadtest.miz") as src, zipfile.ZipFile(path, "w") as dst:
+                for item in src.infolist():
+                    data = src.read(item.filename)
+                    if item.filename == "mission":
+                        mission = dcs.lua.loads(data.decode())["mission"]
+                        group = next(g for c in mission["coalition"]["blue"]["country"].values()
+                                     for g in c.get("plane", {}).get("group", {}).values()
+                                     if g["route"]["points"][1].get("airdromeId") is not None
+                                     and g["units"][1].get("parking") is not None)
+                        group["route"]["points"][1]["airdromeId"] = 999
+                        data = dcs.lua.dumps(mission, "mission", 1).encode()
+                    dst.writestr(item, data)
+
+            m = dcs.Mission()
+            status = m.load_file(path)
+            self.assertIn(dcs.status_message.MessageType.AIRPORT_UNKNOWN, [s.type for s in status])
+
+            loaded = m.find_group(group["name"])
+            saved = os.path.join(tmp, "saved.miz")
+            m.save(saved)
+            m2 = dcs.Mission()
+            status = m2.load_file(saved)
+            self.assertEqual({s.type for s in status}, {dcs.status_message.MessageType.AIRPORT_UNKNOWN})
+            reloaded = m2.find_group(group["name"])
+            self.assertEqual(reloaded.points[0].airdrome_id, 999)
+            self.assertEqual(reloaded.units[0].parking, loaded.units[0].parking)
