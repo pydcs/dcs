@@ -76,5 +76,6 @@ class Goals:
         return d
 
     def dict(self):
-        return {i + 1: self.goals[side][i].dict()
-                for side in ["blue", "red", "offline"] for i in range(0, len(self.goals[side]))}
+        # all sides share one table, so number them consecutively
+        all_goals = [g for side in ["blue", "red", "offline"] for g in self.goals[side]]
+        return {i + 1: g.dict() for i, g in enumerate(all_goals)}

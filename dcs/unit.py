@@ -36,8 +36,6 @@ class Skill(Enum):
 
 class Unit:
     def __init__(self, _id, terrain: Terrain, name: Optional[str] = None, type="") -> None:
-        if type == "":
-            breakpoint()
         self.type = type
         self._terrain = terrain
         self.position = mapping.Point(0, 0, self._terrain)
