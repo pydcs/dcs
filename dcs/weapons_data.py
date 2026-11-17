@@ -787,20 +787,20 @@ class Weapons:
     LAU3_WP1B = {"clsid": "LAU3_WP1B", "name": "LAU-3 - 19 x UnGd Rkts, 70 mm Hydra 70 WTU-1/B TP", "weight": 231.2}
     LAU3_WP61 = {"clsid": "LAU3_WP61", "name": "LAU-3 - 19 x UnGd Rkts, 70 mm Hydra 70 Mk 61 TP", "weight": 207.07}
     LAU_105 = {"clsid": "LAU-105", "name": "LAU-105", "weight": 18}
-    LAU_105_1_AIM_9L_L = {"clsid": "LAU-105_1*AIM-9L_L", "name": "LAU-105 - 1 x AIM-9L Sidewinder IR AAM", "weight": 291.73}
-    LAU_105_1_AIM_9L_R = {"clsid": "LAU-105_1*AIM-9L_R", "name": "LAU-105 - 1 x AIM-9L Sidewinder IR AAM", "weight": 291.73}
-    LAU_105_1_AIM_9M_L = {"clsid": "LAU-105_1*AIM-9M_L", "name": "LAU-105 - 1 x AIM-9M Sidewinder IR AAM", "weight": 291.73}
-    LAU_105_1_AIM_9M_R = {"clsid": "LAU-105_1*AIM-9M_R", "name": "LAU-105 - 1 x AIM-9M Sidewinder IR AAM", "weight": 291.73}
-    LAU_105_1_CATM_9M_L = {"clsid": "LAU-105_1*CATM-9M_L", "name": "LAU-105 - 1 x Captive AIM-9M for ACM", "weight": 291.73}
-    LAU_105_1_CATM_9M_R = {"clsid": "LAU-105_1*CATM-9M_R", "name": "LAU-105 - 1 x Captive AIM-9M for ACM", "weight": 291.73}
-    LAU_105_2_AIM_9L = {"clsid": "LAU-105_2*AIM-9L", "name": "LAU-105 - 2 x AIM-9L Sidewinder IR AAM", "weight": 377.46}
-    LAU_105_2_AIM_9P3 = {"clsid": "LAU-105_2*AIM-9P3", "name": "LAU-105 - 2 x AIM-9P3 Sidewinder IR AAM", "weight": 367.4}
-    LAU_105_2_AIM_9P5 = {"clsid": "LAU-105_2*AIM-9P5", "name": "LAU-105 - 2 x AIM-9P5 Sidewinder IR AAM", "weight": 367.4}
-    LAU_105_2_CATM_9M = {"clsid": "LAU-105_2*CATM-9M", "name": "LAU-105 - 2 x Captive AIM-9M for ACM", "weight": 377.46}
-    LAU_105_AIS_ASQ_T50_L = {"clsid": "LAU-105_AIS_ASQ_T50_L", "name": "LAU-105 - 1 x AN/ASQ-T50 TCTS Pod - ACMI Pod", "weight": 268.6}
-    LAU_105_AIS_ASQ_T50_R = {"clsid": "LAU-105_AIS_ASQ_T50_R", "name": "LAU-105 - 1 x AN/ASQ-T50 TCTS Pod - ACMI Pod", "weight": 268.6}
-    LAU_105___2_x_AIM_9M_Sidewinder_IR_AAM = {"clsid": "{DB434044-F5D0-4F1F-9BA9-B73027E18DD3}", "name": "LAU-105 - 2 x AIM-9M Sidewinder IR AAM", "weight": 377.46}
-    LAU_105___2_x_AIM_9P_Sidewinder_IR_AAM = {"clsid": "{3C0745ED-8B0B-42eb-B907-5BD5C1717447}", "name": "LAU-105 - 2 x AIM-9P Sidewinder IR AAM", "weight": 355.68}
+    LAU_105_1_AIM_9L_L = {"clsid": "LAU-105_1*AIM-9L_L", "name": "LAU-105 - 1 x AIM-9L Sidewinder IR AAM", "weight": 159.73}
+    LAU_105_1_AIM_9L_R = {"clsid": "LAU-105_1*AIM-9L_R", "name": "LAU-105 - 1 x AIM-9L Sidewinder IR AAM", "weight": 159.73}
+    LAU_105_1_AIM_9M_L = {"clsid": "LAU-105_1*AIM-9M_L", "name": "LAU-105 - 1 x AIM-9M Sidewinder IR AAM", "weight": 159.73}
+    LAU_105_1_AIM_9M_R = {"clsid": "LAU-105_1*AIM-9M_R", "name": "LAU-105 - 1 x AIM-9M Sidewinder IR AAM", "weight": 159.73}
+    LAU_105_1_CATM_9M_L = {"clsid": "LAU-105_1*CATM-9M_L", "name": "LAU-105 - 1 x Captive AIM-9M for ACM", "weight": 159.73}
+    LAU_105_1_CATM_9M_R = {"clsid": "LAU-105_1*CATM-9M_R", "name": "LAU-105 - 1 x Captive AIM-9M for ACM", "weight": 159.73}
+    LAU_105_2_AIM_9L = {"clsid": "LAU-105_2*AIM-9L", "name": "LAU-105 - 2 x AIM-9L Sidewinder IR AAM", "weight": 245.46}
+    LAU_105_2_AIM_9P3 = {"clsid": "LAU-105_2*AIM-9P3", "name": "LAU-105 - 2 x AIM-9P3 Sidewinder IR AAM", "weight": 235.4}
+    LAU_105_2_AIM_9P5 = {"clsid": "LAU-105_2*AIM-9P5", "name": "LAU-105 - 2 x AIM-9P5 Sidewinder IR AAM", "weight": 235.4}
+    LAU_105_2_CATM_9M = {"clsid": "LAU-105_2*CATM-9M", "name": "LAU-105 - 2 x Captive AIM-9M for ACM", "weight": 245.46}
+    LAU_105_AIS_ASQ_T50_L = {"clsid": "LAU-105_AIS_ASQ_T50_L", "name": "LAU-105 - 1 x AN/ASQ-T50 TCTS Pod - ACMI Pod", "weight": 136.6}
+    LAU_105_AIS_ASQ_T50_R = {"clsid": "LAU-105_AIS_ASQ_T50_R", "name": "LAU-105 - 1 x AN/ASQ-T50 TCTS Pod - ACMI Pod", "weight": 136.6}
+    LAU_105___2_x_AIM_9M_Sidewinder_IR_AAM = {"clsid": "{DB434044-F5D0-4F1F-9BA9-B73027E18DD3}", "name": "LAU-105 - 2 x AIM-9M Sidewinder IR AAM", "weight": 245.46}
+    LAU_105___2_x_AIM_9P_Sidewinder_IR_AAM = {"clsid": "{3C0745ED-8B0B-42eb-B907-5BD5C1717447}", "name": "LAU-105 - 2 x AIM-9P Sidewinder IR AAM", "weight": 223.68}
     LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE = {"clsid": "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}", "name": "LAU-10 - 4 x UnGd Rkts, 127 mm Zuni Mk. 24 Mod. 1 HE", "weight": 289.02}
     LAU_10___4_x_UnGd_Rkts__127_mm_Zuni_Mk__24_Mod__1_HE_ = {"clsid": "{LAU_10R}", "name": "LAU-10 - 4 x UnGd Rkts, 127 mm Zuni Mk. 24 Mod. 1 HE", "weight": 289.02}
     LAU_10___4_ZUNI_MK_71 = {"clsid": "{BRU42_LAU10}", "name": "LAU-10 - 4 ZUNI MK 71", "weight": 416.9}
@@ -1152,6 +1152,8 @@ class Weapons:
     MER6_with_6_x_Mk_20_Rockeye___490lbs_CBUs__247_x_HEAT_Bomblets = {"clsid": "{3C7CD675-7D39-41C5-8735-0F4F537818A8}", "name": "MER6 with 6 x Mk-20 Rockeye - 490lbs CBUs, 247 x HEAT Bomblets", "weight": 1392}
     MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD = {"clsid": "{1C97B4A0-AA3B-43A8-8EE7-D11071457185}", "name": "MER6 with 6 x Mk-82 - 500lb GP Bombs LD", "weight": 1506}
     Mercury_LLTV_Pod = {"clsid": "{B1EF6B0E-3D91-4047-A7A5-A99E7D8B4A8B}", "name": "Mercury LLTV Pod", "weight": 230}
+    MG_42_59 = {"clsid": "{CH47_STBD_MG42_59}", "name": "MG 42/59", "weight": 150.4}
+    MG_42_59_ = {"clsid": "{CH47_AFT_MG42_59}", "name": "MG 42/59", "weight": 150.4}
     MICA_IR = {"clsid": "{0DA03783-61E4-40B2-8FAE-6AEE0A5C5AAE}", "name": "MICA IR", "weight": 110}
     MICA_RF = {"clsid": "{6D778860-7BB8-4ACB-9E95-BA772C6BBC2C}", "name": "MICA RF", "weight": 110}
     Missile_Launcher_Rack__Empty_ = {"clsid": "{9M114 Shturm-V-2 Rack}", "name": "Missile Launcher Rack (Empty)", "weight": 13}
@@ -3297,6 +3299,8 @@ weapon_ids = {
     "{3C7CD675-7D39-41C5-8735-0F4F537818A8}": Weapons.MER6_with_6_x_Mk_20_Rockeye___490lbs_CBUs__247_x_HEAT_Bomblets,
     "{1C97B4A0-AA3B-43A8-8EE7-D11071457185}": Weapons.MER6_with_6_x_Mk_82___500lb_GP_Bombs_LD,
     "{B1EF6B0E-3D91-4047-A7A5-A99E7D8B4A8B}": Weapons.Mercury_LLTV_Pod,
+    "{CH47_STBD_MG42_59}": Weapons.MG_42_59,
+    "{CH47_AFT_MG42_59}": Weapons.MG_42_59_,
     "{0DA03783-61E4-40B2-8FAE-6AEE0A5C5AAE}": Weapons.MICA_IR,
     "{6D778860-7BB8-4ACB-9E95-BA772C6BBC2C}": Weapons.MICA_RF,
     "{9M114 Shturm-V-2 Rack}": Weapons.Missile_Launcher_Rack__Empty_,
