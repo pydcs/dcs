@@ -1600,6 +1600,7 @@ class CH_47Fbl1(HelicopterType):
 
     property_defaults: Dict[str, Any] = {
         "DustProtectionDevices": False,
+        "ExhaustScreen": False,
         "NetCrewControlPriority": 0,
     }
 
@@ -1607,6 +1608,9 @@ class CH_47Fbl1(HelicopterType):
 
         class DustProtectionDevices:
             id = "DustProtectionDevices"
+
+        class ExhaustScreen:
+            id = "ExhaustScreen"
 
         class NetCrewControlPriority:
             id = "NetCrewControlPriority"
@@ -1622,6 +1626,12 @@ class CH_47Fbl1(HelicopterType):
             identifier="DustProtectionDevices",
             control="checkbox",
             label="EAPS",
+            default=False,
+        ),
+        "ExhaustScreen": UnitPropertyDescription(
+            identifier="ExhaustScreen",
+            control="checkbox",
+            label="IRSS",
             default=False,
         ),
         "NetCrewControlPriority": UnitPropertyDescription(

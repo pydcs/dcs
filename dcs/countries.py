@@ -84,6 +84,7 @@ class Russia(Country):
             P14_SR = vehicles.AirDefence.P14_SR
             CHAP_PantsirS1 = vehicles.AirDefence.CHAP_PantsirS1
             CHAP_TorM2 = vehicles.AirDefence.CHAP_TorM2
+            CHAP_Ural4320_ZU232 = vehicles.AirDefence.CHAP_Ural4320_ZU232
             RD_75 = vehicles.AirDefence.RD_75
             ZSU_57_2 = vehicles.AirDefence.ZSU_57_2
 
@@ -133,6 +134,9 @@ class Russia(Country):
             S_75_Zil_Trailer = vehicles.Unarmed.S_75_Zil_Trailer
             TZ_22_KrAZ = vehicles.Unarmed.TZ_22_KrAZ
             TZ_22_TANK = vehicles.Unarmed.TZ_22_TANK
+            CHAP_ZIL131 = vehicles.Unarmed.CHAP_ZIL131
+            CHAP_ZIL131_Kung = vehicles.Unarmed.CHAP_ZIL131_Kung
+            CHAP_UralTyphoon = vehicles.Unarmed.CHAP_UralTyphoon
             TugHarlan_drivable = vehicles.Unarmed.TugHarlan_drivable
             B600_drivable = vehicles.Unarmed.B600_drivable
             MJ_1_drivable = vehicles.Unarmed.MJ_1_drivable
@@ -182,6 +186,8 @@ class Russia(Country):
             CHAP_BMPT = vehicles.Armor.CHAP_BMPT
             CHAP_BMP3_ERA = vehicles.Armor.CHAP_BMP3_ERA
             CHAP_Titan = vehicles.Armor.CHAP_Titan
+            CHAP_Atlet = vehicles.Armor.CHAP_Atlet
+            CHAP_BMD2 = vehicles.Armor.CHAP_BMD2
 
         class MissilesSS:
             Scud_B = vehicles.MissilesSS.Scud_B
@@ -757,6 +763,7 @@ class Ukraine(Country):
             CHAP_T64BV = vehicles.Armor.CHAP_T64BV
             T_90 = vehicles.Armor.T_90
             CHAP_BMP3_ERA = vehicles.Armor.CHAP_BMP3_ERA
+            CHAP_BMD2 = vehicles.Armor.CHAP_BMD2
 
         class MissilesSS:
             Scud_B = vehicles.MissilesSS.Scud_B
@@ -1238,6 +1245,7 @@ class USA(Country):
         A_10C_2 = planes.A_10C_2
         F_14B = planes.F_14B
         F_14A_135_GR = planes.F_14A_135_GR
+        F_14BU = planes.F_14BU
         P_47D_30 = planes.P_47D_30
         P_47D_30bl1 = planes.P_47D_30bl1
         P_47D_40 = planes.P_47D_40
@@ -1258,7 +1266,6 @@ class USA(Country):
         F_4E_45MC = planes.F_4E_45MC
         QF_4E = planes.QF_4E
         F_14A_135_GR_Early = planes.F_14A_135_GR_Early
-        F_14BU = planes.F_14BU
         F4U_1D = planes.F4U_1D
         F4U_1D_CW = planes.F4U_1D_CW
         I_16 = planes.I_16
@@ -1329,6 +1336,7 @@ class USA(Country):
         Plane.A_10C_2,
         Plane.F_14B,
         Plane.F_14A_135_GR,
+        Plane.F_14BU,
         Plane.P_47D_30,
         Plane.P_47D_30bl1,
         Plane.P_47D_40,
@@ -1349,7 +1357,6 @@ class USA(Country):
         Plane.F_4E_45MC,
         Plane.QF_4E,
         Plane.F_14A_135_GR_Early,
-        Plane.F_14BU,
         Plane.F4U_1D,
         Plane.F4U_1D_CW,
         Plane.I_16,
@@ -3454,6 +3461,7 @@ class USAFAggressors(Country):
             NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
             NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             CHAP_TorM2 = vehicles.AirDefence.CHAP_TorM2
+            CHAP_Ural4320_ZU232 = vehicles.AirDefence.CHAP_Ural4320_ZU232
             HEMTT_C_RAM_Phalanx = vehicles.AirDefence.HEMTT_C_RAM_Phalanx
             Gepard = vehicles.AirDefence.Gepard
             CHAP_IRISTSLM_STR = vehicles.AirDefence.CHAP_IRISTSLM_STR
@@ -3462,6 +3470,7 @@ class USAFAggressors(Country):
             Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
+            CHAP_PGZ09 = vehicles.AirDefence.CHAP_PGZ09
             HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
             Type_3_80mm_AA = vehicles.AirDefence.Type_3_80mm_AA
             Type_88_75mm_AA = vehicles.AirDefence.Type_88_75mm_AA
@@ -3554,6 +3563,9 @@ class USAFAggressors(Country):
             Predator_GCS = vehicles.Unarmed.Predator_GCS
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
+            CHAP_ZIL131 = vehicles.Unarmed.CHAP_ZIL131
+            CHAP_ZIL131_Kung = vehicles.Unarmed.CHAP_ZIL131_Kung
+            CHAP_UralTyphoon = vehicles.Unarmed.CHAP_UralTyphoon
             CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
             CHAP_SLT50_Tractor = vehicles.Unarmed.CHAP_SLT50_Tractor
             CHAP_SLT50_Trailer = vehicles.Unarmed.CHAP_SLT50_Trailer
@@ -3599,6 +3611,7 @@ class USAFAggressors(Country):
             T62M = vehicles.Armor.T62M
             T_80B = vehicles.Armor.T_80B
             BRDM_2_malyutka = vehicles.Armor.BRDM_2_malyutka
+            CHAP_BMD2 = vehicles.Armor.CHAP_BMD2
             M4_Sherman = vehicles.Armor.M4_Sherman
             M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Churchill_VII = vehicles.Armor.Churchill_VII
@@ -3631,6 +3644,7 @@ class USAFAggressors(Country):
             CHAP_T90M = vehicles.Armor.CHAP_T90M
             CHAP_BMPT = vehicles.Armor.CHAP_BMPT
             CHAP_Titan = vehicles.Armor.CHAP_Titan
+            CHAP_Atlet = vehicles.Armor.CHAP_Atlet
             M_2_Bradley = vehicles.Armor.M_2_Bradley
             Cobra = vehicles.Armor.Cobra
             LAV_25 = vehicles.Armor.LAV_25
@@ -3640,6 +3654,7 @@ class USAFAggressors(Country):
             Leclerc = vehicles.Armor.Leclerc
             ZBD04A = vehicles.Armor.ZBD04A
             ZTZ96B = vehicles.Armor.ZTZ96B
+            CHAP_ZTQ15 = vehicles.Armor.CHAP_ZTQ15
             TYPE_59 = vehicles.Armor.TYPE_59
             CHAP_FV107 = vehicles.Armor.CHAP_FV107
             M1126_Stryker_ICV = vehicles.Armor.M1126_Stryker_ICV
@@ -3831,8 +3846,8 @@ class USAFAggressors(Country):
         S_3B = planes.S_3B
         F_14B = planes.F_14B
         F_14A_135_GR = planes.F_14A_135_GR
-        F_14A_135_GR_Early = planes.F_14A_135_GR_Early
         F_14BU = planes.F_14BU
+        F_14A_135_GR_Early = planes.F_14A_135_GR_Early
         Tornado_GR4 = planes.Tornado_GR4
         Mirage_F1CG = planes.Mirage_F1CG
         Mirage_F1CK = planes.Mirage_F1CK
@@ -3973,8 +3988,8 @@ class USAFAggressors(Country):
         Plane.S_3B,
         Plane.F_14B,
         Plane.F_14A_135_GR,
-        Plane.F_14A_135_GR_Early,
         Plane.F_14BU,
+        Plane.F_14A_135_GR_Early,
         Plane.Tornado_GR4,
         Plane.Mirage_F1CG,
         Plane.Mirage_F1CK,
@@ -11161,6 +11176,7 @@ class China(Country):
             HL_ZU_23 = vehicles.AirDefence.HL_ZU_23
             SON_9 = vehicles.AirDefence.SON_9
             CHAP_TorM2 = vehicles.AirDefence.CHAP_TorM2
+            CHAP_PGZ09 = vehicles.AirDefence.CHAP_PGZ09
             RD_75 = vehicles.AirDefence.RD_75
             HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
 
@@ -11199,6 +11215,7 @@ class China(Country):
             HL_KORD = vehicles.Armor.HL_KORD
             HL_DSHK = vehicles.Armor.HL_DSHK
             T_34_85 = vehicles.Armor.T_34_85
+            CHAP_ZTQ15 = vehicles.Armor.CHAP_ZTQ15
             TYPE_59 = vehicles.Armor.TYPE_59
 
         class MissilesSS:
@@ -14527,6 +14544,9 @@ class Iraq(Country):
         MiG_29A = planes.MiG_29A
         Su_24M = planes.Su_24M
         Su_25 = planes.Su_25
+        MiG_25RBT = planes.MiG_25RBT
+        MiG_23MLD = planes.MiG_23MLD
+        IL_76MD = planes.IL_76MD
         FW_190A8 = planes.FW_190A8
         Bf_109K_4 = planes.Bf_109K_4
         SpitfireLFMkIX = planes.SpitfireLFMkIX
@@ -14595,6 +14615,9 @@ class Iraq(Country):
         Plane.MiG_29A,
         Plane.Su_24M,
         Plane.Su_25,
+        Plane.MiG_25RBT,
+        Plane.MiG_23MLD,
+        Plane.IL_76MD,
         Plane.FW_190A8,
         Plane.Bf_109K_4,
         Plane.SpitfireLFMkIX,
@@ -27210,6 +27233,7 @@ class USSR(Country):
             T62M = vehicles.Armor.T62M
             T_80B = vehicles.Armor.T_80B
             BRDM_2_malyutka = vehicles.Armor.BRDM_2_malyutka
+            CHAP_BMD2 = vehicles.Armor.CHAP_BMD2
             M4_Sherman = vehicles.Armor.M4_Sherman
             M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Churchill_VII = vehicles.Armor.Churchill_VII
@@ -31946,6 +31970,7 @@ class CombinedJointTaskForcesBlue(Country):
             NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
             NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             CHAP_TorM2 = vehicles.AirDefence.CHAP_TorM2
+            CHAP_Ural4320_ZU232 = vehicles.AirDefence.CHAP_Ural4320_ZU232
             HEMTT_C_RAM_Phalanx = vehicles.AirDefence.HEMTT_C_RAM_Phalanx
             Gepard = vehicles.AirDefence.Gepard
             CHAP_IRISTSLM_STR = vehicles.AirDefence.CHAP_IRISTSLM_STR
@@ -31954,6 +31979,7 @@ class CombinedJointTaskForcesBlue(Country):
             Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
+            CHAP_PGZ09 = vehicles.AirDefence.CHAP_PGZ09
             HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
             Type_3_80mm_AA = vehicles.AirDefence.Type_3_80mm_AA
             Type_88_75mm_AA = vehicles.AirDefence.Type_88_75mm_AA
@@ -32046,6 +32072,9 @@ class CombinedJointTaskForcesBlue(Country):
             Predator_GCS = vehicles.Unarmed.Predator_GCS
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
+            CHAP_ZIL131 = vehicles.Unarmed.CHAP_ZIL131
+            CHAP_ZIL131_Kung = vehicles.Unarmed.CHAP_ZIL131_Kung
+            CHAP_UralTyphoon = vehicles.Unarmed.CHAP_UralTyphoon
             CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
             CHAP_SLT50_Tractor = vehicles.Unarmed.CHAP_SLT50_Tractor
             CHAP_SLT50_Trailer = vehicles.Unarmed.CHAP_SLT50_Trailer
@@ -32091,6 +32120,7 @@ class CombinedJointTaskForcesBlue(Country):
             T62M = vehicles.Armor.T62M
             T_80B = vehicles.Armor.T_80B
             BRDM_2_malyutka = vehicles.Armor.BRDM_2_malyutka
+            CHAP_BMD2 = vehicles.Armor.CHAP_BMD2
             M4_Sherman = vehicles.Armor.M4_Sherman
             M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Churchill_VII = vehicles.Armor.Churchill_VII
@@ -32123,6 +32153,7 @@ class CombinedJointTaskForcesBlue(Country):
             CHAP_T90M = vehicles.Armor.CHAP_T90M
             CHAP_BMPT = vehicles.Armor.CHAP_BMPT
             CHAP_Titan = vehicles.Armor.CHAP_Titan
+            CHAP_Atlet = vehicles.Armor.CHAP_Atlet
             M_2_Bradley = vehicles.Armor.M_2_Bradley
             Cobra = vehicles.Armor.Cobra
             LAV_25 = vehicles.Armor.LAV_25
@@ -32132,6 +32163,7 @@ class CombinedJointTaskForcesBlue(Country):
             Leclerc = vehicles.Armor.Leclerc
             ZBD04A = vehicles.Armor.ZBD04A
             ZTZ96B = vehicles.Armor.ZTZ96B
+            CHAP_ZTQ15 = vehicles.Armor.CHAP_ZTQ15
             TYPE_59 = vehicles.Armor.TYPE_59
             CHAP_FV107 = vehicles.Armor.CHAP_FV107
             M1126_Stryker_ICV = vehicles.Armor.M1126_Stryker_ICV
@@ -32323,8 +32355,8 @@ class CombinedJointTaskForcesBlue(Country):
         S_3B = planes.S_3B
         F_14B = planes.F_14B
         F_14A_135_GR = planes.F_14A_135_GR
-        F_14A_135_GR_Early = planes.F_14A_135_GR_Early
         F_14BU = planes.F_14BU
+        F_14A_135_GR_Early = planes.F_14A_135_GR_Early
         Tornado_GR4 = planes.Tornado_GR4
         Mirage_F1CG = planes.Mirage_F1CG
         Mirage_F1CK = planes.Mirage_F1CK
@@ -32465,8 +32497,8 @@ class CombinedJointTaskForcesBlue(Country):
         Plane.S_3B,
         Plane.F_14B,
         Plane.F_14A_135_GR,
-        Plane.F_14A_135_GR_Early,
         Plane.F_14BU,
+        Plane.F_14A_135_GR_Early,
         Plane.Tornado_GR4,
         Plane.Mirage_F1CG,
         Plane.Mirage_F1CK,
@@ -32860,6 +32892,7 @@ class CombinedJointTaskForcesRed(Country):
             NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
             NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             CHAP_TorM2 = vehicles.AirDefence.CHAP_TorM2
+            CHAP_Ural4320_ZU232 = vehicles.AirDefence.CHAP_Ural4320_ZU232
             HEMTT_C_RAM_Phalanx = vehicles.AirDefence.HEMTT_C_RAM_Phalanx
             Gepard = vehicles.AirDefence.Gepard
             CHAP_IRISTSLM_STR = vehicles.AirDefence.CHAP_IRISTSLM_STR
@@ -32868,6 +32901,7 @@ class CombinedJointTaskForcesRed(Country):
             Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
+            CHAP_PGZ09 = vehicles.AirDefence.CHAP_PGZ09
             HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
             Type_3_80mm_AA = vehicles.AirDefence.Type_3_80mm_AA
             Type_88_75mm_AA = vehicles.AirDefence.Type_88_75mm_AA
@@ -32960,6 +32994,9 @@ class CombinedJointTaskForcesRed(Country):
             Predator_GCS = vehicles.Unarmed.Predator_GCS
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
+            CHAP_ZIL131 = vehicles.Unarmed.CHAP_ZIL131
+            CHAP_ZIL131_Kung = vehicles.Unarmed.CHAP_ZIL131_Kung
+            CHAP_UralTyphoon = vehicles.Unarmed.CHAP_UralTyphoon
             CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
             CHAP_SLT50_Tractor = vehicles.Unarmed.CHAP_SLT50_Tractor
             CHAP_SLT50_Trailer = vehicles.Unarmed.CHAP_SLT50_Trailer
@@ -33005,6 +33042,7 @@ class CombinedJointTaskForcesRed(Country):
             T62M = vehicles.Armor.T62M
             T_80B = vehicles.Armor.T_80B
             BRDM_2_malyutka = vehicles.Armor.BRDM_2_malyutka
+            CHAP_BMD2 = vehicles.Armor.CHAP_BMD2
             M4_Sherman = vehicles.Armor.M4_Sherman
             M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Churchill_VII = vehicles.Armor.Churchill_VII
@@ -33037,6 +33075,7 @@ class CombinedJointTaskForcesRed(Country):
             CHAP_T90M = vehicles.Armor.CHAP_T90M
             CHAP_BMPT = vehicles.Armor.CHAP_BMPT
             CHAP_Titan = vehicles.Armor.CHAP_Titan
+            CHAP_Atlet = vehicles.Armor.CHAP_Atlet
             M_2_Bradley = vehicles.Armor.M_2_Bradley
             Cobra = vehicles.Armor.Cobra
             LAV_25 = vehicles.Armor.LAV_25
@@ -33046,6 +33085,7 @@ class CombinedJointTaskForcesRed(Country):
             Leclerc = vehicles.Armor.Leclerc
             ZBD04A = vehicles.Armor.ZBD04A
             ZTZ96B = vehicles.Armor.ZTZ96B
+            CHAP_ZTQ15 = vehicles.Armor.CHAP_ZTQ15
             TYPE_59 = vehicles.Armor.TYPE_59
             CHAP_FV107 = vehicles.Armor.CHAP_FV107
             M1126_Stryker_ICV = vehicles.Armor.M1126_Stryker_ICV
@@ -33237,8 +33277,8 @@ class CombinedJointTaskForcesRed(Country):
         S_3B = planes.S_3B
         F_14B = planes.F_14B
         F_14A_135_GR = planes.F_14A_135_GR
-        F_14A_135_GR_Early = planes.F_14A_135_GR_Early
         F_14BU = planes.F_14BU
+        F_14A_135_GR_Early = planes.F_14A_135_GR_Early
         Tornado_GR4 = planes.Tornado_GR4
         Mirage_F1CG = planes.Mirage_F1CG
         Mirage_F1CK = planes.Mirage_F1CK
@@ -33379,8 +33419,8 @@ class CombinedJointTaskForcesRed(Country):
         Plane.S_3B,
         Plane.F_14B,
         Plane.F_14A_135_GR,
-        Plane.F_14A_135_GR_Early,
         Plane.F_14BU,
+        Plane.F_14A_135_GR_Early,
         Plane.Tornado_GR4,
         Plane.Mirage_F1CG,
         Plane.Mirage_F1CK,
@@ -33774,6 +33814,7 @@ class UnitedNationsPeacekeepers(Country):
             NASAMS_LN_B = vehicles.AirDefence.NASAMS_LN_B
             NASAMS_LN_C = vehicles.AirDefence.NASAMS_LN_C
             CHAP_TorM2 = vehicles.AirDefence.CHAP_TorM2
+            CHAP_Ural4320_ZU232 = vehicles.AirDefence.CHAP_Ural4320_ZU232
             HEMTT_C_RAM_Phalanx = vehicles.AirDefence.HEMTT_C_RAM_Phalanx
             Gepard = vehicles.AirDefence.Gepard
             CHAP_IRISTSLM_STR = vehicles.AirDefence.CHAP_IRISTSLM_STR
@@ -33782,6 +33823,7 @@ class UnitedNationsPeacekeepers(Country):
             Igla_manpad_INS = vehicles.AirDefence.Igla_manpad_INS
             HQ_7_STR_SP = vehicles.AirDefence.HQ_7_STR_SP
             HQ_7_LN_SP = vehicles.AirDefence.HQ_7_LN_SP
+            CHAP_PGZ09 = vehicles.AirDefence.CHAP_PGZ09
             HQ_7_LN_P = vehicles.AirDefence.HQ_7_LN_P
             Type_3_80mm_AA = vehicles.AirDefence.Type_3_80mm_AA
             Type_88_75mm_AA = vehicles.AirDefence.Type_88_75mm_AA
@@ -33874,6 +33916,9 @@ class UnitedNationsPeacekeepers(Country):
             Predator_GCS = vehicles.Unarmed.Predator_GCS
             Predator_TrojanSpirit = vehicles.Unarmed.Predator_TrojanSpirit
             Tigr_233036 = vehicles.Unarmed.Tigr_233036
+            CHAP_ZIL131 = vehicles.Unarmed.CHAP_ZIL131
+            CHAP_ZIL131_Kung = vehicles.Unarmed.CHAP_ZIL131_Kung
+            CHAP_UralTyphoon = vehicles.Unarmed.CHAP_UralTyphoon
             CHAP_HX77 = vehicles.Unarmed.CHAP_HX77
             CHAP_SLT50_Tractor = vehicles.Unarmed.CHAP_SLT50_Tractor
             CHAP_SLT50_Trailer = vehicles.Unarmed.CHAP_SLT50_Trailer
@@ -33919,6 +33964,7 @@ class UnitedNationsPeacekeepers(Country):
             T62M = vehicles.Armor.T62M
             T_80B = vehicles.Armor.T_80B
             BRDM_2_malyutka = vehicles.Armor.BRDM_2_malyutka
+            CHAP_BMD2 = vehicles.Armor.CHAP_BMD2
             M4_Sherman = vehicles.Armor.M4_Sherman
             M4A4_Sherman_FF = vehicles.Armor.M4A4_Sherman_FF
             Churchill_VII = vehicles.Armor.Churchill_VII
@@ -33951,6 +33997,7 @@ class UnitedNationsPeacekeepers(Country):
             CHAP_T90M = vehicles.Armor.CHAP_T90M
             CHAP_BMPT = vehicles.Armor.CHAP_BMPT
             CHAP_Titan = vehicles.Armor.CHAP_Titan
+            CHAP_Atlet = vehicles.Armor.CHAP_Atlet
             M_2_Bradley = vehicles.Armor.M_2_Bradley
             Cobra = vehicles.Armor.Cobra
             LAV_25 = vehicles.Armor.LAV_25
@@ -33960,6 +34007,7 @@ class UnitedNationsPeacekeepers(Country):
             Leclerc = vehicles.Armor.Leclerc
             ZBD04A = vehicles.Armor.ZBD04A
             ZTZ96B = vehicles.Armor.ZTZ96B
+            CHAP_ZTQ15 = vehicles.Armor.CHAP_ZTQ15
             TYPE_59 = vehicles.Armor.TYPE_59
             CHAP_FV107 = vehicles.Armor.CHAP_FV107
             M1126_Stryker_ICV = vehicles.Armor.M1126_Stryker_ICV
@@ -34151,8 +34199,8 @@ class UnitedNationsPeacekeepers(Country):
         S_3B = planes.S_3B
         F_14B = planes.F_14B
         F_14A_135_GR = planes.F_14A_135_GR
-        F_14A_135_GR_Early = planes.F_14A_135_GR_Early
         F_14BU = planes.F_14BU
+        F_14A_135_GR_Early = planes.F_14A_135_GR_Early
         Tornado_GR4 = planes.Tornado_GR4
         Mirage_F1CG = planes.Mirage_F1CG
         Mirage_F1CK = planes.Mirage_F1CK
@@ -34293,8 +34341,8 @@ class UnitedNationsPeacekeepers(Country):
         Plane.S_3B,
         Plane.F_14B,
         Plane.F_14A_135_GR,
-        Plane.F_14A_135_GR_Early,
         Plane.F_14BU,
+        Plane.F_14A_135_GR_Early,
         Plane.Tornado_GR4,
         Plane.Mirage_F1CG,
         Plane.Mirage_F1CK,

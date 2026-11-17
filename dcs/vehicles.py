@@ -177,8 +177,8 @@ class Artillery:
         id = "PLZ05"
         name = "PLZ-05"
         detection_range = 0
-        threat_range = 23500
-        air_weapon_dist = 23500
+        threat_range = 40000
+        air_weapon_dist = 40000
         eplrs = True
 
     class Wespe124(unittype.VehicleType):
@@ -723,6 +723,21 @@ class AirDefence:
         detection_range = 32000
         threat_range = 16000
         air_weapon_dist = 16000
+        eplrs = True
+
+    class CHAP_Ural4320_ZU232(unittype.VehicleType):
+        id = "CHAP_Ural4320_ZU232"
+        name = "AAA ZU-23-2 on Ural 4320 [CH]"
+        detection_range = 0
+        threat_range = 2500
+        air_weapon_dist = 2500
+
+    class CHAP_PGZ09(unittype.VehicleType):
+        id = "CHAP_PGZ09"
+        name = "SPAAG PGZ-09 [CH]"
+        detection_range = 20000
+        threat_range = 4000
+        air_weapon_dist = 4000
         eplrs = True
 
     class HEMTT_C_RAM_Phalanx(unittype.VehicleType):
@@ -1464,6 +1479,27 @@ class Unarmed:
         threat_range = 0
         air_weapon_dist = 0
 
+    class CHAP_ZIL131(unittype.VehicleType):
+        id = "CHAP_ZIL131"
+        name = "Truck ZIL-131 [CH]"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class CHAP_ZIL131_Kung(unittype.VehicleType):
+        id = "CHAP_ZIL131_Kung"
+        name = "Truck ZIL-131 Kung C2 [CH]"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
+    class CHAP_UralTyphoon(unittype.VehicleType):
+        id = "CHAP_UralTyphoon"
+        name = "MRAP Ural Typhoon-U [CH]"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+
     class Type_94_Truck(unittype.VehicleType):
         id = "Type_94_Truck"
         name = "Truck Type 94"
@@ -2099,6 +2135,29 @@ class Armor:
         threat_range = 3000
         air_weapon_dist = 3000
         eplrs = True
+
+    class CHAP_ZTQ15(unittype.VehicleType):
+        id = "CHAP_ZTQ15"
+        name = "LT ZTQ-15 [CH]"
+        detection_range = 0
+        threat_range = 4000
+        air_weapon_dist = 4000
+        eplrs = True
+
+    class CHAP_Atlet(unittype.VehicleType):
+        id = "CHAP_Atlet"
+        name = "MRAP AMN-2 Atlet [CH]"
+        detection_range = 0
+        threat_range = 1000
+        air_weapon_dist = 1000
+        eplrs = True
+
+    class CHAP_BMD2(unittype.VehicleType):
+        id = "CHAP_BMD2"
+        name = "IFV BMD-2 [CH]"
+        detection_range = 5000
+        threat_range = 2000
+        air_weapon_dist = 2000
 
     class M1A2C_SEP_V3(unittype.VehicleType):
         id = "M1A2C_SEP_V3"
@@ -2789,6 +2848,14 @@ vehicle_map = {
     "CHAP_BMP3_ERA": Armor.CHAP_BMP3_ERA,
     "CHAP_Titan": Armor.CHAP_Titan,
     "CHAP_HX81_Tractor": Unarmed.CHAP_HX81_Tractor,
+    "CHAP_Ural4320_ZU232": AirDefence.CHAP_Ural4320_ZU232,
+    "CHAP_ZIL131": Unarmed.CHAP_ZIL131,
+    "CHAP_ZIL131_Kung": Unarmed.CHAP_ZIL131_Kung,
+    "CHAP_PGZ09": AirDefence.CHAP_PGZ09,
+    "CHAP_ZTQ15": Armor.CHAP_ZTQ15,
+    "CHAP_Atlet": Armor.CHAP_Atlet,
+    "CHAP_BMD2": Armor.CHAP_BMD2,
+    "CHAP_UralTyphoon": Unarmed.CHAP_UralTyphoon,
     "HEMTT_C-RAM_Phalanx": AirDefence.HEMTT_C_RAM_Phalanx,
     "S-300PS 5P85C ln": AirDefence.S_300PS_5P85C_ln,
     "S-300PS 5P85D ln": AirDefence.S_300PS_5P85D_ln,

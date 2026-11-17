@@ -18705,9 +18705,9 @@ class F4U_1D_CW(PlaneType):
         "F4U_GunsConvergence_Mid": 2,
         "F4U_GunsConvergence_Outer": 2,
         "F4U_CW_number": True,
-        "F4U_CW_number_1": 6,
-        "F4U_CW_number_2": 3,
-        "F4U_CW_number_3": 8,
+        "F4U_CW_number_1": 5,
+        "F4U_CW_number_2": 2,
+        "F4U_CW_number_3": 2,
     }
 
     class Properties:
@@ -18855,7 +18855,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_1",
             control="comboList",
             label="1st number",
-            default=6,
+            default=5,
             values={
                 0: "0",
                 1: "1",
@@ -18873,7 +18873,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_2",
             control="comboList",
             label="2nd number",
-            default=3,
+            default=2,
             values={
                 0: "0",
                 1: "1",
@@ -18891,7 +18891,7 @@ class F4U_1D_CW(PlaneType):
             identifier="F4U_CW_number_3",
             control="comboList",
             label="3rd number",
-            default=8,
+            default=2,
             values={
                 0: "0",
                 1: "1",
@@ -20457,18 +20457,7 @@ class La_7(PlaneType):
     fuel_max = 333
     max_speed = 774
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
-    radio_frequency = 124
-
-    panel_radio = {
-        1: {
-            "channels": {
-                1: 105,
-                2: 124,
-                4: 139,
-                3: 131
-            },
-        },
-    }
+    radio_frequency = 3.7
 
     property_defaults: Dict[str, Any] = {
     }
